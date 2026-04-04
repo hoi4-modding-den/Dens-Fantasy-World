@@ -1,0 +1,40 @@
+
+state={
+	id=1116
+	name="STATE_1116"
+	manpower = 3577381
+	
+	state_category = rural
+	#impassable = yes
+	resources={
+		aluminium=0
+		chromium=0
+		oil=3
+		rubber=0
+		steel=0
+		tungsten=0
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			14783 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		14774 14775 14776 14777 14778 14779 14780 14781 14782 14783 14784 14785 14786 14787 14788 14789 14790 14791 14792 14793 14794 14795 14796 14797 14798 14799 14800 14801 14802 14803 
+	}
+	local_supplies=0.0 
+}

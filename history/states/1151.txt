@@ -1,0 +1,40 @@
+
+state={
+	id=1151
+	name="STATE_1151"
+	manpower = 2390500
+	
+	state_category = pastoral
+	#impassable = yes
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			15253 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		15244 15245 15246 15247 15248 15249 15250 15251 15252 15253 15254 15255 15256 15257 15258 15259 15260 15261 15262 15263 15264 15265 15266 15267 15268 15269 15270 15271 15272 15273 15274 15275 15276 15277 15278 15279 15280 15281 15282 15283 
+	}
+	local_supplies=0.0 
+}

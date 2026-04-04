@@ -1,0 +1,37 @@
+
+state={
+	id=481
+	name="STATE_481"
+	manpower = 2565480
+	
+	state_category = large_town
+	#impassable = yes
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		
+	}
+
+	provinces={
+		7356 7357 7358 7359 7360 7361 7362 7363 7364 7365 
+	}
+	local_supplies=0.0 
+}

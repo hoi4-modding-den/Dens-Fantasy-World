@@ -1,0 +1,40 @@
+
+state={
+	id=1083
+	name="STATE_1083"
+	manpower = 2580515
+	
+	state_category = large_town
+	#impassable = yes
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=0
+		tungsten=0
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			14259 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		14259 14260 14261 14262 14263 14264 14265 14266 14267 14268 
+	}
+	local_supplies=0.0 
+}

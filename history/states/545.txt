@@ -1,0 +1,37 @@
+
+state={
+	id=545
+	name="STATE_545"
+	manpower = 3041315
+	
+	state_category = city
+	#impassable = yes
+	resources={
+		aluminium=0
+		chromium=0
+		oil=2
+		rubber=0
+		steel=0
+		tungsten=0
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		
+	}
+
+	provinces={
+		8168 8169 8170 8171 8172 8173 8174 8175 8176 8177 8178 
+	}
+	local_supplies=0.0 
+}

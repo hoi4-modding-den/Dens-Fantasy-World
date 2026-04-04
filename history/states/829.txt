@@ -1,0 +1,37 @@
+
+state={
+	id=829
+	name="STATE_829"
+	manpower = 1653676
+	
+	state_category = rural
+	#impassable = yes
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		
+	}
+
+	provinces={
+		11179 11180 11181 11182 11183 11184 11185 11186 11187 
+	}
+	local_supplies=0.0 
+}

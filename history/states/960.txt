@@ -1,0 +1,37 @@
+
+state={
+	id=960
+	name="STATE_960"
+	manpower = 2283759
+	
+	state_category = city
+	#impassable = yes
+	resources={
+		aluminium=0
+		chromium=9
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		
+	}
+
+	provinces={
+		12770 12771 12772 12773 12774 12775 12776 12777 
+	}
+	local_supplies=0.0 
+}

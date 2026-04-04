@@ -1,0 +1,37 @@
+
+state={
+	id=236
+	name="STATE_236"
+	manpower = 156336
+	
+	state_category = small_island
+	#impassable = yes
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			
+		}
+		
+	}
+
+	provinces={
+		3874 3875 3876 3877 3878 3879 3880 3881 
+	}
+	local_supplies=0.0 
+}

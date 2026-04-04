@@ -1,0 +1,37 @@
+
+state={
+	id=907
+	name="STATE_907"
+	manpower = 2006405
+	
+	state_category = town
+	#impassable = yes
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			
+		}
+		
+	}
+
+	provinces={
+		11996 11997 11998 11999 12000 12001 12002 12003 12004 
+	}
+	local_supplies=0.0 
+}

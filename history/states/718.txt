@@ -1,0 +1,37 @@
+
+state={
+	id=718
+	name="STATE_718"
+	manpower = 1734646
+	
+	state_category = rural
+	#impassable = yes
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			
+		}
+		
+	}
+
+	provinces={
+		10112 10113 10114 10115 10116 10117 10118 10119 10120 10121 10122 10123 10124 10125 
+	}
+	local_supplies=0.0 
+}

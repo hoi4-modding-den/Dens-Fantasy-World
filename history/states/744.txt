@@ -1,0 +1,37 @@
+
+state={
+	id=744
+	name="STATE_744"
+	manpower = 1170079
+	
+	state_category = town
+	#impassable = yes
+	resources={
+		aluminium=0
+		chromium=2
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		
+	}
+
+	provinces={
+		10464 10465 10466 
+	}
+	local_supplies=0.0 
+}

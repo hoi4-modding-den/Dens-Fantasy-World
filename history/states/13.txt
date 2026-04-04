@@ -1,0 +1,37 @@
+
+state={
+	id=13
+	name="STATE_13"
+	manpower = 2550515
+	
+	state_category = large_town
+	#impassable = yes
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		
+	}
+
+	provinces={
+		249 250 251 252 253 254 255 256 257 258 
+	}
+	local_supplies=0.0 
+}

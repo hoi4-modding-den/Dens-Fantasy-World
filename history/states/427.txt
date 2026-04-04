@@ -1,0 +1,40 @@
+
+state={
+	id=427
+	name="STATE_427"
+	manpower = 1585365
+	
+	state_category = pastoral
+	#impassable = yes
+	resources={
+		aluminium=1
+		chromium=0
+		oil=4
+		rubber=0
+		steel=6
+		tungsten=2
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			6718 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		6703 6704 6705 6706 6707 6708 6709 6710 6711 6712 6713 6714 6715 6716 6717 6718 6719 6720 6721 
+	}
+	local_supplies=0.0 
+}

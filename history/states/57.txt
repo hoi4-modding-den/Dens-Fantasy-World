@@ -1,0 +1,40 @@
+
+state={
+	id=57
+	name="STATE_57"
+	manpower = 1279883
+	
+	state_category = pastoral
+	#impassable = yes
+	resources={
+		aluminium=14
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			1121 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		1114 1115 1116 1117 1118 1119 1120 1121 1122 1123 1124 1125 1126 1127 1128 1129 1130 1131 1132 
+	}
+	local_supplies=0.0 
+}

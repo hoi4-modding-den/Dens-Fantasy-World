@@ -1,0 +1,37 @@
+
+state={
+	id=458
+	name="STATE_458"
+	manpower = 4183686
+	
+	state_category = megalopolis
+	#impassable = yes
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 4
+			
+			arms_factory = 2
+			industrial_complex = 0
+			
+			
+		}
+		
+	}
+
+	provinces={
+		7073 7074 7075 7076 7077 7078 7079 7080 7081 7082 7083 7084 7085 7086 
+	}
+	local_supplies=0.0 
+}

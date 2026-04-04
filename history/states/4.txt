@@ -1,0 +1,40 @@
+
+state={
+	id=4
+	name="STATE_4"
+	manpower = 2588722
+	
+	state_category = town
+	#impassable = yes
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+		coal=0
+	}
+
+	history={
+		
+		
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			61 = {
+				naval_base = 1
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 
+	}
+	local_supplies=0.0 
+}
