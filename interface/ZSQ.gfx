@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ZSQ_two_tiered_society_embed"
+		texturefile = "gfx/ZSQ/two_tiered_society_embed.png"
+		legacy_lazy_load = no
+	}
+}

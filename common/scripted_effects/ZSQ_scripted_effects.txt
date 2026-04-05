@@ -1,0 +1,6 @@
+d_ZSQ_debug = {
+	set_country_leader_description = {
+		ideology = neutrality
+		desc = ZSQ_john_squilliam_desc
+	}
+}

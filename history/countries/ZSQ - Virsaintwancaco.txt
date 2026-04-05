@@ -26,6 +26,7 @@ add_ideas = {
 set_convoys = 50
 
 recruit_character = ZSQ_john_squilliam
+add_ideas = ZSQ_two_tiered_society
 
 set_politics = {
 	ruling_party = neutrality

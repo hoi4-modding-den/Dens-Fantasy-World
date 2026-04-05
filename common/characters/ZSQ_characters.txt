@@ -3,11 +3,12 @@ characters={
 		name = ZSQ_john_squilliam
 		portraits = {
 			civilian = {
-				large = "didyouknowyoudontactuallyhavetostorespritesinafoldercalledexactlygfx/ZSQ/John_Squilliam.png"
+				large = "gfx/ZSQ/John_Squilliam.png"
 			}
 		}
 		country_leader = {
 			ideology = despotism
+			desc = ZSQ_john_squilliam_desc
 			expire = "1960.1.1.1"
 			id = -1
 		}

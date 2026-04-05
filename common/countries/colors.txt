@@ -1266,6 +1266,6 @@ ZPS = {
 	color_ui = rgb { 17 59 102 }
 }
 ZSQ = {
-	color = rgb { 193 70 212 }
-	color_ui = rgb { 193 70 212 }
+	color = rgb { 80 2 95 }
+	color_ui = rgb { 80 2 95 }
 }
