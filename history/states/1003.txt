@@ -18,7 +18,8 @@ state={
 
 	history={
 		
-		
+		owner = ZNY
+		add_core_of = ZNY
 		buildings = {
 			infrastructure = 2
 			

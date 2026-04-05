@@ -1,0 +1,23 @@
+﻿l_english:
+
+### COUNTRY
+ZNY: "Federal Republic of Nyfa"
+ZNY_DEF: "Federal Republic of Nyfa"
+ZNY_ADJ: "Nyfy"
+# Parties
+ ZNY_neutrality_a_party: "PNC - ONV"
+ ZNY_neutrality_a_party_long: "People's New Coalition - Our National Victory"
+ ZNY_democratic_a_party: "PNC - ONV'fL'"
+ ZNY_democratic_a_party_long: "People's New Coalition - Our National Victory 'for Liberty'"
+
+ ZNY_neutrality_party: "AFFN"
+ ZNY_neutrality_party_long: "Armed Federal Forces of Nyfa"
+
+ ZNY_communism_party: "PNC - CPN"
+ ZNY_communism_party_long: "People's New Coalition - Communist Party of Nyfa"
+ ZNY_democratic_party: "PNC - ONV"
+ ZNY_democratic_party_long: "People's New Coalition - Our National Victory"
+ ZNY_fascism_party: "NPPN"
+ ZNY_fascism_party_long: "National Patriot's Platform for Nyfa"
+ STATE_988: "Jan Zorzerk"
+ VICTORY_POINTS_13164: "Jan Zorzerk"
