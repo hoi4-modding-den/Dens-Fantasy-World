@@ -2,9 +2,9 @@
 state={
 	id=125
 	name="STATE_125"
-	manpower = 1090148
+	manpower = 577420
 	
-	state_category = rural
+	state_category = town
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -13,7 +13,7 @@ state={
 		rubber=0
 		steel=0
 		tungsten=0
-		coal=0
+		coal=1
 	}
 
 	history={
@@ -23,10 +23,13 @@ state={
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 0
-			industrial_complex = 0
-			
-			
+			arms_factory = 1	
+		}
+		victory_points = {
+			2202 6
+		}
+		victory_points = {
+			2200 1
 		}
 		
 	}

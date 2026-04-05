@@ -31,14 +31,14 @@ characters = {
 	ZPS_Avrana_Kern = {
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/ZPS/ZPS_Avrana_Kern.png"
+				small = "gfx/leaders/ZPS/ZPS_Avrana_Kern_Small.png"
 			}
 		}
 		advisor = {
 			cost = 150
 			slot = political_advisor
 			can_be_fired = no
-			idea_token = ZPS_Avrana_Kern_Advistor
+			idea_token = ZPS_Avrana_Kern_Advisor
 			available = { 
             		}
            
@@ -51,7 +51,7 @@ characters = {
 	ZPS_Bianca = {
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/ZPS/ZPS_Bianca.png"
+				small = "gfx/leaders/ZPS/ZPS_Bianca_Small.png"
 			}
 		}
 		advisor = {
@@ -71,7 +71,7 @@ characters = {
 	ZPS_Fabian = {
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/ZPS/ZPS_Fabian.png"
+				small = "gfx/leaders/ZPS/ZPS_Fabian_Small.png"
 			}
 		}
 		advisor = {
@@ -91,7 +91,7 @@ characters = {
 	ZPS_Gethli = {
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/ZPS/ZPS_Gethli.png"
+				small = "gfx/leaders/ZPS/ZPS_Gethli_Small.png"
 			}
 		}
 		advisor = {
@@ -111,7 +111,7 @@ characters = {
 	ZPS_Gothi = {
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/ZPS/ZPS_Gothi.png"
+				small = "gfx/leaders/ZPS/ZPS_Gothi_Small.png"
 			}
 		}
 		advisor = {
@@ -131,7 +131,7 @@ characters = {
 	ZPS_Paul = {
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/ZPS/ZPS_Paul.png"
+				small = "gfx/leaders/ZPS/ZPS_Paul_Small.png"
 			}
 		}
 		advisor = {
@@ -151,7 +151,7 @@ characters = {
 	ZPS_Interloculator = {
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/ZPS/ZPS_Interloculator.png"
+				small = "gfx/leaders/ZPS/ZPS_Interloculator_Small.png"
 			}
 		}
 		advisor = {
@@ -171,7 +171,7 @@ characters = {
 	ZPS_Porsche = {
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/ZPS/ZPS_Porsche.png"
+				small = "gfx/leaders/ZPS/ZPS_Porsche_Small.png"
 			}
 		}
 		advisor = {
@@ -191,7 +191,7 @@ characters = {
 	ZPS_Salomi = {
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/ZPS/ZPS_Salomi.png"
+				small = "gfx/leaders/ZPS/ZPS_Salomi_Small.png"
 			}
 		}
 		advisor = {
@@ -211,7 +211,7 @@ characters = {
 	ZPS_Viola = {
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/ZPS/ZPS_Viola.png"
+				small = "gfx/leaders/ZPS/ZPS_Viola_Small.png"
 			}
 		}
 		advisor = {

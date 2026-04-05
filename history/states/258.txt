@@ -2,16 +2,16 @@
 state={
 	id=258
 	name="STATE_258"
-	manpower = 2817375
+	manpower =739390
 	
 	state_category = city
 	#impassable = yes
 	resources={
-		aluminium=0
+		aluminium=3
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
+		steel=13
 		tungsten=0
 		coal=0
 	}
@@ -23,12 +23,14 @@ state={
 		buildings = {
 			infrastructure = 3
 			
-			arms_factory = 0
-			industrial_complex = 1
-			
 			
 		}
-		
+		victory_points = {
+			4250 3
+		}
+		victory_points = {
+			4251 1
+		}
 	}
 
 	provinces={

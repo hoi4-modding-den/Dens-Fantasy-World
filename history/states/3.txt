@@ -9,7 +9,7 @@ state={
 	resources={
 		aluminium=0
 		chromium=0
-		oil=0
+		oil=2
 		rubber=0
 		steel=0
 		tungsten=0
@@ -22,14 +22,19 @@ state={
 		
 		buildings = {
 			infrastructure = 3
-			
-			arms_factory = 0
-			industrial_complex = 1
+			dockyard = 1
+			industrial_complex = 2
 			
 			57 = {
-				naval_base = 1
+				naval_base = 3
 			}
 			
+		}
+		victory_points = {
+			56 3 
+		}
+		victory_points = {
+			57 1 
 		}
 		
 	}

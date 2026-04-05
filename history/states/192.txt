@@ -2,9 +2,9 @@
 state={
 	id=192
 	name="STATE_192"
-	manpower = 758156
+	manpower = 6393833
 	
-	state_category = pastoral
+	state_category = metropolis
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -21,12 +21,16 @@ state={
 		add_core_of = ZPS
 		
 		buildings = {
-			infrastructure = 3
+			infrastructure = 5
 			
-			arms_factory = 0
-			industrial_complex = 0
+			arms_factory = 3
+			industrial_complex = 2
+			air_base = 4
 			
 			
+		}
+		victory_points = {
+			3150 30
 		}
 		
 	}

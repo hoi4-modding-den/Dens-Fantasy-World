@@ -2,18 +2,18 @@
 state={
 	id=103
 	name="STATE_103"
-	manpower = 3034020
+	manpower = 7503383
 	
-	state_category = city
+	state_category = large_city
 	#impassable = yes
 	resources={
 		aluminium=0
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
-		tungsten=0
-		coal=0
+		steel=13
+		tungsten=2
+		coal=3
 	}
 
 	history={
@@ -21,14 +21,21 @@ state={
 		add_core_of = ZPS
 		
 		buildings = {
-			infrastructure = 3
-			
-			arms_factory = 0
-			industrial_complex = 1
+			infrastructure = 4
+			air_base = 2
+			industrial_complex = 4
 			
 			
 		}
-		
+		victory_points = {
+			1940 12
+		}
+		victory_points = {
+			1934 7
+		}
+		victory_points = {
+			1939 1
+		}
 	}
 
 	provinces={

@@ -2,7 +2,7 @@
 state={
 	id=323
 	name="STATE_323"
-	manpower = 805579
+	manpower = 166690
 	
 	state_category = pastoral
 	#impassable = yes
@@ -21,10 +21,8 @@ state={
 		add_core_of = ZPS
 		
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			
-			arms_factory = 0
-			industrial_complex = 1
 			
 			5228 = {
 				naval_base = 1

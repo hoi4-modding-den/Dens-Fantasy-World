@@ -6,7 +6,9 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default = yes
 		
-		
+		"ZPS"={
+			history = "ZPS_GATHERING_STORM_DESC"
+		}
 		
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
