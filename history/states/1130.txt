@@ -18,20 +18,25 @@ state={
 
 	history={
 		
-		
+		owner = ZPK
+		add_core_of = ZPK
+		add_claim_by = ZPC
+		add_claim_by = ZPT
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
 			industrial_complex = 0
-			
+			19308 = {
+				naval_base = 3
+			}
 			
 		}
 		
 	}
 
 	provinces={
-		14936 14937 
+		14936 14937 19308 19309
 	}
 	local_supplies=0.0 
 }

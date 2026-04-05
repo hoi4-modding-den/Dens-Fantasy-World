@@ -18,6 +18,11 @@ state={
 
 	history={
 		
+		owner = ZPI
+		add_core_of = ZPI
+		add_claim_by = ZPK
+		add_claim_by = ZPT
+		add_claim_by = ZPC
 		
 		buildings = {
 			infrastructure = 1
@@ -34,7 +39,7 @@ state={
 	}
 
 	provinces={
-		15029 15030 15031 15032 15033 15034 15035 15036 15037 15038 15039 15040 15041 15042 
+		15029 15030 15032 15033 15036 15037 15038 15039 15040 15041 
 	}
 	local_supplies=0.0 
 }

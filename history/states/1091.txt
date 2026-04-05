@@ -18,7 +18,10 @@ state={
 
 	history={
 		
-		
+		owner = ZPK
+		add_core_of = ZPK
+		add_claim_by = ZPC
+		add_claim_by = ZPT
 		buildings = {
 			infrastructure = 1
 			

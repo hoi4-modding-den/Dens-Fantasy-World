@@ -1,1 +1,5 @@
 XCE = "countries/Celandra.txt"
+ZPI = "countries/Penguin Island.txt"
+ZPK = "countries/Penguin Kingdom.txt"
+ZPT = "countries/Penguin Theocracy.txt"
+ZPC = "countries/Penguin Commune.txt"

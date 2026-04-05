@@ -2,39 +2,39 @@
 state={
 	id=1235
 	name="STATE_1235"
-	manpower = 828
+	manpower = 182000
 	
-	state_category = small_island
+	state_category = large_town
 	#impassable = yes
 	resources={
 		aluminium=0
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
+		steel=8
 		tungsten=0
 		coal=0
 	}
 
 	history={
 		
-		
+		owner = ZPT
+		add_core_of = ZPT
+		add_claim_by = ZPC
+		add_claim_by = ZPK
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 			
-			arms_factory = 0
-			industrial_complex = 0
+			arms_factory = 2
+			industrial_complex = 2
 			
-			16500 = {
-				naval_base = 1
-			}
 			
 		}
 		
 	}
 
 	provinces={
-		16500 
+		19303 
 	}
 	local_supplies=0.0 
 }

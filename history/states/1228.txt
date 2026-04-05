@@ -4,7 +4,7 @@ state={
 	name="STATE_1228"
 	manpower = 11691
 	
-	state_category = small_island
+	state_category = rural
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -18,14 +18,18 @@ state={
 
 	history={
 		
-		
+		owner = ZPI
+		add_core_of = ZPI
+		add_claim_by = ZPK
+		add_claim_by = ZPT
+		add_claim_by = ZPC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 1
 			
-			16493 = {
+			14777 = {
 				naval_base = 1
 			}
 			
@@ -34,7 +38,7 @@ state={
 	}
 
 	provinces={
-		16493 
+		14774 14775 14777 14783 14793 14801 14802 
 	}
 	local_supplies=0.0 
 }

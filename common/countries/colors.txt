@@ -1212,6 +1212,21 @@ XCE = {
 	color = rgb { 200 165 90 }
 	color_ui = rgb { 175 125 25 }
 }
-
+ZPI = {
+	color = rgb { 200 220 220 }
+	color_ui = rgb { 200 220 220 }
+}
+ZPK = {
+	color = rgb { 120 120 0 }
+	color_ui = rgb { 120 120 0 }
+}
+ZPT = {
+	color = rgb { 70 150 140 }
+	color_ui = rgb { 70 150 140 }
+}
+ZPC = {
+	color = rgb { 75 0 30 }
+	color_ui = rgb { 75 0 30 }
+}
 
 

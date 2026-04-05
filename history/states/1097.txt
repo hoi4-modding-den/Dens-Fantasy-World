@@ -18,7 +18,10 @@ state={
 
 	history={
 		
-		
+		owner = ZPK
+		add_core_of = ZPK
+		add_claim_by = ZPC
+		add_claim_by = ZPT
 		buildings = {
 			infrastructure = 2
 			
@@ -31,7 +34,7 @@ state={
 	}
 
 	provinces={
-		14484 14485 
+		14484 14485 19306
 	}
 	local_supplies=0.0 
 }

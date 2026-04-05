@@ -1,0 +1,139 @@
+﻿l_english:
+ ###Country/Party Names###
+ ZPK_fascism:0 "Nostalgist Kingdom of Aptenodytia"
+ ZPK_fascism_DEF:0 "the Nostalgist Kingdom of Aptenodytia"
+ ZPK_fascism_ADJ:0 "Aptenodytian"
+ ZPK_fascism_party: "Nostalgists"
+ #ZPK_fascism_party_long: "" currently undetermined
+ ZPK_democratic:0 "Kingdom of Aptenodytia"
+ ZPK_democratic_DEF:0 "the Kingdom of Aptenodytia"
+ ZPK_democratic_ADJ:0 "Aptenodytian"
+ ZPK_democratic_party: "Clockists"
+ #ZPK_democratic_party_long: "" currently undetermined
+ ZPK_neutrality:0 "Kingdom of Aptenodytia"
+ ZPK_neutrality_DEF:0 "the Kingdom of Aptenodytia"
+ ZPK_neutrality_ADJ:0 "Aptenodytian"
+ ZPK_neutrality_party: "Royalists"
+ #ZPK_neutrality_party_long: "" currently undetermined
+ ZPK_communism:0 "Nihilist Federation of Aptenodytia"
+ ZPK_communism_DEF:0 "the Nihilist Federation of Aptenodytia"
+ ZPK_communism_ADJ:0 "Aptenodytian"
+ ZPK_communism_party: "Nihilists"
+ #ZPK_communism_party_long: "" currently undetermined
+ ZPK:0 "Aptenodytia"
+ ZPK_DEF:0 "Aptenodytia"
+ ZPK_ADJ:0 "Aptenodytian"
+ ZPK_subject:0 "$OVERLORDADJ$ $ZPK$"
+ 
+ ZPT_fascism:0 "Returnal State of Aptenodytia" #[sic]
+ ZPT_fascism_DEF:0 "the Returnal State of Aptenodytia"
+ ZPT_fascism_ADJ:0 "Aptenodytian"
+ ZPT_fascism_party: "Nostalgists"
+ #ZPT_fascism_party_long: "" currently undetermined
+ ZPT_democratic:0 "Republic of Aptenodytia"
+ ZPT_democratic_DEF:0 "the Republic of Aptenodytia"
+ ZPT_democratic_ADJ:0 "Aptenodytian"
+ ZPT_democratic_party: "Clockists"
+ #ZPT_democratic_party_long: "" currently undetermined
+ ZPT_neutrality:0 "Holy Empire of Aptenodytia"
+ ZPT_neutrality_DEF:0 "the Holy Empire of Aptenodytia"
+ ZPT_neutrality_ADJ:0 "Aptenodytian"
+ ZPT_neutrality_party: "Clergy"
+ ZPT_neutrality_party_long: "Church of the Night"
+ ZPT_communism:0 "Nihilist Union of Aptenodytia"
+ ZPT_communism_DEF:0 "the Nihilist Union of Aptenodytia"
+ ZPT_communism_ADJ:0 "Aptenodytian"
+ ZPT_communism_party: "Nihilists"
+ #ZPT_communism_party_long: "" currently undetermined
+ ZPT:0 "Aptenodytia"
+ ZPT_DEF:0 "Aptenodytia"
+ ZPT_ADJ:0 "Aptenodytian"
+ ZPT_subject:0 "$OVERLORDADJ$ $ZPT$"
+ 
+ ZPC_fascism:0 "Returnal Empire of Aptenodytia"
+ ZPC_fascism_DEF:0 "the Returnal Empire of Aptenodytia"
+ ZPC_fascism_ADJ:0 "Aptenodytian"
+ ZPC_fascism_party: "Nostalgists"
+ #ZPC_fascism_party_long: "" currently undetermined
+ ZPC_democratic:0 "Federation of Aptenodytia"
+ ZPC_democratic_DEF:0 "the Federation of Aptenodytia"
+ ZPC_democratic_ADJ:0 "Aptenodytian"
+ ZPC_democratic_party: "Clockists"
+ #ZPC_democratic_party_long: "" currently undetermined
+ ZPC_neutrality:0 "Republic of Aptenodytia"
+ ZPC_neutrality_DEF:0 "the Republic of Aptenodytia"
+ ZPC_neutrality_ADJ:0 "Aptenodytian"
+ ZPC_neutrality_party: "Authoritarians"
+ #ZPC_neutrality_party_long: "" currently undetermined
+ ZPC_communism:0 "Nihilist Republic of Aptenodytia"
+ ZPC_communism_DEF:0 "the Nihilist Republic of Aptenodytia"
+ ZPC_communism_ADJ:0 "Aptenodytian"
+ ZPC_communism_party: "Nihilists"
+ #ZPC_communism_party_long: "" currently undetermined
+ ZPC:0 "Aptenodytia"
+ ZPC_DEF:0 "Aptenodytia"
+ ZPC_ADJ:0 "Aptenodytian"
+ ZPC_subject:0 "$OVERLORDADJ$ $ZPC$"
+ 
+ ZPI_fascism:0 "Liminal State of Qikiqtaaluk" 
+ ZPI_fascism_DEF:0 "the Liminal State of Qikiqtaaluk"
+ ZPI_fascism_ADJ:0 "Qikiqtaalukian"
+ ZPI_fascism_party: "Nostalgists"
+ #ZPI_fascism_party_long: "" currently undetermined
+ ZPI_democratic:0 "Republic of Qikiqtaaluk"
+ ZPI_democratic_DEF:0 "the Republic of Qikiqtaaluk"
+ ZPI_democratic_ADJ:0 "Qikiqtaalukian"
+ ZPI_democratic_party: "Clockists"
+ #ZPI_democratic_party_long: "" currently undetermined
+ ZPI_neutrality:0 "Qikiqtaaluk Clique"
+ ZPI_neutrality_DEF:0 "the Qikiqtaaluk Clique"
+ ZPI_neutrality_ADJ:0 "Qikiqtaalukian"
+ ZPI_neutrality_party: "Authoritarians"
+ #ZPI_neutrality_party_long: "" currently undetermined
+ ZPI_communism:0 "Nihilist Republic of Qikiqtaaluk"
+ ZPI_communism_DEF:0 "the Nihilist Republic of Qikiqtaaluk"
+ ZPI_communism_ADJ:0 "Qikiqtaalukian"
+ ZPI_communism_party: "Nihilists"
+ #ZPI_communism_party_long: "" currently undetermined
+ ZPI:0 "Qikiqtaaluk"
+ ZPI_DEF:0 "Qikiqtaaluk"
+ ZPI_ADJ:0 "Qikiqtaalukian"
+ ZPI_subject:0 "$OVERLORDADJ$ $ZPI$"
+ #I know penguins don't have lips so there's no way they can pronounce everything here, but I'm not making a conlang for this. at least not yet
+ 
+ ###Cosmetic Tags###
+ ZPI_reunified_fascism:0 "Liminal State of Aptenodytia" 
+ ZPI_reunified_fascism_DEF:0 "the Liminal State of Aptenodytia"
+ ZPI_reunified_fascism_ADJ:0 "Aptenodytian"
+ ZPI_reunified_democratic:0 "Republic of Aptenodytia"
+ ZPI_reunified_democratic_DEF:0 "the Republic of Aptenodytia"
+ ZPI_reunified_democratic_ADJ:0 "Aptenodytian"
+ ZPI_reunified_neutrality:0 "Republic of Aptenodytia"
+ ZPI_reunified_neutrality_DEF:0 "the Republic of Aptenodytia"
+ ZPI_reunified_neutrality_ADJ:0 "Aptenodytian"
+ ZPI_reunified_communism:0 "Nihilist Federation of Aptenodytia"
+ ZPI_reunified_communism_DEF:0 "the Nihilist Federation of Aptenodytia"
+ ZPI_reunified_communism_ADJ:0 "Aptenodytian"
+ ZPI_reunified:0 "Republic of Aptenodytia"
+ ZPI_reunified_DEF:0 "the Republic of Aptenodytia"
+ ZPI_reunified_ADJ:0 "Aptenodytian"
+ ZPI_reunified_subject:0 "$OVERLORDADJ$ $ZPI_reunified$"
+ 
+ ZPI_easter_egg_fascism:0 "Hypoborea" 
+ ZPI_easter_egg_fascism_DEF:0 "the Hypothermic State Hypoborea"
+ ZPI_easter_egg_fascism_ADJ:0 "Hypoborean"
+ ZPI_easter_egg_democratic:0 "Club Penguin"
+ ZPI_easter_egg_democratic_DEF:0 "the Club Penguin"
+ ZPI_easter_egg_democratic_ADJ:0 "Penguin"
+ ZPI_easter_egg_neutrality:0 "Alcoholic Aptenodytia (AA)"
+ ZPI_easter_egg_neutrality_DEF:0 "the I'm totally not drunk of Aptenodytia" 
+ #NationStates ass name fr
+ ZPI_easter_egg_neutrality_ADJ:0 "Aptenodytian"
+ ZPI_easter_egg_communism:0 "Trotskyist Penguin Empire"
+ ZPI_easter_egg_communism_DEF:0 "the Trotskyist Penguin Empire"
+ ZPI_easter_egg_communism_ADJ:0 "Penguin"
+ ZPI_easter_egg:0 "Republic of Aptenodytia"
+ ZPI_easter_egg_DEF:0 "the Republic of Aptenodytia"
+ ZPI_easter_egg_ADJ:0 "Aptenodytian"
+ ZPI_easter_egg_subject:0 "$OVERLORDADJ$ $ZPI_easter_egg$"
+ 
