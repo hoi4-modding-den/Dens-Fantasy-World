@@ -1,0 +1,230 @@
+characters = {
+	ZPS_Council_of_Species = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZPS/ZPS_Council_of_Species.png"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			traits = { }
+			desc = ZPS_Council_of_Species_desc
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { }
+			desc = ZPS_Council_of_Species_desc
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { }
+			desc = ZPS_Council_of_Species_desc
+		}
+		country_leader = {
+			ideology = nazism
+			traits = { }
+			desc = ZPS_Council_of_Species_desc
+		}
+
+	}
+
+	ZPS_Avrana_Kern = {
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZPS/ZPS_Avrana_Kern.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			can_be_fired = no
+			idea_token = ZPS_Avrana_Kern_Advistor
+			available = { 
+            		}
+           
+			traits = {
+				
+			}
+		}
+	}
+
+	ZPS_Bianca = {
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZPS/ZPS_Bianca.png"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			
+			idea_token = ZPS_Bianca_Advistor
+			available = { 
+            		}
+           
+			traits = {
+				
+			}
+		}
+	}
+
+	ZPS_Fabian = {
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZPS/ZPS_Fabian.png"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = air_chief
+			
+			idea_token = ZPS_Fabian_Advistor
+			available = { 
+            		}
+           
+			traits = {
+				
+			}
+		}
+	}
+
+	ZPS_Gethli = {
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZPS/ZPS_Gethli.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			
+			idea_token = ZPS_Gethli_Advistor
+			available = { 
+            		}
+           
+			traits = {
+				
+			}
+		}
+	}
+
+	ZPS_Gothi = {
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZPS/ZPS_Gothi.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			
+			idea_token = ZPS_Gothi_Advistor
+			available = { 
+            		}
+           
+			traits = {
+				
+			}
+		}
+	}
+
+	ZPS_Paul = {
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZPS/ZPS_Paul.png"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = navy_chief
+			
+			idea_token = ZPS_Paul_Advistor
+			available = { 
+            		}
+           
+			traits = {
+				
+			}
+		}
+	}
+
+	ZPS_Interloculator = {
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZPS/ZPS_Interloculator.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			
+			idea_token = ZPS_Interloculator_Advistor
+			available = { 
+            		}
+           
+			traits = {
+				
+			}
+		}
+	}
+
+	ZPS_Porsche = {
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZPS/ZPS_Porsche.png"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = army_chief
+			
+			idea_token = ZPS_Porsche_Advistor
+			available = { 
+            		}
+           
+			traits = {
+				
+			}
+		}
+	}
+
+	ZPS_Salomi = {
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZPS/ZPS_Salomi.png"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			
+			idea_token = ZPS_Salomi_Advistor
+			available = { 
+            		}
+           
+			traits = {
+				
+			}
+		}
+	}
+
+	ZPS_Viola = {
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZPS/ZPS_Viola.png"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = army_chief
+			
+			idea_token = ZPS_Viola_Advistor
+			available = { 
+            		}
+           
+			traits = {
+				
+			}
+		}
+	}
+}
