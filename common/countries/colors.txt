@@ -1260,3 +1260,8 @@ ZA7 = {
 	color = rgb { 128 24 24 }
 	color_ui = rgb { 128 24 24 }
 }
+
+ZPS = {
+	color = rgb { 17 59 102 }
+	color_ui = rgb { 17 59 102 }
+}

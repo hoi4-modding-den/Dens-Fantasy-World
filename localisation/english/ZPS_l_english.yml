@@ -1,0 +1,51 @@
+﻿l_english:
+#Country Names
+ZPS: "Pan-Specific of Paam"
+ZPS_DEF: "the Pan-Specific of Paam"
+ZPS_ADJ: "Pan-Specific"
+
+#Parties
+ZPS_democratic_party: "Representative Caucus"
+ZPS_democratic_party_long: "Representative Caucus"
+ZPS_communism_party: "Communalist Caucus"
+ZPS_communism_party_long: "Communalist Caucus"
+ZPS_neutrality_party: "Traditionalist Caucus"
+ZPS_neutrality_party_long: "Traditionalist Caucus"
+ZPS_fascism_party: "Nationalist Caucus"
+ZPS_fascism_party_long: "Nationalist Caucus"
+
+#Characters
+ZPS_Council_of_Species: "Council of Species"
+ZPS_Avrana_Kern: "Avrana Kern"
+ZPS_Bianca: "Bianca"
+ZPS_Fabian: "Fabian"
+ZPS_Gethli: "Gethli"
+ZPS_Gothi: "Gothi"
+ZPS_Paul: "Paul"
+ZPS_Interloculator: "Interloculator"
+ZPS_Porsche: "Porsche"
+ZPS_Salomi: "Salomi"
+ZPS_Viola: "Viola"
+
+#State Names
+STATE_80: "Northen Chatin"
+STATE_349: "Chatin"
+STATE_258: "Urov"
+STATE_21: "Forkep"
+STATE_313: "Happlon"
+STATE_203: "Olteks"
+STATE_202: "Barnot"
+STATE_103: "Lumfack"
+STATE_3: "Stomap"
+STATE_361: "The Sorbof"
+STATE_157: "Eastern Cvrak"
+STATE_291: "Cvrak"
+STATE_125: "North Cvrak"
+STATE_118: "Southern Plains"
+STATE_107: "Ratil"
+STATE_192: "Great Nest"
+STATE_144: "Eastern Nesting Site"
+STATE_323: "Soff"
+STATE_204: "Molor"
+STATE_175: "Three Trees"
+
