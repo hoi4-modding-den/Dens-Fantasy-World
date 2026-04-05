@@ -17,7 +17,8 @@ state={
 	}
 
 	history={
-		
+		owner = ZSQ
+		add_core_of = ZSQ
 		
 		buildings = {
 			infrastructure = 1

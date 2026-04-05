@@ -1,0 +1,15 @@
+characters={
+	ZSQ_john_squilliam = { 
+		name = ZSQ_john_squilliam
+		portraits = {
+			civilian = {
+				large = "didyouknowyoudontactuallyhavetostorespritesinafoldercalledexactlygfx/ZSQ/John_Squilliam.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

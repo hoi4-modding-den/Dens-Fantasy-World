@@ -1,17 +1,20 @@
 bookmarks = {
 	bookmark = {
-		name = "GATHERING_STORM_NAME"
-		desc = "GATHERING_STORM_DESC"
+		name = GATHERING_STORM_NAME
+		desc = GATHERING_STORM_DESC
 		date = 1936.1.1.12
-		picture = "GFX_select_date_1936"
+		picture = GFX_select_date_1936
 		default = yes
 		
-		"ZPS"={
-			history = "ZPS_GATHERING_STORM_DESC"
+		ZPS={
+			history = ZPS_GATHERING_STORM_DESC
+		}
+		ZSQ={
+			history = ZSQ_GATHERING_STORM_DESC
 		}
 		
 		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = OTHER_GATHERING_STORM_DESC
 		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
