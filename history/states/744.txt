@@ -17,7 +17,8 @@ state={
 	}
 
 	history={
-		
+		owner = XCE
+		add_core_of = XCE
 		
 		buildings = {
 			infrastructure = 3

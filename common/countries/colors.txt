@@ -1208,5 +1208,10 @@ HBC = {
 	color_ui = rgb { 94 17 14 }
 }
 
+XCE = {
+	color = rgb { 200 165 90 }
+	color_ui = rgb { 175 125 25 }
+}
+
 
 

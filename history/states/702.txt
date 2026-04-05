@@ -17,16 +17,21 @@ state={
 	}
 
 	history={
+		owner = XCE
+		add_core_of = XCE
 		
-		
+		victory_points = {
+			9936 15
+		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			
-			arms_factory = 0
-			industrial_complex = 0
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
 			
 			9936 = {
-				naval_base = 1
+				naval_base = 2
 			}
 			
 		}
