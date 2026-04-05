@@ -20,14 +20,16 @@ state={
 		
 		owner = ZNY
 		add_core_of = ZNY
-		
+		victory_points = {
+			11844 10
+			}
 		buildings = {
 			infrastructure = 4
 			
 			arms_factory = 0
 			industrial_complex = 2
 			
-			11845 = {
+			11844 = {
 				naval_base = 1
 			}
 			
