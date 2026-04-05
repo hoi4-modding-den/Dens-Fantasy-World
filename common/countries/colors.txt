@@ -1228,5 +1228,7 @@ ZPC = {
 	color = rgb { 75 0 30 }
 	color_ui = rgb { 75 0 30 }
 }
-
-
+ZAR = {
+	color = rgb { 255 127 80 }
+	color_ui = rgb { 255 127 80 }
+}
