@@ -1,0 +1,14 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_ZNY_unpopular_government"
+		texturefile = "gfx/interface/ideas/ZNY/ZNY_unpopular_government.png"
+	}
+
+spriteType = {
+		name = "GFX_idea_ZNY_revolution_com_surge"
+		texturefile = "gfx/interface/ideas/ZNY/ZNY_revolution_com_surge.png"
+	}
+
+}
+

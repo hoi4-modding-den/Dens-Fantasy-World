@@ -48,4 +48,5 @@ set_popularities = {
 add_ideas = {
 	 ZNY_unpopular_government
 	 ZNY_resistance_in_autonomous_regions
+	 free_trade
 }
