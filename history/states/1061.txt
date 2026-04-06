@@ -11,7 +11,7 @@ state={
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
+		steel=32
 		tungsten=0
 		coal=0
 	}
@@ -30,9 +30,12 @@ state={
 			
 			14022 = {
 				naval_base = 8
+				
 			}
 		}
-		
+		victory_points = {
+				14022 50
+			}
 	}
 
 	provinces={

@@ -3,7 +3,7 @@
  STATE_1037:0 "Esperanza"
  STATE_1048:0 "Pangniqtuuq"
  STATE_1058:0 "The Highlands"
- STATE_1061:0 "Iqaluit"
+ STATE_1061:0 "Iqaluit" #Capital State
  STATE_1065:0 "Central Qikiqtaaluk"
  STATE_1070:0 "Lukunsky"
  STATE_1075:0 "Carrera" #because it has the same numbers as my username, -075
@@ -25,7 +25,12 @@
  STATE_1228:0 "South Qikiqtaaluk"
  STATE_1235:0 "Igaluk"
  
-
+ VICTORY_POINTS_14022:0 "Iqaluit" #Kingdom/Main capital
+ VICTORY_POINTS_19303:0 "Igaluk" #Ice Venice capital
+ VICTORY_POINTS_14673:0 "Qirniqtaq" #Communist capital
+ VICTORY_POINTS_14793:0 "Ikpiarjuk" #Island capital
+ VICTORY_POINTS_14072:0 "Sanikiluaq"
+ VICTORY_POINTS_19308:0 "Qinngua"
  #VICTORY_POINTS_
  
  STRATEGICREGION_143:0 "Aptenodytia Deserts"
