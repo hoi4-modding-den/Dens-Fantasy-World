@@ -17,7 +17,8 @@ state={
 	}
 
 	history={
-		
+		owner = ZUR
+		add_core_of = ZUR
 		
 		buildings = {
 			infrastructure = 3

@@ -1,0 +1,29 @@
+﻿l_english:
+ ZUR: "Utopia"
+ ZUR_DEF: "Utopia"
+ ZUR_ADJ: "Utopian"
+
+ ZUR_disarmed_nation: "Violence-Free Utopia"
+ ZUR_volunteer_only: "Voluntary Service"
+ ZUR_limited_conscription: "Lottery Service"
+ ZUR_extensive_conscription: "Emergency Draft"
+ ZUR_service_by_requirement: "Military Focus"
+ ZUR_all_adults_serve: "Total Military Focus"
+ ZUR_scraping_the_barrel: "Full Service"
+ 
+ ZUR_free_trade: "Free Market"
+ ZUR_export_focus: "Mixed System"
+ ZUR_limited_exports: "Market Socialism"
+ ZUR_closed_economy: "State Market"
+ 
+ ZUR_communism_party: "Equal Utopia Thought"
+ ZUR_communism_party_long: "Equal Utopia Thought"
+ ZUR_democratic_party: "Liberal Utopia Thought"
+ ZUR_democratic_party_long: "Liberal Utopia Movement"
+ ZUR_neutrality_party: "Neutral Utopia Thought"
+ ZUR_neutrality_party_long: "Neutral Utopia Thought"
+ ZUR_fascism_party: "[ANTI UTOPIA]§ROUTLAWED§!"
+ ZUR_fascism_party_long: "[ANTI UTOPIA]§ROUTLAWED§!"
+ 
+ #victory_points = { 13855 10 }
+ VICTORY_POINTS_13617: "Ockcester"

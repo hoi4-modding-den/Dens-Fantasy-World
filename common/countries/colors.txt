@@ -1289,3 +1289,7 @@ ZKN = {
 	color = rgb { 171 32 32 }
 	color_ui = rgb { 171 32 32 }
 }
+ZUR = {
+	color = rgb { 255 40 80 }
+	color_ui = rgb { 255 40 80 }
+}
