@@ -2,7 +2,7 @@
 state={
 	id=1239
 	name="STATE_1239"
-	manpower = 8344
+	manpower = 521
 	
 	state_category = small_island
 	#impassable = yes
@@ -17,6 +17,8 @@ state={
 	}
 
 	history={
+		owner = ZTC
+		add_core_of = ZTC
 		
 		
 		buildings = {
@@ -26,7 +28,7 @@ state={
 			industrial_complex = 0
 			
 			16504 = {
-				naval_base = 1
+				naval_base = 2
 			}
 			
 		}

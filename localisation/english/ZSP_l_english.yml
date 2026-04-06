@@ -1,0 +1,20 @@
+﻿l_english:
+
+ ZSP: "Alstroemeria"
+ ZSP_DEF: "Alstroemeria"
+ ZSP_ADJ: "Alstroemerian"
+
+ ZSP_fascism: "Alstroemerian Magocracy"
+ ZSP_fascism_DEF: "the Alstroemerian Order of the Five Towers"
+ ZSP_fascism_ADJ: "Alstroemerian"
+
+# PARTIES
+
+ ZSP_neutrality_party: "Zinnian Infiltrators"
+ ZSP_neutrality_party_long: "Blackcloak League of the Zinnian Throne"
+ ZSP_democratic_party: "Republican Agitators"
+ ZSP_democratic_party_long: "NDPvG - Alstroemerian Branch"
+ ZSP_communism_party: "Local Communities"
+ ZSP_communism_party_long: "Local Communities"
+ ZSP_fascism_party: "Oberster Rat"
+ ZSP_fascism_party_long: "Highest Council of the Alstroemerian Order of the Five Towers"

@@ -2,31 +2,32 @@
 state={
 	id=749
 	name="STATE_749"
-	manpower = 2003078
+	manpower = 5076894
 	
-	state_category = large_town
+	state_category = metropolis
 	#impassable = yes
 	resources={
-		aluminium=7
+		aluminium=12
 		chromium=0
-		oil=1
+		oil=0
 		rubber=0
-		steel=0
-		tungsten=0
+		steel=20
+		tungsten=5
 		coal=15
 	}
 
 	history={
-		
+		owner = ZTC
+		add_core_of = ZTC
 		
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			
-			arms_factory = 0
-			industrial_complex = 0
+			arms_factory = 1
+			industrial_complex = 3
 			dockyard = 1
 			10502 = {
-				naval_base = 1
+				naval_base = 5
 			}
 			
 		}

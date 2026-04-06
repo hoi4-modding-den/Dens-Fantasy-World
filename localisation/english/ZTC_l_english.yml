@@ -1,0 +1,28 @@
+﻿l_english:
+
+ ZTC: "Hortensia"
+ ZTC_DEF: "Hortensia"
+ ZTC_ADJ: "Hortensian"
+ ZTC_neutrality: "Hortensia City"
+ ZTC_neutrality_DEF: "the Free and Mercantile City of Hortensia"
+ ZTC_neutrality_ADJ: "Hortensian"
+ ZTC_democratic: "Hortensia City"
+ ZTC_democratic_DEF: "the Free and Mercantile City of Hortensia"
+ ZTC_democratic_ADJ: "Hortensian"
+ ZTC_communism: "Hortensia City"
+ ZTC_communism_DEF: "the Free City of Hortensia"
+ ZTC_communism_ADJ: "Hortensian"
+ ZTC_fascism: "Hortensia City"
+ ZTC_fascism_DEF: "the Free and Mercantile City of Hortensia"
+ ZTC_fascism_ADJ: "Hortensian"
+
+# PARTIES
+
+ ZTC_neutrality_party: "Stadtrat"
+ ZTC_neutrality_party_long: "City Council of Hortensia"
+ ZTC_democratic_party: "$ZTC_neutrality_party$ - Reformists"
+ ZTC_democratic_party_long: "$ZTC_neutrality_party_long$ - Reformist Faction"
+ ZTC_communism_party: "HVF"
+ ZTC_communism_party_long: "Hortensian People's Front"
+ ZTC_fascism_party: "$ZTC_neutrality_party$ - Expansionists"
+ ZTC_fascism_party_long: "$ZTC_neutrality_party_long$ - Expanionist Faction"

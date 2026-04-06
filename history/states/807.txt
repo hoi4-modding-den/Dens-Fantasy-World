@@ -2,32 +2,30 @@
 state={
 	id=807
 	name="STATE_807"
-	manpower = 4416585
+	manpower = 1
 	
 	state_category = metropolis
 	#impassable = yes
 	resources={
-		aluminium=1
+		aluminium=0
 		chromium=0
 		oil=0
 		rubber=0
-		steel=12
+		steel=0
 		tungsten=0
 		coal=0
 	}
 
 	history={
-		
+		owner = ZKN
+		add_core_of = ZKN
+		add_core_of = ZLF
 		
 		buildings = {
-			infrastructure = 4
+			infrastructure = 0
 			
-			arms_factory = 1
-			industrial_complex = 1
-			
-			10996 = {
-				naval_base = 1
-			}
+			arms_factory = 0
+			industrial_complex = 0
 			
 		}
 		

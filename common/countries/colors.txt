@@ -1273,3 +1273,19 @@ ZAT = {
 	color = rgb { 74 109 124 }
 	color_ui = rgb { 74 109 124 }
 }
+ZSP = {
+	color = rgb { 92 19 97 }
+	color_ui = rgb { 92 19 97 }
+}
+ZTC = {
+	color = rgb { 219 177 25 }
+	color_ui = rgb { 219 177 25 }
+}
+ZLF = {
+	color = rgb { 0 76 227 }
+	color_ui = rgb { 0 76 227 }
+}
+ZKN = {
+	color = rgb { 171 32 32 }
+	color_ui = rgb { 171 32 32 }
+}

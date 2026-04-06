@@ -1,0 +1,23 @@
+﻿l_english:
+
+ ZKN: "Gardenia"
+ ZKN_DEF: "Gardenia"
+ ZKN_ADJ: "Gardenian"
+
+ ZKN_dominion: "Zinnian Dominion"
+ ZKN_dominion_DEF: "the Dominion of the Zinnian Throne"
+ ZKN_dominion_ADJ: "Zinnian"
+
+# PARTIES
+
+ ZKN_neutrality_party: "Zinnientron"
+ ZKN_neutrality_party_long: "Court of the Zinnian Throne"
+ ZKN_democratic_party: "$ZLF_democratic_party$"
+ ZKN_democratic_party_long: "$ZLF_democratic_party_long$"
+ ZKN_communism_party: "$ZLF_communism_party$"
+ ZKN_communism_party_long: "$ZLF_communism_party_long$"
+ ZKN_fascism_party: "RdNR"
+ ZKN_fascism_party_long: "Government of National Salvation"
+
+
+ CIVIL_WAR_NAME_ZKN_ZLF: "Edelweiss Revolution"

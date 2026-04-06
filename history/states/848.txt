@@ -2,12 +2,12 @@
 state={
 	id=848
 	name="STATE_848"
-	manpower = 1461246
+	manpower = 1
 	
 	state_category = town
 	#impassable = yes
 	resources={
-		aluminium=4
+		aluminium=0
 		chromium=0
 		oil=0
 		rubber=0
@@ -17,10 +17,13 @@ state={
 	}
 
 	history={
+		owner = ZKN
+		add_core_of = ZKN
+		add_core_of = ZLF
 		
 		
 		buildings = {
-			infrastructure = 3
+			infrastructure = 0
 			
 			arms_factory = 0
 			industrial_complex = 0

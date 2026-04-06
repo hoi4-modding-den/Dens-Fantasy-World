@@ -2,27 +2,28 @@
 state={
 	id=873
 	name="STATE_873"
-	manpower = 2843957
+	manpower = 1
 	
-	state_category = city
+	state_category = rural
 	#impassable = yes
 	resources={
-		aluminium=1
+		aluminium=0
 		chromium=0
 		oil=0
 		rubber=0
-		steel=10
+		steel=0
 		tungsten=0
 		coal=0
 	}
 
 	history={
-		
+		owner = ZSP
+		add_core_of = ZSP
 		
 		buildings = {
-			infrastructure = 3
+			infrastructure = 0
 			
-			arms_factory = 1
+			arms_factory = 0
 			industrial_complex = 0
 			
 			

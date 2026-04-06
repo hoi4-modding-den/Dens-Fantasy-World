@@ -1,0 +1,20 @@
+﻿l_english:
+
+ ZLF: "Edelweiss"
+ ZLF_DEF: "Edelweiss"
+ ZLF_ADJ: "Edelweissian"
+
+ ZLF_liberation_front: "Edelweiss Liberation Front"
+ ZLF_liberation_front_DEF: "the Edelweiss Liberation Front"
+ ZLF_liberation_front_ADJ: "ELF"
+
+# PARTIES
+
+ ZLF_neutrality_party: "NVP"
+ ZLF_neutrality_party_long: "National People's Party"
+ ZLF_democratic_party: "NDPvG"
+ ZLF_democratic_party_long: "National Democratic Party of Gardenia"
+ ZLF_communism_party: "RTP"
+ ZLF_communism_party_long: "Radical Transformation Party"
+ ZLF_fascism_party: "Armeeverschwörung"
+ ZLF_fascism_party_long: "Army Conspirators"

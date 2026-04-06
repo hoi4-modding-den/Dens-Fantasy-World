@@ -1,0 +1,49 @@
+capital = 570
+
+#oob = "ZKN_1936"
+
+set_stability = 0.45
+set_war_support = 0.6
+set_convoys = 50
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}
+
+add_ideas = {
+	export_focus
+	volunteer_only
+	civilian_economy
+}
+
+#recruit_character = 
+
+set_cosmetic_tag = ZKN_dominion
+
+declare_war_on = {
+	target = ZLF
+	type = civil_war
+}
+add_civil_war_target = ZLF
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 65
+	democratic = 5
+	communism = 0
+	fascism = 30
+}
