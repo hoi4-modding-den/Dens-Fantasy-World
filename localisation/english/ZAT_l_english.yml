@@ -1,0 +1,42 @@
+﻿l_english:
+
+### NAMES ###
+ZAT: "Astral Triumvirate of Centaureum"
+ZOAT_DEF: "the Astral Triumvirate of Centaureum"
+#ZAT_communism:0 ""
+#ZAT_communism_DEF:0 "the "
+ZAT_ADJ: "Centaurian"
+
+### INTRO ###
+
+### SCRIPTED GUIs ###
+
+### IDEAS/NATIONAL SPIRITS ###
+
+### TOOLTIPS ###
+
+### STATE MODIFIERS ###
+
+### COSMETIC TAGS ###
+
+### CUSTOM FLAGS ###
+
+### EVENTS ###
+
+### LEADER/ADVISOR TRAITS ###
+
+### DECISIONS ###
+
+### CHARACTERS ###
+
+### PARTIES ###
+#ZAT_democratic_party: "Young Turks"
+#ZAT_democratic_party_long: "Young Turks"
+#ZAT_neutrality_party: "House of Osman"
+#ZAT_neutrality_party_long: "House of Osman"
+#ZAT_fascism_party: "Yüce İmparatorluk Front"
+#ZAT_fascism_party_long: "Yüce İmparatorluk Front"
+#ZAT_communism_party: "Umumiye Brotherhood"
+#ZAT_communism_party_long: "Umumiye Brotherhood"
+
+### NATIONAL FOCUSES ###

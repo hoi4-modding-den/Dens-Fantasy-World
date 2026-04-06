@@ -17,8 +17,8 @@ state={
 	}
 
 	history={
-		owner = ZAR
-		add_core_of = ZAR
+		owner = ZAT
+		add_core_of = ZAT
 		
 		buildings = {
 			infrastructure = 3

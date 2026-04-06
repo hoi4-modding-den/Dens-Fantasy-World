@@ -1269,3 +1269,7 @@ ZSQ = {
 	color = rgb { 80 2 95 }
 	color_ui = rgb { 80 2 95 }
 }
+ZAT = {
+	color = rgb { 74 109 124 }
+	color_ui = rgb { 74 109 124 }
+}
