@@ -1,0 +1,691 @@
+focus_tree = {
+	id = ZPS_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ZPS
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1650 }
+
+
+	focus = {
+		id = ZPS_The_Lomcho_Incident
+		icon = GFX_fish
+		x = 20
+		y = 0
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		always = no
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+
+	focus = {
+		id = ZPS_Remilitarisation_Campaign
+		icon = GFX_focus_ZPS_Militarisation_Campaign
+		x = 10
+		y = 1
+		prerequisite = { focus = ZPS_The_Lomcho_Incident }
+		cost = 2
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+
+	focus = {
+		id = ZPS_Pan_Specific_National_Army_focus
+		icon = GFX_fish
+		x = 8
+		y = 2
+		prerequisite = { focus = ZPS_Remilitarisation_Campaign }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+			add_dynamic_modifier = { modifier = ZPS_Pan_Specific_National_Army }
+			army_experience = 25
+		}
+	}
+
+
+	focus = {
+		id = ZPS_All_May_Serve
+		icon = GFX_fish
+		x = 7
+		y = 3
+		mutually_exclusive = { focus = ZPS_Portia_Primacy }
+		prerequisite = { focus = ZPS_Pan_Specific_National_Army_focus }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_All_May_Serve_idea
+				}
+
+			}
+			add_manpower = 12383
+			#ADD DIVISIONS
+			hidden_effect = {
+				add_to_variable = {
+					var = ZPS_recruitable_population_factor
+					value = 0.08
+				}
+				add_to_variable = {
+					var = ZPS_experience_gain_army_factor
+					value = -0.03
+				}
+				add_to_variable = {
+					var = ZPS_weekly_manpower
+					value = 50
+				}
+			}
+
+		}
+	}
+
+	focus = {
+		id = ZPS_Portia_Primacy
+		icon = GFX_fish
+		x = 9
+		y = 3
+		mutually_exclusive = { focus = ZPS_All_May_Serve }
+		prerequisite = { focus = ZPS_Pan_Specific_National_Army_focus }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_Portia_Primacy_idea
+				}
+
+			}
+			add_tech_bonus = {
+				name = ZPS_Portia_Weapons_Development
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+				category = infantry_tech
+			}
+			
+			hidden_effect = {
+				add_to_variable = {
+					var = ZPS_training_time_factor
+					value = 0.1
+				}
+				add_to_variable = {
+					var = ZPS_army_attack_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = ZPS_army_defence_factor
+					value = 0.03
+				}
+				add_to_variable = {
+					var = ZPS_breakthrough_factor
+					value = 0.02
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZPS_Calculated_Strategies
+		icon = GFX_fish
+		x = 8
+		y = 4
+		prerequisite = { focus = ZPS_Pan_Specific_National_Army_focus }
+		prerequisite = { focus = ZPS_Portia_Primacy focus = ZPS_All_May_Serve }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_Calculated_Strategies_idea
+				}
+
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.4
+				uses = 1
+				category = land_doctrine
+			}
+			
+			hidden_effect = {
+				add_to_variable = {
+					var = ZPS_max_planning_factor
+					value = 0.06
+				}
+				add_to_variable = {
+					var = ZPS_terrain_penalty_reduction
+					value = 0.03
+				}
+				add_to_variable = {
+					var = ZPS_experience_gain_army_factor
+					value = 0.02
+				}
+				add_to_variable = {
+					var = ZPS_army_morale_factor
+					value = 0.04
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZPS_Shrewd_Hunting
+		icon = GFX_fish
+		x = 10
+		y = 4
+		prerequisite = { focus = ZPS_Portia_Primacy }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+			add_ideas = ZPS_Late_Night_Battles
+			army_experience = 50
+		}
+	}
+
+	focus = {
+		id = ZPS_Charge_Of_The_Faithful
+		icon = GFX_fish
+		x = 6
+		y = 4
+		prerequisite = { focus = ZPS_All_May_Serve }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+			
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_Charge_Of_The_Faithful_idea
+				}
+
+			}
+			add_manpower = 48182
+			
+			hidden_effect = {
+				add_to_variable = {
+					var = ZPS_initiative_factor
+					value = 0.04
+				}
+				add_to_variable = {
+					var = ZPS_experience_loss_factor
+					value = -0.06
+				}
+				add_to_variable = {
+					var = ZPS_army_org_factor
+					value = -0.05
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZPS_Great_War_Machines
+		icon = GFX_fish
+		x = 7
+		y = 5
+		prerequisite = { focus = ZPS_Calculated_Strategies }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = ZPS_War_Machine_Development_Fund
+				bonus = 0.5
+				uses = 3
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = ZPS_Strengthen_The_Machine_Corps
+		icon = GFX_fish
+		x = 7
+		y = 6
+		prerequisite = { focus = ZPS_Great_War_Machines }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+			#Divisions
+			custom_effect_tooltip = ZPS_If_Completed_MSAMI
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_Strengthen_The_Machine_Corps_MSAMI_idea
+				}
+
+			}
+			custom_effect_tooltip = ZPS_If_Not_Completed_MSAMI
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_Strengthen_The_Machine_Corps_No_MSAMI_idea
+				}
+
+			}
+			
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = ZPS_Establish_The_MSAMI
+					}
+				add_to_variable = {
+					var = ZPS_org_loss_when_moving
+					value = -0.03
+				}
+				add_to_variable = {
+					var = ZPS_army_armor_speed_factor
+					value = 0.1
+				}
+				add_to_variable = {
+					var = ZPS_army_armor_defence_factor
+					value = 0.09
+				}
+				}
+				else = {
+				add_to_variable = {
+					var = ZPS_breakthrough_factor
+					value = 0.07
+				}
+				add_to_variable = {
+					var = army_morale_factor
+					value = 0.04
+				}
+				add_to_variable = {
+					var = ZPS_army_armor_attack_factor
+					value = 0.09
+				}
+				}
+			}
+			
+		}
+	}
+
+	focus = {
+		id = ZPS_Hidden_Wolves #Establish Rangers
+		icon = GFX_fish
+		x = 9
+		y = 5
+		prerequisite = { focus = ZPS_Calculated_Strategies }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_Hidden_Wolves_idea
+				}
+
+			}
+			if = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+			set_technology = {
+    				rangers_tech = 1
+			}
+			}
+			
+			
+			hidden_effect = {
+				add_to_variable = {
+					var = ZPS_special_forces_training_time_factor
+					value = -0.06
+				}
+				add_to_variable = {
+					var = ZPS_special_forces_attack_factor
+					value = 0.11
+				}
+				add_to_variable = {
+					var = ZPS_special_forces_cap
+					value = 0.05
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZPS_Establish_The_MSAMI #Military Supply and Maintenance Initiative
+		icon = GFX_fish
+		x = 11
+		y = 5
+		prerequisite = { focus = ZPS_Calculated_Strategies }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+			add_ideas = ZPS_MSAMI
+			
+		}
+	}
+
+	focus = {
+		id = ZPS_Build_Steamtrains_Of_War
+		icon = GFX_fish
+		x = 11
+		y = 6
+		prerequisite = { focus = ZPS_Establish_The_MSAMI }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+		
+		build_railway = {
+			level = 2
+			path = { 2541 5228 3150 2959 2952 1938 1936 1940 }
+		}
+		}
+	}
+
+	focus = {
+		id = ZPS_Made_In_Fire
+		icon = GFX_fish
+		x = 10
+		y = 7
+		mutually_exclusive = { focus = ZPS_Built_For_Battle }
+		prerequisite = { focus = ZPS_Build_Steamtrains_Of_War focus = ZPS_Strengthen_The_Machine_Corps }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Built_For_Battle
+		icon = GFX_fish
+		x = 7
+		y = 7
+		mutually_exclusive = { focus = ZPS_Made_In_Fire }
+		prerequisite = { focus = ZPS_Build_Steamtrains_Of_War focus = ZPS_Strengthen_The_Machine_Corps }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+
+	focus = {
+		id = ZPS_Address_The_Issue
+		icon = GFX_fish
+		x = 20
+		y = 1
+		prerequisite = { focus = ZPS_The_Lomcho_Incident }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+
+	focus = {
+		id = ZPS_Continue_The_Policy_Of_World_Trade
+		icon = GFX_fish
+		x = 30
+		y = 1
+		prerequisite = { focus = ZPS_The_Lomcho_Incident }
+		cost = 2
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+}

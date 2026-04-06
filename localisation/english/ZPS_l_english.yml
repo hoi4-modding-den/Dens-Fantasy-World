@@ -14,6 +14,31 @@ ZPS_neutrality_party_long: "Traditionalist Caucus"
 ZPS_fascism_party: "Nationalist Caucus"
 ZPS_fascism_party_long: "Nationalist Caucus"
 
+#Tech Bonus
+ZPS_Portia_Weapons_Development: "Portia Weapons Development"
+ZPS_War_Machine_Development_Fund: "War Machine Development Fund"
+
+#Ideas
+ZPS_Shifting_Tides: "Shifting Tides"
+ZPS_Fading_Traditionalism: "Fading Traditionalism"
+ZPS_Late_Night_Battles: "Late Night Battles"
+ZPS_MSAMI: "M.S.A.M.I."
+ZPS_Pan_Specific_National_Army: "Pan-Specific National Army"
+ZPS_Pan_Specific_National_Army_dummy: "Pan-Specific National Army"
+ZPS_All_May_Serve_idea: "Pan-Specific National Army"
+ZPS_Portia_Primacy_idea: "Pan-Specific National Army"
+ZPS_Calculated_Strategies_idea: "Pan-Specific National Army"
+ZPS_Charge_Of_The_Faithful_idea: "Pan-Specific National Army"
+ZPS_Strengthen_The_Machine_Corps_MSAMI_idea: "Pan-Specific National Army"
+ZPS_Strengthen_The_Machine_Corps_No_MSAMI_idea: "Pan-Specific National Army"
+ZPS_Hidden_Wolves_idea: "Pan-Specific National Army"
+
+
+#Tooltips
+ZPS_If_Completed_MSAMI: "If the focus §YEstablish the M.S.A.M.I.§! has been completed:"
+ZPS_If_Not_Completed_MSAMI: "If the focus §YEstablish the M.S.A.M.I.§! has §Rnot§! been completed:"
+
+
 #Characters
 ZPS_Council_of_Species: "Council of Species"
 ZPS_Avrana_Kern: "Avrana Kern"
@@ -26,6 +51,31 @@ ZPS_Interloculator: "Interloculator"
 ZPS_Porsche: "Porsche"
 ZPS_Salomi: "Salomi"
 ZPS_Viola: "Viola"
+
+#Traits
+ZPS_The_Backbone_of_Our_Civilisation: "The Backbone of our Civilisation"
+ZPS_Absent_Minded_1: "Absent Minded"
+ZPS_Absent_Minded_2: "Absent Minded"
+ZPS_Duel_Interlect_1: "Dual Intellect"
+ZPS_Duel_Interlect_2: "Dual Intellect" #Amazing Spelling I know
+ZPS_Our_Combined_Memories: "Our Combined Memories"
+
+#Focus
+ZPS_Remilitarisation_Campaign: "Remilitarisation Campaign"
+ZPS_Pan_Specific_National_Army_focus: "Pan-Specific National Army"
+ZPS_All_May_Serve: "All May Serve"
+ZPS_Portia_Primacy: "Portia Primacy"
+ZPS_Calculated_Strategies: "Calculated Strategies"
+ZPS_Shrewd_Hunting: "Shrewd Hunting"
+ZPS_Charge_Of_The_Faithful: "Charge of the Faithful"
+ZPS_Great_War_Machines: "Great War Machines"
+ZPS_Strengthen_The_Machine_Corps: "Strengthen the Machine Corps"
+ZPS_Hidden_Wolves: "Hidden Wolves"
+ZPS_Establish_The_MSAMI: "Establish the M.S.A.M.I."
+ZPS_Build_Steamtrains_Of_War: "Build Steamtrains of War"
+ZPS_Made_In_Fire: "Made in Fire"
+ZPS_Built_For_Battle: "Built for Battle"
+
 
 #Character Descs
 ZPS_Council_of_Species_desc: "The Council of Species was set up to allow for representation of all the seperate species of the Pan-Specific. Although their are large amounts of some species, others such as Humans and Stomatopod are minorities and the only way for them to gain representation is through the council. The council is democratic, with representatives elected by each region, but there are sets amount of national minorities required in governance. Despite rising tensions in the world, the council has continued support from the vast majority of the population."

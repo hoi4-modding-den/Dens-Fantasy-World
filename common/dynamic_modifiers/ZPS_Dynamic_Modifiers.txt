@@ -1,0 +1,27 @@
+ZPS_Pan_Specific_National_Army = {
+	icon = GFX_idea_fish
+	enable = {
+		always = yes
+	}
+	army_morale_factor = ZPS_army_morale_factor
+	army_core_defence_factor = ZPS_army_core_defence_factor
+	recruitable_population_factor = ZPS_recruitable_population_factor
+	experience_gain_army_factor = ZPS_experience_gain_army_factor
+	weekly_manpower = ZPS_weekly_manpower
+	training_time_factor = ZPS_training_time_factor
+	army_attack_factor = ZPS_army_attack_factor
+	army_defence_factor = ZPS_army_defence_factor
+	breakthrough_factor = ZPS_breakthrough_factor
+	max_planning_factor = ZPS_max_planning_factor
+	terrain_penalty_reduction = ZPS_terrain_penalty_reduction
+	initiative_factor = ZPS_initiative_factor
+	experience_loss_factor = ZPS_experience_loss_factor
+	army_org_factor = ZPS_army_org_factor
+	army_armor_speed_factor = ZPS_army_armor_speed_factor
+	army_armor_defence_factor = ZPS_army_armor_defence_factor
+	org_loss_when_moving = ZPS_org_loss_when_moving
+	army_armor_attack_factor = ZPS_army_armor_attack_factor
+	special_forces_training_time_factor = ZPS_special_forces_training_time_factor
+	special_forces_attack_factor = ZPS_special_forces_attack_factor
+	special_forces_cap = ZPS_special_forces_cap
+}
