@@ -87,7 +87,7 @@ if = {
 }
 
 recruit_character = ZAV_Richard_Pendragon
-recruit_character = ZAV_Lloyd_Parcenet
+recruit_character = ZAV_Lloyd_Huntley
 
 set_party_name = {
     ideology = democratic
@@ -125,4 +125,10 @@ set_popularities = {
 	fascism = 7
 	neutrality = 29
 	communism = 0
+}
+
+add_ideas = {
+	ZAV_lords_of_the_round_table
+	ZAV_bleeding_grail
+	ZAV_secret_orders
 }

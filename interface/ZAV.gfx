@@ -1,4 +1,19 @@
 spriteTypes = {
+    # IDEAS #
 
+	spriteType = {
+		name = "GFX_idea_ZAV_lords_of_the_round_table"
+		texturefile = "gfx/interface/ideas/ZAV/ZAV_lords_of_the_round_table_idea.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_ZAV_bleeding_grail"
+		texturefile = "gfx/interface/ideas/ZAV/ZAV_bleeding_grail.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_ZAV_secret_orders"
+		texturefile = "gfx/interface/ideas/ZAV/ZAV_secret_orders.dds"
+	}
 }
 

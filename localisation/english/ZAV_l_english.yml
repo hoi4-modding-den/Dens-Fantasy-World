@@ -22,9 +22,47 @@
 
  # CHARACTERS #
 
- ZAV_richard_pendragon_desc:0 "Richard Pendragon is descendant from the legendary Arthur Pendragon. His reign has been characterised by "
+ ZAV_richard_pendragon_desc:0 "Richard Pendragon is descendant from the legendary Arthur Pendragon."
+ ZAV_lloyd_huntley_desc:0 "At the head of Avalon's great assembly stands Lloyd Huntley, a man of iron resolve and unyielding ambition. As Lord Paramount, he has sworn to preserve both the sanctity of the Grail and the democratic order of the Round Table, steering the realm through an age of smoke, steel, and uncertainty. A titan of industry as much as a statesman, Huntley's vast holdings in New Camelot and Port Elisabeth have fueled Avalon's ascent into the modern age, binding progress and power tightly to his name.\n\nYet for all his confidence and command, his leadership is shadowed by growing doubt. The spread of secret orders, the faltering of the Grail, and the unrest gripping the countryside have proven stubbornly resistant to his assurances. Where Huntley speaks of stability, the people see turmoil; where he promises renewal, they witness decay. Mocked in whispers and in print as the “Lord of Lies,” he walks a precarious line between hope and denial. Whether he is a visionary holding the realm together through sheer will or a man blind to the crisis unfolding around him may soon determine the fate of Avalon itself."
+
+ # IDEAS #
+
+ ZAV_lords_of_the_round_table:0 "Lords of the Round Table"
+ ZAV_lords_of_the_round_table_desc:0 "While ultimate power rests on the throne, King Richard seldom interferes and as such the assembled Lords of the Round Table serve as the voice of the realm. Drawn from every corner of the kingdom, these lords gather not as rivals, but as equals, bound by duty to debate, deliberate, and decide the course of the nation together. Through spirited discourse and hard-won consensus, they temper ambition with wisdom, ensuring that no one hand may steer Avalon astray. In uncertain times, it is this unity of counsel that grants the realm its enduring stability and its hope for a just and prosperous future."
+ ZAV_bleeding_grail:0 "§tBleeding Grail§!"
+ ZAV_bleeding_grail_desc:0 "For centuries, the Holy Grail has stood as the sacred heart of Avalon, its presence purifying the land, healing the wounded, and safeguarding the realm from corruption. Yet, a grim omen has emerged. Crimson blood has begun to seep across its once-immaculate surface, defying all explanation. Priests whisper of failing miracles, while scholars fear the Grail's ancient power is waning. Whether this is a curse, a warning, or the first sign of a greater evil stirring beyond the veil, one truth is undeniable: the light that has long protected Avalon is faltering and the shadows are beginning to creep ever closer."
+ ZAV_secret_orders:0 "§0Secret Orders§!"
+ ZAV_secret_orders_desc:0 "Hiding in the shadows, a dark network festers in secrecy. Hidden circles and forbidden cults practice outlawed magics, offering devotion not to the Grail, nor to Nimue, but to nameless powers that whisper from beyond the veil. In return, they are granted gifts both terrible and corrupting. Twisted flesh, shattered minds, and violence without reason. Murders go unsolved, entire villages fall to madness, and rumors of monstrous transformations spread like wildfire.\n\nWorse still, the sacred ashes of Saint Morvydd have been stolen and her tomb defiled. Now wielded as a relic, her ashes are capable of inciting terror and hysteria on a mass scale. With the guardian priests of the realm stretched thin and the faithful losing their grip, these secret orders grow ever bolder. Unless they are rooted out, Avalon may soon find itself undone not by armies, but by the rot spreading from within."
 
  # MISCELLANEOUS #
 
- ZAV_mercantilist:0 "Mercantilist"
+ ZAV_lord_of_lies:0 "Lord of Lies"
  ZAV_lion_of_avalon:0 "§8Lion of Avalon§!"
+
+ ZAV_secret_orders_modifier_tt:0 "\nEvents resulting from unchecked §0eldritch sorcery§! will fire while this national spirit is active."
+
+ # GEOGRAPHY #
+
+ STATE_285:0 "Wyrmwood"
+ STATE_137:0 "Myrrdin"
+ STATE_191:0 "Alderhold"
+ STATE_104:0 "Camlann"
+ STATE_14:0 "Astolat"
+ STATE_319:0 "Morcant"
+ STATE_96:0 "Eryndor"
+ STATE_166:0 "Corbenic"
+ STATE_161:0 "Marsfeld"
+ STATE_238:0 "Foxtrot"
+ STATE_216:0 "Owlwick"
+ STATE_131:0 "Ardrig"
+ STATE_89:0 "Partridge"
+ STATE_153:0 "Port Elisabeth"
+ STATE_98:0 "Ravenmoor"
+ STATE_68:0 "Pottingham"
+ STATE_56:0 "New Tintagel"
+ STATE_253:0 "Glassrock"
+ STATE_365:0 "Kelton"
+ STATE_343:0 "New Camelot"
+
+ VICTORY_POINT_5426:0 "New Camelot"
+ VICTORY_POINT_2711:0 "Port Elisabeth"

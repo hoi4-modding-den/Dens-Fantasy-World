@@ -18,8 +18,14 @@ state = {
 		add_core_of = ZAV
 		
 		buildings = {
-			infrastructure = 3	
+			infrastructure = 5
+			industrial_complex = 4
+			arms_factory = 2
 		}	
+
+		victory_points = { # New Camelot
+			5426 50
+		}
 	}
 
 	provinces = {
@@ -27,6 +33,6 @@ state = {
 	}
 
 	manpower = 836068
-	state_category = pastoral
+	state_category = metropolis
 	local_supplies = 0.0 
 }
