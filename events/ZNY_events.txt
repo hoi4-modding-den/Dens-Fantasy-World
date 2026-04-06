@@ -1,0 +1,62 @@
+add_namespace = ZNY_events
+news_event = {
+	id = ZNY_events.1
+	title = ZNY_events.1.t
+	desc = ZNY_events.1.d
+	
+	picture = GFX_ZNY_events_zorzerk_news_image
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+        name = ZNY_events.1.a
+    }
+}
+
+country_event = {
+	id = ZNY_events.2
+	title = ZNY_events.2.t
+	desc = ZNY_events.2.d
+	
+	picture = GFX_report_event_generic_conference
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+
+    }
+}
+
+
+country_event = {
+	id = ZNY_events.3
+	title = ZNY_events.3.t
+	desc = ZNY_events.3.d
+	
+	picture = GFX_report_event_generic_conference
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ZNY_events.3.a
+		add_political_power = -10
+		set_party_name = {
+	ideology = communism
+    long_name = ZNY_communism_a_party_long
+    name = ZNY_communism_a_party
+		}
+		# gains mission to repress r.com
+add_popularity = {
+    ideology = democratic
+    popularity = -0.05
+}
+add_popularity = {
+    ideology = communism
+    popularity = 0.12
+}
+add_ideas = { ZNY_revolution_com_surge }
+    }
+}

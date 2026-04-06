@@ -1,0 +1,45 @@
+ideas = {
+	country = {
+		ZNY_unpopular_government = {
+			picture = chi_war_of_resistance3
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				stability_factor = -0.26
+				recruitable_population_factor = -0.1
+				political_power_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+	}
+	country = {
+		ZNY_resistance_in_autonomous_regions = {
+			picture = chi_war_of_resistance3
+			
+			allowed = {  }
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				stability_factor = -0.12
+				recruitable_population_factor = -0.2
+				political_power_factor = -0.1
+			}
+		}
+	}
+	country = {
+		ZNY_revolution_com_surge = {
+			picture = PRC_the_central_committee
+			
+			allowed = {  }
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				recruitable_population_factor = -0.03
+				communism_drift = 0.02
+			}
+		}
+	}
+}

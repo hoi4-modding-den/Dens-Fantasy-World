@@ -1,0 +1,48 @@
+characters = {
+	ZNY_etyen_karolier = {
+		name = "Etyen Karolier" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZNY_etyen_karolier
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			desc = ZNY_etyen_karolier_desc_1
+			expire = "2039.1.1.1"
+			id = -1
+			traits = { }
+		}
+	}
+	ZNY_adolf_karolier = {
+		name = "Adolf Karolier" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZNY_adolf_karolier
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			desc = ZNY_adolf_karolier_desc_1
+			expire = "2039.1.1.1"
+			id = -1
+			traits = { }
+		}
+	}
+		ZNY_rafa_rancho = {
+		name = "Rafa Rancho" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZNY_rafa_rancho
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = ZNY_rafa_rancho_desc_1
+			expire = "2039.1.1.1"
+			id = -1
+			traits = { }
+		}
+	}					
+}
+	

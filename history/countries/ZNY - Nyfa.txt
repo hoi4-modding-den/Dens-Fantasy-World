@@ -28,7 +28,10 @@ set_technology = {
 }
 
 set_convoys = 0
+recruit_character = ZNY_etyen_karolier
+recruit_character = ZNY_adolf_karolier
 recruit_character = ZNY_rafa_rancho
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1932.5.1"
@@ -36,12 +39,13 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 41
+	democratic = 61
 	fascism = 22
 	neutrality = 14
-	communism = 23
+	communism = 3
 }
 
 add_ideas = {
-	# ZNY_
+	 ZNY_unpopular_government
+	 ZNY_resistance_in_autonomous_regions
 }

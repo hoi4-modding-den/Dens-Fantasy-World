@@ -18,7 +18,9 @@ state={
 
 	history={
 		
-		
+		victory_points = {
+			12151 10
+			}
 		owner = ZNY
 		add_core_of = ZNY
 		
