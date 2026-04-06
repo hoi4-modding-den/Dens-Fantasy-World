@@ -1229,36 +1229,8 @@ ZPC = {
 	color_ui = rgb { 75 0 30 }
 }
 ZAR = {
-	color = rgb { 255 117 56 }
-	color_ui = rgb { 255 117 56 }
-}
-ZA1 = {
-	color = rgb { 227 66 52 }
-	color_ui = rgb { 227 66 52 }
-}
-ZA2 = {
-	color = rgb { 255 121 0 }
-	color_ui = rgb { 255 121 0 }
-}
-ZA3 = {
-	color = rgb { 232 97 0 }
-	color_ui = rgb { 232 97 0 }
-}
-ZA4 = {
-	color = rgb { 255 117 56 }
-	color_ui = rgb { 255 117 56 }
-}
-ZA5 = {
-	color = rgb { 64 130 109 }
-	color_ui = rgb { 64 130 109 }
-}
-ZA6 = {
-	color = rgb { 135 169 107 }
-	color_ui = rgb { 135 169 107 }
-}
-ZA7 = {
-	color = rgb { 128 24 24 }
-	color_ui = rgb { 128 24 24 }
+	color = rgb { 178 132 190 }
+	color_ui = rgb { 178 132 190 }
 }
 
 ZPS = {
