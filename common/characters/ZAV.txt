@@ -1,0 +1,36 @@
+characters = {
+	ZAV_Lloyd_Parcenet = {
+		name = "Lloyd Parcenet" 
+		gender = male
+		
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZAV/ZAV_Leader_Lloyd_Parcenet.dds"
+			}
+		}
+
+		country_leader = {
+			ideology = conservatism
+			desc = ZAV_lloyd_parcenet_desc
+			traits = { ZAV_mercantilist }
+		}
+	}
+
+	ZAV_Richard_Pendragon = {
+		name = "Richard Pendragon" 
+		gender = male
+		
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZAV/ZAV_Leader_Richard_Pendragon.dds"
+			}
+		}
+
+		country_leader = {
+			ideology = despotism
+			desc = ZAV_richard_pendragon_desc
+			traits = { ZAV_lion_of_avalon }
+		}
+	}
+}
+	

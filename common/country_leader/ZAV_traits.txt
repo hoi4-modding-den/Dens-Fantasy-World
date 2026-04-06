@@ -1,0 +1,15 @@
+leader_traits = {
+	ZAV_lion_of_avalon = {
+		army_attack_factor = 0.1
+
+		random = no
+	}
+
+	ZAV_mercantilist = {
+		political_power_gain = -0.1
+		trade_opinion_factor = 0.5
+		consumer_goods_factor = -0.05
+
+		random = no
+	}
+}

@@ -1,0 +1,30 @@
+﻿l_english:
+
+ # COUNTRY NAMES #
+
+ ZAV:0 "Kingdom of Avalon"
+ ZAV_DEF:0 "the Kingdom of Avalon"
+ ZAV_ADJ:0 "Avalonian"
+
+ # POLITICAL PARTIES #
+
+ ZAV_democratic_party:0 "Round Table - Liberal"
+ ZAV_democratic_party_long:0 "Lords of the Round Table"
+ 
+ ZAV_fascism_party:0 "Scarlet Banner Clique"
+ ZAV_fascism_party_long:0 "Scarlet Banner Clique"
+
+ ZAV_neutrality_party:0 "Round Table - Conservative"
+ ZAV_neutrality_party_long:0 "Lords of the Round Table"
+ 
+ ZAV_communism_party:0 "Broken Grail Movement"
+ ZAV_communism_party_long:0 "Broken Grail Movement"
+
+ # CHARACTERS #
+
+ ZAV_richard_pendragon_desc:0 "Richard Pendragon is descendant from the legendary Arthur Pendragon. His reign has been characterised by "
+
+ # MISCELLANEOUS #
+
+ ZAV_mercantilist:0 "Mercantilist"
+ ZAV_lion_of_avalon:0 "§8Lion of Avalon§!"

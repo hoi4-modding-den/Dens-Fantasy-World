@@ -1,40 +1,38 @@
 
-state={
-	id=161
-	name="STATE_161"
-	manpower = 1459648
-	
-	state_category = rural
-	#impassable = yes
-	resources={
-		aluminium=0
-		chromium=0
-		oil=1
-		rubber=0
-		steel=0
-		tungsten=0
-		coal=0
+state = {
+	id = 161
+	name = "STATE_161"
+
+	resources = {
+		aluminium = 0
+		chromium = 0
+		oil = 1
+		rubber = 0
+		steel = 0
+		tungsten = 0
+		coal = 0
 	}
 
-	history={
-		
+	history = {
+		owner = ZAV
+		add_core_of = ZAV
 		
 		buildings = {
 			infrastructure = 2
-			
 			arms_factory = 0
 			industrial_complex = 0
 			
 			2790 = {
 				naval_base = 1
 			}
-			
 		}
-		
 	}
 
-	provinces={
+	provinces = {
 		2789 2790 2791 2792 2793 2794 2795 
 	}
-	local_supplies=0.0 
+
+	manpower = 1459648
+	state_category = rural
+	local_supplies = 0.0 
 }
