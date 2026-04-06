@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		ZNY_unpopular_government = {
-			picture = chi_war_of_resistance3
+			picture = ZNY_unpopular_government
 			
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
@@ -31,7 +31,7 @@ ideas = {
 	}
 	country = {
 		ZNY_revolution_com_surge = {
-			picture = PRC_the_central_committee
+			picture = ZNY_revolution_com_surge
 			
 			allowed = {  }
 			allowed_civil_war = { always = yes }
