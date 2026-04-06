@@ -1,0 +1,296 @@
+### Templates ###
+division_template = {
+	name = "Combined Infantry Division"
+	division_names_group = ZPS_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Infantry Support Division"
+	division_names_group = ZPS_INF_02
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Internal Affairs Guard"
+	division_names_group = ZPS_INF_03
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		
+	}
+}
+
+
+division_template = {
+	name = "War Machine Division"
+	division_names_group = ZPS_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	
+}
+### Unit Locations ###
+units = {
+	division = {
+		location = 3150
+		division_template = "Combined Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division = {
+		location = 3150
+		division_template = "Combined Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		location = 1537
+		division_template = "Combined Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 407
+		division_template = "Combined Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		location = 408
+		division_template = "Combined Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		location = 1940
+		division_template = "Combined Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		location = 3350
+		division_template = "Combined Infantry Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 3346
+		division_template = "Combined Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		location = 5057
+		division_template = "Combined Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	division = {
+		location = 412
+		division_template = "Combined Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		location = 2200
+		division_template = "Combined Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division = {
+		location = 3341
+		division_template = "Combined Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		location = 5059
+		division_template = "Combined Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+	division = {
+		location = 5493
+		division_template = "Infantry Support Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		location = 5495
+		division_template = "Infantry Support Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		location = 1934
+		division_template = "Infantry Support Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		location = 2010
+		division_template = "Infantry Support Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division = {
+		location = 5639
+		division_template = "Infantry Support Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 3351
+		division_template = "Infantry Support Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		location = 4648
+		division_template = "Infantry Support Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 2959
+		division_template = "Infantry Support Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	division = {
+		location = 2124
+		division_template = "Infantry Support Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+	}
+	division = {
+		location = 2951
+		division_template = "Internal Affairs Guard"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.8
+	}
+	division = {
+		location = 3336
+		division_template = "Internal Affairs Guard"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+	division = {
+		location = 3350
+		division_template = "Internal Affairs Guard"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+		location = 57
+		division_template = "War Machine Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+	}
+	division = {
+		location = 3333
+		division_template = "War Machine Division"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.8
+	}
+}
+
+### Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+		}
+		requested_factories = 7
+		progress = 0.70
+		efficiency = 50
+		
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+		}
+		requested_factories = 4
+		progress = 0.56
+		efficiency = 50
+		
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.44
+		efficiency = 50
+		
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+		}
+		requested_factories = 2
+		progress = 0.12
+		efficiency = 50
+		
+	}
+	
+		
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_chassis_0
+			version_name = "War Machine Uttu"
+		}
+		requested_factories = 2
+		progress = 0.59
+		efficiency = 50
+			
+	}
+
+
+

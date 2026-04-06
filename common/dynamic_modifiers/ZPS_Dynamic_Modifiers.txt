@@ -25,3 +25,34 @@ ZPS_Pan_Specific_National_Army = {
 	special_forces_attack_factor = ZPS_special_forces_attack_factor
 	special_forces_cap = ZPS_special_forces_cap
 }
+
+ZPS_Corvid_Majority = {
+	icon = GFX_idea_fish
+	enable = {
+		always = yes
+	}
+}
+ZPS_Stomatopod_Majority = {
+	icon = GFX_idea_fish
+	enable = {
+		always = yes
+	}
+}
+ZPS_Octopus_Majority = {
+	icon = GFX_idea_fish
+	enable = {
+		always = yes
+	}
+}
+ZPS_Portia_Majority = {
+	icon = GFX_idea_fish
+	enable = {
+		always = yes
+	}
+}
+ZPS_Human_Majority = {
+	icon = GFX_idea_fish
+	enable = {
+		always = yes
+	}
+}

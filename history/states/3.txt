@@ -19,6 +19,8 @@ state={
 	history={
 		owner = ZPS
 		add_core_of = ZPS
+
+		add_dynamic_modifier = { modifier = ZPS_Octopus_Majority }
 		
 		buildings = {
 			infrastructure = 3

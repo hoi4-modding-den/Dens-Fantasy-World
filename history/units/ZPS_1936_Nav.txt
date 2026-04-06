@@ -1,0 +1,11 @@
+units = {
+	fleet = {
+		name = "Warfleet A"
+		naval_base = 57
+		task_force = {
+			name = "Fleet Subsection A"
+			location = 57 #Le Havre
+			ship = { name = "Warship Utu" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 7 owner = ZPS version_name = "Warship Utu" } } }
+		}
+	}
+}

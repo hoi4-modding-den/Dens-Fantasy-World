@@ -1,0 +1,98 @@
+ZPS_INF_01 = {
+	name = "Infantry Division"
+
+	for_countries = { ZPS }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%dth Combined Infantry Division"
+
+	ordered = {
+		1 = { "%dst Combined Infantry Division" }
+		2 = { "%dnd Combined Infantry Division" }
+		3 = { "%drd Combined Infantry Division" }
+		4 = { "%dth Combined Infantry Division" }
+		5 = { "%dth Combined Infantry Division" }
+		6 = { "%dth Combined Infantry Division" }
+		7 = { "%dth Combined Infantry Division" }
+		8 = { "%dth Combined Infantry Division" }
+		9 = { "%dth Combined Infantry Division" }
+		10 = { "%dth Combined Infantry Division" }
+	}
+}
+
+ZPS_INF_02 = {
+	name = "Infantry Division"
+
+	for_countries = { ZPS }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%dth Infantry Support Division"
+
+	ordered = {
+		1 = { "%dst Infantry Support Division" }
+		2 = { "%dnd Infantry Support Division" }
+		3 = { "%drd Infantry Support Division" }
+		4 = { "%dth Infantry Support Division" }
+		5 = { "%dth Infantry Support Division" }
+		6 = { "%dth Infantry Support Division" }
+		7 = { "%dth Infantry Support Division" }
+		8 = { "%dth Infantry Support Division" }
+		9 = { "%dth Infantry Support Division" }
+		10 = { "%dth Infantry Support Division" }
+	}
+}
+
+ZPS_INF_03 = {
+	name = "Infantry Division"
+
+	for_countries = { ZPS }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%dth Internal Affairs Guard"
+
+	ordered = {
+		1 = { "%dst Internal Affairs Guard" }
+		2 = { "%dnd Internal Affairs Guard" }
+		3 = { "%drd Internal Affairs Guard" }
+		4 = { "%dth Internal Affairs Guard" }
+		5 = { "%dth Internal Affairs Guard" }
+		6 = { "%dth Internal Affairs Guard" }
+		7 = { "%dth Internal Affairs Guard" }
+		8 = { "%dth Internal Affairs Guard" }
+		9 = { "%dth Internal Affairs Guard" }
+		10 = { "%dth Internal Affairs Guard" }
+	}
+}
+
+
+ZPS_ARM_01 = {
+	name = "Armoured Division"
+
+	for_countries = { ZPS }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+
+	fallback_name = "%dth War Machine Division"
+
+	
+	ordered = {
+		1 = { "%dst War Machine Division" }
+		2 = { "%dnd War Machine Division" }
+		3 = { "%drd War Machine Division" }
+		4 = { "%dth War Machine Division" }
+		5 = { "%dth War Machine Division" }
+		6 = { "%dth War Machine Division" }
+		7 = { "%dth War Machine Division" }
+		8 = { "%dth War Machine Division" }
+		9 = { "%dth War Machine Division" }
+		10 = { "%dth War Machine Division" }
+	}
+}
+

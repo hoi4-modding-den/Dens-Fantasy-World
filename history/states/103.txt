@@ -19,7 +19,7 @@ state={
 	history={
 		owner = ZPS
 		add_core_of = ZPS
-		
+		add_dynamic_modifier = { modifier = ZPS_Corvid_Majority }
 		buildings = {
 			infrastructure = 4
 			air_base = 2

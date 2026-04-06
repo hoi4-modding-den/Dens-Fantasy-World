@@ -14,6 +14,9 @@ ZPS_neutrality_party_long: "Traditionalist Caucus"
 ZPS_fascism_party: "Nationalist Caucus"
 ZPS_fascism_party_long: "Nationalist Caucus"
 
+#Bookmark
+ZPS_GATHERING_STORM_DESC: "The Pan-Specific is a nation of many species. All work in relative harmony towards a better future, despite their differences. The largest species are the Portia, sentient matriarchal spiders. Followed by Humans, who inhabit much of the centre of the nation. Octopi make up a large portion of the population, their opinions ever changing. Then the smaller groups of Ultraviolent Mantis Shrimp and the Corvids, whose intellect requires two seperate birds to be fully realised. All of this is held together by the cold 'Avrana Kern', the personality of a long dead Human realised in the movements of ants."
+
 #Tech Bonus
 ZPS_Portia_Weapons_Development: "Portia Weapons Development"
 ZPS_War_Machine_Development_Fund: "War Machine Development Fund"
@@ -32,6 +35,11 @@ ZPS_Charge_Of_The_Faithful_idea: "Pan-Specific National Army"
 ZPS_Strengthen_The_Machine_Corps_MSAMI_idea: "Pan-Specific National Army"
 ZPS_Strengthen_The_Machine_Corps_No_MSAMI_idea: "Pan-Specific National Army"
 ZPS_Hidden_Wolves_idea: "Pan-Specific National Army"
+ZPS_Corvid_Majority: "Corvid Majority"
+ZPS_Stomatopod_Majority: "Shrimp Majority"
+ZPS_Octopus_Majority: "Octopus Majority"
+ZPS_Portia_Majority: "Portia Majority"
+ZPS_Human_Majority: "Human Majority"
 
 
 #Tooltips
@@ -78,7 +86,7 @@ ZPS_Built_For_Battle: "Built for Battle"
 
 
 #Character Descs
-ZPS_Council_of_Species_desc: "The Council of Species was set up to allow for representation of all the seperate species of the Pan-Specific. Although their are large amounts of some species, others such as Humans and Stomatopod are minorities and the only way for them to gain representation is through the council. The council is democratic, with representatives elected by each region, but there are sets amount of national minorities required in governance. Despite rising tensions in the world, the council has continued support from the vast majority of the population."
+ZPS_Council_of_Species_desc: "The Council of Species was set up to allow for representation of all the seperate species of the Pan-Specific. Although their are large amounts of some species, others such as Corvids and Stomatopod are minorities and the only way for them to gain representation is through the council. The council is democratic, with representatives elected by each region, but there are sets amount of national minorities required in governance. Despite rising tensions in the world, the council has continued support from the vast majority of the population."
 
 #State Names
 STATE_80: "Northen Chatin"
@@ -113,7 +121,7 @@ VICTORY_POINTS_1934: "Cawt"
 VICTORY_POINTS_1939: "Mok"
 VICTORY_POINTS_2010: "Arched Rock"
 VICTORY_POINTS_2122: "Oil Extraction Zone"
-VICTORY_POINTS_2206: "Cito"
+VICTORY_POINTS_2202: "Cito"
 VICTORY_POINTS_2200: "Certim"
 VICTORY_POINTS_2541: "Larpo Nest"
 VICTORY_POINTS_2738: "Crook"
