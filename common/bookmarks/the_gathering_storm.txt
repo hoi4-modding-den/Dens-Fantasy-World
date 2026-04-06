@@ -12,6 +12,9 @@ bookmarks = {
 		ZSQ={
 			history = ZSQ_GATHERING_STORM_DESC
 		}
+		ZAV={
+			history = ZAV_GATHERING_STORM_DESC
+		}
 		
 		"---"={
 			history = OTHER_GATHERING_STORM_DESC
