@@ -5,10 +5,9 @@ leader_traits = {
 		random = no
 	}
 
-	ZAV_mercantilist = {
+	ZAV_lord_of_lies = {
 		political_power_gain = -0.1
-		trade_opinion_factor = 0.5
-		consumer_goods_factor = -0.05
+		stability_factor = -0.05
 
 		random = no
 	}

@@ -1,0 +1,28 @@
+ideas = {
+	country = {
+		ZAV_lords_of_the_round_table = {
+			picture = ZAV_lords_of_the_round_table
+			modifier = {
+				stability_factor = 0.2
+			}
+		}
+
+		ZAV_bleeding_grail = {
+			picture = ZAV_bleeding_grail
+			modifier = {
+				political_power_factor = -0.5
+				monthly_population = -0.3
+				attrition = 0.5
+			}
+		}
+
+		ZAV_secret_orders = {
+			picture = ZAV_secret_orders
+			modifier = {
+				consumer_goods_factor = 0.2
+				recruitable_population_factor = -0.3
+				custom_modifier_tooltip = ZAV_secret_orders_modifier_tt
+			}
+		}
+	}
+}

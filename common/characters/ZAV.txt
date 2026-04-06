@@ -1,18 +1,18 @@
 characters = {
-	ZAV_Lloyd_Parcenet = {
-		name = "Lloyd Parcenet" 
+	ZAV_Lloyd_Huntley = {
+		name = "Lloyd Huntley" 
 		gender = male
 		
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/ZAV/ZAV_Leader_Lloyd_Parcenet.dds"
+				large = "gfx/leaders/ZAV/ZAV_Leader_Lloyd_Huntley.dds"
 			}
 		}
 
 		country_leader = {
 			ideology = conservatism
-			desc = ZAV_lloyd_parcenet_desc
-			traits = { ZAV_mercantilist }
+			desc = ZAV_lloyd_huntley_desc
+			traits = { ZAV_lord_of_lies }
 		}
 	}
 

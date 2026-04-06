@@ -19,11 +19,17 @@ state = {
 		
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 2
 			
-			2710 = {
-				naval_base = 1
+			2711 = {
+				naval_base = 8
 			}	
-		}	
+		}
+
+		victory_points = { # Port Elisabeth
+			2711 20
+		}
 	}
 
 	provinces = {
