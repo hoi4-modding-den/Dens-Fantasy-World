@@ -20,6 +20,9 @@ state={
 		owner = ZSQ
 		add_core_of = ZSQ
 		
+		victory_points = { 14028 20 }
+		victory_points = { 14040 5 }
+		victory_points = { 14024 3 }
 		buildings = {
 			infrastructure = 3
 			
@@ -27,7 +30,7 @@ state={
 			industrial_complex = 1
 			
 			14040 = {
-				naval_base = 1
+				naval_base = 3
 			}
 			
 		}

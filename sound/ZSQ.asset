@@ -1,0 +1,14 @@
+soundeffect = {
+	name = ZSQ_death_super_event
+	volume = 1
+	sounds = {
+		sound = ZSQ_death_super_event
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+sound = {
+	name = ZSQ_death_super_event
+	file = "ZSQ_death.wav"
+	always_load = no
+}
