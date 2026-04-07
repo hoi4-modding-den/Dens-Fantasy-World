@@ -87,5 +87,10 @@ spriteTypes = {
 		name = "GFX_ZAV_artifact_8"
 		texturefile = "gfx/interface/ZAV/ZAV_true_excalibur.dds"
 	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_9"
+		texturefile = "gfx/interface/ZAV/ZAV_putrid_crustacean.dds"
+	}
 }
 

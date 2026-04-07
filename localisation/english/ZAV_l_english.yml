@@ -54,7 +54,7 @@
  ZAV_artifact_class_2:0 "§RSinister Artifact§!"
  ZAV_artifact_class_3:0 "§OBlighted Item§!"
  ZAV_artifact_class_4:0 "§8Ruinous Artifact§!"
- ZAV_artifact_class_5:0 "§GProfane Antique§!"
+ ZAV_artifact_class_5:0 "§GProfane Relic§!"
 
  ZAV_artifact_1:0 "§tBlood of King Arthur§!"
  ZAV_artifact_1_effect:0 "Can resurrect a mortal from beyond the veil."
@@ -88,7 +88,12 @@
  ZAV_artifact_8_effect:0 "Capable of killing beings from beyond the veil."
  ZAV_artifact_8_desc:0 "PLACEHOLDER"
 
+ ZAV_artifact_9:0 "§7Putrid Crustacean§!"
+ ZAV_artifact_9_effect:0 "Spreads rot and decay to everything it touches."
+ ZAV_artifact_9_desc:0 "Recovered from the blackened tides beyond Avalon's shores, this malformed creature was discovered at the center of a spreading blight that twisted fish into abominations and turned clear waters into foul, choking mire. Its shell is cracked and oozing, its limbs uneven and constantly shifting, as though its form cannot settle upon a single reality. Even in containment, it emits a slow, creeping corruption, metal tarnishes, water stagnates, and living things recoil in its presence."
+
  ZAV_add_artifact_excalibur_tt:0 "The §9True Excalibur§! will be stored in the §YVault of Constantine§!."
+ ZAV_add_artifact_putrid_crustacean_tt:0 "The §7Putrid Crustacean§! will be stored in the §YVault of Constantine§!."
 
  # MISCELLANEOUS #
 

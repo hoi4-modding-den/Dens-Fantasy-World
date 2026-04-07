@@ -167,3 +167,7 @@ add_to_array = { artifact_classes = 3 }
 # True Excalibur - Slaughter Relic
 #add_to_array = { ZAV_vault_artifacts = 8 }
 add_to_array = { artifact_classes = 1 }
+
+# Putrid Crustacean - Profane Relic
+#add_to_array = { ZAV_vault_artifacts = 9 }
+add_to_array = { artifact_classes = 5 }
