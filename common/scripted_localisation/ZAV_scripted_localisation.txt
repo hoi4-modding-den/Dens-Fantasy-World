@@ -1,0 +1,34 @@
+defined_text = {
+	name = "GetArtifactIcon"
+	text = {
+		localization_key = "GFX_ZAV_artifact_[?artifact_value]"
+	}
+}
+
+defined_text = {
+	name = "GetArtifactName"
+	text = {
+		localization_key = "ZAV_artifact_[?artifact_value]"
+	}
+}
+
+defined_text = {
+	name = "GetArtifactDesc"
+	text = {
+		localization_key = "ZAV_artifact_[?artifact_value]_desc"
+	}
+}
+
+defined_text = {
+	name = "GetArtifactEffects"
+	text = {
+		localization_key = "ZAV_artifact_[?artifact_value]_effect"
+	}
+}
+
+defined_text = {
+	name = "GetArtifactClass"
+	text = {
+		localization_key = "ZAV_artifact_class_[?artifact_classes^artifact_value]"
+	}
+}

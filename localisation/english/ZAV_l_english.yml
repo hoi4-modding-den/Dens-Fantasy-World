@@ -40,9 +40,43 @@
  ZAV_vault_of_saint_constantine_desc:0 "Deep beneath the stone foundations of the §1Moonlight Cathedral§! lies the §YVault of Saint Constantine§!, a sanctum built not to display power, but to contain it. Within its warded chambers rest relics of immense and often perilous origin, artifacts recovered from fallen cults, forgotten ages, and battlefields where reality itself seemed to fray. Each is carefully sealed, catalogued, and guarded, for while many possess the potential to bring great advantage to the realm, their use is seldom without consequence.\n\nSome are blessings that burn brightly but briefly, capable of turning the tide of crisis in a single, irreversible moment. Others are more insidious, offering power at a cost not yet fully understood. The keepers of the Vault know well that restraint is as vital as strength; to draw upon these relics too freely would be to invite the very ruin they were locked away to prevent. And so they wait, silent, watchful, until the hour grows dire enough to justify unlocking what should never be used lightly."
 
  ZAV_vault_title:0 "§8Current Artifacts§!"
+ ZAV_artifact_name:0 "[GetArtifactName]\n\nClass: [GetArtifactClass]\n\nEffects: §L[GetArtifactEffects]§!"
+ ZAV_artifact_desc:0 "[GetArtifactDesc]"
  
- ZAV_artifact_name_1:0 "Blood of King Arthur"
- ZAV_artifact_desc_1:0 "PLACEHOLDER"
+
+ ZAV_artifact_class_1:0 "§0Slaughter Relic§!"
+ ZAV_artifact_class_2:0 "§RSinister Artifact§!"
+ ZAV_artifact_class_3:0 "§OBlighted Item§!"
+ ZAV_artifact_class_4:0 "§8Ruinous Artifact§!"
+ ZAV_artifact_class_5:0 "§GProfane Antique§!"
+
+ ZAV_artifact_1:0 "§tBlood of King Arthur§!"
+ ZAV_artifact_1_effect:0 "Can resurrect a mortal from beyond the veil."
+ ZAV_artifact_1_desc:0 "Drawn from the once-mortal vessel of Avalon's greatest king as he lay upon his final bed, this relic is said to carry echoes of an age when legend walked openly among men. Its crimson sheen never dulls, and those who gaze upon it feel a distant call to conquest, unity, or ruin, none can say which. The power within it is ancient and absolute, but whether it reflects Arthur's will... or something that claimed him in his final moments... remains uncertain."
+
+ ZAV_artifact_2:0 "§6Ashes of the Green Knight§!"
+ ZAV_artifact_2_effect:0 "Can protect its user from all physical harm."
+ ZAV_artifact_2_desc:0 "Gathered from the grave of the enigmatic Green Knight, these ashes stir faintly even when undisturbed, as though remembering an oath never truly fulfilled. Those who wield them are said to become untouchable, shielded by an unseen force that bends fate itself. Yet this protection is not without unease, for something watches through it, something patient, as if the bargain has yet to be fully claimed."
+
+ ZAV_artifact_3:0 "§0Corrupted Rose§!"
+ ZAV_artifact_3_effect:0 "Shatters the mind of those who touch it."
+ ZAV_artifact_3_desc:0 "Plucked from the grave of a condemned heretic, this blackened rose appears perpetually fresh, its petals soft despite their unnatural hue. Its true purpose remains unclear, yet those who carry it report whispers in dreams and a growing sense that the world itself is subtly... wrong. Whether it is a key, a signal, or the seed of something far worse has yet to be determined."
+
+ ZAV_artifact_4:0 "§9Fallen Hero Sword§!"
+ ZAV_artifact_4_effect:0 "Possesses its wielder, forcing them to serve an unkown entity."
+ ZAV_artifact_4_desc:0 "Once borne by a champion of the realm, this fractured blade now radiates a dim, blood-red glow, its surface cracked as though it had been broken not by force, but by betrayal. From within its wounds seeps a slow, endless trickle of blood that never dries. In battle, it grants terrible strength, but with each strike, it seems to remember what it once was... and what it has become."
+
+ ZAV_artifact_5:0 "§3Shroud of the Fey§!"
+ ZAV_artifact_5_effect:0 "When burned, reveals all presences in an area."
+ ZAV_artifact_5_desc:0 "Attributed to Morgan of the Fey, this tattered veil is etched with shifting inscriptions that resist interpretation. When worn, it unveils all hidden presences, spirits, illusions, and beings that lurk just beyond perception. Yet prolonged use reveals more than intended, as the veil does not distinguish between what should be seen and what was never meant to be."
+
+ ZAV_artifact_6:0 "§0Twisted Grail§!"
+ ZAV_artifact_6_effect:0 "When drank from, gives colossal power but at a tremendous price..."
+ ZAV_artifact_6_desc:0 "A perversion of Avalon's most sacred symbol, this malformed grail pulses with a suffocating aura of power. Dark veins crawl across its pitted surface, as though something within struggles to emerge. Those who draw near feel their thoughts weighed down, their will diminished, as if in silent reverence to an unseen master. It is not merely an object of worship. It is a conduit."
+
+ ZAV_artifact_7:0 "§0Blighted Flesh of a False God§!"
+ ZAV_artifact_7_effect:0 "May be used as a vessel for a blighted deity."
+ ZAV_artifact_7_desc:0 "Recovered from a twisted ritual, this decaying mass was once intended as a vessel for a heretical deity. Though lifeless in form, it twitches faintly, as if awaiting completion. Its presence spreads rot and unease, and those who linger too long report visions of something vast and incomplete, straining against the boundaries of reality, seeking form through a host willing or unwilling."
 
  # MISCELLANEOUS #
 

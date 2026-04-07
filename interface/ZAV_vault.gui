@@ -77,8 +77,8 @@ guitypes = {
         buttonType = { 
             name = "ZAV_vault_artifact_icon"
             quadTextureSprite = "GFX_ZAV_blood_of_king_arthur_artifact"
-            pdx_tooltip = "ZAV_artifact_name_1"
-            pdx_tooltip_delayed = "ZAV_artifact_desc_1"
+            pdx_tooltip = "ZAV_artifact_name"
+            pdx_tooltip_delayed = "ZAV_artifact_desc"
         }
     }
 }
