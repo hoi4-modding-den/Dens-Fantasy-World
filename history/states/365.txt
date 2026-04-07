@@ -1,4 +1,3 @@
-
 state = {
 	id = 365
 	name = "STATE_365"
@@ -18,15 +17,17 @@ state = {
 		add_core_of = ZAV
 		
 		buildings = {
-			infrastructure = 2	
+			infrastructure = 3
+			industrial_complex = 1	
 		}	
 	}
 
 	provinces = {
-		5669 5670 5671 
+		1106 1109 1110 1112 1113 5669 5670 5671 19286 
 	}
 
 	manpower = 897545
+	buildings_max_level_factor = 1
 	state_category = pastoral
-	local_supplies = 0.0 
+	local_supplies = 0
 }
