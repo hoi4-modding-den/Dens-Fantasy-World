@@ -1,0 +1,56 @@
+characters = {
+
+	ZUR_the_authority = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZUR/ZUR_the_authority.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { }
+			desc = ZUR_the_authority_desc
+		}
+
+	}
+
+	ZUR_the_judge = {
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZPS/ZPS_Avrana_Kern_Small.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			can_be_fired = no
+			idea_token = ZUR_the_judge_token
+			available = { 
+            		}
+           
+			traits = {
+			
+			}
+		}
+	}
+
+	ZUR_the_warrior = {
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/ZPS/ZPS_Bianca_Small.png"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			
+			idea_token = ZUR_the_warrior_token
+			available = { 
+            		}
+           
+			traits = {
+				
+			}
+		}
+	}
+}

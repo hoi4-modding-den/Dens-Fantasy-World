@@ -3,13 +3,16 @@
  ZUR_DEF: "Utopia"
  ZUR_ADJ: "Utopian"
 
- ZUR_disarmed_nation: "Violence-Free Utopia"
+ ZUR_disarmed_nation: "Violence Banned"
  ZUR_volunteer_only: "Voluntary Service"
  ZUR_limited_conscription: "Lottery Service"
  ZUR_extensive_conscription: "Emergency Draft"
  ZUR_service_by_requirement: "Military Focus"
  ZUR_all_adults_serve: "Total Military Focus"
  ZUR_scraping_the_barrel: "Full Service"
+ 
+ ZUR_the_authority: "The Authority"
+ ZUR_the_authority_desc: "After the fall, remaining survivors choose to hand over control of the Utopia to Artificial Intelligence."
  
  ZUR_free_trade: "Free Market"
  ZUR_export_focus: "Mixed System"
@@ -26,4 +29,6 @@
  ZUR_fascism_party_long: "[ANTI UTOPIA]§ROUTLAWED§!"
  
  #victory_points = { 13855 10 }
- VICTORY_POINTS_13617: "Ockcester"
+ VICTORY_POINTS_67: "Ruins"
+ VICTORY_POINTS_4473: "Destroyed Resource Deposits"
+  VICTORY_POINTS_4523: "Ruins"
