@@ -1,0 +1,21 @@
+add_namespace = ZAV_test_events
+country_event = {
+	id = ZAV_test_events.1
+	title = ZAV_test_events.1.t
+	desc = ZAV_test_events.1.d
+	
+	picture = GFX_ZNY_events_zorzerk_news_image
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+        name = ZAV_test_events.1.a
+
+		custom_effect_tooltip = ZAV_add_artifact_excalibur_tt
+
+		hidden_effect = {
+			add_to_array = { ZAV_vault_artifacts = 8 }
+		}
+    }
+}

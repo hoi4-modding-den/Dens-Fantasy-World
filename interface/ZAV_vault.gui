@@ -74,9 +74,16 @@ guitypes = {
             quadTextureSprite = "GFX_ZAV_artifact_background"
         }
 
+        iconType = { 
+            name = "ZAV_vault_artifact_fire"
+            quadTextureSprite = "GFX_ZAV_animated_magical_smoke"
+            position = { x = -7 y = -7 }
+            scale = 1.2
+        }
+
         buttonType = { 
             name = "ZAV_vault_artifact_icon"
-            quadTextureSprite = "GFX_ZAV_blood_of_king_arthur_artifact"
+            quadTextureSprite = "GFX_ZAV_blank_artifact"
             pdx_tooltip = "ZAV_artifact_name"
             pdx_tooltip_delayed = "ZAV_artifact_desc"
         }

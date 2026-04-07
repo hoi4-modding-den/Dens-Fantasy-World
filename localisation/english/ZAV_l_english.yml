@@ -34,6 +34,12 @@
  ZAV_secret_orders:0 "§0Secret Orders§!"
  ZAV_secret_orders_desc:0 "Hiding in the shadows, a dark network festers in secrecy. Hidden circles and forbidden cults practice outlawed magics, offering devotion not to the Grail, nor to Nimue, but to nameless powers that whisper from beyond the veil. In return, they are granted gifts both terrible and corrupting. Twisted flesh, shattered minds, and violence without reason. Murders go unsolved, entire villages fall to madness, and rumors of monstrous transformations spread like wildfire.\n\nWorse still, the sacred ashes of Saint Morvydd have been stolen and her tomb defiled. Now wielded as a relic, her ashes are capable of inciting terror and hysteria on a mass scale. With the guardian priests of the realm stretched thin and the faithful losing their grip, these secret orders grow ever bolder. Unless they are rooted out, Avalon may soon find itself undone not by armies, but by the rot spreading from within."
 
+ # EVENTS #
+
+ ZAV_test_events.1.t:0 "Debug - Obtain the True Excalibur"
+ ZAV_test_events.1.d:0 "Somehow you obtained the true excalibur."
+ ZAV_test_events.1.a:0 "..."
+
  # VAULT OF SAINT CONSTANTINE #
 
  ZAV_vault_of_saint_constantine:0 "Vault of Saint Constantine"
@@ -77,6 +83,12 @@
  ZAV_artifact_7:0 "§0Blighted Flesh of a False God§!"
  ZAV_artifact_7_effect:0 "May be used as a vessel for a blighted deity."
  ZAV_artifact_7_desc:0 "Recovered from a twisted ritual, this decaying mass was once intended as a vessel for a heretical deity. Though lifeless in form, it twitches faintly, as if awaiting completion. Its presence spreads rot and unease, and those who linger too long report visions of something vast and incomplete, straining against the boundaries of reality, seeking form through a host willing or unwilling."
+
+ ZAV_artifact_8:0 "§9True Excalibur§!"
+ ZAV_artifact_8_effect:0 "Capable of killing beings from beyond the veil."
+ ZAV_artifact_8_desc:0 "PLACEHOLDER"
+
+ ZAV_add_artifact_excalibur_tt:0 "The §9True Excalibur§! will be stored in the §YVault of Constantine§!."
 
  # MISCELLANEOUS #
 
