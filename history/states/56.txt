@@ -17,9 +17,19 @@ state = {
 		add_core_of = ZAV
 		
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1	
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+
+			1104 = {
+				naval_base = 4
+			}
 		}	
+
+		victory_points = { # New Tintagel
+			1104 10
+		}
 	}
 
 	provinces = {

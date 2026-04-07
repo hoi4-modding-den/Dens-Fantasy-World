@@ -19,12 +19,20 @@ state = {
 		
 		buildings = {
 			infrastructure = 2
-			arms_factory = 0
-			industrial_complex = 0
+			dockyard = 1
+			industrial_complex = 1
 			
 			2790 = {
-				naval_base = 1
+				naval_base = 2
 			}
+		}
+
+		victory_points = { # Marsfeld
+			2790 5
+		}
+
+		victory_points = { # Whitington
+			2791 3
 		}
 	}
 

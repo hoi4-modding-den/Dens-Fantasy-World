@@ -17,13 +17,26 @@ state = {
 		add_core_of = ZAV
 		
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1	
+			infrastructure = 4
+			industrial_complex = 3
+			dockyard = 3
+
+			2711 = {
+				naval_base = 8
+			}
 		}
 
 		victory_points = { # Port Elisabeth
 			2711 20
-		}	
+		}
+
+		victory_points = { # Brasswood
+			2709 5
+		}
+
+		victory_points = { # Valor
+			1878 3
+		}
 	}
 
 	provinces = {
