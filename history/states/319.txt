@@ -1,8 +1,7 @@
-
 state = {
 	id = 319
 	name = "STATE_319"
-	
+
 	resources = {
 		aluminium = 0
 		chromium = 0
@@ -12,21 +11,23 @@ state = {
 		tungsten = 0
 		coal = 0
 	}
-
+	
 	history = {
 		owner = ZAV
 		add_core_of = ZAV
 		
 		buildings = {
-			infrastructure = 3	
+			infrastructure = 3
+			industrial_complex = 1	
 		}	
 	}
-
+	
 	provinces = {
-		5168 5169 5170 5171 5172 5173 5174 5175 5176 
+		263 268 1814 1817 1819 1832 1833 5168 5169 5170 5171 5172 5173 5174 5175 5176 
 	}
-
+	
 	manpower = 2202063
+	buildings_max_level_factor = 1
 	state_category = large_town
-	local_supplies = 0.0 
+	local_supplies = 0
 }

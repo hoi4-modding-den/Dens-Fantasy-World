@@ -1,8 +1,7 @@
-
 state = {
 	id = 104
 	name = "STATE_104"
-	
+
 	resources = {
 		aluminium = 0
 		chromium = 0
@@ -12,7 +11,7 @@ state = {
 		tungsten = 0
 		coal = 0
 	}
-
+	
 	history = {
 		owner = ZAV
 		add_core_of = ZAV
@@ -22,12 +21,13 @@ state = {
 			industrial_complex = 1	
 		}	
 	}
-
+	
 	provinces = {
-		1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 
+		1942 1943 1944 1945 1946 1948 1949 1950 1951 
 	}
-
+	
 	manpower = 3049052
+	buildings_max_level_factor = 1
 	state_category = large_city
-	local_supplies = 0.0 
+	local_supplies = 0
 }

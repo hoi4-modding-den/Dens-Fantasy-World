@@ -1,4 +1,3 @@
-
 state = {
 	id = 98
 	name = "STATE_98"
@@ -19,22 +18,16 @@ state = {
 		
 		buildings = {
 			infrastructure = 3
-			arms_factory = 0
-			industrial_complex = 0
-			dockyard = 1
-			
-			1862 = {
-				naval_base = 1
-			}
-		}
-		
+			industrial_complex = 1	
+		}	
 	}
 
 	provinces = {
-		1862 1863 1864 1865 1866 1867 1868 1869 1870 1871 1872 1873 1874 1875 1876 1877 1878 1879 1880 
+		1862 1863 1864 1866 1867 1873 1875 1877 1880 
 	}
 
 	manpower = 4520586
-	local_supplies = 0.0
-	state_category = metropolis 
+	buildings_max_level_factor = 1
+	state_category = metropolis
+	local_supplies = 0
 }

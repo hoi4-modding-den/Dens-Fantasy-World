@@ -1,8 +1,7 @@
-
 state = {
 	id = 89
 	name = "STATE_89"
-	
+
 	resources = {
 		aluminium = 0
 		chromium = 0
@@ -18,16 +17,17 @@ state = {
 		add_core_of = ZAV
 		
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 2	
+			infrastructure = 3
+			industrial_complex = 1	
 		}	
 	}
 
 	provinces = {
-		1674 1675 1676 1677 1678 1679 1680 1681 1682 1683 1684 1685 1686 1687 1688 1689 1690 
+		1674 1675 1680 1681 1682 1683 1684 1686 1689 1690 
 	}
 
 	manpower = 4726519
+	buildings_max_level_factor = 1
 	state_category = megalopolis
-	local_supplies = 0.0 
+	local_supplies = 0
 }

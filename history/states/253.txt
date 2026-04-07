@@ -1,8 +1,7 @@
-
 state = {
 	id = 253
 	name = "STATE_253"
-	
+
 	resources = {
 		aluminium = 0
 		chromium = 0
@@ -24,10 +23,11 @@ state = {
 	}
 
 	provinces = {
-		4182 4183 4184 4185 4186 
+		2299 2300 2304 4182 4183 4184 4185 4186 
 	}
 
 	manpower = 1680468
+	buildings_max_level_factor = 1
 	state_category = town
-	local_supplies = 0.0 
+	local_supplies = 0
 }

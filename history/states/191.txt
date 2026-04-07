@@ -1,4 +1,3 @@
-
 state = {
 	id = 191
 	name = "STATE_191"
@@ -12,22 +11,23 @@ state = {
 		tungsten = 0
 		coal = 0
 	}
-
+	
 	history = {
 		owner = ZAV
 		add_core_of = ZAV
 		
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2	
+			infrastructure = 3
+			industrial_complex = 1	
 		}	
 	}
-
+	
 	provinces = {
-		3133 3134 3135 3136 3137 3138 3139 3140 3141 3142 3143 3144 3145 3146 3147 3148 3149 
+		3134 3135 3137 3138 3139 3140 3141 3142 3144 3148 
 	}
-
+	
 	manpower = 4647454
+	buildings_max_level_factor = 1
 	state_category = megalopolis
-	local_supplies = 0.0 
+	local_supplies = 0
 }
