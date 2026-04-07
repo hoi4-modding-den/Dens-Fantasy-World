@@ -18,6 +18,11 @@ spriteTypes = {
 
 	# VAULT #
 
+	SpriteType = {
+		name = "GFX_decision_cat_vault_of_saint_constantine"
+		texturefile = "gfx/interface/ZAV/decision_cat_ZAV_vault_of_saint_constantine.dds"
+	}
+
 	spriteType = {
 		name = "GFX_ZAV_artifact_background"
 		texturefile = "gfx/interface/ZAV/ZAV_artifact_background.dds"

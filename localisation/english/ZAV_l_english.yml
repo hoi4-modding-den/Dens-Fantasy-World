@@ -37,11 +37,11 @@
  # VAULT OF SAINT CONSTANTINE #
 
  ZAV_vault_of_saint_constantine:0 "Vault of Saint Constantine"
- ZAV_vault_of_saint_constantine_desc:0 "Deep beneath the stone foundations of the §1Moonlight Cathedral§! lies the §YVault of Saint Constantine§!, a sanctum built not to display power, but to contain it. Within its warded chambers rest relics of immense and often perilous origin, artifacts recovered from fallen cults, forgotten ages, and battlefields where reality itself seemed to fray. Each is carefully sealed, catalogued, and guarded, for while many possess the potential to bring great advantage to the realm, their use is seldom without consequence.\n\nSome are blessings that burn brightly but briefly, capable of turning the tide of crisis in a single, irreversible moment. Others are more insidious, offering power at a cost not yet fully understood. The keepers of the Vault know well that restraint is as vital as strength; to draw upon these relics too freely would be to invite the very ruin they were locked away to prevent. And so they wait, silent, watchful, until the hour grows dire enough to justify unlocking what should never be used lightly."
+ ZAV_vault_of_saint_constantine_desc:0 "Deep beneath the stone foundations of the §1Moonlight Cathedral§! lies the §YVault of Saint Constantine§!, a sanctum built not to display power, §tbut to contain it§!. Within its warded chambers rest relics of immense and often perilous origin, artifacts recovered from §0fallen cults§!, §tforgotten ages§!, and §8battlefields§! where reality itself seemed to fray. Each is carefully sealed, catalogued, and guarded, for while §Gmany possess the potential to bring great advantage to the realm§!, §ttheir use is seldom without consequence§!.\n\nSome are blessings that burn brightly but briefly, capable of turning the tide of crisis in a single, irreversible moment. Others are more §0insidious§!, offering power at a cost not yet fully understood. The §Ykeepers of the Vault§! know well that restraint is as vital as strength; to draw upon these relics too freely would be to §tinvite the very ruin they were locked away to prevent§!. And so they wait, silent, watchful, until the hour grows dire enough to justify unlocking what should never be used lightly."
 
  ZAV_vault_title:0 "§8Current Artifacts§!"
- ZAV_artifact_name:0 "[GetArtifactName]\n\nClass: [GetArtifactClass]\n\nEffects: §L[GetArtifactEffects]§!"
- ZAV_artifact_desc:0 "[GetArtifactDesc]"
+ ZAV_artifact_name:0 "[GetArtifactName]\n\nClass: [GetArtifactClass]\n\nEffects: §t[GetArtifactEffects]§!"
+ ZAV_artifact_desc:0 "§L[GetArtifactDesc]§!"
  
 
  ZAV_artifact_class_1:0 "§0Slaughter Relic§!"
