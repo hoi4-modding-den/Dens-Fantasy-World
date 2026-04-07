@@ -26,12 +26,13 @@
  ZTC_communism_party: "HVF"
  ZTC_communism_party_long: "Hortensian People's Front"
  ZTC_fascism_party: "$ZTC_neutrality_party$ - Expansionists"
- ZTC_fascism_party_long: "$ZTC_neutrality_party_long$ - Expanionist Faction"
+ ZTC_fascism_party_long: "$ZTC_neutrality_party_long$ - Expansionist Faction"
 
 
 # CHARACTERS
 
  ZTC_jan_kroesus_name: "Jan Krösus"
+ ZTC_the_council_name: "The City Council"
  ZTC_franziska_kroesus_name: "Franziska Krösus"
 
 
@@ -41,6 +42,7 @@
  ZTC_promising_reformist: "Promising Reformist"
  ZTC_grand_councillor_trait: "Oberster Ratsherr"
  ZTC_grand_councillor_fem_trait: "Oberste Ratsfrau"
+ ZTC_divided_interests: "Divided Interests"
 
 
 # IDEAS
@@ -84,7 +86,7 @@
  ZTC_secure_council_loyalty: "Prevent a Council Putsch"
  ZTC_secure_council_loyalty_desc: ""
 
- ZTC_necessary_reform: "Necessary Reform"
+ ZTC_necessary_reform: "Necessary Reforms"
  ZTC_necessary_reform_desc: ""
  ZTC_modernise_civil_protection: "Modernise the Civil Defence Force"
  ZTC_modernise_civil_protection_desc: ""

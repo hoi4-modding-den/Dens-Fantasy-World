@@ -20,7 +20,7 @@ country_event = { # The Last Days - 1 / Lore
 
 	option = {
 		name = ZTC_events.1.a
-		
+		add_political_power = -50
 	}
 }
 
@@ -44,6 +44,30 @@ country_event = { # The Last Days - 2 / Death
 	option = {
 		name = ZTC_events.2.a
         retire_character = ZTC_jan_kroesus
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        add_country_leader_role = {
+            character = ZTC_the_council
+            promote_leader = yes
+            country_leader = {
+                ideology = oligarchism
+                expire = "1965.1.1.1"
+                traits = { ZTC_divided_interests }
+            }
+        }
+        hidden_effect = {
+            add_country_leader_role = {
+                character = ZTC_the_council
+                promote_leader = yes
+                country_leader = {
+                    ideology = liberalism
+                    expire = "1965.1.1.1"
+                    traits = { ZTC_divided_interests }
+                }
+            }
+        }
+
         hidden_effect = {
             news_event = ZTC_news_events.1
             ZLF = { news_event = ZTC_news_events.1 }
@@ -76,12 +100,6 @@ country_event = { # The Last Days - 3 / The Successor
             ruling_party = democratic
             elections_allowed = no
         }
-        hidden_effect = {
-            country_event = {
-                id = ZTC_events.4
-                days = 5
-            }
-        }
 	}
 }
 
@@ -109,8 +127,6 @@ news_event = { # The Succession
 
 	option = {
 		name = ZTC_news_events.1.a
-		trigger = { 
-            tag = ZTC 
-        }
+		
 	}
 }

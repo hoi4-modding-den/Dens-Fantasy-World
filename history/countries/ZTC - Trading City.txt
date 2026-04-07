@@ -36,6 +36,7 @@ add_timed_idea = {
 }
 
 recruit_character = ZTC_jan_kroesus
+recruit_character = ZTC_the_council
 recruit_character = ZTC_franziska_kroesus
 
 set_politics = {

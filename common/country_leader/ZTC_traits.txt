@@ -1,7 +1,7 @@
 leader_traits = {
 
 	ZTC_fading_spirit = {
-		political_power_cost = 0.5
+		political_power_cost = 1
 
 		random = no
 	}
@@ -24,6 +24,17 @@ leader_traits = {
 		
 		political_advisor_cost_factor = -0.75
 		democratic_acceptance = 40
+
+		random = no
+	}
+
+	ZTC_divided_interests = {
+		
+		political_power_factor = -0.1
+		fascism_drift = 0.01
+		neutrality_drift = 0.01
+		democratic_drift = 0.01
+		consumer_goods_factor = 0.15
 
 		random = no
 	}

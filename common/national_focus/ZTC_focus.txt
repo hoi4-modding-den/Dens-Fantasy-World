@@ -48,7 +48,7 @@ focus_tree={
 		completion_reward = {
 			custom_effect_tooltip = ZTC_the_new_grand_councillor_tt
 			hidden_effect = {
-				retire_character = ZTC_jan_kroesus
+				country_event = ZTC_events.4
 			}
 		}
 	}
@@ -419,6 +419,11 @@ focus_tree={
 					}
 				}
 			}
+			else = {
+				749 = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
 		}
 	}
 
@@ -517,7 +522,7 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_popularity = { ideology = democratic popularity = 0.15 }
 		}
 	}
 

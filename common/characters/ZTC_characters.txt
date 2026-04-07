@@ -18,6 +18,20 @@ characters={
 		}
 	}
 
+	ZTC_the_council = { 
+		name = ZTC_the_council_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZTC_the_council
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			traits = { ZTC_divided_interests }
+			expire = "1960.1.1.1"
+		}
+	}
+
 	ZTC_franziska_kroesus = {
 		gender = female
 		name = ZTC_franziska_kroesus_name
