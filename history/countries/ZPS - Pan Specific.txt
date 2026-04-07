@@ -103,6 +103,7 @@ add_ideas = {
 	ZPS_Avrana_Kern_Advisor
 	ZPS_Shifting_Tides
 	ZPS_Fading_Traditionalism
+	ZPS_Matriarchal_Legacy
 }
 
 set_variable = { ZPS_army_morale_factor = 0.05 }
@@ -126,6 +127,12 @@ set_variable = { ZPS_army_armor_attack_factor = 0 }
 set_variable = { ZPS_special_forces_training_time_factor = 0 }
 set_variable = { ZPS_special_forces_cap = 0 }
 set_variable = { ZPS_special_forces_attack_factor = 0 }
+set_variable = { ZPS_army_core_attack_factor = 0 }
+set_variable = { ZPS_land_mastery_gain_factor = 0 }
+set_variable = { ZPS_conscription = 0 }
+set_variable = { ZPS_experience_gain_army = 0 }
+set_variable = { ZPS_land_reinforce_rate = 0 }
+
 
 set_variable = { ZPS_Portia_Anger = 2 }
 set_variable = { ZPS_Human_Anger = 3 }

@@ -5,6 +5,27 @@ spriteTypes = {
 		name = "GFX_idea_ZPS_shifting_tides"
 		texturefile = "gfx/interface/ideas/ZPS/ZPS_Shifting_Tides.png"
 	}
+#DYNAM MOD#
+	spriteType = {
+		name = "GFX_ZPS_Portia_Majority"
+		texturefile = "gfx/interface/gui/ZPS/ZPS_Portia_Majority.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Shrimp_Majority"
+		texturefile = "gfx/interface/gui/ZPS/ZPS_Shrimp_Majority.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Human_Majority"
+		texturefile = "gfx/interface/gui/ZPS/ZPS_Human_Majority.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Corvid_Majority"
+		texturefile = "gfx/interface/gui/ZPS/ZPS_Corvid_Majority.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Octopus_Majority"
+		texturefile = "gfx/interface/gui/ZPS/ZPS_Octopus_Majority.png"
+	}
 #GUI#
 	spriteType = {
 		name = "GFX_ZPS_Profile_Portia"

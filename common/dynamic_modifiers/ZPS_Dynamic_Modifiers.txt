@@ -24,34 +24,39 @@ ZPS_Pan_Specific_National_Army = {
 	special_forces_training_time_factor = ZPS_special_forces_training_time_factor
 	special_forces_attack_factor = ZPS_special_forces_attack_factor
 	special_forces_cap = ZPS_special_forces_cap
+	army_core_attack_factor = ZPS_army_core_attack_factor
+	land_mastery_gain_factor = ZPS_land_mastery_gain_factor
+	conscription = ZPS_conscription
+	experience_gain_army = ZPS_experience_gain_army
+	land_reinforce_rate = ZPS_land_reinforce_rate
 }
 
 ZPS_Corvid_Majority = {
-	icon = GFX_idea_fish
+	icon = GFX_ZPS_Corvid_Majority
 	enable = {
 		always = yes
 	}
 }
 ZPS_Stomatopod_Majority = {
-	icon = GFX_idea_fish
+	icon = GFX_ZPS_Shrimp_Majority
 	enable = {
 		always = yes
 	}
 }
 ZPS_Octopus_Majority = {
-	icon = GFX_idea_fish
+	icon = GFX_ZPS_Octopus_Majority
 	enable = {
 		always = yes
 	}
 }
 ZPS_Portia_Majority = {
-	icon = GFX_idea_fish
+	icon = GFX_ZPS_Portia_Majority
 	enable = {
 		always = yes
 	}
 }
 ZPS_Human_Majority = {
-	icon = GFX_idea_fish
+	icon = GFX_ZPS_Human_Majority
 	enable = {
 		always = yes
 	}

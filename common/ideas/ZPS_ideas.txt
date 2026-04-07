@@ -20,6 +20,15 @@ ideas = {
 			}
 		}
 
+		ZPS_Matriarchal_Legacy = {
+			picture = fish
+			modifier = {
+				female_random_army_leader_chance = 0.6
+				female_random_admiral_chance = 0.6
+				female_divisional_commander_chance = 0.6
+			}
+		}
+
 		ZPS_Pan_Specific_National_Army_dummy = {
 			picture = fish
 			modifier = {
@@ -109,6 +118,27 @@ ideas = {
 			supply_factor = 0.07
 			attrition = -0.04
 			winter_attrition = 0.02
+			}
+		}
+	
+		ZPS_Made_In_Fire_idea = {
+			picture = fish
+			modifier = {
+			army_core_attack_factor = 0.07
+			breakthrough_factor = 0.04
+			land_mastery_gain_factor = 0.15
+			conscription = 0.015
+			}
+		}
+		
+		ZPS_Built_For_Battle_idea = {
+			picture = fish
+			modifier = {
+			experience_gain_army = 0.12
+			land_reinforce_rate = 0.07
+			weekly_manpower = 150
+			army_core_defence_factor = 0.15
+			army_org_factor = 0.05
 			}
 		}
 
