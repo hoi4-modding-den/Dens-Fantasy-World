@@ -6,7 +6,7 @@ set_stability = 0.7
 set_war_support = 0.1
 set_convoys = 100
 
-set_research_slots = 3
+set_research_slots = 4
 
 set_technology = {
 	infantry_weapons = 1
@@ -20,12 +20,23 @@ set_technology = {
 }
 
 add_ideas = {
-	export_focus
+	free_trade
 	volunteer_only
 	civilian_economy
+
+	ZTC_richest_city_in_the_south
+	ZTC_sky_seas_mastery
+	ZTC_proletarian_movement
+	ZTC_foreign_eyes
 }
 
-#recruit_character = 
+add_timed_idea = {
+	idea = ZTC_zinnian_navy_deal
+	days = 146
+}
+
+recruit_character = ZTC_jan_kroesus
+recruit_character = ZTC_franziska_kroesus
 
 set_politics = {
 	ruling_party = neutrality

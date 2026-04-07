@@ -1,0 +1,329 @@
+ideas = {
+
+	country = {
+
+        ZTC_richest_city_in_the_south = {
+
+			picture = tur_balkan_central_bank_wealthy_greece
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				consumer_goods_expected_value = -0.05
+                trade_opinion_factor = 0.15
+                resource_trade_cost_bonus_per_factory = 3
+			}
+            
+		}
+
+		ZTC_richest_city_in_the_south_taxes = {
+
+			name = ZTC_richest_city_in_the_south
+			picture = tur_balkan_central_bank_wealthy_greece
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				consumer_goods_expected_value = -0.1
+                trade_opinion_factor = 0.15
+                resource_trade_cost_bonus_per_factory = 3
+			}
+            
+		}
+
+		ZTC_richest_city_in_the_south_akademie = {
+
+			name = ZTC_richest_city_in_the_south
+			picture = tur_balkan_central_bank_wealthy_greece
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				consumer_goods_expected_value = -0.05
+                trade_opinion_factor = 0.15
+                resource_trade_cost_bonus_per_factory = 3
+				research_speed_factor = 0.15
+			}
+            
+		}
+
+        ZTC_sky_seas_mastery = {
+
+			picture = generic_navy_carrier_bonus
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			research_bonus = {
+				naval_equipment = 0.15
+                air_equipment = 0.15
+			}
+            
+		}
+
+        ZTC_proletarian_movement = {
+
+			picture = FRA_factory_strikes
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				communism_drift = 0.08
+                stability_factor = -0.25
+                production_speed_buildings_factor = -0.2
+                production_factory_max_efficiency_factor = -0.1
+				monthly_population = -0.25
+				consumer_goods_factor = 0.3
+			}
+            
+		}
+
+		ZTC_proletarian_movement_2 = {
+
+			name = ZTC_proletarian_movement
+			picture = FRA_factory_strikes
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				communism_drift = 0.04
+                stability_factor = -0.15
+                production_speed_buildings_factor = -0.2
+                production_factory_max_efficiency_factor = -0.1
+				monthly_population = -0.25
+				consumer_goods_factor = 0.3
+			}
+            
+		}
+
+		ZTC_proletarian_movement_3 = {
+
+			name = ZTC_proletarian_movement
+			picture = FRA_factory_strikes
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				communism_drift = 0.08
+                stability_factor = -0.25
+                production_speed_buildings_factor = -0.2
+                production_factory_max_efficiency_factor = -0.1
+				monthly_population = -0.2
+				consumer_goods_factor = 0.2
+			}
+            
+		}
+
+		ZTC_proletarian_movement_4 = {
+
+			name = ZTC_proletarian_movement
+			picture = FRA_factory_strikes
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				communism_drift = 0.04
+                stability_factor = -0.15
+                production_speed_buildings_factor = -0.2
+                production_factory_max_efficiency_factor = -0.1
+				monthly_population = -0.2
+				consumer_goods_factor = 0.2
+			}
+            
+		}
+
+		ZTC_proletarian_movement_5 = {
+
+			name = ZTC_proletarian_movement
+			picture = FRA_factory_strikes
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				communism_drift = 0.04
+                stability_factor = -0.15
+                production_speed_buildings_factor = -0.2
+                production_factory_max_efficiency_factor = -0.1
+			}
+            
+		}
+
+		ZTC_proletarian_movement_6 = {
+
+			name = ZTC_proletarian_movement
+			picture = FRA_factory_strikes
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				communism_drift = 0.04
+                stability_factor = -0.15
+                production_speed_buildings_factor = -0.1
+                production_factory_max_efficiency_factor = -0.05
+			}
+            
+		}
+
+		ZTC_foreign_eyes = {
+
+			picture = generic_spy_intel
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				agency_upgrade_time = 0.25
+                civilian_intel_to_others = 10
+                army_intel_to_others = 5
+                navy_intel_to_others = 5
+                airforce_intel_to_others = 5
+			}
+
+		}
+
+		ZTC_foreign_eyes_no_lar = {
+
+			picture = generic_spy_intel
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				agency_upgrade_time = 0.25
+                civilian_intel_to_others = 5
+                army_intel_to_others = 3
+                navy_intel_to_others = 2
+                airforce_intel_to_others = 2
+			}
+
+		}
+
+        ZTC_zinnian_navy_deal = {
+
+			picture = generic_the_london_naval_treaty
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+
+		}
+
+		ZTC_industrial_regulations = {
+
+			picture = ARG_civilian_economy_boost
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				local_resources_factor = 0.1
+			}
+
+		}
+
+		ZTC_industrial_regulations_2 = {
+
+			name = ZTC_industrial_regulations
+			picture = ARG_civilian_economy_boost
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				local_resources_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+			}
+
+		}
+
+	}
+
+}

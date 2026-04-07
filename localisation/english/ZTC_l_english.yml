@@ -16,6 +16,7 @@
  ZTC_fascism_DEF: "the Free and Mercantile City of Hortensia"
  ZTC_fascism_ADJ: "Hortensian"
 
+
 # PARTIES
 
  ZTC_neutrality_party: "Stadtrat"
@@ -26,3 +27,150 @@
  ZTC_communism_party_long: "Hortensian People's Front"
  ZTC_fascism_party: "$ZTC_neutrality_party$ - Expansionists"
  ZTC_fascism_party_long: "$ZTC_neutrality_party_long$ - Expanionist Faction"
+
+
+# CHARACTERS
+
+ ZTC_jan_kroesus_name: "Jan Krösus"
+ ZTC_franziska_kroesus_name: "Franziska Krösus"
+
+
+# TRAITS
+
+ ZTC_fading_spirit: "Fading Spirit"
+ ZTC_promising_reformist: "Promising Reformist"
+ ZTC_grand_councillor_trait: "Oberster Ratsherr"
+ ZTC_grand_councillor_fem_trait: "Oberste Ratsfrau"
+
+
+# IDEAS
+
+ ZTC_richest_city_in_the_south: "The Richest City of the South"
+ ZTC_richest_city_in_the_south_desc: "The “Freie und Handelsstadt Hortensie” has been the central southern hub for merchants for over a century thanks to its ideal location. Located on the peninsula bearing the same name as itself, the coastal city is conveniently connected inland via the Spei River, allowing for quick transportation of goods. Its founding myth tells the story of three brothers seeking refuge by following the Spei and finding it on the hill which now houses the city's senate building."
+ ZTC_sky_seas_mastery: "Masters of Seas and Skies"
+ ZTC_sky_seas_mastery_desc: "Hortensia hosts not only an impressive harbour but also the largest civilian airship dock in the southern continent. The Civil Defence Force of the city may not be as large as the armies of their neighbours, but it is by far the most developed."
+ ZTC_proletarian_movement: "Growing Proletarian Movement"
+ ZTC_proletarian_movement_desc: "In spite of what most citizens of the upper districts of the city may tell you, the majority of people in Hortensia live in poverty. And in recent times, the lower districts of the city have become a hotbed for radical and revolutionary groups that have become a force to be reckoned with."
+ ZTC_foreign_eyes: "Foreign Eyes"
+ ZTC_foreign_eyes_desc: "Our city is host to a plethora of colourful groups of foreign diplomats, spies, agitators and exiles all thanks to the failures of our security bureau. As long as you can pay, they'll make sure no councillor knows of your whereabouts."
+ ZTC_zinnian_navy_deal: "The Zinnian Navy Deal"
+ ZTC_zinnian_navy_deal_desc: "The desperate Gardenian Monarchy sold us most of their navy at a cheap price to finance their anti-Republican campaigns. While uncertain what we are going to do with it, you know what they say: “Better to have than to want!”"
+ ZTC_industrial_regulations: "Industrial Regulations"
+
+
+# DYNMODS
+
+ ZTC_naval_outpost: "Helmarn Naval Base"
+
+
+# FOCI
+
+ ZTC_the_new_grand_councillor: "The Last Days"
+ ZTC_the_new_grand_councillor_desc: ""
+ ZTC_the_new_grand_councillor_tt: "§YGrand Councillor Jan Krösus§! is on his deathbed. His appointed successor will be announced shortly following his §Rdeath§!.\n \n \n§LThe situation of Hortensia is rapidly worsening and the council is preparing to forego their democratic traditions for the sake of profit and stability.\n \nThe people of Hortensia fear the continuing stagnation and rally around the radical agitators in hopes of improving their meagre lifes.\n \nThe position of Grand Councillor was never so unwanted.§!"
+
+ ZTC_the_will_of_the_council: "The Council's Demands"
+ ZTC_the_will_of_the_council_desc: ""
+ ZTC_subsidise_the_airdocks: "Subsidise the Airdocks"
+ ZTC_subsidise_the_airdocks_desc: ""
+ ZTC_lower_taxes: "Grant Tax Exemptions"
+ ZTC_lower_taxes_desc: ""
+ ZTC_approve_sale_of_weapons: "Approve the Ersatzteil Scheme"
+ ZTC_approve_sale_of_weapons_desc: ""
+ ZTC_fund_the_upper_districts: "Fund Upper District Renovations"
+ ZTC_fund_the_upper_districts_desc: ""
+ ZTC_expand_the_academy: "Donate to the Krösus-Akademie"
+ ZTC_expand_the_academy_desc: ""
+ ZTC_secure_council_loyalty: "Prevent a Council Putsch"
+ ZTC_secure_council_loyalty_desc: ""
+
+ ZTC_necessary_reform: "Necessary Reform"
+ ZTC_necessary_reform_desc: ""
+ ZTC_modernise_civil_protection: "Modernise the Civil Defence Force"
+ ZTC_modernise_civil_protection_desc: ""
+ ZTC_limited_armament_program: "Compromise on Limited Armament"
+ ZTC_limited_armament_program_desc: ""
+ ZTC_invest_in_public_development: "Invest in Public Infrastructure"
+ ZTC_invest_in_public_development_desc: ""
+ ZTC_reverse_the_stratification: "De-Stratify Hortensian Society"
+ ZTC_reverse_the_stratification_desc: ""
+ ZTC_regulate_the_industries: "Regulate the Corporations"
+ ZTC_regulate_the_industries_desc: ""
+ ZTC_industrial_waste_laws: "Industrial Waste Laws"
+ ZTC_industrial_waste_laws_desc: ""
+ ZTC_open_volkshochschulen: "Open the Volkshochschulen"
+ ZTC_open_volkshochschulen_desc: ""
+
+ ZTC_the_needs_of_the_people: "The People's Needs"
+ ZTC_the_needs_of_the_people_desc: ""
+ ZTC_political_concessions: "Political Concessions"
+ ZTC_political_concessions_desc: ""
+ ZTC_legalise_union_formation: "Legalise Union Formation"
+ ZTC_legalise_union_formation_desc: ""
+ ZTC_poverty_relief_measures: "Poverty Relief Measures"
+ ZTC_poverty_relief_measures_desc: ""
+ ZTC_found_the_labour_ministry: "Establish the Arbeitsministerium"
+ ZTC_found_the_labour_ministry_desc: ""
+ ZTC_combat_police_corruption: "Combat Corruption"
+ ZTC_combat_police_corruption_desc: ""
+ ZTC_a_proper_democracy: "A Proper Democracy"
+ ZTC_a_proper_democracy_desc: ""
+
+ ZTC_maintain_the_stadtrat_system: "Maintain the Stadtrat-System"
+ ZTC_maintain_the_stadtrat_system_desc: ""
+ ZTC_embrace_social_democracy: "Embrace Social Democracy"
+ ZTC_embrace_social_democracy_desc: ""
+ ZTC_develop_helmarn: "Develop Helmarn"
+ ZTC_develop_helmarn_desc: ""
+ ZTC_interfere_in_the_edelweiss_revolution: "Support the Edelweiss Revolution"
+ ZTC_interfere_in_the_edelweiss_revolution_desc: ""
+ ZTC_gardenian_monetary_union: "Gardenian Monetary Union"
+ ZTC_gardenian_monetary_union_desc: ""
+ ZTC_fortify_the_peninsula: "Fortify the Peninsula"
+ ZTC_fortify_the_peninsula_desc: ""
+ ZTC_military_cooperation: "Gardenian Military Protection"
+ ZTC_military_cooperation_desc: ""
+ ZTC_stop_the_spying: "Purge the Security Bureau"
+ ZTC_stop_the_spying_desc: ""
+
+ ZTC_depose_the_grand_chancellor: "The Corporate Coup"
+ ZTC_depose_the_grand_chancellor_desc: ""
+ ZTC_depose_the_grand_chancellor_tt: "Completed via the §Y'Stadtrat Motion of Confidence'§! Event."
+ 
+ ZTC_the_peoples_revolution: "The Proletarian Revolt"
+ ZTC_the_peoples_revolution_desc: ""
+ ZTC_the_peoples_revolution_tt: "Completed via the §Y'The Second Hortensian Defenestration'§! Event."
+
+
+# EVENTS
+
+ ZTC_events.1.t: "The Last Session"
+ ZTC_events.1.desc: "The age of our chancellor is becoming ever clearer as today's council session had to be cut short as Grand Councillor Krösus had a fit of coughing during his speech and had to be escorted out. Even worse is that the current fractured state of the council requires the grand chancellor to be a rallying point for the remaining loyal moderates, which he certainly is not."
+ ZTC_events.1.a: "At this point its probably better he drops dead."
+
+ ZTC_events.2.t: "The Grand Councillor is dead!"
+ ZTC_events.2.desc: "A message most unsurprising has been passed to the councilmembers. The inevitable - and awaited by some - death of Grand Councillor Jan Krösus has occured. The 74-year-old man passed away on the [?global.date.GetDateStringNoHourLong], at 4 o'clock. His successor, as per law, will be revealed by his notary in exactly fourteen days, during which the council will be in recess and refrain from making any political choices except in situations of intranational emergency."
+ ZTC_events.2.a: "What... now?"
+
+ ZTC_events.3.t: "The Successor Revealed"
+ ZTC_events.3.desc: "The councilmembers strode in slow steps along the notary towards the council chambers where the new Grand Councillor would be revealed. Once inside and seated, the notary began reading the will of the late Grand Councillor Jan Krösus, the councillors eagerly awaiting the reveal of who the new Grand Councillor would be. When the name was about to be revealed, the chambers went silent."
+ ZTC_events.3.a: "'The role of Grand Councillor will be succeeded by... Franziska Krösus.'"
+
+ ZTC_events.4.t: "The Path of Reform"
+ ZTC_events.4.desc: "It is obvious that Hortensia is in dire need of reform. However, too much reform may upset the councilmembers who have entrenched themselves in the traditional system of the city. On th other hand, they could be a useful way to gain power, even if relying too heavily on them will certainly upset the common citizen."
+ ZTC_events.4.a: "We must tread carefully."
+
+ ZTC_news_events.1.t: "The Death of Grand Councillor Krösus"
+ ZTC_news_events.1.desc: "WIP"
+ ZTC_news_events.1.a: "The winds of change blow through Hortensia."
+
+
+# MAP STUFF
+
+ STATE_749: "Hortensien"
+ STATE_1239: "Helmarn"
+
+ VICTORY_POINTS_10497: "Volksdorf"
+ VICTORY_POINTS_10499: "Nordbucht"
+ VICTORY_POINTS_10502: "Hortensienstadt"
+ VICTORY_POINTS_10503: "Eisenspitze"

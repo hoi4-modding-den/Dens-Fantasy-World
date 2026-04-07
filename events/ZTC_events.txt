@@ -1,0 +1,116 @@
+add_namespace = ZTC_events
+add_namespace = ZTC_news_events
+
+country_event = { # The Last Days - 1 / Lore
+	id = ZTC_events.1
+	title = ZTC_events.1.t
+	desc = ZTC_events.1.desc
+	picture = GFX_report_event_SWE_saltsjobaden
+
+	is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            country_event = {
+                id = ZTC_events.2
+                days = 30
+            }
+        }
+    }
+
+	option = {
+		name = ZTC_events.1.a
+		
+	}
+}
+
+country_event = { # The Last Days - 2 / Death
+	id = ZTC_events.2
+	title = ZTC_events.2.t
+	desc = ZTC_events.2.desc
+	picture = GFX_report_event_generic_funeral
+
+	is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            country_event = {
+                id = ZTC_events.3
+                days = 14
+            }
+        }
+    }
+
+	option = {
+		name = ZTC_events.2.a
+        retire_character = ZTC_jan_kroesus
+        hidden_effect = {
+            news_event = ZTC_news_events.1
+            ZLF = { news_event = ZTC_news_events.1 }
+            ZKN = { news_event = ZTC_news_events.1 }
+            XCE = { news_event = ZTC_news_events.1 }
+        }
+	}
+}
+
+country_event = { # The Last Days - 3 / The Successor
+	id = ZTC_events.3
+	title = ZTC_events.3.t
+	desc = ZTC_events.3.desc
+	picture = GFX_report_event_SWE_defense_act
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.3.a
+        add_country_leader_role = {
+            character = ZTC_franziska_kroesus
+            promote_leader = yes
+            country_leader = {
+                ideology = liberalism
+                expire = "1965.1.1.1"
+                traits = { ZTC_promising_reformist ZTC_grand_councillor_fem_trait }
+            }
+        }
+		set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }
+        hidden_effect = {
+            country_event = {
+                id = ZTC_events.4
+                days = 5
+            }
+        }
+	}
+}
+
+country_event = { # The Last Days - 4 / BoP NOW!
+	id = ZTC_events.4
+	title = ZTC_events.4.t
+	desc = ZTC_events.4.desc
+	picture = GFX_report_event_SWE_saltsjobaden
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.4.a
+        
+	}
+}
+
+news_event = { # The Succession
+	id = ZTC_news_events.1
+	title = ZTC_news_events.1.t
+	desc = ZTC_news_events.1.desc
+	picture = GFX_news_event_generic_funeral
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_news_events.1.a
+		trigger = { 
+            tag = ZTC 
+        }
+	}
+}

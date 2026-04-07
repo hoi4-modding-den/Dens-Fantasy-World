@@ -1,0 +1,10 @@
+ZTC_naval_outpost = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_defense
+
+	state_coastal_bunker_max_level_terrain_limit = 2
+    resistance_damage_to_garrison = -0.9
+    recruitable_population_factor = -1
+
+}

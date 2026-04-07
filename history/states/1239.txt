@@ -19,7 +19,9 @@ state={
 	history={
 		owner = ZTC
 		add_core_of = ZTC
+		add_claim_by = ZKN
 		
+		add_dynamic_modifier = { modifier = ZTC_naval_outpost }
 		
 		buildings = {
 			infrastructure = 2
@@ -28,7 +30,8 @@ state={
 			industrial_complex = 0
 			
 			16504 = {
-				naval_base = 2
+				naval_base = 3
+				coastal_bunker = 4
 			}
 			
 		}

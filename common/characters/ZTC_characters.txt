@@ -1,0 +1,35 @@
+characters={
+	ZTC_jan_kroesus = { 
+		name = ZTC_jan_kroesus_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZTC_jan_kroesus
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = { ZTC_fading_spirit ZTC_grand_councillor_trait }
+			expire = "1960.1.1.1"
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { ZTC_fading_spirit ZTC_grand_councillor_trait }
+			expire = "1960.1.1.1"
+		}
+	}
+
+	ZTC_franziska_kroesus = {
+		gender = female
+		name = ZTC_franziska_kroesus_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZTC_franziska_kroesus
+			}
+		}
+		#country_leader = {
+		#	ideology = liberalism
+		#	traits = { ZTC_promising_reformist ZTC_grand_councillor_fem_trait }
+		#	expire = "1960.1.1.1"
+		#}
+	}
+}
