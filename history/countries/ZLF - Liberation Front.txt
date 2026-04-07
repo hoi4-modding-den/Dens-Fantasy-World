@@ -19,9 +19,9 @@ set_technology = {
 }
 
 add_ideas = {
-	export_focus
-	volunteer_only
-	civilian_economy
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
 }
 
 #recruit_character = 

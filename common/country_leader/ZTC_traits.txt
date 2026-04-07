@@ -1,0 +1,31 @@
+leader_traits = {
+
+	ZTC_fading_spirit = {
+		political_power_cost = 0.5
+
+		random = no
+	}
+
+	ZTC_promising_reformist = {
+		political_power_factor = 0.15
+
+		random = no
+	}
+
+	ZTC_grand_councillor_trait = {
+		
+		political_advisor_cost_factor = -0.75
+		democratic_acceptance = 40
+
+		random = no
+	}
+
+	ZTC_grand_councillor_fem_trait = {
+		
+		political_advisor_cost_factor = -0.75
+		democratic_acceptance = 40
+
+		random = no
+	}
+
+}

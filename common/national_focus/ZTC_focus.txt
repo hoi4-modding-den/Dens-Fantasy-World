@@ -1,0 +1,1112 @@
+focus_tree={
+
+	id = ZTC_focus_tree
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZTC
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 2000 y = 300 }
+
+	focus = {
+		id = ZTC_the_new_grand_councillor
+		icon = GFX_focus_PLACEHOLDER
+        #prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 5
+		y = 0
+		#relative_position_id = 
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+
+		select_effect = {
+			country_event = {
+				id = ZTC_events.1
+				days = 10
+			}
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = ZTC_the_new_grand_councillor_tt
+			hidden_effect = {
+				retire_character = ZTC_jan_kroesus
+			}
+		}
+	}
+
+    focus = { 
+		id = ZTC_the_will_of_the_council
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_the_new_grand_councillor }
+		#mutually_exclusive = { focus =  }
+		x = -5
+		y = 1
+		relative_position_id = ZTC_the_new_grand_councillor
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            NOT = { has_government = communism }
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = 0.05 }
+			add_popularity = { ideology = democratic popularity = 0.05 }
+		}
+	}
+
+	focus = { 
+		id = ZTC_subsidise_the_airdocks
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_the_will_of_the_council }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = ZTC_the_will_of_the_council
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            NOT = { has_government = communism }
+			controls_state = 749
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = ZTC_subsidise_the_airdocks
+				bonus = 1
+				uses = 1
+				category = air_equipment
+			}
+			if = {
+				limit = {
+					749 = { air_base < 8 }
+				}
+				749 = { 
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_lower_taxes
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_subsidise_the_airdocks }
+		prerequisite = { focus = ZTC_approve_sale_of_weapons }
+		mutually_exclusive = { focus = ZTC_expand_the_academy }
+		x = 0
+		y = 2
+		relative_position_id = ZTC_subsidise_the_airdocks
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            NOT = { has_government = communism }
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ZTC_richest_city_in_the_south
+				add_idea = ZTC_richest_city_in_the_south_taxes
+			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_approve_sale_of_weapons
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_subsidise_the_airdocks }
+		prerequisite = { focus = ZTC_fund_the_upper_districts }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = ZTC_the_will_of_the_council
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            NOT = { has_government = communism }
+			is_subject = no
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			# unlocks decisions to smuggle guns
+		}
+	}
+
+	focus = { 
+		id = ZTC_fund_the_upper_districts
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_the_will_of_the_council }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZTC_the_will_of_the_council
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            NOT = { has_government = communism }
+			controls_state = 749
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			add_political_power = 50
+			749 = { add_extra_state_shared_building_slots = 1 }
+		}
+	}
+
+	focus = { 
+		id = ZTC_expand_the_academy
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_fund_the_upper_districts }
+		prerequisite = { focus = ZTC_approve_sale_of_weapons }
+		mutually_exclusive = { focus = ZTC_lower_taxes }
+		x = 0
+		y = 2
+		relative_position_id = ZTC_fund_the_upper_districts
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            NOT = { has_government = communism }
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ZTC_richest_city_in_the_south
+				add_idea = ZTC_richest_city_in_the_south_akademie
+			}
+		}
+	}
+
+    focus = { 
+		id = ZTC_secure_council_loyalty
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_lower_taxes focus = ZTC_expand_the_academy }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 4
+		relative_position_id = ZTC_the_will_of_the_council
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = -0.2 }
+			add_popularity = { ideology = fascism popularity = -0.2 }
+		}
+	}
+
+	focus = {
+		id = ZTC_necessary_reform
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_the_new_grand_councillor }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZTC_the_new_grand_councillor
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = { ideology = democratic popularity = 0.1 }
+		}
+	}
+
+	focus = {
+		id = ZTC_modernise_civil_protection
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_necessary_reform }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = ZTC_necessary_reform
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				name = ZTC_modernise_civil_protection
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = ZTC_limited_armament_program
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_modernise_civil_protection }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZTC_modernise_civil_protection
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+			controls_state = 749
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			749 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZTC_invest_in_public_development
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_necessary_reform }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZTC_necessary_reform
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+			controls_state = 749
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			add_stability = 0.1
+			if = {
+				limit = {
+					749 = { infrastructure < 5 }
+				}
+				749 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZTC_regulate_the_industries
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_necessary_reform }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = ZTC_necessary_reform
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+			controls_state = 749
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			749 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_ideas = ZTC_industrial_regulations
+		}
+	}
+
+	focus = {
+		id = ZTC_industrial_waste_laws
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_regulate_the_industries }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZTC_regulate_the_industries
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ZTC_industrial_regulations
+				add_idea = ZTC_industrial_regulations_2
+			}
+		}
+	}
+
+	focus = {
+		id = ZTC_reverse_the_stratification
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_invest_in_public_development }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZTC_invest_in_public_development
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZTC_open_volkshochschulen
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_limited_armament_program }
+		prerequisite = { focus = ZTC_reverse_the_stratification }
+		prerequisite = { focus = ZTC_industrial_waste_laws }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZTC_reverse_the_stratification
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+			amount_research_slots < 7
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+    focus = {
+		id = ZTC_the_needs_of_the_people
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_the_new_grand_councillor }
+		#mutually_exclusive = { focus =  }
+		x = 5
+		y = 1
+		relative_position_id = ZTC_the_new_grand_councillor
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            NOT = { has_government = fascism }
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.05 }
+			add_popularity = { ideology = democratic popularity = 0.05 }
+		}
+	}
+
+	focus = { 
+		id = ZTC_political_concessions
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_the_needs_of_the_people }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = ZTC_the_needs_of_the_people
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            NOT = { has_government = fascism }
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			if = {
+				limit = { has_idea = ZTC_proletarian_movement_3 }
+				swap_ideas = {
+					remove_idea = ZTC_proletarian_movement_3
+					add_idea = ZTC_proletarian_movement_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ZTC_proletarian_movement
+					add_idea = ZTC_proletarian_movement_2
+				}
+			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_legalise_union_formation
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_political_concessions }
+		prerequisite = { focus = ZTC_poverty_relief_measures }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = ZTC_political_concessions
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            NOT = { has_government = fascism }
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ZTC_proletarian_movement_5
+				add_idea = ZTC_proletarian_movement_6
+			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_poverty_relief_measures
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_political_concessions }
+		prerequisite = { focus = ZTC_found_the_labour_ministry }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = ZTC_the_needs_of_the_people
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            NOT = { has_government = fascism }
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ZTC_proletarian_movement_4
+				add_idea = ZTC_proletarian_movement_5
+			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_found_the_labour_ministry
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_the_needs_of_the_people }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZTC_the_needs_of_the_people
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            NOT = { has_government = fascism }
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			if = {
+				limit = { has_idea = ZTC_proletarian_movement_2 }
+				swap_ideas = {
+					remove_idea = ZTC_proletarian_movement_2
+					add_idea = ZTC_proletarian_movement_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ZTC_proletarian_movement
+					add_idea = ZTC_proletarian_movement_3
+				}
+			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_combat_police_corruption
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_found_the_labour_ministry }
+		prerequisite = { focus = ZTC_poverty_relief_measures }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = ZTC_found_the_labour_ministry
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            NOT = { has_government = fascism }
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+    focus = { 
+		id = ZTC_a_proper_democracy
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_legalise_union_formation }
+		prerequisite=  { focus = ZTC_combat_police_corruption }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 4
+		relative_position_id = ZTC_the_needs_of_the_people
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			remove_ideas = ZTC_proletarian_movement_6
+		}
+	}
+
+    focus = {
+		id = ZTC_maintain_the_stadtrat_system
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_secure_council_loyalty }
+        prerequisite = { focus = ZTC_a_proper_democracy }
+		mutually_exclusive = { focus = ZTC_embrace_social_democracy }
+		x = -4
+		y = 6
+		relative_position_id = ZTC_the_new_grand_councillor
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = ZTC_embrace_social_democracy
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_secure_council_loyalty }
+        prerequisite = { focus = ZTC_a_proper_democracy }
+		mutually_exclusive = { focus = ZTC_maintain_the_stadtrat_system }
+		x = 4
+		y = 6
+		relative_position_id = ZTC_the_new_grand_councillor
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { 
+		id = ZTC_develop_helmarn
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_maintain_the_stadtrat_system focus = ZTC_embrace_social_democracy }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = ZTC_maintain_the_stadtrat_system
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            controls_state = 1239
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			1239 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+    focus = { 
+		id = ZTC_interfere_in_the_edelweiss_revolution
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_maintain_the_stadtrat_system focus = ZTC_embrace_social_democracy }
+		#mutually_exclusive = { focus =  }
+		x = 4
+		y = 1
+		relative_position_id = ZTC_maintain_the_stadtrat_system
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+            country_exists = ZLF
+            country_exists = ZKN
+        }
+
+		bypass = {
+            ZLF = { has_civil_war = no }
+        }
+		
+		completion_reward = {
+			ZLF = {
+				add_manpower = 10000
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment
+					amount = 2000
+					producer = ROOT
+				}
+				add_equipment_to_stockpile = { 
+					type = support_equipment
+					amount = 500
+					producer = ROOT
+				}
+			}
+		}
+	}
+
+    focus = { 
+		id = ZTC_gardenian_monetary_union
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_interfere_in_the_edelweiss_revolution }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = ZTC_interfere_in_the_edelweiss_revolution
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { 
+		id = ZTC_fortify_the_peninsula
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_interfere_in_the_edelweiss_revolution }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZTC_interfere_in_the_edelweiss_revolution
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            controls_state = 749
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+    focus = { 
+		id = ZTC_military_cooperation
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_interfere_in_the_edelweiss_revolution }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = ZTC_interfere_in_the_edelweiss_revolution
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { 
+		id = ZTC_stop_the_spying
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_maintain_the_stadtrat_system focus = ZTC_embrace_social_democracy }
+		#mutually_exclusive = { focus =  }
+		x = 6
+		y = 1
+		relative_position_id = ZTC_maintain_the_stadtrat_system
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			if = {
+				limit = { has_dlc = "La Resistance" }
+				NOT = { has_idea = ZTC_foreign_eyes }
+			}
+			else = {
+				NOT = { has_idea = ZTC_foreign_eyes_no_lar }
+			}
+        }
+		
+		completion_reward = {
+			if = {
+				limit = { has_dlc = "La Resistance" }
+				remove_ideas = ZTC_foreign_eyes
+			}
+			else = {
+				remove_ideas = ZTC_foreign_eyes_no_lar
+			}
+		}
+	}
+
+    focus = {
+		id = ZTC_depose_the_grand_chancellor
+		icon = GFX_focus_PLACEHOLDER
+        #prerequisite = { focus = ZTC_the_new_grand_councillor }
+		#mutually_exclusive = { focus =  }
+		x = -10
+		y = 7
+		relative_position_id = ZTC_the_new_grand_councillor
+		
+		cost = 0
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            custom_trigger_tooltip = {
+                tooltip = ZTC_depose_the_grand_chancellor_tt
+                always = no
+            }
+        }
+
+		bypass = {
+            has_government = fascism
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = ZTC_the_peoples_revolution
+		icon = GFX_focus_PLACEHOLDER
+        #prerequisite = { focus = ZTC_the_new_grand_councillor }
+		#mutually_exclusive = { focus =  }
+		x = 10
+		y = 7
+		relative_position_id = ZTC_the_new_grand_councillor
+		
+		cost = 0
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            custom_trigger_tooltip = {
+                tooltip = ZTC_the_peoples_revolution_tt
+                always = no
+            }
+        }
+
+		bypass = {
+            has_government = communism
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+}

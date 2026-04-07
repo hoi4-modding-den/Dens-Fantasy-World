@@ -14,7 +14,7 @@ set_technology = {
 }
 
 add_ideas = {
-	export_focus
+	closed_economy
 	volunteer_only
 	civilian_economy
 }

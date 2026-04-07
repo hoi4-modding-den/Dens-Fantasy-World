@@ -1,12 +1,13 @@
 ﻿l_english:
 
- ZLF: "Edelweiss"
- ZLF_DEF: "Edelweiss"
- ZLF_ADJ: "Edelweissian"
+ ZLF: "Gardenia"
+ ZLF_DEF: "Gardenia"
+ ZLF_ADJ: "Gardenian"
 
  ZLF_liberation_front: "Edelweiss Liberation Front"
  ZLF_liberation_front_DEF: "the Edelweiss Liberation Front"
- ZLF_liberation_front_ADJ: "ELF"
+ ZLF_liberation_front_ADJ: "Edelweiss"
+
 
 # PARTIES
 
@@ -18,3 +19,10 @@
  ZLF_communism_party_long: "Radical Transformation Party"
  ZLF_fascism_party: "Armeeverschwörung"
  ZLF_fascism_party_long: "Army Conspirators"
+
+
+# MAP STUFF
+
+ STATE_662: "Flussland"
+ STATE_677: "Dammerei"
+ STATE_879: "Quellenjebiet"
