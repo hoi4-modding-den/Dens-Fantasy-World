@@ -6,12 +6,12 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = socialism
+			ideology = pan_species_cosmopolitanism
 			traits = { }
 			desc = ZPS_Council_of_Species_desc
 		}
 		country_leader = {
-			ideology = marxism
+			ideology = communalism
 			traits = { }
 			desc = ZPS_Council_of_Species_desc
 		}
@@ -21,7 +21,7 @@ characters = {
 			desc = ZPS_Council_of_Species_desc
 		}
 		country_leader = {
-			ideology = nazism
+			ideology = national_primitivism
 			traits = { }
 			desc = ZPS_Council_of_Species_desc
 		}

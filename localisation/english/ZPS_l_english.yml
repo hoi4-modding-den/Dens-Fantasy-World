@@ -14,6 +14,14 @@ ZPS_neutrality_party_long: "Traditionalist Caucus"
 ZPS_fascism_party: "Nationalist Caucus"
 ZPS_fascism_party_long: "Nationalist Caucus"
 
+#Ideologies
+national_primitivism: "National Primitivism"
+national_primitivism_desc: "National Primitivism supports retroactive policies which eliminates technology and modern ideas. It seeks to return to old morals inside the nation state. Usually supremacist, it wants to use the state to stamp down national minorities and assert their apparent dominance."
+communalism: "Communalism"
+communalism_desc: "Communalism is a left-wing ideology that seeks to eventually eliminate the state and replace it with democratic councils. It is extremley socially progressive and anti-class."
+pan_species_cosmopolitanism: "Pan-Species Cosmopolitanism"
+pan_species_cosmopolitanism_desc: "Pan-Species Cosmopolitanism states that the world should be united under one government, but that the government should be for all, with a representative and democratic form of governance. Though reformist in theory, in practise it will usually use force to integrate nations into its union."
+
 #Bookmark
 ZPS_GATHERING_STORM_DESC: "The Pan-Specific is a nation of many species. All work in relative harmony towards a better future, despite their differences. The largest species are the Portia, sentient matriarchal spiders. Followed by Humans, who inhabit much of the centre of the nation. Octopi make up a large portion of the population, their opinions ever changing. Then the smaller groups of Ultraviolent Mantis Shrimp and the Corvids, whose intellect requires two seperate birds to be fully realised. All of this is held together by the cold 'Avrana Kern', the personality of a long dead Human realised in the movements of ants."
 
@@ -41,6 +49,28 @@ ZPS_Octopus_Majority: "Octopus Majority"
 ZPS_Portia_Majority: "Portia Majority"
 ZPS_Human_Majority: "Human Majority"
 
+#Decisions
+ZPS_ethnic_stability: "Species Stability"
+ZPS_ethnic_stability_desc: "Despite appearances, not all is rosy. Although we are in general supported by all species in the nation, some have less than positive opinions towards each other. If we support one species too much, another may get angry. This system keeps the harmony, but makes stalling a real issue.\n\n§RWe walk a fine line, make sure you do not break it§!"
+ZPS_reduce_tensions_shrimp: "Work with the Stomatopods"
+ZPS_reduce_tensions_portia: "Chat with Portia Peer Houses"
+ZPS_reduce_tensions_octopus: "Work out solutions with Octopi"
+ZPS_reduce_tensions_human: "Negotiate with Humans"
+ZPS_reduce_tensions_corvid: "Discuss with Corvids"
+ZPS_compromise_between_each_other: "Compromise with each other"
+ZPS_establish_dialogue: "Establish dialogue"
+
+#GUI
+ZPS_Portia_Profile_Text: "Portia- Sentient Spiders who communicate through vibrations of their palps. The females were historically dominate and this is still previlant in their culture, although the days where males were killed for fun are over. The males are usually more progressive."
+ZPS_Portia_Madness_Text: "Anger:\n§R[?ZPS_Portia_Anger]/10§!"
+ZPS_Human_Profile_Text: "Human- The largest group on the world, in the Pan-Specific they are not a majority. They communicate through the emission of vibrations in the air. They tend to be either progressive or violently reactionary. They are the largest of the species by a considerable margain."
+ZPS_Human_Madness_Text: "Anger:\n§R[?ZPS_Human_Anger]/10§!"
+ZPS_Octopus_Profile_Text: "Octopus- Octopi do not communicate through the usual means but through patterns on their skin which reflect their mood, thoughts and opinions. Consiquently they cannot hide their feelings and do not lie. On top of this, the decentralised nature of their brains means they have no strict loyalties and constantly shift between different opinions, even ones they vermently supported may quickly become wrong to them."
+ZPS_Octopus_Madness_Text: "Anger:\n§R[?ZPS_Octopus_Anger]/10§!"
+ZPS_Shrimp_Profile_Text: "Stomatopod- These Shrimp are a small minority in the nation and usually communicate through violence, this makes their interactions with other species difficult, especially as they love their personal space and will attack any who come to close. Despite this they do wish to be in the Pan-Specific. They have considerable anger towards the Octopi as the only other aquatic species in the nation."
+ZPS_Shrimp_Madness_Text: "Anger:\n§R[?ZPS_Shrimp_Anger]/10§!"
+ZPS_Corvid_Profile_Text: "Corvid- Communicating like humans through the parroting of words and phrases they have heard before the Corvids have no real intellect themselves, instead two crows of opposing phenotypes must enter into a union, and then an intellect can be formed in the mind that exists between them, thanks to their two opposing skills. One Corvid is very good at remembering but useless at problem solving, the other the opposite, this union forms a strange mind when they both work together. In general they do not consider themselves intellegent which has lead to many heated discussions, especially with instances of Kern."
+ZPS_Corvid_Madness_Text: "Anger:\n§R[?ZPS_Corvid_Anger]/10§!"
 
 #Tooltips
 ZPS_If_Completed_MSAMI: "If the focus §YEstablish the M.S.A.M.I.§! has been completed:"

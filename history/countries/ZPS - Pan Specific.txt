@@ -127,6 +127,36 @@ set_variable = { ZPS_special_forces_training_time_factor = 0 }
 set_variable = { ZPS_special_forces_cap = 0 }
 set_variable = { ZPS_special_forces_attack_factor = 0 }
 
+set_variable = { ZPS_Portia_Anger = 2 }
+set_variable = { ZPS_Human_Anger = 3 }
+set_variable = { ZPS_Octopus_Anger = 2 }
+set_variable = { ZPS_Shrimp_Anger = 6 }
+set_variable = { ZPS_Corvid_Anger = 1 }
+clamp_variable = {
+	var = ZPS_Portia_Anger
+	min = 0
+	max = 10
+}
+clamp_variable = {
+	var = ZPS_Human_Anger
+	min = 0
+	max = 10
+}
+clamp_variable = {
+	var = ZPS_Octopus_Anger
+	min = 0
+	max = 10
+}
+clamp_variable = {
+	var = ZPS_Shrimp_Anger
+	min = 0
+	max = 10
+}
+clamp_variable = {
+	var = ZPS_Corvid_Anger
+	min = 0
+	max = 10
+}
 
 ### Templates ###
 #Tank

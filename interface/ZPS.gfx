@@ -5,8 +5,33 @@ spriteTypes = {
 		name = "GFX_idea_ZPS_shifting_tides"
 		texturefile = "gfx/interface/ideas/ZPS/ZPS_Shifting_Tides.png"
 	}
+#GUI#
+	spriteType = {
+		name = "GFX_ZPS_Profile_Portia"
+		texturefile = "gfx/interface/gui/ZPS/ZPS_Species_Portia.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Profile_Octopus"
+		texturefile = "gfx/interface/gui/ZPS/ZPS_Species_Octopus.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Profile_Human"
+		texturefile = "gfx/interface/gui/ZPS/ZPS_Species_Human.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Profile_Stomatopod"
+		texturefile = "gfx/interface/gui/ZPS/ZPS_Species_Stomatopod.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Profile_Corvid"
+		texturefile = "gfx/interface/gui/ZPS/ZPS_Species_Corvid.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Category_Species_Icon"
+		texturefile = "gfx/interface/gui/ZPS/ZPS_Species_Stability_Category_Icon.png"
+	}
 
-#FOCUS
+#FOCUS#
 
 	SpriteType = {
 		name = "GFX_focus_ZPS_Militarisation_Campaign"

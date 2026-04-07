@@ -1,0 +1,16 @@
+ZPS_ethnic_stability = {
+	
+	allowed = {
+		original_tag = ZPS
+	}
+
+	icon = GFX_ZPS_Category_Species_Icon
+	priority = 100 
+
+	visible_when_empty = yes
+
+	visible = {
+		original_tag = ZPS
+	}
+	scripted_gui = ZPS_Species_Scripted_GUI
+}

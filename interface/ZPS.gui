@@ -1,0 +1,94 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "ZPS_Species_container"
+		size = { width = 0 height = 250 }
+		clipping = no
+		
+		iconType = {
+			name = "ZPS_Species_Profile_Portia" 
+			position = { x = 30 y = 90}
+			spriteType = "GFX_ZPS_Profile_Portia"
+			pdx_tooltip = ZPS_Portia_Profile_Text
+		}
+		iconType = {
+			name = "ZPS_Species_Profile_Human" 
+			position = { x = 130 y = 90}
+			spriteType = "GFX_ZPS_Profile_Human"
+			pdx_tooltip = ZPS_Human_Profile_Text
+		}
+		iconType = {
+			name = "ZPS_Species_Profile_Octopus" 
+			position = { x = 230 y = 90}
+			spriteType = "GFX_ZPS_Profile_Octopus"
+			pdx_tooltip = ZPS_Octopus_Profile_Text
+		}
+		iconType = {
+			name = "ZPS_Species_Profile_Shrimp" 
+			position = { x = 330 y = 90}
+			spriteType = "GFX_ZPS_Profile_Stomatopod"
+			pdx_tooltip = ZPS_Shrimp_Profile_Text
+		}
+		iconType = {
+			name = "ZPS_Species_Profile_Corvid" 
+			position = { x = 430 y = 90}
+			spriteType = "GFX_ZPS_Profile_Corvid"
+			pdx_tooltip = ZPS_Corvid_Profile_Text
+		}
+		instantTextBoxType = {
+				name = "ZPS_Portia_Anger"
+				position = { x = 35 y = 190 }
+				maxWidth = 482
+				maxHeight = 2000
+				format = left
+				font = "hoi4_18_outline"
+				text = ZPS_Portia_Madness_Text
+				alwaystransparent = yes
+		}
+		instantTextBoxType = {
+				name = "ZPS_Human_Anger"
+				position = { x = 135 y = 190 }
+				maxWidth = 482
+				maxHeight = 2000
+				format = left
+				font = "hoi4_18_outline"
+				text = ZPS_Human_Madness_Text
+				alwaystransparent = yes
+		}
+		instantTextBoxType = {
+				name = "ZPS_Octopus_Anger"
+				position = { x = 235 y = 190 }
+				maxWidth = 482
+				maxHeight = 2000
+				format = left
+				font = "hoi4_18_outline"
+				text = ZPS_Octopus_Madness_Text
+				alwaystransparent = yes
+		}
+		instantTextBoxType = {
+				name = "ZPS_Shrimp_Anger"
+				position = { x = 335 y = 190 }
+				maxWidth = 482
+				maxHeight = 2000
+				format = left
+				font = "hoi4_18_outline"
+				text = ZPS_Shrimp_Madness_Text
+				alwaystransparent = yes
+		}
+		instantTextBoxType = {
+				name = "ZPS_Corvid_Anger"
+				position = { x = 435 y = 190 }
+				maxWidth = 482
+				maxHeight = 2000
+				format = left
+				font = "hoi4_18_outline"
+				text = ZPS_Corvid_Madness_Text
+				alwaystransparent = yes
+		}
+
+
+	
+
+
+	}
+}
