@@ -15,5 +15,22 @@ spriteTypes = {
 		name = "GFX_idea_ZAV_secret_orders"
 		texturefile = "gfx/interface/ideas/ZAV/ZAV_secret_orders.dds"
 	}
+
+	# VAULT #
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_background"
+		texturefile = "gfx/interface/ZAV/ZAV_artifact_background.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_vault_title_background2"
+		texturefile = "gfx/interface/ZAV/ZAV_vault_title_background2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_blood_of_king_arthur_artifact"
+		texturefile = "gfx/interface/ZAV/ZAV_blood_of_king_arthur_artifact.dds"
+	}
 }
 

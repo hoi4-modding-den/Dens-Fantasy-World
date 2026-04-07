@@ -132,3 +132,14 @@ add_ideas = {
 	ZAV_bleeding_grail
 	ZAV_secret_orders
 }
+
+add_to_array = { ZAV_vault_artifacts = 1 }
+add_to_array = { ZAV_vault_artifacts = 2 }
+add_to_array = { ZAV_vault_artifacts = 3 }
+add_to_array = { ZAV_vault_artifacts = 4 }
+add_to_array = { ZAV_vault_artifacts = 5 }
+add_to_array = { ZAV_vault_artifacts = 6 }
+add_to_array = { ZAV_vault_artifacts = 7 }
+add_to_array = { ZAV_vault_artifacts = 8 }
+add_to_array = { ZAV_vault_artifacts = 9 }
+add_to_array = { ZAV_vault_artifacts = 10 }

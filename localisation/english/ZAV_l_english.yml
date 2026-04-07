@@ -34,6 +34,16 @@
  ZAV_secret_orders:0 "§0Secret Orders§!"
  ZAV_secret_orders_desc:0 "Hiding in the shadows, a dark network festers in secrecy. Hidden circles and forbidden cults practice outlawed magics, offering devotion not to the Grail, nor to Nimue, but to nameless powers that whisper from beyond the veil. In return, they are granted gifts both terrible and corrupting. Twisted flesh, shattered minds, and violence without reason. Murders go unsolved, entire villages fall to madness, and rumors of monstrous transformations spread like wildfire.\n\nWorse still, the sacred ashes of Saint Morvydd have been stolen and her tomb defiled. Now wielded as a relic, her ashes are capable of inciting terror and hysteria on a mass scale. With the guardian priests of the realm stretched thin and the faithful losing their grip, these secret orders grow ever bolder. Unless they are rooted out, Avalon may soon find itself undone not by armies, but by the rot spreading from within."
 
+ # VAULT OF SAINT CONSTANTINE #
+
+ ZAV_vault_of_saint_constantine:0 "Vault of Saint Constantine"
+ ZAV_vault_of_saint_constantine_desc:0 "Deep beneath the stone foundations of the §1Moonlight Cathedral§! lies the §YVault of Saint Constantine§!, a sanctum built not to display power, but to contain it. Within its warded chambers rest relics of immense and often perilous origin, artifacts recovered from fallen cults, forgotten ages, and battlefields where reality itself seemed to fray. Each is carefully sealed, catalogued, and guarded, for while many possess the potential to bring great advantage to the realm, their use is seldom without consequence.\n\nSome are blessings that burn brightly but briefly, capable of turning the tide of crisis in a single, irreversible moment. Others are more insidious, offering power at a cost not yet fully understood. The keepers of the Vault know well that restraint is as vital as strength; to draw upon these relics too freely would be to invite the very ruin they were locked away to prevent. And so they wait, silent, watchful, until the hour grows dire enough to justify unlocking what should never be used lightly."
+
+ ZAV_vault_title:0 "§8Current Artifacts§!"
+ 
+ ZAV_artifact_name_1:0 "Blood of King Arthur"
+ ZAV_artifact_desc_1:0 "PLACEHOLDER"
+
  # MISCELLANEOUS #
 
  ZAV_lord_of_lies:0 "Lord of Lies"

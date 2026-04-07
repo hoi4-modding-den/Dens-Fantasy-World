@@ -1,0 +1,17 @@
+scripted_gui = {
+    ZAV_vault_screen = {
+		context_type = decision_category
+		window_name = ZAV_vault_GUI
+
+        dynamic_lists = {
+            ZAV_vault_artifacts_gridbox = {
+                array = ZAV_vault_artifacts
+                entry_container = "ZAV_vault_artifact_entry"
+            }
+        }
+		
+		properties = {
+			
+		}
+	}
+}

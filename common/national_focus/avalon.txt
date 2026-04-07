@@ -1,0 +1,14 @@
+focus_tree = {
+	id = avalon_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZAV
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 0 y = 2500 }
+}
