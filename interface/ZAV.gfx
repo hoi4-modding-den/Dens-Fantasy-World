@@ -16,6 +16,28 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ZAV/ZAV_secret_orders.dds"
 	}
 
+	# NOTEBOOK #
+
+	spriteType = {
+		name = "GFX_ZAV_open_notebook_button"
+		texturefile = "gfx/interface/ZAV/ZAV_open_notebook_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_notebook_background"
+		texturefile = "gfx/interface/ZAV/ZAV_notebook_background.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_notebook"
+		texturefile = "gfx/interface/ZAV/ZAV_notebook.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_notebook_bookmark"
+		texturefile = "gfx/interface/ZAV/ZAV_notebook_bookmark.dds"
+	}
+
 	# VAULT #
 
 	SpriteType = {
@@ -92,5 +114,7 @@ spriteTypes = {
 		name = "GFX_ZAV_artifact_9"
 		texturefile = "gfx/interface/ZAV/ZAV_putrid_crustacean.dds"
 	}
+
+	# MISC #
 }
 

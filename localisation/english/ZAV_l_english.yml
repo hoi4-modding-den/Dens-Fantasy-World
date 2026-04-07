@@ -17,8 +17,8 @@
  ZAV_neutrality_party:0 "Round Table - Conservative"
  ZAV_neutrality_party_long:0 "Lords of the Round Table"
  
- ZAV_communism_party:0 "Broken Grail Movement"
- ZAV_communism_party_long:0 "Broken Grail Movement"
+ ZAV_communism_party:0 "Broken Council Movement"
+ ZAV_communism_party_long:0 "Broken Council Movement"
 
  # CHARACTERS #
 
@@ -37,8 +37,54 @@
  # EVENTS #
 
  ZAV_test_events.1.t:0 "Debug - Obtain the True Excalibur"
- ZAV_test_events.1.d:0 "Somehow you obtained the true excalibur."
+ ZAV_test_events.1.d:0 "Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur."
  ZAV_test_events.1.a:0 "..."
+
+ ZAV_test_events.2.t:0 "Debug - Obtain the Putrid Crustacean"
+ ZAV_test_events.2.d:0 "Somehow you obtained the putrid crustacean."
+ ZAV_test_events.2.a:0 "..."
+
+ ZAV_test_events.3.t:0 "Debug - Lose the Blood of King Arthur"
+ ZAV_test_events.3.d:0 "Somehow you lost the Blood of King Arthur."
+ ZAV_test_events.3.a:0 "..."
+
+ ZAV_information_events.1.t:0 "The Divine Saviours and the True King"
+ ZAV_information_events.1.d:0 "The Divine Saviours are a secret organisation that is notorious for its increasingly violent and profane activities. While other secret organisations attempt to cover up traces of their activity, the saviours leave unmistakable marks in their wake. They are involved in ritualistic slaughter and defilement as well as spreading corruption in the bowels of our cities. Towns and cities have reported sudden disappearances, desecrated holy sites, and the emergence of twisted practices that defy law and tradition.\n\nThe saviours worship a deity known as the True King, who in prayer is claimed to one day rise and reclaim dominion over Avalon. Apostles of the True King view their actions not as crimes, but as necessary steps in preparing the realm for his wonderous return. Their acts of violence and corruption are framed as acts of devotion in purging weakness and reshaping society in His image.\n\nThe movement has found support among elements of the nobility. Disillusioned lords and ambitious elites have quietly aligned themselves with the Divine Saviours and provide resources, protection, and influence. This organisation is no longer a fringe sect but an organised and dangerous force whose influence corrupts the very heart of Avalon."
+ ZAV_information_events.1.a:0 "..."
+
+ ZAV_information_events.2.t:0 ""
+ ZAV_information_events.2.d:0 ""
+ ZAV_information_events.2.a:0 ""
+
+ # MYSTIC KNOWLEDGE #
+
+ ZAV_merlins_library:0 "Merlin's Library"
+
+ ZAV_notebook_tab_divine_saviours:0 "Divine Saviours"
+ ZAV_notebook_tab_order_of_shadows:0 "Order of Shadows"
+ ZAV_notebook_tab_legion_of_the_drowned:0 "Legion of the Drowned"
+ ZAV_notebook_tab_crimson_order:0 "Crimson Order"
+ ZAV_notebook_tab_order_of_true_knights:0 "Order of True Knights"
+
+ ZAV_notebook_page_divine_saviours:0 "The Divine Saviours are a secret organisation that is notorious for its increasingly violent and profane activities. While other secret organisations attempt to cover up traces of their activity, the saviours leave unmistakable marks in their wake. They are involved in ritualistic slaughter and defilement as well as spreading corruption in the bowels of our cities. Towns and cities have reported sudden disappearances, desecrated holy sites, and the emergence of twisted practices that defy law and tradition.\n\nThe saviours worship a deity known as the True King, who in prayer is claimed to one day rise and reclaim dominion over Avalon. Apostles of the True King view their actions not as crimes, but as necessary steps in preparing the realm for his wonderous return. Their acts of violence and corruption are framed as acts of devotion in purging weakness and reshaping society in His image.\n\nThe movement has found support among elements of the nobility. Disillusioned lords and ambitious elites have quietly aligned themselves with the Divine Saviours and provide resources, protection, and influence. This organisation is no longer a fringe sect but an organised and dangerous force whose influence corrupts the very heart of Avalon.\n\nDiscovered Information:\n\n"
+ ZAV_notebook_page_order_of_shadows:0 "PLACEHOLDER 1"
+ ZAV_notebook_page_legion_of_the_drowned:0 "PLACEHOLDER 2"
+ ZAV_notebook_page_crimson_order:0 "PLACEHOLDER 3"
+ ZAV_notebook_page_order_of_true_knights:0 "PLACEHOLDER 4"
+
+ ZAV_page_discoveries_text:0 "[GetPageDiscoveryText]"
+
+ # INFO #
+
+ ZAV_notebook_info_blank:0 ""
+ ZAV_discoveries_divine_saviours_1:0 "- The Divine Saviours also worship the 'Bleeding King', it is unclear whether this is the same deity as the True King.\n\n"
+ ZAV_discoveries_divine_saviours_2:0 "- The Bleeding King and the True King are the same deity, though the former is the deity's true name.\n\n"
+ ZAV_discoveries_divine_saviours_3:0 "- Initiates are enticed with promises of power and access to ancient relics lost since the time of King Arthur.\n\n"
+ ZAV_discoveries_divine_saviours_4:0 "- This secret order seems to require slaughter and despair to continue functioning.\n\n"
+ ZAV_discoveries_divine_saviours_5:0 "- The cult believes that the True King is King Arthur's truest and most uncorrupted form.\n\n"
+ ZAV_discoveries_divine_saviours_6:0 "- King Richard either leads or has been corrupted by the Divine Saviours.\n\n"
+ ZAV_discoveries_divine_saviours_7:0 "- The organisation was formed by King Richard with the goal of summoning deities from beyond the veil, although it is unclear what his motivations behind this were.\n\n"
+ ZAV_discoveries_divine_saviours_8:0 "- The Divine Saviours were the first secret order and others are sects that broke off to worship other deities.\n\n"
 
  # VAULT OF SAINT CONSTANTINE #
 
@@ -94,6 +140,7 @@
 
  ZAV_add_artifact_excalibur_tt:0 "The §9True Excalibur§! will be stored in the §YVault of Constantine§!."
  ZAV_add_artifact_putrid_crustacean_tt:0 "The §7Putrid Crustacean§! will be stored in the §YVault of Constantine§!."
+ ZAV_remove_artifact_blood_of_king_arthur_tt:0 "The §tBlood of King Arthur§! has been stolen from the §YVault of Constantine§!."
 
  # MISCELLANEOUS #
 

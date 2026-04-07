@@ -40,3 +40,48 @@ country_event = {
 		}
     }
 }
+
+country_event = {
+	id = ZAV_test_events.3
+	title = ZAV_test_events.3.t
+	desc = ZAV_test_events.3.d
+	
+	picture = GFX_ZNY_events_zorzerk_news_image
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+        name = ZAV_test_events.3.a
+
+		custom_effect_tooltip = ZAV_remove_artifact_blood_of_king_arthur_tt
+
+		hidden_effect = {
+			remove_from_array = { ZAV_vault_artifacts = 1 }
+		}
+    }
+}
+
+country_event = {
+	id = ZAV_test_events.4
+	title = ZAV_test_events.4.t
+	desc = ZAV_test_events.4.d
+	
+	picture = GFX_ZNY_events_zorzerk_news_image
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+        name = ZAV_test_events.4.a
+
+		add_to_array = { ZAV_discoveries_divine_saviours = 1 }
+		add_to_array = { ZAV_discoveries_divine_saviours = 2 }
+		add_to_array = { ZAV_discoveries_divine_saviours = 3 }
+		add_to_array = { ZAV_discoveries_divine_saviours = 4 }
+		add_to_array = { ZAV_discoveries_divine_saviours = 5 }
+		add_to_array = { ZAV_discoveries_divine_saviours = 6 }
+		add_to_array = { ZAV_discoveries_divine_saviours = 7 }
+		add_to_array = { ZAV_discoveries_divine_saviours = 8 }
+    }
+}

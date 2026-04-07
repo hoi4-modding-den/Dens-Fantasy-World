@@ -1,0 +1,315 @@
+guitypes = {
+	containerWindowType = {
+		name = "ZAV_vault_GUI"
+		size = { width = 100%% height = 178 }
+
+        containerWindowType = {
+            name = "ZAV_vault_title_container"
+            position = { x = 10 y = 10 }
+            size = { width = 490 height = 35 }
+
+            background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ZAV_vault_title_background2"
+			}
+
+            instantTextboxType = {
+                name = "ZAV_vault_title_text"
+                position = { x = 3 y = 7 }
+                textureFile = ""
+                font = "hoi_22header"
+                borderSize = {x = 0 y = 0}
+                text = "ZAV_vault_title"
+                maxWidth = 490
+                maxHeight = 35
+                format = center
+                alwaystransparent = yes
+            }
+        }
+
+        containerWindowType = {
+            name = "ZAV_vault_container"
+            position = { x = 10 y = 42 }
+            size = { width = 490 height = 132 }
+            Orientation = upper_left
+
+            background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_bg"
+			}
+
+            containerWindowType = {
+                name = "ZAV_vault_artifacts_grid_container"
+                position = { x = 20 y = 20 }
+                size = { width = 450 height = 98 }
+                clipping = yes
+                horizontalScrollbar = "bottom_horizontal_slider"
+                scroll_wheel_factor = 40
+                smooth_scrolling = yes
+
+                background = {
+                    name = "Background"
+                    quadTextureSprite = "GFX_tiled_window_transparent"
+                }
+            
+                gridboxtype = {
+                    name = "ZAV_vault_artifacts_gridbox"
+                    position = { x = 0 y = 0 }
+                    size = { width = 100%% height = 100%% }
+                    slotsize = { width = 70 height = 70 }
+                    max_slots_vertical = 1
+                    format = "UPPER_LEFT"
+                }
+            }
+        }
+    }
+
+    containerWindowType = {
+        name = "ZAV_vault_artifact_entry"
+        position = { x = 1 y = 1 }
+        size = {width = 68 height = 68}
+
+        background = {
+            name = "ZAV_vault_artifact_icon_background"
+            quadTextureSprite = "GFX_ZAV_artifact_background"
+        }
+
+        iconType = { 
+            name = "ZAV_vault_artifact_fire"
+            quadTextureSprite = "GFX_ZAV_animated_magical_smoke"
+            position = { x = -7 y = -7 }
+            scale = 1.2
+        }
+
+        buttonType = { 
+            name = "ZAV_vault_artifact_icon"
+            quadTextureSprite = "GFX_ZAV_blank_artifact"
+            pdx_tooltip = "ZAV_artifact_name"
+            pdx_tooltip_delayed = "ZAV_artifact_desc"
+        }
+    }
+
+    containerWindowType = {
+        name = "ZAV_open_notebook_GUI"
+        position = { x = 0 y = 0 }
+        size = {width = 68 height = 68}
+
+        buttonType = { 
+            name = "ZAV_open_notebook_button"
+            quadTextureSprite = "GFX_ZAV_open_notebook_button"
+            pdx_tooltip = "ZAV_open_notebook_tt"
+        }
+    }
+
+    containerWindowType = {
+        name = "ZAV_notebook_GUI"
+        moveable = yes
+        position = { x = -400 y = -300 }
+        orientation = center
+        size = { width = 950 height = 600 }
+        clipping = no
+
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_tiled_window_transparent"
+        }
+
+        iconType = {
+            name = "ZAV_notebook_background"
+            quadTextureSprite = "GFX_ZAV_notebook"
+            position = { x = -150 y = -130 }
+            scale = 0.85
+            alwaystransparent = yes
+        }
+
+        buttonType = {
+			name = "ZAV_notebook_exit_button"
+			spriteType = "GFX_closebutton"
+			position = { x = 20 y = 590 }
+			shortcut = "ESCAPE"
+		}
+
+        instantTextBoxType = {
+            name = "ZAV_page_title"
+            position = { x = 570 y = -10 }
+            text = "[GetZAVNotebookPageTitle]"
+            font = "vic_36_black"
+            format = left
+            maxWidth = 380
+        }
+
+        containerWindowType = {
+            name = "ZAV_notebook_bookmarks"
+            position = { x = 20 y = 20 }
+            size = { width = 200 height = 560 }
+
+            buttonType = {
+                name = "tab_divine_saviours"
+                position = { x = 0 y = 0 }
+                quadTextureSprite = "GFX_ZAV_notebook_bookmark"
+                buttonText = "ZAV_notebook_tab_divine_saviours"
+                buttonFont = "hoi_16mbs"
+            }
+
+            buttonType = {
+                name = "tab_order_of_shadows"
+                position = { x = 0 y = 40 }
+                quadTextureSprite = "GFX_ZAV_notebook_bookmark"
+                buttonText = "ZAV_notebook_tab_order_of_shadows"
+                buttonFont = "hoi_16mbs"
+            }
+
+            buttonType = {
+                name = "tab_legion_of_the_drowned"
+                position = { x = 0 y = 80 }
+                quadTextureSprite = "GFX_ZAV_notebook_bookmark"
+                buttonText = "ZAV_notebook_tab_legion_of_the_drowned"
+                buttonFont = "hoi_16mbs"
+            }
+
+            buttonType = {
+                name = "tab_crimson_order"
+                position = { x = 0 y = 120 }
+                quadTextureSprite = "GFX_ZAV_notebook_bookmark"
+                buttonText = "ZAV_notebook_tab_crimson_order"
+                buttonFont = "hoi_16mbs"
+            }
+
+            buttonType = {
+                name = "tab_order_of_true_knights"
+                position = { x = 0 y = 160 }
+                quadTextureSprite = "GFX_ZAV_notebook_bookmark"
+                buttonText = "ZAV_notebook_tab_order_of_true_knights"
+                buttonFont = "hoi_16mbs"
+            }
+        }
+
+        containerWindowType = {
+            name = "ZAV_notebook_pages"
+            position = { x = 560 y = 35 }
+            size = { width = 450 height = 555 }
+            verticalScrollbar = "notebook_vertical_slider"
+            scroll_wheel_factor = 40
+            smooth_scrolling = yes
+            clipping = yes
+
+            background = {
+                name = "Background"
+                quadTextureSprite = "GFX_tiled_window_transparent"
+            }
+
+            instantTextBoxType = {
+                name = "page_divine_saviours_text"
+                position = { x = 30 y = 0 }
+                text = "ZAV_notebook_page_divine_saviours"
+                font = "hoi4_typewriter22_inverted"
+                format = left
+                maxWidth = 410
+                alwaystransparent = yes
+            }
+
+            containerWindowType = {
+                name = "page_divine_saviours_discoveries_container"
+                position = { x = 30 y = 800 }
+                size = { width = 410 height = 1000 }
+
+                background = {
+                    name = "Background"
+                    quadTextureSprite = "GFX_tiled_window_transparent"
+                }
+            
+                gridboxtype = {
+                    name = "page_divine_saviours_discoveries_gridbox"
+                    position = { x = 0 y = 0 }
+                    size = { width = 100%% height = 100%% }
+                    slotsize = { width = 410 height = 100 }
+                    max_slots_horizontal = 1
+                    format = "UPPER_LEFT"
+                }
+            }
+
+            instantTextBoxType = {
+                name = "page_order_of_shadows_text"
+                position = { x = 30 y = 0 }
+                text = "ZAV_notebook_page_order_of_shadows"
+                font = "hoi4_typewriter22_inverted"
+                format = left
+                maxWidth = 410
+                alwaystransparent = yes
+            }
+
+            instantTextBoxType = {
+                name = "page_legion_of_the_drowned_text"
+                position = { x = 30 y = 0 }
+                text = "ZAV_notebook_page_legion_of_the_drowned"
+                font = "hoi4_typewriter22_inverted"
+                format = left
+                maxWidth = 410
+                alwaystransparent = yes
+            }
+
+            instantTextBoxType = {
+                name = "page_crimson_order_text"
+                position = { x = 30 y = 0 }
+                text = "ZAV_notebook_page_crimson_order"
+                font = "hoi4_typewriter22_inverted"
+                format = left
+                maxWidth = 410
+                alwaystransparent = yes
+            }
+
+            instantTextBoxType = {
+                name = "page_order_of_true_knights_text"
+                position = { x = 30 y = 0 }
+                text = "ZAV_notebook_page_order_of_true_knights"
+                font = "hoi4_typewriter22_inverted"
+                format = left
+                maxWidth = 410
+                alwaystransparent = yes
+            }
+        }
+    }
+
+    containerWindowType = {
+        name = "page_discoveries_entry"
+        position = { x = 0 y = 0 }
+        size = {width = 410 height = 70}
+
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_tiled_window_transparent"
+        }
+
+        instantTextBoxType = {
+            name = "page_discoveries_text"
+            position = { x = 0 y = 0 }
+            text = "ZAV_page_discoveries_text"
+            font = "hoi4_typewriter22_inverted"
+            format = left
+            maxWidth = 410
+            alwaystransparent = yes
+        }
+    }
+
+    extendedScrollbarType = {
+        name = "notebook_vertical_slider"
+        position = { x = 5 y = 0 }
+        size = { width = 13 height = 100%% }
+        startValue = 0
+        orientation = upper_left
+        origo = upper_left
+        
+        slider = {
+            name = "Slider"	
+            quadTextureSprite = "GFX_profile_scroll_thumb"
+            position = { x = -3 y = 0 }
+        }
+
+        track = {
+            name = "Track"
+            quadTextureSprite = "GFX_profile_scroll_track"
+            position = { x = 3 y = 0 }
+            alwaystransparent = yes
+        }
+    }
+}
