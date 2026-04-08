@@ -13,10 +13,12 @@
  #Focuses
 
  #Events
-
+ koreliaintro.1.t:0 "Real Gloria Declarations"
+ koreliaintro.1.d:0 "WIP"
+ koreliaintro.1.a:0 "Glory to the Colonels!"
  #Ideas
  
  #States
- 
+ STATE_122: "Greater Gloria"
  STATE_7: "Halfland"
  

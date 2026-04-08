@@ -1,0 +1,15 @@
+add_namespace = koreliaintro
+
+#Real Gloria Declarations
+country_event = {
+	id = koreliaintro.1
+	title = koreliaintro.1.t
+	desc = koreliaintro.1.d
+	picture = GFX_report_event_soviet_purge_trial
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = koreliaintro.1.a
+
+	}
+}
