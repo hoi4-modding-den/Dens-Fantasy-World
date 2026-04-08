@@ -1,0 +1,1 @@
+ZTK = "countries/Tamakh.txt"

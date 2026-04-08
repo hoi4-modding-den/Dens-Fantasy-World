@@ -1,0 +1,70 @@
+ideas = {
+	country = {
+		ZTK_armchair_intellectualism = {
+			picture = generic_supply_lines
+
+			allowed = {}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.2
+				political_advisor_cost_factor = 0.25
+				economy_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				theorist_cost_factor = 0.5
+
+				communism_drift = 0.05
+				party_popularity_stability_factor = 0.05
+	        }	
+	    }
+
+		ZTK_poor_infrastructure = {
+			picture = generic_supply_lines
+
+			allowed = {}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = -0.27
+				production_speed_rail_way_factor = -0.27
+	        }	
+	    }
+
+		ZTK_rural_society = {
+			picture = generic_supply_lines
+
+			allowed = {}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.375
+	        }	
+
+			research_bonus = {
+				electronics = -0.22
+				industry = -0.22
+			}
+	    }
+
+		ZTK_oh_i_wish_to_be_a_bird = {
+			picture = generic_supply_lines
+
+			allowed = {}
+
+			removal_cost = -1
+
+			modifier = {
+				air_ace_generation_chance_factor = 0.08
+				air_mission_efficiency = 0.06
+				air_maximum_speed_factor = 0.02
+	        }
+
+			research_bonus = {
+				air_equipment = 0.06
+			}
+	    }
+	}
+}

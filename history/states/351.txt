@@ -2,34 +2,24 @@
 state={
 	id=351
 	name="STATE_351"
-	manpower = 138071
-	
-	state_category = small_island
-	#impassable = yes
-	resources={
-		aluminium=18
-		chromium=0
-		oil=2
-		rubber=0
-		steel=0
-		tungsten=0
-		coal=0
-	}
-
 	history={
-		
-		
+		owner = ZTK
+		add_core_of = ZTK
 		buildings = {
 			infrastructure = 1
-			
-			arms_factory = 0
-			industrial_complex = 0
-			
-			
+			industrial_complex = 1
+			arms_factory = 1
 		}
-		
-	}
 
+	}
+	
+	manpower=1790000
+	buildings_max_level_factor=1.000
+	state_category=city
+	resources={
+		tungsten = 2
+		coal = 18
+	}
 	provinces={
 		5510 5511 5512 5513 5514 
 	}

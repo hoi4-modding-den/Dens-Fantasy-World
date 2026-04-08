@@ -2,34 +2,22 @@
 state={
 	id=300
 	name="STATE_300"
-	manpower = 3379432
-	
-	state_category = pastoral
-	#impassable = yes
-	resources={
-		aluminium=0
-		chromium=0
-		oil=0
-		rubber=0
-		steel=0
-		tungsten=0
-		coal=0
-	}
-
 	history={
-		
-		
+		owner = ZTK
+		add_core_of = ZTK
 		buildings = {
-			infrastructure = 1
-			
-			arms_factory = 0
+			infrastructure = 2
 			industrial_complex = 1
-			
-			
 		}
-		
-	}
 
+	}
+	
+	manpower=1820000
+	buildings_max_level_factor=1.000
+	state_category=town
+	resources={
+		oil = 6
+	}
 	provinces={
 		4807 4808 4809 4810 4811 4812 4813 4814 4815 4816 4817 4818 4819 4820 4821 4822 4823 4824 4825 4826 4827 4828 4829 4830 4831 4832 4833 4834 4835 4836 4837 4838 4839 4840 4841 4842 4843 4844 4845 4846 4847 4848 4849 4850 4851 4852 4853 4854 
 	}

@@ -2,36 +2,23 @@
 state={
 	id=169
 	name="STATE_169"
-	manpower = 3230875
-	
-	state_category = large_town
-	#impassable = yes
-	resources={
-		aluminium=0
-		chromium=0
-		oil=3
-		rubber=0
-		steel=0
-		tungsten=0
-		coal=0
-	}
-
 	history={
-		
-		
+		owner = ZTK
+		add_core_of = ZTK
 		buildings = {
-			infrastructure = 2
-			
-			arms_factory = 0
-			industrial_complex = 1
-			
-			2883 = {
-				naval_base = 1
-			}
-			
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
 		}
-		
+
 	}
+	resources={
+		steel = 14
+	}
+	manpower=2700000
+	buildings_max_level_factor=1.000
+	state_category=large_city
 
 	provinces={
 		2876 2877 2878 2879 2880 2881 2882 2883 2884 2885 2886 2887 2888 2889 2890 2891 2892 
