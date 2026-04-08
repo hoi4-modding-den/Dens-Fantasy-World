@@ -1,0 +1,23 @@
+spriteTypes = {
+
+    spriteType = {
+		name = "GFX_portrait_ZTC_jan_kroesus"
+		texturefile = "gfx/leaders/ZTC/portrait_ZTC_jan_kroesus.png"
+	}
+
+    spriteType = {
+		name = "GFX_portrait_ZTC_the_council"
+		texturefile = "gfx/leaders/ZTC/portrait_ZTC_the_council.png"
+	}
+
+    spriteType = {
+		name = "GFX_portrait_ZTC_franziska_kroesus"
+		texturefile = "gfx/leaders/ZTC/portrait_ZTC_franziska_kroesus.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ZTC_johanna_ahrendt"
+		texturefile = "gfx/leaders/ZTC/portrait_ZTC_johanna_ahrendt.png"
+	}
+
+}

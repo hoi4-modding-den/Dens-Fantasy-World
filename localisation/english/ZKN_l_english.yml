@@ -21,4 +21,21 @@
  ZKN_fascism_party_long: "Government of National Salvation"
 
 
+# DECISIONS
+
+ ZKN_civil_war_cat: "The Edelweiß Rebellion"
+ ZKN_finish_the_civil_war_quickly: "Faltering Morale..."
+ ZKN_aid_from_neighbouring_monarchies: "Aid from the East"
+ ZKN_aid_from_neighbouring_monarchies_desc: "Our diplomats are attempting to negotiate with the [ZFO.GetAdjective] and [ZFD.GetAdjective] governments for support. We must maintain control over the border city of Löbnitz so we can receive it."
+
+
+# EVENTS
+
+ ZKN_cw_events.1.t: "Weapon Shipments arrive in Löbnitz"
+ ZKN_cw_events.1.desc: "Thanks to the work of our diplomats, the [XFO.GetAdjective] and [XFD.GetAdjective] governments have accepted to send us military equipment to assist in our civil war."
+ ZKN_cw_events.1.a: "We thank our royal allies in the east."
+
+
+# WAR NAMES
+
  CIVIL_WAR_NAME_ZKN_ZLF: "Edelweiss Revolution"

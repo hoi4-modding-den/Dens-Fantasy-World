@@ -2,12 +2,12 @@
 state={
 	id=677
 	name="STATE_677"
-	manpower = 1
+	manpower = 919220 # ~1 mio
 	
-	state_category = rural
+	state_category = town
 	#impassable = yes
 	resources={
-		aluminium=0
+		aluminium=12
 		chromium=0
 		oil=0
 		rubber=0
@@ -23,16 +23,22 @@ state={
 		
 		
 		buildings = {
-			infrastructure = 0
+			infrastructure = 3
 			
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 3
 			
-			
+			9675 = {
+				dam = 1
+			}
 		}
 		
 		victory_points = {
 			9675 5
+		}
+
+		ZKN = {
+			set_province_controller = 9675
 		}
 	}
 

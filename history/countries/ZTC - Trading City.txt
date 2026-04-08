@@ -1,6 +1,6 @@
 capital = 749
 
-#oob = "ZTC_1936"
+oob = "ZTC_1936"
 
 set_stability = 0.7
 set_war_support = 0.1
@@ -10,14 +10,21 @@ set_research_slots = 4
 
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_trucks = 1
+	marines = 1
+
 	tech_support = 1
 	tech_engineers = 1
-	tech_recon = 1
-	tech_trucks = 1
+	basic_train = 1
+	
 	gw_artillery = 1
 	interwar_antiair = 1
+
 	fuel_silos = 1
 }
+
+ZLF_air_techs_for_gardenia = yes
 
 add_ideas = {
 	free_trade
@@ -38,6 +45,7 @@ add_timed_idea = {
 recruit_character = ZTC_jan_kroesus
 recruit_character = ZTC_the_council
 recruit_character = ZTC_franziska_kroesus
+recruit_character = ZTC_johanna_ahrendt
 
 set_politics = {
 	ruling_party = neutrality

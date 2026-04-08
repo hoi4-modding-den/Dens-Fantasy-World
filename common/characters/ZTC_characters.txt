@@ -46,4 +46,19 @@ characters={
 		#	expire = "1960.1.1.1"
 		#}
 	}
+
+	ZTC_johanna_ahrendt = {
+		gender = female
+		name = ZTC_johanna_ahrendt_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZTC_johanna_ahrendt
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { ZTC_proletarian_movement_leader }
+			expire = "1960.1.1.1"
+		}
+	}
 }

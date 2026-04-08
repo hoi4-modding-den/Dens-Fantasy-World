@@ -1,0 +1,50 @@
+add_namespace = ZLF_cw_events
+
+country_event = { # Mission Failure
+	id = ZLF_cw_events.1
+	title = ZLF_cw_events.1.t
+	desc = ZLF_cw_events.1.desc
+	picture = GFX_report_event_DEN_resistance
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_cw_events.1.a
+        add_political_power = -50
+        add_command_power = -10
+        add_war_support = -0.02
+	}
+}
+
+country_event = { # Mission Failure ALT
+	id = ZLF_cw_events.2
+	title = ZLF_cw_events.2.t
+	desc = ZLF_cw_events.1.desc
+	picture = GFX_report_event_DEN_resistance
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_cw_events.2.a
+        add_political_power = -50
+        add_command_power = -25
+        add_war_support = -0.1
+	}
+}
+
+country_event = { # Hortensian Aid arrives
+	id = ZLF_cw_events.3
+	title = ZLF_cw_events.3.t
+	desc = ZLF_cw_events.3.desc
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_cw_events.3.a
+		add_political_power = 50
+		add_popularity = { ideology = democratic popularity = 0.05 }
+        add_manpower = 20000
+	}
+}
+

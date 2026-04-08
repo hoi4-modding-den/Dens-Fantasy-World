@@ -1,0 +1,77 @@
+ZKN_civil_war_cat = {
+
+    ZKN_finish_the_civil_war = {
+
+        icon = generic_civil_support
+
+        available = {
+            NOT = { country_exists = ZLF }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            drop_cosmetic_tag = yes
+        }
+    }
+
+    ZKN_finish_the_civil_war_quickly = {
+
+        icon = FIN_stop_motti_tactics
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            has_civil_war = no
+        }
+
+        is_good = no
+
+        days_mission_timeout = 50
+
+        timeout_effect = {
+            add_political_power = -25
+            add_war_support = -0.01
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            activate_mission = ZKN_finish_the_civil_war_quickly
+        }
+    }
+
+    ZKN_aid_from_neighbouring_monarchies = {
+
+        icon = SWI_isolate_switzerland
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            NOT = { controls_state = 848 }
+        }
+
+        highlight_states = {
+            highlight_states_trigger = {
+                state = 848
+            }
+        }
+
+        is_good = yes
+
+        days_mission_timeout = 120
+
+        complete_effect = {
+            add_political_power = -25
+            add_stability = -0.02
+        }
+
+        timeout_effect = {
+            country_event = ZKN_cw_events.1
+        }
+
+    }
+
+}
