@@ -1,0 +1,249 @@
+ZLF_civil_war_cat = {
+
+    ZLF_finish_the_civil_war = {
+
+        icon = generic_civil_support
+
+        available = {
+            NOT = { country_exists = ZKN }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            drop_cosmetic_tag = yes
+        }
+    }
+
+    ZLF_retake_magnolienburg = {
+
+        icon = FIN_stop_motti_tactics
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            controls_province = 11065
+        }
+
+        cancel_trigger = {
+            has_civil_war = no
+        }
+
+        highlight_states = {
+            highlight_provinces = { 11065 }
+        }
+
+        is_good = no
+
+        days_mission_timeout = 40
+
+        complete_effect = {
+            add_political_power = 25
+            add_war_support = 0.01
+            add_manpower = 1000
+        }
+
+        timeout_effect = {
+            country_event = ZLF_cw_events.1
+        }
+    }
+
+    ZLF_close_prinzendamm_encirclement = {
+
+        icon = oppression
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            controls_province = 9675
+        }
+
+        cancel_trigger = {
+            OR = {
+                custom_trigger_tooltip = {
+                    tooltip = ZLF_close_prinzendamm_encirclement_failed
+                    OR = {
+                        ZKN = { controls_province = 9673 }
+                        ZKN = { controls_province = 9674 }
+                        ZKN = { controls_province = 9218 }
+                    }
+                }
+                has_civil_war = no
+            }
+        }
+
+        highlight_states = {
+            highlight_provinces = { 9675 }
+        }
+
+        is_good = no
+
+        days_mission_timeout = 30
+
+        complete_effect = {
+            add_political_power = 40
+            add_war_support = 0.01
+        }
+
+        timeout_effect = {
+            country_event = ZLF_cw_events.1
+        }
+    }
+
+    ZLF_push_to_the_river = {
+
+        icon = FIN_stop_motti_tactics
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            controls_province = 9428
+            controls_province = 9429
+            controls_province = 9433
+        }
+
+        cancel_trigger = {
+            has_civil_war = no
+        }
+
+        highlight_states = {
+            highlight_provinces = { 9428 }
+            highlight_provinces = { 9429 }
+            highlight_provinces = { 9433 }
+        }
+
+        is_good = no
+
+        days_mission_timeout = 50
+
+        complete_effect = {
+            add_political_power = 25
+            add_war_support = 0.01
+            add_manpower = 1500
+        }
+
+        timeout_effect = {
+            country_event = ZLF_cw_events.1
+        }
+    }
+
+    ZLF_crush_the_eastern_garrisons = {
+
+        icon = generic_civil_support
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            controls_state = 794
+            controls_state = 677
+            controls_state = 879
+            controls_state = 662
+            controls_state = 848
+            controls_state = 855
+        }
+
+        highlight_states = {
+            highlight_states_trigger = { 
+                OR = {
+                    state = 794
+                    state = 879
+                    state = 662
+                    state = 848
+                    state = 855
+                    state = 677
+                }
+                is_controlled_by = ZKN
+            }
+        }
+
+        is_good = no
+
+        days_mission_timeout = 140
+
+        complete_effect = {
+            add_political_power = 100
+            add_war_support = 0.05
+        }
+
+        timeout_effect = {
+            country_event = ZLF_cw_events.2
+        }
+    }
+
+    ZLF_take_the_royalist_stronghold = {
+
+        icon = generic_civil_support
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            controls_state = 807
+            controls_state = 570
+        }
+
+        highlight_states = {
+            highlight_states_trigger = { 
+                OR = {
+                    state = 807
+                    state = 570
+                }
+                is_controlled_by = ZKN
+            }
+        }
+
+        is_good = no
+
+        days_mission_timeout = 300
+
+        complete_effect = {
+            add_political_power = 100
+            add_war_support = 0.05
+        }
+
+        timeout_effect = {
+            country_event = ZLF_cw_events.2
+        }
+    }
+
+    ZLF_maintain_connection_to_hortensia = {
+
+        icon = SWI_isolate_switzerland
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            NOT = { controls_state = 832 }
+            NOT = { controls_state = 655 }
+        }
+
+        highlight_states = {
+            highlight_states_trigger = {
+                OR = {
+                    state = 832
+                    state = 655
+                }
+            }
+        }
+
+        is_good = yes
+
+        days_mission_timeout = 120
+
+        timeout_effect = {
+            country_event = ZLF_cw_events.3
+        }
+    }
+
+}

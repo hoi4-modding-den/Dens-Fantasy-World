@@ -1,0 +1,16 @@
+ZLF_civil_war_cat = {
+
+    icon = border_conflicts
+	
+	allowed = {
+		original_tag = ZLF
+	}
+
+	priority = 100 
+
+	visible_when_empty = yes
+
+	visible = {
+		has_civil_war = yes
+	}
+}

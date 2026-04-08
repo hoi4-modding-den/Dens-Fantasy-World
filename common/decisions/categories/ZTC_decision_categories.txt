@@ -1,0 +1,21 @@
+ZTC_erstatzteil_scheme_cat = {
+
+    icon = gre_investment_decisions
+	
+	allowed = {
+		original_tag = ZTC
+	}
+
+	priority = 100
+
+	visible = {
+		has_completed_focus = ZTC_approve_sale_of_weapons
+	}
+}
+
+ZTC_balance_of_power_category = {
+	
+	allowed = {
+		original_tag = ZTC
+	}
+}

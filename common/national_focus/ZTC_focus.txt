@@ -79,6 +79,10 @@ focus_tree={
 		completion_reward = {
 			add_popularity = { ideology = neutrality popularity = 0.05 }
 			add_popularity = { ideology = democratic popularity = 0.05 }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ZTC_increase_popular_anger = yes
 		}
 	}
 
@@ -125,6 +129,10 @@ focus_tree={
 					}
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ZTC_increase_popular_anger = yes
 		}
 	}
 
@@ -157,6 +165,8 @@ focus_tree={
 				remove_idea = ZTC_richest_city_in_the_south
 				add_idea = ZTC_richest_city_in_the_south_taxes
 			}
+
+			ZTC_increase_popular_anger = yes
 		}
 	}
 
@@ -186,7 +196,11 @@ focus_tree={
         }
 		
 		completion_reward = {
-			# unlocks decisions to smuggle guns
+			unlock_decision_category_tooltip = ZTC_erstatzteil_scheme_cat
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			ZTC_increase_popular_anger = yes
 		}
 	}
 
@@ -217,6 +231,10 @@ focus_tree={
 		completion_reward = {
 			add_political_power = 50
 			749 = { add_extra_state_shared_building_slots = 1 }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			ZTC_increase_popular_anger = yes
 		}
 	}
 
@@ -249,6 +267,8 @@ focus_tree={
 				remove_idea = ZTC_richest_city_in_the_south
 				add_idea = ZTC_richest_city_in_the_south_akademie
 			}
+			
+			ZTC_increase_popular_anger = yes
 		}
 	}
 
@@ -278,6 +298,10 @@ focus_tree={
 		completion_reward = {
 			add_popularity = { ideology = neutrality popularity = -0.2 }
 			add_popularity = { ideology = fascism popularity = -0.2 }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			remove_mission = ZTC_council_anger_increases
 		}
 	}
 
@@ -341,6 +365,10 @@ focus_tree={
 				uses = 1
 				category = infantry_weapons
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ZTC_increase_popular_anger = yes
 		}
 	}
 
@@ -377,6 +405,10 @@ focus_tree={
 					instant_build = yes
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ZTC_increase_popular_anger = yes
 		}
 	}
 
@@ -464,6 +496,10 @@ focus_tree={
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_ideas = ZTC_industrial_regulations
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ZTC_increase_council_anger = yes
 		}
 	}
 
@@ -495,6 +531,8 @@ focus_tree={
 				remove_idea = ZTC_industrial_regulations
 				add_idea = ZTC_industrial_regulations_2
 			}
+
+			ZTC_increase_council_anger = yes
 		}
 	}
 
@@ -522,7 +560,50 @@ focus_tree={
         }
 		
 		completion_reward = {
-			add_popularity = { ideology = democratic popularity = 0.15 }
+			add_timed_idea = {
+				idea = ZTC_destratification_of_society
+				days = 365
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					has_power_balance = { id = ZTC_power_balance }
+				}
+				custom_effect_tooltip = ZTC_reverse_the_stratification_tt
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						NOT = {
+							is_power_balance_in_range = {
+								id = ZTC_power_balance
+								range = ZTC_balanced_range
+							}
+						}
+					}
+					if = {
+						limit = {
+							is_power_balance_in_range = {
+								id = ZTC_power_balance
+								range > ZTC_balanced_range
+							}
+						}
+						add_power_balance_value = {
+							id = ZTC_power_balance
+							value = -0.2
+							tooltip_side = ZTC_popular_side
+						}
+					}
+					else = {
+						add_power_balance_value = {
+							id = ZTC_power_balance
+							value = 0.2
+							tooltip_side = ZTC_council_side
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -583,6 +664,10 @@ focus_tree={
 		completion_reward = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			add_popularity = { ideology = democratic popularity = 0.05 }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ZTC_increase_council_anger = yes
 		}
 	}
 
@@ -623,6 +708,8 @@ focus_tree={
 					add_idea = ZTC_proletarian_movement_2
 				}
 			}
+
+			ZTC_increase_council_anger = yes
 		}
 	}
 
@@ -655,6 +742,8 @@ focus_tree={
 				remove_idea = ZTC_proletarian_movement_5
 				add_idea = ZTC_proletarian_movement_6
 			}
+
+			ZTC_increase_council_anger = yes
 		}
 	}
 
@@ -687,6 +776,8 @@ focus_tree={
 				remove_idea = ZTC_proletarian_movement_4
 				add_idea = ZTC_proletarian_movement_5
 			}
+
+			ZTC_increase_council_anger = yes
 		}
 	}
 
@@ -727,6 +818,8 @@ focus_tree={
 					add_idea = ZTC_proletarian_movement_3
 				}
 			}
+
+			ZTC_increase_council_anger = yes
 		}
 	}
 
@@ -756,6 +849,10 @@ focus_tree={
 		
 		completion_reward = {
 			add_political_power = 100
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ZTC_increase_council_anger = yes
 		}
 	}
 
@@ -785,6 +882,10 @@ focus_tree={
 		
 		completion_reward = {
 			remove_ideas = ZTC_proletarian_movement_6
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			remove_mission = ZTC_popular_anger_increases
 		}
 	}
 
@@ -806,6 +907,13 @@ focus_tree={
 		
 		available = {
             has_government = democratic
+			if = {
+				limit = { has_power_balance = { id = ZTC_power_balance } }
+				is_power_balance_in_range = {
+					id = ZTC_power_balance
+					range = ZTC_balanced_range
+				}
+			}
         }
 
 		bypass = {
@@ -813,7 +921,12 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			if = {
+				limit = { has_power_balance = { id = ZTC_power_balance } }
+				remove_power_balance = {
+					id = ZTC_power_balance
+				}
+			}
 		}
 	}
 
@@ -835,6 +948,13 @@ focus_tree={
 		
 		available = {
             has_government = democratic
+			if = {
+				limit = { has_power_balance = { id = ZTC_power_balance } }
+				is_power_balance_in_range = {
+					id = ZTC_power_balance
+					range = ZTC_balanced_range
+				}
+			}
         }
 
 		bypass = {
@@ -842,7 +962,12 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			if = {
+				limit = { has_power_balance = { id = ZTC_power_balance } }
+				remove_power_balance = {
+					id = ZTC_power_balance
+				}
+			}
 		}
 	}
 
@@ -904,16 +1029,18 @@ focus_tree={
 		available = {
             has_government = democratic
             country_exists = ZLF
-            country_exists = ZKN
         }
 
 		bypass = {
-            ZLF = { has_civil_war = no }
+            NOT = { country_exists = ZLF }
         }
 		
 		completion_reward = {
+			add_relation_rule_override = {
+				target = ZLF
+				can_send_volunteers = yes
+			}
 			ZLF = {
-				add_manpower = 10000
 				add_equipment_to_stockpile = { 
 					type = infantry_equipment
 					amount = 2000
@@ -1053,7 +1180,7 @@ focus_tree={
 	}
 
     focus = {
-		id = ZTC_depose_the_grand_chancellor
+		id = ZTC_the_peoples_revolution
 		icon = GFX_focus_PLACEHOLDER
         #prerequisite = { focus = ZTC_the_new_grand_councillor }
 		#mutually_exclusive = { focus =  }
@@ -1069,22 +1196,22 @@ focus_tree={
 		
 		available = {
             custom_trigger_tooltip = {
-                tooltip = ZTC_depose_the_grand_chancellor_tt
+                tooltip = ZTC_the_peoples_revolution_trigger
                 always = no
             }
         }
 
 		bypass = {
-            has_government = fascism
+            has_government = communism
         }
 		
 		completion_reward = {
-			
+			custom_effect_tooltip = ZTC_the_peoples_revolution_tt
 		}
 	}
 
-    focus = {
-		id = ZTC_the_peoples_revolution
+	focus = {
+		id = ZTC_depose_the_grand_chancellor
 		icon = GFX_focus_PLACEHOLDER
         #prerequisite = { focus = ZTC_the_new_grand_councillor }
 		#mutually_exclusive = { focus =  }
@@ -1100,17 +1227,17 @@ focus_tree={
 		
 		available = {
             custom_trigger_tooltip = {
-                tooltip = ZTC_the_peoples_revolution_tt
+                tooltip = ZTC_depose_the_grand_chancellor_trigger
                 always = no
             }
         }
 
 		bypass = {
-            has_government = communism
+            has_government = fascism
         }
 		
 		completion_reward = {
-			
+			custom_effect_tooltip = ZTC_depose_the_grand_chancellor_tt
 		}
 	}
 

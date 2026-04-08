@@ -1,6 +1,6 @@
 capital = 812
 
-#oob = "ZLF_1936"
+oob = "ZLF_1936"
 
 set_stability = 0.5
 set_war_support = 0.7
@@ -10,13 +10,20 @@ set_research_slots = 3
 
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
-	tech_trucks = 1
+	basic_train = 1
+	
 	gw_artillery = 1
 	interwar_antiair = 1
 }
+
+ZLF_air_techs_for_gardenia = yes
 
 add_ideas = {
 	limited_exports
@@ -27,6 +34,13 @@ add_ideas = {
 #recruit_character = 
 
 set_cosmetic_tag = ZLF_liberation_front
+
+activate_mission = ZLF_retake_magnolienburg
+activate_mission = ZLF_close_prinzendamm_encirclement
+activate_mission = ZLF_push_to_the_river
+activate_mission = ZLF_crush_the_eastern_garrisons
+activate_mission = ZLF_take_the_royalist_stronghold
+activate_mission = ZLF_maintain_connection_to_hortensia
 
 set_politics = {
 	ruling_party = democratic

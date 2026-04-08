@@ -113,7 +113,120 @@ country_event = { # The Last Days - 4 / BoP NOW!
 
 	option = {
 		name = ZTC_events.4.a
-        
+        set_power_balance = {
+            id = ZTC_power_balance
+            left_side = ZTC_popular_side
+            right_side = ZTC_council_side
+        }
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        activate_mission = ZTC_popular_anger_increases
+        activate_mission = ZTC_council_anger_increases
+	}
+}
+
+country_event = { # Gun Smuggling Event
+	id = ZTC_events.5
+	title = ZTC_events.5.t
+	desc = ZTC_events.5.desc
+	picture = GFX_report_event_SWE_saltsjobaden
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.5.a
+        ai_chance = { base = 10 }
+        FROM = { country_event = ZTC_events.6 }
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        effect_tooltip = {
+            FROM = {
+                send_equipment = {
+                    equipment = infantry_equipment
+                    amount = 500
+                    target = ROOT
+                }
+            }
+        }
+	}
+
+    option = {
+		name = ZTC_events.5.b
+        ai_chance = { 
+            base = 1 
+            modifier = {
+                factor = 2
+                NOT = { has_government = FROM }
+            }
+        }
+        FROM = { country_event = ZTC_events.7 }
+	}
+}
+
+country_event = { # Gun Smuggling Event
+	id = ZTC_events.6
+	title = ZTC_events.6.t
+	desc = ZTC_events.6.desc
+	picture = GFX_report_event_SWE_saltsjobaden
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.6.a
+        send_equipment = {
+            equipment = infantry_equipment
+            amount = 500
+            target = FROM
+        }
+        add_cic = 15000
+	}
+}
+
+country_event = { # Gun Smuggling Event
+	id = ZTC_events.7
+	title = ZTC_events.7.t
+	desc = ZTC_events.7.desc
+	picture = GFX_report_event_SWE_saltsjobaden
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.7.a
+        clr_country_flag = ZTC_currently_smuggling_guns
+	}
+}
+
+country_event = { # Proletarian Revolt
+	id = ZTC_events.8
+	title = ZTC_events.8.t
+	desc = ZTC_events.8.desc
+	picture = GFX_report_event_SWE_saltsjobaden
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.8.a
+        remove_power_balance = {
+            id = ZTC_power_balance
+        }
+	}
+}
+
+country_event = { # Council Coup
+	id = ZTC_events.9
+	title = ZTC_events.9.t
+	desc = ZTC_events.9.desc
+	picture = GFX_report_event_SWE_saltsjobaden
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.9.a
+        remove_power_balance = {
+            id = ZTC_power_balance
+        }
 	}
 }
 

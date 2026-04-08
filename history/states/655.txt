@@ -2,7 +2,7 @@
 state={
 	id=655
 	name="STATE_655"
-	manpower = 1
+	manpower = 1200761 # ~1 mio
 	
 	state_category = town
 	#impassable = yes
@@ -11,9 +11,9 @@ state={
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
+		steel=20
 		tungsten=0
-		coal=0
+		coal=12
 	}
 
 	history={
@@ -22,10 +22,10 @@ state={
 		add_core_of = ZLF
 		
 		buildings = {
-			infrastructure = 0
+			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 2
 			
 			
 		}
@@ -35,6 +35,14 @@ state={
 		}
 		victory_points = {
 			9431 1
+		}
+
+		ZLF = {
+			set_province_controller = 9430
+			set_province_controller = 9432
+			set_province_controller = 9427
+			set_province_controller = 9434
+			set_province_controller = 9431
 		}
 		
 	}
