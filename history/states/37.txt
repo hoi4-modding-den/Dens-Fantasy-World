@@ -18,7 +18,7 @@ state={
 
 	history={
 		
-		
+		                add_claim_by = ZFP
 		buildings = {
 			infrastructure = 2
 			
