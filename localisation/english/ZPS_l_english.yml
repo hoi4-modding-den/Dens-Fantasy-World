@@ -31,8 +31,11 @@ ZPS_War_Machine_Development_Fund: "War Machine Development Fund"
 
 #Ideas
 ZPS_Shifting_Tides: "Shifting Tides"
+ZPS_Shifting_Tides_desc: "The Octopi have no real loyalties or constant opinions. They can be swayed by opinions they once thought of as evil, or as too utopian. They engage in roughhousing and mockfighting, but it works. They constantly shift and sway, leading to a political system routed in constant changes. This means stagnation can never take hold but it means that no concencous can be reached for long enough for much meaningful change to be completed."
 ZPS_Fading_Traditionalism: "Fading Traditionalism"
+ZPS_Fading_Traditionalism_desc: "The female portia once held complete dominion over their male counterparts, seeing them as lesser, with small brains, unable to meaninfully contribute to society at all. Males would be killed for sport or during mating. Although this has changed their are still some traditionalists who want to keep things more close to how they were, with female preferential treatment over the males, who they still view as being lesser and having too many rights."
 ZPS_Matriarchal_Legacy: "Matriarchal Legacy"
+ZPS_Matriarchal_Legacy_desc: "For much of its history, the Paam area has been ruled by a matriarchal society and this makes itself known in the culture, even with equal rights for all. This is more prevelent in Portia regions than Human or Corvid"
 ZPS_Late_Night_Battles: "Late Night Battles"
 ZPS_MSAMI: "M.S.A.M.I."
 ZPS_Pan_Specific_National_Army: "Pan-Specific National Army"
@@ -199,5 +202,7 @@ VICTORY_POINTS_5493: "Chatin"
 VICTORY_POINTS_5495: "Lipsa"
 VICTORY_POINTS_5498: "Olon"
 VICTORY_POINTS_5639: "Kip"
+
+
 
 

@@ -5,6 +5,14 @@ spriteTypes = {
 		name = "GFX_idea_ZPS_shifting_tides"
 		texturefile = "gfx/interface/ideas/ZPS/ZPS_Shifting_Tides.png"
 	}
+	spriteType = {
+		name = "GFX_idea_ZPS_matriarchal_legacy"
+		texturefile = "gfx/interface/ideas/ZPS/ZPS_Matriarchal_Legacy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ZPS_fading_traditionalism"
+		texturefile = "gfx/interface/ideas/ZPS/ZPS_Fading_Traditionalism.png"
+	}
 #DYNAM MOD#
 	spriteType = {
 		name = "GFX_ZPS_Portia_Majority"

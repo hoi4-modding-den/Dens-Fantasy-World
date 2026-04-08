@@ -12,7 +12,7 @@ ideas = {
 		}
 		
 		ZPS_Fading_Traditionalism = {
-			picture = fish
+			picture = ZPS_fading_traditionalism
 			modifier = {
 				stability_factor = -0.05
 				consumer_goods_factor = 0.05
@@ -21,7 +21,7 @@ ideas = {
 		}
 
 		ZPS_Matriarchal_Legacy = {
-			picture = fish
+			picture = ZPS_matriarchal_legacy
 			modifier = {
 				female_random_army_leader_chance = 0.6
 				female_random_admiral_chance = 0.6
