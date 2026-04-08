@@ -1,0 +1,50 @@
+capital = 835
+
+oob = "ZFK_1936"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+add_ideas = {
+	limited_conscription
+	early_mobilization
+        limited_exports
+}
+
+set_stability = 0.2
+set_war_support = 0.5
+set_convoys = 0
+
+#recruit_character = 
+#add_ideas = 
+
+declare_war_on = {
+	target = ZFS
+	type = civil_war
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.3.1"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 70
+	democratic = 12.5
+	communism = 5
+	fascism = 12.5
+}

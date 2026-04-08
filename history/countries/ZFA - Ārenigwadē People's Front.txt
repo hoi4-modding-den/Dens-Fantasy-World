@@ -1,0 +1,56 @@
+capital = 100
+
+oob = "ZFA_1936"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+add_ideas = {
+	extensive_conscription
+	limited_mobilisation
+}
+
+set_stability = 0.15
+set_war_support = 0.75
+set_convoys = 0
+
+recruit_character = ZFA_eyas_desita
+#add_ideas = 
+
+declare_war_on = {
+	target = ZFB
+	type = civil_war
+}
+declare_war_on = {
+	target = ZFS
+	type = civil_war
+}
+declare_war_on = {
+	target = ZFK
+	type = civil_war
+}
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 9
+	democratic = 15
+	communism = 61
+	fascism = 15
+}

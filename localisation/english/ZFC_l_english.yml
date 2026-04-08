@@ -1,0 +1,14 @@
+﻿l_english:
+
+ ZFC:0 "Southern Frontier"
+ ZFC_DEF:0 "Southern Balekelemi Frontier"
+ ZFC_ADJ:0 "Southern"
+ 
+ ZFC_communism_party: "YM"
+ ZFC_communism_party_long: "Soldier's Unions"
+ ZFC_democratic_party: "WML-N"
+ ZFC_democratic_party_long: "Military Government for Stability - Liberals"
+ ZFC_neutrality_party: "WML-T"
+ ZFC_neutrality_party_long: "Military Government for Stability - Militarists"
+ ZFC_fascism_party: "WML-M"
+ ZFC_fascism_party_long: "Military Government for Stability - Expansionists"

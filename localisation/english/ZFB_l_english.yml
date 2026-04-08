@@ -1,0 +1,17 @@
+﻿l_english:
+
+ ZFB:0 "Greatest United Republic of Bīcha"
+ ZFB_DEF:0 "Greatest United Republic of Bīcha"
+ ZFB_ADJ:0 "Bīchi"
+ 
+ ZFB_communism_party: "YBM"
+ ZFB_communism_party_long: "Society for Socialist Bīcha"
+ ZFB_democratic_party: "KYY"
+ ZFB_democratic_party_long: "Commitee for Liberalisation and Democracy"
+ ZFB_neutrality_party: "Unetu's Clique"
+ ZFB_neutrality_party_long: "Unetu's Clique"
+ ZFB_fascism_party: "BW"
+ ZFB_fascism_party_long: "Bīcha Brotherhood"
+ 
+ #victory_points = { 1909 4 }
+ VICTORY_POINTS_10337: "b"

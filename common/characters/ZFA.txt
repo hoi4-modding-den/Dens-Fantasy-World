@@ -1,0 +1,17 @@
+characters={
+	ZFA_eyas_desita = { 
+		name = ZFA_eyas_desita
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = anti_revisionism
+                        traits = { ZFA_avid_troublemaker }
+			desc = ZFA_eyas_desita_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

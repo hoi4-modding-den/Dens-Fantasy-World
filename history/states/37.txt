@@ -2,7 +2,7 @@
 state={
 	id=37
 	name="STATE_37"
-	manpower = 6115697
+	manpower = 2115697
 	
 	state_category = city
 	#impassable = yes
@@ -18,7 +18,7 @@ state={
 
 	history={
 		
-		
+		                add_claim_by = ZFP
 		buildings = {
 			infrastructure = 2
 			

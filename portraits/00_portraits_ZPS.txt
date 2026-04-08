@@ -1,0 +1,56 @@
+#Generics
+ZPS = {
+	army = {
+		male = {
+			"GFX_ZPS_Portait_Generic_Male_1"
+			"GFX_ZPS_Portait_Generic_Male_2"
+			"GFX_ZPS_Portait_Generic_Male_3"
+			"GFX_ZPS_Portait_Generic_Male_4"
+			"GFX_ZPS_Portait_Generic_Male_5"
+			"GFX_ZPS_Portait_Generic_Male_6"
+			"GFX_ZPS_Portait_Generic_Male_7"
+			"GFX_ZPS_Portait_Generic_Male_8"
+			"GFX_ZPS_Portait_Generic_Male_9"
+			"GFX_ZPS_Portait_Generic_Male_10"
+		}
+		
+		female = {
+			"GFX_ZPS_Portait_Generic_Female_1"
+			"GFX_ZPS_Portait_Generic_Female_2"
+			"GFX_ZPS_Portait_Generic_Female_3"
+			"GFX_ZPS_Portait_Generic_Female_4"
+			"GFX_ZPS_Portait_Generic_Female_5"
+			"GFX_ZPS_Portait_Generic_Female_6"
+			"GFX_ZPS_Portait_Generic_Female_7"
+			"GFX_ZPS_Portait_Generic_Female_8"
+			"GFX_ZPS_Portait_Generic_Female_9"
+			"GFX_ZPS_Portait_Generic_Female_10"
+		}
+	}
+
+	navy = {
+		male = {
+			"GFX_ZPS_Portait_Generic_Male_9"
+			"GFX_ZPS_Portait_Generic_Male_8"
+			"GFX_ZPS_Portait_Generic_Male_7"
+			"GFX_ZPS_Portait_Generic_Male_6"
+		}
+		female = {
+			"GFX_ZPS_Portait_Generic_Female_9"
+			"GFX_ZPS_Portait_Generic_Female_8"
+			"GFX_ZPS_Portait_Generic_Female_7"
+			"GFX_ZPS_Portait_Generic_Female_6"
+		}
+	}
+	
+	operative = {
+		male = {
+			"GFX_ZPS_Portait_Generic_Male_5"
+		}
+		female = {
+			"GFX_ZPS_Portait_Generic_Female_5"
+		}
+	}
+}
+
+

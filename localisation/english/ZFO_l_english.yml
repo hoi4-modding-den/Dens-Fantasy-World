@@ -1,0 +1,14 @@
+﻿l_english:
+
+ ZFO:0 "Monarchy of Naannbadhaad"
+ ZFO_DEF:0 "Monarchy of Naannbadhaad"
+ ZFO_ADJ:0 "Naannbadi"
+ 
+ ZFO_communism_party: "Disorganised"
+ ZFO_communism_party_long: "Disorganised"
+ ZFO_democratic_party: "GEB"
+ ZFO_democratic_party_long: "National Protection Alliance"
+ ZFO_neutrality_party: "MMH"
+ ZFO_neutrality_party_long: "Royal Council for Reform"
+ ZFO_fascism_party: "Reactionaries"
+ ZFO_fascism_party_long: "Reactionaries"

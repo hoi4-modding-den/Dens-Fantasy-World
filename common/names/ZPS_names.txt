@@ -2,12 +2,12 @@
 
 ZPS = {
 	male = {
-		names = { "Richard" "William" "Charles" "Edward" "Henry" "George" "Arthur" "Alfred" "Gideon" "Fabian" "Marcus" "Peter" "Johannes" "Meshna" "Hyperion" "Triton" }
-		surnames = { }
+		names = { "Richard" "William" "Charles" "Edward" "Henry" "George" "Arthur" "Alfred" "Gideon" "Fabian" "Marcus" "Peter" "Johannes" "Meshna" "Hyperion" "Triton" "Macduff" "Michael" "Gilgamesh" "Holsten" "David" "Nicholas" "Sean" "Adam" "James" "Ramses" "Audi" "Mercedes" "Hyundi" "Toyota" "Ford" "Youssef" "Senkovi" "Lautice" "Thomas" "Robert" "Gouyin" "Sasha" "Holt" "Mulder" "Cooper" "Harry" "Albert" "Gordon" "Koda" "Joesph" }
+		surnames = { "" }
 		callsigns = { }
 	}
 	female = {
-		names = { "Juliette" "Anna" "Miranda" "Alice" "Edith" "Ethal" "Porsche" "Viola" "Enceledeus" }
+		names = { "Juliette" "Anna" "Miranda" "Alice" "Edith" "Ethal" "Porsche" "Viola" "Enceledeus" "Lante" "Kot" "Emily" "Helena" "Elisa" "Karen" "Elizabeth" "Ash" "Ashley" "Sasha" "Margret" "Molly" "Liff" "Tara" "Rose" "Laura" "Nadine" "Charlotte" "Catherine" "Jocey" "Terresa" "Avrana" "Abigail" "Avigrail" }
 		surnames = { }
 		callsigns = {  }
 	}

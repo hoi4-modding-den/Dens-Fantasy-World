@@ -32,3 +32,47 @@ defined_text = {
 		localization_key = "ZAV_artifact_class_[?artifact_classes^artifact_value]"
 	}
 }
+
+defined_text = {
+	name = "GetPageDiscoveryText"
+	text = {
+		trigger = {
+			check_variable = { ZAV_notebook_tab = 0 } 
+		}
+		localization_key = "ZAV_discoveries_divine_saviours_[?discovery_value]"
+	}
+}
+
+defined_text = {
+	name = "GetZAVNotebookPageTitle"
+	text = {
+        trigger = {
+            check_variable = { ZAV_notebook_tab = 0 }
+        }
+		localization_key = "ZAV_notebook_tab_divine_saviours"
+	}
+    text = {
+        trigger = {
+            check_variable = { ZAV_notebook_tab = 1 }
+        }
+		localization_key = "ZAV_notebook_tab_order_of_shadows"
+	}
+    text = {
+        trigger = {
+            check_variable = { ZAV_notebook_tab = 2 }
+        }
+		localization_key = "ZAV_notebook_tab_legion_of_the_drowned"
+	}
+    text = {
+        trigger = {
+            check_variable = { ZAV_notebook_tab = 3 }
+        }
+		localization_key = "ZAV_notebook_tab_crimson_order"
+	}
+    text = {
+        trigger = {
+            check_variable = { ZAV_notebook_tab = 4 }
+        }
+		localization_key = "ZAV_notebook_tab_order_of_true_knights"
+	}
+}

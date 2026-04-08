@@ -17,7 +17,8 @@ state={
 	}
 
 	history={
-		
+		owner = ZKO
+		add_core_of = ZKO	
 		
 		buildings = {
 			infrastructure = 2

@@ -2,7 +2,7 @@
 state={
 	id=777
 	name="STATE_777"
-	manpower = 820490
+	manpower = 210344
 	
 	state_category = pastoral
 	#impassable = yes
@@ -17,7 +17,8 @@ state={
 	}
 
 	history={
-		
+		owner = ZIA
+		add_core_of = ZIA
 		
 		buildings = {
 			infrastructure = 2

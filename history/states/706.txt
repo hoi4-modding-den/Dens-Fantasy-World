@@ -2,7 +2,7 @@
 state={
 	id=706
 	name="STATE_706"
-	manpower = 1893329
+	manpower = 193329
 	
 	state_category = rural
 	#impassable = yes
@@ -17,13 +17,16 @@ state={
 	}
 
 	history={
-		
+                 victory_points = { 9976 1 }
+		owner = ZFK
+		add_core_of = ZFK
+
 		
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 1
+			industrial_complex = 0
 			
 			
 		}

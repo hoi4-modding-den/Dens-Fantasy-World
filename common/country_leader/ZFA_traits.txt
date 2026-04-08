@@ -1,0 +1,9 @@
+leader_traits = {
+	         ZFA_avid_troublemaker  = {
+		  political_power_gain = 0.2
+                  trade_opinion_factor = -0.4
+		  stability_factor = -0.1
+
+		random = no
+	}
+}

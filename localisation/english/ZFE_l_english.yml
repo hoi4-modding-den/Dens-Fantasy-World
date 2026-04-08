@@ -1,0 +1,14 @@
+﻿l_english:
+
+ ZFE:0 "Eastern Frontier"
+ ZFE_DEF:0 "Eastern Balekelemi Frontier"
+ ZFE_ADJ:0 "Eastern"
+ 
+ ZFE_communism_party: "YĀM"
+ ZFE_communism_party_long: "Radical Association of Communes"
+ ZFE_democratic_party: "YMYG"
+ ZFE_democratic_party_long: "All-Eastern Liberation Front"
+ ZFE_neutrality_party: "HBMG-Ā"
+ ZFE_neutrality_party_long: "Hāmirawī National Defense Front - Moderates"
+ ZFE_fascism_party: "HBMG-T"
+ ZFE_fascism_party_long: "Hāmirawī National Defense Front - Extremists"

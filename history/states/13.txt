@@ -2,9 +2,9 @@
 state={
 	id=13
 	name="STATE_13"
-	manpower = 2550515
+	manpower = 255515
 	
-	state_category = large_town
+	state_category = pastoral
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -17,13 +17,14 @@ state={
 	}
 
 	history={
-		
-		
+		victory_points = {
+                                  253 1
+                               }
+		owner = ZFA
+		add_core_of = ZFA
+
 		buildings = {
-			infrastructure = 3
-			
-			arms_factory = 0
-			industrial_complex = 1
+			infrastructure = 0
 			
 			
 		}

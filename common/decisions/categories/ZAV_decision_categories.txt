@@ -12,3 +12,18 @@ ZAV_vault_of_saint_constantine = {
 	visible_when_empty = yes
 	scripted_gui = ZAV_vault_screen
 }
+
+ZAV_merlins_library = {
+	icon = GFX_decision_cat_vault_of_saint_constantine
+
+	allowed = {
+		original_tag = ZAV
+	}
+	visible = {
+		always = yes
+	}
+
+	priority = 10
+	visible_when_empty = yes
+	scripted_gui = ZAV_open_notebook_screen
+}

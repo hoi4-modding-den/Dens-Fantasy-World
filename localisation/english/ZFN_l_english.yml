@@ -1,0 +1,14 @@
+﻿l_english:
+
+ ZFN:0 "National City Zone in Nechi"
+ ZFN_DEF:0 "National City Zone in Nechi"
+ ZFN_ADJ:0 "Nechian"
+ 
+ ZFN_communism_party: "NKP"
+ ZFN_communism_party_long: "Nechi Communist Party"
+ ZFN_democratic_party: "YGDM"
+ ZFN_democratic_party_long: "Emergency Democratic Government"
+ ZFN_neutrality_party: "Bandits"
+ ZFN_neutrality_party_long: "Bandits"
+ ZFN_fascism_party: "YKY"
+ ZFN_fascism_party_long: "City Corporatist Collective"

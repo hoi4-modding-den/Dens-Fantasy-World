@@ -1,0 +1,33 @@
+﻿l_english:
+
+ ZFA:0 "Ārenigwadē People's Front"
+ ZFA_DEF:0 "Ārenigwadē People's Front"
+ ZFA_ADJ:0 "Ārenigwadi"
+ 
+#Parties
+ ZFA_communism_party: "ĀHG"
+ ZFA_communism_party_long: "Ārenigwadē People's Front"
+ ZFA_democratic_party: "ĀI"
+ ZFA_democratic_party_long: "Ārenigwadē Action"
+ ZFA_neutrality_party: "TGM"
+ ZFA_neutrality_party_long: "Anti-State Society"
+ ZFA_fascism_party: "Disorganised Resistance"
+ ZFA_fascism_party_long: "Disorganised Resistance"
+ 
+#ideas
+
+#focuses
+
+#traits
+ZFA_avid_troublemaker: "Avid Troublemaker"
+#characters
+ZFA_eyas_desita: "Eyas Desita"
+
+#character descriptions
+
+#decisions
+
+#victory_points
+VICTORY_POINTS_1909: "a"
+
+#states
