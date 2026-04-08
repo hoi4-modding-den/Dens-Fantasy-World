@@ -4,6 +4,10 @@ l_english:
   ZIA_DEF: "Most Serene Kingdom of Çialazar"
   ZIA_ADJ: "Çielze"
 
+  ZIA_neutrality: "Most Serene Kingdom of Çialazar"
+  ZIA_neutrality_DEF: "Most Serene Kingdom of Çialazar"
+  ZIA_neutrality_ADJ: "Çielze"
+
   ZFS_communism_party: "RUC"
   ZFS_communism_party_long: "Cůd Communal Collective"
   ZFS_democratic_party: "CPN"
