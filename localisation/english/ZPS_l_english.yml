@@ -118,6 +118,23 @@ ZPS_Build_Steamtrains_Of_War: "Build Steamtrains of War"
 ZPS_Made_In_Fire: "Made in Fire"
 ZPS_Built_For_Battle: "Built for Battle"
 
+#Events
+ZPS_ev.1.t: "The Lomcho Incident"
+ZPS_ev.1.d: "In the city of Lomcho a group of Octopi, suddenly bursting with energy thanks to their shifting opinions, accidently came too close to a Stomatopod, these kind of incidents, usually violent but ending without much, happen regularly, but on this occasion the Stomatopod grew enraged and all but one of the Octopi were brutally murdered. This has caused an uproar across the nation as many demand they find the Stomatopod responsable and subject them to the full extent of the law. Some stomatopods angrily refute this, as the Octopi went against their culture. This has caused anger among traditionalists in the nation who suggest measures to curb Stomatopod culture. The Council has been discussing this contentious issue and after much deliberation they have come to a decision."
+ZPS_ev.1.a: "Prosecute the Stomatopod responsable"
+ZPS_ev.1.b: "Use it as an excuse to crack down on Stomatopod culture"
+ZPS_ev.1.c: "Leave them be!"
+ZPS_ev.2.t: "The Outcome"
+ZPS_ev.2.d: "The Council's decision has angered the Stomatopods. They accuse the central government of not respecting their culture, sparking riots across Lomcho. It seems difficult to tell what will happen next. All we can hope is that things may settle down."
+ZPS_ev.2.a: "The Fire Rises..."
+ZPS_ev.3.t: "The Outcome"
+ZPS_ev.3.d: "The Stomatopods do not take repression lying down. Violence has spread across Lomcho as they attack law enforcement and those sympathetic to their cause lay down their arms, or take them up in support of the Stomatopod population."
+ZPS_ev.3.a: "What did they expect would happen?"
+ZPS_ev.4.t: "The Outcome"
+ZPS_ev.4.d: "Conservative elements in the nation, especially some older Portia Females have shown their anger at this outcome. They say that the law is being used selectively, that there is two tier policing, that some in the nation are not treated the same as others. Several lynchings have already taken place against Stomatopods in Conservative regions in the South."
+ZPS_ev.4.a: "Fucking tradtionalists"
+
+
 
 #Character Descs
 ZPS_Council_of_Species_desc: "The Council of Species was set up to allow for representation of all the seperate species of the Pan-Specific. Although their are large amounts of some species, others such as Corvids and Stomatopod are minorities and the only way for them to gain representation is through the council. The council is democratic, with representatives elected by each region, but there are sets amount of national minorities required in governance. Despite rising tensions in the world, the council has continued support from the vast majority of the population."

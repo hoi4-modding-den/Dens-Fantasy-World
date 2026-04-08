@@ -26,6 +26,87 @@ spriteTypes = {
 		name = "GFX_ZPS_Octopus_Majority"
 		texturefile = "gfx/interface/gui/ZPS/ZPS_Octopus_Majority.png"
 	}
+#PORTRAIT#
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Female_1"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Female_1.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Female_2"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Female_2.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Female_3"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Female_3.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Female_4"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Female_4.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Female_5"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Female_5.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Female_6"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Female_6.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Female_7"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Female_7.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Female_8"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Female_8.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Female_9"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Female_9.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Female_10"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Female_10.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Male_1"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Male_1.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Male_2"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Male_2.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Male_3"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Male_3.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Male_4"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Male_4.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Male_5"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Male_5.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Male_6"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Male_6.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Male_7"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Male_7.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Male_8"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Male_8.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Male_9"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Male_9.png"
+	}
+	spriteType = {
+		name = "GFX_ZPS_Portait_Generic_Male_10"
+		texturefile = "gfx/leaders/ZPS/ZPS_Generic_Male_10.png"
+	}
 #GUI#
 	spriteType = {
 		name = "GFX_ZPS_Profile_Portia"

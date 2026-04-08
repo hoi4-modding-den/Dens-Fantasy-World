@@ -1,0 +1,91 @@
+add_namespace = ZPS_ev
+
+			#TAG = { country_event = {
+			#	id = event_tag
+			#	days = 0
+			#	} 
+			#}
+		
+
+country_event = {
+	id = ZPS_ev.1
+	title = ZPS_ev.1.t
+	desc = ZPS_ev.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ZPS_ev.1.a
+		ai_chance = {
+			base = 100
+		}
+		ZPS = { country_event = {
+			id = ZPS_ev.2
+			days = 0
+			} 
+		}
+	}
+	option = {
+		name = ZPS_ev.1.b
+		ai_chance = {
+			base = 100
+		}
+		ZPS = { country_event = {
+			id = ZPS_ev.3
+			days = 0
+			} 
+		}
+	}
+	option = {
+		name = ZPS_ev.1.c
+		ai_chance = {
+			base = 100
+		}
+		ZPS = { country_event = {
+			id = ZPS_ev.4
+			days = 0
+			} 
+		}
+	}
+}
+
+country_event = {
+	id = ZPS_ev.2
+	title = ZPS_ev.2.t
+	desc = ZPS_ev.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ZPS_ev.2.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+country_event = {
+	id = ZPS_ev.3
+	title = ZPS_ev.3.t
+	desc = ZPS_ev.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ZPS_ev.3.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+country_event = {
+	id = ZPS_ev.4
+	title = ZPS_ev.4.t
+	desc = ZPS_ev.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ZPS_ev.4.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
