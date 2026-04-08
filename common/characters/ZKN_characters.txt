@@ -1,0 +1,18 @@
+characters = {
+
+ZKN_michael_aurus = { 
+    name = ZKN_michael_aurus_name
+    portraits = {
+        civilian = {
+            large = GFX_portrait_ZKN_michael_aurus
+        }
+    }
+    
+    country_leader = {
+        ideology = despotism
+        traits = { ZKN_the_loser_king }
+        expire = "1960.1.1.1"
+    }
+}
+
+}

@@ -9,6 +9,7 @@ ZTC_erstatzteil_scheme_cat = {
 	priority = 100
 
 	visible = {
+		NOT = { has_government = communism }
 		has_completed_focus = ZTC_approve_sale_of_weapons
 	}
 }

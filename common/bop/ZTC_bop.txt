@@ -23,6 +23,7 @@ ZTC_power_balance = {
 			max = -0.25
 			modifier = {
 				communism_drift = 0.02
+				power_balance_weekly = -0.01
 			}
 		}
 
@@ -50,6 +51,7 @@ ZTC_power_balance = {
 			max = 0.9
 			modifier = {
 				fascism_drift = 0.02
+				power_balance_weekly = 0.01
 			}
 		}
 

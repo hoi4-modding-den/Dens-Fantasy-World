@@ -61,6 +61,64 @@ ZTC_erstatzteil_scheme_cat = {
 
 ZTC_balance_of_power_category = {
 
+    ZTC_appease_the_council = {
+        
+        icon = generic_fundraising
+
+        cost = 25
+
+        available = {
+            has_completed_focus = ZTC_the_will_of_the_council
+            is_power_balance_in_range = {
+                id = ZTC_power_balance
+                range > ZTC_balanced_range
+            }
+        }
+
+        days_remove = 30
+
+        modifier = {
+            consumer_goods_factor = 0.1
+        }
+
+        remove_effect = {
+            add_power_balance_value = {
+                id = ZTC_power_balance
+                value = -0.15
+                tooltip_side = ZTC_popular_side
+            }
+        }
+    }
+
+    ZTC_appease_the_people = {
+
+        icon = generic_welfare
+
+        cost = 25
+
+        available = {
+            has_completed_focus = ZTC_the_needs_of_the_people
+            is_power_balance_in_range = {
+                id = ZTC_power_balance
+                range < ZTC_balanced_range
+            }
+        }
+
+        days_remove = 30
+
+        modifier = {
+            consumer_goods_factor = 0.1
+        }
+
+        remove_effect = {
+            add_power_balance_value = {
+                id = ZTC_power_balance
+                value = 0.15
+                tooltip_side = ZTC_council_side
+            }
+        }
+    }
+
     ZTC_popular_anger_increases = {
 
         icon = generic_civil_support
@@ -78,7 +136,10 @@ ZTC_balance_of_power_category = {
         days_mission_timeout = 70
 
         timeout_effect = {
-            ZTC_increase_popular_anger = yes
+            random_list = {
+                50 = { ZTC_increase_popular_anger = yes }
+                50 = { add_stability = -0.01 }
+            }
 
             custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -103,7 +164,10 @@ ZTC_balance_of_power_category = {
         days_mission_timeout = 70
 
         timeout_effect = {
-            ZTC_increase_council_anger = yes
+            random_list = {
+                50 = { ZTC_increase_council_anger = yes }
+                50 = { add_stability = -0.01 }
+            }
 
             custom_effect_tooltip = generic_skip_one_line_tt
 

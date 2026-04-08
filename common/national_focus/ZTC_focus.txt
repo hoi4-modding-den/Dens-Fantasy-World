@@ -82,6 +82,10 @@ focus_tree={
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
+			unlock_decision_tooltip = ZTC_appease_the_council
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			ZTC_increase_popular_anger = yes
 		}
 	}
@@ -664,6 +668,10 @@ focus_tree={
 		completion_reward = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			add_popularity = { ideology = democratic popularity = 0.05 }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			unlock_decision_tooltip = ZTC_appease_the_people
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 

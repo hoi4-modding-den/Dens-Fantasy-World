@@ -1,0 +1,12 @@
+leader_traits = {
+
+    ZLF_hero_of_the_revolution = {
+        
+        army_attack_factor = 0.05
+        conscription_factor = 0.15
+        stability_factor = 0.2
+
+        random = no
+    }
+
+}

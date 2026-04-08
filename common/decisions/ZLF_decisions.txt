@@ -1,6 +1,6 @@
 ZLF_civil_war_cat = {
 
-    ZLF_finish_the_civil_war = {
+    ZLF_finish_the_civil_war = { # these are just as guide, the effects are gonna be moved to an event soonTM
 
         icon = generic_civil_support
 
@@ -12,6 +12,11 @@ ZLF_civil_war_cat = {
 
         complete_effect = {
             drop_cosmetic_tag = yes
+
+            set_portraits = {
+                character = ZLF_roland_ludovik
+                civilian = { large ="GFX_portrait_ZLF_roland_ludovik_victory" }
+            }
         }
     }
 

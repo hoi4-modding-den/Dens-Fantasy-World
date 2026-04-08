@@ -1,0 +1,8 @@
+spriteTypes = {
+
+spriteType = {
+    name = "GFX_portrait_ZKN_michael_aurus"
+    texturefile = "gfx/leaders/ZKN/portrait_ZKN_michael_aurus.png"
+}
+
+}

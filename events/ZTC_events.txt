@@ -211,6 +211,17 @@ country_event = { # Proletarian Revolt
         remove_power_balance = {
             id = ZTC_power_balance
         }
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        set_politics = {
+            ruling_party = communism
+            elections_allowed = no
+        }
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        complete_national_focus = ZTC_the_peoples_revolution
 	}
 }
 
@@ -227,6 +238,17 @@ country_event = { # Council Coup
         remove_power_balance = {
             id = ZTC_power_balance
         }
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        set_politics = {
+            ruling_party = fascism
+            elections_allowed = no
+        }
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        complete_national_focus = ZTC_depose_the_grand_chancellor
 	}
 }
 

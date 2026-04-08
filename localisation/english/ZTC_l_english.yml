@@ -87,6 +87,8 @@
  ZTC_sell_guns_to_country: "Smuggle Arms to [FROM.GetName]"
  ZTC_currently_smuggling_guns: "has smuggled guns in the last §Y120 days§!."
 
+ ZTC_appease_the_council: "Appease the Council"
+ ZTC_appease_the_people: "Appease the People"
  ZTC_popular_anger_increases: "Increasing Radicalisation"
  ZTC_council_anger_increases: "Council Bickering"
 
@@ -212,12 +214,12 @@
  ZTC_events.7.a: "Too bad."
 
  ZTC_events.8.t: "The Second Hortensian Defenestration"
- ZTC_events.8.desc: ""
- ZTC_events.8.a: ""
+ ZTC_events.8.desc: "WIP"
+ ZTC_events.8.a: "Long live the People!"
 
  ZTC_events.9.t: "Stadtrat Motion of No Confidence"
- ZTC_events.9.desc: ""
- ZTC_events.9.a: ""
+ ZTC_events.9.desc: "WIP"
+ ZTC_events.9.a: "It's just business."
 
  ZTC_news_events.1.t: "The Death of Grand Councillor Krösus"
  ZTC_news_events.1.desc: "WIP"

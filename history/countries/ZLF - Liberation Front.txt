@@ -31,7 +31,7 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
-#recruit_character = 
+recruit_character = ZLF_roland_ludovik
 
 set_cosmetic_tag = ZLF_liberation_front
 

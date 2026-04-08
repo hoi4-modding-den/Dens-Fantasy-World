@@ -31,7 +31,7 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
-#recruit_character = 
+recruit_character = ZKN_michael_aurus
 
 set_cosmetic_tag = ZKN_dominion
 

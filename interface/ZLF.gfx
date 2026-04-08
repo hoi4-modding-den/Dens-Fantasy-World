@@ -1,0 +1,13 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_roland_ludovik"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_roland_ludovik.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_roland_ludovik_victory"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_roland_ludovik_victory.png"
+    }
+
+}

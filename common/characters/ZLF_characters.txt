@@ -1,0 +1,18 @@
+characters = {
+
+	ZLF_roland_ludovik = { 
+		name = ZLF_roland_ludovik_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_roland_ludovik
+			}
+		}
+        
+		country_leader = {
+			ideology = socialism
+			traits = { ZLF_hero_of_the_revolution }
+			expire = "1960.1.1.1"
+		}
+	}
+
+}
