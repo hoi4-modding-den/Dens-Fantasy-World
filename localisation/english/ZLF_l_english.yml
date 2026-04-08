@@ -17,8 +17,34 @@
  ZLF_democratic_party_long: "National Democratic Party of Gardenia"
  ZLF_communism_party: "RTP"
  ZLF_communism_party_long: "Radical Transformation Party"
- ZLF_fascism_party: "Armeeverschwörung"
- ZLF_fascism_party_long: "Army Conspirators"
+ ZLF_fascism_party: "GHP"
+ ZLF_fascism_party_long: "Gardenian Humanist Party"
+
+
+# DECISIONS
+
+ ZLF_civil_war_cat: "The Edelweiß Revolution"
+ ZLF_retake_magnolienburg: "Retake Rhododendron"
+ ZLF_close_prinzendamm_encirclement: "Close the Prinzendamm Encirclement"
+ ZLF_close_prinzendamm_encirclement_failed: "the Encirclement has been broken"
+ ZLF_push_to_the_river: "Push to the River"
+ ZLF_crush_the_eastern_garrisons: "Crush the Northeastern Garrisons"
+ ZLF_take_the_royalist_stronghold: "Take the Royalist Stronghold"
+ ZLF_maintain_connection_to_hortensia: "Ongoing Negotiations in Hortensia"
+
+
+# EVENTS
+
+ ZLF_cw_events.1.t: "Army Morale falters"
+ ZLF_cw_events.1.desc: "Failure to complete special objectives given by Liberation Army Command have affected the morale of our troops."
+ ZLF_cw_events.1.a: "We must press on..."
+
+ ZLF_cw_events.2.t: "Army Morale falters severely"
+ ZLF_cw_events.2.a: "We will recover..."
+
+ ZLF_cw_events.3.t: "Hortensian Aid"
+ ZLF_cw_events.3.desc: "With the roads to Hortensia secure, we were able to negotiate with various aligned groups in the city to garner their support."
+ ZLF_cw_events.3.a: "Gott sei Dank."
 
 
 # MAP STUFF
@@ -42,7 +68,9 @@
  VICTORY_POINTS_8473: "Zinnienschloss"
  VICTORY_POINTS_9218: "Welsen"
  VICTORY_POINTS_9428: "Plosen an der Spei"
+ VICTORY_POINTS_9429: "Malenau"
  VICTORY_POINTS_9431: "Gefroren"
+ VICTORY_POINTS_9433: "Zaddern"
  VICTORY_POINTS_9675: "Prinzendamm"
  VICTORY_POINTS_10881: "Wolframingen"
  VICTORY_POINTS_10887: "Eisenhütten"

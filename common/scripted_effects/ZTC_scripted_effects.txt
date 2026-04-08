@@ -1,0 +1,25 @@
+ZTC_increase_popular_anger = {
+    if = {
+        limit = {
+            has_power_balance = { id = ZTC_power_balance }
+        }
+        add_power_balance_value = {
+            id = ZTC_power_balance
+            value = -0.1
+            tooltip_side = ZTC_popular_side
+        }
+    }
+}
+
+ZTC_increase_council_anger = {
+    if = {
+        limit = {
+            has_power_balance = { id = ZTC_power_balance }
+        }
+        add_power_balance_value = {
+            id = ZTC_power_balance
+            value = 0.1
+            tooltip_side = ZTC_council_side
+        }
+    }
+}

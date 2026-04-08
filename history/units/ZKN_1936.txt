@@ -1,0 +1,238 @@
+division_template = {
+	name = "Imperial Army Division"
+	#division_names_group = ZKN_INF_01
+    priority = 2
+    template_counter = 111
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+        artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Imperial Army Brigade"
+	#division_names_group = ZKN_INF_02
+    priority = 1
+    template_counter = 119
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Royal Cavalry Corps"
+	#division_names_group = ZKN_CAV_01
+    priority = 0
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+        cavalry = { x = 0 y = 3 }
+        cavalry = { x = 1 y = 0 }
+        cavalry = { x = 1 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+    # Prinzendamm Encirclement
+    division = {
+		location = 9675
+		division_template = "Imperial Army Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 9675
+		division_template = "Imperial Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+    # Rhododendron Offensive
+    division = {
+		location = 11065
+		division_template = "Imperial Army Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+    division = {
+		location = 8471
+		division_template = "Imperial Army Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		location = 11065
+		division_template = "Royal Cavalry Corps"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+    division = {
+		location = 11060
+		division_template = "Imperial Army Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+    # Riverstand
+    division = {
+		location = 9428
+		division_template = "Imperial Army Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+    division = {
+		location = 9429
+		division_template = "Imperial Army Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+    division = {
+		location = 9433
+		division_template = "Imperial Army Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+    # City Defenders
+    division = {
+		location = 8473
+		division_template = "Imperial Army Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+    division = {
+		location = 8473
+		division_template = "Imperial Army Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+    division = {
+		location = 8473
+		division_template = "Imperial Army Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+    division = {
+        name = "Küstrin Marinegarde"
+		location = 8470
+		division_template = "Imperial Army Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+    division = {
+		location = 10985
+		division_template = "Royal Cavalry Corps"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+    division = {
+		location = 11616
+		division_template = "Imperial Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+    division = {
+		location = 11326
+		division_template = "Imperial Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+    # Magnolienburg Defence
+    division = {
+		location = 11412
+		division_template = "Imperial Army Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+    division = {
+		location = 11410
+		division_template = "Royal Cavalry Corps"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+    division = {
+		location = 11327
+		division_template = "Imperial Army Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+    # Karlberg Defence
+    division = {
+		location = 10881
+		division_template = "Imperial Army Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+    division = {
+		location = 10884
+		division_template = "Imperial Army Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+    division = {
+		location = 10882
+		division_template = "Royal Cavalry Corps"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+    division = {
+		location = 10885
+		division_template = "Royal Cavalry Corps"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+    division = {
+		location = 11615
+		division_template = "Imperial Army Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+    # Flussland Garrison
+    division = {
+		location = 9506
+		division_template = "Imperial Army Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+    division = {
+		location = 9507
+		division_template = "Imperial Army Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.70
+		efficiency = 50
+		
+	}
+}

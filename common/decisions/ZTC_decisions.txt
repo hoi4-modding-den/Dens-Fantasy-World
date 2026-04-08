@@ -1,0 +1,114 @@
+ZTC_erstatzteil_scheme_cat = {
+
+    ZTC_sell_guns_to_country = {
+
+        icon = generic_prepare_civil_war
+
+        custom_cost_trigger = {
+            has_equipment = {
+                infantry_equipment > 499
+            }
+        }
+        custom_cost_text = decision_cost_guns_500
+
+        available = {
+            FROM = {
+                has_war = yes
+                NOT = { has_war_with = ROOT }
+                has_opinion = {
+                    target = ROOT
+                    value > 9
+                }
+            }
+            NOT = { has_country_flag = ZTC_currently_smuggling_guns }
+        }
+
+        targets_dynamic = yes
+
+        target_trigger = {
+            FROM = {
+                has_war = yes
+            }
+        }
+
+        days_re_enable = 200
+
+        complete_effect = {
+            set_country_flag = {
+                flag = ZTC_currently_smuggling_guns
+                days = 120
+                value = 1
+            }
+
+            FROM = {
+                country_event = { id = ZTC_events.5 days = 10 }
+            }
+
+            custom_effect_tooltip = if_they_accept_tt
+
+            effect_tooltip = {
+                send_equipment = {
+                    equipment = infantry_equipment
+                    amount = 500
+                    target = FROM
+                }
+                add_cic = 15000
+            }
+        }
+    }
+
+}
+
+ZTC_balance_of_power_category = {
+
+    ZTC_popular_anger_increases = {
+
+        icon = generic_civil_support
+
+        activation = {
+            NOT = { has_completed_focus = ZTC_a_proper_democracy }
+        }
+
+        available = {
+            has_completed_focus = ZTC_a_proper_democracy
+        }
+
+        is_good = no
+
+        days_mission_timeout = 70
+
+        timeout_effect = {
+            ZTC_increase_popular_anger = yes
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            activate_mission = ZTC_popular_anger_increases
+        }
+    }
+
+    ZTC_council_anger_increases = {
+
+        icon = generic_political_discourse
+
+        activation = {
+            NOT = { has_completed_focus = ZTC_secure_council_loyalty }
+        }
+
+        available = {
+            has_completed_focus = ZTC_secure_council_loyalty
+        }
+
+        is_good = no
+
+        days_mission_timeout = 70
+
+        timeout_effect = {
+            ZTC_increase_council_anger = yes
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            activate_mission = ZTC_council_anger_increases
+        }
+    }
+
+}

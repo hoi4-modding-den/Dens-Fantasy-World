@@ -1,6 +1,6 @@
 capital = 570
 
-#oob = "ZKN_1936"
+oob = "ZKN_1936"
 
 set_stability = 0.45
 set_war_support = 0.6
@@ -10,13 +10,20 @@ set_research_slots = 3
 
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
-	tech_trucks = 1
+	basic_train = 1
+	
 	gw_artillery = 1
 	interwar_antiair = 1
 }
+
+ZLF_air_techs_for_gardenia = yes
 
 add_ideas = {
 	limited_exports
@@ -33,6 +40,9 @@ declare_war_on = {
 	type = civil_war
 }
 add_civil_war_target = ZLF
+
+activate_mission = ZKN_finish_the_civil_war_quickly
+activate_mission = ZKN_aid_from_neighbouring_monarchies
 
 set_politics = {
 	ruling_party = neutrality

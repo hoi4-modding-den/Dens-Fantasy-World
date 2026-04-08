@@ -1,0 +1,255 @@
+division_template = {
+	name = "Banner Army Division"
+	#division_names_group = ZLF_INF_03
+    priority = 2
+    template_counter = 38
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+        artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Liberation Army Division"
+	#division_names_group = ZLF_INF_02
+    priority = 1
+    template_counter = 119
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Wehrbrigade"
+	#division_names_group = ZLF_INF_01
+    priority = 1
+    template_counter = 119
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Bandit Suppression Brigade"
+	#division_names_group = ZLF_GAR_01
+    priority = 0
+    template_counter = 68
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+        cavalry = { x = 0 y = 3 }
+	}
+	support = {
+        
+	}
+}
+
+units = {
+    # Prinzendamm Encirclement
+    division = {
+		location = 9673
+		division_template = "Liberation Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		location = 9674
+		division_template = "Wehrbrigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+    division = {
+		location = 9218
+		division_template = "Wehrbrigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+    division = {
+		location = 9219
+		division_template = "Wehrbrigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+    division = {
+		location = 9676
+		division_template = "Liberation Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+    # City Guards
+    division = {
+		location = 9218
+		division_template = "Liberation Army Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+    division = {
+		location = 11026
+		division_template = "Liberation Army Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+	}
+    division = {
+		location = 11031
+		division_template = "Liberation Army Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+    division = {
+		location = 11070
+		division_template = "Liberation Army Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+    # Rhododendron Offensive
+    division = {
+		location = 11053
+		division_template = "Banner Army Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+    division = {
+		location = 11061
+		division_template = "Banner Army Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+    # Magnolienburg Offensive
+    division = {
+		location = 11415
+		division_template = "Banner Army Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+    division = {
+		location = 11409
+		division_template = "Liberation Army Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+    # Eastern Frontline
+    division = {
+		location = 11068
+		division_template = "Bandit Suppression Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+    division = {
+		location = 11054
+		division_template = "Bandit Suppression Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+    division = {
+		location = 9215
+		division_template = "Wehrbrigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+    division = {
+		location = 9220
+		division_template = "Wehrbrigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+    division = {
+		location = 11033
+		division_template = "Liberation Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+    division = {
+		location = 11029
+		division_template = "Wehrbrigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+    division = {
+		location = 11221
+		division_template = "Wehrbrigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+    # Western Frontline
+    division = {
+		location = 11071
+		division_template = "Wehrbrigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+    division = {
+		location = 9430
+		division_template = "Wehrbrigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+    division = {
+		location = 9427
+		division_template = "Bandit Suppression Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+    # Reorganised Divs
+    division = {
+		location = 11202
+		division_template = "Bandit Suppression Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+    division = {
+		location = 11211
+		division_template = "Bandit Suppression Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+    division = {
+		location = 11201
+		division_template = "Bandit Suppression Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.70
+		efficiency = 50
+		
+	}
+}

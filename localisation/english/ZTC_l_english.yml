@@ -19,14 +19,14 @@
 
 # PARTIES
 
- ZTC_neutrality_party: "Stadtrat"
- ZTC_neutrality_party_long: "City Council of Hortensia"
- ZTC_democratic_party: "$ZTC_neutrality_party$ - Reformists"
- ZTC_democratic_party_long: "$ZTC_neutrality_party_long$ - Reformist Faction"
+ ZTC_neutrality_party: "Stadtrat - Conservatives"
+ ZTC_neutrality_party_long: "City Council of Hortensia - Conservative Faction"
+ ZTC_democratic_party: "Stadtrat - Reformists"
+ ZTC_democratic_party_long: "City Council of Hortensia - Reformist Faction"
  ZTC_communism_party: "HVF"
  ZTC_communism_party_long: "Hortensian People's Front"
- ZTC_fascism_party: "$ZTC_neutrality_party$ - Expansionists"
- ZTC_fascism_party_long: "$ZTC_neutrality_party_long$ - Expansionist Faction"
+ ZTC_fascism_party: "Stadtrat - Expansionists"
+ ZTC_fascism_party_long: "City Council of Hortensia - Expansionist Faction"
 
 
 # CHARACTERS
@@ -34,6 +34,7 @@
  ZTC_jan_kroesus_name: "Jan Krösus"
  ZTC_the_council_name: "The City Council"
  ZTC_franziska_kroesus_name: "Franziska Krösus"
+ ZTC_johanna_ahrendt_name: "Johanna Ahrendt"
 
 
 # TRAITS
@@ -43,6 +44,7 @@
  ZTC_grand_councillor_trait: "Oberster Ratsherr"
  ZTC_grand_councillor_fem_trait: "Oberste Ratsfrau"
  ZTC_divided_interests: "Divided Interests"
+ ZTC_proletarian_movement_leader: "Popular Agitator"
 
 
 # IDEAS
@@ -58,6 +60,8 @@
  ZTC_zinnian_navy_deal: "The Zinnian Navy Deal"
  ZTC_zinnian_navy_deal_desc: "The desperate Gardenian Monarchy sold us most of their navy at a cheap price to finance their anti-Republican campaigns. While uncertain what we are going to do with it, you know what they say: “Better to have than to want!”"
  ZTC_industrial_regulations: "Industrial Regulations"
+ ZTC_destratification_of_society: "De-Stratification Campaign"
+ ZTC_destratification_of_society_desc: "Hortensia is a stratified city in the most literal sense of the word. The city is built in layers, with the oppulent mansions of the wealthy towering over the slums that the proletariat calls home. This obvious architectural flaw in the city's design is one of the many things to be corrected during our De-Stratification Campaign."
 
 
 # DYNMODS
@@ -65,9 +69,38 @@
  ZTC_naval_outpost: "Helmarn Naval Base"
 
 
+# BOP
+
+ ZTC_power_balance: "The War in Hortensia"
+ ZTC_balanced_range: "Trust in Reform"
+ ZTC_popular_side: "Popular Anger"
+ ZTC_popular_anger_range: "Upset Proletariat"
+ ZTC_popular_revolt_range: "Rising Proletariat"
+ ZTC_council_side: "Council Anger"
+ ZTC_council_anger_range: "Upset Council"
+ ZTC_council_revolt_range: "Disloyal Council"
+
+
+# DECISIONS
+
+ ZTC_erstatzteil_scheme_cat: "Gun Running"
+ ZTC_sell_guns_to_country: "Smuggle Arms to [FROM.GetName]"
+ ZTC_currently_smuggling_guns: "has smuggled guns in the last §Y120 days§!."
+
+ ZTC_popular_anger_increases: "Increasing Radicalisation"
+ ZTC_council_anger_increases: "Council Bickering"
+
+# DECISION COSTS
+
+ decision_cost_guns_500: "£GFX_infantry_equipment_text_icon  §Y500§!"
+ decision_cost_guns_500_blocked: "£GFX_infantry_equipment_text_icon  §R500§!"
+ decision_cost_guns_500_tooltip: "It costs £GFX_infantry_equipment_text_icon  §Y500§! to take the decision"
+
+
+
 # FOCI
 
- ZTC_the_new_grand_councillor: "The Last Days"
+ ZTC_the_new_grand_councillor: "Changing of the Guard"
  ZTC_the_new_grand_councillor_desc: ""
  ZTC_the_new_grand_councillor_tt: "§YGrand Councillor Jan Krösus§! is on his deathbed. His appointed successor will be announced shortly following his §Rdeath§!.\n \n \n§LThe situation of Hortensia is rapidly worsening and the council is preparing to forego their democratic traditions for the sake of profit and stability.\n \nThe people of Hortensia fear the continuing stagnation and rally around the radical agitators in hopes of improving their meagre lifes.\n \nThe position of Grand Councillor was never so unwanted.§!"
 
@@ -96,6 +129,7 @@
  ZTC_invest_in_public_development_desc: ""
  ZTC_reverse_the_stratification: "De-Stratify Hortensian Society"
  ZTC_reverse_the_stratification_desc: ""
+ ZTC_reverse_the_stratification_tt: "§Y$ZTC_power_balance$§! moves towards §G$ZTC_balanced_range$§! depending on which side it currently lies."
  ZTC_regulate_the_industries: "Regulate the Corporations"
  ZTC_regulate_the_industries_desc: ""
  ZTC_industrial_waste_laws: "Industrial Waste Laws"
@@ -124,7 +158,7 @@
  ZTC_embrace_social_democracy_desc: ""
  ZTC_develop_helmarn: "Develop Helmarn"
  ZTC_develop_helmarn_desc: ""
- ZTC_interfere_in_the_edelweiss_revolution: "Support the Edelweiss Revolution"
+ ZTC_interfere_in_the_edelweiss_revolution: "Support the Liberation Front"
  ZTC_interfere_in_the_edelweiss_revolution_desc: ""
  ZTC_gardenian_monetary_union: "Gardenian Monetary Union"
  ZTC_gardenian_monetary_union_desc: ""
@@ -135,13 +169,15 @@
  ZTC_stop_the_spying: "Purge the Security Bureau"
  ZTC_stop_the_spying_desc: ""
 
- ZTC_depose_the_grand_chancellor: "The Corporate Coup"
- ZTC_depose_the_grand_chancellor_desc: ""
- ZTC_depose_the_grand_chancellor_tt: "Completed via the §Y'Stadtrat Motion of Confidence'§! Event."
- 
  ZTC_the_peoples_revolution: "The Proletarian Revolt"
  ZTC_the_peoples_revolution_desc: ""
- ZTC_the_peoples_revolution_tt: "Completed via the §Y'The Second Hortensian Defenestration'§! Event."
+ ZTC_the_peoples_revolution_trigger: "Completed via the §Y'$ZTC_events.8.t$'§! Event."
+ ZTC_the_peoples_revolution_tt: "§LThe Hortensian People's Front has successfully taken control of Hortensia, finally ridding the state of the corrupt Stadtrat.§!"
+
+ ZTC_depose_the_grand_chancellor: "The Corporate Coup"
+ ZTC_depose_the_grand_chancellor_desc: ""
+ ZTC_depose_the_grand_chancellor_trigger: "Completed via the §Y'$ZTC_events.9.t$'§! Event."
+ ZTC_depose_the_grand_chancellor_tt: "§LThe Corporatist Faction of the Stadtrat have assumed control over the city and can begin implementing their radical ideas.§!" 
 
 
 # EVENTS
@@ -161,6 +197,27 @@
  ZTC_events.4.t: "The Path of Reform"
  ZTC_events.4.desc: "It is obvious that Hortensia is in dire need of reform. However, too much reform may upset the councilmembers who have entrenched themselves in the traditional system of the city. On th other hand, they could be a useful way to gain power, even if relying too heavily on them will certainly upset the common citizen."
  ZTC_events.4.a: "We must tread carefully."
+
+ ZTC_events.5.t: "[FROM.GetNameDefCap] offers Weapons"
+ ZTC_events.5.desc: "WIP"
+ ZTC_events.5.a: "We need as many as we can!"
+ ZTC_events.5.b: "No thanks."
+ 
+ ZTC_events.6.t: "[FROM.GetAdjective] Deal accepted"
+ ZTC_events.6.desc: "WIP"
+ ZTC_events.6.a: "Profitable."
+
+ ZTC_events.7.t: "[FROM.GetAdjective] Deal rejected"
+ ZTC_events.7.desc: "WIP"
+ ZTC_events.7.a: "Too bad."
+
+ ZTC_events.8.t: "The Second Hortensian Defenestration"
+ ZTC_events.8.desc: ""
+ ZTC_events.8.a: ""
+
+ ZTC_events.9.t: "Stadtrat Motion of No Confidence"
+ ZTC_events.9.desc: ""
+ ZTC_events.9.a: ""
 
  ZTC_news_events.1.t: "The Death of Grand Councillor Krösus"
  ZTC_news_events.1.desc: "WIP"

@@ -3,3 +3,4 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14789;14802;sea;19232;-1;-1;-1;-1;;Qikiqtaaluk Island
 15135;19303;sea;19268;-1;-1;-1;-1;;Igaluk Island
 15252;16500;sea;17436;-1;-1;-1;-1;;Cordillera Island
+10526;19310;;-1;-1;-1;-1;-1;ALBIA_STRAIT;Albia Strait
