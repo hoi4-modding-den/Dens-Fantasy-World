@@ -1,0 +1,18 @@
+characters = {
+
+ZIA_osvald_cereduj = { 
+	name = ZIA_osvald_cereduj_name
+    portraits = {
+        civilian = {
+            large = GFX_portrait_ZIA_osvald_cereduj
+        }
+    }
+    
+    country_leader = {
+        ideology = despotism
+        traits = { }
+        expire = "1970.1.1.1"
+    }
+}
+
+}

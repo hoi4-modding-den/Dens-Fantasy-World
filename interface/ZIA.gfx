@@ -1,0 +1,8 @@
+spriteTypes = {
+
+spriteType = {
+    name = "GFX_portrait_ZIA_osvald_cereduj"
+    texturefile = "gfx/leaders/ZIA/GFX_portrait_ZIA_osvald_cereduj.dds"
+}
+
+}

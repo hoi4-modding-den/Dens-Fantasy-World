@@ -24,7 +24,7 @@ set_stability = 0.6
 set_war_support = 0.2
 set_convoys = 250
 
-#recruit_character = 
+recruit_character = ZIA_osvald_cereduj
 #add_ideas = 
 
 set_politics = {

@@ -8,14 +8,14 @@
   ZIA_neutrality_DEF: "Most Serene Kingdom of Çialazar"
   ZIA_neutrality_ADJ: "Çielze"
 
-  ZFS_communism_party: "RUC"
-  ZFS_communism_party_long: "Cůd Communal Collective"
-  ZFS_democratic_party: "CPN"
-  ZFS_democratic_party_long: "Çialazar Democratic Federation"
-  ZFS_neutrality_party: "TIE"
-  ZFS_neutrality_party_long: "House of Elyń"
-  ZFS_fascism_party: "FRR"
-  ZFS_fascism_party_long: "Maritime Purification Union"
+  ZIA_communism_party: "RUC"
+  ZIA_communism_party_long: "Cůd Communal Collective"
+  ZIA_democratic_party: "CPN"
+  ZIA_democratic_party_long: "Çialazar Democratic Federation"
+  ZIA_neutrality_party: "TIE"
+  ZIA_neutrality_party_long: "House of Elyń"
+  ZIA_fascism_party: "FRR"
+  ZIA_fascism_party_long: "Maritime Purification Union"
 
  # VICTORY POINTS
   VICTORY_POINTS_11038:0 "Naskalój"
@@ -30,4 +30,7 @@
   STATE_814:0 "Nasaça"
   STATE_777:0 "Ůsorodj"
   STATE_746:0 "Ůsorodj-á-Òjiç"
+
+ # LEADERS
+  ZIA_osvald_cereduj_name:0 "Òsvald 'iónne' Çeredůj Sardelá"
   
