@@ -30,6 +30,11 @@ set_convoys = 0
 #recruit_character = 
 #add_ideas = 
 
+declare_war_on = {
+	target = ZFS
+	type = civil_war
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.3.1"
