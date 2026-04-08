@@ -16,3 +16,18 @@
   ZFS_neutrality_party_long: "House of Elyń"
   ZFS_fascism_party: "FRR"
   ZFS_fascism_party_long: "Maritime Purification Union"
+
+ # VICTORY POINTS
+  VICTORY_POINTS_11038:0 "Naskalój"
+  VICTORY_POINTS_11140:0 "Petruça"
+  VICTORY_POINTS_16489:0 "Vtujabór"
+  VICTORY_POINTS_10731:0 "Ródeça"
+  VICTORY_POINTS_11043:0 "Traletçe"
+  VICTORY_POINTS_10826:0 "Òje"
+
+ # STATES
+  STATE_1224:0 "Vtujaç-Petruçii"
+  STATE_814:0 "Nasaça"
+  STATE_777:0 "Ůsorodj"
+  STATE_746:0 "Ůsorodj-á-Òjiç"
+  

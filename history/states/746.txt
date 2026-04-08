@@ -19,7 +19,9 @@ state={
 	history={
 		owner = ZIA
 		add_core_of = ZIA
-		
+		victory_points = {
+			10826 2
+		}
 		buildings = {
 			infrastructure = 2
 			
