@@ -17,8 +17,9 @@ state={
 	}
 
 	history={
-		#owner = ZAR
-		#add_core_of = ZAR
+		
+		owner = ZCV
+		add_core_of = ZCV
 		
 		buildings = {
 			infrastructure = 5

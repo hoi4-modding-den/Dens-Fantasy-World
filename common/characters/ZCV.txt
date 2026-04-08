@@ -1,0 +1,17 @@
+characters={
+	ZCV_otto_bauer = { 
+		name = ZCV_otto_bauer
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = moderatism
+            traits = { ZCV_corrupt_official }
+			desc = ZCV_otto_bauer_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

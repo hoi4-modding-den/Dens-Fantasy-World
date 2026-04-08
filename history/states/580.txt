@@ -4,6 +4,7 @@ state={
 	name="STATE_580"
 	manpower = 2470457
 	
+	
 	state_category = city
 	#impassable = yes
 	resources={
@@ -18,6 +19,8 @@ state={
 
 	history={
 		
+		owner = ZCV
+		add_core_of = ZCV
 		
 		buildings = {
 			infrastructure = 3

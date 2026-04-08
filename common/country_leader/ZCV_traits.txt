@@ -1,0 +1,8 @@
+leader_traits = {
+	ZCV_corrupt_official = {
+		political_power_gain = -0.15
+		stability_weekly_factor = -0.005
+		consumer_goods_factor = 0.2
+		random = no
+	}
+}

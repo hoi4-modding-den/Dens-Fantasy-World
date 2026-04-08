@@ -1305,3 +1305,7 @@ ZFS = {
 	color = rgb { 71 234 239 }
 	color_ui = rgb { 71 234 239 }
 }
+ZCV = {
+	color = rgb { 91 11 50 }
+	color_ui = rgb { 91 11 50 }
+}

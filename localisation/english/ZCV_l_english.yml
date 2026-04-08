@@ -1,0 +1,17 @@
+﻿l_english:
+
+# Nation Loc
+ ZCV:0 "Wighardia"
+ ZCV_DEF:0 "Wighardia"
+ ZCV_ADJ:0 "Wighardian"
+
+ ZCV_neutrality:0 "United Realms of Wighardia"
+ ZCV_neutrality_DEF:0 "the United Realms of Wighardia"
+
+# Leaders Loc
+ZCV_otto_bauer:0 "Otto Bauer"
+ZCV_otto_bauer_desc:0 "Approached by a mysterious organisation, Bauer was pushed to run in the last elections. While facing political opposition and major public opposition, Bauer saw a significant victory in the election, and has since lay idle allowing the nation to be overrun by criminal organisations leading to the collapse of the banks in the nation."
+
+ # State & Province Loc
+ STATE_612:0 "Ardenheim"
+ VICTORY_POINTS_8980: "Ardenheim"

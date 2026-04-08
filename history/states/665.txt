@@ -18,6 +18,9 @@ state={
 
 	history={
 		
+		owner = ZCV
+		add_core_of = ZCV
+		
 		
 		buildings = {
 			infrastructure = 1
@@ -25,9 +28,8 @@ state={
 			arms_factory = 0
 			industrial_complex = 0
 			
-			
 		}
-		
+		victory_points = { 8980 30 }
 	}
 
 	provinces={

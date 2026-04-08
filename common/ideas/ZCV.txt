@@ -1,0 +1,60 @@
+ideas = {
+
+	country = {
+
+        ZCV_banking_crisis = {
+
+			picture = usa_great_depression_3
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+			}
+		}
+
+        ZCV_relieved_banks = {
+
+			picture = usa_great_depression_0
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_cost = 0.2
+			}
+		}
+
+        ZCV_criminal_underworld = {
+
+			picture = CHI_illicit_trade_1
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_weekly_factor = -0.005
+			}
+		}
+
+	}
+
+}
