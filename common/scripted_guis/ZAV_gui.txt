@@ -83,6 +83,10 @@ scripted_gui = {
                 check_variable = { ZAV_notebook_tab = 0 }
             }
 
+            page_divine_saviours_discoveries_container_visible = {
+                check_variable = { ZAV_notebook_tab = 0 }
+            }
+
             page_order_of_shadows_text_visible = {
                 check_variable = { ZAV_notebook_tab = 1 }
             }

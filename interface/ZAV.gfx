@@ -38,6 +38,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ZAV/ZAV_notebook_bookmark.dds"
 	}
 
+	spriteType = {
+		name = "GFX_ZAV_notebook_notecard"
+		texturefile = "gfx/interface/ZAV/ZAV_notebook_notecard.dds"
+	}
+
 	# VAULT #
 
 	SpriteType = {
@@ -113,6 +118,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ZAV_artifact_9"
 		texturefile = "gfx/interface/ZAV/ZAV_putrid_crustacean.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_10"
+		texturefile = "gfx/interface/ZAV/ZAV_warding_talisman.dds"
 	}
 
 	# MISC #

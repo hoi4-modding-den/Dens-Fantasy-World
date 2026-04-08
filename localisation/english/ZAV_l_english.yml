@@ -56,6 +56,105 @@
  ZAV_information_events.2.d:0 ""
  ZAV_information_events.2.a:0 ""
 
+ ZAV_divine_saviours_events.1.t:0 "Theft at the Blackridge Estate"
+ ZAV_divine_saviours_events.1.d:0 "The estate of Lord Halvyr Blackridge, situated on the outskirts of Port Elisabeth, has been breached. No servants were harmed, and no signs of forced entry were recorded.\n\nOnly a single item appears to have been taken: a small, antiquated talisman kept within the lord's private study. Its exact function is unknown, though the Brackenridge family records suggest it predates even the current dynasty. The precision of the theft has raised concern among local authorities."
+ ZAV_divine_saviours_events.1.a:0 "..."
+
+ ZAV_divine_saviours_events.2.t:0 "On Investigating Blackridge Estate"
+ ZAV_divine_saviours_events.2.d:0 "The assigned investigator reports that the intruders bypassed all valuables, targeting only the talisman. The study shows no signs of struggle, suggesting either cooperation or incapacitation without resistance. A servant recalls hearing whispers during the night, though no intruders were seen. The air within the study is described as “oppressively still,” even hours after the incident. The investigator believes the object itself may be of greater significance than previously understood."
+ ZAV_divine_saviours_events.2.a:0 "The servants know more than they are letting on."
+ ZAV_divine_saviours_events.2.b:0 "Let's explore our other avenues."
+
+ ZAV_divine_saviours_events.3.t:0 "Interrogating the Staff"
+ ZAV_divine_saviours_events.3.d:0 "Under the influence of the Corrupted Rose, the household staff quickly broke. One among them confessed to aiding the intruders, describing figures cloaked in ritual garb who spoke of 'clarity beyond the veil.' The talisman, they claim, was necessary 'to endure what is to come.' Cross-referenced symbols found within the study match markings previously linked to a known heretical sect."
+ ZAV_divine_saviours_events.3.a:0 "..."
+
+ ZAV_divine_saviours_events.4.t:0 "A Careless Whisper"
+ ZAV_divine_saviours_events.4.d:0 "Progress came slowly, until a minor breakthrough emerged from an unexpected source. A junior servant, overlooked in earlier questioning, came forward after overhearing fragments of conversation the night of the theft. They recalled one of the intruders speaking in hushed urgency, warning the others that without the talisman, 'the ashes would take them as well.' Though the conspirators remain unidentified, the purpose of the stolen relic becomes clearer. The object was not symbolic. It was protection. The lead is incomplete, but enough has been recovered to establish a pattern of intent."
+ ZAV_divine_saviours_events.4.a:0 "..."
+
+ ZAV_divine_saviours_events.5.t:0 "Silence in the Estate"
+ ZAV_divine_saviours_events.5.d:0 "The investigation yielded nothing of substance. Those within the estate either know nothing, or refuse to speak further. Several members of the household were found dead under unclear circumstances. No signs of stuggle and no witnesses. With all potential leads extinguished, the investigation has gone cold. The stolen talisman is gone, and whatever purpose it served remains unknown. Unease has spread among the nobility following this incident, even warranting a mention at the round table."
+ ZAV_divine_saviours_events.5.a:0 "..."
+
+ ZAV_divine_saviours_events.6.t:0 "Killings in Lowmarket"
+ ZAV_divine_saviours_events.6.d:0 "A series of brutal killings has been reported in the Lowmarket district of New Camelot. Victims appear to have been selected at random, their remains arranged in deliberate formations. Witnesses report shrouded figures fleeing the scene, though none could provide clear descriptions. The scale and nature of the violence suggest ritual intent."
+ ZAV_divine_saviours_events.6.a:0 "..."
+
+ ZAV_divine_saviours_events.7.t:0 "Not a Murder, an Offering"
+ ZAV_divine_saviours_events.7.d:0 "Investigators confirm that the bodies were arranged with geometric precision, their positioning forming a pattern not immediately recognizable. Blood appears to have been deliberately collected and redistributed across the scene. One surviving witness claims the perpetrators spoke in reverence, referring to the act as a 'gift.' The investigator warns that the killings may not be the goal, but a means to something greater."
+ ZAV_divine_saviours_events.7.a:0 "Use an artifact to trace ritual energy."
+ ZAV_divine_saviours_events.7.b:0 "Proceed along another route."
+
+ ZAV_divine_saviours_events.8.t:0 "Echoes of Devotion"
+ ZAV_divine_saviours_events.8.d:0 "The Blighted Flesh reacted violently when brought near the site, drawing out residual energies left behind by the ritual. Investigators briefly witnessed a projection: figures kneeling before an unseen presence, their bodies strengthened by something unseen. The ritual was not merely symbolic. It was a transfer of power."
+ ZAV_divine_saviours_events.8.a:0 "..."
+
+ ZAV_divine_saviours_events.9.t:0 "Patterns in the Fog"
+ ZAV_divine_saviours_events.9.d:0 "Though the ritual site yields little at first glance, a scholar attached to the investigation identifies a recurring geometric structure within the arrangement of the bodies. The pattern, when reconstructed, aligns with known heretical rites associated with sacrificial empowerment. The positioning was not arbitrary, it was designed to channel something beyond the material. While the perpetrators escaped, their intent is no longer in question. The killings were conducted to draw strength, not merely to terrorize."
+ ZAV_divine_saviours_events.9.a:0 "..."
+
+ ZAV_divine_saviours_events.10.t:0 "Another Night in Lowmarket"
+ ZAV_divine_saviours_events.10.d:0 "Before investigators made meaningful progress, the killings have resumed. This time, they have been more brazen, entire alleyways are left strewn with bodies, arranged in increasingly elaborate formations. Panic has spread through Lowmarket. Civilians have begun to flee, abandoning their homes and livelihoods in desperation. With no understanding of the pattern or purpose behind the violence, authorities have been forced to impose harsh containment measures. Whatever the perpetrators sought, they have taken it, and left nothing behind but fear."
+ ZAV_divine_saviours_events.10.a:0 "..."
+
+ ZAV_divine_saviours_events.11.t:0 "Guardian Priest found Dead"
+ ZAV_divine_saviours_events.11.d:0 "A senior guardian priest assigned to guard the Vault of Saint Constantine has been found dead in his quarters on Llamrei street, in close proximity to the Moonlight Chapel. No signs of forced entry were found. The corpse shows evidence of prolonged distress prior to death. Given the sensitivity of his post, the matter has been escalated immediately. This murder is similar to others we've seen previously by proponents of the Shadows of the Night."
+ ZAV_divine_saviours_events.11.a:0 "..."
+
+ ZAV_divine_saviours_events.12.t:0 "He didn't die quickly"
+ ZAV_divine_saviours_events.12.d:0 "The investigator reports clear signs of torture, though no instruments were found at the scene. The guard's fingernails are torn, and deep markings cover the walls, suggesting he attempted to resist or escape. Fragments of writing indicate he was forced to recall procedural details repeatedly before his death. It is still unclear whether information was extracted from him prior to his execution."
+ ZAV_divine_saviours_events.12.a:0 "Continue with the investigation."
+
+ ZAV_divine_saviours_events.13.t:0 "A Message left Behind"
+ ZAV_divine_saviours_events.13.d:0 "The investigation into the death of the guardian priest has stalled, yet a final detail has been uncovered. Hidden beneath the guard's bedding, investigators found a scrap of parchment overlooked during the initial sweep. Written in a shaking hand, it contains fragmented references to the Divine Saviours and repeatedly mentions the 'king that bleeds.' The information is too incomplete to rule out the involvement of other orders, but it confirms that the Divine Saviours have a connection to this murder. We have no way of knowing whether sensitive information pertaining to the vault was divulged. There may be a breach already in motion."
+ ZAV_divine_saviours_events.13.a:0 "..."
+
+ ZAV_divine_saviours_events.14.t:0 "Disturbance at Moonlight Chapel"
+ ZAV_divine_saviours_events.14.d:0 "Reports from Moonlight Chapel indicate erratic behavior among clergy and visitors alike. Several individuals have fled the site in a state of extreme agitation, while others remain inside, unresponsive. Witnesses describe a starry dust being dispersed within the chapel halls. The situation is rapidly deteriorating. We are under attack."
+ ZAV_divine_saviours_events.14.a:0 "..."
+
+ ZAV_divine_saviours_events.15.t:0 "Widespread Hysteria at the Chapel"
+ ZAV_divine_saviours_events.15.d:0 "Priests have confirmed the presence of a foreign substance inflicting madness on those exposed to it. The unfortunate souls to have been afflicted by the madness have shown signs of hysteria and often turn on one another. Despite this, a small group within the chapel seems unaffected, moving with purpose through the chaos. The sacred ashes of Saint Morvydd that has recently been stolen from one of our cathedrals is likely the artifact that has been used to cripple the chapel's defenses."
+ ZAV_divine_saviours_events.15.a:0 "Use our resources to track the unaffected figures."
+ ZAV_divine_saviours_events.15.b:0 "Head directly to King Arthur's tomb."
+
+ ZAV_divine_saviours_events.16.t:0 "Through Madness, a Path"
+ ZAV_divine_saviours_events.16.d:0 "The Shroud revealed a coordinated movement beneath the chaos. The unaffected individuals were navigating toward a concealed passage below the chapel. They were carrying with them a protective charm, likely the source of their immunity. They appeared to be heading for the Vault of Saint Constantine. Given the weakened state of our guardian priests, a single aggressor was captured. Realising his fate, this man released his will and let the deity he had been praying to corrupt his body. Besides his lifeless corpse, the talisman was found."
+ ZAV_divine_saviours_events.16.a:0 "..."
+
+ ZAV_divine_saviours_events.17.t:0 "Blood Crown"
+ ZAV_divine_saviours_events.17.d:0 "By the time our forces reached the lower chambers, to the tomb of King Arthur, bodies littered the floor of the great burial chamber. Our defenses had been broken, priests assigned to guard the vault lay on the ground, twisted and lifeless. The intruders have stolen the Blood of King Arthur, a Slaughter Relic class artifact. A single marking was left on the wall of the tomb: a crown split open, from which blood flows downward. With the enemy in control of an artifact of such power, it may not be too long before the forces moving in the shadows face us in the open."
+ ZAV_divine_saviours_events.17.a:0 "May the Lady have pity on us."
+
+ # TOOLTIPS #
+
+ ZAV_no_chance_of_finding_clue_tt:0 "§RNo chance of a positive outcome.§!"
+ ZAV_very_low_chance_of_finding_clue_tt:0 "§RVery low chance of a positive outcome.§!"
+ ZAV_low_chance_of_finding_clue_tt:0 "§OLow chance of a positive outcome.§!"
+ ZAV_regular_chance_of_finding_clue_tt:0 "§YRegular chance of a positive outcome.§!"
+ ZAV_high_chance_of_finding_clue_tt:0 "§GHigh chance of a positive outcome.§!"
+ ZAV_very_high_chance_of_finding_clue_tt:0 "§GVery high chance of a positive outcome.§!"
+
+ ZAV_notebook_updated_tt:0 "§YA new entry has been added to the notebook.§!"
+
+ ZAV_will_use_corrupted_rose_tt:0 "Will remove the §0Corrupted Rose§! from the §YVault of Saint Constantine§!."
+ ZAV_cant_use_corrupted_rose_tt:0 "We do not have the §0Corrupted Rose§! in the §YVault of Saint Constantine§!."
+ ZAV_use_corrupted_rose_tt:0 "The §0Corrupted Rose§! has been consumed."
+
+ ZAV_will_use_blighted_flesh_tt:0 "Will remove the §0Blighted Flesh of a False God§! from the §YVault of Saint Constantine§!."
+ ZAV_cant_use_blighted_flesh_tt:0 "We do not have the §0Blighted Flesh of a False God§! in the §YVault of Saint Constantine§!."
+ ZAV_use_blighted_flesh_tt:0 "The §0Blighted Flesh of a False God§! has been consumed."
+
+ ZAV_who_could_the_bleeding_king_be_tt:0 "§tWho could the Bleeding King be?§!"
+
+ ZAV_will_use_shroud_of_the_fey_tt:0 "Will remove the §3Shroud of the Fey§! from the §YVault of Saint Constantine§!."
+ ZAV_cant_use_shroud_of_the_fey_tt:0 "We do not have the §3Shroud of the Fey§! in the §YVault of Saint Constantine§!."
+ ZAV_use_shroud_of_the_fey_tt:0 "The §3Shroud of the Fey§! has been consumed."
+
+ ZAV_warding_talisman_obtained_tt:0 "We have obtained the §YWarding Talisman§! which will be placed later in the §YVault of Saint Constantine§!."
+ ZAV_blood_of_king_arthur_stolen_tt:0 "The §tBlood of King Arthur§! has been stolen from the §YVault of Saint Constantine§!!"
+
  # MYSTIC KNOWLEDGE #
 
  ZAV_merlins_library:0 "Merlin's Library"
@@ -67,24 +166,21 @@
  ZAV_notebook_tab_order_of_true_knights:0 "Order of True Knights"
 
  ZAV_notebook_page_divine_saviours:0 "The Divine Saviours are a secret organisation that is notorious for its increasingly violent and profane activities. While other secret organisations attempt to cover up traces of their activity, the saviours leave unmistakable marks in their wake. They are involved in ritualistic slaughter and defilement as well as spreading corruption in the bowels of our cities. Towns and cities have reported sudden disappearances, desecrated holy sites, and the emergence of twisted practices that defy law and tradition.\n\nThe saviours worship a deity known as the True King, who in prayer is claimed to one day rise and reclaim dominion over Avalon. Apostles of the True King view their actions not as crimes, but as necessary steps in preparing the realm for his wonderous return. Their acts of violence and corruption are framed as acts of devotion in purging weakness and reshaping society in His image.\n\nThe movement has found support among elements of the nobility. Disillusioned lords and ambitious elites have quietly aligned themselves with the Divine Saviours and provide resources, protection, and influence. This organisation is no longer a fringe sect but an organised and dangerous force whose influence corrupts the very heart of Avalon.\n\nDiscovered Information:\n\n"
- ZAV_notebook_page_order_of_shadows:0 "PLACEHOLDER 1"
- ZAV_notebook_page_legion_of_the_drowned:0 "PLACEHOLDER 2"
- ZAV_notebook_page_crimson_order:0 "PLACEHOLDER 3"
- ZAV_notebook_page_order_of_true_knights:0 "PLACEHOLDER 4"
+ ZAV_notebook_page_order_of_shadows:0 "The Shadows of the Night are a clandestine organisation defined not by overt violence, but by their relentless pursuit of forbidden knowledge. Unlike other heretical groups, their presence is rarely marked by destruction. Instead, they leave behind absence: missing tomes, vanished scholars, and archives stripped of their most esoteric contents. Their operations are methodical, patient, and often undetected until long after the fact.\n\nThe order venerates a figure known as the Shrouded Queen, a veiled entity said to dwell beyond perception. Her followers believe that true enlightenment lies in seeing what is hidden, even at the cost of one's sanity. It is widely reported that prolonged devotion leads to madness, though members of the order regard this not as a failing, but as a necessary consequence of understanding. To know all is to lose all, and in that loss, they claim to find truth.\n\nThe Shadows of the Night maintain influence through secrecy rather than power. They are known to infiltrate academic institutions, private collections, and even clerical archives. Certain scholars and officials have been quietly compromised, either through coercion or shared obsession. Though their actions are less visible than other cults, their reach extends deeply into Avalon's intellectual and administrative foundations."
+ ZAV_notebook_page_legion_of_the_drowned:0 "PLACEHOLDER"
+ ZAV_notebook_page_crimson_order:0 "The Crimson Order is a heretical sect devoted to the spread of decay and rebirth through a force commonly referred to as the Great Corruption. Their activities are marked by the gradual corruption of environments: fields blacken, structures weaken, and organic matter twists into unfamiliar forms. Unlike sudden acts of violence, their influence spreads slowly, often going unnoticed until entire districts have begun to wither.\n\nThey worship the Crimson Goddess, a being believed to embody both ruin and renewal. Followers interpret decay not as an end, but as a necessary precursor to transformation. Through rot, they believe the world is cleansed of its stagnation, allowing new life, however unnatural, to take root. Their rituals frequently involve the deliberate contamination of land, water, and even living hosts.\n\nThe order operates primarily in neglected regions, though recent reports suggest their influence is creeping toward more populated centers. Their members often pose as laborers, healers, or caretakers, embedding themselves within communities before initiating corruption. While their presence is less politically entrenched than other sects, the long-term damage they inflict poses a significant threat to the stability and sustainability of Avalon itself."
+ ZAV_notebook_page_order_of_true_knights:0 "The Order of True Knights views itself as a restorationist movement, claiming to uphold the ideals of the ancient knights of the Round Table. In practice, however, the organisation is riddled with internal betrayal and driven by a distorted interpretation of honor. Their actions are often characterized by targeted killings, duels, and the acquisition of relics tied to Avalon's chivalric past.\n\nThey follow the Deathless Knight, a figure once said to embody the virtues of knighthood before falling to treachery and curse. Condemned to eternal suffering, the Deathless Knight is believed to grant strength and resilience to his followers, though at a severe personal cost. Members of the order seek to summon him back into the world, convinced that only through his final death can true honor be restored.\n\nUnlike other cults, the Order of True Knights does little to hide its activities. Many of its members often hold legitimate rank or status, allowing them to operate under the guise of duty and tradition. However, their loyalty is fractured, and infighting is common. Alliances within the order are temporary, and advancement is frequently achieved through betrayal rather than merit."
 
  ZAV_page_discoveries_text:0 "[GetPageDiscoveryText]"
 
  # INFO #
 
  ZAV_notebook_info_blank:0 ""
- ZAV_discoveries_divine_saviours_1:0 "- The Divine Saviours also worship the 'Bleeding King', it is unclear whether this is the same deity as the True King.\n\n"
- ZAV_discoveries_divine_saviours_2:0 "- The Bleeding King and the True King are the same deity, though the former is the deity's true name.\n\n"
- ZAV_discoveries_divine_saviours_3:0 "- Initiates are enticed with promises of power and access to ancient relics lost since the time of King Arthur.\n\n"
- ZAV_discoveries_divine_saviours_4:0 "- This secret order seems to require slaughter and despair to continue functioning.\n\n"
- ZAV_discoveries_divine_saviours_5:0 "- The cult believes that the True King is King Arthur's truest and most uncorrupted form.\n\n"
- ZAV_discoveries_divine_saviours_6:0 "- King Richard either leads or has been corrupted by the Divine Saviours.\n\n"
- ZAV_discoveries_divine_saviours_7:0 "- The organisation was formed by King Richard with the goal of summoning deities from beyond the veil, although it is unclear what his motivations behind this were.\n\n"
- ZAV_discoveries_divine_saviours_8:0 "- The Divine Saviours were the first secret order and others are sects that broke off to worship other deities.\n\n"
+ ZAV_discoveries_divine_saviours_1:0 "The Divine Saviours have shown interest in acquiring specific relics tied to mental resilience. Their operations suggest preparation for exposure to forces that induce madness. Such artifacts are selectively targeted and stolen with precision."
+ ZAV_discoveries_divine_saviours_2:0 "The Divine Saviours conduct large-scale slaughter rituals not solely for devotion, but to draw strength from their deity. These rites appear to empower participants directly, enhancing their physical capabilities. Victims are often arranged to form structured ritual patterns."
+ ZAV_discoveries_divine_saviours_3:0 "Mentions of a 'Bleeding King' alongside their operations suggest either a second sacred deity or another reference to the True King."
+ ZAV_discoveries_divine_saviours_4:0 "It seems that followers of the True King can 'let go' of their will and release themselves to total influence of the deity. One observed case resulted in the man writhing in pain before leaving a blackened and pockmarked corpse."
+ ZAV_discoveries_divine_saviours_5:0 "The Divine Saviours are now in possession of the Blood of King Arthur. Their motivations for obtaining such an artifact remain unclear."
 
  # VAULT OF SAINT CONSTANTINE #
 
@@ -127,7 +223,7 @@
  ZAV_artifact_6_desc:0 "A perversion of Avalon's most sacred symbol, this malformed grail pulses with a suffocating aura of power. Dark veins crawl across its pitted surface, as though something within struggles to emerge. Those who draw near feel their thoughts weighed down, their will diminished, as if in silent reverence to an unseen master. It is not merely an object of worship. It is a conduit."
 
  ZAV_artifact_7:0 "§0Blighted Flesh of a False God§!"
- ZAV_artifact_7_effect:0 "May be used as a vessel for a blighted deity."
+ ZAV_artifact_7_effect:0 "May be used as a vessel for a blighted deity. Is attracted to sinister energies."
  ZAV_artifact_7_desc:0 "Recovered from a twisted ritual, this decaying mass was once intended as a vessel for a heretical deity. Though lifeless in form, it twitches faintly, as if awaiting completion. Its presence spreads rot and unease, and those who linger too long report visions of something vast and incomplete, straining against the boundaries of reality, seeking form through a host willing or unwilling."
 
  ZAV_artifact_8:0 "§9True Excalibur§!"
@@ -137,6 +233,10 @@
  ZAV_artifact_9:0 "§7Putrid Crustacean§!"
  ZAV_artifact_9_effect:0 "Spreads rot and decay to everything it touches."
  ZAV_artifact_9_desc:0 "Recovered from the blackened tides beyond Avalon's shores, this malformed creature was discovered at the center of a spreading blight that twisted fish into abominations and turned clear waters into foul, choking mire. Its shell is cracked and oozing, its limbs uneven and constantly shifting, as though its form cannot settle upon a single reality. Even in containment, it emits a slow, creeping corruption, metal tarnishes, water stagnates, and living things recoil in its presence."
+
+ ZAV_artifact_10:0 "§9Warding Talisman§!"
+ ZAV_artifact_10_effect:0 "Capable of protecting the users from spreading madness."
+ ZAV_artifact_10_desc:0 "PLACEHOLDER"
 
  ZAV_add_artifact_excalibur_tt:0 "The §9True Excalibur§! will be stored in the §YVault of Constantine§!."
  ZAV_add_artifact_putrid_crustacean_tt:0 "The §7Putrid Crustacean§! will be stored in the §YVault of Constantine§!."
