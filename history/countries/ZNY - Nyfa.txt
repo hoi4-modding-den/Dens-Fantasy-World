@@ -3,7 +3,7 @@ set_cosmetic_tag = ZNY_Nyfa_federal
 capital = 988 # Jan Zorzerk
 set_oob = "ZNY_1936"
 
-starting_train_buffer = 2
+starting_train_buffer = 4
 		set_technology = {
 			early_fighter = 1
 			naval_bomber1 = 1
@@ -27,10 +27,11 @@ set_technology = {
 	tech_support = 1
 }
 
-set_convoys = 0
+set_convoys = 7
 recruit_character = ZNY_etyen_karolier
 recruit_character = ZNY_adolf_karolier
 recruit_character = ZNY_rafa_rancho
+recruit_character = ZNY_vasily_goloborodko
 
 set_politics = {
 	ruling_party = democratic
@@ -48,5 +49,6 @@ set_popularities = {
 add_ideas = {
 	 ZNY_unpopular_government
 	 ZNY_resistance_in_autonomous_regions
+	 ZNY_next_world_power_not_sure
 	 free_trade
 }

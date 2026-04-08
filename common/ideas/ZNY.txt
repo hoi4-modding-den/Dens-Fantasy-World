@@ -42,4 +42,18 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		ZNY_next_world_power_not_sure = {
+			picture = ZNY_next_world_power_not_sure
+			
+			allowed = {  }
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				monthly_population = 0.09
+				lend_lease_tension = -0.2
+				send_volunteers_tension = -0.1
+			}
+		}
+	}
 }

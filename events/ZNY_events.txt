@@ -25,7 +25,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
+        name = ZNY_events.2.a
 
+set_country_flag = ZNY_protest_peaceful_crackdown_failure
+set_country_flag = ZNY_protest_peetrov_leaves_government
     }
 }
 
@@ -58,5 +61,30 @@ add_popularity = {
     popularity = 0.12
 }
 add_ideas = { ZNY_revolution_com_surge }
+    }
+}
+
+country_event = {
+	id = ZNY_events.4
+	title = ZNY_events.4.t
+	desc = ZNY_events.4.d
+	
+	picture = GFX_report_event_generic_conference
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ZNY_events.4.a
+		add_political_power = 10
+		set_politics = {
+    ruling_party = neutrality
+    elections_allowed = no
+    election_frequency = 48
+		}
+		add_popularity = {
+    ideology = democratic
+    popularity = -0.5
+}
     }
 }

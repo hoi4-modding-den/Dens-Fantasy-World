@@ -1,0 +1,107 @@
+### Templates ###
+division_template = {
+	name = "Defense Infantry Division"
+	division_names_group = ZNY_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 1 }
+		engineer = { x = 0 y = 0 }
+	}
+}
+	
+
+### Unit Locations ###
+units = {
+	division = {
+		location = 13164
+		division_template = "Defense Infantry Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+division = {
+		location = 13164
+		division_template = "Defense Infantry Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 11920
+		division_template = "Defense Infantry Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 11920
+		division_template = "Defense Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		location = 11920
+		division_template = "Defense Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 11844
+		division_template = "Defense Infantry Division"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.6
+	}
+	division = {
+		location = 11834
+		division_template = "Defense Infantry Division"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.6
+	}
+	division = {
+		location = 12151
+		division_template = "Defense Infantry Division"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.7
+	}
+division = {
+		location = 11971
+		division_template = "Defense Infantry Division"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.8
+	}
+}
+
+### Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+		}
+		requested_factories = 7
+		progress = 0.90
+		efficiency = 52
+		
+	}
+		add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+		}
+		requested_factories = 2
+		progress = 0.93
+		efficiency = 52
+		
+	}
+}	
+	
+
+
+

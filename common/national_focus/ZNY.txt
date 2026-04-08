@@ -1,0 +1,161 @@
+focus_tree = {
+	id = ZNY_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ZNY
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1650 }
+
+
+	focus = {
+		id = ZNY_new_protest_old_habits
+		icon = GFX_ZNY_new_protest_old_habits
+		x = 25
+		y = 0
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		always = yes
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+			custom_effect_tooltip = 1_ZNY_tooltip
+		hidden_effect = {
+	ZNY = { country_event = { id = ZNY_events.2 days = 2 } }
+}
+		}
+
+
+	}
+focus = {
+		id = ZNY_new_anti_protester_strategy
+		icon = GFX_ZNY_new_anti_protester_strategy
+		x = 25
+		y = 1
+
+		cost = 3
+		prerequisite = { focus = ZNY_new_protest_old_habits }
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+has_country_flag = ZNY_protest_peaceful_crackdown_failure
+has_country_flag = ZNY_protest_peetrov_leaves_government
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+
+		}
+
+
+	}
+	focus = {
+		id = ZNY_violent_crackdown_on_opposition
+		icon = GFX_ZNY_violent_crackdown_on_opposition
+		x = 26
+		y = 2
+
+		cost = 3
+		prerequisite = { focus = ZNY_new_anti_protester_strategy }
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		has_country_flag = ZNY_protest_peetrov_leaves_government
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+
+		}
+
+
+	}
+		focus = {
+		id = ZNY_flying_to_avalon
+		icon = GFX_ZNY_flying_to_avalon
+		x = 24
+		y = 2
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		prerequisite = { focus = ZNY_new_anti_protester_strategy }
+		available = {
+		has_country_flag = ZNY_protest_repression_fails
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+
+		}
+
+
+	}
+			focus = {
+		id = ZNY_declare_martial_law
+		icon = GFX_ZNY_declare_martial_law
+		x = 25
+		y = 3
+
+		cost = 1
+
+		prerequisite = { focus = ZNY_violent_crackdown_on_opposition }
+		prerequisite = { focus = ZNY_flying_to_avalon }
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		has_country_flag = ZNY_protest_peetrov_leaves_government
+		has_country_flag = ZNY_protest_repression_fails
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+
+		}
+
+
+	}
+}
