@@ -1,0 +1,14 @@
+l_english:
+
+  ZIA:0 "Most Serene Kingdom of Çialazar"
+  ZIA_DEF:0 "Most Serene Kingdom of Çialazar"
+  ZIA_ADJ:0 "Çielze"
+
+  ZFS_communism_party:0 "RUC"
+  ZFS_communism_party_long:0 "Cůd Communal Collective"
+  ZFS_democratic_party:0 "CPN"
+  ZFS_democratic_party_long:0 "Çialazar Democratic Federation"
+  ZFS_neutrality_party:0 "TIE"
+  ZFS_neutrality_party_long:0 "House of Elyń"
+  ZFS_fascism_party:0 "FRR"
+  ZFS_fascism_party_long:0 "Maritime Purification Union"
