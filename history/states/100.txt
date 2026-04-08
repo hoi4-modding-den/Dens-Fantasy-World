@@ -4,7 +4,7 @@ state={
 	name="STATE_100"
 	manpower = 2609528
 	
-	state_category = large_town
+	state_category = rural
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -17,13 +17,20 @@ state={
 	}
 
 	history={
-		
-		
-		buildings = {
-			infrastructure = 3
+                 victory_points = { 1909 4 }
+                 victory_points = { 1911 3 }
+                 victory_points = { 1912 2 }
 			
-			arms_factory = 0
-			industrial_complex = 1
+
+		
+		owner = ZFA
+		add_core_of = ZFA
+
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 2
 			
 			
 		}

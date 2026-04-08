@@ -1,0 +1,14 @@
+﻿l_english:
+
+ ZFS:0 "Sayani Unification Force"
+ ZFS_DEF:0 "Sayani Unification Force"
+ ZFS_ADJ:0 "Sayani"
+ 
+ ZFS_communism_party: "TMI"
+ ZFS_communism_party_long: "Anti-Government Movement"
+ ZFS_democratic_party: "SNĀ"
+ ZFS_democratic_party_long: "Sayani Liberation Alliance"
+ ZFS_neutrality_party: "YWH"
+ ZFS_neutrality_party_long: "Sayani Unification Force"
+ ZFS_fascism_party: "KLYI"
+ ZFS_fascism_party_long: "Movement for Destructon of Evil"

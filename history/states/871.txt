@@ -17,7 +17,8 @@ state={
 	}
 
 	history={
-		
+		owner = ZFB
+		add_core_of = ZFB
 		
 		buildings = {
 			infrastructure = 3

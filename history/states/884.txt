@@ -2,7 +2,7 @@
 state={
 	id=884
 	name="STATE_884"
-	manpower = 6403615
+	manpower = 1403615
 	
 	state_category = megalopolis
 	#impassable = yes
@@ -17,12 +17,14 @@ state={
 	}
 
 	history={
-		
+		owner = ZFS
+		add_core_of = ZFS
+
 		
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 			
-			arms_factory = 2
+			arms_factory = 1
 			industrial_complex = 0
 			
 			

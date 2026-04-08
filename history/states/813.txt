@@ -2,13 +2,13 @@
 state={
 	id=813
 	name="STATE_813"
-	manpower = 1144439
+	manpower = 244439
 	
 	state_category = rural
 	#impassable = yes
 	resources={
 		aluminium=0
-		chromium=0
+		chromium=2
 		oil=0
 		rubber=0
 		steel=0
@@ -17,13 +17,16 @@ state={
 	}
 
 	history={
-		
+                 victory_points = { 11037 1 }
+		owner = ZFC
+		add_core_of = ZFC
+
 		
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 1
 			
 			
 		}

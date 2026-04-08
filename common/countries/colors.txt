@@ -1265,3 +1265,43 @@ ZUR = {
 	color = rgb { 255 40 80 }
 	color_ui = rgb { 255 40 80 }
 }
+ZFA = {
+	color = rgb { 0 204 115 }
+	color_ui = rgb { 0 204 115 }
+}
+ZFB = {
+	color = rgb { 239 231 2 }
+	color_ui = rgb { 239 231 2 }
+}
+ZFC = {
+	color = rgb { 219 113 26 }
+	color_ui = rgb { 219 113 26 }
+}
+ZFD = {
+	color = rgb { 165 181 144 }
+	color_ui = rgb { 165 181 144 }
+}
+ZFE = {
+	color = rgb { 219 113 236 }
+	color_ui = rgb { 219 113 236 }
+}
+ZFK = {
+	color = rgb { 224 61 56 }
+	color_ui = rgb { 224 61 56 }
+}
+ZFN = {
+	color = rgb { 226 229 220 }
+	color_ui = rgb { 226 229 220 }
+}
+ZFO = {
+	color = rgb { 124 148 183 }
+	color_ui = rgb { 124 148 183 }
+}
+ZFP = {
+	color = rgb { 255 181 153 }
+	color_ui = rgb { 255 181 153 }
+}
+ZFS = {
+	color = rgb { 71 234 239 }
+	color_ui = rgb { 71 234 239 }
+}

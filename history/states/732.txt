@@ -17,7 +17,12 @@ state={
 	}
 
 	history={
-		
+                 victory_points = { 10337 20 }
+                 victory_points = { 10332 6 }
+                 victory_points = { 10334 2 }
+		owner = ZFB
+		add_core_of = ZFB
+
 		
 		buildings = {
 			infrastructure = 3
