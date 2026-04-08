@@ -28,9 +28,9 @@ state={
 			arms_factory = 0
 			industrial_complex = 1
 			
-			14783 = {
-				naval_base = 1
-			}
+			# 14783 = {
+				# naval_base = 1
+			# }
 			
 		}
 		

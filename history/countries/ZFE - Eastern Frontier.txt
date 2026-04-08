@@ -19,7 +19,7 @@ set_technology = {
 
 add_ideas = {
 	limited_conscription
-	partial_mobilization
+	partial_economic_mobilisation
         closed_economy
 }
 

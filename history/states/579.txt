@@ -17,8 +17,11 @@ state={
 	}
 
 	history={
+		owner = ZSQ
+		add_core_of = ZSQ
 		
-		
+		victory_points = { 8551 5 }
+		victory_points = { 8557 5 }
 		buildings = {
 			infrastructure = 1
 			

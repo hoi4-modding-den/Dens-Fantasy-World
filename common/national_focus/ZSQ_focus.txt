@@ -16,7 +16,7 @@ focus_tree={
 	continuous_focus_position = { x = 1000 y = 1000 }
 
 	focus = { 
-		id = ZSQ_the_42nd_annual_council_congress
+		id = ZSQ_the_37th_annual_council_congress
 		icon = GFX_focus_JAP_supreme_council_for_direction_of_war
 		x = 5
 		y = 0

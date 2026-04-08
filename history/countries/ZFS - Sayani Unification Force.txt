@@ -19,7 +19,7 @@ set_technology = {
 
 add_ideas = {
 	limited_conscription
-	early_mobilization
+	low_economic_mobilisation
         limited_exports
 }
 

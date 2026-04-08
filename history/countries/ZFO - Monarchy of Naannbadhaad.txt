@@ -19,7 +19,7 @@ set_technology = {
 
 add_ideas = {
 	volunteer_only
-	early_mobilization
+	low_economic_mobilisation
         limited
 }
 
