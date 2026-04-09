@@ -5,4 +5,9 @@ spriteType = {
     texturefile = "gfx/leaders/ZIA/GFX_portrait_ZIA_osvald_cereduj.dds"
 }
 
+spriteType = {
+    name = "GFX_advisor_ZIA_sardine_council"
+    texturefile = "gfx/leaders/ZIA/GFX_advisor_ZIA_sardine_council.dds"
+}
+
 }

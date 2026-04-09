@@ -7,6 +7,9 @@
   ZIA_neutrality: "Most Serene Kingdom of Çialazar"
   ZIA_neutrality_DEF: "Most Serene Kingdom of Çialazar"
   ZIA_neutrality_ADJ: "Çielze"
+  ZIA_communism: "Communal Trading Federation of Çialazar"
+  ZIA_communism_DEF: "Communal Trading Federation of Çialazar"
+  ZIA_communism_ADJ: "Çielze"
 
   ZIA_communism_party: "RUC"
   ZIA_communism_party_long: "Cůd Communal Collective"
@@ -33,4 +36,9 @@
 
  # LEADERS
   ZIA_osvald_cereduj_name:0 "Òsvald 'iónne' Çeredůj Sardelá"
+ # ADVISORS
+  ZIA_sardine_council_name:0 "The Grand Sardine Council"
+
+ # TRAITS
+  ZIA_sardine_council_trait:0 "Perpetrators of Flowing Justice"
   

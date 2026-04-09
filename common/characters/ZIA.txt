@@ -15,4 +15,20 @@ ZIA_osvald_cereduj = {
     }
 }
 
+ZIA_sardine_council = { 
+	name = ZIA_sardine_council_name
+    portraits = {
+        civilian = {
+            small = GFX_advisor_ZIA_sardine_council
+        }
+    }
+    
+    advisor = {
+        slot = political_advisor
+        idea_token = ZIA_sardine_council
+        ledger = political_advisor
+        traits = {  }
+    }
+}
+
 }

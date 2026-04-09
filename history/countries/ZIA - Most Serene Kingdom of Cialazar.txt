@@ -25,6 +25,7 @@ set_war_support = 0.2
 set_convoys = 250
 
 recruit_character = ZIA_osvald_cereduj
+recruit_character = ZIA_sardine_council
 #add_ideas = 
 
 set_politics = {

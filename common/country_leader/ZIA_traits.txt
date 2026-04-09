@@ -1,0 +1,9 @@
+leader_traits = {
+	 ZIA_sardine_council_trait  = {
+		  stability_factor = 0.1
+          consumer_goods_factor = -0.15
+		  political_power_gain = 0.1
+
+		random = no
+	}
+}
