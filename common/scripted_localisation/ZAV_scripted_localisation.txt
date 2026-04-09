@@ -1,4 +1,25 @@
 defined_text = {
+	name = "GetActiveArtifactName"
+	text = {
+		localization_key = "ZAV_artifact_[?ZAV_active_artifact]"
+	}
+}
+
+defined_text = {
+	name = "GetActiveArtifact2Name"
+	text = {
+		localization_key = "ZAV_artifact_[?ZAV_active_artifact2]"
+	}
+}
+
+defined_text = {
+	name = "GetActiveArtifact3Name"
+	text = {
+		localization_key = "ZAV_artifact_[?ZAV_active_artifact3]"
+	}
+}
+
+defined_text = {
 	name = "GetNotebookButton"
 	text = {
 		trigger = {

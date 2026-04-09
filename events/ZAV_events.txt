@@ -128,17 +128,21 @@ country_event = {
 	
 	fire_only_once = yes
 	is_triggered_only = yes
+
+	immediate = {
+		set_variable = { ZAV_active_artifact = 3 }  # Corrupted Rose
+	}
 	
 	option = {
         name = ZAV_divine_saviours_events.2.a
 
 		if = {
 			limit = {
-				is_in_array = { ZAV_vault_artifacts = 3 }
+				ZAV_has_active_artifact = yes
 			}
 
 			custom_effect_tooltip = ZAV_very_high_chance_of_finding_clue_tt
-			custom_effect_tooltip = ZAV_will_use_corrupted_rose_tt
+			ZAV_remove_artifact_from_vault = yes
 
 			hidden_effect = {
 				country_event = { id = ZAV_divine_saviours_events.3 days = 7 }
@@ -146,7 +150,7 @@ country_event = {
 		}
 		else = {
 			custom_effect_tooltip = ZAV_no_chance_of_finding_clue_tt
-			custom_effect_tooltip = ZAV_cant_use_corrupted_rose_tt
+			ZAV_remove_artifact_from_vault = yes
 
 			hidden_effect = {
 				country_event = { id = ZAV_divine_saviours_events.5 days = 7 }
@@ -158,7 +162,7 @@ country_event = {
 
 			modifier = {
 				add = 10
-				is_in_array = { ZAV_vault_artifacts = 3 } # Corrupted Rose
+				ZAV_has_active_artifact = yes
 			}
 		}
     }
@@ -185,7 +189,7 @@ country_event = {
 			modifier = {
 				add = 10
 				NOT = {
-					is_in_array = { ZAV_vault_artifacts = 3 } # Corrupted Rose
+					ZAV_has_active_artifact = yes
 				}
 			}
 		}
@@ -207,9 +211,6 @@ country_event = {
         name = ZAV_divine_saviours_events.3.a
 
 		add_stability = -0.01
-		
-		custom_effect_tooltip = ZAV_use_corrupted_rose_tt
-		remove_from_array = { ZAV_vault_artifacts = 3 }
 		
 		custom_effect_tooltip = ZAV_notebook_updated_tt
 		add_to_array = { ZAV_discoveries_divine_saviours = 1 }
@@ -329,17 +330,21 @@ country_event = {
 	
 	fire_only_once = yes
 	is_triggered_only = yes
+
+	immediate = {
+		set_variable = { ZAV_active_artifact = 7 }  # Blighted Flesh
+	}
 	
 	option = {
         name = ZAV_divine_saviours_events.7.a
 
 		if = {
 			limit = {
-				is_in_array = { ZAV_vault_artifacts = 7 }
+				ZAV_has_active_artifact = yes
 			}
 
 			custom_effect_tooltip = ZAV_very_high_chance_of_finding_clue_tt
-			custom_effect_tooltip = ZAV_will_use_blighted_flesh_tt
+			ZAV_remove_artifact_from_vault = yes
 
 			hidden_effect = {
 				country_event = { id = ZAV_divine_saviours_events.8 days = 7 }
@@ -347,7 +352,7 @@ country_event = {
 		}
 		else = {
 			custom_effect_tooltip = ZAV_no_chance_of_finding_clue_tt
-			custom_effect_tooltip = ZAV_cant_use_blighted_flesh_tt
+			ZAV_remove_artifact_from_vault = yes
 
 			hidden_effect = {
 				country_event = { id = ZAV_divine_saviours_events.10 days = 7 }
@@ -359,7 +364,7 @@ country_event = {
 
 			modifier = {
 				add = 10
-				is_in_array = { ZAV_vault_artifacts = 7 } # Blighted Flesh
+				ZAV_has_active_artifact = yes
 			}
 		}
     }
@@ -386,7 +391,7 @@ country_event = {
 			modifier = {
 				add = 10
 				NOT = {
-					is_in_array = { ZAV_vault_artifacts = 7 } # Blighted Flesh
+					ZAV_has_active_artifact = yes
 				}
 			}
 		}
@@ -408,9 +413,6 @@ country_event = {
         name = ZAV_divine_saviours_events.8.a
 
 		add_stability = 0.01
-		
-		custom_effect_tooltip = ZAV_use_blighted_flesh_tt
-		remove_from_array = { ZAV_vault_artifacts = 7 }
 		
 		custom_effect_tooltip = ZAV_notebook_updated_tt
 		add_to_array = { ZAV_discoveries_divine_saviours = 2 }
@@ -615,17 +617,21 @@ country_event = {
 	
 	fire_only_once = yes
 	is_triggered_only = yes
+
+	immediate = {
+		set_variable = { ZAV_active_artifact = 5 } # Shroud of the Fey
+	}
 	
 	option = {
         name = ZAV_divine_saviours_events.15.a
 
 		if = {
 			limit = {
-				is_in_array = { ZAV_vault_artifacts = 5 }
+				ZAV_has_active_artifact = yes
 			}
 
 			custom_effect_tooltip = ZAV_high_chance_of_finding_clue_tt
-			custom_effect_tooltip = ZAV_will_use_shroud_of_the_fey_tt
+			ZAV_remove_artifact_from_vault = yes
 
 			hidden_effect = {
 				country_event = { id = ZAV_divine_saviours_events.16 days = 7 }
@@ -633,7 +639,7 @@ country_event = {
 		}
 		else = {
 			custom_effect_tooltip = ZAV_no_chance_of_finding_clue_tt
-			custom_effect_tooltip = ZAV_cant_use_shroud_of_the_fey_tt
+			ZAV_remove_artifact_from_vault = yes
 
 			hidden_effect = {
 				country_event = { id = ZAV_divine_saviours_events.17 days = 7 }
@@ -645,7 +651,7 @@ country_event = {
 
 			modifier = {
 				add = 10
-				is_in_array = { ZAV_vault_artifacts = 5 } # Shroud of the Fey
+				ZAV_has_active_artifact = yes
 			}
 		}
     }
@@ -672,7 +678,7 @@ country_event = {
 			modifier = {
 				add = 10
 				NOT = {
-					is_in_array = { ZAV_vault_artifacts = 5 } # Shroud of the Fey
+					ZAV_has_active_artifact = yes
 				}
 			}
 		}
@@ -689,15 +695,15 @@ country_event = {
 	
 	fire_only_once = yes
 	is_triggered_only = yes
+
+	immediate = {
+		set_variable = { ZAV_active_artifact = 10 }
+	}
 	
 	option = {
         name = ZAV_divine_saviours_events.16.a
 
-		custom_effect_tooltip = ZAV_use_shroud_of_the_fey_tt
-		remove_from_array = { ZAV_vault_artifacts = 5 }
-
-		custom_effect_tooltip = ZAV_warding_talisman_obtained_tt
-		add_to_array = { ZAV_vault_artifacts = 10 }
+		ZAV_add_artifact_to_vault = yes
 
 		custom_effect_tooltip = ZAV_notebook_updated_tt
 		add_to_array = { ZAV_discoveries_divine_saviours = 4 }
@@ -720,14 +726,17 @@ country_event = {
 	
 	fire_only_once = yes
 	is_triggered_only = yes
+
+	immediate = {
+		set_variable = { ZAV_active_artifact = 1 }
+	}
 	
 	option = {
         name = ZAV_divine_saviours_events.17.a
 
 		add_stability = -0.1
 
-		custom_effect_tooltip = ZAV_blood_of_king_arthur_stolen_tt
-		remove_from_array = { ZAV_vault_artifacts = 1 }
+		ZAV_remove_artifact_from_vault = yes
 
 		custom_effect_tooltip = ZAV_notebook_updated_tt
 		add_to_array = { ZAV_discoveries_divine_saviours = 5 }

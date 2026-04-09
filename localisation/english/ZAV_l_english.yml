@@ -133,6 +133,24 @@
 
  # TOOLTIPS #
 
+ ZAV_add_artifact_to_vault_tt:0 "\nAdd artifact '[GetActiveArtifactName]' to the §YVault of Saint Constantine§!."
+ ZAV_cant_add_artifact_to_vault_tt:0 "\nArtifact '[GetActiveArtifactName]' is already in the §YVault of Saint Constantine§!."
+ ZAV_remove_artifact_from_vault_tt:0 "\nRemove artifact '[GetActiveArtifactName]' from the §YVault of Saint Constantine§!."
+ ZAV_cant_remove_artifact_from_vault_tt:0 "\nWe don't have the '[GetActiveArtifactName]' in the §YVault of Saint Constantine§!."
+ ZAV_has_active_artifact_tt:0 "The artifact '[GetActiveArtifactName]' is in the §YVault of Saint Constantine§!."
+
+ ZAV_add_artifact_to_vault2_tt:0 "\nAdd artifact '[GetActiveArtifact2Name]' to the §YVault of Saint Constantine§!."
+ ZAV_cant_add_artifact_to_vault2_tt:0 "\nArtifact '[GetActiveArtifact2Name]' is already in the §YVault of Saint Constantine§!."
+ ZAV_remove_artifact_from_vault2_tt:0 "\nRemove artifact '[GetActiveArtifact2Name]' from the §YVault of Saint Constantine§!."
+ ZAV_cant_remove_artifact_from_vault2_tt:0 "\nWe don't have the '[GetActiveArtifact2Name]' in the §YVault of Saint Constantine§!."
+ ZAV_has_active_artifact2_tt:0 "The artifact '[GetActiveArtifactName]' is in the §YVault of Saint Constantine§!."
+
+ ZAV_add_artifact_to_vault3_tt:0 "\nAdd artifact '[GetActiveArtifact3Name]' to the §YVault of Saint Constantine§!."
+ ZAV_cant_add_artifact_to_vault3_tt:0 "\nArtifact '[GetActiveArtifact3Name]' is already in the §YVault of Saint Constantine§!."
+ ZAV_remove_artifact_from_vault3_tt:0 "\nRemove artifact '[GetActiveArtifact3Name]' from the §YVault of Saint Constantine§!."
+ ZAV_cant_remove_artifact_from_vault3_tt:0 "\nWe don't have the '[GetActiveArtifact3Name]' in the §YVault of Saint Constantine§!."
+ ZAV_has_active_artifact3_tt:0 "The artifact '[GetActiveArtifactName]' is in the §YVault of Saint Constantine§!."
+
  ZAV_no_chance_of_finding_clue_tt:0 "§RNo chance of a positive outcome.§!"
  ZAV_very_low_chance_of_finding_clue_tt:0 "§RVery low chance of a positive outcome.§!"
  ZAV_low_chance_of_finding_clue_tt:0 "§OLow chance of a positive outcome.§!"
