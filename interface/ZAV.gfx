@@ -146,6 +146,58 @@ spriteTypes = {
 		texturefile = "gfx/interface/ZAV/ZAV_warding_talisman.dds"
 	}
 
+	# ENCOUNTERS #
+
+	spriteType = {
+		name = "GFX_ZAV_encounter_header_background"
+		texturefile = "gfx/interface/ZAV/encounters/HeaderBackground4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ZAV_encounter_image_blank"
+		texturefile = "gfx/interface/ZAV/encounters/Blank.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_encounter_entry_top_background"
+		texturefile = "gfx/interface/ZAV/encounters/EntryTopBackground.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_encounter_entry_bottom_background"
+		texturefile = "gfx/interface/ZAV/encounters/EntryBottomBackground.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_encounter_entry_background"
+		texturefile = "gfx/interface/ZAV/encounters/EntryBackground.dds"
+	}
+
+	frameAnimatedSpriteType = {
+        name = "GFX_ZAV_animated_vignette"
+        texturefile = "gfx/interface/ZAV/encounters/AnimatedVignette.dds"
+
+		looping = yes
+        noOfFrames = 32
+        animation_rate_fps = 10
+        play_on_show = yes
+    }
+
+	spriteType = {
+		name = "GFX_ZAV_encounter_image_1"
+		texturefile = "gfx/interface/ZAV/encounters/BlackridgeMansion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_encounter_image_2"
+		texturefile = "gfx/interface/ZAV/encounters/VictorianStreet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_encounter_image_2_1"
+		texturefile = "gfx/interface/ZAV/encounters/ScaryRoom.dds"
+	}
+
 	# MISC #
 
 	spriteType = { 

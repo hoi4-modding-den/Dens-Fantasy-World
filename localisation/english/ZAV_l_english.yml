@@ -302,6 +302,101 @@
  ZAV_add_artifact_putrid_crustacean_tt:0 "The §7Putrid Crustacean§! will be stored in the §YVault of Constantine§!."
  ZAV_remove_artifact_blood_of_king_arthur_tt:0 "The §tBlood of King Arthur§! has been stolen from the §YVault of Constantine§!."
 
+ ###################
+ #   ENCOUNTERS   #
+ ###################
+ ZAV_encounter_title:0 "[GetEncounterTitle]"
+
+ ZAV_encounter_option_1_text:0 "[GetEncounterOption1Text]"
+ ZAV_encounter_option_1_tooltip:0 "[!ZAV_encounter_option_1_click]"
+ ZAV_encounter_option_1_tooltip_delayed:0 "[!ZAV_encounter_option_1_click_enabled]"
+ ZAV_encounter_option_2_text:0 "[GetEncounterOption2Text]"
+ ZAV_encounter_option_2_tooltip:0 "[!ZAV_encounter_option_2_click]"
+ ZAV_encounter_option_2_tooltip_delayed:0 "[!ZAV_encounter_option_2_click_enabled]"
+ ZAV_encounter_option_3_text:0 "[GetEncounterOption3Text]"
+ ZAV_encounter_option_3_tooltip:0 "[!ZAV_encounter_option_3_click]"
+ ZAV_encounter_option_3_tooltip_delayed:0 "[!ZAV_encounter_option_3_click_enabled]"
+ ZAV_encounter_option_4_text:0 "[GetEncounterOption4Text]"
+ ZAV_encounter_option_4_tooltip:0 "[!ZAV_encounter_option_4_click]"
+ ZAV_encounter_option_4_tooltip_delayed:0 "[!ZAV_encounter_option_4_click_enabled]"
+
+ ZAV_encounter_text_entry_text:0 "[GetEncounterTextEntryText]"
+
+ ZAV_encounter_1.t:0 "Theft at the Blackridge Estate"
+
+ ZAV_encounter_1.1.desc:0 "The estate of Lord Halvyr Blackridge, situated on the outskirts of Port Elisabeth, has been breached. No servants were harmed, and no signs of forced entry were recorded. Only a single item appears to have been taken: a small, antiquated talisman kept within the lord's private study."
+ ZAV_encounter_1.1.a:0 "..."
+
+ ZAV_encounter_1.2.desc:0 "The exact function of the talisman is unknown, though the Brackenridge family records suggest it predates even the current dynasty. The precision of the theft has raised concern among local authorities. You, the Veilkeeper, are en route to the scene now."
+ ZAV_encounter_1.2.a:0 "..."
+
+ ZAV_encounter_1.3.desc:0 "You arrive at the estate of Lord Blackridge, it is grand and has a black iron gate with two uniformed guards at the front. Driving down the gravel road towards the main house, you notice the beautifully manicured garden, not one blade of grass out of place."
+ ZAV_encounter_1.3.a:0 "..."
+
+ ZAV_encounter_1.4.desc:0 "Arriving at the main house, you park in the turnaround behind two guardian priest vehicles, likely sent earlier by the chapel of the Lady. You are greeted by a servant and brought into the study."
+ ZAV_encounter_1.4.a:0 "..."
+
+ ZAV_encounter_1.5.desc:0 "On investigating the study, you find nothing of interest, however, this allows you to reach a different conclusion. Given there is no evidence of a struggle, either the perpetrator was aided by someone or evidence of the struggle was hidden well."
+ ZAV_encounter_1.5.a:0 "It was likely the staff. Interrogate them."
+ ZAV_encounter_1.5.b:0 "Take another look in the study."
+
+ ZAV_encounter_1.6.desc:0 "Upon using the Corrupted Rose to 'persuade' the servants to talk, one of them admits to having aided the intruders. He claims they were holding his family hostage. After a little more 'persuasion', he also reveals that he overheard some useful information."
+ ZAV_encounter_1.6.a:0 "Good, a lead."
+
+ ZAV_encounter_1.7.desc:0 "Apparently, the figures he was in contact with spoke of 'clarity beyond the veil' and the talisman allowing them to 'endure what is to come'. Given his description of the men, this was likely the work of the Divine Saviours."
+ ZAV_encounter_1.7.a:0 "..."
+
+ ZAV_encounter_1.8.desc:0 "Due to your busy schedule as Veilkeeper, you conclude that the apostles of the Divine Saviour that stole the talisman will not be back, and decide to leave as the remaining guardian priests can handle the situation from here. Though the perpetrators were not caught, you did gain some information."
+ ZAV_encounter_1.8.a:0 "Worrying."
+
+ ZAV_encounter_1.9.desc:0 "Progress in searching the study came slowly, but an unexpected breakthrough occurred when a frightened servant offered information about the perpetrators. He admitted to aiding them in the theft as his family was being held hostage, but he was willing to divulge what he knew."
+ ZAV_encounter_1.9.a:0 "Good, a lead."
+
+ ZAV_encounter_1.10.desc:0 "An investigation of the study and rest of the mansion yielded nothing. All members of the household were questioned but either they had no information about the theft or they were unwilling to provide it."
+ ZAV_encounter_1.10.a:0 "..."
+
+ ZAV_encounter_1.11.desc:0 "You are forced to leave the investigation to the guardian priests. Nothing further is found, and the inconclusive nature of the investigation has worried many nearby nobles enough to warrant a mention by a lord at the round table."
+ ZAV_encounter_1.11.a:0 "Unfortunate to say the least."
+
+ ZAV_encounter_2.t:0 "Killings in Lowmarket"
+
+ ZAV_encounter_2.1.desc:0 "A series of brutal killings has been reported in the Lowmarket district of New Camelot. Victims appear to have been selected at random, their remains arranged in deliberate formations. Witnesses report shrouded figures fleeing the scene, though none could provide clear descriptions. The scale and nature of the violence suggest ritual intent."
+ ZAV_encounter_2.1.a:0 "..."
+
+ ZAV_encounter_2.2.desc:0 "Authorities have called the Veilkeeper. While walking through the streets, you realise you are getting a lot of attention. Despite offering a warm smile to passersby, you receive many scowls and the occasional remark 'You think something's funny?' or 'You better get moving.' You pay it no mind as you arrive at your destination, 22b. Rience Court."
+ ZAV_encounter_2.2.a:0 "..."
+
+ ZAV_encounter_2.3.desc:0 "The building is run down, its bricks covered in a layer of soot and ash. At the door stands a policeman who beckons you inside. The interior of the building reflects its exterior. Wallpaper was torn, floorboards were lose, and each step exuded a terrible squeaking sound. You reach the upstairs level where the apartment is located and head inside..."
+ ZAV_encounter_2.3.a:0 "..."
+
+ ZAV_encounter_2.4.desc:0 "Oh may the Lady have mercy on us! As you enter the room, a putrid smell suffocates you, and you are confronted with a horrifying scene. Bodies arranged with geometric precision, in an unrecognisable pattern, lay on the empty apartment's floor. Blood appears to have been deliberately collected and redistributed across the scene."
+ ZAV_encounter_2.4.a:0 "..."
+
+ ZAV_encounter_2.5.desc:0 "The policeman details his experience and anything he had noticed when he arrived. He explains that the residents of the apartment below, 22a. Rience Court, heard the perpetrators speaking of their activities as reverence and a 'gift' as they were lying in bed. Although, at the time they had waived it off as their neighbours peculiarity."
+ ZAV_encounter_2.5.a:0 "Use an artifact to trace ritual energy."
+ ZAV_encounter_2.5.b:0 "Try to make sense of the pattern."
+
+ ZAV_encounter_2.6.desc:0 "As the Blighted Flesh was brought into the room, it reacted violently, shaking and squirming as if it was having a seizure. Once the flesh had stopped moving, you slash at it with a small knife. The ritual energy that had been absorbed by the flesh was all released at once, creating a projection before you. "
+ ZAV_encounter_2.6.a:0 "..."
+
+ ZAV_encounter_2.12.desc:0 "Two figures, kneeling before an unseen presence, their bodies strengthened by something unseen. You conclude the ritual was not merely symbolic. It was a transfer of power."
+ ZAV_encounter_2.12.a:0 "A concerning development..."
+
+ ZAV_encounter_2.7.desc:0 "With your investigation of the apartment concluded, and without any further leads, you depart from 22b. Rience Court. Though you weren't able to catch them in the act, these perpetrators were not careful; you learned something important. They are conducting rituals to gain power. Something big is on the horizon."
+ ZAV_encounter_2.7.a:0 "A face or a name would have been better..."
+
+ ZAV_encounter_2.8.desc:0 "Though the ritual site yields little at first glance, you are gradually able to make sense of the pattern. When reconstructed, it appears to form a crown. You conclude that this positioning was not arbitrary, it was designed to channel something from the immaterial. This was not a symbolic ritual. It was a transfer of power."
+ ZAV_encounter_2.8.a:0 "A concerning development..."
+
+ ZAV_encounter_2.9.desc:0 "Further investigation into the pattern and to traces left behind by the perpetrators in the apartment lead to nowhere. With all investigative routes explored, you decide there are other matters more pressing and leave the rest to the policeman."
+ ZAV_encounter_2.9.a:0 "..."
+
+ ZAV_encounter_2.10.desc:0 "Later, you hear that there were further murderous rituals. This time, they were more brazen, entire alleyways were left strewn with bodies, arranged in increasingly elaborate formations. Panic spread through Lowmarket, and civilians that could afford to flee, fled the area. Those that were too poor were left to cower in fear."
+ ZAV_encounter_2.10.a:0 "..."
+
+ ZAV_encounter_2.11.desc:0 "With no understanding of the violence, guardian priests were called in to cleanse the entire district. Whatever the perpetrators sought, they have taken it, and left nothing but fear behind."
+ ZAV_encounter_2.11.a:0 "What an awful turn of events."
+
  # MISCELLANEOUS #
 
  ZAV_lord_of_lies:0 "Lord of Lies"

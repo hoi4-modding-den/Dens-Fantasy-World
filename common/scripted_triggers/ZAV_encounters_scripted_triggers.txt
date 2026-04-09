@@ -1,0 +1,34 @@
+#scripted trigger for Hungary
+
+ZAV_encounter_option_1_condition = {
+	if = {
+		limit = { check_variable = { ZAV_curr_encounter = 1 } }
+
+		if = {
+			limit = { check_variable = { ZAV_curr_entry = 5 } }
+
+			ZAV_has_active_artifact = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { ZAV_curr_encounter = 2 } }
+
+		if = {
+			limit = { check_variable = { ZAV_curr_entry = 5 } }
+
+			ZAV_has_active_artifact = yes
+		}
+	}
+}
+
+ZAV_encounter_option_2_condition = {
+	
+}
+
+ZAV_encounter_option_3_condition = {
+	
+}
+
+ZAV_encounter_option_4_condition = {
+	
+}

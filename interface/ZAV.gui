@@ -90,6 +90,186 @@ guitypes = {
     }
 
     containerWindowType = {
+        name = "ZAV_encounter_GUI"
+        moveable = yes
+        position = { x = -400 y = -300 }
+        orientation = center
+        size = { width = 950 height = 600 }
+        clipping = no
+
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_tiled_bg"
+        }
+
+        iconType = {
+            name = "ZAV_header_background"
+            quadTextureSprite = "GFX_ZAV_encounter_header_background"
+            position = { x = 0 y = 0 }
+            alwaystransparent = yes
+        }
+
+        instantTextBoxType = {
+            name = "ZAV_header_text"
+            position = { x = 20 y = 20 }
+            text = "ZAV_encounter_title"
+            font = "hoi_36header"
+            format = center
+            maxWidth = 910
+            alwaystransparent = yes
+        }
+
+        containerWindowType = {
+            name = "ZAV_encounter_image_container"
+            position = { x = 18 y = 80 }
+            size = { width = 356 height = 300 }
+
+            background = {
+                name = "Background"
+                quadTextureSprite = "GFX_tiled_bg"
+            }
+
+            iconType = {
+                name = "ZAV_encounter_image"
+                quadTextureSprite = "GFX_ZAV_encounter_image_blank"
+                position = { x = 15 y = 15 }
+                scale = 1.0
+            }
+        }
+
+        buttonType = { 
+            name = "ZAV_encounter_option_4"
+            quadTextureSprite = "GFX_event_option_entry"
+            position = { x = 20 y = 534 }
+            buttonText = ZAV_encounter_option_4_text
+            buttonFont = "hoi_20bs"
+            pdx_tooltip = ZAV_encounter_option_4_tooltip
+            pdx_tooltip_delayed = ZAV_encounter_option_4_tooltip_delayed
+        }
+
+        buttonType = { 
+            name = "ZAV_encounter_option_3"
+            quadTextureSprite = "GFX_event_option_entry"
+            position = { x = 20 y = 484 }
+            buttonText = ZAV_encounter_option_3_text
+            buttonFont = "hoi_20bs"
+            pdx_tooltip = ZAV_encounter_option_3_tooltip
+            pdx_tooltip_delayed = ZAV_encounter_option_3_tooltip_delayed
+        }
+
+        buttonType = {
+            name = "ZAV_encounter_option_2"
+            quadTextureSprite = "GFX_event_option_entry"
+            position = { x = 20 y = 434 }
+            buttonText = ZAV_encounter_option_2_text
+            buttonFont = "hoi_20bs"
+            pdx_tooltip = ZAV_encounter_option_2_tooltip
+            pdx_tooltip_delayed = ZAV_encounter_option_2_tooltip_delayed
+        }
+
+        buttonType = { 
+            name = "ZAV_encounter_option_1"
+            quadTextureSprite = "GFX_event_option_entry"
+            position = { x = 20 y = 384 }
+            buttonText = ZAV_encounter_option_1_text
+            buttonFont = "hoi_20bs"
+            pdx_tooltip = ZAV_encounter_option_1_tooltip
+            pdx_tooltip_delayed = ZAV_encounter_option_1_tooltip_delayed
+        }
+
+        containerWindowType = {
+            name = "ZAV_encounter_text_area_container"
+            position = { x = 384 y = 80 }
+            size = { width = 558 height = 502 }
+
+            background = {
+                name = "Background"
+                quadTextureSprite = "GFX_tiled_bg"
+            }
+
+            containerWindowType = {
+                name = "ZAV_encounter_text_gridbox_container"
+                position = { x = 10 y = 15 }
+                size = { width = 538 height = 472 }
+                verticalScrollbar = "right_vertical_slider"
+                scroll_wheel_factor = 40
+                smooth_scrolling = yes
+                clipping = yes
+
+                background = {
+                    name = "Background"
+                    quadTextureSprite = "GFX_tiled_window_transparent"
+                }
+
+                iconType = {
+                    name = "ZAV_encounter_text_top"
+                    position = { x = 10 y = 10 }
+                    quadTextureSprite = "GFX_ZAV_encounter_entry_top_background"
+                }
+
+                gridboxtype = {
+                    name = "ZAV_encounter_text_gridbox"
+                    position = { x = 10 y = 30 }
+                    size = { width = 100%% height = 100%% }
+                    slotsize = { width = 500 height = 100 }
+                    max_slots_horizontal = 1
+                    format = "UPPER_LEFT"
+                }
+            }
+        }
+    }
+
+    containerWindowType = {
+        name = "ZAV_encounter_image_vignette_GUI"
+        position = { x = 15 y = 15 }
+        size = { width = 326 height = 270 }
+        fade_time = 100000
+        fade_type = linear
+
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_ZAV_animated_vignette"
+        }
+    }
+
+    containerWindowType = {
+        name = "ZAV_encounter_text_entry"
+        position = { x = 0 y = 0 }
+        size = { width = 500 height = 120 }
+
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_ZAV_encounter_entry_background"
+        }
+
+        instantTextBoxType = {
+            name = "ZAV_encounter_text_entry_text"
+            position = { x = 10 y = 10 }
+            text = "ZAV_encounter_text_entry_text"
+            font = "hoi4_typewriter16"
+            format = left
+            maxWidth = 480
+            alwaystransparent = yes
+        }
+
+        instantTextBoxType = {
+            name = "ZAV_encounter_text_entry_divide"
+            position = { x = 10 y = 90 }
+            text = "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+            font = "hoi4_typewriter16"
+            format = left
+            maxWidth = 480
+            alwaystransparent = yes
+        }
+
+        iconType = {
+            name = "ZAV_encounter_text_bottom"
+            position = { x = 0 y = 100 }
+            quadTextureSprite = "GFX_ZAV_encounter_entry_bottom_background"
+        }
+    }
+
+    containerWindowType = {
         name = "ZAV_open_notebook_GUI"
         position = { x = -600 y = 0 }
         orientation = UPPER_RIGHT
@@ -263,25 +443,34 @@ guitypes = {
             alwaystransparent = yes
         }
 
-        containerWindowType = {
-            name = "page_divine_saviours_discoveries_container"
+        gridboxtype = {
+            name = "page_divine_saviours_discoveries_gridbox"
             position = { x = 30 y = 810 }
-            size = { width = 410 height = 2620 }
-
-            background = {
-                name = "Background"
-                quadTextureSprite = "GFX_tiled_window_transparent"
-            }
-        
-            gridboxtype = {
-                name = "page_divine_saviours_discoveries_gridbox"
-                position = { x = 0 y = 0 }
-                size = { width = 100%% height = 100%% }
-                slotsize = { width = 410 height = 262 }
-                max_slots_horizontal = 1
-                format = "UPPER_LEFT"
-            }
+            size = { width = 100%% height = 100%% }
+            slotsize = { width = 410 height = 262 }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
         }
+
+        #containerWindowType = {
+        #    name = "page_divine_saviours_discoveries_container"
+        #    position = { x = 30 y = 810 }
+        #    size = { width = 410 height = 2620 }
+#
+        #    background = {
+        #        name = "Background"
+        #        quadTextureSprite = "GFX_tiled_window_transparent"
+        #    }
+        #
+        #    gridboxtype = {
+        #        name = "page_divine_saviours_discoveries_gridbox"
+        #        position = { x = 0 y = 0 }
+        #        size = { width = 100%% height = 100%% }
+        #        slotsize = { width = 410 height = 262 }
+        #        max_slots_horizontal = 1
+        #        format = "UPPER_LEFT"
+        #    }
+        #}
     }
 
     containerWindowType = {
@@ -308,25 +497,34 @@ guitypes = {
             alwaystransparent = yes
         }
 
-        containerWindowType = {
-            name = "page_order_of_shadows_discoveries_container"
+        gridboxtype = {
+            name = "page_order_of_shadows_discoveries_gridbox"
             position = { x = 30 y = 830 }
-            size = { width = 410 height = 2620 }
-
-            background = {
-                name = "Background"
-                quadTextureSprite = "GFX_tiled_window_transparent"
-            }
-        
-            gridboxtype = {
-                name = "page_order_of_shadows_discoveries_gridbox"
-                position = { x = 0 y = 0 }
-                size = { width = 100%% height = 100%% }
-                slotsize = { width = 410 height = 262 }
-                max_slots_horizontal = 1
-                format = "UPPER_LEFT"
-            }
+            size = { width = 100%% height = 100%% }
+            slotsize = { width = 410 height = 262 }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
         }
+
+        #containerWindowType = {
+        #    name = "page_order_of_shadows_discoveries_container"
+        #    position = { x = 30 y = 830 }
+        #    size = { width = 410 height = 2620 }
+#
+        #    background = {
+        #        name = "Background"
+        #        quadTextureSprite = "GFX_tiled_window_transparent"
+        #    }
+        #
+        #    gridboxtype = {
+        #        name = "page_order_of_shadows_discoveries_gridbox"
+        #        position = { x = 0 y = 0 }
+        #        size = { width = 100%% height = 100%% }
+        #        slotsize = { width = 410 height = 262 }
+        #        max_slots_horizontal = 1
+        #        format = "UPPER_LEFT"
+        #    }
+        #}
     }
 
     containerWindowType = {
@@ -353,25 +551,34 @@ guitypes = {
             alwaystransparent = yes
         }
 
-        containerWindowType = {
-            name = "page_legion_of_the_drowned_discoveries_container"
+        gridboxtype = {
+            name = "page_legion_of_the_drowned_discoveries_gridbox"
             position = { x = 30 y = 1320 }
-            size = { width = 410 height = 2620 }
-
-            background = {
-                name = "Background"
-                quadTextureSprite = "GFX_tiled_window_transparent"
-            }
-        
-            gridboxtype = {
-                name = "page_legion_of_the_drowned_discoveries_gridbox"
-                position = { x = 0 y = 0 }
-                size = { width = 100%% height = 100%% }
-                slotsize = { width = 410 height = 262 }
-                max_slots_horizontal = 1
-                format = "UPPER_LEFT"
-            }
+            size = { width = 100%% height = 100%% }
+            slotsize = { width = 410 height = 262 }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
         }
+
+        #containerWindowType = {
+        #    name = "page_legion_of_the_drowned_discoveries_container"
+        #    position = { x = 30 y = 1320 }
+        #    size = { width = 410 height = 2620 }
+#
+        #    background = {
+        #        name = "Background"
+        #        quadTextureSprite = "GFX_tiled_window_transparent"
+        #    }
+        #
+        #    gridboxtype = {
+        #        name = "page_legion_of_the_drowned_discoveries_gridbox"
+        #        position = { x = 0 y = 0 }
+        #        size = { width = 100%% height = 100%% }
+        #        slotsize = { width = 410 height = 262 }
+        #        max_slots_horizontal = 1
+        #        format = "UPPER_LEFT"
+        #    }
+        #}
     }
 
     containerWindowType = {
@@ -398,25 +605,34 @@ guitypes = {
             alwaystransparent = yes
         }
 
-        containerWindowType = {
-            name = "page_crimson_order_discoveries_container"
+        gridboxtype = {
+            name = "page_crimson_order_discoveries_gridbox"
             position = { x = 30 y = 810 }
-            size = { width = 410 height = 2620 }
-
-            background = {
-                name = "Background"
-                quadTextureSprite = "GFX_tiled_window_transparent"
-            }
-        
-            gridboxtype = {
-                name = "page_crimson_order_discoveries_gridbox"
-                position = { x = 0 y = 0 }
-                size = { width = 100%% height = 100%% }
-                slotsize = { width = 410 height = 262 }
-                max_slots_horizontal = 1
-                format = "UPPER_LEFT"
-            }
+            size = { width = 100%% height = 100%% }
+            slotsize = { width = 410 height = 262 }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
         }
+
+        #containerWindowType = {
+        #    name = "page_crimson_order_discoveries_container"
+        #    position = { x = 30 y = 810 }
+        #    size = { width = 410 height = 2620 }
+#
+        #    background = {
+        #        name = "Background"
+        #        quadTextureSprite = "GFX_tiled_window_transparent"
+        #    }
+        #
+        #    gridboxtype = {
+        #        name = "page_crimson_order_discoveries_gridbox"
+        #        position = { x = 0 y = 0 }
+        #        size = { width = 100%% height = 100%% }
+        #        slotsize = { width = 410 height = 262 }
+        #        max_slots_horizontal = 1
+        #        format = "UPPER_LEFT"
+        #    }
+        #}
     }
 
     containerWindowType = {
@@ -443,25 +659,34 @@ guitypes = {
             alwaystransparent = yes
         }
 
-        containerWindowType = {
-            name = "page_order_of_true_knights_discoveries_container"
+        gridboxtype = {
+            name = "page_order_of_true_knights_discoveries_gridbox"
             position = { x = 30 y = 765 }
-            size = { width = 410 height = 2620 }
-
-            background = {
-                name = "Background"
-                quadTextureSprite = "GFX_tiled_window_transparent"
-            }
-        
-            gridboxtype = {
-                name = "page_order_of_true_knights_discoveries_gridbox"
-                position = { x = 0 y = 0 }
-                size = { width = 100%% height = 100%% }
-                slotsize = { width = 410 height = 262 }
-                max_slots_horizontal = 1
-                format = "UPPER_LEFT"
-            }
+            size = { width = 100%% height = 100%% }
+            slotsize = { width = 410 height = 262 }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
         }
+
+        #containerWindowType = {
+        #    name = "page_order_of_true_knights_discoveries_container"
+        #    position = { x = 30 y = 765 }
+        #    size = { width = 410 height = 2620 }
+#
+        #    background = {
+        #        name = "Background"
+        #        quadTextureSprite = "GFX_tiled_window_transparent"
+        #    }
+        #
+        #    gridboxtype = {
+        #        name = "page_order_of_true_knights_discoveries_gridbox"
+        #        position = { x = 0 y = 0 }
+        #        size = { width = 100%% height = 100%% }
+        #        slotsize = { width = 410 height = 262 }
+        #        max_slots_horizontal = 1
+        #        format = "UPPER_LEFT"
+        #    }
+        #}
     }
 
     containerWindowType = {

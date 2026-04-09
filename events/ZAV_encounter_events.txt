@@ -1,0 +1,33 @@
+add_namespace = ZAV_encounters
+
+country_event = {
+	id = ZAV_encounters.1
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		log = "ZAV_encounters.1 fired"
+
+		ZAV = {
+			set_variable = { ZAV_curr_encounter = 1 }
+			ZAV_start_encounter = yes
+		}
+    }
+}
+
+country_event = {
+	id = ZAV_encounters.2
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		log = "ZAV_encounters.2 fired"
+
+		ZAV = {
+			set_variable = { ZAV_curr_encounter = 2 }
+			ZAV_start_encounter = yes
+		}
+    }
+}

@@ -19,7 +19,7 @@ ZAV_add_artifact_to_vault = {
 
 ZAV_remove_artifact_from_vault = {
     custom_effect_tooltip = ZAV_remove_artifact_from_vault_tt
-
+    
     if = {
         limit = {
             is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact }
@@ -27,6 +27,9 @@ ZAV_remove_artifact_from_vault = {
 
         remove_from_array = { ZAV_vault_artifacts = ZAV_active_artifact }
     }
+    #else = {
+    #    custom_effect_tooltip = ZAV_cant_remove_artifact_from_vault_tt
+    #}
 }
 
 # Accesses the second active artifact - I wish we could pass information into scripted effects
@@ -49,14 +52,16 @@ ZAV_add_artifact_to_vault2 = {
 }
 
 ZAV_remove_artifact_from_vault2 = {
-    custom_effect_tooltip = ZAV_remove_artifact_from_vault2_tt
-
     if = {
         limit = {
             is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact2 }
         }
 
+        custom_effect_tooltip = ZAV_remove_artifact_from_vault2_tt
         remove_from_array = { ZAV_vault_artifacts = ZAV_active_artifact2 }
+    }
+    else = {
+        custom_effect_tooltip = ZAV_cant_remove_artifact_from_vault2_tt
     }
 }
 
@@ -80,20 +85,24 @@ ZAV_add_artifact_to_vault3 = {
 }
 
 ZAV_remove_artifact_from_vault3 = {
-    custom_effect_tooltip = ZAV_remove_artifact_from_vault3_tt
-
     if = {
         limit = {
             is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact3 }
         }
 
+        custom_effect_tooltip = ZAV_remove_artifact_from_vault3_tt
         remove_from_array = { ZAV_vault_artifacts = ZAV_active_artifact3 }
+    }
+    else = {
+        custom_effect_tooltip = ZAV_cant_remove_artifact_from_vault3_tt
     }
 }
 
 ### NOTEBOOK ###
 
 ZAV_add_new_divine_saviours_info = {
+    custom_effect_tooltip = ZAV_notebook_updated_tt
+
     if = {
         limit = {
             NOT = {
@@ -116,6 +125,8 @@ ZAV_add_new_divine_saviours_info = {
 }
 
 ZAV_add_new_order_of_shadows_info = {
+    custom_effect_tooltip = ZAV_notebook_updated_tt
+
     if = {
         limit = {
             NOT = {
@@ -138,6 +149,8 @@ ZAV_add_new_order_of_shadows_info = {
 }
 
 ZAV_add_new_legion_of_the_drowned_info = {
+    custom_effect_tooltip = ZAV_notebook_updated_tt
+
     if = {
         limit = {
             NOT = {
@@ -160,6 +173,8 @@ ZAV_add_new_legion_of_the_drowned_info = {
 }
 
 ZAV_add_new_crimson_order_info = {
+    custom_effect_tooltip = ZAV_notebook_updated_tt
+
     if = {
         limit = {
             NOT = {
@@ -182,6 +197,8 @@ ZAV_add_new_crimson_order_info = {
 }
 
 ZAV_add_new_order_of_true_knights_info = {
+    custom_effect_tooltip = ZAV_notebook_updated_tt
+
     if = {
         limit = {
             NOT = {

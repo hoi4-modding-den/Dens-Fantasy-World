@@ -1,4 +1,6 @@
 scripted_gui = {
+    ### VAULT ###
+
     ZAV_vault_screen = {
 		context_type = decision_category
 		window_name = ZAV_vault_GUI
@@ -19,9 +21,15 @@ scripted_gui = {
 		}
 	}
 
+    ### NOTEBOOK ###
+
     ZAV_open_notebook_screen = {
         context_type = player_context
 		window_name = ZAV_open_notebook_GUI
+
+        visible = {
+            original_tag = ZAV
+        }
 
         effects = {
             ZAV_open_notebook_button_click = {
@@ -221,6 +229,85 @@ scripted_gui = {
 
         visible = {
             check_variable = { ZAV_notebook_tab = 4 }
+        }
+    }
+
+    ### ENCOUNTERS ###
+
+    ZAV_encounter_screen = {
+        context_type = player_context
+        window_name = "ZAV_encounter_GUI"
+
+        visible = {
+            has_country_flag = ZAV_encounter_ongoing
+        }
+
+        dynamic_lists = {
+            ZAV_encounter_text_gridbox = {
+                array = ZAV_current_encounter_entries
+                entry_container = "ZAV_encounter_text_entry"
+                index = entry_index
+                value = entry_value
+            }
+        }
+
+        effects = {
+            ZAV_encounter_option_1_click = {
+                ZAV_encounter_option_1_effect = yes
+            }
+            ZAV_encounter_option_2_click = {
+                ZAV_encounter_option_2_effect = yes
+            }
+            ZAV_encounter_option_3_click = {
+                ZAV_encounter_option_3_effect = yes
+            }
+            ZAV_encounter_option_4_click = {
+                ZAV_encounter_option_4_effect = yes
+            }
+        }
+
+        triggers = {
+            ZAV_encounter_option_1_visible = {
+                has_country_flag = ZAV_encounter_option_1
+            }
+            ZAV_encounter_option_2_visible = {
+                has_country_flag = ZAV_encounter_option_2
+            }
+            ZAV_encounter_option_3_visible = {
+                has_country_flag = ZAV_encounter_option_3
+            }
+            ZAV_encounter_option_4_visible = {
+                has_country_flag = ZAV_encounter_option_4
+            }
+
+            ZAV_encounter_option_1_click_enabled = {
+                ZAV_encounter_option_1_condition = yes
+            }
+            ZAV_encounter_option_2_click_enabled = {
+                ZAV_encounter_option_2_condition = yes
+            }
+            ZAV_encounter_option_3_click_enabled = {
+                ZAV_encounter_option_3_condition = yes
+            }
+            ZAV_encounter_option_4_click_enabled = {
+                ZAV_encounter_option_4_condition = yes
+            }
+        }
+
+        properties = {
+            ZAV_encounter_image = {
+                image = "[GetEncounterImage]"
+            }
+        }
+    }
+
+    ZAV_encounter_image_vignette = {
+        context_type = player_context
+        window_name = "ZAV_encounter_image_vignette_GUI"
+        parent_window_name = "ZAV_encounter_image_container"
+
+        visible = {
+            has_country_flag = ZAV_encounter_spooky
         }
     }
 }

@@ -1,0 +1,255 @@
+### ENCOUNTERS ###
+
+# HELPFUL DEBUG #
+
+d_ZAV_spooky_encounter = {
+    set_country_flag = ZAV_encounter_spooky
+}
+
+d_ZAV_unspooky_encounter = {
+    clr_country_flag = ZAV_encounter_spooky
+}
+
+# SETUP #
+
+ZAV_setup_encounters = {
+    set_variable = { ZAV_curr_encounter = 0 }
+    set_variable = { ZAV_curr_entry = 0 }
+}
+
+# UTILITY #
+
+ZAV_1_option = {
+    set_country_flag = ZAV_encounter_option_1
+    clr_country_flag = ZAV_encounter_option_2
+    clr_country_flag = ZAV_encounter_option_3
+    clr_country_flag = ZAV_encounter_option_4
+}
+
+ZAV_2_option = {
+    set_country_flag = ZAV_encounter_option_1
+    set_country_flag = ZAV_encounter_option_2
+    clr_country_flag = ZAV_encounter_option_3
+    clr_country_flag = ZAV_encounter_option_4
+}
+
+ZAV_3_option = {
+    set_country_flag = ZAV_encounter_option_1
+    set_country_flag = ZAV_encounter_option_2
+    set_country_flag = ZAV_encounter_option_3
+    clr_country_flag = ZAV_encounter_option_4
+}
+
+ZAV_3_option = {
+    set_country_flag = ZAV_encounter_option_1
+    set_country_flag = ZAV_encounter_option_2
+    set_country_flag = ZAV_encounter_option_3
+    set_country_flag = ZAV_encounter_option_4
+}
+
+ZAV_spooky = {
+    set_country_flag = ZAV_encounter_spooky
+}
+
+ZAV_unspooky = {
+    clr_country_flag = ZAV_encounter_spooky
+}
+
+# START/END #
+
+ZAV_start_encounter = {
+    ZAV_1_option = yes
+
+    clear_array = ZAV_current_encounter_entries
+    set_variable = { ZAV_curr_entry = 1 }
+    add_to_array = { ZAV_current_encounter_entries = ZAV_curr_entry }
+    set_variable = { ZAV_image = 0 }
+
+    set_country_flag = ZAV_encounter_ongoing
+}
+
+ZAV_end_encounter = {
+    add_to_array = { ZAV_completed_encounters = ZAV_curr_encounter }
+    set_variable = { ZAV_curr_encounter = 0 }
+    set_variable = { ZAV_curr_entry = 0 }
+    set_variable = { ZAV_image = 0 }
+
+    clear_array = ZAV_current_encounter_entries
+
+    ZAV_unspooky = yes
+
+    clr_country_flag = ZAV_encounter_ongoing
+}
+
+# OPTIONS #
+
+ZAV_encounter_option_1_effect = {
+    set_temp_variable = { next_entry = ZAV_curr_entry }
+    add_to_temp_variable = { next_entry = 1 }
+    
+    if = {
+        limit = { check_variable = { ZAV_curr_encounter = 1 } }
+
+        if = {
+            limit = { check_variable = { ZAV_curr_entry = 4 } }
+
+            set_variable = { ZAV_active_artifact = 3 }  # Corrupted Rose
+            ZAV_2_option = yes
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 5 } }
+
+            custom_effect_tooltip = ZAV_very_high_chance_of_finding_clue_tt
+            ZAV_remove_artifact_from_vault = yes
+
+            ZAV_1_option = yes
+            ZAV_spooky = yes
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 8 } }
+
+            ZAV_add_new_divine_saviours_info = yes
+            add_to_array = { ZAV_discoveries_divine_saviours = 1 }
+
+            ZAV_end_encounter = yes
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 9 } }
+
+            set_temp_variable = { next_entry = 8 }
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 11 } }
+
+            add_stability = -0.03
+
+            ZAV_end_encounter = yes
+        }
+    }
+    else_if = {
+        limit = { check_variable = { ZAV_curr_encounter = 2 } }
+        
+        if = {
+            limit = { check_variable = { ZAV_curr_entry = 3 } }
+
+            ZAV_spooky = yes
+            set_variable = { ZAV_image = 1 }
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 4 } }
+
+            set_variable = { ZAV_active_artifact = 7 }  # Blighted Flesh
+            ZAV_2_option = yes
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 5 } }
+
+            custom_effect_tooltip = ZAV_very_high_chance_of_finding_clue_tt
+            ZAV_remove_artifact_from_vault = yes
+
+            ZAV_1_option = yes
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 6 } }
+
+            set_temp_variable = { next_entry = 12 }
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 7 } }
+
+		    ZAV_add_new_divine_saviours_info = yes
+            add_to_array = { ZAV_discoveries_divine_saviours = 2 }
+
+            ZAV_end_encounter = yes
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 8 } }
+
+            set_temp_variable = { next_entry = 7 }
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 11 } }
+
+            add_stability = -0.03
+		
+            343 = {
+                add_manpower = -10000
+                damage_building = {
+                    type = infrastructure
+                    damage = 1
+                }
+            }
+
+            ZAV_end_encounter = yes
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 12 } }
+
+            set_temp_variable = { next_entry = 7 }
+        }
+    }
+
+    set_variable = { ZAV_curr_entry = next_entry }
+    add_to_array = { ZAV_current_encounter_entries = ZAV_curr_entry }
+}
+
+ZAV_encounter_option_2_effect = {
+    set_temp_variable = { next_entry = ZAV_curr_entry }
+    add_to_temp_variable = { next_entry = 2 }
+    
+    if = {
+        limit = { check_variable = { ZAV_curr_encounter = 1 } }
+
+        if = {
+            limit = { check_variable = { ZAV_curr_entry = 5 } }
+
+            custom_effect_tooltip = ZAV_regular_chance_of_finding_clue_tt
+
+            ZAV_1_option = yes
+
+            hidden_effect = {
+                random_list = {
+                    50 = {
+                        set_temp_variable = { next_entry = 9 }
+                    }
+                    50 = {
+                        set_temp_variable = { next_entry = 10 }
+                    }
+                }
+            }
+        }
+    }
+    else_if = {
+        limit = { check_variable = { ZAV_curr_encounter = 2 } }
+
+        if = {
+            limit = { check_variable = { ZAV_curr_entry = 5 } }
+
+            custom_effect_tooltip = ZAV_regular_chance_of_finding_clue_tt
+
+            ZAV_1_option = yes
+
+            hidden_effect = {
+                random_list = {
+                    50 = {
+                        set_temp_variable = { next_entry = 8 }
+                    }
+                    50 = {
+                        set_temp_variable = { next_entry = 9 }
+                    }
+                }
+            }
+        }
+    }
+
+    set_variable = { ZAV_curr_entry = next_entry }
+    add_to_array = { ZAV_current_encounter_entries = ZAV_curr_entry }
+}
+
+ZAV_encounter_option_3_effect = {
+    add_stability = 0.05
+}
+
+ZAV_encounter_option_4_effect = {
+    add_war_support = 0.1
+}

@@ -169,7 +169,7 @@ add_to_array = { artifact_classes = 3 }
 # True Excalibur - Slaughter Relic
 #add_to_array = { ZAV_vault_artifacts = 8 }
 add_to_array = { artifact_classes = 1 }
-
+ 
 # Putrid Crustacean - Profane Relic
 #add_to_array = { ZAV_vault_artifacts = 9 }
 add_to_array = { artifact_classes = 5 }
@@ -178,6 +178,5 @@ add_to_array = { artifact_classes = 5 }
 #add_to_array = { ZAV_vault_artifacts = 10 }
 add_to_array = { artifact_classes = 4 }
 
-country_event = { id = ZAV_divine_saviours_events.1 days = 35 random_days = 21 }
-country_event = { id = ZAV_divine_saviours_events.6 days = 70 random_days = 21 }
-country_event = { id = ZAV_divine_saviours_events.11 days = 105 random_days = 21 }
+country_event = { id = ZAV_encounters.1 days = 30 random_days = 15 }
+country_event = { id = ZAV_encounters.2 days = 60 random_days = 15 }

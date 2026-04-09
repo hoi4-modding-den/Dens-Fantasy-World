@@ -290,3 +290,60 @@ defined_text = {
 		localization_key = "ZAV_notebook_tab_help_title"
 	}
 }
+
+### ENCOUNTERS ###
+
+defined_text = {
+	name = "GetEncounterTitle"
+	text = {
+		localization_key = "ZAV_encounter_[?ZAV_curr_encounter].t"
+	}
+}
+
+defined_text = {
+	name = "GetEncounterImage"
+	text = {
+		trigger = {
+			check_variable = { ZAV_image = 0 }
+		}
+		localization_key = "GFX_ZAV_encounter_image_[?ZAV_curr_encounter]"
+	}
+	text = {
+		localization_key = "GFX_ZAV_encounter_image_[?ZAV_curr_encounter]_[?ZAV_image]"
+	}
+}
+
+defined_text = {
+	name = "GetEncounterOption1Text"
+	text = {
+		localization_key = "ZAV_encounter_[?ZAV_curr_encounter].[?ZAV_curr_entry].a"
+	}
+}
+
+defined_text = {
+	name = "GetEncounterOption2Text"
+	text = {
+		localization_key = "ZAV_encounter_[?ZAV_curr_encounter].[?ZAV_curr_entry].b"
+	}
+}
+
+defined_text = {
+	name = "GetEncounterOption3Text"
+	text = {
+		localization_key = "ZAV_encounter_[?ZAV_curr_encounter].[?ZAV_curr_entry].c"
+	}
+}
+
+defined_text = {
+	name = "GetEncounterOption4Text"
+	text = {
+		localization_key = "ZAV_encounter_[?ZAV_curr_encounter].[?ZAV_curr_entry].d"
+	}
+}
+
+defined_text = {
+	name = "GetEncounterTextEntryText"
+	text = {
+		localization_key = "ZAV_encounter_[?ZAV_curr_encounter].[?entry_value].desc"
+	}
+}
