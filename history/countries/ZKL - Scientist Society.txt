@@ -1,4 +1,4 @@
-#oob = "ZKO"
+#oob = "ZKL"
 capital = 122
 set_stability = 0.05
 set_war_support = 0.34

@@ -17,13 +17,15 @@
  #Focuses
 
  #Events
- koreliaintro.1.t:0 "Real Gloria Declarations"
- koreliaintro.1.d:0 "WIP"
- koreliaintro.1.a:0 "Glory to the Colonels!"
- koreliaintro.2.t:0 "O' Courageous Sniper"
- koreliaintro.3.t:0 "Korelian Blues"
+ koreliaintro.1.t: "Real Gloria Declarations"
+ koreliaintro.1.d: "WIP"
+ koreliaintro.1.a: "Glory to the Colonels!"
+ koreliaintro.2.t: "O' Courageous Sniper"
+ koreliaintro.3.t: "Korelian Blues"
+
+ koreliacollapse.1: "Lillian's Rebellion"
  
- koreliamajor.1:0 "Korelian Spring"
+ koreliamajor.1: "Korelian Spring"
  #Ideas
  
  #Ideologies
