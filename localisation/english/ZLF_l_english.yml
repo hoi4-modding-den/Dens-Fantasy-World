@@ -3,6 +3,18 @@
  ZLF: "Gardenia"
  ZLF_DEF: "Gardenia"
  ZLF_ADJ: "Gardenian"
+ ZLF_neutrality: "Republic of Gardenia"
+ ZLF_neutrality_DEF: "the Republic of Gardenia"
+ ZLF_neutrality_ADJ: "Gardenian"
+ ZLF_democratic: "Republic of Gardenia"
+ ZLF_democratic_DEF: "the Republic of Gardenia"
+ ZLF_democratic_ADJ: "Gardenian"
+ ZLF_communism: "Republic of Gardenia"
+ ZLF_communism_DEF: "the Republic of Gardenia"
+ ZLF_communism_ADJ: "Gardenian"
+ ZLF_fascism: "Gardenian Ultranation"
+ ZLF_fascism_DEF: "the Gardenian Ultranation"
+ ZLF_fascism_ADJ: "Gardenian"
 
  ZLF_liberation_front: "Edelweiss Liberation Front"
  ZLF_liberation_front_DEF: "the Edelweiss Liberation Front"
@@ -17,8 +29,8 @@
  ZLF_democratic_party_long: "National Democratic Party of Gardenia"
  ZLF_communism_party: "RTP"
  ZLF_communism_party_long: "Radical Transformation Party"
- ZLF_fascism_party: "GHP"
- ZLF_fascism_party_long: "Gardenian Humanist Party"
+ ZLF_fascism_party: "GWP"
+ ZLF_fascism_party_long: "Gardenian Revival Party"
 
 
 # CHARACTER
@@ -34,6 +46,7 @@
 # DECISIONS
 
  ZLF_civil_war_cat: "The Edelweiß Revolution"
+ ZLF_finish_the_civil_war: "Victory of the Revolution"
  ZLF_retake_magnolienburg: "Retake Rhododendron"
  ZLF_close_prinzendamm_encirclement: "Close the Prinzendamm Encirclement"
  ZLF_close_prinzendamm_encirclement_failed: "the Encirclement has been broken"
@@ -55,6 +68,15 @@
  ZLF_cw_events.3.t: "Hortensian Aid"
  ZLF_cw_events.3.desc: "With the roads to Hortensia secure, we were able to negotiate with various aligned groups in the city to garner their support."
  ZLF_cw_events.3.a: "Gott sei Dank."
+
+ ZLF_cw_events.4.t: "Revolutionary Victory"
+ ZLF_cw_events.4.desc: "WIP"
+ ZLF_cw_events.4.a: "With the monarchists vanquished, we can begin reconstruction."
+
+ ZLF_news_events.1.t: "Revolutionaries win the Gardenian Civil War"
+ ZLF_news_events.1.desc: "WIP"
+ ZLF_news_events.1.a: "Für das Volk!"
+ ZLF_news_events.1.b: "At last the bloodshed is over."
 
 
 # MAP STUFF
@@ -81,6 +103,7 @@
  VICTORY_POINTS_9429: "Malenau"
  VICTORY_POINTS_9431: "Gefroren"
  VICTORY_POINTS_9433: "Zaddern"
+ VICTORY_POINTS_9507: "Rinnsal"
  VICTORY_POINTS_9675: "Prinzendamm"
  VICTORY_POINTS_10881: "Wolframingen"
  VICTORY_POINTS_10887: "Eisenhütten"

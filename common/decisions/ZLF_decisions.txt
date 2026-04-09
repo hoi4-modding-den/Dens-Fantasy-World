@@ -11,12 +11,7 @@ ZLF_civil_war_cat = {
         fire_only_once = yes
 
         complete_effect = {
-            drop_cosmetic_tag = yes
-
-            set_portraits = {
-                character = ZLF_roland_ludovik
-                civilian = { large ="GFX_portrait_ZLF_roland_ludovik_victory" }
-            }
+            country_event = ZLF_cw_events.4
         }
     }
 

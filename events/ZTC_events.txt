@@ -13,7 +13,7 @@ country_event = { # The Last Days - 1 / Lore
         hidden_effect = {
             country_event = {
                 id = ZTC_events.2
-                days = 30
+                days = 20
             }
         }
     }
@@ -36,7 +36,7 @@ country_event = { # The Last Days - 2 / Death
         hidden_effect = {
             country_event = {
                 id = ZTC_events.3
-                days = 14
+                days = 15
             }
         }
     }
@@ -202,7 +202,7 @@ country_event = { # Proletarian Revolt
 	id = ZTC_events.8
 	title = ZTC_events.8.t
 	desc = ZTC_events.8.desc
-	picture = GFX_report_event_SWE_saltsjobaden
+	picture = GFX_report_event_worker_protests
 
 	is_triggered_only = yes
 
@@ -222,6 +222,10 @@ country_event = { # Proletarian Revolt
         custom_effect_tooltip = generic_skip_one_line_tt
 
         complete_national_focus = ZTC_the_peoples_revolution
+
+        hidden_effect = {
+            news_event = ZTC_news_events.2
+        }
 	}
 }
 
@@ -249,6 +253,10 @@ country_event = { # Council Coup
         custom_effect_tooltip = generic_skip_one_line_tt
 
         complete_national_focus = ZTC_depose_the_grand_chancellor
+
+        hidden_effect = {
+            news_event = ZTC_news_events.3
+        }
 	}
 }
 
@@ -263,5 +271,45 @@ news_event = { # The Succession
 	option = {
 		name = ZTC_news_events.1.a
 		
+	}
+}
+
+news_event = { # Proletarian Revolt NEWS
+	id = ZTC_news_events.2
+	title = ZTC_news_events.2.t
+	desc = ZTC_news_events.2.desc
+	picture = GFX_news_event_worker_protests
+
+	is_triggered_only = yes
+    major = yes
+
+	option = {
+		name = ZTC_news_events.2.a
+		trigger = { has_government = communism }
+	}
+
+    option = {
+		name = ZTC_news_events.2.b
+		trigger = { NOT = { has_government = communism } }
+	}
+}
+
+news_event = { # Corporate Coup NEWS
+	id = ZTC_news_events.3
+	title = ZTC_news_events.3.t
+	desc = ZTC_news_events.3.desc
+	picture = GFX_news_event_saf_coup
+
+	is_triggered_only = yes
+    major = yes
+
+	option = {
+		name = ZTC_news_events.3.a
+		trigger = { has_government = fascism }
+	}
+
+    option = {
+		name = ZTC_news_events.3.b
+		trigger = { NOT = { has_government = fascism } }
 	}
 }

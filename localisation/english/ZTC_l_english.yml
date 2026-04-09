@@ -131,7 +131,7 @@
  ZTC_invest_in_public_development_desc: ""
  ZTC_reverse_the_stratification: "De-Stratify Hortensian Society"
  ZTC_reverse_the_stratification_desc: ""
- ZTC_reverse_the_stratification_tt: "§Y$ZTC_power_balance$§! moves towards §G$ZTC_balanced_range$§! depending on which side it currently lies."
+ ZTC_reverse_the_stratification_tt: "§Y$ZTC_power_balance$§! moves towards §Y$ZTC_balanced_range$§! depending on which side it currently lies."
  ZTC_regulate_the_industries: "Regulate the Corporations"
  ZTC_regulate_the_industries_desc: ""
  ZTC_industrial_waste_laws: "Industrial Waste Laws"
@@ -158,18 +158,30 @@
  ZTC_maintain_the_stadtrat_system_desc: ""
  ZTC_embrace_social_democracy: "Embrace Social Democracy"
  ZTC_embrace_social_democracy_desc: ""
+ 
+ ZTC_prosperity_act: "The Prosperity Act"
+ ZTC_prosperity_act_desc: ""
+
  ZTC_develop_helmarn: "Develop Helmarn"
  ZTC_develop_helmarn_desc: ""
- ZTC_interfere_in_the_edelweiss_revolution: "Support the Liberation Front"
- ZTC_interfere_in_the_edelweiss_revolution_desc: ""
- ZTC_gardenian_monetary_union: "Gardenian Monetary Union"
- ZTC_gardenian_monetary_union_desc: ""
+ ZTC_support_edelweiss: "Support the Liberation Front"
+ ZTC_support_edelweiss_desc: ""
+ ZTC_propose_gardenian_monetary_union: "Gardenian Monetary Union"
+ ZTC_propose_gardenian_monetary_union_desc: ""
  ZTC_fortify_the_peninsula: "Fortify the Peninsula"
  ZTC_fortify_the_peninsula_desc: ""
- ZTC_military_cooperation: "Gardenian Military Protection"
- ZTC_military_cooperation_desc: ""
- ZTC_stop_the_spying: "Purge the Security Bureau"
+ ZTC_reach_out_to_gardenia: "Reach out to Gardenia"
+ ZTC_reach_out_to_gardenia_desc: ""
+ ZTC_join_the_gardenian_faction: "Closer Military Cooperation"
+ ZTC_join_the_gardenian_faction_desc: ""
+ ZTC_declare_military_neutrality: "Declare Neutrality"
+ ZTC_declare_military_neutrality_desc: ""
+ ZTC_stop_the_spying: "Reorganise the Security Bureau"
  ZTC_stop_the_spying_desc: ""
+ ZTC_stop_the_spying_tt: "Create §YStadtsicherheitsbüro§! Intelligence Agency."
+
+ ZTC_social_mobility_act: "The Social Mobility Act"
+ ZTC_social_mobility_act_desc: ""
 
  ZTC_the_peoples_revolution: "The Proletarian Revolt"
  ZTC_the_peoples_revolution_desc: ""
@@ -224,6 +236,16 @@
  ZTC_news_events.1.t: "The Death of Grand Councillor Krösus"
  ZTC_news_events.1.desc: "WIP"
  ZTC_news_events.1.a: "The winds of change blow through Hortensia."
+
+ ZTC_news_events.2.t: "Popular Revolt in Hortensia Successful"
+ ZTC_news_events.2.desc: "WIP"
+ ZTC_news_events.2.a: "Arise, ye workers from your slumber!"
+ ZTC_news_events.2.b: "The southern trade hub has fallen."
+
+ ZTC_news_events.3.t: "Corporate Coup in Hortensia"
+ ZTC_news_events.3.desc: "WIP"
+ ZTC_news_events.3.a: "What's on the agenda now?"
+ ZTC_news_events.3.b: "Let's just hope they remain amicable."
 
 
 # MAP STUFF

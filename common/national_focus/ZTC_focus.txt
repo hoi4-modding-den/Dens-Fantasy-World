@@ -13,7 +13,7 @@ focus_tree={
 	default = no
 	reset_on_civilwar = no
 
-	continuous_focus_position = { x = 2000 y = 300 }
+	continuous_focus_position = { x = 2500 y = 300 }
 
 	focus = {
 		id = ZTC_the_new_grand_councillor
@@ -988,6 +988,34 @@ focus_tree={
 	}
 
 	focus = { 
+		id = ZTC_prosperity_act
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_maintain_the_stadtrat_system }
+		#mutually_exclusive = { focus =  }
+		x = -4
+		y = 1
+		relative_position_id = ZTC_maintain_the_stadtrat_system
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { 
 		id = ZTC_develop_helmarn
 		icon = GFX_focus_PLACEHOLDER
         prerequisite = { focus = ZTC_maintain_the_stadtrat_system focus = ZTC_embrace_social_democracy }
@@ -1028,7 +1056,7 @@ focus_tree={
 	}
 
     focus = { 
-		id = ZTC_interfere_in_the_edelweiss_revolution
+		id = ZTC_support_edelweiss
 		icon = GFX_focus_PLACEHOLDER
         prerequisite = { focus = ZTC_maintain_the_stadtrat_system focus = ZTC_embrace_social_democracy }
 		#mutually_exclusive = { focus =  }
@@ -1072,13 +1100,13 @@ focus_tree={
 	}
 
     focus = { 
-		id = ZTC_gardenian_monetary_union
+		id = ZTC_propose_gardenian_monetary_union
 		icon = GFX_focus_PLACEHOLDER
-        prerequisite = { focus = ZTC_interfere_in_the_edelweiss_revolution }
+        prerequisite = { focus = ZTC_support_edelweiss }
 		#mutually_exclusive = { focus =  }
-		x = -2
+		x = -4
 		y = 1
-		relative_position_id = ZTC_interfere_in_the_edelweiss_revolution
+		relative_position_id = ZTC_support_edelweiss
 		
 		cost = 5
 
@@ -1102,11 +1130,11 @@ focus_tree={
 	focus = { 
 		id = ZTC_fortify_the_peninsula
 		icon = GFX_focus_PLACEHOLDER
-        prerequisite = { focus = ZTC_interfere_in_the_edelweiss_revolution }
+        prerequisite = { focus = ZTC_support_edelweiss }
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
-		relative_position_id = ZTC_interfere_in_the_edelweiss_revolution
+		relative_position_id = ZTC_support_edelweiss
 		
 		cost = 5
 
@@ -1128,13 +1156,13 @@ focus_tree={
 	}
 
     focus = { 
-		id = ZTC_military_cooperation
+		id = ZTC_reach_out_to_gardenia
 		icon = GFX_focus_PLACEHOLDER
-        prerequisite = { focus = ZTC_interfere_in_the_edelweiss_revolution }
-		#mutually_exclusive = { focus =  }
-		x = 2
+        prerequisite = { focus = ZTC_support_edelweiss }
+		mutually_exclusive = { focus = ZTC_declare_military_neutrality }
+		x = 3
 		y = 1
-		relative_position_id = ZTC_interfere_in_the_edelweiss_revolution
+		relative_position_id = ZTC_support_edelweiss
 		
 		cost = 5
 
@@ -1144,6 +1172,97 @@ focus_tree={
 		
 		available = {
             has_government = democratic
+			is_subject = no
+			has_war = no
+			OR = {
+				ZLF = {
+					exists = yes
+					has_war = no
+				}
+				ZKN = {
+					exists = yes
+					has_war = no
+				}
+			}
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = ZLF
+				}
+				ZLF = {
+					give_guarantee = ROOT
+				}
+			}
+			else = {
+				ZKN = {
+					give_guarantee = ROOT
+				}
+			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_join_the_gardenian_faction
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_reach_out_to_gardenia }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = ZTC_reach_out_to_gardenia
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+			is_subject = no
+			any_other_country = {
+				NOT = { has_war_with = ROOT }
+				has_guaranteed = ROOT
+				is_faction_leader = yes
+				OR = {
+					original_tag = ZKN
+					original_tag = ZLF
+				}
+			}
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { 
+		id = ZTC_declare_military_neutrality
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_support_edelweiss }
+		mutually_exclusive = { focus = ZTC_reach_out_to_gardenia }
+		x = 5
+		y = 1
+		relative_position_id = ZTC_support_edelweiss
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            is_subject = no
+			has_war = no
         }
 
 		bypass = {
@@ -1188,10 +1307,49 @@ focus_tree={
 			if = {
 				limit = { has_dlc = "La Resistance" }
 				remove_ideas = ZTC_foreign_eyes
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				custom_effect_tooltip = ZTC_stop_the_spying_tt
+				hidden_effect = {
+					create_intelligence_agency = {
+						name = "Stadtsicherheitsbüro"
+						icon = GFX_intelligence_agency_logo_hol
+					}
+				}
+				upgrade_intelligence_agency = upgrade_passive_defense
 			}
 			else = {
 				remove_ideas = ZTC_foreign_eyes_no_lar
 			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_social_mobility_act
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZTC_embrace_social_democracy }
+		#mutually_exclusive = { focus =  }
+		x = 4
+		y = 1
+		relative_position_id = ZTC_embrace_social_democracy
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			
 		}
 	}
 
@@ -1200,7 +1358,7 @@ focus_tree={
 		icon = GFX_focus_PLACEHOLDER
         #prerequisite = { focus = ZTC_the_new_grand_councillor }
 		#mutually_exclusive = { focus =  }
-		x = -10
+		x = -14
 		y = 7
 		relative_position_id = ZTC_the_new_grand_councillor
 		
@@ -1231,7 +1389,7 @@ focus_tree={
 		icon = GFX_focus_PLACEHOLDER
         #prerequisite = { focus = ZTC_the_new_grand_councillor }
 		#mutually_exclusive = { focus =  }
-		x = 10
+		x = 14
 		y = 7
 		relative_position_id = ZTC_the_new_grand_councillor
 		

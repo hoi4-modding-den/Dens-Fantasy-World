@@ -3,6 +3,18 @@
  ZKN: "Gardenia"
  ZKN_DEF: "Gardenia"
  ZKN_ADJ: "Gardenian"
+ ZKN_neutrality: "Kingdom of Gardenia"
+ ZKN_neutrality_DEF: "the Kingdom of Gardenia"
+ ZKN_neutrality_ADJ: "Gardenian"
+ ZKN_democratic: "Second Republic of Gardenia"
+ ZKN_democratic_DEF: "the Second Republic of Gardenia"
+ ZKN_democratic_ADJ: "Gardenian"
+ ZKN_communism: "Second Republic of Gardenia"
+ ZKN_communism_DEF: "the Second Republic of Gardenia"
+ ZKN_communism_ADJ: "Gardenian"
+ ZKN_fascism: "Despotate of Gardenia"
+ ZKN_fascism_DEF: "the Military Despotate of Gardenia"
+ ZKN_fascism_ADJ: "Gardenian"
 
  ZKN_dominion: "Zinnian Dominion"
  ZKN_dominion_DEF: "the Dominion of the Zinnian Throne"
@@ -29,11 +41,13 @@
 # TRAITS
 
  ZKN_the_loser_king: "King of a Crumbling Realm"
+ ZKN_the_winner_king: "Vanquisher of Revolution"
 
 
 # DECISIONS
 
  ZKN_civil_war_cat: "The Edelweiß Rebellion"
+ ZKN_finish_the_civil_war: "Victory of the Reaction"
  ZKN_finish_the_civil_war_quickly: "Faltering Morale..."
  ZKN_aid_from_neighbouring_monarchies: "Aid from the East"
  ZKN_aid_from_neighbouring_monarchies_desc: "Our diplomats are attempting to negotiate with the [ZFO.GetAdjective] and [ZFD.GetAdjective] governments for support. We must maintain control over the border city of Löbnitz so we can receive it."
@@ -44,6 +58,15 @@
  ZKN_cw_events.1.t: "Weapon Shipments arrive in Löbnitz"
  ZKN_cw_events.1.desc: "Thanks to the work of our diplomats, the [XFO.GetAdjective] and [XFD.GetAdjective] governments have accepted to send us military equipment to assist in our civil war."
  ZKN_cw_events.1.a: "We thank our royal allies in the east."
+
+ ZKN_cw_events.2.t: "Loyalist Victory"
+ ZKN_cw_events.2.desc: "WIP"
+ ZKN_cw_events.2.a: "The Throne is safe. For now."
+
+ ZKN_news_events.1.t: "Loyalists win the Gardenian Civil War"
+ ZKN_news_events.1.desc: "WIP"
+ ZKN_news_events.1.a: "Heil König dir!"
+ ZKN_news_events.1.b: "$ZLF_news_events.1.b$"
 
 
 # WAR NAMES

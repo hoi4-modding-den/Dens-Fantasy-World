@@ -1,4 +1,5 @@
 add_namespace = ZKN_cw_events
+add_namespace = ZKN_news_events
 
 country_event = { # Support from XFO and XFD
 	id = ZKN_cw_events.1
@@ -20,5 +21,67 @@ country_event = { # Support from XFO and XFD
             amount = 1000
             producer = XFD
         }
+	}
+}
+
+country_event = { # Civil War Ends
+	id = ZKN_cw_events.2
+	title = ZKN_cw_events.2.t
+	desc = ZKN_cw_events.2.desc
+	picture = GFX_report_event_france_parade
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = { 
+			news_event = ZKN_news_events.1 
+
+			ZLF = { every_core_state = { remove_core_of = ZLF } }
+
+			ZLF = { # move important characters over (maybe do it later via lore events instead?)
+				ZLF_roland_ludovik = { set_nationality = ROOT }
+			}
+		}
+    }
+
+	option = {
+		name = ZKN_cw_events.2.a
+		effect_tooltip = {
+			set_cosmetic_tag = ZKN
+		}
+		hidden_effect = {
+			drop_cosmetic_tag = yes
+		}
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        ZKN_michael_aurus = {
+            swap_country_leader_traits = {
+                remove = ZKN_the_loser_king
+                add = ZKN_the_winner_king
+                ideology = despotism
+            }
+        }
+	}
+}
+
+news_event = { # Civil War Ends NEWS
+	id = ZKN_news_events.1
+	title = ZKN_news_events.1.t
+	desc = ZKN_news_events.1.desc
+	picture = GFX_news_event_002
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ZKN_news_events.1.a
+		trigger = { tag = ZKN }
+	}
+
+	option = {
+		name = ZKN_news_events.1.b
+		trigger = { NOT = { tag = ZKN } }
 	}
 }

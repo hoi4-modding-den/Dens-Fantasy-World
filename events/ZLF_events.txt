@@ -1,4 +1,5 @@
 add_namespace = ZLF_cw_events
+add_namespace = ZLF_news_events
 
 country_event = { # Mission Failure
 	id = ZLF_cw_events.1
@@ -48,3 +49,55 @@ country_event = { # Hortensian Aid arrives
 	}
 }
 
+country_event = { # Civil War Ends
+	id = ZLF_cw_events.4
+	title = ZLF_cw_events.4.t
+	desc = ZLF_cw_events.4.desc
+	picture = GFX_report_event_france_parade
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = { 
+			news_event = ZLF_news_events.1 
+
+			ZKN = { every_core_state = { remove_core_of = ZKN } }
+		}
+    }
+
+	option = {
+		name = ZLF_cw_events.4.a
+		effect_tooltip = {
+			set_cosmetic_tag = ZLF
+		}
+		hidden_effect = {
+			drop_cosmetic_tag = yes
+
+			set_portraits = {
+				character = ZLF_roland_ludovik
+				civilian = { large ="GFX_portrait_ZLF_roland_ludovik_victory" }
+			}
+		}
+	}
+}
+
+news_event = { # Civil War Ends NEWS
+	id = ZLF_news_events.1
+	title = ZLF_news_events.1.t
+	desc = ZLF_news_events.1.desc
+	picture = GFX_news_event_002
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ZLF_news_events.1.a
+		trigger = { tag = ZLF }
+	}
+
+	option = {
+		name = ZLF_news_events.1.b
+		trigger = { NOT = { tag = ZLF } }
+	}
+}

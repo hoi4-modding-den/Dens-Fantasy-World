@@ -8,4 +8,12 @@ leader_traits = {
         random = no
     }
 
+    ZKN_the_winner_king = {
+        
+        stability_factor = 0.1
+        army_morale_factor = 0.05
+
+        random = no
+    }
+
 }

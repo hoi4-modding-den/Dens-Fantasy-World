@@ -64,13 +64,13 @@ units = {
 		location = 9675
 		division_template = "Imperial Army Division"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.9
+		start_equipment_factor = 0.4
 	}
 	division = {
 		location = 9675
 		division_template = "Imperial Army Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.3
 	}
     # Rhododendron Offensive
     division = {

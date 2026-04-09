@@ -1,0 +1,15 @@
+on_actions = {
+
+    on_civil_war_end = {
+        effect = {
+            if = {
+                limit = { 
+                    ROOT = { tag = ZKN } 
+                    FROM = { tag = ZLF }
+                }
+                ROOT = { country_event = ZKN_cw_events.2 }
+            }
+        }
+    }
+
+}
