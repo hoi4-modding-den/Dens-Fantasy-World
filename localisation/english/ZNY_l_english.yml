@@ -40,6 +40,8 @@ ZNY_ADJ: "Nyfy"
  STATE_956: "Ujścia Dram"
  STATE_919: "Saint Helier"
  STATE_895: "Formsoa"
+ STATE_992: "Północ Maëlis"
+ STATE_910: "Maëlis"
  #NYFA INFO GOVERNMENT TDC - LIBERALI = 26 PM since start of 5 years leadership 27 if current PM leaves
 ZNY_new_protest_old_habits: "New Protests old Habits"
 ZNY_new_protest_old_habits_desc: "Our subjects are once more angry at us, it's fine we will play the same trick we did before and those savages will calm down"
@@ -55,6 +57,7 @@ ZNY_declare_martial_law_desc: "Our new minister of National Defence proposed to 
 ZNY_protest_peaceful_crackdown_failure: "@ZNY§RProtesters§! refuses to calm down"
 ZNY_protest_peetrov_leaves_government: "§YMinister of National Defence §!§RGoloborodko§! leaves Government"
 ZNY_protest_repression_fails: "@ZNY§RProtest§! repression fails"
+ZNY_etyen_karolier_desc_1: "Born on the 23rd of January 1910 to Adolf Karolier, he grew up in a rich and important political 'dynasty' He studied abroad and became the new President after Adolf Karolier, his dad, gave up the electoral race during the 2nd turn. What followed was years of constant crisis, much worst than his dad. He was involved in various scandals including the Hortensia papers where Etyen engaged in protecting criminals and favoring their business, but to this day has yet to be impeached as the parliament is dominated by Liberali and their ally, the RPN. Many wonder when Karolier's rule will finally end as millions now claim national justice..."
 # events and ideas
 ZNY_unpopular_government: "Unpopular Government"
 ZNY_unpopular_government_desc: "Our government is the most unpopular in history. In less than 5 years, 26 Prime Ministers were picked, more and more contest the TDC's rule and Liberali, the average minister lasts 1 month in government before being thrown into scandals. In reaction people organize strikes, refuse to serve their nation and engage in sabotage operations and refuse to pay taxes. The policies of the Liberali on free trade and conservative cultural positions have worsened the popularity of Liberali.\nIf this circus continues our economy may be crippled..."

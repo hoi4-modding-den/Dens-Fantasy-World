@@ -9,6 +9,14 @@ spriteType = {
 		name = "GFX_idea_ZNY_revolution_com_surge"
 		texturefile = "gfx/interface/ideas/ZNY/ZNY_revolution_com_surge.png"
 	}
-
+spriteType = {
+		name = "GFX_portrait_ZNY_etyen_karolier"
+		texturefile = "gfx/leaders/ZNY/GFX_portrait_ZNY_etyen_karolier.png"
+	}
+	
+spriteType = {
+		name = "GFX_portrait_ZNY_rafa_rancho"
+		texturefile = "gfx/leaders/ZNY/GFX_portrait_ZNY_rafa_rancho.png"
+	}
 }
 

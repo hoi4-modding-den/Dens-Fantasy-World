@@ -1,0 +1,14 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            ZNY = {
+                country_event = { id = ZNY_events.1 days = 2}
+			
+            }
+			ZNY = {
+                country_event = { id = ZNY_events.3 days = 47}
+			
+            }
+		}
+	}
+}
