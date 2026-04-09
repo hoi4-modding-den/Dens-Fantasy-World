@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = despotism
+			ideology = conservatism
 			traits = { }
 			desc = ZUR_the_authority_desc
 		}
@@ -17,7 +17,7 @@ characters = {
 	ZUR_the_judge = {
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/ZPS/ZPS_Avrana_Kern_Small.png"
+				small = "gfx/leaders/ZUR/advisor_judge_small.png"
 			}
 		}
 		advisor = {
@@ -30,26 +30,6 @@ characters = {
            
 			traits = {
 			
-			}
-		}
-	}
-
-	ZUR_the_warrior = {
-		portraits = {
-			civilian = {
-				small = "gfx/leaders/ZPS/ZPS_Bianca_Small.png"
-			}
-		}
-		advisor = {
-			cost = 100
-			slot = high_command
-			
-			idea_token = ZUR_the_warrior_token
-			available = { 
-            		}
-           
-			traits = {
-				
 			}
 		}
 	}

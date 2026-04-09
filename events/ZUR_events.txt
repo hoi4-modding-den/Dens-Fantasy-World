@@ -1,0 +1,32 @@
+add_namespace = ZUR_events
+
+news_event = {
+	id = ZUR.1
+	title = ZUR_events.1.t
+	desc = ZUR_events.1.d
+	
+	picture = GFX_report_event_generic_ruins
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+        name = ZUR.1.a
+    }
+}
+
+country_event = {
+	id = ZUR_events.2
+	title = ZUR_events.2.t
+	desc = ZUR_events.2.d
+	
+	picture = GFX_report_event_generic_ruins
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ZUR.2.a
+		custom_effect_tooltip = "The Authority will Run out of Power"
+    }
+}

@@ -6,8 +6,9 @@ recruit_character = ZUR_the_authority
 recruit_character = ZUR_the_judge
 
 add_ideas = disarmed_nation
-add_ideas = ZUR_semi_dystopia
-add_ideas = ZUR_artificial_rule
+add_ideas = ZUR_rural_society
+add_ideas = ZUR_oligarchial_control
+add_ideas = ZUR_the_fall
 
 set_technology = {
 	infantry_weapons = 1
@@ -23,17 +24,17 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = democratic
+	last_election = "1933.6.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 25
-	fascism = 0
-	communism = 25
-	neutrality = 50
+	democratic = 60
+	fascism = 10
+	communism = 10
+	neutrality = 20
 }
 
 

@@ -1,7 +1,20 @@
 ideas = {
 	country = {
-		ZUR_semi_dystopia = {
-			picture = generic_economic_crisis
+		ZUR_rural_society = {
+			picture = generic_agrarian_reform
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				political_power_factor = -0.5
+				research_speed_factor = -0.25
+				monthly_population = 0.1
+			}
+		}
+		
+		ZUR_oligarchial_control = {
+			picture = generic_fascist_workers
 			
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
@@ -15,18 +28,14 @@ ideas = {
 			}
 		}
 		
-		ZUR_artificial_rule = {
+		ZUR_the_fall = {
 			picture = generic_fascist_workers
 			
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			
 			modifier = {
-				stability_factor = -0.40
-				recruitable_population_factor = -0.01
-				political_power_factor = -0.5
-				research_speed_factor = -0.5
-				monthly_population = -0.25
+				
 			}
 		}
 	}
