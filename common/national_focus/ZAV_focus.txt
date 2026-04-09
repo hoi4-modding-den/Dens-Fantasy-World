@@ -1,5 +1,5 @@
 focus_tree = {
-	id = avalon_tree
+	id = ZAV_tree
 	
 	country = {
 		factor = 0
@@ -12,3 +12,21 @@ focus_tree = {
 	default = no
 	continuous_focus_position = { x = 0 y = 2500 }
 }
+
+### STARTING TREE ###
+
+
+
+### INDUSTRY TREE ###
+
+
+
+### ARMY TREE ###
+
+
+
+### NAVY TREE ###
+
+
+
+### AIR TREE ###

@@ -20,7 +20,7 @@ scripted_gui = {
 	}
 
     ZAV_open_notebook_screen = {
-        context_type = decision_category
+        context_type = player_context
 		window_name = ZAV_open_notebook_GUI
 
         effects = {
@@ -31,13 +31,35 @@ scripted_gui = {
                     }
                     
                     clr_country_flag = ZAV_open_notebook
-
+                    set_variable = { ZAV_notebook_tab = 5 }
                 }
                 else = {
                     set_country_flag = ZAV_open_notebook
+                    clr_country_flag = ZAV_new_notebook_discovery
+                }
+            }
+
+            ZAV_open_notebook_button_hidden_click = {
+                if = {
+                    limit = {
+                        has_country_flag = ZAV_open_notebook
+                    }
+                    
+                    clr_country_flag = ZAV_open_notebook
+                    set_variable = { ZAV_notebook_tab = 5 }
+                }
+                else = {
+                    set_country_flag = ZAV_open_notebook
+                    clr_country_flag = ZAV_new_notebook_discovery
                 }
             }
         }
+
+        properties = {
+			ZAV_open_notebook_button = {
+                image = "[GetNotebookButton]"
+            }
+		}
     }
 
     ZAV_notebook_screen = {
@@ -48,60 +70,157 @@ scripted_gui = {
             has_country_flag = ZAV_open_notebook
         }
 
-        dynamic_lists = {
-            page_divine_saviours_discoveries_gridbox = {
-                array = ZAV_discoveries_divine_saviours
-                entry_container = "page_discoveries_entry"
-                index = discovery_index
-                value = discovery_value
-            }
-        }
-
         effects = {
+            tab_help_click = {
+                set_variable = { ZAV_notebook_tab = 5 }
+            }
             tab_divine_saviours_click = {
                 set_variable = { ZAV_notebook_tab = 0 }
+                clr_country_flag = ZAV_new_divine_saviours_discovery
             }
             tab_order_of_shadows_click = {
                 set_variable = { ZAV_notebook_tab = 1 }
+                clr_country_flag = ZAV_new_order_of_shadows_discovery
             }
             tab_legion_of_the_drowned_click = {
                 set_variable = { ZAV_notebook_tab = 2 }
+                clr_country_flag = ZAV_new_legion_of_the_drowned_discovery
             }
             tab_crimson_order_click = {
                 set_variable = { ZAV_notebook_tab = 3 }
+                clr_country_flag = ZAV_new_crimson_order_discovery
             }
             tab_order_of_true_knights_click = {
                 set_variable = { ZAV_notebook_tab = 4 }
+                clr_country_flag = ZAV_new_order_of_true_knights_discovery
             }
             ZAV_notebook_exit_button_click = {
+                set_variable = { ZAV_notebook_tab = 5 }
                 clr_country_flag = ZAV_open_notebook
             }
         }
 
-        triggers = {
-            page_divine_saviours_text_visible = {
-                check_variable = { ZAV_notebook_tab = 0 }
+        properties = {
+            tab_divine_saviours = {
+                image = "[GetDivineTabButton]"
             }
+            tab_order_of_shadows = {
+                image = "[GetShadowsTabButton]"
+            }
+            tab_legion_of_the_drowned = {
+                image = "[GetDrownedTabButton]"
+            }
+            tab_crimson_order = {
+                image = "[GetCrimsonTabButton]"
+            }
+            tab_order_of_true_knights = {
+                image = "[GetKnightsTabButton]"
+            }
+        }
+    }
 
-            page_divine_saviours_discoveries_container_visible = {
-                check_variable = { ZAV_notebook_tab = 0 }
-            }
+    ZAV_notebook_help_screen = {
+        context_type = player_context
+        window_name = "ZAV_help_notebook_page"
+        parent_window_name = "ZAV_notebook_GUI"
 
-            page_order_of_shadows_text_visible = {
-                check_variable = { ZAV_notebook_tab = 1 }
-            }
+        visible = {
+            check_variable = { ZAV_notebook_tab = 5 }
+        }
+    }
 
-            page_legion_of_the_drowned_text_visible = {
-                check_variable = { ZAV_notebook_tab = 2 }
-            }
+    ZAV_notebook_divine_saviours_screen = {
+        context_type = player_context
+        window_name = "ZAV_divine_saviours_notebook_page"
+        parent_window_name = "ZAV_notebook_GUI"
 
-            page_crimson_order_text_visible = {
-                check_variable = { ZAV_notebook_tab = 3 }
+        dynamic_lists = {
+            page_divine_saviours_discoveries_gridbox = {
+                array = ZAV_discoveries_divine_saviours
+                entry_container = "page_discoveries_entry"
+                index = divine_discovery_index
+                value = divine_discovery_value
             }
+        }
 
-            page_order_of_true_knights_text_visible = {
-                check_variable = { ZAV_notebook_tab = 4 }
+        visible = {
+            check_variable = { ZAV_notebook_tab = 0 }
+        }
+    }
+
+    ZAV_notebook_order_of_shadows_screen = {
+        context_type = player_context
+        window_name = "ZAV_order_of_shadows_notebook_page"
+        parent_window_name = "ZAV_notebook_GUI"
+
+        dynamic_lists = {
+            page_order_of_shadows_discoveries_gridbox = {
+                array = ZAV_discoveries_order_of_shadows
+                entry_container = "page_discoveries_entry"
+                index = shadows_discovery_index
+                value = shadows_discovery_value
             }
+        }
+
+        visible = {
+            check_variable = { ZAV_notebook_tab = 1 }
+        }
+    }
+
+    ZAV_notebook_legion_of_the_drowned_screen = {
+        context_type = player_context
+        window_name = "ZAV_legion_of_the_drowned_notebook_page"
+        parent_window_name = "ZAV_notebook_GUI"
+
+        dynamic_lists = {
+            page_legion_of_the_drowned_discoveries_gridbox = {
+                array = ZAV_discoveries_legion_of_the_drowned
+                entry_container = "page_discoveries_entry"
+                index = drowned_discovery_index
+                value = drowned_discovery_value
+            }
+        }
+
+        visible = {
+            check_variable = { ZAV_notebook_tab = 2 }
+        }
+    }
+
+    ZAV_notebook_crimson_order_screen = {
+        context_type = player_context
+        window_name = "ZAV_crimson_order_notebook_page"
+        parent_window_name = "ZAV_notebook_GUI"
+
+        dynamic_lists = {
+            page_crimson_order_discoveries_gridbox = {
+                array = ZAV_discoveries_crimson_order
+                entry_container = "page_discoveries_entry"
+                index = crimson_discovery_index
+                value = crimson_discovery_value
+            }
+        }
+
+        visible = {
+            check_variable = { ZAV_notebook_tab = 3 }
+        }
+    }
+
+    ZAV_notebook_order_of_true_knights_screen = {
+        context_type = player_context
+        window_name = "ZAV_order_of_true_knights_notebook_page"
+        parent_window_name = "ZAV_notebook_GUI"
+
+        dynamic_lists = {
+            page_order_of_true_knights_discoveries_gridbox = {
+                array = ZAV_discoveries_order_of_true_knights
+                entry_container = "page_discoveries_entry"
+                index = knights_discovery_index
+                value = knights_discovery_value
+            }
+        }
+
+        visible = {
+            check_variable = { ZAV_notebook_tab = 4 }
         }
     }
 }

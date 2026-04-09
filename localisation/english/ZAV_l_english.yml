@@ -48,6 +48,10 @@
  ZAV_test_events.3.d:0 "Somehow you lost the Blood of King Arthur."
  ZAV_test_events.3.a:0 "..."
 
+ ZAV_test_events.4.t:0 "Debug - You found all clues"
+ ZAV_test_events.4.d:0 "IDK how you managed to do this."
+ ZAV_test_events.4.a:0 "..."
+
  ZAV_information_events.1.t:0 "The Divine Saviours and the True King"
  ZAV_information_events.1.d:0 "The Divine Saviours are a secret organisation that is notorious for its increasingly violent and profane activities. While other secret organisations attempt to cover up traces of their activity, the saviours leave unmistakable marks in their wake. They are involved in ritualistic slaughter and defilement as well as spreading corruption in the bowels of our cities. Towns and cities have reported sudden disappearances, desecrated holy sites, and the emergence of twisted practices that defy law and tradition.\n\nThe saviours worship a deity known as the True King, who in prayer is claimed to one day rise and reclaim dominion over Avalon. Apostles of the True King view their actions not as crimes, but as necessary steps in preparing the realm for his wonderous return. Their acts of violence and corruption are framed as acts of devotion in purging weakness and reshaping society in His image.\n\nThe movement has found support among elements of the nobility. Disillusioned lords and ambitious elites have quietly aligned themselves with the Divine Saviours and provide resources, protection, and influence. This organisation is no longer a fringe sect but an organised and dangerous force whose influence corrupts the very heart of Avalon."
  ZAV_information_events.1.a:0 "..."
@@ -136,7 +140,7 @@
  ZAV_high_chance_of_finding_clue_tt:0 "§GHigh chance of a positive outcome.§!"
  ZAV_very_high_chance_of_finding_clue_tt:0 "§GVery high chance of a positive outcome.§!"
 
- ZAV_notebook_updated_tt:0 "§YA new entry has been added to the notebook.§!"
+ ZAV_notebook_updated_tt:0 "\nA §4new entry§! has been added to the §8Veilkeeper Archives§!."
 
  ZAV_will_use_corrupted_rose_tt:0 "Will remove the §0Corrupted Rose§! from the §YVault of Saint Constantine§!."
  ZAV_cant_use_corrupted_rose_tt:0 "We do not have the §0Corrupted Rose§! in the §YVault of Saint Constantine§!."
@@ -152,24 +156,54 @@
  ZAV_cant_use_shroud_of_the_fey_tt:0 "We do not have the §3Shroud of the Fey§! in the §YVault of Saint Constantine§!."
  ZAV_use_shroud_of_the_fey_tt:0 "The §3Shroud of the Fey§! has been consumed."
 
- ZAV_warding_talisman_obtained_tt:0 "We have obtained the §YWarding Talisman§! which will be placed later in the §YVault of Saint Constantine§!."
+ ZAV_warding_talisman_obtained_tt:0 "\nWe have obtained the §YWarding Talisman§! which will be placed later in the §YVault of Saint Constantine§!."
  ZAV_blood_of_king_arthur_stolen_tt:0 "The §tBlood of King Arthur§! has been stolen from the §YVault of Saint Constantine§!!"
 
  # MYSTIC KNOWLEDGE #
 
+ ZAV_open_notebook_text:0 "§8Veilkeeper Archives§!"
+ ZAV_open_notebook_tt:0 "[GetOpenNotebookTooltip]"
+ ZAV_close_notebook_standard_tt:0 "Close the §8Veilkeeper Archives§!."
+ ZAV_open_notebook_standard_tt:0 "Open the §8Veilkeeper Archives§!."
+ ZAV_open_notebook_new_info_tt:0 "There is §4new information§! in the §8Veilkeeper Archives§!."
+ ZAV_open_notebook_delayed_tt:0 "§LThe Veilkeeper Archives contain information we have collected about secret orders, powerful artifacts, dangerous beings, and other subjects dangerous enough to warrant our attention.§!\n--------------\nShortcut: £GFX_tab"
+
  ZAV_merlins_library:0 "Merlin's Library"
 
+ ZAV_notebook_tab_help:0 "§YVeilkeeper Archives§!"
  ZAV_notebook_tab_divine_saviours:0 "Divine Saviours"
  ZAV_notebook_tab_order_of_shadows:0 "Order of Shadows"
  ZAV_notebook_tab_legion_of_the_drowned:0 "Legion of the Drowned"
  ZAV_notebook_tab_crimson_order:0 "Crimson Order"
  ZAV_notebook_tab_order_of_true_knights:0 "Order of True Knights"
+ ZAV_notebook_tab_close:0 "Close"
 
+ ZAV_notebook_tab_help_title:0 "What are the Veilkeeper Archives?"
+
+ ZAV_notebook_tab_help_tt:0 "Read about the §YVeilkeeper Archives§!."
+ ZAV_notebook_tab_divine_saviours_tt:0 "[GetDivineTabTooltip]"
+ ZAV_notebook_tab_order_of_shadows_tt:0 "[GetShadowsTabTooltip]"
+ ZAV_notebook_tab_legion_of_the_drowned_tt:0 "[GetDrownedTabTooltip]"
+ ZAV_notebook_tab_crimson_order_tt:0 "[GetCrimsonTabTooltip]"
+ ZAV_notebook_tab_order_of_true_knights_tt:0 "[GetKnightsTabTooltip]"
+
+ ZAV_divine_saviours_tab_tt:0 "Read about the §YDivine Saviours§!."
+ ZAV_divine_saviours_tab_new_info_tt:0 "There is §4new information§! about the §YDivine Saviours§!."
+ ZAV_order_of_shadows_tab_tt:0 "Read about the §YOrder of Shadows§!."
+ ZAV_order_of_shadows_tab_new_info_tt:0 "There is §4new information§! about the §YOrder of Shadows§!."
+ ZAV_legion_of_the_drowned_tab_tt:0 "Read about the §YLegion of the Drowned§!."
+ ZAV_legion_of_the_drowned_tab_new_info_tt:0 "There is §4new information§! about the §YLegion of the Drowned§!."
+ ZAV_crimson_order_tab_tt:0 "Read about the §YCrimson Order§!."
+ ZAV_crimson_order_tab_new_info_tt:0 "There is §4new information§! about the §YCrimson Order§!."
+ ZAV_order_of_true_knights_tab_tt:0 "Read about the §YOrder of True Knights§!."
+ ZAV_order_of_true_knights_tab_new_info_tt:0 "There is §4new information§! about the §YOrder of True Knights§!."
+
+ ZAV_notebook_page_help:0 "The Veilkeeper Archives contain the compiled information that all previous Veilkeepers have learned about supernatural threats to Avalon. This includes secret organisations, entities from beyond the veil, dangerous artifacts, and other subjects that warrant a Veilkeeper's attention.\n\nAs mysteries are solved and new information is discovered, the pages in the archives will be expanded. Notes will be added to the bottom of each page detailing findings from supernatural events. Through these additions, we hope to create a comprehensive understanding of the shadowy forces working against us.\n\nPressing TAB at any time will toggle the archives. Clicking the button labeled 'Veilkeeper Archives' on the right side of the topbar will also toggle the archives. When new information is found, there will be a tooltip saying a new entry has been created in the Veilkeeper Archives. The tab relating to the new information will shine to show which subject has had new entries added."
  ZAV_notebook_page_divine_saviours:0 "The Divine Saviours are a secret organisation that is notorious for its increasingly violent and profane activities. While other secret organisations attempt to cover up traces of their activity, the saviours leave unmistakable marks in their wake. They are involved in ritualistic slaughter and defilement as well as spreading corruption in the bowels of our cities. Towns and cities have reported sudden disappearances, desecrated holy sites, and the emergence of twisted practices that defy law and tradition.\n\nThe saviours worship a deity known as the True King, who in prayer is claimed to one day rise and reclaim dominion over Avalon. Apostles of the True King view their actions not as crimes, but as necessary steps in preparing the realm for his wonderous return. Their acts of violence and corruption are framed as acts of devotion in purging weakness and reshaping society in His image.\n\nThe movement has found support among elements of the nobility. Disillusioned lords and ambitious elites have quietly aligned themselves with the Divine Saviours and provide resources, protection, and influence. This organisation is no longer a fringe sect but an organised and dangerous force whose influence corrupts the very heart of Avalon.\n\nDiscovered Information:\n\n"
- ZAV_notebook_page_order_of_shadows:0 "The Shadows of the Night are a clandestine organisation defined not by overt violence, but by their relentless pursuit of forbidden knowledge. Unlike other heretical groups, their presence is rarely marked by destruction. Instead, they leave behind absence: missing tomes, vanished scholars, and archives stripped of their most esoteric contents. Their operations are methodical, patient, and often undetected until long after the fact.\n\nThe order venerates a figure known as the Shrouded Queen, a veiled entity said to dwell beyond perception. Her followers believe that true enlightenment lies in seeing what is hidden, even at the cost of one's sanity. It is widely reported that prolonged devotion leads to madness, though members of the order regard this not as a failing, but as a necessary consequence of understanding. To know all is to lose all, and in that loss, they claim to find truth.\n\nThe Shadows of the Night maintain influence through secrecy rather than power. They are known to infiltrate academic institutions, private collections, and even clerical archives. Certain scholars and officials have been quietly compromised, either through coercion or shared obsession. Though their actions are less visible than other cults, their reach extends deeply into Avalon's intellectual and administrative foundations."
- ZAV_notebook_page_legion_of_the_drowned:0 "PLACEHOLDER"
- ZAV_notebook_page_crimson_order:0 "The Crimson Order is a heretical sect devoted to the spread of decay and rebirth through a force commonly referred to as the Great Corruption. Their activities are marked by the gradual corruption of environments: fields blacken, structures weaken, and organic matter twists into unfamiliar forms. Unlike sudden acts of violence, their influence spreads slowly, often going unnoticed until entire districts have begun to wither.\n\nThey worship the Crimson Goddess, a being believed to embody both ruin and renewal. Followers interpret decay not as an end, but as a necessary precursor to transformation. Through rot, they believe the world is cleansed of its stagnation, allowing new life, however unnatural, to take root. Their rituals frequently involve the deliberate contamination of land, water, and even living hosts.\n\nThe order operates primarily in neglected regions, though recent reports suggest their influence is creeping toward more populated centers. Their members often pose as laborers, healers, or caretakers, embedding themselves within communities before initiating corruption. While their presence is less politically entrenched than other sects, the long-term damage they inflict poses a significant threat to the stability and sustainability of Avalon itself."
- ZAV_notebook_page_order_of_true_knights:0 "The Order of True Knights views itself as a restorationist movement, claiming to uphold the ideals of the ancient knights of the Round Table. In practice, however, the organisation is riddled with internal betrayal and driven by a distorted interpretation of honor. Their actions are often characterized by targeted killings, duels, and the acquisition of relics tied to Avalon's chivalric past.\n\nThey follow the Deathless Knight, a figure once said to embody the virtues of knighthood before falling to treachery and curse. Condemned to eternal suffering, the Deathless Knight is believed to grant strength and resilience to his followers, though at a severe personal cost. Members of the order seek to summon him back into the world, convinced that only through his final death can true honor be restored.\n\nUnlike other cults, the Order of True Knights does little to hide its activities. Many of its members often hold legitimate rank or status, allowing them to operate under the guise of duty and tradition. However, their loyalty is fractured, and infighting is common. Alliances within the order are temporary, and advancement is frequently achieved through betrayal rather than merit."
+ ZAV_notebook_page_order_of_shadows:0 "The Shadows of the Night are a clandestine organisation defined not by overt violence, but by their relentless pursuit of forbidden knowledge. Unlike other heretical groups, their presence is rarely marked by destruction. Instead, they leave behind absence: missing tomes, vanished scholars, and archives stripped of their most esoteric contents. Their operations are methodical, patient, and often undetected until long after the fact.\n\nThe order venerates a figure known as the Shrouded Queen, a veiled entity said to dwell beyond perception. Her followers believe that true enlightenment lies in seeing what is hidden, even at the cost of one's sanity. It is widely reported that prolonged devotion leads to madness, though members of the order regard this not as a failing, but as a necessary consequence of understanding. To know all is to lose all, and in that loss, they claim to find truth.\n\nThe Shadows of the Night maintain influence through secrecy rather than power. They are known to infiltrate academic institutions, private collections, and even clerical archives. Certain scholars and officials have been quietly compromised, either through coercion or shared obsession. Though their actions are less visible than other cults, their reach extends deeply into Avalon's intellectual and administrative foundations.\n\nDiscovered Information:\n\n"
+ ZAV_notebook_page_legion_of_the_drowned:0 "The Legion of the Drowned is a clandestine sect operating along the coasts, rivers, and waterways of the realm. Unlike other secret orders that seek influence in courts or cities, the Legion thrives in liminal spaces where land yields to water. Reports of their activity are most common among fishing communities and dock districts, where disappearances, strange tides, and sightings of malformed figures have become increasingly frequent. Victims are often found drowned under suspicious circumstances, their bodies recovered far from where they were last seen, or not recovered at all.\n\nThe Legion worships a being referred to as the Drowned Goddess, an entity they believe sleeps beneath the depths. According to their doctrine, the Goddess will one day rise through the veil and reclaim the world through a great deluge, washing away the unworthy. Those who have devoted themselves to her will be spared, transformed, and granted life in the new world beneath the waters. To the Legion, drowning is not merely death, but a sacred act, either a punishment for those who resist or a ritual of offering and initiation.\n\nMembers of the Legion are often drawn from those whose lives are tied to the water: fishermen, sailors, dockworkers, and others who spend prolonged time near the sea. Many adherents bear physical abnormalities that they go to great lengths to conceal. Witness accounts and recovered evidence suggest the presence of gill-like structures, webbed extremities, and other piscine deformities. These mutations are not regarded as afflictions, but as blessings, marks of the Goddess's favor and signs of gradual transformation.\n\nThe order is associated with a range of disturbing activities. Murders by drowning are common, sometimes carried out publicly as warnings, but more often performed in secrecy as part of ritual observances. Local marine life in affected regions has been reported to exhibit unnatural aggression or grotesque mutations, suggesting deliberate corruption. In addition, the Legion engages in hedonistic rites held near or within bodies of water, ceremonies that are said to hasten physical transformation and deepen their connection to the Goddess.\n\nDiscovered Information:\n\n"
+ ZAV_notebook_page_crimson_order:0 "The Crimson Order is a heretical sect devoted to the spread of decay and rebirth through a force commonly referred to as the Great Corruption. Their activities are marked by the gradual corruption of environments: fields blacken, structures weaken, and organic matter twists into unfamiliar forms. Unlike sudden acts of violence, their influence spreads slowly, often going unnoticed until entire districts have begun to wither.\n\nThey worship the Crimson Goddess, a being believed to embody both ruin and renewal. Followers interpret decay not as an end, but as a necessary precursor to transformation. Through rot, they believe the world is cleansed of its stagnation, allowing new life, however unnatural, to take root. Their rituals frequently involve the deliberate contamination of land, water, and even living hosts.\n\nThe order operates primarily in neglected regions, though recent reports suggest their influence is creeping toward more populated centers. Their members often pose as laborers, healers, or caretakers, embedding themselves within communities before initiating corruption. While their presence is less politically entrenched than other sects, the long-term damage they inflict poses a significant threat to the stability and sustainability of Avalon itself.\n\nDiscovered Information:\n\n"
+ ZAV_notebook_page_order_of_true_knights:0 "The Order of True Knights views itself as a restorationist movement, claiming to uphold the ideals of the ancient knights of the Round Table. In practice, however, the organisation is riddled with internal betrayal and driven by a distorted interpretation of honor. Their actions are often characterized by targeted killings, duels, and the acquisition of relics tied to Avalon's chivalric past.\n\nThey follow the Deathless Knight, a figure once said to embody the virtues of knighthood before falling to treachery and curse. Condemned to eternal suffering, the Deathless Knight is believed to grant strength and resilience to his followers, though at a severe personal cost. Members of the order seek to summon him back into the world, convinced that only through his final death can true honor be restored.\n\nUnlike other cults, the Order of True Knights does little to hide its activities. Many of its members often hold legitimate rank or status, allowing them to operate under the guise of duty and tradition. However, their loyalty is fractured, and infighting is common. Alliances within the order are temporary, and advancement is frequently achieved through betrayal rather than merit.\n\nDiscovered Information:\n\n"
 
  ZAV_page_discoveries_text:0 "[GetPageDiscoveryText]"
 
@@ -181,6 +215,14 @@
  ZAV_discoveries_divine_saviours_3:0 "Mentions of a 'Bleeding King' alongside their operations suggest either a second sacred deity or another reference to the True King."
  ZAV_discoveries_divine_saviours_4:0 "It seems that followers of the True King can 'let go' of their will and release themselves to total influence of the deity. One observed case resulted in the man writhing in pain before leaving a blackened and pockmarked corpse."
  ZAV_discoveries_divine_saviours_5:0 "The Divine Saviours are now in possession of the Blood of King Arthur. Their motivations for obtaining such an artifact remain unclear."
+
+ ZAV_discoveries_order_of_shadows_1:0 "OoS PLACEHOLDER"
+
+ ZAV_discoveries_legion_of_the_drowned_1:0 "LotD PLACEHOLDER"
+
+ ZAV_discoveries_crimson_order_1:0 "CO PLACEHOLDER"
+
+ ZAV_discoveries_order_of_true_knights_1:0 "OoTK PLACEHOLDER"
 
  # VAULT OF SAINT CONSTANTINE #
 

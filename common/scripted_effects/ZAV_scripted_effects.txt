@@ -1,0 +1,111 @@
+### NOTEBOOK ###
+
+ZAV_add_new_divine_saviours_info = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = ZAV_open_notebook
+            }
+        }
+
+        set_country_flag = ZAV_new_notebook_discovery
+    }
+
+    if = {
+        limit = {
+            NOT = {
+                check_variable = { ZAV_notebook_tab = 0 }
+            }
+        }
+
+        set_country_flag = ZAV_new_divine_saviours_discovery
+    }
+}
+
+ZAV_add_new_order_of_shadows_info = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = ZAV_open_notebook
+            }
+        }
+
+        set_country_flag = ZAV_new_notebook_discovery
+    }
+
+    if = {
+        limit = {
+            NOT = {
+                check_variable = { ZAV_notebook_tab = 1 }
+            }
+        }
+
+        set_country_flag = ZAV_new_order_of_shadows_discovery
+    }
+}
+
+ZAV_add_new_legion_of_the_drowned_info = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = ZAV_open_notebook
+            }
+        }
+
+        set_country_flag = ZAV_new_notebook_discovery
+    }
+
+    if = {
+        limit = {
+            NOT = {
+                check_variable = { ZAV_notebook_tab = 2 }
+            }
+        }
+
+        set_country_flag = ZAV_new_legion_of_the_drowned_discovery
+    }
+}
+
+ZAV_add_new_crimson_order_info = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = ZAV_open_notebook
+            }
+        }
+
+        set_country_flag = ZAV_new_notebook_discovery
+    }
+
+    if = {
+        limit = {
+            NOT = {
+                check_variable = { ZAV_notebook_tab = 3 }
+            }
+        }
+
+        set_country_flag = ZAV_new_crimson_order_discovery
+    }
+}
+
+ZAV_add_new_order_of_true_knights_info = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = ZAV_open_notebook
+            }
+        }
+
+        set_country_flag = ZAV_new_notebook_discovery
+    }
+
+    if = {
+        limit = {
+            NOT = {
+                check_variable = { ZAV_notebook_tab = 4 }
+            }
+        }
+
+        set_country_flag = ZAV_new_order_of_true_knights_discovery
+    }
+}

@@ -82,9 +82,17 @@ country_event = {
 		add_to_array = { ZAV_discoveries_divine_saviours = 3 }
 		add_to_array = { ZAV_discoveries_divine_saviours = 4 }
 		add_to_array = { ZAV_discoveries_divine_saviours = 5 }
-		add_to_array = { ZAV_discoveries_divine_saviours = 6 }
-		add_to_array = { ZAV_discoveries_divine_saviours = 7 }
-		add_to_array = { ZAV_discoveries_divine_saviours = 8 }
+
+		add_to_array = { ZAV_discoveries_order_of_shadows = 1 }
+		add_to_array = { ZAV_discoveries_legion_of_the_drowned = 1 }
+		add_to_array = { ZAV_discoveries_crimson_order = 1 }
+		add_to_array = { ZAV_discoveries_order_of_true_knights = 1 }
+
+		ZAV_add_new_divine_saviours_info = yes
+		ZAV_add_new_order_of_shadows_info = yes
+		ZAV_add_new_legion_of_the_drowned_info = yes
+		ZAV_add_new_crimson_order_info = yes
+		ZAV_add_new_order_of_true_knights_info = yes
     }
 }
 
@@ -199,10 +207,15 @@ country_event = {
         name = ZAV_divine_saviours_events.3.a
 
 		add_stability = -0.01
+		
 		custom_effect_tooltip = ZAV_use_corrupted_rose_tt
 		remove_from_array = { ZAV_vault_artifacts = 3 }
+		
 		custom_effect_tooltip = ZAV_notebook_updated_tt
 		add_to_array = { ZAV_discoveries_divine_saviours = 1 }
+		
+		ZAV_add_new_divine_saviours_info = yes
+		
 		set_country_flag = ZAV_act_1_part_1
 
 		if = {
@@ -232,8 +245,12 @@ country_event = {
         name = ZAV_divine_saviours_events.4.a
 
 		add_stability = 0.01
+		
 		custom_effect_tooltip = ZAV_notebook_updated_tt
 		add_to_array = { ZAV_discoveries_divine_saviours = 1 }
+		
+		ZAV_add_new_divine_saviours_info = yes
+		
 		set_country_flag = ZAV_act_1_part_1
 
 		if = {
@@ -265,6 +282,7 @@ country_event = {
 		add_manpower = -7
 		add_stability = -0.03
 		add_political_power = -10
+
 		set_country_flag = ZAV_act_1_part_1
 
 		if = {
@@ -390,10 +408,15 @@ country_event = {
         name = ZAV_divine_saviours_events.8.a
 
 		add_stability = 0.01
+		
 		custom_effect_tooltip = ZAV_use_blighted_flesh_tt
 		remove_from_array = { ZAV_vault_artifacts = 7 }
+		
 		custom_effect_tooltip = ZAV_notebook_updated_tt
 		add_to_array = { ZAV_discoveries_divine_saviours = 2 }
+		
+		ZAV_add_new_divine_saviours_info = yes
+		
 		set_country_flag = ZAV_act_1_part_2
 
 		if = {
@@ -423,8 +446,12 @@ country_event = {
         name = ZAV_divine_saviours_events.9.a
 
 		add_stability = 0.01
+		
 		custom_effect_tooltip = ZAV_notebook_updated_tt
 		add_to_array = { ZAV_discoveries_divine_saviours = 2 }
+		
+		ZAV_add_new_divine_saviours_info = yes
+		
 		set_country_flag = ZAV_act_1_part_2
 
 		if = {
@@ -454,6 +481,7 @@ country_event = {
         name = ZAV_divine_saviours_events.10.a
 
 		add_stability = -0.03
+		
 		343 = {
 			add_manpower = -10000
 			damage_building = {
@@ -533,9 +561,14 @@ country_event = {
         name = ZAV_divine_saviours_events.13.a
 
 		add_stability = -0.01
+
 		custom_effect_tooltip = ZAV_who_could_the_bleeding_king_be_tt
+
 		custom_effect_tooltip = ZAV_notebook_updated_tt
 		add_to_array = { ZAV_discoveries_divine_saviours = 3 }
+		
+		ZAV_add_new_divine_saviours_info = yes
+		
 		set_country_flag = ZAV_act_1_part_3
 
 		if = {
@@ -660,12 +693,16 @@ country_event = {
 	option = {
         name = ZAV_divine_saviours_events.16.a
 
-		custom_effect_tooltip = ZAV_warding_talisman_obtained_tt
-		add_to_array = { ZAV_vault_artifacts = 10 }
 		custom_effect_tooltip = ZAV_use_shroud_of_the_fey_tt
 		remove_from_array = { ZAV_vault_artifacts = 5 }
+
+		custom_effect_tooltip = ZAV_warding_talisman_obtained_tt
+		add_to_array = { ZAV_vault_artifacts = 10 }
+
 		custom_effect_tooltip = ZAV_notebook_updated_tt
 		add_to_array = { ZAV_discoveries_divine_saviours = 4 }
+
+		ZAV_add_new_divine_saviours_info = yes
 
 		hidden_effect = {
 			country_event = { id = ZAV_divine_saviours_events.17 days = 7 }
@@ -688,9 +725,13 @@ country_event = {
         name = ZAV_divine_saviours_events.17.a
 
 		add_stability = -0.1
+
 		custom_effect_tooltip = ZAV_blood_of_king_arthur_stolen_tt
 		remove_from_array = { ZAV_vault_artifacts = 1 }
+
 		custom_effect_tooltip = ZAV_notebook_updated_tt
 		add_to_array = { ZAV_discoveries_divine_saviours = 5 }
+
+		ZAV_add_new_divine_saviours_info = yes
     }
 }
