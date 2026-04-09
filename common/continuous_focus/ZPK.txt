@@ -1,0 +1,83 @@
+continuous_focus_palette = {
+	id = ZPK_continuous_focuses
+	
+	country = {
+		factor = 1
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+			
+	position = { x = 50 y = 1000 }
+
+	focus = {
+		id = ZPK_economy_focus_cont
+		
+		icon = GFX_focus_generic_economic_recovery
+		
+		available = {
+			hidden_trigger = { 
+				original_tag = ZPK
+			}
+		}
+
+		modifier = {
+			production_speed_buildings_factor = 0.25
+		}
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		daily_cost = 1
+
+		select_effect = {
+			activate_mission = ZPK_economy_cont_decision
+			set_variable = {
+				ZPK_eco_decision_focus = 1
+			}
+		}
+		
+		cancel_effect = {
+			remove_mission = ZPK_economy_cont_decision
+			set_variable = {
+				ZPK_eco_decision_focus = 0
+			}
+		}
+	}
+	focus = {
+		id = ZPK_mil_focus_cont
+		
+		icon = GFX_goal_generic_construct_mil_factory
+		
+		available = {
+			hidden_trigger = { 
+				original_tag = ZPK
+			}
+		}
+
+		modifier = {
+			consumer_goods_factor = -0.05
+		}
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		daily_cost = 1
+
+		select_effect = {
+			activate_mission = ZPK_mil_cont_decision
+			set_variable = {
+				ZPK_mil_decision_focus = 1
+			}
+		}
+		
+		cancel_effect = {
+			remove_mission = ZPK_mil_cont_decision
+			set_variable = {
+				ZPK_mil_decision_focus = 0
+			}
+		}
+	}
+}

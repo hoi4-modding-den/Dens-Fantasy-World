@@ -15,6 +15,16 @@ set_technology = {
 	gw_artillery = 1
 }
 
+complete_national_focus = ZPK_filler_1
+complete_national_focus = ZPK_filler_2
+complete_national_focus = ZPK_filler_3
+complete_national_focus = ZPK_filler_4
+complete_national_focus = ZPK_filler_5
+complete_national_focus = ZPK_filler_6
+complete_national_focus = ZPK_filler_7
+complete_national_focus = ZPK_filler_8
+complete_national_focus = ZPK_filler_9
+complete_national_focus = ZPK_filler_10
 
 set_politics = {
 	ruling_party = democratic

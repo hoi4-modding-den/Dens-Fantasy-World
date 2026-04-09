@@ -4,7 +4,7 @@ state={
 	name="STATE_1144"
 	manpower = 2404404
 	
-	state_category = rural
+	state_category = large_town
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -23,16 +23,25 @@ state={
 		add_claim_by = ZPK
 		add_claim_by = ZPC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 2
 			15119 = {
 				naval_base = 2
 			}
 			
 		}
-		
+		victory_points = {
+			15119 5
+		}
+		victory_points = {
+			15135 5
+		}
+		victory_points = {
+			15137 1
+		}
+
 	}
 
 	provinces={

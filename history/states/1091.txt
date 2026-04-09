@@ -2,9 +2,9 @@
 state={
 	id=1091
 	name="STATE_1091"
-	manpower = 5795281
+	manpower = 795281
 	
-	state_category = town
+	state_category = pastoral
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -26,11 +26,16 @@ state={
 			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 1
+			industrial_complex = 0
 			
 			
 		}
-		
+		victory_points = {
+			14349 5
+		}
+		victory_points = {
+			14344 1
+		}
 	}
 
 	provinces={

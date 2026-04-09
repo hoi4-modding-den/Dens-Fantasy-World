@@ -2,9 +2,9 @@
 state={
 	id=1130
 	name="STATE_1130"
-	manpower = 857855
+	manpower = 1857855
 	
-	state_category = pastoral
+	state_category = city
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -23,10 +23,10 @@ state={
 		add_claim_by = ZPC
 		add_claim_by = ZPT
 		buildings = {
-			infrastructure = 2
-			
-			arms_factory = 0
-			industrial_complex = 0
+			infrastructure = 3
+			dockyard = 3
+			arms_factory = 1
+			industrial_complex = 2
 			19308 = {
 				naval_base = 3
 			}

@@ -1,0 +1,17 @@
+ZPK_continuous_focus_cat = {
+
+    icon = gre_investment_decisions
+	
+	allowed = {
+		original_tag = ZPK
+	}
+
+	priority = 100
+
+	visible = {
+		tag = ZPK
+		NOT = {
+			has_government = communism
+		}
+	}
+}

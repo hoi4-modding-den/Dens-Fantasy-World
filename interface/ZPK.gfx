@@ -1,0 +1,111 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_unavailable_blank"
+		texturefile = "gfx/interface/focusview/titlebar/focus_unavailable_blank_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_completed_blank"
+		texturefile = "gfx/interface/focusview/titlebar/focus_completed_blank_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_can_start_blank"
+		texturefile = "gfx/interface/focusview/titlebar/focus_can_start_blank_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_current_blank"
+		texturefile = "gfx/interface/focusview/titlebar/focus_current_blank_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_unavailable_ZPK"
+		texturefile = "gfx/interface/focusview/titlebar/focus_unavailable_ZPK_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_completed_ZPK"
+		texturefile = "gfx/interface/focusview/titlebar/focus_completed_ZPK_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_can_start_ZPK"
+		texturefile = "gfx/interface/focusview/titlebar/focus_can_start_ZPK_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_current_ZPK"
+		texturefile = "gfx/interface/focusview/titlebar/focus_current_ZPK_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_ZPK_blank"
+		texturefile = "gfx/interface/goals/ZPK/ZPK_blank.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_ZPK_blank_shine"
+		texturefile = "gfx/interface/goals/ZPK/ZPK_blank.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ZPK/ZPK_blank.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ZPK/ZPK_blank.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ZPK_focus_background"
+		texturefile = "gfx/interface/ZPK/ZPK_bg.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ZPK_salaryman_penguin"
+		texturefile = "gfx/interface/goals/ZPK/ZPK_salaryman_penguin.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_ZPK_salaryman_penguin_shine"
+		texturefile = "gfx/interface/goals/ZPK/ZPK_salaryman_penguin.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ZPK/ZPK_salaryman_penguin.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ZPK/ZPK_salaryman_penguin.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+}
+

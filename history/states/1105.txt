@@ -2,9 +2,9 @@
 state={
 	id=1105
 	name="STATE_1105"
-	manpower = 2218002
+	manpower = 3018002
 	
-	state_category = small_island
+	state_category = town
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -23,17 +23,33 @@ state={
 		add_claim_by = ZPK
 		add_claim_by = ZPC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			
-			arms_factory = 0
-			industrial_complex = 0
-			
+			arms_factory = 2
+			industrial_complex = 2
+			14603 = {
+				supply_node = 1
+			}
 			14639 = {
 				naval_base = 1
 			}
 			
 		}
-		
+		victory_points = {
+			14639 5
+		}
+		victory_points = {
+			14603 10
+		}
+		victory_points = {
+			14604 3
+		}
+		victory_points = {
+			14634 1
+		}
+		victory_points = {
+			14568 1
+		}
 	}
 
 	provinces={

@@ -148,3 +148,25 @@ style = {
 	available = GFX_focus_can_start_joint_MA
 	current = GFX_focus_current_joint_MA
 }
+
+
+###############
+##### DEN #####
+###############
+
+style = {
+	name = blank_focus_style
+
+	unavailable = GFX_focus_unavailable_blank
+	completed = GFX_focus_completed_blank
+	available = GFX_focus_can_start_blank
+	current = GFX_focus_current_blank
+}
+style = {
+	name = ZPK_focus_style
+
+	unavailable = GFX_focus_unavailable_ZPK
+	completed = GFX_focus_completed_ZPK
+	available = GFX_focus_can_start_ZPK
+	current = GFX_focus_current_ZPK
+}

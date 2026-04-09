@@ -2,10 +2,9 @@
 state={
 	id=1061
 	name="STATE_1061"
-	manpower = 690589
+	manpower = 4690589
 	
-	state_category = small_island
-	#impassable = yes
+	state_category = megalopolis
 	resources={
 		aluminium=0
 		chromium=0
@@ -23,19 +22,22 @@ state={
 		add_claim_by = ZPC
 		add_claim_by = ZPT
 		buildings = {
-			infrastructure = 2
+			infrastructure = 5
+			dockyard = 1
+			arms_factory = 3
+			industrial_complex = 7
 			
-			arms_factory = 0
-			industrial_complex = 0
-			
-			# 14022 = {
-				# naval_base = 8
+			14022 = {
+				naval_base = 8
 				
-			# }
+			}
 		}
 		victory_points = {
-				14022 50
-			}
+			14022 50
+		}
+		victory_points = {
+			19304 5
+		}
 	}
 
 	provinces={

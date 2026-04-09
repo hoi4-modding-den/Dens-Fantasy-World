@@ -23,17 +23,25 @@ state={
 		add_claim_by = ZPC
 		add_claim_by = ZPT
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 1
 			
 			14438 = {
 				naval_base = 1
 			}
 			
 		}
-		
+		victory_points = {
+			14438 5
+		}
+		victory_points = {
+			14469 1 
+		}
+		victory_points = {
+			14431 3
+		}
 	}
 
 	provinces={

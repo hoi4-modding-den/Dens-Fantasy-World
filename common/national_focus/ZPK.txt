@@ -1,0 +1,313 @@
+focus_tree = {
+	id = ZPK_focus_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 50
+			tag = ZPK
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 1 y = 1 }
+
+	focus = {
+		id = ZPK_filler_1
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 1
+		y = 1
+		completion_reward = { }
+		text_icon = blank_focus_style
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = ZPK_filler_2
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 1
+		y = 1
+		completion_reward = { }
+		text_icon = blank_focus_style
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = ZPK_filler_3
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 1
+		y = 1
+		completion_reward = { }
+		text_icon = blank_focus_style
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = ZPK_filler_4
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 1
+		y = 1
+		completion_reward = { }
+		text_icon = blank_focus_style
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = ZPK_filler_5
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 1
+		y = 1
+		completion_reward = { }
+		text_icon = blank_focus_style
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = ZPK_filler_6
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 1
+		y = 1
+		completion_reward = { }
+		text_icon = blank_focus_style
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = ZPK_filler_7
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 1
+		y = 1
+		completion_reward = { }
+		text_icon = blank_focus_style
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = ZPK_filler_8
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 1
+		y = 1
+		completion_reward = { }
+		text_icon = blank_focus_style
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = ZPK_filler_9
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 1
+		y = 1
+		completion_reward = { }
+		text_icon = blank_focus_style
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = ZPK_filler_10
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 1
+		y = 1
+		completion_reward = { }
+		text_icon = blank_focus_style
+		available = {
+			always = no
+		}
+	}
+
+	focus = {
+		id = ZPK_penguin_1
+		icon = GFX_focus_ZPK_salaryman_penguin
+		cost = 1
+		x = 9
+		y = 1
+		text_icon = ZPK_focus_style
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZPK_custom_trigger_tooltip
+				always = no
+			}
+			
+		}
+		completion_reward = { }
+		
+	}
+
+	focus = {
+		id = ZPK_temp_1
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 8
+		y = 0
+		completion_reward = { }
+		text_icon = blank_focus_style
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = ZPK_temp_2
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 8
+		y = 10
+		prerequisite = {
+			focus = ZPK_temp_1
+		}
+		available = {
+			always = no
+		}
+		text_icon = blank_focus_style
+		completion_reward = { }
+	}
+	focus = {
+		id = ZPK_temp_4
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 12
+		y = 10
+		prerequisite = {
+			focus = ZPK_temp_5
+		}
+		available = {
+			always = no
+		}
+		text_icon = blank_focus_style
+		completion_reward = { }
+	}
+	focus = {
+		id = ZPK_temp_7
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 14
+		y = 10
+		prerequisite = {
+			focus = ZPK_temp_8
+		}
+		available = {
+			always = no
+		}
+		text_icon = blank_focus_style
+		completion_reward = { }
+	}
+	focus = {
+		id = ZPK_temp_5
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 12
+		y = 5
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = ZPK_temp_10
+		}
+		text_icon = blank_focus_style
+		completion_reward = { }
+	}
+	focus = {
+		id = ZPK_temp_6
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 8
+		y = 5
+		prerequisite = {
+			focus = ZPK_temp_5
+		}
+		available = {
+			always = no
+		}
+		text_icon = blank_focus_style
+		completion_reward = { }
+	}
+	focus = {
+		id = ZPK_temp_3
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 18
+		y = 10
+		prerequisite = {
+			focus = ZPK_temp_1
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = ZPK_temp_2
+		}
+		text_icon = blank_focus_style
+		completion_reward = { }
+	}
+	focus = {
+		id = ZPK_temp_8
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 14
+		y = 5
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = ZPK_temp_11
+		}
+		text_icon = blank_focus_style
+		completion_reward = { }
+	}
+	focus = {
+		id = ZPK_temp_9
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 18
+		y = 5
+		prerequisite = {
+			focus = ZPK_temp_8
+		}
+		available = {
+			always = no
+		}
+		text_icon = blank_focus_style
+		completion_reward = { }
+	}
+	focus = {
+		id = ZPK_temp_10
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 12
+		y = 0
+		available = {
+			always = no
+		}
+		text_icon = blank_focus_style
+		completion_reward = { }
+	}
+	focus = {
+		id = ZPK_temp_11
+		icon = GFX_focus_ZPK_blank
+		cost = 1
+		x = 14
+		y = 0
+		available = {
+			always = no
+		}
+		text_icon = blank_focus_style
+		completion_reward = { }
+	}
+}
