@@ -1,2109 +1,2109 @@
-﻿# focus_tree = {
-	# id = ZPS_focus
+focus_tree = {
+	id = ZPS_focus
 	
-	# country = {
-		# factor = 0
+	country = {
+		factor = 0
 		
-		# modifier = {
-			# add = 10
-			# tag = ZPS
-		# }
-	# }
+		modifier = {
+			add = 10
+			tag = ZPS
+		}
+	}
 	
-	# default = no
+	default = no
 
-	# continuous_focus_position = { x = 50 y = 1650 }
-
-
-	# focus = {
-		# id = ZPS_The_Lomcho_Incident
-		# icon = GFX_fish
-		# x = 20
-		# y = 0
-
-		# cost = 0
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		# always = no
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
+	continuous_focus_position = { x = 50 y = 1650 }
 
 
-		# completion_reward = {}
-	# }
+	focus = {
+		id = ZPS_The_Lomcho_Incident
+		icon = GFX_fish
+		x = 20
+		y = 0
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		always = no
+		}
+
+		bypass = {}
+
+		search_filters = { }
 
 
-	# focus = {
-		# id = ZPS_Remilitarisation_Campaign
-		# icon = GFX_focus_ZPS_Militarisation_Campaign
-		# x = 10
-		# y = 1
-		# prerequisite = { focus = ZPS_The_Lomcho_Incident }
-		# cost = 2
+		completion_reward = {}
+	}
 
-		# ai_will_do = {
-			# factor = 200
-		# }
 
-		# available = {
+	focus = {
+		id = ZPS_Remilitarisation_Campaign
+		icon = GFX_focus_ZPS_Militarisation_Campaign
+		x = 10
+		y = 1
+		prerequisite = { focus = ZPS_The_Lomcho_Incident }
+		cost = 2
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
 		
-		# }
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
+		search_filters = { }
 
 
-	# focus = {
-		# id = ZPS_Pan_Specific_National_Army_focus
-		# icon = GFX_fish
-		# x = 8
-		# y = 2
-		# prerequisite = { focus = ZPS_Remilitarisation_Campaign }
-		# cost = 5
+		completion_reward = {}
+	}
 
-		# ai_will_do = {
-			# factor = 200
-		# }
 
-		# available = {
+	focus = {
+		id = ZPS_Pan_Specific_National_Army_focus
+		icon = GFX_fish
+		x = 8
+		y = 2
+		prerequisite = { focus = ZPS_Remilitarisation_Campaign }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
 		
-		# }
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
-
-
-		# completion_reward = {
-			# add_dynamic_modifier = { modifier = ZPS_Pan_Specific_National_Army }
-			# army_experience = 25
-		# }
-	# }
+		search_filters = { }
 
 
-	# focus = {
-		# id = ZPS_All_May_Serve
-		# icon = GFX_fish
-		# x = 7
-		# y = 3
-		# mutually_exclusive = { focus = ZPS_Portia_Primacy }
-		# prerequisite = { focus = ZPS_Pan_Specific_National_Army_focus }
-		# cost = 5
+		completion_reward = {
+			add_dynamic_modifier = { modifier = ZPS_Pan_Specific_National_Army }
+			army_experience = 25
+		}
+	}
 
-		# ai_will_do = {
-			# factor = 200
-		# }
 
-		# available = {
+	focus = {
+		id = ZPS_All_May_Serve
+		icon = GFX_fish
+		x = 7
+		y = 3
+		mutually_exclusive = { focus = ZPS_Portia_Primacy }
+		prerequisite = { focus = ZPS_Pan_Specific_National_Army_focus }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
 		
-		# }
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {
-			# effect_tooltip = {
-				# swap_ideas = {
-					# remove_idea = ZPS_Pan_Specific_National_Army_dummy
-					# add_idea = ZPS_All_May_Serve_idea
-				# }
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_All_May_Serve_idea
+				}
 
-			# }
-			# add_manpower = 12383
-			# #ADD DIVISIONS
-			# hidden_effect = {
-				# add_to_variable = {
-					# var = ZPS_recruitable_population_factor
-					# value = 0.08
-				# }
-				# add_to_variable = {
-					# var = ZPS_experience_gain_army_factor
-					# value = -0.03
-				# }
-				# add_to_variable = {
-					# var = ZPS_weekly_manpower
-					# value = 50
-				# }
-			# }
+			}
+			add_manpower = 12383
+			#ADD DIVISIONS
+			hidden_effect = {
+				add_to_variable = {
+					var = ZPS_recruitable_population_factor
+					value = 0.08
+				}
+				add_to_variable = {
+					var = ZPS_experience_gain_army_factor
+					value = -0.03
+				}
+				add_to_variable = {
+					var = ZPS_weekly_manpower
+					value = 50
+				}
+			}
 
-		# }
-	# }
+		}
+	}
 
-	# focus = {
-		# id = ZPS_Portia_Primacy
-		# icon = GFX_fish
-		# x = 9
-		# y = 3
-		# mutually_exclusive = { focus = ZPS_All_May_Serve }
-		# prerequisite = { focus = ZPS_Pan_Specific_National_Army_focus }
-		# cost = 5
+	focus = {
+		id = ZPS_Portia_Primacy
+		icon = GFX_fish
+		x = 9
+		y = 3
+		mutually_exclusive = { focus = ZPS_All_May_Serve }
+		prerequisite = { focus = ZPS_Pan_Specific_National_Army_focus }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 		
-		# }
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {
-			# effect_tooltip = {
-				# swap_ideas = {
-					# remove_idea = ZPS_Pan_Specific_National_Army_dummy
-					# add_idea = ZPS_Portia_Primacy_idea
-				# }
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_Portia_Primacy_idea
+				}
 
-			# }
-			# add_tech_bonus = {
-				# name = ZPS_Portia_Weapons_Development
-				# bonus = 0.5
-				# uses = 2
-				# category = infantry_weapons
-				# category = infantry_tech
-			# }
+			}
+			add_tech_bonus = {
+				name = ZPS_Portia_Weapons_Development
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+				category = infantry_tech
+			}
 			
-			# hidden_effect = {
-				# add_to_variable = {
-					# var = ZPS_training_time_factor
-					# value = 0.1
-				# }
-				# add_to_variable = {
-					# var = ZPS_army_attack_factor
-					# value = 0.05
-				# }
-				# add_to_variable = {
-					# var = ZPS_army_defence_factor
-					# value = 0.03
-				# }
-				# add_to_variable = {
-					# var = ZPS_breakthrough_factor
-					# value = 0.02
-				# }
-			# }
-		# }
-	# }
+			hidden_effect = {
+				add_to_variable = {
+					var = ZPS_training_time_factor
+					value = 0.1
+				}
+				add_to_variable = {
+					var = ZPS_army_attack_factor
+					value = 0.05
+				}
+				add_to_variable = {
+					var = ZPS_army_defence_factor
+					value = 0.03
+				}
+				add_to_variable = {
+					var = ZPS_breakthrough_factor
+					value = 0.02
+				}
+			}
+		}
+	}
 
-	# focus = {
-		# id = ZPS_Calculated_Strategies
-		# icon = GFX_fish
-		# x = 8
-		# y = 4
-		# prerequisite = { focus = ZPS_Pan_Specific_National_Army_focus }
-		# prerequisite = { focus = ZPS_Portia_Primacy focus = ZPS_All_May_Serve }
-		# cost = 5
+	focus = {
+		id = ZPS_Calculated_Strategies
+		icon = GFX_fish
+		x = 8
+		y = 4
+		prerequisite = { focus = ZPS_Pan_Specific_National_Army_focus }
+		prerequisite = { focus = ZPS_Portia_Primacy focus = ZPS_All_May_Serve }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 		
-		# }
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {
-			# effect_tooltip = {
-				# swap_ideas = {
-					# remove_idea = ZPS_Pan_Specific_National_Army_dummy
-					# add_idea = ZPS_Calculated_Strategies_idea
-				# }
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_Calculated_Strategies_idea
+				}
 
-			# }
-			# add_doctrine_cost_reduction = {
-				# cost_reduction = 0.4
-				# uses = 1
-				# category = land_doctrine
-			# }
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.4
+				uses = 1
+				category = land_doctrine
+			}
 			
-			# hidden_effect = {
-				# add_to_variable = {
-					# var = ZPS_max_planning_factor
-					# value = 0.06
-				# }
-				# add_to_variable = {
-					# var = ZPS_terrain_penalty_reduction
-					# value = 0.03
-				# }
-				# add_to_variable = {
-					# var = ZPS_experience_gain_army_factor
-					# value = 0.02
-				# }
-				# add_to_variable = {
-					# var = ZPS_army_morale_factor
-					# value = 0.04
-				# }
-			# }
-		# }
-	# }
+			hidden_effect = {
+				add_to_variable = {
+					var = ZPS_max_planning_factor
+					value = 0.06
+				}
+				add_to_variable = {
+					var = ZPS_terrain_penalty_reduction
+					value = 0.03
+				}
+				add_to_variable = {
+					var = ZPS_experience_gain_army_factor
+					value = 0.02
+				}
+				add_to_variable = {
+					var = ZPS_army_morale_factor
+					value = 0.04
+				}
+			}
+		}
+	}
 
-	# focus = {
-		# id = ZPS_Shrewd_Hunting
-		# icon = GFX_fish
-		# x = 10
-		# y = 4
-		# prerequisite = { focus = ZPS_Portia_Primacy }
-		# cost = 5
+	focus = {
+		id = ZPS_Shrewd_Hunting
+		icon = GFX_fish
+		x = 10
+		y = 4
+		prerequisite = { focus = ZPS_Portia_Primacy }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 		
-		# }
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {
-			# add_ideas = ZPS_Late_Night_Battles
-			# army_experience = 50
-		# }
-	# }
+		completion_reward = {
+			add_ideas = ZPS_Late_Night_Battles
+			army_experience = 50
+		}
+	}
 
-	# focus = {
-		# id = ZPS_Charge_Of_The_Faithful
-		# icon = GFX_fish
-		# x = 6
-		# y = 4
-		# prerequisite = { focus = ZPS_All_May_Serve }
-		# cost = 5
+	focus = {
+		id = ZPS_Charge_Of_The_Faithful
+		icon = GFX_fish
+		x = 6
+		y = 4
+		prerequisite = { focus = ZPS_All_May_Serve }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 			
-		# }
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {
-			# effect_tooltip = {
-				# swap_ideas = {
-					# remove_idea = ZPS_Pan_Specific_National_Army_dummy
-					# add_idea = ZPS_Charge_Of_The_Faithful_idea
-				# }
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_Charge_Of_The_Faithful_idea
+				}
 
-			# }
-			# add_manpower = 48182
+			}
+			add_manpower = 48182
 			
-			# hidden_effect = {
-				# add_to_variable = {
-					# var = ZPS_initiative_factor
-					# value = 0.04
-				# }
-				# add_to_variable = {
-					# var = ZPS_experience_loss_factor
-					# value = -0.06
-				# }
-				# add_to_variable = {
-					# var = ZPS_army_org_factor
-					# value = -0.05
-				# }
-			# }
-		# }
-	# }
+			hidden_effect = {
+				add_to_variable = {
+					var = ZPS_initiative_factor
+					value = 0.04
+				}
+				add_to_variable = {
+					var = ZPS_experience_loss_factor
+					value = -0.06
+				}
+				add_to_variable = {
+					var = ZPS_army_org_factor
+					value = -0.05
+				}
+			}
+		}
+	}
 
-	# focus = {
-		# id = ZPS_Great_War_Machines
-		# icon = GFX_fish
-		# x = 7
-		# y = 5
-		# prerequisite = { focus = ZPS_Calculated_Strategies }
-		# cost = 5
+	focus = {
+		id = ZPS_Great_War_Machines
+		icon = GFX_fish
+		x = 7
+		y = 5
+		prerequisite = { focus = ZPS_Calculated_Strategies }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 		
-		# }
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {
-			# random_owned_controlled_state = {
-				# limit = {
-					# is_core_of = ROOT
-					# free_building_slots = {
-						# building = arms_factory
-						# size > 1
-						# include_locked = yes
-					# }
-				# }
-				# add_extra_state_shared_building_slots = 2
-				# add_building_construction = {
-					# type = arms_factory
-					# level = 2
-					# instant_build = yes
-				# }
-			# }
-			# add_tech_bonus = {
-				# name = ZPS_War_Machine_Development_Fund
-				# bonus = 0.5
-				# uses = 3
-				# category = armor
-			# }
-		# }
-	# }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = ZPS_War_Machine_Development_Fund
+				bonus = 0.5
+				uses = 3
+				category = armor
+			}
+		}
+	}
 
-	# focus = {
-		# id = ZPS_Strengthen_The_Machine_Corps
-		# icon = GFX_fish
-		# x = 7
-		# y = 6
-		# prerequisite = { focus = ZPS_Great_War_Machines }
-		# cost = 5
+	focus = {
+		id = ZPS_Strengthen_The_Machine_Corps
+		icon = GFX_fish
+		x = 7
+		y = 6
+		prerequisite = { focus = ZPS_Great_War_Machines }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 		
-		# }
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
-
-
-		# completion_reward = {
-			# #Divisions
-			# custom_effect_tooltip = ZPS_If_Completed_MSAMI
-			# effect_tooltip = {
-				# swap_ideas = {
-					# remove_idea = ZPS_Pan_Specific_National_Army_dummy
-					# add_idea = ZPS_Strengthen_The_Machine_Corps_MSAMI_idea
-				# }
-
-			# }
-			# custom_effect_tooltip = ZPS_If_Not_Completed_MSAMI
-			# effect_tooltip = {
-				# swap_ideas = {
-					# remove_idea = ZPS_Pan_Specific_National_Army_dummy
-					# add_idea = ZPS_Strengthen_The_Machine_Corps_No_MSAMI_idea
-				# }
-
-			# }
-			
-			
-			# hidden_effect = {
-				# if = {
-					# limit = {
-						# has_completed_focus = ZPS_Establish_The_MSAMI
-					# }
-				# add_to_variable = {
-					# var = ZPS_org_loss_when_moving
-					# value = -0.03
-				# }
-				# add_to_variable = {
-					# var = ZPS_army_armor_speed_factor
-					# value = 0.1
-				# }
-				# add_to_variable = {
-					# var = ZPS_army_armor_defence_factor
-					# value = 0.09
-				# }
-				# }
-				# else = {
-				# add_to_variable = {
-					# var = ZPS_breakthrough_factor
-					# value = 0.07
-				# }
-				# add_to_variable = {
-					# var = army_morale_factor
-					# value = 0.04
-				# }
-				# add_to_variable = {
-					# var = ZPS_army_armor_attack_factor
-					# value = 0.09
-				# }
-				# }
-			# }
-			
-		# }
-	# }
-
-	# focus = {
-		# id = ZPS_Hidden_Wolves #Establish Rangers
-		# icon = GFX_fish
-		# x = 9
-		# y = 5
-		# prerequisite = { focus = ZPS_Calculated_Strategies }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {
-			# effect_tooltip = {
-				# swap_ideas = {
-					# remove_idea = ZPS_Pan_Specific_National_Army_dummy
-					# add_idea = ZPS_Hidden_Wolves_idea
-				# }
+		completion_reward = {
+			#Divisions
+			custom_effect_tooltip = ZPS_If_Completed_MSAMI
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_Strengthen_The_Machine_Corps_MSAMI_idea
+				}
 
-			# }
-			# if = {
-				# limit = {
-					# has_dlc = "No Compromise, No Surrender"
-				# }
-			# set_technology = {
-    				# rangers_tech = 1
-			# }
-			# }
+			}
+			custom_effect_tooltip = ZPS_If_Not_Completed_MSAMI
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_Strengthen_The_Machine_Corps_No_MSAMI_idea
+				}
+
+			}
 			
 			
-			# hidden_effect = {
-				# add_to_variable = {
-					# var = ZPS_special_forces_training_time_factor
-					# value = -0.06
-				# }
-				# add_to_variable = {
-					# var = ZPS_special_forces_attack_factor
-					# value = 0.11
-				# }
-				# add_to_variable = {
-					# var = ZPS_special_forces_cap
-					# value = 0.05
-				# }
-			# }
-		# }
-	# }
-
-	# focus = {
-		# id = ZPS_Establish_The_MSAMI #Military Supply and Maintenance Initiative
-		# icon = GFX_fish
-		# x = 11
-		# y = 5
-		# prerequisite = { focus = ZPS_Calculated_Strategies }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {
-			# add_ideas = ZPS_MSAMI
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = ZPS_Establish_The_MSAMI
+					}
+				add_to_variable = {
+					var = ZPS_org_loss_when_moving
+					value = -0.03
+				}
+				add_to_variable = {
+					var = ZPS_army_armor_speed_factor
+					value = 0.1
+				}
+				add_to_variable = {
+					var = ZPS_army_armor_defence_factor
+					value = 0.09
+				}
+				}
+				else = {
+				add_to_variable = {
+					var = ZPS_breakthrough_factor
+					value = 0.07
+				}
+				add_to_variable = {
+					var = army_morale_factor
+					value = 0.04
+				}
+				add_to_variable = {
+					var = ZPS_army_armor_attack_factor
+					value = 0.09
+				}
+				}
+			}
 			
-		# }
-	# }
+		}
+	}
 
-	# focus = {
-		# id = ZPS_Build_Steamtrains_Of_War
-		# icon = GFX_fish
-		# x = 11
-		# y = 6
-		# prerequisite = { focus = ZPS_Establish_The_MSAMI }
-		# cost = 5
+	focus = {
+		id = ZPS_Hidden_Wolves #Establish Rangers
+		icon = GFX_fish
+		x = 9
+		y = 5
+		prerequisite = { focus = ZPS_Calculated_Strategies }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 		
-		# }
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
-
-
-		# completion_reward = {
-		# random_owned_controlled_state = {
-				# limit = {
-					# is_core_of = ROOT
-					# free_building_slots = {
-						# building = arms_factory
-						# size > 1
-						# include_locked = yes
-					# }
-				# }
-				# add_extra_state_shared_building_slots = 1
-				# add_building_construction = {
-					# type = arms_factory
-					# level = 1
-					# instant_build = yes
-				# }
-			# }
-		
-		
-		# build_railway = {
-			# level = 2
-			# path = { 2541 5228 3150 2959 2952 1938 1936 1940 }
-		# }
-		# }
-	# }
-
-	# focus = {
-		# id = ZPS_Made_In_Fire
-		# icon = GFX_fish
-		# x = 10
-		# y = 7
-		# mutually_exclusive = { focus = ZPS_Built_For_Battle }
-		# prerequisite = { focus = ZPS_Build_Steamtrains_Of_War focus = ZPS_Strengthen_The_Machine_Corps }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {
-			# effect_tooltip = {
-				# swap_ideas = {
-					# remove_idea = ZPS_Pan_Specific_National_Army_dummy
-					# add_idea = ZPS_Made_In_Fire_idea
-				# }
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_Hidden_Wolves_idea
+				}
 
-			# }
+			}
+			if = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+			set_technology = {
+    				rangers_tech = 1
+			}
+			}
 			
 			
-			
-			# hidden_effect = {
-				# add_to_variable = {
-					# var = ZPS_army_core_attack_factor
-					# value = 0.07
-				# }
-				# add_to_variable = {
-					# var = ZPS_breakthrough_factor
-					# value = 0.04
-				# }
-				# add_to_variable = {
-					# var = ZPS_land_mastery_gain_factor
-					# value = 0.15
-				# }
-				# add_to_variable = {
-					# var = ZPS_conscription
-					# value = 0.015
-				# }
-			# }
-		# }
-	# }
+			hidden_effect = {
+				add_to_variable = {
+					var = ZPS_special_forces_training_time_factor
+					value = -0.06
+				}
+				add_to_variable = {
+					var = ZPS_special_forces_attack_factor
+					value = 0.11
+				}
+				add_to_variable = {
+					var = ZPS_special_forces_cap
+					value = 0.05
+				}
+			}
+		}
+	}
 
-	# focus = {
-		# id = ZPS_Built_For_Battle
-		# icon = GFX_fish
-		# x = 7
-		# y = 7
-		# mutually_exclusive = { focus = ZPS_Made_In_Fire }
-		# prerequisite = { focus = ZPS_Build_Steamtrains_Of_War focus = ZPS_Strengthen_The_Machine_Corps }
-		# cost = 5
+	focus = {
+		id = ZPS_Establish_The_MSAMI #Military Supply and Maintenance Initiative
+		icon = GFX_fish
+		x = 11
+		y = 5
+		prerequisite = { focus = ZPS_Calculated_Strategies }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 		
-		# }
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {
-			# effect_tooltip = {
-				# swap_ideas = {
-					# remove_idea = ZPS_Pan_Specific_National_Army_dummy
-					# add_idea = ZPS_Built_For_Battle_idea
-				# }
+		completion_reward = {
+			add_ideas = ZPS_MSAMI
+			
+		}
+	}
 
-			# }
+	focus = {
+		id = ZPS_Build_Steamtrains_Of_War
+		icon = GFX_fish
+		x = 11
+		y = 6
+		prerequisite = { focus = ZPS_Establish_The_MSAMI }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+		
+		build_railway = {
+			level = 2
+			path = { 2541 5228 3150 2959 2952 1938 1936 1940 }
+		}
+		}
+	}
+
+	focus = {
+		id = ZPS_Made_In_Fire
+		icon = GFX_fish
+		x = 10
+		y = 7
+		mutually_exclusive = { focus = ZPS_Built_For_Battle }
+		prerequisite = { focus = ZPS_Build_Steamtrains_Of_War focus = ZPS_Strengthen_The_Machine_Corps }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_Made_In_Fire_idea
+				}
+
+			}
 			
 			
 			
-			# hidden_effect = {
-				# add_to_variable = {
-					# var = ZPS_experience_gain_army
-					# value = 0.12
-				# }
-				# add_to_variable = {
-					# var = ZPS_land_reinforce_rate
-					# value = 0.07
-				# }
-				# add_to_variable = {
-					# var = ZPS_weekly_manpower
-					# value = 150
-				# }
-				# add_to_variable = {
-					# var = ZPS_army_core_defence_factor
-					# value = 0.15
-				# }
-				# add_to_variable = {
-					# var = ZPS_army_org_factor
-					# value = 0.15
-				# }
-			# }
-		# }
-	# }
+			hidden_effect = {
+				add_to_variable = {
+					var = ZPS_army_core_attack_factor
+					value = 0.07
+				}
+				add_to_variable = {
+					var = ZPS_breakthrough_factor
+					value = 0.04
+				}
+				add_to_variable = {
+					var = ZPS_land_mastery_gain_factor
+					value = 0.15
+				}
+				add_to_variable = {
+					var = ZPS_conscription
+					value = 0.015
+				}
+			}
+		}
+	}
 
-	# focus = {
-		# id = ZPS_Establish_The_Pan_Specific_Air_Force
-		# icon = GFX_fish
-		# x = 12
-		# y = 2
-		# prerequisite = { focus = ZPS_Remilitarisation_Campaign }
-		# cost = 5
+	focus = {
+		id = ZPS_Built_For_Battle
+		icon = GFX_fish
+		x = 7
+		y = 7
+		mutually_exclusive = { focus = ZPS_Made_In_Fire }
+		prerequisite = { focus = ZPS_Build_Steamtrains_Of_War focus = ZPS_Strengthen_The_Machine_Corps }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 		
-		# }
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZPS_Pan_Specific_National_Army_dummy
+					add_idea = ZPS_Built_For_Battle_idea
+				}
 
-
-	# focus = {
-		# id = ZPS_Fighter_Focus
-		# icon = GFX_fish
-		# x = 11
-		# y = 3
-		# mutually_exclusive = { focus = ZPS_Bomber_Focus }
-		# prerequisite = { focus = ZPS_Establish_The_Pan_Specific_Air_Force }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-
-	# }
-
-	# focus = {
-		# id = ZPS_Bomber_Focus
-		# icon = GFX_fish
-		# x = 13
-		# y = 3
-		# mutually_exclusive = { focus = ZPS_Fighter_Focus }
-		# prerequisite = { focus = ZPS_Establish_The_Pan_Specific_Air_Force }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Domestic_Air_Industry
-		# icon = GFX_fish
-		# x = 12
-		# y = 4
-		# prerequisite = { focus = ZPS_Bomber_Focus focus = ZPS_Fighter_Focus }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_The_New_Air_Heroes
-		# icon = GFX_fish
-		# x = 13
-		# y = 5
-		# prerequisite = { focus = ZPS_Domestic_Air_Industry }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-
-	# focus = {
-		# id = ZPS_Remake_The_Warfleet
-		# icon = GFX_fish
-		# x = 14
-		# y = 2
-		# prerequisite = { focus = ZPS_Remilitarisation_Campaign }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-
-	# focus = {
-		# id = ZPS_Explore_The_Deep
-		# icon = GFX_fish
-		# x = 15
-		# y = 3
-		# prerequisite = { focus = ZPS_Remake_The_Warfleet }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-
-	# focus = {
-		# id = ZPS_Rules_The_Waves
-		# icon = GFX_fish
-		# x = 14
-		# y = 4
-		# prerequisite = { focus = ZPS_Explore_The_Deep }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-
-	# focus = {
-		# id = ZPS_Recruit_New_Soliders
-		# icon = GFX_fish
-		# x = 10
-		# y = 2
-		# prerequisite = { focus = ZPS_Remilitarisation_Campaign }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-
-
-	# focus = {
-		# id = ZPS_Continue_The_Policy_Of_World_Trade
-		# icon = GFX_fish
-		# x = 30
-		# y = 1
-		# prerequisite = { focus = ZPS_The_Lomcho_Incident }
-		# cost = 2
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Kickstart_Civilian_Economy
-		# icon = GFX_fish
-		# x = 34
-		# y = 2
-		# prerequisite = { focus = ZPS_Continue_The_Policy_Of_World_Trade }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_The_Pan_Specific_Welfare_State
-		# icon = GFX_fish
-		# x = 32
-		# y = 2
-		# prerequisite = { focus = ZPS_Continue_The_Policy_Of_World_Trade }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_The_Cooperative_Movement
-		# icon = GFX_fish
-		# x = 29
-		# y = 2
-		# prerequisite = { focus = ZPS_Continue_The_Policy_Of_World_Trade }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_A_World_Economy
-		# icon = GFX_fish
-		# x = 27
-		# y = 2
-		# prerequisite = { focus = ZPS_Continue_The_Policy_Of_World_Trade }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Modernisation_Initiative
-		# icon = GFX_fish
-		# x = 31
-		# y = 3
-		# prerequisite = { focus = ZPS_The_Pan_Specific_Welfare_State }
-		# prerequisite = { focus = ZPS_The_Cooperative_Movement }
-		# mutually_exclusive = { focus = ZPS_Without_Questions }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Invite_Investment_From_Other_Democracies
-		# icon = GFX_fish
-		# x = 33
-		# y = 3
-		# prerequisite = { focus = ZPS_The_Pan_Specific_Welfare_State }
-		# prerequisite = { focus = ZPS_Kickstart_Civilian_Economy }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Expand_Portia_Port_Facilities
-		# icon = GFX_fish
-		# x = 36
-		# y = 3
-		# prerequisite = { focus = ZPS_Kickstart_Civilian_Economy }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Internationalist_Cooperativism
-		# icon = GFX_fish
-		# x = 26
-		# y = 3
-		# prerequisite = { focus = ZPS_A_World_Economy }
-		# prerequisite = { focus = ZPS_The_Cooperative_Movement }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Without_Questions
-		# icon = GFX_fish
-		# x = 28
-		# y = 3
-		# prerequisite = { focus = ZPS_The_Cooperative_Movement }
-		# mutually_exclusive = { focus = ZPS_Modernisation_Initiative }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Diversity_Of_Resources
-		# icon = GFX_fish
-		# x = 35
-		# y = 4
-		# prerequisite = { focus = ZPS_Expand_Portia_Port_Facilities focus = ZPS_Invite_Investment_From_Other_Democracies }
-		# mutually_exclusive = { focus = ZPS_Economic_Specialisation }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Economic_Specialisation
-		# icon = GFX_fish
-		# x = 32
-		# y = 4
-		# prerequisite = { focus = ZPS_Invite_Investment_From_Other_Democracies }
-		# prerequisite = { focus = ZPS_Modernisation_Initiative }
-		# mutually_exclusive = { focus = ZPS_Diversity_Of_Resources }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_The_Worlds_Merchant
-		# icon = GFX_fish
-		# x = 27
-		# y = 4
-		# prerequisite = { focus = ZPS_Internationalist_Cooperativism }
-		# prerequisite = { focus = ZPS_Without_Questions }
-		# mutually_exclusive = { focus = ZPS_A_Modern_And_Industrious_Nation }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_A_Modern_And_Industrious_Nation
-		# icon = GFX_fish
-		# x = 30
-		# y = 4
-		# prerequisite = { focus = ZPS_Modernisation_Initiative }
-		# mutually_exclusive = { focus = ZPS_The_Worlds_Merchant }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Expand_The_Welfare_State
-		# icon = GFX_fish
-		# x = 33
-		# y = 5
-		# prerequisite = { focus = ZPS_Diversity_Of_Resources focus = ZPS_Economic_Specialisation }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Nationalise_Corporate_Holdings
-		# icon = GFX_fish
-		# x = 30
-		# y = 5
-		# prerequisite = { focus = ZPS_Diversity_Of_Resources focus = ZPS_Economic_Specialisation focus = ZPS_A_Modern_And_Industrious_Nation }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_SOTF #South Oyku Trade Federation
-		# icon = GFX_fish
-		# x = 28
-		# y = 5
-		# prerequisite = { focus = ZPS_The_Worlds_Merchant focus = ZPS_A_Modern_And_Industrious_Nation }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_The_Strength_Of_Internationalist_Keynesianism
-		# icon = GFX_fish
-		# x = 30
-		# y = 6
-		# prerequisite = { focus = ZPS_SOTF focus = ZPS_Nationalise_Corporate_Holdings focus = ZPS_Expand_The_Welfare_State }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Address_The_Issue
-		# icon = GFX_fish
-		# x = 20
-		# y = 1
-		# prerequisite = { focus = ZPS_The_Lomcho_Incident }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {
-		# set_country_flag = ZPS_Stomatopod_Rising
-		# }
-	# }
-
-# ### Traditionalist/Nationalist Branch ###
-	# focus = {
-		# id = ZPS_Stomatopod_Rising
-		# icon = GFX_fish
-		# x = 20
-		# y = 2
-		# prerequisite = { focus = ZPS_Address_The_Issue }
-		# cost = 0
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-			# always = false
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# mark_focus_tree_layout_dirty = yes
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Declare_Marshal_Law
-		# icon = GFX_fish
-		# x = 19
-		# y = 3
-		# prerequisite = { focus = ZPS_Stomatopod_Rising }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Arrest_Notable_Radicals
-		# icon = GFX_fish
-		# x = 21
-		# y = 3
-		# prerequisite = { focus = ZPS_Stomatopod_Rising }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Ensure_Military_Loyalties
-		# icon = GFX_fish
-		# x = 20
-		# y = 4
-		# prerequisite = { focus = ZPS_Arrest_Notable_Radicals }
-		# prerequisite = { focus = ZPS_Declare_Marshal_Law }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Elminate_The_Rising
-		# icon = GFX_fish
-		# x = 20
-		# y = 4
-		# prerequisite = { focus = ZPS_Ensure_Military_Loyalties }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-		
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-# ### Trad ###
-	# focus = {
-		# id = ZPS_A_Portia_Monarchy
-		# icon = GFX_fish
-		# x = 20
-		# y = 5
-		# prerequisite = { focus = ZPS_Elminate_The_Rising }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
-			# #Has Gotten Rid of Council of Species
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Monarchists
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_The_New_Nobility
-		# icon = GFX_fish
-		# x = 18
-		# y = 6
-		# prerequisite = { focus = ZPS_A_Portia_Monarchy }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
+			}
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Monarchists
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Establish_Royal_Duchies
-		# icon = GFX_fish
-		# x = 20
-		# y = 6
-		# prerequisite = { focus = ZPS_A_Portia_Monarchy }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Monarchists
-		# }
-
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Royal_Scientific_Commision
-		# icon = GFX_fish
-		# x = 17
-		# y = 7
-		# prerequisite = { focus = ZPS_The_New_Nobility }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Monarchists
-		# }
+			hidden_effect = {
+				add_to_variable = {
+					var = ZPS_experience_gain_army
+					value = 0.12
+				}
+				add_to_variable = {
+					var = ZPS_land_reinforce_rate
+					value = 0.07
+				}
+				add_to_variable = {
+					var = ZPS_weekly_manpower
+					value = 150
+				}
+				add_to_variable = {
+					var = ZPS_army_core_defence_factor
+					value = 0.15
+				}
+				add_to_variable = {
+					var = ZPS_army_org_factor
+					value = 0.15
+				}
+			}
+		}
+	}
 
-		# bypass = {}
+	focus = {
+		id = ZPS_Establish_The_Pan_Specific_Air_Force
+		icon = GFX_fish
+		x = 12
+		y = 2
+		prerequisite = { focus = ZPS_Remilitarisation_Campaign }
+		cost = 5
 
-		# search_filters = { }
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
+		completion_reward = {}
+	}
 
-	# focus = {
-		# id = ZPS_Our_Dominion #Sky, Water, Earth
-		# icon = GFX_fish
-		# x = 19
-		# y = 7
-		# prerequisite = { focus = ZPS_The_New_Nobility }
-		# cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+	focus = {
+		id = ZPS_Fighter_Focus
+		icon = GFX_fish
+		x = 11
+		y = 3
+		mutually_exclusive = { focus = ZPS_Bomber_Focus }
+		prerequisite = { focus = ZPS_Establish_The_Pan_Specific_Air_Force }
+		cost = 5
 
-		# available = {
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = ZPS_Bomber_Focus
+		icon = GFX_fish
+		x = 13
+		y = 3
+		mutually_exclusive = { focus = ZPS_Fighter_Focus }
+		prerequisite = { focus = ZPS_Establish_The_Pan_Specific_Air_Force }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Domestic_Air_Industry
+		icon = GFX_fish
+		x = 12
+		y = 4
+		prerequisite = { focus = ZPS_Bomber_Focus focus = ZPS_Fighter_Focus }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_The_New_Air_Heroes
+		icon = GFX_fish
+		x = 13
+		y = 5
+		prerequisite = { focus = ZPS_Domestic_Air_Industry }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+
+	focus = {
+		id = ZPS_Remake_The_Warfleet
+		icon = GFX_fish
+		x = 14
+		y = 2
+		prerequisite = { focus = ZPS_Remilitarisation_Campaign }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+
+	focus = {
+		id = ZPS_Explore_The_Deep
+		icon = GFX_fish
+		x = 15
+		y = 3
+		prerequisite = { focus = ZPS_Remake_The_Warfleet }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+
+	focus = {
+		id = ZPS_Rules_The_Waves
+		icon = GFX_fish
+		x = 14
+		y = 4
+		prerequisite = { focus = ZPS_Explore_The_Deep }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+
+	focus = {
+		id = ZPS_Recruit_New_Soliders
+		icon = GFX_fish
+		x = 10
+		y = 2
+		prerequisite = { focus = ZPS_Remilitarisation_Campaign }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+
+
+	focus = {
+		id = ZPS_Continue_The_Policy_Of_World_Trade
+		icon = GFX_fish
+		x = 30
+		y = 1
+		prerequisite = { focus = ZPS_The_Lomcho_Incident }
+		cost = 2
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Kickstart_Civilian_Economy
+		icon = GFX_fish
+		x = 34
+		y = 2
+		prerequisite = { focus = ZPS_Continue_The_Policy_Of_World_Trade }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_The_Pan_Specific_Welfare_State
+		icon = GFX_fish
+		x = 32
+		y = 2
+		prerequisite = { focus = ZPS_Continue_The_Policy_Of_World_Trade }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_The_Cooperative_Movement
+		icon = GFX_fish
+		x = 29
+		y = 2
+		prerequisite = { focus = ZPS_Continue_The_Policy_Of_World_Trade }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_A_World_Economy
+		icon = GFX_fish
+		x = 27
+		y = 2
+		prerequisite = { focus = ZPS_Continue_The_Policy_Of_World_Trade }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Modernisation_Initiative
+		icon = GFX_fish
+		x = 31
+		y = 3
+		prerequisite = { focus = ZPS_The_Pan_Specific_Welfare_State }
+		prerequisite = { focus = ZPS_The_Cooperative_Movement }
+		mutually_exclusive = { focus = ZPS_Without_Questions }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Invite_Investment_From_Other_Democracies
+		icon = GFX_fish
+		x = 33
+		y = 3
+		prerequisite = { focus = ZPS_The_Pan_Specific_Welfare_State }
+		prerequisite = { focus = ZPS_Kickstart_Civilian_Economy }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Expand_Portia_Port_Facilities
+		icon = GFX_fish
+		x = 36
+		y = 3
+		prerequisite = { focus = ZPS_Kickstart_Civilian_Economy }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Internationalist_Cooperativism
+		icon = GFX_fish
+		x = 26
+		y = 3
+		prerequisite = { focus = ZPS_A_World_Economy }
+		prerequisite = { focus = ZPS_The_Cooperative_Movement }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Without_Questions
+		icon = GFX_fish
+		x = 28
+		y = 3
+		prerequisite = { focus = ZPS_The_Cooperative_Movement }
+		mutually_exclusive = { focus = ZPS_Modernisation_Initiative }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Diversity_Of_Resources
+		icon = GFX_fish
+		x = 35
+		y = 4
+		prerequisite = { focus = ZPS_Expand_Portia_Port_Facilities focus = ZPS_Invite_Investment_From_Other_Democracies }
+		mutually_exclusive = { focus = ZPS_Economic_Specialisation }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Economic_Specialisation
+		icon = GFX_fish
+		x = 32
+		y = 4
+		prerequisite = { focus = ZPS_Invite_Investment_From_Other_Democracies }
+		prerequisite = { focus = ZPS_Modernisation_Initiative }
+		mutually_exclusive = { focus = ZPS_Diversity_Of_Resources }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_The_Worlds_Merchant
+		icon = GFX_fish
+		x = 27
+		y = 4
+		prerequisite = { focus = ZPS_Internationalist_Cooperativism }
+		prerequisite = { focus = ZPS_Without_Questions }
+		mutually_exclusive = { focus = ZPS_A_Modern_And_Industrious_Nation }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_A_Modern_And_Industrious_Nation
+		icon = GFX_fish
+		x = 30
+		y = 4
+		prerequisite = { focus = ZPS_Modernisation_Initiative }
+		mutually_exclusive = { focus = ZPS_The_Worlds_Merchant }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Expand_The_Welfare_State
+		icon = GFX_fish
+		x = 33
+		y = 5
+		prerequisite = { focus = ZPS_Diversity_Of_Resources focus = ZPS_Economic_Specialisation }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Nationalise_Corporate_Holdings
+		icon = GFX_fish
+		x = 30
+		y = 5
+		prerequisite = { focus = ZPS_Diversity_Of_Resources focus = ZPS_Economic_Specialisation focus = ZPS_A_Modern_And_Industrious_Nation }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_SOTF #South Oyku Trade Federation
+		icon = GFX_fish
+		x = 28
+		y = 5
+		prerequisite = { focus = ZPS_The_Worlds_Merchant focus = ZPS_A_Modern_And_Industrious_Nation }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_The_Strength_Of_Internationalist_Keynesianism
+		icon = GFX_fish
+		x = 30
+		y = 6
+		prerequisite = { focus = ZPS_SOTF focus = ZPS_Nationalise_Corporate_Holdings focus = ZPS_Expand_The_Welfare_State }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Address_The_Issue
+		icon = GFX_fish
+		x = 20
+		y = 1
+		prerequisite = { focus = ZPS_The_Lomcho_Incident }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {
+		set_country_flag = ZPS_Stomatopod_Rising
+		}
+	}
+
+### Traditionalist/Nationalist Branch ###
+	focus = {
+		id = ZPS_Stomatopod_Rising
+		icon = GFX_fish
+		x = 20
+		y = 2
+		prerequisite = { focus = ZPS_Address_The_Issue }
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Monarchists
-		# }
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		#mark_focus_tree_layout_dirty = yes
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
+		completion_reward = {}
+	}
 
-	# focus = {
-		# id = ZPS_Imperial_Equity
-		# icon = GFX_fish
-		# x = 21
-		# y = 7
-		# prerequisite = { focus = ZPS_The_New_Nobility }
-		# cost = 5
+	focus = {
+		id = ZPS_Declare_Marshal_Law
+		icon = GFX_fish
+		x = 19
+		y = 3
+		prerequisite = { focus = ZPS_Stomatopod_Rising }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
+		
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Arrest_Notable_Radicals
+		icon = GFX_fish
+		x = 21
+		y = 3
+		prerequisite = { focus = ZPS_Stomatopod_Rising }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Ensure_Military_Loyalties
+		icon = GFX_fish
+		x = 20
+		y = 4
+		prerequisite = { focus = ZPS_Arrest_Notable_Radicals }
+		prerequisite = { focus = ZPS_Declare_Marshal_Law }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Elminate_The_Rising
+		icon = GFX_fish
+		x = 20
+		y = 4
+		prerequisite = { focus = ZPS_Ensure_Military_Loyalties }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+### Trad ###
+	focus = {
+		id = ZPS_A_Portia_Monarchy
+		icon = GFX_fish
+		x = 20
+		y = 5
+		prerequisite = { focus = ZPS_Elminate_The_Rising }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+			#Has Gotten Rid of Council of Species
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Monarchists
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_The_New_Nobility
+		icon = GFX_fish
+		x = 18
+		y = 6
+		prerequisite = { focus = ZPS_A_Portia_Monarchy }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Monarchists
-		# }
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Monarchists
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
+		completion_reward = {}
+	}
 
-	# focus = {
-		# id = ZPS_An_Army_Above_Politics
-		# icon = GFX_fish
-		# x = 20
-		# y = 8
-		# prerequisite = { focus = ZPS_Our_Dominion }
-		# prerequisite = { focus = ZPS_Imperial_Equity focus = ZPS_Royal_Scientific_Commision }
-		# cost = 5
+	focus = {
+		id = ZPS_Establish_Royal_Duchies
+		icon = GFX_fish
+		x = 20
+		y = 6
+		prerequisite = { focus = ZPS_A_Portia_Monarchy }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Monarchists
-		# }
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Monarchists
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
+		completion_reward = {}
+	}
 
-	# focus = {
-		# id = ZPS_In_Defence_Of_Our_Culture
-		# icon = GFX_fish
-		# x = 18
-		# y = 8
-		# prerequisite = { focus = ZPS_Our_Dominion focus = ZPS_Royal_Scientific_Commision }
-		# cost = 5
+	focus = {
+		id = ZPS_Royal_Scientific_Commision
+		icon = GFX_fish
+		x = 17
+		y = 7
+		prerequisite = { focus = ZPS_The_New_Nobility }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Monarchists
-		# }
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Monarchists
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
+		completion_reward = {}
+	}
 
-	# focus = {
-		# id = ZPS_The_Grand_Secular_Kingdom
-		# icon = GFX_fish
-		# x = 19
-		# y = 9
-		# prerequisite = { focus = ZPS_In_Defence_Of_Our_Culture } 
-		# prerequisite = { focus = ZPS_An_Army_Above_Politics }
-		# cost = 5
+	focus = {
+		id = ZPS_Our_Dominion #Sky, Water, Earth
+		icon = GFX_fish
+		x = 19
+		y = 7
+		prerequisite = { focus = ZPS_The_New_Nobility }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Monarchists
-		# }
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Monarchists
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
+		search_filters = { }
 
 
-	# focus = {
-		# id = ZPS_Tackle_Kern
-		# icon = GFX_fish
-		# x = 22
-		# y = 6
-		# prerequisite = { focus = ZPS_A_Portia_Monarchy focus = ZPS_A_Return_To_Tradition }
-		# cost = 5
+		completion_reward = {}
+	}
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+	focus = {
+		id = ZPS_Imperial_Equity
+		icon = GFX_fish
+		x = 21
+		y = 7
+		prerequisite = { focus = ZPS_The_New_Nobility }
+		cost = 5
 
-		# available = {
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# OR = {
-    		# has_country_flag = ZPS_Portia_Monarchists
-    		# has_country_flag = ZPS_Portia_Traditionalists
-    		# }
-		# }
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Monarchists
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
-# ### Nati ###
-	# focus = {
-		# id = ZPS_A_Return_To_Tradition
-		# icon = GFX_fish
-		# x = 20
-		# y = 5
-		# prerequisite = { focus = ZPS_Elminate_The_Rising }
-		# cost = 5
+		completion_reward = {}
+	}
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+	focus = {
+		id = ZPS_An_Army_Above_Politics
+		icon = GFX_fish
+		x = 20
+		y = 8
+		prerequisite = { focus = ZPS_Our_Dominion }
+		prerequisite = { focus = ZPS_Imperial_Equity focus = ZPS_Royal_Scientific_Commision }
+		cost = 5
 
-		# available = {
-			# #Has Gotten Rid of Council of Species
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Traditionalists
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# bypass = {}
-
-		# search_filters = { }
-
-
-		# completion_reward = {}
-	# }
-
-	# focus = {
-		# id = ZPS_Put_Males_In_Their_Place
-		# icon = GFX_fish
-		# x = 20
-		# y = 6
-		# prerequisite = { focus = ZPS_A_Return_To_Tradition }
-		# cost = 5
-
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
+		available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Traditionalists
-		# }
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Monarchists
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
+		completion_reward = {}
+	}
 
-	# focus = {
-		# id = ZPS_The_Stain_Of_Modernity
-		# icon = GFX_fish
-		# x = 19
-		# y = 7
-		# prerequisite = { focus = ZPS_Put_Males_In_Their_Place }
-		# cost = 5
+	focus = {
+		id = ZPS_In_Defence_Of_Our_Culture
+		icon = GFX_fish
+		x = 18
+		y = 8
+		prerequisite = { focus = ZPS_Our_Dominion focus = ZPS_Royal_Scientific_Commision }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Traditionalists
-		# }
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Monarchists
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
+		completion_reward = {}
+	}
 
-	# focus = {
-		# id = ZPS_Stratocratic_Governance
-		# icon = GFX_fish
-		# x = 21
-		# y = 7
-		# prerequisite = { focus = ZPS_Put_Males_In_Their_Place }
-		# cost = 5
+	focus = {
+		id = ZPS_The_Grand_Secular_Kingdom
+		icon = GFX_fish
+		x = 19
+		y = 9
+		prerequisite = { focus = ZPS_In_Defence_Of_Our_Culture } 
+		prerequisite = { focus = ZPS_An_Army_Above_Politics }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Traditionalists
-		# }
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Monarchists
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
+		completion_reward = {}
+	}
 
-	# focus = {
-		# id = ZPS_Our_Greatest_Mistake
-		# icon = GFX_fish
-		# x = 22
-		# y = 8
-		# prerequisite = { focus = ZPS_Stratocratic_Governance }
-		# cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+	focus = {
+		id = ZPS_Tackle_Kern
+		icon = GFX_fish
+		x = 22
+		y = 6
+		prerequisite = { focus = ZPS_A_Portia_Monarchy focus = ZPS_A_Return_To_Tradition }
+		cost = 5
 
-		# available = {
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Traditionalists
-		# }
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		OR = {
+    		has_country_flag = ZPS_Portia_Monarchists
+    		has_country_flag = ZPS_Portia_Traditionalists
+    		}
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
+		completion_reward = {}
+	}
+### Nati ###
+	focus = {
+		id = ZPS_A_Return_To_Tradition
+		icon = GFX_fish
+		x = 20
+		y = 5
+		prerequisite = { focus = ZPS_Elminate_The_Rising }
+		cost = 5
 
-	# focus = {
-		# id = ZPS_A_Struggle_For_Us
-		# icon = GFX_fish
-		# x = 18
-		# y = 8
-		# prerequisite = { focus = ZPS_The_Stain_Of_Modernity }
-		# cost = 5
+		ai_will_do = {
+			factor = 200
+		}
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		available = {
+			#Has Gotten Rid of Council of Species
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Traditionalists
+		}
 
-		# available = {
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Put_Males_In_Their_Place
+		icon = GFX_fish
+		x = 20
+		y = 6
+		prerequisite = { focus = ZPS_A_Return_To_Tradition }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Traditionalists
-		# }
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Traditionalists
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
+		completion_reward = {}
+	}
 
-	# focus = {
-		# id = ZPS_To_Save_The_Species_And_The_Nation
-		# icon = GFX_fish
-		# x = 20
-		# y = 8
-		# prerequisite = { focus = ZPS_The_Stain_Of_Modernity }
-		# prerequisite = { focus = ZPS_Stratocratic_Governance }
+	focus = {
+		id = ZPS_The_Stain_Of_Modernity
+		icon = GFX_fish
+		x = 19
+		y = 7
+		prerequisite = { focus = ZPS_Put_Males_In_Their_Place }
+		cost = 5
 
-		# cost = 5
+		ai_will_do = {
+			factor = 200
+		}
 
-		# ai_will_do = {
-			# factor = 200
-		# }
-
-		# available = {
+		available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Traditionalists
-		# }
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Traditionalists
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
+		completion_reward = {}
+	}
 
-	# focus = {
-		# id = ZPS_A_Necessary_Evil
-		# icon = GFX_fish
-		# x = 19
-		# y = 9
-		# prerequisite = { focus = ZPS_To_Save_The_Species_And_The_Nation }
-		# prerequisite = { focus = ZPS_A_Struggle_For_Us }
-		# mutually_exclusive = { focus = ZPS_Purity_To_Its_Fullest }
-		# cost = 5
+	focus = {
+		id = ZPS_Stratocratic_Governance
+		icon = GFX_fish
+		x = 21
+		y = 7
+		prerequisite = { focus = ZPS_Put_Males_In_Their_Place }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Traditionalists
-		# }
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Traditionalists
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
+		completion_reward = {}
+	}
 
-	# focus = {
-		# id = ZPS_Purity_To_Its_Fullest
-		# icon = GFX_fish
-		# x = 21
-		# y = 9
-		# prerequisite = { focus = ZPS_To_Save_The_Species_And_The_Nation }
-		# prerequisite = { focus = ZPS_Our_Greatest_Mistake }
-		# mutually_exclusive = { focus = ZPS_A_Necessary_Evil }
-		# cost = 5
+	focus = {
+		id = ZPS_Our_Greatest_Mistake
+		icon = GFX_fish
+		x = 22
+		y = 8
+		prerequisite = { focus = ZPS_Stratocratic_Governance }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Traditionalists
-		# }
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Traditionalists
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
+		completion_reward = {}
+	}
 
-	# focus = {
-		# id = ZPS_The_Traditional_Nation
-		# icon = GFX_fish
-		# x = 20
-		# y = 10
-		# prerequisite = { focus = ZPS_Purity_To_Its_Fullest focus = ZPS_A_Necessary_Evil }
-		# cost = 5
+	focus = {
+		id = ZPS_A_Struggle_For_Us
+		icon = GFX_fish
+		x = 18
+		y = 8
+		prerequisite = { focus = ZPS_The_Stain_Of_Modernity }
+		cost = 5
 
-		# ai_will_do = {
-			# factor = 200
-		# }
+		ai_will_do = {
+			factor = 200
+		}
 
-		# available = {
+		available = {
 			
-		# }
-		# allow_branch = {
-    		# has_country_flag = ZPS_Stomatopod_Rising
-    		# has_country_flag = ZPS_Portia_Traditionalists
-		# }
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Traditionalists
+		}
 
-		# bypass = {}
+		bypass = {}
 
-		# search_filters = { }
+		search_filters = { }
 
 
-		# completion_reward = {}
-	# }
+		completion_reward = {}
+	}
 
-# }
+	focus = {
+		id = ZPS_To_Save_The_Species_And_The_Nation
+		icon = GFX_fish
+		x = 20
+		y = 8
+		prerequisite = { focus = ZPS_The_Stain_Of_Modernity }
+		prerequisite = { focus = ZPS_Stratocratic_Governance }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+			
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Traditionalists
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_A_Necessary_Evil
+		icon = GFX_fish
+		x = 19
+		y = 9
+		prerequisite = { focus = ZPS_To_Save_The_Species_And_The_Nation }
+		prerequisite = { focus = ZPS_A_Struggle_For_Us }
+		mutually_exclusive = { focus = ZPS_Purity_To_Its_Fullest }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+			
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Traditionalists
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_Purity_To_Its_Fullest
+		icon = GFX_fish
+		x = 21
+		y = 9
+		prerequisite = { focus = ZPS_To_Save_The_Species_And_The_Nation }
+		prerequisite = { focus = ZPS_Our_Greatest_Mistake }
+		mutually_exclusive = { focus = ZPS_A_Necessary_Evil }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+			
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Traditionalists
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+	focus = {
+		id = ZPS_The_Traditional_Nation
+		icon = GFX_fish
+		x = 20
+		y = 10
+		prerequisite = { focus = ZPS_Purity_To_Its_Fullest focus = ZPS_A_Necessary_Evil }
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+			
+		}
+		allow_branch = {
+    		has_country_flag = ZPS_Stomatopod_Rising
+    		has_country_flag = ZPS_Portia_Traditionalists
+		}
+
+		bypass = {}
+
+		search_filters = { }
+
+
+		completion_reward = {}
+	}
+
+}

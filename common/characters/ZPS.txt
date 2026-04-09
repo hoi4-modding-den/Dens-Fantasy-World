@@ -27,6 +27,25 @@ characters = {
 		}
 
 	}
+	
+	ZPS_Seperatist_Koda = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZPS/ZPS_Generic_Female_9.png"
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			traits = { }
+			desc = ZPS_Koda_Seperatist
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { }
+			desc = ZPS_Koda_Seperatist
+		}
+
+	}
 
 	ZPS_Avrana_Kern = {
 		portraits = {

@@ -3,6 +3,20 @@
 ZPS: "Pan-Specific of Paam"
 ZPS_DEF: "the Pan-Specific of Paam"
 ZPS_ADJ: "Pan-Specific"
+ZP1: "Stomatopod Uprising"
+ZP1_DEF: "the Stomatopod Uprising"
+ZP1_ADJ: "Stomatopod"
+
+#Cosmetic Tags
+ZPS_Provisional: "Provisional Portia Government"
+ZPS_Provisional_DEF: "the Provisional Portia Government"
+ZPS_Provisional_ADJ: "Portia"
+ZPS_Monarchy: "Portia Kingdom"
+ZPS_Monarchy_DEF: "the Portia Kingdom"
+ZPS_Monarchy_ADJ: "Portia"
+ZPS_Nationalist: "Portia State"
+ZPS_Nationalist_DEF: "the Portia State"
+ZPS_Nationalist_ADJ: "Portia"
 
 #Parties
 ZPS_democratic_party: "Representative Caucus"
@@ -13,6 +27,14 @@ ZPS_neutrality_party: "Traditionalist Caucus"
 ZPS_neutrality_party_long: "Traditionalist Caucus"
 ZPS_fascism_party: "Nationalist Caucus"
 ZPS_fascism_party_long: "Nationalist Caucus"
+ZP1_democratic_party: "Stomatopod Directive"
+ZP1_democratic_party_long: "SD"
+ZP1_communism_party: "§RN/A§!"
+ZP1_communism_party_long: "§RN/A§!"
+ZP1_neutrality_party: "SWC"
+ZP1_neutrality_party_long: "Stomatopod Warrior's Compact"
+ZP1_fascism_party: "SWC"
+ZP1_fascism_party_long: "Stomatopod Warrior's Compact"
 
 #Ideologies
 national_primitivism: "National Primitivism"
@@ -96,6 +118,7 @@ ZPS_Interloculator: "Interloculator"
 ZPS_Porsche: "Porsche"
 ZPS_Salomi: "Salomi"
 ZPS_Viola: "Viola"
+ZPS_Seperatist_Koda: "Koda"
 
 #Traits
 ZPS_The_Backbone_of_Our_Civilisation: "The Backbone of our Civilisation"

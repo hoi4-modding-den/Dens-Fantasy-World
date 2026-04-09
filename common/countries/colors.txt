@@ -1309,3 +1309,7 @@ ZCV = {
 	color = rgb { 91 11 50 }
 	color_ui = rgb { 91 11 50 }
 }
+ZP1 = {
+	color = rgb { 138 99 54 }
+	color_ui = rgb { 138 99 54 }
+}

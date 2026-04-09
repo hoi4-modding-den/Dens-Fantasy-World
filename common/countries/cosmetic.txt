@@ -1,0 +1,16 @@
+ZPS_Provisional = {
+	color = rgb { 108 123 139 }
+	color_ui = rgb { 108 123 139 }
+}
+ZPS_Monarchy = {
+	color = rgb { 124 127 130 }
+	color_ui = rgb { 124 127 1309 }
+}
+ZPS_Nationalist = {
+	color = rgb { 57 128 67 }
+	color_ui = rgb { 57 128 67 }
+}
+ZPS_Communist = {
+	color = rgb { 166 63 118 }
+	color_ui = rgb { 166 63 118 }
+}
