@@ -21,7 +21,9 @@ state={
 		owner = ZNY
 		add_core_of = ZNY
 		
-		
+		victory_points = {
+			13223 10
+			}
 		buildings = {
 			infrastructure = 3
 			
@@ -39,5 +41,5 @@ state={
 	provinces={
 		13222 13223 
 	}
-	local_supplies=0.0 
+	local_supplies=0.5
 }
