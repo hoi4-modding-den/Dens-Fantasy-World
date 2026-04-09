@@ -1,0 +1,204 @@
+### ARTIFACTS ###
+
+ZAV_add_artifact_to_vault = {
+    if = {
+        limit = {
+            NOT = {
+                is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact }
+            }
+        }
+
+        custom_effect_tooltip = ZAV_add_artifact_to_vault_tt
+        add_to_array = { ZAV_vault_artifacts = ZAV_active_artifact }
+    }
+    else = {
+        # Fallback (shouldn't happen)
+        custom_effect_tooltip = ZAV_cant_add_artifact_to_vault_tt
+    }
+}
+
+ZAV_remove_artifact_from_vault = {
+    custom_effect_tooltip = ZAV_remove_artifact_from_vault_tt
+
+    if = {
+        limit = {
+            is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact }
+        }
+
+        remove_from_array = { ZAV_vault_artifacts = ZAV_active_artifact }
+    }
+}
+
+# Accesses the second active artifact - I wish we could pass information into scripted effects
+
+ZAV_add_artifact_to_vault2 = {
+    if = {
+        limit = {
+            NOT = {
+                is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact2 }
+            }
+        }
+
+        custom_effect_tooltip = ZAV_add_artifact_to_vault2_tt
+        add_to_array = { ZAV_vault_artifacts = ZAV_active_artifact2 }
+    }
+    else = {
+        # Fallback (shouldn't happen)
+        custom_effect_tooltip = ZAV_cant_add_artifact_to_vault2_tt
+    }
+}
+
+ZAV_remove_artifact_from_vault2 = {
+    custom_effect_tooltip = ZAV_remove_artifact_from_vault2_tt
+
+    if = {
+        limit = {
+            is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact2 }
+        }
+
+        remove_from_array = { ZAV_vault_artifacts = ZAV_active_artifact2 }
+    }
+}
+
+# Accesses the third active artifact
+
+ZAV_add_artifact_to_vault3 = {
+    if = {
+        limit = {
+            NOT = {
+                is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact3 }
+            }
+        }
+
+        custom_effect_tooltip = ZAV_add_artifact_to_vault3_tt
+        add_to_array = { ZAV_vault_artifacts = ZAV_active_artifact3 }
+    }
+    else = {
+        # Fallback (shouldn't happen)
+        custom_effect_tooltip = ZAV_cant_add_artifact_to_vault3_tt
+    }
+}
+
+ZAV_remove_artifact_from_vault3 = {
+    custom_effect_tooltip = ZAV_remove_artifact_from_vault3_tt
+
+    if = {
+        limit = {
+            is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact3 }
+        }
+
+        remove_from_array = { ZAV_vault_artifacts = ZAV_active_artifact3 }
+    }
+}
+
+### NOTEBOOK ###
+
+ZAV_add_new_divine_saviours_info = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = ZAV_open_notebook
+            }
+        }
+
+        set_country_flag = ZAV_new_notebook_discovery
+    }
+
+    if = {
+        limit = {
+            NOT = {
+                check_variable = { ZAV_notebook_tab = 0 }
+            }
+        }
+
+        set_country_flag = ZAV_new_divine_saviours_discovery
+    }
+}
+
+ZAV_add_new_order_of_shadows_info = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = ZAV_open_notebook
+            }
+        }
+
+        set_country_flag = ZAV_new_notebook_discovery
+    }
+
+    if = {
+        limit = {
+            NOT = {
+                check_variable = { ZAV_notebook_tab = 1 }
+            }
+        }
+
+        set_country_flag = ZAV_new_order_of_shadows_discovery
+    }
+}
+
+ZAV_add_new_legion_of_the_drowned_info = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = ZAV_open_notebook
+            }
+        }
+
+        set_country_flag = ZAV_new_notebook_discovery
+    }
+
+    if = {
+        limit = {
+            NOT = {
+                check_variable = { ZAV_notebook_tab = 2 }
+            }
+        }
+
+        set_country_flag = ZAV_new_legion_of_the_drowned_discovery
+    }
+}
+
+ZAV_add_new_crimson_order_info = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = ZAV_open_notebook
+            }
+        }
+
+        set_country_flag = ZAV_new_notebook_discovery
+    }
+
+    if = {
+        limit = {
+            NOT = {
+                check_variable = { ZAV_notebook_tab = 3 }
+            }
+        }
+
+        set_country_flag = ZAV_new_crimson_order_discovery
+    }
+}
+
+ZAV_add_new_order_of_true_knights_info = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = ZAV_open_notebook
+            }
+        }
+
+        set_country_flag = ZAV_new_notebook_discovery
+    }
+
+    if = {
+        limit = {
+            NOT = {
+                check_variable = { ZAV_notebook_tab = 4 }
+            }
+        }
+
+        set_country_flag = ZAV_new_order_of_true_knights_discovery
+    }
+}

@@ -2,14 +2,14 @@
 state={
 	id=57
 	name="STATE_57"
-	manpower = 1279883
+	manpower = 83485
 	
 	state_category = pastoral
 	#impassable = yes
 	resources={
 		aluminium=14
 		chromium=0
-		oil=0
+		oil=20
 		rubber=0
 		steel=0
 		tungsten=0

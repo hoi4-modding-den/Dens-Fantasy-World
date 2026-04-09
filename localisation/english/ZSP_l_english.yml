@@ -17,5 +17,21 @@
  ZSP_democratic_party_long: "NDPvG - Alstroemerian Branch"
  ZSP_communism_party: "Local Communities"
  ZSP_communism_party_long: "Local Communities"
- ZSP_fascism_party: "Oberster Rat"
- ZSP_fascism_party_long: "Highest Council of the Alstroemerian Order of the Five Towers"
+ ZSP_fascism_party: "Zaubererliga"
+ ZSP_fascism_party_long: "League of Alstroemerian Mages"
+
+
+# IDEOLOGIES
+
+ tyrannical_magocracy: "Tyrannical Magocracy"
+ tyrannical_magocracy_desc: "Magocracy is the rule of spellcasters where magical talent is the most valued asset. A peasant with magical skill can quickly rise to the upper class, while those of lesser talent are consigned to serve their superiors. In its tyrannical form, the nation's people are considered of secondary importance to the advancement of magical research and furthering the goals of the sorcerer class."
+
+
+# CHARACTERS
+
+ ZSP_wizard_council_name: "Highest Council"
+
+
+# TRAITS
+
+ ZSP_united_in_purpose: "United in Purpose"

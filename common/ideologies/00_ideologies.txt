@@ -169,6 +169,10 @@ ideologies = {
 			can_be_randomly_selected = no
 			}
 
+			tyrannical_magocracy = {
+				can_be_randomly_selected = no
+			}
+
 		}
 
 		dynamic_faction_names = {
@@ -214,6 +218,10 @@ ideologies = {
 		types = {
 
 			despotism  = {
+			}
+
+			despotic_technocracy  = {
+				can_be_randomly_selected = no
 			}
 
 			oligarchism  = {

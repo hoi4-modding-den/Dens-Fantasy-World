@@ -133,6 +133,8 @@ add_ideas = {
 	ZAV_secret_orders
 }
 
+set_variable = { ZAV_notebook_tab = 5 }
+
 # Must be done since arrays are 0 indexed (aka this doesn't relate to an artifact)
 add_to_array = { artifact_classes = 1 }
 

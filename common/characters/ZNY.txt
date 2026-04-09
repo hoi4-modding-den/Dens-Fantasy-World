@@ -43,6 +43,21 @@ characters = {
 			id = -1
 			traits = { }
 		}
+	}
+		ZNY_vasily_goloborodko = {
+		name = "Vasily Goloborodko" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZNY_vasily_goloborodko
+			}
+		}
+		country_leader = {
+			ideology = moderatism
+			desc = ZNY_vasily_goloborodko_desc_1
+			expire = "2039.1.1.1"
+			id = -1
+			traits = { }
+		}
 	}					
 }
 	

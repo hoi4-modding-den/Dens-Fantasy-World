@@ -1,8 +1,8 @@
-oob = "ZKO"
+#oob = "ZKL"
 capital = 122
 set_stability = 0.05
-set_war_support = 0.25
-set_research_slots = 3
+set_war_support = 0.34
+set_research_slots = 4
 starting_train_buffer = 1
 
 set_technology = {
@@ -15,9 +15,7 @@ set_technology = {
 	interwar_antiair = 1
 }
 
-country_event = { id=koreliaintro.1 days=100 }
-
-recruit_character = ZKO_Colonel_Crosland
+recruit_character = ZKO_Lillian_Hill
 
 set_politics = {
 	ruling_party = neutrality
@@ -27,8 +25,8 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 100
-	democratic = 0
-	communism = 0
-	fascism = 0
+	neutrality = 73
+	democratic = 9
+	communism = 3
+	fascism = 15
 }

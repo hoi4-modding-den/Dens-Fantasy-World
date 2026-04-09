@@ -39,6 +39,27 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ZAV_notebook_bookmark_new_info"
+		texturefile = "gfx/interface/ZAV/ZAV_notebook_bookmark.dds"
+		effectFile = "gfx/FX/buttonstate.lua"		
+		animation = {
+			animationmaskfile = "gfx/interface/ZAV/ZAV_notebook_bookmark.dds"
+			animationtexturefile = "gfx/interface/ZAV/ZAV_notebook_button_gold_shine.dds" 	# <- the animated file
+			animationrotation = 245.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 5			# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "pulsing"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+			animationframes = {1 2 3 }
+		}
+	
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_ZAV_notebook_notecard"
 		texturefile = "gfx/interface/ZAV/ZAV_notebook_notecard.dds"
 	}
@@ -126,5 +147,11 @@ spriteTypes = {
 	}
 
 	# MISC #
+
+	spriteType = { 
+		name = "GFX_tab_text_icon"
+		texturefile = "gfx/keyicons/tab.dds"
+		legacy_lazy_load = no
+	}
 }
 

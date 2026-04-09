@@ -81,8 +81,13 @@ focus_tree={
 			add_popularity = { ideology = democratic popularity = 0.05 }
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			unlock_decision_tooltip = ZTC_appease_the_council
+			
+			if = {
+				limit = { has_power_balance = { id = ZTC_power_balance } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				
+				unlock_decision_tooltip = ZTC_appease_the_council
+			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -669,9 +674,12 @@ focus_tree={
 			add_popularity = { ideology = communism popularity = 0.05 }
 			add_popularity = { ideology = democratic popularity = 0.05 }
 
-			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { has_power_balance = { id = ZTC_power_balance } }
+				custom_effect_tooltip = generic_skip_one_line_tt
 
-			unlock_decision_tooltip = ZTC_appease_the_people
+				unlock_decision_tooltip = ZTC_appease_the_people
+			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 

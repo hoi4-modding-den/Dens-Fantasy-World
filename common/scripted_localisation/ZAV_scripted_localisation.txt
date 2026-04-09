@@ -1,4 +1,188 @@
 defined_text = {
+	name = "GetActiveArtifactName"
+	text = {
+		localization_key = "ZAV_artifact_[?ZAV_active_artifact]"
+	}
+}
+
+defined_text = {
+	name = "GetActiveArtifact2Name"
+	text = {
+		localization_key = "ZAV_artifact_[?ZAV_active_artifact2]"
+	}
+}
+
+defined_text = {
+	name = "GetActiveArtifact3Name"
+	text = {
+		localization_key = "ZAV_artifact_[?ZAV_active_artifact3]"
+	}
+}
+
+defined_text = {
+	name = "GetNotebookButton"
+	text = {
+		trigger = {
+			has_country_flag = ZAV_new_notebook_discovery
+		}
+		localization_key = "GFX_ZAV_notebook_bookmark_new_info"
+	}
+	text = {
+		localization_key = "GFX_ZAV_notebook_bookmark"
+	}
+}
+
+defined_text = {
+	name = "GetDivineTabButton"
+	text = {
+		trigger = {
+			has_country_flag = ZAV_new_divine_saviours_discovery
+		}
+		localization_key = "GFX_ZAV_notebook_bookmark_new_info"
+	}
+	text = {
+		localization_key = "GFX_ZAV_notebook_bookmark"
+	}
+}
+
+defined_text = {
+	name = "GetDivineTabTooltip"
+	text = {
+		trigger = {
+			has_country_flag = ZAV_new_divine_saviours_discovery
+		}
+		localization_key = "ZAV_divine_saviours_tab_new_info_tt"
+	}
+	text = {
+		localization_key = "ZAV_divine_saviours_tab_tt"
+	}
+}
+
+defined_text = {
+	name = "GetShadowsTabButton"
+	text = {
+		trigger = {
+			has_country_flag = ZAV_new_order_of_shadows_discovery
+		}
+		localization_key = "GFX_ZAV_notebook_bookmark_new_info"
+	}
+	text = {
+		localization_key = "GFX_ZAV_notebook_bookmark"
+	}
+}
+
+defined_text = {
+	name = "GetShadowsTabTooltip"
+	text = {
+		trigger = {
+			has_country_flag = ZAV_new_order_of_shadows_discovery
+		}
+		localization_key = "ZAV_order_of_shadows_tab_new_info_tt"
+	}
+	text = {
+		localization_key = "ZAV_order_of_shadows_tab_tt"
+	}
+}
+
+defined_text = {
+	name = "GetDrownedTabButton"
+	text = {
+		trigger = {
+			has_country_flag = ZAV_new_legion_of_the_drowned_discovery
+		}
+		localization_key = "GFX_ZAV_notebook_bookmark_new_info"
+	}
+	text = {
+		localization_key = "GFX_ZAV_notebook_bookmark"
+	}
+}
+
+defined_text = {
+	name = "GetDrownedTabTooltip"
+	text = {
+		trigger = {
+			has_country_flag = ZAV_new_legion_of_the_drowned_discovery
+		}
+		localization_key = "ZAV_legion_of_the_drowned_tab_new_info_tt"
+	}
+	text = {
+		localization_key = "ZAV_legion_of_the_drowned_tab_tt"
+	}
+}
+
+defined_text = {
+	name = "GetCrimsonTabButton"
+	text = {
+		trigger = {
+			has_country_flag = ZAV_new_crimson_order_discovery
+		}
+		localization_key = "GFX_ZAV_notebook_bookmark_new_info"
+	}
+	text = {
+		localization_key = "GFX_ZAV_notebook_bookmark"
+	}
+}
+
+defined_text = {
+	name = "GetCrimsonTabTooltip"
+	text = {
+		trigger = {
+			has_country_flag = ZAV_new_crimson_order_discovery
+		}
+		localization_key = "ZAV_crimson_order_tab_new_info_tt"
+	}
+	text = {
+		localization_key = "ZAV_crimson_order_tab_tt"
+	}
+}
+
+defined_text = {
+	name = "GetKnightsTabButton"
+	text = {
+		trigger = {
+			has_country_flag = ZAV_new_order_of_true_knights_discovery
+		}
+		localization_key = "GFX_ZAV_notebook_bookmark_new_info"
+	}
+	text = {
+		localization_key = "GFX_ZAV_notebook_bookmark"
+	}
+}
+
+defined_text = {
+	name = "GetKnightsTabTooltip"
+	text = {
+		trigger = {
+			has_country_flag = ZAV_new_order_of_true_knights_discovery
+		}
+		localization_key = "ZAV_order_of_true_knights_tab_new_info_tt"
+	}
+	text = {
+		localization_key = "ZAV_order_of_true_knights_tab_tt"
+	}
+}
+
+defined_text = {
+	name = "GetOpenNotebookTooltip"
+	text = {
+		trigger = {
+			has_country_flag = ZAV_new_notebook_discovery
+		}
+		localization_key = "ZAV_open_notebook_new_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZAV_open_notebook
+		}
+		localization_key = "ZAV_close_notebook_standard_tt"
+	}
+	text = {
+		localization_key = "ZAV_open_notebook_standard_tt"
+	}
+}
+
+
+defined_text = {
 	name = "GetArtifactIcon"
 	text = {
 		localization_key = "GFX_ZAV_artifact_[?artifact_value]"
@@ -39,7 +223,31 @@ defined_text = {
 		trigger = {
 			check_variable = { ZAV_notebook_tab = 0 } 
 		}
-		localization_key = "ZAV_discoveries_divine_saviours_[?discovery_value]"
+		localization_key = "ZAV_discoveries_divine_saviours_[?divine_discovery_value]"
+	}
+	text = {
+		trigger = {
+			check_variable = { ZAV_notebook_tab = 1 } 
+		}
+		localization_key = "ZAV_discoveries_order_of_shadows_[?shadows_discovery_value]"
+	}
+	text = {
+		trigger = {
+			check_variable = { ZAV_notebook_tab = 2 } 
+		}
+		localization_key = "ZAV_discoveries_legion_of_the_drowned_[?drowned_discovery_value]"
+	}
+	text = {
+		trigger = {
+			check_variable = { ZAV_notebook_tab = 3 } 
+		}
+		localization_key = "ZAV_discoveries_crimson_order_[?crimson_discovery_value]"
+	}
+	text = {
+		trigger = {
+			check_variable = { ZAV_notebook_tab = 4 } 
+		}
+		localization_key = "ZAV_discoveries_order_of_true_knights_[?knights_discovery_value]"
 	}
 }
 
@@ -74,5 +282,11 @@ defined_text = {
             check_variable = { ZAV_notebook_tab = 4 }
         }
 		localization_key = "ZAV_notebook_tab_order_of_true_knights"
+	}
+	text = {
+        trigger = {
+            check_variable = { ZAV_notebook_tab = 5 }
+        }
+		localization_key = "ZAV_notebook_tab_help_title"
 	}
 }
