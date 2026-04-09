@@ -79,6 +79,8 @@ ZAV_end_encounter = {
     ZAV_unspooky = yes
 
     clr_country_flag = ZAV_encounter_ongoing
+
+    custom_effect_tooltip = ZAV_end_encounter_tt
 }
 
 # OPTIONS #
@@ -186,6 +188,28 @@ ZAV_encounter_option_1_effect = {
             limit = { check_variable = { ZAV_curr_entry = 12 } }
 
             set_temp_variable = { next_entry = 7 }
+        }
+    }
+    else_if = {
+        limit = { check_variable = { ZAV_curr_encounter = 3 } }
+
+        if = {
+            limit = { check_variable = { ZAV_curr_entry = 3 } }
+
+            ZAV_spooky = yes
+            set_variable = { ZAV_image = 1 }
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 7 } }
+
+            add_stability = -0.01
+
+		    custom_effect_tooltip = ZAV_who_could_the_bleeding_king_be_tt
+
+            ZAV_add_new_divine_saviours_info = yes
+            add_to_array = { ZAV_discoveries_divine_saviours = 3 }
+
+            ZAV_end_encounter = yes
         }
     }
 

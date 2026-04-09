@@ -184,6 +184,11 @@ spriteTypes = {
     }
 
 	spriteType = {
+		name = "GFX_ZAV_blue_hue"
+		texturefile = "gfx/interface/ZAV/encounters/BlueHue.dds"
+	}
+
+	spriteType = {
 		name = "GFX_ZAV_encounter_image_1"
 		texturefile = "gfx/interface/ZAV/encounters/BlackridgeMansion.dds"
 	}
@@ -196,6 +201,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ZAV_encounter_image_2_1"
 		texturefile = "gfx/interface/ZAV/encounters/ScaryRoom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_encounter_image_3"
+		texturefile = "gfx/interface/ZAV/encounters/NiceHouse.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_encounter_image_3_1"
+		texturefile = "gfx/interface/ZAV/encounters/NiceParlor.dds"
 	}
 
 	# MISC #

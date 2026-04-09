@@ -180,3 +180,4 @@ add_to_array = { artifact_classes = 4 }
 
 country_event = { id = ZAV_encounters.1 days = 30 random_days = 15 }
 country_event = { id = ZAV_encounters.2 days = 60 random_days = 15 }
+country_event = { id = ZAV_encounters.3 days = 90 random_days = 15 }

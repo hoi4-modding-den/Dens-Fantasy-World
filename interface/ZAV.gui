@@ -230,6 +230,12 @@ guitypes = {
             name = "Background"
             quadTextureSprite = "GFX_ZAV_animated_vignette"
         }
+
+        iconType = {
+			name ="ZAV_encounter_blue_hue"
+			spriteType = "GFX_ZAV_blue_hue"
+			position = { x=0 y=0 }
+		}
     }
 
     containerWindowType = {

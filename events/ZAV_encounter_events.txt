@@ -31,3 +31,19 @@ country_event = {
 		}
     }
 }
+
+country_event = {
+	id = ZAV_encounters.3
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		log = "ZAV_encounters.3 fired"
+
+		ZAV = {
+			set_variable = { ZAV_curr_encounter = 3 }
+			ZAV_start_encounter = yes
+		}
+    }
+}

@@ -305,6 +305,7 @@
  ###################
  #   ENCOUNTERS   #
  ###################
+
  ZAV_encounter_title:0 "[GetEncounterTitle]"
 
  ZAV_encounter_option_1_text:0 "[GetEncounterOption1Text]"
@@ -321,6 +322,8 @@
  ZAV_encounter_option_4_tooltip_delayed:0 "[!ZAV_encounter_option_4_click_enabled]"
 
  ZAV_encounter_text_entry_text:0 "[GetEncounterTextEntryText]"
+
+ ZAV_end_encounter_tt:0 "\n§LEnds the current encounter.§!"
 
  ZAV_encounter_1.t:0 "Theft at the Blackridge Estate"
 
@@ -396,6 +399,23 @@
 
  ZAV_encounter_2.11.desc:0 "With no understanding of the violence, guardian priests were called in to cleanse the entire district. Whatever the perpetrators sought, they have taken it, and left nothing but fear behind."
  ZAV_encounter_2.11.a:0 "What an awful turn of events."
+
+ ZAV_encounter_3.t:0 "The Death of Sergeant Perciwn"
+
+ ZAV_encounter_3.1.desc:0 "Sergeant James Perciwn, a senior guardian priest assigned to guard the Vault of Saint Constantine has been found dead in his quarters on Llamrei street, mere blocks away from the Moonlight Chapel. No clear cause of death has been identified yet. Due to the sensitivity of his post, the Veilkeeper has been called to oversee the investigation."
+ ZAV_encounter_3.1.a:0 "..."
+ ZAV_encounter_3.2.desc:0 "As you briskly walk down the pavement of Llamrei street, you take note of the gorgeous architecture and benevolent feel of the neighbourhood. The warm rays of sunlight illuminating the street give it a relaxing air. You chuckle, it's not a bad place to die."
+ ZAV_encounter_3.2.a:0 "..."
+ ZAV_encounter_3.3.desc:0 "The facade of Sergeant Perciwn's house was neat and tidy, not a plant was overgrown, not a brick was dirty. He must have kept an ordered lifestyle. After walking through the ornate front door, you are immediately greeted by the front parlor, which on any other occasion would have been magnificent. There was a body lying face down in this one."
+ ZAV_encounter_3.3.a:0 "..."
+ ZAV_encounter_3.4.desc:0 "The sergeant's body was pale and lifeless. He was dressed in his evening wear, and judging by the folded paper and unfinished mug of tea, he was in the process of beginning his morning. Further inspection of the scene yielded nothing of importance. It is possible that the man died from natural causes, but something in the air felt off."
+ ZAV_encounter_3.4.a:0 "..."
+ ZAV_encounter_3.5.desc:0 "Thankfully, a concerned neighbour, Ms. Isabelle, explained that she had heard strange voices coming from the sergeant's residence as she was readying her breakfast. Ms. Isabelle recalled mentions of a 'Bleeding King' and loud threats being hurled at someone. By the time she had went to investigate, the house had fallen silent."
+ ZAV_encounter_3.5.a:0 "Thank god the walls are thin."
+ ZAV_encounter_3.6.desc:0 "The Veilkeeper Archives has no record of a 'Bleeding King,' yet it would be logical to connect it with the Divine Saviours and their True King. You wonder whether this is a deity we have yet to encounter before, or an honourific name for a deity we are aware of."
+ ZAV_encounter_3.6.a:0 "..."
+ ZAV_encounter_3.7.desc:0 "Further inspection of the scene yielded no new leads. Yet again you are forced to relinquish control of the situation to the guardian priests, who are eagerly searching for clues that would lead them to the perpetrators. The death of their comrade has deeply wounded them. It seems we have a new problem: the Bleeding King."
+ ZAV_encounter_3.7.a:0 "..."
 
  # MISCELLANEOUS #
 
