@@ -19,7 +19,7 @@ add_ideas = {
 	civilian_economy
 }
 
-#recruit_character = 
+recruit_character = ZSP_wizard_council
 
 set_politics = {
 	ruling_party = fascism

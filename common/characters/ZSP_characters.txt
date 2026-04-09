@@ -1,0 +1,18 @@
+characters = {
+
+    ZSP_wizard_council = { 
+        name = ZSP_wizard_council_name
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ZSP_wizard_council
+            }
+        }
+        
+        country_leader = {
+            ideology = tyrannical_magocracy
+            traits = { ZSP_united_in_purpose }
+            expire = "1960.1.1.1"
+        }
+    }
+
+}
