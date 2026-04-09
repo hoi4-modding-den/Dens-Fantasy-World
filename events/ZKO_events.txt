@@ -1,4 +1,6 @@
 add_namespace = koreliaintro
+add_namespace = koreliacollapse
+add_namespace = koreliamajor
 
 #Real Gloria Declarations
 country_event = {
@@ -10,6 +12,71 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = koreliaintro.1.a
+		country_event = { id=koreliaintro.2 days=0 }
+	}
+}
 
+#Courageous Sniper
+country_event = {
+	id = koreliaintro.2
+	title = koreliaintro.2.t
+	desc = koreliaintro.2.d
+	picture = GFX_report_event_FIN_camouflaged_white_death
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = koreliaintro.2.a
+		custom_effect_tooltip = ZKO_Colonel_Dieslol_TT 
+		country_event = { id=koreliaintro.3 days=20 }
+		hidden_effect = {
+		   retire_character = ZKO_Colonel_Crosland
+		}
+	}
+}
+
+#Korelian Spring
+country_event = {
+	id = koreliaintro.3
+	title = koreliaintro.3.t
+	desc = koreliaintro.3.d
+	picture = GFX_report_event_FIN_camouflaged_white_death
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = koreliaintro.3.a
+		set_cosmetic_tag = ZKO_anarchy 
+		country_event = { id=koreliacollapse.1 days=5 }		
+		country_event = { id=koreliamajor.1 days=15 }
+	}
+}
+
+#Korelian Spring Pt.1
+country_event = {
+	id = koreliacollapse.1
+	title = koreliacollapse.1.t
+	desc = koreliacollapse.1.d
+	picture = GFX_report_event_spr_spanish_civil_war
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = koreliacollapse.1
+		hidden_effect = {
+		ZKL = {
+		   transfer_state = 719
+		   add_core_of = 719
+		}
+		}
+	}
+}
+
+news_event = {
+	id = koreliamajor.1
+	title = koreliamajor.1.t
+	desc = koreliamajor.1.d
+	picture = GFX_news_event_mex_civil_war
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = koreliamajor.1.a
 	}
 }

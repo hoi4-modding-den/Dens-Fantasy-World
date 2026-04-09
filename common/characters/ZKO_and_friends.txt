@@ -1,0 +1,29 @@
+characters={
+	ZKO_Colonel_Crosland = {
+		name = "Colonel Troy Crosland"
+		portraits = {
+			civilian = {
+				large = "/gfx/leaders/ZKO/Portrait_Korelia_Colonel_Crosland.png"
+			}
+		}
+		country_leader = {
+			expire = "1960.1.1.1"
+			ideology = despotism
+			traits = {  }
+		}
+	}
+	
+	ZKO_Lillian_Hill = {
+		name = "Lillian Hill"
+		portraits = {
+			civilian = {
+				large = "/gfx/leaders/ZKO/Portrait_Korelia_Lillian_Hill.png"
+			}
+		}
+		country_leader = {
+			expire = "1960.1.1.1"
+			ideology = despotic_technocracy
+			traits = {  }
+		}
+	}
+}

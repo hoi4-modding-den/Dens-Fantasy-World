@@ -3,6 +3,10 @@
  ZKO: "Korelia"
  ZKO_DEF: "The Promised Lands"
  ZKO_ADJ: "Korelian"
+ 
+ ZKO_anarchy: "Provisional Government"
+ 
+ 
  #Parties
  ZKO_neutrality_party: "Junta of the Colonels"
  ZKO_neutrality_party_long: "Regime of the Colonels"
@@ -16,9 +20,28 @@
  koreliaintro.1.t:0 "Real Gloria Declarations"
  koreliaintro.1.d:0 "WIP"
  koreliaintro.1.a:0 "Glory to the Colonels!"
+ koreliaintro.2.t:0 "O' Courageous Sniper"
+ koreliaintro.3.t:0 "Korelian Blues"
+ 
+ koreliamajor.1:0 "Korelian Spring"
  #Ideas
  
- #States
- STATE_122: "Greater Gloria"
+ #Ideologies
+ despotic_technocracy: "Despotic Technocracy"
+ despotic_technocracy_desc: "Technocracy but with Despotism involved. There is no council, or a society to choose which scientist is better than the other, or which corporate group shall rule over the masses. It is one man, the true guide of the nation to the future."
+ 
+ #Tooltips
+ ZKO_Colonel_Dieslol_TT: "§ROh god! Oh fuck! The Colonel is dead!!!§!"
+ 
+ #STATES AND VP
  STATE_7: "Halfland"
+ STATE_57: "Key Desert"
+ STATE_75: "Layton"
+ STATE_121: "Portsville"
+ STATE_122: "Greater Gloria"
+ 
+ VICTORY_POINTS_2181: "Real Gloria"
+ VICTORY_POINTS_2177: "Normann"
+ VICTORY_POINTS_2182: "Central Town"
+ VICTORY_POINTS_155: "Mount Point"
  

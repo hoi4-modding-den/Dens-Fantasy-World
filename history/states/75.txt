@@ -2,7 +2,7 @@
 state={
 	id=75
 	name="STATE_75"
-	manpower = 1565950
+	manpower = 821495
 	
 	state_category = large_town
 	#impassable = yes
@@ -19,7 +19,7 @@ state={
 	history={
 		owner = ZKO
 		add_core_of = ZKO		
-		
+        victory_points = { 1487 4 }			
 		buildings = {
 			infrastructure = 3
 			

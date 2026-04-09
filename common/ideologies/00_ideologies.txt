@@ -216,6 +216,10 @@ ideologies = {
 			despotism  = {
 			}
 
+			despotic_technocracy  = {
+				can_be_randomly_selected = no
+			}
+
 			oligarchism  = {
 			}
 
