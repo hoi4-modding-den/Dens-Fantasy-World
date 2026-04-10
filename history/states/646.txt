@@ -17,7 +17,8 @@ state={
 	}
 
 	history={
-		
+		owner = ZRB
+		add_core_of = ZRB
 		
 		buildings = {
 			infrastructure = 2

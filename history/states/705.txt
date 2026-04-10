@@ -18,7 +18,8 @@ state={
 
 	history={
 		
-		
+		owner = ZIE
+		add_core_of = ZIE
 		buildings = {
 			infrastructure = 3
 			
