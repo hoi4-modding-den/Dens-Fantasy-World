@@ -1,0 +1,17 @@
+characters={
+	ZFB_talakji_unetu = { 
+		name = ZFB_talakji_unetu
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+                        traits = {}
+			desc = ZFB_talakji_unetu_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

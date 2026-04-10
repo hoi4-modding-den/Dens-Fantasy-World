@@ -5,16 +5,34 @@ state={
 	history={
 		owner = ZTK
 		add_core_of = ZTK
+
+		victory_points = { 1170 10 }
+		victory_points = { 1198 5 }
+		victory_points = { 1179 5 }
+		victory_points = { 1164 5 }
+
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 			arms_factory = 1
 			dockyard = 1
+			air_base = 1
+			1170 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
+			1165 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
+			1198 = {
+				naval_base = 2
+				coastal_bunker = 1
+			}
 		}
-
 	}
 	
-	manpower=2100000
+	manpower=2700000
 	buildings_max_level_factor=1.000
 	state_category=city
 

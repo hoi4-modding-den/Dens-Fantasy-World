@@ -1,0 +1,17 @@
+characters={
+	ZFS_sosite_gebere = { 
+		name = ZFS_sosite_gebere
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = populism
+                        traits = {}
+			desc = ZFS_sosite_gebere_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

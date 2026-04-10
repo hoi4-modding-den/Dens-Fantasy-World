@@ -20,7 +20,7 @@ set_technology = {
 add_ideas = {
 	volunteer_only
 	low_economic_mobilisation
-        limited
+        limited_exports
 }
 
 set_stability = 0.4

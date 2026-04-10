@@ -11,4 +11,330 @@ focus_tree = {
 
 	default = no
 	continuous_focus_position = { x = 1500 y = 1000 }
+
+	focus = {
+		id = ZTK_focus_1
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 0
+		cost = 8
+		available = {}
+		completion_reward = {}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	focus = {
+		id = ZTK_focus_2
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_1 }
+		x = 0
+		y = 2
+		cost = 8
+		relative_position_id = ZTK_focus_1
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_3
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_2 }
+		x = 0
+		y = 2
+		cost = 8
+		relative_position_id = ZTK_focus_2
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_4
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_3 }
+		x = 2
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_3
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_5
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_3 }
+		x = 4
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_3
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_6
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_1 }
+		x = 6
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_1
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_7
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_6 }
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_6
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_8
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_7 }
+		x = -2
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_7
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_9
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_7 }
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_7
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_10
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_7 }
+		x = 2
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_7
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_11
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_9 }
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_9
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_12
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_10 }
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_10
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_13
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_1 }
+		x = -6
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_1 
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_14
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_13 }
+		x = 2
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_13
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_15
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_14 }
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_14
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_16
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_13 }
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_13
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_17
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_16 }
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_16
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_18
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_15 }
+		prerequisite = { focus = ZTK_focus_17 }
+		x = -1
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_15
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_19
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_14 }
+		x = 2
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_14
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_20
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_19 }
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_19
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_21
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_20 focus = ZTK_focus_3 }
+		x = 1
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_20
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_22
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_1 }
+		x = -2
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_1
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_23
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_1 }
+		x = 2
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_1
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_24
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_18 }
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = ZTK_focus_18
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	focus = {
+		id = ZTK_focus_25
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ZTK_focus_3 }
+		x = 0
+		y = 2
+		cost = 8
+		relative_position_id = ZTK_focus_3
+		completion_reward = {}
+		ai_will_do = {
+			factor = 20
+		}
+	}
 }

@@ -5,6 +5,10 @@ state={
 	history={
 		owner = ZTK
 		add_core_of = ZTK
+
+		victory_points = { 600 5 }
+		victory_points = { 581 3 }
+
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
@@ -13,7 +17,7 @@ state={
 
 	}
 	
-	manpower=2005000
+	manpower=2205000
 	buildings_max_level_factor=1.000
 	state_category=city
 	resources={

@@ -5,6 +5,10 @@ state={
 	history={
 		owner = ZTK
 		add_core_of = ZTK
+
+		victory_points = { 1749 3 }
+		victory_points = { 1781 5 }
+
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1

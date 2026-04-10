@@ -5,14 +5,20 @@ state={
 	history={
 		owner = ZTK
 		add_core_of = ZTK
+
+		victory_points = { 3215 3 }
+
 		buildings = {
 			infrastructure = 1
-
+			3215 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
 		}
 
 	}
 	
-	manpower=805000
+	manpower=205000
 	buildings_max_level_factor=1.000
 	state_category=rural
 	resources={

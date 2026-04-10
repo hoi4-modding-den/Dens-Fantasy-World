@@ -27,7 +27,7 @@ set_stability = 0.1
 set_war_support = 0.3
 set_convoys = 0
 
-#recruit_character = 
+recruit_character = ZFS_sosite_gebere
 #add_ideas = 
 
 set_politics = {
