@@ -9,9 +9,9 @@ ideas = {
 
 			modifier = {
 				political_power_gain = -0.2
-				political_advisor_cost_factor = 0.25
-				economy_cost_factor = 0.5
-				trade_laws_cost_factor = 0.5
+				political_advisor_cost_factor = 0.5
+				economy_cost_factor = 0.75
+				trade_laws_cost_factor = 0.75
 				theorist_cost_factor = 0.5
 
 				communism_drift = 0.05

@@ -10,6 +10,19 @@ state={
 			industrial_complex = 2
 			arms_factory = 1
 			dockyard = 1
+			air_base = 1
+			1170 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
+			1165 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
+			1198 = {
+				naval_base = 2
+				coastal_bunker = 1
+			}
 		}
 
 	}

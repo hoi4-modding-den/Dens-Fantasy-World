@@ -3,7 +3,7 @@ set_war_support = 0.10
 
 capital = 1
 
-#oob = ""
+oob = ZTK_1936
 
 set_technology = {
 	infantry_weapons = 1
@@ -20,6 +20,7 @@ set_technology = {
 
 	tech_support = 1
 	basic_train = 1
+	tech_mountaineers = 1
 }
 
 add_ideas = {
