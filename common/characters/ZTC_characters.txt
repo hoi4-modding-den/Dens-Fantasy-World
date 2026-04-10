@@ -27,7 +27,7 @@ characters={
 		}
 		country_leader = {
 			ideology = rexism
-			traits = { ZTC_divided_interests }
+			traits = { ZTC_companies_in_control }
 			expire = "1960.1.1.1"
 		}
 	}

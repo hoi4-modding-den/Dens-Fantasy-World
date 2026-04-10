@@ -1,5 +1,7 @@
 ﻿l_english:
 
+ ZLF_GATHERING_STORM_DESC: "The Kingdom of Gardenia has devolved into civil war with the outbreak of the Edelweiss Revolution.\n \nThe Edelweiss Liberation Front, adopting the name of the Gardenian capital region, is a broad coalition of anti-monarchist groups led by the National Democratic Party of Gardenia and the Socialist Revolutionary Roland Ludovik. The Liberation Front seeks to cast off the shackles of the feudal order which existed under Zinnian dominion, establishing a democratic republic and uniting the Gardenian nation."
+
  ZLF: "Gardenia"
  ZLF_DEF: "Gardenia"
  ZLF_ADJ: "Gardenian"
@@ -40,12 +42,30 @@
 
 # TRAITS
 
- ZLF_hero_of_the_revolution: "Hero of the Edelweiss"
+ ZLF_hero_of_the_revolution: "Hero of Edelweiss"
+
+
+# IDEAS
+
+ ZLF_edelweiss_banner: "The Edelweiss Banner-Army"
+ ZLF_edelweiss_banner_desc: "The Edelweiss Banner-Army is a revolutionary association of republican groups who came together to fulfill their common goal of overthrowing the Zinnian Throne, the monarchy of Gardenia."
+ ZLF_staatsbankrott: "End of the Adelswirtschaft"
+ ZLF_staatsbankrott_desc: "The exploitation of the people through the aristocracy has been ended. However, in the heat of revolution, the thoroughness of our troops has caused significant damage to our economic capabilities."
+ ZLF_anti_monarchist_campaign: "The Anti-Monarchist Campaign"
+
+
+# DYNMODS
+
+ ZLF_elbian_lands: "Elbenländereien"
+ ZLF_elbian_lands_desc: "These lands are home to the Elbs, the long-eared, longer-lived relatives of humanity. Nature-loving by culture, they vehemently oppose the industrialisation of their homelands, which earned them scorn from the Zinnian Throne, the greedy aristocracy and the industrial elite."
+ ZLF_elbian_autonomy_1: "Elbian Autonomy (Freistaat Domowina)"
+ ZLF_elbian_autonomy_2: "Elbian Autonomy (Freistaat Wjelećina)"
+ ZLF_elbian_autonomy_3: "Elbian Autonomy (Freistaat Rudne Horiny)"
 
 
 # DECISIONS
 
- ZLF_civil_war_cat: "The Edelweiß Revolution"
+ ZLF_civil_war_cat: "The Edelweiss Revolution"
  ZLF_finish_the_civil_war: "Victory of the Revolution"
  ZLF_retake_magnolienburg: "Retake Rhododendron"
  ZLF_close_prinzendamm_encirclement: "Close the Prinzendamm Encirclement"

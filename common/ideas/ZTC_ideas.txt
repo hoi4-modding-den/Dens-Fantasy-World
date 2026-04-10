@@ -345,6 +345,26 @@ ideas = {
 
 		}
 
+		ZFC_ultimate_volunteer_force = {
+
+			picture = ast_volunteer_defence_corps
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				send_volunteer_divisions_required = -1
+				send_volunteer_size = 4
+				send_volunteers_tension = -1
+			}
+
+		}
+
 	}
 
 }

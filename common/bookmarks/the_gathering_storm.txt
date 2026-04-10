@@ -15,6 +15,18 @@ bookmarks = {
 		ZAV={
 			history = ZAV_GATHERING_STORM_DESC
 		}
+		ZLF={
+			history = "ZLF_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				ZLF_edelweiss_banner
+				ZLF_staatsbankrott
+				ZLF_anti_monarchist_campaign
+			}
+			focuses = {
+				
+			}
+		}
 		
 		"---"={
 			history = OTHER_GATHERING_STORM_DESC

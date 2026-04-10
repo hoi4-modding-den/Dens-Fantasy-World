@@ -45,6 +45,7 @@ state={
 			set_province_controller = 9431
 		}
 		
+		add_dynamic_modifier = { modifier = ZLF_elbian_lands }
 	}
 
 	provinces={

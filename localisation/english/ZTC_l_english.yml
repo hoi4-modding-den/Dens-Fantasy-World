@@ -1,5 +1,7 @@
 ﻿l_english:
 
+ ZTC_GATHERING_STORM_DESC: "The Free and Mercantile City of Hortensia has been trapped in a decade of stagnation ever since the Hortensian Defenestration, where one of the councilmembers was thrown through the window of his mansion by a rebelling servant, leading to severe repressions against the working class being enacted by the Stadtrat.\n \nBut the stagnation seems to soon come to an end as Grand Councillor Jan Krösus has fallen ill and is expected to die. The appointment of his successor will surely lead Hortensia into another prosperous era."
+
  ZTC: "Hortensia"
  ZTC_DEF: "Hortensia"
  ZTC_ADJ: "Hortensian"
@@ -44,6 +46,7 @@
  ZTC_grand_councillor_trait: "Oberster Ratsherr"
  ZTC_grand_councillor_fem_trait: "Oberste Ratsfrau"
  ZTC_divided_interests: "Divided Interests"
+ ZTC_companies_in_control: "Companies in Control"
  ZTC_proletarian_movement_leader: "Popular Agitator"
 
 
@@ -62,6 +65,7 @@
  ZTC_industrial_regulations: "Industrial Regulations"
  ZTC_destratification_of_society: "De-Stratification Campaign"
  ZTC_destratification_of_society_desc: "Hortensia is a stratified city in the most literal sense of the word. The city is built in layers, with the oppulent mansions of the wealthy towering over the slums that the proletariat calls home. This obvious architectural flaw in the city's design is one of the many things to be corrected during our De-Stratification Campaign."
+ ZFC_ultimate_volunteer_force: "Hortensia Intervention Force"
 
 
 # DYNMODS
@@ -187,6 +191,35 @@
  ZTC_the_peoples_revolution_desc: ""
  ZTC_the_peoples_revolution_trigger: "Completed via the §Y'$ZTC_events.8.t$'§! Event."
  ZTC_the_peoples_revolution_tt: "§LThe Hortensian People's Front has successfully taken control of Hortensia, finally ridding the state of the corrupt Stadtrat.§!"
+ ZTC_friede_den_huetten: "Friede den Hütten!"
+ ZTC_friede_den_huetten_desc: ""
+ ZTC_krieg_den_palaesten: "Krieg den Palästen!"
+ ZTC_krieg_den_palaesten_desc: ""
+ ZTC_purge_the_police: "Purge Corrupt Police"
+ ZTC_purge_the_police_desc: ""
+ ZTC_transformation_of_society: "Transformation of Society"
+ ZTC_transformation_of_society_desc: ""
+ ZTC_distribute_the_wealth: "Distribute the Wealth"
+ ZTC_distribute_the_wealth_desc: ""
+ ZTC_distribute_the_wealth_trigger: "Has national spirit §Y$ZTC_richest_city_in_the_south$§!"
+ ZTC_gardenian_communist_front: "The Gardenian Marxist Front"
+ ZTC_gardenian_communist_front_desc: ""
+ ZTC_international_solidarity: "International Solidarity"
+ ZTC_international_solidarity_desc: ""
+ ZTC_aid_our_ZFA_comrades: "Aid our [ZFA.GetAdjective] Comrades"
+ ZTC_aid_our_ZFA_comrades_desc: ""
+ ZTC_export_the_revolution: "Export the Revolution"
+ ZTC_export_the_revolution_desc: ""
+ ZTC_unite_the_republics: "Unite the Republics"
+ ZTC_unite_the_republics_desc: ""
+ ZTC_a_red_edelweiss: "A Red Edelweiss?"
+ ZTC_a_red_edelweiss_desc: ""
+ ZTC_defend_the_revolution: "Defend the Revolution"
+ ZTC_defend_the_revolution_desc: ""
+ ZTC_arm_the_proletariat: "Arm the Proletariat"
+ ZTC_arm_the_proletariat_desc: ""
+ ZTC_the_red_guard: "Form a Red Guard"
+ ZTC_the_red_guard_desc: ""
 
  ZTC_depose_the_grand_chancellor: "The Corporate Coup"
  ZTC_depose_the_grand_chancellor_desc: ""

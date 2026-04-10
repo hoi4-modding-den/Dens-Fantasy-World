@@ -29,6 +29,10 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+
+	ZLF_edelweiss_banner
+	ZLF_staatsbankrott
+	ZLF_anti_monarchist_campaign
 }
 
 recruit_character = ZLF_roland_ludovik

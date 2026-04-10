@@ -1,0 +1,39 @@
+ZLF_elbian_lands = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_construction
+
+	local_factories = -0.2
+    local_building_slots_factor = -0.5
+    state_resources_factor = -0.8
+    local_resource_gain_efficiency_per_infrastructure = -0.1
+    recruitable_population = -0.25
+
+}
+
+ZLF_elbian_autonomy_1 = { # Freistaat Domowina
+	enable = { always = yes }
+
+	icon = GFX_modifiers_COG_kasai_separatism
+
+	
+
+}
+
+ZLF_elbian_autonomy_2 = { # Freistaat Wittingen
+	enable = { always = yes }
+
+	icon = GFX_modifiers_COG_katanga_separatism
+
+	
+
+}
+
+ZLF_elbian_autonomy_3 = { # Freistaat Erzgebirge
+	enable = { always = yes }
+
+	icon = GFX_modifiers_GER_lokot_autonomy
+
+	
+
+}
