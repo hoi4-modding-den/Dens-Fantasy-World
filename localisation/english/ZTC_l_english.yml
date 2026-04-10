@@ -54,10 +54,12 @@
 
  ZTC_richest_city_in_the_south: "The Richest City of the South"
  ZTC_richest_city_in_the_south_desc: "The “Freie und Handelsstadt Hortensie” has been the central southern hub for merchants for over a century thanks to its ideal location. Located on the peninsula bearing the same name as itself, the coastal city is conveniently connected inland via the Spei River, allowing for quick transportation of goods. Its founding myth tells the story of three brothers seeking refuge by following the Spei and finding it on the hill which now houses the city's senate building."
+ ZTC_happiest_city_in_the_south: "The Happiest City in the South"
  ZTC_sky_seas_mastery: "Masters of Seas and Skies"
  ZTC_sky_seas_mastery_desc: "Hortensia hosts not only an impressive harbour but also the largest civilian airship dock in the southern continent. The Civil Defence Force of the city may not be as large as the armies of their neighbours, but it is by far the most developed."
  ZTC_proletarian_movement: "Growing Proletarian Movement"
  ZTC_proletarian_movement_desc: "In spite of what most citizens of the upper districts of the city may tell you, the majority of people in Hortensia live in poverty. And in recent times, the lower districts of the city have become a hotbed for radical and revolutionary groups that have become a force to be reckoned with."
+ ZTC_communal_governance: "Communal Governance"
  ZTC_foreign_eyes: "Foreign Eyes"
  ZTC_foreign_eyes_desc: "Our city is host to a plethora of colourful groups of foreign diplomats, spies, agitators and exiles all thanks to the failures of our security bureau. As long as you can pay, they'll make sure no councillor knows of your whereabouts."
  ZTC_zinnian_navy_deal: "The Zinnian Navy Deal"
@@ -65,7 +67,8 @@
  ZTC_industrial_regulations: "Industrial Regulations"
  ZTC_destratification_of_society: "De-Stratification Campaign"
  ZTC_destratification_of_society_desc: "Hortensia is a stratified city in the most literal sense of the word. The city is built in layers, with the oppulent mansions of the wealthy towering over the slums that the proletariat calls home. This obvious architectural flaw in the city's design is one of the many things to be corrected during our De-Stratification Campaign."
- ZFC_ultimate_volunteer_force: "Hortensia Intervention Force"
+ ZTC_ultimate_volunteer_force: "Hortensia Intervention Force"
+ ZTC_weapons_payments: "Weapons Payments"
 
 
 # DYNMODS

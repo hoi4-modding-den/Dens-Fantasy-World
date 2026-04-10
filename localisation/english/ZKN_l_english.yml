@@ -44,6 +44,17 @@
  ZKN_the_winner_king: "Vanquisher of Revolution"
 
 
+# IDEAS
+
+ ZKN_disloyal_army: "Disloyal Royal Army"
+ ZKN_disloyal_army_desc: "While the Army has been voicing complaints about the monarchy for a while, with the failure to prevent the Edelweiß Revolution, the army has begun to openly challenge royal authority. Thankfully, most of the general staff hates the republicans even more than us."
+ ZKN_general_strike: "General Strike"
+ ZKN_general_strike_desc: "The Republicans have called for a general strike against the Zinnian Government and ground our industry to a halt."
+ ZKN_throne_under_threat: "The Throne under Threat"
+ ZKN_sale_of_the_armada: "Sale of the Royal Armada"
+ ZKN_sale_of_the_armada_desc: "A large portion of the Royal Gardenian Armada was sold to Hortensia to obtain funds to help the kingdom fight the Republicans. While the navy wasn't too happy about the sale, it has certainly helped our struggling economy from taking any more damage during the civil war."
+
+
 # DECISIONS
 
  ZKN_civil_war_cat: "The Edelweiss Rebellion"
@@ -51,6 +62,27 @@
  ZKN_finish_the_civil_war_quickly: "Faltering Morale..."
  ZKN_aid_from_neighbouring_monarchies: "Aid from the East"
  ZKN_aid_from_neighbouring_monarchies_desc: "Our diplomats are attempting to negotiate with the [ZFO.GetAdjective] and [ZFD.GetAdjective] governments for support. We must maintain control over the border city of Löbnitz so we can receive it."
+
+
+# FOCI
+
+ ZKN_the_reactionary_front: "Evacuate to the Zinnienschloss"
+ ZKN_the_reactionary_front_desc: ""
+ ZKN_the_reactionary_front_tt: "The urban areas of §Y[812.GetName]§!, §Y[832.GetName]§!, §Y[634.GetName]§! and §Y[817.GetName]§! have §Rjoined the Liberation Front§!. The Headquarters of the §YReactionary Forces§! will be moved to §Y[570.GetName]§!."
+ ZKN_fortify_the_river_line: "Fortify the Spei Line"
+ ZKN_fortify_the_river_line_desc: ""
+ ZKN_call_up_levies: "Call up Reserves"
+ ZKN_call_up_levies_desc: ""
+ ZKN_call_up_levies_tt: "Deploy §gFour§! §YImperial Army Brigade§! Divisions in an §Yurban state§! controlled by us."
+ ZKN_empower_the_kammermeister: "Empower the Kammermeister"
+ ZKN_empower_the_kammermeister_desc: "The Kammermeister (lit. 'Chamber Master') is the one person responsible for the royal treasury. This role is currently filled by Joachim Sprenkler, one of the King's most trusted aides. His position could allow us to increase our war effort spending without drawing the nobles' attention to it."
+ ZKN_ensure_army_loyalty: "Ensure Army Loyalty"
+ ZKN_ensure_army_loyalty_desc: ""
+ ZKN_crackdown_on_strikes: "Crack down on Strikes"
+ ZKN_crackdown_on_strikes_desc: ""
+ ZKN_royal_triumph: "Peace under the Zinnia"
+ ZKN_royal_triumph_desc: ""
+ ZKN_royal_triumph_tt: "The §YKingdom of Gardenia§! will regain its §Yinternational recognition§! and §Ylaw and order§! will be restored."
 
 
 # EVENTS

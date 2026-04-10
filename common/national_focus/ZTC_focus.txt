@@ -62,7 +62,7 @@ focus_tree={
 		cost = 3
 
 		ai_will_do = {
-            base = 10 
+            base = 20 
         }
 		
 		available = {
@@ -152,7 +152,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZTC_subsidise_the_airdocks
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -255,7 +255,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZTC_fund_the_upper_districts
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -325,7 +325,7 @@ focus_tree={
 		cost = 3
 
 		ai_will_do = {
-            base = 10 
+            base = 5
         }
 		
 		available = {
@@ -658,7 +658,7 @@ focus_tree={
 		cost = 3
 
 		ai_will_do = {
-            base = 10 
+            base = 20 
         }
 		
 		available = {
@@ -772,7 +772,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZTC_the_needs_of_the_people
 		
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
             base = 10 
@@ -1086,7 +1086,7 @@ focus_tree={
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_ideas = ZFC_ultimate_volunteer_force
+			add_ideas = ZTC_ultimate_volunteer_force
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -1511,6 +1511,7 @@ focus_tree={
 		
 		available = {
             has_government = communism
+			has_completed_focus = ZTC_legalise_union_formation
         }
 
 		bypass = {
@@ -1518,7 +1519,16 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			if = {
+				limit = { has_idea = ZTC_proletarian_movement_6 }
+				swap_ideas = {
+					remove_idea = ZTC_proletarian_movement_6
+					add_idea = ZTC_communal_governance
+				}
+			}
+			else = {
+				add_ideas = ZTC_communal_governance
+			}
 		}
 	}
 
@@ -1544,8 +1554,8 @@ focus_tree={
 				tooltip = ZTC_distribute_the_wealth_trigger
 				OR = {
 					has_idea = ZTC_richest_city_in_the_south
-					has_idea = ZTC_richest_city_in_the_south_1
-					has_idea = ZTC_richest_city_in_the_south_2
+					has_idea = ZTC_richest_city_in_the_south_taxes
+					has_idea = ZTC_richest_city_in_the_south_akademie
 				}
 			}
         }
@@ -1557,15 +1567,27 @@ focus_tree={
 		completion_reward = {
 			if = {
 				limit = { has_idea = ZTC_richest_city_in_the_south }
+				swap_ideas = {
+					remove_idea = ZTC_richest_city_in_the_south
+					add_idea = ZTC_happiest_city_in_the_south
+				}
 			}
 			else_if = {
-				limit = { has_idea = ZTC_richest_city_in_the_south_1 }
+				limit = { has_idea = ZTC_richest_city_in_the_south_taxes }
+				swap_ideas = {
+					remove_idea = ZTC_richest_city_in_the_south_taxes
+					add_idea = ZTC_happiest_city_in_the_south
+				}
 			}
 			else_if = {
-				limit = { has_idea = ZTC_richest_city_in_the_south_2 }
+				limit = { has_idea = ZTC_richest_city_in_the_south_akademie }
+				swap_ideas = {
+					remove_idea = ZTC_richest_city_in_the_south_akademie
+					add_idea = ZTC_happiest_city_in_the_south
+				}
 			}
 			else = {
-
+				add_ideas = ZTC_happiest_city_in_the_south
 			}
 		}
 	}
@@ -1664,7 +1686,7 @@ focus_tree={
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_ideas = ZFC_ultimate_volunteer_force
+			add_ideas = ZTC_ultimate_volunteer_force
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 

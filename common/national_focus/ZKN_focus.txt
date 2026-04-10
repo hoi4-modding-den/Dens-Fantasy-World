@@ -1,0 +1,302 @@
+focus_tree={
+
+	id = ZKN_focus_tree
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZKN
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 3000 y = 300 }
+
+	focus = {
+		id = ZKN_the_reactionary_front
+		icon = GFX_goal_generic_more_territorial_claims
+        #prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 10
+		y = 0
+		#relative_position_id = 
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			always = yes
+        }
+		
+		completion_reward = {
+			custom_effect_tooltip = ZKN_the_reactionary_front_tt
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            effect_tooltip = {
+                declare_war_on = {
+					target = ZLF
+					type = civil_war
+				}
+            }
+		}
+	}
+
+    focus = {
+		id = ZKN_fortify_the_river_line
+		icon = GFX_focus_generic_coastal_fort
+        prerequisite = { focus = ZKN_the_reactionary_front }
+		#mutually_exclusive = { focus =  }
+		x = -3
+		y = 2
+		relative_position_id = ZKN_the_reactionary_front
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            controls_province = 8471
+			controls_province = 8472
+			controls_province = 8464
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+            570 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 8471
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 8472
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 8464
+				}
+			}
+		}
+	}
+
+    focus = {
+		id = ZKN_call_up_levies
+		icon = GFX_focus_generic_limited_social_mobilization
+        prerequisite = { focus = ZKN_the_reactionary_front }
+		#mutually_exclusive = { focus =  }
+		x = 3
+		y = 2
+		relative_position_id = ZKN_the_reactionary_front
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            OR = {
+				controls_state = 570
+				controls_state = 817
+				controls_state = 807
+			}
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			custom_effect_tooltip = ZKN_call_up_levies_tt
+			hidden_effect = {
+				if = {
+					limit = { controls_state = 570 }
+					570 = {
+						create_unit = {
+							division = "name = \"Reservist Brigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
+							count = 4
+							owner = ROOT
+						}
+					}
+				}
+				else_if = {
+					limit = { controls_state = 817 }
+					817 = {
+						create_unit = {
+							division = "name = \"Reservist Brigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
+							count = 4
+							owner = ROOT
+						}
+					}
+				}
+				else = {
+					807 = {
+						create_unit = {
+							division = "name = \"Reservist Brigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
+							count = 4
+							owner = ROOT
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZKN_empower_the_kammermeister
+		icon = GFX_focus_generic_monarchy_1
+        prerequisite = { focus = ZKN_the_reactionary_front }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZKN_the_reactionary_front
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+			#swap_traits
+		}
+	}
+
+    focus = {
+		id = ZKN_ensure_army_loyalty
+		icon = GFX_focus_chi_army_reform
+        prerequisite = { focus = ZKN_empower_the_kammermeister }
+		mutually_exclusive = { focus = ZKN_crackdown_on_strikes }
+		x = -1
+		y = 2
+		relative_position_id = ZKN_the_reactionary_front
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ZKN_disloyal_army
+				add_idea = ZKN_disloyal_army_cw_improved
+			}
+
+            # following the death event, the option to prevent the army coup will not cost 200 pp
+		}
+	}
+
+    focus = {
+		id = ZKN_crackdown_on_strikes
+		icon = GFX_goal_generic_war_with_comintern
+        prerequisite = { focus = ZKN_empower_the_kammermeister }
+		mutually_exclusive = { focus = ZKN_ensure_army_loyalty }
+		x = 1
+		y = 2
+		relative_position_id = ZKN_the_reactionary_front
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ZKN_general_strike
+				add_idea = ZKN_general_strike_cw_improved
+			}
+		}
+	}
+
+    focus = {
+		id = ZKN_royal_triumph
+		icon = GFX_focus_JAP_gather_royal_pacifists_support
+        prerequisite = { focus = ZKN_fortify_the_river_line focus = ZKN_call_up_levies focus = ZKN_ensure_army_loyalty focus = ZKN_crackdown_on_strikes }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 3
+		relative_position_id = ZKN_the_reactionary_front
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_civil_war = no
+        }
+
+		bypass = {
+			
+        }
+
+		select_effect = {
+
+		}
+		
+		completion_reward = {
+            custom_effect_tooltip = ZKN_royal_triumph_tt
+		}
+	}
+
+}

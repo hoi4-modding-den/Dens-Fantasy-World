@@ -24,7 +24,7 @@ bookmarks = {
 				ZLF_anti_monarchist_campaign
 			}
 			focuses = {
-				
+				ZLF_dawn_of_the_republic
 			}
 		}
 		

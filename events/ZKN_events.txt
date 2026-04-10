@@ -28,7 +28,7 @@ country_event = { # Civil War Ends
 	id = ZKN_cw_events.2
 	title = ZKN_cw_events.2.t
 	desc = ZKN_cw_events.2.desc
-	picture = GFX_report_event_france_parade
+	picture = GFX_report_event_royal_parade
 
 	fire_only_once = yes
     is_triggered_only = yes

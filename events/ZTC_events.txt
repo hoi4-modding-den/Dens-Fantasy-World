@@ -150,6 +150,22 @@ country_event = { # Gun Smuggling Event
                 }
             }
         }
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        if = {
+            limit = { has_idea = ZTC_weapons_payments }
+            modify_timed_idea = {
+                idea = ZTC_weapons_payments
+                days = 120
+            }
+        }
+        else = {
+            add_timed_idea = {
+                idea = ZTC_weapons_payments
+                days = 120
+            }
+        }
 	}
 
     option = {

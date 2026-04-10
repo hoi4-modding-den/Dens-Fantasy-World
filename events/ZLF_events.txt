@@ -60,7 +60,7 @@ country_event = { # Civil War Ends
 
 	immediate = {
         hidden_effect = { 
-			news_event = ZLF_news_events.1 
+			news_event = ZLF_news_events.1
 
 			ZKN = { every_core_state = { remove_core_of = ZKN } }
 		}

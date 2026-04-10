@@ -42,7 +42,13 @@ ZLF_civil_war_cat = {
         complete_effect = {
             add_political_power = 25
             add_war_support = 0.01
-            add_manpower = 1000
+            817 = {
+                create_unit = {
+                    division = "name = \"Rhododendron Polizeibrigade\" division_template = \"Bandit Suppression Brigade\" start_experience_factor = 0.3"
+                    count = 1
+                    owner = ROOT
+                }
+            }
         }
 
         timeout_effect = {
@@ -125,7 +131,13 @@ ZLF_civil_war_cat = {
         complete_effect = {
             add_political_power = 25
             add_war_support = 0.01
-            add_manpower = 1500
+            655 = {
+                create_unit = {
+                    division = "name = \"Verteidungsbrigade Erzgebirge\" division_template = \"Wehrbrigade\" start_experience_factor = 0.3"
+                    count = 2
+                    owner = ROOT
+                }
+            }
         }
 
         timeout_effect = {
@@ -224,16 +236,12 @@ ZLF_civil_war_cat = {
         }
 
         available = {
-            NOT = { controls_state = 832 }
-            NOT = { controls_state = 655 }
+            NOT = { is_neighbor_of = ZTC }
         }
 
         highlight_states = {
             highlight_states_trigger = {
-                OR = {
-                    state = 832
-                    state = 655
-                }
+                state = 749
             }
         }
 

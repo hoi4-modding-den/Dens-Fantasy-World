@@ -1,0 +1,333 @@
+focus_tree={
+
+	id = ZLF_focus_tree
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZLF
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 3000 y = 300 }
+
+	focus = {
+		id = ZLF_the_edelweiss_revolution_begins
+		icon = GFX_focus_focus_fra_revolution_utmost
+        #prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 10
+		y = 0
+		#relative_position_id = 
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			always = yes
+        }
+		
+		completion_reward = {
+			custom_effect_tooltip = ZLF_the_edelweiss_revolution_begins_tt
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            effect_tooltip = {
+                ZKN = {
+                    declare_war_on = {
+                        target = ROOT
+                        type = civil_war
+                    }
+                }
+            }
+		}
+	}
+
+    focus = {
+		id = ZLF_gain_elbian_support
+		icon = GFX_goal_generic_national_unity
+        prerequisite = { focus = ZLF_the_edelweiss_revolution_begins }
+		#mutually_exclusive = { focus =  }
+		x = -4
+		y = 2
+		relative_position_id = ZLF_the_edelweiss_revolution_begins
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            any_controlled_state = {
+                has_dynamic_modifier = { modifier = ZLF_elbian_lands }
+            }
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+            every_state = {
+                limit = {
+                    has_dynamic_modifier = { modifier = ZLF_elbian_lands }
+                }
+                add_dynamic_modifier = { modifier = ZLF_elbian_conscription scope = ROOT }
+            }
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ZLF_gain_elbian_support_tt
+		}
+	}
+
+    focus = {
+		id = ZLF_reorganise_the_police
+		icon = GFX_focus_ITA_comandante_diavolo
+        prerequisite = { focus = ZLF_the_edelweiss_revolution_begins }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 2
+		relative_position_id = ZLF_the_edelweiss_revolution_begins
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = ZLF_cavalry_bonus_cw
+				days = 50
+			}
+		}
+	}
+
+    focus = {
+		id = ZLF_urge_restraint
+		icon = GFX_goal_support_democracy
+        prerequisite = { focus = ZLF_the_edelweiss_revolution_begins }
+		mutually_exclusive = { focus = ZLF_emphasise_the_revolution }
+		x = -1
+		y = 1
+		relative_position_id = ZLF_the_edelweiss_revolution_begins
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+            add_war_support = -0.15
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+			swap_ideas = {
+                remove_idea = ZLF_staatsbankrott
+                add_idea = ZLF_staatsbankrott_cw_improved
+            }
+		}
+	}
+
+    focus = {
+		id = ZLF_emphasise_the_revolution
+		icon = GFX_focus_spr_masters_of_our_own_fate
+        prerequisite = { focus = ZLF_the_edelweiss_revolution_begins }
+		mutually_exclusive = { focus = ZLF_urge_restraint }
+		x = 1
+		y = 1
+		relative_position_id = ZLF_the_edelweiss_revolution_begins
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+			swap_ideas = {
+                remove_idea = ZLF_anti_monarchist_campaign
+                add_idea = ZLF_anti_monarchist_campaign_cw_improved
+            }
+
+            custom_effect_tooltip = ZLF_emphasise_the_revolution_tt
+		}
+	}
+
+    focus = {
+		id = ZLF_call_for_international_brigades
+		icon = GFX_focus_generic_spur_communist_revolutions
+        prerequisite = { focus = ZLF_the_edelweiss_revolution_begins }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 2
+		relative_position_id = ZLF_the_edelweiss_revolution_begins
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            controls_province = 11208
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+            if = {
+                limit = { NOT = { has_tech = tech_field_hospital } }
+                set_technology = { tech_field_hospital = 1 }
+
+                custom_effect_tooltip = generic_skip_one_line_tt
+            }
+
+			custom_effect_tooltip = ZLF_call_for_international_brigades_tt
+            hidden_effect = { load_oob = "ZLF_international_brigades" }
+		}
+	}
+
+    focus = {
+		id = ZLF_buy_foreign_guns
+		icon = GFX_goal_generic_small_arms
+        prerequisite = { focus = ZLF_the_edelweiss_revolution_begins }
+		#mutually_exclusive = { focus =  }
+		x = 4
+		y = 2
+		relative_position_id = ZLF_the_edelweiss_revolution_begins
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+            custom_effect_tooltip = ZLF_buy_foreign_guns_tt
+			hidden_effect = {
+                add_equipment_to_stockpile = { 
+                    type = infantry_equipment
+                    amount = 1000
+                    producer = ZTC
+                }
+                add_equipment_to_stockpile = { 
+                    type = infantry_equipment
+                    amount = 400
+                    producer = ZPS
+                }
+                add_equipment_to_stockpile = { 
+                    type = infantry_equipment
+                    amount = 300
+                    producer = ZCV
+                }
+                add_equipment_to_stockpile = { 
+                    type = infantry_equipment
+                    amount = 200
+                    producer = ZFN
+                }
+                add_equipment_to_stockpile = { 
+                    type = infantry_equipment
+                    amount = 100
+                    producer = ZRB
+                }
+                add_equipment_to_stockpile = { 
+                    type = support_equipment
+                    amount = 300
+                    producer = ZTC
+                }
+                add_equipment_to_stockpile = { 
+                    type = support_equipment
+                    amount = 150
+                    producer = ZPS
+                }
+                add_equipment_to_stockpile = { 
+                    type = support_equipment
+                    amount = 50
+                    producer = ZCV
+                }
+            }
+		}
+	}
+
+    focus = {
+		id = ZLF_dawn_of_the_republic
+		icon = GFX_focus_JAP_the_fate_of_the_imperial_family
+        prerequisite = { focus = ZLF_gain_elbian_support focus = ZLF_reorganise_the_police focus = ZLF_urge_restraint focus = ZLF_emphasise_the_revolution focus = ZLF_call_for_international_brigades focus = ZLF_buy_foreign_guns }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 3
+		relative_position_id = ZLF_the_edelweiss_revolution_begins
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_civil_war = no
+        }
+
+		bypass = {
+			
+        }
+
+		select_effect = {
+
+		}
+		
+		completion_reward = {
+            custom_effect_tooltip = ZLF_dawn_of_the_republic_tt
+		}
+	}
+
+}
