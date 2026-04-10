@@ -6,10 +6,15 @@
  
  ZKO_anarchy: "Provisional Government"
  
- 
+ ZKL: "Scientist Society"
+ ZKL_DEF: "The Discoveries for the Promised Lands"
+ ZKL_ADJ: "Scientist"
  #Parties
  ZKO_neutrality_party: "Junta of the Colonels"
  ZKO_neutrality_party_long: "Regime of the Colonels"
+
+ ZKL_neutrality_party: "Scientist Society"
+ ZKL_neutrality_party_long: "The Scientist Society for the Promised Lands"
  #Characters
  
  #Leader Descriptions

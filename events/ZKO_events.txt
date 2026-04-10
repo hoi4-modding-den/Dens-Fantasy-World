@@ -61,9 +61,9 @@ country_event = {
 	option = {
 		name = koreliacollapse.1
 		hidden_effect = {
-		ZKL = {
-		   transfer_state = 719
-		   add_core_of = 719
+		719 = {
+		   transfer_state_to = ZKL
+		   add_core_of = ZKL 
 		}
 		}
 	}
