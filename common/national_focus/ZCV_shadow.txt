@@ -1,0 +1,35 @@
+focus_tree = {
+	id = wighardian_shadow_tree
+	
+	country = {
+		factor = 0
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 2500 }
+	
+	focus = {
+		id = ZCVS_eye_providence
+		icon = GFX_focus_generic_military_dictatorship
+		
+		x = 35
+		y = 0
+		
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = ZCV_martial_law
+			add_timed_idea = {
+				idea = ZCV_purges
+				days = 365
+			}
+			add_political_power = 750
+			add_manpower = -10000
+		}
+	}
+}

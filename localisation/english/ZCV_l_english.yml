@@ -1,17 +1,114 @@
 ﻿l_english:
 
+# Misc
+ZCV_no_bauer_tt:0 "§YOtto Bauer§! has been dealt with."
+ZCV_reunite_nation_tt:0 "Any attempts of §YSeparatist Rebellion§! will be successfully circumvented"
+
 # Nation Loc
  ZCV:0 "Wighardia"
  ZCV_DEF:0 "Wighardia"
  ZCV_ADJ:0 "Wighardian"
-
+ ZCV_fascism:0 "Wighardian Supreme Directory"
+ ZCV_fascism_DEF:0 "the Wighardian Supreme Directory"
  ZCV_neutrality:0 "United Realms of Wighardia"
  ZCV_neutrality_DEF:0 "the United Realms of Wighardia"
+ 
+ ZCX:0 "Kingdom of Immenwald"
+ ZCX_DEF:0 "the Kingdom of Immenwald"
+ ZCX_ADJ:0 "Immenwalder"
+ 
+ ZCX:0 "Kingdom of Immenwald"
+ ZCX_DEF:0 "the Kingdom of Immenwald"
+ ZCX_ADJ:0 "Immenwalder"
+
+ ZCZ_democratic:0 "Zeltsill"
+ ZCZ_democratic_DEF:0 "Zeltsill"
+ ZCZ_ADJ:0 "Zeltsill"
+ ZCZ_democratic:0 "Republic of Zeltsill"
+ ZCZ_democratic_DEF:0 "the Republic of Zeltsill"
+
+ # Focus Loc
+ ZCV_end_corruption:0 "Reshuffle the Government"
+ ZCV_end_corruption_desc:0 "The government during the last era of our nation has lead to widespread corruption among our politicians. Only a complete reshuffle and reform of the government will be able to fix the amount which is currently entrenched in our politics."
+ ZCV_rebuild_banks:0 "Restore the Banks"
+ ZCV_rebuild_banks_desc:0 "After the economic instability and crashes of our previous era, our banking system was one of many victims of repeated attacks by the criminal organisations of our nation. With some funding, we can lift the banks out of the monetary hole they have been placed in to attempt to restore our nation's economy."
+ ZCV_reinstate_order:0 "Reinstate Order"
+ ZCV_reinstate_order_desc:0 "After the March on Ardenheim, we have been forced to move our capital eastward. However, we can use our men to take back our capital city and reinstate order once and for all."
+ ZCV_reunite_nation:0 "Reunite the Nation"
+ ZCV_reunite_nation_desc:0 "Now that the chaos in our nation has settled, we can circumvent any remaining attempts of separatist rebellions and integrate our population under our capital. This also allows us for further political expansions to improve our nation, military, and economy to rival and overcome our neighbours."
+ ZCV_from_the_shadows:0 "From the Shadows"
+ ZCV_from_the_shadows_desc:0 "Ever since the beginning of Bauer's term, the Bureau of Internal Security's interference in domestic affairs has significantly increased. We can use this to instate them as the leader of our nation and allow them to take full control over foreign and domestic affairs. This will allow us to remilitarise"
+
+ ### C O M M U N I S T ###
+ ZCV_teachings_marx:0 "Uplift the Teachings of Marx"
+ ZCV_teachings_marx_desc:0 "Now that our nation is finally stable, we can put an end to the utopia the upper classes live in expense of our citizens and working class. Specifically, men like those who were in charge and lay idle during the Bauer Era must be purged in order to achieve a common utopia for all citizens."
+ 
+
+ # Ideas Loc
+ ZCV_banking_crisis:0 "Catastrophic Banking Crisis"
+ ZCV_banking_crisis_desc:0 "Due to the two years of sharp economic decline, our banks have begun to close down and if we do not interfere quickly it may be too late."
+ ZCV_relieved_banks:0 "Relieved Banks"
+ ZCV_criminal_underworld:0 "Significant Criminal Underworld"
+ ZCV_criminal_underworld_desc:0 "Due to the idleness of Bauer's term, major criminal organisations have begun to undermine the foundations of the nation by selling, producing, and distributing illegal supplies to our citizens, straining our economy and stability as we attempt to deal with these gangs."
+ ZCV_criminal_underworld_1:0 "Major Criminal Underworld"
+ ZCV_criminal_underworld_2:0 "Minor Criminal Underworld"
+ ZCV_corruption_ended:0 "Total Government Reform"
+ ZCV_corruption_ended_desc:0 "Due to the extent of Bauer's corruption, the government requires a total reform in order to expel it of corrupt politicians. However, this significantly decreases our political capabilities while we are reforming the government so that we can continue on a path towards recovery for our nation."
+ ZCV_marxism:0 "Wighardian Marxism"
+ ZCV_marxism_desc:0 "With the tragic loss of life and significantly decreased quality of life due to the Bauer Era, we have realised that the true enemy is not from other nations, but is found domestically in our upper classes. We can expunge our nation of the plague which is capitalism and those who benefit from it and allow our nation to achieve a §YSecond Golden Age.§!"
+ ZCV_martial_law:0 "Eye of Providence"
+ ZCV_martial_law_desc:0 "Our deep state plan has finally succeeded, and now we can transform the nation into a surveilance state and crush any dissidents by force using our vast military policing programmes."
+
+# Decision Loc
+ZCV_collapsing_union:0 "Collapsing Union"
+
+
+# Events Loc
+ ZCV.1.t:0 "March on Ardenheim!"
+ ZCV.1.d:0 "An organised group of rebels originating from high command from the WNP have stormed our capital and assassinated our president, Otto Bauer. Military general Friedrich Graf has since taken up emergency powers and attempted to reinstate order in the capial, but all attempts currently seem futile."
+ ZCV.1.a:0 "How horrible!"
+ ZCV.2.t:0 "Valentines Revolution"
+ ZCV.2.d:0 "Large groups of citizens from Immenwald, a nation within our union, marched onto the streets before declaring independence and instating the old king, Heinrich II, onto the throne of their nation. They claim their reasons for this is the illegal occupation of their land since the Unification Wars, and the economic downfall under Bauer. We could deal with this in two ways: either let them be free and focus on our own nation, or we could attempt to take back their lands by force."
+ ZCV.2.a:0 "We didn't need them anyway."
+ ZCV.2.b:0 "We will not let this happen. Mobilise the military!"
+ ZCV.3.t:0 ""
+ ZCV.3.d:0 ""
+ ZCV.3.a:0 "We didn't need them anyway."
+ ZCV.3.b:0 "We will not let this happen. Mobilise the military!"
+ ZCV.4.t:0 ""
+ ZCV.4.d:0 ""
+ ZCV.4.a:0 "We didn't need them anyway."
+ ZCV.4.b:0 "We will not let this happen. Mobilise the military!"
+ ZCV.5.t:0 "From the Shadows"
+ ZCV.5.d:0 "Since its formation in 1887, the Bureau of Internal Security has kept order in our nation, especially while Bauer caused rampant instability and chaos during his term. However, his term also increased the nation's reliance on the bureau as increased funding and recruitment was achieved during his term, boosting the bureau into the most influential entity in our nation's government. However, reports from the BIS' "
+ ZCV.5.a:0 "We didn't need them anyway."
+
+# Parties Loc
+ ZCV_neutrality_party: "PNR"
+ ZCV_neutrality_party_long: "Party for National Rejuvenation"
+ ZCV_fascism_party: "WNP"
+ ZCV_fascism_party_long: "Wighardian National Party"
+ ZCV_democratic_party: "CFW"
+ ZCV_democratic_party_long: "Coalition for a Free Wighardia"
+ ZCV_communism_party: "WPP"
+ ZCV_communism_party_long: "Wighardian Peasants' Party"
 
 # Leaders Loc
-ZCV_otto_bauer:0 "Otto Bauer"
-ZCV_otto_bauer_desc:0 "Approached by a mysterious organisation, Bauer was pushed to run in the last elections. While facing political opposition and major public opposition, Bauer saw a significant victory in the election, and has since lay idle allowing the nation to be overrun by criminal organisations leading to the collapse of the banks in the nation."
+ ZCV_corrupt_official:0 "Corrupt Official"
+ ZCV_warden:0 "The Warden"
+ ZCV_deep_state:0 "The Overseers"
 
- # State & Province Loc
+ ZCV_otto_bauer:0 "Otto Bauer"
+ ZCV_otto_bauer_desc:0 "Approached by a mysterious organisation, Bauer was pushed to run in the last elections. While facing political opposition and major public opposition, Bauer saw a significant victory in the election, and has since lay idle allowing the nation to be overrun by criminal organisations leading to the collapse of the banks in the nation."
+ ZCV_friedrich_graf:0 "Friedrich Graf"
+ ZCV_friedrich_graf_desc:0 "Previously leading the nation during the Unification Wars, Graf became a popular figurehead of the nation, leading to a golden age up until his retirement in 1933. After the assassination of ex-president Otto Bauer, he has returned to rebuild the nation after the devastation caused by his late successor. A major supporter of military crackdowns and funding, he had eventually been given the nickname of "The Warden" as his age saw the courts stretched thin from large amounts of treason cases and a significant increase in the armed forces."
+ ZCV_BIS_Hicom:0 "Bureau of Internal Security"
+ ZCV_BIS_Hicom_desc:0 "Operating from the shadows as a pupeteer and instating the Bauer regime, the Bureau of Internal Security has intervened in domestic affairs in the nation since it's founding in 1887. However, the bureau has recently shifted towards uniting the nation under a military-run totalitarian regime in which they have power over the masses."
+ ZCV_johann_beck:0 " Johann Beck"
+ ZCV_johann_beck_desc:0 "Operating as the leader of the Bureau of Internal Security, Beck is also a far-right activist and writer, publishing many books on the supremacy of the Wighardian people in relation to the neighbouring species. Orchestrator of the Bauer administration, Beck helped to undermine the nation in order to achieve a new and more powerful Wighardia led by a military-controlled surveilance state where he has supreme power. Furthermore, his writings also feature multiple mentions of other species being 'a plague on this very world which must be exterminated as a top priority.' However, the extremism of his ideas has led him to be outcast in the political circle and forcing him to return to purely leading the BIS with minor political contributions."
+
+# State & Province Loc
  STATE_612:0 "Ardenheim"
- VICTORY_POINTS_8980: "Ardenheim"
+ VICTORY_POINTS_8980:0 "Ardenheim"
+ VICTORY_POINTS_9130:0 "Blomnow"
+ VICTORY_POINTS_9445:0 "Freischau"

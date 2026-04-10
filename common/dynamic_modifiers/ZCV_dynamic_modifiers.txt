@@ -1,0 +1,9 @@
+ZCV_military = {
+	enable = { always = yes }
+
+	#icon = HUN_secret_rearmament
+
+	state_coastal_bunker_max_level_terrain_limit = 4
+    resistance_damage_to_garrison = -0.9
+
+}

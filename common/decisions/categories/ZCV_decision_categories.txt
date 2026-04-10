@@ -1,0 +1,15 @@
+ZCV_collapsing_union = {
+
+    icon = GFX_decision_category_border_war
+	
+	allowed = {
+		original_tag = ZCV
+		NOT = { has_completed_focus = ZCV_reunite_nation }
+	}
+
+	priority = 100
+
+	visible = {
+		NOT = { has_completed_focus = ZCV_reunite_nation }
+	}
+}

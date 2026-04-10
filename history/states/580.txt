@@ -20,7 +20,8 @@ state={
 	history={
 		
 		owner = ZCV
-		add_core_of = ZCV
+		add_claim_by = ZCV
+		add_core_of = ZCC
 		
 		buildings = {
 			infrastructure = 3

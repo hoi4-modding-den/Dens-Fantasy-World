@@ -3,7 +3,7 @@ characters={
 		name = ZCV_otto_bauer
 		portraits = {
 			civilian = {
-				large = ""
+				large = "GFX_portrait_ZCV_otto_bauer"
 			}
 		}
 		country_leader = {
@@ -12,6 +12,104 @@ characters={
 			desc = ZCV_otto_bauer_desc
 			expire = "1960.1.1.1"
 			id = -1
+		}
+	}
+	ZCV_friedrich_graf = { 
+		name = ZCV_friedrich_graf
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ZCV_friedrich_graf"
+			}
+			army = {
+                small = "GFX_idea_georgy_zhukov"
+                large = "GFX_portrait_ZCV_friedrich_graf"
+            }
+		}
+		corps_commander = {
+    		traits = { war_hero brilliant_strategist infantry_officer }
+    		skill = 6
+    		attack_skill = 6
+    		defense_skill = 2
+    		planning_skill = 5
+    		logistics_skill = 3
+		}
+	}
+	ZCV_BIS_Hicom = { 
+		name = ZCV_BIS_Hicom
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_RAJ_the_board_of_directors"
+			}
+		}
+		country_leader = {
+			ideology = rexism
+            traits = { ZCV_deep_state }
+			desc = ZCV_BIS_Hicom_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+	ZCV_johann_beck = { 
+		name = ZCV_johann_beck
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ZCV_johann_beck"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}
+		advisor = {
+    		slot = political_advisor
+    		traits = { ZCV_BIS_lead }
+			can_be_fired = no
+			idea_token = ZCV_johann_beck
+			allowed = {
+				original_tag = ZCV
+			}
+			available = {
+				is_country_leader = no
+			}
+		}
+	}
+	ZCV_carl_hauser = { 
+		name = ZCV_carl_hauser
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ZCV_johann_beck"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}
+		advisor = {
+    		slot = political_advisor
+    		traits = { ZCV_BIS_economy }
+			can_be_fired = no
+			idea_token = ZCV_carl_hauser
+			allowed = {
+				original_tag = ZCV
+			}
+			available = {
+				is_country_leader = no
+			}
+		}
+	}
+	ZCV_sven_gramlich = { 
+		name = ZCV_sven_gramlich
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ZCV_johann_beck"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}
+		advisor = {
+    		slot = political_advisor
+    		traits = { ZCV_BIS_operative }
+			can_be_fired = no
+			idea_token = ZCV_sven_gramlich
+			allowed = {
+				original_tag = ZCV
+			}
+			available = {
+				is_country_leader = no
+			}
 		}
 	}
 }

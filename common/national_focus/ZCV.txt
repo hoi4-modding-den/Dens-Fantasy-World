@@ -1,0 +1,173 @@
+focus_tree = {
+	id = wighardian_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZCV
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 2500 }
+
+	focus = {
+		id = ZCV_end_corruption
+		icon = GFX_focus_ARG_anti_corruption_policies
+		
+		x = 35
+		y = 0
+		
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			custom_override_tooltip= {
+    			tooltip = ZCV_no_bauer_tt
+				has_country_flag = ZCV_no_bauer
+			}
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_timed_idea = {
+    			idea = ZCV_corruption_ended
+    			days = 180
+			}
+			add_political_power = -500
+		}
+	}
+	focus = {
+		id = ZCV_rebuild_banks
+		icon = GFX_focus_generic_monetary_union
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = ZCV_end_corruption}
+		relative_position_id = ZCV_end_corruption
+
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ZCV_banking_crisis
+				add_idea = ZCV_relieved_banks
+			}
+		}
+	}
+	focus = {
+		id = ZCV_reinstate_order
+		icon = GFX_focus_generic_advanced_military_studies
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = ZCV_end_corruption}
+		relative_position_id = ZCV_end_corruption
+
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		bypass = {
+			612 = { is_demilitarized_zone = no }
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			612 = {set_demilitarized_zone = no}
+			add_manpower = -5000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+	}
+	focus = {
+		id = ZCV_reunite_nation
+		icon = GFX_goal_generic_national_unity
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = ZCV_reinstate_order}
+		prerequisite = { focus = ZCV_rebuild_banks}
+		relative_position_id = ZCV_rebuild_banks
+
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = ZCV_reunite_nation_tt
+			add_stability = 0.05
+			add_political_power = 50
+			set_country_flag = ZCV_no_rebellion
+		}
+	}
+	focus = {
+		id = ZCV_teachings_marx
+		icon = GFX_focus_eng_liberate_the_home_of_marx
+		
+		x = 7
+		y = 1
+		
+		prerequisite = { focus = ZCV_reunite_nation}
+		relative_position_id = ZCV_reunite_nation
+
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			add_ideas = ZCV_marxism
+		}
+	}
+	focus = {
+		id = ZCV_from_the_shadows
+		icon = GFX_focus_RAJ_to_shake_the_world
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = ZCV_reunite_nation}
+		relative_position_id = ZCV_reunite_nation
+
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			country_event = ZCV.5
+		}
+	}
+}

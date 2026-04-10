@@ -1,0 +1,18 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_ZCV_johann_beck"
+		texturefile = "gfx/leaders/ZCV/johann_beck.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ZCV_otto_bauer"
+		texturefile = "gfx/leaders/ZCV/otto_bauer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ZCV_friedrich_graf"
+		texturefile = "gfx/leaders/ZCV/friedrich_graf.dds"
+	}
+
+}
