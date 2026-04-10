@@ -4,6 +4,7 @@
  ZFB_DEF:0 "Greatest United Republic of Bīcha"
  ZFB_ADJ:0 "Bīchi"
  
+ #Parties
  ZFB_communism_party: "YBM"
  ZFB_communism_party_long: "Society for Socialist Bīcha"
  ZFB_democratic_party: "KYY"
@@ -12,6 +13,21 @@
  ZFB_neutrality_party_long: "Unetu's Clique"
  ZFB_fascism_party: "BW"
  ZFB_fascism_party_long: "Bīcha Brotherhood"
- 
- #victory_points = { 1909 4 }
+
+#ideas
+
+#focuses
+
+#traits
+
+#characters
+ZFB_talakji_unetu: "Talakji Unetu"
+
+#character descriptions
+
+#decisions
+
+ #victory_points
  VICTORY_POINTS_10337: "b"
+
+#states

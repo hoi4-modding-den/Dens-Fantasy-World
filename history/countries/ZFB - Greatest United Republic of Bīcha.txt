@@ -1,4 +1,4 @@
-capital = 100
+capital = 732
 
 oob = "ZFB_1936"
 
@@ -20,13 +20,14 @@ set_technology = {
 add_ideas = {
 	limited_conscription
 	civilian_economy
+        export_focus
 }
 
 set_stability = 0.2
 set_war_support = 0.6
 set_convoys = 0
 
-#recruit_character = 
+recruit_character = ZFB_talakji_unetu
 #add_ideas = 
 
 

@@ -27,7 +27,7 @@ set_stability = 0.2
 set_war_support = 0.5
 set_convoys = 0
 
-#recruit_character = 
+recruit_character = ZFK_kokeyi_ii
 #add_ideas = 
 
 declare_war_on = {

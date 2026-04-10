@@ -1,0 +1,17 @@
+characters={
+	ZFK_kokeyi_ii = { 
+		name = ZFK_kokeyi_ii
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = despotism
+                        traits = {}
+			desc = ZFK_kokeyi_ii_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}
