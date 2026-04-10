@@ -1313,3 +1313,6 @@ ZP1 = {
 	color = rgb { 138 99 54 }
 	color_ui = rgb { 138 99 54 }
 }
+ZEE = {
+	color = rgb { 220 220 220 }
+	color_ui = rgb { 220 220 220 }
