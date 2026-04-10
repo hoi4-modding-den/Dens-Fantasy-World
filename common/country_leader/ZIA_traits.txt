@@ -6,4 +6,36 @@ leader_traits = {
 
 		random = no
 	}
+
+	seal_of_the_industry_trait  = {
+		production_speed_industrial_complex_factor = 0.15
+		production_speed_arms_factory_factor = 0.15
+		consumer_goods_factor = -0.05
+
+		random = no
+	}
+
+	minister_of_production_trait  = {
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		production_factory_max_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = 0.05
+		random = no
+	}
+
+	head_of_intelligence_trait  = {
+		intel_from_operatives_factor = 0.3
+		own_operative_detection_chance_factor = -0.1
+		operative_slot = 1
+		random = no
+	}
+
+	inexperienced_sardine_trait  = {
+		political_power_cost = 0.4
+		consumer_goods_factor = 0.05
+		stability_factor = -0.15
+		war_support_factor = -0.1
+
+		random = no
+	}
 }

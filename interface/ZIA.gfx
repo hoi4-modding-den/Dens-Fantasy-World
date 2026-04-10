@@ -10,4 +10,19 @@ spriteType = {
     texturefile = "gfx/leaders/ZIA/GFX_advisor_ZIA_sardine_council.dds"
 }
 
+spriteType = {
+    name = "GFX_advisor_ZIA_not_a_seal"
+    texturefile = "gfx/leaders/ZIA/GFX_advisor_ZIA_not_a_seal.dds"
+}
+
+spriteType = {
+    name = "GFX_advisor_ZIA_tinja_eter"
+    texturefile = "gfx/leaders/ZIA/GFX_advisor_ZIA_tinja_eter.dds"
+}
+
+spriteType = {
+    name = "GFX_advisor_ZIA_turos_celce"
+    texturefile = "gfx/leaders/ZIA/GFX_advisor_ZIA_turos_celce.dds"
+}
+
 }

@@ -10,7 +10,9 @@ ZIA_osvald_cereduj = {
     
     country_leader = {
         ideology = despotism
-        traits = { }
+        desc = ZIA_osvald_cereduj_desc
+
+        traits = { inexperienced_sardine_trait }
         expire = "1970.1.1.1"
     }
 }
@@ -26,8 +28,56 @@ ZIA_sardine_council = {
     advisor = {
         slot = political_advisor
         idea_token = ZIA_sardine_council
-        ledger = political_advisor
-        traits = {  }
+        ledger = civilian
+        traits = { ZIA_sardine_council_trait }
+    }
+}
+
+ZIA_not_a_seal = { 
+	name = ZIA_not_a_seal_name
+    portraits = {
+        civilian = {
+            small = GFX_advisor_ZIA_not_a_seal
+        }
+    }
+    
+    advisor = {
+        slot = political_advisor
+        idea_token = ZIA_not_a_seal
+        ledger = civilian
+        traits = { seal_of_the_industry_trait }
+    }
+}
+
+ZIA_tinja_eter = { 
+	name = ZIA_tinja_eter_name
+    portraits = {
+        civilian = {
+            small = GFX_advisor_ZIA_tinja_eter
+        }
+    }
+    
+    advisor = {
+        slot = political_advisor
+        idea_token = ZIA_tinja_eter
+        ledger = civilian
+        traits = { minister_of_production_trait }
+    }
+}
+
+ZIA_turos_celce = { 
+	name = ZIA_turos_celce_name
+    portraits = {
+        civilian = {
+            small = GFX_advisor_ZIA_turos_celce
+        }
+    }
+    
+    advisor = {
+        slot = political_advisor
+        idea_token = ZIA_turos_celce
+        ledger = civilian
+        traits = { head_of_intelligence_trait }
     }
 }
 

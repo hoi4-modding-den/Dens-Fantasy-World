@@ -17,8 +17,11 @@ set_technology = {
 	fuel_refining = 1
 }
 
-# add_ideas = {
-# }
+add_ideas = {
+	legacy_of_the_maritimes
+	metropolitan_general_strike
+	the_mountain_nest
+}
 
 set_stability = 0.6
 set_war_support = 0.2
@@ -26,6 +29,9 @@ set_convoys = 250
 
 recruit_character = ZIA_osvald_cereduj
 recruit_character = ZIA_sardine_council
+recruit_character = ZIA_not_a_seal
+recruit_character = ZIA_tinja_eter
+recruit_character = ZIA_turos_celce
 #add_ideas = 
 
 set_politics = {

@@ -1,0 +1,49 @@
+ideas = {
+    country = {
+        legacy_of_the_maritimes = {
+            picture = AUS_naval_efficiency_idea
+			
+			allowed = {
+                always = no 
+            }
+
+            modifier = {
+                industrial_capacity_dockyard = 0.1
+                production_speed_dockyard_factor = 0.1
+            }
+        }
+
+        metropolitan_general_strike = {
+            picture = ICE_general_strike
+			
+			allowed = {
+                always = no 
+            }
+
+            modifier = {
+                stability_factor = -0.15
+                stability_weekly_factor = -0.010
+                production_speed_buildings_factor = -0.15
+                industrial_capacity_factory = -0.15
+                production_factory_max_efficiency_factor = -0.1
+
+            }
+        }
+
+        the_mountain_nest = {
+            picture = generic_fortify_the_borders
+			
+			allowed = {
+                always = no 
+            }
+
+            modifier = {
+                dig_in_speed_factor = 0.05
+                special_forces_attack_factor = 0.1
+                special_forces_defence_factor = 0.1
+                max_dig_in_factor = 0.15
+                mountaineers_special_forces_contribution_factor = -0.2
+            }
+        }
+    }
+}

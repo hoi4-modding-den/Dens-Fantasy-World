@@ -36,9 +36,24 @@
 
  # LEADERS
   ZIA_osvald_cereduj_name:0 "Òsvald 'iónne' Çeredůj Sardelá"
+  ZIA_osvald_cereduj_desc:0 "Born May 2nd 1931 to a wealthy family across the sea to a foreign father and a royal mother. Òsvald Çeredůj Sardelá (Born with the name of 'Osziü Eltergom'). The mother in question being the queen of Çialazar, and the father being a secret lover from Potanica. For a few years their relationship and child was a secret. But soon enough the secret came out. Returning home to Çialazar the rumour of the princes foreign birth circulated across the palace halls. When the queen tried to quiet these rumours, it was futile. However, instead of Òsvald getting the blame their mother was shunned and constantly shamed day in and out for her mistakes overseas. Eventually, she snapped and commited suicide. Òsvald became very isolated after his mothers death, and he wasnt't supposed to succeed king originally. But when his brother Àlteç died from a fishing accident the only valid successor was him. In 1930 his father caught seascurvy, bedridden he legitimized Òsvald as the successor of the kingdom. Despite the controversies of this decision Òsvald was subsequently crowned in a traditional sermon a week after his fathers death. The aftermath of his and his nations trauma has not yet faded, protests riot and schemes to install other claimants go on in the background. It's all up to him to fix the aftermath of the succession crisis now. "
  # ADVISORS
   ZIA_sardine_council_name:0 "The Grand Sardine Council"
+  ZIA_not_a_seal_name:0 "Saerredine Fíçe"
+  ZIA_tinja_eter_name:0 "Tinjá Etér"
+  ZIA_turos_celce_name:0 "Turós Kelçe"
 
  # TRAITS
   ZIA_sardine_council_trait:0 "Perpetrators of Flowing Justice"
-  
+  seal_of_the_industry_trait:0 "Seal of the Industry"
+  minister_of_production_trait:0 "Minister of Production"
+  head_of_intelligence_trait:0 "Head of Intelligence"
+  inexperienced_sardine_trait:0 "The Inexperienced Sardine"
+ 
+ # IDEAS
+  legacy_of_the_maritimes:0 "Legacy of the Maritimes"
+  legacy_of_the_maritimes_desc:0 "Once upon a time Çialazar was a thriving maritime empire stretching across the great seas, naval innovation used to be central to our nation. But after the years of being stomped under the boots of others we've declines. Our navy is weak, we lack funding for expansions."
+  metropolitan_general_strike:0 "Metropolitan General Strike"
+  metropolitan_general_strike_desc:0 "The labour rights movement in Çialazar has had a fragile history of protests and massacres, after the past king came to power he consolidated and suppressed the movements. Instead of dissapearing though, the core of the movement only grew and soon underground networks formed to protect the integrity of the organizations. The pot is filling up, day after day, incident after incident, speech after speech. The workers are becoming impatient.... If something is not done to put an end to the protests for good an insurrection is inevitable"
+  the_mountain_nest:0 "The Mountain Nest"
+  the_mountain_nest_desc:0 "After the decline of our maritime empire the monarchy of Çialazar allied itself with it's neighbors and embraced the Pan-Mjódnů sentiment which engulfed the 3 kingdoms. This paved the way for a united state for the Mjódnů peoples which carried on for 3 decades, but after several incidents and due to internal pressures and ethnic strife it eventually burned down in flames. Resulting in a 8 year war between Tůrůń and Hráva, ending in a ceasefire. Emerging from this yoke we managed to gain our independence, but we aren't safe despite that. Growing tensions between our borders and future fears makes it clear to us that we need to rearm and defend to the last man."
