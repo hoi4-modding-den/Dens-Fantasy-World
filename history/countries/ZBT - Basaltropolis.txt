@@ -35,8 +35,8 @@ add_ideas = {
 
 # Undercity variables
 set_variable = { var = ZBT.UC_depth value = 0 }
-set_variable = { var = ZBT.UC_available_nodes value = 7 }
-set_variable = { var = ZBT.UC_empty_nodes value = 0 }
+set_variable = { var = ZBT.UC_unexcavated_sectors value = 7 }
+set_variable = { var = ZBT.UC_empty_sectors value = 0 }
 
 set_variable = { var = ZBT.UC_construction_speed value = 0 }
 set_variable = { var = ZBT.UC_mil_output value = 0 }
