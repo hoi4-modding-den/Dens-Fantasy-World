@@ -2,9 +2,9 @@
 state={
 	id=1246
 	name="STATE_1246"
-	manpower = 132223
+	manpower = 1326223
 	
-	state_category = pastoral
+	state_category = town
 	#impassable = yes
 	resources={
 		aluminium=0

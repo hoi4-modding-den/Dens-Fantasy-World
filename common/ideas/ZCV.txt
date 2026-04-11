@@ -146,6 +146,55 @@ ideas = {
 			}
 		}
 
+        ZCV_lost_souls = {
+
+			picture = SPR_anarchist_society
+
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+
+			modifier = {
+				max_organisation = -0.1
+				supply_consumption_factor = 0.1
+				political_power_gain = -0.75
+				max_dig_in_factor = -0.15
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				supply_consumption_factor = 0.25
+				recruitable_population_factor = -0.5
+			}
+		}
+
+        ZCA_lost_souls = {
+
+			picture = SPR_anarchist_society
+
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+
+			modifier = {
+				max_organisation = -0.1
+				supply_consumption_factor = -0.1
+				political_power_gain = -0.75
+				max_dig_in_factor = 0.05
+				modifier_army_sub_unit_militia_attack_factor = 0.1
+				modifier_army_sub_unit_militia_defence_factor = 0.1
+				supply_consumption_factor = -0.1
+				recruitable_population_factor = 0.15
+				equipment_capture_factor = 0.05
+			}
+		}
+
         ZCV_purges = {
 
 			picture = generic_purge

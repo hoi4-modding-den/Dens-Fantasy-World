@@ -1,0 +1,49 @@
+ZCV_collapsing_union = {
+
+    icon = GFX_decision_category_border_war
+
+    allowed = {
+        original_tag = ZCV
+        NOT = {
+            ZCZ = {exists = yes}
+            ZCC = {exists = yes}
+            ZCX = {exists = yes}
+        }
+        NOT = {
+            has_completed_focus = ZCV_reunite_nation
+        }
+    }
+
+    priority = 100 
+
+    visible_when_empty = yes
+
+    visible = {
+        NOT = {
+            ZCZ = {exists = yes}
+            ZCC = {exists = yes}
+            ZCX = {exists = yes}
+        }
+        NOT = {
+            has_completed_focus = ZCV_reunite_nation
+        }
+    }
+}
+ZCA_civil_war = {
+
+    icon = GFX_decision_category_NOR_fascist_deploy_prep
+
+    allowed = {
+        has_civil_war = yes
+        has_war_with = ZCV
+    }
+
+    priority = 100 
+
+    visible_when_empty = yes
+
+    visible = {
+        has_civil_war = yes
+        has_war_with = ZCV
+    }
+}

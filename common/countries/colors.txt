@@ -1317,9 +1317,13 @@ ZCC = {
 	color = rgb { 43 63 130 }
 	color_ui = rgb { 43 63 130 }
 }
-ZCC = {
-	color = rgb { 43 63 130 }
-	color_ui = rgb { 43 63 130 }
+ZCA = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+ZCZ = {
+	color = rgb { 181 154 80 }
+	color_ui = rgb { 181 154 80 }
 }
 ZP1 = {
 	color = rgb { 138 99 54 }

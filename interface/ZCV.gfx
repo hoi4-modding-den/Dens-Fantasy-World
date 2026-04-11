@@ -14,5 +14,23 @@ spriteTypes = {
 		name = "GFX_portrait_ZCV_friedrich_graf"
 		texturefile = "gfx/leaders/ZCV/friedrich_graf.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_ZCV_lost_souls_texticon"
+		texturefile = "gfx/ZCV/ZCV_lost_souls_texticon.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_ZCV_underworld_texticon"
+		texturefile = "gfx/ZCV/ZCV_underworld_texticon.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_ZCV_military_texticon"
+		texturefile = "gfx/ZCV/ZCV_military_texticon.png"
+		legacy_lazy_load = no
+	}
 
 }

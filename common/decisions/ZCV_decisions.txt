@@ -1,0 +1,116 @@
+ZCV_collapsing_union = {
+
+    ZCV_ZCX = {
+
+        icon = GFX_decision_revolt
+        activation = {
+           NOT = {
+            has_completed_focus = ZCV_reunite_nation
+           }
+        }
+
+        available = {
+           always = no 
+        }
+
+        cancel_trigger = {
+            OR = {
+                ZCX = {exists = yes}
+                has_completed_focus = ZCV_reunite_nation
+            }
+        }
+        days_mission_timeout = 45
+
+        fire_only_once = yes
+        
+        timeout_effect = {
+            ZCV = {
+             country_event = ZCV.2
+            }
+        }
+    }
+    ZCV_ZCC = {
+
+        icon = GFX_decision_revolt
+        activation = {
+           NOT = {
+            has_completed_focus = ZCV_reunite_nation
+           }
+        }
+
+        available = {
+           always = no 
+        }
+
+        cancel_trigger = {
+            OR = {
+                ZCC = {exists = yes}
+                has_completed_focus = ZCV_reunite_nation
+            }
+        }
+        days_mission_timeout = 163
+
+        fire_only_once = yes
+        
+        timeout_effect = {
+            country_event = ZCV.3
+        }
+    }
+    ZCV_ZCZ = {
+
+        icon = GFX_decision_revolt
+        activation = {
+           NOT = {
+            has_completed_focus = ZCV_reunite_nation
+           }
+        }
+
+        available = {
+           always = no 
+        }
+
+        cancel_trigger = {
+            OR = {
+                ZCZ = {exists = yes}
+                has_completed_focus = ZCV_reunite_nation
+            }
+        }
+        days_mission_timeout = 314
+
+        fire_only_once = yes
+        
+        timeout_effect = {
+            country_event = ZCV.4
+        }
+    }
+}
+
+ZCA_civil_war = {
+    ZCA_recycle_equipment = {
+        icon = GFX_decision_generic_confiscation
+        cost = 75
+        priority = {
+            base = 100
+        }
+        days_re_enable = 28
+        fire_only_once = no
+        complete_effect = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 500
+            }
+        }
+    }
+    ZCA_recruit_workers = {
+        icon = GFX_decision_generic_confiscation
+        cost = 75
+        priority = {
+            base = 100
+        }
+        days_re_enable = 28
+        fire_only_once = no
+        complete_effect = {
+            add_manpower = 2500
+        }
+    }
+}
