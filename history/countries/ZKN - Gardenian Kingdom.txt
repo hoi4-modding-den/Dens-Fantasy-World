@@ -2,7 +2,7 @@ capital = 570
 
 oob = "ZKN_1936"
 
-set_stability = 0.45
+set_stability = 0.6
 set_war_support = 0.6
 set_convoys = 50
 
@@ -29,6 +29,11 @@ add_ideas = {
 	limited_exports
 	extensive_conscription
 	partial_economic_mobilisation
+
+	ZKN_disloyal_army
+	ZKN_general_strike
+	ZKN_sale_of_the_armada
+	ZKN_throne_under_threat
 }
 
 recruit_character = ZKN_michael_aurus

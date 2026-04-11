@@ -11,6 +11,16 @@ ZLF_elbian_lands = {
 
 }
 
+ZLF_elbian_conscription = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_invaders_must_die
+
+	recruitable_population = 0.4
+    enemy_army_speed_factor = -0.05
+
+}
+
 ZLF_elbian_autonomy_1 = { # Freistaat Domowina
 	enable = { always = yes }
 

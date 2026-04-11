@@ -65,6 +65,24 @@ ideas = {
             
 		}
 
+		ZTC_happiest_city_in_the_south = {
+
+			picture = tur_balkan_central_bank_wealthy_greece
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				consumer_goods_expected_value = -0.2
+			}
+            
+		}
+
         ZTC_sky_seas_mastery = {
 
 			picture = generic_navy_carrier_bonus
@@ -86,7 +104,7 @@ ideas = {
 
         ZTC_proletarian_movement = {
 
-			picture = FRA_factory_strikes
+			picture = ICE_general_strike
 			
 			allowed = {
                 always = no 
@@ -110,7 +128,7 @@ ideas = {
 		ZTC_proletarian_movement_2 = {
 
 			name = ZTC_proletarian_movement
-			picture = FRA_factory_strikes
+			picture = ICE_general_strike
 			
 			allowed = {
                 always = no 
@@ -134,7 +152,7 @@ ideas = {
 		ZTC_proletarian_movement_3 = {
 
 			name = ZTC_proletarian_movement
-			picture = FRA_factory_strikes
+			picture = ICE_general_strike
 			
 			allowed = {
                 always = no 
@@ -158,7 +176,7 @@ ideas = {
 		ZTC_proletarian_movement_4 = {
 
 			name = ZTC_proletarian_movement
-			picture = FRA_factory_strikes
+			picture = ICE_general_strike
 			
 			allowed = {
                 always = no 
@@ -182,7 +200,7 @@ ideas = {
 		ZTC_proletarian_movement_5 = {
 
 			name = ZTC_proletarian_movement
-			picture = FRA_factory_strikes
+			picture = ICE_general_strike
 			
 			allowed = {
                 always = no 
@@ -204,7 +222,7 @@ ideas = {
 		ZTC_proletarian_movement_6 = {
 
 			name = ZTC_proletarian_movement
-			picture = FRA_factory_strikes
+			picture = ICE_general_strike
 			
 			allowed = {
                 always = no 
@@ -219,6 +237,25 @@ ideas = {
                 stability_factor = -0.15
                 production_speed_buildings_factor = -0.1
                 production_factory_max_efficiency_factor = -0.05
+			}
+            
+		}
+
+		ZTC_communal_governance = {
+
+			picture = trotskyite_plot_purged
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				communism_drift = 0.04
+                stability_factor = 0.05
 			}
             
 		}
@@ -345,9 +382,9 @@ ideas = {
 
 		}
 
-		ZFC_ultimate_volunteer_force = {
+		ZTC_ultimate_volunteer_force = {
 
-			picture = ast_volunteer_defence_corps
+			picture = ETH_peacekeeping_forces
 			
 			allowed = {
                 always = no 
@@ -361,6 +398,24 @@ ideas = {
 				send_volunteer_divisions_required = -1
 				send_volunteer_size = 4
 				send_volunteers_tension = -1
+			}
+
+		}
+
+		ZTC_weapons_payments = {
+
+			picture = ETH_customs_barrier_ITA
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				consumer_goods_factor = 0.05
 			}
 
 		}

@@ -1,6 +1,6 @@
 ﻿l_english:
 
- ZLF_GATHERING_STORM_DESC: "The Kingdom of Gardenia has devolved into civil war with the outbreak of the Edelweiss Revolution.\n \nThe Edelweiss Liberation Front, adopting the name of the Gardenian capital region, is a broad coalition of anti-monarchist groups led by the National Democratic Party of Gardenia and the Socialist Revolutionary Roland Ludovik. The Liberation Front seeks to cast off the shackles of the feudal order which existed under Zinnian dominion, establishing a democratic republic and uniting the Gardenian nation."
+ ZLF_GATHERING_STORM_DESC: "The Kingdom of Gardenia has devolved into civil war with the outbreak of the Edelweiss Revolution.\n \nThe Edelweiss Liberation Front, adopting the name from the Gardenian capital region, is a broad coalition of anti-monarchist groups led by the National Democratic Party of Gardenia and the Socialist Revolutionary Roland Ludovik. The Liberation Front seeks to cast off the shackles of the feudal order which existed under Zinnian dominion, establishing a democratic republic and uniting the Gardenian nation."
 
  ZLF: "Gardenia"
  ZLF_DEF: "Gardenia"
@@ -49,15 +49,17 @@
 
  ZLF_edelweiss_banner: "The Edelweiss Banner-Army"
  ZLF_edelweiss_banner_desc: "The Edelweiss Banner-Army is a revolutionary association of republican groups who came together to fulfill their common goal of overthrowing the Zinnian Throne, the monarchy of Gardenia."
+ ZLF_anti_monarchist_campaign: "The Anti-Monarchist Campaign"
  ZLF_staatsbankrott: "End of the Adelswirtschaft"
  ZLF_staatsbankrott_desc: "The exploitation of the people through the aristocracy has been ended. However, in the heat of revolution, the thoroughness of our troops has caused significant damage to our economic capabilities."
- ZLF_anti_monarchist_campaign: "The Anti-Monarchist Campaign"
+ ZLF_cavalry_bonus_cw: "Rapid Response Brigades"
 
 
 # DYNMODS
 
  ZLF_elbian_lands: "Elbenländereien"
  ZLF_elbian_lands_desc: "These lands are home to the Elbs, the long-eared, longer-lived relatives of humanity. Nature-loving by culture, they vehemently oppose the industrialisation of their homelands, which earned them scorn from the Zinnian Throne, the greedy aristocracy and the industrial elite."
+ ZLF_elbian_conscription: "Elbian Volunteer Army"
  ZLF_elbian_autonomy_1: "Elbian Autonomy (Freistaat Domowina)"
  ZLF_elbian_autonomy_2: "Elbian Autonomy (Freistaat Wjelećina)"
  ZLF_elbian_autonomy_3: "Elbian Autonomy (Freistaat Rudne Horiny)"
@@ -74,6 +76,32 @@
  ZLF_crush_the_eastern_garrisons: "Crush the Northeastern Garrisons"
  ZLF_take_the_royalist_stronghold: "Take the Royalist Stronghold"
  ZLF_maintain_connection_to_hortensia: "Ongoing Negotiations in Hortensia"
+
+
+# FOCI
+
+ ZLF_the_edelweiss_revolution_begins: "The Gartenstadt Uprising"
+ ZLF_the_edelweiss_revolution_begins_desc: ""
+ ZLF_the_edelweiss_revolution_begins_tt: "The urban areas of §Y[812.GetName]§!, §Y[832.GetName]§!, §Y[634.GetName]§! and §Y[817.GetName]§! will §Gjoin the Liberation Front§!."
+ ZLF_gain_elbian_support: "Approach the Elbs"
+ ZLF_gain_elbian_support_desc: ""
+ ZLF_gain_elbian_support_tt: "We will promise the formation of §YElbian Autonomous Territories§!. Failing to fulfill this promise will have §Rsignificant consequences§!."
+ ZLF_reorganise_the_police: "Utilise the Bandit Suppression Brigades"
+ ZLF_reorganise_the_police_desc: ""
+ ZLF_urge_restraint: "Urge Restraint"
+ ZLF_urge_restraint_desc: ""
+ ZLF_emphasise_the_revolution: "Emphasise Revolutionary Fervour"
+ ZLF_emphasise_the_revolution_desc: ""
+ ZLF_emphasise_the_revolution_tt: "§RThis National Spirit will be removed once the Civil War ends!§!"
+ ZLF_call_for_international_brigades: "Call for International Brigades"
+ ZLF_call_for_international_brigades_desc: ""
+ ZLF_call_for_international_brigades_tt: "§gThree§! §YInternational Republican Brigade§! Divisions will arive in §Y$VICTORY_POINTS_11208$§!."
+ ZLF_buy_foreign_guns_tt: "§Y2.00K§! units of various foreign §YInfantry Equipment§! is added to the national stockpile.\n§Y500§! units of various foreign §YSupport Equipment§! is added to the national stockpile."
+ ZLF_buy_foreign_guns: "Purchase Foreign Military Equipment"
+ ZLF_buy_foreign_guns_desc: ""
+ ZLF_dawn_of_the_republic: "Sunset for the Zinnian Throne"
+ ZLF_dawn_of_the_republic_desc: "The Reactionary Forces of the Zinnian Throne have been defeated. The Republic endures."
+ ZLF_dawn_of_the_republic_tt: "The §YLiberation Front§! will be reorganised into a proper §YRepublic§!, §Ycivil law§! will be established and preparations for §Yelections§! will be made."
 
 
 # EVENTS
@@ -116,7 +144,10 @@
  STATE_855: "Rotenfelde"
  STATE_879: "Quellenjebiet"
 
+ VICTORY_POINTS_8464: "Königsgnaden"
  VICTORY_POINTS_8470: "Küstrin"
+ VICTORY_POINTS_8471: "Wallenstein"
+ VICTORY_POINTS_8472: "Hindenburg"
  VICTORY_POINTS_8473: "Zinnienschloss"
  VICTORY_POINTS_9218: "Welsen"
  VICTORY_POINTS_9428: "Plosen an der Spei"
@@ -133,6 +164,7 @@
  VICTORY_POINTS_11065: "Rhododendron"
  VICTORY_POINTS_11070: "Rathenau"
  VICTORY_POINTS_11202: "Randstadt"
+ VICTORY_POINTS_11208: "Markelsrade"
  VICTORY_POINTS_11211: "Vorort"
  VICTORY_POINTS_11326: "Löbnitz"
  VICTORY_POINTS_11415: "Magnolienburg"
