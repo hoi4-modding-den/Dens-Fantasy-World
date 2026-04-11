@@ -85,40 +85,38 @@ VICTORY_POINTS_10866: "Astral Forge"
 VICTORY_POINTS_10862: "Khaanor"
 VICTORY_POINTS_10858: "Zulon-Thar"
 
-STATE_725: ""
+STATE_725: "Keth-Dohr-Zat"
+VICTORY_POINTS_10244: "Keth Crater"
 
+STATE_738: "Vaal-Kaan"
+VICTORY_POINTS_10403: "Vaal-Kaan Mine"
 
-STATE_738: ""
-
-
-STATE_595: ""
-
+STATE_595: "Maraan Basin"
+VICTORY_POINTS_8783: "Maraan-Lurk Scrapyard"
 
 STATE_700: "Zulanis Delta"
 VICTORY_POINTS_9911: "High-Athel District"
 
 STATE_575: "Thul-Dohr"
+VICTORY_POINTS_8502: "Thul-Dohr"
 
+STATE_767: "Ursa Minor"
+VICTORY_POINTS_10637: "Ursa Minor"
+VICTORY_POINTS_10635: "Zul-Keth"
 
-STATE_767: "Keth-Dohr-Zat"
+STATE_857: "Maraan-Uhl"
+VICTORY_POINTS_11433: "Maraan-Uhl"
 
-
-STATE_857: ""
-
-
-STATE_602: "Maraan-Uhl"
-
+STATE_602: "Ursa Major"
+VICTORY_POINTS_8877: "Zatilia"
+VICTORY_POINTS_8874: "Ursa Major"
+VICTORY_POINTS_8879: "Tucana Outpost"
 
 STATE_810: "Al-Ghom Marches"
+VICTORY_POINTS_11011: "Al-Ghom"
 
-
-STATE_819: ""
-
-
-STATE_692: ""
-
-
-
+STATE_692: "Tamperiz"
+VICTORY_POINTS_9848: "Nova Tamperiz"
 
 # Human Regions
 STATE_860: "Mundis"

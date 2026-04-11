@@ -29,6 +29,8 @@ state={
 			
 		}
 		
+		victory_points = { 8783 4 }		
+		
 	}
 
 	provinces={
