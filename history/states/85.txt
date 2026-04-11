@@ -18,6 +18,8 @@ state={
 
 	history={
 		owner = ZKO
+		add_core_of = ZKC
+		add_core_of = ZKU
 		add_core_of = ZKO			
 		
 		buildings = {

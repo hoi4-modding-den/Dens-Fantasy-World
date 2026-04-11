@@ -1,6 +1,6 @@
 characters={
 	ZKO_Colonel_Crosland = {
-		name = "Colonel Troy Crosland"
+		name = "Colonel Ryts Crosland"
 		portraits = {
 			civilian = {
 				large = "/gfx/leaders/ZKO/Portrait_Korelia_Colonel_Crosland.png"
@@ -9,6 +9,34 @@ characters={
 		country_leader = {
 			expire = "1960.1.1.1"
 			ideology = despotism
+			traits = {  }
+		}
+	}
+
+	ZKO_Jonas_Adamakaus = {
+		name = "Jonas Adamakaus"
+		portraits = {
+			civilian = {
+				large = "/gfx/leaders/ZKO/Portrait_Korelia_Jonas_Adamakaus.png"
+			}
+		}
+		country_leader = {
+			expire = "1960.1.1.1"
+			ideology = anti_revisionism
+			traits = {  }
+		}
+	}
+
+	ZKO_Matas_Vilkas = {
+		name = "Matas Vilkas"
+		portraits = {
+			civilian = {
+				large = "/gfx/leaders/ZKO/Portrait_Korelia_Matas_Vilkas.png"
+			}
+		}
+		country_leader = {
+			expire = "1960.1.1.1"
+			ideology = fascism_ideology
 			traits = {  }
 		}
 	}

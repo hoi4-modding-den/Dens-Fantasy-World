@@ -1,17 +1,31 @@
 ﻿l_english:
  #Country
  ZKO: "Korelia"
- ZKO_DEF: "The Promised Lands"
+ ZKO_DEF: "Pažadėtosios Zemės"
  ZKO_ADJ: "Korelian"
  
- ZKO_anarchy: "Provisional Government"
+ ZKO_anarchy: "Laikinoji Vyriausybė"
+
+ ZKC: "Gloria Organization"
+ ZKC_DEF: "Nacionalinė Revoliucinė Organizacija"
+ ZKC_ADJ: "Glorian"
+
+ ZKU: "Restoration Government"
+ ZKU_DEF: "Atkūrimo Vyriausybė"
+ ZKU_ADJ: "Restorationist"
  
  ZKL: "Scientist Society"
  ZKL_DEF: "The Discoveries for the Promised Lands"
  ZKL_ADJ: "Scientist"
  #Parties
- ZKO_neutrality_party: "Junta of the Colonels"
- ZKO_neutrality_party_long: "Regime of the Colonels"
+ ZKO_neutrality_party: "Pulkininko Režimas"
+ ZKO_neutrality_party_long: "Pulkininko Režimas"
+
+ ZKC_communism_party: "NRO"
+ ZKC_communism_party_long: "Nacionalinė Revoliucinė Organizacija"
+
+ ZKU_fascism_party: "PK"
+ ZKU_fascism_party_long: "Pirma Korelija"
 
  ZKL_neutrality_party: "Scientist Society"
  ZKL_neutrality_party_long: "The Scientist Society for the Promised Lands"
