@@ -16,14 +16,49 @@ ZBT_undercity_cat = {
 			num_of_available_civilian_factories > 2
 		}
 
-		cost = 100
-		days_remove = 10
+		cost = UC_new_layer_cost
+		days_remove = UC_new_layer_time
 		modifier = {
 			civilian_factory_use = 3
 		}
 		remove_effect = {
-			set_variable = { var = UC_unexcavated_sectors value = 10 }
+			# set_variable = { var = UC_unexcavated_sectors value = 10 }
+			add_to_variable = { var = UC_depth value = 1 }
 			set_variable = { var = UC_empty_sectors value = 0 }
+			IF = {
+				limit = { check_variable = { UC_depth < 3 } }
+				set_variable = { var = UC_unexcavated_sectors value = 5 }
+			}
+			ELSE_IF = {
+				limit = { check_variable = { UC_depth < 7 } }
+				set_variable = { var = UC_unexcavated_sectors value = 3 }
+			}
+			ELSE_IF = {
+				limit = { check_variable = { UC_depth < 10 } }
+				set_variable = { var = UC_unexcavated_sectors value = 2 }
+			}
+			ELSE = {
+				set_variable = { var = UC_unexcavated_sectors value = 1 }
+			}
+
+			# Increase costs + time bc fuck you
+			# there is def a better way to do this but it is 12am
+			multiply_variable = { var = UC_new_layer_cost value = 1.1 }
+			round_variable = UC_new_layer_cost
+			multiply_variable = { var = UC_new_layer_time value = 1.1 }
+			round_variable = UC_new_layer_time
+			multiply_variable = { var = UC_sector_dig_cost value = 1.1 }
+			round_variable = UC_sector_dig_cost
+			multiply_variable = { var = UC_sector_dig_time value = 1.1 }
+			round_variable = UC_sector_dig_time
+			multiply_variable = { var = UC_sector_build_cost value = 1.1 }
+			round_variable = UC_sector_build_cost
+			multiply_variable = { var = UC_sector_build_time value = 1.1 }
+			round_variable = UC_sector_build_time
+			multiply_variable = { var = UC_sector_build_heavy_cost value = 1.05 }
+			round_variable = UC_sector_build_heavy_cost
+			multiply_variable = { var = UC_sector_build_heavy_time value = 1.05 }
+			round_variable = UC_sector_build_heavy_time
 		}
 
 		cancel_trigger = { NOT = { controls_province = 10027 } }
@@ -47,12 +82,13 @@ ZBT_undercity_cat = {
 			}
 		}
 
-		cost = 100
-		days_remove = 10
+		cost = UC_sector_dig_cost
+		days_remove = UC_sector_dig_time
 		modifier = {
 			civilian_factory_use = 1
 		}
 		remove_effect = {
+			add_to_variable = { var = STAT_excavations_so_far value = 1 }
 			add_to_variable = { var = UC_empty_sectors value = 1 }
 			add_to_variable = { var = UC_unexcavated_sectors value = -1 }
 			custom_effect_tooltip = {
@@ -82,8 +118,8 @@ ZBT_undercity_cat = {
 			}
 		}
 
-		cost = 100
-		days_remove = 10
+		cost = UC_sector_build_cost
+		days_remove = UC_sector_build_time
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -116,8 +152,8 @@ ZBT_undercity_cat = {
 			}
 		}
 
-		cost = 100
-		days_remove = 10
+		cost = UC_sector_build_cost
+		days_remove = UC_sector_build_time
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -151,8 +187,8 @@ ZBT_undercity_cat = {
 			}
 		}
 
-		cost = 100
-		days_remove = 10
+		cost = UC_sector_build_cost
+		days_remove = UC_sector_build_time
 		modifier = {
 			civilian_factory_use = 2
 		}
