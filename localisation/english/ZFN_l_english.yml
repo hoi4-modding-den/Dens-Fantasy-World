@@ -4,6 +4,7 @@
  ZFN_DEF:0 "National City Zone in Nechi"
  ZFN_ADJ:0 "Nechian"
  
+#parties
  ZFN_communism_party: "NKP"
  ZFN_communism_party_long: "Nechi Communist Party"
  ZFN_democratic_party: "YGDM"
@@ -12,3 +13,20 @@
  ZFN_neutrality_party_long: "Bandits"
  ZFN_fascism_party: "YKY"
  ZFN_fascism_party_long: "City Corporatist Collective"
+
+#ideas
+
+#focuses
+
+#traits
+
+#characters
+ZFN_defisi_kenechi: "Defisi Kenechi"
+
+#character descriptions
+
+#decisions
+
+#victory_points
+
+#states

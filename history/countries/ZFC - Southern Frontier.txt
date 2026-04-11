@@ -27,7 +27,10 @@ set_stability = 0.3
 set_war_support = 0.8
 set_convoys = 0
 
-#recruit_character = 
+recruit_character = ZFC_provisional_military_government
+recruit_character = ZFC_degi_biritu_kerema
+recruit_character = ZFC_beseyete_redari
+recruit_character = ZFC_aratenya_injifataa
 #add_ideas = 
 
 set_politics = {

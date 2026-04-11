@@ -1,0 +1,17 @@
+characters={
+	ZFO_amanamaa_seartuu = { 
+		name = ZFO_amanamaa_seartuu
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+                        traits = {}
+			desc = ZFO_amanamaa_seartuu_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

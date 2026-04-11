@@ -1,0 +1,17 @@
+characters={
+	ZFN_defisi_kenechi = { 
+		name = ZFN_defisi_kenechi
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+                        traits = {}
+			desc = ZFN_defisi_kenechi_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

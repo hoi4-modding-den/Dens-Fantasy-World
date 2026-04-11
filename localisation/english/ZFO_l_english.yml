@@ -4,6 +4,7 @@
  ZFO_DEF:0 "Monarchy of Naannbadhaad"
  ZFO_ADJ:0 "Naannbadi"
  
+#parties
  ZFO_communism_party: "Disorganised"
  ZFO_communism_party_long: "Disorganised"
  ZFO_democratic_party: "GEB"
@@ -12,3 +13,20 @@
  ZFO_neutrality_party_long: "Royal Council for Reform"
  ZFO_fascism_party: "Reactionaries"
  ZFO_fascism_party_long: "Reactionaries"
+
+#ideas
+
+#focuses
+
+#traits
+
+#characters
+ZFO_amanamaa_seartuu: "Amanamaa Seartuu"
+
+#character descriptions
+
+#decisions
+
+#victory_points
+
+#states

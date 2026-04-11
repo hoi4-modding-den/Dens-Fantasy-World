@@ -27,7 +27,7 @@ set_stability = 0.45
 set_war_support = 0.25
 set_convoys = 5
 
-#recruit_character = 
+recruit_character = ZFN_defisi_kenechi
 #add_ideas = 
 
 set_politics = {

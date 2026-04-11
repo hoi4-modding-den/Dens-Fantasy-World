@@ -1,0 +1,17 @@
+characters={
+	ZFP_yetefaiw_beti_lijji = { 
+		name = ZFP_yetefaiw_beti_lijji
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = falangism
+                        traits = {}
+			desc = ZFP_yetefaiw_beti_lijji_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

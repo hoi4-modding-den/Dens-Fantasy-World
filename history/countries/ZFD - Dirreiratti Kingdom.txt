@@ -27,7 +27,7 @@ set_stability = 0.5
 set_war_support = 0.3
 set_convoys = 0
 
-#recruit_character = 
+recruit_character = ZFD_ilkama_i
 #add_ideas = 
 
 set_politics = {

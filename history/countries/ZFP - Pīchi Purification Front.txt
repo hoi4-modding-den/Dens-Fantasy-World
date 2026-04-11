@@ -27,7 +27,7 @@ set_stability = 0.5
 set_war_support = 0.8
 set_convoys = 0
 
-#recruit_character = 
+recruit_character = ZFP_yetefaiw_beti_lijji
 #add_ideas = 
 
 set_politics = {

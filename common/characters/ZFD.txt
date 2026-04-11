@@ -1,0 +1,17 @@
+characters={
+	ZFD_ilkama_i = { 
+		name = ZFD_ilkama_i
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = despotism
+                        traits = {}
+			desc = ZFD_ilkama_i_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

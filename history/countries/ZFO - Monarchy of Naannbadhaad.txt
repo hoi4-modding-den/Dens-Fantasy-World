@@ -27,7 +27,7 @@ set_stability = 0.4
 set_war_support = 0.1
 set_convoys = 0
 
-#recruit_character = 
+recruit_character = ZFO_amanamaa_seartuu
 #add_ideas = 
 
 set_politics = {

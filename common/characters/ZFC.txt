@@ -1,0 +1,64 @@
+characters={
+            ZFC_provisional_military_government = { 
+		name = ZFC_provisional_military_government
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = despotism
+                        traits = {}
+			desc = ZFC_provisional_military_government_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+
+	ZFC_degi_biritu_kerema = { 
+		name = ZFC_degi_biritu_kerema
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = despotism
+                        traits = {}
+			desc = ZFC_degi_biritu_kerema_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+        ZFC_beseyete_redari = { 
+		name = ZFC_beseyete_redari
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = despotism
+                        traits = {}
+			desc = ZFC_beseyete_redari_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+        ZFC_aratenya_injifataa = { 
+		name = ZFC_aratenya_injifataa
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+                        traits = {}
+			desc = ZFC_aratenya_injifataa_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+
+}

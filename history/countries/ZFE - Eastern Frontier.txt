@@ -27,7 +27,7 @@ set_stability = 0.2
 set_war_support = 0.3
 set_convoys = 0
 
-#recruit_character = 
+recruit_character = ZFE_hamilibi_ainyeti
 #add_ideas = 
 
 set_politics = {

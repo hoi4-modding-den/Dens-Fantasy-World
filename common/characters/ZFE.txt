@@ -1,0 +1,17 @@
+characters={
+	ZFE_hamilibi_ainyeti = { 
+		name = ZFE_hamilibi_ainyeti
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = nazism
+                        traits = {}
+			desc = ZFE_hamilibi_ainyeti_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

@@ -4,6 +4,7 @@
  ZFC_DEF:0 "Southern Balekelemi Frontier"
  ZFC_ADJ:0 "Southern"
  
+#parties
  ZFC_communism_party: "YM"
  ZFC_communism_party_long: "Soldier's Unions"
  ZFC_democratic_party: "WML-N"
@@ -12,3 +13,23 @@
  ZFC_neutrality_party_long: "Military Government for Stability - Militarists"
  ZFC_fascism_party: "WML-M"
  ZFC_fascism_party_long: "Military Government for Stability - Expansionists"
+
+#ideas
+
+#focuses
+
+#traits
+
+#characters
+ZFC_provisional_military_government: "Provisional Military Government"
+ZFC_degi_biritu_kerema: "Degi Biritu Kerema"
+ZFC_beseyete_redari: "Beseyete Redari"
+ZFC_aratenya_injifataa: "Āratenya Injifataa"
+
+#character descriptions
+
+#decisions
+
+#victory_points
+
+#states

@@ -4,6 +4,7 @@
  ZFE_DEF:0 "Eastern Balekelemi Frontier"
  ZFE_ADJ:0 "Eastern"
  
+#parties
  ZFE_communism_party: "YĀM"
  ZFE_communism_party_long: "Radical Association of Communes"
  ZFE_democratic_party: "YMYG"
@@ -12,3 +13,20 @@
  ZFE_neutrality_party_long: "Hāmirawī National Defense Front - Moderates"
  ZFE_fascism_party: "HBMG-T"
  ZFE_fascism_party_long: "Hāmirawī National Defense Front - Extremists"
+
+#ideas
+
+#focuses
+
+#traits
+
+#characters
+ZFE_hamilibi_ainyeti: "Hamilibi Ainyeti"
+
+#character descriptions
+
+#decisions
+
+#victory_points
+
+#states

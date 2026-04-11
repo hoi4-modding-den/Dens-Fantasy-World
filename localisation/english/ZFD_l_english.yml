@@ -4,6 +4,7 @@
  ZFD_DEF:0 "Dirreiratti Kingdom"
  ZFD_ADJ:0 "Dirreiratti"
  
+#parties
  ZFD_communism_party: "Angry Slaves"
  ZFD_communism_party_long: "Angry Slaves"
  ZFD_democratic_party: "GA"
@@ -12,3 +13,20 @@
  ZFD_neutrality_party_long: "King's Faction"
  ZFD_fascism_party: "Waaqa Cult"
  ZFD_fascism_party_long: "Waaqa Cult"
+
+#ideas
+
+#focuses
+
+#traits
+
+#characters
+ZFD_ilkama_i: "Ilkama I"
+
+#character descriptions
+
+#decisions
+
+#victory_points
+
+#states
