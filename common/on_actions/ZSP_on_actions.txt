@@ -1,0 +1,14 @@
+on_actions = {
+
+    on_weekly_ZSP = {
+        effect = {
+            if = {
+                limit = {
+                    check_variable = { modifier@ZSP_mana_generation > 0 }
+                }
+                add_to_variable = { ZSP_mana = modifier@ZSP_mana_generation }
+            }
+        }
+    }
+
+}

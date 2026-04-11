@@ -1,0 +1,21 @@
+ZSP_magic_cat = {
+
+    ZSP_use_mana_test = {
+
+        custom_cost_trigger = {
+            check_variable = { ZSP_mana > 99 }
+        }
+        custom_cost_text = ZSP_use_50_mana
+
+        available = {
+            has_stability < 1
+        }
+
+        complete_effect = {
+            add_to_variable = { ZSP_mana = -100 }
+            add_stability = 0.1
+        }
+
+    }
+
+}

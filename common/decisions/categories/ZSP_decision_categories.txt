@@ -1,0 +1,16 @@
+ZSP_magic_cat = {
+
+    icon = SWI_presidential_office
+	
+	allowed = {
+		original_tag = ZSP
+	}
+
+    visible_when_empty = yes
+
+	priority = 100
+
+	visible = {
+		
+	}
+}

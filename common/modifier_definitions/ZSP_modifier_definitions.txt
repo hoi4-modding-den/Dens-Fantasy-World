@@ -1,0 +1,6 @@
+ZSP_mana_generation = {
+	color_type = good
+	value_type = number
+	precision = 0
+	postfix = none
+}

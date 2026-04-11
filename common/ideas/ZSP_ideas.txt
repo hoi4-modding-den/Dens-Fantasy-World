@@ -38,7 +38,7 @@ ideas = {
 			modifier = {
                 political_power_cost = 1
                 research_speed_factor = 0.15
-                #ZSP_mana_generation = 10
+                ZSP_mana_generation = 5
 			}
             
 		}

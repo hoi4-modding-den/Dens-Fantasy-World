@@ -4,7 +4,7 @@ leader_traits = {
         
         stability_factor = 0.1
         drift_defence_factor = 1
-        #ZSP_mana_generation = 15
+        ZSP_mana_generation = 5
 
         random = no
     }

@@ -49,3 +49,20 @@
 
  ZSP_disarmed_nation: "Reliance on the Order"
 
+
+# MODIFIERS
+
+ ZSP_mana_generation: "Weekly Mana Generation"
+
+
+# DECISIONS
+
+ ZSP_magic_cat: "Arcane Revelations"
+ ZSP_magic_cat_desc: "LORE BLURB HERE\n \nMana Reserves: [?ZSP_mana|.0+]"
+
+
+# DECISION COSTS
+
+ ZSP_use_50_mana: "Mana §Y50§!"
+ ZSP_use_50_mana_blocked: "Mana §R50§!"
+ ZSP_use_50_mana_tooltip: "It costs Mana §Y50§! to take the decision"
