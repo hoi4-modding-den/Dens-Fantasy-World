@@ -4,7 +4,6 @@ ZBT_undercity_cat = {
 
     allowed = {
         original_tag = ZBT
-        controls_province = 10027
     }
 
     priority = 100 
@@ -12,6 +11,8 @@ ZBT_undercity_cat = {
     visible_when_empty = yes
 
     visible = {
-        always = yes #todo: change this to be activated by focus or smth
+        # always = yes #todo: change this to be activated by focus or smth
+        has_dynamic_modifier = ZBT_undercity
+        controls_province = 10027
     }
 }

@@ -60,8 +60,6 @@ ZBT_undercity_cat = {
 			multiply_variable = { var = UC_sector_build_heavy_time value = 1.05 }
 			round_variable = UC_sector_build_heavy_time
 		}
-
-		cancel_trigger = { NOT = { controls_province = 10027 } }
 	}
 
 
@@ -96,8 +94,6 @@ ZBT_undercity_cat = {
 				AMT = 1
 			}
 		}
-
-		cancel_trigger = { NOT = { controls_province = 10027 } }
 	}
 
 
@@ -130,8 +126,6 @@ ZBT_undercity_cat = {
 				level = 1
 			}
 		}
-
-		cancel_trigger = { NOT = { controls_province = 10027 } }
 	}
 
 
@@ -164,8 +158,6 @@ ZBT_undercity_cat = {
 				level = 1
 			}
 		}
-
-		cancel_trigger = { NOT = { controls_province = 10027 } }
 	}
 
 
@@ -199,8 +191,6 @@ ZBT_undercity_cat = {
 				level = 1
 			}
 		}
-
-		cancel_trigger = { NOT = { controls_province = 10027 } }
 	}
 	
 	
