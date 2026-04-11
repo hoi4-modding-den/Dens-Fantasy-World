@@ -1,6 +1,6 @@
 ﻿capital = 612
 
-#oob = "ABK_1936"
+oob = "ZCV_1936"
 
 set_research_slots = 3
 
@@ -19,7 +19,7 @@ set_technology = {
 	militia_tech = 1
 }
 
-set_stability = 0.35
+set_stability = 0.25
 set_war_support = 0.10
 
 add_ideas = {
@@ -30,12 +30,37 @@ add_ideas = {
 }
 
 recruit_character = ZCV_otto_bauer
+recruit_character = ZCV_friedrich_graf
+recruit_character = ZCV_BIS_Hicom
+recruit_character = ZCV_johann_beck
+activate_advisor = ZCV_johann_beck
+recruit_character = ZCV_carl_hauser
+activate_advisor = ZCV_carl_hauser
+recruit_character = ZCV_sven_gramlich
+activate_advisor = ZCV_sven_gramlich
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	last_election = "1933.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
+}
+country_event = { 
+	id = ZCV.1
+	days = 12
+	random_days = 3
+}
+country_event = { 
+	id = ZCV.2
+	days = 45
+}
+country_event = { 
+	id = ZCV.3
+	days = 163
+}
+country_event = { 
+	id = ZCV.4
+	days = 314
 }
 
 set_popularities = {

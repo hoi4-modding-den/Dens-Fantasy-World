@@ -19,7 +19,8 @@ state={
 	history={
 		
 		owner = ZCV
-		add_core_of = ZCV
+		add_claim_by = ZCV
+		add_core_of = ZCX
 		
 		
 		buildings = {
@@ -30,6 +31,7 @@ state={
 			
 			
 		}
+		victory_points = { 9130 25 }
 		
 	}
 
