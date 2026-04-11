@@ -1,8 +1,8 @@
-#oob = "ZKO"
+#oob = "ZKU"
 capital = 122
-set_stability = 0.05
-set_war_support = 0.25
-set_research_slots = 3
+set_stability = 0.31
+set_war_support = 0.78
+set_research_slots = 2
 starting_train_buffer = 1
 
 set_technology = {
@@ -15,20 +15,16 @@ set_technology = {
 	interwar_antiair = 1
 }
 
-country_event = { id=koreliaintro.1 days=100 }
-
-recruit_character = ZKO_Colonel_Crosland
-
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 35
 	democratic = 0
 	communism = 0
-	fascism = 0
+	fascism = 65
 }
