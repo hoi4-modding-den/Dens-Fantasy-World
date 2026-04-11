@@ -1,40 +1,70 @@
 ﻿l_english:
+ #Korelian Government
  #Country
  ZKO: "Korelia"
  ZKO_DEF: "Pažadėtosios Zemės"
  ZKO_ADJ: "Korelian"
  
  ZKO_anarchy: "Laikinoji Vyriausybė"
-
- ZKC: "Gloria Organization"
- ZKC_DEF: "Nacionalinė Revoliucinė Organizacija"
- ZKC_ADJ: "Glorian"
-
- ZKU: "Restoration Government"
- ZKU_DEF: "Atkūrimo Vyriausybė"
- ZKU_ADJ: "Restorationist"
  
  ZKL: "Scientist Society"
- ZKL_DEF: "The Discoveries for the Promised Lands"
+ ZKL_DEF: "Pažadėtuju Zemiu Atradimai"
  ZKL_ADJ: "Scientist"
  #Parties
  ZKO_neutrality_party: "Pulkininko Režimas"
  ZKO_neutrality_party_long: "Pulkininko Režimas"
 
- ZKC_communism_party: "NRO"
- ZKC_communism_party_long: "Nacionalinė Revoliucinė Organizacija"
-
- ZKU_fascism_party: "PK"
- ZKU_fascism_party_long: "Pirma Korelija"
-
- ZKL_neutrality_party: "Scientist Society"
- ZKL_neutrality_party_long: "The Scientist Society for the Promised Lands"
+ ZKL_neutrality_party: "Mokslininku Draugija"
+ ZKL_neutrality_party_long: "Pažadėtosios žemės Atradimu Draugija"
  #Characters
  
  #Leader Descriptions
  
  #Focuses
 
+ #Ideas
+
+ #Events
+ 
+ #Commies
+ #Country
+ ZKC: "Gloria Organization"
+ ZKC_DEF: "Nacionalinė Revoliucinė Organizacija"
+ ZKC_ADJ: "Glorian" 
+ #Parties
+ ZKC_communism_party: "NRO"
+ ZKC_communism_party_long: "Nacionalinė Revoliucinė Organizacija"
+ #Characters
+ 
+ #Leader Descriptions
+ 
+ #Focuses
+ ZKC_rifles_raised: "Rifles Raised"
+ ZKC_rifles_raised_desc: "  "
+ #Events
+
+ #Ideas
+
+ #Nationalists
+ #Country
+ ZKU: "Restoration Government"
+ ZKU_DEF: "Atkūrimo Vyriausybė"
+ ZKU_ADJ: "Restorationist" 
+ #Parties
+ ZKU_fascism_party: "PK"
+ ZKU_fascism_party_long: "Pirma Korelija" 
+ #Characters
+ 
+ #Leader Descriptions
+ 
+ #Focuses
+
+ #Events
+
+ #Ideas
+
+ 
+ #UNIVERSAL STUFF
  #Events
  koreliaintro.1.t: "Real Gloria Declarations"
  koreliaintro.1.d: "WIP"
@@ -45,9 +75,16 @@
  koreliacollapse.1: "Lillian's Rebellion"
  
  koreliamajor.1: "Korelian Spring"
+
  #Ideas
  
  #Ideologies
+ promised_land_thought: "Promised Land Thought"
+ promised_land_thought_desc: "Through the years of our struggle, residing in homelands that weren't even ours, we finally have found a settlement. The Promised Land. The homeland where all Korelians may reside with no more unnecessary suffering... §ROr are we going to seek revenge for those who treated us wrong?§!"
+ 
+ nativism: "Nativism"
+ nativism_desc: "WIP"
+
  despotic_technocracy: "Despotic Technocracy"
  despotic_technocracy_desc: "Technocracy but with Despotism involved. There is no council, or a society to choose which scientist is better than the other, or which corporate group shall rule over the masses. It is one man, the true guide of the nation to the future."
  

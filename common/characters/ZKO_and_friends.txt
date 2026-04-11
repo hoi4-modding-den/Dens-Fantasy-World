@@ -40,6 +40,34 @@ characters={
 			traits = {  }
 		}
 	}
+
+	ZKO_Samas_Lemberg = {
+		name = "Samas Lemberg"
+		portraits = {
+			civilian = {
+				large = "/gfx/leaders/ZKO/Portrait_Korelia_Samas_Lemberg.png"
+			}
+		}
+		country_leader = {
+			expire = "1960.1.1.1"
+			ideology = moderatism
+			traits = {  }
+		}
+	}
+
+	ZKO_Motiejus_Lemberg = {
+		name = "Motiejus Lemberg"
+		portraits = {
+			civilian = {
+				large = "/gfx/leaders/ZKO/Portrait_Korelia_Motiejus_Lemberg.png"
+			}
+		}
+		country_leader = {
+			expire = "1960.1.1.1"
+			ideology = promised_land_thought
+			traits = {  }
+		}
+	}
 	
 	ZKO_Lillian_Hill = {
 		name = "Lillian Hill"

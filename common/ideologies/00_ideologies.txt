@@ -191,6 +191,14 @@ ideologies = {
 				can_be_randomly_selected = no
 			}
 
+			promised_land_thought = {
+				can_be_randomly_selected = no
+			}
+
+			nativism = {
+				can_be_randomly_selected = no
+			}
+
 		}
 
 		dynamic_faction_names = {

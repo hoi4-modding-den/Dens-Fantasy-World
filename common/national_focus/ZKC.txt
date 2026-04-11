@@ -1,0 +1,22 @@
+focus_tree = {
+	id = koreliacommies
+	continuous_focus_position = { x = 0 y = 2500 }	
+	default = no	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZKC
+		}
+	}
+	focus = {
+		id = ZKC_rifles_raised
+		icon = GFX_focus_generic_spur_communist_revolutions
+		x = 30
+		y = 0
+		cost = 1
+		completion_reward = {
+           
+		}
+	}
+}

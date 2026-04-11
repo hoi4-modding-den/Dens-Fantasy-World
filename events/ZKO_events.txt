@@ -30,6 +30,14 @@ country_event = {
 		country_event = { id=koreliaintro.3 days=20 }
 		hidden_effect = {
 		   retire_character = ZKO_Colonel_Crosland
+		create_country_leader = {
+			name = "Emergency Government"
+			picture = "gfx/leaders/ZKO/Portrait_Korelia_EG.png"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+			}
+		}
 		}
 	}
 }
