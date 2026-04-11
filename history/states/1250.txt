@@ -26,8 +26,10 @@ state={
 			
 			arms_factory = 0
 			industrial_complex = 2
-			
-			
+		}
+
+		victory_points = {
+			10067 25
 		}
 		
 	}
