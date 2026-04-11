@@ -1,0 +1,17 @@
+ZBT_undercity_cat = {
+
+    icon = generic_industry
+
+    allowed = {
+        original_tag = ZBT
+        controls_province = 10027
+    }
+
+    priority = 100 
+
+    visible_when_empty = yes
+
+    visible = {
+        always = yes #todo: change this to be activated by focus or smth
+    }
+}

@@ -1,6 +1,6 @@
 ZBT_undercity = {
 	enable = {
-		owns_state = 710
+		# owns_state = 710
 		controls_province = 10027
 	}
 

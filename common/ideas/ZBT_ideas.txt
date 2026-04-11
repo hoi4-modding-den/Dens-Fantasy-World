@@ -9,6 +9,16 @@ ideas = {
 			}
 		}
 
+		ZBT_refugee_influx = {
+			picture = prc_low_popular_support3
+			modifier = {
+				monthly_population = 0.1
+				stability_factor = -0.1
+				conscription_factor = -0.1
+				# consumer_goods_factor = 0.02
+			}
+		}
+
 		ZBT_political_enthusiasts = {
 			picture = POL_the_peasants_strike
 			modifier = {

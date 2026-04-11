@@ -23,3 +23,19 @@
  # States and VPs
  STATE_710:0 "Greater Basaltropolis"
  VICTORY_POINTS_10027:0 "Basaltropolis"
+
+
+ # Nat Spirits
+ ZBT_established_mining_town:0 "Established Mining Town"
+ ZBT_established_mining_town_desc:0 ""
+
+ ZBT_refugee_influx:0 "Refugee Influx"
+ ZBT_refugee_influx_desc:0 ""
+
+ ZBT_political_enthusiasts:0 "Political \"Enthusiasts\""
+ ZBT_political_enthusiasts_desc:0 ""
+
+
+ # Decisions - Undercity
+ ZBT_undercity_cat:0 "The Undercity Project"
+ ZBT_undercity_cat_desc:0 "The Undercity Project"

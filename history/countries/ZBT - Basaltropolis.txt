@@ -27,6 +27,7 @@ set_popularities = {
 
 add_ideas = {
 	ZBT_established_mining_town
+	ZBT_refugee_influx
 	ZBT_political_enthusiasts
 	RAZESCAPE_scorched_earth
 }
