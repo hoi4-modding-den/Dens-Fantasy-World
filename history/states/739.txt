@@ -17,6 +17,8 @@ state={
 	}
 
 	history={
+		owner = ZRZ
+		add_core_of = ZRZ
 		
 		
 		buildings = {

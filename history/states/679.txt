@@ -4,7 +4,7 @@ state={
 	name="STATE_679"
 	manpower = 2096653
 	
-	state_category = large_town
+	state_category = rural
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -28,6 +28,11 @@ state={
 			
 		}
 		
+	
+		1936.1.1 = {
+			owner = ZRZ
+			add_core_of = ZRZ
+		}
 	}
 
 	provinces={

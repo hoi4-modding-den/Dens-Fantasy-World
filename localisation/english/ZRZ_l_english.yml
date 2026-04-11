@@ -1,0 +1,13 @@
+﻿l_english:
+ 
+ # Country name
+ ZRZ:0 "The Razescape"
+ ZRZ_DEF:0 "The Razescape"
+ ZRZ_ADJ:0 "Draconic"
+
+
+ # Parties
+ ZRZ_fascism_party:0 "Malphas' Rule"
+ ZRZ_neutrality_party:0 "§tResistance§!"
+ ZRZ_democratic_party:0 "§tResistance§!"
+ ZRZ_communism_party:0 "§tResistance§!"

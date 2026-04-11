@@ -28,6 +28,11 @@ state={
 			
 		}
 		
+	
+		1936.1.1 = {
+			owner = ZRZ
+			add_core_of = ZRZ
+		}
 	}
 
 	provinces={

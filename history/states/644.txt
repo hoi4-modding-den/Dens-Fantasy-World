@@ -4,7 +4,7 @@ state={
 	name="STATE_644"
 	manpower = 639705
 	
-	state_category = small_island
+	state_category = rural
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -17,6 +17,10 @@ state={
 	}
 
 	history={
+		victory_points = { 8824 2 }
+		victory_points = { 8836 5 }
+		owner = ZJT
+		add_core_of = ZJT
 		
 		
 		buildings = {
@@ -30,8 +34,8 @@ state={
 		
 	}
 
-	provinces={
-		9339 9340 9341 9342 9343 9344 9345 
+	provinces = {
+		9340 9343 9345 8838 8824 8836 8821 8830 8825
 	}
 	local_supplies=0.0 
 }

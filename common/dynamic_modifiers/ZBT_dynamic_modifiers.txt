@@ -1,0 +1,27 @@
+ZBT_undercity = {
+	enable = {
+		owns_state = 710
+		controls_province = 10027
+	}
+
+	icon = GFX_idea_ARG_resource_extration_focus
+
+	production_speed_buildings_factor = ZBT.UC_construction_speed
+	industrial_capacity_factory = ZBT.US_mil_output
+	consumer_goods_expected_value = ZBT.UC_consumer_goods
+	stability_factor = ZBT.UC_stability
+	production_factory_max_efficiency_factor = ZBT.UC_mil_cap
+	factory_energy_consumption = ZBT.UC_energy_cap
+	base_fuel_gain_factor = ZBT.UC_fuel_gain
+	max_fuel_factor = ZBT.UC_max_fuel
+	research_speed_factor = ZBT.UC_research_speed
+	training_time_factor = ZBT.UC_training_time
+
+	country_resource_coal = ZBT.UC_res_coal
+	country_resource_oil = ZBT.UC_res_oil
+	country_resource_steel = ZBT.UC_res_steel
+	country_resource_tungsten = ZBT.UC_res_tungsten
+	country_resource_aluminium = ZBT.UC_res_aluminum
+	country_resource_rubber = ZBT.UC_res_rubber
+	country_resource_chromium = ZBT.UC_res_chromium
+}

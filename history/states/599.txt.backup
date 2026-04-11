@@ -1,10 +1,10 @@
 
 state={
-	id=269
-	name="STATE_269"
-	manpower = 1326009
+	id=599
+	name="STATE_599"
+	manpower = 3034704
 	
-	state_category = rural
+	state_category = town
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -17,8 +17,6 @@ state={
 	}
 
 	history={
-		owner = ZRZ
-		add_core_of = ZRZ
 		
 		
 		buildings = {
@@ -33,7 +31,7 @@ state={
 	}
 
 	provinces = {
-		4377 4378 4379 4380 4381 4382 4383 8832 8837 8822 8840 8827 8839 11703 11708
+		8819 8820 8823 8826 8829 8831 8833 8834 8835
 	}
 	local_supplies=0.0 
 }

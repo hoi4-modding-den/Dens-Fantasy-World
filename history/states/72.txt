@@ -17,6 +17,9 @@ state={
 	}
 
 	history={
+		victory_points = { 1452 20 }
+		owner = ZST
+		add_core_of = ZST
 		
 		
 		buildings = {

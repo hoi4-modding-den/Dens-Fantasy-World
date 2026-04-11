@@ -1316,3 +1316,20 @@ ZP1 = {
 ZEE = {
 	color = rgb { 220 220 220 }
 	color_ui = rgb { 220 220 220 }
+}
+ZRZ = {
+	color = rgb { 128 40 64 }
+	color_ui = rgb { 128 40 64 }
+}
+ZBT = {
+	color = rgb { 133 127 112 }
+	color_ui = rgb { 133 127 112 }
+}
+ZJT = {
+	color = rgb { 122 96 71 }
+	color_ui = rgb { 122 96 71 }
+}
+ZST = {
+	color = rgb { 200 0 55 }
+	color_ui = rgb { 200 0 55 }
+}

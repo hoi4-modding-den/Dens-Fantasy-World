@@ -1,10 +1,10 @@
 
 state={
-	id=730
-	name="STATE_730"
-	manpower = 4707720
+	id=888
+	name="STATE_888"
+	manpower = 6348579
 	
-	state_category = large_city
+	state_category = metropolis
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -24,7 +24,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			
-			arms_factory = 0
+			arms_factory = 1
 			industrial_complex = 1
 			
 			
@@ -32,8 +32,8 @@ state={
 		
 	}
 
-	provinces={
-		10288 10289 10290 10291 10292 10293 10294 10295 10296 10297 10298 10299 10300 10301 10302 10303 10304 10305 10306 10307 10308 
+	provinces = {
+		11692 11693 11694 11695 11696 11697 11698 11699 11700 11701 11702 11704 11705 11706 11707 11709 11710 11711 11712 11713 11714 11715 11716 11717 11718 11719 11720 11721
 	}
 	local_supplies=0.0 
 }

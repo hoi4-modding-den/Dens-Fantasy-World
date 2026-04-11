@@ -1,0 +1,26 @@
+ZJT = {
+	male = {
+		names = {
+			Wondrous Happy Short Medium Inquisitive Mal Questionable Rich Bland Fretful Tart Valuable
+			Hateful Malicious Malevolent Curly Virtuous Exotic Mindless Powerful Fearless Cowardly Barbarous Clever
+			Magnificent Daft Emotional Jazzy Puny Ruthless Classy
+			Wiggly Astonishing Exceptional Envious Zealous Mighty Rude Aberrant Soggy Cheerful Threatening
+			Poor Tranquil Wistful Groovy
+		}
+	}
+	female = {
+		names = {
+			Wondrous Happy Short Medium Inquisitive Mal Questionable Rich Bland Fretful Tart Valuable
+			Hateful Malicious Malevolent Curly Virtuous Exotic Mindless Powerful Fearless Cowardly Barbarous Clever
+			Magnificent Daft Emotional Jazzy Puny Ruthless Classy
+			Wiggly Astonishing Exceptional Envious Zealous Mighty Rude Aberrant Soggy Cheerful Threatening
+			Poor Tranquil Wistful Groovy
+		}
+	}
+	surnames = {
+		Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jum Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim Jim 
+	}
+
+	callsigns = { "Bandit" }
+
+}

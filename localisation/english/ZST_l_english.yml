@@ -1,0 +1,21 @@
+﻿l_english:
+ 
+ # Country name
+ ZST:0 "Sorcerer Realm of Pandemonium"
+ ZST_DEF:0 "the Sorcerer Realm of Pandemonium"
+ ZST_ADJ:0 "Sorcerer"
+
+
+ # Parties
+ ZST_fascism_party:0 "Sorcerer Council"
+ ZST_democratic_party:0 "" # TBA
+ ZST_neutrality_party:0 "" # TBA
+ ZST_communism_party:0 "" # TBA
+
+
+ # States and VPs
+ STATE_72:0 "Pandemonium"
+ STATE_583:0 "Mountains of Madness"
+ STATE_37:0 "" #TBA
+ VICTORY_POINTS_8836:0 "Jimtown"
+ VICTORY_POINTS_8824:0 "Horgungo"

@@ -17,6 +17,7 @@ state={
 	}
 
 	history={
+		victory_points = { 12895 20 }
 		
 		
 		buildings = {

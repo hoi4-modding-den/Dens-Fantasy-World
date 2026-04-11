@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		ZBT_established_mining_town = {
+			picture = generic_exploit_mines
+			# picture = COG_forminiere
+			modifier = {
+				consumer_goods_expected_value = -0.02
+				local_resources_factor = 0.1
+			}
+		}
+
+		ZBT_political_enthusiasts = {
+			picture = POL_the_peasants_strike
+			modifier = {
+				neutrality_drift = -0.04
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				political_power_factor = -0.05
+			}
+		}
+	}
+}

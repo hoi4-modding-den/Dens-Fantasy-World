@@ -1,0 +1,25 @@
+﻿l_english:
+ 
+ # Country name
+ ZBT:0 "Basaltropolis"
+ ZBT_DEF:0 "Basaltropolis"
+ ZBT_ADJ:0 "Basaltropolitan"
+
+
+ # Parties
+ ZBT_neutrality_party:0 "House of Esta"
+ ZBT_neutrality_party_long:0 "House of Esta"
+
+ ZBT_democratic_party:0 "AS (Moderates)"
+ ZBT_democratic_party_long:0 "Action Societies - Moderates"
+
+ ZBT_communism_party:0 "AS (Radicals)"
+ ZBT_communism_party_long:0 "Action Societies - Radicals"
+
+ ZBT_fascism_party:0 "GSC"
+ ZBT_fascism_party_long:0 "Great Society Cadre"
+
+
+ # States and VPs
+ STATE_710:0 "Greater Basaltropolis"
+ VICTORY_POINTS_10027:0 "Basaltropolis"
