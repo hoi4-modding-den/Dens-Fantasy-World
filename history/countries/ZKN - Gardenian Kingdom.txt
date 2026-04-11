@@ -37,6 +37,16 @@ add_ideas = {
 }
 
 recruit_character = ZKN_michael_aurus
+recruit_character = ZKN_peter_von_tretschau
+
+recruit_character = ZKN_juergen_ostersee
+recruit_character = ZKN_johann_schmerz
+recruit_character = ZKN_adolf_zaster
+recruit_character = ZKN_otto_richtig
+recruit_character = ZKN_kurt_baer
+recruit_character = ZKN_tanja_von_degretschow
+recruit_character = ZTC_alexander_von_karlsberg
+recruit_character = ZTC_rudolf_von_seestern
 
 set_cosmetic_tag = ZKN_dominion
 
@@ -46,7 +56,10 @@ declare_war_on = {
 }
 add_civil_war_target = ZLF
 
+country_lock_all_division_template = yes
+
 activate_mission = ZKN_finish_the_civil_war_quickly
+activate_mission = ZKN_hold_the_line
 activate_mission = ZKN_aid_from_neighbouring_monarchies
 
 set_politics = {

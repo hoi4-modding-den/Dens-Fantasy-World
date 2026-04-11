@@ -5,6 +5,7 @@ characters = {
         portraits = {
             civilian = {
                 large = GFX_portrait_ZKN_michael_aurus
+                small = GFX_portrait_ZKN_michael_aurus_small
             }
         }
         
@@ -13,6 +14,198 @@ characters = {
             traits = { ZKN_the_loser_king }
             expire = "1960.1.1.1"
         }
+
+        field_marshal = {
+            visible = { has_country_leader = { character = ZKN_michael_aurus ruling_only = yes } }
+            traits = { ZKN_zinnian_loyalist politically_connected media_personality }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 2
+        }
     }
+
+    ZKN_peter_von_tretschau = { 
+        name = ZKN_peter_von_tretschau_name
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ZKN_peter_von_tretschau_civilian
+                small = GFX_portrait_ZKN_peter_von_tretschau_civilian_small
+            }
+            army = {
+                large = GFX_portrait_ZKN_peter_von_tretschau
+                small = GFX_portrait_ZKN_peter_von_tretschau_small
+            }
+        }
+
+        country_leader = {
+            ideology = nationalist_stratocracy
+            traits = { ZKN_stratocratic_nationalist }
+            expire = "1960.1.1.1"
+        }
+        
+        field_marshal = {
+            traits = { politically_connected media_personality }
+            skill = 4
+            attack_skill = 4
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 3
+        }
+    }
+
+    ZKN_juergen_ostersee = { 
+        name = ZKN_juergen_ostersee_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_juergen_ostersee
+                small = GFX_portrait_ZKN_juergen_ostersee_small
+            }
+        }
+        
+        corps_commander = {
+            traits = { inflexible_strategist career_officer }
+            skill = 3
+            attack_skill = 1
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 2
+        }
+    }
+
+    ZKN_johann_schmerz = { 
+        name = ZKN_johann_schmerz_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_johann_schmerz
+                small = GFX_portrait_ZKN_johann_schmerz_small
+            }
+        }
+        
+        corps_commander = {
+            traits = { career_officer infantry_officer }
+            skill = 2
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 3
+            logistics_skill = 2
+        }
+    }
+
+    ZKN_adolf_zaster = { 
+        name = ZKN_adolf_zaster_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_adolf_zaster
+                small = GFX_portrait_ZKN_johann_schmerz_small
+            }
+        }
+        
+        corps_commander = {
+            traits = { cavalry_officer ZKN_zinnian_loyalist }
+            skill = 1
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 1
+        }
+    }
+
+    ZKN_otto_richtig = { 
+        name = ZKN_otto_richtig_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_otto_richtig
+                small = GFX_portrait_ZKN_otto_richtig_small
+            }
+        }
+        
+        corps_commander = {
+            traits = { career_officer trait_cautious }
+            skill = 3
+            attack_skill = 1
+            defense_skill = 3
+            planning_skill = 4
+            logistics_skill = 2
+        }
+    }
+
+    ZKN_kurt_baer = { 
+        name = ZKN_kurt_baer_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_kurt_baer
+                small = GFX_portrait_ZKN_kurt_baer_small
+            }
+        }
+        
+        corps_commander = {
+            traits = { old_guard career_officer infantry_officer ZKN_zinnian_loyalist }
+            skill = 3
+            attack_skill = 1
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 3
+        }
+    }
+
+    ZKN_tanja_von_degretschow = { 
+        name = ZKN_tanja_von_degretschow_name
+        gender = female
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_tanja_von_degretschow
+                small = GFX_portrait_ZKN_tanja_von_degretschow_small
+            }
+        }
+        
+        corps_commander = {
+            traits = { ZKN_white_silver brilliant_strategist career_officer }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 3
+        }
+    }
+
+    ZTC_alexander_von_karlsberg = { 
+		name = ZTC_alexander_von_karlsberg_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZTC_alexander_von_karlsberg
+                small = GFX_portrait_ZTC_alexander_von_karlsberg_small
+			}
+		}
+        
+		navy_leader = {
+			traits={ battleship_adherent old_guard_navy gentlemanly }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 4
+		}
+	}
+
+    ZTC_rudolf_von_seestern = { 
+		name = ZTC_rudolf_von_seestern_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZTC_rudolf_von_seestern
+                small = GFX_portrait_ZTC_rudolf_von_seestern_small
+			}
+		}
+        
+		navy_leader = {
+			traits={ old_guard_navy gunnery_expert }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
 
 }

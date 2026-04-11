@@ -171,6 +171,24 @@ ideologies = {
 
 			tyrannical_magocracy = {
 				can_be_randomly_selected = no
+				color = { 37 37 69 }
+			}
+
+			gardenian_ultranationalism = {
+				can_be_randomly_selected = no
+			}
+
+			nationalist_stratocracy = {
+				can_be_randomly_selected = no
+			}
+
+			vampire_rule = {
+				can_be_randomly_selected = no
+				color = { 37 37 69 }
+			}
+
+			corporatocracy = {
+				can_be_randomly_selected = no
 			}
 
 		}

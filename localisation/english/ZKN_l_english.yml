@@ -12,13 +12,17 @@
  ZKN_communism: "Second Republic of Gardenia"
  ZKN_communism_DEF: "the Second Republic of Gardenia"
  ZKN_communism_ADJ: "Gardenian"
- ZKN_fascism: "Despotate of Gardenia"
- ZKN_fascism_DEF: "the Military Despotate of Gardenia"
+ ZKN_fascism: "Gardenian National State"
+ ZKN_fascism_DEF: "the Gardenian National State"
  ZKN_fascism_ADJ: "Gardenian"
 
  ZKN_dominion: "Zinnian Dominion"
  ZKN_dominion_DEF: "the Dominion of the Zinnian Throne"
  ZKN_dominion_ADJ: "Zinnian"
+
+ ZKN_vampire_realm_fascism: "Imperial Despotate of Gardenia"
+ ZKN_vampire_realm_fascism_DEF: "the Imperial Despotate of Gardenia"
+ ZKN_vampire_realm_fascism_ADJ: "Gardenian"
 
 
 # PARTIES
@@ -33,15 +37,38 @@
  ZKN_fascism_party_long: "Government of National Salvation"
 
 
+# IDEOLOGIES
+
+ nationalist_stratocracy: "Nationalist Stratocracy"
+ nationalist_stratocracy_desc: "A Salvation Government or Salvation Stratocracy is a military junta that adheres to tenets of (ultra-)nationalism and seeks to unite the (ultra-)nation under a military dictatorship."
+ vampire_rule: "Vampiric Despotism"
+ vampire_rule_desc: "In Vampiric despotism, the people of the nation are seen as mere livestock to sate the hunger of their vampiric overlord. Usually, the fact that the ruler is a vampire is kept secret to avoid revolt."
+
+
 # CHARACTERS
 
  ZKN_michael_aurus_name: "Michael Aurus III."
+ ZKN_peter_von_tretschau_name: "Peter von Tretschau"
+ ZKN_juergen_ostersee_name: "Jürgen Ostersee"
+ ZKN_johann_schmerz_name: "Johann Schmerz"
+ ZKN_adolf_zaster_name: "Adolf von Zaster"
+ ZKN_otto_richtig_name: "Otto Richtig"
+ ZKN_kurt_baer_name: "Kurt Bär"
+ ZKN_tanja_von_degretschow_name: "Tanja von Degretschow"
+ ZTC_alexander_von_karlsberg_name: "Alexander von Karlsberg"
+ ZTC_rudolf_von_seestern_name: "Rudolf von Seestern"
 
 
 # TRAITS
 
  ZKN_the_loser_king: "King of a Crumbling Realm"
  ZKN_the_winner_king: "Vanquisher of Revolution"
+ ZKN_stratocratic_nationalist: "Stratocratic Nationalist"
+
+ ZKN_white_silver: "White Silver"
+ ZKN_white_silver_desc: "§LHailed as a hero for their actions during the last Northeastern War, this character received the White Silver medal by the Zinnian Throne.§!"
+ ZKN_zinnian_loyalist: "Zinnian Loyalist"
+ ZKN_zinnian_loyalist_desc: "§LThis character is loyal to the Zinnian monarchy and will only serve a royal government.§!"
 
 
 # IDEAS
@@ -60,6 +87,7 @@
  ZKN_civil_war_cat: "The Edelweiss Rebellion"
  ZKN_finish_the_civil_war: "Victory of the Reaction"
  ZKN_finish_the_civil_war_quickly: "Faltering Morale..."
+ ZKN_hold_the_line: "Hold Zinnien!"
  ZKN_aid_from_neighbouring_monarchies: "Aid from the East"
  ZKN_aid_from_neighbouring_monarchies_desc: "Our diplomats are attempting to negotiate with the [ZFO.GetAdjective] and [ZFD.GetAdjective] governments for support. We must maintain control over the border city of Löbnitz so we can receive it."
 

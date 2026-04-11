@@ -1,0 +1,86 @@
+ideas = {
+
+	country = {
+
+        ZSP_ungoverned_lands = {
+
+			picture = generic_agrarian_society
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                local_resources_factor = -0.9
+                production_speed_buildings_factor = -0.9
+                production_factory_max_efficiency_factor = -0.2
+                conscription = -0.01
+			}
+            
+		}
+
+        ZSP_tower_rivalry = {
+
+			picture = chi_wargaming_division
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                political_power_cost = 1
+                research_speed_factor = 0.15
+                #ZSP_mana_generation = 10
+			}
+            
+		}
+
+        ZSP_burgfrieden = {
+
+			picture = generic_deal_with_the_devil
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                stability_factor = 0.05
+                political_power_factor = 0.05
+                generate_wargoal_tension = 2
+			}
+            
+		}
+
+        ZSP_broken_burgfrieden = {
+
+			picture = generic_purge
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                
+			}
+            
+		}
+
+    }
+
+}

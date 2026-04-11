@@ -19,6 +19,11 @@ ideas = {
                 army_org_factor = -0.1
                 army_advisor_cost_factor = -0.4
                 war_support_factor = -0.1
+                custom_modifier_tooltip = SPR_military_disloyalty_tt
+			}
+
+            on_remove = {
+				country_lock_all_division_template = no
 			}
             
 		}

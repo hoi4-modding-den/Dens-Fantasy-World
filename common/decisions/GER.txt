@@ -13050,6 +13050,7 @@ special_projects = {
 			factor = 0
 		}
 		visible = {
+			always = no
 			#has_war = yes
 			controls_state = 28
 			if = {

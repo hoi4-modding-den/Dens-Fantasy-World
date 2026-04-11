@@ -1105,9 +1105,9 @@ focus_tree={
 		}
 	}
 
-    focus = { 
-		id = ZTC_propose_gardenian_monetary_union
-		icon = GFX_focus_generic_monetary_union
+	focus = { 
+		id = ZTC_establish_the_hortensian_armed_forces
+		icon = GFX_focus_PLACEHOLDER
         prerequisite = { focus = ZTC_support_edelweiss }
 		#mutually_exclusive = { focus =  }
 		x = -4
@@ -1240,6 +1240,34 @@ focus_tree={
 					original_tag = ZLF
 				}
 			}
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { 
+		id = ZTC_propose_gardenian_monetary_union
+		icon = GFX_focus_generic_monetary_union
+        prerequisite = { focus = ZTC_join_the_gardenian_faction }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZTC_join_the_gardenian_faction
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
         }
 
 		bypass = {

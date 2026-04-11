@@ -2,9 +2,9 @@ leader_traits = {
 
     ZSP_united_in_purpose = {
         
-        political_power_factor = 0.1
-        war_support_factor = 0.25
-        #ZSP_mana_generation = 10
+        stability_factor = 0.1
+        drift_defence_factor = 1
+        #ZSP_mana_generation = 15
 
         random = no
     }

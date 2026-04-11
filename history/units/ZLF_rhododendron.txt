@@ -1,0 +1,10 @@
+units = {
+    division = {
+        name = "Rhododendron Polizeibrigade"
+		location = 11065
+		division_template = "Bandit Suppression Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.6
+	}
+}

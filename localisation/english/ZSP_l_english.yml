@@ -34,4 +34,18 @@
 
 # TRAITS
 
- ZSP_united_in_purpose: "United in Purpose"
+ ZSP_united_in_purpose: "United in Purpose, Divided in Spirit"
+
+
+# IDEAS
+
+ ZSP_ungoverned_lands: "Ungoverned Lands"
+ ZSP_ungoverned_lands_desc: "While the lands of Alstroemeria are de jure governed by the Council of the Order of the Five Towers, the reality is that most of the territory is controlled by the local communities. Of course, when the troops of the Order show up on their doorsteps, the community leaders are quick to give tribute, but this arrangement cannot last forever."
+ ZSP_tower_rivalry: "Tower Rivalry"
+ ZSP_tower_rivalry_desc: "The Five Towers are in constant competition with each other to improve their magical capabilities. State-Building takes the backseat in the Magocracy."
+ ZSP_burgfrieden: "Turmfrieden"
+ ZSP_burgfrieden_desc: "To ensure that the peasantry does not rise up, the towers are in a state referred to as Turmfrieden (lit. 'Tower Peace'), limiting themselves in their infighting."
+ ZSP_broken_burgfrieden: "Broken Turmfrieden"
+
+ ZSP_disarmed_nation: "Reliance on the Order"
+

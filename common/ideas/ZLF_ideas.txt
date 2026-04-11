@@ -18,6 +18,11 @@ ideas = {
                 conscription = 0.01
                 democratic_drift = 0.02
                 communism_drift = 0.01
+                custom_modifier_tooltip = SPR_military_disloyalty_tt
+			}
+
+            on_remove = {
+				country_lock_all_division_template = no
 			}
             
 		}

@@ -1,0 +1,30 @@
+leader_traits = {
+
+	ZKN_white_silver = {
+		type = land
+
+		trait_type = personality_trait
+
+		allowed = {
+			FROM = { original_tag = ZKN }
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+
+		modifier = {
+			experience_gain_factor = 0.05
+		}
+	}
+
+	ZKN_zinnian_loyalist = {
+
+		type = all
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

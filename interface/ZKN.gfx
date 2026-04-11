@@ -1,8 +1,124 @@
 spriteTypes = {
 
-spriteType = {
-    name = "GFX_portrait_ZKN_michael_aurus"
-    texturefile = "gfx/leaders/ZKN/portrait_ZKN_michael_aurus.png"
-}
+    spriteType = {
+        name = "GFX_portrait_ZKN_michael_aurus"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_michael_aurus.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_michael_aurus_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_michael_aurus_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_peter_von_tretschau_civilian"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_peter_von_tretschau_civilian.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_peter_von_tretschau_civilian_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_peter_von_tretschau_civilian_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_peter_von_tretschau"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_peter_von_tretschau.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_peter_von_tretschau_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_peter_von_tretschau_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_juergen_ostersee"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_juergen_ostersee.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_juergen_ostersee_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_juergen_ostersee_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_johann_schmerz"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_johann_schmerz.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_johann_schmerz_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_johann_schmerz_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_adolf_zaster"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_adolf_zaster.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_adolf_zaster_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_adolf_zaster_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_otto_richtig"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_otto_richtig.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_otto_richtig_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_otto_richtig_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_kurt_baer"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_kurt_baer.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_kurt_baer_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_kurt_baer_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_tanja_von_degretschow"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_tanja_von_degretschow.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_tanja_von_degretschow_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_tanja_von_degretschow_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZTC_alexander_von_karlsberg"
+        texturefile = "gfx/leaders/ZKN/portrait_ZTC_alexander_von_karlsberg.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZTC_alexander_von_karlsberg_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZTC_alexander_von_karlsberg_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZTC_rudolf_von_seestern"
+        texturefile = "gfx/leaders/ZKN/portrait_ZTC_rudolf_von_seestern.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZTC_rudolf_von_seestern_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZTC_rudolf_von_seestern_small.png"
+    }
+
+
+    spriteType = {
+		name = "GFX_trait_ZKN_white_silver"
+		texturefile = "gfx/interface/traits/trait_seawolf.dds"
+	}
+
+    spriteType = {
+		name = "GFX_trait_ZKN_zinnian_loyalist"
+		texturefile = "gfx/interface/traits/personal/trait_JAP_royal_lineage.dds"
+	}
 
 }

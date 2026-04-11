@@ -29,7 +29,7 @@ ZKN_civil_war_cat = {
 
         is_good = no
 
-        days_mission_timeout = 50
+        days_mission_timeout = 70
 
         timeout_effect = {
             add_political_power = -25
@@ -38,6 +38,38 @@ ZKN_civil_war_cat = {
             custom_effect_tooltip = generic_skip_one_line_tt
 
             activate_mission = ZKN_finish_the_civil_war_quickly
+        }
+    }
+
+    ZKN_hold_the_line = {
+
+        icon = generic_fortification
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            570 = { NOT = { is_fully_controlled_by = ROOT } }
+        }
+
+        highlight_states = {
+            highlight_states_trigger = { 
+                state = 570
+            }
+        }
+
+        is_good = yes
+
+        days_mission_timeout = 50
+
+        complete_effect = {
+            add_command_power = -20
+            add_war_support = -0.02
+        }
+
+        timeout_effect = {
+            add_war_support = 0.1
         }
     }
 

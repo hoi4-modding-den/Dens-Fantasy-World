@@ -20,6 +20,71 @@ spriteTypes = {
 		texturefile = "gfx/leaders/ZTC/portrait_ZTC_johanna_ahrendt.png"
 	}
 
+	spriteType = {
+        name = "GFX_portrait_ZTC_johanna_ahrendt_small"
+        texturefile = "gfx/interface/ideas/ZTC/portrait_ZTC_johanna_ahrendt_small.png"
+    }
+
+	spriteType = {
+		name = "GFX_portrait_ZTC_kalle_rueben"
+		texturefile = "gfx/leaders/ZTC/portrait_ZTC_kalle_rueben.png"
+	}
+
+	spriteType = {
+        name = "GFX_portrait_ZTC_kalle_rueben_small"
+        texturefile = "gfx/interface/ideas/ZTC/portrait_ZTC_kalle_rueben_small.png"
+    }
+
+	spriteType = {
+		name = "GFX_portrait_ZTC_nojus_krivonis"
+		texturefile = "gfx/leaders/ZTC/portrait_ZTC_nojus_krivonis.png"
+	}
+
+	spriteType = {
+        name = "GFX_portrait_ZTC_nojus_krivonis_small"
+        texturefile = "gfx/interface/ideas/ZTC/portrait_ZTC_nojus_krivonis_small.png"
+    }
+
+	spriteType = {
+		name = "GFX_portrait_ZTC_soergen_maurer"
+		texturefile = "gfx/leaders/ZTC/portrait_ZTC_soergen_maurer.png"
+	}
+
+	spriteType = {
+        name = "GFX_portrait_ZTC_soergen_maurer_small"
+        texturefile = "gfx/interface/ideas/ZTC/portrait_ZTC_soergen_maurer_small.png"
+    }
+
+	spriteType = {
+		name = "GFX_portrait_ZTC_friedrich_rabauke"
+		texturefile = "gfx/leaders/ZTC/portrait_ZTC_friedrich_rabauke.png"
+	}
+
+	spriteType = {
+        name = "GFX_portrait_ZTC_friedrich_rabauke_small"
+        texturefile = "gfx/interface/ideas/ZTC/portrait_ZTC_friedrich_rabauke_small.png"
+    }
+
+	spriteType = {
+		name = "GFX_portrait_ZTC_august_klabautermann"
+		texturefile = "gfx/leaders/ZTC/portrait_ZTC_august_klabautermann.png"
+	}
+
+	spriteType = {
+        name = "GFX_portrait_ZTC_august_klabautermann_small"
+        texturefile = "gfx/interface/ideas/ZTC/portrait_ZTC_august_klabautermann_small.png"
+    }
+
+	spriteType = {
+		name = "GFX_portrait_ZTC_piet_smiet"
+		texturefile = "gfx/leaders/ZTC/portrait_ZTC_piet_smiet.png"
+	}
+
+	spriteType = {
+        name = "GFX_portrait_ZTC_piet_smiet_small"
+        texturefile = "gfx/interface/ideas/ZTC/portrait_ZTC_piet_smiet_small.png"
+    }
+
 
 	# FOCI
 

@@ -3,7 +3,7 @@ capital = 756
 #oob = "ZSP_1936"
 
 set_stability = 0.2
-set_war_support = 0.15
+set_war_support = 0
 
 set_research_slots = 3
 
@@ -15,8 +15,12 @@ set_technology = {
 
 add_ideas = {
 	closed_economy
-	volunteer_only
-	civilian_economy
+	disarmed_nation
+	undisturbed_isolation
+
+	ZSP_ungoverned_lands
+	ZSP_tower_rivalry
+	ZSP_burgfrieden
 }
 
 recruit_character = ZSP_wizard_council

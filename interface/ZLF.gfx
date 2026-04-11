@@ -10,4 +10,49 @@ spriteTypes = {
         texturefile = "gfx/leaders/ZLF/portrait_ZLF_roland_ludovik_victory.png"
     }
 
+    spriteType = {
+        name = "GFX_portrait_ZLF_roland_ludovik_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_roland_ludovik_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_gustav_mai"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_gustav_mai.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_gustav_mai_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_gustav_mai_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_wilhelm_gluecksburg"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_wilhelm_gluecksburg.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_wilhelm_gluecksburg_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_wilhelm_gluecksburg_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_rudolf_zimmermann"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_rudolf_zimmermann.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_rudolf_zimmermann_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_rudolf_zimmermann_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_hugo_von_fallersleben"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_hugo_von_fallersleben.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_hugo_von_fallersleben_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_hugo_von_fallersleben_small.png"
+    }
+
 }

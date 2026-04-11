@@ -2,6 +2,7 @@ leader_traits = {
 
     ZKN_the_loser_king = {
         
+        neutrality_drift = -0.01
         political_power_cost = 0.1
         army_morale_factor = -0.05
 
@@ -12,6 +13,15 @@ leader_traits = {
         
         stability_factor = 0.1
         army_morale_factor = 0.05
+
+        random = no
+    }
+
+    ZKN_stratocratic_nationalist = {
+        
+        army_org_factor = 0.05
+        fascism_drift = 0.02
+        war_support_factor = 0.1
 
         random = no
     }

@@ -63,7 +63,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZLF_the_edelweiss_revolution_begins
 		
-		cost = 3
+		cost = 5
 
 		ai_will_do = {
             base = 10 
@@ -102,7 +102,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZLF_the_edelweiss_revolution_begins
 		
-		cost = 3
+		cost = 5
 
 		ai_will_do = {
             base = 10 
@@ -201,7 +201,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZLF_the_edelweiss_revolution_begins
 		
-		cost = 3
+		cost = 5
 
 		ai_will_do = {
             base = 10 
@@ -237,7 +237,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZLF_the_edelweiss_revolution_begins
 		
-		cost = 3
+		cost = 5
 
 		ai_will_do = {
             base = 10 
@@ -307,7 +307,7 @@ focus_tree={
 		y = 3
 		relative_position_id = ZLF_the_edelweiss_revolution_begins
 		
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
             base = 10 
@@ -322,7 +322,13 @@ focus_tree={
         }
 
 		select_effect = {
-
+			if = {
+				limit = { has_template = "International Republican Brigade" }
+				country_event = {
+					id = ZLF_cw_events.5
+					days = 3
+				}
+			}
 		}
 		
 		completion_reward = {

@@ -5,6 +5,11 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ZLF_roland_ludovik
+				small = GFX_portrait_ZLF_roland_ludovik_small
+			}
+			army = {
+				large = GFX_portrait_ZLF_roland_ludovik
+				small = GFX_portrait_ZLF_roland_ludovik_small
 			}
 		}
         
@@ -13,6 +18,82 @@ characters = {
 			traits = { ZLF_hero_of_the_revolution }
 			expire = "1960.1.1.1"
 		}
+
+		field_marshal = {
+            traits = { politically_connected war_hero }
+            skill = 3
+            attack_skill = 4
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 2
+        }
+	}
+
+	ZLF_gustav_mai = { 
+		name = ZLF_gustav_mai_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_gustav_mai
+				small = GFX_portrait_ZLF_gustav_mai_small
+			}
+		}
+        
+		country_leader = {
+			ideology = marxism
+			traits = { ZLF_marxist_theorist }
+			expire = "1960.1.1.1"
+		}
+	}
+
+	ZLF_wilhelm_gluecksburg = { 
+		name = ZLF_wilhelm_gluecksburg_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_wilhelm_gluecksburg
+				small = GFX_portrait_ZLF_wilhelm_gluecksburg_small
+			}
+		}
+        
+		country_leader = {
+			ideology = moderatism
+			traits = { ZLF_conservative_paragon }
+			expire = "1960.1.1.1"
+		}
+	}
+
+	ZLF_rudolf_zimmermann = { 
+		name = ZLF_rudolf_zimmermann_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_rudolf_zimmermann
+				small = GFX_portrait_ZLF_rudolf_zimmermann_small
+			}
+		}
+        
+		country_leader = {
+			ideology = gardenian_ultranationalism
+			traits = { ZLF_warmonger }
+			expire = "1960.1.1.1"
+		}
+	}
+
+	ZLF_hugo_von_fallersleben = { 
+		name = ZLF_hugo_von_fallersleben_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_hugo_von_fallersleben
+				small = GFX_portrait_ZLF_hugo_von_fallersleben_small
+			}
+		}
+        
+		corps_commander = {
+            traits = { politically_connected cavalry_officer }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 2
+        }
 	}
 
 }

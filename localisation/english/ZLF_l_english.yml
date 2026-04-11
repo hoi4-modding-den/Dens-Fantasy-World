@@ -35,14 +35,27 @@
  ZLF_fascism_party_long: "Gardenian Revival Party"
 
 
+# IDEOLOGIES
+
+ gardenian_ultranationalism: "Gardenian Ultranationalism"
+ gardenian_ultranationalism_desc: "The concept of the Gardenian ultranation is extremely popular among the far-right parties of Gardenia, seeking to restore the 'former glory' of the region, even if such a past never truly existed. Most adherents of Gardenian Ultranationalism also seek to implement single-party autocracy, corporatism and kratocratic principles."
+
+
 # CHARACTER
 
  ZLF_roland_ludovik_name: "Roland Ludovik"
+ ZLF_gustav_mai_name: "Gustav Mai"
+ ZLF_wilhelm_gluecksburg_name: "Wilhelm Glücksburg"
+ ZLF_rudolf_zimmermann_name: "Rudolf Zimmermann"
+ ZLF_hugo_von_fallersleben_name: "Hugo von Fallersleben"
 
 
 # TRAITS
 
  ZLF_hero_of_the_revolution: "Hero of Edelweiss"
+ ZLF_marxist_theorist: "Marxist Theorist"
+ ZLF_conservative_paragon: "Conservative Bulwark"
+ ZLF_warmonger: "Foolish Warmonger"
 
 
 # IDEAS
@@ -76,6 +89,10 @@
  ZLF_crush_the_eastern_garrisons: "Crush the Northeastern Garrisons"
  ZLF_take_the_royalist_stronghold: "Take the Royalist Stronghold"
  ZLF_maintain_connection_to_hortensia: "Ongoing Negotiations in Hortensia"
+
+ ZLF_expand_wolframingen: "Increase the Jurisdiction of Wolframingen"
+ ZLF_expand_blauenfelde_aluminium_mills: "Expand Blauenfelde Aluminium Mills"
+ ZLF_expand_erzgebirge_excavation_efforts: "Expand Erzgebirge Resource Exploitation"
 
 
 # FOCI
@@ -120,6 +137,10 @@
  ZLF_cw_events.4.t: "Revolutionary Victory"
  ZLF_cw_events.4.desc: "WIP"
  ZLF_cw_events.4.a: "With the monarchists vanquished, we can begin reconstruction."
+
+ ZLF_cw_events.5.t: "International Brigades head home"
+ ZLF_cw_events.5.desc: "With the civil war over, the International Brigades have been disbanded and the volunteers are on the way back home."
+ ZLF_cw_events.5.a: "Auf Wiedersehen, Genossen!"
 
  ZLF_news_events.1.t: "Revolutionaries win the Gardenian Civil War"
  ZLF_news_events.1.desc: "WIP"

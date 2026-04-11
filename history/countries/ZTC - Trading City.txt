@@ -49,6 +49,13 @@ recruit_character = ZTC_the_council
 recruit_character = ZTC_franziska_kroesus
 recruit_character = ZTC_johanna_ahrendt
 
+recruit_character = ZTC_kalle_rueben
+recruit_character = ZTC_nojus_krivonis
+recruit_character = ZTC_soergen_maurer
+recruit_character = ZTC_friedrich_rabauke
+recruit_character = ZTC_august_klabautermann
+recruit_character = ZTC_piet_smiet
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

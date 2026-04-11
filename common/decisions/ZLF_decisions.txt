@@ -37,17 +37,22 @@ ZLF_civil_war_cat = {
 
         is_good = no
 
-        days_mission_timeout = 40
+        days_mission_timeout = 60
 
         complete_effect = {
             add_political_power = 25
             add_war_support = 0.01
-            817 = {
-                create_unit = {
-                    division = "name = \"Rhododendron Polizeibrigade\" division_template = \"Bandit Suppression Brigade\" start_experience_factor = 0.3"
-                    count = 1
-                    owner = ROOT
+            effect_tooltip = {
+                817 = {
+                    create_unit = {
+                        division = "name = \"Rhododendron Polizeibrigade\" division_template = \"Bandit Suppression Brigade\" start_experience_factor = 0.3"
+                        count = 1
+                        owner = ROOT
+                    }
                 }
+            }
+            hidden_effect = {
+                load_oob = "ZLF_rhododendron"
             }
         }
 
@@ -126,17 +131,22 @@ ZLF_civil_war_cat = {
 
         is_good = no
 
-        days_mission_timeout = 50
+        days_mission_timeout = 80
 
         complete_effect = {
             add_political_power = 25
             add_war_support = 0.01
-            655 = {
-                create_unit = {
-                    division = "name = \"Verteidungsbrigade Erzgebirge\" division_template = \"Wehrbrigade\" start_experience_factor = 0.3"
-                    count = 2
-                    owner = ROOT
+            effect_tooltip = {
+                655 = {
+                    create_unit = {
+                        division = "name = \"Verteidungsbrigade Spei\" division_template = \"Wehrbrigade\" start_experience_factor = 0.3"
+                        count = 3
+                        owner = ROOT
+                    }
                 }
+            }
+            hidden_effect = {
+                load_oob = "ZLF_spei"
             }
         }
 
@@ -154,12 +164,12 @@ ZLF_civil_war_cat = {
         }
 
         available = {
-            controls_state = 794
-            controls_state = 677
-            controls_state = 879
-            controls_state = 662
-            controls_state = 848
-            controls_state = 855
+            794 = { is_fully_controlled_by = ROOT }
+            677 = { is_fully_controlled_by = ROOT }
+            879 = { is_fully_controlled_by = ROOT }
+            662 = { is_fully_controlled_by = ROOT }
+            848 = { is_fully_controlled_by = ROOT }
+            855 = { is_fully_controlled_by = ROOT }
         }
 
         highlight_states = {
@@ -172,7 +182,7 @@ ZLF_civil_war_cat = {
                     state = 855
                     state = 677
                 }
-                is_controlled_by = ZKN
+                NOT = { is_fully_controlled_by = ROOT }
             }
         }
 
@@ -199,8 +209,9 @@ ZLF_civil_war_cat = {
         }
 
         available = {
-            controls_state = 807
-            controls_state = 570
+            807 = { is_fully_controlled_by = ROOT }
+            570 = { is_fully_controlled_by = ROOT }
+            655 = { is_fully_controlled_by = ROOT }
         }
 
         highlight_states = {
@@ -208,8 +219,9 @@ ZLF_civil_war_cat = {
                 OR = {
                     state = 807
                     state = 570
+                    state = 655
                 }
-                is_controlled_by = ZKN
+                NOT = { is_fully_controlled_by = ROOT }
             }
         }
 
@@ -239,6 +251,10 @@ ZLF_civil_war_cat = {
             NOT = { is_neighbor_of = ZTC }
         }
 
+        cancel_trigger = {
+            has_civil_war = no
+        }
+
         highlight_states = {
             highlight_states_trigger = {
                 state = 749
@@ -253,5 +269,217 @@ ZLF_civil_war_cat = {
             country_event = ZLF_cw_events.3
         }
     }
+
+}
+
+prospect_for_resources = {
+
+	ZLF_expand_wolframingen = { #794
+
+		icon = tungsten
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 794
+			}
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 794
+			controls_state = 794
+		}
+
+		visible = {
+			owns_state = 794
+			controls_state = 794
+			794 = {
+				NOT = {
+					has_state_flag = karlsberg_tungsten_expanded
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 0.3
+			modifier = {  # Too low PP
+				factor = 0.5
+					has_political_power < 80
+			}
+			modifier = { #We have plenty of PP, avanti!
+				factor = 3
+				has_political_power > 200
+			}
+			modifier = { #Running out of the stuff, need more!
+				factor = 5
+				has_resources_in_country = {
+					resource = tungsten
+					amount < 1
+				}
+			}
+		}
+		remove_effect = {
+			794 = { set_state_flag = karlsberg_tungsten_expanded }
+			794 = {
+				add_resource = {
+					type = tungsten
+					amount = 20
+				}
+			}
+		}
+	}
+
+    ZLF_expand_blauenfelde_aluminium_mills = { #833
+
+		icon = aluminium
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 833
+			}
+		}
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 833
+			controls_state = 833
+		}
+
+		visible = {
+			owns_state = 833
+			controls_state = 833
+			833 = {
+				NOT = {
+					has_state_flag = blauenfelde_aluminium_expanded
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 0.3
+			modifier = {  # Too low PP
+				factor = 0.5
+					has_political_power < 80
+			}
+			modifier = { #We have plenty of PP, avanti!
+				factor = 3
+				has_political_power > 200
+			}
+			modifier = { #Running out of the stuff, need more!
+				factor = 5
+				has_resources_in_country = {
+					resource = aluminium
+					amount < 1
+				}
+			}
+		}
+		remove_effect = {
+			833 = { set_state_flag = blauenfelde_aluminium_expanded }
+			833 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+		}
+	}
+
+    ZLF_expand_erzgebirge_excavation_efforts = { #655
+
+		icon = steel
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 655
+			}
+		}
+
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 655
+			controls_state = 655
+		}
+
+		visible = {
+			owns_state = 655
+			controls_state = 655
+			655 = {
+				NOT = {
+					has_state_flag = erzgebirge_steel_expanded
+				}
+			}
+            has_country_flag = ZLF_can_expand_erzgebirge_mines # set when removing Elbs or through an event
+		}
+
+		fire_only_once = yes
+
+		cost = 40
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 0.3
+			modifier = {  # Too low PP
+				factor = 0.5
+					has_political_power < 80
+			}
+			modifier = { #We have plenty of PP, avanti!
+				factor = 3
+				has_political_power > 200
+			}
+			modifier = { #Running out of the stuff, need more!
+				factor = 5
+				has_resources_in_country = {
+					resource = steel
+					amount < 1
+				}
+			}
+		}
+		remove_effect = {
+			655 = { set_state_flag = erzgebirge_steel_expanded }
+			655 = {
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+		}
+	}
 
 }

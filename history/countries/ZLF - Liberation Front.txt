@@ -36,8 +36,15 @@ add_ideas = {
 }
 
 recruit_character = ZLF_roland_ludovik
+recruit_character = ZLF_gustav_mai
+recruit_character = ZLF_wilhelm_gluecksburg
+recruit_character = ZLF_rudolf_zimmermann
+
+recruit_character = ZLF_hugo_von_fallersleben
 
 set_cosmetic_tag = ZLF_liberation_front
+
+country_lock_all_division_template = yes
 
 activate_mission = ZLF_retake_magnolienburg
 activate_mission = ZLF_close_prinzendamm_encirclement

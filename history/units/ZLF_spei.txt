@@ -1,0 +1,26 @@
+units = {
+    division = {
+        name = "Verteidungsbrigade Plosen"
+		location = 9428
+		division_template = "Wehrbrigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+		start_manpower_factor = 0.3
+	}
+    division = {
+        name = "Verteidungsbrigade Malenau"
+		location = 9429
+		division_template = "Wehrbrigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+		start_manpower_factor = 0.3
+	}
+    division = {
+        name = "Verteidungsbrigade Zaddern"
+		location = 9433
+		division_template = "Wehrbrigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+		start_manpower_factor = 0.3
+	}
+}

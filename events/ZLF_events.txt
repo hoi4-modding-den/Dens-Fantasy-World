@@ -45,7 +45,11 @@ country_event = { # Hortensian Aid arrives
 		name = ZLF_cw_events.3.a
 		add_political_power = 50
 		add_popularity = { ideology = democratic popularity = 0.05 }
-        add_manpower = 20000
+        add_equipment_to_stockpile = { 
+            type = infantry_equipment
+            amount = 2000
+            producer = ZTC
+        }
 	}
 }
 
@@ -78,6 +82,23 @@ country_event = { # Civil War Ends
 				character = ZLF_roland_ludovik
 				civilian = { large ="GFX_portrait_ZLF_roland_ludovik_victory" }
 			}
+		}
+	}
+}
+
+country_event = { # International Brigades leave
+	id = ZLF_cw_events.5
+	title = ZLF_cw_events.5.t
+	desc = ZLF_cw_events.5.desc
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_cw_events.5.a
+		delete_unit_template_and_units = {
+			division_template = "International Republican Brigade"
+			disband = no
 		}
 	}
 }

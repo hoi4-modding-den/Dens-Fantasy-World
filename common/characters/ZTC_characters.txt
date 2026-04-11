@@ -26,7 +26,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = rexism
+			ideology = corporatocracy
 			traits = { ZTC_companies_in_control }
 			expire = "1960.1.1.1"
 		}
@@ -53,12 +53,127 @@ characters={
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ZTC_johanna_ahrendt
+				small = GFX_portrait_ZTC_johanna_ahrendt_small
 			}
 		}
 		country_leader = {
 			ideology = marxism
 			traits = { ZTC_proletarian_movement_leader }
 			expire = "1960.1.1.1"
+		}
+	}
+
+	ZTC_kalle_rueben = { 
+		name = ZTC_kalle_rueben_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZTC_kalle_rueben
+				small = GFX_portrait_ZTC_kalle_rueben_small
+			}
+		}
+        
+		field_marshal = {
+            traits = { politically_connected infantry_officer }
+            skill = 3
+            attack_skill = 1
+            defense_skill = 4
+            planning_skill = 3
+            logistics_skill = 3
+        }
+	}
+
+	ZTC_nojus_krivonis = { 
+		name = ZTC_nojus_krivonis_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZTC_nojus_krivonis
+				small = GFX_portrait_ZTC_nojus_krivonis_small
+			}
+		}
+        
+		corps_commander = {
+            traits = { engineer_officer organizer }
+            skill = 2
+            attack_skill = 1
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 2
+        }
+	}
+
+	ZTC_soergen_maurer = { 
+		name = ZTC_soergen_maurer_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZTC_soergen_maurer
+				small = GFX_portrait_ZTC_soergen_maurer_small
+			}
+		}
+        
+		corps_commander = {
+            traits = { politically_connected harsh_leader naval_invader }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 3
+            logistics_skill = 2
+        }
+	}
+
+	ZTC_friedrich_rabauke = { 
+		name = ZTC_friedrich_rabauke_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZTC_friedrich_rabauke
+				small = GFX_portrait_ZTC_friedrich_rabauke_small
+			}
+		}
+        
+		corps_commander = {
+            traits = { career_officer infantry_officer }
+            skill = 1
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 2
+        }
+	}
+
+	ZTC_august_klabautermann = { 
+		name = ZTC_august_klabautermann_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZTC_august_klabautermann
+				small = GFX_portrait_ZTC_august_klabautermann_small
+			}
+		}
+        
+		navy_leader = {
+			traits = { navy_career_officer navy_media_personality }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 3
+		}
+	}
+
+	ZTC_piet_smiet = { 
+		name = ZTC_piet_smiet_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZTC_piet_smiet
+				small = GFX_portrait_ZTC_piet_smiet_small
+			}
+		}
+        
+		navy_leader = {
+			traits = { navy_career_officer ironside }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 4
 		}
 	}
 }
