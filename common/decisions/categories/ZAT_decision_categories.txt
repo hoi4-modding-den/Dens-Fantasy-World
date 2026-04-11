@@ -1,0 +1,15 @@
+ZAT_celestial_balance_decisions = {
+	icon = GFX_decision_cat_generic_government
+	priority = 100
+
+	allowed = {
+		tag = ZAT
+	}
+
+	visible = {
+		tag = ZAT
+	}
+
+	visible_when_empty = yes
+	scripted_gui = ZAT_celestial_balance_decision_ui	
+}

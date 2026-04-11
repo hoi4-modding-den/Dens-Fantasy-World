@@ -2,7 +2,7 @@
 state={
 	id=617
 	name="STATE_617"
-	manpower = 5533828
+	manpower = 4533828
 	
 	state_category = metropolis
 	#impassable = yes
@@ -25,14 +25,22 @@ state={
 			
 			arms_factory = 1
 			industrial_complex = 1
-			
-			
+
+			9064 = {
+				naval_base = 1
+			}			
+						
 		}
+
+		victory_points = { 9047 15 }
+		victory_points = { 9050 8 } 
+		victory_points = { 9052 3 } 
+		victory_points = { 9064 5 } 				
 		
 	}
 
 	provinces={
-		9040 9041 9042 9043 9044 9045 9046 9047 9048 9049 9050 9051 9052 9053 9054 9055 9056 9057 9058 9059 9060 9061 9062 9063 9064 
+		9040 9041 9042 9043 9044 9046 9047 9049 9050 9051 9052 9053 9054 9055 9056 9058 9059 9060 9061 9062 9064 
 	}
 	local_supplies=0.0 
 }

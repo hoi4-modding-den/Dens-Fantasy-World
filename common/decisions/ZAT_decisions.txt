@@ -1,0 +1,2 @@
+ZAT_celestial_balance_decisions = {
+}

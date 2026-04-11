@@ -1,4 +1,4 @@
-﻿capital = 617
+﻿capital = 1244
 
 oob = "ZAT_1936"
 
@@ -41,3 +41,6 @@ set_popularities = {
 	communism = 1
 	fascism = 7
 }
+
+### VARIABLES ###
+# TODO, need to set variables for inital loyalty from regions + minorities/majorities for all

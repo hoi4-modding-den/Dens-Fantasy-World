@@ -1,11 +1,10 @@
 
 state={
-	id=804
-	name="STATE_804"
-	manpower = 2673035
+	id=1245
+	name="STATE_1245"
+	manpower = 2918203
 	
-	state_category = large_town
-	#impassable = yes
+	state_category = metropolis
 	resources={
 		aluminium=0
 		chromium=0
@@ -19,23 +18,23 @@ state={
 	history={
 		owner = ZAT
 		add_core_of = ZAT
-		
+
 		buildings = {
 			infrastructure = 3
 			
-			arms_factory = 0
+			arms_factory = 1
 			industrial_complex = 1
 			
-			
 		}
-		
-		victory_points = { 10962 15 }					
-		victory_points = { 10966 5 }					
+
+		victory_points = { 9057 30 } # Capital : Astra-Khor
+		victory_points = { 9045 15 } 
+		victory_points = { 9048 5 }	
 		
 	}
 
 	provinces={
-		10961 10962 10963 10964 10965 10966 10967 10968 10969 10970 10971 
+		9045 9048 9057 9063 
 	}
 	local_supplies=0.0 
 }

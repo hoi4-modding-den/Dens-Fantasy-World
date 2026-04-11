@@ -26,6 +26,9 @@ ZAT_ADJ: "Centaurian"
 ### LEADER/ADVISOR TRAITS ###
 
 ### DECISIONS ###
+ZAT_celestial_balance_decisions: "Minority Management"
+ZAT_celestial_balance_decision_guidesc: "From the capital of §7Astra-Khor§! to the §GVel’Soran§! plains, our §YCentaur§! heartland must lead the way. Yet, the §YMinotaur§! forges of the §0Dhorrak Highlands§! and the §YHarpy§! aeries of §1Sireth Cove§! provide the steel and sight our nation requires. As relations with §YHuman§! trade-hubs on the §9Mundus Shore§! shift and §YCentaur§! amalgamation grows in §GKeth Maraan§!, we must balance these powers to ensure the §4celestial alignment§! of all §Yfour species§! remains unbroken."
+ZAT_header_title_name: "Celestial Balance"
 
 ### CHARACTERS ###
 
@@ -40,3 +43,97 @@ ZAT_ADJ: "Centaurian"
 #ZAT_communism_party_long: "Umumiye Brotherhood"
 
 ### NATIONAL FOCUSES ###
+
+### STATES/VPS ###
+# Centaur/Mixed Regions
+STATE_1245: "Astra-Khor"
+VICTORY_POINTS_9057: "Astra-Khor"
+VICTORY_POINTS_9045: "Zenith Spire"
+VICTORY_POINTS_9048: "Tal-Khorun Gate"
+
+STATE_617: "Soran-Vhal"
+VICTORY_POINTS_9047: "Soran-Vhal"
+VICTORY_POINTS_9050: "Vahl-Khet Suburbs"
+VICTORY_POINTS_9052: "Mont Métis"
+VICTORY_POINTS_9064: "Ametric Docks"
+
+STATE_673: "Western Sora-Khu"
+VICTORY_POINTS_9634: "Dohr-Khaan"
+VICTORY_POINTS_9626: "Gallop Steppe"
+VICTORY_POINTS_9624: "Port Orion"
+
+STATE_723: "Thal-Muris"
+VICTORY_POINTS_10231: "Khor-Shull"
+VICTORY_POINTS_10218: "Valather"
+VICTORY_POINTS_10224: "Aquila Rift"
+
+STATE_650: "Vaelen"
+VICTORY_POINTS_9380: "Vaelen"
+VICTORY_POINTS_9383: "Centaurus Heavenly Temple"
+
+STATE_585: "Vel-Athelis"
+VICTORY_POINTS_8646: "Vel-Athelis"
+VICTORY_POINTS_8651: "Caelum Burial Grounds"
+
+# Minotaur Regions
+STATE_804: "Eastern Murn"
+VICTORY_POINTS_10962: "Dhorramis"
+VICTORY_POINTS_10966: "Warren-Mun"
+
+STATE_792: "Khaanor"
+VICTORY_POINTS_10866: "Astral Forge"
+VICTORY_POINTS_10862: "Khaanor"
+VICTORY_POINTS_10858: "Zulon-Thar"
+
+STATE_725: ""
+
+
+STATE_738: ""
+
+
+STATE_595: ""
+
+
+STATE_700: "Zulanis Delta"
+VICTORY_POINTS_9911: "High-Athel District"
+
+STATE_575: "Thul-Dohr"
+
+
+STATE_767: "Keth-Dohr-Zat"
+
+
+STATE_857: ""
+
+
+STATE_602: "Maraan-Uhl"
+
+
+STATE_810: "Al-Ghom Marches"
+
+
+STATE_819: ""
+
+
+STATE_692: ""
+
+
+
+
+# Human Regions
+STATE_860: "Mundis"
+VICTORY_POINTS_11456: "Khyne-Point"
+VICTORY_POINTS_11452: "Aries Village"
+
+STATE_641: "Aethel"
+VICTORY_POINTS_9309: "Port Vaelis"
+VICTORY_POINTS_9314: "Aethelhaven"
+VICTORY_POINTS_9322: "Vael-Way Gardens"
+VICTORY_POINTS_9310: "Oakharrow"
+
+# Harpy Regions
+STATE_891: "Sireth-Vahl"
+VICTORY_POINTS_11747: "Sirethas"
+VICTORY_POINTS_11740: "Vahl Cove"
+VICTORY_POINTS_11737: "Thalaris"
+VICTORY_POINTS_11731: "Mura-Vaelen"

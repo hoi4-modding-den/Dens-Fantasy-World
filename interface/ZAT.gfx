@@ -1,0 +1,39 @@
+spriteTypes = {
+### PORTRAITS ###
+	#spriteType = {
+	#	name = "GFX_portrait_YCA_andreu_nin"
+	#	texturefile = "gfx/leaders/YCA/YCA_andreu_nin.png"
+	#}
+
+### IDEAS/TEXICONS ###
+	#spriteType = {
+	#	name = "GFX_YCA_anarcho_syndicalism_icon"
+	#	texturefile = "gfx/interface/gui/YCA/anarcho_syndicalism_icon.png"
+	#}
+
+### MINISTERS/GENERALS ###
+	#spriteType = {
+	#	name = "GFX_idea_YCA_anarchist_council"
+	#	texturefile = "gfx/interface/ideas/YCA/idea_YCA_anarchist_council.dds"
+	#}	
+
+### FOCUS SHINE ###
+# go look at the file in YCA I AINT copying all dat
+
+### INTRO ###
+# TODO : look in YCA file
+
+### BUTTONS/STATES/BACKGROUNDS ###
+	spriteType = { 
+		name = "GFX_tiled_window_transparent_custom"
+		texturefile = "gfx/interface/ZAT/tiled_window_transparent_custom.dds"
+	}
+	spriteType = {
+		name = "GFX_ZAT_open_region_map_button"
+		texturefile = "gfx/interface/ZAT/ZAT_open_map_region_button.dds"
+	}	
+
+### PROGRESS BAR
+# TODO : look in YCA file
+
+}
