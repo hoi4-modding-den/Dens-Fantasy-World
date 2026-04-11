@@ -2,9 +2,9 @@
 state={
 	id=625
 	name="STATE_625"
-	manpower = 5209101
+	manpower = 2209101
 	
-	state_category = megalopolis
+	state_category = town
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -31,12 +31,11 @@ state={
 			
 			
 		}
-		victory_points = { 9130 25 }
 		
 	}
 
 	provinces={
-		9129 9130 9131 9132 9133 9134 9135 9136 9137 9138 9139 9140 9141 9142 9143 9144 9145 9146 9147 
+		9139 9144 9140 9147 9136 
 	}
 	local_supplies=0.0 
 }

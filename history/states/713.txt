@@ -2,9 +2,9 @@
 state={
 	id=713
 	name="STATE_713"
-	manpower = 5867585
+	manpower = 1867585
 	
-	state_category = megalopolis
+	state_category = pastoral
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -34,7 +34,7 @@ state={
 	}
 
 	provinces={
-		10047 10048 10049 10050 10051 10052 10053 10054 10055 10056 10057 10058 10059 10060 10061 10062 10063 10064 10065 10066 10067 
+		10060 9129 9132 9133 9143 9141 9145 10059 10051 9135
 	}
 	local_supplies=0.0 
 }

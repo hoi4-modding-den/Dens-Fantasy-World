@@ -126,6 +126,28 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ZCV_restore_democracy
+		icon = GFX_focus_AFG_parliamentary_democracy
+		
+		x = -7
+		y = 1
+		
+		prerequisite = { focus = ZCV_reunite_nation}
+		relative_position_id = ZCV_reunite_nation
+
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
 		id = ZCV_teachings_marx
 		icon = GFX_focus_eng_liberate_the_home_of_marx
 		

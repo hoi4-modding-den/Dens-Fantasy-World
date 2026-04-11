@@ -1,15 +1,15 @@
 
 state={
-	id=612
-	name="STATE_612"
-	manpower = 5040244
+	id=1250
+	name="STATE_1250"
+	manpower = 2728914
 	
-	state_category = city
+	state_category = metropolis
 	#impassable = yes
 	resources={
 		aluminium=0
-		chromium=0
 		oil=0
+		chromium=0
 		rubber=0
 		steel=0
 		tungsten=0
@@ -17,25 +17,23 @@ state={
 	}
 
 	history={
-		
 		owner = ZCV
-		add_core_of = ZCV
-		
+		add_core_of = ZCX
+		add_claim_by = ZCV
 		
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			
 			arms_factory = 0
-			industrial_complex = 0
-		}
-		victory_points = {
-			19312 30
+			industrial_complex = 2
+			
+			
 		}
 		
 	}
 
 	provinces={
-		19312
+		10067
 	}
 	local_supplies=0.0 
 }
