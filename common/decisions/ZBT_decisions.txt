@@ -200,8 +200,8 @@ ZBT_undercity_cat = {
 	}
 
 
-	ZBT_expand_underground_housing = {
-		icon = generic_factory
+	ZBT_build_underground_housing = {
+		icon = generic_construction
 		visible = {
 			always = yes # check_variable = { UC_empty_sectors > 0 }
 		}

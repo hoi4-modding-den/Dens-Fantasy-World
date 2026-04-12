@@ -34,40 +34,40 @@ add_ideas = {
 
 
 # Undercity variables
-set_variable = { var = ZBT.UC_depth value = 0 }
-set_variable = { var = ZBT.UC_unexcavated_sectors value = 5 }
-set_variable = { var = ZBT.UC_empty_sectors value = 0 }
+set_variable = { var = UC_depth value = 0 }
+set_variable = { var = UC_unexcavated_sectors value = 5 }
+set_variable = { var = UC_empty_sectors value = 0 }
 
-set_variable = { var = ZBT.UC_new_layer_time value = 120 } #TODO: probably rebalance these
-set_variable = { var = ZBT.UC_new_layer_cost value = 100 }
-set_variable = { var = ZBT.UC_sector_dig_time value = 70 }
-set_variable = { var = ZBT.UC_sector_dig_cost value = 100 }
-set_variable = { var = ZBT.UC_sector_build_time value = 90 }
-set_variable = { var = ZBT.UC_sector_build_cost value = 100 }
-set_variable = { var = ZBT.UC_sector_build_heavy_time value = 120 }
-set_variable = { var = ZBT.UC_sector_build_heavy_cost value = 150 }
+set_variable = { var = UC_new_layer_time value = 120 } #TODO: probably rebalance these
+set_variable = { var = UC_new_layer_cost value = 100 }
+set_variable = { var = UC_sector_dig_time value = 70 }
+set_variable = { var = UC_sector_dig_cost value = 100 }
+set_variable = { var = UC_sector_build_time value = 90 }
+set_variable = { var = UC_sector_build_cost value = 100 }
+set_variable = { var = UC_sector_build_heavy_time value = 120 }
+set_variable = { var = UC_sector_build_heavy_cost value = 150 }
 
-set_variable = { var = ZBT.UC_construction_speed value = 0 }
-set_variable = { var = ZBT.UC_mil_output value = 0 }
-set_variable = { var = ZBT.UC_consumer_goods value = 0 }
-set_variable = { var = ZBT.UC_stability value = 0 }
-set_variable = { var = ZBT.UC_mil_cap value = 0 }
-set_variable = { var = ZBT.UC_energy_cap value = 0 }
-set_variable = { var = ZBT.UC_fuel_gain value = 0 }
-set_variable = { var = ZBT.UC_max_fuel value = 0 }
-set_variable = { var = ZBT.UC_research_speed value = 0 }
-set_variable = { var = ZBT.UC_training_time value = 0 }
-set_variable = { var = ZBT.UC_pop_growth value = 0 }
+set_variable = { var = UC_construction_speed value = 0 }
+set_variable = { var = UC_mil_output value = 0 }
+set_variable = { var = UC_consumer_goods value = 0 }
+set_variable = { var = UC_stability value = 0 }
+set_variable = { var = UC_mil_cap value = 0 }
+set_variable = { var = UC_energy_cap value = 0 }
+set_variable = { var = UC_fuel_gain value = 0 }
+set_variable = { var = UC_max_fuel value = 0 }
+set_variable = { var = UC_research_speed value = 0 }
+set_variable = { var = UC_training_time value = 0 }
+set_variable = { var = UC_pop_growth value = 0 }
 
-set_variable = { var = ZBT.STAT_excavations_so_far value = 0 }
-set_variable = { var = ZBT.STAT_cool value = 15 }
+set_variable = { var = STAT_excavations_so_far value = 0 }
+set_variable = { var = STAT_cool value = 15 }
 
-set_variable = { var = ZBT.DW_discover_dragon_chance value = 0 }
+set_variable = { var = DW_discover_dragon_chance value = 0 }
 
-# set_variable = { var = ZBT.UC_res_coal value = 0 }
-# set_variable = { var = ZBT.UC_res_oil value = 0 }
-# set_variable = { var = ZBT.UC_res_steel value = 0 }
-# set_variable = { var = ZBT.UC_res_tungsten value = 0 }
-# set_variable = { var = ZBT.UC_res_aluminum value = 0 }
-# set_variable = { var = ZBT.UC_res_rubber value = 0 }
-# set_variable = { var = ZBT.UC_res_chromium value = 0 }
+# set_variable = { var = UC_res_coal value = 0 }
+# set_variable = { var = UC_res_oil value = 0 }
+# set_variable = { var = UC_res_steel value = 0 }
+# set_variable = { var = UC_res_tungsten value = 0 }
+# set_variable = { var = UC_res_aluminum value = 0 }
+# set_variable = { var = UC_res_rubber value = 0 }
+# set_variable = { var = UC_res_chromium value = 0 }
