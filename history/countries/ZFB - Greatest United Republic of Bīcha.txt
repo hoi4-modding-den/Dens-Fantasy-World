@@ -21,6 +21,9 @@ add_ideas = {
 	limited_conscription
 	civilian_economy
         export_focus
+        ZF_balekelemi_civil_war
+        ZFB_tight_grip_of_the_corporations
+        ZFB_sidelined_military
 }
 
 set_stability = 0.2

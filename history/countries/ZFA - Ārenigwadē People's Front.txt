@@ -20,6 +20,9 @@ set_technology = {
 add_ideas = {
 	extensive_conscription
 	partial_economic_mobilization
+        limited_exports
+        ZF_balekelemi_civil_war
+        ZFA_arenigwade_liberation_army
 }
 
 set_stability = 0.15

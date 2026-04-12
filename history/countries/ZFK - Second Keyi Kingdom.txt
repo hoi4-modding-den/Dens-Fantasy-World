@@ -21,6 +21,9 @@ add_ideas = {
 	limited_conscription
 	low_economic_mobilisation
         limited_exports
+        ZF_balekelemi_civil_war
+        ZFK_reconstituted_kingdom
+        ZFK_underdeveloped_mess
 }
 
 set_stability = 0.2

@@ -21,6 +21,9 @@ add_ideas = {
 	limited_conscription
 	low_economic_mobilisation
         limited_exports
+        ZF_balekelemi_civil_war
+        ZFS_growing_discontent_within
+        ZFS_rule_of_the_minority
 }
 
 set_stability = 0.1

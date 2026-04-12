@@ -21,6 +21,9 @@ add_ideas = {
 	extensive_conscription
 	war_economy
         closed_economy
+        ZFP_the_awaiting_revenge
+        ZFP_complete_military_dominance
+        ZFP_collapsing_civilian_economy
 }
 
 set_stability = 0.5

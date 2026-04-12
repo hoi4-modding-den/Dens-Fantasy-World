@@ -1,0 +1,67 @@
+ideas = {
+
+	country = {
+                   ZFP_the_awaiting_revenge = {
+                           picture = RAJ_private_military_complex
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                                   war_support_factor = 0.25
+                                   weekly_casualties_war_support = 0.005
+                                   surrender_limit = 0.2
+                                   fascism_drift = 0.03
+                                   industrial_capacity_factory = 0.1
+                                   
+			    }
+                        targeted_modifier = {
+                                   tag = ZST  
+                                   attack_bonus_against = 0.25
+                                   defense_bonus_against = 0.25
+                              }
+                  }
+
+                   ZFP_complete_military_dominance = {
+                           picture = ARG_military_government
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                                    heat_attrition_factor = -0.4
+                                    conscription_factor = 0.2
+                                    experience_gain_army = 0.15
+                                    army_attack_factor = 0.1
+                                    army_defence_factor = 0.1
+			    }
+                  }
+
+                       ZFP_collapsing_civilian_economy = {
+                           picture = generic_economic_crisis
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                                   cic_construction_boost = -0.8
+                                   stability_weekly = -0.01
+			    }
+                  }
+         }
+}
