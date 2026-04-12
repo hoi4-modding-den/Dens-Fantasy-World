@@ -2,32 +2,29 @@ state = {
 	id = 89
 	name = "STATE_89"
 
-	resources = {
-		aluminium = 0
-		chromium = 0
-		oil = 0
-		rubber = 11
-		steel = 0
-		tungsten = 0
-		coal = 0
-	}
-
 	history = {
 		owner = ZAV
 		add_core_of = ZAV
 		
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1	
-		}	
+		}
+
+		victory_points = { # Campton-on-Pyre
+			1689 3
+		}
+
+		victory_points = { # Valor
+			1686 1
+		}
 	}
 
 	provinces = {
 		1674 1675 1680 1681 1682 1683 1684 1686 1689 1690 
 	}
 
-	manpower = 4726519
-	buildings_max_level_factor = 1
-	state_category = megalopolis
+	manpower = 472651
+	state_category = town
 	local_supplies = 0
 }

@@ -3,13 +3,8 @@ state = {
 	name = "STATE_253"
 
 	resources = {
-		aluminium = 0
-		chromium = 0
-		oil = 0
-		rubber = 0
-		steel = 0
-		tungsten = 0
-		coal = 0
+		tungsten = 13
+		coal = 12
 	}
 
 	history = {
@@ -17,17 +12,19 @@ state = {
 		add_core_of = ZAV
 		
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1	
-		}	
+			infrastructure = 2
+		}
+
+		victory_points = { # Fairwood
+			2299 3
+		}
 	}
 
 	provinces = {
 		2299 2300 2304 4182 4183 4184 4185 4186 
 	}
 
-	manpower = 1680468
-	buildings_max_level_factor = 1
+	manpower = 368046
 	state_category = town
 	local_supplies = 0
 }

@@ -2,32 +2,26 @@ state = {
 	id = 131
 	name = "STATE_131"
 	
-	resources = {
-		aluminium = 0
-		chromium = 0
-		oil = 0
-		rubber = 0
-		steel = 0
-		tungsten = 0
-		coal = 0
-	}
-	
 	history = {
 		owner = ZAV
 		add_core_of = ZAV
 		
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1	
 		}	
+
+		victory_points = { # Ardham
+			1678 5
+		}
 	}
 	
 	provinces = {
 		1676 1677 1678 1679 1685 1687 1688 3133 3136 3143 3146 
 	}
 	
-	manpower = 2811521
+	manpower = 811521
 	buildings_max_level_factor = 1
-	state_category = city
+	state_category = large_town
 	local_supplies = 0
 }

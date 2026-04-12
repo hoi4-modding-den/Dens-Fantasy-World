@@ -3,13 +3,8 @@ state = {
 	name = "STATE_96"
 
 	resources = {
-		aluminium = 0
-		chromium = 0
-		oil = 3
-		rubber = 0
-		steel = 0
-		tungsten = 0
-		coal = 0
+		aluminium = 15
+		tungsten = 10
 	}
 	
 	history = {
@@ -17,17 +12,24 @@ state = {
 		add_core_of = ZAV
 		
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1	
-		}	
+			infrastructure = 2
+			industrial_complex = 2
+		}
+
+		victory_points = { # Bayleth
+			1813 5
+		}
+
+		victory_points = { # Eryngar
+			1821 5
+		}
 	}
 
 	provinces = {
 		1812 1813 1815 1816 1818 1820 1821 1822 1823 1824 1826 1827 1828 1829 1830 1831 
 	}
 	
-	manpower = 5466226
-	buildings_max_level_factor = 1
-	state_category = metropolis
+	manpower = 1466226
+	state_category = large_town
 	local_supplies = 0
 }

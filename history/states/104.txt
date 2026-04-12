@@ -1,16 +1,6 @@
 state = {
 	id = 104
 	name = "STATE_104"
-
-	resources = {
-		aluminium = 0
-		chromium = 0
-		oil = 0
-		rubber = 6
-		steel = 0
-		tungsten = 0
-		coal = 0
-	}
 	
 	history = {
 		owner = ZAV
@@ -20,13 +10,17 @@ state = {
 			infrastructure = 3
 			industrial_complex = 1	
 		}	
+
+		victory_points = { # Camlann
+			1950 5
+		}
 	}
 	
 	provinces = {
 		1942 1943 1944 1945 1946 1948 1949 1950 1951 
 	}
 	
-	manpower = 3049052
+	manpower = 1449052
 	buildings_max_level_factor = 1
 	state_category = large_city
 	local_supplies = 0

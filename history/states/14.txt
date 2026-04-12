@@ -2,32 +2,30 @@ state = {
 	id = 14
 	name = "STATE_14"
 	
-	resources = {
-		aluminium = 0
-		chromium = 0
-		oil = 1
-		rubber = 0
-		steel = 0
-		tungsten = 0
-		coal = 0
-	}
-	
 	history = {
 		owner = ZAV
 		add_core_of = ZAV
 		
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1	
-		}	
+			industrial_complex = 2
+			arms_factory = 2
+		}
+
+		victory_points = { # Astoria
+			272 10
+		}
+
+		victory_points = { # Merles
+			271 3
+		}
 	}
 	
 	provinces = {
 		259 260 261 262 264 265 266 267 269 270 271 272 273 
 	}
 	
-	manpower = 4106686
-	buildings_max_level_factor = 1
-	state_category = metropolis
+	manpower = 2106686
+	state_category = city
 	local_supplies = 0
 }

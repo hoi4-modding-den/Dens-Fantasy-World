@@ -3,13 +3,7 @@ state = {
 	name = "STATE_166"
 
 	resources = {
-		aluminium = 0
-		chromium = 0
-		oil = 0
-		rubber = 0
-		steel = 0
-		tungsten = 0
-		coal = 0
+		tungsten = 20
 	}
 
 	history = {
@@ -17,17 +11,24 @@ state = {
 		add_core_of = ZAV
 		
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1	
-		}	
+		}
+
+		victory_points = { # Giliad
+			2850 10
+		}
+
+		victory_points = { # Rackham
+			2845 3
+		}
 	}
 
 	provinces = {
 		1825 1834 2842 2843 2844 2845 2846 2847 2848 2849 2850 2851 2852 2853 
 	}
 	
-	manpower = 2428212
-	buildings_max_level_factor = 1
+	manpower = 728212
 	state_category = town
 	local_supplies = 0
 }

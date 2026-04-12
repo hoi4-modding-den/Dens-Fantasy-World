@@ -3,13 +3,8 @@ state = {
 	name = "STATE_343"
 	
 	resources = {
-		aluminium = 0
-		chromium = 0
-		oil = 0
-		rubber = 14
-		steel = 0
-		tungsten = 0
-		coal = 0
+		aluminium = 37
+		steel = 64
 	}
 	
 	history = {
@@ -18,11 +13,17 @@ state = {
 		
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1	
+			industrial_complex = 4
+			arms_factory = 3
+			air_base = 6
 		}	
 
 		victory_points = { # New Camelot
 			3893 50
+		}
+
+		victory_points = { # Regentsburg
+			3892 5
 		}
 	}
 	
@@ -30,7 +31,7 @@ state = {
 		1947 3572 3891 3892 3893 5426 
 	}
 	
-	manpower = 836068
+	manpower = 6836068
 	buildings_max_level_factor = 1
 	state_category = metropolis
 	local_supplies = 0

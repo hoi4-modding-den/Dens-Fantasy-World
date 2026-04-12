@@ -3,13 +3,7 @@ state = {
 	name = "STATE_319"
 
 	resources = {
-		aluminium = 0
-		chromium = 0
-		oil = 1
-		rubber = 0
-		steel = 0
-		tungsten = 0
-		coal = 0
+		steel = 8
 	}
 	
 	history = {
@@ -17,16 +11,21 @@ state = {
 		add_core_of = ZAV
 		
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1	
+			air_base = 2
 		}	
+
+		victory_points = { # Morcant
+			5169 5
+		}
 	}
 	
 	provinces = {
 		263 268 1814 1817 1819 1832 1833 5168 5169 5170 5171 5172 5173 5174 5175 5176 
 	}
 	
-	manpower = 2202063
+	manpower = 1202063
 	buildings_max_level_factor = 1
 	state_category = large_town
 	local_supplies = 0
