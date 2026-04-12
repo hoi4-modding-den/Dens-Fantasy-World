@@ -40,13 +40,17 @@
 
  # Decisions - Undercity
  ZBT_undercity_cat:0 "The Undercity Project"
- ZBT_undercity_cat_desc:0 "Our finest geologers, engineers, and remote seers have determined that expanding our city downwards will be much more complicated than previously thought. We will only be able to dig out a limited number of underground Sectors for each layer of Depth, and excavating deeper layers of rock will require more time and §Cspecialised equipment§!.\n\nWe are currently at a §gDepth§! of [?UC_depth|Y0].\nThere are [?UC_empty_sectors|Y0] §6Empty Sectors§! in this layer we can fill with underground buildings.\nThere are [?UC_unexcavated_sectors|Y0] §5Unexcavated Sectors§! worth of space we can use before needing to dig deeper."
+ ZBT_undercity_cat_desc:0 "Our finest geologers, engineers, and remote seers have determined that expanding our city downwards will be much more complicated than previously thought. We will only be able to dig out a limited number of underground Sectors for each layer of §gDepth§!, and excavating deeper layers of rock will require more time and §CUpgrades§!.\n\nWe are currently at a §gDepth§! of [?UC_depth|Y0].\nThere are [?UC_empty_sectors|Y0] §6Empty Sectors§! in this layer we can fill with underground buildings.\nThere are [?UC_unexcavated_sectors|Y0] §5Unexcavated Sectors§! worth of space we can use before needing to dig deeper."
 
  ZBT_tt_more_empty_sectors_than:0 "More than $AMT|Y$ §6Empty Sectors§! available"
  ZBT_tt_more_unexcavated_sectors_than:0 "More than $AMT|Y$ §5Unexcavated Sectors§! available"
  ZBT_tt_out_of_space:0 "No more §5Unexcavated Sectors§! are available on this §gLayer§!"
  ZBT_tt_use_empty_sectors:0 "$AMT|Y$ §6Empty Sectors§! will be filled"
  ZBT_tt_sector_available:0 "$AMT|Y$ §6Empty Sectors§! will be made available"
+ ZBT_tt_has_special_tech:0 "Has obtained the §CUndercity Upgrade§! of $TECH|Y$"
+ ZBT_tt_special_tech_attained:0 "Obtain §CUndercity Upgrade§! of $TECH|Y$"
+ ZBT_tt_modify_undercity:0 "Modify §YThe Undercity§! by:"
+ ZBT_tt_building_upgrade_info:0 "Building $BUILD|Y$ will modify §YThe Undercity§! by the following:"
  
  ZBT_dig_down:0 "§gDig Deeper§!"
  ZBT_excavate_new_sector:0 "§5Excavate§! a New Sector"
@@ -54,3 +58,12 @@
  ZBT_build_mil:0 "§6Build§! a Military Factory"
  ZBT_build_ref:0 "§6Build§! a Synthetic Refinery"
 #  ZBT_dig_down:0 ""
+
+
+
+
+ # this isn't in basegame for some reason??? am I stupid?????????
+ consumer_goods_expected_value_neutral_tt: " $MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE$ $RIGHT|Y=%1$"
+ consumer_goods_expected_value_negative_tt: " $MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE$ $RIGHT|R=%1$"
+ consumer_goods_expected_value_tt: " $MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE$ $RIGHT|-=%1$"
+ consumer_goods_expected_value_whitespace_tt: " $consumer_goods_expected_value_tt$"

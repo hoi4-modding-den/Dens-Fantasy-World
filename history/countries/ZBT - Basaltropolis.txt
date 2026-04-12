@@ -57,6 +57,7 @@ set_variable = { var = ZBT.UC_fuel_gain value = 0 }
 set_variable = { var = ZBT.UC_max_fuel value = 0 }
 set_variable = { var = ZBT.UC_research_speed value = 0 }
 set_variable = { var = ZBT.UC_training_time value = 0 }
+set_variable = { var = ZBT.UC_pop_growth value = 0 }
 
 set_variable = { var = ZBT.STAT_excavations_so_far value = 0 }
 set_variable = { var = ZBT.STAT_cool value = 15 }

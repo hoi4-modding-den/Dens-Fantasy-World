@@ -125,6 +125,12 @@ ZBT_undercity_cat = {
 				type = industrial_complex
 				level = 1
 			}
+
+			IF = {
+				limit = { has_country_flag = UC_improved_factories }
+				custom_effect_tooltip = ZBT_tt_modify_undercity
+				add_to_variable = {var = UC_consumer_goods value = -0.005 tooltip = consumer_goods_expected_value_whitespace_tt}
+			}
 		}
 	}
 
@@ -189,6 +195,78 @@ ZBT_undercity_cat = {
 			add_offsite_building = {
 				type = synthetic_refinery
 				level = 1
+			}
+		}
+	}
+
+
+	ZBT_expand_underground_housing = {
+		icon = generic_factory
+		visible = {
+			always = yes # check_variable = { UC_empty_sectors > 0 }
+		}
+
+		available = {
+			num_of_available_civilian_factories > 1
+			custom_trigger_tooltip = {
+				tooltip = {
+					localization_key = ZBT_tt_more_empty_sectors_than
+					AMT = 0
+				}
+				check_variable = { UC_empty_sectors > 0 }
+			}
+		}
+
+		cost = UC_sector_build_cost
+		days_remove = UC_sector_build_time
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			custom_effect_tooltip = { 
+				IDEA = ZBT_undercity
+				localization_key = modify_idea_tt 
+			}
+			add_to_variable = { var = UC_stability value = 0.005 tooltip = stability_factor_whitespace_tt }
+			add_to_variable = { var = UC_pop_growth value = 0.03 tooltip = monthly_population_tt }
+		}
+	}
+
+
+	ZBT_improve_factories = {
+		icon = generic_research
+		visible = {
+			NOT = { has_country_flag = UC_improved_factories }
+		}
+
+		available = {
+			has_tech = construction2
+			has_tech = excavation2
+		}
+
+		cost = UC_sector_build_cost
+		days_remove = UC_sector_build_time
+		modifier = {
+			consumer_goods_expected_value = 0.1
+		}
+		remove_effect = {
+			set_country_flag = UC_improved_factories
+			custom_effect_tooltip = {
+				localization_key = ZBT_tt_special_tech_attained
+				TECH = "Improved Underground Factories"
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = ZBT_tt_building_upgrade_info
+				BUILD = "Underground Civillian Factory"
+			}
+			custom_effect_tooltip = { 
+				IDEA = ZBT_undercity
+				localization_key = modify_idea_tt 
+			}
+			effect_tooltip = {
+				add_to_variable = {var = UC_consumer_goods value = -0.005 tooltip = consumer_goods_expected_value_whitespace_tt}
 			}
 		}
 	}

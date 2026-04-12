@@ -16,6 +16,7 @@ ZBT_undercity = {
 	max_fuel_factor = ZBT.UC_max_fuel
 	research_speed_factor = ZBT.UC_research_speed
 	training_time_factor = ZBT.UC_training_time
+	monthly_population = ZBT.UC_pop_growth
 
 	country_resource_coal = ZBT.UC_res_coal
 	country_resource_oil = ZBT.UC_res_oil
