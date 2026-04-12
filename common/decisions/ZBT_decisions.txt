@@ -1,5 +1,24 @@
 ZBT_undercity_cat = {
 
+	d_instant_constrycyruin = {
+		allowed = {always = yes}
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+		complete_effect = {
+			set_variable = { var = UC_new_layer_time value = 1 } 
+			set_variable = { var = UC_new_layer_cost value = 1 }
+			set_variable = { var = UC_sector_dig_time value = 1 }
+			set_variable = { var = UC_sector_dig_cost value = 1 }
+			set_variable = { var = UC_sector_build_time value = 1 }
+			set_variable = { var = UC_sector_build_cost value = 1 }
+			set_variable = { var = UC_sector_build_heavy_time value = 12 }
+			set_variable = { var = UC_sector_build_heavy_cost value = 15 }
+			add_political_power = 2000
+		}
+	}
+
 	ZBT_dig_down = {
 		icon = generic_mountain_fortification
 		visible = {
@@ -127,7 +146,7 @@ ZBT_undercity_cat = {
 			}
 
 			IF = {
-				limit = { has_country_flag = UC_improved_factories }
+				limit = { has_country_flag = UC_improved_civs1 }
 				custom_effect_tooltip = ZBT_tt_modify_undercity
 				add_to_variable = {var = UC_consumer_goods value = -0.005 tooltip = consumer_goods_expected_value_whitespace_tt}
 			}
@@ -162,6 +181,12 @@ ZBT_undercity_cat = {
 			add_offsite_building = {
 				type = arms_factory
 				level = 1
+			}
+
+			IF = {
+				limit = { has_country_flag = UC_improved_mils1 }
+				custom_effect_tooltip = ZBT_tt_modify_undercity
+				add_to_variable = {var = UC_mil_output value = 0.05 tooltip = industrial_capacity_factory_tt }
 			}
 		}
 	}
@@ -223,20 +248,17 @@ ZBT_undercity_cat = {
 			civilian_factory_use = 2
 		}
 		remove_effect = {
-			custom_effect_tooltip = { 
-				IDEA = ZBT_undercity
-				localization_key = modify_idea_tt 
-			}
+			custom_effect_tooltip = ZBT_tt_modify_undercity
 			add_to_variable = { var = UC_stability value = 0.005 tooltip = stability_factor_whitespace_tt }
 			add_to_variable = { var = UC_pop_growth value = 0.03 tooltip = monthly_population_tt }
 		}
 	}
 
 
-	ZBT_improve_factories = {
+	ZBT_improve_civs = {
 		icon = generic_research
 		visible = {
-			NOT = { has_country_flag = UC_improved_factories }
+			NOT = { has_country_flag = UC_improved_civs1 }
 		}
 
 		available = {
@@ -250,7 +272,7 @@ ZBT_undercity_cat = {
 			consumer_goods_expected_value = 0.1
 		}
 		remove_effect = {
-			set_country_flag = UC_improved_factories
+			set_country_flag = UC_improved_civs1
 			custom_effect_tooltip = {
 				localization_key = ZBT_tt_special_tech_attained
 				TECH = "Improved Underground Factories"
@@ -259,14 +281,45 @@ ZBT_undercity_cat = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = ZBT_tt_building_upgrade_info
-				BUILD = "Underground Civillian Factory"
-			}
-			custom_effect_tooltip = { 
-				IDEA = ZBT_undercity
-				localization_key = modify_idea_tt 
+				BUILD = "Underground Civilian Factory"
 			}
 			effect_tooltip = {
 				add_to_variable = {var = UC_consumer_goods value = -0.005 tooltip = consumer_goods_expected_value_whitespace_tt}
+			}
+		}
+	}
+
+
+	ZBT_improve_mils = {
+		icon = generic_research
+		visible = {
+			NOT = { has_country_flag = UC_improved_mils1 }
+		}
+
+		available = {
+			has_tech = construction2
+			has_tech = excavation2
+		}
+
+		cost = UC_sector_build_cost
+		days_remove = UC_sector_build_time
+		modifier = {
+			consumer_goods_expected_value = 0.1
+		}
+		remove_effect = {
+			set_country_flag = UC_improved_mils1
+			custom_effect_tooltip = {
+				localization_key = ZBT_tt_special_tech_attained
+				TECH = "Improved Underground Factories"
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = ZBT_tt_building_upgrade_info
+				BUILD = "Underground Military Factory"
+			}
+			effect_tooltip = {
+				add_to_variable = {var = UC_mil_output value = 0.05 tooltip = industrial_capacity_factory_tt }
 			}
 		}
 	}

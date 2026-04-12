@@ -50,7 +50,7 @@ set_variable = { var = UC_sector_build_heavy_cost value = 150 }
 set_variable = { var = UC_construction_speed value = 0 }
 set_variable = { var = UC_mil_output value = 0 }
 set_variable = { var = UC_consumer_goods value = 0 }
-set_variable = { var = UC_stability value = 0 }
+set_variable = { var = UC_stability value = 0 } #TODO: stability cap maybe idfk
 set_variable = { var = UC_mil_cap value = 0 }
 set_variable = { var = UC_energy_cap value = 0 }
 set_variable = { var = UC_fuel_gain value = 0 }

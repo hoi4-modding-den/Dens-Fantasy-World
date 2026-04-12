@@ -57,6 +57,10 @@
  ZBT_build_civ:0 "§6Build§! a Civilian Factory"
  ZBT_build_mil:0 "§6Build§! a Military Factory"
  ZBT_build_ref:0 "§6Build§! a Synthetic Refinery"
+ ZBT_build_underground_housing:0 "§6Build§! More Houses Underground"
+
+ ZBT_improve_civs:0 "§CUpgrade§! our Civilian Factories"
+ ZBT_improve_civs:0 "§CUpgrade§! our Military Factories"
 #  ZBT_dig_down:0 ""
 
 
