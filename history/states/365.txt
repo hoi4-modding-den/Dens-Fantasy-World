@@ -3,13 +3,9 @@ state = {
 	name = "STATE_365"
 
 	resources = {
-		aluminium = 0
-		chromium = 0
-		oil = 0
-		rubber = 0
-		steel = 0
-		tungsten = 0
-		coal = 0
+		chromium = 23
+		steel = 10
+		tungsten = 15
 	}
 
 	history = {
@@ -31,7 +27,6 @@ state = {
 	}
 
 	manpower = 897545
-	buildings_max_level_factor = 1
-	state_category = pastoral
+	state_category = town
 	local_supplies = 0
 }

@@ -3,13 +3,8 @@ state = {
 	name = "STATE_98"
 
 	resources = {
-		aluminium = 0
-		chromium = 0
-		oil = 1
-		rubber = 0
-		steel = 0
-		tungsten = 0
-		coal = 0
+		steel = 65
+		coal = 23
 	}
 
 	history = {
@@ -38,8 +33,7 @@ state = {
 		1862 1863 1864 1866 1867 1873 1875 1877 1880 
 	}
 
-	manpower = 4520586
-	buildings_max_level_factor = 1
-	state_category = metropolis
+	manpower = 452058
+	state_category = town
 	local_supplies = 0
 }

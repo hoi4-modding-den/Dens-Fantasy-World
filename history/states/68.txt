@@ -4,13 +4,8 @@ state = {
 	name = "STATE_68"
 	
 	resources = {
-		aluminium = 0
-		chromium = 0
-		oil = 0
-		rubber = 0
-		steel = 0
-		tungsten = 0
-		coal = 0
+		oil = 6
+		coal = 35
 	}
 
 	history = {
@@ -19,7 +14,7 @@ state = {
 		
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			industrial_complex = 2
 			arms_factory = 2
 		}	
 
@@ -37,6 +32,6 @@ state = {
 	}
 
 	manpower = 2065108
-	state_category = large_town
+	state_category = city
 	local_supplies = 0.0 
 }
