@@ -45,7 +45,7 @@ ZBT_undercity_cat = {
 			add_to_variable = { var = UC_depth value = 1 }
 			set_variable = { var = UC_empty_sectors value = 0 }
 			IF = {
-				limit = { check_variable = { UC_depth < 3 } }
+				limit = { check_variable = { UC_depth < 4 } }
 				set_variable = { var = UC_unexcavated_sectors value = 5 }
 			}
 			ELSE_IF = {
@@ -186,7 +186,7 @@ ZBT_undercity_cat = {
 			IF = {
 				limit = { has_country_flag = UC_improved_mils1 }
 				custom_effect_tooltip = ZBT_tt_modify_undercity
-				add_to_variable = {var = UC_mil_output value = 0.05 tooltip = industrial_capacity_factory_tt }
+				add_to_variable = {var = UC_mil_output value = 0.05 tooltip = industrial_capacity_factory_tt } #todo: this doesnt do shit even when I change the variable with set_var???
 			}
 		}
 	}
@@ -275,13 +275,13 @@ ZBT_undercity_cat = {
 			set_country_flag = UC_improved_civs1
 			custom_effect_tooltip = {
 				localization_key = ZBT_tt_special_tech_attained
-				TECH = "Improved Underground Factories"
+				TECH = ZBT_UC_civ1
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = ZBT_tt_building_upgrade_info
-				BUILD = "Underground Civilian Factory"
+				BUILD = ZBT_UC_civ1
 			}
 			effect_tooltip = {
 				add_to_variable = {var = UC_consumer_goods value = -0.005 tooltip = consumer_goods_expected_value_whitespace_tt}
@@ -310,17 +310,53 @@ ZBT_undercity_cat = {
 			set_country_flag = UC_improved_mils1
 			custom_effect_tooltip = {
 				localization_key = ZBT_tt_special_tech_attained
-				TECH = "Improved Underground Factories"
+				TECH = ZBT_UC_mil1
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = ZBT_tt_building_upgrade_info
-				BUILD = "Underground Military Factory"
+				BUILD = ZBT_UC_mil1
 			}
 			effect_tooltip = {
 				add_to_variable = {var = UC_mil_output value = 0.05 tooltip = industrial_capacity_factory_tt }
 			}
+		}
+	}
+
+
+	ZBT_research_labs = { # this is a test
+		icon = generic_research
+		visible = {
+			NOT = { has_country_flag = UC_labs1 }
+		}
+
+		available = {
+			# has_tech = construction2
+			# has_tech = excavation2
+		}
+
+		cost = UC_sector_build_cost
+		days_remove = UC_sector_build_time
+		modifier = {
+			consumer_goods_expected_value = 0.2
+		}
+		remove_effect = {
+			set_country_flag = UC_labs1
+			custom_effect_tooltip = {
+				localization_key = ZBT_tt_special_tech_attained
+				TECH = "undegroudnflabsydehwiofhiwokds"
+			}
+
+			# custom_effect_tooltip = generic_skip_one_line_tt
+			# custom_effect_tooltip = {
+			# 	localization_key = ZBT_tt_building_upgrade_info
+			# 	BUILD = "lab"
+			# }
+			# effect_tooltip = {
+			# 	add_to_variable = {var = UC_ value = 0.05 tooltip = industrial_capacity_factory_tt }
+			# }
+			add_to_variable = {var = UC_research_speed value = 0.05 tooltip = research_speed_factor_tt }
 		}
 	}
 	

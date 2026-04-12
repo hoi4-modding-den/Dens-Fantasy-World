@@ -1,0 +1,99 @@
+defined_text = {
+    name = ZBT_UC_civ_name
+    text = {
+        trigger = {
+            has_country_flag = UC_improved_civs1
+        }
+        localization_key = ZBT_UC_civ1
+    }
+    text = {
+        trigger = {
+            has_country_flag = UC_improved_civs2
+        }
+        localization_key = ZBT_UC_civ2
+    }
+    text = {
+        trigger = {
+            has_country_flag = UC_improved_civs3
+        }
+        localization_key = ZBT_UC_civ3
+    }
+    text = {
+        localization_key = ZBT_UC_civ0
+    }
+}
+
+defined_text = {
+    name = ZBT_UC_mil_name
+    text = {
+        trigger = {
+            has_country_flag = UC_improved_mils1
+        }
+        localization_key = ZBT_UC_mil1
+    }
+    text = {
+        trigger = {
+            has_country_flag = UC_improved_mils2
+        }
+        localization_key = ZBT_UC_mil2
+    }
+    text = {
+        trigger = {
+            has_country_flag = UC_improved_mils3
+        }
+        localization_key = ZBT_UC_mil3
+    }
+    text = {
+        localization_key = ZBT_UC_mil0
+    }
+}
+
+defined_text = {
+    name = ZBT_UC_ref_name
+    text = {
+        trigger = {
+            has_country_flag = UC_improved_refs1
+        }
+        localization_key = ZBT_UC_ref1
+    }
+    text = {
+        trigger = {
+            has_country_flag = UC_improved_refs2
+        }
+        localization_key = ZBT_UC_ref2
+    }
+    text = {
+        trigger = {
+            has_country_flag = UC_improved_refs3
+        }
+        localization_key = ZBT_UC_ref3
+    }
+    text = {
+        localization_key = ZBT_UC_ref0
+    }
+}
+
+defined_text = {
+    name = ZBT_UC_lab_name
+    text = {
+        trigger = {
+            has_country_flag = UC_improved_labs1
+        }
+        localization_key = ZBT_UC_lab1
+    }
+    text = {
+        trigger = {
+            has_country_flag = UC_improved_labs2
+        }
+        localization_key = ZBT_UC_lab2
+    }
+    text = {
+        trigger = {
+            has_country_flag = UC_improved_labs3
+        }
+        localization_key = ZBT_UC_lab3
+    }
+    text = {
+        localization_key = ZBT_UC_lab0
+    }
+}

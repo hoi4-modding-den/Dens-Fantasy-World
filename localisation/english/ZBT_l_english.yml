@@ -16,8 +16,8 @@
  ZBT_communism_party:0 "AS (Radicals)"
  ZBT_communism_party_long:0 "Action Societies - Radicals"
 
- ZBT_fascism_party:0 "GSC"
- ZBT_fascism_party_long:0 "Great Society Cadre"
+ ZBT_fascism_party:0 "CDC"
+ ZBT_fascism_party_long:0 "Civic Defence Cadre"
 
 
  # States and VPs
@@ -27,13 +27,13 @@
 
  # Nat Spirits
  ZBT_established_mining_town:0 "Established Mining Town"
- ZBT_established_mining_town_desc:0 ""
+ ZBT_established_mining_town_desc:0 "In the foothils of the Riphean Mountains, Basaltropolis' primary industry since the 1800s has been resource extraction. Mining is so woven into the local culture that many have built houses in the sides of the caves they work in."
 
  ZBT_refugee_influx:0 "Refugee Influx"
- ZBT_refugee_influx_desc:0 ""
+ ZBT_refugee_influx_desc:0 "Basaltropolis was spared from the destruction of Malphas' rampage, but that only meant that the city would be flooded with a wave of refugees fleeing the sea of insanity the rest of Nestoria became. The Sayani Civil War to our southeast has only increased the stream of people coming into our city, and whatever systems we previously had to shelter them are quickly breaking down."
 
  ZBT_political_enthusiasts:0 "Political \"Enthusiasts\""
- ZBT_political_enthusiasts_desc:0 ""
+ ZBT_political_enthusiasts_desc:0 "Growing discontent against the rule of Duke Esta has inspired the populace to form social clubs, known as §LAction Societies§!, to discuss the formation of a government with decreased royal influence. The importation of radical ideas from other parts of Kuvivalwiki has only worsened the issue, with some Societies advocating for radical ideas like complete seperation from the Nestorian Empire and the abolition of the nobility. While these groups agree on very little, they have become incredibly disruptive thanks to their very public advocacy for their preferred ideology."
 
  ZBT_undercity:0 "The Undercity Project"
 
@@ -54,16 +54,41 @@
  
  ZBT_dig_down:0 "§gDig Deeper§!"
  ZBT_excavate_new_sector:0 "§5Excavate§! a New Sector"
- ZBT_build_civ:0 "§6Build§! a Civilian Factory"
- ZBT_build_mil:0 "§6Build§! a Military Factory"
- ZBT_build_ref:0 "§6Build§! a Synthetic Refinery"
+ ZBT_build_civ:0 "§6Build§! a [ZBT_UC_civ_name]"
+ ZBT_build_mil:0 "§6Build§! a [ZBT_UC_mil_name]"
+ ZBT_build_ref:0 "§6Build§! a [ZBT_UC_ref_name]"
  ZBT_build_underground_housing:0 "§6Build§! More Houses Underground"
 
  ZBT_improve_civs:0 "§CUpgrade§! our Civilian Factories"
- ZBT_improve_civs:0 "§CUpgrade§! our Military Factories"
+ ZBT_improve_mils:0 "§CUpgrade§! our Military Factories"
 #  ZBT_dig_down:0 ""
 
 
+ # names for underground buildings
+ ZBT_UC_civ:0 "[ZBT_UC_civ_name]"
+ ZBT_UC_civ0:0 "Early Underground Civilian Factory"
+ ZBT_UC_civ1:0 "Improved Underground Civilian Factory"
+ ZBT_UC_civ2:0 "Advanced Underground Civilian Factory"
+ ZBT_UC_civ3:0 "Underground Industrial Complex"
+
+ ZBT_UC_mil:0 "[ZBT_UC_mil_name]"
+ ZBT_UC_mil0:0 "Early Underground Military Factory"
+ ZBT_UC_mil1:0 "Improved Underground Military Factory"
+ ZBT_UC_mil2:0 "Advanced Underground Military Factory"
+ ZBT_UC_mil3:0 "Underground Armaments Plant"
+
+ ZBT_UC_ref:0 "[ZBT_UC_ref_name]"
+ ZBT_UC_ref0:0 "Early Underground Synthetic Refinery"
+ ZBT_UC_ref1:0 "Improved Underground Synthetic Refinery"
+ ZBT_UC_ref2:0 "Advanced Underground Synthetic Refinery"
+ ZBT_UC_ref3:0 "Underground Chemical Engineering Plant"
+
+ ZBT_UC_lab:0 "[ZBT_UC_lab_name]"
+ ZBT_UC_lab0:0 "Underground Workshop"
+ ZBT_UC_lab1:0 "Underground Research Lab"
+ ZBT_UC_lab2:0 "Underground Cleanroom"
+ ZBT_UC_lab3:0 "Underground University" #?????
+ 
 
 
  # this isn't in basegame for some reason??? am I stupid?????????
