@@ -85,32 +85,14 @@ ZCV_collapsing_union = {
     }
 }
 
-ZCA_civil_war = {
-    ZCA_recycle_equipment = {
-        icon = GFX_decision_generic_confiscation
-        cost = 75
-        priority = {
-            base = 100
+debug_decisions = {
+    ZCV_tree = {
+        available = {
+           tag = ZCV
         }
-        days_re_enable = 28
-        fire_only_once = no
         complete_effect = {
-            add_equipment_to_stockpile = {
-                type = infantry_equipment
-                amount = 500
-            }
-        }
-    }
-    ZCA_recruit_workers = {
-        icon = GFX_decision_generic_confiscation
-        cost = 75
-        priority = {
-            base = 100
-        }
-        days_re_enable = 28
-        fire_only_once = no
-        complete_effect = {
-            add_manpower = 2500
+            load_focus_tree = wighardian_cw_tree
+            mark_focus_tree_layout_dirty = yes
         }
     }
 }

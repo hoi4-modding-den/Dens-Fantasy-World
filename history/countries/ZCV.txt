@@ -19,7 +19,6 @@ set_technology = {
 	militia_tech = 1
 }
 
-country_lock_all_division_template = yes
 set_stability = 0.25
 set_war_support = 0.10
 
@@ -30,10 +29,11 @@ add_ideas = {
 	ZCV_banking_crisis
 }
 
-set_variable = { ZCV_train = yes }
 set_variable = { ZCV_att = -0.35 }
 set_variable = { ZCV_def = -0.2 }
 set_variable = { ZCV_org = -0.15 }
+set_variable = { ZCV_training = 0.5 }
+set_variable = { ZCV_supply = 0.25 }
 add_dynamic_modifier = {
 	modifier = ZCV_military
 }

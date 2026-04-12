@@ -1,0 +1,113 @@
+focus_tree = {
+	id = wighardian_cw_tree
+	
+	country = {
+		factor = 0
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 2500 }
+
+	focus = {
+		id = ZCV_emergency_reforms
+		icon = GFX_focus_AUS_raid_military_storages
+		
+		x = 35
+		y = 0
+		
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = ZCV_military_modify_tt
+			add_to_variable = {
+				ZCA_core = 0.15
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				ZCA_core = 0.2
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				ZCA_core = 0.1
+				tooltip = army_org_factor_tt
+			}
+		}
+	}	
+	focus = {
+		id = ZCV_rally_the_nation
+		icon = GFX_focus_generic_full_social_mobilization
+		
+		x = 1
+		y = 1
+		
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = ZCV_emergency_reforms
+		}
+		relative_position_id = ZCV_emergency_reforms
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = extensive_conscription
+		}
+	}	
+	focus = {
+		id = ZCV_arms_depots
+		icon = GFX_focus_AFG_scavenging
+		
+		x = -1
+		y = 1
+		
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = ZCV_emergency_reforms
+		}
+		relative_position_id = ZCV_emergency_reforms
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ZCV_end_league
+		icon = GFX_focus_BRA_end_the_state_of_emergency
+		
+		x = -1
+		y = 1
+		
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = ZCV_rally_the_nation
+		}
+		prerequisite = {
+			focus = ZCV_arms_depots
+		}
+		relative_position_id = ZCV_rally_the_nation
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
+}

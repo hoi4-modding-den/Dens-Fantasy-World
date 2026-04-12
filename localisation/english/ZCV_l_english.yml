@@ -3,6 +3,7 @@
 # Misc
 ZCV_no_bauer_tt:0 "§YOtto Bauer§! has been dealt with."
 ZCV_reunite_nation_tt:0 "Any attempts of §YSeparatist Rebellion§! will be successfully circumvented"
+completed_by_event:0 "Completed by an §YEvent§!"
 
 # Nation Loc
  ZCV:0 "Wighardia"
@@ -56,6 +57,7 @@ ZCV_reunite_nation_tt:0 "Any attempts of §YSeparatist Rebellion§! will be succ
  # Ideas Loc
  ZCV_military:0 "Wighardian Armed Forces"
  ZCV_military_desc:0 "\n\n\n\n\n\n£GFX_ZCV_military_texticon \n\n\n\n\n\n\nFormed alongside the Kingdom of Wighardia in 1612, the armed forces have remained a vital part of the nation's defenses. Notable battles include the Battle of Blomnow and Siege of Essnau in the more recent Unification Wars. During the Bauer era however, the armed forces have shown signs of corruption with the era having an undersupplied smaller force made of primarily ancient infantry batallions."
+ ZCV_military_modify_tt:0 "Modify §Y$ZCV_military$§! by: "
  ZCV_banking_crisis:0 "Catastrophic Banking Crisis"
  ZCV_banking_crisis_desc:0 "Due to the two years of sharp economic decline, our banks have begun to close down and if we do not interfere quickly it may be too late."
  ZCV_relieved_banks:0 "Covering for the Banks"
@@ -69,8 +71,17 @@ ZCV_reunite_nation_tt:0 "Any attempts of §YSeparatist Rebellion§! will be succ
  ZCV_marxism_desc:0 "With the tragic loss of life and significantly decreased quality of life due to the Bauer Era, we have realised that the true enemy is not from other nations, but is found domestically in our upper classes. We can expunge our nation of the plague which is capitalism and those who benefit from it and allow our nation to achieve a §YSecond Golden Age.§!"
  ZCV_martial_law:0 "Eye of Providence"
  ZCV_martial_law_desc:0 "Our deep state plan has finally succeeded, and now we can transform the nation into a surveilance state and crush any dissidents by force using our vast military policing programmes."
- ZCV_lost_souls:0 "§RThe Hour of Lost Souls"
+ ZCV_lost_souls:0 "§RThe Hour of Lost Souls§!"
  ZCV_lost_souls_desc:0 "\n\n\n\n\n\n£GFX_ZCV_lost_souls_texticon \n\n\n\n\n\n\nOriginally predicted by BIS leader and political extremist Johann Beck, the Hour of Lost Souls is an event where the nation would undergo a complete collapse, falling to anarchist forces and the union would completely shatter. Taken seriously by few, the hour still remained a political speaking point and household name due to its impact on anyone who learnt about it. Now this hour has come to plague our nation, fuelling our separatists and leaving our army shattered and hopeless. The end of our nation is nigh with Beck's prophecy coming true."
+ 
+
+ ZCA_lost_souls:0 "§RThe Hour of Lost Souls§!"
+ ZCA_lost_souls_desc:0 "\n\n\n\n\n\n£GFX_ZCV_lost_souls_texticon \n\n\n\n\n\n\nOriginally predicted by BIS leader and political extremist Johann Beck, the Hour of Lost Souls is an event where the nation would undergo a complete collapse, falling to anarchist forces and the union would completely shatter. Taken seriously by few, the hour still remained a political speaking point and household name due to its impact on anyone who learnt about it. With this finally coming true, it is our hour to strike, with the Wighardian army shattered and disorganised, we have an opening to free the people of this world once and for all under our League. Never again shall our people be opressed by any government."
+ ZCA_lost_souls_modify_tt: "Modify §Y$ZCA_lost_souls$§! by: "
+ ZCA_rename_PLA: "Renames §Y$ZCA_lost_souls$§! to §Y$ZCA_PLA$§!" 
+ ZCA_PLA:0 "People's Liberation Army"
+ ZCA_PLA_desc:0 "\n\n\n\n\n\n£GFX_ZCV_military_texticon \n\n\n\n\n\n\nAfter the League's victory over their opressors, the People's Liberation Army was formed in the place of the citizen militias seen during the civil war. Contrary to the civilian militias, the PLA makes use of modern technologies also seen in other armies such as armoured units and artillery to continue their campaign of a global revolution."
+ ZCA_PLA_modify_tt: "Modify §Y$ZCA_PLA$§! by: "
 
 # Decision Loc
 ZCV_collapsing_union:0 "Collapsing Union"

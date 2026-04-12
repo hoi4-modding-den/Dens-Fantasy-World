@@ -1,0 +1,545 @@
+focus_tree = {
+	id = lostsouls_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZCA
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 2500 }
+
+	focus = {
+		id = ZCA_hour_has_come
+		icon = GFX_focus_ARG_no_gods_no_masters
+		
+		x = 35
+		y = 0
+		
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = war_economy
+		}
+	}
+	focus = {
+		id = ZCA_every_man_a_soldier
+		icon = GFX_focus_GER_support_the_proletarian_uprising
+		
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = ZCA_hour_has_come
+		}
+		relative_position_id = ZCA_hour_has_come
+		
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = ZCA_lost_souls_modify_tt
+			add_to_variable = {
+				ZCA_conscription = 0.05
+				tooltip = conscription_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = ZCA_war_of_liberation
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
+		
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = ZCA_hour_has_come
+		}
+		relative_position_id = ZCA_hour_has_come
+		
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = ZCA_lost_souls_modify_tt
+			add_to_variable = {
+				ZCA_core = 0.15
+				tooltip = army_core_attack_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = ZCA_victory
+		icon = GFX_focus_GER_the_peoples_victory
+		
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = ZCA_war_of_liberation
+		}
+		prerequisite = {
+			focus = ZCA_every_man_a_soldier
+		}
+		relative_position_id = ZCA_every_man_a_soldier
+		available = {
+			has_civil_war = no
+		}
+		
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ZCA_army_people
+		icon = GFX_focus_generic_red_flags
+		
+		x = -8
+		y = 1
+
+		prerequisite = {
+			focus = ZCA_victory
+		}
+		relative_position_id = ZCA_victory
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			army_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = ZCA_rename_PLA
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ZCA_PLA_modify_tt
+			add_to_variable = {
+				ZCA_pp = 0.75
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				ZCA_militia = 0.25
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				ZCA_militia = -0.1
+				tooltip = modifier_army_sub_unit_militia_attack_factor_tt
+			}
+			add_to_variable = {
+				ZCA_militia = -0.1
+				tooltip = modifier_army_sub_unit_militia_defence_factor_tt
+			}
+
+			hidden_effect = {
+				remove_dynamic_modifier = {
+					modifier = ZCA_lost_souls	
+				}
+				add_dynamic_modifier = {
+					modifier = ZCA_PLA
+				}
+			}
+		}
+	}
+	focus = {
+		id = ZCA_infantry
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		
+		x = -3
+		y = 1
+
+		prerequisite = {
+			focus = ZCA_army_people
+		}
+		relative_position_id = ZCA_army_people
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = ZCA_modern
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = ZCA_PLA_modify_tt
+			add_to_variable = {
+				ZCA_inf_off = 0.1
+				tooltip = army_infantry_attack_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = ZCA_modern
+		icon = GFX_SOV_the_glory_of_the_red_army_ccp_2d_sov_compatibility
+		
+		x = 3
+		y = 1
+
+		prerequisite = {
+			focus = ZCA_army_people
+		}
+		relative_position_id = ZCA_army_people
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = ZCA_infantry
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = ZCA_PLA_modify_tt
+			add_to_variable = {
+				ZCA_tank_off = 0.05
+				tooltip = army_armor_attack_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = ZCA_mech_research
+		icon = GFX_focus_generic_mechanized
+		
+		x = 3
+		y = 1
+
+		prerequisite = {
+			focus = ZCA_modern
+		}
+		relative_position_id = ZCA_modern
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+
+			add_tech_bonus = {
+				#name = 
+				bonus = 0.75
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = ZCA_PLA_modify_tt
+			add_to_variable = {
+				ZCA_mech_att = 0.1
+				tooltip = mechanized_attack_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = ZCA_armour_breakthroughs
+		icon = GFX_goal_generic_army_tanks
+		
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = ZCA_modern
+		}
+		relative_position_id = ZCA_modern
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+
+			add_tech_bonus = {
+				#name = 
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = ZCA_PLA_modify_tt
+			add_to_variable = {
+				ZCA_tank_off = 0.05
+				tooltip = army_armor_attack_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = ZCA_mobile_army
+		icon = GFX_focus_generic_tankette
+		
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = ZCA_modern
+		}
+		relative_position_id = ZCA_modern
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = ZCA_PLA_modify_tt
+			add_to_variable = { 
+				ZCA_org_loss = -0.1
+				tooltip = org_loss_when_moving_tt
+			}
+		}
+	}
+	focus = {
+		id = ZCA_army_future
+		icon = GFX_focus_generic_tank_assault
+		
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = ZCA_armour_breakthroughs
+		}
+		prerequisite = {
+			focus = ZCA_mobile_army
+		}
+		relative_position_id = ZCA_armour_breakthroughs
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = ZCA_PLA_modify_tt
+			add_to_variable = { 
+				GER_military_org_loss_when_moving = -0.1
+				tooltip = org_loss_when_moving_tt
+			}
+			add_to_variable = {
+				ZCA_mech_att = 0.05
+				tooltip = mechanized_attack_factor_tt
+			}
+			add_to_variable = {
+				ZCA_tank_off = 0.1
+				tooltip = army_armor_attack_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = ZCA_pride_revolution
+		icon = GFX_focus_PRC_hundred_regiments_offensive
+		
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = ZCA_modern
+			focus = ZCA_infantry
+		}
+		relative_position_id = ZCA_army_people
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = ZCA_PLA_modify_tt
+			add_to_variable = {
+				ZCA_off = 0.1
+				tooltip = army_attack_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = ZCA_reinforce_supply_lines
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = ZCA_pride_revolution
+		}
+		relative_position_id = ZCA_pride_revolution
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = ZCA_PLA_modify_tt
+			add_to_variable = {
+				ZCA_supply = -0.1
+				tooltip = supply_consumption_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = ZCA_economy_people
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		
+		x = 3
+		y = 1
+
+		prerequisite = {
+			focus = ZCA_victory
+		}
+		relative_position_id = ZCA_victory
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ZCA_no_justice_no_peace
+		icon = GFX_focus_GER_liberate_exploited_colonial_workers
+		
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = ZCA_victory
+		}
+		relative_position_id = ZCA_victory
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ZCA_eastern_expedition
+		icon = GFX_SOV_demand_eastern_poland_ccp_2d_sov_compatibility
+		
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = ZCA_no_justice_no_peace
+		}
+		relative_position_id = ZCA_no_justice_no_peace
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				target = ZCX
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = ZCA_topple_throne
+		icon = GFX_SOV_demand_eastern_poland_ccp_2d_sov_compatibility
+		
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = ZCA_no_justice_no_peace
+		}
+		relative_position_id = ZCA_no_justice_no_peace
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+			is_neighbor_of = ZCX
+		}
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			create_wargoal = {
+				target = ZCC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZCX
+				type = annex_everything
+			}
+		}
+	}
+}

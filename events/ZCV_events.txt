@@ -49,6 +49,9 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			release_on_controlled = ZCX
+			ZCX = {
+				load_oob = ZCX
+			}
 		}
 	}
 	option = {
@@ -86,6 +89,9 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			release_on_controlled = ZCC
+			ZCC = {
+				#load_oob = ZCC
+			}
 		}
 	}
 	
@@ -123,6 +129,9 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
+			ZCZ = {
+				#load_oob = ZCZ
+			}
 			release_on_controlled = ZCZ
 			add_ideas = ZCV_lost_souls
 			every_core_state = {
@@ -132,10 +141,14 @@ country_event = {
 				transfer_state = 678
 				transfer_state = 829
 				load_oob = ZCA
-				add_ideas = ZCA_lost_souls
+				add_dynamic_modifier = {
+					modifier = ZCA_lost_souls
+				}
 			}
 			ZCV = {
 				load_oob = ZCV_anarchist
+				load_focus_tree = wighardian_cw_tree
+				mark_focus_tree_layout_dirty = yes
 			}
 			declare_war_on = {
 				target = ZCA

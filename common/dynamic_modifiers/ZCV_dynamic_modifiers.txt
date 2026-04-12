@@ -2,7 +2,46 @@ ZCV_military = {
 
 	icon = HUN_secret_rearmament
 
-	army_attack_factor = ZCV.ZCV_att
-	army_defence_factor = ZCV.ZCV_def
-	custom_modifier_tooltip = SPR_military_disloyalty_tt
+	army_attack_factor = ZCV_att
+	army_defence_factor = ZCV_def
+	army_org_factor = ZCV_org
+	supply_consumption_factor = ZCV_supply
+	training_time_factor = ZCV_training
+}
+ZCA_lost_souls = {
+	icon = GFX_idea_SPR_anarchist_society
+	enable = { always = yes }
+
+	political_power_factor = ZCA_pp
+	modifier_army_sub_unit_militia_attack_factor = ZCA_militia
+	modifier_army_sub_unit_militia_defence_factor = ZCA_militia
+	equipment_capture_factor = ZCA_capture
+	army_org_factor = ZCA_org
+	supply_consumption_factor = ZCA_supply
+	army_core_attack_factor = ZCA_core
+	conscription_factor = ZCA_conscription
+}
+
+ZCA_PLA = {
+	icon = GFX_idea_PRC_pla_ground_force
+	enable = { always = yes }
+
+	training_time_factor = ZCA_training
+	army_org_factor = ZCA_org 
+	supply_consumption_factor = ZCA_supply
+	conscription_factor = ZCA_conscription  
+	experience_gain_army_factor = ZCA_exp
+	equipment_capture_factor = ZCA_capture
+	land_night_attack = ZCA_night
+	org_loss_when_moving = ZCA_org_loss	
+	attrition = ZCA_att
+	max_dig_in = ZCA_entr
+	army_attack_factor = ZCA_off
+	army_infantry_attack_factor = ZCA_inf_off
+	army_armor_attack_factor = ZCA_tank_off
+	mechanized_attack_factor = ZCA_mech_att
+	army_core_attack_factor = ZCA_core
+	army_morale_factor = ZCA_morale
+	max_planning_factor = ZCA_planning
+	army_artillery_attack_factor = ZCA_arty_off
 }
