@@ -46,6 +46,11 @@ focus_tree={
 			custom_effect_tooltip = ZTC_the_new_grand_councillor_tt
 			hidden_effect = {
 				country_event = ZTC_events.4
+
+				country_event = {
+					id = ZTC_events.11
+					days = 14
+				}
 			}
 		}
 	}
@@ -125,12 +130,24 @@ focus_tree={
 			}
 			if = {
 				limit = {
-					749 = { air_base < 8 }
+					749 = { air_base < 9 }
 				}
 				749 = { 
 					add_building_construction = {
 						type = air_base
 						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					749 = { air_base < 10 }
+				}
+				749 = { 
+					add_building_construction = {
+						type = air_base
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -344,7 +361,7 @@ focus_tree={
 
 	focus = {
 		id = ZTC_modernise_civil_protection
-		icon = GFX_focus_generic_military_academy
+		icon = GFX_goal_generic_military_deal
         prerequisite = { focus = ZTC_necessary_reform }
 		#mutually_exclusive = { focus =  }
 		x = -2
@@ -382,7 +399,7 @@ focus_tree={
 
 	focus = {
 		id = ZTC_limited_armament_program
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_focus_generic_reorient_production
         prerequisite = { focus = ZTC_modernise_civil_protection }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -397,7 +414,6 @@ focus_tree={
 		
 		available = {
             has_government = democratic
-			controls_state = 749
         }
 
 		bypass = {
@@ -405,7 +421,7 @@ focus_tree={
         }
 		
 		completion_reward = {
-			749 = {
+			capital_scope = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -469,7 +485,7 @@ focus_tree={
 
 	focus = {
 		id = ZTC_regulate_the_industries
-		icon = GFX_focus_DEN_heavy_regulations
+		icon = GFX_focus_DEN_limited_regulations
         prerequisite = { focus = ZTC_necessary_reform }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -634,7 +650,7 @@ focus_tree={
 		
 		available = {
             has_government = democratic
-			amount_research_slots < 7
+			amount_research_slots < 8
         }
 
 		bypass = {
@@ -863,7 +879,10 @@ focus_tree={
         }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_timed_idea = {
+				idea = ZTC_corruption_crackdown
+				days = 120
+			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -941,7 +960,25 @@ focus_tree={
 				remove_power_balance = {
 					id = ZTC_power_balance
 				}
+				custom_effect_tooltip = generic_skip_one_line_tt
 			}
+
+			if = {
+				limit = {
+					has_country_leader_with_trait = ZTC_promising_reformist
+				}
+				ZTC_franziska_kroesus = {
+					swap_country_leader_traits = {
+						remove = ZTC_promising_reformist
+						add = ZTC_liberal_reformist
+						ideology = liberalism
+					}
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+			add_stability = 0.1
 		}
 	}
 
@@ -982,6 +1019,42 @@ focus_tree={
 				remove_power_balance = {
 					id = ZTC_power_balance
 				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+			if = {
+				limit = { has_country_leader_with_trait = ZTC_grand_councillor_trait }
+				remove_country_leader_trait = ZTC_grand_councillor_trait
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			else_if = {
+				limit = { has_country_leader_with_trait = ZTC_grand_councillor_fem_trait }
+				remove_country_leader_trait = ZTC_grand_councillor_fem_trait
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+			custom_effect_tooltip = ZTC_embrace_social_democracy_tt
+			set_country_leader_ideology = socialism
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			set_party_name = {
+				ideology = democratic
+				name = ZCT_democratic_party_socdem
+				long_name = ZCT_democratic_party_socdem_long
+			}
+			hidden_effect = {
+				set_party_name = {
+					ideology = neutrality
+					name = ZTC_neutrality_party_mod
+					long_name = ZTC_neutrality_party_mod_long
+				}
+				set_party_name = {
+					ideology = fascism
+					name = ZTC_fascism_party_natlib
+					long_name = ZTC_fascism_party_natlib_long
+				}
+				ZTC_the_council = { set_character_name = ZTC_company_council_name }
 			}
 		}
 	}
@@ -991,7 +1064,7 @@ focus_tree={
 		icon = GFX_focus_PLACEHOLDER #GFX_focus_mex_privatisation
         prerequisite = { focus = ZTC_maintain_the_stadtrat_system }
 		#mutually_exclusive = { focus =  }
-		x = -4
+		x = -5
 		y = 1
 		relative_position_id = ZTC_maintain_the_stadtrat_system
 		
@@ -1010,7 +1083,19 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = ZTC_liberal_government }
+				}
+				custom_effect_tooltip = ZTC_modify_lib_gov_tt
+				add_to_variable = { ZTC_gov_stability_factor = 0.1 tooltip = stability_factor_tt }
+				add_to_variable = { ZTC_gov_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+			}
+			else = {
+				add_dynamic_modifier = { modifier = ZTC_liberal_government }
+				add_to_variable = { ZTC_gov_stability_factor = 0.1 tooltip = stability_factor_tt }
+				add_to_variable = { ZTC_gov_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+			}
 		}
 	}
 
@@ -1079,17 +1164,6 @@ focus_tree={
         }
 		
 		completion_reward = {
-			add_relation_rule_override = {
-				target = ZLF
-				can_send_volunteers = yes
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_ideas = ZTC_ultimate_volunteer_force
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
 			ZLF = {
 				add_equipment_to_stockpile = { 
 					type = infantry_equipment
@@ -1107,10 +1181,10 @@ focus_tree={
 
 	focus = { 
 		id = ZTC_establish_the_hortensian_armed_forces
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_axis_build_infantry
         prerequisite = { focus = ZTC_support_edelweiss }
 		#mutually_exclusive = { focus =  }
-		x = -4
+		x = -3
 		y = 1
 		relative_position_id = ZTC_support_edelweiss
 		
@@ -1129,7 +1203,253 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_ideas = ZTC_republican_military
+		}
+	}
+
+	focus = { 
+		id = ZTC_expand_defence_industry
+		icon = GFX_goal_generic_construct_mil_factory
+        prerequisite = { focus = ZTC_establish_the_hortensian_armed_forces }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = ZTC_establish_the_hortensian_armed_forces
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					has_war_support > 0.25
+					NOT = { has_idea = partial_economic_mobilisation }
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = tot_economic_mobilisation }
+				}
+				add_ideas = partial_economic_mobilisation
+			}
+			else_if = {
+				limit = {
+					NOT = { has_idea = partial_economic_mobilisation }
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = tot_economic_mobilisation }
+				}
+				custom_effect_tooltip = ZTC_expand_defence_industry_tt
+			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_national_defence_plan
+		icon = GFX_focus_generic_military_mission
+        prerequisite = { focus = ZTC_establish_the_hortensian_armed_forces }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZTC_establish_the_hortensian_armed_forces
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_any_grand_doctrine = land }
+				}
+				set_grand_doctrine = grand_battleplan
+			}
+			else = {
+				army_experience = 100
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_officer_school
+		icon = GFX_focus_generic_military_academy
+        prerequisite = { focus = ZTC_establish_the_hortensian_armed_forces }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = ZTC_establish_the_hortensian_armed_forces
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			every_army_leader = {
+				add_planning = 1
+				add_logistics = 1
+			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_focus_on_the_airforce
+		icon = GFX_goal_generic_air_production
+        prerequisite = { focus = ZTC_expand_defence_industry }
+		prerequisite = { focus = ZTC_officer_school }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZTC_expand_defence_industry
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = ZTC_republican_military_navy
+				}
+				swap_ideas = {
+					remove_idea = ZTC_republican_military_navy
+					add_idea = ZTC_republican_military_combined
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ZTC_republican_military
+					add_idea = ZTC_republican_military_air
+				}
+			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_focus_on_the_navy
+		icon = GFX_goal_generic_construct_naval_dockyard
+        prerequisite = { focus = ZTC_expand_defence_industry }
+		prerequisite = { focus = ZTC_officer_school }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZTC_officer_school
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = ZTC_republican_military_air
+				}
+				swap_ideas = {
+					remove_idea = ZTC_republican_military_air
+					add_idea = ZTC_republican_military_combined
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ZTC_republican_military
+					add_idea = ZTC_republican_military_navy
+				}
+			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_academy_of_military_sciences
+		icon = GFX_focus_research2
+        prerequisite = { focus = ZTC_national_defence_plan }
+		prerequisite = { focus = ZTC_focus_on_the_airforce focus = ZTC_focus_on_the_navy }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = ZTC_national_defence_plan
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+			amount_research_slots < 8
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 
@@ -1157,7 +1477,30 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_war_support = 0.05
+
+			749 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = ZTC_fortify_the_peninsula_tt
+			hidden_effect = {
+				749 = {
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -1166,11 +1509,11 @@ focus_tree={
 		icon = GFX_focus_generic_diplomatic_treaty
         prerequisite = { focus = ZTC_support_edelweiss }
 		mutually_exclusive = { focus = ZTC_declare_military_neutrality }
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = ZTC_support_edelweiss
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -1178,18 +1521,16 @@ focus_tree={
 		
 		available = {
             has_government = democratic
-			is_subject = no
 			has_war = no
-			OR = {
-				ZLF = {
-					exists = yes
-					has_war = no
+			any_other_country = {
+				has_war = no
+				OR = {
+					original_tag = ZKN
+					original_tag = ZLF
 				}
-				ZKN = {
-					exists = yes
-					has_war = no
-				}
+				NOT = { has_government = fascism }
 			}
+			is_subject = no
         }
 
 		bypass = {
@@ -1197,32 +1538,33 @@ focus_tree={
         }
 		
 		completion_reward = {
-			if = {
+			custom_effect_tooltip = ZTC_reach_out_to_gardenia_tt
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			random_other_country = {
 				limit = {
-					country_exists = ZLF
+					has_war = no
+					OR = {
+						original_tag = ZKN
+						original_tag = ZLF
+					}
 				}
-				ZLF = {
-					give_guarantee = ROOT
-				}
-			}
-			else = {
-				ZKN = {
-					give_guarantee = ROOT
-				}
+				give_guarantee = ROOT
 			}
 		}
 	}
 
 	focus = { 
 		id = ZTC_join_the_gardenian_faction
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_major_alliance
         prerequisite = { focus = ZTC_reach_out_to_gardenia }
 		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = ZTC_reach_out_to_gardenia
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -1230,7 +1572,6 @@ focus_tree={
 		
 		available = {
             has_government = democratic
-			is_subject = no
 			any_other_country = {
 				NOT = { has_war_with = ROOT }
 				has_guaranteed = ROOT
@@ -1239,7 +1580,9 @@ focus_tree={
 					original_tag = ZKN
 					original_tag = ZLF
 				}
+				NOT = { has_government = fascism }
 			}
+			is_subject = no
         }
 
 		bypass = {
@@ -1247,7 +1590,22 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			custom_effect_tooltip = ZTC_join_the_gardenian_faction_tt
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			random_other_country = {
+				limit = {
+					NOT = { has_war_with = ROOT }
+					#has_guaranteed = ROOT
+					is_faction_leader = yes
+					OR = {
+						original_tag = ZKN
+						original_tag = ZLF
+					}
+				}
+				add_to_faction = ROOT
+			}
 		}
 	}
 
@@ -1257,6 +1615,239 @@ focus_tree={
         prerequisite = { focus = ZTC_join_the_gardenian_faction }
 		#mutually_exclusive = { focus =  }
 		x = 0
+		y = 1
+		relative_position_id = ZTC_join_the_gardenian_faction
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+			any_other_country = {
+				OR = {
+					original_tag = ZKN
+					original_tag = ZLF
+				}
+				is_in_faction_with = ROOT
+			}
+			is_subject = no
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			custom_effect_tooltip = ZTC_propose_gardenian_monetary_union_tt
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_ideas = ZTC_monetary_union_spirit_ZTC
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			random_other_country = {
+				limit = {
+					OR = {
+						original_tag = ZKN
+						original_tag = ZLF
+					}
+					is_in_faction_with = ROOT
+				}
+				set_variable = { ZTC.ZTC_get_monetary_union_partner = THIS }
+				add_ideas = ZTC_monetary_union_spirit_ZLF_ZKN
+			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_defenders_of_democracy
+		icon = GFX_focus_GER_defender_of_democracy
+        prerequisite = { focus = ZTC_propose_gardenian_monetary_union }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZTC_propose_gardenian_monetary_union
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+			is_subject = no
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			unlock_decision_tooltip = ZTC_form_southern_democratic_bloc
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					any_other_country = {
+						is_in_faction_with = ROOT
+						is_faction_leader = yes
+						OR = {
+							has_government = fascism
+							has_government = neutrality
+							AND = {
+								ROOT = { has_completed_focus = ZTC_maintain_the_stadtrat_system }
+								has_government = communism
+							}
+						}
+					}
+				}
+				faction_leader = {
+					remove_from_faction = ROOT
+					ROOT = {
+						declare_war_on = {
+							target = PREV
+							type = topple_government
+						}
+					}
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			
+			add_ideas = ZCT_democratic_offensive
+		}
+	}
+
+	focus = { 
+		id = ZTC_declare_military_neutrality
+		icon = GFX_goal_generic_neutrality_focus
+        prerequisite = { focus = ZTC_support_edelweiss }
+		mutually_exclusive = { focus = ZTC_reach_out_to_gardenia }
+		x = 4
+		y = 1
+		relative_position_id = ZTC_support_edelweiss
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+			has_war = no
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			add_ideas = ZTC_military_neutrality
+		}
+	}
+
+	focus = { 
+		id = ZTC_international_interventionism
+		icon = GFX_goal_generic_military_deal
+        prerequisite = { focus = ZTC_declare_military_neutrality }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZTC_declare_military_neutrality
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			set_rule = { can_send_volunteers = yes }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					NOT = { has_idea = ZTC_ultimate_volunteer_force }
+					has_completed_focus = ZTC_support_edelweiss
+				}
+				add_ideas = ZTC_ultimate_volunteer_force_2
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ZTC_ultimate_volunteer_force
+					add_idea = ZTC_ultimate_volunteer_force_2
+				}
+			}
+
+			custom_effect_tooltip = ZTC_international_interventionism_tt
+
+			hidden_effect = {
+				every_country = {
+					limit = { has_government = democratic }
+					ROOT = {
+						add_ai_strategy = {
+							type = send_volunteers_desire
+							id = PREV
+							value = 200
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_protect_maritime_trade
+		icon = GFX_goal_generic_navy_doctrines_tactics
+        prerequisite = { focus = ZTC_international_interventionism }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZTC_international_interventionism
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
+
+	focus = { 
+		id = ZTC_expand_trade_ties
+		icon = GFX_goal_generic_trade
+        prerequisite = { focus = ZTC_join_the_gardenian_faction focus = ZTC_international_interventionism }
+		#mutually_exclusive = { focus =  }
+		x = 2
 		y = 1
 		relative_position_id = ZTC_join_the_gardenian_faction
 		
@@ -1280,13 +1871,14 @@ focus_tree={
 	}
 
 	focus = { 
-		id = ZTC_declare_military_neutrality
-		icon = GFX_goal_generic_neutrality_focus
-        prerequisite = { focus = ZTC_support_edelweiss }
-		mutually_exclusive = { focus = ZTC_reach_out_to_gardenia }
-		x = 5
+		id = ZTC_establish_the_maritime_league
+		icon = GFX_focus_ICE_modernizing_the_coast_guard
+        prerequisite = { focus = ZTC_expand_trade_ties }
+		prerequisite = { focus = ZTC_protect_maritime_trade }
+		#mutually_exclusive = { focus =  }
+		x = -1
 		y = 1
-		relative_position_id = ZTC_support_edelweiss
+		relative_position_id = ZTC_protect_maritime_trade
 		
 		cost = 5
 
@@ -1295,8 +1887,8 @@ focus_tree={
         }
 		
 		available = {
-            is_subject = no
-			has_war = no
+            has_government = democratic
+			is_subject = no
         }
 
 		bypass = {
@@ -1304,7 +1896,8 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			unlock_decision_tooltip = ZTC_establish_coastal_protectorate
+			unlock_decision_tooltip = ZTC_secure_the_albia_strait
 		}
 	}
 
@@ -1331,7 +1924,6 @@ focus_tree={
 			if = {
 				limit = { has_dlc = "La Resistance" }
 				NOT = { has_idea = ZTC_foreign_eyes }
-				has_intelligence_agency = yes
 			}
 			else = {
 				NOT = { has_idea = ZTC_foreign_eyes_no_lar }
@@ -1367,10 +1959,10 @@ focus_tree={
 
 	focus = { 
 		id = ZTC_social_mobility_act
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_soviet_construction
         prerequisite = { focus = ZTC_embrace_social_democracy }
 		#mutually_exclusive = { focus =  }
-		x = 4
+		x = 5
 		y = 1
 		relative_position_id = ZTC_embrace_social_democracy
 		
@@ -1389,7 +1981,275 @@ focus_tree={
         }
 		
 		completion_reward = {
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = ZTC_social_democratic_government }
+				}
+				custom_effect_tooltip = ZTC_modify_socdem_gov_tt
+				add_to_variable = { ZTC_gov_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+				add_to_variable = { ZTC_gov_democratic_drift = 0.02 tooltip = democratic_drift_tt }
+			}
+			else = {
+				add_dynamic_modifier = { modifier = ZTC_social_democratic_government }
+				add_to_variable = { ZTC_gov_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+				add_to_variable = { ZTC_gov_democratic_drift = 0.02 tooltip = democratic_drift_tt }
+			}
+		}
+	}
+
+	focus = { 
+		id = ZTC_corporate_tax
+		icon = GFX_focus_mex_privatisation
+        prerequisite = { focus = ZTC_social_mobility_act }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = ZTC_social_mobility_act
+		
+		cost = 8
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			custom_effect_tooltip = ZTC_modify_socdem_gov_tt
+			add_to_variable = { ZTC_gov_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { ZTC_gov_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+		}
+	}
+
+	focus = { 
+		id = ZTC_expand_welfare_programs
+		icon = GFX_focus_generic_welfare
+        prerequisite = { focus = ZTC_social_mobility_act }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZTC_social_mobility_act
+		
+		cost = 8
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			custom_effect_tooltip = ZTC_modify_socdem_gov_tt
+			add_to_variable = { ZTC_gov_monthly_population = 0.15 tooltip = monthly_population_tt }
+			add_to_variable = { ZTC_gov_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
 			
+		}
+	}
+
+	focus = { 
+		id = ZTC_public_works
+		icon = GFX_focus_generic_public_works
+        prerequisite = { focus = ZTC_social_mobility_act }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = ZTC_social_mobility_act
+		
+		cost = 8
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			custom_effect_tooltip = ZTC_modify_socdem_gov_tt
+			add_to_variable = { ZTC_gov_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { ZTC_gov_global_building_slots_factor = 0.1 tooltip = global_building_slots_factor_tt }
+		}
+	}
+
+	focus = { 
+		id = ZTC_protect_minorities
+		icon = GFX_goal_generic_improve_relations
+        prerequisite = { focus = ZTC_corporate_tax focus = ZTC_expand_welfare_programs }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 2
+		relative_position_id = ZTC_social_mobility_act
+		
+		cost = 8
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			custom_effect_tooltip = ZTC_modify_socdem_gov_tt
+			
+			add_to_variable = { ZTC_gov_compliance_growth = 0.02 tooltip = compliance_growth_tt }
+		}
+	}
+
+	focus = { 
+		id = ZTC_officialise_our_ideological_position
+		icon = GFX_focus_generic_printing_press
+        prerequisite = { focus = ZTC_expand_welfare_programs focus = ZTC_public_works }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 2
+		relative_position_id = ZTC_social_mobility_act
+		
+		cost = 8
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			country_event = ZTC_events.12
+			# centre marxism - production_speed_buildings_factor, monthly_population, 
+			# ethical socialism - research_speed_factor, consumer_goods_factor
+			# neorevisionism - conscription_factor, democratic_drift
+		}
+	}
+
+	focus = { 
+		id = ZTC_become_a_peoples_party
+		icon = GFX_focus_generic_workers
+        prerequisite = { focus = ZTC_protect_minorities focus = ZTC_officialise_our_ideological_position }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 3
+		relative_position_id = ZTC_social_mobility_act
+		
+		cost = 8
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			custom_effect_tooltip = ZTC_modify_socdem_gov_tt
+			add_to_variable = { ZTC_gov_political_power_factor = 0.15 tooltip = political_power_factor_tt }
+			add_to_variable = { ZTC_gov_democratic_drift = 0.03 tooltip = democratic_drift_tt }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ZTC_become_a_peoples_party_tt
+			set_country_flag = ZTC_sph_is_a_peoples_party
+		}
+	}
+
+	focus = { 
+		id = ZTC_break_up_monopolies
+		icon = GFX_focus_DEN_heavy_regulations
+        prerequisite = { focus = ZTC_protect_minorities focus = ZTC_officialise_our_ideological_position }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 3
+		relative_position_id = ZTC_social_mobility_act
+		
+		cost = 8
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			custom_effect_tooltip = ZTC_modify_socdem_gov_tt
+			add_to_variable = { ZTC_gov_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { ZTC_gov_industrial_capacity_dockyard = 0.1 tooltip = industrial_capacity_dockyard_tt }
+		}
+	}
+
+	focus = { 
+		id = ZTC_bastion_of_social_democracy
+		icon = GFX_focus_generic_social_democracy
+        prerequisite = { focus = ZTC_become_a_peoples_party }
+		prerequisite = { focus = ZTC_break_up_monopolies }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 4
+		relative_position_id = ZTC_social_mobility_act
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_government = democratic
+        }
+
+		bypass = {
+
+        }
+		
+		completion_reward = {
+			custom_effect_tooltip = ZTC_modify_socdem_gov_tt
+			add_to_variable = { ZTC_gov_supply_node_range = 0.05 tooltip = supply_node_range_tt }
+			add_to_variable = { ZTC_gov_army_defence_factor = 0.15 tooltip = army_defence_factor_tt }
+			add_to_variable = { ZTC_gov_drift_defence_factor = 1 tooltip = drift_defence_factor_tt }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = { amount_research_slots < 8 }
+				add_research_slot = 1
+			}
 		}
 	}
 
@@ -1398,7 +2258,7 @@ focus_tree={
 		icon = GFX_focus_GER_the_peoples_victory
         #prerequisite = { focus = ZTC_the_new_grand_councillor }
 		#mutually_exclusive = { focus =  }
-		x = -15
+		x = -17
 		y = 7
 		relative_position_id = ZTC_the_new_grand_councillor
 		
@@ -1548,7 +2408,13 @@ focus_tree={
 		
 		completion_reward = {
 			if = {
-				limit = { has_idea = ZTC_proletarian_movement_6 }
+				limit = { 
+					OR = {
+						has_idea = ZTC_proletarian_movement_6
+						NOT = { has_completed_focus = ZTC_legalise_union_formation }
+						has_completed_focus = ZTC_transformation_of_society
+					} 
+				}
 				swap_ideas = {
 					remove_idea = ZTC_proletarian_movement_6
 					add_idea = ZTC_communal_governance
@@ -1597,25 +2463,25 @@ focus_tree={
 				limit = { has_idea = ZTC_richest_city_in_the_south }
 				swap_ideas = {
 					remove_idea = ZTC_richest_city_in_the_south
-					add_idea = ZTC_happiest_city_in_the_south
+					add_idea = ZTC_marxist_economics
 				}
 			}
 			else_if = {
 				limit = { has_idea = ZTC_richest_city_in_the_south_taxes }
 				swap_ideas = {
 					remove_idea = ZTC_richest_city_in_the_south_taxes
-					add_idea = ZTC_happiest_city_in_the_south
+					add_idea = ZTC_marxist_economics
 				}
 			}
 			else_if = {
 				limit = { has_idea = ZTC_richest_city_in_the_south_akademie }
 				swap_ideas = {
 					remove_idea = ZTC_richest_city_in_the_south_akademie
-					add_idea = ZTC_happiest_city_in_the_south
+					add_idea = ZTC_marxist_economics
 				}
 			}
 			else = {
-				add_ideas = ZTC_happiest_city_in_the_south
+				add_ideas = ZTC_marxist_economics
 			}
 		}
 	}
@@ -1711,10 +2577,20 @@ focus_tree={
 				target = ZFA
 				can_send_volunteers = yes
 			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = ZFA
+				value = 200
+			}
 
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_ideas = ZTC_ultimate_volunteer_force
+			if = {
+				limit = {
+					NOT = { has_idea = ZTC_ultimate_volunteer_force }
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				
+				add_ideas = ZTC_ultimate_volunteer_force
+			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -1862,7 +2738,7 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_war_support = 0.1
 		}
 	}
 
@@ -1927,7 +2803,7 @@ focus_tree={
 		icon = GFX_focus_usa_voter_registration_act
         #prerequisite = { focus = ZTC_the_new_grand_councillor }
 		#mutually_exclusive = { focus =  }
-		x = 15
+		x = 17
 		y = 7
 		relative_position_id = ZTC_the_new_grand_councillor
 		

@@ -276,6 +276,88 @@ country_event = { # Council Coup
 	}
 }
 
+country_event = { # Payment for Intervention
+	id = ZTC_events.10
+	title = ZTC_events.10.t
+	desc = ZTC_events.10.desc
+	picture = GFX_report_event_german_volunteers
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.10.a
+        add_offsite_building = {
+            type = industrial_complex
+            level = 2
+        }
+	}
+}
+
+country_event = { # Intervention in Gardenia
+	id = ZTC_events.11
+	title = ZTC_events.11.t
+	desc = ZTC_events.11.desc
+	picture = GFX_report_event_german_volunteers
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.11.a
+        add_relation_rule_override = {
+            target = ZLF
+            can_send_volunteers = yes
+        }
+        add_ai_strategy = {
+            type = send_volunteers_desire
+            id = ZLF
+            value = 200
+        }
+        
+        if = {
+            limit = {
+                NOT = { has_idea = ZTC_ultimate_volunteer_force }
+            }
+            custom_effect_tooltip = generic_skip_one_line_tt
+            
+            add_ideas = ZTC_ultimate_volunteer_force
+        }
+	}
+}
+
+country_event = { # SDAAH Reference
+	id = ZTC_events.12
+	title = ZTC_events.12.t
+	desc = ZTC_events.12.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+    # centre marxism - production_speed_buildings_factor, stability_factor, 
+			# ethical socialism - research_speed_factor, consumer_goods_factor
+			# neorevisionism - conscription_factor, democratic_drift
+
+	option = { # Centre Marxism
+		name = ZTC_events.12.a
+        custom_effect_tooltip = ZTC_modify_socdem_gov_tt
+        add_to_variable = { ZTC_gov_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
+		add_to_variable = { ZTC_gov_stability_factor = 0.1 tooltip = stability_factor_tt }
+	}
+
+    option = { # Ethical Socialism
+		name = ZTC_events.12.b
+        custom_effect_tooltip = ZTC_modify_socdem_gov_tt
+		add_to_variable = { ZTC_gov_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
+        add_to_variable = { ZTC_gov_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
+	}
+
+    option = { # Neorevisionism
+		name = ZTC_events.12.c
+        custom_effect_tooltip = ZTC_modify_socdem_gov_tt
+		add_to_variable = { ZTC_gov_conscription_factor = 0.25 tooltip = conscription_factor_tt }
+        add_to_variable = { ZTC_gov_democratic_drift = 0.05 tooltip = democratic_drift_tt }
+	}
+}
+
 news_event = { # The Succession
 	id = ZTC_news_events.1
 	title = ZTC_news_events.1.t

@@ -26,6 +26,68 @@ characters = {
         }
     }
 
+    ZKN_yvonne_von_karmesin = { 
+        name = ZKN_yvonne_von_karmesin_name
+        gender = female
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ZKN_yvonne_von_karmesin
+                small = GFX_portrait_ZKN_yvonne_von_karmesin_small
+            }
+        }
+
+        #country_leader = {
+        #    ideology = vampire_rule
+        #    traits = { ZKN_carmilla }
+        #    expire = "1960.1.1.1"
+        #}
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZKN_yvonne_von_karmesin_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                has_country_flag = ZKN_new_camarilla_unlocked
+            }
+            traits = {
+                ZKN_carmarilla_trait 
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+    }
+
+    ZKN_albert_zu_stegehoff = { 
+        name = ZKN_albert_zu_stegehoff_name
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ZKN_albert_zu_stegehoff
+                small = GFX_portrait_ZKN_albert_zu_stegehoff_small
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZKN_albert_zu_stegehoff_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                NOT = { has_country_flag = ZKN_kammermeister_resigned }
+            }
+            traits = {
+                ZKN_kammermeister 
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+    }
+
     ZKN_peter_von_tretschau = { 
         name = ZKN_peter_von_tretschau_name
         portraits = {

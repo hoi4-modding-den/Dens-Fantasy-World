@@ -86,6 +86,17 @@ spriteTypes = {
     }
 
 
+	spriteType = {
+		name = "GFX_trait_ZTC_stadtwache_commander"
+		texturefile = "gfx/interface/traits/personal/trait_gre_venezelist_loyalist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_ZTC_korelian_exile"
+		texturefile = "gfx/interface/traits/scientist_traits/scientist_trait_brilliant_theorist.dds"
+	}
+
+
 	# FOCI
 
 	SpriteType = {

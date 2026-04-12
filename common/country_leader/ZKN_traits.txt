@@ -26,4 +26,46 @@ leader_traits = {
         random = no
     }
 
+    ZKN_carmilla = {
+        
+        political_power_factor = 0.15
+        stability_factor = 0.2
+        fascism_drift = 0.05
+
+        random = no
+    }
+
+
+    ZKN_kammermeister = {
+        sprite = 13
+
+        consumer_goods_factor = -0.2
+        stability_factor = 0.05
+
+        random = no
+    }
+
+    ZKN_extraordinary_authority = {
+        sprite = 13
+
+        production_speed_buildings_factor = 0.1
+
+        random = no
+    }
+
+    ZKN_carmarilla_trait = {
+        sprite = 13
+
+        political_advisor_cost_factor = -0.25
+		trade_laws_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		high_command_cost_factor = -0.25
+		air_chief_cost_factor = -0.25
+		army_chief_cost_factor = -0.25
+		navy_chief_cost_factor = -0.25
+
+        random = no
+    }
+
 }

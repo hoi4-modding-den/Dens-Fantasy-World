@@ -135,7 +135,7 @@
  ZLF_cw_events.3.a: "Gott sei Dank."
 
  ZLF_cw_events.4.t: "Revolutionary Victory"
- ZLF_cw_events.4.desc: "WIP"
+ ZLF_cw_events.4.desc: "The Banner-Armies of Edelweiss have defeated the Royal Armed Forces. The nobility has largely fled the country and King Michael has been detained after the capture of Zinnienschloss. The revolution is victorious."
  ZLF_cw_events.4.a: "With the monarchists vanquished, we can begin reconstruction."
 
  ZLF_cw_events.5.t: "International Brigades head home"
@@ -143,7 +143,7 @@
  ZLF_cw_events.5.a: "Auf Wiedersehen, Genossen!"
 
  ZLF_news_events.1.t: "Revolutionaries win the Gardenian Civil War"
- ZLF_news_events.1.desc: "WIP"
+ ZLF_news_events.1.desc: "The Gardenian Civil War has come to an end, with the revolutionaries of the Edelweiss Banner-Army managing to successfully overthrow the Zinnian Monarchy.\n \nThe new republic has already begun to establish itself in the region, preparing to send unutilised military equipment to democratic forces in the north and making moves to align the Free City of Hortensia. But before Gardenia re-enters the geopolitical stage, they will first have to look inward and recover from the devastation of the civil war."
  ZLF_news_events.1.a: "Für das Volk!"
  ZLF_news_events.1.b: "At last the bloodshed is over."
 

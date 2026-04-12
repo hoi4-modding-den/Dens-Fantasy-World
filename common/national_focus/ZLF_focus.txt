@@ -35,7 +35,7 @@ focus_tree={
         }
 
 		bypass = {
-			always = yes
+			has_civil_war = yes
         }
 		
 		completion_reward = {
@@ -70,13 +70,14 @@ focus_tree={
         }
 		
 		available = {
+			has_civil_war = yes
             any_controlled_state = {
                 has_dynamic_modifier = { modifier = ZLF_elbian_lands }
             }
         }
 
 		bypass = {
-			has_civil_war = no
+			
         }
 		
 		completion_reward = {
@@ -109,11 +110,11 @@ focus_tree={
         }
 		
 		available = {
-            
+            has_civil_war = yes
         }
 
 		bypass = {
-
+			has_civil_war = no
         }
 		
 		completion_reward = {
@@ -140,11 +141,11 @@ focus_tree={
         }
 		
 		available = {
-            
+            has_civil_war = yes
         }
 
 		bypass = {
-			has_civil_war = no
+			
         }
 		
 		completion_reward = {
@@ -175,11 +176,11 @@ focus_tree={
         }
 		
 		available = {
-            
+            has_civil_war = yes
         }
 
 		bypass = {
-			has_civil_war = no
+			
         }
 		
 		completion_reward = {
@@ -208,6 +209,7 @@ focus_tree={
         }
 		
 		available = {
+			has_civil_war = yes
             controls_province = 11208
         }
 
@@ -244,11 +246,11 @@ focus_tree={
         }
 		
 		available = {
-            
+            has_civil_war = yes
         }
 
 		bypass = {
-			has_civil_war = no
+			
         }
 		
 		completion_reward = {

@@ -1,4 +1,5 @@
 add_namespace = ZKN_cw_events
+add_namespace = ZKN_post_cw_events # specifically events relating to the immediate aftermath
 add_namespace = ZKN_news_events
 
 country_event = { # Support from XFO and XFD
@@ -28,7 +29,7 @@ country_event = { # Civil War Ends
 	id = ZKN_cw_events.2
 	title = ZKN_cw_events.2.t
 	desc = ZKN_cw_events.2.desc
-	picture = GFX_report_event_royal_parade
+	picture = GFX_report_event_DEN_denmark_surrenders
 
 	fire_only_once = yes
     is_triggered_only = yes
@@ -40,7 +41,21 @@ country_event = { # Civil War Ends
 			ZLF = { every_core_state = { remove_core_of = ZLF } }
 
 			ZLF = { # move important characters over (maybe do it later via lore events instead?)
-				ZLF_roland_ludovik = { set_nationality = ROOT }
+				ZLF_roland_ludovik = { 
+					set_nationality = ROOT 
+					promote_character = yes
+				}
+				ZLF_gustav_mai = { 
+					set_nationality = ROOT
+					promote_character = yes
+				}
+			}
+
+			XTC = {
+				country_event = {
+					id = ZKN_cw_events.3
+					days = 7
+				}
 			}
 		}
     }
@@ -54,6 +69,10 @@ country_event = { # Civil War Ends
 			drop_cosmetic_tag = yes
 		}
 
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_capital = { state = 812 }
+
         custom_effect_tooltip = generic_skip_one_line_tt
 
         ZKN_michael_aurus = {
@@ -63,6 +82,568 @@ country_event = { # Civil War Ends
                 ideology = despotism
             }
         }
+	}
+}
+
+country_event = { # Republicans go into Exile in XTC
+	id = ZKN_cw_events.3
+	title = ZKN_cw_events.3.t
+	desc = ZKN_cw_events.3.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_cw_events.3.a
+        ZLF = {
+			ZLF_hugo_von_fallersleben = {
+				set_nationality = ROOT
+			}
+			# other generals here
+		}
+	}
+}
+
+country_event = { # Restoration of the Throne
+	id = ZKN_post_cw_events.1
+	title = ZKN_post_cw_events.1.t
+	desc = ZKN_post_cw_events.1.desc
+	picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZKN_post_cw_events.2
+				days = 20
+			}
+			country_event = {
+				id = ZKN_post_cw_events.3
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = ZKN_post_cw_events.1.a
+        custom_effect_tooltip = ZKN_post_cw_events.1.tt
+	}
+}
+
+country_event = { # Nobles demand Harsh Repressions
+	id = ZKN_post_cw_events.2
+	title = ZKN_post_cw_events.2.t
+	desc = ZKN_post_cw_events.2.desc
+	picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_leader = { character = ZKN_michael_aurus }
+	}
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZKN_post_cw_events.11
+				days = 25
+			}
+		}
+	}
+
+	option = {
+		name = ZKN_post_cw_events.2.a
+		add_timed_idea = {
+			idea = ZKN_anti_republican_repressions
+			days = 365
+		}
+	}
+
+	option = {
+		name = ZKN_post_cw_events.2.b
+        add_political_power = -100
+		add_stability = 0.05
+		add_to_variable = {
+			ZKN_nobles_opinion = -1
+			tooltip = ZKN_nobles_opinion_tt
+		}
+	}
+}
+
+country_event = { # Suspicious Military Movements
+	id = ZKN_post_cw_events.3
+	title = ZKN_post_cw_events.3.t
+	desc = ZKN_post_cw_events.3.desc
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZKN_post_cw_events.4
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = ZKN_post_cw_events.3.a
+		add_command_power = -40
+        add_war_support = -0.1
+	}
+}
+
+country_event = { # Army storms the Palace
+	id = ZKN_post_cw_events.4
+	title = ZKN_post_cw_events.4.t
+	desc = ZKN_post_cw_events.4.desc
+	picture = GFX_report_event_ARG_coup_consolidating
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_post_cw_events.4.a
+        country_event = ZKN_post_cw_events.5
+	}
+
+	option = {
+		name = ZKN_post_cw_events.4.b
+		add_manpower = -1200
+		if = {
+			limit = { NOT = { has_completed_focus = ZKN_ensure_army_loyalty } }
+			add_political_power = -200
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		country_event = ZKN_post_cw_events.10
+	}
+}
+
+country_event = { # Military Coup Successful
+	id = ZKN_post_cw_events.5
+	title = ZKN_post_cw_events.5.t
+	desc = ZKN_post_cw_events.5.desc
+	picture = GFX_report_event_generic_battle
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_post_cw_events.5.a
+		add_manpower = -500
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+        retire_character = ZKN_michael_aurus
+		retire_character = ZKN_albert_zu_stegehoff
+		retire_character = ZKN_adolf_zaster
+		retire_character = ZKN_kurt_baer
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		if = {
+			limit = { has_idea = ZKN_disloyal_army_cw_improved }
+			remove_ideas = ZKN_disloyal_army_cw_improved
+		}
+		else = {
+			remove_ideas = ZKN_disloyal_army
+		}
+		country_lock_all_division_template = no
+
+		hidden_effect = {
+			news_event = ZKN_news_events.2
+
+			country_event = {
+				id = ZKN_post_cw_events.6
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { # Camarilla Regency
+	id = ZKN_post_cw_events.6
+	title = ZKN_post_cw_events.6.t
+	desc = ZKN_post_cw_events.6.desc
+	picture = GFX_report_event_saf_coup
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_post_cw_events.6.a
+        add_command_power = -25
+		add_manpower = -1200
+
+		hidden_effect = {
+			country_event = {
+				id = ZKN_post_cw_events.7
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = ZKN_post_cw_events.6.b
+        add_political_power = -50
+
+		hidden_effect = {
+			country_event = {
+				id = ZKN_post_cw_events.8
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { # Camarilla Regency crushed
+	id = ZKN_post_cw_events.7
+	title = ZKN_post_cw_events.7.t
+	desc = ZKN_post_cw_events.7.desc
+	picture = GFX_report_event_military_planning
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_post_cw_events.7.a
+		add_manpower = -10000
+        add_popularity = { ideology = neutrality popularity = -0.25 }
+		retire_character = ZKN_yvonne_von_karmesin
+
+		set_country_flag = ZKN_salvationist_path_unlocked
+	}
+}
+
+country_event = { # Camarilla Regency integrated?
+	id = ZKN_post_cw_events.8
+	title = ZKN_post_cw_events.8.t
+	desc = ZKN_post_cw_events.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_post_cw_events.8.a
+		country_event = ZKN_post_cw_events.9
+	}
+}
+
+country_event = { # Vampire Coup
+	id = ZKN_post_cw_events.9
+	title = ZKN_post_cw_events.9.t
+	desc = ZKN_post_cw_events.9.desc
+	picture = GFX_report_event_romania_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_post_cw_events.9.a
+		custom_effect_tooltip = SOV_characters_will_be_purged_tt
+        character_list_tooltip = {
+            limit = {
+                OR = {
+                    is_character = ZKN_peter_von_tretschau
+                    is_character = ZKN_johann_schmerz
+					is_character = ZTC_rudolf_von_seestern
+                }
+            }
+        }
+        hidden_effect = {
+            retire_character = ZKN_peter_von_tretschau
+            retire_character = ZKN_johann_schmerz
+			retire_character = ZTC_rudolf_von_seestern
+        }
+
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+			name = ZKN_fascism_party_vampires
+			long_name = ZKN_fascism_party_vampires_long
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_country_leader_role = {
+            character = ZKN_yvonne_von_karmesin
+            promote_leader = yes
+            country_leader = {
+                ideology = vampire_rule
+                expire = "1965.1.1.1"
+                traits = { ZKN_carmilla }
+            }
+        }
+
+		set_cosmetic_tag = ZKN_vampire_realm
+
+		hidden_effect = {
+			set_country_flag = ZKN_vampire_path_unlocked
+			mark_focus_tree_layout_dirty = yes
+
+			news_event = ZKN_news_events.3
+		}
+	}
+}
+
+country_event = { # Putschists executed
+	id = ZKN_post_cw_events.10
+	title = ZKN_post_cw_events.10.t
+	desc = ZKN_post_cw_events.10.desc
+	picture = GFX_report_event_romania_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_post_cw_events.10.a
+		custom_effect_tooltip = SOV_characters_will_be_purged_tt
+        character_list_tooltip = {
+            limit = {
+                OR = {
+                    is_character = ZKN_peter_von_tretschau
+                    is_character = ZKN_johann_schmerz
+					is_character = ZTC_rudolf_von_seestern
+                }
+            }
+        }
+        hidden_effect = {
+            retire_character = ZKN_peter_von_tretschau
+            retire_character = ZKN_johann_schmerz
+			retire_character = ZTC_rudolf_von_seestern
+        }
+
+		swap_ideas = {
+			remove_idea = ZKN_throne_under_threat
+			add_idea = ZKN_the_zinnia_secured
+		}
+
+		if = {
+			limit = { has_idea = ZKN_disloyal_army_cw_improved }
+			remove_ideas = ZKN_disloyal_army_cw_improved
+		}
+		else = {
+			remove_ideas = ZKN_disloyal_army
+		}
+		country_lock_all_division_template = no
+
+		set_country_flag = ZKN_royalist_path_unlocked
+	}
+}
+
+country_event = { # Aristocrats demands the Kammermeister step down
+	id = ZKN_post_cw_events.11
+	title = ZKN_post_cw_events.11.t
+	desc = ZKN_post_cw_events.11.desc
+	picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_leader = { character = ZKN_michael_aurus }
+	}
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZKN_post_cw_events.12
+				days = 50
+			}
+		}
+	}
+
+	option = { # accept
+		name = ZKN_post_cw_events.11.a
+        custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = ZKN_albert_zu_stegehoff_token
+		set_country_flag = ZKN_kammermeister_resigned
+	}
+
+	option = { # refuse
+		name = ZKN_post_cw_events.11.b
+        add_political_power = -50
+		add_to_variable = {
+			ZKN_nobles_opinion = -1
+			tooltip = ZKN_nobles_opinion_tt
+		}
+	}
+}
+
+country_event = { # New Members for the Camarilla
+	id = ZKN_post_cw_events.12
+	title = ZKN_post_cw_events.12.t
+	desc = ZKN_post_cw_events.12.desc
+	picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_leader = { character = ZKN_michael_aurus }
+	}
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZKN_post_cw_events.13
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = ZKN_post_cw_events.12.a
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = ZKN_yvonne_von_karmesin_token
+		set_country_flag = ZKN_new_camarilla_unlocked
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_to_variable = {
+			ZKN_nobles_opinion = -1
+			tooltip = ZKN_nobles_opinion_tt
+		}
+	}
+}
+
+country_event = { # Operation Exodus is proposed
+	id = ZKN_post_cw_events.13
+	title = ZKN_post_cw_events.13.t
+	desc = ZKN_post_cw_events.13.desc
+	picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_leader = { character = ZKN_michael_aurus }
+	}
+
+	option = {
+		name = ZKN_post_cw_events.13.a
+		add_stability = -0.1
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		activate_mission = ZKN_operation_exodus
+	}
+
+	option = {
+		name = ZKN_post_cw_events.13.b
+		trigger = {
+			any_controlled_state = { has_dynamic_modifier = { modifier = ZLF_elbian_conscription scope = ZLF } }
+		}
+		activate_mission = ZKN_operation_exodus_lite
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_political_power = -50
+		add_to_variable = {
+			ZKN_nobles_opinion = -1
+			tooltip = ZKN_nobles_opinion_tt
+		}
+	}
+
+	option = {
+		name = ZKN_post_cw_events.13.c
+		add_stability = 0.05
+		add_political_power = -150
+		add_to_variable = {
+			ZKN_nobles_opinion = -2
+			tooltip = ZKN_nobles_opinion_tt
+		}
+	}
+}
+
+country_event = { # Reconstruction
+	id = ZKN_post_cw_events.14
+	title = ZKN_post_cw_events.14.t
+	desc = ZKN_post_cw_events.14.desc
+	picture = GFX_report_event_romania_parliament
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_leader = { character = ZKN_michael_aurus }
+	}
+
+	option = {
+		name = ZKN_post_cw_events.14.a
+		custom_effect_tooltip = ZKN_post_cw_events.14.tt
+		hidden_effect = {
+			set_temp_variable = { ZKN_reconstruction_time = 0 }
+			subtract_from_temp_variable = { ZKN_reconstruction_time = ZKN_nobles_opinion }
+			multiply_temp_variable = { ZKN_reconstruction_time = 90 }
+			add_to_temp_variable = { ZKN_reconstruction_time = 365 }
+		}
+		add_timed_idea = {
+			idea = ZKN_reconstruction
+			days = ZKN_reconstruction_time
+		}
+	}
+}
+
+country_event = { # Reconstruction ALT MILITARY
+	id = ZKN_post_cw_events.15
+	title = ZKN_post_cw_events.15.t
+	desc = ZKN_post_cw_events.15.desc
+	picture = GFX_report_event_ARG_coup_consolidating
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_leader = { character = ZKN_michael_aurus } }
+		NOT = {has_country_leader_ideology = vampire_rule }
+	}
+
+	option = {
+		name = ZKN_post_cw_events.15.a
+		add_timed_idea = {
+			idea = ZKN_reconstruction_military
+			years = 2
+		}
+	}
+}
+
+country_event = { # Reconstruction ALT VAMPIRE
+	id = ZKN_post_cw_events.16
+	title = ZKN_post_cw_events.16.t
+	desc = ZKN_post_cw_events.16.desc
+	picture = GFX_report_event_romania_parliament
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_leader = { character = ZKN_michael_aurus } }
+		has_country_leader_ideology = vampire_rule
+	}
+
+	option = {
+		name = ZKN_post_cw_events.16.a
+		add_timed_idea = {
+			idea = ZKN_reconstruction_vampire
+			years = 3
+		}
+	}
+}
+
+country_event = { # Operation Exodus: Refugees arrive
+	id = ZKN_post_cw_events.17
+	title = ZKN_post_cw_events.17.t
+	desc = ZKN_post_cw_events.17.desc
+	picture = GFX_report_event_long_march
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_post_cw_events.17.a
+		add_timed_idea = {
+			idea = ZKN_elbian_exodus
+			days = 365
+		}
 	}
 }
 
@@ -83,5 +664,35 @@ news_event = { # Civil War Ends NEWS
 	option = {
 		name = ZKN_news_events.1.b
 		trigger = { NOT = { tag = ZKN } }
+	}
+}
+
+news_event = { # Salvationist Coup NEWS
+	id = ZKN_news_events.2
+	title = ZKN_news_events.2.t
+	desc = ZKN_news_events.2.desc
+	picture = GFX_news_event_ITA_grand_council
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ZKN_news_events.2.a
+		
+	}
+}
+
+news_event = { # Vampire Coup NEWS
+	id = ZKN_news_events.3
+	title = ZKN_news_events.3.t
+	desc = ZKN_news_events.3.desc
+	picture = GFX_news_event_romania_poland_visit
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ZKN_news_events.3.a
+		
 	}
 }

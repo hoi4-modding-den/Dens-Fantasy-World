@@ -53,6 +53,10 @@ ZKN_civil_war_cat = {
             570 = { NOT = { is_fully_controlled_by = ROOT } }
         }
 
+        cancel_trigger = {
+            has_civil_war = no
+        }
+
         highlight_states = {
             highlight_states_trigger = { 
                 state = 570
@@ -85,6 +89,10 @@ ZKN_civil_war_cat = {
             NOT = { controls_state = 848 }
         }
 
+        cancel_trigger = {
+            has_civil_war = no
+        }
+
         highlight_states = {
             highlight_states_trigger = {
                 state = 848
@@ -102,6 +110,147 @@ ZKN_civil_war_cat = {
 
         timeout_effect = {
             country_event = ZKN_cw_events.1
+        }
+
+    }
+
+}
+
+political_actions = {
+
+    ZKN_operation_exodus = {
+
+        icon = generic_police_action
+
+        activation = {
+            always = no
+        }
+
+        selectable_mission = yes
+
+        ai_will_do = {
+            base = 0
+        }
+
+        available = {
+            NOT = { has_government = fascism }
+        }
+
+        cancel_trigger = {
+            all_controlled_state = {
+                NOT = { has_dynamic_modifier = { modifier = ZLF_elbian_lands } }
+            }
+        }
+
+        highlight_states = {
+            highlight_states_trigger = {
+                has_dynamic_modifier = { modifier = ZLF_elbian_lands }
+            }
+        }
+
+        is_good = yes # debatable
+
+        days_mission_timeout = 120
+
+        complete_effect = {
+            add_political_power = -200
+        }
+
+        timeout_effect = {
+            add_stability = -0.1
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            every_controlled_state = {
+                limit = {
+                    has_dynamic_modifier = { modifier = ZLF_elbian_lands }
+                }
+                add_manpower = -200000
+                remove_dynamic_modifier = { modifier = ZLF_elbian_lands }
+            }
+            every_controlled_state = {
+                limit = {
+                    has_dynamic_modifier = { modifier = ZLF_elbian_conscription }
+                }
+                add_manpower = -10000
+                remove_dynamic_modifier = { modifier = ZLF_elbian_conscription }
+            }
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            every_other_country = {
+                limit = {
+                    is_neighbor_of = ROOT
+                    has_civil_war = no
+                    NOT = { has_idea = isolation }
+                }
+                country_event = ZKN_post_cw_events.17
+            }
+        }
+
+    }
+
+    ZKN_operation_exodus_lite = {
+
+        icon = generic_police_action
+
+        activation = {
+            always = no
+        }
+
+        selectable_mission = yes
+
+        ai_will_do = {
+            base = 0
+        }
+
+        available = {
+            NOT = { has_government = fascism }
+        }
+
+        cancel_trigger = {
+            all_controlled_state = {
+                NOT = { has_dynamic_modifier = { modifier = ZLF_elbian_lands } }
+            }
+        }
+
+        highlight_states = {
+            highlight_states_trigger = {
+                has_dynamic_modifier = { modifier = ZLF_elbian_lands }
+            }
+        }
+
+        is_good = yes # debatable
+
+        days_mission_timeout = 90
+
+        complete_effect = {
+            add_political_power = -200
+        }
+
+        timeout_effect = {
+            add_stability = -0.1
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            every_controlled_state = {
+                limit = {
+                    has_dynamic_modifier = { modifier = ZLF_elbian_conscription }
+                }
+                add_manpower = -10000
+                remove_dynamic_modifier = { modifier = ZLF_elbian_conscription }
+            }
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            every_other_country = {
+                limit = {
+                    is_neighbor_of = ROOT
+                    has_civil_war = no
+                    NOT = { has_idea = isolation }
+                }
+                country_event = ZKN_post_cw_events.17
+            }
         }
 
     }

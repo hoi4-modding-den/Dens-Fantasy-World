@@ -16,7 +16,7 @@ set_technology = {
 add_ideas = {
 	closed_economy
 	disarmed_nation
-	undisturbed_isolation
+	isolation
 
 	ZSP_ungoverned_lands
 	ZSP_tower_rivalry

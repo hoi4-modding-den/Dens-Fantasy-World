@@ -35,7 +35,7 @@ focus_tree={
         }
 
 		bypass = {
-			always = yes
+			has_civil_war = yes
         }
 		
 		completion_reward = {
@@ -68,6 +68,7 @@ focus_tree={
         }
 		
 		available = {
+			has_civil_war = yes
             controls_province = 8471
 			controls_province = 8472
 			controls_province = 8464
@@ -117,6 +118,7 @@ focus_tree={
         }
 		
 		available = {
+			has_civil_war = yes
             OR = {
 				controls_state = 570
 				controls_state = 817
@@ -125,7 +127,7 @@ focus_tree={
         }
 
 		bypass = {
-			
+			has_civil_war = no
         }
 		
 		completion_reward = {
@@ -180,11 +182,11 @@ focus_tree={
         }
 		
 		available = {
-            
+            has_civil_war = yes
         }
 
 		bypass = {
-			has_civil_war = no
+			
         }
 		
 		completion_reward = {
@@ -199,7 +201,12 @@ focus_tree={
 
             custom_effect_tooltip = generic_skip_one_line_tt
 
-			#swap_traits
+			ZKN_albert_zu_stegehoff = {
+				add_trait = {
+					slot = political_advisor
+					trait = ZKN_extraordinary_authority
+				}
+			}
 		}
 	}
 
@@ -219,11 +226,11 @@ focus_tree={
         }
 		
 		available = {
-            
+            has_civil_war = yes
         }
 
 		bypass = {
-			has_civil_war = no
+			
         }
 		
 		completion_reward = {
@@ -252,11 +259,11 @@ focus_tree={
         }
 		
 		available = {
-            
+            has_civil_war = yes
         }
 
 		bypass = {
-			has_civil_war = no
+			
         }
 		
 		completion_reward = {
@@ -291,11 +298,105 @@ focus_tree={
         }
 
 		select_effect = {
-
+			country_event = ZKN_post_cw_events.1
 		}
 		
 		completion_reward = {
             custom_effect_tooltip = ZKN_royal_triumph_tt
+			hidden_effect = {
+				country_event = ZKN_post_cw_events.14
+				country_event = ZKN_post_cw_events.15
+				country_event = ZKN_post_cw_events.16
+			}
+		}
+	}
+
+	focus = {
+		id = ZKN_the_zinnian_realm
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZKN_royal_triumph }
+		mutually_exclusive = { focus = ZKN_the_crimson_regency focus = ZKN_the_salvation_government }
+		x = -10
+		y = 1
+		relative_position_id = ZKN_royal_triumph
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_country_flag = ZKN_royalist_path_unlocked
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            add_stability = 0.2
+		}
+	}
+
+	focus = {
+		id = ZKN_the_crimson_regency
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZKN_royal_triumph }
+		mutually_exclusive = { focus = ZKN_the_zinnian_realm focus = ZKN_the_salvation_government }
+		x = 0
+		y = 1
+		relative_position_id = ZKN_royal_triumph
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_country_flag = ZKN_vampire_path_unlocked
+        }
+
+		allow_branch = {
+			has_country_flag = ZKN_vampire_path_unlocked
+		}
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			add_stability = 0.1
+            add_popularity = { ideology = fascism popularity = 0.1 }
+		}
+	}
+
+	focus = {
+		id = ZKN_the_salvation_government
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZKN_royal_triumph }
+		mutually_exclusive = { focus = ZKN_the_crimson_regency focus = ZKN_the_zinnian_realm }
+		x = 10
+		y = 1
+		relative_position_id = ZKN_royal_triumph
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_country_flag = ZKN_salvationist_path_unlocked
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.2 }
 		}
 	}
 

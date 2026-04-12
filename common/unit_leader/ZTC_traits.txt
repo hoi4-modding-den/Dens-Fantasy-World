@@ -1,0 +1,47 @@
+leader_traits = {
+
+    ZTC_stadtwache_commander = {
+
+		type = land
+		trait_type = personality_trait
+
+        corps_commander_modifier = {
+			max_commander_army_size = -16
+		}
+
+        modifier = {
+			urban = {
+				movement = 0.1
+				attack = 0.15
+				defence = 0.25
+			}
+            equipment_capture = 0.01
+		}
+
+		new_commander_weight = {
+			factor = 0
+            modifier = {
+                add = 100000
+                tag = ZTC
+            }
+		}
+	}
+
+	ZTC_korelian_exile = {
+
+		type = all
+		trait_type = personality_trait
+
+        modifier = {
+			experience_gain_factor = 0.05
+		}
+
+        trait_xp_factor = {
+			skilled_staffer = 0.5
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

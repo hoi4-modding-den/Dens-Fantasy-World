@@ -1,0 +1,22 @@
+on_actions = {
+
+    on_before_peace_conference_start = {
+        effect = {
+            if = {
+                limit = {
+                    ZTC = { has_completed_focus = ZTC_international_interventionism }
+                    ROOT = {
+                        has_volunteers_amount_from = {
+                            tag = ZTC
+                            count > 0
+                        }
+                    }
+                }
+                ZTC = {
+                    country_event = ZTC_events.10
+                }
+            }
+        }
+    }
+
+}

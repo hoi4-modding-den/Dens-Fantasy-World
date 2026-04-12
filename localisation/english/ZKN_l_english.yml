@@ -35,12 +35,14 @@
  ZKN_communism_party_long: "$ZLF_communism_party_long$"
  ZKN_fascism_party: "RdNR"
  ZKN_fascism_party_long: "Government of National Salvation"
+ ZKN_fascism_party_vampires: "Karmesin-Regentschaft"
+ ZKN_fascism_party_vampires_long: "The Crimson Regency"
 
 
 # IDEOLOGIES
 
  nationalist_stratocracy: "Nationalist Stratocracy"
- nationalist_stratocracy_desc: "A Salvation Government or Salvation Stratocracy is a military junta that adheres to tenets of (ultra-)nationalism and seeks to unite the (ultra-)nation under a military dictatorship."
+ nationalist_stratocracy_desc: "A Salvation Government or Salvation Stratocracy is a military junta that adheres to tenets of (ultra-)nationalism and seeks to unite the (ultra-)nation under a military dictatorship in an attempt to 'save' it."
  vampire_rule: "Vampiric Despotism"
  vampire_rule_desc: "In Vampiric despotism, the people of the nation are seen as mere livestock to sate the hunger of their vampiric overlord. Usually, the fact that the ruler is a vampire is kept secret to avoid revolt."
 
@@ -48,6 +50,8 @@
 # CHARACTERS
 
  ZKN_michael_aurus_name: "Michael Aurus III."
+ ZKN_yvonne_von_karmesin_name: "Yvonne von Karmesin"
+ ZKN_albert_zu_stegehoff_name: "Albert zu Stegehoff"
  ZKN_peter_von_tretschau_name: "Peter von Tretschau"
  ZKN_juergen_ostersee_name: "Jürgen Ostersee"
  ZKN_johann_schmerz_name: "Johann Schmerz"
@@ -64,6 +68,10 @@
  ZKN_the_loser_king: "King of a Crumbling Realm"
  ZKN_the_winner_king: "Vanquisher of Revolution"
  ZKN_stratocratic_nationalist: "Stratocratic Nationalist"
+ ZKN_carmilla: "Crimson Regent"
+ ZKN_kammermeister: "Kammermeister"
+ ZKN_extraordinary_authority: "Sondervermögen"
+ ZKN_carmarilla_trait: "Camarilla Leader"
 
  ZKN_white_silver: "White Silver"
  ZKN_white_silver_desc: "§LHailed as a hero for their actions during the last Northeastern War, this character received the White Silver medal by the Zinnian Throne.§!"
@@ -78,8 +86,19 @@
  ZKN_general_strike: "General Strike"
  ZKN_general_strike_desc: "The Republicans have called for a general strike against the Zinnian Government and ground our industry to a halt."
  ZKN_throne_under_threat: "The Throne under Threat"
+ ZKN_the_zinnia_secured: "The Zinnia Secured"
  ZKN_sale_of_the_armada: "Sale of the Royal Armada"
  ZKN_sale_of_the_armada_desc: "A large portion of the Royal Gardenian Armada was sold to Hortensia to obtain funds to help the kingdom fight the Republicans. While the navy wasn't too happy about the sale, it has certainly helped our struggling economy from taking any more damage during the civil war."
+ ZKN_anti_republican_repressions: "Republican Repressions"
+ ZKN_reconstruction: "Reconstruction"
+ ZKN_reconstruction_military: "National Regeneration"
+ ZKN_reconstruction_vampire: "The Second Dark Age"
+ ZKN_elbian_exodus: "Elbian Refugee Crisis"
+
+
+# MODIFIERS
+
+ ZKN_nobles_opinion_tt: "£GFX_occupation_costs Aristocratic Loyalty: $RIGHT|+=0$"
 
 
 # DECISIONS
@@ -90,6 +109,9 @@
  ZKN_hold_the_line: "Hold Zinnien!"
  ZKN_aid_from_neighbouring_monarchies: "Aid from the East"
  ZKN_aid_from_neighbouring_monarchies_desc: "Our diplomats are attempting to negotiate with the [ZFO.GetAdjective] and [ZFD.GetAdjective] governments for support. We must maintain control over the border city of Löbnitz so we can receive it."
+
+ ZKN_operation_exodus: "Operation Exodus"
+ ZKN_operation_exodus_lite: "Operation Exodus"
 
 
 # FOCI
@@ -110,7 +132,19 @@
  ZKN_crackdown_on_strikes_desc: ""
  ZKN_royal_triumph: "Peace under the Zinnia"
  ZKN_royal_triumph_desc: ""
- ZKN_royal_triumph_tt: "The §YKingdom of Gardenia§! will regain its §Yinternational recognition§! and §Ylaw and order§! will be restored."
+ ZKN_royal_triumph_tt: "The §YKingdom of Gardenia§! will regain its §Yinternational recognition§! and §Ylaw and order§! will be restored.\n \n§RWith the Civil War over, some factions may take opportunity in the weakened royal authority!§!"
+
+ ZKN_the_zinnian_realm: "In the Zinnian Realm"
+ ZKN_the_zinnian_realm_desc: ""
+ ZKN_royalist_path_unlocked: "The §YZinnian Throne§! remains in control."
+
+ ZKN_the_crimson_regency: "Let the Blood Flow"
+ ZKN_the_crimson_regency_desc: ""
+ ZKN_vampire_path_unlocked: "The §YCrimson Regency§! has been established."
+
+ ZKN_the_salvation_government: "Salvation and Regeneration"
+ ZKN_the_salvation_government_desc: ""
+ ZKN_salvationist_path_unlocked: "The §YNational Salvation Government§! has seized power."
 
 
 # EVENTS
@@ -120,13 +154,105 @@
  ZKN_cw_events.1.a: "We thank our royal allies in the east."
 
  ZKN_cw_events.2.t: "Loyalist Victory"
- ZKN_cw_events.2.desc: "WIP"
- ZKN_cw_events.2.a: "The Throne is safe. For now."
+ ZKN_cw_events.2.desc: "The Republicans have been defeated. The troops of the Royal Army have brought victory to the Zinnian Throne."
+ ZKN_cw_events.2.a: "The Kingdom is safe. For now."
+
+ ZKN_cw_events.3.t: "Edelweiss Exile Government"
+ ZKN_cw_events.3.desc: "With the defeat of the Edelweiss Liberation Front, various Republicans have decided to go into exile in Hortensia to escape punishment by the royalists. Some of them have offered their services to our nation."
+ ZKN_cw_events.3.a: "Wilkommen, wilkommen!"
+
+
+ ZKN_post_cw_events.1.t: "Restoration of the Zinnian Throne"
+ ZKN_post_cw_events.1.desc: "WIP\n \nExpectedly, our allies have taken no time at all to turn on us. Immediately after relocation to Gartenstadt, the Court began to question our military spending while the army began to quietly stash away weapons."
+ ZKN_post_cw_events.1.a: "I thought we were done with rebellion?"
+ ZKN_post_cw_events.1.tt: "When the focus completes, we will gain a §Ynational spirit§! for Reconstruction. The time it will take depends on our £GFX_occupation_costs §YAristocratic Loyalty§!.\n \n§RShould another faction take charge, this may change.§!"
+
+ ZKN_post_cw_events.2.t: "Anti-Republican Campaigns"
+ ZKN_post_cw_events.2.desc: "The aristocrats wish to avoid another revolution and therefore demand we implement a series of serious repressions against known republicans and possible allies."
+ ZKN_post_cw_events.2.a: "We must prevent another insurgency."
+ ZKN_post_cw_events.2.b: "Doing this will only alienate the people more."
+
+ ZKN_post_cw_events.3.t: "Von Tretschau's Troops enter Gartenstadt"
+ ZKN_post_cw_events.3.desc: "In the cover of the night, Soldiers of von Tretschau's Fifth Division entered Gartenstadt under the pretense of 'divisional reorganisation'. It is clear that is is a ploy, but we have no power to question or investigate."
+ ZKN_post_cw_events.3.a: "What is he plotting?"
+
+ ZKN_post_cw_events.4.t: "Salvationist Coup"
+ ZKN_post_cw_events.4.desc: "The royal palace in Central Gartenstadt is quickly stormed by the soldiers. Von Tretschau and his conspirators enter the hallway to the throne room with the knowledge that King Michael is currently in a court session with some aristocrats. As they turn around the corner, the Royal Guard blocks their way, as anticipated.\n \n'Stand down, your corrupt king has lived long enough', von Tretschau calls out to the guards. They raise their arms, one of them hesitates."
+ ZKN_post_cw_events.4.a: "The Royal Guard stands down."
+ ZKN_post_cw_events.4.b: "The Putschists are arrested!"
+
+ ZKN_post_cw_events.5.t: "Withered Zinnia"
+ ZKN_post_cw_events.5.desc: "WIP"
+ ZKN_post_cw_events.5.a: "Sweet Dreams, you Fool."
+
+ ZKN_post_cw_events.6.t: "Camarilla establishes Regency"
+ ZKN_post_cw_events.6.desc: "WIP"
+ ZKN_post_cw_events.6.a: "Crush those fools!"
+ ZKN_post_cw_events.6.b: "Approach them with an offer they can't refuse."
+
+ ZKN_post_cw_events.7.t: "End of the Camarilla Rebellion"
+ ZKN_post_cw_events.7.desc: "WIP"
+ ZKN_post_cw_events.7.a: "Foolish fools."
+
+ ZKN_post_cw_events.8.t: "Komtesse Yvonne"
+ ZKN_post_cw_events.8.desc: "In an attempt to peacefully subdue the aristocrats, the Salvationist Clique has decided to meet with the Camarilla. Once arrived however, they noticed that the Camarilla had not bothered to show up, leading to them only meeting the Komtesse Yvonne von Karmesin, a lower noble from Rosenrade. In a surprise twist however, the Komtesse revealed to the Putschists the ultimate secret."
+ ZKN_post_cw_events.8.a: "What is man but animal in all but shape and name?"
+
+ ZKN_post_cw_events.9.t: "Restoration of Balance"
+ ZKN_post_cw_events.9.desc: "Following the elimination of the Putschist Generals, the Komtesse von Karmesin and the Camarilla have seized control over Gardenia, proclaiming the Crimson Regency. The disappearance of the Junta may have been slightly suspicious, but von Karmesin isn't worried. As long as she allows them to cling to their power, the nobles won't ask any questions."
+ ZKN_post_cw_events.9.a: "Judgement hath been delivered."
+
+ ZKN_post_cw_events.10.t: "The Damned"
+ ZKN_post_cw_events.10.desc: "The foolish traitors von Tretschau and Schmerz have been arrested and are scheduled to be executed. The camarilla has also uncovered the Putschists' connection to Admiral von Seestern, who supported them from the sidelines. But rest assured..."
+ ZKN_post_cw_events.10.a: "...treason will not be tolerated."
+
+ ZKN_post_cw_events.11.t: "Aristocrats demand the Kammermeister's Resignation"
+ ZKN_post_cw_events.11.desc: "WIP"
+ ZKN_post_cw_events.11.a: "We must placate the nobles."
+ ZKN_post_cw_events.11.b: "He is more loyal than those dogs!"
+ ZKN_kammermeister_resigned: "Stegehoff was forced to resign"
+
+ ZKN_post_cw_events.12.t: "The New Camarilla"
+ ZKN_post_cw_events.12.desc: "WIP"
+ ZKN_post_cw_events.12.a: "What a peculiar lady."
+ ZKN_new_camarilla_unlocked: "Unlocked via the §Y'$ZKN_post_cw_events.12.t$'§! event."
+
+ ZKN_post_cw_events.13.t: "Fate of the Elbs"
+ ZKN_post_cw_events.13.desc: "WIP"
+ ZKN_post_cw_events.13.a: "We need them out the country."
+ ZKN_post_cw_events.13.b: "Only remove proven insurrectionists."
+ ZKN_post_cw_events.13.c: "This goes too far, they are still our citizen!"
+
+ ZKN_post_cw_events.14.t: "National Reconstruction"
+ ZKN_post_cw_events.14.desc: "WIP"
+ ZKN_post_cw_events.14.a: "This is gonna be expensive..."
+ ZKN_post_cw_events.14.tt: "Reconstruction Time is based on £GFX_occupation_costs §YAristocratic Loyalty§!."
+
+ ZKN_post_cw_events.15.t: "National Reconstruction"
+ ZKN_post_cw_events.15.desc: "WIP"
+ ZKN_post_cw_events.15.a: "We will make Gardenia Great Again!"
+
+ ZKN_post_cw_events.16.t: "National Reconstruction?"
+ ZKN_post_cw_events.16.desc: "WIP"
+ ZKN_post_cw_events.16.a: "Those foolish peasants will do our work for us."
+
+ ZKN_post_cw_events.17.t: "Elbian Refugees"
+ ZKN_post_cw_events.17.desc: "News from the Gardenian border as patrols report a massive influx of Elbian refugees. Apparently, the Gardenian government has launched some sort of operation against their native Elbian population, expulsing them from their homelands, causing waves of refugees to cross the borders."
+ ZKN_post_cw_events.17.a: "What is going on in Gardenia?"
+
 
  ZKN_news_events.1.t: "Loyalists win the Gardenian Civil War"
- ZKN_news_events.1.desc: "WIP"
+ ZKN_news_events.1.desc: "The Gardenian Civil War has come to an end, with the loyalists of the Zinnian Throne managing to successfully crush the Republican Revolution.\n \nThe restored Kingdom is however still incredibly unstable, with the Zinnian Throne fighting for the loyalty of the Armed Forces and the Aristocracy, which both increased their influence during the Civil War. Wether or not the crown can hold onto power in the next few months remains to be seen."
  ZKN_news_events.1.a: "Heil König dir!"
  ZKN_news_events.1.b: "$ZLF_news_events.1.b$"
+
+ ZKN_news_events.2.t: "Military Coup in Gardenia"
+ ZKN_news_events.2.desc: "The Salvationist Clique of the Royal Armed Forces under leadership of Peter von Tretschau have seized control over Gardenia, deposing King Michael and establishing the Government of National Salvation.\n \nThe newly-proclaimed stratocracy has however already seen increasing resistance as the aristocracy attempt to subvert military control over the nation and establish a legitimate regency council for the king-less kingdom."
+ ZKN_news_events.2.a: "Geh beiseite, der Boss kommt!"
+
+ ZKN_news_events.3.t: "Gardenian Regency Established"
+ ZKN_news_events.3.desc: "The Gardenian Aristocrats, led by Komtesse Yvonne von Karmesin, have successfully subverted military control, executing the leaders of the Salvation Clique and other disloyal army officers.\n \nIt is uncertain how the nobles were able to so quickly, with some even speculating foreign interference. Nonetheless, the military junta has been eliminated and the newly establish Crimson Regency has consolidated control over the nation."
+ ZKN_news_events.3.a: "And all shall return to normalcy..."
 
 
 # WAR NAMES

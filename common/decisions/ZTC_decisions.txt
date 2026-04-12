@@ -194,3 +194,177 @@ ZTC_balance_of_power_category = {
     }
 
 }
+
+political_actions = {
+
+    ZTC_form_southern_democratic_bloc = {
+        
+        icon = generic_form_nation
+
+        allowed = {
+            original_tag = ZTC
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+
+        cost = 100
+
+        available = {
+            has_government = democratic
+            is_subject = no
+            has_war = no
+            custom_trigger_tooltip = {
+                tooltip = ZTC_form_southern_democratic_bloc_tt
+                all_other_country = {
+                    OR = {
+                        AND = {
+                            NOT = { original_tag = XCE }
+                            NOT = { original_tag = ZLF }
+                            NOT = { original_tag = ZKN }
+                            NOT = { original_tag = ZSP }
+                        }
+                        AND = {
+                            is_ally_with = ROOT
+                            OR = {
+                                has_government = democratic
+                                AND = {
+                                    has_government = communism
+                                    tag = ZLF
+                                    ROOT = { has_completed_focus = ZTC_embrace_social_democracy }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        highlight_states = {
+            highlight_states_trigger = { 
+                owner = {
+                    OR = {
+                        original_tag = XCE
+                        original_tag = ZLF
+                        original_tag = ZKN
+                        original_tag = ZSP
+                    }
+                }
+            }
+        }
+
+        visible = {
+            has_completed_focus = ZTC_defenders_of_democracy
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            every_country = {
+                limit = {
+                    is_ally_with = ROOT
+                    OR = {
+                        has_government = democratic
+                        AND = {
+                            has_government = communism
+                            tag = ZLF
+                            ROOT = { has_completed_focus = ZTC_embrace_social_democracy }
+                        }
+                    }
+                }
+                add_ideas = ZTC_southern_democratic_bloc_spirit
+            }
+        }
+    }
+
+    ZTC_establish_coastal_protectorate = {
+        
+        icon = generic_form_nation
+
+        allowed = {
+            original_tag = ZTC
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+
+        available = {
+            has_government = democratic
+            is_subject = no
+            any_country = {
+                owns_state = 885
+                owns_state = 568
+                owns_state = 653
+                NOT = { has_war_with = ROOT }
+            }
+        }
+
+        highlight_states = {
+            highlight_states_trigger = { 
+                OR = {
+                    state = 885
+                    state = 568
+                    state = 653
+                }
+            }
+        }
+
+        visible = {
+            has_completed_focus = ZTC_establish_the_maritime_league
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            # demand the creation of a puppet there
+        }
+    }
+
+    ZTC_secure_the_albia_strait = {
+        
+        icon = generic_form_nation
+
+        allowed = {
+            original_tag = ZTC
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+
+        available = {
+            has_government = democratic
+            is_subject = no
+            any_country = {
+                owns_state = 754
+                controls_state = 754
+            }
+            any_country = {
+                owns_state = 744
+                controls_state = 744
+            }
+        }
+
+        highlight_states = {
+            highlight_states_trigger = { 
+                OR = {
+                    state = 754
+                    state = 744
+                }
+            }
+        }
+
+        visible = {
+            has_completed_focus = ZTC_establish_the_maritime_league
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            # demand the states
+        }
+    }
+
+}

@@ -73,7 +73,7 @@ characters={
 		}
         
 		field_marshal = {
-            traits = { politically_connected infantry_officer }
+            traits = { ZTC_stadtwache_commander politically_connected infantry_officer }
             skill = 3
             attack_skill = 1
             defense_skill = 4
@@ -92,7 +92,7 @@ characters={
 		}
         
 		corps_commander = {
-            traits = { engineer_officer organizer }
+            traits = { ZTC_stadtwache_commander engineer_officer desert_fox ZTC_korelian_exile }
             skill = 2
             attack_skill = 1
             defense_skill = 3
@@ -111,7 +111,7 @@ characters={
 		}
         
 		corps_commander = {
-            traits = { politically_connected harsh_leader naval_invader }
+            traits = { ZTC_stadtwache_commander politically_connected harsh_leader naval_invader }
             skill = 2
             attack_skill = 2
             defense_skill = 1
@@ -130,7 +130,7 @@ characters={
 		}
         
 		corps_commander = {
-            traits = { career_officer infantry_officer }
+            traits = { ZTC_stadtwache_commander career_officer infantry_officer }
             skill = 1
             attack_skill = 1
             defense_skill = 1

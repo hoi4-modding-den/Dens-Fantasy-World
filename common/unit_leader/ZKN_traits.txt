@@ -14,7 +14,14 @@ leader_traits = {
 		}
 
 		modifier = {
-			experience_gain_factor = 0.05
+			experience_gain_factor = 0.1
+		}
+
+		trait_xp_factor = {
+			commando = 1
+			trickster = 1
+			skilled_staffer = 1
+			organizer = 1
 		}
 	}
 

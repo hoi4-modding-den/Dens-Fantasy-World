@@ -13,6 +13,14 @@ leader_traits = {
 		random = no
 	}
 
+	ZTC_liberal_reformist = {
+		political_power_factor = 0.05
+		democratic_drift = 0.01
+		consumer_goods_factor = -0.1
+
+		random = no
+	}
+
 	ZTC_grand_councillor_trait = {
 		
 		political_advisor_cost_factor = -0.75

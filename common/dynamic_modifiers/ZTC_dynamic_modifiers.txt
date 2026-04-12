@@ -7,3 +7,55 @@ ZTC_naval_outpost = {
     resistance_damage_to_garrison = -0.9
 
 }
+
+ZTC_liberal_government = {
+	enable = { has_government = democratic }
+
+	icon = GFX_idea_GER_the_shield_of_democracy
+	
+	political_power_factor = ZTC_gov_political_power_factor
+	stability_factor = ZTC_gov_stability_factor
+	democratic_drift = ZTC_gov_democratic_drift
+	drift_defence_factor = ZTC_gov_drift_defence_factor
+
+	monthly_population = ZTC_gov_monthly_population
+	research_speed_factor = ZTC_gov_research_speed_factor
+	consumer_goods_factor = ZTC_gov_consumer_goods_factor
+	production_speed_buildings_factor = ZTC_gov_production_speed_buildings_factor
+	global_building_slots_factor = ZTC_gov_global_building_slots_factor
+	industrial_capacity_factory = ZTC_gov_ZTC_gov_industrial_capacity_factory
+	industrial_capacity_dockyard = ZTC_gov_industrial_capacity_dockyard
+	production_factory_efficiency_gain_factor = ZTC_gov_production_factory_efficiency_gain_factor
+
+	conscription_factor = ZTC_gov_conscription_factor
+	army_defence_factor = ZTC_gov_army_defence_factor
+	supply_node_range = ZTC_gov_supply_node_range
+	compliance_growth = ZTC_gov_compliance_growth
+
+}
+
+ZTC_social_democratic_government = {
+	enable = { has_government = democratic }
+
+	icon = GFX_idea_FIN_socialist_welfare
+	
+	political_power_factor = ZTC_gov_political_power_factor
+	stability_factor = ZTC_gov_stability_factor
+	democratic_drift = ZTC_gov_democratic_drift
+	drift_defence_factor = ZTC_gov_drift_defence_factor
+
+	monthly_population = ZTC_gov_monthly_population
+	research_speed_factor = ZTC_gov_research_speed_factor
+	consumer_goods_factor = ZTC_gov_consumer_goods_factor
+	production_speed_buildings_factor = ZTC_gov_production_speed_buildings_factor
+	global_building_slots_factor = ZTC_gov_global_building_slots_factor
+	industrial_capacity_factory = ZTC_gov_ZTC_gov_industrial_capacity_factory
+	industrial_capacity_dockyard = ZTC_gov_industrial_capacity_dockyard
+	production_factory_efficiency_gain_factor = ZTC_gov_production_factory_efficiency_gain_factor
+
+	conscription_factor = ZTC_gov_conscription_factor
+	army_defence_factor = ZTC_gov_army_defence_factor
+	supply_node_range = ZTC_gov_supply_node_range
+	compliance_growth = ZTC_gov_compliance_growth
+
+}

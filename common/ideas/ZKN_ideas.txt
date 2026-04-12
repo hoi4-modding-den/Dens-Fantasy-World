@@ -21,10 +21,6 @@ ideas = {
                 war_support_factor = -0.1
                 custom_modifier_tooltip = SPR_military_disloyalty_tt
 			}
-
-            on_remove = {
-				country_lock_all_division_template = no
-			}
             
 		}
 
@@ -105,10 +101,32 @@ ideas = {
 			allowed_civil_war = {
                 always = yes 
             }
+
+            available = {
+                has_character = ZKN_michael_aurus
+            }
 			
 			modifier = {
                 political_power_factor = -0.15
                 stability_weekly = -0.001
+			}
+            
+		}
+
+        ZKN_the_zinnia_secured = {
+
+			picture = JAP_showa_statism
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                political_power_factor = 0.05
 			}
             
 		}
@@ -130,6 +148,113 @@ ideas = {
                 war_support_factor = -0.05
                 naval_coordination = -0.1
                 naval_accidents_chance = 0.15
+			}
+            
+		}
+
+        ZKN_anti_republican_repressions = {
+
+			picture = generic_purge
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                stability_factor = -0.15
+                political_power_cost = 0.25
+                democratic_drift = -0.05
+                neutrality_drift = -0.02
+                production_factory_max_efficiency_factor = -0.1
+			}
+            
+		}
+
+        ZKN_reconstruction = {
+
+			picture = GER_recovering_economy
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                production_factory_max_efficiency_factor = -0.1
+				industrial_capacity_factory = -0.8
+				industrial_capacity_dockyard = -0.8
+				production_speed_buildings_factor = 0.25
+                production_speed_infrastructure_factor = 0.2
+			}
+            
+		}
+
+        ZKN_reconstruction_military = {
+
+			picture = GER_recovering_economy
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                production_factory_max_efficiency_factor = -0.2
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				production_speed_buildings_factor = 0.2
+                production_speed_arms_factory_factor = 0.1
+			}
+            
+		}
+
+        ZKN_reconstruction_vampire = {
+
+			picture = GER_recovering_economy
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                production_factory_max_efficiency_factor = -0.2
+				industrial_capacity_factory = -0.8
+				industrial_capacity_dockyard = -0.8
+				production_speed_buildings_factor = 0.1
+                production_speed_infrastructure_factor = 0.1
+			}
+            
+		}
+
+        ZKN_elbian_exodus = {
+
+			picture = generic_build_infrastructure
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                monthly_population = 0.4
+                stability_factor = -0.1
 			}
             
 		}
