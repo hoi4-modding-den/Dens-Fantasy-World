@@ -21,6 +21,9 @@ add_ideas = {
 	volunteer_only
 	civilian_economy
         export_focus
+        ZFN_overpopulated_city
+        ZFN_forced_isolation
+        ZFN_the_mafia_problem
 }
 
 set_stability = 0.45

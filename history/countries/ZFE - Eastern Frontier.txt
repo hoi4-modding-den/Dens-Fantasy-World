@@ -21,6 +21,9 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
         closed_economy
+        ZFE_hamirawi_regime
+        ZFE_growing_liberation_sentiments
+        ZFE_legacy_of_december_purges
 }
 
 set_stability = 0.2

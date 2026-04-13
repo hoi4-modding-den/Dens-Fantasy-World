@@ -21,6 +21,9 @@ add_ideas = {
 	extensive_conscription
 	partial_economic_mobilisation
         closed_economy
+        ZFC_loss_of_main_patron
+        ZFC_tense_situation_on_border
+        ZFC_hard_hold_of_military
 }
 
 set_stability = 0.3

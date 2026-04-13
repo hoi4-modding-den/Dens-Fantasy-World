@@ -1,0 +1,66 @@
+ideas = {
+
+	country = {
+                   ZFN_overpopulated_city = {
+                           picture = FRA_scw_intervention_republicans_focus
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                                    monthly_population = 0.3
+                                    production_speed_buildings_factor = 0.1
+                                    local_resources_factor = -0.3
+                                    stability_weekly = -0.01
+                                    war_support_weekly = -0.005
+                                    drift_defence_factor = -0.2
+                                    democratic_drift = -0.02
+                                   
+			    }
+                  }
+
+                   ZFN_forced_isolation = {
+                           picture = FRA_scw_intervention_republicans_focus
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                                    min_export = -0.75
+                                    trade_opinion_factor = -0.5
+                                    research_speed_factor = -0.15
+                                    stability_factor = -0.1
+                                   
+			    }
+                  }
+
+                  ZFN_the_mafia_problem = {
+                           picture = FRA_scw_intervention_republicans_focus
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                                    neutrality_drift = 0.04
+                                    decryption_factor = -0.5
+                                    stability_factor = -0.1
+                                   
+			    }
+                   }
+         }
+}
