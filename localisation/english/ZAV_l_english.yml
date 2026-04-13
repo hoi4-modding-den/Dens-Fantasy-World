@@ -534,7 +534,21 @@
  ZAV_encounter_4.35.desc:0 "You quickly read the badge on the man's blazer, it seems he's a lieutenant. With a smirk, you simply retort \"As you can see Lieutenant, I am very much alive.\""
  ZAV_encounter_4.35.a:0 "And so it begins..."
 
- # BLESSINGS #
+ # BLESSINGS AND CURSES #
+
+ ZAV_veilkeeper_details_tt:0 "§LVeilkeeper stats§!\n\nLevel: [GetPlayerLevel]\n\nBlessings:\n[GetPlayerBlessingList]\nCurses:\n[GetPlayerCurseList]"
+
+ ZAV_player_level_0:0 "§6Wanderer§!"
+ ZAV_player_level_1:0 "§5Acolyte§!"
+ ZAV_player_level_2:0 "§4Vessel§!"
+ ZAV_player_level_3:0 "§3Exarch§!"
+ ZAV_player_level_4:0 "§2Demi-God§!"
+ ZAV_player_level_5:0 "§1Ascendant§!"
+ ZAV_player_level_6:0 "§0Deity§!"
+
+ ZAV_add_active_blessing_tt:0 "Gain the blessing §Y'[GetActiveBlessingName]' - [GetActiveBlessingTier]§!."
+
+ ZAV_blessing_list:0 "§Y[GetPlayerBlessingName] - [GetPlayerBlessingTier]§!\n[GetPlayerBlessingList]"
 
  ZAV_blessings_tier_1:0 "Tier I"
  ZAV_blessings_tier_2:0 "Tier II"
@@ -543,13 +557,20 @@
  ZAV_blessings_tier_5:0 "Tier V"
  ZAV_blessings_tier_6:0 "Tier VI"
 
- ZAV_add_active_blessing:0 "Gain the blessing §Y'[GetActiveBlessingName]' - [GetActiveBlessingTier]§!."
+ ZAV_blessing_1:0 "Pure of Heart"
+ ZAV_blessing_2:0 "Blazing Fire"
+ ZAV_blessing_3:0 "Visionary"
+ ZAV_blessing_4:0 "Lost One"
 
- ZAV_blessings_0:0 "None"
- ZAV_blessings_1:0 "Pure of Heart"
- ZAV_blessings_2:0 "Blazing Fire"
- ZAV_blessings_3:0 "Visionary"
- ZAV_blessings_4:0 "Lost One"
+ ZAV_add_active_curse_tt:0 "Gain the curse §R'[GetActiveCurseName]'§!."
+ ZAV_remove_active_curse_tt:0 "Lose the curse §R'[GetActiveCurseName]'§!."
+
+ ZAV_curse_list:0 "§R[GetPlayerCurseName]§!\n[GetPlayerCurseList]"
+
+ ZAV_curse_1:0 "§RCurse of the Bitten§!"
+ ZAV_curse_2:0 "§RCrimson Blight§!"
+ ZAV_curse_3:0 "§RDeath's Embrace§!"
+ ZAV_curse_4:0 "§RBlack Spores§!"
 
  # MISCELLANEOUS #
 

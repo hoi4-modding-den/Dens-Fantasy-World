@@ -1,4 +1,5 @@
 scripted_gui = {
+
     ### VAULT ###
 
     ZAV_vault_screen = {
@@ -20,6 +21,17 @@ scripted_gui = {
             }
 		}
 	}
+
+    ### VEILKEEPER DETAILS ###
+
+    ZAV_veilkeeper_details_screen = {
+        context_type = player_context
+		window_name = ZAV_topbar_veilkeeper_GUI
+
+        visible = {
+            original_tag = ZAV
+        }
+    }
 
     ### NOTEBOOK ###
 

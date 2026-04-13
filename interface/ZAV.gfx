@@ -16,6 +16,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ZAV/ZAV_secret_orders.dds"
 	}
 
+	# VEILKEEPER DETAILS #
+
+	spriteType = {
+		name = "GFX_ZAV_veilkeeper_details_button"
+		texturefile = "gfx/interface/ZAV/ZAV_veilkeeper_details.dds"
+	}
+
 	# NOTEBOOK #
 
 	spriteType = {

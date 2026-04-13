@@ -222,8 +222,42 @@ ZAV_add_new_order_of_true_knights_info = {
 
 ### BLESSINGS ###
 
-ZAV_add_active_blessing = {
-    custom_effect_tooltip = ZAV_add_active_blessing
+d_add_blessing = {
+    set_variable = { ZAV_active_blessing = args^0 }
 
-    set_variable = { ZAV_curr_blessing = ZAV_active_blessing }
+    custom_effect_tooltip = ZAV_add_active_blessing_tt
+
+    add_to_variable = { ZAV_player_level = 1 }
+
+    add_to_array = { ZAV_player_blessings = ZAV_active_blessing }
+}
+
+d_add_curse = {
+    add_to_array = { ZAV_player_curses = args^0 }
+}
+
+d_clear_player_data = {
+    set_variable = { ZAV_player_level = 0 }
+    clear_array = ZAV_player_blessings
+    clear_array = ZAV_player_curses
+}
+
+ZAV_add_active_blessing = {
+    custom_effect_tooltip = ZAV_add_active_blessing_tt
+
+    add_to_variable = { ZAV_player_level = 1 }
+
+    add_to_array = { ZAV_player_blessings = ZAV_active_blessing }
+}
+
+ZAV_add_active_curse = {
+    custom_effect_tooltip = ZAV_add_active_curse_tt
+
+    add_to_array = { ZAV_player_curses = ZAV_active_curse }
+}
+
+ZAV_remove_active_curse = {
+    custom_effect_tooltip = ZAV_remove_active_curse_tt
+
+    remove_from_array = { ZAV_player_curses = ZAV_active_curse }
 }

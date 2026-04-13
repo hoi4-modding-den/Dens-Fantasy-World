@@ -348,18 +348,118 @@ defined_text = {
 	}
 }
 
-### BLESSINGS ###
+### BLESSINGS AND CURSES ###
+
+defined_text = {
+	name = "GetPlayerLevel"
+	text = {
+		localization_key = "ZAV_player_level_[?ZAV_player_level]"
+	}
+}
 
 defined_text = {
 	name = "GetActiveBlessingName"
 	text = {
-		localization_key = "ZAV_blessings_[?ZAV_active_blessing]"
+		localization_key = "ZAV_blessing_[?ZAV_active_blessing]"
 	}
 }
 
 defined_text = {
 	name = "GetActiveBlessingTier"
 	text = {
-		localization_key = "ZAV_blessings_tier_[?ZAV_blessing_tiers^ZAV_active_blessing]"
+		trigger = {
+			check_variable = { ZAV_player_blessings^0 < 1 }
+		}
+
+		localization_key = "ZAV_blessings_tier_1"
+	}
+	text = {
+		trigger = {
+			check_variable = { ZAV_player_blessings^1 < 1 }
+		}
+
+		localization_key = "ZAV_blessings_tier_2"
+	}
+	text = {
+		trigger = {
+			check_variable = { ZAV_player_blessings^2 < 1 }
+		}
+
+		localization_key = "ZAV_blessings_tier_3"
+	}
+	text = {
+		trigger = {
+			check_variable = { ZAV_player_blessings^3 < 1 }
+		}
+
+		localization_key = "ZAV_blessings_tier_4"
+	}
+	text = {
+		trigger = {
+			check_variable = { ZAV_player_blessings^4 < 1 }
+		}
+
+		localization_key = "ZAV_blessings_tier_5"
+	}
+	text = {
+		localization_key = "ZAV_blessings_tier_6"
+	}
+}
+
+defined_text = {
+	name = "GetActiveCurseName"
+	text = {
+		localization_key = "ZAV_curse_[?ZAV_active_curse]"
+	}
+}
+
+defined_text = {
+    name = "GetPlayerBlessingList"
+    text = {
+        trigger = {
+            check_variable = { bidx < ZAV_player_blessings^num }
+            set_temp_variable = { bval = ZAV_player_blessings^bidx }
+            add_to_temp_variable = { bidx = 1 }
+        }
+        localization_key = "ZAV_blessing_list"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = "GetPlayerBlessingName"
+	text = {
+		localization_key = "ZAV_blessing_[?bval]"
+	}
+}
+
+defined_text = {
+	name = "GetPlayerBlessingTier"
+	text = {
+		localization_key = "ZAV_blessings_tier_[?bidx]"
+	}
+}
+
+defined_text = {
+    name = "GetPlayerCurseList"
+    text = {
+        trigger = {
+            check_variable = { cidx < ZAV_player_curses^num }
+            set_temp_variable = { cval = ZAV_player_curses^cidx }
+            add_to_temp_variable = { cidx = 1 }
+        }
+        localization_key = "ZAV_curse_list"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = "GetPlayerCurseName"
+	text = {
+		localization_key = "ZAV_curse_[?cval]"
 	}
 }
