@@ -5,4 +5,9 @@ spriteTypes = {
 		texturefile = "gfx/leaders/ZSP/portrait_ZSP_wizard_council.png"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_ZSP_ozymandias"
+		texturefile = "gfx/leaders/ZSP/portrait_ZSP_ozymandias.png"
+	}
+
 }

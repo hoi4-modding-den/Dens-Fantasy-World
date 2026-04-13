@@ -18,7 +18,7 @@ ideas = {
                 local_resources_factor = -0.9
                 production_speed_buildings_factor = -0.9
                 production_factory_max_efficiency_factor = -0.2
-                conscription = -0.01
+                conscription = -0.007
 			}
             
 		}

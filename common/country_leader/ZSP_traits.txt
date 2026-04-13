@@ -9,4 +9,12 @@ leader_traits = {
         random = no
     }
 
+    ZSP_wizard_king = {
+        
+        war_support_factor = 0.15
+        ZSP_mana_generation = 10
+
+        random = no
+    }
+
 }

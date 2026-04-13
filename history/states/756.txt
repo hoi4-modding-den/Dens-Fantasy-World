@@ -2,7 +2,7 @@
 state={
 	id=756
 	name="STATE_756"
-	manpower = 1
+	manpower = 103457 # ~100 K
 	
 	state_category = rural
 	#impassable = yes
@@ -11,9 +11,9 @@ state={
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
+		steel=20
 		tungsten=0
-		coal=0
+		coal=8
 	}
 
 	history={
@@ -28,11 +28,17 @@ state={
 			
 			
 		}
-		
+
+		victory_points = {
+			10539 1
+		}
+		victory_points = {
+			10540 2
+		}
 	}
 
 	provinces={
 		10538 10539 10540 10541 10542 10543 10544 
 	}
-	local_supplies=0.0 
+	local_supplies=0.2
 }

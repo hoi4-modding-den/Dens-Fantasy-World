@@ -2,9 +2,9 @@
 state={
 	id=591
 	name="STATE_591"
-	manpower = 1
+	manpower = 8743 # ~10 K
 	
-	state_category = rural
+	state_category = pastoral
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -27,6 +27,10 @@ state={
 			industrial_complex = 0
 			
 			
+		}
+
+		victory_points = {
+			8738 1
 		}
 		
 	}

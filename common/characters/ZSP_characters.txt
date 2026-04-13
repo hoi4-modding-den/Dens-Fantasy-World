@@ -15,4 +15,19 @@ characters = {
         }
     }
 
+    ZSP_ozymandias = { 
+        name = ZSP_ozymandias_name
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ZSP_ozymandias
+            }
+        }
+        
+        country_leader = {
+            ideology = tyrannical_magocracy
+            traits = { ZSP_wizard_king }
+            expire = "1960.1.1.1"
+        }
+    }
+
 }

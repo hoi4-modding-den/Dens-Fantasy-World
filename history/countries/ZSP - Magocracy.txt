@@ -1,4 +1,4 @@
-capital = 756
+capital = 601
 
 #oob = "ZSP_1936"
 
@@ -24,6 +24,7 @@ add_ideas = {
 }
 
 recruit_character = ZSP_wizard_council
+recruit_character = ZSP_ozymandias
 
 set_politics = {
 	ruling_party = fascism

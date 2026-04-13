@@ -30,11 +30,13 @@
 # CHARACTERS
 
  ZSP_wizard_council_name: "Highest Council"
+ ZSP_ozymandias_name: "Ozymandias"
 
 
 # TRAITS
 
  ZSP_united_in_purpose: "United in Purpose, Divided in Spirit"
+ ZSP_wizard_king: "The Wizard King"
 
 
 # IDEAS
@@ -66,3 +68,20 @@
  ZSP_use_50_mana: "Mana §Y50§!"
  ZSP_use_50_mana_blocked: "Mana §R50§!"
  ZSP_use_50_mana_tooltip: "It costs Mana §Y50§! to take the decision"
+
+
+# MAP STUFF
+
+ STATE_591: "Domizil"
+ STATE_601: "Düsterreich" # you're going to the shadow realm, Jimbo
+ STATE_703: "Ehrenfeld"
+ STATE_756: "Donnergebirge"
+ STATE_873: "Trümmerland"
+
+ VICTORY_POINTS_8738: "Strodtmannsstadt"
+ VICTORY_POINTS_8862: "Michelshof"
+ VICTORY_POINTS_8863: "Goldener Kompass"
+ VICTORY_POINTS_9952: "Hasen"
+ VICTORY_POINTS_10539: "Potzblitz"
+ VICTORY_POINTS_10540: "Donnerspitze"
+ VICTORY_POINTS_11569: "Sachsenhagen"
