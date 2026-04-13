@@ -220,7 +220,7 @@ guitypes = {
     }
 
     containerWindowType = {
-        name = "ZAV_encounter_image_vignette_GUI"
+        name = "ZAV_encounter_spooky_vignette_GUI"
         position = { x = 15 y = 15 }
         size = { width = 326 height = 270 }
         fade_time = 100000
@@ -236,6 +236,58 @@ guitypes = {
 			spriteType = "GFX_ZAV_blue_hue"
 			position = { x=0 y=0 }
 		}
+    }
+
+    containerWindowType = {
+        name = "ZAV_encounter_divine_good_vignette_GUI"
+        position = { x = 15 y = 15 }
+        size = { width = 326 height = 270 }
+        fade_time = 100000
+        fade_type = linear
+
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_ZAV_animated_vignette_good"
+        }
+    }
+
+    containerWindowType = {
+        name = "ZAV_encounter_divine_evil_vignette_GUI"
+        position = { x = 15 y = 15 }
+        size = { width = 326 height = 270 }
+        fade_time = 100000
+        fade_type = linear
+
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_ZAV_animated_vignette_evil"
+        }
+    }
+
+    containerWindowType = {
+        name = "ZAV_encounter_fog_vignette_GUI"
+        position = { x = 15 y = 15 }
+        size = { width = 326 height = 270 }
+        fade_time = 100000
+        fade_type = linear
+
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_ZAV_animated_vignette_fog"
+        }
+    }
+
+    containerWindowType = {
+        name = "ZAV_encounter_blood_vignette_GUI"
+        position = { x = 15 y = 15 }
+        size = { width = 326 height = 270 }
+        fade_time = 100000
+        fade_type = linear
+
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_ZAV_animated_vignette_blood"
+        }
     }
 
     containerWindowType = {

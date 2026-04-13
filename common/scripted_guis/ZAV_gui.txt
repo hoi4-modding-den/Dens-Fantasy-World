@@ -301,13 +301,53 @@ scripted_gui = {
         }
     }
 
-    ZAV_encounter_image_vignette = {
+    ZAV_encounter_spooky_vignette = {
         context_type = player_context
-        window_name = "ZAV_encounter_image_vignette_GUI"
+        window_name = "ZAV_encounter_spooky_vignette_GUI"
         parent_window_name = "ZAV_encounter_image_container"
 
         visible = {
             has_country_flag = ZAV_encounter_spooky
+        }
+    }
+
+    ZAV_encounter_divine_good_vignette = {
+        context_type = player_context
+        window_name = "ZAV_encounter_divine_good_vignette_GUI"
+        parent_window_name = "ZAV_encounter_image_container"
+
+        visible = {
+            has_country_flag = ZAV_encounter_divine_good
+        }
+    }
+
+    ZAV_encounter_divine_evil_vignette = {
+        context_type = player_context
+        window_name = "ZAV_encounter_divine_evil_vignette_GUI"
+        parent_window_name = "ZAV_encounter_image_container"
+
+        visible = {
+            has_country_flag = ZAV_encounter_divine_evil
+        }
+    }
+
+    ZAV_encounter_fog_vignette = {
+        context_type = player_context
+        window_name = "ZAV_encounter_fog_vignette_GUI"
+        parent_window_name = "ZAV_encounter_image_container"
+
+        visible = {
+            has_country_flag = ZAV_encounter_fog
+        }
+    }
+
+    ZAV_encounter_blood_vignette = {
+        context_type = player_context
+        window_name = "ZAV_encounter_blood_vignette_GUI"
+        parent_window_name = "ZAV_encounter_image_container"
+
+        visible = {
+            has_country_flag = ZAV_encounter_blood
         }
     }
 }

@@ -47,3 +47,20 @@ country_event = {
 		}
     }
 }
+
+country_event = {
+	id = ZAV_encounters.4
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		log = "ZAV_encounters.4 fired"
+
+		ZAV = {
+			set_variable = { ZAV_curr_encounter = 4 }
+			ZAV_effect_blood = yes
+			ZAV_start_encounter = yes
+		}
+    }
+}

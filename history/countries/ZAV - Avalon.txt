@@ -178,6 +178,18 @@ add_to_array = { artifact_classes = 5 }
 #add_to_array = { ZAV_vault_artifacts = 10 }
 add_to_array = { artifact_classes = 4 }
 
+
+### BLESSINGS ###
+
+add_to_array = { ZAV_blessing_tiers = 0 } # 0 indexed array to 1 indexed array
+add_to_array = { ZAV_blessing_tiers = 1 } # Pure of Heart
+add_to_array = { ZAV_blessing_tiers = 1 } # Blazing Fire
+add_to_array = { ZAV_blessing_tiers = 1 } # Visionary
+add_to_array = { ZAV_blessing_tiers = 1 } # Lost One
+
 country_event = { id = ZAV_encounters.1 days = 30 random_days = 15 }
 country_event = { id = ZAV_encounters.2 days = 60 random_days = 15 }
 country_event = { id = ZAV_encounters.3 days = 90 random_days = 15 }
+
+set_variable = { ZAV_curr_encounter = 4 }
+ZAV_start_encounter = yes

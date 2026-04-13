@@ -177,6 +177,8 @@
  ZAV_warding_talisman_obtained_tt:0 "\nWe have obtained the §YWarding Talisman§! which will be placed later in the §YVault of Saint Constantine§!."
  ZAV_blood_of_king_arthur_stolen_tt:0 "The §tBlood of King Arthur§! has been stolen from the §YVault of Saint Constantine§!!"
 
+ ZAV_your_journey_begins_in_this_world_tt:0 "§YYour journey in this world begins here.§!"
+
  # MYSTIC KNOWLEDGE #
 
  ZAV_open_notebook_text:0 "§8Veilkeeper Archives§!"
@@ -416,6 +418,140 @@
  ZAV_encounter_3.6.a:0 "..."
  ZAV_encounter_3.7.desc:0 "Further inspection of the scene yielded no new leads. Yet again you are forced to relinquish control of the situation to the guardian priests, who are eagerly searching for clues that would lead them to the perpetrators. The death of their comrade has deeply wounded them. It seems we have a new problem: the Bleeding King."
  ZAV_encounter_3.7.a:0 "..."
+
+ # INTRODUCTION #
+
+ ZAV_encounter_4.t:0 "Divinity beyond the Veil"
+
+ ZAV_encounter_4.1.desc:0 "Pain. Unending, relentless pain."
+ ZAV_encounter_4.1.a:0 "..."
+
+ ZAV_encounter_4.2.desc:0 "Not the dull ache of a wound, nor the sting of a blade. Something deeper. Something wrong."
+ ZAV_encounter_4.2.a:0 "..."
+
+ ZAV_encounter_4.3.desc:0 "It begins behind your eyes, a suffocating pressure, like fingers pressing inward from the inside of your skull. Your mind fractures and thoughts break before they can form."
+ ZAV_encounter_4.3.a:0 "..."
+
+ ZAV_encounter_4.4.desc:0 "Then a spike. A piercing white light blinds you... Your body jerks, lungs dragging in air that feels too thick, too heavy. Your chest burns as if you had forgotten how to breathe and only now remembered."
+ ZAV_encounter_4.4.a:0 "..."
+
+ ZAV_encounter_4.5.desc:0 "You are lying on something. Something cold, hard, unforgiving. Your fingers twitch. They do not feel like yours."
+ ZAV_encounter_4.5.a:0 "..."
+
+ ZAV_encounter_4.6.desc:0 "Sound comes next. Distant and indistinguishable at first, as if you were hearing the world through deep water. A slow, rhythmic drip... drip... drip... A terrible metronome for the waves of pain permeating your body."
+ ZAV_encounter_4.6.a:0 "..."
+
+ ZAV_encounter_4.7.desc:0 "You try to open your eyes, yet something resists. Not physically. It's something else. A weight, an ethereal presence. A pressure against your mind. The pain spikes harder, sharper this time."
+ ZAV_encounter_4.7.a:0 "..."
+
+ ZAV_encounter_4.8.desc:0 "Just before consciousness fully takes hold, you feel a pull. Not downward, not upward, but elsewhere. Your senses tear away from your body and the cold floor vanishes. Yet, you are finally able to open your eyes."
+ ZAV_encounter_4.8.a:0 "..."
+
+ ZAV_encounter_4.9.desc:0 "Mist. Or is it fog? Endless, pale, shifting clouds stretch in every direction. There is no ground, no sky. Only a boundless expanse, like the world had been erased and all that was left was silence. Yet you are not alone."
+ ZAV_encounter_4.9.a:0 "..."
+
+ ZAV_encounter_4.10.desc:0 "A light pierces the fog, an ancient presence, watching your every reaction. Not harsh, not blinding, but impossibly pure. The mist parts before it, giving way to a divine being."
+ ZAV_encounter_4.10.a:0 "..."
+
+ ZAV_encounter_4.11.desc:0 "And there she stands. No, there she hovers, drifting towards the surface of an unseen lake, reflecting the endless fog above it. As graceful as a swan landing in a calm pond."
+ ZAV_encounter_4.11.a:0 "..."
+
+ ZAV_encounter_4.12.desc:0 "A woman clad in flowing white, her dress drifting as though stirred by a wind that does not exist in this realm. Her form is clear, yet light bends around her. Her face is serene, ageless. Yet her eyes, you cannot look upon them."
+ ZAV_encounter_4.12.a:0 "..."
+
+ ZAV_encounter_4.13.desc:0 "\"You awaken... upon borrowed breath.\" her voice is not sound, it is meaning, placed gently but irresistibly in your mind. The fog stirs around her as she speaks again \"A thread severed, but given new opporunity.\""
+ ZAV_encounter_4.13.a:0 "..."
+
+ ZAV_encounter_4.14.desc:0 "She peers at you, as if rendering her judgment \"The current bends... and you have been carried here.\""
+ ZAV_encounter_4.14.a:0 "..."
+
+ ZAV_encounter_4.15.desc:0 "The light around her intensifies, faint ripples spread across the unseen water beneath her. \"I am she who dwells between reflection and depth. I am the keeper of still waters. Warden of the boundary that must not break.\""
+ ZAV_encounter_4.15.a:0 "..."
+
+ ZAV_encounter_4.16.desc:0 "\"In your toungue, I have been named Nimue.\" The name settles heavily in your mind. She speaks the truth, yet you cannot ignore the overwhelming sense of danger her words exude."
+ ZAV_encounter_4.16.a:0 "..."
+
+ ZAV_encounter_4.17.desc:0 "The lake beneath her trembles slightly, for a moment the reflection distorts. Something moves beneath the surface, something vast watching back. Her voice lowers. \"The Grail wanes.\""
+ ZAV_encounter_4.17.a:0 "..."
+
+ ZAV_encounter_4.18.desc:0 "\"The veil thins, and that which was sealed... listens.\" You notice the fog darkening at its edges. \"They press against the bounday. They hunger.\" She then pauses and with a somber voice she continues \"Avalon stands... but not for long.\""
+ ZAV_encounter_4.18.a:0 "..."
+
+ ZAV_encounter_4.19.desc:0 "Her gaze then turns fully towards you, for the first time you feel seen. Not your body, not your face, you. \"I do not walk your world. I do not touch its soil. I do not bleed... as you must.\""
+ ZAV_encounter_4.19.a:0 "..."
+
+ ZAV_encounter_4.20.desc:0 "The light around her sharpens as the unseen wind intensifies. \"I have chosen you to be my champion.\" Her words land like a verdict. An inexcapable shift in your fate. A command from a higher being."
+ ZAV_encounter_4.20.a:0 "..."
+
+ ZAV_encounter_4.21.desc:0 "The water ripples again, more violently this time. The shadows beneath it stir with greater intensity. Unformed shapes press against the surface, distorting it from below."
+ ZAV_encounter_4.21.a:0 "..."
+
+ ZAV_encounter_4.22.desc:0 "\"You will stand where I cannot. You will face what I deny. You will carry my will... into a world that forgets.\" The pressure returns, not a pain, but a weight. A responsibility."
+ ZAV_encounter_4.22.a:0 "..."
+
+ ZAV_encounter_4.23.desc:0 "Her form flickers slightly, becoming distant. \"Power is not given without consequence. A blessing binds as much as it grants.\" You feel the fog tighten around you."
+ ZAV_encounter_4.23.a:0 "..."
+
+ ZAV_encounter_4.24.desc:0 "\"Walk one path... and it shall shape you. Seek another... and you shall fracture.\" She utters a final, quiet warning \"To divide oneself between powers... is to invite corruption.\""
+ ZAV_encounter_4.24.a:0 "..."
+
+ ZAV_encounter_4.25.desc:0 "Her voice softens slightly, \"Before I place my mark upon you... you must answer.\" The fog stills. The lake becomes perfectly serene."
+ ZAV_encounter_4.25.a:0 "..."
+
+ ZAV_encounter_4.26.desc:0 "\"When the abyss gazes upon you... how do you respond?\""
+ ZAV_encounter_4.26.a:0 "I endure. I will not yield."
+ ZAV_encounter_4.26.b:0 "I strike back. It will bend to my will."
+ ZAV_encounter_4.26.c:0 "I gaze into the abyss. I will understand it."
+
+ ZAV_encounter_4.27.desc:0 "\"What is your place in this world?\""
+ ZAV_encounter_4.27.a:0 "I am to be your shield."
+ ZAV_encounter_4.27.b:0 "I am to be their ruler."
+ ZAV_encounter_4.27.c:0 "I am to be the unseen hand."
+
+ ZAV_encounter_4.28.desc:0 "\"Do you fear what lies beyond the veil?\""
+ ZAV_encounter_4.28.a:0 "Yes, but I remain."
+ ZAV_encounter_4.28.b:0 "No. I will be its master."
+ ZAV_encounter_4.28.c:0 "...I do not yet know."
+
+ ZAV_encounter_4.29.desc:0 "She raises her hand. The light intensifies, illuminating every corner of the fog. It pierces through you and the pain returns, sharper than before. But now, it carries something else. Something within it."
+ ZAV_encounter_4.29.a:0 "..."
+
+ ZAV_encounter_4.30.desc:0 "As your vision fades, she utters her final words to you \"Then rise...\" The lake fractures into light. \"My champion of Avalon.\""
+ ZAV_encounter_4.30.a:0 "..."
+
+ ZAV_encounter_4.31.desc:0 "The cold floor returns and you find yourself staring at an ornate ceiling. Possibly in a cathedral? Sitting up, you confirm that you are not in your own body. You have been placed in something else."
+ ZAV_encounter_4.31.a:0 "..."
+
+ ZAV_encounter_4.32.desc:0 "After searching the pockets of your blazer, you find a wallet and an identification card.\n\n\"Elias Thorne - Velikeeper\""
+ ZAV_encounter_4.32.a:0 "What is a Veikeeper?"
+
+ ZAV_encounter_4.33.desc:0 "You sit up in the leather chair besides the large mahogany desk that sits in front of the only window in the room. Moments after you do, a man bursts through the double doors directly in front of you."
+ ZAV_encounter_4.33.a:0 "..."
+
+ ZAV_encounter_4.34.desc:0 "There's no going back. You must play the part. You peer at the man in the center of the room and ask \"Yes?\" A frightened look is on his face, as though he is seeing the impossible. He hurriedly answers \"Sir... you were dead just a minute ago.\""
+ ZAV_encounter_4.34.a:0 "..."
+
+ ZAV_encounter_4.35.desc:0 "You quickly read the badge on the man's blazer, it seems he's a lieutenant. With a smirk, you simply retort \"As you can see Lieutenant, I am very much alive.\""
+ ZAV_encounter_4.35.a:0 "And so it begins..."
+
+ # BLESSINGS #
+
+ ZAV_blessings_tier_1:0 "Tier I"
+ ZAV_blessings_tier_2:0 "Tier II"
+ ZAV_blessings_tier_3:0 "Tier III"
+ ZAV_blessings_tier_4:0 "Tier IV"
+ ZAV_blessings_tier_5:0 "Tier V"
+ ZAV_blessings_tier_6:0 "Tier VI"
+
+ ZAV_add_active_blessing_1:0 "Gain the blessing §Y'[GetActiveBlessing1Name]' - [GetActiveBlessing1Tier]§!."
+ ZAV_add_active_blessing_2:0 "Gain the blessing §Y'[GetActiveBlessing2Name]' - [GetActiveBlessing2Tier]§!."
+ ZAV_add_active_blessing_3:0 "Gain the blessing §Y'[GetActiveBlessing3Name]' - [GetActiveBlessing3Tier]§!."
+ ZAV_add_active_blessing_4:0 "Gain the blessing §Y'[GetActiveBlessing4Name]' - [GetActiveBlessing4Tier]§!."
+
+ ZAV_blessings_1:0 "Pure of Heart"
+ ZAV_blessings_2:0 "Blazing Fire"
+ ZAV_blessings_3:0 "Visionary"
+ ZAV_blessings_4:0 "Lost One"
 
  # MISCELLANEOUS #
 

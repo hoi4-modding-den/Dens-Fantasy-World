@@ -188,6 +188,46 @@ spriteTypes = {
 		texturefile = "gfx/interface/ZAV/encounters/BlueHue.dds"
 	}
 
+	frameAnimatedSpriteType = {
+        name = "GFX_ZAV_animated_vignette_good"
+        texturefile = "gfx/interface/ZAV/encounters/AnimatedVignetteGood.dds"
+
+		looping = yes
+        noOfFrames = 32
+        animation_rate_fps = 10
+        play_on_show = yes
+    }
+
+	frameAnimatedSpriteType = {
+        name = "GFX_ZAV_animated_vignette_evil"
+        texturefile = "gfx/interface/ZAV/encounters/AnimatedVignetteEvil.dds"
+
+		looping = yes
+        noOfFrames = 32
+        animation_rate_fps = 10
+        play_on_show = yes
+    }
+
+	frameAnimatedSpriteType = {
+        name = "GFX_ZAV_animated_vignette_fog"
+        texturefile = "gfx/interface/ZAV/encounters/AnimatedVignetteFog.dds"
+
+		looping = yes
+        noOfFrames = 32
+        animation_rate_fps = 10
+        play_on_show = yes
+    }
+
+	frameAnimatedSpriteType = {
+        name = "GFX_ZAV_animated_vignette_blood"
+        texturefile = "gfx/interface/ZAV/encounters/AnimatedVignetteBlood2.dds"
+
+		looping = yes
+        noOfFrames = 20
+        animation_rate_fps = 10
+        play_on_show = yes
+    }
+
 	spriteType = {
 		name = "GFX_ZAV_encounter_image_1"
 		texturefile = "gfx/interface/ZAV/encounters/BlackridgeMansion.dds"
@@ -211,6 +251,31 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ZAV_encounter_image_3_1"
 		texturefile = "gfx/interface/ZAV/encounters/NiceParlor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_encounter_image_4"
+		texturefile = "gfx/interface/ZAV/encounters/Intro1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_encounter_image_4_1"
+		texturefile = "gfx/interface/ZAV/encounters/Intro2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_encounter_image_4_2"
+		texturefile = "gfx/interface/ZAV/encounters/Intro3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_encounter_image_4_3"
+		texturefile = "gfx/interface/ZAV/encounters/Intro4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_encounter_image_4_4"
+		texturefile = "gfx/interface/ZAV/encounters/Intro5.dds"
 	}
 
 	# MISC #
