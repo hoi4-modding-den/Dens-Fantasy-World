@@ -543,11 +543,9 @@
  ZAV_blessings_tier_5:0 "Tier V"
  ZAV_blessings_tier_6:0 "Tier VI"
 
- ZAV_add_active_blessing_1:0 "Gain the blessing §Y'[GetActiveBlessing1Name]' - [GetActiveBlessing1Tier]§!."
- ZAV_add_active_blessing_2:0 "Gain the blessing §Y'[GetActiveBlessing2Name]' - [GetActiveBlessing2Tier]§!."
- ZAV_add_active_blessing_3:0 "Gain the blessing §Y'[GetActiveBlessing3Name]' - [GetActiveBlessing3Tier]§!."
- ZAV_add_active_blessing_4:0 "Gain the blessing §Y'[GetActiveBlessing4Name]' - [GetActiveBlessing4Tier]§!."
+ ZAV_add_active_blessing:0 "Gain the blessing §Y'[GetActiveBlessingName]' - [GetActiveBlessingTier]§!."
 
+ ZAV_blessings_0:0 "None"
  ZAV_blessings_1:0 "Pure of Heart"
  ZAV_blessings_2:0 "Blazing Fire"
  ZAV_blessings_3:0 "Visionary"

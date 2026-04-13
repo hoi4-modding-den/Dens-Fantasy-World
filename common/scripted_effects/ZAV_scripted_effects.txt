@@ -222,26 +222,8 @@ ZAV_add_new_order_of_true_knights_info = {
 
 ### BLESSINGS ###
 
-ZAV_add_active_blessing1 = {
-    custom_effect_tooltip = ZAV_add_active_blessing_1
+ZAV_add_active_blessing = {
+    custom_effect_tooltip = ZAV_add_active_blessing
 
-    # TODO: Add some way to represent blessings later
-}
-
-ZAV_add_active_blessing2 = {
-    custom_effect_tooltip = ZAV_add_active_blessing_2
-
-    # TODO: Add some way to represent blessings later
-}
-
-ZAV_add_active_blessing3 = {
-    custom_effect_tooltip = ZAV_add_active_blessing_3
-
-    # TODO: Add some way to represent blessings later
-}
-
-ZAV_add_active_blessing4 = {
-    custom_effect_tooltip = ZAV_add_active_blessing_4
-
-    # TODO: Add some way to represent blessings later
+    set_variable = { ZAV_curr_blessing = ZAV_active_blessing }
 }

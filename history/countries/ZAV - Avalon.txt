@@ -181,6 +181,9 @@ add_to_array = { artifact_classes = 4 }
 
 ### BLESSINGS ###
 
+set_variable = { ZAV_curr_blessing = 0 }
+set_variable = { ZAV_active_blessing = 0 }
+
 add_to_array = { ZAV_blessing_tiers = 0 } # 0 indexed array to 1 indexed array
 add_to_array = { ZAV_blessing_tiers = 1 } # Pure of Heart
 add_to_array = { ZAV_blessing_tiers = 1 } # Blazing Fire

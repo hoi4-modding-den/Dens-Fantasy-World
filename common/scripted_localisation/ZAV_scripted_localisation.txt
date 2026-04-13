@@ -351,57 +351,15 @@ defined_text = {
 ### BLESSINGS ###
 
 defined_text = {
-	name = "GetActiveBlessing1Name"
+	name = "GetActiveBlessingName"
 	text = {
-		localization_key = "ZAV_blessings_[?ZAV_active_blessing1]"
+		localization_key = "ZAV_blessings_[?ZAV_active_blessing]"
 	}
 }
 
 defined_text = {
-	name = "GetActiveBlessing1Tier"
+	name = "GetActiveBlessingTier"
 	text = {
-		localization_key = "ZAV_blessings_tier_[?ZAV_blessing_tiers^ZAV_active_blessing1]"
-	}
-}
-
-defined_text = {
-	name = "GetActiveBlessing2Name"
-	text = {
-		localization_key = "ZAV_blessings_[?ZAV_active_blessing2]"
-	}
-}
-
-defined_text = {
-	name = "GetActiveBlessing2Tier"
-	text = {
-		localization_key = "ZAV_blessings_tier_[?ZAV_blessing_tiers^ZAV_active_blessing2]"
-	}
-}
-
-defined_text = {
-	name = "GetActiveBlessing3Name"
-	text = {
-		localization_key = "ZAV_blessings_[?ZAV_active_blessing3]"
-	}
-}
-
-defined_text = {
-	name = "GetActiveBlessing3Tier"
-	text = {
-		localization_key = "ZAV_blessings_tier_[?ZAV_blessing_tiers^ZAV_active_blessing3]"
-	}
-}
-
-defined_text = {
-	name = "GetActiveBlessing4Name"
-	text = {
-		localization_key = "ZAV_blessings_[?ZAV_active_blessing4]"
-	}
-}
-
-defined_text = {
-	name = "GetActiveBlessing4Tier"
-	text = {
-		localization_key = "ZAV_blessings_tier_[?ZAV_blessing_tiers^ZAV_active_blessing4]"
+		localization_key = "ZAV_blessings_tier_[?ZAV_blessing_tiers^ZAV_active_blessing]"
 	}
 }

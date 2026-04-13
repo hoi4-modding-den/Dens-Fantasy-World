@@ -265,6 +265,7 @@ ZAV_encounter_option_1_effect = {
             set_variable = { ZAV_intro_heart = 0 }
             set_variable = { ZAV_intro_fire = 0 }
             set_variable = { ZAV_intro_vision = 0 }
+            set_variable = { ZAV_active_blessing = 4 }
 
             ZAV_3_option = yes
         }
@@ -283,40 +284,20 @@ ZAV_encounter_option_1_effect = {
 
             add_to_variable = { ZAV_intro_heart = 1 }
 
-            set_variable = { ZAV_active_blessing1 = 1 }
-            set_variable = { ZAV_active_blessing2 = 2 }
-            set_variable = { ZAV_active_blessing3 = 3 }
-            set_variable = { ZAV_active_blessing4 = 4 }
+            if = {
+                limit = {
+                    check_variable = { ZAV_intro_heart > 1 }
+                }
+
+                set_variable = { ZAV_active_blessing = 1 }
+            }
 
             ZAV_1_option = yes
         }
         else_if = {
             limit = { check_variable = { ZAV_curr_entry = 29 } }
 
-            if = {
-                limit = {
-                    check_variable = { ZAV_intro_heart > 1 }
-                }
-
-                ZAV_add_active_blessing1 = yes
-            }
-            else_if = {
-                limit = {
-                    check_variable = { ZAV_intro_fire > 1 }
-                }
-
-                ZAV_add_active_blessing2 = yes
-            }
-            else_if = {
-                limit = {
-                    check_variable = { ZAV_intro_vision > 1 }
-                }
-
-                ZAV_add_active_blessing3 = yes
-            }
-            else = {
-                ZAV_add_active_blessing4 = yes
-            }
+            ZAV_add_active_blessing = yes
         }
         else_if = {
             limit = { check_variable = { ZAV_curr_entry = 30 } }
@@ -407,10 +388,13 @@ ZAV_encounter_option_2_effect = {
 
             add_to_variable = { ZAV_intro_fire = 1 }
 
-            set_variable = { ZAV_active_blessing1 = 1 }
-            set_variable = { ZAV_active_blessing2 = 2 }
-            set_variable = { ZAV_active_blessing3 = 3 }
-            set_variable = { ZAV_active_blessing4 = 4 }
+            if = {
+                limit = {
+                    check_variable = { ZAV_intro_fire > 1 }
+                }
+
+                set_variable = { ZAV_active_blessing = 2 }
+            }
 
             ZAV_1_option = yes
             set_temp_variable = { next_entry = 29 }
@@ -447,10 +431,13 @@ ZAV_encounter_option_3_effect = {
 
             add_to_variable = { ZAV_intro_vision = 1 }
 
-            set_variable = { ZAV_active_blessing1 = 1 }
-            set_variable = { ZAV_active_blessing2 = 2 }
-            set_variable = { ZAV_active_blessing3 = 3 }
-            set_variable = { ZAV_active_blessing4 = 4 }
+            if = {
+                limit = {
+                    check_variable = { ZAV_intro_vision > 2 }
+                }
+
+                set_variable = { ZAV_active_blessing = 3 }
+            }
 
             ZAV_1_option = yes
             set_temp_variable = { next_entry = 29 }
