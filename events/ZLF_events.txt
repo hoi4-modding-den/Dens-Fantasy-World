@@ -231,17 +231,30 @@ country_event = { # First Elections
 
 	option = { # Socialist Party (Sozialistische Partei - SP)
 		name = ZLF_post_cw_events.6.a
-		
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			name = ZLF_democratic_party_sp
+			long_name = ZLF_democratic_party_sp_long
+		}
 	}
 
 	option = { # National Democratic Party (Nationaldemokratische Partei von Gardenien - NDPvG)
 		name = ZLF_post_cw_events.6.b
-		
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			name = ZLF_democratic_party
+			long_name = ZLF_democratic_party_long
+		}
 	}
 
-	option = { # Constitutional Party (Konstitutionelle Partei - KP)
+	option = { # Radical Transformative Party (Radikale Transformative Partei - RTP)
 		name = ZLF_post_cw_events.6.c
-		
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
 	}
 }
 

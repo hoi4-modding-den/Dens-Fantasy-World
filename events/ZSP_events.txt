@@ -1,4 +1,5 @@
 add_namespace = ZSP_start_events
+add_namespace = ZSP_news_events
 
 country_event = { # Knights are dead
 	id = ZSP_start_events.1
@@ -155,5 +156,49 @@ country_event = { # Mage War - Goldener Kompass
         custom_effect_tooltip = generic_skip_one_line_tt
 
         set_capital = { state = 601 }
+	}
+}
+
+news_event = { # Shadow Incursion NEWS
+	id = ZSP_news_events.1
+	title = ZSP_news_events.1.t
+	desc = {
+		text = ZSP_news_events.1.desc_no_cw
+		trigger = {
+			ZLF = { has_civil_war = no }
+		}
+	}
+	desc = { 
+		text = ZSP_news_events.1.desc_cw
+		trigger = {
+			ZLF = { has_civil_war = yes }
+		}
+	}
+	picture = GFX_news_event_002
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ZSP_news_events.1.a
+		trigger = { 
+			tag = ZSP 
+		}
+	}
+
+	option = {
+		name = ZSP_news_events.1.b
+		trigger = { 
+			NOT = { tag = ZSP } 
+			has_war_with = ZSP
+		}
+	}
+
+	option = {
+		name = ZSP_news_events.1.c
+		trigger = { 
+			NOT = { tag = ZSP } 
+			NOT = { has_war_with = ZSP }
+		}
 	}
 }

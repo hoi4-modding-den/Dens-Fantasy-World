@@ -139,6 +139,10 @@
  ZSP_full_control_over_the_realm_desc: ""
  ZSP_heed_the_shadows_call: "And You Will Obey Me"
  ZSP_heed_the_shadows_call_desc: ""
+ ZSP_crush_nationalism: "The Folly of the Nation-State"
+ ZSP_crush_nationalism_desc: ""
+ ZSP_control_the_people: "Under My Spell"
+ ZSP_control_the_people_desc: ""
 
 
 # EVENTS
@@ -170,6 +174,15 @@
  ZSP_start_events.7.t: "My Name is Ozymandias, King of Kings"
  ZSP_start_events.7.desc: "As I took my rightful place on the Purple Throne in the Great Temple of the Golden Compass, all I could think of was my next step. How could I enjoy my victory when I was still surrounded by my enemies?"
  ZSP_start_events.7.a: "Look on my works, ye Mighty, and despair!"
+
+
+ ZSP_news_events.1.t: "Shadow Incursion into Gardenia"
+ ZSP_news_events.1.desc: "The Alstroemerian Magocracy - now named the Realm of Shadows - under leadership of the Sorcerer Ozymandias has launched an invasion of Gardenia with the supposed goal of 'restoring' rightful control over the region."
+ ZSP_news_events.1.desc_no_cw: "Fragile peace in Gardenia has been interrupted with the beginning of an incursion from the Alstroemerian region.\n \n$ZSP_news_events.1.desc$"
+ ZSP_news_events.1.desc_cw: "The Gardenian Civil War has been disrupted with the beginning of an incursion from the Alstroemerian region.\n \n$ZSP_news_events.1.desc$"
+ ZSP_news_events.1.a: "Fall before the Might of Ozymandias!"
+ ZSP_news_events.1.b: "Get into defensive positions!"
+ ZSP_news_events.1.c: "Great. More power-hungry lunatics."
 
 
 # TECH/EQUIPMENT NAMES

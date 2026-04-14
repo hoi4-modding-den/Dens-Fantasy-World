@@ -30,6 +30,7 @@ leader_traits = {
         
         ZSP_mana_generation = 15
         breakthrough_factor = 0.1
+        ai_focus_aggressive_factor = 1
 
         random = no
     }
@@ -38,6 +39,7 @@ leader_traits = {
         
         ZSP_mana_generation = 15
         army_org_factor = 0.1
+        ai_focus_aggressive_factor = 1
 
         random = no
     }

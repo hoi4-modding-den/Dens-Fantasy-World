@@ -434,6 +434,19 @@ focus_tree={
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_ideas = ZSP_monster_army
+
+			hidden_effect = {
+				if = {
+					limit = { is_ai = yes }
+					every_controlled_state = {
+						create_unit = {
+							division = "name = \"Monster Horde\" division_template = \"Monster Horde\" start_experience_factor = 0.1 start_equipment_factor = 0.1 start_manpower_factor = 0.1"
+							count = 1
+							owner = ROOT
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -449,7 +462,7 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 5 # worst path
+            base = 0 # worst path
         }
 		
 		available = {
@@ -677,7 +690,7 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 20 # AI is better at throwing bodies at the front
         }
 		
 		available = {
@@ -837,6 +850,19 @@ focus_tree={
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_ideas = ZSP_zombie_army
+
+			hidden_effect = {
+				if = {
+					limit = { is_ai = yes }
+					every_controlled_state = {
+						create_unit = {
+							division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.1 start_equipment_factor = 0.1 start_manpower_factor = 0.1"
+							count = 1
+							owner = ROOT
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -884,7 +910,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZSP_full_control_over_the_realm
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -918,15 +944,6 @@ focus_tree={
 			}
         }
 
-		bypass_effect = {
-			every_state = {
-				limit = {
-					region = 34
-				}
-				add_core_of = ROOT
-			}
-		}
-
 		will_lead_to_war_with = ZKN
 		will_lead_to_war_with = ZLF
 		
@@ -956,8 +973,66 @@ focus_tree={
 				}
 			}
 
-			custom_effect_tooltip = generic_skip_one_line_tt
+			hidden_effect = {
+				news_event = ZSP_news_events.1
+			}
+		}
+	}
 
+	focus = {
+		id = ZSP_crush_nationalism
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZSP_heed_the_shadows_call }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = ZSP_heed_the_shadows_call
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			has_war = no
+        }
+
+		bypass = {
+			
+        }
+
+		
+		completion_reward = {
+			add_stability = 0.15
+		}
+	}
+
+	focus = {
+		id = ZSP_control_the_people
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZSP_heed_the_shadows_call }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZSP_heed_the_shadows_call
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			has_war = no
+        }
+
+		bypass = {
+			
+        }
+
+		
+		completion_reward = {
 			every_state = {
 				limit = {
 					region = 34

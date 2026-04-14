@@ -32,9 +32,9 @@
  ZLF_democratic_party_sp: "SP"
  ZLF_democratic_party_sp_long: "Socialist Party"
  ZLF_democratic_party_gkp: "GKP"
- ZLF_democratic_party_gkp_long: "Gardenian Constitutional Party"
+ ZLF_democratic_party_gkp_long: "Gardenian Constitutional Party" # opposition only
  ZLF_communism_party: "RTP"
- ZLF_communism_party_long: "Radical Transformation Party"
+ ZLF_communism_party_long: "Radical Transformative Party"
  ZLF_fascism_party: "PGE"
  ZLF_fascism_party_long: "Party for Gardenian Regeneration"
 
@@ -198,7 +198,7 @@
  ZLF_post_cw_events.6.desc: "WIP"
  ZLF_post_cw_events.6.a: "The Sozialistische Partei wins the mandate!"
  ZLF_post_cw_events.6.b: "The NDRvG manages to convince the people!"
- ZLF_post_cw_events.6.c: "The Konstitutionelle Partei "
+ ZLF_post_cw_events.6.c: "The Radical Transformative Party somehow wins?"
 
  ZLF_post_cw_events.7.t: "Rebuilding the Nation"
  ZLF_post_cw_events.7.desc: "WIP"

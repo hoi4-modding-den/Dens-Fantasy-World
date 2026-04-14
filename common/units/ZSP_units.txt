@@ -34,7 +34,7 @@ sub_units = {
         training_time = 30
 		suppression = 1
 		weight = 0.5
-		supply_consumption = 0.05
+		supply_consumption = 0.02
 
 		casualty_trickleback = 0.05
 		experience_loss_factor = -0.05
@@ -86,7 +86,7 @@ sub_units = {
         training_time = 60
 		suppression = 3
 		weight = 0.5
-		supply_consumption = 0.1
+		supply_consumption = 0.05
 
 		need = {
 			infantry_equipment = 100
