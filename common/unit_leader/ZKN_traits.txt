@@ -34,4 +34,36 @@ leader_traits = {
 			factor = 0
 		}
 	}
+
+	ZKN_vampire_commander = {
+		type = land
+
+		trait_type = personality_trait
+
+		allowed = {
+			FROM = { original_tag = ZKN }
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+
+		modifier = {
+			experience_gain_factor = 0.15
+			army_morale_factor = -0.02
+			max_planning = 0.1
+			breakthrough_factor = 0.1
+			wounded_chance_factor = -0.5
+		}
+
+		corps_commander_modifier = {
+			max_commander_army_size = 6
+		}
+		field_marshal_modifier = {
+			max_army_group_size = 1
+		}
+
+		attack_skill = 1
+		defense_skill = 1
+	}
 }

@@ -195,7 +195,7 @@ ZTC_balance_of_power_category = {
 
 }
 
-political_actions = {
+foreign_politics = {
 
     ZTC_form_southern_democratic_bloc = {
         
@@ -231,11 +231,11 @@ political_actions = {
                                 has_government = democratic
                                 AND = {
                                     has_government = communism
-                                    tag = ZLF
                                     ROOT = { has_completed_focus = ZTC_embrace_social_democracy }
                                 }
                             }
                         }
+                        exist = no
                     }
                 }
             }
@@ -261,19 +261,9 @@ political_actions = {
         fire_only_once = yes
 
         complete_effect = {
-            every_country = {
-                limit = {
-                    is_ally_with = ROOT
-                    OR = {
-                        has_government = democratic
-                        AND = {
-                            has_government = communism
-                            tag = ZLF
-                            ROOT = { has_completed_focus = ZTC_embrace_social_democracy }
-                        }
-                    }
-                }
-                add_ideas = ZTC_southern_democratic_bloc_spirit
+            swap_ideas = {
+                remove_idea = ZCT_democratic_defence
+                add_idea = ZTC_southern_democratic_bloc_spirit
             }
         }
     }
@@ -318,7 +308,22 @@ political_actions = {
         fire_only_once = yes
 
         complete_effect = {
-            # demand the creation of a puppet there
+            add_state_core = 885
+            add_state_core = 568
+            add_state_core = 653
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            if = {
+                limit = {
+                    NOT = { owns_state = 885 }
+                }
+                885 = {
+                    owner = {
+                        country_event = ZTC_events.16
+                    }
+                }
+            }
         }
     }
 
@@ -364,6 +369,77 @@ political_actions = {
 
         complete_effect = {
             # demand the states
+        }
+    }
+
+    ZTC_corporate_interest_zone_territories = {
+        
+        icon = generic_form_nation
+
+        allowed = {
+            original_tag = ZTC
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+
+        available = {
+            has_government = fascism
+            is_subject = no
+            always = no
+        }
+
+        highlight_states = {
+            highlight_states_trigger = { 
+                OR = {
+                    state = 891
+                    state = 575
+                    state = 700
+                    state = 641
+                    state = 725
+                    state = 860
+                    state = 723
+                    state = 673
+                    state = 753
+                    state = 755
+                    state = 830
+                    state = 620
+                    state = 754
+                    state = 744
+                    state = 758
+                    state = 603
+                    state = 702
+                    state = 762
+                    state = 885
+                    state = 568
+                    state = 653
+                    state = 878
+                    state = 807
+                    state = 570
+                    state = 655
+                    state = 832
+                    state = 634
+                    state = 812
+                    state = 833
+                    state = 57
+                    state = 353
+                    state = 121
+
+                    state = 749
+                    state = 1239
+                }
+            }
+        }
+
+        visible = {
+            has_government = fascism
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            
         }
     }
 

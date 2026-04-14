@@ -1,0 +1,970 @@
+focus_tree={
+
+	id = ZSP_focus_tree
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZSP
+			has_government = fascism
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 3000 y = 300 }
+
+	focus = {
+		id = ZSP_the_competition
+		icon = GFX_goal_generic_national_unity
+        #prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 10
+		y = 0
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			swap_ideas = {
+                remove_idea = ZSP_tower_rivalry
+                add_idea = ZSP_tower_rivalry_2
+            }
+		}
+	}
+
+    focus = {
+		id = ZSP_send_out_the_order
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+        prerequisite = { focus = ZSP_the_competition }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = ZSP_the_competition
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			hidden_trigger = {
+				NOT = { has_template = "Ritterorden" }
+			}
+        }
+		
+		completion_reward = {
+			country_event = ZSP_start_events.1
+		}
+	}
+
+    focus = {
+		id = ZSP_plot_in_the_shadows
+		icon = GFX_focus_NOR_lurk_in_the_shadows
+        prerequisite = { focus = ZSP_the_competition }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZSP_the_competition
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			country_event = ZSP_start_events.2
+		}
+	}
+
+    focus = {
+		id = ZSP_a_declaration_of_intentions
+		icon = GFX_goal_generic_forceful_treaty
+        prerequisite = { focus = ZSP_send_out_the_order }
+        prerequisite = { focus = ZSP_plot_in_the_shadows }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = ZSP_the_competition
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            country_event = ZSP_start_events.3
+		}
+	}
+
+    focus = {
+		id = ZSP_trick_the_sternenwaerter
+		icon = GFX_focus_generic_strike_at_democracy3
+        prerequisite = { focus = ZSP_a_declaration_of_intentions }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = ZSP_a_declaration_of_intentions
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            controls_state = 873
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			country_event = ZSP_start_events.4
+		}
+	}
+
+    focus = {
+		id = ZSP_march_on_the_nebelturm
+		icon = GFX_focus_generic_strike_at_democracy1
+        prerequisite = { focus = ZSP_a_declaration_of_intentions }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZSP_a_declaration_of_intentions
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 0
+			modifier = {
+				add = 10
+				has_completed_focus = ZSP_trick_the_sternenwaerter
+				has_completed_focus = ZSP_cast_fire_upon_iron
+			}
+        }
+		
+		available = {
+            controls_state = 703
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            country_event = ZSP_start_events.5
+		}
+	}
+
+    focus = {
+		id = ZSP_cast_fire_upon_iron
+		icon = GFX_focus_RAJ_bathe_in_hellfire
+        prerequisite = { focus = ZSP_a_declaration_of_intentions }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = ZSP_a_declaration_of_intentions
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            controls_state = 591
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            country_event = ZSP_start_events.6
+		}
+	}
+
+    focus = {
+		id = ZSP_retake_the_golden_compass
+		icon = GFX_goal_generic_more_territorial_claims
+        prerequisite = { focus = ZSP_trick_the_sternenwaerter }
+        prerequisite = { focus = ZSP_march_on_the_nebelturm }
+        prerequisite = { focus = ZSP_cast_fire_upon_iron }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = ZSP_a_declaration_of_intentions
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            controls_state = 601
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            country_event = ZSP_start_events.7
+		}
+	}
+
+	focus = {
+		id = ZSP_master_of_monsters
+		icon = GFX_focus_generic_swooping_falcon
+        prerequisite = { focus = ZSP_retake_the_golden_compass }
+		mutually_exclusive = { focus = ZSP_benevolent_tyrant focus = ZSP_restless_magocrat }
+		x = -3
+		y = 1
+		relative_position_id = ZSP_retake_the_golden_compass
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			add_trait = {
+				character = ZSP_ozymandias
+				ideology = tyrannical_magocracy
+				trait = ZSP_moster_summoner
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+            custom_effect_tooltip = ZSP_master_of_monsters_tt
+
+			hidden_effect = {
+				division_template = {
+					name = "Monster Horde"
+					is_locked = yes
+					force_allow_recruiting = yes
+					template_counter = 35
+					division_names_group = ZSP_INF_03
+					regiments = {
+						monster_horde = { x = 0 y = 0 }
+						monster_horde = { x = 0 y = 1 }
+						monster_horde = { x = 0 y = 2 }
+						monster_horde = { x = 1 y = 0 }
+						monster_horde = { x = 1 y = 1 }
+						monster_horde = { x = 1 y = 2 }
+						monster_horde = { x = 2 y = 0 }
+						monster_horde = { x = 2 y = 1 }
+						monster_horde = { x = 2 y = 2 }
+					}
+					support = {
+						
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Monster Horde\" division_template = \"Monster Horde\" start_experience_factor = 0.1 start_equipment_factor = 0.1 start_manpower_factor = 0.1"
+						count = 5
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_raid_the_villages
+		icon = GFX_focus_generic_provoke_border_clashes
+        prerequisite = { focus = ZSP_master_of_monsters }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZSP_master_of_monsters
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            every_core_state = {
+				limit = {
+					is_capital = no
+					is_controlled_by = ROOT
+				}
+				add_manpower = -1500
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			capital_scope = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = { is_ai = yes }
+				activate_mission = ZSP_monster_hordes_growing
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_slave_economy # slavery is bad btw
+		icon = GFX_focus_CZE_german_puppet
+        prerequisite = { focus = ZSP_raid_the_villages }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZSP_raid_the_villages
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            add_ideas = ZSP_slavery
+		}
+	}
+
+	focus = {
+		id = ZSP_arm_the_monsters
+		icon = GFX_goal_generic_small_arms
+        prerequisite = { focus = ZSP_slave_economy }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZSP_slave_economy
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			set_grand_doctrine = mass_assault
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_ideas = ZSP_monster_army
+		}
+	}
+
+	focus = {
+		id = ZSP_benevolent_tyrant
+		icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = ZSP_retake_the_golden_compass }
+		mutually_exclusive = { focus = ZSP_master_of_monsters focus = ZSP_restless_magocrat }
+		x = 0
+		y = 1
+		relative_position_id = ZSP_retake_the_golden_compass
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 5 # worst path
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			country_lock_all_division_template = no
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+            capital_scope = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_forced_industrialisation
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = ZSP_benevolent_tyrant }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZSP_benevolent_tyrant
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ZSP_forced_industrialisation_tt
+			hidden_effect = {
+				build_railway = {
+					level = 1
+					fallback = yes
+					start_province = 8863
+					target_province = 11569
+				}
+				build_railway = {
+					level = 1
+					fallback = yes
+					start_province = 11569
+					target_province = 10539
+				}
+				build_railway = {
+					level = 1
+					fallback = yes
+					start_province = 11569
+					target_province = 10540
+				}
+				build_railway = {
+					level = 1
+					fallback = yes
+					start_province = 10540
+					target_province = 8738
+				}
+				build_railway = {
+					level = 1
+					fallback = yes
+					start_province = 8863
+					target_province = 8862
+				}
+				build_railway = {
+					level = 1
+					fallback = yes
+					start_province = 8862
+					target_province = 9952
+				}
+				build_railway = {
+					level = 1
+					fallback = yes
+					start_province = 9952
+					target_province = 8738
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_embrace_capitalism
+		icon = GFX_goal_generic_intelligence_exchange
+        prerequisite = { focus = ZSP_forced_industrialisation }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZSP_forced_industrialisation
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			add_ideas = civilian_economy
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			capital_scope = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_establish_the_national_guard
+		icon = GFX_focus_generic_military_mission
+        prerequisite = { focus = ZSP_embrace_capitalism }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZSP_embrace_capitalism
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			add_ideas = extensive_conscription
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+            capital_scope = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ZSP_establish_the_national_guard_tt
+			hidden_effect = {
+				division_template = {
+					name = "Reichsarmeedivision"
+					division_names_group = ZSP_INF_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+					}
+					support = {
+						
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"National Guard Division\" division_template = \"Reichsarmeedivision\" start_experience_factor = 0.2"
+						count = 2
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_restless_magocrat
+		icon = GFX_focus_ICE_thungur_hnifur
+        prerequisite = { focus = ZSP_retake_the_golden_compass }
+		mutually_exclusive = { focus = ZSP_master_of_monsters focus = ZSP_benevolent_tyrant }
+		x = 3
+		y = 1
+		relative_position_id = ZSP_retake_the_golden_compass
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			add_trait = {
+				character = ZSP_ozymandias
+				ideology = tyrannical_magocracy
+				trait = ZSP_necomancer
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+            custom_effect_tooltip = ZSP_restless_magocrat_tt
+			
+			hidden_effect = {
+				division_template = {
+					name = "Undead Horde"
+					is_locked = yes
+					force_allow_recruiting = yes
+					template_counter = 1
+					division_names_group = ZSP_INF_03
+					regiments = {
+						zombie_horde = { x = 0 y = 0 }
+						zombie_horde = { x = 0 y = 1 }
+						zombie_horde = { x = 0 y = 2 }
+						zombie_horde = { x = 1 y = 0 }
+						zombie_horde = { x = 1 y = 1 }
+						zombie_horde = { x = 1 y = 2 }
+						zombie_horde = { x = 2 y = 0 }
+						zombie_horde = { x = 2 y = 1 }
+						zombie_horde = { x = 2 y = 2 }
+					}
+					support = {
+						
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.1 start_equipment_factor = 0.1 start_manpower_factor = 0.1"
+						count = 5
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_transform_the_people
+		icon = GFX_goal_generic_secret_weapon
+        prerequisite = { focus = ZSP_restless_magocrat }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZSP_restless_magocrat
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			every_controlled_state = {
+				add_manpower = 500000
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = { is_ai = yes }
+				activate_mission = ZSP_zombie_hordes_growing
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_magical_industry
+		icon = GFX_goal_generic_construct_mil_factory
+        prerequisite = { focus = ZSP_transform_the_people }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZSP_transform_the_people
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			add_ideas = ZSP_thaumaturgic_workshop
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			capital_scope = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_undead_horde
+		icon = GFX_focus_generic_total_war
+        prerequisite = { focus = ZSP_magical_industry }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZSP_magical_industry
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			set_grand_doctrine = mass_assault
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_ideas = ZSP_zombie_army
+		}
+	}
+
+	focus = {
+		id = ZSP_full_control_over_the_realm
+		icon = GFX_focus_ARG_revive_the_colonial_plan
+        prerequisite = { focus = ZSP_arm_the_monsters focus = ZSP_establish_the_national_guard focus = ZSP_undead_horde }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZSP_establish_the_national_guard
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			remove_ideas = ZSP_broken_burgfrieden
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			swap_ideas = {
+				remove_idea = ZSP_ungoverned_lands
+				add_idea = ZSP_ultra_authoritarian_governance
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_heed_the_shadows_call
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+        prerequisite = { focus = ZSP_full_control_over_the_realm }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZSP_full_control_over_the_realm
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			strength_ratio = {
+				tag = ZKN
+				ratio > 0.5
+			}
+            strength_ratio = {
+				tag = ZLF
+				ratio > 0.5
+			}
+        }
+
+		bypass = {
+			ZKN = {
+				OR = {
+					has_war_with = ROOT
+					exists = no
+					is_ally_with = ROOT
+				}
+			}
+			ZLF = {
+				OR = {
+					has_war_with = ROOT
+					exists = no
+					is_ally_with = ROOT
+				}
+			}
+        }
+
+		bypass_effect = {
+			every_state = {
+				limit = {
+					region = 34
+				}
+				add_core_of = ROOT
+			}
+		}
+
+		will_lead_to_war_with = ZKN
+		will_lead_to_war_with = ZLF
+		
+		completion_reward = {
+			if = {
+				limit = {
+					ZKN = {
+						exists = yes
+						NOT = { is_ally_with = ROOT }
+					}
+				}
+				declare_war_on = {
+					target = ZKN
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					ZLF = {
+						exists = yes
+						NOT = { is_ally_with = ROOT }
+					}
+				}
+				declare_war_on = {
+					target = ZLF
+					type = annex_everything
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_state = {
+				limit = {
+					region = 34
+				}
+				add_core_of = ROOT
+			}
+		}
+	}
+
+}

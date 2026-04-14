@@ -4,3 +4,9 @@ ZSP_mana_generation = {
 	precision = 0
 	postfix = none
 }
+ZSP_monthly_guns = {
+	color_type = good
+	value_type = number
+	precision = 0
+	postfix = none
+}

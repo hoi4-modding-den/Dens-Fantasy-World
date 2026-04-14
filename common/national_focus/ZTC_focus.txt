@@ -936,7 +936,7 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 50 
         }
 		
 		available = {
@@ -995,7 +995,7 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 50 
         }
 		
 		available = {
@@ -1538,19 +1538,40 @@ focus_tree={
         }
 		
 		completion_reward = {
-			custom_effect_tooltip = ZTC_reach_out_to_gardenia_tt
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			random_other_country = {
+			if = {
 				limit = {
-					has_war = no
-					OR = {
-						original_tag = ZKN
-						original_tag = ZLF
+					NOT = {
+						any_other_country = {
+							has_war = no
+							OR = {
+								original_tag = ZKN
+								original_tag = ZLF
+							}
+							NOT = { has_government = fascism }
+						}
 					}
 				}
-				give_guarantee = ROOT
+				ZLF = {
+					country_event = ZTC_events.13
+					effect_tooltip = {
+						give_guarantee = ROOT
+					}
+				}
+			}
+			else = {
+				random_other_country = {
+					limit = {
+						has_war = no
+						OR = {
+							original_tag = ZKN
+							original_tag = ZLF
+						}
+					}
+					country_event = ZTC_events.13
+					effect_tooltip = {
+						give_guarantee = ROOT
+					}
+				}
 			}
 		}
 	}
@@ -1590,21 +1611,40 @@ focus_tree={
         }
 		
 		completion_reward = {
-			custom_effect_tooltip = ZTC_join_the_gardenian_faction_tt
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			random_other_country = {
+			if = {
 				limit = {
-					NOT = { has_war_with = ROOT }
-					#has_guaranteed = ROOT
-					is_faction_leader = yes
-					OR = {
-						original_tag = ZKN
-						original_tag = ZLF
+					NOT = {
+						any_other_country = {
+							NOT = { has_war_with = ROOT }
+							has_guaranteed = ROOT
+							is_faction_leader = yes
+							OR = {
+								original_tag = ZKN
+								original_tag = ZLF
+							}
+							NOT = { has_government = fascism }
+						}
 					}
 				}
-				add_to_faction = ROOT
+				ZLF = {
+					country_event = ZTC_events.14
+					effect_tooltip = { add_to_faction = ROOT }
+				}
+			}
+			else = {
+				random_other_country = {
+					limit = {
+						NOT = { has_war_with = ROOT }
+						#has_guaranteed = ROOT
+						is_faction_leader = yes
+						OR = {
+							original_tag = ZKN
+							original_tag = ZLF
+						}
+					}
+					country_event = ZTC_events.14
+					effect_tooltip = { add_to_faction = ROOT }
+				}
 			}
 		}
 	}
@@ -1641,25 +1681,46 @@ focus_tree={
         }
 		
 		completion_reward = {
-			custom_effect_tooltip = ZTC_propose_gardenian_monetary_union_tt
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
 			add_ideas = ZTC_monetary_union_spirit_ZTC
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			random_other_country = {
+			if = {
 				limit = {
-					OR = {
-						original_tag = ZKN
-						original_tag = ZLF
+					NOT = {
+						any_other_country = {
+							OR = {
+								original_tag = ZKN
+								original_tag = ZLF
+							}
+							is_in_faction_with = ROOT
+						}
 					}
-					is_in_faction_with = ROOT
 				}
-				set_variable = { ZTC.ZTC_get_monetary_union_partner = THIS }
-				add_ideas = ZTC_monetary_union_spirit_ZLF_ZKN
+				ZLF = {
+					country_event = ZTC_events.15
+				}
 			}
+			else = {
+				random_other_country = {
+					limit = {
+						OR = {
+							original_tag = ZKN
+							original_tag = ZLF
+						}
+						is_in_faction_with = ROOT
+					}
+					country_event = ZTC_events.15
+					hidden_effect = {
+						set_variable = { ZTC.ZTC_get_monetary_union_partner = THIS }
+						add_ideas = ZTC_monetary_union_spirit_ZLF_ZKN
+					}
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ZTC_propose_gardenian_monetary_union_tt
 		}
 	}
 
@@ -1692,35 +1753,7 @@ focus_tree={
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			if = {
-				limit = {
-					any_other_country = {
-						is_in_faction_with = ROOT
-						is_faction_leader = yes
-						OR = {
-							has_government = fascism
-							has_government = neutrality
-							AND = {
-								ROOT = { has_completed_focus = ZTC_maintain_the_stadtrat_system }
-								has_government = communism
-							}
-						}
-					}
-				}
-				faction_leader = {
-					remove_from_faction = ROOT
-					ROOT = {
-						declare_war_on = {
-							target = PREV
-							type = topple_government
-						}
-					}
-				}
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-			}
-			
-			add_ideas = ZCT_democratic_offensive
+			add_ideas = ZCT_democratic_defence
 		}
 	}
 
@@ -1866,7 +1899,7 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_ideas = ZTC_global_trade
 		}
 	}
 
@@ -1896,6 +1929,10 @@ focus_tree={
         }
 		
 		completion_reward = {
+			set_cosmetic_tag = ZTC_southern_maritime_league
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			unlock_decision_tooltip = ZTC_establish_coastal_protectorate
 			unlock_decision_tooltip = ZTC_secure_the_albia_strait
 		}

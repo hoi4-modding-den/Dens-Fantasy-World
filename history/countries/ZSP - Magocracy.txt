@@ -1,6 +1,8 @@
 capital = 601
 
-#oob = "ZSP_1936"
+oob = "ZSP_1936"
+
+country_lock_all_division_template = yes
 
 set_stability = 0.2
 set_war_support = 0

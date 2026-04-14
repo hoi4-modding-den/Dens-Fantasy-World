@@ -15,6 +15,7 @@ ideas = {
             }
 			
 			modifier = {
+                party_popularity_stability_factor = -0.1
                 local_resources_factor = -0.9
                 production_speed_buildings_factor = -0.9
                 production_factory_max_efficiency_factor = -0.2
@@ -22,6 +23,27 @@ ideas = {
 			}
             
 		}
+
+        ZSP_ultra_authoritarian_governance = {
+
+            picture = generic_oppression
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                party_popularity_stability_factor = -0.1
+                local_resources_factor = -0.2
+                production_speed_buildings_factor = -0.2
+                production_factory_max_efficiency_factor = -0.1
+            }
+
+        }
 
         ZSP_tower_rivalry = {
 
@@ -39,6 +61,27 @@ ideas = {
                 political_power_cost = 1
                 research_speed_factor = 0.15
                 ZSP_mana_generation = 5
+			}
+            
+		}
+
+        ZSP_tower_rivalry_2 = {
+
+            name = ZSP_tower_rivalry
+			picture = chi_wargaming_division
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                political_power_cost = 1
+                research_speed_factor = 0.05
+                ZSP_mana_generation = 10
 			}
             
 		}
@@ -76,10 +119,52 @@ ideas = {
             }
 			
 			modifier = {
-                
+                stability_factor = -0.05
+                political_power_factor = -0.15
+                generate_wargoal_tension = 2
 			}
             
 		}
+
+        ZSP_slavery = {
+
+            picture = saf_history_of_segregation
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                industrial_capacity_factory = 0.1
+                monthly_population = -0.25
+                local_resources_factor = 0.1
+                production_speed_buildings_factor = 0.1
+            }
+
+        }
+
+        ZSP_thaumaturgic_workshop = {
+
+            picture = HUN_secret_rearmament
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                industrial_capacity_factory = -0.05
+                ZSP_monthly_guns = 250
+            }
+
+        }
 
     }
 

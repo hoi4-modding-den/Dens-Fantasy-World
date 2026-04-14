@@ -29,10 +29,14 @@
  ZLF_neutrality_party_long: "National People's Party"
  ZLF_democratic_party: "NDPvG"
  ZLF_democratic_party_long: "National Democratic Party of Gardenia"
+ ZLF_democratic_party_sp: "SP"
+ ZLF_democratic_party_sp_long: "Socialist Party"
+ ZLF_democratic_party_gkp: "GKP"
+ ZLF_democratic_party_gkp_long: "Gardenian Constitutional Party"
  ZLF_communism_party: "RTP"
  ZLF_communism_party_long: "Radical Transformation Party"
- ZLF_fascism_party: "GWP"
- ZLF_fascism_party_long: "Gardenian Revival Party"
+ ZLF_fascism_party: "PGE"
+ ZLF_fascism_party_long: "Party for Gardenian Regeneration"
 
 
 # IDEOLOGIES
@@ -66,6 +70,8 @@
  ZLF_staatsbankrott: "End of the Adelswirtschaft"
  ZLF_staatsbankrott_desc: "The exploitation of the people through the aristocracy has been ended. However, in the heat of revolution, the thoroughness of our troops has caused significant damage to our economic capabilities."
  ZLF_cavalry_bonus_cw: "Rapid Response Brigades"
+ ZLF_reconstruction: "National Reconstruction"
+ ZLF_intervention_corps: "International Cooperation League"
 
 
 # DYNMODS
@@ -90,9 +96,16 @@
  ZLF_take_the_royalist_stronghold: "Take the Royalist Stronghold"
  ZLF_maintain_connection_to_hortensia: "Ongoing Negotiations in Hortensia"
 
+ ZLF_integrate_alstroemeria: "Establish an Alstroemerian Federal State"
+
  ZLF_expand_wolframingen: "Increase the Jurisdiction of Wolframingen"
  ZLF_expand_blauenfelde_aluminium_mills: "Expand Blauenfelde Aluminium Mills"
  ZLF_expand_erzgebirge_excavation_efforts: "Expand Erzgebirge Resource Exploitation"
+
+
+# TOOLTIPS
+
+ ZLF_controls_highlighted_states_tt: "Controls all §Yhighlighted states§!"
 
 
 # FOCI
@@ -118,7 +131,23 @@
  ZLF_buy_foreign_guns_desc: ""
  ZLF_dawn_of_the_republic: "Sunset for the Zinnian Throne"
  ZLF_dawn_of_the_republic_desc: "The Reactionary Forces of the Zinnian Throne have been defeated. The Republic endures."
- ZLF_dawn_of_the_republic_tt: "The §YLiberation Front§! will be reorganised into a proper §YRepublic§!, §Ycivil law§! will be established and preparations for §Yelections§! will be made."
+ ZLF_dawn_of_the_republic_tt: "The §YLiberation Front§! will be reorganised into a proper §YRepublic§!, a §Yconstitutional convention§! will be held and preparations for §Yelections§! will be made."
+ 
+ ZLF_magic_polygon_of_economics: "Polygon of Economics"
+ ZLF_magic_polygon_of_economics_desc: "The Magic Polygon (de.: Magisches Vieleck), also referred to as the Magic Square or Magic Hexagon, is system of four to six political economic goals who are supposed to be completed at the same time."
+ 
+ ZLF_theories_of_international_relations: "Theories of International Relations"
+ ZLF_theories_of_international_relations_desc: "The international system is build up based on the principle of anthropromorphic difference. Societies who have higher collective potential (measure of organising labour) than others end up dominating and exploiting those weaker societies. This international system is dysfunctional, as it ends up reducing global collective potential."
+ ZLF_northern_intervention: "Northern Intervention"
+ ZLF_northern_intervention_desc: ""
+ ZLF_korelian_intervention: "Korelian Intervention"
+ ZLF_korelian_intervention_desc: ""
+ ZLF_expand_the_cooperation_league: "Expand International Efforts"
+ ZLF_expand_the_cooperation_league_desc: ""
+ ZLF_secure_alstroemeria: "Restore Law and Order in Alstroemeria"
+ ZLF_secure_alstroemeria_desc: "The lawless lands of Alstroemeria are de-jure controlled by the Order of the Five Towers, with most of its land under no control of an actual government. We must end this increaturous magocratic experiment."
+ ZLF_export_the_revolution: "Export the Revolution"
+ ZLF_export_the_revolution_desc: ""
 
 
 # EVENTS
@@ -142,10 +171,71 @@
  ZLF_cw_events.5.desc: "With the civil war over, the International Brigades have been disbanded and the volunteers are on the way back home."
  ZLF_cw_events.5.a: "Auf Wiedersehen, Genossen!"
 
+
+ ZLF_post_cw_events.1.t: "The Constitutional Convention"
+ ZLF_post_cw_events.1.desc: "WIP"
+ ZLF_post_cw_events.1.a: "Democracy will entrench itself!"
+
+ ZLF_post_cw_events.2.t: "Constitutional Convention - Divisions of Power"
+ ZLF_post_cw_events.2.desc: "WIP"
+ ZLF_post_cw_events.2.a: "Federalism it is!"
+
+ ZLF_post_cw_events.3.t: "Constitutional Convention - The Chancellery"
+ ZLF_post_cw_events.3.desc: "WIP"
+ ZLF_post_cw_events.3.a: "We must prevent a Gerontocracy at all costs."
+ ZLF_post_cw_events.3.tt: "§gThis will affect the outcome of future elections.§!"
+ ZLF_post_cw_events.3.b: "We cannot possibly limit who can run for chancellor!"
+
+ ZLF_post_cw_events.4.t: "Split in the Party"
+ ZLF_post_cw_events.4.desc: "With the end of the constitutional convention ongoing, the divisions within the National Democratic Party have become much more apparent. Without the monarchists as a common enemy, the factions have ended their Burgfrieden and the party has split.\n \nThe leftist factions, especially the Trade Unionists and the Social Democrats, have decided to officially leave the party and found their own, named the Socialist Party. Even the prominent revolutionary, Roland Ludovik, has decided to join them, abandoning the NDPvG. Meanwhile on the right side, the more liberal elements of the party have decided to break away and found the Gardinian Constitutional Party as a counterweight to the leftists."
+ ZLF_post_cw_events.4.a: "A plurality of opinions must be supported."
+
+ ZLF_post_cw_events.5.t: "Closing Speech of the Constitutional Convention"
+ ZLF_post_cw_events.5.desc: "WIP"
+ ZLF_post_cw_events.5.a: ""
+
+ ZLF_post_cw_events.6.t: "First Elections of the Republic"
+ ZLF_post_cw_events.6.desc: "WIP"
+ ZLF_post_cw_events.6.a: "The Sozialistische Partei wins the mandate!"
+ ZLF_post_cw_events.6.b: "The NDRvG manages to convince the people!"
+ ZLF_post_cw_events.6.c: "The Konstitutionelle Partei "
+
+ ZLF_post_cw_events.7.t: "Rebuilding the Nation"
+ ZLF_post_cw_events.7.desc: "WIP"
+ ZLF_post_cw_events.7.a: "The Republic must resuscitate it civilian life."
+
+
+ ZLF_events.1.t: "Lingua Internacia"
+ ZLF_events.1.desc: "Our government has received an interesting petition from a doctor in Welsen. The medical practitioner Dr. Luis Lazarus Zaunenbach is a hobby language enthusiast and the creator of a new language, the lingua internacia, though it is commonly referred to as Esperanto by its speakers. He proposes we use Esperanto as the official language of diplomacy and convincing other nations to do the same. While his ideas seem utopian at the moment, it appeals to exactly the kind of idealism our Republic was founded upon."
+ ZLF_events.1.a: "Ĉu tion ni serĉas?"
+
+
  ZLF_news_events.1.t: "Revolutionaries win the Gardenian Civil War"
  ZLF_news_events.1.desc: "The Gardenian Civil War has come to an end, with the revolutionaries of the Edelweiss Banner-Army managing to successfully overthrow the Zinnian Monarchy.\n \nThe new republic has already begun to establish itself in the region, preparing to send unutilised military equipment to democratic forces in the north and making moves to align the Free City of Hortensia. But before Gardenia re-enters the geopolitical stage, they will first have to look inward and recover from the devastation of the civil war."
  ZLF_news_events.1.a: "Für das Volk!"
  ZLF_news_events.1.b: "At last the bloodshed is over."
+
+
+# TECH/EQUIPMENT NAMES
+
+ ZLF_infantry_equipment_0: "Gewehr 98"
+ ZLF_infantry_equipment_0_short: "Gewehr 98"
+ ZLF_infantry_equipment_1: "Karabiner 98k"
+ ZLF_infantry_equipment_1_short: "Karabiner 98k"
+ ZLF_infantry_equipment_2: "MP 38"
+ ZLF_infantry_equipment_2_short: "MP 38"
+ ZLF_infantry_equipment_3: "MP 43"
+ ZLF_infantry_equipment_3_short: "MP 43"
+ ZLF_infantry_at: "Panzerfaust 30"
+ ZLF_infantry_at2: "Panzerschreck"
+ ZLF_support_weapons: "MG 08 & leichter Minenwerfer"
+ ZLF_support_weapons2: "MG 34 & 5 cm Granatwerfer 36"
+ ZLF_support_weapons3: "MG 42 & 8 cm Granatwerfer 34"
+ ZLF_support_weapons4: "MG 45 & 12 cm Granatwerfer 42"
+
+ ZLF_train_equipment_1: "Class 18.4-5"
+ ZLF_train_equipment_2: "DRB 52 Class"
+ ZLF_train_equipment_3: "BR57 Class"
 
 
 # MAP STUFF

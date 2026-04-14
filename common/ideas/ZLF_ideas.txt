@@ -145,6 +145,70 @@ ideas = {
             
         }
 
+        ZLF_reconstruction = {
+
+            picture = GER_recovering_economy
+            
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+            
+            modifier = {
+				industrial_capacity_factory = -0.8
+				industrial_capacity_dockyard = -0.8
+				production_speed_buildings_factor = 0.1
+                production_speed_infrastructure_factor = 0.4
+            }
+            
+        }
+
+        ZLF_intervention_corps = {
+
+            picture = ETH_peacekeeping_forces
+            
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+            
+            modifier = {
+				send_volunteer_size = 3
+				send_volunteers_tension = -1
+                lend_lease_tension = -1
+            }
+            
+        }
+
+        ZLF_intervention_corps_2 = {
+
+            name = ZLF_intervention_corps
+            picture = ETH_peacekeeping_forces
+            
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+            
+            modifier = {
+				send_volunteer_size = 3
+				send_volunteers_tension = -1
+                lend_lease_tension = -1
+                no_supply_grace = 240
+                research_speed_factor = 0.05
+            }
+            
+        }
+
     }
 
 }

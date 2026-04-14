@@ -19,3 +19,70 @@ ZSP_magic_cat = {
     }
 
 }
+
+economy_decisions = {
+    
+    ZSP_monster_hordes_growing = {
+
+        icon = generic_scorched_earth
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            has_capitulated = yes
+        }
+
+        is_good = yes
+
+        days_mission_timeout = 30
+
+        complete_effect = {
+            random_controlled_state = {
+                create_unit = {
+                    division = "name = \"Monster Horde\" division_template = \"Monster Horde\" start_experience_factor = 0.1 start_equipment_factor = 0.1 start_manpower_factor = 0.1"
+                    count = 1
+                    owner = ROOT
+                }
+            }
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+            
+            activate_mission = ZSP_monster_hordes_growing
+        }
+    }
+
+    ZSP_zombie_hordes_growing = {
+
+        icon = eng_blackshirt_march
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            has_capitulated = yes
+        }
+
+        is_good = yes
+
+        days_mission_timeout = 15
+        
+        complete_effect = {
+            random_controlled_state = {
+                create_unit = {
+                    division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.1 start_equipment_factor = 0.1 start_manpower_factor = 0.1"
+                    count = 1
+                    owner = ROOT
+                }
+            }
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+            
+            activate_mission = ZSP_zombie_hordes_growing
+        }
+
+    }
+
+}

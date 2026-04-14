@@ -8,6 +8,10 @@
  ZSP_fascism_DEF: "the Alstroemerian Order of the Five Towers"
  ZSP_fascism_ADJ: "Alstroemerian"
 
+ ZSP_shadow_realm_fascism: "Realm of Shadows"
+ ZSP_shadow_realm_fascism_DEF: "the Realm of Shadows"
+ ZSP_shadow_realm_fascism_ADJ: "Ozymandian"
+
 
 # PARTIES
 
@@ -19,6 +23,8 @@
  ZSP_communism_party_long: "Local Communities"
  ZSP_fascism_party: "Zaubererliga"
  ZSP_fascism_party_long: "League of Alstroemerian Mages"
+ ZSP_fascism_party_ozy: "Schattenhof"
+ ZSP_fascism_party_ozy_long: "Court of the Mage-Lord"
 
 
 # IDEOLOGIES
@@ -31,36 +37,50 @@
 
  ZSP_wizard_council_name: "Highest Council"
  ZSP_ozymandias_name: "Ozymandias"
+ ZSP_ozymandias_desc: "Ein Wandrer kam aus einem alten Land,\nUnd sprach: „Ein riesig Trümmerbild von Stein\nSteht in der Wüste, rumpflos Bein an Bein,\nDas Haupt daneben, halb verdeckt vom Sand.\n \nDer Züge Trotz belehrt uns: wohl verstand\nDer Bildner, jenes eitlen Hohnes Schein\nZu lesen, der in todten Stoff hinein\nGeprägt den Stempel seiner ehrnen Hand.\n \nUnd auf dem Sockel steht die Schrift: ‚Mein Name\nIst Ozymandias, aller Kön'ge König:\nSeht meine Werke, Mächt'ge, und erbebt!‘\n \nNichts weiter blieb. Ein Bild von düstrem Grame,\nDehnt um die Trümmer endlos, kahl, eintönig\nDie Wüste sich, die den Koloß begräbt.“"
 
 
 # TRAITS
 
  ZSP_united_in_purpose: "United in Purpose, Divided in Spirit"
- ZSP_wizard_king: "The Wizard King"
+ ZSP_wizard_king: "The Mage-Lord of Shadows"
+ ZSP_moster_summoner: "Monster Tamer"
+ ZSP_necomancer: "Necromancer"
 
 
 # IDEAS
 
  ZSP_ungoverned_lands: "Ungoverned Lands"
  ZSP_ungoverned_lands_desc: "While the lands of Alstroemeria are de jure governed by the Council of the Order of the Five Towers, the reality is that most of the territory is controlled by the local communities. Of course, when the troops of the Order show up on their doorsteps, the community leaders are quick to give tribute, but this arrangement cannot last forever."
+ ZSP_ultra_authoritarian_governance: "Magocratic Nation-Building"
  ZSP_tower_rivalry: "Tower Rivalry"
  ZSP_tower_rivalry_desc: "The Five Towers are in constant competition with each other to improve their magical capabilities. State-Building takes the backseat in the Magocracy."
  ZSP_burgfrieden: "Turmfrieden"
  ZSP_burgfrieden_desc: "To ensure that the peasantry does not rise up, the towers are in a state referred to as Turmfrieden (lit. 'Tower Peace'), limiting themselves in their infighting."
  ZSP_broken_burgfrieden: "Broken Turmfrieden"
+ ZSP_slavery: "Slavery"
+ ZSP_thaumaturgic_workshop: "Thaumaturgic Rifle Production"
 
- ZSP_disarmed_nation: "Reliance on the Order"
+ ZSP_monster_army: "Monster Waves"
+ ZSP_monster_army_desc: "Monsters fill the role of soldiers in our military, though some sentient creatures are still allowed to serve as officers."
+ ZSP_zombie_army: "Undead Waves"
+
+ ZSP_disarmed_nation: "No National Military"
 
 
 # MODIFIERS
 
  ZSP_mana_generation: "Weekly Mana Generation"
+ ZSP_monthly_guns: "Monthly Infantry Equipment"
 
 
 # DECISIONS
 
  ZSP_magic_cat: "Arcane Revelations"
  ZSP_magic_cat_desc: "LORE BLURB HERE\n \nMana Reserves: [?ZSP_mana|.0+]"
+
+ ZSP_monster_hordes_growing: "Growing Hordes"
+ ZSP_zombie_hordes_growing: "Undead Proliferation"
 
 
 # DECISION COSTS
@@ -69,11 +89,110 @@
  ZSP_use_50_mana_blocked: "Mana §R50§!"
  ZSP_use_50_mana_tooltip: "It costs Mana §Y50§! to take the decision"
 
+# FOCI
+
+ ZSP_the_competition: "The Foolish Competition"
+ ZSP_the_competition_desc: ""
+ ZSP_send_out_the_order: "Send out the Order"
+ ZSP_send_out_the_order_desc: ""
+ ZSP_plot_in_the_shadows: "Plot in the Shadows"
+ ZSP_plot_in_the_shadows_desc: ""
+ ZSP_a_declaration_of_intentions: "My Declaration of Intentions"
+ ZSP_a_declaration_of_intentions_desc: ""
+ ZSP_trick_the_sternenwaerter: "Crush the Sternwärter"
+ ZSP_trick_the_sternenwaerter_desc: ""
+ ZSP_march_on_the_nebelturm: "March on the Nebelturm"
+ ZSP_march_on_the_nebelturm_desc: ""
+ ZSP_cast_fire_upon_iron: "Cast Fire Upon Iron"
+ ZSP_cast_fire_upon_iron_desc: ""
+ ZSP_retake_the_golden_compass: "The Purple Throne is Mine!"
+ ZSP_retake_the_golden_compass_desc: ""
+ ZSP_master_of_monsters: "The Master of Monsters"
+ ZSP_master_of_monsters_desc: ""
+ ZSP_master_of_monsters_tt: "Unlocks §YMonster Horde§! Divisions."
+ ZSP_raid_the_villages: "Raid the Villages"
+ ZSP_raid_the_villages_desc: ""
+ ZSP_slave_economy: "A Slave Economy"
+ ZSP_slave_economy_desc: ""
+ ZSP_arm_the_monsters: "Arm the Monsters"
+ ZSP_arm_the_monsters_desc: ""
+ ZSP_benevolent_tyrant: "The Moderniser Tyrant"
+ ZSP_benevolent_tyrant_desc: ""
+ ZSP_forced_industrialisation: "Forced Industrialisation"
+ ZSP_forced_industrialisation_desc: ""
+ ZSP_forced_industrialisation_tt: "Build §YRailways§! connecting the capital to the villages."
+ ZSP_embrace_capitalism: "Embrace Capitalism"
+ ZSP_embrace_capitalism_desc: ""
+ ZSP_establish_the_national_guard: "Establish the National Guard"
+ ZSP_establish_the_national_guard_desc: ""
+ ZSP_establish_the_national_guard_tt: "Deploy §gtwo§! §YRealm Army Divisions§! in the §Ycapital§!."
+ ZSP_restless_magocrat: "The Restless Magocrat"
+ ZSP_restless_magocrat_desc: ""
+ ZSP_restless_magocrat_tt: "Unlocks §YUndead Horde§! Divisions."
+ ZSP_transform_the_people: "Raise the Undead"
+ ZSP_transform_the_people_desc: ""
+ ZSP_magical_industry: "Thaumaturgic Workshops"
+ ZSP_magical_industry_desc: ""
+ ZSP_undead_horde: "The Undead Horde"
+ ZSP_undead_horde_desc: ""
+ ZSP_full_control_over_the_realm: "I Am Your Master"
+ ZSP_full_control_over_the_realm_desc: ""
+ ZSP_heed_the_shadows_call: "And You Will Obey Me"
+ ZSP_heed_the_shadows_call_desc: ""
+
+
+# EVENTS
+
+ ZSP_start_events.1.t: "Knightfall"
+ ZSP_start_events.1.desc: "I had send out the knightly order under the pretense of them needing to fight a strong ogre in the forest north of Michelshof. Naturally, those fools all but believed me and went out."
+ ZSP_start_events.1.a: "They never returned."
+
+ ZSP_start_events.2.t: "A Realm of Possibilities"
+ ZSP_start_events.2.desc: "The realm of shadows is most potent. My magical abilities have increased tenfold ever since I first took a glimse of it. I studied it, I became it."
+ ZSP_start_events.2.a: "It won't be for naught."
+
+ ZSP_start_events.3.t: "War against the Towers"
+ ZSP_start_events.3.desc: "My proclamation was a simple one, of power and dominance. The towers would submit to me or perish. Naturally, this didn't come well to those foolish fools."
+ ZSP_start_events.3.a: "Zur Hölle mit dem Turmfrieden!"
+
+ ZSP_start_events.4.t: "Fall of the Stars"
+ ZSP_start_events.4.desc: "I strode right through the front door of the Sternwarte, its massive wooden doors doing nothing to stop me. The apprentices came for me first. Apparently they thought me a pushover. As the last Sternenwart fell, I entered the observatorium, taking in the breathtaking sight of the stars above me."
+ ZSP_start_events.4.a: "Even the skies will bend to my will."
+
+ ZSP_start_events.5.t: "In the Mist"
+ ZSP_start_events.5.desc: "The Nebelturm always seemed so incredibly foolish. With their power to create illusions, did they use it to trick their enemies? To torture them and crush them in an endless tunnel of delusions? No, they made 'art'. The fire in the gallery was unnecessary, but it sure felt good."
+ ZSP_start_events.5.a: "What good is magic if you restrict yourself like this?"
+
+ ZSP_start_events.6.t: "Fire in Strodtmannsstadt"
+ ZSP_start_events.6.desc: "The Eisenturm was the most pretentious of the five. All they did was follow along the progress of the outside world, but they acted as if they were the only ones who could do it. It was a pleasure seeing their tower in flames."
+ ZSP_start_events.6.a: "Arrogance leads to fall."
+
+ ZSP_start_events.7.t: "My Name is Ozymandias, King of Kings"
+ ZSP_start_events.7.desc: "As I took my rightful place on the Purple Throne in the Great Temple of the Golden Compass, all I could think of was my next step. How could I enjoy my victory when I was still surrounded by my enemies?"
+ ZSP_start_events.7.a: "Look on my works, ye Mighty, and despair!"
+
+
+# TECH/EQUIPMENT NAMES
+
+ ZSP_infantry_equipment_0: "Muskete"
+ ZSP_infantry_equipment_0_desc: "An old musket rifle."
+
+
+# OTHER
+
+ ZSP_gardenian_unification: "Gardenian Unification"
+
+
+# UNITS
+
+ zombie_horde: "Zombie Battalion"
+ monster_horde: "Monster Battalion"
+
 
 # MAP STUFF
 
- STATE_591: "Domizil"
- STATE_601: "Düsterreich" # you're going to the shadow realm, Jimbo
+ STATE_591: "Düsterreich" # you're going to the shadow realm, Jimbo
+ STATE_601: "Domizil"
  STATE_703: "Ehrenfeld"
  STATE_756: "Donnergebirge"
  STATE_873: "Trümmerland"

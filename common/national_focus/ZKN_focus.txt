@@ -61,7 +61,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZKN_the_reactionary_front
 		
-		cost = 3
+		cost = 5
 
 		ai_will_do = {
             base = 10 
@@ -111,7 +111,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZKN_the_reactionary_front
 		
-		cost = 3
+		cost = 5
 
 		ai_will_do = {
             base = 10 
@@ -175,7 +175,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZKN_the_reactionary_front
 		
-		cost = 3
+		cost = 5
 
 		ai_will_do = {
             base = 10 
@@ -219,7 +219,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZKN_the_reactionary_front
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -252,7 +252,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZKN_the_reactionary_front
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -340,44 +340,11 @@ focus_tree={
 	}
 
 	focus = {
-		id = ZKN_the_crimson_regency
-		icon = GFX_focus_PLACEHOLDER
-        prerequisite = { focus = ZKN_royal_triumph }
-		mutually_exclusive = { focus = ZKN_the_zinnian_realm focus = ZKN_the_salvation_government }
-		x = 0
-		y = 1
-		relative_position_id = ZKN_royal_triumph
-		
-		cost = 3
-
-		ai_will_do = {
-            base = 10 
-        }
-		
-		available = {
-            has_country_flag = ZKN_vampire_path_unlocked
-        }
-
-		allow_branch = {
-			has_country_flag = ZKN_vampire_path_unlocked
-		}
-
-		bypass = {
-			
-        }
-		
-		completion_reward = {
-			add_stability = 0.1
-            add_popularity = { ideology = fascism popularity = 0.1 }
-		}
-	}
-
-	focus = {
 		id = ZKN_the_salvation_government
 		icon = GFX_focus_PLACEHOLDER
         prerequisite = { focus = ZKN_royal_triumph }
 		mutually_exclusive = { focus = ZKN_the_crimson_regency focus = ZKN_the_zinnian_realm }
-		x = 10
+		x = 0
 		y = 1
 		relative_position_id = ZKN_royal_triumph
 		
@@ -397,6 +364,128 @@ focus_tree={
 		
 		completion_reward = {
             add_popularity = { ideology = fascism popularity = 0.2 }
+		}
+	}
+
+	focus = {
+		id = ZKN_dismantle_the_nobles_kleptocracy
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZKN_the_salvation_government }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = ZKN_the_salvation_government
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZKN_rule_of_the_strong
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZKN_the_salvation_government }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZKN_the_salvation_government
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			if = {
+				limit = {
+					any_controlled_state = {
+						has_dynamic_modifier = { modifier = ZLF_elbian_lands }
+					}
+				}
+				activate_mission = ZKN_operation_exodus
+			}
+		}
+	}
+
+	focus = {
+		id = ZKN_manage_the_directorate
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZKN_the_salvation_government }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = ZKN_the_salvation_government
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			every_army_leader = {
+				add_planning = 1
+			}
+		}
+	}
+
+	focus = {
+		id = ZKN_the_crimson_regency
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZKN_royal_triumph }
+		mutually_exclusive = { focus = ZKN_the_zinnian_realm focus = ZKN_the_salvation_government }
+		x = 10
+		y = 1
+		relative_position_id = ZKN_royal_triumph
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            has_country_flag = ZKN_vampire_path_unlocked
+        }
+		
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			add_stability = 0.1
+            add_popularity = { ideology = fascism popularity = 0.1 }
 		}
 	}
 

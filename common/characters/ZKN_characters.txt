@@ -58,6 +58,16 @@ characters = {
                 base = 5
             }
         }
+
+        field_marshal = {
+            visible = { has_country_leader = { character = ZKN_yvonne_von_karmesin ruling_only = yes } }
+            traits = { cavalry_officer trait_reckless ZKN_vampire_commander }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 2
+        }
     }
 
     ZKN_albert_zu_stegehoff = { 

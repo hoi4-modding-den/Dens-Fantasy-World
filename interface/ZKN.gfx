@@ -133,12 +133,48 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_trait_ZKN_white_silver"
-		texturefile = "gfx/interface/traits/trait_seawolf.dds"
+		texturefile = "gfx/interface/traits/trait_fly_swatter.dds"
 	}
 
     spriteType = {
 		name = "GFX_trait_ZKN_zinnian_loyalist"
 		texturefile = "gfx/interface/traits/personal/trait_JAP_royal_lineage.dds"
+	}
+
+    spriteType = {
+		name = "GFX_trait_ZKN_vampire_commander"
+		texturefile = "gfx/interface/traits/personal/trait_SPR_anti_stalinist_loyalties.dds"
+	}
+
+
+    SpriteType = {
+		name = "GFX_ZKN_infantry3_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ZKN_infantry2_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ZKN_infantry1_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ZKN_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ZKN_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ZKN_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
 	}
 
 }

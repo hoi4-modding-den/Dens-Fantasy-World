@@ -34,6 +34,8 @@ ZKN_civil_war_cat = {
         timeout_effect = {
             add_political_power = -25
             add_war_support = -0.01
+            add_manpower = -1000
+            ZLF = { add_manpower = 1000 }
 
             custom_effect_tooltip = generic_skip_one_line_tt
 

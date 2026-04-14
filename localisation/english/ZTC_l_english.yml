@@ -15,8 +15,18 @@
  ZTC_communism_DEF: "the Free City of Hortensia"
  ZTC_communism_ADJ: "Hortensian"
  ZTC_fascism: "Hortensia City"
- ZTC_fascism_DEF: "the Free and Mercantile City of Hortensia"
+ ZTC_fascism_DEF: "the Mercantile City of Hortensia"
  ZTC_fascism_ADJ: "Hortensian"
+
+ ZTC_southern_maritime_league_neutrality: "Southern Maritime League"
+ ZTC_southern_maritime_league_neutrality_DEF: "the Maritime League of the Southern Coast"
+ ZTC_southern_maritime_league_neutrality_ADJ: "Hortensian"
+ ZTC_southern_maritime_league_democratic: "Southern Maritime League"
+ ZTC_southern_maritime_league_democratic_DEF: "the Maritime League of the Southern Coast"
+ ZTC_southern_maritime_league_democratic_ADJ: "Hortensian"
+ ZTC_southern_maritime_league_fascism: "Southern Corporate Zone"
+ ZTC_southern_maritime_league_fascism_DEF: "the Corporate Interests Zone of the Southern Coast"
+ ZTC_southern_maritime_league_fascism_ADJ: "Hortensian"
 
 
 # PARTIES
@@ -95,8 +105,9 @@
  ZTC_ultimate_volunteer_force: "Hortensia Intervention Force"
  ZTC_republican_military: "Republican Stadtwehr"
  ZTC_monetary_union_spirit: "Gardenian Monetary Union"
- ZCT_democratic_offensive: "Democratic Offensive"
+ ZCT_democratic_defence: "Shield of Democracy"
  ZTC_southern_democratic_bloc_spirit: "Southern Democratic Bloc"
+ ZTC_global_trade: "Global Trade Network"
  ZTC_military_neutrality: "Gardenian Neutrality"
  ZTC_weapons_payments: "Weapon Payments"
 
@@ -134,7 +145,7 @@
  ZTC_council_anger_increases: "Increasing Dissatisfaction"
 
  ZTC_form_southern_democratic_bloc: "Form the Southern Democratic Bloc"
- ZTC_form_southern_democratic_bloc_tt: "All §Yhighlighted countries§! are §Ydemocratic§! (or §Ydemocratically-aligned§! in the case of @ZLF §YGardenia§!) and either in our §Yfaction§! or our §Ysubjects§!."
+ ZTC_form_southern_democratic_bloc_tt: "All §Yhighlighted countries§! are §Ydemocratic§! (or §Ycommunist§! if you are §Ysocial-democratic§!) and either in our §Yfaction§! or our §Ysubjects§!."
  ZTC_establish_coastal_protectorate: "Establish the Celandra Coastal Protectorate"
  ZTC_secure_the_albia_strait: "Secure the Albia Strait"
 
@@ -244,7 +255,7 @@
  ZTC_propose_gardenian_monetary_union: "Gardenian Monetary Union"
  ZTC_propose_gardenian_monetary_union_desc: ""
  ZTC_propose_gardenian_monetary_union_tt: "We will be able to §Gutilise§! the §YMonetary Union§! to increase our §Yindustrial development§! and §Ypolitical involvement§!."
- ZTC_defenders_of_democracy: "Democracy is Non-Negotiable!"
+ ZTC_defenders_of_democracy: "Defenders of Democracy"
  ZTC_defenders_of_democracy_desc: ""
  ZTC_declare_military_neutrality: "Declare Neutrality in Gardenia"
  ZTC_declare_military_neutrality_desc: ""
@@ -374,6 +385,31 @@
  ZTC_events.12.a: "Centre Marxism"
  ZTC_events.12.b: "Ethical Socialism"
  ZTC_events.12.c: "Neorevisionism"
+
+ ZTC_events.13.t: "Hortensians negotiate Security Guarantee"
+ ZTC_events.13.desc: "WIP"
+ ZTC_events.13.a: "They are under our protection."
+
+ ZTC_events.14.t: "Hortensian Military Pact Proposal"
+ ZTC_events.14.desc: "WIP"
+ ZTC_events.14.a: "Gardenia stands united."
+
+ ZTC_events.15.t: "Formation of the Gardenian Monetary Union"
+ ZTC_events.15.desc: "WIP"
+ ZTC_events.15.a: "This will further economic integration."
+
+ ZTC_events.16.t: "Establishment of the Celandra Coastal Protectorate"
+ ZTC_events.16.desc: "WIP"
+ ZTC_events.16.a: "We cannot refuse."
+ ZTC_events.16.b: "Over our dead bodies!"
+
+ ZTC_events.17.t: "Celandra Coastal Protectorate established"
+ ZTC_events.17.desc: "WIP"
+ ZTC_events.17.a: "Perfekt."
+
+ ZTC_events.18.t: "[FROM.GetNameDefCap] prevents the Operation"
+ ZTC_events.18.desc: "WIP"
+ ZTC_events.18.a: "Verflucht."
 
  ZTC_news_events.1.t: "The Death of Grand Councillor Krösus"
  ZTC_news_events.1.desc: "WIP"

@@ -51,7 +51,7 @@ country_event = { # Civil War Ends
 				}
 			}
 
-			XTC = {
+			ZTC = {
 				country_event = {
 					id = ZKN_cw_events.3
 					days = 7
@@ -85,7 +85,7 @@ country_event = { # Civil War Ends
 	}
 }
 
-country_event = { # Republicans go into Exile in XTC
+country_event = { # Republicans go into Exile in ZTC
 	id = ZKN_cw_events.3
 	title = ZKN_cw_events.3.t
 	desc = ZKN_cw_events.3.desc
@@ -286,7 +286,7 @@ country_event = { # Camarilla Regency
 		hidden_effect = {
 			country_event = {
 				id = ZKN_post_cw_events.7
-				days = 1
+				days = 15
 			}
 		}
 	}

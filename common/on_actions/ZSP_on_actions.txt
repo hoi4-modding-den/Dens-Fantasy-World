@@ -1,5 +1,13 @@
 on_actions = {
 
+    on_startup = {
+        effect = {
+            ZSP = {
+                load_focus_tree = ZSP_focus_tree
+            }
+        }
+    }
+
     on_weekly_ZSP = {
         effect = {
             if = {
@@ -7,6 +15,61 @@ on_actions = {
                     check_variable = { modifier@ZSP_mana_generation > 0 }
                 }
                 add_to_variable = { ZSP_mana = modifier@ZSP_mana_generation }
+            }
+        }
+    }
+
+    on_monthly_ZSP = {
+        effect = {
+            if = {
+                limit = {
+                    check_variable = { modifier@ZSP_monthly_guns > 0 }
+                }
+                add_equipment_to_stockpile = { 
+                    type = infantry_equipment_0
+                    amount = modifier@ZSP_monthly_guns
+                }
+            }
+        }
+    }
+
+    on_government_change = {
+        effect = {
+            if = {
+                limit = {
+                    tag = ZSP
+                    NOT = { has_government = fascism }
+                }
+                load_focus_tree = generic_focus
+            }
+            else_if = {
+                limit = {
+                    tag = ZSP
+                    has_government = fascism
+                }
+                load_focus_tree = ZSP_focus_tree
+            }
+        }
+    }
+
+    on_puppet = {
+        effect = {
+            if = {
+                limit = {
+                    ROOT = { tag = ZSP }
+                }
+                ROOT = { load_focus_tree = generic_focus }
+            }
+        }
+    }
+
+    on_release_as_puppet = {
+        effect = {
+            if = {
+                limit = {
+                    ROOT = { tag = ZSP }
+                }
+                ROOT = { load_focus_tree = generic_focus }
             }
         }
     }

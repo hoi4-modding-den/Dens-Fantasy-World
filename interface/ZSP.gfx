@@ -10,4 +10,33 @@ spriteTypes = {
 		texturefile = "gfx/leaders/ZSP/portrait_ZSP_ozymandias.png"
 	}
 
+
+	SpriteType = {
+		name = "GFX_ZSP_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ZSP_infantry_equipment_1.png"
+	}
+
+
+	spriteType = { 
+		name = "GFX_unit_zombie_horde_icon_medium" 
+		textureFile = "gfx/interface/counters/divisions_large/unit_zombie_horde_icon.dds" 
+		noOfFrames = 2 
+	}
+	spriteType = { 
+		name = "GFX_unit_zombie_horde_icon_medium_white" 
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_zombie_horde_icon.dds" 
+		noOfFrames = 2 
+	}
+
+	spriteType = { 
+		name = "GFX_unit_monster_horde_icon_medium" 
+		textureFile = "gfx/interface/counters/divisions_large/unit_monster_horde_icon.dds" 
+		noOfFrames = 2 
+	}
+	spriteType = { 
+		name = "GFX_unit_monster_horde_icon_medium_white" 
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_monster_horde_icon.dds" 
+		noOfFrames = 2 
+	}
+
 }

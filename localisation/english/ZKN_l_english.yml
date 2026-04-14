@@ -12,8 +12,8 @@
  ZKN_communism: "Second Republic of Gardenia"
  ZKN_communism_DEF: "the Second Republic of Gardenia"
  ZKN_communism_ADJ: "Gardenian"
- ZKN_fascism: "Gardenian National State"
- ZKN_fascism_DEF: "the Gardenian National State"
+ ZKN_fascism: "Gardenian National Directorate"
+ ZKN_fascism_DEF: "the Gardenian National Directorate"
  ZKN_fascism_ADJ: "Gardenian"
 
  ZKN_dominion: "Zinnian Dominion"
@@ -77,6 +77,8 @@
  ZKN_white_silver_desc: "§LHailed as a hero for their actions during the last Northeastern War, this character received the White Silver medal by the Zinnian Throne.§!"
  ZKN_zinnian_loyalist: "Zinnian Loyalist"
  ZKN_zinnian_loyalist_desc: "§LThis character is loyal to the Zinnian monarchy and will only serve a royal government.§!"
+ ZKN_vampire_commander: "Vampiric Prowess"
+ ZKN_vampire_commander_desc: ""
 
 
 # IDEAS
@@ -138,13 +140,20 @@
  ZKN_the_zinnian_realm_desc: ""
  ZKN_royalist_path_unlocked: "The §YZinnian Throne§! remains in control."
 
+ ZKN_the_salvation_government: "Salvation and Regeneration"
+ ZKN_the_salvation_government_desc: ""
+ ZKN_salvationist_path_unlocked: "The §YNational Salvation Government§! has seized power."
+ ZKN_dismantle_the_nobles_kleptocracy: "Dismantle the Kleptocratic Nobility"
+ ZKN_dismantle_the_nobles_kleptocracy_desc: ""
+ ZKN_rule_of_the_strong: "Kratocracy"
+ ZKN_rule_of_the_strong_desc: ""
+ ZKN_manage_the_directorate: "Restore the General Staff"
+ ZKN_manage_the_directorate_desc: ""
+
  ZKN_the_crimson_regency: "Let the Blood Flow"
  ZKN_the_crimson_regency_desc: ""
  ZKN_vampire_path_unlocked: "The §YCrimson Regency§! has been established."
 
- ZKN_the_salvation_government: "Salvation and Regeneration"
- ZKN_the_salvation_government_desc: ""
- ZKN_salvationist_path_unlocked: "The §YNational Salvation Government§! has seized power."
 
 
 # EVENTS
@@ -253,6 +262,28 @@
  ZKN_news_events.3.t: "Gardenian Regency Established"
  ZKN_news_events.3.desc: "The Gardenian Aristocrats, led by Komtesse Yvonne von Karmesin, have successfully subverted military control, executing the leaders of the Salvation Clique and other disloyal army officers.\n \nIt is uncertain how the nobles were able to so quickly, with some even speculating foreign interference. Nonetheless, the military junta has been eliminated and the newly establish Crimson Regency has consolidated control over the nation."
  ZKN_news_events.3.a: "And all shall return to normalcy..."
+
+
+# TECH/EQUIPMENT NAMES
+
+ ZKN_infantry_equipment_0: "Gewehr 98"
+ ZKN_infantry_equipment_0_short: "Gewehr 98"
+ ZKN_infantry_equipment_1: "Karabiner 98k"
+ ZKN_infantry_equipment_1_short: "Karabiner 98k"
+ ZKN_infantry_equipment_2: "MP 38"
+ ZKN_infantry_equipment_2_short: "MP 38"
+ ZKN_infantry_equipment_3: "MP 43"
+ ZKN_infantry_equipment_3_short: "MP 43"
+ ZKN_infantry_at: "Panzerfaust 30"
+ ZKN_infantry_at2: "Panzerschreck"
+ ZKN_support_weapons: "MG 08 & leichter Minenwerfer"
+ ZKN_support_weapons2: "MG 34 & 5 cm Granatwerfer 36"
+ ZKN_support_weapons3: "MG 42 & 8 cm Granatwerfer 34"
+ ZKN_support_weapons4: "MG 45 & 12 cm Granatwerfer 42"
+
+ ZKN_train_equipment_1: "Class 18.4-5"
+ ZKN_train_equipment_2: "DRB 52 Class"
+ ZKN_train_equipment_3: "BR57 Class"
 
 
 # WAR NAMES

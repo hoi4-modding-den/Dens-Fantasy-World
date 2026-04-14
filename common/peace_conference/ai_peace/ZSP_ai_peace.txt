@@ -1,0 +1,22 @@
+# Scripted AI desire for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_ai_desires = {
+
+    ZSP_get_annexed_by_gardenians = {
+        peace_action_type = take_states
+        enable = {
+            FROM.FROM.FROM = {
+                is_core_of = ZSP
+            }
+            ROOT = {
+                OR = {
+                    original_tag = ZLF
+                    original_tag = ZKN
+                } 
+            }
+        }
+        ai_desire = 150
+    }
+
+}

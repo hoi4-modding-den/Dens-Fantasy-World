@@ -324,6 +324,9 @@ focus_tree={
         }
 
 		select_effect = {
+			country_event = {
+				id = ZLF_post_cw_events.1
+			}
 			if = {
 				limit = { has_template = "International Republican Brigade" }
 				country_event = {
@@ -335,6 +338,238 @@ focus_tree={
 		
 		completion_reward = {
             custom_effect_tooltip = ZLF_dawn_of_the_republic_tt
+			hidden_effect = {
+				country_event = ZLF_post_cw_events.7
+			}
+		}
+	}
+
+	focus = { # "common" system used in German economics classes
+		id = ZLF_magic_polygon_of_economics
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZLF_dawn_of_the_republic }
+		#mutually_exclusive = { focus =  }
+		x = -7
+		y = 1
+		relative_position_id = ZLF_dawn_of_the_republic
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = { # name related the book 'Internationale Beziehungen' by Ekkehart Krippendorff (good book, can recommend, had to learn it for school)
+		id = ZLF_theories_of_international_relations
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZLF_dawn_of_the_republic }
+		#mutually_exclusive = { focus =  }
+		x = 7
+		y = 1
+		relative_position_id = ZLF_dawn_of_the_republic
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            add_ideas = ZLF_intervention_corps
+		}
+	}
+
+	focus = {
+		id = ZLF_northern_intervention
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZLF_theories_of_international_relations }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = ZLF_theories_of_international_relations
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			has_war = no
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = ZLF_korelian_intervention
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZLF_theories_of_international_relations }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZLF_theories_of_international_relations
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			has_war = no
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = ZLF_expand_the_cooperation_league
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = ZLF_northern_intervention focus = ZLF_korelian_intervention }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = ZLF_theories_of_international_relations
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			has_war = no
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = ZLF_intervention_corps
+				add_idea = ZLF_intervention_corps_2
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_secure_alstroemeria
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZLF_theories_of_international_relations }
+		#mutually_exclusive = { focus =  }
+		x = 4
+		y = 1
+		relative_position_id = ZLF_theories_of_international_relations
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_subject = no
+			NOT = { has_idea = ZLF_reconstruction }
+        }
+
+		bypass = {
+			ZSP = {
+				OR = {
+					exists = no
+					is_ally_with = ROOT
+					has_war_with = ROOT
+				}
+			}
+        }
+
+		will_lead_to_war_with = ZSP
+		
+		completion_reward = {
+            create_wargoal = {
+				target = ZSP
+				type = annex_everything
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			unlock_decision_tooltip = ZLF_integrate_alstroemeria
+		}
+	}
+
+	focus = {
+		id = ZLF_export_the_revolution
+		icon = GFX_focus_PLACEHOLDER
+        prerequisite = { focus = ZLF_secure_alstroemeria }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZLF_secure_alstroemeria
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_subject = no
+			NOT = { has_idea = ZLF_reconstruction }
+        }
+
+		bypass = {
+			XCE = {
+				OR = {
+					exists = no
+					is_ally_with = ROOT
+					has_war_with = ROOT
+					has_government = communism
+					has_government = democratic
+				}
+			}
+        }
+
+		will_lead_to_war_with = XCE
+		
+		completion_reward = {
+            create_wargoal = {
+				target = XCE
+				type = topple_government
+			}
 		}
 	}
 

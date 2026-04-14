@@ -1,0 +1,54 @@
+ZSP_INF_01 = {
+	name = "Knightly Order"
+
+	for_countries = { ZSP }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%d. Ritterorden"
+
+	ordered = {
+		1 = { "Alstroemerianerorden" }
+		2 = { "Zinnienorden" }
+		3 = { "Sternenwartorden" }
+		4 = { "Eisener Orden" }
+	}
+}
+ZSP_INF_02 = {
+	name = "Realm Army Division"
+
+	for_countries = { ZSP }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%d. Reichsarmeedivision"
+
+	ordered = {
+		1 = { "%d. Reichsarmeedivision" }
+		2 = { "%d. Reichsarmeedivision" }
+		3 = { "%d. Reichsarmeedivision" }
+		4 = { "%d. Reichsarmeedivision" }
+		5 = { "%d. Reichsarmeedivision" }
+		6 = { "%d. Reichsarmeedivision" }
+		7 = { "%d. Reichsarmeedivision" }
+		8 = { "%d. Reichsarmeedivision" }
+		9 = { "%d. Reichsarmeedivision" }
+		10 = { "%d. Reichsarmeedivision" }
+	}
+}
+ZSP_INF_03 = {
+	name = "Hordes"
+
+	for_countries = { ZSP }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "Horde"
+
+	ordered = {
+		1 = { "Horde" }
+	}
+}

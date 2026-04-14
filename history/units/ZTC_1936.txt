@@ -5,7 +5,7 @@ focus = {
 
 division_template = {
 	name = "Civil Defence Brigade"
-	#division_names_group = ZTC_INF_01
+	division_names_group = ZTC_INF_01
     priority = 1
 
 	regiments = {
@@ -22,7 +22,7 @@ division_template = {
 }
 division_template = {
 	name = "Marine Division"
-	#division_names_group = ZTC_MAR_01
+	division_names_group = ZTC_MAR_01
     priority = 2
 
 	regiments = {
@@ -44,28 +44,40 @@ division_template = {
 
 units = {
     division = {
-        name = "Marinedivision 'Lilienmeer'"
+        division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 10497
 		division_template = "Marine Division"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
     division = {
-        name = "Zivilschutzbrigade Hortensienstadt"
+        division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 10502
 		division_template = "Civil Defence Brigade"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
     division = {
-        name = "Zivilschutzbrigade Nordbucht"
+        division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 10499
 		division_template = "Civil Defence Brigade"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
     division = {
-        name = "Zivilschutzbrigade Volksdorf"
+        division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 10497
 		division_template = "Civil Defence Brigade"
 		start_experience_factor = 0.3

@@ -55,4 +55,41 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_hugo_von_fallersleben_small.png"
     }
 
+
+    SpriteType = {
+		name = "GFX_ZLF_infantry3_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ZLF_infantry2_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ZLF_infantry1_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ZLF_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ZLF_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ZLF_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
+	}
+
+
+    spriteType = {
+		name = "GFX_report_event_XLF_esperantists"
+		texturefile = "gfx/event_pictures/ZLF_report_event_esperantists.png"
+	}
+
 }

@@ -12,7 +12,32 @@ leader_traits = {
     ZSP_wizard_king = {
         
         war_support_factor = 0.15
+        surrender_limit = 0.25
+        army_attack_factor = 0.08
+        army_defence_factor = 0.08
+        encryption_factor = 0.25
+        civilian_intel_to_others = -10
+        army_intel_to_others = -10
+        navy_intel_to_others = -10
+        airforce_intel_to_others = -10
         ZSP_mana_generation = 10
+        ai_desired_divisions_factor = 20
+
+        random = no
+    }
+
+    ZSP_moster_summoner = {
+        
+        ZSP_mana_generation = 15
+        breakthrough_factor = 0.1
+
+        random = no
+    }
+
+    ZSP_necomancer = {
+        
+        ZSP_mana_generation = 15
+        army_org_factor = 0.1
 
         random = no
     }

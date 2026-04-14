@@ -332,10 +332,6 @@ country_event = { # SDAAH Reference
 
 	is_triggered_only = yes
 
-    # centre marxism - production_speed_buildings_factor, stability_factor, 
-			# ethical socialism - research_speed_factor, consumer_goods_factor
-			# neorevisionism - conscription_factor, democratic_drift
-
 	option = { # Centre Marxism
 		name = ZTC_events.12.a
         custom_effect_tooltip = ZTC_modify_socdem_gov_tt
@@ -355,6 +351,119 @@ country_event = { # SDAAH Reference
         custom_effect_tooltip = ZTC_modify_socdem_gov_tt
 		add_to_variable = { ZTC_gov_conscription_factor = 0.25 tooltip = conscription_factor_tt }
         add_to_variable = { ZTC_gov_democratic_drift = 0.05 tooltip = democratic_drift_tt }
+	}
+}
+
+country_event = { # guarantee event
+	id = ZTC_events.13
+	title = ZTC_events.13.t
+	desc = ZTC_events.13.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.13.a
+        give_guarantee = FROM
+	}
+}
+
+country_event = { # faction event
+	id = ZTC_events.14
+	title = ZTC_events.14.t
+	desc = ZTC_events.14.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.14.a
+        add_to_faction = FROM
+	}
+}
+
+country_event = { # monetary union event
+	id = ZTC_events.15
+	title = ZTC_events.15.t
+	desc = ZTC_events.15.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.15.a
+        effect_tooltip = {
+            add_ideas = ZTC_monetary_union_spirit_ZLF_ZKN
+        }
+	}
+}
+
+country_event = { # ZTC demands Coastal Protectorate States
+	id = ZTC_events.16
+	title = ZTC_events.16.t
+	desc = ZTC_events.16.desc
+	picture = GFX_report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.16.a
+        effect_tooltip = {
+            FROM = {
+                transfer_state = 885
+                transfer_state = 568
+                transfer_state = 653
+            }
+        }
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        FROM = {
+            country_event = {
+                id = ZTC_events.17
+                days = 3
+            }
+        }
+	}
+
+    option = {
+		name = ZTC_events.16.b
+        FROM = {
+            country_event = {
+                id = ZTC_events.18
+                days = 3
+            }
+        }
+	}
+}
+
+country_event = { # ZTC demands Coastal Protectorate States // accepted
+	id = ZTC_events.17
+	title = ZTC_events.17.t
+	desc = ZTC_events.17.desc
+	picture = GFX_report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.17.a
+        transfer_state = 885
+        transfer_state = 568
+        transfer_state = 653
+	}
+}
+
+country_event = { # ZTC demands Coastal Protectorate States // rejected
+	id = ZTC_events.18
+	title = ZTC_events.18.t
+	desc = ZTC_events.18.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.18.a
+        
 	}
 }
 

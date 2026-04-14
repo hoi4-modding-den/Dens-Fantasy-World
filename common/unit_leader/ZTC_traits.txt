@@ -22,7 +22,7 @@ leader_traits = {
 			factor = 0
             modifier = {
                 add = 100000
-                tag = ZTC
+                FROM = { tag = ZTC }
             }
 		}
 	}

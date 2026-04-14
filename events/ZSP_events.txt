@@ -1,0 +1,159 @@
+add_namespace = ZSP_start_events
+
+country_event = { # Knights are dead
+	id = ZSP_start_events.1
+	title = ZSP_start_events.1.t
+	desc = ZSP_start_events.1.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZSP_start_events.1.a
+		add_war_support = -0.05
+        delete_unit_template_and_units = {
+			division_template = "Ritterorden"
+			disband = no
+		}
+	}
+}
+
+country_event = { # Schemes
+	id = ZSP_start_events.2
+	title = ZSP_start_events.2.t
+	desc = ZSP_start_events.2.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZSP_start_events.2.a
+        add_trait = {
+            character = ZSP_ozymandias
+            ideology = tyrannical_magocracy
+            trait = ZSP_wizard_king
+       }
+	}
+}
+
+country_event = { # Mage War begins
+	id = ZSP_start_events.3
+	title = ZSP_start_events.3.t
+	desc = ZSP_start_events.3.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZSP_start_events.3.a
+        set_capital = { state = 756 }
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        591 = { set_demilitarized_zone = yes }
+        703 = { set_demilitarized_zone = yes }
+        873 = { set_demilitarized_zone = yes }
+        601 = { set_demilitarized_zone = yes }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		swap_ideas = {
+			remove_idea = ZSP_burgfrieden
+			add_idea = ZSP_broken_burgfrieden
+		}
+	}
+}
+
+country_event = { # Mage War - Sternenwärter
+	id = ZSP_start_events.4
+	title = ZSP_start_events.4.t
+	desc = ZSP_start_events.4.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZSP_start_events.4.a
+        add_stability = -0.05
+        add_war_support = 0.05
+        873 = {
+            add_manpower = -499 # someone survived?
+            set_demilitarized_zone = no 
+        }
+	}
+}
+
+country_event = { # Mage War - Nebelturm
+	id = ZSP_start_events.5
+	title = ZSP_start_events.5.t
+	desc = ZSP_start_events.5.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZSP_start_events.5.a
+        add_stability = -0.05
+        add_war_support = 0.05
+        703 = { 
+            add_manpower = -500
+            set_demilitarized_zone = no 
+        }
+	}
+}
+
+country_event = { # Mage War - Eisenturm
+	id = ZSP_start_events.6
+	title = ZSP_start_events.6.t
+	desc = ZSP_start_events.6.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZSP_start_events.6.a
+        add_stability = -0.05
+        add_war_support = 0.05
+        591 = { 
+            add_manpower = -500
+            set_demilitarized_zone = no 
+        }
+	}
+}
+
+country_event = { # Mage War - Goldener Kompass
+	id = ZSP_start_events.7
+	title = ZSP_start_events.7.t
+	desc = ZSP_start_events.7.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZSP_start_events.7.a
+        601 = {
+            add_manpower = -500
+            set_demilitarized_zone = no 
+        }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		remove_ideas = ZSP_tower_rivalry_2
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+		promote_character = ZSP_ozymandias
+
+        set_party_name = {
+            ideology = fascism
+            name = ZSP_fascism_party_ozy
+            long_name = ZSP_fascism_party_ozy_long
+        }
+
+        set_cosmetic_tag = ZSP_shadow_realm
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        set_capital = { state = 601 }
+	}
+}

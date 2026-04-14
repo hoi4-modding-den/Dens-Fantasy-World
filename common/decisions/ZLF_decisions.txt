@@ -272,6 +272,55 @@ ZLF_civil_war_cat = {
 
 }
 
+political_actions = {
+
+    ZLF_integrate_alstroemeria = {
+
+        icon = generic_form_nation
+
+        allowed = {
+            original_tag = ZLF
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = ZLF_controls_highlighted_states_tt
+                controls_state = 873
+                controls_state = 756
+                controls_state = 591
+                controls_state = 601
+                controls_state = 703
+            }
+        }
+
+        visible = {
+            has_completed_focus = ZLF_secure_alstroemeria
+        }
+
+        highlight_states = {
+            highlight_states_trigger = {
+                OR = {
+                    state = 873
+                    state = 756
+                    state = 591
+                    state = 601
+                    state = 703
+                }
+            }
+        }
+
+        complete_effect = {
+            add_state_core = 873
+            add_state_core = 756
+            add_state_core = 591
+            add_state_core = 601
+            add_state_core = 703
+        }
+
+    }
+
+}
+
 prospect_for_resources = {
 
 	ZLF_expand_wolframingen = { #794

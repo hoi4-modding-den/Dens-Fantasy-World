@@ -1,0 +1,46 @@
+ZTC_INF_01 = {
+	name = "Civil Defence Brigade"
+
+	for_countries = { ZTC }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%d. Zivilschutzbrigade"
+
+	ordered = {
+		1 = { "%d. Zivilschutzbrigade 'Hortensienstadt'" }
+		2 = { "%d. Zivilschutzbrigade 'Nordbucht'" }
+		3 = { "%d. Zivilschutzbrigade 'Volksdorf'" }
+		4 = { "%d. Zivilschutzbrigade" }
+		5 = { "%d. Zivilschutzbrigade" }
+		6 = { "%d. Zivilschutzbrigade" }
+		7 = { "%d. Zivilschutzbrigade" }
+		8 = { "%d. Zivilschutzbrigade" }
+		9 = { "%d. Zivilschutzbrigade" }
+		10 = { "%d. Zivilschutzbrigade" }
+	}
+}
+ZTC_MAR_01 = {
+	name = "Marine Division"
+
+	for_countries = { ZTC }
+
+	division_types = { "marine" }
+
+
+	fallback_name = "%d. Marinedivision"
+
+	ordered = {
+		1 = { "%d. Marinedivision 'Lilienmeer'" }
+		2 = { "%d. Marinedivision" }
+		3 = { "%d. Marinedivision" }
+		4 = { "%d. Marinedivision" }
+		5 = { "%d. Marinedivision" }
+		6 = { "%d. Marinedivision" }
+		7 = { "%d. Marinedivision" }
+		8 = { "%d. Marinedivision" }
+		9 = { "%d. Marinedivision" }
+		10 = { "%d. Marinedivision" }
+	}
+}

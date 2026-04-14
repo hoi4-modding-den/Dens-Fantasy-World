@@ -1,0 +1,22 @@
+peace_action_modifiers = {
+
+    ZSP_gardenian_unification = {
+        category = is_core
+        peace_action_type = take_states
+
+        enable = {
+            FROM.FROM = {
+                original_tag = ZSP
+            }
+            ROOT = {
+                OR = {
+                    original_tag = ZLF
+                    original_tag = ZKN
+                }
+            }
+        }
+
+        cost_multiplier = 0.25 # Reduced by ~75%
+    }
+
+}

@@ -21,12 +21,25 @@ characters = {
             civilian = {
                 large = GFX_portrait_ZSP_ozymandias
             }
+            army = {
+                large = GFX_portrait_ZSP_ozymandias
+            }
         }
         
         country_leader = {
+            desc = ZSP_ozymandias_desc
             ideology = tyrannical_magocracy
-            traits = { ZSP_wizard_king }
+            traits = {  }
             expire = "1960.1.1.1"
+        }
+
+        field_marshal = {
+            traits = { inflexible_strategist }
+            skill = 3
+            attack_skill = 5
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 3
         }
     }
 

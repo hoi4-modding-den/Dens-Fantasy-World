@@ -1,4 +1,6 @@
 add_namespace = ZLF_cw_events
+add_namespace = ZLF_post_cw_events
+add_namespace = ZLF_events
 add_namespace = ZLF_news_events
 
 country_event = { # Mission Failure
@@ -100,6 +102,178 @@ country_event = { # International Brigades leave
 			division_template = "International Republican Brigade"
 			disband = no
 		}
+	}
+}
+
+country_event = { # Constitutional Convention
+	id = ZLF_post_cw_events.1
+	title = ZLF_post_cw_events.1.t
+	desc = ZLF_post_cw_events.1.desc
+	picture = GFX_report_event_hungary_parliament
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLF_post_cw_events.2
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = ZLF_post_cw_events.1.a
+		add_popularity = { ideology = democratic popularity = 0.2 }
+	}
+}
+
+country_event = { # Constitutional Convention - Federalism
+	id = ZLF_post_cw_events.2
+	title = ZLF_post_cw_events.2.t
+	desc = ZLF_post_cw_events.2.desc
+	picture = GFX_report_event_hungary_parliament
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLF_post_cw_events.3
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = ZLF_post_cw_events.2.a
+		
+	}
+}
+
+country_event = { # Constitutional Convention - Who can be chancellor?
+	id = ZLF_post_cw_events.3
+	title = ZLF_post_cw_events.3.t
+	desc = ZLF_post_cw_events.3.desc
+	picture = GFX_report_event_hungary_parliament
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLF_post_cw_events.4
+				days = 45
+			}
+			country_event = {
+				id = ZLF_post_cw_events.5
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = ZLF_post_cw_events.3.a
+		custom_effect_tooltip = ZLF_post_cw_events.3.tt
+		set_country_flag = ZLF_no_old_people
+	}
+
+	option = {
+		name = ZLF_post_cw_events.3.b
+		
+	}
+}
+
+country_event = { # Party Split
+	id = ZLF_post_cw_events.4
+	title = ZLF_post_cw_events.4.t
+	desc = ZLF_post_cw_events.4.desc
+	picture = GFX_report_event_SWE_summer_government
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLF_post_cw_events.6
+				days = 15
+			}
+		}
+	}
+
+	option = {
+		name = ZLF_post_cw_events.4.a
+		
+	}
+}
+
+country_event = { # Constitutional Convention - End
+	id = ZLF_post_cw_events.5
+	title = ZLF_post_cw_events.5.t
+	desc = ZLF_post_cw_events.5.desc
+	picture = GFX_report_event_hungary_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_post_cw_events.5.a
+		
+	}
+}
+
+country_event = { # First Elections
+	id = ZLF_post_cw_events.6
+	title = ZLF_post_cw_events.6.t
+	desc = ZLF_post_cw_events.6.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	option = { # Socialist Party (Sozialistische Partei - SP)
+		name = ZLF_post_cw_events.6.a
+		
+	}
+
+	option = { # National Democratic Party (Nationaldemokratische Partei von Gardenien - NDPvG)
+		name = ZLF_post_cw_events.6.b
+		
+	}
+
+	option = { # Constitutional Party (Konstitutionelle Partei - KP)
+		name = ZLF_post_cw_events.6.c
+		
+	}
+}
+
+country_event = { # Reconstruction
+	id = ZLF_post_cw_events.7
+	title = ZLF_post_cw_events.7.t
+	desc = ZLF_post_cw_events.7.desc
+	picture = GFX_report_event_generic_construction_site
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_post_cw_events.7.a
+		add_timed_idea = {
+			idea = ZLF_reconstruction
+			days = 365
+		}
+	}
+}
+
+country_event = { # Esperanto Reference
+	id = ZLF_events.1
+	title = ZLF_events.1.t
+	desc = ZLF_events.1.desc
+	picture = GFX_report_event_XLF_esperantists
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.1.a
+		add_political_power = 50
+		add_stability = 0.01
 	}
 }
 
