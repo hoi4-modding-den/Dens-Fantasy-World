@@ -4,7 +4,7 @@ state={
 	name="STATE_787"
 	manpower = 4495718
 	
-	state_category = metropolis
+	state_category = large_town
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -35,7 +35,7 @@ state={
 	}
 
 	provinces={
-		10825 10827 10828 10829 10830 10832 10833 10834 10835 10836 10838 10839 10840 10841 10842 
+		10825 10827 10829 10834 10841 
 	}
 	local_supplies=0.0 
 }
