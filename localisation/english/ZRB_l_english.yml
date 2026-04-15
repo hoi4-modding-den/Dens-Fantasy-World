@@ -2,3 +2,18 @@
  ZRB: "Federation of Tůrůń"
  ZRB_DEF: "Federation of Tůrůń"
  ZRB_ADJ: "Tyriń"
+ # TRANSURHU #
+ ZRU: "State of Transurhú"
+ ZRU_DEF: "State of Transurhú"
+ ZRU_ADJ: "Urhú"
+ STATE_843: "Transurhú"
+ VICTORY_POINTS_11300: "Ternstad"
+ # RASCHAU #
+ ZRA: "Republic of Raschau"
+ ZRA_DEF: "Republic of Raschau"
+ ZRA_ADJ: "Raslav"
+ STATE_705: "Distrikt Raschau"
+ VICTORY_POINTS_9959: "Stad Raschau"
+ VICTORY_POINTS_9961: "Bernau"
+ STATE_1257: "Grenzmark Weissen"
+ VICTORY_POINTS_11450: "Schürtzen"

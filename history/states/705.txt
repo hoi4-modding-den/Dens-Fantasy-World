@@ -20,6 +20,13 @@ state={
 		
 		owner = ZIE
 		add_core_of = ZIE
+		add_core_of = ZRA
+		victory_points = {
+			9959 10
+		}
+		victory_points = {
+			9961 2
+		}
 		buildings = {
 			infrastructure = 3
 			

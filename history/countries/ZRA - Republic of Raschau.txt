@@ -1,8 +1,8 @@
-capital = 1255
+capital = 705
 
-oob = "ZIE_1936"
+oob = "ZRA_1936"
 
-set_research_slots = 2
+set_research_slots = 3
 
 set_technology = {
 	infantry_weapons = 1
@@ -29,12 +29,14 @@ add_ideas = {
 
 set_politics = {
 	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 56
-	democratic = 24
-	communism = 5
-	fascism = 15
+	neutrality = 61
+	democratic = 20
+	communism = 12
+	fascism = 7
 }

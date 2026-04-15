@@ -1,8 +1,8 @@
 
 state={
-	id=859
-	name="STATE_859"
-	manpower = 2193215
+	id=1257
+	name="STATE_1257"
+	manpower = 46201
 	
 	state_category = town
 	#impassable = yes
@@ -12,27 +12,29 @@ state={
 		oil=0
 		rubber=0
 		steel=0
-		tungsten=0
-		coal=0
+		tungsten=4
+		coal=3
 	}
 
 	history={
 		owner = ZIE
 		add_core_of = ZIE
-		
+		add_core_of = ZRA
+		victory_points = {
+			11450 2
+		}
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 1
-			
+			industrial_complex = 0
 			
 		}
 		
 	}
 
 	provinces={
-		11442 11443 11444 11445 11446 11448 11449 10124 10117
+		11447 11441 11440 11450 11451 11404 11402
 	}
 	local_supplies=0.0 
 }

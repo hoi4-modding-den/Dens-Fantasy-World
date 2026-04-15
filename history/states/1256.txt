@@ -1,10 +1,10 @@
 
 state={
-	id=859
-	name="STATE_859"
-	manpower = 2193215
+	id=1256
+	name="STATE_1256"
+	manpower = 250000
 	
-	state_category = town
+	state_category = metropolis
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -12,8 +12,8 @@ state={
 		oil=0
 		rubber=0
 		steel=0
-		tungsten=0
-		coal=0
+		tungsten=4
+		coal=3
 	}
 
 	history={
@@ -26,13 +26,12 @@ state={
 			arms_factory = 0
 			industrial_complex = 1
 			
-			
 		}
 		
 	}
 
 	provinces={
-		11442 11443 11444 11445 11446 11448 11449 10124 10117
+		10904 10907 10906 10905 10908 10902 10903
 	}
 	local_supplies=0.0 
 }
