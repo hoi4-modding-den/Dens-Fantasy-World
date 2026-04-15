@@ -1,14 +1,6 @@
 ﻿capital = 343
 
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_naval_oob = "ZAV_1936_Naval"
-	else = {
-		set_naval_oob = "ZAV_1936_Naval_Legacy"
-	}
-}
+set_oob = "ZAV_1936"
 
 set_research_slots = 4
 
@@ -45,8 +37,6 @@ add_breakthrough_progress = {
 	specialization = specialization_air
 	value = 0.5
 }
-
-set_oob = "ZAV_1936"
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -150,6 +140,16 @@ if = {
 		basic_fire_control_system = 1
 		basic_dp_light_battery = 1
 		coastal_defense_ships = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "ZAV_1936_Naval"
+	else = {
+		set_naval_oob = "ZAV_1936_Naval_Legacy"
 	}
 }
 
