@@ -19,7 +19,12 @@ state={
 	history={
 		owner = ZIE
 		add_core_of = ZIE
-		
+		victory_points = {
+			10839 20
+		}
+		victory_points = {
+			10840 5
+		}
 		buildings = {
 			infrastructure = 4
 			

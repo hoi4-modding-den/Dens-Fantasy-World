@@ -3,3 +3,11 @@
  ZIE: "National Republic of Hráva"
  ZIE_DEF: "National Republic of Hráva"
  ZIE_ADJ: "Hráve"
+
+ # VICTORY POINTS
+ VICTORY_POINTS_10839: "Crnat Hráve"
+ VICTORY_POINTS_10840: "Vrazá"
+ VICTORY_POINTS_10842: "Trzę"
+ # STATES 
+ STATE_1255: "Grada Hráve"
+ STATE_798: "Tarzá"
