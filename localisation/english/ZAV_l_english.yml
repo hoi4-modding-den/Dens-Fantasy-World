@@ -601,6 +601,51 @@
  VICTORY_POINTS_1678:0 "Ardham"
 
  ##############
+ # OPERATIONS #
+ ##############
+
+ o_av_holy:0 "Holy"
+ o_av_blessed:0 "Blessed"
+ o_av_risen:0 "Risen"
+ o_av_eternal:0 "Eternal"
+ o_av_last:0 "Last"
+ o_av_first:0 "First"
+ o_av_sacred:0 "Sacred"
+ o_av_white:0 "White"
+ o_av_golden:0 "Golden"
+ o_av_silver:0 "Silver"
+ o_av_iron:0 "Iron"
+ o_av_hidden:0 "Hidden"
+ o_av_lost:0 "Lost"
+ o_av_forgotten:0 "Forgotten"
+ o_av_reclaimed:0 "Reclaimed"
+ o_av_shattered:0 "Shattered"
+ o_av_radiant:0 "Radiant"
+ o_av_ashen:0 "Ashen"
+ o_av_starlit:0 "Starlit"
+ o_av_moonlit:0 "Moonlit"
+ o_av_sunlit:0 "Sunlit"
+ o_av_crown:0 "Crown"
+ o_av_throne:0 "Throne"
+ o_av_dragon:0 "Dragon"
+ o_av_lance:0 "Lance"
+ o_av_sword:0 "Sword"
+ o_av_shield:0 "Shield"
+ o_av_king:0 "King"
+ o_av_queen:0 "Queen"
+ o_av_knight:0 "Knight"
+ o_av_lake:0 "Lake"
+ o_av_mist:0 "Mist"
+ o_av_prophecy:0 "Prophecy"
+ o_av_oath:0 "Oath"
+ o_av_flame:0 "Flame"
+ o_av_storm:0 "Storm"
+ o_av_realm:0 "Realm"
+ o_av_empire:0 "Empire"
+ o_av_legacy:0 "Legacy"
+ o_av_dominion:0 "Dominion"
+
+ ##############
  # DEPRECATED #
  ##############
 

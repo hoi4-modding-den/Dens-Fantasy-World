@@ -15,10 +15,14 @@ state = {
 			infrastructure = 2
 			industrial_complex = 1
 			arms_factory = 2
-			dockyard = 2
+			dockyard = 4
 
 			1104 = {
-				naval_base = 4
+				naval_base = 6
+			}
+
+			1108 = {
+				naval_facility = 1
 			}
 		}	
 
@@ -32,6 +36,6 @@ state = {
 	}
 
 	manpower = 2495618
-	state_category = city
+	state_category = large_city
 	local_supplies = 0
 }

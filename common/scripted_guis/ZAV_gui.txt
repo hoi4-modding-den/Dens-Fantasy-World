@@ -313,6 +313,33 @@ scripted_gui = {
                 image = "[GetEncounterImage]"
             }
         }
+
+        ai_enabled = {
+            is_ai = yes
+        }
+
+        ai_weights = {
+            ZAV_encounter_option_1_click = {
+                ai_will_do = {
+                    base = 5000
+                }
+            }
+            ZAV_encounter_option_2_click = {
+                ai_will_do = {
+                    base = 2500
+                }
+            }
+            ZAV_encounter_option_3_click = {
+                ai_will_do = {
+                    base = 2500
+                }
+            }
+            ZAV_encounter_option_4_click = {
+                ai_will_do = {
+                    base = 2500
+                }
+            }
+        }
     }
 
     ZAV_encounter_spooky_vignette = {

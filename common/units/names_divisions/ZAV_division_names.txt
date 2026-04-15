@@ -1,0 +1,55 @@
+ZAV_INF_01 = {
+	name = "Infantry Division"
+
+	for_countries = { ZAV }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Infantry Division"
+
+	ordered = { }
+}
+
+ZAV_CAV_01 = {
+	name = "Cavalry Division"
+
+	for_countries = { ZAV }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	fallback_name = "%d Cavalry Division"
+
+	ordered = { }
+}
+
+ZAV_MOT_01 = {
+	name = "Motorised Division"
+
+	for_countries = { ZAV }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	fallback_name = "%d Motorised Division"
+
+	ordered = { }
+}
+
+ZAV_ARM_01 = {
+	name = "Armoured Division"
+
+	for_countries = { ZAV }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%d Armoured Division"
+
+	ordered = { }
+}

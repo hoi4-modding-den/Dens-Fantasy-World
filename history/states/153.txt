@@ -13,10 +13,22 @@ state = {
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
-			dockyard = 3
+			dockyard = 5
 
 			2711 = {
 				naval_base = 8
+				naval_headquarters = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
+				naval_supply_hub = 1
+				coastal_bunker = 1
+			}
+
+			2708 = {
+				air_facility = 1
 			}
 		}
 
@@ -38,6 +50,6 @@ state = {
 	}
 
 	manpower = 3698461
-	state_category = large_city
+	state_category = metropolis
 	local_supplies = 0
 }

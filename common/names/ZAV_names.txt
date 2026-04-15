@@ -1,0 +1,46 @@
+ZAV = {
+	male = {
+		names = {
+			Albert Alexander Alfred Archibald Arthur Benjamin Bernard Bradley Charles Colbert
+			Colin Cyril Dara David Donald Douglas Edmund Edward Fairfax Francis Geoffrey
+			George Graham Henrey Herbert Horatio Hubert Hugh Ian Jack Jake James Jeremy John
+			Leopold Lester Martin Max Nigel Oswald Percy Peter Reginald Richard Robert
+			Russell Stanley Stephen Thomas Wallace William Winston Zachary
+		  }
+	}
+
+	female = {
+		names = {
+			Elizabeth Anne Mary Nancy Sophie Sarah Deborah Helen Alice Monica Kathleen Edith Caroline Victoria
+		}
+	}
+
+	surnames = {
+		Allenby Battemberg Beatty Beresford Black Brown Buller Butler Campbell Cardigan
+		Churchill Cochrane Cockburn Collin Darling Dundas Faithfull Fisher French
+		Golightly Gough Grant Grenfell Haig Hamilton Hardinge Havelock Hope Irons
+		Jellicoe Kitchener Leiper Lyons Madden Milne Montgomery Moresby Mundy Murphy
+		Napier Nicholson Nicholson Plummer Ragland Roberts Roberts Seaton Seymour Shapley
+		Smith Spring Steele Stewart Sutherland Thesiger Tyron Tyrwhitt Wilde Williams
+		Windsor Wolseley Wood Wright
+	}
+
+	callsigns = { "Dragonfire" "Grail Seeker" "Silver Lance" "Red Knight" "Sunblade" "Moonblade" "Starfall" "Bedivere" "Gawain" "Lancelot" "Tristan" "Galahad" "Storm of Avalon" "Lakeborn" "Night Sovereign" }
+
+	prefix = o_operation
+
+	first = {
+		o_av_holy o_av_blessed o_av_risen o_av_eternal o_av_last o_av_first
+		o_av_sacred o_av_white o_av_golden o_av_silver o_av_iron
+		o_av_hidden o_av_lost o_av_forgotten o_av_reclaimed o_av_shattered
+		o_av_radiant o_av_ashen o_av_starlit o_av_moonlit o_av_sunlit
+	}
+
+	second = {
+		o_av_crown o_av_throne o_av_dragon o_av_lance o_av_sword o_av_shield
+		o_av_king o_av_queen o_av_knight
+		o_av_lake o_av_mist o_av_prophecy o_av_oath o_av_flame o_av_storm
+		o_av_realm o_av_empire o_av_legacy o_av_dominion
+	}
+
+}

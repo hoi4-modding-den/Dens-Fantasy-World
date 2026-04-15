@@ -1,0 +1,127 @@
+﻿
+
+
+air_wings = {
+	68 = { 
+		small_plane_airframe_0 = {
+			owner = "ZAV" 
+			amount = 72
+			version_name = "Fisher Fury"
+		}
+		small_plane_airframe_0 = {
+			owner = "ZAV" 
+			amount = 72
+			version_name = "Fisher Fury"
+		}
+		small_plane_airframe_0 = {
+			owner = "ZAV" 
+			amount = 72
+			version_name = "Fisher Fury"
+		}
+	}
+	319 = { 
+		small_plane_airframe_0 = {
+			owner = "ZAV" 
+			amount = 77
+			version_name = "Fisher Fury"
+		}
+		small_plane_airframe_0 = {
+			owner = "ZAV" 
+			amount = 77
+			version_name = "Fisher Fury"
+		}
+	}	
+	216 = { 
+		small_plane_airframe_0 = {
+			owner = "ZAV" 
+			amount = 96
+			version_name = "Fisher Fury"
+		}
+	}	
+	343 = { 
+		small_plane_airframe_0 = {
+			owner = "ZAV" 
+			amount = 72
+			version_name = "Fisher Fury"
+		}
+		
+	}
+	
+	68 = { 
+		small_plane_cas_airframe_0 = {
+			owner = "ZAV" 
+			amount = 64
+			version_name = "Fairy Gawain"
+		}
+	}
+	68 = { 
+		medium_plane_airframe_0 = {
+			owner = "ZAV" 
+			amount = 48
+			version_name = "Blumenthal Garlot"
+		}
+	}
+	216 = { 
+		medium_plane_airframe_0 = {
+			owner = "ZAV" 
+			amount = 80
+			version_name = "Blumenthal Garlot"
+		}
+	}
+	319 = { 
+		small_plane_cas_airframe_0 = {
+			owner = "ZAV" 
+			amount = 64
+			version_name = "Fairy Gawain"
+		}
+	}
+
+	68 = { 
+		small_plane_naval_bomber_airframe_0 = {
+			owner = "ZAV" 
+			amount = 24
+			version_name = "Morte Lucius"
+		}
+	}
+
+	"HBS Furious"  = {
+		cv_small_plane_airframe_0 =  { owner = "ZAV" amount = 9 version_name = "Fisher Galahad" }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ZAV" amount = 10 version_name = "Campton Shark" }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ZAV" amount = 2 version_name = "Campton Shark" }
+	}
+	"HBS Courageous"  = {
+		cv_small_plane_airframe_0 =  { owner = "ZAV" amount = 9 version_name = "Fisher Galahad" }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ZAV" amount = 10 version_name = "Campton Shark" }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ZAV" amount = 10 version_name = "Campton Shark" }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ZAV" amount = 4 version_name = "Campton Shark" }
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_0
+			creator = "ZAV" 
+			version_name = "Brasswood Gladiator"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = medium_plane_airframe_1
+			creator = "ZAV" 
+			version_name = "Camlann Broadside"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+}

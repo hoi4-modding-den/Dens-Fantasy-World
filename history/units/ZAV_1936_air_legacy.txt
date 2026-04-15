@@ -1,0 +1,74 @@
+﻿
+
+
+air_wings = {
+	68 = { 
+		fighter_equipment_0 = {
+			owner = "ZAV" 
+			amount = 72
+		}
+		fighter_equipment_0 = {
+			owner = "ZAV" 
+			amount = 72
+		}
+		fighter_equipment_0 = {
+			owner = "ZAV" 
+			amount = 72
+		}
+	}
+	319 = { 
+		fighter_equipment_0 = {
+			owner = "ZAV" 
+			amount = 77
+		}
+		fighter_equipment_0 = {
+			owner = "ZAV" 
+			amount = 77
+		}
+	}	
+	216 = { 
+		fighter_equipment_0 = {
+			owner = "ZAV" 
+			amount = 96
+		}
+	}	
+	343 = { 
+		fighter_equipment_0 = {
+			owner = "ZAV" 
+			amount = 72
+		}
+		
+	}
+	
+	68 = { 
+		CAS_equipment_1 = {
+			owner = "ZAV" 
+			amount = 64
+		}
+	}
+	68 = { 
+		tac_bomber_equipment_0 = {
+			owner = "ZAV" 
+			amount = 48
+		}
+	}
+	216 = { 
+		tac_bomber_equipment_0 = {
+			owner = "ZAV" 
+			amount = 80
+		}
+	}
+	319 = { 
+		CAS_equipment_1 = {
+			owner = "ZAV" 
+			amount = 64
+		}
+	}
+
+	68 = { 
+		nav_bomber_equipment_1 = {
+			owner = "ZAV" 
+			amount = 24
+		}
+	}
+}

@@ -19,7 +19,7 @@ ideas = {
 		ZAV_secret_orders = {
 			picture = ZAV_secret_orders
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.5
 				recruitable_population_factor = -0.3
 				custom_modifier_tooltip = ZAV_secret_orders_modifier_tt
 			}

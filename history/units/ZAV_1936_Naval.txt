@@ -1,0 +1,213 @@
+﻿units = {
+	##### NAVAL UNITS #####
+	### HOME COMMAND ###
+	fleet = {
+		name = "Home Command"			
+		naval_base = 2711 # Port Elisabeth
+		task_force = {
+			name = "Home Fleet"
+			location = 2711 # Port Elisabeth
+			ship = { name = "HBS Furious" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = ZAV version_name = "Grail Class" } } }
+			ship = { name = "HBS Elisabeth" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ZAV version_name = "Excalibur Class" } } }
+			ship = { name = "HBS Rodney" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ZAV version_name = "Excalibur Class" } } }
+			ship = { name = "HBS Royal Oak" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ZAV version_name = "Crown Class"} } }
+			ship = { name = "HBS Royal Sovereign" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ZAV version_name = "Crown Class"} } }
+			ship = { name = "HBS Ramillies" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ZAV version_name = "Crown Class"} } }
+			ship = { name = "HBS Hood" pride_of_the_fleet = yes definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ZAV version_name = "Crown Class" } } }
+			ship = { name = "HBS Repulse" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ZAV version_name = "Crown Class" } } }
+			ship = { name = "HBS Renown" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ZAV version_name = "Crown Class" } } }
+			ship = { name = "HBS Giliad" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ZAV version_name = "Shield Class" } } }
+			ship = { name = "HBS Skye" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ZAV version_name = "Round Table Class"} } }
+			ship = { name = "HBS Emerald" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ZAV version_name = "Court Class" } } }
+			ship = { name = "HBS Enterprise" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ZAV version_name = "Court Class" } } }
+			ship = { name = "HBS Sabre" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Squire Class"} } }
+			ship = { name = "HBS Shikari" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Squire Class"} } }
+			ship = { name = "HBS Keith" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Oathbound Class" } } }
+			ship = { name = "HBS Venetia" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ZAV version_name = "Silver Lance Class" } } }
+			ship = { name = "HBS Vanessa" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ZAV version_name = "Silver Lance Class" } } }
+			ship = { name = "HBS Viscount" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ZAV version_name = "Silver Lance Class" } } }
+			ship = { name = "HBS Foxtrot" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ZAV version_name = "Silver Lance Class" } } }
+			ship = { name = "HBS Vesper" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ZAV version_name = "Silver Lance Class" } } }
+			ship = { name = "HBS Vivacious" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ZAV version_name = "Silver Lance Class" } } }
+			ship = { name = "HBS Wakeful" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ZAV version_name = "Silver Lance Class" } } }
+			ship = { name = "HBS Willful" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ZAV version_name = "Silver Lance Class" } } }
+			ship = { name = "HBS Faulknor" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Knight Vanguard Class"} } }
+			ship = { name = "HBS Foxhound" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Knight Vanguard Class"} } }	
+			ship = { name = "HBS Fury" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Knight Vanguard Class"} } }
+			ship = { name = "HBS Fearless" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Knight Vanguard Class"} } }
+			ship = { name = "HBS Forester" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Knight Vanguard Class"} } }
+			ship = { name = "HBS Fame" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Knight Vanguard Class"} } }
+			ship = { name = "HBS Firedrake" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Knight Vanguard Class"} } }
+			ship = { name = "HBS Foresight" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Knight Vanguard Class"} } }
+			ship = { name = "HBS Fortune" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Knight Vanguard Class"} } }
+		}				
+		task_force = {				
+			name = "Reserve Fleet"			
+			location = 2790 # Marsfeld
+			ship = { name = "HBS Queen Mary" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ZAV version_name = "Excalibur Class" } } }
+			ship = { name = "HBS Valiant" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ZAV version_name = "Excalibur Class" } } }
+			ship = { name = "HBS Frobisher" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ZAV version_name = "Shield Class" } } }
+			ship = { name = "HBS Hawkins" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ZAV version_name = "Shield Class" } } }
+			ship = { name = "HBS Penguin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ZAV version_name = "Round Table Class" } } }
+			ship = { name = "HBS Curlew" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ZAV version_name = "Round Table Class" } } }
+			ship = { name = "HBS Adventure" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ZAV version_name = "Pendragon Class" } } }
+			ship = { name = "HBS Whitshed" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ZAV version_name = "Silver Lance Class"} } }
+			ship = { name = "HBS Wild Swan" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ZAV version_name = "Silver Lance Class"} } }
+			ship = { name = "HBS Viceroy" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ZAV version_name = "Silver Lance Class"} } }
+			ship = { name = "HBS Vincent" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ZAV version_name = "Silver Lance Class"} } }
+			ship = { name = "HBS Vanity" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ZAV version_name = "Silver Lance Class"} } }
+		}
+		task_force = {
+			name = "Gamma Force"			
+			location = 1104 # New Tintagel
+			ship = { name = "HBS Courageous" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = ZAV version_name = "Grail Class" } } }
+			ship = { name = "HBS Resolution" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ZAV version_name = "Crown Class"} } }			
+			ship = { name = "HBS Revenge" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ZAV version_name = "Crown Class"} } }					
+			ship = { name = "HBS Ceres" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ZAV version_name = "Round Table Class" } } }
+			ship = { name = "HBS Caradoc" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ZAV version_name = "Round Table Class" } } }
+			ship = { name = "HBS Caster" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ZAV version_name = "Round Table Class" } } }
+			ship = { name = "HBS Kempenfelt" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Oathbound Class" } } }
+			ship = { name = "HBS Acasta" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Oathbound Class" } } }			
+			ship = { name = "HBS Antelope" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Oathbound Class" } } }			
+			ship = { name = "HBS Ardent" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Oathbound Class" } } }			
+			ship = { name = "HBS Acheron" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Oathbound Class" } } }			
+			ship = { name = "HBS Achates" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Oathbound Class" } } }				
+			ship = { name = "HBS Anthony" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Oathbound Class" } } }			
+			ship = { name = "HBS Arrow" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Oathbound Class" } } }			
+			ship = { name = "HBS Ammo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ZAV version_name = "Oathbound Class" } } }		
+		}
+	}
+
+	fleet = {
+		name = "Submarine Command"			
+		naval_base = 2790
+		task_force = {
+			name = "1st Submarine Flotilla"
+			location = 2790
+			ship = { name = "HBS A23" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Mist Class" } } }
+			ship = { name = "HBS A28" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Mist Class" } } }
+			ship = { name = "HBS A31" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Mist Class" } } }
+			ship = { name = "HBS A33" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Mist Class" } } }
+			ship = { name = "HBS A34" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Mist Class" } } }
+			ship = { name = "HBS A43" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Mist Class" } } }
+			ship = { name = "HBS A44" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Mist Class" } } }
+			ship = { name = "HBS A49" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Warden Class" } } }
+			ship = { name = "HBS A50" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Warden Class" } } }
+
+		}
+		task_force = {
+			name = "3rd Submarine Flotilla"
+			location = 1870
+			ship = { name = "HBS B23" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Mist Class" } } }
+			ship = { name = "HBS B28" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Mist Class" } } }
+			ship = { name = "HBS B31" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Mist Class" } } }
+			ship = { name = "HBS B33" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Mist Class" } } }
+			ship = { name = "HBS B34" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Mist Class" } } }
+			ship = { name = "HBS B43" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Mist Class" } } }
+			ship = { name = "HBS B44" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Mist Class" } } }
+			ship = { name = "HBS B49" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Warden Class" } } }
+			ship = { name = "HBS B50" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZAV version_name = "Warden Class" } } }
+		}
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "ZAV" 
+			version_name = "Emerald Lake Class"
+		}
+		name = "HBS Apollo"
+		requested_factories = 1
+		progress = 0.95
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "ZAV" 
+			version_name = "Emerald Lake Class"
+		}
+		name = "HBS Amphion"
+		requested_factories = 1
+		progress = 0.50
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "ZAV" 
+			version_name = "Warden Class"
+		}
+		name = "HBS Seawolf"
+		requested_factories = 1
+		progress = 0.50
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "ZAV" 
+			version_name = "Warden Class"
+		}
+		name = "HBS Narwhal"
+		requested_factories = 1
+		progress = 0.40
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "ZAV" 
+			version_name = "Silver Lance Class"
+		}
+		name = "HBS Gallant"
+		requested_factories = 1
+		progress = 0.90
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "ZAV" 
+			version_name = "Silver Lance Class"
+		}
+		name = "HBS Garland"
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "ZAV" 
+			version_name = "Silver Lance Class"
+		}
+		name = "HBS Gipsy"
+		requested_factories = 1
+		progress = 0.90
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "ZAV" 
+			version_name = "Silver Lance Class"
+		}
+		name = "HBS Glowworm"
+		requested_factories = 1
+		progress = 0.95
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_carrier_1
+			creator = "ZAV" 
+			version_name = "Nimue Class"
+		}
+		name = "HBS Royal Fire"
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
+}
