@@ -122,13 +122,14 @@ ZAV_encounter_option_1_effect = {
         if = {
             limit = { check_variable = { ZAV_curr_entry = 4 } }
 
-            set_variable = { ZAV_active_artifact = 3 }  # Corrupted Rose
             ZAV_2_option = yes
         }
         else_if = {
             limit = { check_variable = { ZAV_curr_entry = 5 } }
 
             custom_effect_tooltip = ZAV_very_high_chance_of_finding_clue_tt
+
+            set_temp_variable = { artifact = 3 }  # Corrupted Rose
             ZAV_remove_artifact_from_vault = yes
 
             ZAV_1_option = yes
@@ -167,13 +168,13 @@ ZAV_encounter_option_1_effect = {
         else_if = {
             limit = { check_variable = { ZAV_curr_entry = 4 } }
 
-            set_variable = { ZAV_active_artifact = 7 }  # Blighted Flesh
             ZAV_2_option = yes
         }
         else_if = {
             limit = { check_variable = { ZAV_curr_entry = 5 } }
 
             custom_effect_tooltip = ZAV_very_high_chance_of_finding_clue_tt
+            set_temp_variable = { artifact = 7 }  # Blighted Flesh of a False God
             ZAV_remove_artifact_from_vault = yes
 
             ZAV_1_option = yes
@@ -265,7 +266,6 @@ ZAV_encounter_option_1_effect = {
             set_variable = { ZAV_intro_heart = 0 }
             set_variable = { ZAV_intro_fire = 0 }
             set_variable = { ZAV_intro_vision = 0 }
-            set_variable = { ZAV_active_blessing = 4 }
 
             ZAV_3_option = yes
         }
@@ -284,20 +284,36 @@ ZAV_encounter_option_1_effect = {
 
             add_to_variable = { ZAV_intro_heart = 1 }
 
-            if = {
-                limit = {
-                    check_variable = { ZAV_intro_heart > 1 }
-                }
-
-                set_variable = { ZAV_active_blessing = 1 }
-            }
-
             ZAV_1_option = yes
         }
         else_if = {
             limit = { check_variable = { ZAV_curr_entry = 29 } }
 
-            ZAV_add_active_blessing = yes
+            set_temp_variable = { blessing = 4 }  # Whisperer
+
+            if = {
+                limit = {
+                    check_variable = { ZAV_intro_heart > 1 }
+                }
+
+                set_temp_variable = { blessing = 3 }  # Guardian
+            }
+            else_if = {
+                limit = {
+                    check_variable = { ZAV_intro_fire > 1 }
+                }
+
+                set_temp_variable = { blessing = 1 }  # Warrior
+            }
+            else_if = {
+                limit = {
+                    check_variable = { ZAV_intro_vision > 1 }
+                }
+
+                set_temp_variable = { blessing = 2 }  # Ripple
+            }
+
+            ZAV_add_blessing = yes
         }
         else_if = {
             limit = { check_variable = { ZAV_curr_entry = 30 } }
@@ -309,6 +325,8 @@ ZAV_encounter_option_1_effect = {
             limit = { check_variable = { ZAV_curr_entry = 35 } }
 
             custom_effect_tooltip = ZAV_your_journey_begins_in_this_world_tt
+
+            set_country_flag = ZAV_completed_introduction
 
             ZAV_end_encounter = yes
         }
@@ -388,14 +406,6 @@ ZAV_encounter_option_2_effect = {
 
             add_to_variable = { ZAV_intro_fire = 1 }
 
-            if = {
-                limit = {
-                    check_variable = { ZAV_intro_fire > 1 }
-                }
-
-                set_variable = { ZAV_active_blessing = 2 }
-            }
-
             ZAV_1_option = yes
             set_temp_variable = { next_entry = 29 }
         }
@@ -430,14 +440,6 @@ ZAV_encounter_option_3_effect = {
             limit = { check_variable = { ZAV_curr_entry = 28 } }
 
             add_to_variable = { ZAV_intro_vision = 1 }
-
-            if = {
-                limit = {
-                    check_variable = { ZAV_intro_vision > 2 }
-                }
-
-                set_variable = { ZAV_active_blessing = 3 }
-            }
 
             ZAV_1_option = yes
             set_temp_variable = { next_entry = 29 }

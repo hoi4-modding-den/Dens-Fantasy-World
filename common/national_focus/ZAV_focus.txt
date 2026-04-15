@@ -11,11 +11,74 @@ focus_tree = {
 	
 	default = no
 	continuous_focus_position = { x = 0 y = 2500 }
+
+	shared_focus = ZAV_assume_the_mantle
 }
 
 ### STARTING TREE ###
 
+shared_focus = {
+	id = ZAV_assume_the_mantle
+	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+	cost = 5
+	x = 16
+	y = 0
 
+	available = {
+		has_country_flag = ZAV_completed_introduction
+	}
+
+	ai_will_do = {
+		factor = 40000
+	}
+
+	completion_reward = {
+		add_political_power = 50
+		
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		custom_effect_tooltip = ZAV_unlocks_veilkeeper_archives_tt
+		set_country_flag = ZAV_unlocked_veilkeeper_archives
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+		
+		custom_effect_tooltip = ZAV_unlocks_veilkeeper_details_tt
+		set_country_flag = ZAV_unlocked_veilkeeper_details
+
+		set_temp_variable = { artifact = 11 }
+		ZAV_add_artifact_to_vault = yes
+	}
+}
+
+shared_focus = {
+	id = ZAV_the_night_plague
+	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+	cost = 5
+	relative_position_id = ZAV_assume_the_mantle
+	x = 8
+	y = 1
+
+	prerequisite = {
+		focus = ZAV_assume_the_mantle
+	}
+
+	allow_branch = {
+		has_country_flag = ZAV_night_plague_released
+	}
+
+	available = {
+		has_country_flag = ZAV_night_plague_released
+	}
+
+
+	ai_will_do = {
+		factor = 40000
+	}
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
 
 ### INDUSTRY TREE ###
 

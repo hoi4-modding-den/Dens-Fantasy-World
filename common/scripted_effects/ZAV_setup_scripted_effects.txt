@@ -1,0 +1,109 @@
+### SETUP ###
+
+ZAV_setup_artifacts = {
+    # The array artifact_classes stores the tier of artifact for each artifact at index i
+    # 1 - Slaughter Relic (most powerful)
+    # 2 - Sinister Artifact
+    # 3 - Blighted Item
+    # 4 - Ruinous Artifact
+    # 5 - Profane Relic (least powerful)
+
+    # Must be done since arrays are 0 indexed (aka this doesn't relate to any artifact)
+    add_to_array = { artifact_classes = 1 }
+
+    # 1 - Blood of King Arthur
+    add_to_array = { artifact_classes = 1 }
+
+    # 2 - Ashes of the Green Knight
+    add_to_array = { artifact_classes = 3 }
+
+    # 3 - Corrupted Rose
+    add_to_array = { artifact_classes = 4 }
+
+    # 4 - Fallen Hero Sword
+    add_to_array = { artifact_classes = 2 }
+
+    # 5 - Shroud of the Fey
+    add_to_array = { artifact_classes = 3 }
+
+    # 6 - Twisted Grail
+    add_to_array = { artifact_classes = 2 }
+
+    # 7 - Blighted Flesh of a False God
+    add_to_array = { artifact_classes = 3 }
+
+    # 8 - True Excalibur
+    add_to_array = { artifact_classes = 1 }
+    
+    # 9 - Putrid Crustacean
+    add_to_array = { artifact_classes = 5 }
+
+    # 10 - Warding Talisman
+    add_to_array = { artifact_classes = 4 }
+
+    # 11 - Elias Thorne's Timepiece
+    add_to_array = { artifact_classes = 5 }
+
+    # Initial artifacts in the Vault of Saint Constantine
+    add_to_array = { ZAV_vault_artifacts = 1 }
+    add_to_array = { ZAV_vault_artifacts = 2 }
+    add_to_array = { ZAV_vault_artifacts = 3 }
+    add_to_array = { ZAV_vault_artifacts = 4 }
+    add_to_array = { ZAV_vault_artifacts = 5 }
+    add_to_array = { ZAV_vault_artifacts = 6 }
+    add_to_array = { ZAV_vault_artifacts = 7 }
+}
+
+ZAV_setup_notebook = {
+    clr_country_flag = ZAV_unlocked_veilkeeper_archives
+    clr_country_flag = ZAV_unlocked_veilkeeper_details
+
+    set_variable = { ZAV_notebook_tab = 5 }
+
+    clear_array = ZAV_discoveries_divine_saviours
+    clear_array = ZAV_discoveries_order_of_shadows
+    clear_array = ZAV_discoveries_legion_of_the_drowned
+    clear_array = ZAV_discoveries_crimson_order
+    clear_array = ZAV_discoveries_order_of_true_knights
+}
+
+ZAV_setup_player_data = {
+    ### BLESSINGS ###
+
+    # 1 - Warrior
+    # 2 - Ripple
+    # 3 - Guardian
+    # 4 - Whisperer
+    # 5 - Oathmaster
+    # 6 - Visionary
+    # 7 - Presence
+    # 8 - Champion
+    # 9 - Conjurer
+    # 10 - Lost One
+    # 11 - Judgment
+    # 12 - Sacred
+    # 13 - Traveller
+    # 14 - Seraph
+    # 15 - Grailmaster
+    # 16 - Demon
+    # 17 - Ascendant Lord
+    # 18 - Nimue's Chosen
+    # 19 - Godslayer
+
+    set_variable = { ZAV_player_level = 0 }
+
+    clear_array = ZAV_player_blessings
+    clear_array = ZAV_player_curses
+}
+
+ZAV_setup_encounters = {
+    ### INTRO ENCOUNTER ###
+    set_variable = { ZAV_curr_encounter = 4 }
+    ZAV_effect_blood = yes
+    ZAV_start_encounter = yes
+
+    ### FUTURE ENCOUNTERS ###
+    country_event = { id = ZAV_encounters.1 days = 30 random_days = 15 }
+    country_event = { id = ZAV_encounters.2 days = 60 random_days = 15 }
+    country_event = { id = ZAV_encounters.3 days = 90 random_days = 15 }
+}

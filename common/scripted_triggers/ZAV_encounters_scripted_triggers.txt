@@ -7,7 +7,8 @@ ZAV_encounter_option_1_condition = {
 		if = {
 			limit = { check_variable = { ZAV_curr_entry = 5 } }
 
-			ZAV_has_active_artifact = yes
+			set_temp_variable = { artifact = 3 }  # Corrupted Rose
+			ZAV_has_artifact = yes
 		}
 	}
 	else_if = {
@@ -16,7 +17,8 @@ ZAV_encounter_option_1_condition = {
 		if = {
 			limit = { check_variable = { ZAV_curr_entry = 5 } }
 
-			ZAV_has_active_artifact = yes
+			set_temp_variable = { artifact = 7 }  # Blighted Flesh of a False God
+			ZAV_has_artifact = yes
 		}
 	}
 }

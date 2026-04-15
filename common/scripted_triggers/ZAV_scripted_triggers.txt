@@ -1,22 +1,8 @@
-#scripted trigger for Hungary
+### ARTIFACTS ###
 
-ZAV_has_active_artifact = {
+ZAV_has_artifact = {
 	custom_trigger_tooltip = {
-		tooltip = ZAV_has_active_artifact_tt
-		is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact }
-	}
-}
-
-ZAV_has_active_artifact2 = {
-	custom_trigger_tooltip = {
-		tooltip = ZAV_has_active_artifact2_tt
-		is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact2 }
-	}
-}
-
-ZAV_has_active_artifact3 = {
-	custom_trigger_tooltip = {
-		tooltip = ZAV_has_active_artifact3_tt
-		is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact3 }
+		tooltip = ZAV_has_artifact_tt
+		is_in_array = { ZAV_vault_artifacts = artifact }
 	}
 }

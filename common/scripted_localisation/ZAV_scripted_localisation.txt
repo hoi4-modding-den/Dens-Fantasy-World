@@ -1,23 +1,48 @@
+### ARTIFACTS ###
+
 defined_text = {
-	name = "GetActiveArtifactName"
+	name = "GetArtifactName"
 	text = {
-		localization_key = "ZAV_artifact_[?ZAV_active_artifact]"
+		localization_key = "ZAV_artifact_[?artifact]"
 	}
 }
 
 defined_text = {
-	name = "GetActiveArtifact2Name"
+	name = "GetVaultArtifactIcon"
 	text = {
-		localization_key = "ZAV_artifact_[?ZAV_active_artifact2]"
+		localization_key = "GFX_ZAV_artifact_[?artifact_value]"
 	}
 }
 
 defined_text = {
-	name = "GetActiveArtifact3Name"
+	name = "GetVaultArtifactName"
 	text = {
-		localization_key = "ZAV_artifact_[?ZAV_active_artifact3]"
+		localization_key = "ZAV_artifact_[?artifact_value]"
 	}
 }
+
+defined_text = {
+	name = "GetVaultArtifactDesc"
+	text = {
+		localization_key = "ZAV_artifact_[?artifact_value]_desc"
+	}
+}
+
+defined_text = {
+	name = "GetVaultArtifactEffects"
+	text = {
+		localization_key = "ZAV_artifact_[?artifact_value]_effect"
+	}
+}
+
+defined_text = {
+	name = "GetVaultArtifactClass"
+	text = {
+		localization_key = "ZAV_artifact_class_[?artifact_classes^artifact_value]"
+	}
+}
+
+### VEILKEEPER ARCHIVES ###
 
 defined_text = {
 	name = "GetNotebookButton"
@@ -181,42 +206,6 @@ defined_text = {
 	}
 }
 
-
-defined_text = {
-	name = "GetArtifactIcon"
-	text = {
-		localization_key = "GFX_ZAV_artifact_[?artifact_value]"
-	}
-}
-
-defined_text = {
-	name = "GetArtifactName"
-	text = {
-		localization_key = "ZAV_artifact_[?artifact_value]"
-	}
-}
-
-defined_text = {
-	name = "GetArtifactDesc"
-	text = {
-		localization_key = "ZAV_artifact_[?artifact_value]_desc"
-	}
-}
-
-defined_text = {
-	name = "GetArtifactEffects"
-	text = {
-		localization_key = "ZAV_artifact_[?artifact_value]_effect"
-	}
-}
-
-defined_text = {
-	name = "GetArtifactClass"
-	text = {
-		localization_key = "ZAV_artifact_class_[?artifact_classes^artifact_value]"
-	}
-}
-
 defined_text = {
 	name = "GetPageDiscoveryText"
 	text = {
@@ -358,14 +347,14 @@ defined_text = {
 }
 
 defined_text = {
-	name = "GetActiveBlessingName"
+	name = "GetBlessingName"
 	text = {
-		localization_key = "ZAV_blessing_[?ZAV_active_blessing]"
+		localization_key = "ZAV_blessing_[?blessing]"
 	}
 }
 
 defined_text = {
-	name = "GetActiveBlessingTier"
+	name = "GetBlessingTier"
 	text = {
 		trigger = {
 			check_variable = { ZAV_player_blessings^0 < 1 }
@@ -407,9 +396,9 @@ defined_text = {
 }
 
 defined_text = {
-	name = "GetActiveCurseName"
+	name = "GetCurseName"
 	text = {
-		localization_key = "ZAV_curse_[?ZAV_active_curse]"
+		localization_key = "ZAV_curse_[?curse]"
 	}
 }
 

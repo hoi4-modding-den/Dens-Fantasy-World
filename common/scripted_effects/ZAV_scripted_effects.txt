@@ -1,20 +1,53 @@
+### DEBUG ###
+
+d_add_blessing = {
+    set_temp_variable = { blessing = args^0 }
+
+    custom_effect_tooltip = ZAV_add_blessing_tt
+
+    add_to_variable = { ZAV_player_level = 1 }
+
+    add_to_array = { ZAV_player_blessings = blessing }
+}
+
+d_add_curse = {
+    set_temp_variable = { curse = args^0 }
+
+    custom_effect_tooltip = ZAV_add_curse_tt
+
+    add_to_array = { ZAV_player_curses = curse }
+}
+
+d_clear_player_data = {
+    set_variable = { ZAV_player_level = 0 }
+    clear_array = ZAV_player_blessings
+    clear_array = ZAV_player_curses
+
+    log = "Player level, blessings, and curses cleared."
+}
+
+d_clr_country_flag = {
+    clr_country_flag = args^0
+}
+
 ### ARTIFACTS ###
 
 ZAV_add_artifact_to_vault = {
+    custom_effect_tooltip = ZAV_add_artifact_to_vault_tt
+    
     if = {
         limit = {
             NOT = {
-                is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact }
+                is_in_array = { ZAV_vault_artifacts = artifact }
             }
         }
 
-        custom_effect_tooltip = ZAV_add_artifact_to_vault_tt
-        add_to_array = { ZAV_vault_artifacts = ZAV_active_artifact }
+        add_to_array = { ZAV_vault_artifacts = artifact }
     }
-    else = {
-        # Fallback (shouldn't happen)
-        custom_effect_tooltip = ZAV_cant_add_artifact_to_vault_tt
-    }
+    #else = {
+    #    # Fallback (shouldn't happen)
+    #    custom_effect_tooltip = ZAV_cant_add_artifact_to_vault_tt
+    #}
 }
 
 ZAV_remove_artifact_from_vault = {
@@ -22,80 +55,36 @@ ZAV_remove_artifact_from_vault = {
     
     if = {
         limit = {
-            is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact }
+            is_in_array = { ZAV_vault_artifacts = artifact }
         }
 
-        remove_from_array = { ZAV_vault_artifacts = ZAV_active_artifact }
+        remove_from_array = { ZAV_vault_artifacts = artifact }
     }
     #else = {
     #    custom_effect_tooltip = ZAV_cant_remove_artifact_from_vault_tt
     #}
 }
 
-# Accesses the second active artifact - I wish we could pass information into scripted effects
+### BLESSINGS ###
 
-ZAV_add_artifact_to_vault2 = {
-    if = {
-        limit = {
-            NOT = {
-                is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact2 }
-            }
-        }
+ZAV_add_blessing = {
+    custom_effect_tooltip = ZAV_add_blessing_tt
 
-        custom_effect_tooltip = ZAV_add_artifact_to_vault2_tt
-        add_to_array = { ZAV_vault_artifacts = ZAV_active_artifact2 }
-    }
-    else = {
-        # Fallback (shouldn't happen)
-        custom_effect_tooltip = ZAV_cant_add_artifact_to_vault2_tt
-    }
+    add_to_variable = { ZAV_player_level = 1 }
+
+    add_to_array = { ZAV_player_blessings = blessing }
 }
 
-ZAV_remove_artifact_from_vault2 = {
-    if = {
-        limit = {
-            is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact2 }
-        }
+ZAV_add_curse = {
+    custom_effect_tooltip = ZAV_add_curse_tt
 
-        custom_effect_tooltip = ZAV_remove_artifact_from_vault2_tt
-        remove_from_array = { ZAV_vault_artifacts = ZAV_active_artifact2 }
-    }
-    else = {
-        custom_effect_tooltip = ZAV_cant_remove_artifact_from_vault2_tt
-    }
+    add_to_array = { ZAV_player_curses = curse }
 }
 
-# Accesses the third active artifact
+ZAV_remove_curse = {
+    custom_effect_tooltip = ZAV_remove_curse_tt
 
-ZAV_add_artifact_to_vault3 = {
-    if = {
-        limit = {
-            NOT = {
-                is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact3 }
-            }
-        }
-
-        custom_effect_tooltip = ZAV_add_artifact_to_vault3_tt
-        add_to_array = { ZAV_vault_artifacts = ZAV_active_artifact3 }
-    }
-    else = {
-        # Fallback (shouldn't happen)
-        custom_effect_tooltip = ZAV_cant_add_artifact_to_vault3_tt
-    }
-}
-
-ZAV_remove_artifact_from_vault3 = {
-    if = {
-        limit = {
-            is_in_array = { ZAV_vault_artifacts = ZAV_active_artifact3 }
-        }
-
-        custom_effect_tooltip = ZAV_remove_artifact_from_vault3_tt
-        remove_from_array = { ZAV_vault_artifacts = ZAV_active_artifact3 }
-    }
-    else = {
-        custom_effect_tooltip = ZAV_cant_remove_artifact_from_vault3_tt
-    }
+    remove_from_array = { ZAV_player_curses = curse }
 }
 
 ### NOTEBOOK ###
@@ -220,44 +209,9 @@ ZAV_add_new_order_of_true_knights_info = {
     }
 }
 
-### BLESSINGS ###
+### OTHER ###
 
-d_add_blessing = {
-    set_variable = { ZAV_active_blessing = args^0 }
-
-    custom_effect_tooltip = ZAV_add_active_blessing_tt
-
-    add_to_variable = { ZAV_player_level = 1 }
-
-    add_to_array = { ZAV_player_blessings = ZAV_active_blessing }
-}
-
-d_add_curse = {
-    add_to_array = { ZAV_player_curses = args^0 }
-}
-
-d_clear_player_data = {
-    set_variable = { ZAV_player_level = 0 }
-    clear_array = ZAV_player_blessings
-    clear_array = ZAV_player_curses
-}
-
-ZAV_add_active_blessing = {
-    custom_effect_tooltip = ZAV_add_active_blessing_tt
-
-    add_to_variable = { ZAV_player_level = 1 }
-
-    add_to_array = { ZAV_player_blessings = ZAV_active_blessing }
-}
-
-ZAV_add_active_curse = {
-    custom_effect_tooltip = ZAV_add_active_curse_tt
-
-    add_to_array = { ZAV_player_curses = ZAV_active_curse }
-}
-
-ZAV_remove_active_curse = {
-    custom_effect_tooltip = ZAV_remove_active_curse_tt
-
-    remove_from_array = { ZAV_player_curses = ZAV_active_curse }
+ZAV_release_night_plague = {
+    set_country_flag = ZAV_night_plague_released
+    mark_focus_tree_layout_dirty = yes
 }

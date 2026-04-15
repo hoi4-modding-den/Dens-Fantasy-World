@@ -133,75 +133,7 @@ add_ideas = {
 	ZAV_secret_orders
 }
 
-set_variable = { ZAV_notebook_tab = 5 }
-
-# Must be done since arrays are 0 indexed (aka this doesn't relate to an artifact)
-add_to_array = { artifact_classes = 1 }
-
-# Blood of King Arthur - Slaughter Relic
-add_to_array = { ZAV_vault_artifacts = 1 }
-add_to_array = { artifact_classes = 1 }
-
-# Ashes of the Green Knight - Blighted Item
-add_to_array = { ZAV_vault_artifacts = 2 }
-add_to_array = { artifact_classes = 3 }
-
-# Corrupted Rose - Ruinous Artifact
-add_to_array = { ZAV_vault_artifacts = 3 }
-add_to_array = { artifact_classes = 4 }
-
-# Fallen Hero Sword - Sinister Artifact
-add_to_array = { ZAV_vault_artifacts = 4 }
-add_to_array = { artifact_classes = 2 }
-
-# Shroud of the Fey - Blighted Item
-add_to_array = { ZAV_vault_artifacts = 5 }
-add_to_array = { artifact_classes = 3 }
-
-# Twisted Grail - Sinister Artifact
-add_to_array = { ZAV_vault_artifacts = 6 }
-add_to_array = { artifact_classes = 2 }
-
-# Blighted Flesh of a False God - Blighted Item
-add_to_array = { ZAV_vault_artifacts = 7 }
-add_to_array = { artifact_classes = 3 }
-
-# True Excalibur - Slaughter Relic
-#add_to_array = { ZAV_vault_artifacts = 8 }
-add_to_array = { artifact_classes = 1 }
- 
-# Putrid Crustacean - Profane Relic
-#add_to_array = { ZAV_vault_artifacts = 9 }
-add_to_array = { artifact_classes = 5 }
-
-# Warding Talisman - Ruinous Artifact
-#add_to_array = { ZAV_vault_artifacts = 10 }
-add_to_array = { artifact_classes = 4 }
-
-
-### BLESSINGS ###
-
-set_variable = { ZAV_player_tier_1_blessing = 0 }
-set_variable = { ZAV_player_tier_2_blessing = 0 }
-set_variable = { ZAV_player_tier_3_blessing = 0 }
-set_variable = { ZAV_player_tier_4_blessing = 0 }
-set_variable = { ZAV_player_tier_5_blessing = 0 }
-set_variable = { ZAV_player_tier_6_blessing = 0 }
-
-set_variable = { ZAV_active_blessing = 0 }
-
-clear_array = ZAV_player_blessings
-clear_array = ZAV_player_curses
-set_variable = { ZAV_player_level = 0 }
-#add_to_array = { ZAV_player_curses = 1 }
-#add_to_array = { ZAV_player_curses = 2 }
-#add_to_array = { ZAV_player_curses = 3 }
-#add_to_array = { ZAV_player_curses = 4 }
-
-country_event = { id = ZAV_encounters.1 days = 30 random_days = 15 }
-country_event = { id = ZAV_encounters.2 days = 60 random_days = 15 }
-country_event = { id = ZAV_encounters.3 days = 90 random_days = 15 }
-
-set_variable = { ZAV_curr_encounter = 4 }
-ZAV_effect_blood = yes
-ZAV_start_encounter = yes
+ZAV_setup_artifacts = yes
+ZAV_setup_notebook = yes
+ZAV_setup_player_data = yes
+ZAV_setup_encounters = yes

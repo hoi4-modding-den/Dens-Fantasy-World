@@ -153,6 +153,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ZAV/ZAV_warding_talisman.dds"
 	}
 
+	spriteType = {
+		name = "GFX_ZAV_artifact_11"
+		texturefile = "gfx/interface/ZAV/ZAV_elias_thornes_timepiece.dds"
+	}
+
 	# ENCOUNTERS #
 
 	spriteType = {
@@ -178,6 +183,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ZAV_encounter_entry_background"
 		texturefile = "gfx/interface/ZAV/encounters/EntryBackground.dds"
+		alwaystransparent = yes
 	}
 
 	frameAnimatedSpriteType = {

@@ -1,12 +1,16 @@
 ﻿l_english:
 
+ #################
  # COUNTRY NAMES #
+ #################
 
  ZAV:0 "Kingdom of Avalon"
  ZAV_DEF:0 "the Kingdom of Avalon"
  ZAV_ADJ:0 "Avalonian"
 
+ #####################
  # POLITICAL PARTIES #
+ #####################
 
  ZAV_democratic_party:0 "Round Table - Liberal"
  ZAV_democratic_party_long:0 "Lords of the Round Table"
@@ -20,12 +24,16 @@
  ZAV_communism_party:0 "Broken Council Movement"
  ZAV_communism_party_long:0 "Broken Council Movement"
 
+ ##############
  # CHARACTERS #
+ ##############
 
  ZAV_richard_pendragon_desc:0 "Richard Pendragon is descendant from the legendary Arthur Pendragon."
  ZAV_lloyd_huntley_desc:0 "At the head of Avalon's great assembly stands Lloyd Huntley, a man of iron resolve and unyielding ambition. As Lord Paramount, he has sworn to preserve both the sanctity of the Grail and the democratic order of the Round Table, steering the realm through an age of smoke, steel, and uncertainty. A titan of industry as much as a statesman, Huntley's vast holdings in New Camelot and Port Elisabeth have fueled Avalon's ascent into the modern age, binding progress and power tightly to his name.\n\nYet for all his confidence and command, his leadership is shadowed by growing doubt. The spread of secret orders, the faltering of the Grail, and the unrest gripping the countryside have proven stubbornly resistant to his assurances. Where Huntley speaks of stability, the people see turmoil; where he promises renewal, they witness decay. Mocked in whispers and in print as the “Lord of Lies,” he walks a precarious line between hope and denial. Whether he is a visionary holding the realm together through sheer will or a man blind to the crisis unfolding around him may soon determine the fate of Avalon itself."
 
+ #########
  # IDEAS #
+ #########
 
  ZAV_lords_of_the_round_table:0 "Lords of the Round Table"
  ZAV_lords_of_the_round_table_desc:0 "While ultimate power rests on the throne, King Richard seldom interferes and as such the assembled Lords of the Round Table serve as the voice of the realm. Drawn from every corner of the kingdom, these lords gather not as rivals, but as equals, bound by duty to debate, deliberate, and decide the course of the nation together. Through spirited discourse and hard-won consensus, they temper ambition with wisdom, ensuring that no one hand may steer Avalon astray. In uncertain times, it is this unity of counsel that grants the realm its enduring stability and its hope for a just and prosperous future."
@@ -34,152 +42,42 @@
  ZAV_secret_orders:0 "§0Secret Orders§!"
  ZAV_secret_orders_desc:0 "Hiding in the shadows, a dark network festers in secrecy. Hidden circles and forbidden cults practice outlawed magics, offering devotion not to the Grail, nor to Nimue, but to nameless powers that whisper from beyond the veil. In return, they are granted gifts both terrible and corrupting. Twisted flesh, shattered minds, and violence without reason. Murders go unsolved, entire villages fall to madness, and rumors of monstrous transformations spread like wildfire.\n\nWorse still, the sacred ashes of Saint Morvydd have been stolen and her tomb defiled. Now wielded as a relic, her ashes are capable of inciting terror and hysteria on a mass scale. With the guardian priests of the realm stretched thin and the faithful losing their grip, these secret orders grow ever bolder. Unless they are rooted out, Avalon may soon find itself undone not by armies, but by the rot spreading from within."
 
+ ##########
  # EVENTS #
+ ##########
 
- ZAV_test_events.1.t:0 "Debug - Obtain the True Excalibur"
- ZAV_test_events.1.d:0 "Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur."
- ZAV_test_events.1.a:0 "..."
 
- ZAV_test_events.2.t:0 "Debug - Obtain the Putrid Crustacean"
- ZAV_test_events.2.d:0 "Somehow you obtained the putrid crustacean."
- ZAV_test_events.2.a:0 "..."
 
- ZAV_test_events.3.t:0 "Debug - Lose the Blood of King Arthur"
- ZAV_test_events.3.d:0 "Somehow you lost the Blood of King Arthur."
- ZAV_test_events.3.a:0 "..."
+ ###########
+ # FOCUSES #
+ ###########
 
- ZAV_test_events.4.t:0 "Debug - You found all clues"
- ZAV_test_events.4.d:0 "IDK how you managed to do this."
- ZAV_test_events.4.a:0 "..."
+ ZAV_assume_the_mantle:0 "Assume the Mantle"
+ ZAV_assume_the_mantle_desc:0 ""
 
- ZAV_information_events.1.t:0 "The Divine Saviours and the True King"
- ZAV_information_events.1.d:0 "The Divine Saviours are a secret organisation that is notorious for its increasingly violent and profane activities. While other secret organisations attempt to cover up traces of their activity, the saviours leave unmistakable marks in their wake. They are involved in ritualistic slaughter and defilement as well as spreading corruption in the bowels of our cities. Towns and cities have reported sudden disappearances, desecrated holy sites, and the emergence of twisted practices that defy law and tradition.\n\nThe saviours worship a deity known as the True King, who in prayer is claimed to one day rise and reclaim dominion over Avalon. Apostles of the True King view their actions not as crimes, but as necessary steps in preparing the realm for his wonderous return. Their acts of violence and corruption are framed as acts of devotion in purging weakness and reshaping society in His image.\n\nThe movement has found support among elements of the nobility. Disillusioned lords and ambitious elites have quietly aligned themselves with the Divine Saviours and provide resources, protection, and influence. This organisation is no longer a fringe sect but an organised and dangerous force whose influence corrupts the very heart of Avalon."
- ZAV_information_events.1.a:0 "..."
+ ZAV_the_night_plague:0 "The Night Plague"
+ ZAV_the_night_plague_desc:0 ""
 
- ZAV_information_events.2.t:0 ""
- ZAV_information_events.2.d:0 ""
- ZAV_information_events.2.a:0 ""
+ #########
+ # FLAGS #
+ #########
 
- ZAV_divine_saviours_events.1.t:0 "Theft at the Blackridge Estate"
- ZAV_divine_saviours_events.1.d:0 "The estate of Lord Halvyr Blackridge, situated on the outskirts of Port Elisabeth, has been breached. No servants were harmed, and no signs of forced entry were recorded.\n\nOnly a single item appears to have been taken: a small, antiquated talisman kept within the lord's private study. Its exact function is unknown, though the Brackenridge family records suggest it predates even the current dynasty. The precision of the theft has raised concern among local authorities."
- ZAV_divine_saviours_events.1.a:0 "..."
+ ZAV_completed_introduction:0 "The §8Veilkeeper§! is alive."
+ ZAV_night_plague_released:0 "The §0Night Plague§! has been released."
 
- ZAV_divine_saviours_events.2.t:0 "On Investigating Blackridge Estate"
- ZAV_divine_saviours_events.2.d:0 "The assigned investigator reports that the intruders bypassed all valuables, targeting only the talisman. The study shows no signs of struggle, suggesting either cooperation or incapacitation without resistance. A servant recalls hearing whispers during the night, though no intruders were seen. The air within the study is described as “oppressively still,” even hours after the incident. The investigator believes the object itself may be of greater significance than previously understood."
- ZAV_divine_saviours_events.2.a:0 "The servants know more than they are letting on."
- ZAV_divine_saviours_events.2.b:0 "Let's explore our other avenues."
-
- ZAV_divine_saviours_events.3.t:0 "Interrogating the Staff"
- ZAV_divine_saviours_events.3.d:0 "Under the influence of the Corrupted Rose, the household staff quickly broke. One among them confessed to aiding the intruders, describing figures cloaked in ritual garb who spoke of 'clarity beyond the veil.' The talisman, they claim, was necessary 'to endure what is to come.' Cross-referenced symbols found within the study match markings previously linked to a known heretical sect."
- ZAV_divine_saviours_events.3.a:0 "..."
-
- ZAV_divine_saviours_events.4.t:0 "A Careless Whisper"
- ZAV_divine_saviours_events.4.d:0 "Progress came slowly, until a minor breakthrough emerged from an unexpected source. A junior servant, overlooked in earlier questioning, came forward after overhearing fragments of conversation the night of the theft. They recalled one of the intruders speaking in hushed urgency, warning the others that without the talisman, 'the ashes would take them as well.' Though the conspirators remain unidentified, the purpose of the stolen relic becomes clearer. The object was not symbolic. It was protection. The lead is incomplete, but enough has been recovered to establish a pattern of intent."
- ZAV_divine_saviours_events.4.a:0 "..."
-
- ZAV_divine_saviours_events.5.t:0 "Silence in the Estate"
- ZAV_divine_saviours_events.5.d:0 "The investigation yielded nothing of substance. Those within the estate either know nothing, or refuse to speak further. Several members of the household were found dead under unclear circumstances. No signs of stuggle and no witnesses. With all potential leads extinguished, the investigation has gone cold. The stolen talisman is gone, and whatever purpose it served remains unknown. Unease has spread among the nobility following this incident, even warranting a mention at the round table."
- ZAV_divine_saviours_events.5.a:0 "..."
-
- ZAV_divine_saviours_events.6.t:0 "Killings in Lowmarket"
- ZAV_divine_saviours_events.6.d:0 "A series of brutal killings has been reported in the Lowmarket district of New Camelot. Victims appear to have been selected at random, their remains arranged in deliberate formations. Witnesses report shrouded figures fleeing the scene, though none could provide clear descriptions. The scale and nature of the violence suggest ritual intent."
- ZAV_divine_saviours_events.6.a:0 "..."
-
- ZAV_divine_saviours_events.7.t:0 "Not a Murder, an Offering"
- ZAV_divine_saviours_events.7.d:0 "Investigators confirm that the bodies were arranged with geometric precision, their positioning forming a pattern not immediately recognizable. Blood appears to have been deliberately collected and redistributed across the scene. One surviving witness claims the perpetrators spoke in reverence, referring to the act as a 'gift.' The investigator warns that the killings may not be the goal, but a means to something greater."
- ZAV_divine_saviours_events.7.a:0 "Use an artifact to trace ritual energy."
- ZAV_divine_saviours_events.7.b:0 "Proceed along another route."
-
- ZAV_divine_saviours_events.8.t:0 "Echoes of Devotion"
- ZAV_divine_saviours_events.8.d:0 "The Blighted Flesh reacted violently when brought near the site, drawing out residual energies left behind by the ritual. Investigators briefly witnessed a projection: figures kneeling before an unseen presence, their bodies strengthened by something unseen. The ritual was not merely symbolic. It was a transfer of power."
- ZAV_divine_saviours_events.8.a:0 "..."
-
- ZAV_divine_saviours_events.9.t:0 "Patterns in the Fog"
- ZAV_divine_saviours_events.9.d:0 "Though the ritual site yields little at first glance, a scholar attached to the investigation identifies a recurring geometric structure within the arrangement of the bodies. The pattern, when reconstructed, aligns with known heretical rites associated with sacrificial empowerment. The positioning was not arbitrary, it was designed to channel something beyond the material. While the perpetrators escaped, their intent is no longer in question. The killings were conducted to draw strength, not merely to terrorize."
- ZAV_divine_saviours_events.9.a:0 "..."
-
- ZAV_divine_saviours_events.10.t:0 "Another Night in Lowmarket"
- ZAV_divine_saviours_events.10.d:0 "Before investigators made meaningful progress, the killings have resumed. This time, they have been more brazen, entire alleyways are left strewn with bodies, arranged in increasingly elaborate formations. Panic has spread through Lowmarket. Civilians have begun to flee, abandoning their homes and livelihoods in desperation. With no understanding of the pattern or purpose behind the violence, authorities have been forced to impose harsh containment measures. Whatever the perpetrators sought, they have taken it, and left nothing behind but fear."
- ZAV_divine_saviours_events.10.a:0 "..."
-
- ZAV_divine_saviours_events.11.t:0 "Guardian Priest found Dead"
- ZAV_divine_saviours_events.11.d:0 "A senior guardian priest assigned to guard the Vault of Saint Constantine has been found dead in his quarters on Llamrei street, in close proximity to the Moonlight Chapel. No signs of forced entry were found. The corpse shows evidence of prolonged distress prior to death. Given the sensitivity of his post, the matter has been escalated immediately. This murder is similar to others we've seen previously by proponents of the Shadows of the Night."
- ZAV_divine_saviours_events.11.a:0 "..."
-
- ZAV_divine_saviours_events.12.t:0 "He didn't die quickly"
- ZAV_divine_saviours_events.12.d:0 "The investigator reports clear signs of torture, though no instruments were found at the scene. The guard's fingernails are torn, and deep markings cover the walls, suggesting he attempted to resist or escape. Fragments of writing indicate he was forced to recall procedural details repeatedly before his death. It is still unclear whether information was extracted from him prior to his execution."
- ZAV_divine_saviours_events.12.a:0 "Continue with the investigation."
-
- ZAV_divine_saviours_events.13.t:0 "A Message left Behind"
- ZAV_divine_saviours_events.13.d:0 "The investigation into the death of the guardian priest has stalled, yet a final detail has been uncovered. Hidden beneath the guard's bedding, investigators found a scrap of parchment overlooked during the initial sweep. Written in a shaking hand, it contains fragmented references to the Divine Saviours and repeatedly mentions the 'king that bleeds.' The information is too incomplete to rule out the involvement of other orders, but it confirms that the Divine Saviours have a connection to this murder. We have no way of knowing whether sensitive information pertaining to the vault was divulged. There may be a breach already in motion."
- ZAV_divine_saviours_events.13.a:0 "..."
-
- ZAV_divine_saviours_events.14.t:0 "Disturbance at Moonlight Chapel"
- ZAV_divine_saviours_events.14.d:0 "Reports from Moonlight Chapel indicate erratic behavior among clergy and visitors alike. Several individuals have fled the site in a state of extreme agitation, while others remain inside, unresponsive. Witnesses describe a starry dust being dispersed within the chapel halls. The situation is rapidly deteriorating. We are under attack."
- ZAV_divine_saviours_events.14.a:0 "..."
-
- ZAV_divine_saviours_events.15.t:0 "Widespread Hysteria at the Chapel"
- ZAV_divine_saviours_events.15.d:0 "Priests have confirmed the presence of a foreign substance inflicting madness on those exposed to it. The unfortunate souls to have been afflicted by the madness have shown signs of hysteria and often turn on one another. Despite this, a small group within the chapel seems unaffected, moving with purpose through the chaos. The sacred ashes of Saint Morvydd that has recently been stolen from one of our cathedrals is likely the artifact that has been used to cripple the chapel's defenses."
- ZAV_divine_saviours_events.15.a:0 "Use our resources to track the unaffected figures."
- ZAV_divine_saviours_events.15.b:0 "Head directly to King Arthur's tomb."
-
- ZAV_divine_saviours_events.16.t:0 "Through Madness, a Path"
- ZAV_divine_saviours_events.16.d:0 "The Shroud revealed a coordinated movement beneath the chaos. The unaffected individuals were navigating toward a concealed passage below the chapel. They were carrying with them a protective charm, likely the source of their immunity. They appeared to be heading for the Vault of Saint Constantine. Given the weakened state of our guardian priests, a single aggressor was captured. Realising his fate, this man released his will and let the deity he had been praying to corrupt his body. Besides his lifeless corpse, the talisman was found."
- ZAV_divine_saviours_events.16.a:0 "..."
-
- ZAV_divine_saviours_events.17.t:0 "Blood Crown"
- ZAV_divine_saviours_events.17.d:0 "By the time our forces reached the lower chambers, to the tomb of King Arthur, bodies littered the floor of the great burial chamber. Our defenses had been broken, priests assigned to guard the vault lay on the ground, twisted and lifeless. The intruders have stolen the Blood of King Arthur, a Slaughter Relic class artifact. A single marking was left on the wall of the tomb: a crown split open, from which blood flows downward. With the enemy in control of an artifact of such power, it may not be too long before the forces moving in the shadows face us in the open."
- ZAV_divine_saviours_events.17.a:0 "May the Lady have pity on us."
-
+ ############
  # TOOLTIPS #
+ ############
 
- ZAV_add_artifact_to_vault_tt:0 "\nAdd artifact '[GetActiveArtifactName]' to the §YVault of Saint Constantine§!."
- ZAV_cant_add_artifact_to_vault_tt:0 "\nArtifact '[GetActiveArtifactName]' is already in the §YVault of Saint Constantine§!."
- ZAV_remove_artifact_from_vault_tt:0 "\nRemove artifact '[GetActiveArtifactName]' from the §YVault of Saint Constantine§!."
- ZAV_cant_remove_artifact_from_vault_tt:0 "\nWe don't have the '[GetActiveArtifactName]' in the §YVault of Saint Constantine§!."
- ZAV_has_active_artifact_tt:0 "The artifact '[GetActiveArtifactName]' is in the §YVault of Saint Constantine§!."
-
- ZAV_add_artifact_to_vault2_tt:0 "\nAdd artifact '[GetActiveArtifact2Name]' to the §YVault of Saint Constantine§!."
- ZAV_cant_add_artifact_to_vault2_tt:0 "\nArtifact '[GetActiveArtifact2Name]' is already in the §YVault of Saint Constantine§!."
- ZAV_remove_artifact_from_vault2_tt:0 "\nRemove artifact '[GetActiveArtifact2Name]' from the §YVault of Saint Constantine§!."
- ZAV_cant_remove_artifact_from_vault2_tt:0 "\nWe don't have the '[GetActiveArtifact2Name]' in the §YVault of Saint Constantine§!."
- ZAV_has_active_artifact2_tt:0 "The artifact '[GetActiveArtifactName]' is in the §YVault of Saint Constantine§!."
-
- ZAV_add_artifact_to_vault3_tt:0 "\nAdd artifact '[GetActiveArtifact3Name]' to the §YVault of Saint Constantine§!."
- ZAV_cant_add_artifact_to_vault3_tt:0 "\nArtifact '[GetActiveArtifact3Name]' is already in the §YVault of Saint Constantine§!."
- ZAV_remove_artifact_from_vault3_tt:0 "\nRemove artifact '[GetActiveArtifact3Name]' from the §YVault of Saint Constantine§!."
- ZAV_cant_remove_artifact_from_vault3_tt:0 "\nWe don't have the '[GetActiveArtifact3Name]' in the §YVault of Saint Constantine§!."
- ZAV_has_active_artifact3_tt:0 "The artifact '[GetActiveArtifactName]' is in the §YVault of Saint Constantine§!."
-
- ZAV_no_chance_of_finding_clue_tt:0 "§RNo chance of a positive outcome.§!"
- ZAV_very_low_chance_of_finding_clue_tt:0 "§RVery low chance of a positive outcome.§!"
- ZAV_low_chance_of_finding_clue_tt:0 "§OLow chance of a positive outcome.§!"
- ZAV_regular_chance_of_finding_clue_tt:0 "§YRegular chance of a positive outcome.§!"
- ZAV_high_chance_of_finding_clue_tt:0 "§GHigh chance of a positive outcome.§!"
- ZAV_very_high_chance_of_finding_clue_tt:0 "§GVery high chance of a positive outcome.§!"
-
- ZAV_notebook_updated_tt:0 "\nA §4new entry§! has been added to the §8Veilkeeper Archives§!."
-
- ZAV_will_use_corrupted_rose_tt:0 "Will remove the §0Corrupted Rose§! from the §YVault of Saint Constantine§!."
- ZAV_cant_use_corrupted_rose_tt:0 "We do not have the §0Corrupted Rose§! in the §YVault of Saint Constantine§!."
- ZAV_use_corrupted_rose_tt:0 "The §0Corrupted Rose§! has been consumed."
-
- ZAV_will_use_blighted_flesh_tt:0 "Will remove the §0Blighted Flesh of a False God§! from the §YVault of Saint Constantine§!."
- ZAV_cant_use_blighted_flesh_tt:0 "We do not have the §0Blighted Flesh of a False God§! in the §YVault of Saint Constantine§!."
- ZAV_use_blighted_flesh_tt:0 "The §0Blighted Flesh of a False God§! has been consumed."
+ ZAV_unlocks_veilkeeper_archives_tt:0 "Unlocks the §8Veilkeeper Archives§!, which allows you to gather information about §YAvalon§!."
+ ZAV_unlocks_veilkeeper_details_tt:0 "Unlocks §8Veilkeeper stats§!, which allows you to see your current §Yblessings§! and §Rcurses§!."
 
  ZAV_who_could_the_bleeding_king_be_tt:0 "§tWho could the Bleeding King be?§!"
-
- ZAV_will_use_shroud_of_the_fey_tt:0 "Will remove the §3Shroud of the Fey§! from the §YVault of Saint Constantine§!."
- ZAV_cant_use_shroud_of_the_fey_tt:0 "We do not have the §3Shroud of the Fey§! in the §YVault of Saint Constantine§!."
- ZAV_use_shroud_of_the_fey_tt:0 "The §3Shroud of the Fey§! has been consumed."
-
- ZAV_warding_talisman_obtained_tt:0 "\nWe have obtained the §YWarding Talisman§! which will be placed later in the §YVault of Saint Constantine§!."
- ZAV_blood_of_king_arthur_stolen_tt:0 "The §tBlood of King Arthur§! has been stolen from the §YVault of Saint Constantine§!!"
-
  ZAV_your_journey_begins_in_this_world_tt:0 "§YYour journey in this world begins here.§!"
 
- # MYSTIC KNOWLEDGE #
+ #######################
+ # VEILKEEPER ARCHIVES #
+ #######################
 
  ZAV_open_notebook_text:0 "§8Veilkeeper Archives§!"
  ZAV_open_notebook_tt:0 "[GetOpenNotebookTooltip]"
@@ -188,7 +86,7 @@
  ZAV_open_notebook_new_info_tt:0 "There is §4new information§! in the §8Veilkeeper Archives§!."
  ZAV_open_notebook_delayed_tt:0 "§LThe Veilkeeper Archives contain information we have collected about secret orders, powerful artifacts, dangerous beings, and other subjects dangerous enough to warrant our attention.§!\n--------------\nShortcut: £GFX_tab"
 
- ZAV_merlins_library:0 "Merlin's Library"
+ ZAV_notebook_updated_tt:0 "\nA §4new entry§! has been added to the §8Veilkeeper Archives§!."
 
  ZAV_notebook_tab_help:0 "§YVeilkeeper Archives§!"
  ZAV_notebook_tab_divine_saviours:0 "Divine Saviours"
@@ -227,7 +125,9 @@
 
  ZAV_page_discoveries_text:0 "[GetPageDiscoveryText]"
 
- # INFO #
+ ###############
+ # DISCOVERIES #
+ ###############
 
  ZAV_notebook_info_blank:0 ""
  ZAV_discoveries_divine_saviours_1:0 "The Divine Saviours have shown interest in acquiring specific relics tied to mental resilience. Their operations suggest preparation for exposure to forces that induce madness. Such artifacts are selectively targeted and stolen with precision."
@@ -244,21 +144,28 @@
 
  ZAV_discoveries_order_of_true_knights_1:0 "OoTK PLACEHOLDER"
 
+ ##############################
  # VAULT OF SAINT CONSTANTINE #
+ ##############################
 
  ZAV_vault_of_saint_constantine:0 "Vault of Saint Constantine"
  ZAV_vault_of_saint_constantine_desc:0 "Deep beneath the stone foundations of the §1Moonlight Cathedral§! lies the §YVault of Saint Constantine§!, a sanctum built not to display power, §tbut to contain it§!. Within its warded chambers rest relics of immense and often perilous origin, artifacts recovered from §0fallen cults§!, §tforgotten ages§!, and §8battlefields§! where reality itself seemed to fray. Each is carefully sealed, catalogued, and guarded, for while §Gmany possess the potential to bring great advantage to the realm§!, §ttheir use is seldom without consequence§!.\n\nSome are blessings that burn brightly but briefly, capable of turning the tide of crisis in a single, irreversible moment. Others are more §0insidious§!, offering power at a cost not yet fully understood. The §Ykeepers of the Vault§! know well that restraint is as vital as strength; to draw upon these relics too freely would be to §tinvite the very ruin they were locked away to prevent§!. And so they wait, silent, watchful, until the hour grows dire enough to justify unlocking what should never be used lightly."
 
  ZAV_vault_title:0 "§8Current Artifacts§!"
- ZAV_artifact_name:0 "[GetArtifactName]\n\nClass: [GetArtifactClass]\n\nEffects: §t[GetArtifactEffects]§!"
- ZAV_artifact_desc:0 "§L[GetArtifactDesc]§!"
- 
+ ZAV_artifact_name:0 "[GetVaultArtifactName]\n\nClass: [GetVaultArtifactClass]\n\nEffects: §t[GetVaultArtifactEffects]§!"
+ ZAV_artifact_desc:0 "§L[GetVaultArtifactDesc]§!"
 
  ZAV_artifact_class_1:0 "§0Slaughter Relic§!"
  ZAV_artifact_class_2:0 "§RSinister Artifact§!"
  ZAV_artifact_class_3:0 "§OBlighted Item§!"
  ZAV_artifact_class_4:0 "§8Ruinous Artifact§!"
  ZAV_artifact_class_5:0 "§GProfane Relic§!"
+
+ ZAV_add_artifact_to_vault_tt:0 "\nAdd artifact '[GetArtifactName]' to the §YVault of Saint Constantine§!."
+ ZAV_cant_add_artifact_to_vault_tt:0 "\nArtifact '[GetArtifactName]' is already in the §YVault of Saint Constantine§!."
+ ZAV_remove_artifact_from_vault_tt:0 "\nRemove artifact '[GetArtifactName]' from the §YVault of Saint Constantine§!."
+ ZAV_cant_remove_artifact_from_vault_tt:0 "\nWe don't have the '[GetArtifactName]' in the §YVault of Saint Constantine§!."
+ ZAV_has_artifact_tt:0 "The artifact '[GetArtifactName]' is in the §YVault of Saint Constantine§!."
 
  ZAV_artifact_1:0 "§tBlood of King Arthur§!"
  ZAV_artifact_1_effect:0 "Can resurrect a mortal from beyond the veil."
@@ -300,9 +207,9 @@
  ZAV_artifact_10_effect:0 "Capable of protecting the users from spreading madness."
  ZAV_artifact_10_desc:0 "PLACEHOLDER"
 
- ZAV_add_artifact_excalibur_tt:0 "The §9True Excalibur§! will be stored in the §YVault of Constantine§!."
- ZAV_add_artifact_putrid_crustacean_tt:0 "The §7Putrid Crustacean§! will be stored in the §YVault of Constantine§!."
- ZAV_remove_artifact_blood_of_king_arthur_tt:0 "The §tBlood of King Arthur§! has been stolen from the §YVault of Constantine§!."
+ ZAV_artifact_11:0 "§LElias Thorne's Timepiece§!"
+ ZAV_artifact_11_effect:0 "PLACEHOLDER"
+ ZAV_artifact_11_desc:0 "PLACEHOLDER"
 
  ###################
  #   ENCOUNTERS   #
@@ -325,7 +232,16 @@
 
  ZAV_encounter_text_entry_text:0 "[GetEncounterTextEntryText]"
 
+ ZAV_no_chance_of_finding_clue_tt:0 "§RNo chance of a positive outcome.§!"
+ ZAV_very_low_chance_of_finding_clue_tt:0 "§RVery low chance of a positive outcome.§!"
+ ZAV_low_chance_of_finding_clue_tt:0 "§OLow chance of a positive outcome.§!"
+ ZAV_regular_chance_of_finding_clue_tt:0 "§YRegular chance of a positive outcome.§!"
+ ZAV_high_chance_of_finding_clue_tt:0 "§GHigh chance of a positive outcome.§!"
+ ZAV_very_high_chance_of_finding_clue_tt:0 "§GVery high chance of a positive outcome.§!"
+
  ZAV_end_encounter_tt:0 "\n§LEnds the current encounter.§!"
+
+ ### THEFT AT THE BLACKRIDGE ESTATE ###
 
  ZAV_encounter_1.t:0 "Theft at the Blackridge Estate"
 
@@ -362,6 +278,8 @@
 
  ZAV_encounter_1.11.desc:0 "You are forced to leave the investigation to the guardian priests. Nothing further is found, and the inconclusive nature of the investigation has worried many nearby nobles enough to warrant a mention by a lord at the round table."
  ZAV_encounter_1.11.a:0 "Unfortunate to say the least."
+
+ ### KILLINGS IN LOWMARKET ###
 
  ZAV_encounter_2.t:0 "Killings in Lowmarket"
 
@@ -402,24 +320,32 @@
  ZAV_encounter_2.11.desc:0 "With no understanding of the violence, guardian priests were called in to cleanse the entire district. Whatever the perpetrators sought, they have taken it, and left nothing but fear behind."
  ZAV_encounter_2.11.a:0 "What an awful turn of events."
 
+ ### THE DEATH OF SEARGEANT PERCIWN ###
+
  ZAV_encounter_3.t:0 "The Death of Sergeant Perciwn"
 
  ZAV_encounter_3.1.desc:0 "Sergeant James Perciwn, a senior guardian priest assigned to guard the Vault of Saint Constantine has been found dead in his quarters on Llamrei street, mere blocks away from the Moonlight Chapel. No clear cause of death has been identified yet. Due to the sensitivity of his post, the Veilkeeper has been called to oversee the investigation."
  ZAV_encounter_3.1.a:0 "..."
+
  ZAV_encounter_3.2.desc:0 "As you briskly walk down the pavement of Llamrei street, you take note of the gorgeous architecture and benevolent feel of the neighbourhood. The warm rays of sunlight illuminating the street give it a relaxing air. You chuckle, it's not a bad place to die."
  ZAV_encounter_3.2.a:0 "..."
- ZAV_encounter_3.3.desc:0 "The facade of Sergeant Perciwn's house was neat and tidy, not a plant was overgrown, not a brick was dirty. He must have kept an ordered lifestyle. After walking through the ornate front door, you are immediately greeted by the front parlor, which on any other occasion would have been magnificent. There was a body lying face down in this one."
+
+ ZAV_encounter_3.3.desc:0 "The facade of Sergeant Perciwn's house was neat and tidy, not a plant was overgrown, not a brick was dirty. He must have kept an ordered lifestyle. After walking through the ornate front door, you are immediately greeted by the front parlor, which on any other occasion would have been magnificent. In fact, there was a body lying face down in this one."
  ZAV_encounter_3.3.a:0 "..."
+
  ZAV_encounter_3.4.desc:0 "The sergeant's body was pale and lifeless. He was dressed in his evening wear, and judging by the folded paper and unfinished mug of tea, he was in the process of beginning his morning. Further inspection of the scene yielded nothing of importance. It is possible that the man died from natural causes, but something in the air felt off."
  ZAV_encounter_3.4.a:0 "..."
+
  ZAV_encounter_3.5.desc:0 "Thankfully, a concerned neighbour, Ms. Isabelle, explained that she had heard strange voices coming from the sergeant's residence as she was readying her breakfast. Ms. Isabelle recalled mentions of a 'Bleeding King' and loud threats being hurled at someone. By the time she had went to investigate, the house had fallen silent."
  ZAV_encounter_3.5.a:0 "Thank god the walls are thin."
+
  ZAV_encounter_3.6.desc:0 "The Veilkeeper Archives has no record of a 'Bleeding King,' yet it would be logical to connect it with the Divine Saviours and their True King. You wonder whether this is a deity we have yet to encounter before, or an honourific name for a deity we are aware of."
  ZAV_encounter_3.6.a:0 "..."
+
  ZAV_encounter_3.7.desc:0 "Further inspection of the scene yielded no new leads. Yet again you are forced to relinquish control of the situation to the guardian priests, who are eagerly searching for clues that would lead them to the perpetrators. The death of their comrade has deeply wounded them. It seems we have a new problem: the Bleeding King."
  ZAV_encounter_3.7.a:0 "..."
 
- # INTRODUCTION #
+ ### INTRODUCTION ###
 
  ZAV_encounter_4.t:0 "Divinity beyond the Veil"
 
@@ -534,7 +460,9 @@
  ZAV_encounter_4.35.desc:0 "You quickly read the badge on the man's blazer, it seems he's a lieutenant. With a smirk, you simply retort \"As you can see Lieutenant, I am very much alive.\""
  ZAV_encounter_4.35.a:0 "And so it begins..."
 
- # BLESSINGS AND CURSES #
+ ######################
+ # VEILKEEPER DETAILS #
+ ######################
 
  ZAV_veilkeeper_details_tt:0 "§LVeilkeeper stats§!\n\nLevel: [GetPlayerLevel]\n\nBlessings:\n[GetPlayerBlessingList]\nCurses:\n[GetPlayerCurseList]"
 
@@ -542,14 +470,19 @@
  ZAV_player_level_1:0 "§5Acolyte§!"
  ZAV_player_level_2:0 "§4Vessel§!"
  ZAV_player_level_3:0 "§3Exarch§!"
- ZAV_player_level_4:0 "§2Demi-God§!"
+ ZAV_player_level_4:0 "§2Saint§!"
  ZAV_player_level_5:0 "§1Ascendant§!"
  ZAV_player_level_6:0 "§0Deity§!"
 
- ZAV_add_active_blessing_tt:0 "Gain the blessing §Y'[GetActiveBlessingName]' - [GetActiveBlessingTier]§!."
+ #############
+ # BLESSINGS #
+ #############
+
+ ZAV_add_blessing_tt:0 "Gain the blessing §Y'[GetBlessingName]' - [GetBlessingTier]§!."
 
  ZAV_blessing_list:0 "§Y[GetPlayerBlessingName] - [GetPlayerBlessingTier]§!\n[GetPlayerBlessingList]"
 
+ # Blessing tiers
  ZAV_blessings_tier_1:0 "Tier I"
  ZAV_blessings_tier_2:0 "Tier II"
  ZAV_blessings_tier_3:0 "Tier III"
@@ -557,13 +490,43 @@
  ZAV_blessings_tier_5:0 "Tier V"
  ZAV_blessings_tier_6:0 "Tier VI"
 
- ZAV_blessing_1:0 "Pure of Heart"
- ZAV_blessing_2:0 "Blazing Fire"
- ZAV_blessing_3:0 "Visionary"
- ZAV_blessing_4:0 "Lost One"
+ # Tier 1 blessings
+ ZAV_blessing_1:0 "Warrior"
+ ZAV_blessing_2:0 "Ripple"
+ ZAV_blessing_3:0 "Guardian"
+ ZAV_blessing_4:0 "Whisperer"
 
- ZAV_add_active_curse_tt:0 "Gain the curse §R'[GetActiveCurseName]'§!."
- ZAV_remove_active_curse_tt:0 "Lose the curse §R'[GetActiveCurseName]'§!."
+ # Tier 2 blessings
+ ZAV_blessing_5:0 "Oathmaster"
+ ZAV_blessing_6:0 "Visionary"
+ ZAV_blessing_7:0 "Presence"
+
+ # Tier 3 blessings
+ ZAV_blessing_8:0 "Champion"
+ ZAV_blessing_9:0 "Conjurer"
+ ZAV_blessing_10:0 "Lost One"
+
+ # Tier 4 blessings
+ ZAV_blessing_11:0 "Judgment"
+ ZAV_blessing_12:0 "Sacred"
+ ZAV_blessing_13:0 "Traveller"
+
+ # Tier 5 blessings
+ ZAV_blessing_14:0 "Seraph"
+ ZAV_blessing_15:0 "Grailmaster"
+ ZAV_blessing_16:0 "Demon"
+
+ # Tier 6 blessings
+ ZAV_blessing_17:0 "Ascendant Lord"
+ ZAV_blessing_18:0 "Nimue's Chosen"
+ ZAV_blessing_19:0 "Godslayer"
+
+ ##########
+ # CURSES #
+ ##########
+
+ ZAV_add_curse_tt:0 "Gain the curse §R'[GetCurseName]'§!."
+ ZAV_remove_curse_tt:0 "Lose the curse §R'[GetCurseName]'§!."
 
  ZAV_curse_list:0 "§R[GetPlayerCurseName]§!\n[GetPlayerCurseList]"
 
@@ -572,14 +535,18 @@
  ZAV_curse_3:0 "§RDeath's Embrace§!"
  ZAV_curse_4:0 "§RBlack Spores§!"
 
+ #################
  # MISCELLANEOUS #
+ #################
 
  ZAV_lord_of_lies:0 "Lord of Lies"
  ZAV_lion_of_avalon:0 "§8Lion of Avalon§!"
 
  ZAV_secret_orders_modifier_tt:0 "\nEvents resulting from unchecked §0eldritch sorcery§! will fire while this national spirit is active."
 
+ #############
  # GEOGRAPHY #
+ #############
 
  STATE_285:0 "Wyrmwood"
  STATE_137:0 "Myrrdin"
@@ -632,3 +599,102 @@
  VICTORY_POINTS_1950:0 "Camlann"
  VICTORY_POINTS_3892:0 "Regentsburg"
  VICTORY_POINTS_1678:0 "Ardham"
+
+ ##############
+ # DEPRECATED #
+ ##############
+
+# ZAV_test_events.1.t:0 "Debug - Obtain the True Excalibur"
+# ZAV_test_events.1.d:0 "Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur. Somehow you obtained the true excalibur."
+# ZAV_test_events.1.a:0 "..."
+#
+# ZAV_test_events.2.t:0 "Debug - Obtain the Putrid Crustacean"
+# ZAV_test_events.2.d:0 "Somehow you obtained the putrid crustacean."
+# ZAV_test_events.2.a:0 "..."
+#
+# ZAV_test_events.3.t:0 "Debug - Lose the Blood of King Arthur"
+# ZAV_test_events.3.d:0 "Somehow you lost the Blood of King Arthur."
+# ZAV_test_events.3.a:0 "..."
+#
+# ZAV_test_events.4.t:0 "Debug - You found all clues"
+# ZAV_test_events.4.d:0 "IDK how you managed to do this."
+# ZAV_test_events.4.a:0 "..."
+#
+# ZAV_information_events.1.t:0 "The Divine Saviours and the True King"
+# ZAV_information_events.1.d:0 "The Divine Saviours are a secret organisation that is notorious for its increasingly violent and profane activities. While other secret organisations attempt to cover up traces of their activity, the saviours leave unmistakable marks in their wake. They are involved in ritualistic slaughter and defilement as well as spreading corruption in the bowels of our cities. Towns and cities have reported sudden disappearances, desecrated holy sites, and the emergence of twisted practices that defy law and tradition.\n\nThe saviours worship a deity known as the True King, who in prayer is claimed to one day rise and reclaim dominion over Avalon. Apostles of the True King view their actions not as crimes, but as necessary steps in preparing the realm for his wonderous return. Their acts of violence and corruption are framed as acts of devotion in purging weakness and reshaping society in His image.\n\nThe movement has found support among elements of the nobility. Disillusioned lords and ambitious elites have quietly aligned themselves with the Divine Saviours and provide resources, protection, and influence. This organisation is no longer a fringe sect but an organised and dangerous force whose influence corrupts the very heart of Avalon."
+# ZAV_information_events.1.a:0 "..."
+#
+# ZAV_information_events.2.t:0 ""
+# ZAV_information_events.2.d:0 ""
+# ZAV_information_events.2.a:0 ""
+#
+# ZAV_divine_saviours_events.1.t:0 "Theft at the Blackridge Estate"
+# ZAV_divine_saviours_events.1.d:0 "The estate of Lord Halvyr Blackridge, situated on the outskirts of Port Elisabeth, has been breached. No servants were harmed, and no signs of forced entry were recorded.\n\nOnly a single item appears to have been taken: a small, antiquated talisman kept within the lord's private study. Its exact function is unknown, though the Brackenridge family records suggest it predates even the current dynasty. The precision of the theft has raised concern among local authorities."
+# ZAV_divine_saviours_events.1.a:0 "..."
+#
+# ZAV_divine_saviours_events.2.t:0 "On Investigating Blackridge Estate"
+# ZAV_divine_saviours_events.2.d:0 "The assigned investigator reports that the intruders bypassed all valuables, targeting only the talisman. The study shows no signs of struggle, suggesting either cooperation or incapacitation without resistance. A servant recalls hearing whispers during the night, though no intruders were seen. The air within the study is described as “oppressively still,” even hours after the incident. The investigator believes the object itself may be of greater significance than previously understood."
+# ZAV_divine_saviours_events.2.a:0 "The servants know more than they are letting on."
+# ZAV_divine_saviours_events.2.b:0 "Let's explore our other avenues."
+#
+# ZAV_divine_saviours_events.3.t:0 "Interrogating the Staff"
+# ZAV_divine_saviours_events.3.d:0 "Under the influence of the Corrupted Rose, the household staff quickly broke. One among them confessed to aiding the intruders, describing figures cloaked in ritual garb who spoke of 'clarity beyond the veil.' The talisman, they claim, was necessary 'to endure what is to come.' Cross-referenced symbols found within the study match markings previously linked to a known heretical sect."
+# ZAV_divine_saviours_events.3.a:0 "..."
+#
+# ZAV_divine_saviours_events.4.t:0 "A Careless Whisper"
+# ZAV_divine_saviours_events.4.d:0 "Progress came slowly, until a minor breakthrough emerged from an unexpected source. A junior servant, overlooked in earlier questioning, came forward after overhearing fragments of conversation the night of the theft. They recalled one of the intruders speaking in hushed urgency, warning the others that without the talisman, 'the ashes would take them as well.' Though the conspirators remain unidentified, the purpose of the stolen relic becomes clearer. The object was not symbolic. It was protection. The lead is incomplete, but enough has been recovered to establish a pattern of intent."
+# ZAV_divine_saviours_events.4.a:0 "..."
+#
+# ZAV_divine_saviours_events.5.t:0 "Silence in the Estate"
+# ZAV_divine_saviours_events.5.d:0 "The investigation yielded nothing of substance. Those within the estate either know nothing, or refuse to speak further. Several members of the household were found dead under unclear circumstances. No signs of stuggle and no witnesses. With all potential leads extinguished, the investigation has gone cold. The stolen talisman is gone, and whatever purpose it served remains unknown. Unease has spread among the nobility following this incident, even warranting a mention at the round table."
+# ZAV_divine_saviours_events.5.a:0 "..."
+#
+# ZAV_divine_saviours_events.6.t:0 "Killings in Lowmarket"
+# ZAV_divine_saviours_events.6.d:0 "A series of brutal killings has been reported in the Lowmarket district of New Camelot. Victims appear to have been selected at random, their remains arranged in deliberate formations. Witnesses report shrouded figures fleeing the scene, though none could provide clear descriptions. The scale and nature of the violence suggest ritual intent."
+# ZAV_divine_saviours_events.6.a:0 "..."
+#
+# ZAV_divine_saviours_events.7.t:0 "Not a Murder, an Offering"
+# ZAV_divine_saviours_events.7.d:0 "Investigators confirm that the bodies were arranged with geometric precision, their positioning forming a pattern not immediately recognizable. Blood appears to have been deliberately collected and redistributed across the scene. One surviving witness claims the perpetrators spoke in reverence, referring to the act as a 'gift.' The investigator warns that the killings may not be the goal, but a means to something greater."
+# ZAV_divine_saviours_events.7.a:0 "Use an artifact to trace ritual energy."
+# ZAV_divine_saviours_events.7.b:0 "Proceed along another route."
+#
+# ZAV_divine_saviours_events.8.t:0 "Echoes of Devotion"
+# ZAV_divine_saviours_events.8.d:0 "The Blighted Flesh reacted violently when brought near the site, drawing out residual energies left behind by the ritual. Investigators briefly witnessed a projection: figures kneeling before an unseen presence, their bodies strengthened by something unseen. The ritual was not merely symbolic. It was a transfer of power."
+# ZAV_divine_saviours_events.8.a:0 "..."
+#
+# ZAV_divine_saviours_events.9.t:0 "Patterns in the Fog"
+# ZAV_divine_saviours_events.9.d:0 "Though the ritual site yields little at first glance, a scholar attached to the investigation identifies a recurring geometric structure within the arrangement of the bodies. The pattern, when reconstructed, aligns with known heretical rites associated with sacrificial empowerment. The positioning was not arbitrary, it was designed to channel something beyond the material. While the perpetrators escaped, their intent is no longer in question. The killings were conducted to draw strength, not merely to terrorize."
+# ZAV_divine_saviours_events.9.a:0 "..."
+#
+# ZAV_divine_saviours_events.10.t:0 "Another Night in Lowmarket"
+# ZAV_divine_saviours_events.10.d:0 "Before investigators made meaningful progress, the killings have resumed. This time, they have been more brazen, entire alleyways are left strewn with bodies, arranged in increasingly elaborate formations. Panic has spread through Lowmarket. Civilians have begun to flee, abandoning their homes and livelihoods in desperation. With no understanding of the pattern or purpose behind the violence, authorities have been forced to impose harsh containment measures. Whatever the perpetrators sought, they have taken it, and left nothing behind but fear."
+# ZAV_divine_saviours_events.10.a:0 "..."
+#
+# ZAV_divine_saviours_events.11.t:0 "Guardian Priest found Dead"
+# ZAV_divine_saviours_events.11.d:0 "A senior guardian priest assigned to guard the Vault of Saint Constantine has been found dead in his quarters on Llamrei street, in close proximity to the Moonlight Chapel. No signs of forced entry were found. The corpse shows evidence of prolonged distress prior to death. Given the sensitivity of his post, the matter has been escalated immediately. This murder is similar to others we've seen previously by proponents of the Shadows of the Night."
+# ZAV_divine_saviours_events.11.a:0 "..."
+#
+# ZAV_divine_saviours_events.12.t:0 "He didn't die quickly"
+# ZAV_divine_saviours_events.12.d:0 "The investigator reports clear signs of torture, though no instruments were found at the scene. The guard's fingernails are torn, and deep markings cover the walls, suggesting he attempted to resist or escape. Fragments of writing indicate he was forced to recall procedural details repeatedly before his death. It is still unclear whether information was extracted from him prior to his execution."
+# ZAV_divine_saviours_events.12.a:0 "Continue with the investigation."
+#
+# ZAV_divine_saviours_events.13.t:0 "A Message left Behind"
+# ZAV_divine_saviours_events.13.d:0 "The investigation into the death of the guardian priest has stalled, yet a final detail has been uncovered. Hidden beneath the guard's bedding, investigators found a scrap of parchment overlooked during the initial sweep. Written in a shaking hand, it contains fragmented references to the Divine Saviours and repeatedly mentions the 'king that bleeds.' The information is too incomplete to rule out the involvement of other orders, but it confirms that the Divine Saviours have a connection to this murder. We have no way of knowing whether sensitive information pertaining to the vault was divulged. There may be a breach already in motion."
+# ZAV_divine_saviours_events.13.a:0 "..."
+#
+# ZAV_divine_saviours_events.14.t:0 "Disturbance at Moonlight Chapel"
+# ZAV_divine_saviours_events.14.d:0 "Reports from Moonlight Chapel indicate erratic behavior among clergy and visitors alike. Several individuals have fled the site in a state of extreme agitation, while others remain inside, unresponsive. Witnesses describe a starry dust being dispersed within the chapel halls. The situation is rapidly deteriorating. We are under attack."
+# ZAV_divine_saviours_events.14.a:0 "..."
+#
+# ZAV_divine_saviours_events.15.t:0 "Widespread Hysteria at the Chapel"
+# ZAV_divine_saviours_events.15.d:0 "Priests have confirmed the presence of a foreign substance inflicting madness on those exposed to it. The unfortunate souls to have been afflicted by the madness have shown signs of hysteria and often turn on one another. Despite this, a small group within the chapel seems unaffected, moving with purpose through the chaos. The sacred ashes of Saint Morvydd that has recently been stolen from one of our cathedrals is likely the artifact that has been used to cripple the chapel's defenses."
+# ZAV_divine_saviours_events.15.a:0 "Use our resources to track the unaffected figures."
+# ZAV_divine_saviours_events.15.b:0 "Head directly to King Arthur's tomb."
+#
+# ZAV_divine_saviours_events.16.t:0 "Through Madness, a Path"
+# ZAV_divine_saviours_events.16.d:0 "The Shroud revealed a coordinated movement beneath the chaos. The unaffected individuals were navigating toward a concealed passage below the chapel. They were carrying with them a protective charm, likely the source of their immunity. They appeared to be heading for the Vault of Saint Constantine. Given the weakened state of our guardian priests, a single aggressor was captured. Realising his fate, this man released his will and let the deity he had been praying to corrupt his body. Besides his lifeless corpse, the talisman was found."
+# ZAV_divine_saviours_events.16.a:0 "..."
+#
+# ZAV_divine_saviours_events.17.t:0 "Blood Crown"
+# ZAV_divine_saviours_events.17.d:0 "By the time our forces reached the lower chambers, to the tomb of King Arthur, bodies littered the floor of the great burial chamber. Our defenses had been broken, priests assigned to guard the vault lay on the ground, twisted and lifeless. The intruders have stolen the Blood of King Arthur, a Slaughter Relic class artifact. A single marking was left on the wall of the tomb: a crown split open, from which blood flows downward. With the enemy in control of an artifact of such power, it may not be too long before the forces moving in the shadows face us in the open."
+# ZAV_divine_saviours_events.17.a:0 "May the Lady have pity on us."
