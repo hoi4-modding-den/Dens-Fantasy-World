@@ -1,0 +1,23 @@
+on_actions = {
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { original_tag = ZRB }
+					ROOT = { original_tag = ZIE }
+				}
+			}
+			ZRB = { white_peace = ZIE }
+			ZRB = { set_owner = 787 }
+			ZRB = { set_owner = 727 }
+			ZRB = { set_owner = 858 }
+			ZRA = { set_owner = 705 }
+			ZRA = { set_owner = 1257 }
+			ZRU = { set_owner = 843 }
+			ZRB = { puppet = ZRU }
+			ZRA = { puppet = ZRU }
+
+
+		}
+	}
+}
