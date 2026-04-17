@@ -32,13 +32,13 @@ ZBT_undercity_cat = {
 			custom_trigger_tooltip = {
 				tooltip =  ZBT_tt_out_of_space
 			}
-			num_of_available_civilian_factories > 4
+			num_of_available_civilian_factories > 2
 		}
 
 		cost = UC_new_layer_cost
 		days_remove = UC_new_layer_time
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 3
 		}
 		remove_effect = {
 			# set_variable = { var = UC_unexcavated_sectors value = 10 }
@@ -133,8 +133,12 @@ ZBT_undercity_cat = {
 			IF = {
 				limit = { has_country_flag = UU_improved_civs1 }
 				custom_effect_tooltip = ZBT_tt_modify_undercity
-				add_to_variable = {var = UC_consumer_goods value = -0.005 tooltip = consumer_goods_factor_tt}
+				add_to_variable = {var = UC_construction_speed value = -0.005 tooltip = production_speed_buildings_factor_tt}
 			}
+		}
+
+		cancel_trigger = {
+			check_variable = { UC_empty_sectors < 1 } # failsafe
 		}
 	}
 
@@ -173,6 +177,10 @@ ZBT_undercity_cat = {
 				add_to_variable = {var = UC_mil_output value = 0.05 tooltip = industrial_capacity_factory_tt } #todo: this doesnt do shit even when I change the variable with set_var???
 			}
 		}
+
+		cancel_trigger = {
+			check_variable = { UC_empty_sectors < 1 } # failsafe
+		}
 	}
 
 
@@ -205,6 +213,10 @@ ZBT_undercity_cat = {
 				level = 1
 			}
 		}
+
+		cancel_trigger = {
+			check_variable = { UC_empty_sectors < 1 } # failsafe
+		}
 	}
 
 
@@ -234,6 +246,11 @@ ZBT_undercity_cat = {
 			custom_effect_tooltip = ZBT_tt_modify_undercity
 			add_to_variable = { var = UC_stability value = 0.005 tooltip = stability_factor_whitespace_tt }
 			add_to_variable = { var = UC_pop_growth value = 0.03 tooltip = monthly_population_tt }
+			add_to_variable = { var = UC_consumer_goods value = 0.005 tooltip = consumer_goods_factor_tt }
+		}
+
+		cancel_trigger = {
+			check_variable = { UC_empty_sectors < 1 } # failsafe
 		}
 	}
 
@@ -267,7 +284,7 @@ ZBT_undercity_cat = {
 				BUILD = ZBT_UC_civ1
 			}
 			effect_tooltip = {
-				add_to_variable = {var = UC_consumer_goods value = -0.005 tooltip = consumer_goods_factor_tt}
+				add_to_variable = {var = UC_construction_speed value = -0.005 tooltip = production_speed_buildings_factor_tt}
 			}
 		}
 	}
@@ -280,13 +297,14 @@ ZBT_undercity_cat = {
 		}
 
 		available = {
+			num_of_available_civilian_factories > 1
 			has_tech = construction2
 		}
 
 		cost = UC_sector_build_cost
 		days_remove = UC_sector_build_time
 		modifier = {
-			consumer_goods_expected_value = 0.1
+			civilian_factory_use = 2
 		}
 		remove_effect = {
 			set_country_flag = UU_improved_mils1
