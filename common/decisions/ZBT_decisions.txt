@@ -148,7 +148,7 @@ ZBT_undercity_cat = {
 			IF = {
 				limit = { has_country_flag = UC_improved_civs1 }
 				custom_effect_tooltip = ZBT_tt_modify_undercity
-				add_to_variable = {var = UC_consumer_goods value = -0.005 tooltip = consumer_goods_expected_value_whitespace_tt}
+				add_to_variable = {var = UC_consumer_goods value = -0.005 tooltip = consumer_goods_factor_tt}
 			}
 		}
 	}
@@ -284,7 +284,7 @@ ZBT_undercity_cat = {
 				BUILD = ZBT_UC_civ1
 			}
 			effect_tooltip = {
-				add_to_variable = {var = UC_consumer_goods value = -0.005 tooltip = consumer_goods_expected_value_whitespace_tt}
+				add_to_variable = {var = UC_consumer_goods value = -0.005 tooltip = consumer_goods_factor_tt}
 			}
 		}
 	}

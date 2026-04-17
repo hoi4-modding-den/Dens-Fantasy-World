@@ -64,35 +64,23 @@
 #  ZBT_dig_down:0 ""
 
 
- # names for underground buildings
- ZBT_UC_civ:0 "[ZBT_UC_civ_name]"
+ # names for underground building
  ZBT_UC_civ0:0 "Early Underground Civilian Factory"
  ZBT_UC_civ1:0 "Improved Underground Civilian Factory"
  ZBT_UC_civ2:0 "Advanced Underground Civilian Factory"
  ZBT_UC_civ3:0 "Underground Industrial Complex"
 
- ZBT_UC_mil:0 "[ZBT_UC_mil_name]"
  ZBT_UC_mil0:0 "Early Underground Military Factory"
  ZBT_UC_mil1:0 "Improved Underground Military Factory"
  ZBT_UC_mil2:0 "Advanced Underground Military Factory"
  ZBT_UC_mil3:0 "Underground Armaments Plant"
 
- ZBT_UC_ref:0 "[ZBT_UC_ref_name]"
  ZBT_UC_ref0:0 "Early Underground Synthetic Refinery"
  ZBT_UC_ref1:0 "Improved Underground Synthetic Refinery"
  ZBT_UC_ref2:0 "Advanced Underground Synthetic Refinery"
  ZBT_UC_ref3:0 "Underground Chemical Engineering Plant"
 
- ZBT_UC_lab:0 "[ZBT_UC_lab_name]"
- ZBT_UC_lab0:0 "Underground Workshop"
- ZBT_UC_lab1:0 "Underground Research Lab"
- ZBT_UC_lab2:0 "Underground Cleanroom"
- ZBT_UC_lab3:0 "Underground University" #?????
- 
-
-
- # this isn't in basegame for some reason??? am I stupid?????????
- consumer_goods_expected_value_neutral_tt: " $MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE$ $RIGHT|Y=%1$"
- consumer_goods_expected_value_negative_tt: " $MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE$ $RIGHT|R=%1$"
- consumer_goods_expected_value_tt: " $MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE$ $RIGHT|-=%1$"
- consumer_goods_expected_value_whitespace_tt: " $consumer_goods_expected_value_tt$"
+#  ZBT_UC_lab0:0 "Underground Workshop"
+#  ZBT_UC_lab1:0 "Underground Research Lab"
+#  ZBT_UC_lab2:0 "Underground Cleanroom"
+#  ZBT_UC_lab3:0 "Underground University" #?????
