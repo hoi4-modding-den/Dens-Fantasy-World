@@ -19,7 +19,9 @@ state={
 	history={
 		owner = ZRB
 		add_core_of = ZRB
-		
+		victory_points = {
+			
+		}
 		buildings = {
 			infrastructure = 1
 			

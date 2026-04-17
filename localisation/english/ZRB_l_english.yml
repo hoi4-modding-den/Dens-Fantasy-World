@@ -2,6 +2,17 @@
  ZRB: "Federation of Tůrůń"
  ZRB_DEF: "Federation of Tůrůń"
  ZRB_ADJ: "Tyriń"
+ # STATES #
+ STATE_666: "Dińantul"
+ STATE_822: "Níava"
+ STATE_791: "Díevce Turinje"
+ STATE_646: "Caíava Turinje"
+ STATE_883: "Vaní-Tůrje"
+ # IDEAS #
+ ZRB_turinje: "§9Turinje Autonomous Republic§!"
+ ZRB_niava: "§9Níava Autonomous Republic§!"
+ ZRB_dinantul: "§9Dińantul Autonomous Republic§!"
+ ZRB_vani_turje: "§9Vaní-Tůrje Capital Region§!"
  # TRANSURHU #
  ZRU: "State of Transurhú"
  ZRU_DEF: "State of Transurhú"
