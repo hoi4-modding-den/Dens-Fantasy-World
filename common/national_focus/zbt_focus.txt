@@ -195,7 +195,12 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            #
+            subtract_from_variable = { var = UC_modify_cost value = 20 }
+            custom_effect_tooltip = {
+                localization_key = ZBT_tt_decrease_uc_build_cost
+                PP = 20
+            }
+            ZBT_UC_recalc_costs = yes
         }
     }
 
@@ -217,6 +222,10 @@ focus_tree = {
         }
         completion_reward = {
             add_to_variable = { var = UC_modify_extra_sectors value = 1 }
+            custom_effect_tooltip = {
+                localization_key = ZBT_tt_add_extra_sector
+                AMT = 1
+            }
         }
     }
 
