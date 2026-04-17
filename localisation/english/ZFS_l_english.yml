@@ -1,8 +1,12 @@
 ﻿l_english:
 
- ZFS:0 "Sayani Unification Force"
- ZFS_DEF:0 "Sayani Unification Force"
+ ZFS:0 "Sayani Republic"
+ ZFS_DEF:0 "Sayani Republic"
  ZFS_ADJ:0 "Sayani"
+
+ ZFS_civilwar: "Sayani Unification Force"
+ ZFS_civilwar_DEF: "Sayani Unification Force"
+ ZFS_civilwar_ADJ: "Sayani"
  
  ZFS_communism_party: "TMI"
  ZFS_communism_party_long: "Anti-Government Movement"

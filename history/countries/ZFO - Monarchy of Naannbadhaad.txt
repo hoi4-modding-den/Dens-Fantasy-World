@@ -21,6 +21,9 @@ add_ideas = {
 	volunteer_only
 	low_economic_mobilisation
         limited_exports
+        ZFO_chaos_in_the_west
+        ZFO_everlasting_danger_in_south
+        ZFO_royal_council_for_reform
 }
 
 set_stability = 0.4

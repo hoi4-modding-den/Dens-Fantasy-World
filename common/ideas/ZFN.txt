@@ -16,8 +16,8 @@ ideas = {
                                     monthly_population = 0.3
                                     production_speed_buildings_factor = 0.1
                                     local_resources_factor = -0.3
-                                    stability_weekly = -0.01
-                                    war_support_weekly = -0.005
+                                    stability_weekly = -0.004
+                                    war_support_weekly = -0.0025
                                     drift_defence_factor = -0.2
                                     democratic_drift = -0.02
                                    
