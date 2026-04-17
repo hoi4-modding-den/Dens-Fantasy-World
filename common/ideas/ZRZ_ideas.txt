@@ -34,7 +34,7 @@ ideas = {
 				industrial_capacity_factory = -0.2
 				industry_free_repair_factor = -0.2
 				local_resources_factor = -0.3
-				min_export = 0
+				min_export = -1
 				research_speed_factor = -0.3
 				no_compliance_gain = 1
 			}
