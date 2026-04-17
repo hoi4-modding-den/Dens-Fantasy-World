@@ -1,0 +1,451 @@
+focus_tree = {
+    id = ZBT_tree
+    country = {
+        factor = 0 modifier = { add = 10 tag = ZBT }
+    }
+    default = no
+    continuous_focus_position = { x = 50 y = 1000 }
+
+    focus = {
+        id = ZBT_start_industry
+        icon = GFX_goal_unknown
+        x = 2
+        y = -1
+        cost = 5
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            710 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = ZBT_begin_undercity
+        icon = GFX_goal_unknown
+        x = 6
+        y = 0
+        cost = 5
+        prerequisite = { focus = ZBT_start_industry }
+        available = {
+            710 = {
+                infrastructure > 2
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_dynamic_modifier = {
+                modifier = ZBT_undercity
+            }
+        }
+    }
+
+    focus = {
+        id = ZBT_developing_the_outskirts
+        icon = GFX_goal_unknown
+        x = -2
+        y = 0
+        cost = 5
+        prerequisite = { focus = ZBT_start_industry }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            #
+        }
+    }
+
+    focus = {
+        id = ZBT_evacuate_the_countryside
+        icon = GFX_goal_unknown
+        x = -1
+        y = 1
+        cost = 5
+        prerequisite = { focus = ZBT_developing_the_outskirts }
+        mutually_exclusive = { focus = ZBT_countryside_revitalisation }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            #
+        }
+    }
+
+    focus = {
+        id = ZBT_countryside_revitalisation
+        icon = GFX_goal_unknown
+        x = -3
+        y = 1
+        cost = 5
+        prerequisite = { focus = ZBT_developing_the_outskirts }
+        mutually_exclusive = { focus = ZBT_evacuate_the_countryside }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            #
+        }
+    }
+
+    focus = {
+        id = ZBT_clear_the_rubble
+        icon = GFX_goal_unknown
+        x = -4
+        y = 2
+        cost = 3
+        prerequisite = { focus = ZBT_countryside_revitalisation }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            #
+        }
+    }
+
+    focus = {
+        id = ZBT_workforce_expansion
+        icon = GFX_goal_unknown
+        x = 0
+        y = 2
+        cost = 3
+        prerequisite = { focus = ZBT_evacuate_the_countryside }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            #
+        }
+    }
+
+    focus = {
+        id = ZBT_military_concessions
+        icon = GFX_goal_unknown
+        x = -2
+        y = 2
+        cost = 5
+        prerequisite = { focus = ZBT_countryside_revitalisation focus = ZBT_evacuate_the_countryside }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            710 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = ZBT_land_renewal
+        icon = GFX_goal_unknown
+        x = -5
+        y = 3
+        cost = 10
+        prerequisite = { focus = ZBT_clear_the_rubble }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                name = industrial_bonus
+                bonus = 0.9
+                uses = 1
+                category = industry
+            }
+        }
+    }
+
+    focus = {
+        id = ZBT_advanced_ore_processing
+        icon = GFX_goal_unknown
+        x = 5
+        y = 1
+        cost = 5
+        prerequisite = { focus = ZBT_begin_undercity }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            custom_effect_tooltip = ZBT_tt_modify_undercity
+            add_to_variable = {var = UC_resource_factor value = 0.03 tooltip = local_resources_factor_tt }
+        }
+    }
+
+    focus = {
+        id = ZBT_undercity_rapid_growth
+        icon = GFX_goal_unknown
+        x = 7
+        y = 1
+        cost = 5
+        prerequisite = { focus = ZBT_begin_undercity }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            #
+        }
+    }
+
+    focus = {
+        id = ZBT_reinforced_supports
+        icon = GFX_goal_unknown
+        x = 7
+        y = 3
+        cost = 10
+        prerequisite = { focus = ZBT_undercity_rapid_growth }
+        available = {
+            710 = {
+                infrastructure > 4
+            }
+            num_of_civilian_factories > 10 #TODO: rebalance
+        }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_to_variable = { var = UC_modify_extra_sectors value = 1 }
+        }
+    }
+
+    focus = {
+        id = ZBT_riva_air_base
+        icon = GFX_goal_unknown
+        x = -3
+        y = 3
+        cost = 10
+        prerequisite = { focus = ZBT_clear_the_rubble }
+        prerequisite = { focus = ZBT_military_concessions }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            710 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = air_base
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = ZBT_refinery_effort
+        icon = GFX_goal_unknown
+        x = -1
+        y = 3
+        cost = 10
+        prerequisite = { focus = ZBT_workforce_expansion }
+        prerequisite = { focus = ZBT_military_concessions }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            710 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = synthetic_refinery
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = ZBT_underground_metropolis
+        icon = GFX_goal_unknown
+        x = 1
+        y = 3
+        cost = 10
+        prerequisite = { focus = ZBT_workforce_expansion }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            #
+        }
+    }
+
+    focus = {
+        id = ZBT_military_concessions_copy
+        icon = GFX_goal_unknown
+        x = -2
+        y = 4
+        cost = 10
+        prerequisite = { focus = ZBT_military_concessions }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_offsite_building = {
+                type = arms_factory
+                level = 2
+            }
+        }
+    }
+
+    focus = {
+        id = ZBT_motorization_effort
+        icon = GFX_goal_unknown
+        x = -2
+        y = 5
+        cost = 10
+        prerequisite = { focus = ZBT_military_concessions_copy }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                name = motorized_bonus
+                bonus = 0.5
+                uses = 2
+                category = motorized_equipment
+            }
+        }
+    }
+
+    focus = {
+        id = ZBT_armor_rollout
+        icon = GFX_goal_unknown
+        x = -4
+        y = 5
+        cost = 10
+        prerequisite = { focus = ZBT_military_concessions_copy }
+        completion_reward = {
+            add_tech_bonus = {
+                name = armor_bonus
+                bonus = 0.5
+                uses = 2
+                category = armor
+            }
+        }
+    }
+
+    focus = {
+        id = ZBT_electronics_effort
+        icon = GFX_goal_unknown
+        x = 0
+        y = 5
+        cost = 10
+        prerequisite = { focus = ZBT_military_concessions_copy }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                name = electronics_bonus
+                bonus = 0.5
+                uses = 2
+                category = electronics
+            }
+        }
+    }
+
+    focus = {
+        id = ZBT_miracle_of_science
+        icon = GFX_goal_unknown
+        x = 5
+        y = 3
+        cost = 10
+        prerequisite = { focus = ZBT_subterranean_construction }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+
+    focus = {
+        id = ZBT_subterranean_construction
+        icon = GFX_goal_unknown
+        x = 6
+        y = 2
+        cost = 10
+        prerequisite = { focus = ZBT_undercity_rapid_growth }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            #
+        }
+    }
+
+    focus = {
+        id = ZBT_extreme_heat_excavation
+        icon = GFX_goal_unknown
+        x = 6
+        y = 4
+        cost = 10
+        prerequisite = { focus = ZBT_subterranean_construction }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            #
+        }
+    }
+
+    focus = {
+        id = ZBT_harness_the_core
+        icon = GFX_goal_unknown
+        x = 5
+        y = 5
+        cost = 10
+        prerequisite = { focus = ZBT_extreme_heat_excavation }
+        prerequisite = { focus = ZBT_restart_alchemical_research }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            #
+        }
+    }
+
+    focus = {
+        id = ZBT_restart_alchemical_research
+        icon = GFX_goal_unknown
+        x = 4
+        y = 4
+        cost = 10
+        prerequisite = { focus = ZBT_miracle_of_science }
+        prerequisite = { focus = ZBT_prospect_for_resources }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            #
+        }
+    }
+
+    focus = {
+        id = ZBT_prospect_for_resources
+        icon = GFX_goal_unknown
+        x = 4
+        y = 2
+        cost = 10
+        prerequisite = { focus = ZBT_advanced_ore_processing }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            #
+        }
+    }
+
+}
