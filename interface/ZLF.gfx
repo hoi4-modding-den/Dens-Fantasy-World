@@ -16,6 +16,26 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_portrait_ZLF_alois_rotrose"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_alois_rotrose.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_alois_rotrose_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_alois_rotrose_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_juergen_zauberthal"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_juergen_zauberthal.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_juergen_zauberthal_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_juergen_zauberthal_small.png"
+    }
+
+    spriteType = {
         name = "GFX_portrait_ZLF_gustav_mai"
         texturefile = "gfx/leaders/ZLF/portrait_ZLF_gustav_mai.png"
     }
@@ -46,6 +66,26 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_portrait_ZLF_orlando"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_orlando.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_orlando_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_orlando_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_michel_meisendorff"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_michel_meisendorff.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_michel_meisendorff_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_michel_meisendorff_small.png"
+    }
+
+    spriteType = {
         name = "GFX_portrait_ZLF_hugo_von_fallersleben"
         texturefile = "gfx/leaders/ZLF/portrait_ZLF_hugo_von_fallersleben.png"
     }
@@ -53,6 +93,16 @@ spriteTypes = {
     spriteType = {
         name = "GFX_portrait_ZLF_hugo_von_fallersleben_small"
         texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_hugo_von_fallersleben_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_rudy_handwerker"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_rudy_handwerker.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_rudy_handwerker_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_rudy_handwerker_small.png"
     }
 
 

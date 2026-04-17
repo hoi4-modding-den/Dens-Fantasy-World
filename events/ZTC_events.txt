@@ -310,7 +310,7 @@ country_event = { # Intervention in Gardenia
         add_ai_strategy = {
             type = send_volunteers_desire
             id = ZLF
-            value = 200
+            value = 2000
         }
         
         if = {
@@ -457,13 +457,85 @@ country_event = { # ZTC demands Coastal Protectorate States // rejected
 	id = ZTC_events.18
 	title = ZTC_events.18.t
 	desc = ZTC_events.18.desc
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_report_event_merchant_ship_01
 
 	is_triggered_only = yes
 
 	option = {
 		name = ZTC_events.18.a
-        
+        add_political_power = -25
+	}
+}
+
+country_event = { # ZTC gets annexed by ZLF
+	id = ZTC_events.19
+	title = ZTC_events.19.t
+	desc = ZTC_events.19.desc
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.19.a
+        annex_country = {
+            target = FROM
+            transfer_troops = yes
+        }
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        add_state_core = 749
+ 		add_state_core = 1239
+
+         custom_effect_tooltip = generic_skip_one_line_tt
+
+        add_timed_idea = {
+            idea = ZTC_unification_costs
+            days = 120
+        }
+	}
+}
+
+country_event = { # Commie Flavour Event 1
+	id = ZTC_events.20
+	title = ZTC_events.20.t
+	desc = ZTC_events.20.desc
+	picture = GFX_report_event_communist_leader
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.20.a
+        add_popularity = { ideology = communism popularity = 0.15 }
+	}
+}
+
+country_event = { # Commie Flavour Event 2
+	id = ZTC_events.21
+	title = ZTC_events.21.t
+	desc = ZTC_events.21.desc
+	picture = GFX_report_event_communist_leader
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.21.a
+        ZTC_the_council = { set_character_name = ZTC_company_council_name }
+        set_party_name = {
+            ideology = democratic
+            name = ZCT_democratic_party_socdem
+            long_name = ZCT_democratic_party_socdem_long
+        }
+        set_party_name = {
+            ideology = neutrality
+            name = ZTC_neutrality_party_mod
+            long_name = ZTC_neutrality_party_mod_long
+        }
+        set_party_name = {
+            ideology = fascism
+            name = ZTC_fascism_party_natlib
+            long_name = ZTC_fascism_party_natlib_long
+        }
 	}
 }
 

@@ -1,8 +1,8 @@
 division_template = {
-	name = "Banner Army Division"
+	name = "Liberation Army Division"
 	#division_names_group = ZLF_INF_03
     priority = 2
-    template_counter = 38
+    template_counter = 119
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -23,18 +23,17 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Liberation Army Division"
+	name = "Banner-Army Division"
 	#division_names_group = ZLF_INF_02
     priority = 1
-    template_counter = 119
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }
@@ -80,7 +79,7 @@ units = {
     # Prinzendamm Encirclement
     division = {
 		location = 9673
-		division_template = "Liberation Army Division"
+		division_template = "Banner-Army Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
@@ -104,58 +103,58 @@ units = {
 	}
     division = {
 		location = 9676
-		division_template = "Liberation Army Division"
+		division_template = "Banner-Army Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
     # City Guards
     division = {
 		location = 9218
-		division_template = "Liberation Army Division"
+		division_template = "Banner-Army Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
     division = {
 		location = 11026
-		division_template = "Liberation Army Division"
+		division_template = "Banner-Army Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 	}
     division = {
 		location = 11031
-		division_template = "Liberation Army Division"
+		division_template = "Banner-Army Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
     division = {
 		location = 11070
-		division_template = "Liberation Army Division"
+		division_template = "Banner-Army Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
     # Rhododendron Offensive
     division = {
 		location = 11053
-		division_template = "Banner Army Division"
+		division_template = "Liberation Army Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
     division = {
 		location = 11061
-		division_template = "Banner Army Division"
+		division_template = "Liberation Army Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
     # Magnolienburg Offensive
     division = {
 		location = 11415
-		division_template = "Banner Army Division"
+		division_template = "Liberation Army Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
     division = {
 		location = 11409
-		division_template = "Liberation Army Division"
+		division_template = "Banner-Army Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
 	}
@@ -192,7 +191,7 @@ units = {
 	}
     division = {
 		location = 11033
-		division_template = "Liberation Army Division"
+		division_template = "Banner-Army Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}

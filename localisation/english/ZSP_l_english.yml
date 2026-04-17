@@ -1,5 +1,7 @@
 ﻿l_english:
 
+ ZSP_GATHERING_STORM_DESC: "The Alstroemerian Order of the Five Towers is less a nation and more a loose confederation of villages ruled over by a magocratic elite. The Five Towers seize whatever resources they need for their experiments from the villagers. The Towers themselves are also in constant competition with each other, though the master of the Thunder Tower seems to be opposed to their ways..."
+
  ZSP: "Alstroemeria"
  ZSP_DEF: "Alstroemeria"
  ZSP_ADJ: "Alstroemerian"
@@ -21,6 +23,8 @@
  ZSP_democratic_party_long: "NDPvG - Alstroemerian Branch"
  ZSP_communism_party: "Local Communities"
  ZSP_communism_party_long: "Local Communities"
+ ZSP_communism_party_phoenix: "Anti-Shadow Resistance"
+ ZSP_communism_party_phoenix_long: "Aegis of the Phoenix"
  ZSP_fascism_party: "Zaubererliga"
  ZSP_fascism_party_long: "League of Alstroemerian Mages"
  ZSP_fascism_party_ozy: "Schattenhof"
@@ -38,6 +42,7 @@
  ZSP_wizard_council_name: "Highest Council"
  ZSP_ozymandias_name: "Ozymandias"
  ZSP_ozymandias_desc: "Ein Wandrer kam aus einem alten Land,\nUnd sprach: „Ein riesig Trümmerbild von Stein\nSteht in der Wüste, rumpflos Bein an Bein,\nDas Haupt daneben, halb verdeckt vom Sand.\n \nDer Züge Trotz belehrt uns: wohl verstand\nDer Bildner, jenes eitlen Hohnes Schein\nZu lesen, der in todten Stoff hinein\nGeprägt den Stempel seiner ehrnen Hand.\n \nUnd auf dem Sockel steht die Schrift: ‚Mein Name\nIst Ozymandias, aller Kön'ge König:\nSeht meine Werke, Mächt'ge, und erbebt!‘\n \nNichts weiter blieb. Ein Bild von düstrem Grame,\nDehnt um die Trümmer endlos, kahl, eintönig\nDie Wüste sich, die den Koloß begräbt.“"
+ ZSP_the_phoenix_name: "The Phoenix"
 
 
 # TRAITS
@@ -46,6 +51,7 @@
  ZSP_wizard_king: "The Mage-Lord of Shadows"
  ZSP_moster_summoner: "Monster Tamer"
  ZSP_necomancer: "Necromancer"
+ ZSP_from_the_ashes: "Risen from the Ashes"
 
 
 # IDEAS
@@ -60,8 +66,10 @@
  ZSP_broken_burgfrieden: "Broken Turmfrieden"
  ZSP_slavery: "Slavery"
  ZSP_thaumaturgic_workshop: "Thaumaturgic Rifle Production"
+ ZSP_shadowspire_research: "Experiments in Shadowspire"
+ ZSP_control_spell: "Under My Spell"
 
- ZSP_monster_army: "Monster Waves"
+ ZSP_monster_army: "Monster Conscription"
  ZSP_monster_army_desc: "Monsters fill the role of soldiers in our military, though some sentient creatures are still allowed to serve as officers."
  ZSP_zombie_army: "Undead Waves"
 
@@ -70,14 +78,23 @@
 
 # MODIFIERS
 
- ZSP_mana_generation: "Weekly Mana Generation"
+ ZSP_mana_generation: "£ZSP_mana_texticon Weekly Mana Generation"
  ZSP_monthly_guns: "Monthly Infantry Equipment"
+ ZSP_monthly_guns_tt: "$ZSP_monthly_guns$: $RIGHT|+=0$"
+ ZSP_spell_slots_tt: "Total §CSpell Slots§!: $RIGHT|+=0$"
 
 
 # DECISIONS
 
  ZSP_magic_cat: "Arcane Revelations"
- ZSP_magic_cat_desc: "LORE BLURB HERE\n \nMana Reserves: [?ZSP_mana|.0+]"
+ ZSP_magic_cat_desc: "§g§CMana§! is the mysterious energy that allows for spellcasting. Despite decades of researching by generations of sorcerers and mages, its inner workings are still unkown. Still, the Mages of Alstroemeria are some of the most proficient in the world.§!\n \n£ZSP_mana_texticon Mana Generation: [?modifier@ZSP_mana_generation|.0+=]\n£ZSP_mana_texticon Mana Reserves: [?ZSP_mana|.0+]\nAvailable §CSpell Slots§!: [?ZSP_used_spell_slots|.0]/[?ZSP_spell_slots|.0]"
+ ZSP_has_available_spell_slot_tt: "Has at least §G1§! Available §CSpell Slot§!."
+
+ ZSP_strengthen_industry: "Thaumaturgic Industrial Efforts"
+ ZSP_strengthen_military_production: "Thaumaturgic Equipment Production"
+ ZSP_burn_enemy_infrastructure: "Firestorm Blast"
+ ZSP_burn_enemy_infrastructure_tt: "Unlocks a §YDecision§! to §Yselect a State§! to cast the §CSpell§! on.\n \n§RIf a State has not been selected when this Decision times out, the Spell Selection will cancel.§!"
+ ZSP_burn_enemy_infrastructure_selector: "Cast Firestorm Blast in [FROM.GetName]"
 
  ZSP_monster_hordes_growing: "Growing Hordes"
  ZSP_zombie_hordes_growing: "Undead Proliferation"
@@ -85,9 +102,9 @@
 
 # DECISION COSTS
 
- ZSP_use_50_mana: "Mana §Y50§!"
- ZSP_use_50_mana_blocked: "Mana §R50§!"
- ZSP_use_50_mana_tooltip: "It costs Mana §Y50§! to take the decision"
+ ZSP_use_50_mana: "£ZSP_mana_texticon §Y50§!"
+ ZSP_use_50_mana_blocked: "£ZSP_mana_texticon §R50§!"
+ ZSP_use_50_mana_tooltip: "It costs £ZSP_mana_texticon §Y50§! to take the decision"
 
 # FOCI
 
@@ -107,8 +124,8 @@
  ZSP_cast_fire_upon_iron_desc: ""
  ZSP_retake_the_golden_compass: "The Purple Throne is Mine!"
  ZSP_retake_the_golden_compass_desc: ""
- ZSP_master_of_monsters: "The Master of Monsters"
- ZSP_master_of_monsters_desc: ""
+ ZSP_master_of_monsters: "The Monarch of Monsters"
+ ZSP_master_of_monsters_desc: "Modernisation can still be fought. What good is a rifle if your opponent has a thick hide?"
  ZSP_master_of_monsters_tt: "Unlocks §YMonster Horde§! Divisions."
  ZSP_raid_the_villages: "Raid the Villages"
  ZSP_raid_the_villages_desc: ""
@@ -117,7 +134,7 @@
  ZSP_arm_the_monsters: "Arm the Monsters"
  ZSP_arm_the_monsters_desc: ""
  ZSP_benevolent_tyrant: "The Moderniser Tyrant"
- ZSP_benevolent_tyrant_desc: ""
+ ZSP_benevolent_tyrant_desc: "Modernisation is necessary if I am to rule the world. The old ways of peasant hordes have lost their effectiveness."
  ZSP_forced_industrialisation: "Forced Industrialisation"
  ZSP_forced_industrialisation_desc: ""
  ZSP_forced_industrialisation_tt: "Build §YRailways§! connecting the capital to the villages."
@@ -127,7 +144,7 @@
  ZSP_establish_the_national_guard_desc: ""
  ZSP_establish_the_national_guard_tt: "Deploy §gtwo§! §YRealm Army Divisions§! in the §Ycapital§!."
  ZSP_restless_magocrat: "The Restless Magocrat"
- ZSP_restless_magocrat_desc: ""
+ ZSP_restless_magocrat_desc: "No matter how much the world changes, the power of the undead remains unrivaled."
  ZSP_restless_magocrat_tt: "Unlocks §YUndead Horde§! Divisions."
  ZSP_transform_the_people: "Raise the Undead"
  ZSP_transform_the_people_desc: ""
@@ -137,12 +154,31 @@
  ZSP_undead_horde_desc: ""
  ZSP_full_control_over_the_realm: "I Am Your Master"
  ZSP_full_control_over_the_realm_desc: ""
+
+ ZSP_the_shadowspire: "Shadowspire Research"
+ ZSP_the_shadowspire_desc: ""
+ ZSP_expand_spell_slots: "Spellcasting Experiments"
+ ZSP_expand_spell_slots_desc: ""
+ ZSP_expand_military_improvements: "Expand Military Improvements"
+ ZSP_expand_military_improvements_desc: ""
+ ZSP_der_zauberlehrling: "The Sorcerer's Apprentice"
+ ZSP_der_zauberlehrling_desc: ""
+
+ ZSP_exploit_the_thunderpeak: "Exploit the Donnergebirge"
+ ZSP_exploit_the_thunderpeak_desc: ""
+
  ZSP_heed_the_shadows_call: "And You Will Obey Me"
  ZSP_heed_the_shadows_call_desc: ""
  ZSP_crush_nationalism: "The Folly of the Nation-State"
  ZSP_crush_nationalism_desc: ""
  ZSP_control_the_people: "Under My Spell"
  ZSP_control_the_people_desc: ""
+ ZSP_take_hortensia: "The Riches of Hortensia I Will Take"
+ ZSP_take_hortensia_desc: ""
+ ZSP_the_wealth_of_man: "The Wealth of Men"
+ ZSP_the_wealth_of_man_desc: ""
+ ZSP_the_wealth_of_nature: "The Wealth of Nature"
+ ZSP_the_wealth_of_nature_desc: ""
 
 
 # EVENTS
@@ -167,13 +203,17 @@
  ZSP_start_events.5.desc: "The Nebelturm always seemed so incredibly foolish. With their power to create illusions, did they use it to trick their enemies? To torture them and crush them in an endless tunnel of delusions? No, they made 'art'. The fire in the gallery was unnecessary, but it sure felt good."
  ZSP_start_events.5.a: "What good is magic if you restrict yourself like this?"
 
- ZSP_start_events.6.t: "Fire in Strodtmannsstadt"
+ ZSP_start_events.6.t: "Fire in Sachsenhagen"
  ZSP_start_events.6.desc: "The Eisenturm was the most pretentious of the five. All they did was follow along the progress of the outside world, but they acted as if they were the only ones who could do it. It was a pleasure seeing their tower in flames."
  ZSP_start_events.6.a: "Arrogance leads to fall."
 
  ZSP_start_events.7.t: "My Name is Ozymandias, King of Kings"
  ZSP_start_events.7.desc: "As I took my rightful place on the Purple Throne in the Great Temple of the Golden Compass, all I could think of was my next step. How could I enjoy my victory when I was still surrounded by my enemies?"
  ZSP_start_events.7.a: "Look on my works, ye Mighty, and despair!"
+
+ ZSP_phoenix_events.1.t: "The Phoenix"
+ ZSP_phoenix_events.1.desc: "It has come to my attention that I have made a mistake. During my extermination of the Sternwarte, I missed one of the disciples. I was informed of this by one of the townsfolk who were in the experimentation hall. Apparently, this disciple has taken up the moniker 'Phoenix' as a sign that he rose from the ashes of the fire I started."
+ ZSP_phoenix_events.1.a: "Ashes to ashes, you will fail."
 
 
  ZSP_news_events.1.t: "Shadow Incursion into Gardenia"
@@ -188,6 +228,7 @@
 # TECH/EQUIPMENT NAMES
 
  ZSP_infantry_equipment_0: "Muskete"
+ ZSP_infantry_equipment_0_short: "Muskete"
  ZSP_infantry_equipment_0_desc: "An old musket rifle."
 
 
@@ -204,15 +245,19 @@
 
 # MAP STUFF
 
- STATE_591: "Düsterreich" # you're going to the shadow realm, Jimbo
+ STATE_591: "Sternentautal"
+ STATE_591_evil: "Düstertal"
  STATE_601: "Domizil"
  STATE_703: "Ehrenfeld"
+ STATE_703_evil: "Leichenfeld"
  STATE_756: "Donnergebirge"
- STATE_873: "Trümmerland"
+ STATE_873: "Eisenreich"
+ STATE_873_evil: "Trümmerreich"
 
  VICTORY_POINTS_8738: "Strodtmannsstadt"
  VICTORY_POINTS_8862: "Michelshof"
  VICTORY_POINTS_8863: "Goldener Kompass"
+ VICTORY_POINTS_8863_evil: "Schattenturm"
  VICTORY_POINTS_9952: "Hasen"
  VICTORY_POINTS_10539: "Potzblitz"
  VICTORY_POINTS_10540: "Donnerspitze"

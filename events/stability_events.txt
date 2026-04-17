@@ -50,6 +50,7 @@ country_event = {
 			original_tag = SWE
 			has_idea = SWE_hungershield
 		}
+		NOT = { has_country_flag = DEN_stability_events_disabled }
 	}
 
 	mean_time_to_happen = { 

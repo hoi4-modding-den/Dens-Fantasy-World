@@ -20,3 +20,25 @@ ZTC_balance_of_power_category = {
 		original_tag = ZTC
 	}
 }
+
+ZTC_fight_the_monarchists_cat = {
+
+	icon = sov_great_patriotic_war
+	
+	allowed = {
+		original_tag = ZTC
+	}
+
+	priority = 100
+
+	visible = {
+		is_subject = no
+		ZKN = {
+			exists = yes
+			NOT = { has_war_with = ROOT }
+		}
+		has_government = communism
+		has_completed_focus = ZTC_avenge_the_republic
+	}
+
+}

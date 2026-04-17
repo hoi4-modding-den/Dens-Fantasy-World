@@ -1,0 +1,8 @@
+ZSP_has_available_spell_slot = {
+    custom_trigger_tooltip = {
+        tooltip = ZSP_has_available_spell_slot_tt
+        check_variable = {
+            ZSP_used_spell_slots < ZSP_spell_slots
+        }
+    }
+}

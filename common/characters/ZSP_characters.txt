@@ -34,12 +34,21 @@ characters = {
         }
 
         field_marshal = {
-            traits = { inflexible_strategist }
+            traits = { harsh_leader infantry_officer }
             skill = 3
             attack_skill = 5
             defense_skill = 2
             planning_skill = 4
             logistics_skill = 3
+        }
+    }
+
+    ZSP_the_phoenix = { 
+        name = ZSP_the_phoenix_name
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ZSP_ozymandias
+            }
         }
     }
 

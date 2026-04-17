@@ -44,4 +44,13 @@ leader_traits = {
         random = no
     }
 
+    ZSP_from_the_ashes = {
+        
+        ZSP_mana_generation = 30
+        political_power_factor = 0.15
+        fascism_drift = -0.1
+
+        random = no
+    }
+
 }

@@ -738,6 +738,222 @@ ideas = {
 
 		}
 
+		ZTC_haven_for_the_wayward = {
+
+			picture = PRC_urbanization_idea
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				research_speed_factor = 0.05
+				weekly_manpower = 2000
+				drift_defence_factor = -0.2
+			}
+
+		}
+
+		ZTC_banner_army_1 = {
+
+			name = ZTC_banner_army
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes 
+			}
+
+			modifier = {
+				conscription = 0.01
+				army_attack_factor = 0.15
+				equipment_capture = 0.03
+			}
+
+		}
+
+		ZTC_banner_army_1_1 = {
+
+			name = ZTC_banner_army
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes 
+			}
+
+			modifier = {
+				conscription = 0.01
+				army_attack_factor = 0.15
+				equipment_capture = 0.03
+				industrial_capacity_factory = 0.2
+			}
+
+		}
+
+		ZTC_banner_army_1_2 = {
+
+			name = ZTC_banner_army
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes 
+			}
+
+			modifier = {
+				conscription = 0.02
+				army_attack_factor = 0.15
+				equipment_capture = 0.03
+			}
+
+		}
+
+		ZTC_banner_army_1_3 = {
+
+			name = ZTC_banner_army
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes 
+			}
+
+			modifier = {
+				conscription = 0.02
+				army_attack_factor = 0.15
+				equipment_capture = 0.03
+				industrial_capacity_factory = 0.2
+			}
+
+		}
+
+		ZTC_banner_army_2 = {
+
+			name = ZTC_banner_army
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes 
+			}
+
+			modifier = {
+				conscription = 0.01
+				army_attack_factor = 0.15
+				equipment_capture = 0.03
+			}
+
+			targeted_modifier = {
+				tag = ZKN
+				attack_bonus_against = 0.25
+    			defense_bonus_against = 0.25
+			}
+
+		}
+
+		ZTC_banner_army_2_1 = {
+
+			name = ZTC_banner_army
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes 
+			}
+
+			modifier = {
+				conscription = 0.01
+				army_attack_factor = 0.15
+				equipment_capture = 0.03
+				industrial_capacity_factory = 0.2
+			}
+
+			targeted_modifier = {
+				tag = ZKN
+				attack_bonus_against = 0.25
+    			defense_bonus_against = 0.25
+			}
+
+		}
+
+		ZTC_banner_army_2_2 = {
+
+			name = ZTC_banner_army
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes 
+			}
+
+			modifier = {
+				conscription = 0.02
+				army_attack_factor = 0.15
+				equipment_capture = 0.03
+			}
+
+			targeted_modifier = {
+				tag = ZKN
+				attack_bonus_against = 0.25
+    			defense_bonus_against = 0.25
+			}
+
+		}
+
+		ZTC_banner_army_2_3 = {
+
+			name = ZTC_banner_army
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes 
+			}
+
+			modifier = {
+				conscription = 0.02
+				army_attack_factor = 0.15
+				equipment_capture = 0.03
+				industrial_capacity_factory = 0.2
+			}
+
+			targeted_modifier = {
+				tag = ZKN
+				attack_bonus_against = 0.25
+    			defense_bonus_against = 0.25
+			}
+
+		}
+
 		ZTC_weapons_payments = {
 
 			picture = ETH_customs_barrier_ITA
@@ -756,6 +972,57 @@ ideas = {
 
 		}
 
+		ZTC_unification_costs = {
+
+			picture = trotskyite_plot
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				political_power_cost = 0.25
+			}
+
+		}
+
+	}
+
+	industrial_concern = {
+
+		ZTC_swg_concern = {
+
+			picture = GER_vereinigte_stahlwerke
+			
+			allowed = {
+				original_tag = ZTC
+			}
+
+			available = {
+				has_completed_focus = ZTC_stadtrat_economic_group
+			}
+			
+			cost = 150
+
+			research_bonus = {
+				industry = 0.1
+			}
+			
+			traits = { industrial_monopoly }
+			
+			ai_will_do = { 
+				factor = 10
+				modifier = {
+					factor = 0
+					has_government = communism
+				}
+			}
+			
+		}
 	}
 
 }

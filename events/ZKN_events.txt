@@ -6,7 +6,7 @@ country_event = { # Support from XFO and XFD
 	id = ZKN_cw_events.1
 	title = ZKN_cw_events.1.t
 	desc = ZKN_cw_events.1.desc
-	picture = GFX_report_event_DEN_resistance
+	picture = GFX_report_event_DEN_denmark_surrenders
 
 	is_triggered_only = yes
 
@@ -29,7 +29,7 @@ country_event = { # Civil War Ends
 	id = ZKN_cw_events.2
 	title = ZKN_cw_events.2.t
 	desc = ZKN_cw_events.2.desc
-	picture = GFX_report_event_DEN_denmark_surrenders
+	picture = GFX_report_event_DEN_resistance
 
 	fire_only_once = yes
     is_triggered_only = yes
@@ -39,9 +39,10 @@ country_event = { # Civil War Ends
 			news_event = ZKN_news_events.1 
 
 			ZLF = { every_core_state = { remove_core_of = ZLF } }
+			every_state = { limit = { region = 70 } add_core_of = ROOT }
 
 			ZLF = { # move important characters over (maybe do it later via lore events instead?)
-				ZLF_roland_ludovik = { 
+				ZLF_alois_rotrose = { # Ludovik is killed
 					set_nationality = ROOT 
 					promote_character = yes
 				}
@@ -55,6 +56,21 @@ country_event = { # Civil War Ends
 				country_event = {
 					id = ZKN_cw_events.3
 					days = 7
+				}
+			}
+
+			random_other_country = {
+				limit = {
+					is_neighbor_of = ROOT
+					OR = {
+						has_government = democratic
+						has_government = communism
+					}
+					has_civil_war = no
+				}
+				country_event = {
+					id = ZLF_cw_events.6
+					days = 5
 				}
 			}
 		}

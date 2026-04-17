@@ -20,12 +20,47 @@ ideas = {
                 communism_drift = 0.01
                 custom_modifier_tooltip = SPR_military_disloyalty_tt
 			}
-
-            on_remove = {
-				country_lock_all_division_template = no
-			}
             
 		}
+
+        ZLF_edelweiss_banner_2 = {
+
+            name = ZLF_edelweiss_banner
+            picture = FRA_scw_intervention_republicans_focus
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                conscription = 0.01
+            }
+
+        }
+
+        ZLF_edelweiss_banner_3 = {
+
+            name = ZLF_edelweiss_banner
+            picture = FRA_scw_intervention_republicans_focus
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                conscription = 0.02
+                army_morale_factor = 0.05
+            }
+
+        }
 
         ZLF_anti_monarchist_campaign = {
 
@@ -126,6 +161,158 @@ ideas = {
             
 		}
 
+        ZLF_economic_downturn = {
+
+			picture = great_depression
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                industrial_capacity_factory = -0.1
+                industrial_capacity_dockyard = -0.1
+				production_speed_buildings_factor = -0.2
+                consumer_goods_factor = 0.3
+			}
+            
+		}
+
+        ZLF_marxian_economic_recovery = {
+
+            picture = SOV_third_five_year_plan
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                industrial_capacity_factory = -0.1
+                industrial_capacity_dockyard = -0.1
+            }
+
+        }
+
+        ZLF_nationalised_mining_industry = {
+
+            picture = generic_exploit_mines
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                local_resources_factor = 0.1
+            }
+
+        }
+
+        ZLF_nationalised_banks = {
+
+            picture = generic_exploit_mines
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                consumer_goods_factor = -0.1
+            }
+
+        }
+
+        ZLF_cainsian_economic_recovery = {
+
+            picture = SOV_fourth_five_year_plan
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                consumer_goods_factor = 0.15
+            }
+
+        }
+
+        ZLF_arbeitsschaffungsprogramme = {
+
+            picture = SOV_stakhanovite_movement
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                production_speed_buildings_factor = 0.2
+            }
+
+        }
+
+        ZLF_deficit_spending_idea = {
+
+            picture = tur_balkan_central_bank
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                consumer_goods_factor = -0.25
+                stability_factor = -0.05
+                political_power_factor = -0.05
+            }
+
+        }
+
+        ZLF_strengthened_economy = {
+
+            picture = SOV_fourth_five_year_plan
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+                consumer_goods_factor = -0.1
+            }
+
+        }
+
         ZLF_cavalry_bonus_cw = {
 
             picture = generic_war_preparation
@@ -207,6 +394,30 @@ ideas = {
                 research_speed_factor = 0.05
             }
             
+        }
+
+        ZLF_elbian_insurrectionary_army = {
+
+            picture = generic_victors_of_ww1
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                conscription = 0.05
+                ZSP_monthly_guns = 750
+                equipment_capture = 0.03
+                army_speed_factor = 0.05
+                attrition = -0.15
+                out_of_supply_factor = -0.8
+                surrender_limit = 0.5
+            }
+
         }
 
     }

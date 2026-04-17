@@ -23,6 +23,10 @@ ideologies = {
 				color = { 37 37 69 }
 			}
 
+			neorevisionism = {
+
+			}
+
 		}
 
 		dynamic_faction_names = {
@@ -175,7 +179,7 @@ ideologies = {
 
 			tyrannical_magocracy = {
 				can_be_randomly_selected = no
-				color = { 139 147 166 }
+				color = { 37 37 69 }
 			}
 
 			gardenian_ultranationalism = {

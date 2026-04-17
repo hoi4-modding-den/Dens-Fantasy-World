@@ -59,6 +59,237 @@ ZTC_erstatzteil_scheme_cat = {
 
 }
 
+ZTC_fight_the_monarchists_cat = {
+
+    ZTC_build_up_military = {
+
+        icon = generic_prepare_civil_war
+
+        cost = 40
+
+        ai_will_do = {
+            base = 10
+        }
+
+        available = {
+            
+        }
+
+        days_remove = 30
+
+        modifier = {
+            mobilization_speed = 0.05
+            training_time_factor = 0.1
+        }
+
+        remove_effect = {
+            add_command_power = 20
+            add_manpower = 5000
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 100
+            }
+        }
+    }
+
+    ZTC_sabotage_ZKN_military = {
+
+        icon = generic_scorched_earth
+
+        custom_cost_trigger = {
+            has_equipment = {
+                infantry_equipment > 499
+            }
+        }
+        custom_cost_text = decision_cost_guns_500
+
+        ai_will_do = {
+            base = 10
+        }
+
+        available = {
+            FROM = {
+                any_controlled_state = {
+                    non_damaged_building_level = {
+                        building = arms_factory
+                        level > 0
+                    }
+                }
+            }
+        }
+
+        targets_dynamic = yes
+
+        target_trigger = {
+            FROM = {
+                original_tag = ZKN
+                OR = {
+                    has_government = fascism
+                    has_government = neutrality
+                }
+            }
+        }
+
+        days_remove = 50
+
+        complete_effect = {
+            hidden_effect = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                }
+            }
+            FROM = {
+                every_controlled_state = {
+                    random_select_amount = 3
+                    limit = {
+                        non_damaged_building_level = {
+                            building = arms_factory
+                            level > 0
+                        }
+                    }
+                    damage_building = {
+                        type = arms_factory
+                        damage = 1
+                    }
+                }
+            }
+        }
+    }
+
+    ZTC_demoralise_ZKN_military = {
+
+        icon = generic_military
+
+        cost = 40
+
+        ai_will_do = {
+            base = 10
+        }
+
+        available = {
+            
+        }
+
+        targets_dynamic = yes
+
+        target_trigger = {
+            FROM = {
+                original_tag = ZKN
+                OR = {
+                    has_government = fascism
+                    has_government = neutrality
+                }
+            }
+        }
+
+        days_remove = 25
+
+        complete_effect = {
+            FROM = {
+                add_war_support = -0.02
+                add_manpower = -1000
+            }
+            FROM = {
+                transfer_units_fraction= {
+                    target = ROOT
+                    size = 0.1
+                    stockpile_ratio = 0.15
+                    army_ratio = 0.05
+                    navy_ratio = 0
+                    air_ratio = 0.1
+                }
+            }
+        }
+    }
+
+    ZTC_demoralise_ZKN_civil_service = {
+
+        icon = SOV_place_hq
+
+        cost = 40
+
+        ai_will_do = {
+            base = 10
+        }
+
+        available = {
+            
+        }
+
+        targets_dynamic = yes
+
+        target_trigger = {
+            FROM = {
+                original_tag = ZKN
+                OR = {
+                    has_government = fascism
+                    has_government = neutrality
+                }
+            }
+        }
+
+        days_remove = 25
+
+        complete_effect = {
+            FROM = {
+                add_political_power = -25
+                add_stability = -0.05
+            }
+            add_collaboration = {
+                target = FROM
+                value = 0.1
+            }
+        }
+    }
+
+    ZTC_strike_the_monarchists = {
+
+        icon = generic_intelligence_operation
+
+        cost = 25
+
+        ai_will_do = {
+            base = 10
+        }
+
+        available = {
+            FROM = {
+                has_war_support < 0.5
+                fighting_army_strength_ratio = {
+                    tag = ROOT
+                    ratio < 0.75
+                }
+            }
+        }
+
+        targets_dynamic = yes
+
+        target_trigger = {
+            FROM = {
+                original_tag = ZKN
+                OR = {
+                    has_government = fascism
+                    has_government = neutrality
+                }
+            }
+        }
+
+        days_remove = 25
+
+        war_with_target_on_remove = yes
+
+        remove_effect = {
+            declare_war_on = {
+                target = FROM
+                type = annex_everything
+            }
+            set_country_flag = ZTC_liberate_the_republic
+        }
+    }
+
+}
+
 ZTC_balance_of_power_category = {
 
     ZTC_appease_the_council = {
@@ -235,7 +466,7 @@ foreign_politics = {
                                 }
                             }
                         }
-                        exist = no
+                        exists = no
                     }
                 }
             }

@@ -36,11 +36,19 @@ add_ideas = {
 }
 
 recruit_character = ZLF_roland_ludovik
+recruit_character = ZLF_alois_rotrose
+recruit_character = ZLF_juergen_zauberthal
 recruit_character = ZLF_gustav_mai
 recruit_character = ZLF_wilhelm_gluecksburg
 recruit_character = ZLF_rudolf_zimmermann
 
+recruit_character = ZLF_orlando
+recruit_character = ZLF_michel_meisendorff
+
 recruit_character = ZLF_hugo_von_fallersleben
+recruit_character = ZLF_rudy_handwerker
+
+set_country_flag = DEN_no_generic_political_advisors
 
 set_cosmetic_tag = ZLF_liberation_front
 

@@ -56,6 +56,8 @@ recruit_character = ZTC_friedrich_rabauke
 recruit_character = ZTC_august_klabautermann
 recruit_character = ZTC_piet_smiet
 
+set_country_flag = DEN_no_generic_political_advisors
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

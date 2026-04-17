@@ -22,6 +22,15 @@
  ZLF_liberation_front_DEF: "the Edelweiss Liberation Front"
  ZLF_liberation_front_ADJ: "Edelweiss"
 
+ ZLF_elbian_state: "Elbian Free State"
+ ZLF_elbian_state_DEF: "the Elbian Free State"
+ ZLF_elbian_state_ADJ: "Elbian"
+
+
+# FACTIONS
+
+ ZLF_faction_template_socialists_name: "Socialist League"
+
 
 # PARTIES
 
@@ -33,6 +42,8 @@
  ZLF_democratic_party_sp_long: "Socialist Party"
  ZLF_democratic_party_gkp: "GKP"
  ZLF_democratic_party_gkp_long: "Gardenian Constitutional Party" # opposition only
+ ZLF_democratic_party_elbian: "Domowina"
+ ZLF_democratic_party_elbian_long: "Homeland Front" # Elbian CW only
  ZLF_communism_party: "RTP"
  ZLF_communism_party_long: "Radical Transformative Party"
  ZLF_fascism_party: "PGE"
@@ -41,25 +52,37 @@
 
 # IDEOLOGIES
 
+ neorevisionism: "Neorevisionism"
+ neorevisionism_desc: "Neorevisionism is a sort of radicalised reformism, whose adherents advocate moving away from solely worker-oriented politics to a party of the whole people. They differ from reformists by pushing for adopting various active methods of defending democracy, such as populism, a greater focus on paramilitary organisations and bold symbols that convey the power of the movement, such as the burning fist of the Edelweiss Banner-Army."
  gardenian_ultranationalism: "Gardenian Ultranationalism"
  gardenian_ultranationalism_desc: "The concept of the Gardenian ultranation is extremely popular among the far-right parties of Gardenia, seeking to restore the 'former glory' of the region, even if such a past never truly existed. Most adherents of Gardenian Ultranationalism also seek to implement single-party autocracy, corporatism and kratocratic principles."
+
+ ZLF_socialism_desc: "The NDPvG is the foremost advocate for democratic revolution in Gardenia, fighting for a united Gardenian republic, social democracy and social liberalism."
 
 
 # CHARACTER
 
  ZLF_roland_ludovik_name: "Roland Ludovik"
+ ZLF_alois_rotrose_name: "Alois Rotrose"
+ ZLF_juergen_zauberthal_name: "Jürgen Zauberthal"
  ZLF_gustav_mai_name: "Gustav Mai"
  ZLF_wilhelm_gluecksburg_name: "Wilhelm Glücksburg"
  ZLF_rudolf_zimmermann_name: "Rudolf Zimmermann"
+ ZLF_orlando_name: "Orlando"
+ ZLF_michel_meisendorff_name: "Michel Meisendorff"
  ZLF_hugo_von_fallersleben_name: "Hugo von Fallersleben"
+ ZLF_rudy_handwerker_name: "Rudy Handwerker"
 
 
 # TRAITS
 
  ZLF_hero_of_the_revolution: "Hero of Edelweiss"
  ZLF_marxist_theorist: "Marxist Theorist"
- ZLF_conservative_paragon: "Conservative Bulwark"
+ ZLF_the_man_who_sold_gardenia: "The Man Who Sold Gardenia"
  ZLF_warmonger: "Foolish Warmonger"
+ ZLF_land_reform_advocate: "Land Reform Advocate"
+ ZLF_exiled_social_democrat: "Exiled Social Democrat"
+ ZLF_democratic_propagandist: "Social Democratic Activist"
 
 
 # IDEAS
@@ -69,9 +92,19 @@
  ZLF_anti_monarchist_campaign: "The Anti-Monarchist Campaign"
  ZLF_staatsbankrott: "End of the Adelswirtschaft"
  ZLF_staatsbankrott_desc: "The exploitation of the people through the aristocracy has been ended. However, in the heat of revolution, the thoroughness of our troops has caused significant damage to our economic capabilities."
+ ZLF_economic_downturn: "Planlosigkeit"
+ ZLF_economic_downturn_desc: "Our economy was significantly hurt by the civil war, but our economists are not certain what approach will assist in reconstruction. Our industrial planning is in a state of limbo. We are planlos."
+ ZLF_marxian_economic_recovery: "Marxian Economics"
+ ZLF_nationalised_mining_industry: "Nationalised Mining Industry"
+ ZLF_nationalised_banks: "Nationalised Banks"
+ ZLF_cainsian_economic_recovery: "Cainsian Economics"
+ ZLF_arbeitsschaffungsprogramme: "Work Creation Programs"
+ ZLF_deficit_spending_idea: "Deficit Spending"
+ ZLF_strengthened_economy: "Strengthened Economy"
  ZLF_cavalry_bonus_cw: "Rapid Response Brigades"
  ZLF_reconstruction: "National Reconstruction"
  ZLF_intervention_corps: "International Cooperation League"
+ ZLF_elbian_insurrectionary_army: "Elbian Volunteer Army"
 
 
 # DYNMODS
@@ -80,8 +113,11 @@
  ZLF_elbian_lands_desc: "These lands are home to the Elbs, the long-eared, longer-lived relatives of humanity. Nature-loving by culture, they vehemently oppose the industrialisation of their homelands, which earned them scorn from the Zinnian Throne, the greedy aristocracy and the industrial elite."
  ZLF_elbian_conscription: "Elbian Volunteer Army"
  ZLF_elbian_autonomy_1: "Elbian Autonomy (Freistaat Domowina)"
+ ZLF_elbian_autonomy_1_desc: "The Free State of Domowina is the largest of the three autonomous states, located in the Domowina Forest and reaching all the way to the Eastern borders in Schweidnitz and Quellenjebiet."
  ZLF_elbian_autonomy_2: "Elbian Autonomy (Freistaat Wjelećina)"
+ ZLF_elbian_autonomy_2_desc: "The Elbian population of the Free State of Wjelećina is mostly comprised of descendants of refugees who fled from the lawless lands of Alstroemeria, though a native Elbian population existed in the state before them."
  ZLF_elbian_autonomy_3: "Elbian Autonomy (Freistaat Rudne Horiny)"
+ ZLF_elbian_autonomy_3_desc: "The Free State of Rudne Horiny encompasses the Elbian lands in the Erzgebirge, whose Elbian name is Rudne Horiny."
 
 
 # DECISIONS
@@ -96,7 +132,9 @@
  ZLF_take_the_royalist_stronghold: "Take the Royalist Stronghold"
  ZLF_maintain_connection_to_hortensia: "Ongoing Negotiations in Hortensia"
 
- ZLF_integrate_alstroemeria: "Establish an Alstroemerian Federal State"
+ ZLF_establish_elbian_autonomy_timer: "Demands for Elbian Autonomy"
+ ZLF_end_of_elbian_insurrection: "Elbian International Efforts"
+ ZLF_rename_cities: "Destroy the Monarchist Symbols"
 
  ZLF_expand_wolframingen: "Increase the Jurisdiction of Wolframingen"
  ZLF_expand_blauenfelde_aluminium_mills: "Expand Blauenfelde Aluminium Mills"
@@ -134,14 +172,65 @@
  ZLF_dawn_of_the_republic_tt: "The §YLiberation Front§! will be reorganised into a proper §YRepublic§!, a §Yconstitutional convention§! will be held and preparations for §Yelections§! will be made."
  
  ZLF_magic_polygon_of_economics: "Polygon of Economics"
- ZLF_magic_polygon_of_economics_desc: "The Magic Polygon (de.: Magisches Vieleck), also referred to as the Magic Square or Magic Hexagon, is system of four to six political economic goals who are supposed to be completed at the same time."
- 
+ ZLF_magic_polygon_of_economics_desc: "The Magic Polygon (de.: Magisches Vieleck), also referred to as the Magic Square or Magic Hexagon, is system of four to six political economic goals who are supposed to be completed at the same time to ensure a prosperous economy."
+ ZLF_trust_in_marx: "Trust in Marx"
+ ZLF_trust_in_marx_desc: "Marxism is the main doctrine of the NDPvG and the RTP, following the theories of Wighardian economic theorist Karl Marx. Implementation of Marxian economics and the nationalisation of the industry has been the plan since the beginning of the revolution."
+ ZLF_nationalise_mining_companies: "Nationalise Mining Companies"
+ ZLF_nationalise_mining_companies_desc: ""
+ ZLF_nationalise_the_banks: "Nationalise the Banks"
+ ZLF_nationalise_the_banks_desc: ""
+ ZLF_transformation_of_the_economy: "Transformation of the Economy"
+ ZLF_transformation_of_the_economy_desc: ""
+ ZLF_the_central_economy: "The Centralised Economy"
+ ZLF_the_central_economy_desc: ""
+ ZLF_trust_in_cains: "Trust in Cains"
+ ZLF_trust_in_cains_desc: "The economist Johann Möglich Cains has drafted a plan to revitalise the economy. Emphasising the need to increase the purchasing power of the workers to restore trust in the economy after the civil war, he has proposed large-scale public works to create employment. These programs are to be made possible through deficit spending."
+ ZLF_gemeindebau: "Gemeindebau Projects"
+ ZLF_gemeindebau_desc: ""
+ ZLF_large_scale_public_works: "Large-Scale Public Works"
+ ZLF_large_scale_public_works_desc: ""
+ ZLF_deficit_spending: "Deficit Spending"
+ ZLF_deficit_spending_desc: ""
+ ZLF_the_labour_union_economy: "The Labour Union Economy"
+ ZLF_the_labour_union_economy_desc: ""
+
+ ZLF_national_democratic_majority: "National Democratic Majority"
+ ZLF_national_democratic_majority_desc: ""
+ ZLF_national_democratic_majority_tt: "§YParty Profile§!\n  Name: §YNationaldemokratische Partei von Gardenien§!\n  Ideology: §YSocial Democracy§!\n  Alignment: §YReformist, Social Liberal§!\n  Party Leader: §Y[ZLF_get_leader_ndpvg]§!" # $ZLF_roland_ludovik_name$ -> $ZLF_alois_rotrose_name$ or $ZLF_juergen_zauberthal_name$
+ ZLF_socialist_party_majority: "Socialist Majority"
+ ZLF_socialist_party_majority_desc: ""
+ ZLF_socialist_party_majority_tt: "§YParty Profile§!\n  Name: §YSozialistische Partei§!\n  Ideology: §YSocial Democracy - Neorevisionism§!\n  Alignment: §YLabour, Reformist§!\n  Party Leader: §Y[ZLF_get_leader_sp]§!" # $ZLF_michel_meisendorff_name$ -> $ZLF_roland_ludovik_name$
+ ZLF_radical_party_majority: "Radical Majority"
+ ZLF_radical_party_majority_desc: ""
+ ZLF_radical_party_majority_tt: "§YParty Profile§!\n  Name: §YRadikale Transformative Partei§!\n  Ideology: §YOrthodox Marxism§!\n  Alignment: §YLeft, Labour§!\n  Party Leader: §Y$ZLF_gustav_mai_name$§!"
+ ZLF_fortify_the_republic: "Fortify the Republic"
+ ZLF_fortify_the_republic_desc: ""
+ ZLF_expand_the_banners: "Expand the Banners"
+ ZLF_expand_the_banners_desc: ""
+ ZLF_labour_union_cooperation: "Joint Labour Act"
+ ZLF_labour_union_cooperation_desc: ""
+ ZLF_establish_the_red_guard: "Establish the Red Guard"
+ ZLF_establish_the_red_guard_desc: ""
+ ZLF_reformist_spirit: "Outmanouvre Left and Labour"
+ ZLF_reformist_spirit_desc: ""
+ ZLF_social_democratic_activism: "Activist Social Democracy"
+ ZLF_social_democratic_activism_desc: ""
+ ZLF_nationalisation_program: "Nationalisation Program"
+ ZLF_nationalisation_program_desc: ""
+
  ZLF_theories_of_international_relations: "Theories of International Relations"
  ZLF_theories_of_international_relations_desc: "The international system is build up based on the principle of anthropromorphic difference. Societies who have higher collective potential (measure of organising labour) than others end up dominating and exploiting those weaker societies. This international system is dysfunctional, as it ends up reducing global collective potential."
+ ZLF_formalise_the_federal_states: "The Federal Council"
+ ZLF_formalise_the_federal_states_desc: ""
+ ZLF_elbian_autonomy: "Establish Elbian Autonomous States"
+ ZLF_elbian_autonomy_desc: ""
+ ZLF_controls_all_elbian_lands_tt: "Controls all §YElbenländereien§! States"
  ZLF_northern_intervention: "Northern Intervention"
  ZLF_northern_intervention_desc: ""
+ ZLF_northern_intervention_tt: "The §YSayani Civil War§! is ongoing"
  ZLF_korelian_intervention: "Korelian Intervention"
  ZLF_korelian_intervention_desc: ""
+ ZLF_korelian_intervention_tt: "At least §Y2 Rival Korelian Governments§! exist"
  ZLF_expand_the_cooperation_league: "Expand International Efforts"
  ZLF_expand_the_cooperation_league_desc: ""
  ZLF_secure_alstroemeria: "Restore Law and Order in Alstroemeria"
@@ -171,6 +260,10 @@
  ZLF_cw_events.5.desc: "With the civil war over, the International Brigades have been disbanded and the volunteers are on the way back home."
  ZLF_cw_events.5.a: "Auf Wiedersehen, Genossen!"
 
+ ZLF_cw_events.6.t: "Republican Exiles from Gardenia"
+ ZLF_cw_events.6.desc: "With the Liberation Front defeated, most of the Republican leaders have gone into exile to escape persecution and further the Republican cause abroad. Apparently a large part of those exiles has found a home here in [ROOT.GetNameDef]."
+ ZLF_cw_events.6.a: "Let us hope this doesn't cause us conflict with Gardenia."
+
 
  ZLF_post_cw_events.1.t: "The Constitutional Convention"
  ZLF_post_cw_events.1.desc: "WIP"
@@ -187,18 +280,18 @@
  ZLF_post_cw_events.3.b: "We cannot possibly limit who can run for chancellor!"
 
  ZLF_post_cw_events.4.t: "Split in the Party"
- ZLF_post_cw_events.4.desc: "With the end of the constitutional convention ongoing, the divisions within the National Democratic Party have become much more apparent. Without the monarchists as a common enemy, the factions have ended their Burgfrieden and the party has split.\n \nThe leftist factions, especially the Trade Unionists and the Social Democrats, have decided to officially leave the party and found their own, named the Socialist Party. Even the prominent revolutionary, Roland Ludovik, has decided to join them, abandoning the NDPvG. Meanwhile on the right side, the more liberal elements of the party have decided to break away and found the Gardinian Constitutional Party as a counterweight to the leftists."
+ ZLF_post_cw_events.4.desc: "With the end of the constitutional convention ongoing, the divisions within the National Democratic Party have become much more apparent. Without the monarchists as a common enemy, the factions have ended their Burgfrieden and the party has split.\n \nThe labour factions, the Trade Unionists and the Cooperativists, have decided to officially leave the party and found their own, named the Socialist Party. Even the prominent revolutionary, Roland Ludovik, has decided to join them, abandoning the NDPvG. Meanwhile on the right side, the more liberal elements of the party have decided to break away and found the Gardinian Constitutional Party as a counterweight to the leftists."
  ZLF_post_cw_events.4.a: "A plurality of opinions must be supported."
 
  ZLF_post_cw_events.5.t: "Closing Speech of the Constitutional Convention"
  ZLF_post_cw_events.5.desc: "WIP"
- ZLF_post_cw_events.5.a: ""
+ ZLF_post_cw_events.5.a: "To a peaceful future!"
 
  ZLF_post_cw_events.6.t: "First Elections of the Republic"
  ZLF_post_cw_events.6.desc: "WIP"
- ZLF_post_cw_events.6.a: "The Sozialistische Partei wins the mandate!"
- ZLF_post_cw_events.6.b: "The NDRvG manages to convince the people!"
- ZLF_post_cw_events.6.c: "The Radical Transformative Party somehow wins?"
+ ZLF_post_cw_events.6.a: "The NDRvG manages to convince the people!"
+ ZLF_post_cw_events.6.b: "The Sozialistische Partei wins the mandate!"
+ ZLF_post_cw_events.6.c: "The Radikale Transformative Partei somehow wins?"
 
  ZLF_post_cw_events.7.t: "Rebuilding the Nation"
  ZLF_post_cw_events.7.desc: "WIP"
@@ -208,6 +301,20 @@
  ZLF_events.1.t: "Lingua Internacia"
  ZLF_events.1.desc: "Our government has received an interesting petition from a doctor in Welsen. The medical practitioner Dr. Luis Lazarus Zaunenbach is a hobby language enthusiast and the creator of a new language, the lingua internacia, though it is commonly referred to as Esperanto by its speakers. He proposes we use Esperanto as the official language of diplomacy and convincing other nations to do the same. While his ideas seem utopian at the moment, it appeals to exactly the kind of idealism our Republic was founded upon."
  ZLF_events.1.a: "Ĉu tion ni serĉas?"
+
+ ZLF_events.2.t: "Elbian Insurrection"
+ ZLF_events.2.desc: "WIP"
+ ZLF_events.2.a: "I suppose it is our fault."
+ ZLF_events.2.tt: "The §YElbian Free State§! will §Rseceede§! from us. If we do not defeat them within the §Ytime limit§!, they will gain §Yinternational recognition§! and we will be forced to grant them §gsignificant autonomy§!."
+ ZLF_elbian_insurrection_happened: "the §YElbian Insurrection§! has happened"
+
+ ZLF_events.3.t: "Forced to the Table"
+ ZLF_events.3.desc: "WIP"
+ ZLF_events.3.a: "We accept."
+
+ ZLF_events.4.t: "Military Aid from [FROM.capital.GetCapitalVictoryPointName]"
+ ZLF_events.4.desc: "WIP"
+ ZLF_events.4.a: "Do they have ulterior motives?"
 
 
  ZLF_news_events.1.t: "Revolutionaries win the Gardenian Civil War"
@@ -256,10 +363,13 @@
  STATE_879: "Quellenjebiet"
 
  VICTORY_POINTS_8464: "Königsgnaden"
+ VICTORY_POINTS_8464_com: "Schlesienstadt"
  VICTORY_POINTS_8470: "Küstrin"
  VICTORY_POINTS_8471: "Wallenstein"
  VICTORY_POINTS_8472: "Hindenburg"
+ VICTORY_POINTS_8472_com: "Karl-Marx-Stadt"
  VICTORY_POINTS_8473: "Zinnienschloss"
+ VICTORY_POINTS_8473_com: "Zinnienstadt"
  VICTORY_POINTS_9218: "Welsen"
  VICTORY_POINTS_9428: "Plosen an der Spei"
  VICTORY_POINTS_9429: "Malenau"
@@ -267,6 +377,7 @@
  VICTORY_POINTS_9433: "Zaddern"
  VICTORY_POINTS_9507: "Rinnsal"
  VICTORY_POINTS_9675: "Prinzendamm"
+ VICTORY_POINTS_9675_com: "Volksdamm"
  VICTORY_POINTS_10881: "Wolframingen"
  VICTORY_POINTS_10887: "Eisenhütten"
  VICTORY_POINTS_10985: "Wittingen"

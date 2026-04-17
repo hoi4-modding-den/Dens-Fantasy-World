@@ -19,15 +19,16 @@ on_actions = {
         }
     }
 
-    on_monthly_ZSP = {
+    on_monthly = {
         effect = {
-            if = {
+            if = { # any country can use this one
                 limit = {
                     check_variable = { modifier@ZSP_monthly_guns > 0 }
                 }
                 add_equipment_to_stockpile = { 
                     type = infantry_equipment_0
                     amount = modifier@ZSP_monthly_guns
+                    producer = ZSP # so they are called muskets
                 }
             }
         }
