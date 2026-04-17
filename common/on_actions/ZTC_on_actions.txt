@@ -19,4 +19,39 @@ on_actions = {
         }
     }
 
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    ROOT = {
+                        has_country_flag = ZTC_liberate_the_republic
+                    }
+                    FROM = {
+                        original_tag = ZKN
+                    }
+                }
+                FROM = {
+                    every_core_state = {
+                        add_core_of = ZLF
+                    }
+                }
+                ROOT = {
+                    annex_country = {
+                        target = FROM
+                        transfer_troops = no
+                    }
+                    release = ZLF
+                    if = {
+                        limit = { is_in_faction = yes }
+                        add_to_faction = ZLF
+                    }
+                    else = {
+                        create_faction_from_template = ZLF_faction_template_socialists
+                        add_to_faction = ZLF
+                    }
+                }
+            }
+        }
+    }
+
 }

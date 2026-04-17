@@ -23,6 +23,7 @@ add_ideas = {
         limited_exports
         ZF_balekelemi_civil_war
         ZFA_arenigwade_liberation_army
+        ZFA_factionalism_within_front
 }
 
 set_stability = 0.15
@@ -31,6 +32,8 @@ set_convoys = 0
 
 recruit_character = ZFA_eyas_desita
 #add_ideas = 
+
+set_cosmetic_tag = ZFA_civilwar
 
 declare_war_on = {
 	target = ZFB

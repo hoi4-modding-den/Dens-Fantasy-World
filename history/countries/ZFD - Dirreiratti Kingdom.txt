@@ -21,6 +21,9 @@ add_ideas = {
 	limited_conscription
 	low_economic_mobilisation
         limited_exports
+        ZFD_growing_uncertainity
+        ZFD_rise_of_waaqa_extremists
+        ZFD_extreme_corruption_in_government
 }
 
 set_stability = 0.5

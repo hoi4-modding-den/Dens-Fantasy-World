@@ -1,8 +1,12 @@
 ﻿l_english:
 
- ZFA:0 "Ārenigwadē People's Front"
- ZFA_DEF:0 "Ārenigwadē People's Front"
+ ZFA:0 "Ārenigwadē People's Republic"
+ ZFA_DEF:0 "Ārenigwadē People's Republic"
  ZFA_ADJ:0 "Ārenigwadi"
+
+ ZFA_civilwar: "Ārenigwadē People's Front"
+ ZFA_civilwar_DEF: "Ārenigwadē People's Front"
+ ZFA_civilwar_ADJ: "Ārenigwadi"
  
 #Parties
  ZFA_communism_party: "ĀHG"

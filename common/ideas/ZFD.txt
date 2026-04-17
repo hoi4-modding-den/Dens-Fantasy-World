@@ -1,0 +1,80 @@
+ideas = {
+
+	country = {
+                   ZFD_growing_uncertainity = {
+                           picture = FRA_scw_intervention_republicans_focus
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                                    stability_factor = -0.1
+                                    political_power_factor = -0.25
+                                    neutrality_drift = -0.02
+                                   
+			    }
+                  }
+
+                       ZFD_rise_of_waaqa_extremists = {
+                           picture = FRA_scw_intervention_republicans_focus
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                                    stability_factor = -0.15
+                                    fascism_drift = 0.02
+                                   
+			    }
+                  }
+
+                        ZFD_extreme_corruption_in_government = {
+                           picture = FRA_scw_intervention_republicans_focus
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                                    production_speed_buildings_factor = -0.2
+                                    political_power_factor = 0.2
+                                   
+			    }
+                  }
+
+                         ZFD_powerful_pro_slavery_sentiments = {
+                           picture = FRA_scw_intervention_republicans_focus
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                                    stability_factor = -0.1
+                                    industrial_capacity_factory = 0.1
+                                    local_resources_factor = 0.1
+                                    communism_drift = 0.03
+                                    min_export = -0.3
+                                   
+			    }
+                  }
+         }
+}

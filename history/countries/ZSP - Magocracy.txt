@@ -25,8 +25,15 @@ add_ideas = {
 	ZSP_burgfrieden
 }
 
+add_to_variable = { ZSP_spell_slots = 2 }
+
 recruit_character = ZSP_wizard_council
 recruit_character = ZSP_ozymandias
+recruit_character = ZSP_the_phoenix
+
+set_country_flag = DEN_stability_events_disabled
+set_country_flag = DEN_no_generic_political_advisors
+set_country_flag = DEN_no_generic_spy_advisor
 
 set_politics = {
 	ruling_party = fascism

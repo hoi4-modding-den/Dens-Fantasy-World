@@ -29,6 +29,7 @@ ZTC_liberal_government = {
 
 	conscription_factor = ZTC_gov_conscription_factor
 	army_defence_factor = ZTC_gov_army_defence_factor
+	army_morale_factor = ZTC_gov_army_morale_factor
 	supply_node_range = ZTC_gov_supply_node_range
 	compliance_growth = ZTC_gov_compliance_growth
 
@@ -49,7 +50,7 @@ ZTC_social_democratic_government = {
 	consumer_goods_factor = ZTC_gov_consumer_goods_factor
 	production_speed_buildings_factor = ZTC_gov_production_speed_buildings_factor
 	global_building_slots_factor = ZTC_gov_global_building_slots_factor
-	industrial_capacity_factory = ZTC_gov_ZTC_gov_industrial_capacity_factory
+	industrial_capacity_factory = ZTC_gov_industrial_capacity_factory
 	industrial_capacity_dockyard = ZTC_gov_industrial_capacity_dockyard
 	production_factory_efficiency_gain_factor = ZTC_gov_production_factory_efficiency_gain_factor
 
@@ -57,5 +58,27 @@ ZTC_social_democratic_government = {
 	army_defence_factor = ZTC_gov_army_defence_factor
 	supply_node_range = ZTC_gov_supply_node_range
 	compliance_growth = ZTC_gov_compliance_growth
+
+}
+
+ZTC_socialist_government = {
+	enable = { has_government = communism }
+
+	icon = GFX_idea_AUS_austromarxism
+
+	communism_drift = ZTC_com_communism_drift
+	stability_factor = ZTC_com_stability_factor
+	subjects_autonomy_gain = ZTC_com_subjects_autonomy_gain
+	annex_subject_cost_factor = ZTC_com_annex_subject_cost_factor
+
+	research_speed_factor = ZTC_com_research_speed_factor
+	monthly_population = ZTC_com_monthly_population
+	consumer_goods_expected_value = ZTC_com_consumer_goods_expected_value
+	industrial_capacity_factory = ZTC_com_industrial_capacity_factory
+	industrial_capacity_dockyard = ZTC_com_industrial_capacity_dockyard
+	production_speed_buildings_factor = ZTC_com_production_speed_buildings_factor
+
+	conscription_factor = ZTC_com_conscription_factor
+	ZSP_monthly_guns = ZTC_com_ZSP_monthly_guns
 
 }

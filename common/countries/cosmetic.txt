@@ -14,3 +14,11 @@ ZPS_Communist = {
 	color = rgb { 166 63 118 }
 	color_ui = rgb { 166 63 118 }
 }
+ZLF_elbian_state = {
+	color = rgb { 80 135 99 }
+	color_ui = rgb { 80 135 99 }
+}
+ZSP_shadow_realm = {
+	color = rgb { 50 0 0 }
+	color_ui = rgb { 50 0 0 }
+}

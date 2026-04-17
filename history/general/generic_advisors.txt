@@ -4,6 +4,7 @@
 # Political advisors
 every_possible_country = {
 	limit = {
+		NOT = { has_country_flag = DEN_no_generic_political_advisors }
 		NOT = { OR = { tag = ZIA tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = ROM tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR original_tag = POL tag = FIN  } } 
 		# avoid generic advisors in temporary countries
 		is_dynamic_country = no
@@ -71,6 +72,7 @@ every_possible_country = {
 
 every_possible_country = {
 	limit = {
+		NOT = { has_country_flag = DEN_no_generic_political_advisors }
 		NOT = { OR = { tag = ZIA tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = PRC tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR original_tag = POL tag = FIN } }
 		is_dynamic_country = no
 		NOT = {
@@ -140,6 +142,7 @@ every_possible_country = {
 
 every_possible_country = {
 	limit = {
+		NOT = { has_country_flag = DEN_no_generic_political_advisors }
 		NOT = { OR = { tag = ZIA tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CZE tag = PRC tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR original_tag = POR original_tag = POL original_tag = LAT tag = FIN tag = BEL } }
 		is_dynamic_country = no
 		NOT = {
@@ -205,6 +208,7 @@ every_possible_country = {
 
 every_possible_country = {
 	limit = {
+		NOT = { has_country_flag = DEN_no_generic_spy_advisor }
 		has_dlc = "La Resistance"
 		# china gets a special one via focus
 		NOT = { original_tag = CHI }

@@ -31,3 +31,9 @@ ZFP_yetefaiw_beti_lijji: "Yeyefaiw Bēti Lijji"
 #victory_points
 
 #states
+
+#technology
+ ZFP_infantry_equipment_0: "Gedayi"
+ ZFP_infantry_equipment_0_short: "Gedayi"
+ ZFP_infantry_equipment_1: "Pīchi Biherawi Kinidochi 2"
+ ZFP_infantry_equipment_1_short: "PBK-2"

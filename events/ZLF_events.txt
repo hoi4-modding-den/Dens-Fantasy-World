@@ -69,6 +69,7 @@ country_event = { # Civil War Ends
 			news_event = ZLF_news_events.1
 
 			ZKN = { every_core_state = { remove_core_of = ZKN } }
+			every_state = { limit = { region = 70 } add_core_of = ROOT }
 		}
     }
 
@@ -84,6 +85,15 @@ country_event = { # Civil War Ends
 				character = ZLF_roland_ludovik
 				civilian = { large ="GFX_portrait_ZLF_roland_ludovik_victory" }
 			}
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		every_state = {
+			limit = {
+				has_dynamic_modifier = { modifier = ZLF_elbian_conscription scope = ROOT }
+			}
+			remove_dynamic_modifier = { modifier = ZLF_elbian_conscription }
 		}
 	}
 }
@@ -102,6 +112,45 @@ country_event = { # International Brigades leave
 			division_template = "International Republican Brigade"
 			disband = no
 		}
+	}
+}
+
+country_event = { # Exiles move somewhere else
+	id = ZLF_cw_events.6
+	title = ZLF_cw_events.6.t
+	desc = ZLF_cw_events.6.desc
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_other_country = {
+				limit = { has_character = ZLF_orlando }
+				ZLF_orlando = {
+					add_trait = {
+						slot = political_advisor
+						trait = ZLF_exiled_social_democrat
+					}
+					remove_trait = {
+						slot = political_advisor
+						trait = ZLF_land_reform_advocate
+					}
+					set_nationality = ROOT
+				}
+			}
+		}
+	}
+
+	option = {
+		name = ZLF_cw_events.6.a
+		add_popularity = { ideology = democratic popularity = 0.02 }
+		add_manpower = 1200
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = ZLF_orlando_token
 	}
 }
 
@@ -125,6 +174,7 @@ country_event = { # Constitutional Convention
 	option = {
 		name = ZLF_post_cw_events.1.a
 		add_popularity = { ideology = democratic popularity = 0.2 }
+		add_popularity = { ideology = communism popularity = 0.2 }
 	}
 }
 
@@ -147,7 +197,21 @@ country_event = { # Constitutional Convention - Federalism
 
 	option = {
 		name = ZLF_post_cw_events.2.a
-		
+		if = {
+			limit = {
+				has_idea = ZLF_staatsbankrott_cw_improved
+			}
+			swap_ideas = {
+				remove_idea = ZLF_staatsbankrott_cw_improved
+				add_idea = ZLF_economic_downturn
+			}
+		}
+		else = {
+			swap_ideas = {
+				remove_idea = ZLF_staatsbankrott
+				add_idea = ZLF_economic_downturn
+			}
+		}
 	}
 }
 
@@ -203,7 +267,7 @@ country_event = { # Party Split
 
 	option = {
 		name = ZLF_post_cw_events.4.a
-		
+		set_country_flag = ZLF_sp_founded
 	}
 }
 
@@ -217,7 +281,19 @@ country_event = { # Constitutional Convention - End
 
 	option = {
 		name = ZLF_post_cw_events.5.a
-		
+		swap_ideas = {
+			remove_idea = ZLF_edelweiss_banner
+			add_idea = ZLF_edelweiss_banner_2
+		}
+
+		country_lock_all_division_template = no
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		if = {
+			limit = { has_completed_focus = ZLF_gain_elbian_support }
+			activate_mission = ZLF_establish_elbian_autonomy_timer
+		}
 	}
 }
 
@@ -229,24 +305,47 @@ country_event = { # First Elections
 
 	is_triggered_only = yes
 
-	option = { # Socialist Party (Sozialistische Partei - SP)
-		name = ZLF_post_cw_events.6.a
-		set_politics = {
-			ruling_party = democratic
-			elections_allowed = no
-			name = ZLF_democratic_party_sp
-			long_name = ZLF_democratic_party_sp_long
-		}
-	}
-
 	option = { # National Democratic Party (Nationaldemokratische Partei von Gardenien - NDPvG)
-		name = ZLF_post_cw_events.6.b
+		name = ZLF_post_cw_events.6.a
 		set_politics = {
 			ruling_party = democratic
 			elections_allowed = no
 			name = ZLF_democratic_party
 			long_name = ZLF_democratic_party_long
 		}
+
+		hidden_effect = {
+			complete_national_focus = ZLF_national_democratic_majority
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		if = {
+			limit = { has_country_flag = ZLF_no_old_people }
+			promote_character = ZLF_alois_rotrose
+		}
+		else = {
+			promote_character = ZLF_juergen_zauberthal
+		}
+	}
+
+	option = { # Socialist Party (Sozialistische Partei - SP)
+		name = ZLF_post_cw_events.6.b
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			name = ZLF_democratic_party_sp
+			long_name = ZLF_democratic_party_sp_long
+		}
+
+		hidden_effect = {
+			complete_national_focus = ZLF_socialist_party_majority
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		promote_character = ZLF_roland_ludovik
+		set_country_leader_ideology = neorevisionism
 	}
 
 	option = { # Radical Transformative Party (Radikale Transformative Partei - RTP)
@@ -255,6 +354,14 @@ country_event = { # First Elections
 			ruling_party = communism
 			elections_allowed = no
 		}
+
+		hidden_effect = {
+			complete_national_focus = ZLF_radical_party_majority
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		promote_character = ZLF_gustav_mai
 	}
 }
 
@@ -287,6 +394,165 @@ country_event = { # Esperanto Reference
 		name = ZLF_events.1.a
 		add_political_power = 50
 		add_stability = 0.01
+	}
+}
+
+country_event = { # Elbian Insurrection
+	id = ZLF_events.2
+	title = ZLF_events.2.t
+	desc = ZLF_events.2.desc
+	picture = GFX_report_event_gre_rural_rebels
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = ZLF_elbian_insurrection_happened
+		hidden_effect = {
+			every_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = ZLF_elbian_lands }
+				}
+				set_demilitarized_zone = yes
+			}
+		}
+	}
+
+	option = {
+		name = ZLF_events.2.a
+		custom_effect_tooltip = ZLF_events.2.tt
+		hidden_effect = {
+			create_dynamic_country = {
+				original_tag = ZLF
+				set_cosmetic_tag = ZLF_elbian_state
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+					name = ZLF_democratic_party_elbian
+					long_name = ZLF_democratic_party_elbian_long
+				}
+				set_popularities = {
+					democratic = 1
+				}
+				set_stability = 1
+				set_war_support = 1
+				country_lock_all_division_template = yes
+				division_template = {
+					name = "Elbian Volunteer Brigade"
+					force_allow_recruiting = yes
+					regiments = {
+						irregular_infantry = { x = 0 y = 0 }
+						irregular_infantry = { x = 0 y = 1 }
+						irregular_infantry = { x = 0 y = 2 }
+						irregular_infantry = { x = 1 y = 0 }
+						irregular_infantry = { x = 1 y = 1 }
+						irregular_infantry = { x = 1 y = 2 }
+					}
+					support = {
+						
+					}
+				}
+				division_template = {
+					name = "Elbian Auxilliary Brigade"
+					force_allow_recruiting = yes
+					regiments = {
+						irregular_infantry = { x = 0 y = 0 }
+						irregular_infantry = { x = 0 y = 1 }
+						irregular_infantry = { x = 0 y = 2 }
+						irregular_infantry = { x = 1 y = 0 }
+						irregular_infantry = { x = 1 y = 1 }
+						irregular_infantry = { x = 1 y = 2 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+					}
+				}
+				every_core_state = {
+					remove_core_of = PREV
+				}
+				every_state = {
+					limit = {
+						has_dynamic_modifier = { modifier = ZLF_elbian_lands }
+					}
+					set_demilitarized_zone = no
+					transfer_state_to = PREV
+					add_core_of = PREV
+					create_unit = {
+						division = "name = \"Elbian Volunteer Brigade\" division_template = \"Elbian Volunteer Brigade\" start_experience_factor = 0.3 start_equipment_factor = 1 start_manpower_factor = 1"
+						count = 2
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "name = \"Elbian Auxilliary Brigade\" division_template = \"Elbian Volunteer Brigade\" start_experience_factor = 0.3 start_equipment_factor = 1 start_manpower_factor = 1"
+						count = 1
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				add_ideas = ZLF_elbian_insurrectionary_army
+				declare_war_on = {
+					target = ROOT
+					type = independence_wargoal
+				}
+			}
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		activate_mission = ZLF_end_of_elbian_insurrection
+	}
+}
+
+country_event = { # Elbian Insurrection successful
+	id = ZLF_events.3
+	title = ZLF_events.3.t
+	desc = ZLF_events.3.desc
+	picture = GFX_report_event_gre_rural_rebels
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.3.a
+		add_stability = -0.1
+		random_other_country = {
+			limit = {
+				has_idea = ZLF_elbian_insurrectionary_army
+			}
+			ROOT = {
+				annex_country = {
+					target = PREV
+					transfer_troops = no
+				}
+			}
+		}
+		every_state = {
+			limit = {
+				has_dynamic_modifier = { modifier = ZLF_elbian_lands }
+			}
+			force_enable_resistance = yes
+			start_resistance = yes
+			add_compliance = 60
+			add_resistance = 10
+		}
+	}
+}
+
+country_event = { # Korelian nation receives aid from ZLF
+	id = ZLF_events.4
+	title = ZLF_events.4.t
+	desc = ZLF_events.4.desc
+	picture = GFX_report_event_DEN_denmark_surrenders
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.4.a
+		add_popularity = { ideology = FROM popularity = 0.1 }
+		add_equipment_to_stockpile = { 
+            type = infantry_equipment
+            amount = 1000
+            producer = FROM
+        }
 	}
 }
 

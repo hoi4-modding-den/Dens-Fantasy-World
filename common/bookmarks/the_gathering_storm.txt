@@ -27,6 +27,20 @@ bookmarks = {
 				ZLF_dawn_of_the_republic
 			}
 		}
+		ZSP={
+			history = "ZSP_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				ZSP_ungoverned_lands
+			ZSP_tower_rivalry
+			ZSP_burgfrieden
+			}
+			focuses = {
+				ZSP_master_of_monsters
+				ZSP_benevolent_tyrant
+				ZSP_restless_magocrat
+			}
+		}
 		
 		"---"={
 			history = OTHER_GATHERING_STORM_DESC

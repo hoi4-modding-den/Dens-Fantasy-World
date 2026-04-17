@@ -29,6 +29,38 @@ characters = {
         }
 	}
 
+	ZLF_alois_rotrose = { 
+		name = ZLF_alois_rotrose_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_alois_rotrose
+				small = GFX_portrait_ZLF_alois_rotrose_small
+			}
+		}
+        
+		country_leader = {
+			ideology = socialism
+			traits = {  }
+			expire = "1960.1.1.1"
+		}
+	}
+
+	ZLF_juergen_zauberthal = { 
+		name = ZLF_juergen_zauberthal_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_juergen_zauberthal
+				small = GFX_portrait_ZLF_juergen_zauberthal_small
+			}
+		}
+        
+		country_leader = {
+			ideology = socialism
+			traits = {  }
+			expire = "1960.1.1.1"
+		}
+	}
+
 	ZLF_gustav_mai = { 
 		name = ZLF_gustav_mai_name
 		portraits = {
@@ -55,8 +87,8 @@ characters = {
 		}
         
 		country_leader = {
-			ideology = moderatism
-			traits = { ZLF_conservative_paragon }
+			ideology = oligarchism
+			traits = { ZLF_the_man_who_sold_gardenia } # reference to the fact that he is the puppet leader for the corporatocrats in Hortensia
 			expire = "1960.1.1.1"
 		}
 	}
@@ -77,6 +109,72 @@ characters = {
 		}
 	}
 
+	ZLF_orlando = { 
+		name = ZLF_orlando_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_orlando
+				small = GFX_portrait_ZLF_orlando_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_orlando_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                OR = {
+					has_government = democratic
+					has_government = communism
+				}
+            }
+            traits = {
+                ZLF_land_reform_advocate # switches to ZLF_exiled_social_democrat when in exile
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+	}
+
+	ZLF_michel_meisendorff = { 
+		name = ZLF_michel_meisendorff_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_michel_meisendorff
+				small = GFX_portrait_ZLF_michel_meisendorff_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_michel_meisendorff_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_government = democratic
+            }
+            traits = {
+                ZLF_democratic_propagandist 
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+
+		corps_commander = {
+            traits = { politically_connected militias_officer }
+            skill = 1
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 1
+        }
+	}
+
 	ZLF_hugo_von_fallersleben = { 
 		name = ZLF_hugo_von_fallersleben_name
 		portraits = {
@@ -93,6 +191,25 @@ characters = {
             defense_skill = 1
             planning_skill = 1
             logistics_skill = 2
+        }
+	}
+
+	ZLF_rudy_handwerker = { 
+		name = ZLF_rudy_handwerker_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_rudy_handwerker
+				small = GFX_portrait_ZLF_rudy_handwerker_small
+			}
+		}
+        
+		corps_commander = {
+            traits = { engineer_officer ranger }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 3
         }
 	}
 

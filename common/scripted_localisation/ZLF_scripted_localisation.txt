@@ -1,0 +1,31 @@
+defined_text = {
+    name = ZLF_get_leader_ndpvg
+    text = {
+        trigger = {
+            has_country_flag = ZLF_no_old_people
+            has_country_flag = ZLF_sp_founded
+        }
+        localization_key = ZLF_alois_rotrose_name
+    }
+    text = {
+        trigger = {
+            has_country_flag = ZLF_sp_founded
+        }
+        localization_key = ZLF_juergen_zauberthal_name
+    }
+    text = {
+        localization_key = ZLF_roland_ludovik_name
+    }
+}
+defined_text = {
+    name = ZLF_get_leader_sp
+    text = {
+        trigger = {
+            NOT = { has_country_flag = ZLF_sp_founded }
+        }
+        localization_key = ZLF_michel_meisendorff_name
+    }
+    text = {
+        localization_key = ZLF_roland_ludovik_name
+    }
+}

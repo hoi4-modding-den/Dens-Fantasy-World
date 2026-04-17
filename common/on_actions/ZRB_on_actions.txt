@@ -1,21 +1,23 @@
 on_actions = {
-	on_capitulation_immediate = {
+	on_capitulation = {
 		effect = {
 			if = {
 				limit = {
 					FROM = { original_tag = ZRB }
 					ROOT = { original_tag = ZIE }
 				}
+				ZRB = { white_peace = ZIE }
+				ZRB = { transfer_state = 787 }
+				ZRB = { transfer_state = 727 }
+				ZRB = { transfer_state = 858 }
+				ZRA = { transfer_state = 705 }
+				ZRA = { transfer_state = 1257 }
+				ZRU = { transfer_state = 843 }
+				ZRB = { puppet = ZRU }
+				ZRB = { puppet = ZRA }
+				# ZRB = { country_event = { id = ### days = 2} }
+				# news_event = { id = ### days = 1} 
 			}
-			ZRB = { white_peace = ZIE }
-			ZRB = { set_owner = 787 }
-			ZRB = { set_owner = 727 }
-			ZRB = { set_owner = 858 }
-			ZRA = { set_owner = 705 }
-			ZRA = { set_owner = 1257 }
-			ZRU = { set_owner = 843 }
-			ZRB = { puppet = ZRU }
-			ZRA = { puppet = ZRU }
 
 
 		}

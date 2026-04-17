@@ -53,6 +53,8 @@ recruit_character = ZTC_rudolf_von_seestern
 
 activate_advisor = ZKN_albert_zu_stegehoff_token
 
+set_country_flag = DEN_no_generic_political_advisors
+
 set_cosmetic_tag = ZKN_dominion
 
 declare_war_on = {

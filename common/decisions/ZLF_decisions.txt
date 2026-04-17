@@ -274,49 +274,116 @@ ZLF_civil_war_cat = {
 
 political_actions = {
 
-    ZLF_integrate_alstroemeria = {
+    ZLF_establish_elbian_autonomy_timer = {
 
-        icon = generic_form_nation
+        icon = eng_trade_unions_support
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            has_completed_focus = ZLF_elbian_autonomy
+        }
+
+        cancel_trigger = {
+            all_controlled_state = {
+                NOT = { has_dynamic_modifier = { modifier = ZLF_elbian_lands } }
+            }
+        }
+
+        highlight_states = {
+            highlight_states_trigger = {
+                has_dynamic_modifier = { modifier = ZLF_elbian_lands }
+            }
+        }
+
+        is_good = no
+
+        days_mission_timeout = 365
+
+        timeout_effect = {
+            country_event = ZLF_events.2
+        }
+    }
+
+    ZLF_end_of_elbian_insurrection = {
+
+        icon = generic_civil_support
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            NOT = {
+                any_other_country = {
+                    has_idea = ZLF_elbian_insurrectionary_army
+                }
+            }
+        }
+
+        highlight_states = {
+            highlight_states_trigger = {
+                owner = {
+                    has_idea = ZLF_elbian_insurrectionary_army
+                }
+            }
+        }
+
+        is_good = no
+
+        days_mission_timeout = 90
+
+        complete_effect = {
+            add_stability = 0.05
+        }
+
+        timeout_effect = {
+            country_event = ZLF_events.3
+        }
+    }
+
+    ZLF_rename_cities = {
 
         allowed = {
             original_tag = ZLF
         }
 
+        ai_will_do = {
+            base = 1
+        }
+
         available = {
-            custom_trigger_tooltip = {
-                tooltip = ZLF_controls_highlighted_states_tt
-                controls_state = 873
-                controls_state = 756
-                controls_state = 591
-                controls_state = 601
-                controls_state = 703
-            }
+            NOT = { country_exists = ZKN }
         }
 
         visible = {
-            has_completed_focus = ZLF_secure_alstroemeria
-        }
-
-        highlight_states = {
-            highlight_states_trigger = {
-                OR = {
-                    state = 873
-                    state = 756
-                    state = 591
-                    state = 601
-                    state = 703
-                }
-            }
+            NOT = { country_exists = ZKN }
         }
 
         complete_effect = {
-            add_state_core = 873
-            add_state_core = 756
-            add_state_core = 591
-            add_state_core = 601
-            add_state_core = 703
-        }
+            add_stability = 0.05
 
+            custom_effect_tooltip = generic_skip_one_line_tt
+            
+            set_province_name = {
+                id = 8464
+                name = VICTORY_POINTS_8464_com
+            }
+            set_province_name = {
+                id = 8472
+                name = VICTORY_POINTS_8472_com
+            }
+            set_province_name = {
+                id = 9675
+                name = VICTORY_POINTS_9675_com
+            }
+            set_province_name = {
+                id = 8473
+                name = VICTORY_POINTS_8473_com
+            }
+        }
     }
 
 }

@@ -1,19 +1,162 @@
 ZSP_magic_cat = {
 
-    ZSP_use_mana_test = {
+    ZSP_strengthen_industry = {
+
+        icon = generic_construction
 
         custom_cost_trigger = {
-            check_variable = { ZSP_mana > 99 }
+            check_variable = { ZSP_mana > 49 }
         }
         custom_cost_text = ZSP_use_50_mana
 
         available = {
-            has_stability < 1
+            ZSP_has_available_spell_slot = yes
         }
 
         complete_effect = {
-            add_to_variable = { ZSP_mana = -100 }
-            add_stability = 0.1
+            add_to_variable = { ZSP_used_spell_slots = 1 }
+            add_to_variable = { ZSP_mana = -50 }
+        }
+
+        modifier = {
+            industrial_factory_donations = 5
+        }
+
+        days_remove = 30
+
+        remove_effect = {
+            add_to_variable = { ZSP_used_spell_slots = -1 }
+        }
+
+    }
+
+    ZSP_strengthen_military_production = {
+
+        icon = ger_military_buildup
+
+        custom_cost_trigger = {
+            check_variable = { ZSP_mana > 49 }
+        }
+        custom_cost_text = ZSP_use_50_mana
+
+        available = {
+            ZSP_has_available_spell_slot = yes
+        }
+
+        complete_effect = {
+            add_to_variable = { ZSP_used_spell_slots = 1 }
+            add_to_variable = { ZSP_mana = -50 }
+        }
+
+        modifier = {
+            industrial_capacity_factory = 0.25
+        }
+
+        days_remove = 30
+
+        remove_effect = {
+            add_to_variable = { ZSP_used_spell_slots = -1 }
+        }
+
+    }
+
+    ZSP_burn_enemy_infrastructure = {
+
+        icon = generic_ignite_civil_war
+
+        custom_cost_trigger = {
+            check_variable = { ZSP_mana > 49 }
+        }
+        custom_cost_text = ZSP_use_50_mana
+
+        available = {
+            has_war = yes
+            ZSP_has_available_spell_slot = yes
+        }
+
+        complete_effect = {
+            add_to_variable = { ZSP_used_spell_slots = 1 }
+            add_to_variable = { ZSP_mana = -50 }
+            custom_effect_tooltip = ZSP_burn_enemy_infrastructure_tt
+            set_country_flag = ZSP_burn_enemy_infrastructure_selector_flag
+        }
+
+        days_remove = 70
+
+        remove_effect = {
+            add_to_variable = { ZSP_used_spell_slots = -1 }
+            clr_country_flag = ZSP_burn_enemy_infrastructure_selector_flag
+        }
+
+    }
+
+    ZSP_burn_enemy_infrastructure_selector = {
+
+        icon = infiltrate_state
+
+        visible = {
+            has_country_flag = ZSP_burn_enemy_infrastructure_selector_flag
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                if = {
+                    limit = {
+                        any_country = {
+                            owns_state = FROM
+                        }
+                    }
+                    owner = {
+                        controls_state = FROM
+                        has_war_with = ROOT
+                    }
+                }
+                else = {
+                    always = no
+                }
+                non_damaged_building_level = {
+                    building = infrastructure
+                    level > 0
+                }
+            }
+        }
+
+        complete_effect = {
+            clr_country_flag = ZSP_burn_enemy_infrastructure_selector_flag
+            FROM = {
+                damage_building = {
+                    type = infrastructure
+                    damage = 1
+                }
+                if = {
+                    limit = {
+                        non_damaged_building_level = {
+                            building = industrial_complex
+                            level > 0
+                        }
+                    }
+                    damage_building = {
+                        type = industrial_complex
+                        damage = 1
+                    }
+                }
+                if = {
+                    limit = {
+                        non_damaged_building_level = {
+                            building = arms_factory
+                            level > 0
+                        }
+                    }
+                    damage_building = {
+                        type = arms_factory
+                        damage = 1
+                    }
+                }
+            }
         }
 
     }

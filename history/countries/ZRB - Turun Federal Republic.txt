@@ -40,3 +40,64 @@ set_popularities = {
 	communism = 12
 	fascism = 7
 }
+
+666 = {
+add_dynamic_modifier = { modifier = ZRB_dinantul }
+set_variable = {
+	ZRB_local_manpower = -0.35
+}
+set_variable = {
+	ZRB_local_slots = 0.2
+}
+} 
+
+822 = {
+add_dynamic_modifier = { modifier = ZRB_niava }
+set_variable = {
+	ZRB_local_manpower1 = 0.2
+}
+set_variable = {
+	ZRB_local_slots1 = -0.1
+}
+set_variable = {
+	ZRB_speed1 = 0.1
+}
+} 
+
+791 = {
+add_dynamic_modifier = { modifier = ZRB_turinje }
+set_variable = {
+	ZRB_local_manpower2 = 0.1
+}
+set_variable = {
+	ZRB_speed2 = 0.05
+}
+set_variable = {
+	ZRB_resources2 = 0.25
+}
+} 
+646 = {
+add_dynamic_modifier = { modifier = ZRB_turinje }
+set_variable = {
+	ZRB_local_manpower2 = 0.1
+}
+set_variable = {
+	ZRB_speed2 = 0.05
+}
+set_variable = {
+	ZRB_resources2 = 0.25
+}
+} 
+
+883 = {
+	add_dynamic_modifier = { modifier = ZRB_vani_turje }
+set_variable = {
+	ZRB_local_slots3 = 0.3
+}
+set_variable = {
+	ZRB_speed3 = 0.15
+}
+set_variable = {
+	ZRB_local_manpower3 = 0.25
+}
+}

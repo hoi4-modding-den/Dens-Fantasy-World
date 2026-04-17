@@ -18,6 +18,14 @@ ideologies = {
 			pan_species_cosmopolitanism = {
 			can_be_randomly_selected = no
 			}
+			constitutional_monarchism = {
+				can_be_randomly_selected = no
+				color = { 37 37 69 }
+			}
+
+			neorevisionism = {
+
+			}
 
 		}
 

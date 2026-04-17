@@ -1,0 +1,110 @@
+division_template = {
+	name = "Yetateku Kifili"
+	#division_names_group = ZFP_INF_01
+    priority = 1
+    template_counter = 119
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Pīchi Lihikani Legewoni"
+	#division_names_group = ZFP_INF_02
+    priority = 2
+    template_counter = 119
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+                infantry = { x = 1 y = 2 }
+                infantry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Fetani Kififili"
+	#division_names_group = ZFP_CAV_01
+    priority = 1
+    template_counter = 119
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry= { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+units = {
+    division = {
+		location = 3004
+		division_template = "Pīchi Lihikani Legewoni"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 3004
+		division_template = "Yetateku Kifili"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.8
+	}
+        division = {
+		location = 3001
+		division_template = "Yetateku Kifili"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+        division = {
+		location = 3002
+		division_template = "Yetateku Kifili"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+        division = {
+		location = 3002
+		division_template = "Fetani Kififili"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 30
+	}
+        add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 40
+		
+	}
+}
+
+

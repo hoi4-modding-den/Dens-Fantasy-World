@@ -1,0 +1,38 @@
+ZRB_dinantul = {
+	icon = GFX_ZRB_AutonomousRegion1
+	enable = { always = yes }
+
+	local_manpower = ZRB_local_manpower
+	local_building_slots_factor = ZRB_local_slots
+	local_resources = ZRB_resources
+	state_production_speed_buildings_factor = ZRB_speed
+}
+
+ZRB_niava = {
+	icon = GFX_ZRB_AutonomousRegion2
+	enable = { always = yes }
+
+	local_manpower = ZRB_local_manpower1
+	local_building_slots_factor = ZRB_local_slots1
+	local_resources = ZRB_resources1
+	state_production_speed_buildings_factor = ZRB_speed1
+}
+
+ZRB_turinje = {
+	icon = GFX_ZRB_AutonomousRegion3
+	enable = { always = yes }
+
+	local_manpower = ZRB_local_manpower2
+	local_building_slots_factor = ZRB_local_slots2
+	local_resources = ZRB_resources2
+	state_production_speed_buildings_factor = ZRB_speed2
+}
+ZRB_vani_turje = {
+	icon = GFX_ZRB_AutonomousRegion4
+	enable = { always = yes }
+
+	local_manpower = ZRB_local_manpower3
+	local_building_slots_factor = ZRB_local_slots3
+	local_resources = ZRB_resources3
+	state_production_speed_buildings_factor = ZRB_speed3
+}

@@ -1,0 +1,20 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ZRB_AutonomousRegion1"
+		texturefile = "gfx/interface/gui/ZRB/ZRB_AutonomousRegion1.png"
+	}
+	spriteType = {
+		name = "GFX_ZRB_AutonomousRegion2"
+		texturefile = "gfx/interface/gui/ZRB/ZRB_AutonomousRegion2.png"
+	}
+	spriteType = {
+		name = "GFX_ZRB_AutonomousRegion3"
+		texturefile = "gfx/interface/gui/ZRB/ZRB_AutonomousRegion3.png"
+	}
+
+	spriteType = {
+		name = "GFX_ZRB_AutonomousRegion4"
+		texturefile = "gfx/interface/gui/ZRB/ZRB_AutonomousRegion4.png"
+	}
+
+}

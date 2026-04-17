@@ -26,7 +26,7 @@ ideas = {
 
         ZSP_ultra_authoritarian_governance = {
 
-            picture = generic_oppression
+            picture = vittoria_mutilata
 
             allowed = {
                 always = no 
@@ -39,6 +39,27 @@ ideas = {
             modifier = {
                 party_popularity_stability_factor = -0.1
                 local_resources_factor = -0.2
+                production_speed_buildings_factor = -0.2
+                production_factory_max_efficiency_factor = -0.1
+            }
+
+        }
+
+        ZSP_ultra_authoritarian_governance_2 = {
+
+            name = ZSP_ultra_authoritarian_governance
+            picture = vittoria_mutilata
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                party_popularity_stability_factor = -0.1
                 production_speed_buildings_factor = -0.2
                 production_factory_max_efficiency_factor = -0.1
             }
@@ -162,6 +183,89 @@ ideas = {
             modifier = {
                 industrial_capacity_factory = -0.05
                 ZSP_monthly_guns = 250
+            }
+
+        }
+
+        ZSP_shadowspire_research = {
+
+            picture = generic_research_bonus
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                research_speed_factor = 0.05
+            }
+
+        }
+
+        ZSP_shadowspire_research_2 = {
+
+            name = ZSP_shadowspire_research
+            picture = generic_research_bonus
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                research_speed_factor = 0.05
+            }
+
+            research_bonus = {
+                infantry_weapons = 0.25
+            }
+
+        }
+
+        ZSP_shadowspire_research_3 = {
+
+            name = ZSP_shadowspire_research
+            picture = generic_research_bonus
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                research_speed_factor = 0.25
+                ZSP_mana_generation = 10
+            }
+
+            research_bonus = {
+                infantry_weapons = 0.25
+            }
+
+        }
+
+        ZSP_control_spell = {
+
+            picture = generic_oppression
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                resistance_target = -0.25
             }
 
         }

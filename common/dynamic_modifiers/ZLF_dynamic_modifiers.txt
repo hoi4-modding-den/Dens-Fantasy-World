@@ -26,7 +26,11 @@ ZLF_elbian_autonomy_1 = { # Freistaat Domowina
 
 	icon = GFX_modifiers_COG_kasai_separatism
 
-	
+	local_factories = 0.2
+    local_building_slots_factor = 0.4
+    state_resources_factor = 0.4
+    local_resource_gain_efficiency_per_infrastructure = 0.2
+    recruitable_population = 0.25
 
 }
 
@@ -35,7 +39,11 @@ ZLF_elbian_autonomy_2 = { # Freistaat Wittingen
 
 	icon = GFX_modifiers_COG_katanga_separatism
 
-	
+	local_factories = 0.2
+    local_building_slots_factor = 0.4
+    state_resources_factor = 0.4
+    local_resource_gain_efficiency_per_infrastructure = 0.2
+    recruitable_population = 0.25
 
 }
 
@@ -44,6 +52,10 @@ ZLF_elbian_autonomy_3 = { # Freistaat Erzgebirge
 
 	icon = GFX_modifiers_GER_lokot_autonomy
 
-	
+	local_factories = 0.2
+    local_building_slots_factor = 0.4
+    state_resources_factor = 0.4
+    local_resource_gain_efficiency_per_infrastructure = 0.2
+    recruitable_population = 0.25
 
 }
