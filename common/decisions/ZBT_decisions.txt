@@ -60,7 +60,7 @@ ZBT_undercity_cat = {
 				set_variable = { var = UC_unexcavated_sectors value = 1 }
 			}
 
-			
+			ZBT_UC_increase_costs = yes
 		}
 	}
 
