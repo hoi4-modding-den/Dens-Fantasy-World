@@ -19,7 +19,7 @@ ZSP_magic_cat = {
         }
 
         modifier = {
-            industrial_factory_donations = 5
+            industrial_factory_donations = 10
         }
 
         days_remove = 30

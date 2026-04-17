@@ -1,0 +1,17 @@
+technologies = {
+    
+    ZSP_monster_taming_tech = {
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_subunits = {
+			monster_horde
+		}
+	}
+
+}

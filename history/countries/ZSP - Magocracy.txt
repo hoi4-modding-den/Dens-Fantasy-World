@@ -30,6 +30,10 @@ add_to_variable = { ZSP_spell_slots = 2 }
 recruit_character = ZSP_wizard_council
 recruit_character = ZSP_ozymandias
 recruit_character = ZSP_the_phoenix
+recruit_character = ZSP_krabat
+recruit_character = ZSP_golem
+recruit_character = ZSP_faust
+recruit_character = ZSP_grimm
 
 set_country_flag = DEN_stability_events_disabled
 set_country_flag = DEN_no_generic_political_advisors

@@ -10,6 +10,46 @@ spriteTypes = {
 		texturefile = "gfx/leaders/ZSP/portrait_ZSP_ozymandias.png"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_ZSP_the_phoenix"
+		texturefile = "gfx/leaders/ZSP/portrait_ZSP_the_phoenix.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ZSP_krabat"
+		texturefile = "gfx/leaders/ZSP/portrait_ZSP_krabat.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ZSP_golem"
+		texturefile = "gfx/leaders/ZSP/portrait_ZSP_golem.png"
+	}
+
+	spriteType = {
+        name = "GFX_portrait_ZSP_golem_small"
+        texturefile = "gfx/interface/ideas/ZSP/portrait_ZSP_golem_small.png"
+    }
+
+	spriteType = {
+		name = "GFX_portrait_ZSP_faust"
+		texturefile = "gfx/leaders/ZSP/portrait_ZSP_faust.png"
+	}
+
+	spriteType = {
+        name = "GFX_portrait_ZSP_faust_small"
+        texturefile = "gfx/interface/ideas/ZSP/portrait_ZSP_faust_small.png"
+    }
+
+	spriteType = {
+		name = "GFX_portrait_ZSP_grimm"
+		texturefile = "gfx/leaders/ZSP/portrait_ZSP_grimm.png"
+	}
+
+	spriteType = {
+        name = "GFX_portrait_ZSP_grimm_small"
+        texturefile = "gfx/interface/ideas/ZSP/portrait_ZSP_grimm_small.png"
+    }
+
 
 	spriteType = {
 		name = "GFX_ZSP_mana_texticon"
@@ -18,9 +58,31 @@ spriteTypes = {
 	}
 
 
+	spriteType = {
+		name = "GFX_trait_ZSP_ozymandias_trait"
+		texturefile = "gfx/interface/traits/trait_operative_math_genius.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_ZSP_apprentice_trait"
+		texturefile = "gfx/interface/traits/trait_operative_linguist.dds"
+	}
+
+
 	SpriteType = {
 		name = "GFX_ZSP_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/ZSP_infantry_equipment_1.png"
+	}
+
+
+	spriteType = {
+		name = "GFX_report_event_ZSP_the_sorcerers_apprentice"
+		texturefile = "gfx/event_pictures/ZSP_report_event_the_sorcerers_apprentice.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ZSP_knightly_order"
+		texturefile = "gfx/event_pictures/ZSP_report_event_kravatten.png"
 	}
 
 

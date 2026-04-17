@@ -1,0 +1,53 @@
+leader_traits = {
+
+    ZSP_ozymandias_trait = {
+        type = field_marshal
+
+        trait_type = personality_trait
+
+        allowed = {
+            FROM = { original_tag = ZSP }
+        }
+
+        new_commander_weight = {
+            factor = 0
+        }
+
+        field_marshal_modifier = {
+            supply_consumption_factor = -0.1
+            planning_speed = 0.2
+            land_reinforce_rate = 0.1
+			max_army_group_size = 5
+            wounded_chance_factor = -1
+		}
+
+        planning_skill = 2
+    }
+
+    ZSP_apprentice_trait = {
+        type = land
+
+        trait_type = personality_trait
+
+        allowed = {
+            FROM = { original_tag = ZSP }
+        }
+
+        new_commander_weight = {
+            factor = 0
+        }
+
+        modifier = {
+            experience_gain_factor = 0.05
+            equipment_capture = 0.02
+            wounded_chance_factor = -0.2
+        }
+
+        corps_commander_modifier = {
+			max_commander_army_size = 26
+		}
+
+        planning_skill = 1
+    }
+
+}

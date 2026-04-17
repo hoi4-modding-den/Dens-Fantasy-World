@@ -5,7 +5,15 @@
  ZSP: "Alstroemeria"
  ZSP_DEF: "Alstroemeria"
  ZSP_ADJ: "Alstroemerian"
-
+ ZSP_neutrality: "Duchy of Alstroemeria"
+ ZSP_neutrality_DEF: "the Duchy of Alstroemeria"
+ ZSP_neutrality_ADJ: "Alstroemerian"
+ ZSP_democratic: "Federal State of Alstroemeria"
+ ZSP_democratic_DEF: "the Federal State of Alstroemeria"
+ ZSP_democratic_ADJ: "Alstroemerian"
+ ZSP_communism: "Aegis Association of Alstroemeria"
+ ZSP_communism_DEF: "the Aegis Association of Alstroemeria"
+ ZSP_communism_ADJ: "Alstroemerian"
  ZSP_fascism: "Alstroemerian Magocracy"
  ZSP_fascism_DEF: "the Alstroemerian Order of the Five Towers"
  ZSP_fascism_ADJ: "Alstroemerian"
@@ -43,7 +51,12 @@
  ZSP_ozymandias_name: "Ozymandias"
  ZSP_ozymandias_desc: "Ein Wandrer kam aus einem alten Land,\nUnd sprach: „Ein riesig Trümmerbild von Stein\nSteht in der Wüste, rumpflos Bein an Bein,\nDas Haupt daneben, halb verdeckt vom Sand.\n \nDer Züge Trotz belehrt uns: wohl verstand\nDer Bildner, jenes eitlen Hohnes Schein\nZu lesen, der in todten Stoff hinein\nGeprägt den Stempel seiner ehrnen Hand.\n \nUnd auf dem Sockel steht die Schrift: ‚Mein Name\nIst Ozymandias, aller Kön'ge König:\nSeht meine Werke, Mächt'ge, und erbebt!‘\n \nNichts weiter blieb. Ein Bild von düstrem Grame,\nDehnt um die Trümmer endlos, kahl, eintönig\nDie Wüste sich, die den Koloß begräbt.“"
  ZSP_the_phoenix_name: "The Phoenix"
-
+ ZSP_krabat_name: "Janko Šajatović"
+ ZSP_krabat_desc: "§LAn Elven Knight, he serves the Order of Five Towers as commander of the Domowina Knightly Order. They are known by the people under the nickname 'Krabat' for their style of neckwear.§!"
+ ZSP_golem_name: "Golem"
+ ZSP_faust_name: "Faust"
+ ZSP_grimm_name: "Grimm"
+ 
 
 # TRAITS
 
@@ -52,6 +65,14 @@
  ZSP_moster_summoner: "Monster Tamer"
  ZSP_necomancer: "Necromancer"
  ZSP_from_the_ashes: "Risen from the Ashes"
+ ZSP_apprentice_one: "The First Apprentice\n(Wrath)"
+ ZSP_apprentice_two: "The Second Apprentice\n(Envy)"
+ ZSP_apprentice_three: "The Third Apprentice\n(Greed)"
+
+ ZSP_ozymandias_trait: "Mage-Lord"
+ ZSP_ozymandias_trait_desc: ""
+ ZSP_apprentice_trait: "Apprentice of the Mage-Lord"
+ ZSP_apprentice_trait_desc: ""
 
 
 # IDEAS
@@ -68,6 +89,7 @@
  ZSP_thaumaturgic_workshop: "Thaumaturgic Rifle Production"
  ZSP_shadowspire_research: "Experiments in Shadowspire"
  ZSP_control_spell: "Under My Spell"
+ ZSP_confiscated_gold: "Mountains of Gold"
 
  ZSP_monster_army: "Monster Conscription"
  ZSP_monster_army_desc: "Monsters fill the role of soldiers in our military, though some sentient creatures are still allowed to serve as officers."
@@ -110,7 +132,7 @@
 
  ZSP_the_competition: "The Foolish Competition"
  ZSP_the_competition_desc: ""
- ZSP_send_out_the_order: "Send out the Order"
+ ZSP_send_out_the_order: "Send out the Knights"
  ZSP_send_out_the_order_desc: ""
  ZSP_plot_in_the_shadows: "Plot in the Shadows"
  ZSP_plot_in_the_shadows_desc: ""
@@ -142,7 +164,7 @@
  ZSP_embrace_capitalism_desc: ""
  ZSP_establish_the_national_guard: "Establish the National Guard"
  ZSP_establish_the_national_guard_desc: ""
- ZSP_establish_the_national_guard_tt: "Deploy §gtwo§! §YRealm Army Divisions§! in the §Ycapital§!."
+ ZSP_establish_the_national_guard_tt: "Deploy §gfour§! §YRealm Army Divisions§! in the §Ycapital§!."
  ZSP_restless_magocrat: "The Restless Magocrat"
  ZSP_restless_magocrat_desc: "No matter how much the world changes, the power of the undead remains unrivaled."
  ZSP_restless_magocrat_tt: "Unlocks §YUndead Horde§! Divisions."
@@ -159,13 +181,19 @@
  ZSP_the_shadowspire_desc: ""
  ZSP_expand_spell_slots: "Spellcasting Experiments"
  ZSP_expand_spell_slots_desc: ""
- ZSP_expand_military_improvements: "Expand Military Improvements"
+ ZSP_expand_military_improvements: "Expand Military Experiments"
  ZSP_expand_military_improvements_desc: ""
  ZSP_der_zauberlehrling: "The Sorcerer's Apprentice"
  ZSP_der_zauberlehrling_desc: ""
 
  ZSP_exploit_the_thunderpeak: "Exploit the Donnergebirge"
  ZSP_exploit_the_thunderpeak_desc: ""
+ ZSP_secure_village_weaponry: "Confiscate Village Weaponry"
+ ZSP_secure_village_weaponry_desc: ""
+ ZSP_economic_exeptionalism: "Economic Exeptionalism"
+ ZSP_economic_exeptionalism_desc: ""
+ ZSP_all_for_the_throne: "All For The Throne"
+ ZSP_all_for_the_throne_desc: ""
 
  ZSP_heed_the_shadows_call: "And You Will Obey Me"
  ZSP_heed_the_shadows_call_desc: ""
@@ -179,6 +207,9 @@
  ZSP_the_wealth_of_man_desc: ""
  ZSP_the_wealth_of_nature: "The Wealth of Nature"
  ZSP_the_wealth_of_nature_desc: ""
+ ZSP_against_celandra: "Crush the Wayward Crown"
+ ZSP_against_celandra_desc: ""
+ ZSP_controls_all_of_gardenia_tt: "controls all States in the §YGardenian Coast Strategic Region§!."
 
 
 # EVENTS
@@ -215,6 +246,10 @@
  ZSP_phoenix_events.1.desc: "It has come to my attention that I have made a mistake. During my extermination of the Sternwarte, I missed one of the disciples. I was informed of this by one of the townsfolk who were in the experimentation hall. Apparently, this disciple has taken up the moniker 'Phoenix' as a sign that he rose from the ashes of the fire I started."
  ZSP_phoenix_events.1.a: "Ashes to ashes, you will fail."
 
+ ZSP_phoenix_events.2.t: "The Spirits that I summoned"
+ ZSP_phoenix_events.2.desc: "I have made a grave mistake. And now, I can no longer unmake it. The creatures of shadows that called out to me. I sought to use their powers to strengthen mine own. But I was betrayed. I am merely their puppet."
+ ZSP_phoenix_events.2.a: "I now cannot rid myself of again."
+
 
  ZSP_news_events.1.t: "Shadow Incursion into Gardenia"
  ZSP_news_events.1.desc: "The Alstroemerian Magocracy - now named the Realm of Shadows - under leadership of the Sorcerer Ozymandias has launched an invasion of Gardenia with the supposed goal of 'restoring' rightful control over the region."
@@ -227,7 +262,9 @@
 
 # TECH/EQUIPMENT NAMES
 
- ZSP_infantry_equipment_0: "Muskete"
+ ZSP_monster_taming_tech: "Monster Taming"
+
+ ZSP_infantry_equipment_0: "Muskete" # Muskete? Ich kenn' nur Muskatnuss.
  ZSP_infantry_equipment_0_short: "Muskete"
  ZSP_infantry_equipment_0_desc: "An old musket rifle."
 
@@ -241,6 +278,12 @@
 
  zombie_horde: "Zombie Battalion"
  monster_horde: "Monster Battalion"
+
+
+# WAR NAMES
+
+ WAR_NAME_ZSP_ZKN: "Shadow Incursion into Gardenia"
+ WAR_NAME_ZSP_ZLF: "Shadow Incursion into Gardenia"
 
 
 # MAP STUFF

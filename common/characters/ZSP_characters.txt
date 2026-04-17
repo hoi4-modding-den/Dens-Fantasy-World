@@ -15,7 +15,7 @@ characters = {
         }
     }
 
-    ZSP_ozymandias = { 
+    ZSP_ozymandias = { # reference: the poem from Percy Bysshe Shelley
         name = ZSP_ozymandias_name
         portraits = {
             civilian = {
@@ -34,20 +34,154 @@ characters = {
         }
 
         field_marshal = {
-            traits = { harsh_leader infantry_officer }
-            skill = 3
+            visible = { has_country_leader = { character = ZSP_ozymandias ruling_only = yes } }
+            traits = { harsh_leader ZSP_ozymandias_trait }
+            skill = 5
             attack_skill = 5
-            defense_skill = 2
+            defense_skill = 4
             planning_skill = 4
-            logistics_skill = 3
+            logistics_skill = 6
         }
     }
 
-    ZSP_the_phoenix = { 
+    ZSP_the_phoenix = { # reference: Phoenixes (but mainly Phoenix Wright)
         name = ZSP_the_phoenix_name
         portraits = {
             civilian = {
-                large = GFX_portrait_ZSP_ozymandias
+                large = GFX_portrait_ZSP_the_phoenix
+            }
+        }
+    }
+
+    ZSP_krabat = { # reference: a myth from Sorbia
+        name = ZSP_krabat_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZSP_krabat
+            }
+        }
+
+        corps_commander = {
+            desc = ZSP_krabat_desc
+            traits = { infantry_officer ranger }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 2
+        }
+    }
+
+    ZSP_golem = { # reference: the jewish myth of the Golem
+        name = ZSP_golem_name
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ZSP_golem
+                small = GFX_portrait_ZSP_golem_small
+            }
+        }
+
+        corps_commander = {
+            visible = { has_country_leader = { character = ZSP_ozymandias ruling_only = yes } }
+            traits = { infantry_officer ZSP_apprentice_trait }
+            skill = 3
+            attack_skill = 5
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 2
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZSP_golem_token
+            allowed = {
+                original_tag = ZSP
+            }
+            available = {
+                has_country_leader = { character = ZSP_ozymandias ruling_only = yes }
+            }
+            traits = {
+                ZSP_apprentice_one
+            }
+            cost = 250
+            ai_will_do = {
+                base = 5
+            }
+        }
+    }
+
+    ZSP_faust = { # reference: the goethe story Faust
+        name = ZSP_faust_name
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ZSP_faust
+                small = GFX_portrait_ZSP_faust_small
+            }
+        }
+
+        corps_commander = {
+            visible = { has_country_leader = { character = ZSP_ozymandias ruling_only = yes } }
+            traits = { trait_reckless ZSP_apprentice_trait }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 3
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZSP_faust_token
+            allowed = {
+                original_tag = ZSP
+            }
+            available = {
+                has_country_leader = { character = ZSP_ozymandias ruling_only = yes }
+            }
+            traits = {
+                ZSP_apprentice_two
+            }
+            cost = 250
+            ai_will_do = {
+                base = 5
+            }
+        }
+    }
+
+    ZSP_grimm = { # reference: The Gebrüder Grimm
+        name = ZSP_grimm_name
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ZSP_grimm
+                small = GFX_portrait_ZSP_grimm_small
+            }
+        }
+
+        corps_commander = {
+            visible = { has_country_leader = { character = ZSP_ozymandias ruling_only = yes } }
+            traits = { ZSP_apprentice_trait }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 5
+            logistics_skill = 3
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZSP_grimm_token
+            allowed = {
+                original_tag = ZSP
+            }
+            available = {
+                has_country_leader = { character = ZSP_ozymandias ruling_only = yes }
+            }
+            traits = {
+                ZSP_apprentice_three
+            }
+            cost = 250
+            ai_will_do = {
+                base = 5
             }
         }
     }

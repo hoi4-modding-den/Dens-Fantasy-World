@@ -21,7 +21,7 @@ focus_tree={
 		icon = GFX_goal_generic_national_unity
         #prerequisite = { focus = }
 		#mutually_exclusive = { focus =  }
-		x = 10
+		x = 11
 		y = 0
 		#relative_position_id = 
 		
@@ -261,7 +261,7 @@ focus_tree={
 
 	focus = {
 		id = ZSP_master_of_monsters
-		icon = GFX_focus_generic_swooping_falcon
+		icon = GFX_focus_hol_united_netherlands
         prerequisite = { focus = ZSP_retake_the_golden_compass }
 		mutually_exclusive = { focus = ZSP_benevolent_tyrant focus = ZSP_restless_magocrat }
 		x = -3
@@ -283,6 +283,10 @@ focus_tree={
         }
 		
 		completion_reward = {
+			country_lock_all_division_template = no
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_trait = {
 				character = ZSP_ozymandias
 				ideology = tyrannical_magocracy
@@ -294,11 +298,10 @@ focus_tree={
             custom_effect_tooltip = ZSP_master_of_monsters_tt
 
 			hidden_effect = {
+				set_technology = { ZSP_monster_taming_tech = 1 }
+
 				division_template = {
 					name = "Monster Horde"
-					is_locked = yes
-					force_allow_recruiting = yes
-					template_counter = 35
 					division_names_group = ZSP_INF_03
 					regiments = {
 						monster_horde = { x = 0 y = 0 }
@@ -447,7 +450,7 @@ focus_tree={
 					every_controlled_state = {
 						create_unit = {
 							division = "name = \"Monster Horde\" division_template = \"Monster Horde\" start_experience_factor = 0.1 start_equipment_factor = 0.1 start_manpower_factor = 0.1"
-							count = 1
+							count = 2
 							owner = ROOT
 						}
 					}
@@ -458,7 +461,7 @@ focus_tree={
 
 	focus = {
 		id = ZSP_benevolent_tyrant
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_AFG_telegraph
         prerequisite = { focus = ZSP_retake_the_golden_compass }
 		mutually_exclusive = { focus = ZSP_master_of_monsters focus = ZSP_restless_magocrat }
 		x = 0
@@ -485,10 +488,10 @@ focus_tree={
 			custom_effect_tooltip = generic_skip_one_line_tt
 
             capital_scope = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -497,7 +500,7 @@ focus_tree={
 
 	focus = {
 		id = ZSP_forced_industrialisation
-		icon = GFX_goal_generic_construction
+		icon = GFX_goal_generic_construct_infrastructure
         prerequisite = { focus = ZSP_benevolent_tyrant }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -520,10 +523,10 @@ focus_tree={
 		
 		completion_reward = {
 			capital_scope = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -607,10 +610,10 @@ focus_tree={
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			capital_scope = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -676,7 +679,7 @@ focus_tree={
 				capital_scope = {
 					create_unit = {
 						division = "name = \"National Guard Division\" division_template = \"Reichsarmeedivision\" start_experience_factor = 0.2"
-						count = 2
+						count = 4
 						owner = ROOT
 					}
 				}
@@ -776,7 +779,7 @@ focus_tree={
 		
 		completion_reward = {
 			every_controlled_state = {
-				add_manpower = 500000
+				add_manpower = 50000
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -863,7 +866,7 @@ focus_tree={
 					every_controlled_state = {
 						create_unit = {
 							division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.1 start_equipment_factor = 0.1 start_manpower_factor = 0.1"
-							count = 1
+							count = 2
 							owner = ROOT
 						}
 					}
@@ -909,7 +912,7 @@ focus_tree={
 
 	focus = {
 		id = ZSP_the_shadowspire
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_radar
         prerequisite = { focus = ZSP_full_control_over_the_realm }
 		#mutually_exclusive = { focus =  }
 		x = -4
@@ -943,7 +946,7 @@ focus_tree={
 
 	focus = {
 		id = ZSP_expand_spell_slots
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_swooping_falcon
         prerequisite = { focus = ZSP_the_shadowspire }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -971,7 +974,7 @@ focus_tree={
 
 	focus = {
 		id = ZSP_expand_military_improvements
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_panzerwaffe
         prerequisite = { focus = ZSP_the_shadowspire }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -1002,7 +1005,7 @@ focus_tree={
 
 	focus = {
 		id = ZSP_der_zauberlehrling
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_AFG_curtail_pashtunwali_primacy
         prerequisite = { focus = ZSP_expand_spell_slots }
 		prerequisite = { focus = ZSP_expand_military_improvements }
 		#mutually_exclusive = { focus =  }
@@ -1029,12 +1032,14 @@ focus_tree={
 				remove_idea = ZSP_shadowspire_research_2
 				add_idea = ZSP_shadowspire_research_3
 			}
+
+			country_event = ZSP_phoenix_events.2
 		}
 	}
 
 	focus = {
 		id = ZSP_exploit_the_thunderpeak
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_construction2
         prerequisite = { focus = ZSP_full_control_over_the_realm }
 		#mutually_exclusive = { focus =  }
 		x = 4
@@ -1058,24 +1063,143 @@ focus_tree={
 		completion_reward = {
 			756 = {
 				add_manpower = -25000
+			}
 
-				custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
 
-				add_resource = {
-					type = steel
-					amount = 40
+			add_resource = {
+				type = steel
+				amount = 50
+				state = 756
+			}
+			add_resource = {
+				type = aluminium
+				amount = 20
+				state = 756
+			}
+			add_resource = {
+				type = tungsten
+				amount = 10
+				state = 756
+			}
+			add_resource = {
+				type = coal
+				amount = 30
+				state = 756
+			}
+			add_resource = {
+				type = oil
+				amount = 30
+				state = 756
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_secure_village_weaponry
+		icon = GFX_goal_generic_small_arms
+        prerequisite = { focus = ZSP_exploit_the_thunderpeak }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 2
+		relative_position_id = ZSP_exploit_the_thunderpeak
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 5000
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_economic_exeptionalism
+		icon = GFX_focus_GER_factories_for_resources
+        prerequisite = { focus = ZSP_exploit_the_thunderpeak }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZSP_exploit_the_thunderpeak
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
 				}
-				add_resource = {
-					type = aluminium
-					amount = 10
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
-				add_resource = {
-					type = coal
-					amount = 20
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_all_for_the_throne
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = { focus = ZSP_secure_village_weaponry }
+        prerequisite = { focus = ZSP_economic_exeptionalism }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 3
+		relative_position_id = ZSP_exploit_the_thunderpeak
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = ZSP_ultra_authoritarian_governance_2 }
+				swap_ideas = {
+					remove_idea = ZSP_ultra_authoritarian_governance_2
+					add_idea = ZSP_ultra_authoritarian_governance_4
 				}
-				add_resource = {
-					type = oil
-					amount = 20
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ZSP_ultra_authoritarian_governance
+					add_idea = ZSP_ultra_authoritarian_governance_3
 				}
 			}
 		}
@@ -1153,7 +1277,7 @@ focus_tree={
 
 	focus = {
 		id = ZSP_crush_nationalism
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_strike_at_democracy2
         prerequisite = { focus = ZSP_heed_the_shadows_call }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -1181,7 +1305,7 @@ focus_tree={
 
 	focus = {
 		id = ZSP_control_the_people
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_spr_masters_of_our_own_fate
         prerequisite = { focus = ZSP_heed_the_shadows_call }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -1209,7 +1333,7 @@ focus_tree={
 
 	focus = {
 		id = ZSP_take_hortensia
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_annex_country_2
         prerequisite = { focus = ZSP_crush_nationalism }
 		prerequisite = { focus = ZSP_control_the_people }
 		#mutually_exclusive = { focus =  }
@@ -1224,7 +1348,10 @@ focus_tree={
         }
 		
 		available = {
-			
+			strength_ratio = {
+				tag = ZTC
+				ratio > 0.5
+			}
         }
 
 		bypass = {
@@ -1249,7 +1376,7 @@ focus_tree={
 
 	focus = {
 		id = ZSP_the_wealth_of_man
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_usa_reestablish_the_gold_standard
         prerequisite = { focus = ZSP_take_hortensia }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -1271,13 +1398,13 @@ focus_tree={
         }
 
 		completion_reward = {
-			
+			add_ideas = ZSP_confiscated_gold
 		}
 	}
 
 	focus = {
 		id = ZSP_the_wealth_of_nature
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_land_reclamation
         prerequisite = { focus = ZSP_take_hortensia }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -1299,9 +1426,72 @@ focus_tree={
         }
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ZSP_ultra_authoritarian_governance
-				add_idea = ZSP_ultra_authoritarian_governance_2
+			if = {
+				limit = { has_idea = ZSP_ultra_authoritarian_governance_3 }
+				swap_ideas = {
+					remove_idea = ZSP_ultra_authoritarian_governance_3
+					add_idea = ZSP_ultra_authoritarian_governance_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ZSP_ultra_authoritarian_governance
+					add_idea = ZSP_ultra_authoritarian_governance_2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_against_celandra
+		icon = GFX_focus_rom_abdicate
+        prerequisite = { focus = ZSP_der_zauberlehrling }
+		prerequisite = { focus = ZSP_the_wealth_of_man }
+		prerequisite = { focus = ZSP_the_wealth_of_nature }
+		prerequisite = { focus = ZSP_all_for_the_throne }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = ZSP_take_hortensia
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZSP_controls_all_of_gardenia_tt
+				all_state = {
+					OR = {
+						is_controlled_by = ROOT
+						NOT = { region = 34 }
+					}
+				}
+			}
+			strength_ratio = {
+				tag = XCE
+				ratio > 0.5
+			}
+        }
+
+		bypass = {
+			XCE = {
+				OR = {
+					has_war_with = ROOT
+					exists = no
+					is_ally_with = ROOT
+				}
+			}
+        }
+
+		will_lead_to_war_with = XCE
+
+		completion_reward = {
+			declare_war_on = {
+				target = XCE
+				type = annex_everything
 			}
 		}
 	}
