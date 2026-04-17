@@ -17,6 +17,10 @@ ZBT_undercity = {
 	research_speed_factor = UC_research_speed
 	training_time_factor = UC_training_time
 	monthly_population = UC_pop_growth
+	local_resources_factor = UC_resource_factor
+
+	custom_modifier_tooltip = generic_skip_one_line_tt
+	custom_modifier_tooltip = ZBT_undercity_dm_tt
 
 	# country_resource_coal = UC_res_coal
 	# country_resource_oil = UC_res_oil

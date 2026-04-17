@@ -47,6 +47,7 @@ set_variable = { var = UC_sector_build_cost value = 100 }
 
 set_variable = { var = UC_modify_time value = 0 } # I LOVE OVERCOMPLICATED SYSTEMS RAHHH
 set_variable = { var = UC_modify_cost value = 0 }
+set_variable = { var = UC_modify_extra_sectors value = 0 }
 
 set_variable = { var = UC_construction_speed value = 0 }
 set_variable = { var = UC_mil_output value = 0 }
@@ -59,6 +60,7 @@ set_variable = { var = UC_max_fuel value = 0 }
 set_variable = { var = UC_research_speed value = 0 }
 set_variable = { var = UC_training_time value = 0 }
 set_variable = { var = UC_pop_growth value = 0 }
+set_variable = { var = UC_resource_factor value = 0 }
 
 set_variable = { var = STAT_excavations_so_far value = 0 }
 set_variable = { var = STAT_cool value = 15 }
