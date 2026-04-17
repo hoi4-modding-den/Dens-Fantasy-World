@@ -26,6 +26,7 @@ set_popularities = {
 }
 
 add_ideas = {
+	limited_exports
 	ZBT_established_mining_town
 	ZBT_refugee_influx
 	ZBT_political_enthusiasts

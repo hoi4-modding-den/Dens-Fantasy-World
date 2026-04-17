@@ -9,8 +9,8 @@ ZBT_UC_recalc_costs = {
 	set_variable = { var = UC_sector_dig_cost value = UC_base_sector_dig_cost }
 	add_to_variable = { var = UC_sector_dig_cost value = UC_modify_cost }
 	
-	add_to_variable = { var = UC_sector_dig_time value = UC_modify_sector_dig_time }
 	set_variable = { var = UC_sector_dig_time value = UC_modify_time }
+	add_to_variable = { var = UC_sector_dig_time value = UC_modify_sector_dig_time }
 	
 	set_variable = { var = UC_sector_build_cost value = UC_base_sector_build_cost }
 	add_to_variable = { var = UC_sector_build_cost value = UC_modify_cost }

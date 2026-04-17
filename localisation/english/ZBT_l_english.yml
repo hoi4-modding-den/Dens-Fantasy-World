@@ -93,6 +93,11 @@
 #  ZBT_UC_lab3:0 "Underground University" #?????
 
 
+ # Other Undercity Upgrades
+ ZBT_UU_heat_resist1:0 "Heat Resistant Suits"
+ ZBT_UU_local_temp_manip:0 "Localised Temperature Manipulation"
+
+
 
  # Focus tree
  ZBT_start_industry: "National Development Scheme"

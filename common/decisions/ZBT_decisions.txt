@@ -59,7 +59,10 @@ ZBT_undercity_cat = {
 			ELSE = {
 				set_variable = { var = UC_unexcavated_sectors value = 1 }
 			}
-			add_to_variable = {var = UC_unexcavated_sectors value = UC_modify_extra_sectors }
+			IF = {
+				limit = {check_variable = { UC_depth < 10}}
+				add_to_variable = {var = UC_unexcavated_sectors value = UC_modify_extra_sectors }
+			}
 
 			ZBT_UC_increase_costs = yes
 		}
@@ -73,7 +76,6 @@ ZBT_undercity_cat = {
 		}
 
 		available = {
-			num_of_available_civilian_factories > 0
 			custom_trigger_tooltip = {
 				tooltip = {
 					localization_key = ZBT_tt_more_unexcavated_sectors_than
@@ -86,7 +88,7 @@ ZBT_undercity_cat = {
 		cost = UC_sector_dig_cost
 		days_remove = UC_sector_dig_time
 		modifier = {
-			civilian_factory_use = 1
+			consumer_goods_expected_value = 0.2
 		}
 		remove_effect = {
 			add_to_variable = { var = STAT_excavations_so_far value = 1 }
@@ -107,7 +109,6 @@ ZBT_undercity_cat = {
 		}
 
 		available = {
-			num_of_available_civilian_factories > 1
 			custom_trigger_tooltip = {
 				tooltip = {
 					localization_key = ZBT_tt_more_empty_sectors_than
@@ -120,7 +121,7 @@ ZBT_undercity_cat = {
 		cost = UC_sector_build_cost
 		days_remove = UC_sector_build_time
 		modifier = {
-			civilian_factory_use = 2
+			consumer_goods_expected_value = 0.1
 		}
 		remove_effect = {
 			add_to_variable = { var = UC_empty_sectors value = -1 }
@@ -145,7 +146,6 @@ ZBT_undercity_cat = {
 		}
 
 		available = {
-			num_of_available_civilian_factories > 1
 			custom_trigger_tooltip = {
 				tooltip = {
 					localization_key = ZBT_tt_more_empty_sectors_than
@@ -158,7 +158,7 @@ ZBT_undercity_cat = {
 		cost = UC_sector_build_cost
 		days_remove = UC_sector_build_time
 		modifier = {
-			civilian_factory_use = 2
+			consumer_goods_expected_value = 0.1
 		}
 		remove_effect = {
 			add_to_variable = { var = UC_empty_sectors value = -1 }
@@ -184,7 +184,6 @@ ZBT_undercity_cat = {
 
 		available = {
 			has_tech = synth_oil_experiments
-			num_of_available_civilian_factories > 1
 			custom_trigger_tooltip = {
 				tooltip = {
 					localization_key = ZBT_tt_more_empty_sectors_than
@@ -197,7 +196,7 @@ ZBT_undercity_cat = {
 		cost = UC_sector_build_cost
 		days_remove = UC_sector_build_time
 		modifier = {
-			civilian_factory_use = 2
+			consumer_goods_expected_value = 0.1
 		}
 		remove_effect = {
 			add_to_variable = { var = UC_empty_sectors value = -1 }
@@ -216,7 +215,7 @@ ZBT_undercity_cat = {
 		}
 
 		available = {
-			num_of_available_civilian_factories > 1
+			
 			custom_trigger_tooltip = {
 				tooltip = {
 					localization_key = ZBT_tt_more_empty_sectors_than
@@ -229,7 +228,7 @@ ZBT_undercity_cat = {
 		cost = UC_sector_build_cost
 		days_remove = UC_sector_build_time
 		modifier = {
-			civilian_factory_use = 2
+			consumer_goods_expected_value = 0.1
 		}
 		remove_effect = {
 			custom_effect_tooltip = ZBT_tt_modify_undercity
@@ -246,13 +245,14 @@ ZBT_undercity_cat = {
 		}
 
 		available = {
+			num_of_available_civilian_factories > 1
 			has_tech = construction2
 		}
 
 		cost = UC_sector_build_cost
 		days_remove = UC_sector_build_time
 		modifier = {
-			consumer_goods_expected_value = 0.1
+			civilian_factory_use = 2
 		}
 		remove_effect = {
 			set_country_flag = UU_improved_civs1
@@ -301,7 +301,7 @@ ZBT_undercity_cat = {
 				BUILD = ZBT_UC_mil1
 			}
 			effect_tooltip = {
-				add_to_variable = {var = UC_mil_output value = 0.05 tooltip = industrial_capacity_factory_tt }
+				add_to_variable = {var = UC_mil_output value = 0.005 tooltip = industrial_capacity_factory_tt }
 			}
 		}
 	}
@@ -339,6 +339,63 @@ ZBT_undercity_cat = {
 			# 	add_to_variable = {var = UC_ value = 0.05 tooltip = industrial_capacity_factory_tt }
 			# }
 			add_to_variable = {var = UC_research_speed value = 0.05 tooltip = research_speed_factor_tt }
+		}
+	}
+
+
+	# HEAT
+	ZBT_heat_resistant_suits = {
+		icon = generic_research
+		visible = {
+			check_variable = { UC_depth > 2 }
+			NOT = { has_country_flag = UU_heat_resistance1 }
+		}
+
+		available = {			
+			num_of_available_civilian_factories > 1
+		}
+		cost = UC_base_sector_build_cost
+		days_remove = UC_sector_build_time # placeholders for now
+		modifier = {
+			civilian_factory_use = 2
+			political_power_cost = 0.4
+		}
+		remove_effect = {
+			set_country_flag = UU_heat_resistance1
+			custom_effect_tooltip = {
+				localization_key = ZBT_tt_special_tech_attained
+				TECH = ZBT_UU_heat_resist1
+			}
+		}
+	}
+
+
+	ZBT_local_temperature_manipulation = {
+		icon = generic_research
+		visible = {
+			check_variable = { UC_depth > 2 }
+			OR = {
+				NOT = { has_country_flag = UU_heat_resistance1 }
+				NOT = { has_country_flag = UU_local_temperature_manipulation }
+			}
+		}
+
+		available = {			
+			num_of_available_civilian_factories > 4
+		}
+		cost = UC_new_layer_cost
+		days_remove = UC_base_new_layer_time # More expensive but worth it, maybe when you first get hit by heat you get debuffed and this removes it?
+		modifier = {
+			civilian_factory_use = 5
+			political_power_cost = 0.4
+		}
+		remove_effect = {
+			set_country_flag = UU_heat_resistance1
+			set_country_flag = UU_local_temperature_manipulation
+			custom_effect_tooltip = {
+				localization_key = ZBT_tt_special_tech_attained
+				TECH = ZBT_UU_local_temp_manip
+			}
 		}
 	}
 	
