@@ -38,14 +38,15 @@ set_variable = { var = UC_depth value = 0 }
 set_variable = { var = UC_unexcavated_sectors value = 5 }
 set_variable = { var = UC_empty_sectors value = 0 }
 
-set_variable = { var = UC_new_layer_time value = 120 } #TODO: probably rebalance these
-set_variable = { var = UC_new_layer_cost value = 100 }
-set_variable = { var = UC_sector_dig_time value = 70 }
-set_variable = { var = UC_sector_dig_cost value = 100 }
-set_variable = { var = UC_sector_build_time value = 90 }
+set_variable = { var = UC_new_layer_time value = 180 } #TODO: probably rebalance these
+set_variable = { var = UC_new_layer_cost value = 200 }
+set_variable = { var = UC_sector_dig_time value = 60 }
+set_variable = { var = UC_sector_dig_cost value = 20 }
+set_variable = { var = UC_sector_build_time value = 100 }
 set_variable = { var = UC_sector_build_cost value = 100 }
-set_variable = { var = UC_sector_build_heavy_time value = 120 }
-set_variable = { var = UC_sector_build_heavy_cost value = 150 }
+
+set_variable = { var = UC_modify_time value = 0 } # I LOVE OVERCOMPLICATED SYSTEMS RAHHH
+set_variable = { var = UC_modify_cost value = 0 }
 
 set_variable = { var = UC_construction_speed value = 0 }
 set_variable = { var = UC_mil_output value = 0 }

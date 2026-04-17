@@ -13,8 +13,8 @@ ZBT_undercity_cat = {
 			set_variable = { var = UC_sector_dig_cost value = 1 }
 			set_variable = { var = UC_sector_build_time value = 1 }
 			set_variable = { var = UC_sector_build_cost value = 1 }
-			set_variable = { var = UC_sector_build_heavy_time value = 12 }
-			set_variable = { var = UC_sector_build_heavy_cost value = 15 }
+			set_variable = { var = UC_sector_build_time value = 12 }
+			set_variable = { var = UC_sector_build_cost value = 15 }
 			add_political_power = 2000
 		}
 	}
@@ -60,24 +60,7 @@ ZBT_undercity_cat = {
 				set_variable = { var = UC_unexcavated_sectors value = 1 }
 			}
 
-			# Increase costs + time bc fuck you
-			# there is def a better way to do this but it is 12am
-			multiply_variable = { var = UC_new_layer_cost value = 1.1 }
-			round_variable = UC_new_layer_cost
-			multiply_variable = { var = UC_new_layer_time value = 1.1 }
-			round_variable = UC_new_layer_time
-			multiply_variable = { var = UC_sector_dig_cost value = 1.1 }
-			round_variable = UC_sector_dig_cost
-			multiply_variable = { var = UC_sector_dig_time value = 1.1 }
-			round_variable = UC_sector_dig_time
-			multiply_variable = { var = UC_sector_build_cost value = 1.1 }
-			round_variable = UC_sector_build_cost
-			multiply_variable = { var = UC_sector_build_time value = 1.1 }
-			round_variable = UC_sector_build_time
-			multiply_variable = { var = UC_sector_build_heavy_cost value = 1.05 }
-			round_variable = UC_sector_build_heavy_cost
-			multiply_variable = { var = UC_sector_build_heavy_time value = 1.05 }
-			round_variable = UC_sector_build_heavy_time
+			
 		}
 	}
 
