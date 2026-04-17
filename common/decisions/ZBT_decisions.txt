@@ -130,7 +130,7 @@ ZBT_undercity_cat = {
 			}
 
 			IF = {
-				limit = { has_country_flag = UC_improved_civs1 }
+				limit = { has_country_flag = UU_improved_civs1 }
 				custom_effect_tooltip = ZBT_tt_modify_undercity
 				add_to_variable = {var = UC_consumer_goods value = -0.005 tooltip = consumer_goods_factor_tt}
 			}
@@ -168,7 +168,7 @@ ZBT_undercity_cat = {
 			}
 
 			IF = {
-				limit = { has_country_flag = UC_improved_mils1 }
+				limit = { has_country_flag = UU_improved_mils1 }
 				custom_effect_tooltip = ZBT_tt_modify_undercity
 				add_to_variable = {var = UC_mil_output value = 0.05 tooltip = industrial_capacity_factory_tt } #todo: this doesnt do shit even when I change the variable with set_var???
 			}
@@ -242,7 +242,7 @@ ZBT_undercity_cat = {
 	ZBT_improve_civs = {
 		icon = generic_research
 		visible = {
-			NOT = { has_country_flag = UC_improved_civs1 }
+			NOT = { has_country_flag = UU_improved_civs1 }
 		}
 
 		available = {
@@ -255,7 +255,7 @@ ZBT_undercity_cat = {
 			consumer_goods_expected_value = 0.1
 		}
 		remove_effect = {
-			set_country_flag = UC_improved_civs1
+			set_country_flag = UU_improved_civs1
 			custom_effect_tooltip = {
 				localization_key = ZBT_tt_special_tech_attained
 				TECH = ZBT_UC_civ1
@@ -276,7 +276,7 @@ ZBT_undercity_cat = {
 	ZBT_improve_mils = {
 		icon = generic_research
 		visible = {
-			NOT = { has_country_flag = UC_improved_mils1 }
+			NOT = { has_country_flag = UU_improved_mils1 }
 		}
 
 		available = {
@@ -289,7 +289,7 @@ ZBT_undercity_cat = {
 			consumer_goods_expected_value = 0.1
 		}
 		remove_effect = {
-			set_country_flag = UC_improved_mils1
+			set_country_flag = UU_improved_mils1
 			custom_effect_tooltip = {
 				localization_key = ZBT_tt_special_tech_attained
 				TECH = ZBT_UC_mil1
@@ -310,7 +310,7 @@ ZBT_undercity_cat = {
 	ZBT_research_labs = { # this is a test
 		icon = generic_research
 		visible = {
-			NOT = { has_country_flag = UC_labs1 }
+			NOT = { has_country_flag = UU_improved_labs1 }
 		}
 
 		available = {
@@ -324,7 +324,7 @@ ZBT_undercity_cat = {
 			consumer_goods_expected_value = 0.2
 		}
 		remove_effect = {
-			set_country_flag = UC_labs1
+			set_country_flag = UU_improved_labs1
 			custom_effect_tooltip = {
 				localization_key = ZBT_tt_special_tech_attained
 				TECH = "undegroudnflabsydehwiofhiwokds"
