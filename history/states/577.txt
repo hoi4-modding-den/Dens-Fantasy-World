@@ -2,18 +2,13 @@
 state={
 	id=577
 	name="STATE_577"
-	manpower = 4191255
+	manpower = 419125
 	
-	state_category = city
+	state_category = wasteland
 	#impassable = yes
-	resources={
-		aluminium=0
-		chromium=0
-		oil=0
-		rubber=0
-		steel=0
-		tungsten=0
-		coal=0
+	resources = {
+		aluminium = 9
+		chromium = 2
 	}
 
 	history={
@@ -22,12 +17,7 @@ state={
 		
 		
 		buildings = {
-			infrastructure = 3
-			
-			arms_factory = 0
-			industrial_complex = 1
-			
-			
+						
 		}
 		
 	}

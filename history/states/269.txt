@@ -2,9 +2,9 @@
 state={
 	id=269
 	name="STATE_269"
-	manpower = 1326009
+	manpower = 132600
 	
-	state_category = rural
+	state_category = wasteland
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -22,11 +22,7 @@ state={
 		
 		
 		buildings = {
-			infrastructure = 2
-			
-			arms_factory = 1
-			industrial_complex = 0
-			
+			infrastructure = 1
 			
 		}
 		

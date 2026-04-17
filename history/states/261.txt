@@ -2,17 +2,17 @@
 state={
 	id=261
 	name="STATE_261"
-	manpower = 890351
+	manpower = 3890351
 	
-	state_category = pastoral
+	state_category = city
 	#impassable = yes
 	resources={
-		aluminium=0
-		chromium=0
-		oil=0
+		aluminium=10
+		chromium=10
+		oil=33
 		rubber=0
-		steel=0
-		tungsten=0
+		steel=10
+		tungsten=10
 		coal=0
 	}
 
@@ -26,10 +26,6 @@ state={
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 0
-			industrial_complex = 0
-			
-			
 		}
 		
 	}
@@ -37,5 +33,5 @@ state={
 	provinces = {
 		4297 4298 4299 11704 11710
 	}
-	local_supplies=0.0 
+	local_supplies=5.0 
 }

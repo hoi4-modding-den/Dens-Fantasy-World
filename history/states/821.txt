@@ -2,9 +2,9 @@
 state={
 	id=821
 	name="STATE_821"
-	manpower = 4694516
+	manpower = 469451
 	
-	state_category = large_city
+	state_category = wasteland
 	#impassable = yes
 	resources={
 		aluminium=0

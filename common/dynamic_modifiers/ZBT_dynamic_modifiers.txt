@@ -8,7 +8,7 @@ ZBT_undercity = {
 
 	production_speed_buildings_factor = UC_construction_speed
 	industrial_capacity_factory = UC_mil_output
-	consumer_goods_expected_value = UC_consumer_goods
+	consumer_goods_factor = UC_consumer_goods
 	stability_factor = UC_stability
 	production_factory_max_efficiency_factor = UC_mil_cap
 	factory_energy_consumption = UC_energy_cap

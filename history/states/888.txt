@@ -2,9 +2,9 @@
 state={
 	id=888
 	name="STATE_888"
-	manpower = 6348579
+	manpower = 467428
 	
-	state_category = metropolis
+	state_category = pastoral
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -22,12 +22,7 @@ state={
 		
 		
 		buildings = {
-			infrastructure = 3
-			
-			arms_factory = 1
-			industrial_complex = 1
-			
-			
+			infrastructure = 1
 		}
 		
 	}
