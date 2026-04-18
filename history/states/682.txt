@@ -27,11 +27,11 @@ state={
 			
 			
 		}
-		
+		victory_points = { 9719 15 }
 	
 		1936.1.1 = {
-			owner = ZRZ
-			add_core_of = ZRZ
+			owner = ZVT
+			add_core_of = ZVT
 		}
 	}
 

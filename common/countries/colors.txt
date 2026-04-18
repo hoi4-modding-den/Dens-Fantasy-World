@@ -1349,3 +1349,11 @@ ZST = {
 	color = rgb { 200 0 55 }
 	color_ui = rgb { 200 0 55 }
 }
+ZVT = {
+	color = rgb { 185 16 191 }
+	color_ui = rgb { 185 16 191 }
+}
+ZCT = {
+	color = rgb { 165 212 194 }
+	color_ui = rgb { 165 212 194 }
+}

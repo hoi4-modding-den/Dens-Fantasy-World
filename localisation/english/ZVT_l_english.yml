@@ -1,0 +1,20 @@
+﻿l_english:
+ 
+ # Country name
+ ZVT:0 "Vitalem"
+ ZVT_DEF:0 "Vitalem"
+ ZVT_ADJ:0 "Vitalem"
+
+ ZVT_witchdom:0 "Witchdom of Vitalem"
+ ZVT_DEF_witchdom:0 "the Witchdom of Vitalem"
+
+
+ # Parties
+#  ZVT_neutrality_party:0 "Jimtown Government"
+#  ZVT_democratic_party:0 "Jimtown Government"
+
+
+ # States and VPs
+ STATE_682:0 "Southern Vitalem"
+ STATE_648:0 "Northern Vitalem"
+ VICTORY_POINTS_9719:0 "Salem"

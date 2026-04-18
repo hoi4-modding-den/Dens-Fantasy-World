@@ -1,0 +1,19 @@
+﻿l_english:
+ 
+ # Country name
+ ZCT:0 "Caelea"
+ ZCT_DEF:0 "Caelea"
+ ZCT_ADJ:0 "Caelea"
+
+ ZCT_neutrality:0 "Province of Caelea"
+ ZCT_neutrality_DEF:0 "the Province of Caelea"
+ ZCT_neutrality_ADJ:0 "Caelea"
+
+
+ # Parties
+#  ZVT_neutrality_party:0 "Jimtown Government"
+#  ZVT_democratic_party:0 "Jimtown Government"
+
+
+ # States and VPs
+ 

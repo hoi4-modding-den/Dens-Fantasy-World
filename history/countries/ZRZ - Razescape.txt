@@ -26,9 +26,9 @@ add_ideas = {
 	ZRZ_retribution
 }
 
-850 = { set_demilitarized_zone = yes }
-599 = { set_demilitarized_zone = yes }
-679 = { set_demilitarized_zone = yes }
-682 = { set_demilitarized_zone = yes }
-648 = { set_demilitarized_zone = yes }
+# 850 = { set_demilitarized_zone = yes }
+# 599 = { set_demilitarized_zone = yes }
+# 679 = { set_demilitarized_zone = yes }
+# 682 = { set_demilitarized_zone = yes }
+# 648 = { set_demilitarized_zone = yes }
 country_lock_all_division_template = yes
