@@ -63,7 +63,7 @@ ZBT_undercity_cat = {
 				limit = {check_variable = { UC_depth < 10}}
 				add_to_variable = {var = UC_unexcavated_sectors value = UC_modify_extra_sectors }
 			}
-
+			
 			ZBT_UC_increase_costs = yes
 		}
 	}
@@ -98,6 +98,16 @@ ZBT_undercity_cat = {
 				localization_key = ZBT_tt_sector_available
 				AMT = 1
 			}
+
+			# Increment chance of finding special stuff
+			IF = {
+				limit = { check_variable = { STAT_excavations_so_far = 11 } }
+				set_variable = { var = DW_discover_dragon_chance value = 10 }
+			}
+			ELSE_IF = {
+				limit = { check_variable = { STAT_excavations_so_far > 11 } }
+				add_to_variable = { var = DW_discover_dragon_chance value = 1 }
+			}
 		}
 	}
 
@@ -116,6 +126,7 @@ ZBT_undercity_cat = {
 				}
 				check_variable = { UC_empty_sectors > 0 }
 			}
+			ZBT_heat_resistance_check = yes
 		}
 
 		cost = UC_sector_build_cost
@@ -135,7 +146,7 @@ ZBT_undercity_cat = {
 			IF = {
 				limit = { has_country_flag = UU_improved_civs1 }
 				custom_effect_tooltip = ZBT_tt_modify_undercity
-				add_to_variable = {var = UC_construction_speed value = -0.005 tooltip = production_speed_buildings_factor_tt}
+				add_to_variable = {var = UC_construction_speed value = 0.005 tooltip = production_speed_buildings_factor_tt}
 			}
 		}
 	}
@@ -155,6 +166,7 @@ ZBT_undercity_cat = {
 				}
 				check_variable = { UC_empty_sectors > 0 }
 			}
+			ZBT_heat_resistance_check = yes
 		}
 
 		cost = UC_sector_build_cost
@@ -195,6 +207,7 @@ ZBT_undercity_cat = {
 				}
 				check_variable = { UC_empty_sectors > 0 }
 			}
+			ZBT_heat_resistance_check = yes
 		}
 
 		cost = UC_sector_build_cost
@@ -229,6 +242,7 @@ ZBT_undercity_cat = {
 				}
 				check_variable = { UC_empty_sectors > 0 }
 			}
+			ZBT_heat_resistance_check = yes
 		}
 
 		cost = UC_sector_build_cost
@@ -248,6 +262,44 @@ ZBT_undercity_cat = {
 	}
 
 
+	ZBT_build_lab = { # this is a test
+		icon = generic_research
+		visible = {
+			has_country_flag = UU_improved_subterranean_construction
+		}
+
+		available = {
+			has_tech = construction2
+			custom_trigger_tooltip = {
+				tooltip = {
+					localization_key = ZBT_tt_more_empty_sectors_than
+					AMT = 0
+				}
+				check_variable = { UC_empty_sectors > 0 }
+			}
+		}
+
+		cost = UC_sector_build_cost
+		days_remove = UC_sector_build_time
+		modifier = {
+			consumer_goods_expected_value = 0.2
+		}
+		complete_effect = {
+			add_to_variable = { var = UC_empty_sectors value = -1 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = ZBT_tt_modify_undercity
+			add_to_variable = {var = UC_research_speed value = 0.01 tooltip = research_speed_factor_tt }
+			IF = {
+				limit = { NOT = { has_country_flag = UU_built_basic_lab } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = ZBT_tt_unlock_more_special_techs
+				set_country_flag = UU_built_basic_lab
+			}
+		}
+	}
+
+
 	ZBT_improve_civs = {
 		icon = generic_research
 		visible = {
@@ -259,8 +311,8 @@ ZBT_undercity_cat = {
 			has_tech = construction2
 		}
 
-		cost = UC_sector_build_cost
-		days_remove = UC_sector_build_time
+		cost = 100
+		days_remove = 110
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -277,7 +329,7 @@ ZBT_undercity_cat = {
 				BUILD = ZBT_UC_civ1
 			}
 			effect_tooltip = {
-				add_to_variable = {var = UC_construction_speed value = -0.005 tooltip = production_speed_buildings_factor_tt}
+				add_to_variable = {var = UC_construction_speed value = 0.005 tooltip = production_speed_buildings_factor_tt}
 			}
 		}
 	}
@@ -294,8 +346,8 @@ ZBT_undercity_cat = {
 			has_tech = construction2
 		}
 
-		cost = UC_sector_build_cost
-		days_remove = UC_sector_build_time
+		cost = 100
+		days_remove = 110
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -318,38 +370,40 @@ ZBT_undercity_cat = {
 	}
 
 
-	ZBT_research_labs = { # this is a test
+	ZBT_geothermal_generator = {
 		icon = generic_research
 		visible = {
-			NOT = { has_country_flag = UU_improved_labs1 }
+			check_variable = { UC_depth > 2 }
+			NOT = { has_country_flag = UU_geothermal_generator0 }
+			has_country_flag = UU_built_basic_lab
 		}
 
 		available = {
-			# has_tech = construction2
-			# has_tech = excavation2
+			num_of_available_civilian_factories > 1
+			
 		}
 
-		cost = UC_sector_build_cost
-		days_remove = UC_sector_build_time
+		cost = 120
+		days_remove = 120
 		modifier = {
-			consumer_goods_expected_value = 0.2
+			civilian_factory_use = 2
 		}
 		remove_effect = {
-			set_country_flag = UU_improved_labs1
+			set_country_flag = UU_geothermal_generator0
 			custom_effect_tooltip = {
 				localization_key = ZBT_tt_special_tech_attained
-				TECH = "undegroudnflabsydehwiofhiwokds"
+				TECH =  ZBT_UU_geothermal_generator
 			}
 
-			# custom_effect_tooltip = generic_skip_one_line_tt
-			# custom_effect_tooltip = {
-			# 	localization_key = ZBT_tt_building_upgrade_info
-			# 	BUILD = "lab"
-			# }
-			# effect_tooltip = {
-			# 	add_to_variable = {var = UC_ value = 0.05 tooltip = industrial_capacity_factory_tt }
-			# }
-			add_to_variable = {var = UC_research_speed value = 0.05 tooltip = research_speed_factor_tt }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = ZBT_tt_building_upgrade_info
+				BUILD = ZBT_UU_geothermal_generator
+			}
+			effect_tooltip = {
+				add_to_variable = {var = UC_construction_speed value = 0.02 tooltip = production_speed_buildings_factor_tt }
+				add_to_variable = {var = UC_consumer_goods value = 0.005 tooltip = consumer_goods_factor_tt }
+			}
 		}
 	}
 
@@ -365,8 +419,8 @@ ZBT_undercity_cat = {
 		available = {			
 			num_of_available_civilian_factories > 1
 		}
-		cost = UC_base_sector_build_cost
-		days_remove = UC_sector_build_time # placeholders for now
+		cost = 50
+		days_remove = 50
 		modifier = {
 			civilian_factory_use = 2
 			political_power_cost = 0.4
@@ -394,8 +448,8 @@ ZBT_undercity_cat = {
 		available = {			
 			num_of_available_civilian_factories > 4
 		}
-		cost = UC_new_layer_cost
-		days_remove = UC_base_new_layer_time # More expensive but worth it, maybe when you first get hit by heat you get debuffed and this removes it?
+		cost = 60
+		days_remove = 110 # More expensive but worth it, maybe when you first get hit by heat you get debuffed and this removes it?
 		modifier = {
 			civilian_factory_use = 5
 			political_power_cost = 0.4
@@ -406,6 +460,33 @@ ZBT_undercity_cat = {
 			custom_effect_tooltip = {
 				localization_key = ZBT_tt_special_tech_attained
 				TECH = ZBT_UU_local_temp_manip
+			}
+		}
+	}
+
+
+	ZBT_heat_pump = {
+		icon = generic_research
+		visible = {
+			check_variable = { UC_depth > 2 }
+			has_country_flag = UU_built_basic_lab
+			NOT = { has_country_flag = UU_heat_pumps }
+		}
+
+		available = {			
+			num_of_available_civilian_factories > 4
+		}
+		cost = 60
+		days_remove = 110
+		modifier = {
+			civilian_factory_use = 5
+			political_power_cost = 0.4
+		}
+		remove_effect = {
+			set_country_flag = UU_heat_pumps
+			custom_effect_tooltip = {
+				localization_key = ZBT_tt_special_tech_attained
+				TECH = ZBT_UU_heat_pumps
 			}
 		}
 	}

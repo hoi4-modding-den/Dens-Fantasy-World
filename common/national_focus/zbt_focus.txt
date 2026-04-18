@@ -129,7 +129,7 @@ focus_tree = {
     }
 
     focus = {
-        id = ZBT_military_concessions
+        id = ZBT_military_investments
         icon = GFX_goal_unknown
         x = -2
         y = 2
@@ -197,7 +197,13 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            #
+            add_political_power = 100
+            custom_effect_tooltip = {
+                localization_key = ZBT_tt_decrease_uc_build_cost
+                PP = 20
+            }
+            add_to_variable = { var = UC_modify_cost value = -20 }
+            ZBT_UC_recalc_costs = yes
         }
     }
 
@@ -233,7 +239,7 @@ focus_tree = {
         y = 3
         cost = 10
         prerequisite = { focus = ZBT_clear_the_rubble }
-        prerequisite = { focus = ZBT_military_concessions }
+        prerequisite = { focus = ZBT_military_investments }
         ai_will_do = {
             factor = 1
         }
@@ -255,7 +261,7 @@ focus_tree = {
         y = 3
         cost = 10
         prerequisite = { focus = ZBT_workforce_expansion }
-        prerequisite = { focus = ZBT_military_concessions }
+        prerequisite = { focus = ZBT_military_investments }
         ai_will_do = {
             factor = 1
         }
@@ -294,7 +300,7 @@ focus_tree = {
         x = -2
         y = 4
         cost = 10
-        prerequisite = { focus = ZBT_military_concessions }
+        prerequisite = { focus = ZBT_military_investments }
         ai_will_do = {
             factor = 1
         }
@@ -311,7 +317,7 @@ focus_tree = {
         icon = GFX_goal_unknown
         x = -2
         y = 5
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_domestic_arms_production }
         ai_will_do = {
             factor = 1
@@ -331,8 +337,11 @@ focus_tree = {
         icon = GFX_goal_unknown
         x = -4
         y = 5
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_domestic_arms_production }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_tech_bonus = {
                 name = armor_bonus
@@ -348,7 +357,7 @@ focus_tree = {
         icon = GFX_goal_unknown
         x = 0
         y = 5
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_domestic_arms_production }
         ai_will_do = {
             factor = 1
@@ -389,7 +398,11 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            #
+            set_country_flag = UU_improved_subterranean_construction
+            custom_effect_tooltip = {
+                localization_key = ZBT_tt_special_tech_attained
+                TECH = ZBT_UU_improved_subterranean_construction
+            }
         }
     }
 

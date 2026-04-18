@@ -65,7 +65,7 @@ set_variable = { var = UC_pop_growth value = 0 }
 set_variable = { var = UC_resource_factor value = 0 }
 
 set_variable = { var = STAT_excavations_so_far value = 0 }
-set_variable = { var = STAT_cool value = 15 }
+set_variable = { var = STAT_resource_chance value = 1 }
 
 set_variable = { var = DW_discover_dragon_chance value = 0 }
 

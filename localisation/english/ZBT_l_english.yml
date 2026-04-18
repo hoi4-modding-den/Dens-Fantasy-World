@@ -42,7 +42,7 @@
 
  # Decisions - Undercity
  ZBT_undercity_cat:0 "The Undercity Project"
- ZBT_undercity_cat_desc:0 "Our finest geologers, engineers, and remote seers have determined that expanding our city downwards will be much more complicated than previously thought. We will only be able to dig out a limited number of underground Sectors for each layer of §gDepth§!, and excavating deeper layers of rock will require more time and §CUpgrades§!.\n\nWe are currently at a §gDepth§! of [?UC_depth|Y0].\nThere are [?UC_empty_sectors|Y0] §6Empty Sectors§! in this layer we can fill with underground buildings.\nThere are [?UC_unexcavated_sectors|Y0] §5Unexcavated Sectors§! worth of space we can use before needing to dig deeper."
+ ZBT_undercity_cat_desc:0 "Our finest geologers, engineers, and remote seers have determined that expanding our city downwards will be much more complicated than previously thought. We will only be able to dig out a limited number of underground Sectors for each layer of §gDepth§!, and excavating deeper layers of rock will require more time and §CUpgrades§!.\n\nWe are currently at a §gDepth§! of [?var:UC_depth|Y0].\nThere are [?var:UC_empty_sectors|Y0] §6Empty Sectors§! in this layer we can fill with underground buildings.\nThere are [?var:UC_unexcavated_sectors|Y0] §5Unexcavated Sectors§! worth of space we can use before needing to dig deeper."
 
  ZBT_tt_more_empty_sectors_than:0 "More than $AMT|Y$ §6Empty Sectors§! available"
  ZBT_tt_more_unexcavated_sectors_than:0 "More than $AMT|Y$ §5Unexcavated Sectors§! available"
@@ -51,6 +51,7 @@
  ZBT_tt_sector_available:0 "$AMT|Y$ §6Empty Sectors§! will be made available"
  ZBT_tt_has_special_tech:0 "Has obtained the §CUndercity Upgrade§! of $TECH|Y$"
  ZBT_tt_special_tech_attained:0 "Obtain §CUndercity Upgrade§! of $TECH|Y$"
+ ZBT_tt_unlock_more_special_techs:0 "Enables researching more §CUndercity Upgrades§!"
  ZBT_tt_modify_undercity:0 "Modify §YThe Undercity§! by:"
  ZBT_tt_building_upgrade_info:0 "Building $BUILD|Y$ will modify §YThe Undercity§! by the following:"
  ZBT_tt_increase_uc_build_time:0 "§YUndercity§! building projects will take $DAYS|Y$ §Rmore§! days"
@@ -61,13 +62,20 @@
  
  ZBT_dig_down:0 "§gDig Deeper§!"
  ZBT_excavate_new_sector:0 "§5Excavate§! a New Sector"
- ZBT_build_civ:0 "§6Build§! a [ZBT_UC_civ_name]"
- ZBT_build_mil:0 "§6Build§! a [ZBT_UC_mil_name]"
- ZBT_build_ref:0 "§6Build§! a [ZBT_UC_ref_name]"
- ZBT_build_underground_housing:0 "§6Build§! More Houses Underground"
+ ZBT_build_civ:0 "§6Build:§! a [ZBT_UC_civ_name]"
+ ZBT_build_mil:0 "§6Build:§! a [ZBT_UC_mil_name]"
+ ZBT_build_ref:0 "§6Build:§! a [ZBT_UC_ref_name]"
+ ZBT_build_lab:0 "§6Build:§! a [ZBT_UC_lab_name]"
+ ZBT_build_underground_housing:0 "§6Build:§! More Houses Underground"
 
- ZBT_improve_civs:0 "§CUpgrade§! our Civilian Factories"
- ZBT_improve_mils:0 "§CUpgrade§! our Military Factories"
+ ZBT_improve_civs:0 "§CUpgrade:§! Civilian Factory Improvements"
+ ZBT_improve_mils:0 "§CUpgrade:§! Military Factory Improvements"
+ ZBT_heat_resistant_suits:0 "§CUpgrade:§! Heat Resistant Suits"
+ ZBT_local_temperature_manipulation:0 "§CUpgrade:§! Local Temperature Manipulation Spells"
+ ZBT_geothermal_generator:0 "§CUpgrade:§! Geothermal Generator"
+ ZBT_heat_pump:0 "§CUpgrade:§! Liquid Refrigerant Technology"
+ ZBT_improved_temperature_manipulation:0 "§CUpgrade:§! Wide-Area Temperature Manipulation"
+ ZBT_climate_control:0 "§CUpgrade:§! Underground Climate Control"
 #  ZBT_dig_down:0 ""
 
 
@@ -87,15 +95,19 @@
  ZBT_UC_ref2:0 "Advanced Underground Synthetic Refinery"
  ZBT_UC_ref3:0 "Underground Chemical Engineering Plant"
 
-#  ZBT_UC_lab0:0 "Underground Workshop"
-#  ZBT_UC_lab1:0 "Underground Research Lab"
-#  ZBT_UC_lab2:0 "Underground Cleanroom"
-#  ZBT_UC_lab3:0 "Underground University" #?????
+ ZBT_UC_lab0:0 "Basic Underground Research Lab"
+ ZBT_UC_lab1:0 "Improved Underground Research Lab"
+ ZBT_UC_lab2:0 "Underground Cleanroom"
+ ZBT_UC_lab3:0 "Underground University" #?????
 
 
  # Other Undercity Upgrades
+ ZBT_UU_improved_subterranean_construction:0 "Improved Subterranean Construction"
  ZBT_UU_heat_resist1:0 "Heat Resistant Suits"
  ZBT_UU_local_temp_manip:0 "Localised Temperature Manipulation"
+ ZBT_UU_heat_pumps:0 "Heat Pumps"
+ ZBT_UU_geothermal_generator:0 "Geothermal Generator"
+ ZBT_UU_underground_engineering:0 "Underground Engineering"
 
 
 
@@ -112,3 +124,11 @@
  ZBT_undercity_rapid_growth: "Delve Even Deeper"
  ZBT_reinforced_supports: "Reinforced Support Structures"
  ZBT_advanced_ore_processing: "Advanced Ore Processing"
+ ZBT_land_renewal: "Land Renewal"
+ ZBT_military_investments: "Military Investments"
+ ZBT_refinery_effort: "Refinery Effort"
+ ZBT_underground_metropolis: "The Underground Metropolis"
+ ZBT_domestic_arms_production: "Domestic Arms Production"
+ ZBT_motorization_effort: "Army Motorization Effort"
+ ZBT_electronics_effort: "Electronics Effort"
+ ZBT_armor_rollout: "Armor Technology Grants"

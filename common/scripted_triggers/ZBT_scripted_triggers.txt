@@ -1,0 +1,34 @@
+ZBT_heat_resistance_check = {
+    IF = {
+        limit = { check_variable = { UC_depth < 3 } }
+        always = yes
+    }
+    ELSE_IF = {
+        limit = { check_variable = { UC_depth < 7 } }
+        OR = {
+            custom_override_tooltip = {
+                tooltip = {
+                    localization_key = ZBT_tt_has_special_tech
+                    TECH = ZBT_UU_heat_resist1
+                }
+                has_country_flag = UU_heat_resistance1
+            }
+            custom_override_tooltip = {
+                tooltip = {
+                    localization_key = ZBT_tt_has_special_tech
+                    TECH = ZBT_UU_local_temp_manip
+                }
+                has_country_flag = UU_local_temperature_manipulation
+            }
+        }
+    }
+    ELSE_IF = {
+        limit = { check_variable = { UC_depth < 10 } }
+        OR = {
+            has_country_flag = UU_heat_resistance2
+        }
+    }
+    ELSE = {
+        has_country_flag = UU_harness_the_core
+    }
+}
