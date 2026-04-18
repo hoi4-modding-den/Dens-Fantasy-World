@@ -283,14 +283,13 @@ focus_tree = {
         }
         completion_reward = {
             710 = {
-                increase_state_category = yes
-                increase_state_category = yes
+                set_state_category = large_city
             }
         }
     }
 
     focus = {
-        id = ZBT_military_concessions_copy
+        id = ZBT_domestic_arms_production
         icon = GFX_goal_unknown
         x = -2
         y = 4
@@ -313,7 +312,7 @@ focus_tree = {
         x = -2
         y = 5
         cost = 10
-        prerequisite = { focus = ZBT_military_concessions_copy }
+        prerequisite = { focus = ZBT_domestic_arms_production }
         ai_will_do = {
             factor = 1
         }
@@ -333,7 +332,7 @@ focus_tree = {
         x = -4
         y = 5
         cost = 10
-        prerequisite = { focus = ZBT_military_concessions_copy }
+        prerequisite = { focus = ZBT_domestic_arms_production }
         completion_reward = {
             add_tech_bonus = {
                 name = armor_bonus
@@ -350,7 +349,7 @@ focus_tree = {
         x = 0
         y = 5
         cost = 10
-        prerequisite = { focus = ZBT_military_concessions_copy }
+        prerequisite = { focus = ZBT_domestic_arms_production }
         ai_will_do = {
             factor = 1
         }

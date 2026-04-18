@@ -123,8 +123,10 @@ ZBT_undercity_cat = {
 		modifier = {
 			consumer_goods_expected_value = 0.1
 		}
-		remove_effect = {
+		complete_effect = {
 			add_to_variable = { var = UC_empty_sectors value = -1 }
+		}
+		remove_effect = {
 			add_offsite_building = {
 				type = industrial_complex
 				level = 1
@@ -135,10 +137,6 @@ ZBT_undercity_cat = {
 				custom_effect_tooltip = ZBT_tt_modify_undercity
 				add_to_variable = {var = UC_construction_speed value = -0.005 tooltip = production_speed_buildings_factor_tt}
 			}
-		}
-
-		cancel_trigger = {
-			check_variable = { UC_empty_sectors < 1 } # failsafe
 		}
 	}
 
@@ -164,8 +162,10 @@ ZBT_undercity_cat = {
 		modifier = {
 			consumer_goods_expected_value = 0.1
 		}
-		remove_effect = {
+		complete_effect = {
 			add_to_variable = { var = UC_empty_sectors value = -1 }
+		}
+		remove_effect = {
 			add_offsite_building = {
 				type = arms_factory
 				level = 1
@@ -176,10 +176,6 @@ ZBT_undercity_cat = {
 				custom_effect_tooltip = ZBT_tt_modify_undercity
 				add_to_variable = {var = UC_mil_output value = 0.05 tooltip = industrial_capacity_factory_tt } #todo: this doesnt do shit even when I change the variable with set_var???
 			}
-		}
-
-		cancel_trigger = {
-			check_variable = { UC_empty_sectors < 1 } # failsafe
 		}
 	}
 
@@ -206,16 +202,14 @@ ZBT_undercity_cat = {
 		modifier = {
 			consumer_goods_expected_value = 0.1
 		}
-		remove_effect = {
+		complete_effect = {
 			add_to_variable = { var = UC_empty_sectors value = -1 }
+		}
+		remove_effect = {
 			add_offsite_building = {
 				type = synthetic_refinery
 				level = 1
 			}
-		}
-
-		cancel_trigger = {
-			check_variable = { UC_empty_sectors < 1 } # failsafe
 		}
 	}
 
@@ -242,15 +236,14 @@ ZBT_undercity_cat = {
 		modifier = {
 			consumer_goods_expected_value = 0.1
 		}
+		complete_effect = {
+			add_to_variable = { var = UC_empty_sectors value = -1 }
+		}
 		remove_effect = {
 			custom_effect_tooltip = ZBT_tt_modify_undercity
 			add_to_variable = { var = UC_stability value = 0.005 tooltip = stability_factor_whitespace_tt }
 			add_to_variable = { var = UC_pop_growth value = 0.03 tooltip = monthly_population_tt }
 			add_to_variable = { var = UC_consumer_goods value = 0.005 tooltip = consumer_goods_factor_tt }
-		}
-
-		cancel_trigger = {
-			check_variable = { UC_empty_sectors < 1 } # failsafe
 		}
 	}
 
