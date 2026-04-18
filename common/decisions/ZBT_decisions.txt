@@ -45,22 +45,22 @@ ZBT_undercity_cat = {
 			add_to_variable = { var = UC_depth value = 1 }
 			set_variable = { var = UC_empty_sectors value = 0 }
 			IF = {
-				limit = { check_variable = { UC_depth < 4 } }
+				limit = { check_variable = { UC_depth < 3 } }
 				set_variable = { var = UC_unexcavated_sectors value = 5 }
 			}
 			ELSE_IF = {
-				limit = { check_variable = { UC_depth < 7 } }
+				limit = { check_variable = { UC_depth < 5 } }
 				set_variable = { var = UC_unexcavated_sectors value = 3 }
 			}
 			ELSE_IF = {
-				limit = { check_variable = { UC_depth < 10 } }
+				limit = { check_variable = { UC_depth < 7 } }
 				set_variable = { var = UC_unexcavated_sectors value = 2 }
 			}
 			ELSE = {
 				set_variable = { var = UC_unexcavated_sectors value = 1 }
 			}
 			IF = {
-				limit = {check_variable = { UC_depth < 10}}
+				limit = {check_variable = { UC_depth < 7}}
 				add_to_variable = {var = UC_unexcavated_sectors value = UC_modify_extra_sectors }
 			}
 			
@@ -76,6 +76,7 @@ ZBT_undercity_cat = {
 		}
 
 		available = {
+			num_of_available_civilian_factories > 0
 			custom_trigger_tooltip = {
 				tooltip = {
 					localization_key = ZBT_tt_more_unexcavated_sectors_than
@@ -119,6 +120,7 @@ ZBT_undercity_cat = {
 		}
 
 		available = {
+			num_of_available_civilian_factories > 0
 			custom_trigger_tooltip = {
 				tooltip = {
 					localization_key = ZBT_tt_more_empty_sectors_than
@@ -159,6 +161,7 @@ ZBT_undercity_cat = {
 		}
 
 		available = {
+			num_of_available_civilian_factories > 0
 			custom_trigger_tooltip = {
 				tooltip = {
 					localization_key = ZBT_tt_more_empty_sectors_than
@@ -199,6 +202,7 @@ ZBT_undercity_cat = {
 		}
 
 		available = {
+			num_of_available_civilian_factories > 0
 			has_tech = synth_oil_experiments
 			custom_trigger_tooltip = {
 				tooltip = {
@@ -234,7 +238,7 @@ ZBT_undercity_cat = {
 		}
 
 		available = {
-			
+			num_of_available_civilian_factories > 0
 			custom_trigger_tooltip = {
 				tooltip = {
 					localization_key = ZBT_tt_more_empty_sectors_than
@@ -269,6 +273,7 @@ ZBT_undercity_cat = {
 		}
 
 		available = {
+			num_of_available_civilian_factories > 0
 			has_tech = construction2
 			custom_trigger_tooltip = {
 				tooltip = {
