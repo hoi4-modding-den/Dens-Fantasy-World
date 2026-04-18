@@ -17,6 +17,7 @@ state={
 
 	history={
 		victory_points = { 3157 1 }
+                victory_points = { 3161 2 }
 
 		owner = ZFA
 		add_core_of = ZFA

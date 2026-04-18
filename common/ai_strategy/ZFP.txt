@@ -1,0 +1,23 @@
+claims_on_37 = {
+	allowed = {
+		original_tag = ZFP
+	}
+	enable = {
+		country_exists = ZST
+		NOT = { controls_state = 37 }
+	}
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = ZST
+			}
+			controls_state = 37 
+		}
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = "ZST"
+		value = 80
+	}
+}

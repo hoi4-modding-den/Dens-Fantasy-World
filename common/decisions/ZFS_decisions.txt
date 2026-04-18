@@ -1,0 +1,23 @@
+ZFS_civil_war_cat = {
+
+    ZFS_end_of_civil_war = {
+
+        icon = generic_civil_support
+
+        available = {
+            NOT = { country_exists = ZFA }
+            NOT = { country_exists = ZFB }
+            NOT = { country_exists = ZFK }
+
+            controls_province = 10337
+
+
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            country_event = ZFS_cw_events.1
+        }
+    }
+}

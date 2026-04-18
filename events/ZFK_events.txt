@@ -1,0 +1,46 @@
+add_namespace = ZFK_cw_events
+
+country_event = { # Civil War Ends
+	id = ZFK_cw_events.1
+	title = ZFK_cw_events.1.t
+	desc = ZFK_cw_events.1.desc
+	picture = GFX_report_event_france_parade
+
+	fire_only_once = yes
+	is_triggered_only = yes
+        trigger = {
+        has_civil_war = no
+        controls_province = 10337
+    }
+
+	immediate = {
+        hidden_effect = { 
+			news_event = ZFK_news_events.1
+		}
+    }
+
+	option = {
+		name = ZFK_cw_events.1.a
+		custom_effect_tooltip = generic_skip_one_line_tt
+	}
+}
+news_event = { #end of civil war global
+	id = ZFK_news_events.1
+	title = ZFK_news_events.1.t
+	desc = ZFK_news_events.1.desc
+	picture = GFX_news_event_002
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ZFK_news_events.1.a
+		trigger = { tag = ZFK }
+                remove_ideas = ZF_balekelemi_civil_war
+	}
+
+	option = {
+		name = ZFK_news_events.1.b
+		trigger = { NOT = { tag = ZFK } }
+	}
+}

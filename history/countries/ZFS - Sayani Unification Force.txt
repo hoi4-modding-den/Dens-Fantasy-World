@@ -1,4 +1,4 @@
-capital = 884
+capital = 1252
 
 oob = "ZFS_1936"
 

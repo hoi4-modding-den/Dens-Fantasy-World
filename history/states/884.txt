@@ -16,6 +16,10 @@ state={
 	}
 
 	history={
+                 victory_points = { 11641 7 }
+                 victory_points = { 11661 4 }
+                 victory_points = { 11660 3 }
+                 victory_points = { 11643 2 }
 		owner = ZFS
 		add_core_of = ZFS
 
@@ -23,8 +27,8 @@ state={
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 1
-			industrial_complex = 1
+			arms_factory = 2
+			industrial_complex = 2
 			
 			
 		}

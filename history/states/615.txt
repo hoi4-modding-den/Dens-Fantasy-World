@@ -19,6 +19,7 @@ state={
 	history={
                  victory_points = { 9023 3 }
                  victory_points = { 9019 3 }
+                 victory_points = { 9027 2 }
 		owner = ZFB
 		add_core_of = ZFB
 

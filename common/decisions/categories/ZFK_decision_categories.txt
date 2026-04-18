@@ -1,0 +1,12 @@
+ZFK_civil_war_cat = {
+
+    icon = border_conflicts
+	
+	allowed = {
+		original_tag = ZFK
+	}
+
+	priority = 100 
+
+	visible_when_empty = no
+}

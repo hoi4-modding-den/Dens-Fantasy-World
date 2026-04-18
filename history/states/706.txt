@@ -4,7 +4,7 @@ state={
 	name="STATE_706"
 	manpower = 193329
 	
-	state_category = rural
+	state_category = pastoral
 	#impassable = yes
 	resources={
 		aluminium=0

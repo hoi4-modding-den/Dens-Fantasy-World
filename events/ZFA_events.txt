@@ -1,0 +1,55 @@
+add_namespace = ZFA_cw_events
+
+country_event = { # Civil War Ends
+	id = ZFA_cw_events.1
+	title = ZFA_cw_events.1.t
+	desc = ZFA_cw_events.1.desc
+	picture = GFX_report_event_france_parade
+
+	fire_only_once = yes
+	is_triggered_only = yes
+        trigger = {
+        has_civil_war = no
+        controls_province = 10337
+    }
+
+	immediate = {
+        hidden_effect = { 
+			news_event = ZFA_news_events.1
+		}
+    }
+
+	option = {
+		name = ZFA_cw_events.1.a
+                custom_effect_tooltip = generic_skip_one_line_tt
+		effect_tooltip = {
+			set_cosmetic_tag = ZFA
+		}
+		hidden_effect = {
+			drop_cosmetic_tag = yes
+					}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+	}
+}
+news_event = { #end of civil war global
+	id = ZFA_news_events.1
+	title = ZFA_news_events.1.t
+	desc = ZFA_news_events.1.desc
+	picture = GFX_news_event_002
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ZFA_news_events.1.a
+		trigger = { tag = ZFA }
+                remove_ideas = ZF_balekelemi_civil_war
+	}
+
+	option = {
+		name = ZFA_news_events.1.b
+		trigger = { NOT = { tag = ZFA } }
+	}
+}
+

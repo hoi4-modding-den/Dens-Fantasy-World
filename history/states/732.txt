@@ -2,9 +2,9 @@
 state={
 	id=732
 	name="STATE_732"
-	manpower = 3248558
+	manpower = 1248558
 	
-	state_category = large_city
+	state_category = town
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -17,7 +17,6 @@ state={
 	}
 
 	history={
-                 victory_points = { 10337 20 }
                  victory_points = { 10332 6 }
                  victory_points = { 10334 2 }
 		owner = ZFB
@@ -25,9 +24,9 @@ state={
 
 		
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			
-			arms_factory = 0
+			arms_factory = 1
 			industrial_complex = 1
 			
 			
@@ -36,7 +35,7 @@ state={
 	}
 
 	provinces={
-		10327 10328 10329 10330 10331 10332 10333 10334 10335 10336 10337 
+		10327 10328 10329 10330 10331 10332 10333 10334 10336
 	}
 	local_supplies=0.0 
 }

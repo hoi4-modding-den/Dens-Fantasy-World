@@ -8,12 +8,12 @@ state={
 	#impassable = yes
 	resources={
 		aluminium=0
-		chromium=0
+		chromium=8
 		oil=0
 		rubber=0
-		steel=0
+		steel=13
 		tungsten=0
-		coal=0
+		coal=16
 	}
 
 	history={
@@ -26,7 +26,7 @@ state={
 			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 1
+			industrial_complex = 2
 			
 			
 		}

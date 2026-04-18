@@ -1,0 +1,136 @@
+division_template = {
+	name = "Nigusawi Kifiletori"
+	#division_names_group = ZFK_INF_01
+    priority = 2
+    template_counter = 119
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+        support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Yenigusawi Milimochi"
+	#division_names_group = ZFB_INF_02
+    priority = 1
+    template_counter = 119
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Yeterara Kififili"
+	#division_names_group = ZFB_MNT_01
+    priority = 0
+    template_counter = 119
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+}
+
+units = {
+    division = {
+		location = 8714
+		division_template = "Yeterara Kififili"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+division = {
+		location = 8721
+		division_template = "Yeterara Kififili"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+division = {
+		location = 8715
+		division_template = "Yenigusawi Milimochi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+division = {
+		location = 8719
+		division_template = "Yenigusawi Milimochi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+division = {
+		location = 8716
+		division_template = "Yenigusawi Milimochi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+division = {
+		location = 11242
+		division_template = "Yenigusawi Milimochi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+division = {
+		location = 11247
+		division_template = "Yenigusawi Milimochi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+division = {
+		location = 11240
+		division_template = "Yenigusawi Milimochi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+division = {
+		location = 11239
+		division_template = "Nigusawi Kifiletori"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.7
+	}
+division = {
+		location = 11239
+		division_template = "Nigusawi Kifiletori"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+division = {
+		location = 11247
+		division_template = "Yenigusawi Milimochi"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+	}
+    }
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 15
+	}
+add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 10
+		
+	}
+
+}

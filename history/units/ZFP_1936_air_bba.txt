@@ -1,0 +1,9 @@
+air_wings = {
+	66 = { 
+		small_plane_airframe_0 = {
+			owner = "ZFP" 
+			amount = 5
+			version_name = "ZFP test"
+		}
+        }
+}

@@ -1,0 +1,164 @@
+division_template = {
+	name = "Yesayiyani Kififili"
+	#division_names_group = ZFS_INF_01
+    priority = 2
+    template_counter = 119
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+        support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Semayawi Kififili"
+	#division_names_group = ZFS_INF_02
+    priority = 0
+    template_counter = 119
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+                militia = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Sayiyani Yemoteri Kifili"
+	#division_names_group = ZFB_MOT_01
+    priority = 0
+    template_counter = 119
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+support = {
+		recon = { x = 0 y = 0 }
+	}
+
+}
+
+units = {
+    division = {
+		location = 11644
+		division_template = "Yesayiyani Kififili"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.8
+	}
+division = {
+		location = 11655
+		division_template = "Yesayiyani Kififili"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.8
+	}
+division = {
+		location = 11647
+		division_template = "Yesayiyani Kififili"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.8
+	}
+division = {
+		location = 11664
+		division_template = "Yesayiyani Kififili"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.8
+	}
+division = {
+		location = 11646
+		division_template = "Semayawi Kififili"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.6
+	}
+division = {
+		location = 11660
+		division_template = "Semayawi Kififili"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.6
+	}
+division = {
+		location = 11660
+		division_template = "Semayawi Kififili"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.5
+	}
+division = {
+		location = 11651
+		division_template = "Sayiyani Yemoteri Kifili"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+division = {
+		location = 11651
+		division_template = "Semayawi Kififili"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.45
+	}
+division = {
+		location = 11663
+		division_template = "Semayawi Kififili"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.45
+	}
+division = {
+		location = 11640
+		division_template = "Semayawi Kififili"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.45
+	}
+division = {
+		location = 11640
+		division_template = "Yesayiyani Kififili"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+division = {
+		location = 11655
+		division_template = "Semayawi Kififili"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+division = {
+		location = 11658
+		division_template = "Semayawi Kififili"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+division = {
+		location = 11642
+		division_template = "Semayawi Kififili"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+
+    }
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 25
+	}
+add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 25
+		
+	}
+
+}

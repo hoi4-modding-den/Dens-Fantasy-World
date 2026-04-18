@@ -59,13 +59,13 @@ units = {
     division = {
 		location = 3004
 		division_template = "Pīchi Lihikani Legewoni"
-		start_experience_factor = 1.0
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 	}
 	division = {
 		location = 3004
 		division_template = "Yetateku Kifili"
-		start_experience_factor = 0.0
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
         division = {
@@ -77,20 +77,20 @@ units = {
         division = {
 		location = 3002
 		division_template = "Yetateku Kifili"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
         division = {
 		location = 3002
 		division_template = "Fetani Kififili"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 0.9
 	}
 }
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0
 		}
 		requested_factories = 1
 		progress = 0.2
