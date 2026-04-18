@@ -1,7 +1,7 @@
 ZBT_heat_resistance_check = {
     IF = {
         limit = { check_variable = { UC_depth < 3 } }
-        always = yes
+        hidden_trigger = { always = yes }
     }
     ELSE_IF = {
         limit = { check_variable = { UC_depth < 7 } }

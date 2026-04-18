@@ -4,7 +4,7 @@ ideas = {
 			picture = generic_exploit_mines
 			# picture = COG_forminiere
 			modifier = {
-				consumer_goods_expected_value = -0.02
+				consumer_goods_expected_value = -0.05
 				local_resources_factor = 0.1
 			}
 		}
@@ -32,7 +32,7 @@ ideas = {
 		ZBT_evacuate_the_countryside_ns = {
 			picture = POL_the_peasants_strike
 			modifier = {
-				weekly_manpower = 900
+				weekly_manpower = 1200
 				stability_factor = -0.05
 				war_support_factor = -0.1
 				political_power_factor = 0.2
@@ -58,11 +58,14 @@ ideas = {
 			picture = POL_the_peasants_strike
 			modifier = {
 				conscription = -0.05
-				production_speed_buildings_factor = 0.1
-				research_speed_factor = 0.07
+				political_power_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+				production_speed_industrial_complex_factor = 0.07
+				production_speed_arms_factory_factor = 0.07
 				# political_power_factor = 0.05
 				# local_resources_factor = 0.01
-				# consumer_goods_expected_value = -0.02
+				consumer_goods_expected_value = -0.03
 			}
 		}
 		
@@ -92,8 +95,13 @@ ideas = {
 		ZBT_land_renewal_ns = {
 			picture = POL_the_peasants_strike
 			modifier = {
+				political_power_factor = 0.07
+				industry_free_repair_factor = 0.07
 				conscription = -0.05
 				production_speed_buildings_factor = 0.1
+				production_speed_infrastructure_factor = 0.07
+				production_speed_rail_way_factor = 0.07
+				consumer_goods_expected_value = -0.02
 				# political_power_factor = 0.05
 				# local_resources_factor = 0.01
 				# consumer_goods_expected_value = -0.02

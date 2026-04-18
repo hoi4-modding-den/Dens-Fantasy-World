@@ -341,9 +341,9 @@ focus_tree = {
             }
             custom_effect_tooltip = {
                 localization_key = ZBT_tt_decrease_uc_build_time
-                DAYS = 20
+                DAYS = 10
             }
-            add_to_variable = { var = UC_modify_time value = -20 }
+            add_to_variable = { var = UC_modify_time value = -10 }
             ZBT_UC_recalc_costs = yes
         }
     }

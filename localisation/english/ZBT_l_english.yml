@@ -79,7 +79,7 @@
  ZBT_improve_mils:0 "§CUpgrade:§! Military Factory Improvements"
  ZBT_heat_resistant_suits:0 "§CUpgrade:§! Heat Resistant Suits"
  ZBT_local_temperature_manipulation:0 "§CUpgrade:§! Local Temperature Manipulation Spells"
- ZBT_geothermal_generator:0 "§CUpgrade:§! Geothermal Generator"
+ ZBT_geothermal_generator_research:0 "§CUpgrade:§! Geothermal Generator"
  ZBT_heat_pump:0 "§CUpgrade:§! Liquid Refrigerant Technology"
  ZBT_improved_temperature_manipulation:0 "§CUpgrade:§! Wide-Area Temperature Manipulation"
  ZBT_climate_control:0 "§CUpgrade:§! Underground Climate Control"
