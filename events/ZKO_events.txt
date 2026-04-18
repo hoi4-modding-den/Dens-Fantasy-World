@@ -73,6 +73,9 @@ country_event = {
 		   transfer_state_to = ZKL
 		   add_core_of = ZKL 
 		}
+		ZKL = {
+			load_oob = "ZKL_1936"
+		}
 		}
 	}
 }

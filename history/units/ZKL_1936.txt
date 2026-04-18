@@ -1,0 +1,85 @@
+division_template = {
+	name = "Laboratorijos Apsauga"
+
+    priority = 0
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+        militia = { x = 0 y = 3 }
+	}
+	support = {
+        
+	}
+}
+
+division_template = {
+	name = "Gynybos Pajėgos"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = { 
+    # Lab Security
+	division = { 
+		name = "Laboratorijos Apsauga"
+		location = 10131
+		division_template = "Laboratorijos Apsauga"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		name = "Laboratorijos Apsauga"
+		location = 10131
+		division_template = "Laboratorijos Apsauga"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		name = "Laboratorijos Apsauga"
+		location = 10131
+		division_template = "Laboratorijos Apsauga"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		name = "Laboratorijos Apsauga"
+		location = 10131
+		division_template = "Laboratorijos Apsauga"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		name = "Laboratorijos Apsauga"
+		location = 10131
+		division_template = "Laboratorijos Apsauga"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+    # Defense Forces	
+	division = { 
+		name = "1. Gynybos Pajėgos"
+		location = 10126
+		division_template = "Gynybos Pajėgos"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		name = "2. Gynybos Pajėgos"
+		location = 10129
+		division_template = "Gynybos Pajėgos"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+}

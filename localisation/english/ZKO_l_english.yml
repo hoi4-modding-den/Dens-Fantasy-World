@@ -97,9 +97,14 @@
  STATE_75: "Layton"
  STATE_121: "Portsville"
  STATE_122: "Greater Gloria"
+ STATE_719: "Lynn"
  
  VICTORY_POINTS_2181: "Real Gloria"
  VICTORY_POINTS_2177: "Normann"
  VICTORY_POINTS_2182: "Central Town"
  VICTORY_POINTS_155: "Mount Point"
+ VICTORY_POINTS_10126: "Swasson"
+ VICTORY_POINTS_10131: "Lab A"
+ VICTORY_POINTS_10129: "NewLynn"
+ VICTORY_POINTS_10134: "OldLynn"
  
