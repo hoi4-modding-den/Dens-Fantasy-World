@@ -145,7 +145,13 @@ focus_tree = {
         completion_reward = {
             add_ideas = {ZBT_mandatory_work_programs}
             custom_effect_tooltip = generic_skip_one_line_tt
-            add_stability = 0.07
+            add_tech_bonus = {
+                name = industrial_bonus
+                bonus = 0.8
+                uses = 2
+                category = industry
+            }
+            add_war_support = 0.02
         }
     }
 
@@ -167,6 +173,13 @@ focus_tree = {
                     level = 1
                     instant_build = yes
                 }
+            }
+            custom_effect_tooltip = generic_skip_one_line_tt
+            add_tech_bonus = {
+                name = infantry_artillery_bonus
+                bonus = 0.5
+                uses = 3
+                category = infantry_weapons
             }
         }
     }
@@ -287,6 +300,9 @@ focus_tree = {
         ai_will_do = {
             factor = 1
         }
+        available = {
+            has_tech = mechanical_computing
+        }
         completion_reward = {
             710 = {
                 add_building_construction = {
@@ -308,6 +324,9 @@ focus_tree = {
         prerequisite = { focus = ZBT_military_investments }
         ai_will_do = {
             factor = 1
+        }
+        available = {
+            has_tech = synth_oil_experiments
         }
         completion_reward = {
             710 = {
