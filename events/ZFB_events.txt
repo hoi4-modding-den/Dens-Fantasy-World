@@ -24,7 +24,7 @@ country_event = { # Civil War Ends
 		custom_effect_tooltip = generic_skip_one_line_tt
 	}
 }
-news_event = { #end of civil war global
+news_event = { # end of civil war global
 	id = ZFB_news_events.1
 	title = ZFB_news_events.1.t
 	desc = ZFB_news_events.1.desc
