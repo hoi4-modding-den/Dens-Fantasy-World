@@ -1,0 +1,18 @@
+characters = {
+ZIA_tanam_petuja = { 
+	name = ZIA_tanam_petuja_name
+    portraits = {
+        civilian = {
+            large = GFX_portrait_ZRB_tanam_petuja
+        }
+    }
+    
+    country_leader = {
+        ideology = ciavenism
+        desc = ZIA_tanam_petuja_desc
+
+        traits = {  }
+        expire = "1970.1.1.1"
+    }
+}
+}
