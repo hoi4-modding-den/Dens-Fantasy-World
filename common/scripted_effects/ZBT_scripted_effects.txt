@@ -23,13 +23,13 @@ ZBT_UC_recalc_costs = {
 ZBT_UC_increase_costs = {
 	multiply_variable = { var = UC_base_new_layer_cost value = 1.1 }
 	round_variable = UC_new_layer_cost
-	multiply_variable = { var = UC_base_new_layer_time value = 1.1 }
+	multiply_variable = { var = UC_base_new_layer_time value = 1.05 }
 	round_variable = UC_new_layer_time
 	multiply_variable = { var = UC_base_sector_dig_cost value = 1.1 }
 	round_variable = UC_sector_dig_cost
-	multiply_variable = { var = UC_base_sector_dig_time value = 1.1 }
+	multiply_variable = { var = UC_base_sector_dig_time value = 1.05 }
 	round_variable = UC_sector_dig_time
-	multiply_variable = { var = UC_base_sector_build_cost value = 1.05 }
+	multiply_variable = { var = UC_base_sector_build_cost value = 1.1 }
 	round_variable = UC_sector_build_cost
 	multiply_variable = { var = UC_base_sector_build_time value = 1.05 }
 	round_variable = UC_sector_build_time

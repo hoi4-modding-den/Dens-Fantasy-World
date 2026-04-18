@@ -60,7 +60,12 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            #
+            add_tech_bonus = {
+                name = industrial_bonus
+                bonus = 0.9
+                uses = 1
+                category = industry
+            }
         }
     }
 
@@ -76,7 +81,10 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            #
+            add_timed_idea = {
+                idea = ZBT_evacuate_the_countryside_ns
+                days = 150
+            }
         }
     }
 
@@ -92,7 +100,10 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            #
+            add_timed_idea = {
+                idea = ZBT_countryside_revitalisation_ns
+                days = 150
+            }
         }
     }
 
@@ -107,8 +118,16 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
+            add_ideas = {ZBT_clear_the_rubble_ns}
+            custom_effect_tooltip = generic_skip_one_line_tt
+            add_tech_bonus = {
+                name = industrial_bonus
+                bonus = 0.8
+                uses = 2
+                category = industry
+            }
             710 = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
             }
         }
     }
@@ -124,7 +143,9 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            #
+            add_ideas = {ZBT_mandatory_work_programs}
+            custom_effect_tooltip = generic_skip_one_line_tt
+            add_stability = 0.07
         }
     }
 
@@ -161,28 +182,51 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
+            swap_ideas = {
+                remove_idea = ZBT_clear_the_rubble_ns
+                add_idea = ZBT_land_renewal_ns
+            }
+            710 = {
+                add_extra_state_shared_building_slots = 2
+            }
             add_tech_bonus = {
-                name = industrial_bonus
-                bonus = 0.9
+                ahead_reduction = 0.7
                 uses = 1
                 category = industry
+                name = industrial_bonus
             }
         }
     }
 
     focus = {
-        id = ZBT_advanced_ore_processing
+        id = ZBT_material_recycling
         icon = GFX_goal_unknown
         x = 5
         y = 1
-        cost = 5
+        cost = 10
         prerequisite = { focus = ZBT_begin_undercity }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
             custom_effect_tooltip = ZBT_tt_modify_undercity
-            add_to_variable = {var = UC_resource_factor value = 0.03 tooltip = local_resources_factor_tt }
+            add_to_variable = {var = UC_consumer_goods value = -0.02 tooltip = consumer_goods_factor_tt }
+        }
+    }
+
+    focus = {
+        id = ZBT_advanced_ore_processing
+        icon = GFX_goal_unknown
+        x = 4
+        y = 2
+        cost = 5
+        prerequisite = { focus = ZBT_material_recycling }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            custom_effect_tooltip = ZBT_tt_modify_undercity
+            add_to_variable = {var = UC_resource_factor value = 0.02 tooltip = local_resources_factor_tt }
         }
     }
 
@@ -238,7 +282,7 @@ focus_tree = {
         x = -3
         y = 3
         cost = 10
-        prerequisite = { focus = ZBT_clear_the_rubble }
+        prerequisite = { focus = ZBT_clear_the_rubble focus = ZBT_workforce_expansion }
         prerequisite = { focus = ZBT_military_investments }
         ai_will_do = {
             factor = 1
@@ -260,7 +304,7 @@ focus_tree = {
         x = -1
         y = 3
         cost = 10
-        prerequisite = { focus = ZBT_workforce_expansion }
+        prerequisite = { focus = ZBT_clear_the_rubble focus = ZBT_workforce_expansion }
         prerequisite = { focus = ZBT_military_investments }
         ai_will_do = {
             factor = 1
@@ -288,9 +332,19 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
+            swap_ideas = {
+                remove_idea = ZBT_mandatory_work_programs
+                add_idea = ZBT_underground_metropolis_ns
+            }
             710 = {
                 set_state_category = large_city
             }
+            custom_effect_tooltip = {
+                localization_key = ZBT_tt_decrease_uc_build_time
+                DAYS = 20
+            }
+            add_to_variable = { var = UC_modify_time value = -20 }
+            ZBT_UC_recalc_costs = yes
         }
     }
 
@@ -307,7 +361,11 @@ focus_tree = {
         completion_reward = {
             add_offsite_building = {
                 type = arms_factory
-                level = 2
+                level = 1
+            }
+            add_offsite_building = {
+                type = industrial_complex
+                level = 1
             }
         }
     }
@@ -398,11 +456,11 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            set_country_flag = UU_improved_subterranean_construction
             custom_effect_tooltip = {
                 localization_key = ZBT_tt_special_tech_attained
                 TECH = ZBT_UU_improved_subterranean_construction
             }
+            set_country_flag = UU_improved_subterranean_construction
         }
     }
 
@@ -424,7 +482,7 @@ focus_tree = {
     focus = {
         id = ZBT_harness_the_core
         icon = GFX_goal_unknown
-        x = 5
+        x = 6
         y = 5
         cost = 10
         prerequisite = { focus = ZBT_extreme_heat_excavation }
@@ -456,8 +514,8 @@ focus_tree = {
     focus = {
         id = ZBT_prospect_for_resources
         icon = GFX_goal_unknown
-        x = 4
-        y = 2
+        x = 3
+        y = 3
         cost = 10
         prerequisite = { focus = ZBT_advanced_ore_processing }
         ai_will_do = {
