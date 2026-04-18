@@ -1,4 +1,4 @@
-﻿
+
 set_cosmetic_tag = ZNY_Nyfa_federal
 capital = 988 # Jan Zorzerk
 set_oob = "ZNY_1936"

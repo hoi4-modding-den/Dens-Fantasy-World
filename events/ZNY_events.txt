@@ -88,3 +88,20 @@ country_event = {
 }
     }
 }
+
+
+country_event = {
+	id = ZNY_events.5
+	title = ZNY_events.5.t
+	desc = ZNY_events.5.d
+	
+	picture = GFX_report_event_generic_conference
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+        name = ZNY_events.2.a
+set_country_flag = ZNY_protest_repression_fails
+    }
+}
