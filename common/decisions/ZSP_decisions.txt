@@ -77,7 +77,7 @@ ZSP_magic_cat = {
         complete_effect = {
             add_to_variable = { ZSP_used_spell_slots = 1 }
             add_to_variable = { ZSP_mana = -50 }
-            custom_effect_tooltip = ZSP_burn_enemy_infrastructure_tt
+            custom_effect_tooltip = ZSP_unlock_state_selector_tt
             set_country_flag = ZSP_burn_enemy_infrastructure_selector_flag
         }
 

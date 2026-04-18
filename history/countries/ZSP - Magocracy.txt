@@ -25,6 +25,12 @@ add_ideas = {
 	ZSP_burgfrieden
 }
 
+set_rule = {
+	can_create_collaboration_government = no
+	can_join_factions = no
+	can_force_government = no
+}
+
 add_to_variable = { ZSP_spell_slots = 2 }
 
 recruit_character = ZSP_wizard_council

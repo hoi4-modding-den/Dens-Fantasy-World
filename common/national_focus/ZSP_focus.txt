@@ -252,7 +252,7 @@ focus_tree={
             country_event = ZSP_start_events.7
 			hidden_effect = {
 				country_event = {
-					id = ZSP_start_events.8
+					id = ZSP_phoenix_events.1
 					days = 100
 				}
 			}
@@ -919,7 +919,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZSP_full_control_over_the_realm
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -953,7 +953,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZSP_the_shadowspire
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -974,14 +974,14 @@ focus_tree={
 
 	focus = {
 		id = ZSP_expand_military_improvements
-		icon = GFX_goal_panzerwaffe
+		icon = GFX_goal_generic_army_artillery
         prerequisite = { focus = ZSP_the_shadowspire }
 		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 2
 		relative_position_id = ZSP_the_shadowspire
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -1013,7 +1013,7 @@ focus_tree={
 		y = 3
 		relative_position_id = ZSP_the_shadowspire
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -1046,7 +1046,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZSP_full_control_over_the_realm
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -1104,7 +1104,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZSP_exploit_the_thunderpeak
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -1135,7 +1135,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZSP_exploit_the_thunderpeak
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -1174,7 +1174,7 @@ focus_tree={
 		y = 3
 		relative_position_id = ZSP_exploit_the_thunderpeak
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -1299,7 +1299,20 @@ focus_tree={
         }
 
 		completion_reward = {
-			add_stability = 0.15
+			custom_effect_tooltip = {
+				localization_key = ZSP_unlock_spell_tt
+				spell_name = ZSP_anti_resistance_spell
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_controlled_state = {
+				limit = {
+					has_resistance = yes
+				}
+				add_resistance = -25
+				add_compliance = 5
+			}
 		}
 	}
 
@@ -1383,7 +1396,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZSP_take_hortensia
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -1399,6 +1412,10 @@ focus_tree={
 
 		completion_reward = {
 			add_ideas = ZSP_confiscated_gold
+
+			hidden_effect = {
+				# load_oob = "ZTC_1936_navy"
+			}
 		}
 	}
 
@@ -1411,7 +1428,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZSP_take_hortensia
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -1426,6 +1443,13 @@ focus_tree={
         }
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = ZSP_unlock_spell_tt
+				spell_name = ZSP_botanomancy
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			if = {
 				limit = { has_idea = ZSP_ultra_authoritarian_governance_3 }
 				swap_ideas = {
@@ -1454,22 +1478,13 @@ focus_tree={
 		y = 2
 		relative_position_id = ZSP_take_hortensia
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
             base = 10 
         }
 		
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = ZSP_controls_all_of_gardenia_tt
-				all_state = {
-					OR = {
-						is_controlled_by = ROOT
-						NOT = { region = 34 }
-					}
-				}
-			}
 			strength_ratio = {
 				tag = XCE
 				ratio > 0.5
@@ -1493,6 +1508,307 @@ focus_tree={
 				target = XCE
 				type = annex_everything
 			}
+			hidden_effect = { 
+				news_event = ZSP_news_events.2 
+
+				every_other_country = {
+					limit = {
+						NOT = { has_government = fascism }
+						NOT = { has_government = communism }
+					}
+					add_relation_rule_override = {
+						target = XCE
+						trigger = ZSP_under_shadow_threat_rule
+						can_send_volunteers = yes
+					}
+					add_ai_strategy = {
+						type = send_volunteers_desire
+						id = XCE
+						value = 200
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_utilise_the_population
+		icon = GFX_focus_generic_expropriate_industrialist
+        prerequisite = { focus = ZSP_against_celandra }
+		#mutually_exclusive = { focus =  }
+		x = -3
+		y = 1
+		relative_position_id = ZSP_against_celandra
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			has_war = no
+        }
+
+		bypass = {
+			
+        }
+
+		completion_reward = {
+			every_controlled_state = {
+				add_manpower = -50000
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_cement_my_dominion
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+        prerequisite = { focus = ZSP_against_celandra }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZSP_against_celandra
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZSP_controls_all_of_gardenia_tt
+				all_state = {
+					OR = {
+						is_controlled_by = ROOT
+						NOT = { region = 34 }
+					}
+				}
+			}
+        }
+
+		bypass = {
+			
+        }
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					region = 34
+				}
+				add_core_of = ROOT
+			}
+			hidden_effect = { add_state_core = 1239 }
+		}
+	}
+
+	focus = {
+		id = ZSP_prepare_for_the_final_war
+		icon = GFX_focus_generic_reorient_production
+        prerequisite = { focus = ZSP_against_celandra }
+		#mutually_exclusive = { focus =  }
+		x = 3
+		y = 1
+		relative_position_id = ZSP_against_celandra
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			has_war = no
+        }
+
+		bypass = {
+			
+        }
+
+		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					industrial_complex > 0
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = -1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_controlled_state = {
+				limit = {
+					industrial_complex > 0
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = -1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_monster_armour
+		icon = GFX_goal_generic_build_tank
+        prerequisite = { focus = ZSP_utilise_the_population }
+		prerequisite = { focus = ZSP_cement_my_dominion }
+		prerequisite = { focus = ZSP_prepare_for_the_final_war }
+		mutually_exclusive = { focus = ZSP_alchemical_strength focus = ZSP_strengthen_the_zombies }
+		x = -2
+		y = 3
+		relative_position_id = ZSP_against_celandra
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			has_completed_focus = ZSP_master_of_monsters
+        }
+
+		bypass = {
+			
+        }
+
+		completion_reward = {
+			add_ideas = ZSP_monster_armour_spirit
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ZSP_monster_armour_tt
+		}
+	}
+
+	focus = {
+		id = ZSP_alchemical_strength
+		icon = GFX_focus_research2
+        prerequisite = { focus = ZSP_utilise_the_population }
+		prerequisite = { focus = ZSP_cement_my_dominion }
+		prerequisite = { focus = ZSP_prepare_for_the_final_war }
+		mutually_exclusive = { focus = ZSP_strengthen_the_zombies focus = ZSP_monster_armour }
+		x = 0
+		y = 3
+		relative_position_id = ZSP_against_celandra
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			has_completed_focus = ZSP_benevolent_tyrant
+        }
+
+		bypass = {
+			
+        }
+
+		completion_reward = {
+			add_ideas = ZSP_alchemical_boost
+		}
+	}
+
+	focus = {
+		id = ZSP_strengthen_the_zombies
+		icon = GFX_goal_generic_CAS
+        prerequisite = { focus = ZSP_utilise_the_population }
+		prerequisite = { focus = ZSP_cement_my_dominion }
+		prerequisite = { focus = ZSP_prepare_for_the_final_war }
+		mutually_exclusive = { focus = ZSP_alchemical_strength focus = ZSP_monster_armour }
+		x = 2
+		y = 3
+		relative_position_id = ZSP_against_celandra
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			has_completed_focus = ZSP_restless_magocrat
+        }
+
+		bypass = {
+			
+        }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ZSP_zombie_army
+				add_idea = ZSP_zombie_army_2
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_world_domination
+		icon = GFX_focus_ETH_restore_the_empire_of_axum
+        prerequisite = { focus = ZSP_monster_armour focus = ZSP_alchemical_strength focus = ZSP_strengthen_the_zombies }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 5
+		relative_position_id = ZSP_against_celandra
+		
+		cost = 28.6
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+
+		select_effect = {
+			news_event = ZSP_news_events.3
+		}
+
+		completion_reward = {
+			every_other_country = {
+				limit = {
+					capital_scope = { 
+						OR = {
+							is_on_continent = Kuvivalawiki
+							is_on_continent = Monerriame
+						}
+					}
+					NOT = { is_ally_with = ROOT }
+					NOT = { has_war_with = ROOT }
+				}
+				ROOT = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+			hidden_effect = { news_event = ZSP_news_events.4 }
 		}
 	}
 

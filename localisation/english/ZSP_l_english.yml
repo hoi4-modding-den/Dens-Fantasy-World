@@ -90,6 +90,8 @@
  ZSP_shadowspire_research: "Experiments in Shadowspire"
  ZSP_control_spell: "Under My Spell"
  ZSP_confiscated_gold: "Mountains of Gold"
+ ZSP_monster_armour_spirit: "Armoursmiths"
+ ZSP_alchemical_boost: "Alchemical Boost"
 
  ZSP_monster_army: "Monster Conscription"
  ZSP_monster_army_desc: "Monsters fill the role of soldiers in our military, though some sentient creatures are still allowed to serve as officers."
@@ -111,12 +113,15 @@
  ZSP_magic_cat: "Arcane Revelations"
  ZSP_magic_cat_desc: "§g§CMana§! is the mysterious energy that allows for spellcasting. Despite decades of researching by generations of sorcerers and mages, its inner workings are still unkown. Still, the Mages of Alstroemeria are some of the most proficient in the world.§!\n \n£ZSP_mana_texticon Mana Generation: [?modifier@ZSP_mana_generation|.0+=]\n£ZSP_mana_texticon Mana Reserves: [?ZSP_mana|.0+]\nAvailable §CSpell Slots§!: [?ZSP_used_spell_slots|.0]/[?ZSP_spell_slots|.0]"
  ZSP_has_available_spell_slot_tt: "Has at least §G1§! Available §CSpell Slot§!."
+ ZSP_unlock_spell_tt: "Unlock Spell: §Y$spell_name$§!"
+ ZSP_unlock_state_selector_tt: "Unlocks a §YDecision§! to §Yselect a State§! to cast the §CSpell§! on.\n \n§RIf a State has not been selected when this Decision times out, the Spell Selection will cancel.§!"
 
  ZSP_strengthen_industry: "Thaumaturgic Industrial Efforts"
  ZSP_strengthen_military_production: "Thaumaturgic Equipment Production"
  ZSP_burn_enemy_infrastructure: "Firestorm Blast"
- ZSP_burn_enemy_infrastructure_tt: "Unlocks a §YDecision§! to §Yselect a State§! to cast the §CSpell§! on.\n \n§RIf a State has not been selected when this Decision times out, the Spell Selection will cancel.§!"
  ZSP_burn_enemy_infrastructure_selector: "Cast Firestorm Blast in [FROM.GetName]"
+ ZSP_anti_resistance_spell: "Mind Control"
+ ZSP_botanomancy: "Botanomancy"
 
  ZSP_monster_hordes_growing: "Growing Hordes"
  ZSP_zombie_hordes_growing: "Undead Proliferation"
@@ -207,9 +212,25 @@
  ZSP_the_wealth_of_man_desc: ""
  ZSP_the_wealth_of_nature: "The Wealth of Nature"
  ZSP_the_wealth_of_nature_desc: ""
+
  ZSP_against_celandra: "Crush the Wayward Crown"
  ZSP_against_celandra_desc: ""
  ZSP_controls_all_of_gardenia_tt: "controls all States in the §YGardenian Coast Strategic Region§!."
+ ZSP_utilise_the_population: "'Utilise' the Population"
+ ZSP_utilise_the_population_desc: ""
+ ZSP_cement_my_dominion: "Cement My Dominion"
+ ZSP_cement_my_dominion_desc: ""
+ ZSP_prepare_for_the_final_war: "Prepare for the Final War"
+ ZSP_prepare_for_the_final_war_desc: ""
+ ZSP_monster_armour: "Armoured Monsters"
+ ZSP_monster_armour_desc: ""
+ ZSP_monster_armour_tt: "§gThese numbers may look big, but they are actually multiplied with 0.001, meaning the actual number is much smaller.§!"
+ ZSP_alchemical_strength: "Alchemical Strength"
+ ZSP_alchemical_strength_desc: ""
+ ZSP_strengthen_the_zombies: "Undead Coordination"
+ ZSP_strengthen_the_zombies_desc: ""
+ ZSP_world_domination: "A Shadow Cast Over The World"
+ ZSP_world_domination_desc: ""
 
 
 # EVENTS
@@ -258,6 +279,22 @@
  ZSP_news_events.1.a: "Fall before the Might of Ozymandias!"
  ZSP_news_events.1.b: "Get into defensive positions!"
  ZSP_news_events.1.c: "Great. More power-hungry lunatics."
+
+ ZSP_news_events.2.t: "Shadow Incursion into Celandra"
+ ZSP_news_events.2.desc: "With Gardenia fully secured under his reign, Ozymandias has now begun his invasion of Celandra. Many nations are now preparing to send volunteers as losing control over the Alba strait may hurt international trade and another victory for Ozymandias will only strengthen him more."
+ ZSP_news_events.2.a: "The foolish Crown shall break!"
+ ZSP_news_events.2.b: "We must weather the Storm!"
+ ZSP_news_events.2.c: "This is getting dangerous."
+
+ ZSP_news_events.3.t: "Ozymandian Proclamation"
+ ZSP_news_events.3.desc: ""
+ ZSP_news_events.3.a: "All shall bow to me!"
+ ZSP_news_events.3.b: "We must prepare."
+
+ ZSP_news_events.4.t: "The Great Shadow War"
+ ZSP_news_events.4.desc: ""
+ ZSP_news_events.4.a: "Behold! The Power of Shadows!"
+ ZSP_news_events.4.b: "The fate of the World is in our hands!"
 
 
 # TECH/EQUIPMENT NAMES

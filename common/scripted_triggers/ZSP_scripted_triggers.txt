@@ -6,3 +6,8 @@ ZSP_has_available_spell_slot = {
         }
     }
 }
+ZSP_under_shadow_threat_rule = {
+    FROM = {
+        has_war_with = ZSP
+    }
+}

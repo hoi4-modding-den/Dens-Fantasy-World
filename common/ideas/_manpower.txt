@@ -1511,6 +1511,29 @@ ideas = {
 
 		}
 
+		ZSP_zombie_army_2 = {
+			name = ZSP_zombie_army
+			picture = all_adults_serve
+			cost = 0
+			removal_cost = -1
+			level = 6
+
+			allowed = {
+				always = no
+			}
+			allowed_to_remove = {
+				always = no
+			}
+
+			modifier = {
+				conscription = 0.1
+				weekly_manpower = 25000
+				max_dig_in = -2
+				experience_gain_army_factor = -0.25
+			}
+
+		}
+
 	}
 
 

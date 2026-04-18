@@ -217,7 +217,7 @@ country_event = { # The Apprentice
 	}
 }
 
-news_event = { # Shadow Incursion NEWS
+news_event = { # Shadow Incursion Gardenia NEWS
 	id = ZSP_news_events.1
 	title = ZSP_news_events.1.t
 	desc = {
@@ -257,6 +257,87 @@ news_event = { # Shadow Incursion NEWS
 		trigger = { 
 			NOT = { tag = ZSP } 
 			NOT = { has_war_with = ZSP }
+		}
+	}
+}
+
+news_event = { # Shadow Incursion Celandra NEWS
+	id = ZSP_news_events.2
+	title = ZSP_news_events.2.t
+	desc = ZSP_news_events.2.desc
+	picture = GFX_news_event_056
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ZSP_news_events.2.a
+		trigger = { 
+			tag = ZSP 
+		}
+	}
+
+	option = {
+		name = ZSP_news_events.2.b
+		trigger = { 
+			NOT = { tag = ZSP } 
+			has_war_with = ZSP
+		}
+	}
+
+	option = {
+		name = ZSP_news_events.2.c
+		trigger = { 
+			NOT = { tag = ZSP } 
+			NOT = { has_war_with = ZSP }
+		}
+	}
+}
+
+news_event = { # Shadow War SoonTM NEWS
+	id = ZSP_news_events.3
+	title = ZSP_news_events.3.t
+	desc = ZSP_news_events.3.desc
+	picture = GFX_news_event_kiev_ruins
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ZSP_news_events.3.a
+		trigger = { 
+			tag = ZSP 
+		}
+	}
+
+	option = {
+		name = ZSP_news_events.3.b
+		trigger = { 
+			NOT = { tag = ZSP }
+		}
+	}
+}
+
+news_event = { # The Great Shadow War NEWS
+	id = ZSP_news_events.4
+	title = ZSP_news_events.4.t
+	desc = ZSP_news_events.4.desc
+	picture = GFX_news_event_056
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ZSP_news_events.4.a
+		trigger = { 
+			tag = ZSP 
+		}
+	}
+
+	option = {
+		name = ZSP_news_events.4.b
+		trigger = { 
+			NOT = { tag = ZSP }
 		}
 	}
 }

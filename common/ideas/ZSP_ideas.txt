@@ -307,7 +307,7 @@ ideas = {
             }
 
             modifier = {
-                research_speed_factor = 0.15
+                research_speed_factor = 0.2
                 ZSP_mana_generation = 10
                 political_power_factor = -0.15
             }
@@ -350,6 +350,55 @@ ideas = {
 
             modifier = {
                 consumer_goods_factor = -0.35
+            }
+
+        }
+
+        ZSP_monster_armour_spirit = {
+
+            picture = springfield_armory
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+
+            }
+
+            equipment_bonus = {
+                infantry_equipment = {
+                    instant = yes
+                    breakthrough = 1
+                    hardness = 10000
+		            armor_value = 20000
+                }
+            }
+
+        }
+
+        ZSP_alchemical_boost = {
+
+            picture = jap_duplicate_research
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                army_morale_factor = 0.15
+                army_attack_factor = 0.05
+                army_speed_factor = 0.05
+                initiative_factor = 0.05
+                experience_loss_factor = -0.1
             }
 
         }
