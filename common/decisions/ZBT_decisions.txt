@@ -309,6 +309,46 @@ ZBT_undercity_cat = {
 	}
 
 
+	ZBT_build_gen = { # 
+		icon = generic_construction
+		visible = {
+			has_country_flag = UU_geothermal_generator0
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			# has_tech = construction2
+			custom_trigger_tooltip = {
+				tooltip = {
+					localization_key = ZBT_tt_more_empty_sectors_than
+					AMT = 0
+				}
+				check_variable = { UC_empty_sectors > 0 }
+			}
+		}
+
+		cost = UC_sector_build_cost
+		days_remove = UC_sector_build_time
+		modifier = {
+			consumer_goods_expected_value = 0.3
+		}
+		complete_effect = {
+			add_to_variable = { var = UC_empty_sectors value = -1 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = ZBT_tt_modify_undercity
+			ZBT_UC_apply_buffs_generator = yes
+			# add_to_variable = {var = UC_research_speed value = 0.01 tooltip = research_speed_factor_tt }
+			# IF = {
+			# 	limit = { NOT = { has_country_flag = UU_built_basic_lab } }
+			# 	custom_effect_tooltip = generic_skip_one_line_tt
+			# 	custom_effect_tooltip = ZBT_tt_unlock_more_special_techs
+			# 	set_country_flag = UU_built_basic_lab
+			# }
+		}
+	}
+
+
 	ZBT_improve_civs = {
 		icon = generic_research
 		visible = {
