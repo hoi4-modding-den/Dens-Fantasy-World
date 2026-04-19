@@ -19,13 +19,18 @@ state={
 	history={
 		owner = ZRB
 		add_core_of = ZRB
-		
+		victory_points = {
+			9537 10
+		}
+		victory_points = {
+			9532 10
+		}
 		buildings = {
 			infrastructure = 3
 			
 			arms_factory = 0
-			industrial_complex = 0
-			dockyard = 1
+			industrial_complex = 1
+			dockyard = 2
 			9539 = {
 				naval_base = 1
 			}

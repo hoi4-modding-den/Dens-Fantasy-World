@@ -1,0 +1,8 @@
+leader_traits = {
+	beacon_of_liberty = {
+		consumer_goods_factor = -0.1
+		stability_factor = 0.15
+		drift_defence_factor = 0.1
+		random = no
+	}
+}

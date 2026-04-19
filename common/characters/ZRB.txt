@@ -3,7 +3,7 @@ ZIA_tanam_petuja = {
 	name = ZIA_tanam_petuja_name
     portraits = {
         civilian = {
-            large = GFX_portrait_ZRB_tanam_petuja
+            large = gfx/leaders/ZRB/ZRB_tanam_pejuta.dds
         }
     }
     
@@ -11,7 +11,7 @@ ZIA_tanam_petuja = {
         ideology = ciavenism
         desc = ZIA_tanam_petuja_desc
 
-        traits = {  }
+        traits = { beacon_of_liberty }
         expire = "1970.1.1.1"
     }
 }

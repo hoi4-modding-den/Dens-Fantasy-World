@@ -19,6 +19,13 @@ on_actions = {
 				# news_event = { id = ### days = 1} 
 			}
 
+			if = {
+				limit = {
+					FROM = { original_tag = ZIE }
+					ROOT = { original_tag = ZRB }
+				}
+			}
+
 
 		}
 	}

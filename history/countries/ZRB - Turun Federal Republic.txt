@@ -28,18 +28,20 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 61
-	democratic = 20
+	democratic = 61
+	neutrality = 20
 	communism = 12
 	fascism = 7
 }
+
+recruit_character = ZIA_tanam_petuja
 
 666 = {
 add_dynamic_modifier = { modifier = ZRB_dinantul }

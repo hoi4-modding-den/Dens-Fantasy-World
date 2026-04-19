@@ -4,7 +4,7 @@ state={
 	name="STATE_883"
 	manpower = 329608
 	
-	state_category = pastoral
+	state_category = metropolis
 	#impassable = yes
 	resources={
 		aluminium=0
@@ -23,10 +23,10 @@ state={
 			11639 25
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			
-			arms_factory = 0
-			industrial_complex = 0
+			arms_factory = 2
+			industrial_complex = 4
 			dockyard = 1
 			11639 = {
 				naval_base = 1

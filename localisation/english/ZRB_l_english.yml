@@ -8,6 +8,8 @@
  STATE_791: "Díevce Turinje"
  STATE_646: "Caíava Turinje"
  STATE_883: "Vaní-Tůrje"
+ STATE_816: "Urhú Mountains"
+ STATE_1244: "Tívjen Valley"
  # IDEAS #
  ZRB_turinje: "§9Turinje Autonomous Republic§!"
  ZRB_niava: "§9Níava Autonomous Republic§!"
@@ -33,3 +35,34 @@
  ZIE_VICTORY_POINTS_9961: "Byará"
  ZIE_STATE_1257: "Vrtze"
  ZIE_VICTORY_POINTS_11450: "Tzyrnavá"
+ # CHARACTERS #
+ ZIA_tanam_petuja_name: "Tánam Petůja"
+ ZIA_tanam_petuja_desc: "Born in 1880 Tánam Petůja began his political campaign at the start of the new millenium, quickly rising to promincnce due to his passionate speeches for liberation and a new social model to give everyone equal rights. He got voted in in 1930, though not without controversies. He has been seen making deals with nobles and purists behind the peoples back, despite all of this he continues to try and make social reforms. Claiming the deals to make compromises for the sake of liberty."
+
+ # PARTIES #
+ ZRB_communism_party: "Workers Movement"
+ ZRB_communism_party_long: "Movement for Working Rights of Transurhú"
+ ZRB_democratic_party: "Çíavenist Democrats"
+ ZRB_democratic_party_long: "Çíavenist Social Democratic Union"
+ ZRB_neutrality_party: "Monarchist Party"
+ ZRB_neutrality_party_long: "Party of Royal and Nobles"
+ ZRB_fascism_party: "Supremacy Movement"
+ ZRB_fascism_party_long: "Mountain Deer Supremacy Movement"
+
+ # TRAITS #
+ beacon_of_liberty: "Beacon of Liberty"
+
+ # IDEOLOGIES #
+ ciavenism: "Çíavenism"
+ ciavenism_desc: "Çíavenism is a type of constitutional monarchy originating from the mountainous regions around Transurhú, after tribal expansion away from these lands the system was eventually adopted in Tůrůń. It consists of an elected council for the figurehead monarch, but also a prime minister elected via tradition and votes."
+
+ # VICTORY POINTS #
+ VICTORY_POINTS_11051: "Dísava Peaks"
+ VICTORY_POINTS_11047: "Trásavva-Kýbe"
+ VICTORY_POINTS_11049: "Tíjven"
+ VICTORY_POINTS_10272: "Víeva"
+ VICTORY_POINTS_10854: "Kůrja Víale"
+ VICTORY_POINTS_9353: "Níuu Víale"
+ VICTORY_POINTS_11139: "Nóvje"
+ VICTORY_POINTS_9532: "Drůje"
+ VICTORY_POINTS_9537: "Szurhambót"

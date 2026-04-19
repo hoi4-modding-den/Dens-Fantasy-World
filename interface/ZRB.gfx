@@ -17,4 +17,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/gui/ZRB/ZRB_AutonomousRegion4.png"
 	}
 
+	spriteType = {
+    name = "GFX_portrait_ZRB_tanam_petuja"
+    texturefile = "gfx/leaders/ZRB/ZRB_tanam_petuja.dds"
+    }
+
 }
