@@ -87,12 +87,6 @@ division = {
 		start_equipment_factor = 0.6
 	}
 division = {
-		location = 11660
-		division_template = "Semayawi Kififili"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.5
-	}
-division = {
 		location = 11651
 		division_template = "Sayiyani Yemoteri Kifili"
 		start_experience_factor = 0.2
@@ -115,12 +109,6 @@ division = {
 		division_template = "Semayawi Kififili"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.45
-	}
-division = {
-		location = 11640
-		division_template = "Yesayiyani Kififili"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
 	}
 division = {
 		location = 11655

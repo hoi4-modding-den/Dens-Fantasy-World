@@ -14,9 +14,109 @@ ZFB_civil_war_cat = {
         }
 
         fire_only_once = yes
+        ai_will_do = {
+			factor = 10
+		}
+
 
         complete_effect = {
             country_event = ZFB_cw_events.1
         }
     }
+ZFB_attack_ZFA = {
+
+        icon = generic_civil_support
+
+        available = {
+           is_neighbor_of = ZFA
+           has_war_with = ZFA
+           NOT = { has_idea = ZF_offensive_ZFK }
+           NOT = { has_idea = ZF_offensive_ZFS }
+        }
+
+        fire_only_once = no
+
+        custom_cost_trigger = {
+           command_power > 9
+        }
+        custom_cost_text = decision_cost_CP_10
+
+        days_remove = 50
+        days_re_enable = 365
+        ai_will_do = {
+			factor = 1
+		}
+
+        complete_effect = {
+            add_command_power = -10
+            add_ideas = ZF_offensive_ZFA
+                              }            
+        remove_effect = {
+            remove_ideas = ZF_offensive_ZFA
+                              }
+                    }
+    ZFB_attack_ZFK = {
+
+        icon = generic_civil_support
+
+        available = {
+           is_neighbor_of = ZFK
+           has_war_with = ZFK
+           NOT = { has_idea = ZF_offensive_ZFA }
+           NOT = { has_idea = ZF_offensive_ZFS }
+        }
+
+        fire_only_once = no
+
+        custom_cost_trigger = {
+           command_power > 9
+        }
+        custom_cost_text = decision_cost_CP_10
+
+        days_remove = 50
+        days_re_enable = 365
+        ai_will_do = {
+			factor = 1
+		}
+
+        complete_effect = {
+            add_command_power = -10
+            add_ideas = ZF_offensive_ZFK
+                              }            
+        remove_effect = {
+            remove_ideas = ZF_offensive_ZFK
+                              }
+                    }
+    ZFB_attack_ZFS = {
+
+        icon = generic_civil_support
+
+        available = {
+           is_neighbor_of = ZFS
+           has_war_with = ZFS
+           NOT = { has_idea = ZF_offensive_ZFA }
+           NOT = { has_idea = ZF_offensive_ZFK }
+        }
+
+        fire_only_once = no
+
+        custom_cost_trigger = {
+           command_power > 9
+        }
+        custom_cost_text = decision_cost_CP_10
+
+        days_remove = 50
+        days_re_enable = 365
+        ai_will_do = {
+			factor = 1
+		}
+
+        complete_effect = {
+            add_command_power = -10
+            add_ideas = ZF_offensive_ZFS
+                              }            
+        remove_effect = {
+            remove_ideas = ZF_offensive_ZFS
+                              }
+               }
 }

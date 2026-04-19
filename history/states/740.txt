@@ -7,13 +7,13 @@ state={
 	state_category = pastoral
 	#impassable = yes
 	resources={
-		aluminium=0
+		aluminium=5
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
-		tungsten=0
-		coal=0
+		steel=5
+		tungsten=3
+		coal=3
 	}
 
 	history={

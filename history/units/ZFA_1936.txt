@@ -58,21 +58,9 @@ units = {
 		start_equipment_factor = 0.6
 	}
     division = {
-		location = 1912
-		division_template = "Yezizibi Hayilochi"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-    division = {
 		location = 3161
 		division_template = "Yezizibi Hayilochi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-    division = {
-		location = 1909
-		division_template = "Yezizibi Hayilochi"
-		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 	}
     division = {

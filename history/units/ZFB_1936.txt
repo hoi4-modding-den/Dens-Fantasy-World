@@ -77,18 +77,12 @@ units = {
 	}
     division = {
 		location = 9019
-		division_template = "Kelali Birigedi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.4
-	}
-    division = {
-		location = 9019
 		division_template = "Bīcha Banerochi"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
     division = {
-		location = 9023
+		location = 9020
 		division_template = "Kelali Birigedi"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
@@ -158,12 +152,6 @@ division = {
 		division_template = "Fetani Kififili"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
-	}
-division = {
-		location = 9021
-		division_template = "Kelali Birigedi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.6
 	}
 division = {
 		location = 9024

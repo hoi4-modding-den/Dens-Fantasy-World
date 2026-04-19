@@ -1,4 +1,5 @@
 add_namespace = ZFS_cw_events
+add_namespace = ZFS_news_events
 
 country_event = { # Civil War Ends
 	id = ZFS_cw_events.1

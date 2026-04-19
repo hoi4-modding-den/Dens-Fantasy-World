@@ -1,0 +1,69 @@
+ZFB_attack = {
+	allowed = {
+		original_tag = ZFA
+	}
+	enable = {
+		country_exists = ZFB
+		has_idea = ZF_offensive_ZFB
+	}
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = ZFB
+                                NOT = { has_idea = ZF_offensive_ZFB }
+			} 
+		}
+	}
+
+	ai_strategy = {
+               type = front_unit_request
+               tag = ZFB
+               value = 50
+      }
+}
+ZFK_attack = {
+	allowed = {
+		original_tag = ZFA
+	}
+	enable = {
+		country_exists = ZFK
+		has_idea = ZF_offensive_ZFK
+	}
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = ZFK
+                                NOT = { has_idea = ZF_offensive_ZFK }
+			} 
+		}
+	}
+
+	ai_strategy = {
+               type = front_unit_request
+               tag = ZFK
+               value = 50
+      }
+}
+ZFS_attack = {
+	allowed = {
+		original_tag = ZFA
+	}
+	enable = {
+		country_exists = ZFS
+		has_idea = ZF_offensive_ZFS
+	}
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = ZFS
+                                NOT = { has_idea = ZF_offensive_ZFS }
+			} 
+		}
+	}
+
+	ai_strategy = {
+               type = front_unit_request
+               tag = ZFS
+               value = 50
+      }
+}

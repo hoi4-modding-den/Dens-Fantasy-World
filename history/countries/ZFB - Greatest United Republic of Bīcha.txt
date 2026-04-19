@@ -35,13 +35,18 @@ recruit_character = ZFB_talakji_unetu
 
 
 declare_war_on = {
-	target = ZFS
+	target = ZFA
 	type = civil_war
 }
 declare_war_on = {
 	target = ZFK
 	type = civil_war
 }
+declare_war_on = {
+	target = ZFS
+	type = civil_war
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.3.1"
