@@ -480,6 +480,7 @@ focus_tree = {
                 TECH = ZBT_UU_improved_subterranean_construction
             }
             set_country_flag = UU_improved_subterranean_construction
+            custom_effect_tooltip = ZBT_tt_unlock_more_special_techs
         }
     }
 

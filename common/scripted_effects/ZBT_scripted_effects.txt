@@ -1,3 +1,87 @@
+ZBT_UC_apply_buffs_civ = {
+	# tempvar setup
+	set_temp_variable = { temp_construction_speed = 0 }
+	# calculate cumulative buff
+	IF = {
+		limit = { has_country_flag = UU_improved_civs1 }
+		add_to_temp_variable = {var = temp_construction_speed value = 0.01}
+	}
+
+	# apply buff
+	add_to_variable = {var = UC_construction_speed value = temp_var:temp_construction_speed tooltip = production_speed_buildings_factor_tt}
+}
+
+
+ZBT_UC_apply_buffs_mil = {
+	# tempvar setup
+	set_temp_variable = { temp_mil_output = 0 }
+	# calculate cumulative buff
+	IF = {
+		limit = { has_country_flag = UU_improved_mils1 }
+		add_to_temp_variable = {var = temp_mil_output value = 0.02}
+	}
+
+	# apply buff
+	add_to_variable = {var = UC_mil_output value = temp_var:temp_mil_output tooltip = industrial_capacity_factory_tt}
+}
+
+
+ZBT_UC_apply_buffs_house = {
+	# tempvar setup
+	set_temp_variable = { temp_stab = 0.015 }
+	set_temp_variable = { temp_pp = 0.01 }
+	set_temp_variable = { temp_cg = 0.005 }
+	# calculate cumulative buff
+	IF = {
+		limit = { has_country_flag = UU_improved_house1 }
+		add_to_temp_variable = {var = temp_pp value = 0.02}
+		add_to_temp_variable = {var = temp_stab value = 0.015}
+	}
+
+	# apply buff
+	add_to_variable = {var = UC_stability value = temp_var:temp_stab tooltip = stability_factor_tt}
+	add_to_variable = {var = UC_pp_factor value = temp_var:temp_pp tooltip = political_power_factor_tt}
+	add_to_variable = {var = UC_consumer_goods value = temp_var:temp_cg tooltip = consumer_goods_factor_tt}
+}
+
+
+ZBT_UC_apply_buffs_lab = {
+	# tempvar setup
+	set_temp_variable = { temp_rs = 0.01 }
+	# calculate cumulative buff
+	IF = {
+		limit = { has_country_flag = UU_improved_labs1 }
+		add_to_temp_variable = {var = temp_rs value = 0.02}
+	}
+
+	# apply buff
+	add_to_variable = {var = UC_research_speed value = temp_var:temp_rs tooltip = research_speed_factor_tt}
+}
+
+
+ZBT_UC_apply_buffs_generator = {
+	# tempvar setup
+	set_temp_variable = { temp_construction_speed = 0.03 }
+	set_temp_variable = { temp_cg = -0.02 }
+	# calculate cumulative buff
+	IF = {
+		limit = { has_country_flag = UU_improved_gens1 }
+		add_to_temp_variable = {var = temp_construction_speed value = 0.01}
+		add_to_temp_variable = {var = temp_cg value = -0.01}
+	}
+
+	# apply buff
+	add_to_variable = {var = UC_construction_speed value = temp_var:temp_construction_speed tooltip = production_speed_buildings_factor_tt}
+	add_to_variable = {var = UC_consumer_goods value = temp_var:temp_cg tooltip = consumer_goods_factor_tt}
+}
+
+
+
+
+
+
+
+
 ZBT_UC_recalc_costs = {
 	# adds the flat time/cost increases to the base time/cost
 	set_variable = { var = UC_new_layer_cost value = UC_base_new_layer_cost }

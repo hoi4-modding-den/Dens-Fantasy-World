@@ -148,7 +148,8 @@ ZBT_undercity_cat = {
 			IF = {
 				limit = { has_country_flag = UU_improved_civs1 }
 				custom_effect_tooltip = ZBT_tt_modify_undercity
-				add_to_variable = {var = UC_construction_speed value = 0.005 tooltip = production_speed_buildings_factor_tt}
+				ZBT_UC_apply_buffs_civ = yes
+				# add_to_variable = {var = UC_construction_speed value = 0.01 tooltip = production_speed_buildings_factor_tt}
 			}
 		}
 	}
@@ -189,7 +190,8 @@ ZBT_undercity_cat = {
 			IF = {
 				limit = { has_country_flag = UU_improved_mils1 }
 				custom_effect_tooltip = ZBT_tt_modify_undercity
-				add_to_variable = {var = UC_mil_output value = 0.05 tooltip = industrial_capacity_factory_tt } #todo: this doesnt do shit even when I change the variable with set_var???
+				ZBT_UC_apply_buffs_mil = yes
+				# add_to_variable = {var = UC_mil_output value = 0.03 tooltip = industrial_capacity_factory_tt }
 			}
 		}
 	}
@@ -259,9 +261,10 @@ ZBT_undercity_cat = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = ZBT_tt_modify_undercity
-			add_to_variable = { var = UC_stability value = 0.005 tooltip = stability_factor_whitespace_tt }
-			add_to_variable = { var = UC_pop_growth value = 0.03 tooltip = monthly_population_tt }
-			add_to_variable = { var = UC_consumer_goods value = 0.005 tooltip = consumer_goods_factor_tt }
+			ZBT_UC_apply_buffs_house = yes
+			# add_to_variable = { var = UC_stability value = 0.015 tooltip = stability_factor_whitespace_tt }
+			# add_to_variable = { var = UC_pp_factor value = 0.03 tooltip = political_power_factor_tt }
+			# add_to_variable = { var = UC_consumer_goods value = 0.005 tooltip = consumer_goods_factor_tt }
 		}
 	}
 
@@ -294,7 +297,8 @@ ZBT_undercity_cat = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = ZBT_tt_modify_undercity
-			add_to_variable = {var = UC_research_speed value = 0.01 tooltip = research_speed_factor_tt }
+			ZBT_UC_apply_buffs_lab = yes
+			# add_to_variable = {var = UC_research_speed value = 0.01 tooltip = research_speed_factor_tt }
 			IF = {
 				limit = { NOT = { has_country_flag = UU_built_basic_lab } }
 				custom_effect_tooltip = generic_skip_one_line_tt
@@ -334,7 +338,8 @@ ZBT_undercity_cat = {
 				BUILD = ZBT_UC_civ1
 			}
 			effect_tooltip = {
-				add_to_variable = {var = UC_construction_speed value = 0.005 tooltip = production_speed_buildings_factor_tt}
+				ZBT_UC_apply_buffs_civ = yes
+				# add_to_variable = {var = UC_construction_speed value = 0.01 tooltip = production_speed_buildings_factor_tt}
 			}
 		}
 	}
@@ -369,7 +374,9 @@ ZBT_undercity_cat = {
 				BUILD = ZBT_UC_mil1
 			}
 			effect_tooltip = {
-				add_to_variable = {var = UC_mil_output value = 0.005 tooltip = industrial_capacity_factory_tt }
+			set_country_flag = UU_improved_mils1
+				ZBT_UC_apply_buffs_mil = yes
+				# add_to_variable = {var = UC_mil_output value = 0.03 tooltip = industrial_capacity_factory_tt }
 			}
 		}
 	}
@@ -406,8 +413,9 @@ ZBT_undercity_cat = {
 				BUILD = ZBT_UU_geothermal_generator
 			}
 			effect_tooltip = {
-				add_to_variable = {var = UC_construction_speed value = 0.02 tooltip = production_speed_buildings_factor_tt }
-				add_to_variable = {var = UC_consumer_goods value = -0.005 tooltip = consumer_goods_factor_tt }
+				ZBT_UC_apply_buffs_generator = yes
+				# add_to_variable = {var = UC_construction_speed value = 0.03 tooltip = production_speed_buildings_factor_tt }
+				# add_to_variable = {var = UC_consumer_goods value = -0.02 tooltip = consumer_goods_factor_tt }
 			}
 		}
 	}
