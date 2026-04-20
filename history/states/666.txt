@@ -19,6 +19,7 @@ state={
 	history={
 		owner = ZRB
 		add_core_of = ZRB
+		add_core_of = ZDI
 		victory_points = {
 			9537 10
 		}

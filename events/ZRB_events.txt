@@ -1,0 +1,37 @@
+add_namespace = ZRB
+
+
+country_event = {
+	id = ZRB.1
+	title = ZRB.1.t
+	desc = ZRB.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			release_on_controlled = ZDI
+			ZDI = {
+				load_oob = ZDI_1936
+			}
+		}
+	}
+	option = {
+		name = ZRB.1.a
+		ai_chance = {
+			base = 20
+		}
+		stability_factor = -0.1
+		666 = { remove_core_of = ZRB }
+		666 = { remove_dynamic_modifier = { modifier = ZRB_dinantul } } 
+	}
+	option = {
+		name = ZRB.1.b
+		ai_chance = {
+			base = 20
+		}
+		ZDI = {change_tag_from = ZRB}
+		stability_factor = -0.1
+		666 = { remove_core_of = ZRB }
+		666 = { remove_dynamic_modifier = { modifier = ZRB_dinantul } } 
+	}
+}

@@ -2,6 +2,16 @@
  ZRB: "Federation of Tůrůń"
  ZRB_DEF: "Federation of Tůrůń"
  ZRB_ADJ: "Tyriń"
+ # DINANTUL #
+ ZDI: "Dińantul"
+ ZDI_DEF: "Dińantul"
+ ZDI_ADJ: "Dińantul"
+ ZDI_democratic: "Republic of Dińantul"
+ ZDI_democratic_DEF: "Republic of Dińantul"
+ ZDI_democratic_ADJ: "Dińantul"
+ ZIA_turul_council_name: "Turul Council"
+ turul_council: "Preserving Traditions"
+ ZIA_turul_council_desc: "The Turul rite is an ancient governing form emerging from the Turul migration into the lands of Dińantul, ever since the lands of the area has been populated by ethnic groups of Turul species. Eventually all of them adopted the Turul rites as their governing body for ages, after it's absorption into the Federation of Tůrůń the rite modernized into a modern council. Despite it's modernization the Turul legislation and council has managed to preserve forms of their traditions and culture into governing."
  # STATES #
  STATE_666: "Dińantul"
  STATE_822: "Níava"

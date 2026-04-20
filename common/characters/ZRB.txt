@@ -16,3 +16,22 @@ ZIA_tanam_petuja = {
     }
 }
 }
+
+characters = {
+ZIA_turul_council = { 
+	name = ZIA_turul_council_name
+    portraits = {
+        civilian = {
+            large = gfx/leaders/ZRB/GFX_portrait_ZDI_turul_council.dds
+        }
+    }
+    
+    country_leader = {
+        ideology = conservatism
+        desc = ZIA_turul_council_desc
+
+        traits = { turul_council }
+        expire = "1970.1.1.1"
+    }
+}
+}
