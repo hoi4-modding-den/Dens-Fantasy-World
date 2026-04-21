@@ -27,7 +27,7 @@ add_ideas = {
 }
 
 set_stability = 0.15
-set_war_support = 0.75
+set_war_support = 0.6
 set_convoys = 0
 
 recruit_character = ZFA_eyas_desita
@@ -41,10 +41,6 @@ declare_war_on = {
 }
 declare_war_on = {
 	target = ZFK
-	type = civil_war
-}
-declare_war_on = {
-	target = ZFS
 	type = civil_war
 }
 set_politics = {

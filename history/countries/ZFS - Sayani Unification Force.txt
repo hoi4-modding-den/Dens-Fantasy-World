@@ -27,7 +27,7 @@ add_ideas = {
 }
 
 set_stability = 0.1
-set_war_support = 0.3
+set_war_support = 0.45
 set_convoys = 0
 
 recruit_character = ZFS_sosite_gebere
@@ -35,18 +35,12 @@ recruit_character = ZFS_sosite_gebere
 
 set_cosmetic_tag = ZFS_civilwar
 
+
 declare_war_on = {
 	target = ZFA
 	type = civil_war
 }
-declare_war_on = {
-	target = ZFB
-	type = civil_war
-}
-declare_war_on = {
-	target = ZFK
-	type = civil_war
-}
+
 
 
 set_politics = {

@@ -6,7 +6,7 @@ CIVIL_WAR_NAME_ZFA_ZFB: "Balekelemi Civil War"
 CIVIL_WAR_NAME_ZFB_ZFK: "Balekelemi Civil War"
 CIVIL_WAR_NAME_ZFK_ZFA: "Balekelemi Civil War"
 ZF_balekelemi_civil_war: "Balekelemi Civil War"
-ZF_balekelemi_civil_war_desc: "From several decades now, Balekelemi region has been in decline. When Bīchi elite got into power, that only accelerated - corporations got much influence and other groups were marginalised. Frontiers and Pīchi became pretty much independent from central authority. Economy went into state never seen before as local buisnesses were marginalised... /n that is not only reason that civil war happened however. Not everyone agreed with the firm authoritarian hand of Bīchi regime, in addition backed by oligarchs. Some turned into communism, some into democracy, some into monarchism, and many others want other systems. Time will show which idea will come on top... idea which will be paid with §Rblood§..."
+ZF_balekelemi_civil_war_desc: "From several decades now, Balekelemi region has been in decline. When Bīchi elite got into power, that only accelerated - corporations got much influence and other groups were marginalised. Frontiers and Pīchi became pretty much independent from central authority. Economy went into state never seen before as local buisnesses were marginalised... \n\nThat is not only reason that civil war happened however. Not everyone agreed with the firm authoritarian hand of Bīchi regime, in addition backed by oligarchs. Some turned into communism, some into democracy, some into monarchism, and many others want other systems. Time will show which idea will come on top... idea which will be paid with §Rblood§..."
 
 decision_cost_CP_10: "£command_power §10§"
 decision_cost_CP_10_blocked: "£command_power §R10§!"

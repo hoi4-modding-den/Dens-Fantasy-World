@@ -16,6 +16,8 @@
  ZFP_fascism_party_long: "Pīchi Purification Front"
 
 #ideas
+ZFP_the_awaiting_revenge: "The Awaiting Revenge"
+ZFP_the_awaiting_revenge_desc: "Since the Humiliating sign of ceasefire of Meretdemini in 1922, our hold over Semebota had been lost to foes from Pandemonium. This was an event so humiliating that our entire existence got to the question - our capital lost, most of our people lost, and then murdered... not many people would survive that... \n\nBut we did... and we are prepared for retaking of our stolen lands. We are determined more than ever, we will kill anyone who will stand on our way to reclamation. It wont be easy to win, but we will do it... and then gain revenge on those who let all this tragedy for Pīchi nation happen in first place..."
 
 #focuses
 
@@ -30,7 +32,13 @@ ZFP_yetefaiw_beti_lijji: "Yeyefaiw Bēti Lijji"
 
 #victory_points
 
+VICTORY_POINTS_3004: "Yeamamojo"
+VICTORY_POINTS_3001: "Yane Yedayawi"
+
 #states
+
+STATE_178: "Yeīpīchi Libi"
+ZFP_STATE_37: "Semebota"
 
 #technology
  ZFP_infantry_equipment_0: "Gedayi"

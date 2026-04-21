@@ -1,0 +1,44 @@
+focus_tree={
+
+	id = ZFK_focus_tree
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZFK
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 3000 y = 300 }
+
+	focus = {
+		id = ZFK_return_to_greatness
+		icon = GFX_focus_PLACEHOLDER
+        #prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 10
+		y = 0
+		#relative_position_id = 
+		
+		cost = 4
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+}
