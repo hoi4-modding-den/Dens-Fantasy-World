@@ -1,0 +1,35 @@
+spriteTypes = {
+
+    spriteType = {
+		name = "GFX_Portrait_ZTK_generic_1"
+		texturefile = "gfx/leaders/ZTK/ZTK_general_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ZTK_generic_2"
+		texturefile = "gfx/leaders/ZTK/ZTK_general_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ZTK_generic_3"
+		texturefile = "gfx/leaders/ZTK/ZTK_general_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ZTK_generic_4"
+		texturefile = "gfx/leaders/ZTK/ZTK_general_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ZTK_generic_5"
+		texturefile = "gfx/leaders/ZTK/ZTK_general_5.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ZTK_generic_6"
+		texturefile = "gfx/leaders/ZTK/ZTK_general_6.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ZTK_generic_7"
+		texturefile = "gfx/leaders/ZTK/ZTK_general_7.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ZTK_communist_leader"
+		texturefile = "gfx/leaders/ZTK/ZTK_leader_2.dds"
+	}
+}

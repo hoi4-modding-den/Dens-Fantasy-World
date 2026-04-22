@@ -46,4 +46,6 @@ set_popularities = {
 	neutrality = 10
 }
 
+recruit_character = ZTK_communist_leader
+
 

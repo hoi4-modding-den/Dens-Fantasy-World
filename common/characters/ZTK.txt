@@ -1,0 +1,17 @@
+characters={
+	ZTK_communist_leader = { 
+		name = ZTK_communist_leader
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ZTK_communist_leader"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+            traits = { ZTK_communist_leader_trait_1 ZTK_communist_leader_trait_2 ZTK_communist_leader_trait_3 ZTK_communist_leader_trait_4 }
+			desc = ZTK_communist_leader_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}
