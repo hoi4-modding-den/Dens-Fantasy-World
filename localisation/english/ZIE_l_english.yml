@@ -4,6 +4,11 @@
  ZIE_DEF: "National Republic of Hráva"
  ZIE_ADJ: "Hráve"
 
+ # LEADERS
+ the_marshall: "  §RThe Grand Marshall of Hrava§!"
+ trephan_bojodavic_name: "Tréphan Bojodávić"
+ trephan_bojodavic_desc: "Born 1886 to a relatively poor family in the Urhú mountains, Tréphan Bojodávić grew up in a harsh environment. His father was an abusive alcoholic and his mother spent most of her time cleaning up after the deadbeat man, Tréphan basically had no social life growing up. In 1893 aged 7 years old their village became notified of border skrimishes several acres north of them. Shortly after the skirmishes turned into battles which turned into all out war, the start of the First Urhú war forced Tréphans family to flee northwards, following the Kníestra river upwards and then continuing forth over the windswept hills to Trzę. Where he would be spending the majority of his upbringing. In 1904 Tréphan enlisted into the National Army, he quickly became known among the ranks as an outspoken Nationalist. Shortly after his enlistment the Second Urhú war broke out, this time instead of fleeing Tréphan was prepared to join the ranks as a commander. Quickly Tréphan amassed an almost cult-like following around his idealistic Nationalism, he went on to win the majority of his battles as commander. But eventually he got stripped of his ranks because of the upper echelons fearing a nationalist uprising. The Urhú war ended in a loss for Hráva, unrest turned into rebellion. Before the high class could organize Tréphan and his followers began hijacking newspapers and eventually they marched on the capital. The commanders of the National guard switched sides and he took power, Tréphan formed a council of advisors to help govern the vast territories. Looking outwards, his National outlook craves expansion."
+
  # VICTORY POINTS
  VICTORY_POINTS_10839: "Crnat Hráve"
  VICTORY_POINTS_10840: "Vrazá"
@@ -11,3 +16,21 @@
  # STATES 
  STATE_1255: "Grada Hráve"
  STATE_798: "Tarzá"
+ #### BOP ####
+ ZIE_power_balance: "The Marshall and the Martyrs"
+ ZIE_balanced_range: "Equilibrium"
+ ZIE_popular_anger_range: "Partial Council Control"
+ ZIE_popular_anger_range2: "Major Council Control"
+ ZIE_popular_anger_range3: "Total Council Control"
+ ZIE_council_anger_range: "Partial Military Control"
+ ZIE_council_anger_range2: "Major Military Control"
+ ZIE_council_anger_range3: "Total Military Control"
+ # DECISIONS #
+ ZIE_redirect_military_funding: "Redirect Military Funding"
+ ZIE_coordinate_council_organization: "Coordinate Council Organization"
+ ZIE_campaign_for_land_reform: "Campaign for Land Reform"
+ ZIE_secretly_approve_agrarian_policies: "Secretly Approve Agrarian Policies"
+ ZIE_switch_to_marshall: "Swap to the Marshall"
+ ZIE_marshall_makes_their_move: "The Marshall Makes His Move"
+ ZIE_marshall_side: "The Marshall"
+ ZIE_council_side: "The Peoples Council of Hráva"

@@ -1,0 +1,18 @@
+characters = {
+	ZIE_trephan_bojodavic = {
+		name = trephan_bojodavic_name
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZIE/GFX_portrait_ZIE_stephan_bojodavic.dds"
+			}
+		}
+
+		country_leader = {
+			ideology = despotism
+        	desc = trephan_bojodavic_desc
+
+        	traits = { the_marshall }
+        	expire = "1970.1.1.1"
+		}
+	}
+}

@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+		ZRB_beacon_of_liberty = {
+			picture = ARG_growing_nationalism_modifier
+		}
+		ZRB_association_for_industrial_advancement = {
+			picture = PER_fund_state_intelligence_idea
+		}
+		ZRB_armed_forces = {
+			picture = NORDIC_army_communist
+		}
+	}
+}

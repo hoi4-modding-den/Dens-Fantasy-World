@@ -17,8 +17,11 @@ set_technology = {
 	fuel_refining = 1
 }
 
-# add_ideas = {
-# }
+add_ideas = {
+	ZRB_beacon_of_liberty
+	ZRB_association_for_industrial_advancement
+	ZRB_armed_forces
+}
 
 set_stability = 0.6
 set_war_support = 0.2

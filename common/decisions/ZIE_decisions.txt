@@ -1,0 +1,400 @@
+ZIE_balance_of_power_category = {
+
+    ZIE_redirect_military_funding = {
+        
+        icon = GFX_decision_generic_confiscation
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+                
+            }
+        }
+
+        cost = 25
+
+        available = {
+            has_country_flag = on_side_of_council
+        }
+
+        days_remove = 30
+
+        modifier = {
+            consumer_goods_factor = 0.05
+            industrial_capacity_factory = 0.1
+        }
+
+        remove_effect = {
+            add_power_balance_value = {
+                id = ZIE_power_balance
+                value = 0.05
+                tooltip_side = ZIE_popular_side
+            }
+        }
+    }
+
+    ZIE_coordinate_council_organization = {
+        
+        icon = GFX_decision_generic_confiscation
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+                
+            }
+        }
+
+        cost = 25
+
+        available = {
+            has_country_flag = on_side_of_council
+        }
+
+        days_remove = 30
+
+        modifier = {
+            consumer_goods_factor = 0.05
+            experience_gain_army = 0.15
+        }
+
+        remove_effect = {
+            add_power_balance_value = {
+                id = ZIE_power_balance
+                value = 0.1
+                tooltip_side = ZIE_popular_side
+            }
+        }
+    }
+
+    ZIE_campaign_for_land_reform = {
+        
+        icon = GFX_decision_generic_confiscation
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+                
+            }
+        }
+
+        cost = 25
+
+        available = {
+            has_country_flag = on_side_of_council
+        }
+
+        days_remove = 30
+
+        modifier = {
+            consumer_goods_factor = 0.05
+            production_speed_buildings_factor = 0.15
+        }
+
+        remove_effect = {
+            add_power_balance_value = {
+                id = ZIE_power_balance
+                value = 0.1
+                tooltip_side = ZIE_popular_side
+            }
+        }
+    }
+
+    ZIE_secretly_approve_agrarian_policies = {
+        
+        icon = GFX_decision_generic_confiscation
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+                
+            }
+        }
+
+        cost = 25
+
+        available = {
+            has_country_flag = on_side_of_council
+        }
+
+        days_remove = 30
+
+        modifier = {
+            consumer_goods_factor = -0.1
+            political_power_gain = 0.1
+        }
+
+        remove_effect = {
+            add_power_balance_value = {
+                id = ZIE_power_balance
+                value = 0.15
+                tooltip_side = ZIE_popular_side
+            }
+        }
+    }
+
+    ZIE_consolidate_military_rule = {
+
+        icon = GFX_decision_SWE_set_army_budget
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+            }
+        }
+
+        cost = 25
+
+        available = {
+            NOT = { has_country_flag = on_side_of_council }
+        }
+
+        visible = {
+            NOT = { has_country_flag = on_side_of_council }
+        }
+
+        days_remove = 30
+
+        modifier = {
+            consumer_goods_factor = 0.05
+        }
+
+        remove_effect = {
+            add_power_balance_value = {
+                id = ZIE_power_balance
+                value = -0.1
+                tooltip_side = ZIE_council_side
+            }
+        }
+    }
+
+	ZIE_arrest_dissidents = {
+
+        icon = GFX_decision_generic_police_action
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+            }
+        }
+
+        cost = 25
+
+        available = {
+            NOT = { has_country_flag = on_side_of_council }
+        }
+
+        visible = {
+            NOT = { has_country_flag = on_side_of_council }
+        }
+
+        days_remove = 30
+
+        modifier = {
+            political_power_gain = -0.2
+
+        }
+
+        remove_effect = {
+            add_political_power = 40
+            add_power_balance_value = {
+                id = ZIE_power_balance
+                value = -0.1
+				stability_factor = -0.05
+                tooltip_side = ZIE_council_side
+            }
+        }
+    }
+
+	ZIE_prepare_a_speech = {
+
+        icon = GFX_decision_generic_speech
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+            }
+        }
+
+        cost = 10
+
+        available = {
+            NOT = { has_country_flag = on_side_of_council }
+        }
+
+        visible = {
+            NOT = { has_country_flag = on_side_of_council }
+        }
+
+        days_remove = 30
+
+        modifier = {
+            political_power_gain = -0.1
+        }
+
+        remove_effect = {
+            stability_factor = 0.05
+			add_political_power = 10
+            add_power_balance_value = {
+                id = ZIE_power_balance
+                value = -0.05
+                tooltip_side = ZIE_council_side
+            }
+        }
+    }
+
+	ZIE_showcase_national_pride = {
+
+        icon = GFX_decision_generic_army_support
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+            }
+        }
+
+        cost = 25
+
+        available = {
+            NOT = { has_country_flag = on_side_of_council }
+        }
+
+        visible = {
+            NOT = { has_country_flag = on_side_of_council }
+        }
+
+        days_remove = 30
+
+        modifier = {
+            political_power_gain = -0.1
+            stability_weekly = 0.005
+        }
+
+        remove_effect = {
+            stability_factor = 0.05
+			add_political_power = 10
+            add_power_balance_value = {
+                id = ZIE_power_balance
+                value = -0.05
+                tooltip_side = ZIE_council_side
+            }
+        }
+    }
+
+    ZIE_council_makes_their_move = {
+
+        icon = generic_civil_support
+
+        activation = {
+            NOT = { has_country_flag = on_side_of_council }
+        }
+
+        available = {
+            has_country_flag = on_side_of_council
+        }
+
+        is_good = no
+
+        days_mission_timeout = 70
+
+        timeout_effect = {
+            random_list = {
+                50 = { add_power_balance_value = {
+                id = ZIE_power_balance
+                value = 0.05
+                tooltip_side = ZIE_popular_side
+                } }
+                50 = { add_stability = -0.05 }
+            }
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            activate_mission = ZIE_council_makes_their_move
+        }
+		}
+	ZIE_marshall_makes_their_move = {
+
+        icon = generic_civil_support
+
+        activation = {
+            has_country_flag = on_side_of_council
+        }
+
+        available = {
+            NOT = { has_country_flag = on_side_of_council }
+        }
+
+        is_good = no
+
+        days_mission_timeout = 70
+
+        timeout_effect = {
+            random_list = {
+                50 = { add_power_balance_value = {
+                id = ZIE_power_balance
+                value = -0.05
+                tooltip_side = ZIE_popular_side
+                } }
+                50 = { add_stability = -0.05 }
+            }
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            activate_mission = ZIE_marshall_makes_their_move
+        }
+    }
+
+	ZIE_switch_to_council = {
+
+        icon = GFX_decision_generic_military
+
+        activation = {
+        }
+
+        available = {
+			NOT = { has_country_flag = on_side_of_council }
+        }
+
+        visible = {
+            NOT = { has_country_flag = on_side_of_council }
+        }
+
+		fire_only_once = yes
+
+        is_good = no
+
+        remove_effect = {
+            set_country_flag = on_side_of_council
+            activate_mission = ZIE_marshall_makes_their_move
+			remove_mission = ZIE_council_makes_their_move
+        }
+    }
+
+	ZIE_switch_to_marshall = {
+
+        icon = GFX_decision_generic_military
+
+        activation = {
+			has_country_flag = on_side_of_council
+        }
+
+        available = {
+			has_country_flag = on_side_of_council
+        }
+
+        visible = {
+            has_country_flag = on_side_of_council
+        }
+
+		fire_only_once = yes
+
+        is_good = no
+
+        remove_effect = {
+            clr_country_flag = on_side_of_council
+            activate_mission = ZIE_council_makes_their_move
+			remove_mission = ZIE_marshall_makes_their_move
+        }
+    }
+	
+
+}

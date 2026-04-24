@@ -17,8 +17,14 @@ set_technology = {
 	fuel_refining = 1
 }
 
-# add_ideas = {
-# }
+add_ideas = {
+	an_army_with_a_state
+	the_national_rejuvination
+	indefinate_state_of_emergency
+	failed_land_reform
+}
+
+recruit_character = ZIE_trephan_bojodavic
 
 set_stability = 0.6
 set_war_support = 0.2
@@ -37,4 +43,8 @@ set_popularities = {
 	democratic = 24
 	communism = 5
 	fascism = 15
+}
+
+set_power_balance = {
+    id = ZIE_power_balance
 }

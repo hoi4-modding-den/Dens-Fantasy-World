@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		an_army_with_a_state = {
+			picture = ARG_military_government
+		}
+		the_national_rejuvination = {
+			picture = FRA_national_mobilization_focus
+		}
+		indefinate_state_of_emergency = {
+			picture = PER_stand_with_giants_modifier
+		}
+		failed_land_reform = {
+			picture = generic_agrarian_reform
+		}
+	}
+}
