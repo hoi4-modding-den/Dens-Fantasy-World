@@ -11,8 +11,8 @@
  ZSP_democratic: "Federal State of Alstroemeria"
  ZSP_democratic_DEF: "the Federal State of Alstroemeria"
  ZSP_democratic_ADJ: "Alstroemerian"
- ZSP_communism: "Aegis Association of Alstroemeria"
- ZSP_communism_DEF: "the Aegis Association of Alstroemeria"
+ ZSP_communism: "Free Communities of Alstroemeria"
+ ZSP_communism_DEF: "the Free Communities of Alstroemeria"
  ZSP_communism_ADJ: "Alstroemerian"
  ZSP_fascism: "Alstroemerian Magocracy"
  ZSP_fascism_DEF: "the Alstroemerian Order of the Five Towers"
@@ -21,6 +21,13 @@
  ZSP_shadow_realm_fascism: "Realm of Shadows"
  ZSP_shadow_realm_fascism_DEF: "the Realm of Shadows"
  ZSP_shadow_realm_fascism_ADJ: "Ozymandian"
+
+ ZSP_aegis: "Gardenia"
+ ZSP_aegis_DEF: "Gardenia"
+ ZSP_aegis_ADJ: "Gardenia"
+ ZSP_aegis_communism: "Gardenian Reconstruction League"
+ ZSP_aegis_communism_DEF: "the Gardenian Reconstruction League"
+ ZSP_aegis_communism_ADJ: "Gardenian"
 
 
 # PARTIES
@@ -62,6 +69,7 @@
 
  ZSP_united_in_purpose: "United in Purpose, Divided in Spirit"
  ZSP_wizard_king: "The Mage-Lord of Shadows"
+ ZSP_the_demiurge: "The Demiurge"
  ZSP_moster_summoner: "Monster Tamer"
  ZSP_necomancer: "Necromancer"
  ZSP_from_the_ashes: "Risen from the Ashes"
@@ -80,6 +88,7 @@
  ZSP_ungoverned_lands: "Ungoverned Lands"
  ZSP_ungoverned_lands_desc: "While the lands of Alstroemeria are de jure governed by the Council of the Order of the Five Towers, the reality is that most of the territory is controlled by the local communities. Of course, when the troops of the Order show up on their doorsteps, the community leaders are quick to give tribute, but this arrangement cannot last forever."
  ZSP_ultra_authoritarian_governance: "Magocratic Nation-Building"
+ ZSP_empowered_local_communities: "Decentralised Communal Governments"
  ZSP_tower_rivalry: "Tower Rivalry"
  ZSP_tower_rivalry_desc: "The Five Towers are in constant competition with each other to improve their magical capabilities. State-Building takes the backseat in the Magocracy."
  ZSP_burgfrieden: "Turmfrieden"
@@ -92,6 +101,8 @@
  ZSP_confiscated_gold: "Mountains of Gold"
  ZSP_monster_armour_spirit: "Armoursmiths"
  ZSP_alchemical_boost: "Alchemical Boost"
+ ZSP_offensive_spirit: "The Swords"
+ ZSP_defensive_spirit: "The Shield"
 
  ZSP_monster_army: "Monster Conscription"
  ZSP_monster_army_desc: "Monsters fill the role of soldiers in our military, though some sentient creatures are still allowed to serve as officers."
@@ -122,6 +133,7 @@
  ZSP_burn_enemy_infrastructure_selector: "Cast Firestorm Blast in [FROM.GetName]"
  ZSP_anti_resistance_spell: "Mind Control"
  ZSP_botanomancy: "Botanomancy"
+ ZSP_i_am_atomic_spell: "I Am Atomic"
 
  ZSP_monster_hordes_growing: "Growing Hordes"
  ZSP_zombie_hordes_growing: "Undead Proliferation"
@@ -164,7 +176,7 @@
  ZSP_benevolent_tyrant_desc: "Modernisation is necessary if I am to rule the world. The old ways of peasant hordes have lost their effectiveness."
  ZSP_forced_industrialisation: "Forced Industrialisation"
  ZSP_forced_industrialisation_desc: ""
- ZSP_forced_industrialisation_tt: "Build §YRailways§! connecting the capital to the villages."
+ ZSP_forced_industrialisation_tt: "Build §YRailways§! connecting Golden Compass to the Villages."
  ZSP_embrace_capitalism: "Embrace Capitalism"
  ZSP_embrace_capitalism_desc: ""
  ZSP_establish_the_national_guard: "Establish the National Guard"
@@ -232,6 +244,31 @@
  ZSP_world_domination: "A Shadow Cast Over The World"
  ZSP_world_domination_desc: ""
 
+ ZSP_slave_revolt_tree: "Reconstruction Focus Tree"
+
+ ZSP_gather_the_remnants: "Gather the Remnants"
+ ZSP_gather_the_remnants_desc: ""
+ ZSP_restore_local_governance: "The Communities"
+ ZSP_restore_local_governance_desc: ""
+ ZSP_republican_cooperation: "The Republican Pact"
+ ZSP_republican_cooperation_desc: ""
+ ZSP_trust_the_stars: "Trust the Stars"
+ ZSP_trust_the_stars_desc: ""
+ ZSP_elbian_cooperation: "The Elbian Freedom Fighters"
+ ZSP_elbian_cooperation_desc: ""
+ ZSP_a_gardenia_for_everycreature: "A Land for Everycreature"
+ ZSP_a_gardenia_for_everycreature_desc: ""
+ ZSP_hunt_the_students: "Hunt the Students"
+ ZSP_hunt_the_students_desc: ""
+ ZSP_the_sword: "The Swords"
+ ZSP_the_sword_desc: ""
+ ZSP_the_shield: "The Shield"
+ ZSP_the_shield_desc: ""
+ ZSP_the_end: "The End of History"
+ ZSP_the_end_desc: ""
+ ZSP_epilogue: "Ashes to Ashes"
+ ZSP_epilogue_desc: ""
+
 
 # EVENTS
 
@@ -264,12 +301,29 @@
  ZSP_start_events.7.a: "Look on my works, ye Mighty, and despair!"
 
  ZSP_phoenix_events.1.t: "The Phoenix"
- ZSP_phoenix_events.1.desc: "It has come to my attention that I have made a mistake. During my extermination of the Sternwarte, I missed one of the disciples. I was informed of this by one of the townsfolk who were in the experimentation hall. Apparently, this disciple has taken up the moniker 'Phoenix' as a sign that he rose from the ashes of the fire I started."
+ ZSP_phoenix_events.1.desc: "During my extermination of the Sternwarte, I missed one of the disciples. I was informed of this by one of the townsfolk who were in the experimentation hall. Apparently, this disciple has taken up the moniker 'Phoenix' as a sign that he rose from the ashes of the fire I started."
  ZSP_phoenix_events.1.a: "Ashes to ashes, you will fail."
 
  ZSP_phoenix_events.2.t: "The Spirits that I summoned"
  ZSP_phoenix_events.2.desc: "I have made a grave mistake. And now, I can no longer unmake it. The creatures of shadows that called out to me. I sought to use their powers to strengthen mine own. But I was betrayed. I am merely their puppet."
  ZSP_phoenix_events.2.a: "I now cannot rid myself of again."
+
+ ZSP_phoenix_events.3.t: "Bit of a Monster"
+ ZSP_phoenix_events.3.desc: "The darkness has taken hold of me. I know I should not fight it, yet my feelings tell me otherwise. 'Perhaps it's not too late to change?' What foolish thoughts."
+ ZSP_phoenix_events.3.a: "Holding my head up high to keep on breathing."
+
+ ZSP_phoenix_events.4.t: "Determination"
+ ZSP_phoenix_events.4.desc: "Why am I heading for the top? To crush all those who thought they could beat me, who thought they could live freely. It matters not if I am a Monster. I shall bring ruin."
+ ZSP_phoenix_events.4.a: "Shadows dancing as I raise my fist into the air."
+
+ ZSP_phoenix_events.5.t: "Futility"
+ ZSP_phoenix_events.5.desc: "My reign is being challenged. The Phoenix has begun to openly challenge me, seizing control over various important military strongholds across the nation. He has even undermined my control over the thralls. He must be stopped."
+ ZSP_phoenix_events.5.a: "And yet... Is this my chance for Salvation?"
+ ZSP_phoenix_events.5.tt: "Thus ends the story of §YOzymandias§!. A life lived in futile struggle against all things beautiful simply because he couldn't be their creator."
+
+ ZSP_phoenix_events.6.t: "What Remains"
+ ZSP_phoenix_events.6.desc: "Gardenia and Celandra lie in ruins. Nothing left but dust and rubble. The few survivors, be they former slaves or thralls, have rallied under the aegis of the Phoenix."
+ ZSP_phoenix_events.6.a: "We must make the best of it."
 
 
  ZSP_news_events.1.t: "Shadow Incursion into Gardenia"
@@ -287,14 +341,12 @@
  ZSP_news_events.2.c: "This is getting dangerous."
 
  ZSP_news_events.3.t: "Ozymandian Proclamation"
- ZSP_news_events.3.desc: ""
+ ZSP_news_events.3.desc: "WIP"
  ZSP_news_events.3.a: "All shall bow to me!"
- ZSP_news_events.3.b: "We must prepare."
 
- ZSP_news_events.4.t: "The Great Shadow War"
- ZSP_news_events.4.desc: ""
- ZSP_news_events.4.a: "Behold! The Power of Shadows!"
- ZSP_news_events.4.b: "The fate of the World is in our hands!"
+ ZSP_news_events.4.t: "Collapse of the Shadow Realm"
+ ZSP_news_events.4.desc: "I met a traveller from an antique land\nWho said: — Two vast and trunkless legs of stone\nStand in the desert... Near them, on the sand,\nHalf sunk, a shattered visage lies, whose frown,\nAnd wrinkled lip, and sneer of cold command,\nTell that its sculptor well those passions read\nWhich yet survive, stamped on these lifeless things,\nThe hand that mocked them, and the heart that fed\nAnd on the pedestal these words appear\n‚My name is Ozymandias, king of kings\nLook on my works, ye Mighty, and despair!‘\nNothing beside remains. Round the decay\nOf that colossal wreck, boundless and bare\nThe lone and level sands stretch far away."
+ ZSP_news_events.4.a: "And thus, the Ozymandian Reign ends."
 
 
 # TECH/EQUIPMENT NAMES
@@ -337,7 +389,6 @@
  VICTORY_POINTS_8738: "Strodtmannsstadt"
  VICTORY_POINTS_8862: "Michelshof"
  VICTORY_POINTS_8863: "Goldener Kompass"
- VICTORY_POINTS_8863_evil: "Schattenturm"
  VICTORY_POINTS_9952: "Hasen"
  VICTORY_POINTS_10539: "Potzblitz"
  VICTORY_POINTS_10540: "Donnerspitze"

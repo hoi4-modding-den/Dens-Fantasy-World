@@ -79,6 +79,12 @@ characters = {
             }
         }
 
+        country_leader = {
+            ideology = oligarchism
+            traits = { ZKN_the_true_regent }
+            expire = "1960.1.1.1"
+        }
+
         advisor = {
             slot = political_advisor
             idea_token = ZKN_albert_zu_stegehoff_token

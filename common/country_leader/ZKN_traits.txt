@@ -17,6 +17,14 @@ leader_traits = {
         random = no
     }
 
+    ZKN_the_true_regent = {
+        
+        neutrality_drift = 0.02
+        stability_factor = 0.2
+
+        random = no
+    }
+
     ZKN_stratocratic_nationalist = {
         
         army_org_factor = 0.05

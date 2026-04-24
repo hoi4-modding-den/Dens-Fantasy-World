@@ -12,4 +12,71 @@ on_actions = {
         }
     }
 
+    on_monthly_ZLF = {
+        effect = {
+            set_variable = { ZLF_civs_lm = ZLF_civs_tm }
+            set_variable = { ZLF_civs_tm = num_of_civilian_factories }
+            subtract_from_variable = { ZLF_civs_tm = ZLF_total_civs_lm }
+
+            #( (CF^TM) - (CF^LM) ) / (CF^LM) = (GDP Growth)
+            set_variable = { ZLF_zwischenschritt_cflm = ZLF_civs_lm }
+            set_variable = { ZLF_zwischenschritt_cftm = ZLF_civs_tm }
+            subtract_from_variable = { ZLF_zwischenschritt_cftm = ZLF_zwischenschritt_cflm }
+            if = {
+                limit = { NOT = { check_variable = { ZLF_civs_lm = 0 } } }
+                divide_variable = { ZLF_zwischenschritt_cftm = ZLF_civs_lm }
+            }
+            clamp_temp_variable = {
+                var = ZLF_zwischenschritt_cftm
+                min = 0
+            }
+            set_variable = { ZLF_gdp_growth = ZLF_zwischenschritt_cftm }
+
+            set_variable = { ZLF_total_civs_lm = num_of_civilian_factories }
+            if = {
+                limit = {
+                    has_completed_focus = ZLF_magic_polygon_of_economics # only begin counting once the focus has been completed
+                    check_variable = { ZLF_gdp_growth > 1.99 }
+                }
+                add_to_variable = { ZLF_ideal_gdp_growth_months = 1 }
+            }
+            else = {
+                set_variable = { ZLF_ideal_gdp_growth_months = 0 }
+            }
+        }
+    }
+
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    ROOT = { tag = ZLF }
+                    FROM = { has_idea = ZLF_hosting_exiled_royals }
+                }
+                ZKN = {
+                    annex_country = {
+                        target = ROOT
+                        transfer_troops = no
+                    }
+                }
+                FROM = {
+                    remove_ideas = ZLF_hosting_exiled_royals
+                    set_autonomy = {
+                        target = ZKN
+                        autonomous_state = autonomy_puppet
+                        end_wars = no
+                        end_civil_wars = no
+                    }
+                }
+                ZKN = {
+                    set_politics = {
+                        ruling_party = neutrality
+                        elections_allowed = no
+                    }
+                    load_focus_tree = generic_focus
+                }
+            }
+        }
+    }
+
 }

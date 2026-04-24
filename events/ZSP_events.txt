@@ -17,7 +17,13 @@ country_event = { # Knights are dead
 			division_template = "Ritterorden"
 			disband = no
 		}
-		retire_character = ZSP_krabat
+		effect_tooltip = {
+			retire_character = ZSP_krabat
+		}
+		hidden_effect = {
+			ZSP_krabat = { set_nationality = ZLF }
+			ZLF = { country_event = ZLF_cw_events.7 }
+		}
 	}
 }
 
@@ -141,10 +147,6 @@ country_event = { # Mage War - Goldener Kompass
             add_manpower = -500
             set_demilitarized_zone = no 
         }
-		set_province_name = {
-			id = 8863
-			name = VICTORY_POINTS_8863_evil
-		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -214,6 +216,163 @@ country_event = { # The Apprentice
 			add_idea = ZSP_shadowspire_research_4
 		}
 		add_popularity = { ideology = communism popularity = 0.05 }
+	}
+}
+
+country_event = { # Second Vylet Pony Reference
+	id = ZSP_phoenix_events.3
+	title = ZSP_phoenix_events.3.t
+	desc = ZSP_phoenix_events.3.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZSP_phoenix_events.3.a
+		add_popularity = { ideology = communism popularity = 0.1 }
+	}
+}
+
+country_event = { # Gets debuffed
+	id = ZSP_phoenix_events.4
+	title = ZSP_phoenix_events.4.t
+	desc = ZSP_phoenix_events.4.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZSP_phoenix_events.4.a
+		add_popularity = { ideology = communism popularity = 0.15 }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		ZSP_ozymandias = {
+			swap_country_leader_traits = {
+				remove = ZSP_wizard_king
+				add = ZSP_the_demiurge
+				ideology = tyrannical_magocracy
+			}
+		}
+	}
+}
+
+country_event = { # Phoenix overthrows Ozymandias
+	id = ZSP_phoenix_events.5
+	title = ZSP_phoenix_events.5.t
+	desc = ZSP_phoenix_events.5.desc
+	picture = GFX_report_event_ZSP_the_sorcerers_apprentice
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZSP_phoenix_events.5.a
+		retire_character = ZSP_ozymandias
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+		
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_cosmetic_tag = ZSP_aegis
+
+		hidden_effect = {
+			set_popularities = { communism = 1 }
+
+			news_event = ZSP_news_events.4
+
+			country_event = {
+				id = ZSP_phoenix_events.6
+				days = 3
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Undead Horde"
+				disband = no
+			}
+			delete_unit_template_and_units = {
+				division_template = "Monster Horde"
+				disband = no
+			}
+
+			set_technology = { ZSP_monster_taming_tech = 0 }
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		custom_effect_tooltip = ZSP_phoenix_events.5.tt
+	}
+}
+
+country_event = { # Phoenix overthrows Ozymandias
+	id = ZSP_phoenix_events.6
+	title = ZSP_phoenix_events.6.t
+	desc = ZSP_phoenix_events.6.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZSP_phoenix_events.6.a
+		if = {
+			limit = {
+				has_idea = ZSP_slavery
+			}
+			remove_ideas = ZSP_slavery
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+		}
+
+		if = {
+			limit = {
+				has_idea = ZSP_thaumaturgic_workshop
+			}
+			remove_ideas = ZSP_thaumaturgic_workshop
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+		}
+
+		if = {
+			limit = {
+				has_idea = ZSP_control_spell
+			}
+			remove_ideas = ZSP_control_spell
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+		}
+
+		if = {
+			limit = {
+				has_idea = ZSP_monster_armour_spirit
+			}
+			remove_ideas = ZSP_monster_armour_spirit
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+		}
+
+		if = {
+			limit = {
+				has_idea = ZSP_alchemical_boost
+			}
+			remove_ideas = ZSP_alchemical_boost
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+		}
+
+		add_ideas = volunteer_only
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		load_focus_tree = ZSP_slave_revolt_tree
 	}
 }
 
@@ -298,46 +457,26 @@ news_event = { # Shadow War SoonTM NEWS
 	id = ZSP_news_events.3
 	title = ZSP_news_events.3.t
 	desc = ZSP_news_events.3.desc
+	picture = GFX_news_event_056
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = ZSP_news_events.3.a
+	}
+}
+
+news_event = { # Ozymandias dies
+	id = ZSP_news_events.4
+	title = ZSP_news_events.4.t
+	desc = ZSP_news_events.4.desc
 	picture = GFX_news_event_kiev_ruins
 
 	is_triggered_only = yes
 	major = yes
 
 	option = {
-		name = ZSP_news_events.3.a
-		trigger = { 
-			tag = ZSP 
-		}
-	}
-
-	option = {
-		name = ZSP_news_events.3.b
-		trigger = { 
-			NOT = { tag = ZSP }
-		}
-	}
-}
-
-news_event = { # The Great Shadow War NEWS
-	id = ZSP_news_events.4
-	title = ZSP_news_events.4.t
-	desc = ZSP_news_events.4.desc
-	picture = GFX_news_event_056
-
-	is_triggered_only = yes
-	major = yes
-
-	option = {
 		name = ZSP_news_events.4.a
-		trigger = { 
-			tag = ZSP 
-		}
-	}
-
-	option = {
-		name = ZSP_news_events.4.b
-		trigger = { 
-			NOT = { tag = ZSP }
-		}
 	}
 }

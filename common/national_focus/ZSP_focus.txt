@@ -1,4 +1,4 @@
-focus_tree={
+focus_tree = {
 
 	id = ZSP_focus_tree
 
@@ -1202,6 +1202,8 @@ focus_tree={
 					add_idea = ZSP_ultra_authoritarian_governance_3
 				}
 			}
+
+			country_event = ZSP_phoenix_events.3
 		}
 	}
 
@@ -1217,7 +1219,7 @@ focus_tree={
 		cost = 10
 
 		ai_will_do = {
-            base = 10 
+            base = 50 
         }
 		
 		available = {
@@ -1357,7 +1359,7 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 50 
         }
 		
 		available = {
@@ -1481,7 +1483,7 @@ focus_tree={
 		cost = 10
 
 		ai_will_do = {
-            base = 10 
+            base = 50 
         }
 		
 		available = {
@@ -1604,7 +1606,14 @@ focus_tree={
 				}
 				add_core_of = ROOT
 			}
-			hidden_effect = { add_state_core = 1239 }
+			hidden_effect = { 
+				add_state_core = 1239
+
+				country_event = {
+					id = ZSP_phoenix_events.4
+					days = 14
+				}
+			}
 		}
 	}
 
@@ -1778,7 +1787,7 @@ focus_tree={
         }
 		
 		available = {
-			
+			has_character = ZSP_ozymandias
         }
 
 		bypass = {
@@ -1787,28 +1796,375 @@ focus_tree={
 
 		select_effect = {
 			news_event = ZSP_news_events.3
+
+			country_event = {
+				id = ZSP_phoenix_events.5
+				days = 40
+			}
 		}
 
 		completion_reward = {
-			every_other_country = {
-				limit = {
-					capital_scope = { 
-						OR = {
-							is_on_continent = Kuvivalawiki
-							is_on_continent = Monerriame
+			# doesnt actually happen, this is a fakeout
+			effect_tooltip = {
+				every_other_country = {
+					limit = {
+						capital_scope = { 
+							OR = {
+								is_on_continent = Kuvivalawiki
+								is_on_continent = Monerriame
+							}
 						}
+						NOT = { is_ally_with = ROOT }
+						NOT = { has_war_with = ROOT }
 					}
-					NOT = { is_ally_with = ROOT }
-					NOT = { has_war_with = ROOT }
-				}
-				ROOT = {
-					declare_war_on = {
-						target = PREV
-						type = annex_everything
+					ROOT = {
+						declare_war_on = {
+							target = PREV
+							type = annex_everything
+						}
 					}
 				}
 			}
-			hidden_effect = { news_event = ZSP_news_events.4 }
+		}
+	}
+
+}
+
+focus_tree = {
+
+	id = ZSP_slave_revolt_tree
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZSP
+			has_government = fascism
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 3000 y = 300 }
+
+	focus = {
+		id = ZSP_gather_the_remnants
+		icon = GFX_goal_generic_national_unity
+        #prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 11
+		y = 0
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			set_political_power = 0
+			set_stability = 0.5
+			set_war_support = 0
+		}
+	}
+
+	focus = {
+		id = ZSP_restore_local_governance
+		icon = GFX_focus_generic_workers_and_farmers_rise
+        prerequisite = { focus = ZSP_gather_the_remnants }
+		#mutually_exclusive = { focus =  }
+		x = -3
+		y = 1
+		relative_position_id = ZSP_gather_the_remnants
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ZSP_ultra_authoritarian_governance_4
+				add_idea = ZSP_empowered_local_communities
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_republican_cooperation
+		icon = GFX_focus_FIN_a_new_course_for_kokoomus
+        prerequisite = { focus = ZSP_restore_local_governance }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = ZSP_restore_local_governance
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZSP_trust_the_stars
+		icon = GFX_focus_CZE_appeal_to_the_castle
+        prerequisite = { focus = ZSP_restore_local_governance }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZSP_restore_local_governance
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZSP_elbian_cooperation
+		icon = GFX_focus_FIN_strengthen_military_administration
+        prerequisite = { focus = ZSP_restore_local_governance }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = ZSP_restore_local_governance
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			# create elbian divs
+		}
+	}
+
+	focus = {
+		id = ZSP_a_gardenia_for_everycreature
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+		prerequisite = { focus = ZSP_republican_cooperation }
+		prerequisite = { focus = ZSP_trust_the_stars }
+		prerequisite = { focus = ZSP_elbian_cooperation }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = ZSP_restore_local_governance
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZSP_hunt_the_students
+		icon = GFX_goal_generic_major_war
+        prerequisite = { focus = ZSP_gather_the_remnants }
+		#mutually_exclusive = { focus =  }
+		x = 3
+		y = 1
+		relative_position_id = ZSP_gather_the_remnants
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZSP_the_sword
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+        prerequisite = { focus = ZSP_hunt_the_students }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = ZSP_hunt_the_students
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			add_ideas = ZSP_offensive_spirit
+		}
+	}
+
+	focus = {
+		id = ZSP_the_shield
+		icon = GFX_goal_generic_defence
+        prerequisite = { focus = ZSP_hunt_the_students }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZSP_hunt_the_students
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			add_ideas = ZSP_defensive_spirit
+		}
+	}
+
+	focus = {
+		id = ZSP_the_end
+		icon = GFX_focus_wonderweapons
+        prerequisite = { focus = ZSP_the_sword }
+		prerequisite = { focus = ZSP_the_shield }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = ZSP_hunt_the_students
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = ZSP_unlock_spell_tt
+				spell_name = ZSP_i_am_atomic_spell
+			}
+		}
+	}
+
+	focus = {
+		id = ZSP_epilogue
+		icon = GFX_focus_AUS_bring_phonix_insurance_from_the_ashes
+		prerequisite = { focus = ZSP_a_gardenia_for_everycreature }
+        prerequisite = { focus = ZSP_the_end }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 4
+		relative_position_id = ZSP_gather_the_remnants
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			
 		}
 	}
 

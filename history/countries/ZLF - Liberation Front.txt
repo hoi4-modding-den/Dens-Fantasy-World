@@ -35,6 +35,10 @@ add_ideas = {
 	ZLF_staatsbankrott
 }
 
+
+country_event = { id = ZLF_cw_events.8 days = 14 }
+
+
 recruit_character = ZLF_roland_ludovik
 recruit_character = ZLF_alois_rotrose
 recruit_character = ZLF_juergen_zauberthal
@@ -43,12 +47,22 @@ recruit_character = ZLF_wilhelm_gluecksburg
 recruit_character = ZLF_rudolf_zimmermann
 
 recruit_character = ZLF_orlando
+recruit_character = ZLF_marko_hausmann
+recruit_character = ZLF_ekkehart_krippendorff
+recruit_character = ZLF_emilia_noveau
 recruit_character = ZLF_michel_meisendorff
 
 recruit_character = ZLF_hugo_von_fallersleben
 recruit_character = ZLF_rudy_handwerker
+recruit_character = ZLF_miriam_decker
+recruit_character = ZLF_otto_klinge
+recruit_character = ZLF_sonnenuntergang
+recruit_character = ZLF_harrier_du_bois
+recruit_character = ZLF_dagobert_mose
+
 
 set_country_flag = DEN_no_generic_political_advisors
+
 
 set_cosmetic_tag = ZLF_liberation_front
 

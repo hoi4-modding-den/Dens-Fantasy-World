@@ -20,7 +20,7 @@ characters = {
 		}
 
 		field_marshal = {
-            traits = { politically_connected war_hero }
+            traits = { politically_connected war_hero media_personality }
             skill = 3
             attack_skill = 4
             defense_skill = 2
@@ -37,6 +37,23 @@ characters = {
 				small = GFX_portrait_ZLF_alois_rotrose_small
 			}
 		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_alois_rotrose_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_government = democratic
+            }
+            traits = {
+                ZLF_technocratic_tendencies
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
         
 		country_leader = {
 			ideology = socialism
@@ -59,6 +76,23 @@ characters = {
 			traits = {  }
 			expire = "1960.1.1.1"
 		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_juergen_zauberthal_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_government = democratic
+            }
+            traits = {
+                silent_workhorse
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
 	}
 
 	ZLF_gustav_mai = { 
@@ -69,6 +103,26 @@ characters = {
 				small = GFX_portrait_ZLF_gustav_mai_small
 			}
 		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_gustav_mai_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                OR = {
+					has_government = democratic
+					has_government = communism
+				}
+            }
+            traits = {
+                ZLF_centre_marxist_man
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
         
 		country_leader = {
 			ideology = marxism
@@ -85,6 +139,23 @@ characters = {
 				small = GFX_portrait_ZLF_wilhelm_gluecksburg_small
 			}
 		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_wilhelm_gluecksburg_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                NOT = { has_government = communism }
+            }
+            traits = {
+                captain_of_industry
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
         
 		country_leader = {
 			ideology = oligarchism
@@ -101,6 +172,24 @@ characters = {
 				small = GFX_portrait_ZLF_rudolf_zimmermann_small
 			}
 		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_rudolf_zimmermann_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_government = fascism
+            }
+
+            traits = {
+                ZLF_literal_nazi
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
         
 		country_leader = {
 			ideology = gardenian_ultranationalism
@@ -121,6 +210,7 @@ characters = {
 		advisor = {
             slot = political_advisor
             idea_token = ZLF_orlando_token
+			desc = ZLF_orlando_desc
             allowed = {
                 original_tag = ZLF
             }
@@ -132,6 +222,90 @@ characters = {
             }
             traits = {
                 ZLF_land_reform_advocate # switches to ZLF_exiled_social_democrat when in exile
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+	}
+
+	ZLF_marko_hausmann = { 
+		name = ZLF_marko_hausmann_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_marko_hausmann
+				small = GFX_portrait_ZLF_marko_hausmann_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_marko_hausmann_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                OR = {
+					has_government = democratic
+					has_government = communism
+				}
+            }
+            traits = {
+                ZLF_labour_minister
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+	}
+
+	ZLF_ekkehart_krippendorff = { 
+		name = ZLF_ekkehart_krippendorff_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_ekkehart_krippendorff
+				small = GFX_portrait_ZLF_ekkehart_krippendorff_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_ekkehart_krippendorff_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                
+            }
+            traits = {
+                ZLF_foreign_minister
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+	}
+
+	ZLF_emilia_noveau = { 
+		name = ZLF_emilia_noveau_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_emilia_noveau
+				small = GFX_portrait_ZLF_emilia_noveau_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_emilia_noveau_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_completed_focus = ZLF_rosendiplomatie
+            }
+            traits = {
+                ZLF_the_white_rose
             }
             ai_will_do = {
                 base = 5
@@ -183,9 +357,29 @@ characters = {
 				small = GFX_portrait_ZLF_hugo_von_fallersleben_small
 			}
 		}
+
+		advisor = {
+            slot = high_command
+            idea_token = ZLF_hugo_von_fallersleben_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                
+            }
+
+			cost = 100
+
+            traits = {
+                army_logistics_2
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
         
 		corps_commander = {
-            traits = { politically_connected cavalry_officer }
+            traits = { politically_connected cavalry_officer war_hero }
             skill = 2
             attack_skill = 3
             defense_skill = 1
@@ -202,13 +396,229 @@ characters = {
 				small = GFX_portrait_ZLF_rudy_handwerker_small
 			}
 		}
+
+		advisor = {
+            slot = army_chief
+            idea_token = ZLF_rudy_handwerker_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                
+            }
+
+			cost = 100
+
+            traits = {
+                army_chief_organizational_2
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
         
 		corps_commander = {
-            traits = { engineer_officer ranger }
+            traits = { engineer_officer hill_fighter }
             skill = 2
             attack_skill = 2
             defense_skill = 2
             planning_skill = 1
+            logistics_skill = 3
+        }
+	}
+
+	ZLF_miriam_decker = { 
+		name = ZLF_miriam_decker_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_miriam_decker
+				small = GFX_portrait_ZLF_miriam_decker_small
+			}
+		}
+
+		advisor = {
+            slot = army_chief
+            idea_token = ZLF_miriam_decker_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                
+            }
+
+			cost = 100
+
+            traits = {
+                army_chief_offensive_2
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+		corps_commander = {
+            traits = { harsh_leader militias_officer }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 2
+        }
+	}
+
+	ZLF_otto_klinge = { 
+		name = ZLF_otto_klinge_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_otto_klinge
+				small = GFX_portrait_ZLF_otto_klinge_small
+			}
+		}
+
+		advisor = {
+            slot = theorist
+            idea_token = ZLF_otto_klinge_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                
+            }
+
+			cost = 75
+
+            traits = {
+                ZLF_military_theorist
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+		corps_commander = {
+            traits = { infantry_officer }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 3
+        }
+	}
+
+	ZLF_sonnenuntergang = {
+		name = ZLF_sonnenuntergang_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_sonnenuntergang
+				small = GFX_portrait_ZLF_sonnenuntergang_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_sonnenuntergang_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                OR = {
+					has_government = democratic
+					has_government = communism
+				}
+            }
+
+            traits = {
+                ZLF_friendship_student
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+		corps_commander = {
+            traits = { brave war_hero adaptable } # I think I might be tripping, I thought the heat specialist trait was vanilla, but its from EaW
+            skill = 3
+            attack_skill = 4
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 2
+        }
+	}
+
+	ZLF_harrier_du_bois = {
+		name = ZLF_harrier_du_bois_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_harrier_du_bois
+				small = GFX_portrait_ZLF_harrier_du_bois_small
+			}
+		}
+
+		advisor = {
+            slot = high_command
+            idea_token = ZLF_harrier_du_bois_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                
+            }
+
+			cost = 50
+
+            traits = {
+                army_concealment_1
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+		corps_commander = {
+            traits = { brave trait_reckless urban_assault_specialist }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 1
+        }
+	}
+
+	ZLF_dagobert_mose = {
+		name = ZLF_dagobert_mose_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_dagobert_mose
+				small = GFX_portrait_ZLF_dagobert_mose_small
+			}
+		}
+
+		advisor = {
+            slot = high_command
+            idea_token = ZLF_dagobert_mose_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                
+            }
+
+			cost = 100
+
+            traits = {
+                ZLF_police_intendant
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+		corps_commander = {
+            traits = { media_personality urban_assault_specialist }
+            skill = 2
+            attack_skill = 1
+            defense_skill = 2
+            planning_skill = 3
             logistics_skill = 3
         }
 	}

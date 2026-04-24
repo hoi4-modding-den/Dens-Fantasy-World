@@ -1,0 +1,23 @@
+leader_traits = {
+
+    ZLF_raserei = {
+        type = land
+
+        trait_type = personality_trait
+
+        allowed = {
+            FROM = { original_tag = ZLF }
+        }
+
+        new_commander_weight = {
+            factor = 0
+        }
+
+        field_marshal_modifier = {
+            army_speed_factor = 0.15
+            org_loss_when_moving = -0.25
+            wounded_chance_factor = 0.05
+		}
+    }
+
+}

@@ -107,6 +107,24 @@ ideas = {
 
         }
 
+        ZSP_empowered_local_communities = {
+
+            picture = generic_local_self_management
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                industry_free_repair_factor = 0.25
+            }
+
+        }
+
         ZSP_tower_rivalry = {
 
 			picture = chi_wargaming_division
@@ -399,6 +417,42 @@ ideas = {
                 army_speed_factor = 0.05
                 initiative_factor = 0.05
                 experience_loss_factor = -0.1
+            }
+
+        }
+
+        ZSP_offensive_spirit = {
+
+            picture = FRA_scw_intervention_nationalists_focus
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                army_attack_factor = 0.25
+            }
+
+        }
+
+        ZSP_defensive_spirit = {
+
+            picture = YUG_federal_defense_council
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                army_defence_factor = 0.25
             }
 
         }

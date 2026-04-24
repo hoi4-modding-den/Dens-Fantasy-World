@@ -297,12 +297,7 @@ ZTC_balance_of_power_category = {
         icon = generic_fundraising
 
         ai_will_do = {
-            base = 0
-            modifier = {
-                add = 20
-                has_completed_focus = ZTC_a_proper_democracy
-                has_completed_focus = ZTC_secure_council_loyalty
-            }
+            base = 20
         }
 
         cost = 25

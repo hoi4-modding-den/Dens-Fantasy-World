@@ -85,6 +85,11 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/ZTC/portrait_ZTC_piet_smiet_small.png"
     }
 
+	spriteType = {
+		name = "GFX_autonomy_ZTC_federal_city_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_eu_member_icon.dds"
+	}
+
 
 	spriteType = {
 		name = "GFX_trait_ZTC_stadtwache_commander"

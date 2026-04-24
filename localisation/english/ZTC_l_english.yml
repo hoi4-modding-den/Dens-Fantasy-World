@@ -32,6 +32,11 @@
  ZTC_southern_maritime_league_fascism_ADJ: "Hortensian"
 
 
+# AUTONOMIES
+
+ autonomy_ZTC_federal_city: "Federal City"
+
+
 # PARTIES
 
  ZTC_neutrality_party: "Stadtrat - Conservatives"
@@ -45,7 +50,7 @@
  ZCT_democratic_party_socdem: "SPH"
  ZCT_democratic_party_socdem_long: "Social Democratic Party of Hortensia"
  ZTC_communism_party: "HVF"
- ZTC_communism_party_long: "Hortensian People's Front"
+ ZTC_communism_party_long: "Hortensian Peoples' Front"
  ZTC_fascism_party: "Stadtrat - Expansionists"
  ZTC_fascism_party_long: "City Council of Hortensia - Expansionist Faction"
  ZTC_fascism_party_natlib: "NLP"
@@ -118,6 +123,7 @@
  ZTC_banner_army: "Hortensia Banner-Army"
  ZTC_weapons_payments: "Weapon Payments"
  ZTC_unification_costs: "Unification Costs"
+ ZTC_hortensian_banking_nationalised: "Hortensian Assets Seized"
 
  ZTC_swg_concern: "Stadtrat-Wirtschaftsgruppe AG"
 

@@ -11,6 +11,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_idea_ZKN_michael_aurus"
+        texturefile = "gfx/interface/ideas/ZKN/idea_ZKN_michael_aurus.png"
+    }
+
+    spriteType = {
         name = "GFX_portrait_ZKN_yvonne_von_karmesin"
         texturefile = "gfx/leaders/ZKN/portrait_ZKN_yvonne_von_karmesin.png"
     }

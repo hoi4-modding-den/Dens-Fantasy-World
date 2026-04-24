@@ -76,6 +76,36 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_portrait_ZLF_marko_hausmann"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_marko_hausmann.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_marko_hausmann_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_marko_hausmann_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_ekkehart_krippendorff"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_ekkehart_krippendorff.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_ekkehart_krippendorff_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_ekkehart_krippendorff_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_emilia_noveau"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_emilia_noveau.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_emilia_noveau_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_emilia_noveau_small.png"
+    }
+
+    spriteType = {
         name = "GFX_portrait_ZLF_michel_meisendorff"
         texturefile = "gfx/leaders/ZLF/portrait_ZLF_michel_meisendorff.png"
     }
@@ -104,6 +134,62 @@ spriteTypes = {
         name = "GFX_portrait_ZLF_rudy_handwerker_small"
         texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_rudy_handwerker_small.png"
     }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_miriam_decker"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_miriam_decker.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_miriam_decker_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_miriam_decker_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_otto_klinge"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_otto_klinge.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_otto_klinge_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_otto_klinge_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_sonnenuntergang"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_sonnenuntergang.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_sonnenuntergang_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_sonnenuntergang_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_harrier_du_bois"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_harrier_du_bois.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_harrier_du_bois_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_harrier_du_bois_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_dagobert_mose"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_dagobert_mose.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_dagobert_mose_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_dagobert_mose_small.png"
+    }
+
+
+    spriteType = {
+		name = "GFX_trait_ZLF_raserei"
+		texturefile = "gfx/interface/traits/scientist_traits/scientist_trait_electronics_specialist.dds"
+	}
 
 
     SpriteType = {
@@ -138,8 +224,18 @@ spriteTypes = {
 
 
     spriteType = {
-		name = "GFX_report_event_XLF_esperantists"
+		name = "GFX_report_event_ZLF_esperantists"
 		texturefile = "gfx/event_pictures/ZLF_report_event_esperantists.png"
+	}
+
+    spriteType = {
+		name = "GFX_report_event_ZLF_orlando_furioso"
+		texturefile = "gfx/event_pictures/ZLF_report_event_orlando_furioso.png"
+	}
+
+    spriteType = {
+		name = "GFX_report_event_ZLF_kleinbahn"
+		texturefile = "gfx/event_pictures/ZLF_report_event_ruegensche_kleinbahn.png"
 	}
 
 }

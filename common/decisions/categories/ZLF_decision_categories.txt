@@ -13,4 +13,39 @@ ZLF_civil_war_cat = {
 	visible = {
 		has_civil_war = yes
 	}
+
 }
+
+ZLF_magic_polygon_cat = {
+
+	icon = generic_economy
+	
+	allowed = {
+		original_tag = ZLF
+	}
+
+	priority = 100 
+
+	visible_when_empty = yes
+
+	visible = {
+		has_completed_focus = ZLF_magic_polygon_of_economics
+		NOT = { has_country_flag = ZLF_magic_polygon_achieved }
+	}
+}
+
+ZLF_regional_developments_cat = {
+
+	icon = generic_economy
+	
+	allowed = {
+		original_tag = ZLF
+	}
+
+	priority = 50
+
+	visible = {
+		has_completed_focus = ZLF_formalise_the_federal_states
+	}
+}
+

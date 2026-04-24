@@ -13,7 +13,7 @@ focus_tree={
 	default = no
 	reset_on_civilwar = no
 
-	continuous_focus_position = { x = 3000 y = 300 }
+	continuous_focus_position = { x = 3000 y = 100 }
 
 	focus = {
 		id = ZLF_the_edelweiss_revolution_begins
@@ -77,7 +77,7 @@ focus_tree={
         }
 
 		bypass = {
-			
+			has_civil_war = no
         }
 		
 		completion_reward = {
@@ -91,6 +91,7 @@ focus_tree={
             custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = ZLF_gain_elbian_support_tt
+			set_country_flag = ZLF_elbian_support_gained
 		}
 	}
 
@@ -137,7 +138,7 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 0
         }
 		
 		available = {
@@ -232,7 +233,7 @@ focus_tree={
 
     focus = {
 		id = ZLF_buy_foreign_guns
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_generic_arms_trade
         prerequisite = { focus = ZLF_the_edelweiss_revolution_begins }
 		#mutually_exclusive = { focus =  }
 		x = 4
@@ -250,7 +251,7 @@ focus_tree={
         }
 
 		bypass = {
-			
+			has_civil_war = no
         }
 		
 		completion_reward = {
@@ -327,6 +328,10 @@ focus_tree={
 			country_event = {
 				id = ZLF_post_cw_events.1
 			}
+			country_event = {
+				id = ZLF_post_cw_events.8
+				days = 10
+			}
 			if = {
 				limit = { has_template = "International Republican Brigade" }
 				country_event = {
@@ -344,19 +349,19 @@ focus_tree={
 		}
 	}
 
-	focus = { # "common" system used in German economics classes
+	focus = { # system used in German economics classes
 		id = ZLF_magic_polygon_of_economics
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_CZE_coalition_building
         prerequisite = { focus = ZLF_dawn_of_the_republic }
 		#mutually_exclusive = { focus =  }
-		x = -10
+		x = -11
 		y = 1
 		relative_position_id = ZLF_dawn_of_the_republic
 		
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 20 
         }
 		
 		available = {
@@ -368,23 +373,26 @@ focus_tree={
         }
 		
 		completion_reward = {
-            # unlocks decision category
+            unlock_decision_category_tooltip = ZLF_magic_polygon_cat
+
+			set_variable = { ZLF_unemployment_rate = 0.42 }
+			set_variable = { ZLF_inflation_rate = -1.34 }
 		}
 	}
 
 	focus = {
 		id = ZLF_trust_in_marx
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_BEL_the_grand_place
         prerequisite = { focus = ZLF_magic_polygon_of_economics }
 		mutually_exclusive = { focus = ZLF_trust_in_cains }
-		x = -4
+		x = -5
 		y = 1
 		relative_position_id = ZLF_magic_polygon_of_economics
 		
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 20 
         }
 		
 		available = {
@@ -396,20 +404,40 @@ focus_tree={
         }
 		
 		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.1 }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
             swap_ideas = {
 				remove_idea = ZLF_economic_downturn
 				add_idea = ZLF_marxian_economic_recovery
+			}
+
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							has_completed_focus = ZLF_reformist_spirit
+							has_completed_focus = ZLF_social_democratic_activism
+							has_completed_focus = ZLF_nationalisation_program
+						}
+					}
+					country_event = {
+						id = ZLF_events.5
+						days = 90
+					}
+				}
 			}
 		}
 	}
 
 	focus = {
 		id = ZLF_nationalise_mining_companies
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_mining_industry
         prerequisite = { focus = ZLF_trust_in_marx }
 		#mutually_exclusive = { focus =  }
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = ZLF_trust_in_marx
 		
 		cost = 10
@@ -428,12 +456,19 @@ focus_tree={
 		
 		completion_reward = {
             add_ideas = ZLF_nationalised_mining_industry
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_to_variable = {
+				ZLF_unemployment_rate = -0.15
+				tooltip = ZLF_unployment_rate_tt
+			}
 		}
 	}
 
 	focus = {
 		id = ZLF_nationalise_the_banks
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_ETH_adopt_the_lira
         prerequisite = { focus = ZLF_trust_in_marx }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -443,7 +478,7 @@ focus_tree={
 		cost = 10
 
 		ai_will_do = {
-            base = 10 
+            base = 20
         }
 		
 		available = {
@@ -456,16 +491,27 @@ focus_tree={
 		
 		completion_reward = {
             add_ideas = ZLF_nationalised_banks
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_to_variable = {
+				ZLF_inflation_rate = 0.5
+				tooltip = ZLF_inflation_rate_tt
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			activate_mission = ZLF_monetary_control
 		}
 	}
 
 	focus = {
 		id = ZLF_transformation_of_the_economy
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_soviet_construction
         prerequisite = { focus = ZLF_trust_in_marx }
 		#mutually_exclusive = { focus =  }
-		x = 3
-		y = 1
+		x = 2
+		y = 2
 		relative_position_id = ZLF_trust_in_marx
 		
 		cost = 10
@@ -505,18 +551,25 @@ focus_tree={
 					instant_build = yes
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_to_variable = {
+				ZLF_unemployment_rate = -0.15
+				tooltip = ZLF_unployment_rate_tt
+			}
 		}
 	}
 
 	focus = {
 		id = ZLF_the_central_economy
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_communist_industry
         prerequisite = { focus = ZLF_nationalise_mining_companies }
 		prerequisite = { focus = ZLF_nationalise_the_banks }
 		prerequisite = { focus = ZLF_transformation_of_the_economy }
 		#mutually_exclusive = { focus =  }
 		x = 1
-		y = 2
+		y = 3
 		relative_position_id = ZLF_trust_in_marx
 		
 		cost = 10
@@ -526,7 +579,7 @@ focus_tree={
         }
 		
 		available = {
-			
+			has_country_flag = ZLF_magic_polygon_achieved
         }
 
 		bypass = {
@@ -543,17 +596,17 @@ focus_tree={
 
 	focus = {
 		id = ZLF_trust_in_cains
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
         prerequisite = { focus = ZLF_magic_polygon_of_economics }
 		mutually_exclusive = { focus = ZLF_trust_in_marx }
-		x = 4
+		x = 5
 		y = 1
 		relative_position_id = ZLF_magic_polygon_of_economics
 		
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 25
         }
 		
 		available = {
@@ -569,16 +622,177 @@ focus_tree={
 				remove_idea = ZLF_economic_downturn
 				add_idea = ZLF_cainsian_economic_recovery
 			}
+
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							has_completed_focus = ZLF_reformist_spirit
+							has_completed_focus = ZLF_social_democratic_activism
+							has_completed_focus = ZLF_nationalisation_program
+						}
+					}
+					country_event = {
+						id = ZLF_events.5
+						days = 90
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_synthetic_rubber_plants
+		icon = GFX_focus_generic_rubber
+        prerequisite = { focus = ZLF_trust_in_marx focus = ZLF_trust_in_cains }
+		#mutually_exclusive = { focus =  }
+		x = -5
+		y = 1
+		relative_position_id = ZLF_trust_in_cains
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			controls_state = 855
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            if = {
+				limit = { NOT = { has_tech = synth_oil_experiments } }
+				set_technology = { synth_oil_experiments = 1 }
+				
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			855 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_implement_worker_visas
+		icon = GFX_focus_JAP_draft_the_showa_constitution
+        prerequisite = { focus = ZLF_synthetic_rubber_plants }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = ZLF_synthetic_rubber_plants
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			every_owned_state = {
+				random_select_amount = 4
+				limit = {
+					is_core_of = ROOT
+					is_controlled_by = ROOT
+				}
+				add_manpower = 5000
+				add_extra_state_shared_building_slots = 1
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+            add_to_variable = {
+				ZLF_unemployment_rate = -0.1
+				tooltip = ZLF_unployment_rate_tt
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_research_grants
+		icon = GFX_focus_research2
+        prerequisite = { focus = ZLF_synthetic_rubber_plants }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZLF_synthetic_rubber_plants
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            add_tech_bonus = {
+				name = ZLF_research_grants
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_open_free_university_of_gardenia
+		icon = GFX_focus_generic_university_2
+        prerequisite = { focus = ZLF_synthetic_rubber_plants }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = ZLF_synthetic_rubber_plants
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            add_research_slot = 1
 		}
 	}
 
 	focus = {
 		id = ZLF_gemeindebau
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_low_cost_housing
         prerequisite = { focus = ZLF_trust_in_cains }
 		#mutually_exclusive = { focus =  }
-		x = -3
-		y = 1
+		x = -2
+		y = 2
 		relative_position_id = ZLF_trust_in_cains
 		
 		cost = 10
@@ -602,12 +816,19 @@ focus_tree={
 				}
 				add_extra_state_shared_building_slots = 1
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_to_variable = {
+				ZLF_unemployment_rate = -0.15
+				tooltip = ZLF_unployment_rate_tt
+			}
 		}
 	}
 
 	focus = {
 		id = ZLF_large_scale_public_works
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_public_works
         prerequisite = { focus = ZLF_trust_in_cains }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -630,22 +851,29 @@ focus_tree={
 		
 		completion_reward = {
             add_ideas = ZLF_arbeitsschaffungsprogramme
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_to_variable = {
+				ZLF_unemployment_rate = -0.15
+				tooltip = ZLF_unployment_rate_tt
+			}
 		}
 	}
 
 	focus = {
 		id = ZLF_deficit_spending
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_industry_investment
         prerequisite = { focus = ZLF_trust_in_cains }
 		#mutually_exclusive = { focus =  }
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = ZLF_trust_in_cains
 		
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 20
         }
 		
 		available = {
@@ -661,18 +889,29 @@ focus_tree={
 				idea = ZLF_deficit_spending_idea
 				days = 365
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_to_variable = {
+				ZLF_inflation_rate = 0.75
+				tooltip = ZLF_inflation_rate_tt
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			activate_mission = ZLF_monetary_control
 		}
 	}
 
 	focus = {
 		id = ZLF_the_labour_union_economy
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_full_employment
 		prerequisite = { focus = ZLF_gemeindebau }
         prerequisite = { focus = ZLF_large_scale_public_works }
 		prerequisite = { focus = ZLF_deficit_spending }
 		#mutually_exclusive = { focus =  }
 		x = -1
-		y = 2
+		y = 3
 		relative_position_id = ZLF_trust_in_cains
 		
 		cost = 10
@@ -682,7 +921,7 @@ focus_tree={
         }
 		
 		available = {
-			
+			has_country_flag = ZLF_magic_polygon_achieved
         }
 
 		bypass = {
@@ -699,7 +938,7 @@ focus_tree={
 
 	focus = {
 		id = ZLF_national_democratic_majority
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_support_democracy
         prerequisite = { focus = ZLF_dawn_of_the_republic }
 		mutually_exclusive = { focus = ZLF_socialist_party_majority focus = ZLF_radical_party_majority }
 		x = -2
@@ -727,7 +966,7 @@ focus_tree={
 
 	focus = {
 		id = ZLF_socialist_party_majority
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_social_democracy
         prerequisite = { focus = ZLF_dawn_of_the_republic }
 		mutually_exclusive = { focus = ZLF_national_democratic_majority focus = ZLF_radical_party_majority }
 		x = 0
@@ -755,7 +994,7 @@ focus_tree={
 
 	focus = {
 		id = ZLF_radical_party_majority
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_support_communism
         prerequisite = { focus = ZLF_dawn_of_the_republic }
 		mutually_exclusive = { focus = ZLF_national_democratic_majority focus = ZLF_socialist_party_majority }
 		x = 2
@@ -783,7 +1022,7 @@ focus_tree={
 
 	focus = {
 		id = ZLF_fortify_the_republic
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_fortify_city
         prerequisite = { focus = ZLF_national_democratic_majority }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -805,13 +1044,13 @@ focus_tree={
         }
 		
 		completion_reward = {
-            
+            add_ideas = ZLF_defense_of_gardenia
 		}
 	}
 
 	focus = {
 		id = ZLF_expand_the_banners
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
         prerequisite = { focus = ZLF_national_democratic_majority focus = ZLF_socialist_party_majority }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -842,7 +1081,7 @@ focus_tree={
 
 	focus = {
 		id = ZLF_labour_union_cooperation
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_worker_administration
         prerequisite = { focus = ZLF_socialist_party_majority focus = ZLF_radical_party_majority }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -864,13 +1103,13 @@ focus_tree={
         }
 		
 		completion_reward = {
-            
+            add_ideas = ZLF_joint_labour_act
 		}
 	}
 
 	focus = {
 		id = ZLF_establish_the_red_guard
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
         prerequisite = { focus = ZLF_radical_party_majority }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -892,15 +1131,17 @@ focus_tree={
         }
 		
 		completion_reward = {
-            
+            swap_ideas = {
+				remove_idea = ZLF_edelweiss_banner_2
+				add_idea = ZLF_red_guards
+			}
 		}
 	}
 
 	focus = {
 		id = ZLF_reformist_spirit
-		icon = GFX_focus_PLACEHOLDER
-        prerequisite = { focus = ZLF_national_democratic_majority }
-		prerequisite = { focus = ZLF_fortify_the_republic focus = ZLF_expand_the_banners }
+		icon = GFX_focus_SWE_attack_landsorganisationen
+		prerequisite = { focus = ZLF_fortify_the_republic }
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 2
@@ -921,15 +1162,33 @@ focus_tree={
         }
 		
 		completion_reward = {
-            
+			swap_ideas = {
+				remove_idea = ZLF_defense_of_gardenia
+				add_idea = ZLF_defense_of_gardenia_2
+			}
+
+            hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							has_completed_focus = ZLF_trust_in_marx
+							has_completed_focus = ZLF_trust_in_cains
+						}
+					}
+					country_event = {
+						id = ZLF_events.5
+						days = 90
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ZLF_social_democratic_activism
-		icon = GFX_focus_PLACEHOLDER
-        prerequisite = { focus = ZLF_socialist_party_majority }
-		prerequisite = { focus = ZLF_expand_the_banners focus = ZLF_labour_union_cooperation }
+		icon = GFX_focus_ARG_defense_and_democracy
+        prerequisite = { focus = ZLF_expand_the_banners }
+		prerequisite = { focus = ZLF_labour_union_cooperation }
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 2
@@ -950,15 +1209,34 @@ focus_tree={
         }
 		
 		completion_reward = {
-            
+			swap_ideas = {
+				remove_idea = ZLF_edelweiss_banner_3
+				add_idea = ZLF_edelweiss_banner_4
+			}
+
+			unlock_decision_tooltip = ZLF_democracy_propaganda_machine
+
+            hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							has_completed_focus = ZLF_trust_in_marx
+							has_completed_focus = ZLF_trust_in_cains
+						}
+					}
+					country_event = {
+						id = ZLF_events.5
+						days = 90
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ZLF_nationalisation_program
-		icon = GFX_focus_PLACEHOLDER
-        prerequisite = { focus = ZLF_radical_party_majority }
-		prerequisite = { focus = ZLF_labour_union_cooperation focus = ZLF_establish_the_red_guard }
+		icon = GFX_goal_generic_soviet_construction
+        prerequisite = { focus = ZLF_labour_union_cooperation focus = ZLF_establish_the_red_guard }
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 2
@@ -979,13 +1257,317 @@ focus_tree={
         }
 		
 		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.2 }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+            hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							has_completed_focus = ZLF_trust_in_marx
+							has_completed_focus = ZLF_trust_in_cains
+						}
+					}
+					country_event = {
+						id = ZLF_events.5
+						days = 90
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_military_modernisation_committee
+		icon = GFX_focus_chi_army_reform
+        prerequisite = { focus = ZLF_reformist_spirit focus = ZLF_social_democratic_activism focus = ZLF_nationalisation_program }
+		#mutually_exclusive = { focus =  }
+		x = -3
+		y = 1
+		relative_position_id = ZLF_social_democratic_activism
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            add_ideas = ZLF_milmodkom
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			country_event = ZLF_events.13
+		}
+	}
+
+	focus = {
+		id = ZLF_reform_the_airship_fleet
+		icon = GFX_focus_ZTC_zeppelin
+        prerequisite = { focus = ZLF_military_modernisation_committee }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = ZLF_military_modernisation_committee
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            air_experience = 50
+		}
+	}
+
+	focus = {
+		id = ZLF_utilise_civil_war_experience
+		icon = GFX_focus_generic_limited_social_mobilization
+        prerequisite = { focus = ZLF_military_modernisation_committee }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZLF_military_modernisation_committee
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = ZLF_milmodkom
+				add_idea = ZLF_milmodkom_2
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_staatssicherheitsdienst
+		icon = GFX_focus_generic_secret_service_agency
+        prerequisite = { focus = ZLF_reformist_spirit focus = ZLF_social_democratic_activism focus = ZLF_nationalisation_program }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZLF_social_democratic_activism
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10
+        }
+		
+		available = {
+			has_dlc = "La Resistance"
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            custom_effect_tooltip = ZLF_staatssicherheitsdienst_tt
+			hidden_effect = {
+				create_intelligence_agency = {
+					name = "Staatssicherheitsdienst Gardenien"
+					icon = GFX_intelligence_agency_logo_ARG_intelligence
+				}
+			}
+			upgrade_intelligence_agency = upgrade_passive_defense
+		}
+	}
+
+	focus = {
+		id = ZLF_rathenau_affair
+		icon = GFX_focus_SWE_organize_a_putsch
+        prerequisite = { focus = ZLF_reformist_spirit focus = ZLF_social_democratic_activism focus = ZLF_nationalisation_program }
+		#mutually_exclusive = { focus =  }
+		x = 3
+		y = 1
+		relative_position_id = ZLF_social_democratic_activism
+		
+		cost = 0
+
+		ai_will_do = {
+            base = 0
+        }
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZLF_rathenau_affair_trigger
+				always = no
+			}
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
             
 		}
 	}
 
-	focus = { # name related the book 'Internationale Beziehungen' by Ekkehart Krippendorff (good book, can recommend, had to learn it for school)
+	focus = {
+		id = ZLF_left_liberal_coalition_formed
+		icon = GFX_focus_generic_the_giant_wakes
+        prerequisite = { focus = ZLF_rathenau_affair }
+		mutually_exclusive = { focus = ZLF_government_holds }
+		x = -2
+		y = 1
+		relative_position_id = ZLF_rathenau_affair
+		
+		cost = 0
+
+		ai_will_do = {
+            base = 0
+        }
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZLF_left_liberal_coalition_formed_tt
+				always = no
+			}
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = ZLF_progressive_platform
+		icon = GFX_focus_AUS_courting_the_princess_of_industry
+        prerequisite = { focus = ZLF_left_liberal_coalition_formed }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = ZLF_left_liberal_coalition_formed
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = ZLF_invite_industrialists
+		icon = GFX_focus_generic_industrialists
+        prerequisite = { focus = ZLF_left_liberal_coalition_formed }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZLF_left_liberal_coalition_formed
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = ZLF_government_holds
+		icon = GFX_focus_SWE_socialist_reforms
+        prerequisite = { focus = ZLF_rathenau_affair }
+		mutually_exclusive = { focus = ZLF_left_liberal_coalition_formed }
+		x = 2
+		y = 1
+		relative_position_id = ZLF_rathenau_affair
+		
+		cost = 0
+
+		ai_will_do = {
+            base = 0
+        }
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZLF_government_holds_tt
+				always = no
+			}
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = { # name related the book 'International Relations as a Social Science' by Ekkehart Krippendorff (good book, can recommend, had to learn it for school)
 		id = ZLF_theories_of_international_relations
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_GER_strengthen_the_proletarian_international
         prerequisite = { focus = ZLF_dawn_of_the_republic }
 		#mutually_exclusive = { focus =  }
 		x = 10
@@ -999,7 +1581,7 @@ focus_tree={
         }
 		
 		available = {
-			
+			is_subject = no
         }
 
 		bypass = {
@@ -1007,13 +1589,29 @@ focus_tree={
         }
 		
 		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction_from_template = {
+				template = ZLF_faction_template_socialists
+				name = ZLF_internationalist_system_name
+				icon = GFX_faction_logo_generic_17
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
             add_ideas = ZLF_intervention_corps
+
+			hidden_effect = {
+				country_event = {
+					id = ZLF_events.1
+					days = 12
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ZLF_formalise_the_federal_states
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_NOR_approach_kretsen
         prerequisite = { focus = ZLF_theories_of_international_relations }
 		#mutually_exclusive = { focus =  }
 		x = -4
@@ -1035,16 +1633,16 @@ focus_tree={
         }
 		
 		completion_reward = {
-            
+            unlock_decision_category_tooltip = ZLF_regional_developments_cat
 		}
 	}
 
 	focus = {
-		id = ZLF_elbian_autonomy
-		icon = GFX_focus_PLACEHOLDER
+		id = ZLF_equalisation_of_races
+		icon = GFX_focus_generic_stalinist_industry
         prerequisite = { focus = ZLF_formalise_the_federal_states }
-		#mutually_exclusive = { focus =  }
-		x = 0
+		mutually_exclusive = { focus = ZLF_elbian_autonomy }
+		x = -1
 		y = 1
 		relative_position_id = ZLF_formalise_the_federal_states
 		
@@ -1064,10 +1662,51 @@ focus_tree={
 					}
 				}
 			}
+			NOT = { has_active_mission = ZLF_establish_elbian_autonomy_timer }
+			OR = {
+				has_country_flag = ZLF_elbian_insurrection_happened
+				has_government = communism
+			}
         }
+		
+		completion_reward = {
+			add_stability = -0.15
 
-		bypass = {
-			has_country_flag = ZLF_elbian_insurrection_happened
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+            every_state = {
+				limit = { has_dynamic_modifier = { modifier = ZLF_elbian_lands } }
+				remove_dynamic_modifier = { modifier = ZLF_elbian_lands }
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_elbian_autonomy
+		icon = GFX_focus_generic_self_management
+        prerequisite = { focus = ZLF_formalise_the_federal_states }
+		mutually_exclusive = { focus = ZLF_equalisation_of_races }
+		x = 1
+		y = 1
+		relative_position_id = ZLF_formalise_the_federal_states
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 50 
+        }
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZLF_controls_all_elbian_lands_tt
+				all_state = {
+					OR = {
+						NOT = { has_dynamic_modifier = { modifier = ZLF_elbian_lands } }
+						is_controlled_by = ROOT
+					}
+				}
+			}
+			NOT = { has_country_flag = ZLF_elbian_insurrection_happened }
         }
 		
 		completion_reward = {
@@ -1116,12 +1755,16 @@ focus_tree={
 					add_dynamic_modifier = { modifier = ZLF_elbian_autonomy_3 scope = ROOT }
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			unlock_decision_tooltip = ZLF_negotiate_erzgebirge_mining_rights
 		}
 	}
 
 	focus = {
 		id = ZLF_northern_intervention
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_license_production
         prerequisite = { focus = ZLF_theories_of_international_relations }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -1136,38 +1779,22 @@ focus_tree={
 		
 		available = {
 			has_war = no
-			custom_trigger_tooltip = {
-				tooltip = ZLF_northern_intervention_tt
-				OR = {
-					ZFA = {
-						has_war_with_wargoal_against = {
-							target = ZFS
-							type = civil_war
-						}
-					}
-					ZFK = {
-						has_war_with_wargoal_against = {
-							target = ZFS
-							type = civil_war
-						}
-					}
-					ZFB = {
-						has_war_with_wargoal_against = {
-							target = ZFS
-							type = civil_war
-						}
-					}
-				}
+			if = {
+				limit = { has_government = communism }
+				country_exists = ZFA
+			}
+			else = {
+				country_exists = ZFS
 			}
         }
 
 		bypass = {
 			if = {
 				limit = { has_government = communism }
-				ZFA = { exists = no }
+				NOT = { country_exists = ZFA }
 			}
 			else = {
-				ZFS = { exists = no }
+				NOT = { country_exists = ZKC }
 			}
         }
 		
@@ -1183,6 +1810,7 @@ focus_tree={
 					id = ZFA
 					value = 2000
 				}
+				ZFA = { country_event = ZLF_events.4 }
 			}
 			else = {
 				add_relation_rule_override = {
@@ -1194,13 +1822,14 @@ focus_tree={
 					id = ZFS
 					value = 2000
 				}
+				ZFS = { country_event = ZLF_events.4 }
 			}
 		}
 	}
 
 	focus = {
 		id = ZLF_korelian_intervention
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_license_production
         prerequisite = { focus = ZLF_theories_of_international_relations }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -1215,20 +1844,11 @@ focus_tree={
 		
 		available = {
 			has_war = no
-			custom_trigger_tooltip = {
-				tooltip = ZLF_korelian_intervention_tt
-				count_triggers = {
-					amount = 2
-					country_exists = ZKC
-					country_exists = ZKO
-					country_exists = ZKU
-					#country_exists = ZKL
-				}
-			}
+			country_exists = ZKC
         }
 
 		bypass = {
-			
+			NOT = { country_exists = ZKC }
         }
 		
 		completion_reward = {
@@ -1237,45 +1857,35 @@ focus_tree={
 					country_exists = ZKL
 					ZKL = { has_government = democratic }
 				}
+				add_relation_rule_override = {
+					target = ZKL
+					can_send_volunteers = yes
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ZKL
+					value = 2000
+				}
 				ZKL = {
 					country_event = ZLF_events.4
 				}
-				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 			if = {
 				limit = {
 					country_exists = ZKC
-					has_government = communism
+				}
+				add_relation_rule_override = {
+					target = ZKC
+					can_send_volunteers = yes
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ZKC
+					value = 2000
 				}
 				ZKC = {
 					country_event = ZLF_events.4
 				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-			}
-			if = {
-				limit = {
-					country_exists = ZKO
-					NOT = { has_government = communism }
-				}
-				ZKO = {
-					country_event = ZLF_events.4
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-			}
-			if = {
-				limit = {
-					country_exists = ZKO
-					has_government = communism
-				}
-				send_embargo = ZKO
-				custom_effect_tooltip = generic_skip_one_line_tt
-			}
-			if = {
-				limit = {
-					country_exists = ZKU
-				}
-				send_embargo = ZKU
-				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 			
 		}
@@ -1283,7 +1893,7 @@ focus_tree={
 
 	focus = {
 		id = ZLF_expand_the_cooperation_league
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = ZLF_northern_intervention focus = ZLF_korelian_intervention }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -1298,6 +1908,7 @@ focus_tree={
 		
 		available = {
 			has_war = no
+			NOT = { has_idea = ZLF_reconstruction }
         }
 
 		bypass = {
@@ -1313,11 +1924,287 @@ focus_tree={
 	}
 
 	focus = {
-		id = ZLF_secure_alstroemeria
+		id = ZLF_support_hortensia
 		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = ZLF_expand_the_cooperation_league }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = ZLF_expand_the_cooperation_league
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_subject = no
+        }
+
+		bypass = {
+			OR = {
+				NOT = { country_exists = ZTC }
+				is_ally_with = ZTC
+			}
+        }
+		
+		completion_reward = {
+            ZTC = {
+				
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_union_with_hortensia
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = ZLF_support_hortensia }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZLF_support_hortensia
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_subject = no
+			ZTC = {
+				exists = yes
+				is_subject = no
+				is_ally_with = ROOT
+			}
+        }
+
+		bypass = {
+			OR = {
+				NOT = { country_exists = ZTC }
+				has_subject = ZTC
+			}
+        }
+		
+		completion_reward = {
+            ZTC = {
+				country_event = ZLF_events.10
+			}
+
+			custom_effect_tooltip = if_they_accept_tt
+
+			effect_tooltip = {
+				set_autonomy = {
+					target = ZTC
+					autonomous_state = autonomy_ZTC_federal_city
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			custom_effect_tooltip = ZLF_events.10.tt
+		}
+	}
+
+	focus = {
+		id = ZLF_full_interventionism_in_the_north
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = ZLF_expand_the_cooperation_league }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZLF_expand_the_cooperation_league
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			has_war = no
+			is_subject = no
+			if = {
+				limit = { has_government = communism }
+				NOT = { country_exists = ZFA }
+			}
+			else = {
+				NOT = { country_exists = ZKC }
+			}
+        }
+
+		bypass = {
+			all_other_country = {
+				OR = {
+					AND = {
+						NOT = { original_tag = ZFA }
+						NOT = { original_tag = ZFS }
+						NOT = { original_tag = ZFB }
+						NOT = { original_tag = ZFK }
+						NOT = { original_tag = ZFN }
+					}
+					is_ally_with = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+        }
+
+		will_lead_to_war_with = ZFA
+		will_lead_to_war_with = ZFS
+		will_lead_to_war_with = ZFB
+		will_lead_to_war_with = ZFK
+		will_lead_to_war_with = ZFN
+		
+		completion_reward = {
+            every_other_country = {
+				limit = {
+					OR = {
+						original_tag = ZFA
+						original_tag = ZFS
+						original_tag = ZFB
+						original_tag = ZFK
+						original_tag = ZFN
+					}
+					NOT = { is_ally_with = ROOT }
+					NOT = { has_war_with = ROOT }
+				}
+				ROOT = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_consolidate_balekelemi
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = ZLF_full_interventionism_in_the_north }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZLF_full_interventionism_in_the_north
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_subject = no
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = ZLF_full_interventionism_in_korelia
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = ZLF_expand_the_cooperation_league }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+		relative_position_id = ZLF_expand_the_cooperation_league
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			has_war = no
+			is_subject = no
+			NOT = { country_exists = ZKC }
+        }
+
+		bypass = {
+			all_other_country = {
+				OR = {
+					AND = {
+						NOT = { original_tag = ZKC }
+						NOT = { original_tag = ZKO }
+						NOT = { original_tag = ZKU }
+						NOT = { original_tag = ZKL }
+					}
+					is_ally_with = ROOT
+					has_war_with = ROOT
+					exists = no
+				}
+			}
+        }
+
+		will_lead_to_war_with = ZKC
+		will_lead_to_war_with = ZKO
+		will_lead_to_war_with = ZKU
+		will_lead_to_war_with = ZKL
+		
+		completion_reward = {
+            every_other_country = {
+				limit = {
+					OR = {
+						original_tag = ZKC
+						original_tag = ZKO
+						original_tag = ZKU
+						original_tag = ZKL
+					}
+					NOT = { is_ally_with = ROOT }
+					NOT = { has_war_with = ROOT }
+				}
+				ROOT = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_consolidate_korelia
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = ZLF_full_interventionism_in_korelia }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZLF_full_interventionism_in_korelia
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_subject = no
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = ZLF_secure_alstroemeria
+		icon = GFX_goal_generic_more_territorial_claims
         prerequisite = { focus = ZLF_theories_of_international_relations }
 		#mutually_exclusive = { focus =  }
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = ZLF_theories_of_international_relations
 		
@@ -1347,18 +2234,93 @@ focus_tree={
 		completion_reward = {
 			create_wargoal = {
 				target = ZSP
-				type = annex_everything
+				type = take_core_state
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_rosendiplomatie
+		icon = GFX_focus_PER_strengthen_the_tudeh
+        prerequisite = { focus = ZLF_theories_of_international_relations }
+		mutually_exclusive = { focus = ZLF_pragmatism_in_the_foreign_office }
+		x = 5
+		y = 2
+		relative_position_id = ZLF_theories_of_international_relations
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_subject = no
+        }
+		
+		completion_reward = {
+			every_other_country = {
+				limit = { 
+					OR = {
+						AND = {
+							has_government = communism
+							NOT = { has_country_leader_ideology = stalinism }
+						}
+						has_country_leader_ideology = socialism
+						has_country_leader_ideology = neorevisionism
+					}
+				}
+				reverse_add_opinion_modifier = {
+					modifier = ZLF_rosendiplomatie_modifier
+					target = ROOT
+				}
+			}
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = ZLF_emilia_noveau_token
+		}
+	}
+
+	focus = {
+		id = ZLF_pragmatism_in_the_foreign_office
+		icon = GFX_goal_generic_territory_or_war
+        prerequisite = { focus = ZLF_theories_of_international_relations }
+		mutually_exclusive = { focus = ZLF_rosendiplomatie }
+		x = 10
+		y = 2
+		relative_position_id = ZLF_theories_of_international_relations
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_subject = no
+        }
+		
+		completion_reward = {
+            every_other_country = {
+				limit = { has_government = ROOT }
+				reverse_add_opinion_modifier = {
+					modifier = ZLF_pragmatic_cooperation_modifier
+					target = ROOT
+				}
 			}
 		}
 	}
 
 	focus = {
 		id = ZLF_export_the_revolution
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_focus_fra_revolution_utmost
         prerequisite = { focus = ZLF_secure_alstroemeria }
+		prerequisite = { focus = ZLF_rosendiplomatie focus = ZLF_pragmatism_in_the_foreign_office }
 		#mutually_exclusive = { focus =  }
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = ZLF_secure_alstroemeria
 		
 		cost = 5
@@ -1389,8 +2351,176 @@ focus_tree={
 		completion_reward = {
             create_wargoal = {
 				target = XCE
-				type = topple_government
+				type = annex_everything
 			}
+		}
+	}
+
+	focus = {
+		id = ZLF_consolidate_celandra
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = ZLF_export_the_revolution }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZLF_export_the_revolution
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_subject = no
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = ZLF_expand_the_internationalist_system
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = ZLF_union_with_hortensia focus = ZLF_consolidate_balekelemi focus = ZLF_consolidate_korelia focus = ZLF_consolidate_celandra }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 2
+		relative_position_id = ZLF_consolidate_celandra
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_faction_leader = yes
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = ZLF_international_labour_laws
+		icon = GFX_focus_generic_worker_expansion
+		prerequisite = { focus = ZLF_rosendiplomatie }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZLF_rosendiplomatie
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_subject = no
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = ZLF_krippendorff_program
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = ZLF_rosendiplomatie focus = ZLF_pragmatism_in_the_foreign_office }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 2
+		relative_position_id = ZLF_rosendiplomatie
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_subject = no
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = ZLF_southern_federalisation
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = ZLF_pragmatism_in_the_foreign_office }
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+		relative_position_id = ZLF_pragmatism_in_the_foreign_office
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_subject = no
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = ZLF_secure_trade_agreements
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = ZLF_pragmatism_in_the_foreign_office }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 2
+		relative_position_id = ZLF_pragmatism_in_the_foreign_office
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_subject = no
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
 		}
 	}
 

@@ -137,7 +137,7 @@ focus_tree={
 					limit = { controls_state = 570 }
 					570 = {
 						create_unit = {
-							division = "name = \"Reservist Brigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
+							division = "name = \"Reservistenbrigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
 							count = 4
 							owner = ROOT
 						}
@@ -147,7 +147,7 @@ focus_tree={
 					limit = { controls_state = 817 }
 					817 = {
 						create_unit = {
-							division = "name = \"Reservist Brigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
+							division = "name = \"Reservistenbrigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
 							count = 4
 							owner = ROOT
 						}
@@ -156,7 +156,7 @@ focus_tree={
 				else = {
 					807 = {
 						create_unit = {
-							division = "name = \"Reservist Brigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
+							division = "name = \"Reservistenbrigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
 							count = 4
 							owner = ROOT
 						}
@@ -186,7 +186,7 @@ focus_tree={
         }
 
 		bypass = {
-			
+			has_civil_war = no
         }
 		
 		completion_reward = {
@@ -255,7 +255,7 @@ focus_tree={
 		cost = 10
 
 		ai_will_do = {
-            base = 10 
+            base = 0
         }
 		
 		available = {

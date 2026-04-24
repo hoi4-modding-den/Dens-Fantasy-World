@@ -39,7 +39,7 @@ country_event = { # Hortensian Aid arrives
 	id = ZLF_cw_events.3
 	title = ZLF_cw_events.3.t
 	desc = ZLF_cw_events.3.desc
-	picture = GFX_report_event_china_ledo_road
+	picture = GFX_report_event_ZLF_kleinbahn
 
 	is_triggered_only = yes
 
@@ -151,6 +151,48 @@ country_event = { # Exiles move somewhere else
 
 		custom_effect_tooltip = available_political_advisor
 		show_ideas_tooltip = ZLF_orlando_token
+	}
+}
+
+country_event = { # The Free Elb
+	id = ZLF_cw_events.7
+	title = ZLF_cw_events.7.t
+	desc = ZLF_cw_events.7.desc
+	picture = GFX_report_event_ZSP_knightly_order
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_cw_events.7.a
+		add_popularity = { ideology = neutrality popularity = 0.02 }
+		add_manpower = 1000
+		effect_tooltip = {
+			add_corps_commander_role = {
+				character = ZSP_krabat
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+		}
+	}
+}
+
+country_event = { # Der Rasende Roland (English Title: The Frenzy of Orlando) FUN FACT: Rasender Roland is also the name of the trains of the Rügensche Kleinbahn
+	id = ZLF_cw_events.8
+	title = ZLF_cw_events.8.t
+	desc = ZLF_cw_events.8.desc
+	picture = GFX_report_event_ZLF_orlando_furioso
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_cw_events.8.a
+		ZLF_roland_ludovik = {
+			add_unit_leader_trait = ZLF_raserei
+		}
+		custom_effect_tooltip = ZLF_cw_events.8.tt
 	}
 }
 
@@ -291,7 +333,7 @@ country_event = { # Constitutional Convention - End
 		custom_effect_tooltip = generic_skip_one_line_tt
 
 		if = {
-			limit = { has_completed_focus = ZLF_gain_elbian_support }
+			limit = { has_country_flag = ZLF_elbian_support_gained }
 			activate_mission = ZLF_establish_elbian_autonomy_timer
 		}
 	}
@@ -327,6 +369,8 @@ country_event = { # First Elections
 		else = {
 			promote_character = ZLF_juergen_zauberthal
 		}
+
+		custom_effect_tooltip = ZLF_post_cw_events.6.tt
 	}
 
 	option = { # Socialist Party (Sozialistische Partei - SP)
@@ -346,6 +390,8 @@ country_event = { # First Elections
 
 		promote_character = ZLF_roland_ludovik
 		set_country_leader_ideology = neorevisionism
+
+		custom_effect_tooltip = ZLF_post_cw_events.6.tt
 	}
 
 	option = { # Radical Transformative Party (Radikale Transformative Partei - RTP)
@@ -362,6 +408,8 @@ country_event = { # First Elections
 		custom_effect_tooltip = generic_skip_one_line_tt
 
 		promote_character = ZLF_gustav_mai
+
+		custom_effect_tooltip = ZLF_post_cw_events.6.tt
 	}
 }
 
@@ -382,11 +430,138 @@ country_event = { # Reconstruction
 	}
 }
 
+country_event = { # Fate of the Royal Army
+	id = ZLF_post_cw_events.8
+	title = ZLF_post_cw_events.8.t
+	desc = ZLF_post_cw_events.8.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLF_post_cw_events.9
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = ZLF_post_cw_events.8.a
+		add_command_power = -50
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		ZKN = {
+			ZKN_juergen_ostersee = { set_nationality = ROOT }
+			ZKN_otto_richtig = { set_nationality = ROOT }
+			ZKN_tanja_von_degretschow = { set_nationality = ROOT }
+		}
+	}
+
+	option = {
+		name = ZLF_post_cw_events.8.b
+		add_stability = 0.1
+	}
+}
+
+country_event = { # Fate of the Aristocracy
+	id = ZLF_post_cw_events.9
+	title = ZLF_post_cw_events.9.t
+	desc = ZLF_post_cw_events.9.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLF_post_cw_events.10
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = ZLF_post_cw_events.9.a
+		every_owned_state = {
+			random_select_amount = 2
+			limit = {
+				is_core_of = ROOT
+				is_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = { # Fate of the Royal Family
+	id = ZLF_post_cw_events.10
+	title = ZLF_post_cw_events.10.t
+	desc = ZLF_post_cw_events.10.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_post_cw_events.10.a
+		ai_chance = { base = 0 }
+		add_political_power = -200
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		ZKN = { retire_character = ZKN_michael_aurus }
+	}
+
+	option = {
+		name = ZLF_post_cw_events.10.b
+		ai_chance = { base = 1 }
+		add_stability = -0.05
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		effect_tooltip = { 
+			ZKN = { ZKN_michael_aurus = { set_nationality = XCE } } # doesnt actually happen because its unecessary
+			XCE = { add_ideas = ZLF_hosting_exiled_royals } 
+		}
+
+		hidden_effect = { XCE = { country_event = ZLF_post_cw_events.11 } }
+	}
+
+	option = {
+		name = ZLF_post_cw_events.10.c
+		ai_chance = { base = 0 }
+		add_stability = -0.2
+		
+		set_country_flag = ZLF_rehabilitating_royalty # affects the ending event
+	}
+}
+
+country_event = { # Exiled Royals arrive
+	id = ZLF_post_cw_events.11
+	title = ZLF_post_cw_events.11.t
+	desc = ZLF_post_cw_events.11.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_post_cw_events.11.a
+		add_ideas = ZLF_hosting_exiled_royals
+	}
+}
+
 country_event = { # Esperanto Reference
 	id = ZLF_events.1
 	title = ZLF_events.1.t
 	desc = ZLF_events.1.desc
-	picture = GFX_report_event_XLF_esperantists
+	picture = GFX_report_event_ZLF_esperantists
 
 	is_triggered_only = yes
 
@@ -429,6 +604,21 @@ country_event = { # Elbian Insurrection
 					elections_allowed = no
 					name = ZLF_democratic_party_elbian
 					long_name = ZLF_democratic_party_elbian_long
+				}
+				random_other_country = {
+					limit = { has_character = ZSP_krabat }
+					ZSP_krabat = {
+						set_nationality = PREV.PREV
+						add_country_leader_role = {
+							character = ZSP_krabat
+							promote_leader = yes
+							country_leader = {
+								ideology = conservatism
+								expire = "1965.1.1.1"
+								traits = { ZLF_knight_of_the_moonlight_order }
+							}
+						}
+					}
 				}
 				set_popularities = {
 					democratic = 1
@@ -534,6 +724,10 @@ country_event = { # Elbian Insurrection successful
 			add_compliance = 60
 			add_resistance = 10
 		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		complete_national_focus = ZLF_elbian_autonomy
 	}
 }
 
@@ -541,7 +735,7 @@ country_event = { # Korelian nation receives aid from ZLF
 	id = ZLF_events.4
 	title = ZLF_events.4.t
 	desc = ZLF_events.4.desc
-	picture = GFX_report_event_DEN_denmark_surrenders
+	picture = GFX_report_event_ZLF_kleinbahn
 
 	is_triggered_only = yes
 
@@ -553,6 +747,237 @@ country_event = { # Korelian nation receives aid from ZLF
             amount = 1000
             producer = FROM
         }
+	}
+}
+
+country_event = { # Rathenau Affair
+	id = ZLF_events.5
+	title = ZLF_events.5.t
+	desc = ZLF_events.5.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = { complete_national_focus = ZLF_rathenau_affair }
+	}
+
+	option = {
+		name = ZLF_events.5.a
+		add_stability = -0.2
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		country_event = {
+			id = ZLF_events.6
+			days = 10
+		}
+	}
+
+	option = {
+		name = ZLF_events.5.b
+		add_political_power = -50
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		country_event = {
+			id = ZLF_events.8
+			days = 10
+		}
+	}
+}
+
+country_event = { # Opposition Protests
+	id = ZLF_events.6
+	title = ZLF_events.6.t
+	desc = ZLF_events.6.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.6.a
+		country_event = {
+			id = ZLF_events.7
+			days = 10
+		}
+	}
+}
+
+country_event = { # Left-Liberal Coalition
+	id = ZLF_events.7
+	title = ZLF_events.7.t
+	desc = ZLF_events.7.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.7.a
+		set_party_name = {
+			ideology = democratic
+			name = ZLF_democratic_party_gkp
+			long_name = ZLF_democratic_party_gkp_long
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		complete_national_focus = ZLF_left_liberal_coalition_formed
+	}
+}
+
+country_event = { # Vote of No Confidence
+	id = ZLF_events.8
+	title = ZLF_events.8.t
+	desc = ZLF_events.8.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.8.a
+		complete_national_focus = ZLF_government_holds
+	}
+
+	option = {
+		name = ZLF_events.8.b
+		country_event = {
+			id = ZLF_events.9
+			days = 12
+		}
+	}
+}
+
+country_event = { # New Elections
+	id = ZLF_events.9
+	title = ZLF_events.9.t
+	desc = ZLF_events.9.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.9.a
+		country_event = {
+			id = ZLF_events.7
+			days = 5
+		}
+	}
+
+	option = {
+		name = ZLF_events.9.b
+		set_party_name = {
+			ideology = democratic
+			name = ZLF_democratic_party_sp
+			long_name = ZLF_democratic_party_sp_long
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		complete_national_focus = ZLF_government_holds
+	}
+}
+
+country_event = { # Hortensian Federalisation
+	id = ZLF_events.10
+	title = ZLF_events.10.t
+	desc = ZLF_events.10.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.10.a
+		FROM = {
+			effect_tooltip = {
+				set_autonomy = {
+					target = ROOT
+					autonomous_state = autonomy_ZTC_federal_city
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+		}
+
+		custom_effect_tooltip = ZLF_events.10.tt
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		FROM = { country_event = { id = ZLF_events.11 days = 5 } }
+	}
+
+	option = {
+		name = ZLF_events.10.b
+		FROM = { country_event = { id = ZLF_events.12 days = 5 } }
+	}
+}
+
+country_event = { # Hortensian Federalisation accepted
+	id = ZLF_events.11
+	title = ZLF_events.11.t
+	desc = ZLF_events.11.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.11.a
+		set_autonomy = {
+			target = FROM
+			autonomous_state = autonomy_ZTC_federal_city
+			end_wars = no
+			end_civil_wars = no
+		}
+		custom_effect_tooltip = ZLF_events.10.tt
+	}
+}
+
+country_event = { # Hortensian Federalisation refused
+	id = ZLF_events.12
+	title = ZLF_events.12.t
+	desc = ZLF_events.12.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.12.a
+		
+	}
+}
+
+country_event = { # Question of the Navy
+	id = ZLF_events.13
+	title = ZLF_events.13.t
+	desc = ZLF_events.13.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.13.a
+		navy_experience = 50
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				is_coastal = yes
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
+	option = {
+		name = ZLF_events.13.b
+		army_experience = 25
+		air_experience = 25
 	}
 }
 

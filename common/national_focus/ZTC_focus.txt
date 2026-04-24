@@ -106,7 +106,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZTC_the_will_of_the_council
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -169,7 +169,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZTC_subsidise_the_airdocks
 		
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
             base = 10 
@@ -196,7 +196,7 @@ focus_tree={
 
 	focus = { 
 		id = ZTC_approve_sale_of_weapons
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_generic_arms_trade
         prerequisite = { focus = ZTC_subsidise_the_airdocks }
 		prerequisite = { focus = ZTC_fund_the_upper_districts }
 		#mutually_exclusive = { focus =  }
@@ -204,7 +204,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZTC_the_will_of_the_council
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -237,7 +237,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZTC_the_will_of_the_council
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -272,7 +272,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZTC_fund_the_upper_districts
 		
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
             base = 10 
@@ -306,7 +306,7 @@ focus_tree={
 		y = 4
 		relative_position_id = ZTC_the_will_of_the_council
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -368,7 +368,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZTC_necessary_reform
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -406,7 +406,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZTC_modernise_civil_protection
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -445,7 +445,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZTC_necessary_reform
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -492,7 +492,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZTC_necessary_reform
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -536,7 +536,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZTC_regulate_the_industries
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -569,7 +569,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZTC_invest_in_public_development
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -642,7 +642,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZTC_reverse_the_stratification
 		
-		cost = 5
+		cost = 6
 
 		ai_will_do = {
             base = 10 
@@ -711,7 +711,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZTC_the_needs_of_the_people
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -754,7 +754,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZTC_political_concessions
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -788,7 +788,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZTC_the_needs_of_the_people
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -821,7 +821,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZTC_the_needs_of_the_people
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -864,7 +864,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZTC_found_the_labour_ministry
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -900,7 +900,7 @@ focus_tree={
 		y = 4
 		relative_position_id = ZTC_the_needs_of_the_people
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 10 
@@ -933,7 +933,7 @@ focus_tree={
 		y = 6
 		relative_position_id = ZTC_the_new_grand_councillor
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 50 
@@ -992,7 +992,7 @@ focus_tree={
 		y = 6
 		relative_position_id = ZTC_the_new_grand_councillor
 		
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
             base = 50 
@@ -1342,6 +1342,11 @@ focus_tree={
 		completion_reward = {
 			custom_effect_tooltip = ZTC_modify_lib_gov_tt
 			add_to_variable = { ZTC_gov_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = WIP
+			# country_event 'Handel ist der Motor der Geschäftswelt'
 		}
 	}
 
@@ -2054,7 +2059,17 @@ focus_tree={
 		cost = 10
 
 		ai_will_do = {
-            base = 10 
+            base = 10
+			modifier = {
+				factor = 0
+				any_other_country = {
+					OR = {
+						original_tag = ZKN
+						original_tag = ZLF
+					}
+					NOT = { has_government = fascism }
+				}
+			}
         }
 		
 		available = {
@@ -2816,6 +2831,27 @@ focus_tree={
 			}
 			else = {
 				add_ideas = ZTC_marxist_economics
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+			every_other_country = {
+				limit = {
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+					}
+					capital_scope = { 
+						OR = {
+							is_on_continent = Kuvivalawiki
+							is_on_continent = Monerriame
+						}
+					}
+				}
+				add_timed_idea = {
+					idea = ZTC_hortensian_banking_nationalised
+					days = 180
+				}
 			}
 		}
 	}

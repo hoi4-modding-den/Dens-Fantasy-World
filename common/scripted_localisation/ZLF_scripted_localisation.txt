@@ -29,3 +29,97 @@ defined_text = {
         localization_key = ZLF_roland_ludovik_name
     }
 }
+
+defined_text = {
+    name = ZLF_check_unemployment_rate
+    text = {
+        trigger = {
+            check_variable = { ZLF_unemployment_rate < 0.06 }
+        }
+        localization_key = ZLF_unemployment_rate_good
+    }
+    text = {
+        localization_key = ZLF_unemployment_rate_bad
+    }
+}
+defined_text = {
+    name = ZLF_check_gdp_growth
+    text = {
+        trigger = {
+            check_variable = { ZLF_gdp_growth > 1.99 }
+        }
+        localization_key = ZLF_gdp_growth_good
+    }
+    text = {
+        localization_key = ZLF_gdp_growth_bad
+    }
+}
+defined_text = {
+    name = ZLF_check_trade_balance
+    text = {
+        trigger = {
+            NOT = { has_idea = closed_economy }
+            has_resources_in_country = {
+                resource = oil
+                amount > 0
+                extracted = yes
+            }
+            has_resources_in_country = {
+                resource = aluminium
+                amount > 0
+                extracted = yes
+            }
+            has_resources_in_country = {
+                resource = rubber
+                amount > 0
+                extracted = yes
+            }
+            has_resources_in_country = {
+                resource = tungsten
+                amount > 0
+                extracted = yes
+            }
+            has_resources_in_country = {
+                resource = steel
+                amount > 0
+                extracted = yes
+            }
+            has_resources_in_country = {
+                resource = coal
+                amount > 0
+                extracted = yes
+            }
+        }
+        localization_key = ZLF_trade_balance_good
+    }
+    text = {
+        localization_key = ZLF_trade_balance_bad
+    }
+}
+defined_text = {
+    name = ZLF_check_inflation_rate
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { ZLF_inflation_rate = 0.01 }
+                check_variable = { ZLF_inflation_rate = 0.02 }
+            }
+        }
+        localization_key = ZLF_inflation_rate_good
+    }
+    text = {
+        localization_key = ZLF_inflation_rate_bad
+    }
+}
+defined_text = {
+    name = ZLF_check_sustainability
+    text = {
+        trigger = {
+            has_completed_focus = ZLF_elbian_autonomy
+        }
+        localization_key = ZLF_sustainability_good
+    }
+    text = {
+        localization_key = ZLF_sustainability_bad
+    }
+}
