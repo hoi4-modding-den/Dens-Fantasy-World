@@ -1441,7 +1441,7 @@ focus_tree={
 		cost = 3
 
 		ai_will_do = {
-            base = 10 
+            base = 100
         }
 		
 		available = {
@@ -1803,10 +1803,10 @@ focus_tree={
 		y = 1
 		relative_position_id = ZTC_support_edelweiss
 		
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 100
         }
 		
 		available = {
@@ -1824,7 +1824,13 @@ focus_tree={
         }
 
 		bypass = {
-
+			any_other_country = {
+				OR = {
+					original_tag = ZKN
+					original_tag = ZLF
+				}
+				is_ally_with = ROOT
+			}
         }
 		
 		completion_reward = {
@@ -1875,10 +1881,10 @@ focus_tree={
 		y = 1
 		relative_position_id = ZTC_reach_out_to_gardenia
 		
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 100
         }
 		
 		available = {
@@ -1897,7 +1903,13 @@ focus_tree={
         }
 
 		bypass = {
-
+			any_other_country = {
+				OR = {
+					original_tag = ZKN
+					original_tag = ZLF
+				}
+				is_ally_with = ROOT
+			}
         }
 		
 		completion_reward = {
@@ -1951,7 +1963,7 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 100
         }
 		
 		available = {
@@ -1963,7 +1975,10 @@ focus_tree={
 				}
 				is_in_faction_with = ROOT
 			}
-			is_subject = no
+			OR = {
+				is_subject = no
+				has_autonomy_state = autonomy_ZTC_federal_city
+			}
         }
 
 		bypass = {
@@ -2026,7 +2041,7 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 100
         }
 		
 		available = {
@@ -2056,7 +2071,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZTC_support_edelweiss
 		
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
             base = 10

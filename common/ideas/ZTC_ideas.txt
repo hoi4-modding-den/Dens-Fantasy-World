@@ -603,7 +603,7 @@ ideas = {
 			
 			available = {
 				any_other_country = {
-					is_ally_with = ROOT
+					is_in_faction_with = ROOT
 					has_idea = ZTC_monetary_union_spirit_ZLF_ZKN
 				}
 			}
@@ -637,7 +637,7 @@ ideas = {
 
 			available = {
 				any_other_country = {
-					is_ally_with = ROOT
+					is_in_faction_with = ROOT
 					has_idea = ZTC_monetary_union_spirit_ZTC
 				}
 			}

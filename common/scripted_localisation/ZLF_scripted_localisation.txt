@@ -46,7 +46,7 @@ defined_text = {
     name = ZLF_check_gdp_growth
     text = {
         trigger = {
-            check_variable = { ZLF_gdp_growth > 1.99 }
+            check_variable = { total_constructed_civilian_factory > 24 }
         }
         localization_key = ZLF_gdp_growth_good
     }
@@ -115,7 +115,10 @@ defined_text = {
     name = ZLF_check_sustainability
     text = {
         trigger = {
-            has_completed_focus = ZLF_elbian_autonomy
+            OR = {
+                has_completed_focus = ZLF_equalisation_of_races
+                has_completed_focus = ZLF_elbian_autonomy
+            }
         }
         localization_key = ZLF_sustainability_good
     }

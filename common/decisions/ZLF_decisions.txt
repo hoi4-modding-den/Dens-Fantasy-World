@@ -424,10 +424,10 @@ economy_decisions = {
         timeout_effect = {
             if = {
                 limit = {
-                    check_variable = { ZLF_inflation_rate > 0.02 }
+                    check_variable = { ZLF_inflation_rate < 0.01 }
                 }
                 add_to_variable = {
-                    ZLF_inflation_rate = -0.05
+                    ZLF_inflation_rate = 0.05
                     tooltip = ZLF_inflation_rate_tt
                 }
             }
@@ -793,7 +793,7 @@ ZLF_regional_developments_cat = {
 		}
 
         available = {
-            controls_province = 570
+            controls_state = 570
             num_of_civilian_factories_available_for_projects > 2
         }
 
@@ -1172,7 +1172,7 @@ ZLF_magic_polygon_cat = {
         available = {
             custom_trigger_tooltip = {
                 tooltip = ZLF_gdp_growth_decision_trigger
-                check_variable = { ZLF_ideal_gdp_growth_months > 11 }
+                check_variable = { total_constructed_civilian_factory > 24 }
             }
             hidden_trigger = { always = no }
         }
@@ -1258,11 +1258,8 @@ ZLF_magic_polygon_cat = {
 
         available = {
             OR = {
+                has_completed_focus = ZLF_equalisation_of_races
                 has_completed_focus = ZLF_elbian_autonomy
-                custom_trigger_tooltip = {
-                    tooltip = ZLF_sustainability_decision_trigger
-                    always = no
-                }
             }
             hidden_trigger = { always = no }
         }
@@ -1311,7 +1308,10 @@ ZLF_magic_polygon_cat = {
                     check_variable = { ZLF_inflation_rate = 0.01 }
                     check_variable = { ZLF_inflation_rate = 0.02 }
                 }
-                has_completed_focus = ZLF_elbian_autonomy
+                OR = {
+                    has_completed_focus = ZLF_equalisation_of_races
+                    has_completed_focus = ZLF_elbian_autonomy
+                }
             }
         }
 
