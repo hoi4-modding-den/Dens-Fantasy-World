@@ -48,3 +48,5 @@ ZRA = "countries/Republic of Raschau.txt"
 ZVT = "countries/Vitalem.txt"
 ZCT = "countries/Caelea.txt"
 ZDI = "countries/Republic of Dinantul.txt"
+ZKS = "countries/Kagraz.txt"
+

@@ -18,6 +18,8 @@ state={
 
 	history={
 		
+		owner = ZKS
+		add_core_of = ZKS
 		
 		buildings = {
 			infrastructure = 5
