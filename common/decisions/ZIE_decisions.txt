@@ -196,10 +196,10 @@ ZIE_balance_of_power_category = {
 
         remove_effect = {
             add_political_power = 40
+            add_stability = -0.05
             add_power_balance_value = {
                 id = ZIE_power_balance
                 value = -0.1
-				stability_factor = -0.05
                 tooltip_side = ZIE_council_side
             }
         }
@@ -232,7 +232,7 @@ ZIE_balance_of_power_category = {
         }
 
         remove_effect = {
-            stability_factor = 0.05
+            add_stability = 0.05
 			add_political_power = 10
             add_power_balance_value = {
                 id = ZIE_power_balance
@@ -270,7 +270,7 @@ ZIE_balance_of_power_category = {
         }
 
         remove_effect = {
-            stability_factor = 0.05
+            add_stability = 0.05
 			add_political_power = 10
             add_power_balance_value = {
                 id = ZIE_power_balance

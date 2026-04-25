@@ -20,7 +20,7 @@ country_event = {
 		ai_chance = {
 			base = 20
 		}
-		stability_factor = -0.1
+		add_stability = -0.1
 		666 = { remove_core_of = ZRB }
 		666 = { remove_dynamic_modifier = { modifier = ZRB_dinantul } } 
 	}
@@ -30,7 +30,7 @@ country_event = {
 			base = 20
 		}
 		ZDI = {change_tag_from = ZRB}
-		stability_factor = -0.1
+		add_stability = -0.1
 		666 = { remove_core_of = ZRB }
 		666 = { remove_dynamic_modifier = { modifier = ZRB_dinantul } } 
 	}
