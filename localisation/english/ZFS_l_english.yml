@@ -20,7 +20,9 @@
 #ideas
 
 #focuses
-
+ZFS_our_greatest_chance: "Our greatest chance"
+ZFS_our_greatest_chance_desc: "Sayani people were never in power. Not only that, they were always a toy for stronger forces like Keyi or Semayawi ones. But that is past now. We managed to overpower our long time opressors through skill and unity of our people. Western "kingdom" is a laughable force that will pose no threat to us. Whether someone thinks force is good or bad, we, Sayani people, must agree that our nation deserves recognition and redemption. Time to abandon old opressors, it is time for Sayani led democratic republic where we have recognition we always strived for. It is only way and only time for it."
+ZFS_our_greatest_chance_tt: "Times when Sayani people were discriminated are over... It is time for §Your led Sayani change!§!"
 #traits
 
 #characters
@@ -31,5 +33,11 @@ ZFS_sosite_gebere: "Sosite Gebere"
 #decisions
 
 #victory_points
-
+VICTORY_POINTS_11644: "Ābwa"
+VICTORY_POINTS_11647: "Zimisayaynim"
+VICTORY_POINTS_11641: "Hulchatish"
+VICTORY_POINTS_11661: "Libiam"
+VICTORY_POINTS_11660: "Birrushigi"
+VICTORY_POINTS_11643: "Semaninj"
+VICTORY_POINTS_11642: "Tertikma"
 #states

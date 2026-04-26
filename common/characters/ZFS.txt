@@ -14,4 +14,44 @@ characters={
 			id = -1
 		}
 	}
+       ZFS_sannayne_mokwete_iliihi = { 
+	 	name = ZFS_sannayne_mokwete_iliihi
+		portraits = {
+			civilian = {
+			}
+			army = {
+			}
+		}
+        
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			expire = "1960.1.1.1"
+		}
+
+		field_marshal = {
+            traits = { desert_fox commando inflexible_strategist }
+            skill = 3
+            attack_skill = 1
+            defense_skill = 5
+            planning_skill = 2
+            logistics_skill = 2
+        }
+    }
+       ZFS_tshemene_lihi = { 
+	 	name = ZFS_tshemene_lihi
+		portraits = {
+			army = {
+			}
+		}
+		corps_commander = {
+            traits = { ranger trait_reckless }
+            skill = 1
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 1
+        }
+    }
+
 }

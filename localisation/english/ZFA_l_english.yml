@@ -21,6 +21,9 @@
 #ideas
 
 #focuses
+ZFA_nationwide_revolution: "Nationwide Revolution"
+ZFA_nationwide_revolution_desc: "Our state had treated it`s people as badly as never. They suffer day to day, commonly dying. Meanwhile Unetu`s clique continues to reap fruits of what is de facto slavery. Balekelemi people already suffered enough under rule of opressive Bīchi regime. They won`t ever trust regime again. They will only trust us. Us, because we will bring change to them."
+ZFA_nationwide_revolution_tt: "The §RRevolution§! shall bring the long-awaited respect for common people..."
 
 #traits
 ZFA_avid_troublemaker: "Avid Troublemaker"
@@ -32,6 +35,13 @@ ZFA_eyas_desita: "Eyas Desita"
 #decisions
 
 #victory_points
-VICTORY_POINTS_1909: "a"
+VICTORY_POINTS_1909: "Yeseratiwi"
+VICTORY_POINTS_1911: "Sisismesi"
+VICTORY_POINTS_1912: "Ārenikor"
+VICTORY_POINTS_3174: "Hāmisit"
+VICTORY_POINTS_3152: "Medatke"
+VICTORY_POINTS_3161: "Sufdhide"
+VICTORY_POINTS_3157: "Kebilisgina"
+VICTORY_POINTS_253: "Mezirwiha"
 
 #states

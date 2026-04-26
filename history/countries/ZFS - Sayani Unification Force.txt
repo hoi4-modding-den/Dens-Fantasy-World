@@ -31,6 +31,8 @@ set_war_support = 0.45
 set_convoys = 0
 
 recruit_character = ZFS_sosite_gebere
+recruit_character = ZFS_sannayne_mokwete_iliihi
+recruit_character = ZFS_tshemene_lihi
 #add_ideas = 
 
 set_cosmetic_tag = ZFS_civilwar
@@ -41,7 +43,9 @@ declare_war_on = {
 	type = civil_war
 }
 
-
+add_civil_war_target = ZFA
+add_civil_war_target = ZFB
+add_civil_war_target = ZFK
 
 set_politics = {
 	ruling_party = democratic

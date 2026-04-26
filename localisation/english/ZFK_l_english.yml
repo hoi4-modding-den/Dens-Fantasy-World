@@ -16,7 +16,9 @@
 #ideas
 
 #focuses
-
+ZFK_return_to_greatness: "Return to greatness"
+ZFK_return_to_greatness_desc: "Our kingdom had been lost for 400 years. It was beginning of dark years for Balekelemi region overall, with series of usurpations and foreign invasions. No one ever believed that we would show up again, but we did, after gathering enough resources. It was not easy, but we managed to create administration and army. That war, while bad, is necessary to destroy all foes. It will be start of our resurgence, our greatness... We won`t fail!"
+ZFK_return_to_greatness_tt: "Everyone thought we were dead... yet we live... §Yand we will avenge past centuries of humiliation!§! "
 #traits
 
 #characters
@@ -27,5 +29,9 @@ ZFK_kokeyi_ii: "Kokeyi II"
 #decisions
 
 #victory_points
-
+VICTORY_POINTS_8715: "Zikyeochi"
+VICTORY_POINTS_8717: "Quakarekedt"
+VICTORY_POINTS_11239: "Keytysawi"
+VICTORY_POINTS_11247: "Seleyiye"
+VICTORY_POINTS_9976: "Kiladebi"
 #states

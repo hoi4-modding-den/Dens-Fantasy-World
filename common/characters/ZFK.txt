@@ -14,4 +14,34 @@ characters={
 			id = -1
 		}
 	}
+       ZFK_sitahi_beketere = { 
+	 	name = ZFK_sitahi_beketere
+		portraits = {
+			army = {
+			}
+		}
+		corps_commander = {
+            traits = { infantry_officer hill_fighter }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 1
+        }
+    }
+       ZFK_marute_sarimi = { 
+	 	name = ZFK_marute_sarimi
+		portraits = {
+			army = {
+			}
+		}
+		corps_commander = {
+            traits = { trait_mountaineer brilliant_strategist }
+            skill = 3
+            attack_skill = 5
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 1
+        }
+    }
 }

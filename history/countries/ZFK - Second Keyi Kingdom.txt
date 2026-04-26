@@ -31,13 +31,22 @@ set_war_support = 0.5
 set_convoys = 0
 
 recruit_character = ZFK_kokeyi_ii
+recruit_character = ZFK_sitahi_beketere
+recruit_character = ZFK_marute_sarimi
 #add_ideas = 
 
 
 declare_war_on = {
+	target = ZFB
+	type = civil_war
+}
+declare_war_on = {
 	target = ZFS
 	type = civil_war
 }
+add_civil_war_target = ZFA
+add_civil_war_target = ZFB
+add_civil_war_target = ZFS
 
 set_politics = {
 	ruling_party = neutrality

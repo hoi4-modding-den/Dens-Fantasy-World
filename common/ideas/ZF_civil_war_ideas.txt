@@ -13,7 +13,6 @@ ideas = {
             }
 			
 			modifier = {
-                                can_join_factions = no
 				surrender_limit = 0.1
                                 conscription_factor = 0.15
                                 army_org_factor = -0.15
@@ -25,6 +24,7 @@ ideas = {
                                 monthly_population = -0.2
                                 min_export = -0.5
                                 resistance_target = -0.5
+                                custom_modifier_tooltip = SPR_military_disloyalty_tt
 	           }
           }
                    ZF_offensive_ZFA = {

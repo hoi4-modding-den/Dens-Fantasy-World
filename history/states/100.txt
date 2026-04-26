@@ -25,6 +25,9 @@ state={
 		
 		owner = ZFA
 		add_core_of = ZFA
+                add_claim_by = ZFB
+                add_claim_by = ZFK
+                add_claim_by = ZFS
 
 		buildings = {
 			infrastructure = 2

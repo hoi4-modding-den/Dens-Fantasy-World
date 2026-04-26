@@ -31,6 +31,9 @@ set_war_support = 0.6
 set_convoys = 0
 
 recruit_character = ZFA_eyas_desita
+recruit_character = ZFA_gelagile_yegereta
+recruit_character = ZFA_takala_kafi
+
 #add_ideas = 
 
 set_cosmetic_tag = ZFA_civilwar
@@ -43,6 +46,11 @@ declare_war_on = {
 	target = ZFK
 	type = civil_war
 }
+
+add_civil_war_target = ZFB
+add_civil_war_target = ZFK
+add_civil_war_target = ZFS
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"

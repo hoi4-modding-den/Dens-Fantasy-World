@@ -22,13 +22,16 @@ state={
                  victory_points = { 9027 2 }
 		owner = ZFB
 		add_core_of = ZFB
+                add_claim_by = ZFA
+                add_claim_by = ZFK
+                add_claim_by = ZFS
 
 		
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 1
-			industrial_complex = 4
+			industrial_complex = 3
 			
 			
 		}

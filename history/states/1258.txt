@@ -18,12 +18,15 @@ state={
 	history={
 		owner = ZFB
 		add_core_of = ZFB
+                add_claim_by = ZFA
+                add_claim_by = ZFK
+                add_claim_by = ZFS
 		victory_points = { 10337 20 }
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 3
+			industrial_complex = 4
 			
 		}
 		

@@ -24,7 +24,7 @@ focus_tree={
 		y = 0
 		#relative_position_id = 
 		
-		cost = 4
+		cost = 1
 
 		ai_will_do = {
             base = 10 
@@ -39,6 +39,7 @@ focus_tree={
         }
 		
 		completion_reward = {
+                                 custom_effect_tooltip = ZFB_we_shall_endure_tt
           }
      }
 }

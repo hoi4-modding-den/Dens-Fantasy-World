@@ -14,4 +14,44 @@ characters={
 			id = -1
 		}
 	}
+       ZFB_defaris_fanine = { 
+	 	name = ZFB_defaris_fanine
+		portraits = {
+			civilian = {
+			}
+			army = {
+			}
+		}
+        
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			expire = "1960.1.1.1"
+		}
+
+		field_marshal = {
+            traits = { old_guard career_officer infantry_officer ranger }
+            skill = 3
+            attack_skill = 5
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 1
+        }
+    }
+       ZFB_agegile_trumai = { 
+	 	name = ZFB_agegile_trumai
+		portraits = {
+			army = {
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected trait_reckless }
+            skill = 3
+            attack_skill = 5
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 1
+        }
+    }
+
 }

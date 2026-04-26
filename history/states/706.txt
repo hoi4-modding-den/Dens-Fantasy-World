@@ -20,6 +20,9 @@ state={
                  victory_points = { 9976 1 }
 		owner = ZFK
 		add_core_of = ZFK
+                add_claim_by = ZFA
+                add_claim_by = ZFB
+                add_claim_by = ZFS
 
 		
 		buildings = {

@@ -31,6 +31,8 @@ set_war_support = 0.6
 set_convoys = 0
 
 recruit_character = ZFB_talakji_unetu
+recruit_character = ZFB_defaris_fanine
+recruit_character = ZFB_agegile_trumai
 #add_ideas = 
 
 
@@ -39,6 +41,9 @@ declare_war_on = {
 	type = civil_war
 }
 
+add_civil_war_target = ZFA
+add_civil_war_target = ZFK
+add_civil_war_target = ZFS
 
 set_politics = {
 	ruling_party = neutrality
