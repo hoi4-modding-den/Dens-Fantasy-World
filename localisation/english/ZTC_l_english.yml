@@ -139,6 +139,11 @@
  ZTC_modify_soc_gov_tt: "Modify §Y$ZTC_socialist_government$§! by"
 
 
+# OPINION MODIFIERS
+
+ ZTC_trade_city_modifier: "Trade Hub of Gardenia"
+
+
 # MODIFIERS (why can't paradox just do it properly?)
 
  annex_subject_cost_factor_tt: "$MODIFIER_ANNEX_SUBJECT_COST_FACTOR$: $RIGHT|-=%1$"

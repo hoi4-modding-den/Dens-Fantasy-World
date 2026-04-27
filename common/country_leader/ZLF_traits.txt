@@ -9,11 +9,39 @@ leader_traits = {
         random = no
     }
 
+    ZLF_popular_reformist = {
+        
+        party_popularity_stability_factor = 0.1
+        political_advisor_cost_factor = -0.5
+        consumer_goods_factor = -0.1
+
+        random = no
+    }
+
+    ZLF_pacifistic_professor = {
+
+        research_speed_factor = 0.2
+        war_support_factor = -0.15
+        high_command_cost_factor = 0.5
+        air_chief_cost_factor = 0.5
+		army_chief_cost_factor = 0.5
+		navy_chief_cost_factor = 0.5
+
+        random = no
+    }
+
+    ZLF_blackcloak_terror_victim = {
+        
+        custom_modifier_tooltip = ZLF_blackcloak_terror_victim_tt
+
+        random = no
+    }
+
     ZLF_marxist_theorist = {
         
-        communism_drift = 0.02
-        research_speed_factor = 0.05
-        production_factory_max_efficiency_factor = 0.05
+        communism_drift = 0.05
+        research_speed_factor = 0.1
+        production_factory_max_efficiency_factor = 0.1
 
         random = no
     }
@@ -25,6 +53,14 @@ leader_traits = {
         political_power_cost = 0.15
         extra_trade_to_overlord_factor = 0.25
         overlord_trade_cost_factor = -1
+
+        random = no
+    }
+
+    ZLF_the_last_liberal = {
+        
+        democratic_drift = 0.02
+        production_speed_industrial_complex_factor = 0.25
 
         random = no
     }
@@ -44,6 +80,17 @@ leader_traits = {
         army_core_attack_factor = 0.1
         political_power_factor = 0.2
         command_power_gain_mult = 0.25
+
+        random = no
+    }
+
+    ZLF_former_foreign_minister = {
+        
+        opinion_gain_monthly_factor = 0.15
+        democratic_drift = 0.01
+        research_speed_factor = 0.05
+        autonomy_gain_global_factor = 0.05
+        lend_lease_tension_with_overlord = -1
 
         random = no
     }
@@ -86,7 +133,7 @@ leader_traits = {
         sprite = 13
 
         communism_drift = 0.05
-        political_power_factor = 0.15
+        political_power_factor = 0.05
         research_speed_factor = 0.05
 
         random = no
@@ -102,7 +149,7 @@ leader_traits = {
     }
 
     ZLF_land_reform_advocate = {
-        sprite = 13
+        sprite = 12
 
         local_building_slots_factor = 0.1
         production_speed_buildings_factor = 0.1
@@ -151,6 +198,26 @@ leader_traits = {
         random = no
     }
 
+    ZLF_doctor_esperanto = {
+        sprite = 12
+
+        compliance_growth = 0.02
+        political_power_factor = 0.1
+        offensive_war_stability_factor = -0.5
+
+        random = no
+    }
+
+    ZLF_agricultural_minister = {
+        sprite = 13
+
+        monthly_population = 0.25
+        out_of_supply_factor = -0.1
+        stability_factor = 0.05
+
+        random = no
+    }
+
     ZLF_democratic_propagandist = {
         sprite = 13
 
@@ -190,6 +257,19 @@ leader_traits = {
         army_org_factor = 0.05
         army_morale_factor = 0.05
         army_core_defence_factor = 0.02
+
+        command_cap_increase = 20
+
+        random = no
+    }
+
+    ZLF_elbian_autonomist = {
+        sprite = 14
+
+        conscription_factor = 0.1
+        local_building_slots_factor = 0.1
+        local_resources_factor = 0.1
+        political_power_factor = -0.2
 
         random = no
     }

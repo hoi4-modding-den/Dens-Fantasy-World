@@ -18,13 +18,17 @@ ZSP_magic_cat = {
             add_to_variable = { ZSP_mana = -50 }
         }
 
-        modifier = {
-            industrial_factory_donations = 10
-        }
-
-        days_remove = 30
+        days_remove = 70
 
         remove_effect = {
+            random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
             add_to_variable = { ZSP_used_spell_slots = -1 }
         }
 
@@ -81,7 +85,7 @@ ZSP_magic_cat = {
             set_country_flag = ZSP_burn_enemy_infrastructure_selector_flag
         }
 
-        days_remove = 70
+        days_remove = 40
 
         remove_effect = {
             add_to_variable = { ZSP_used_spell_slots = -1 }

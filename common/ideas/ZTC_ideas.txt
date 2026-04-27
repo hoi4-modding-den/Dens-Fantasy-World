@@ -992,7 +992,7 @@ ideas = {
 
 		ZTC_hortensian_banking_nationalised = {
 
-			picture = tur_balkan_central_bank
+			picture = ROM_king_carol_emptied_accounts
 			
 			allowed = {
                 always = no 

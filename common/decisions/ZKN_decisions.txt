@@ -75,7 +75,7 @@ ZKN_civil_war_cat = {
             570 = {
                 create_unit = {
                     division = "name = \"Nachtwachenbrigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
-                    count = 4
+                    count = 2
                     owner = ROOT
                 }
             }
@@ -83,6 +83,13 @@ ZKN_civil_war_cat = {
 
         timeout_effect = {
             add_war_support = 0.1
+            570 = {
+                create_unit = {
+                    division = "name = \"Nachtwachenbrigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
+                    count = 5
+                    owner = ROOT
+                }
+            }
         }
     }
 

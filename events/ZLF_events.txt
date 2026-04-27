@@ -215,8 +215,12 @@ country_event = { # Constitutional Convention
 
 	option = {
 		name = ZLF_post_cw_events.1.a
+		set_stability = 0.5
+		set_war_support = 0.1
 		add_popularity = { ideology = democratic popularity = 0.2 }
 		add_popularity = { ideology = communism popularity = 0.2 }
+		add_popularity = { ideology = neutrality popularity = 0.1 }
+		add_popularity = { ideology = fascism popularity = 0.01 }
 	}
 }
 
@@ -307,6 +311,7 @@ country_event = { # Party Split
 
 	option = {
 		name = ZLF_post_cw_events.4.a
+		custom_effect_tooltip = ZLF_post_cw_events.4.tt
 		set_country_flag = ZLF_sp_founded
 	}
 }
@@ -423,7 +428,7 @@ country_event = { # Reconstruction
 		name = ZLF_post_cw_events.7.a
 		add_timed_idea = {
 			idea = ZLF_reconstruction
-			days = 365
+			years = 2
 		}
 	}
 }
@@ -498,6 +503,8 @@ country_event = { # Fate of the Aristocracy
 				add_idea = ZLF_economic_downturn
 			}
 		}
+
+		add_ideas = ZLF_upset_industrialists
 	}
 }
 
@@ -569,6 +576,13 @@ country_event = { # Esperanto Reference
 		name = ZLF_events.1.a
 		add_political_power = 50
 		add_stability = 0.01
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = ZLF_ll_zaunenbach_token
+
+		set_country_flag = ZLF_unlocked_esperanto
 	}
 }
 
@@ -606,11 +620,11 @@ country_event = { # Elbian Insurrection
 					long_name = ZLF_democratic_party_elbian_long
 				}
 				random_other_country = {
-					limit = { has_character = ZSP_krabat }
-					ZSP_krabat = {
+					limit = { has_character = ZLF_jakub_bart_cisinski }
+					ZLF_jakub_bart_cisinski = {
 						set_nationality = PREV.PREV
 						add_country_leader_role = {
-							character = ZSP_krabat
+							character = ZLF_jakub_bart_cisinski
 							promote_leader = yes
 							country_leader = {
 								ideology = conservatism
@@ -620,8 +634,23 @@ country_event = { # Elbian Insurrection
 						}
 					}
 				}
+				random_other_country = {
+					limit = { has_character = ZLF_mina_witkojc }
+					ZLF_mina_witkojc = {
+						set_nationality = PREV.PREV
+					}
+				}
+				random_other_country = {
+					limit = { has_character = ZSP_krabat }
+					ZSP_krabat = {
+						set_nationality = PREV.PREV
+					}
+				}
 				set_popularities = {
-					democratic = 1
+					democratic = 90
+					neutrality = 10
+					fascism = 0
+					communism = 0
 				}
 				set_stability = 1
 				set_war_support = 1
@@ -814,13 +843,16 @@ country_event = { # Left-Liberal Coalition
 
 	option = {
 		name = ZLF_events.7.a
-		set_party_name = {
-			ideology = democratic
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
 			name = ZLF_democratic_party_gkp
 			long_name = ZLF_democratic_party_gkp_long
 		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
+
+		promote_character = ZLF_heinrich_rosenhain
 
 		complete_national_focus = ZLF_left_liberal_coalition_formed
 	}
@@ -836,6 +868,10 @@ country_event = { # Vote of No Confidence
 
 	option = {
 		name = ZLF_events.8.a
+		add_stability = -0.1
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
 		complete_national_focus = ZLF_government_holds
 	}
 
@@ -866,11 +902,7 @@ country_event = { # New Elections
 
 	option = {
 		name = ZLF_events.9.b
-		set_party_name = {
-			ideology = democratic
-			name = ZLF_democratic_party_sp
-			long_name = ZLF_democratic_party_sp_long
-		}
+		add_stability = -0.1
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -978,6 +1010,20 @@ country_event = { # Question of the Navy
 		name = ZLF_events.13.b
 		army_experience = 25
 		air_experience = 25
+	}
+}
+
+country_event = { # Report on the Economy (Kron"kite" -> Krondache)
+	id = ZLF_events.14
+	title = ZLF_events.14.t
+	desc = ZLF_events.14.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.14.a
+		
 	}
 }
 

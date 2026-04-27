@@ -7,7 +7,6 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = ZSP
-			has_government = fascism
 		}
 	}
 
@@ -1266,7 +1265,7 @@ focus_tree = {
 				ROOT = {
 					declare_war_on = {
 						target = PREV
-						type = annex_everything
+						type = ZSP_world_domination_goal
 					}
 				}
 			}
@@ -1384,7 +1383,7 @@ focus_tree = {
 		completion_reward = {
 			declare_war_on = {
 				target = ZTC
-				type = annex_everything
+				type = ZSP_world_domination_goal
 			}
 		}
 	}
@@ -1508,7 +1507,7 @@ focus_tree = {
 		completion_reward = {
 			declare_war_on = {
 				target = XCE
-				type = annex_everything
+				type = ZSP_world_domination_goal
 			}
 			hidden_effect = { 
 				news_event = ZSP_news_events.2 
@@ -1804,26 +1803,21 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# doesnt actually happen, this is a fakeout
-			effect_tooltip = {
-				every_other_country = {
-					limit = {
-						capital_scope = { 
-							OR = {
-								is_on_continent = Kuvivalawiki
-								is_on_continent = Monerriame
-							}
-						}
-						NOT = { is_ally_with = ROOT }
-						NOT = { has_war_with = ROOT }
-					}
-					ROOT = {
-						declare_war_on = {
-							target = PREV
-							type = annex_everything
-						}
+			every_other_country = {
+				limit = {
+					is_neighbor_of = ROOT
+					NOT = { is_ally_with = ROOT }
+					NOT = { has_war_with = ROOT }
+				}
+				ROOT = {
+					declare_war_on = {
+						target = PREV
+						type = ZSP_world_domination_goal
 					}
 				}
+			}
+			hidden_effect = {
+				news_event = ZSP_news_events.5
 			}
 		}
 	}
@@ -1836,11 +1830,6 @@ focus_tree = {
 
 	country = {
 		factor = 0
-		modifier = {
-			add = 10
-			tag = ZSP
-			has_government = fascism
-		}
 	}
 
 	default = no

@@ -64,11 +64,11 @@ characters = {
         corps_commander = {
             desc = ZSP_krabat_desc
             traits = { infantry_officer ranger }
-            skill = 2
-            attack_skill = 2
-            defense_skill = 3
-            planning_skill = 1
-            logistics_skill = 2
+            skill = 5
+            attack_skill = 6
+            defense_skill = 6
+            planning_skill = 3
+            logistics_skill = 5
         }
     }
 

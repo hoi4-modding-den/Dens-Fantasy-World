@@ -7,13 +7,13 @@ state={
 	state_category = town
 	#impassable = yes
 	resources={
-		aluminium=0
-		chromium=0
+		aluminium=20
+		chromium=10
 		oil=0
 		rubber=0
-		steel=20
-		tungsten=0
-		coal=12
+		steel=80
+		tungsten=10
+		coal=40
 	}
 
 	history={

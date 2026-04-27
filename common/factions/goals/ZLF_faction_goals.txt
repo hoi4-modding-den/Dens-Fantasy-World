@@ -1,0 +1,146 @@
+ZLF_faction_goal_control_erzgebirge = {
+	name = ZLF_faction_goal_control_erzgebirge_name
+	description = ZLF_faction_goal_control_erzgebirge_desc
+	category = medium_term
+	group = resources_to_market_icon
+	allowed = {
+		
+	}
+	visible = {
+		FROM = {
+			NOT = {
+				OR = {
+                    original_tag = ZTC
+				    ZTC = { is_faction_leader = yes }
+                    original_tag = ZLF
+				    ZLF = { is_faction_leader = yes }
+                    original_tag = ZKN
+				    ZKN = { is_faction_leader = yes }
+                }
+			}
+		}
+		any_collection_element = {
+			collection = {
+				 input = game:scope
+				 operators = { faction_members controlled_states }
+				 name = FACTION_CONTROLLED_STATES
+			}
+			distance_to = {
+				target = 655
+				value < 2000
+			}
+		}
+	}
+	available = {
+		
+	}
+	completed = {
+		655 = { is_controlled_by_ROOT_or_ally = yes }
+        749 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+	complete_effect = {
+		add_faction_power_projection = 100
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		custom_effect_tooltip = TARGET_STATE_CONTROLLERS
+		every_faction_member = { 
+			visible_when_empty = yes
+			limit = {
+				OR = {
+                    controls_state = 655
+                    controls_state = 749
+                }
+			}
+			add_faction_initiative = 1
+		}
+        every_state = {
+			limit = {
+				OR = {
+					state = 655
+					state = 749
+				}
+			}
+			if = {
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			factor = 2 # Target of opportunity - already at war anyway
+			655 = {
+				owner = {
+					has_war_with = ROOT
+				}
+			}
+		}
+        modifier = {
+			factor = 2 # Target of opportunity - already at war anyway
+			749 = {
+				owner = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		modifier = {
+			add = 1 # If low on resources
+			OR = {
+				aluminium < 5
+				steel < 5
+				coal < 5
+			}
+		}
+		modifier = {
+			add = 1 # If very low on resources
+			OR = {
+				aluminium < 0
+				steel < 0
+				coal < 0
+			}
+		}
+		modifier = {
+			add = 3 # If entire alliance is low on resources they should be heavily incentivized to taking more
+			OR = {
+				has_resources_in_collection = {
+					collection = {
+							input = game:scope
+							operators =  { faction_members }
+							name = FACTION
+					}
+					resource = aluminium
+					amount < 0
+					extracted = no # (optional, default: no) checks extracted amount instead of country balance
+				}
+				has_resources_in_collection = {
+					collection = {
+							input = game:scope
+							operators =  { faction_members }
+							name = FACTION
+					}
+					resource = steel
+					amount < 0
+					extracted = no # (optional, default: no) checks extracted amount instead of country balance
+				}
+				has_resources_in_collection = {
+					collection = {
+							input = game:scope
+							operators =  { faction_members }
+							name = FACTION
+					}
+					resource = coal
+					amount < 0
+					extracted = no # (optional, default: no) checks extracted amount instead of country balance
+				}
+			}
+		}
+	}
+}

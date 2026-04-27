@@ -57,7 +57,7 @@ characters = {
         
 		country_leader = {
 			ideology = socialism
-			traits = {  }
+			traits = { ZLF_popular_reformist }
 			expire = "1960.1.1.1"
 		}
 	}
@@ -73,7 +73,7 @@ characters = {
         
 		country_leader = {
 			ideology = socialism
-			traits = {  }
+			traits = { ZLF_pacifistic_professor ZLF_blackcloak_terror_victim }
 			expire = "1960.1.1.1"
 		}
 
@@ -150,7 +150,7 @@ characters = {
                 NOT = { has_government = communism }
             }
             traits = {
-                captain_of_industry
+                war_industrialist
             }
             ai_will_do = {
                 base = 5
@@ -160,6 +160,40 @@ characters = {
 		country_leader = {
 			ideology = oligarchism
 			traits = { ZLF_the_man_who_sold_gardenia } # reference to the fact that he is the puppet leader for the corporatocrats in Hortensia
+			expire = "1960.1.1.1"
+		}
+	}
+
+    ZLF_heinrich_rosenhain = { 
+		name = ZLF_heinrich_rosenhain_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_heinrich_rosenhain
+				small = GFX_portrait_ZLF_heinrich_rosenhain_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_heinrich_rosenhain_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                NOT = { has_government = communism }
+                NOT = { has_government = fascism }
+            }
+            traits = {
+                captain_of_industry
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+		country_leader = {
+			ideology = liberalism
+			traits = { ZLF_the_last_liberal }
 			expire = "1960.1.1.1"
 		}
 	}
@@ -268,6 +302,8 @@ characters = {
 			}
 		}
 
+        # country leader if puppeted
+
 		advisor = {
             slot = political_advisor
             idea_token = ZLF_ekkehart_krippendorff_token
@@ -275,7 +311,7 @@ characters = {
                 original_tag = ZLF
             }
             available = {
-                
+                is_country_leader = no
             }
             traits = {
                 ZLF_foreign_minister
@@ -306,6 +342,89 @@ characters = {
             }
             traits = {
                 ZLF_the_white_rose
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+	}
+
+    ZLF_ll_zaunenbach = {
+		name = ZLF_ll_zaunenbach_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_ll_zaunenbach
+				small = GFX_portrait_ZLF_ll_zaunenbach_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_ll_zaunenbach_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_country_flag = ZLF_unlocked_esperanto
+                NOT = { has_government = fascism }
+            }
+            traits = {
+                ZLF_doctor_esperanto 
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+	}
+
+    ZLF_gregor_bauer = {
+		name = ZLF_gregor_bauer_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_gregor_bauer
+				small = GFX_portrait_ZLF_gregor_bauer_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_gregor_bauer_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_completed_focus = ZLF_support_the_agricultural_class
+            }
+            traits = {
+                ZLF_agricultural_minister
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+	}
+
+    ZLF_heinrich_eisler = {
+		name = ZLF_heinrich_eisler_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_heinrich_eisler
+				small = GFX_portrait_ZLF_heinrich_eisler_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_heinrich_eisler_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_dlc = "La Resistance"
+                has_intelligence_agency = yes
+            }
+            traits = {
+                GER_secretary_of_state_security
             }
             ai_will_do = {
                 base = 5
@@ -619,6 +738,84 @@ characters = {
             attack_skill = 1
             defense_skill = 2
             planning_skill = 3
+            logistics_skill = 3
+        }
+	}
+
+    ZLF_mina_witkojc = {
+		name = ZLF_mina_witkojc_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_mina_witkojc
+				small = GFX_portrait_ZLF_mina_witkojc_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_mina_witkojc_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                NOT = { has_country_flag = ZLF_elbian_insurrection_happened }
+            }
+
+			cost = 100
+
+            traits = {
+                ZLF_elbian_autonomist
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+		corps_commander = {
+            traits = { ranger politically_connected }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 2
+        }
+	}
+
+    ZLF_jakub_bart_cisinski = {
+		name = ZLF_jakub_bart_cisinski_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_jakub_bart_cisinski
+				small = GFX_portrait_ZLF_jakub_bart_cisinski_small
+			}
+		}
+
+		advisor = {
+            slot = high_command
+            idea_token = ZLF_jakub_bart_cisinski_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                NOT = { has_country_flag = ZLF_elbian_insurrection_happened }
+            }
+
+			cost = 200
+
+            traits = {
+                army_commando_3
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+		corps_commander = {
+            traits = { ranger inflexible_strategist }
+            skill = 4
+            attack_skill = 3
+            defense_skill = 4
+            planning_skill = 4
             logistics_skill = 3
         }
 	}

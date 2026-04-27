@@ -14,23 +14,46 @@
  ZLF_communism: "Republic of Gardenia"
  ZLF_communism_DEF: "the Republic of Gardenia"
  ZLF_communism_ADJ: "Gardenian"
- ZLF_fascism: "Gardenian Ultranation"
- ZLF_fascism_DEF: "the Gardenian Ultranation"
+ ZLF_fascism: "Gardenian Ultranational State"
+ ZLF_fascism_DEF: "the Gardenian Ultranational State"
  ZLF_fascism_ADJ: "Gardenian"
 
  ZLF_liberation_front: "Edelweiss Liberation Front"
  ZLF_liberation_front_DEF: "the Edelweiss Liberation Front"
  ZLF_liberation_front_ADJ: "Edelweiss"
 
- ZLF_elbian_state: "Mondsichel-Allianz"
+ ZLF_elbian_state: "Moonsickle Alliance"
  ZLF_elbian_state_DEF: "the Alliance of the Elbian Bioregionalist States"
  ZLF_elbian_state_ADJ: "Elbian"
+
+
+ ZLF_celandra_republic: "Celandran Republic"
+ ZLF_celandra_republic_DEF: "the Republic of Celandra"
+ ZLF_celandra_republic_ADJ: "Celandran"
+
+ ZLF_orchidee_republic: "Orchidea Popular Republic"
+ ZLF_orchidee_republic_DEF: "the Popular Republic of Orchidea"
+ ZLF_orchidee_republic_ADJ: "Orchidean"
+
+ ZLF_balekelemi_republic: "Elotropian Federation"
+ ZLF_balekelemi_republic_DEF: "the Elotropian Federation of Free States"
+ ZLF_balekelemi_republic_ADJ: "Elotropian"
+
+ ZLF_korelia_republic: "Korelian Demarchy"
+ ZLF_korelia_republic_DEF: "the Demarchy of Korelia"
+ ZLF_korelia_republic_ADJ: "Korelian"
 
 
 # FACTIONS
 
  ZLF_faction_template_socialists_name: "Socialist League"
  ZLF_internationalist_system_name: "Internationalist System"
+
+
+# FACTION STUFF
+
+ ZLF_faction_goal_control_erzgebirge_name: "Secure the Erzgebirge"
+ ZLF_faction_goal_control_erzgebirge_desc: "The Erzgebirge (lit. 'Ore Mountains') are bountiful in iron, coal and many other material for war. Securing it would certainly help our war efforts."
 
 
 # PARTIES
@@ -43,8 +66,8 @@
  ZLF_democratic_party_sp_long: "Socialist Party"
  ZLF_democratic_party_gkp: "GKP"
  ZLF_democratic_party_gkp_long: "Gardenian Constitutional Party"
- ZLF_democratic_party_elbian: "Domowina"
- ZLF_democratic_party_elbian_long: "Homeland Front" # Elbian CW only
+ ZLF_democratic_party_elbian: "Elbska Ludowa Strona"
+ ZLF_democratic_party_elbian_long: "Elbian Peoples' Party" # Elbian CW only
  ZLF_communism_party: "RTP"
  ZLF_communism_party_long: "Radical Transformative Party"
  ZLF_fascism_party: "PGE"
@@ -68,12 +91,16 @@
  ZLF_juergen_zauberthal_name: "Jürgen Zauberthal"
  ZLF_gustav_mai_name: "Gustav Mai"
  ZLF_wilhelm_gluecksburg_name: "Wilhelm Glücksburg"
+ ZLF_heinrich_rosenhain_name: "Heinrich Rosenhain"
  ZLF_rudolf_zimmermann_name: "Rudolf Zimmermann"
  ZLF_orlando_name: "Orlando"
  ZLF_orlando_desc: "§LHello there!§!"
  ZLF_marko_hausmann_name: "Dr. Marko Hausmann"
- ZLF_ekkehart_krippendorff_name: "Ekkehart Krippendorff"
+ ZLF_ekkehart_krippendorff_name: "Ekkard Krippendorff"
  ZLF_emilia_noveau_name: "Emilia Noveau"
+ ZLF_ll_zaunenbach_name: "Luis Lasarus Zaunenbach"
+ ZLF_gregor_bauer_name: "Gregor Bauer"
+ ZLF_heinrich_eisler_name: "Heinrich Eisler"
  ZLF_michel_meisendorff_name: "Michel Meisendorff"
  ZLF_hugo_von_fallersleben_name: "Hugo von Fallersleben"
  ZLF_rudy_handwerker_name: "Rudy Handwerker"
@@ -82,27 +109,38 @@
  ZLF_sonnenuntergang_name: "Sonnenuntergang"
  ZLF_harrier_du_bois_name: "Raphaël Ambrosius Costeau"
  ZLF_dagobert_mose_name: "Dagobert Mose"
+ ZLF_mina_witkojc_name: "Mina Witkojc"
+ ZLF_jakub_bart_cisinski_name: "Jakub Bart-Ćišinski"
 
 
 # TRAITS
 
  ZLF_hero_of_the_revolution: "Hero of Edelweiss"
  ZLF_marxist_theorist: "Centre Marxist Theorist"
+ ZLF_popular_reformist: "Popular Reformist"
+ ZLF_pacifistic_professor: "Pacifistic Professor"
+ ZLF_blackcloak_terror_victim: "Blackcloak-Terror Victim"
+ ZLF_blackcloak_terror_victim_tt: "Eyesight: §R-50%§!"
  ZLF_the_man_who_sold_gardenia: "The Man Who Sold Gardenia"
+ ZLF_the_last_liberal: "Liberal Coalition-Builder"
  ZLF_warmonger: "Foolish Warmonger"
  ZLF_knight_of_the_moonlight_order: "Knight of the Moonlight Order"
+ ZLF_former_foreign_minister: "Former Foreign Minister"
  ZLF_technocratic_tendencies: "Reformist Technocrat"
  ZLF_centre_marxist_man: "Centre Marxist Party Leader"
  ZLF_literal_nazi: "Ultranationalist Paramilitary"
  ZLF_land_reform_advocate: "Land & Labour Reformist"
  ZLF_exiled_social_democrat: "Exiled Social Democrat"
  ZLF_labour_minister: "Minister of Labour"
- ZLF_foreign_minister: "Minister of Foreign Affairs"
+ ZLF_foreign_minister: "International Relations Researcher"
  ZLF_the_white_rose: "The White Rose"
+ ZLF_doctor_esperanto: "Doktoro Esperanto"
+ ZLF_agricultural_minister: "Minister of Agriculture"
  ZLF_democratic_propagandist: "Social Democratic Activist"
  ZLF_military_theorist: "$military_theorist$"
  ZLF_friendship_student: "Militant Harmonist"
  ZLF_police_intendant: "Police Intendant"
+ ZLF_elbian_autonomist: "Elbian Autonomist"
 
  ZLF_raserei: "Furioso"
  ZLF_raserei_desc: "§LSchneller! Schneller! Schneller!§!"
@@ -117,8 +155,11 @@
  ZLF_anti_monarchist_campaign: "The Anti-Monarchist Campaign"
  ZLF_hosting_exiled_royals: "Zinnian Royals in Exile"
  ZLF_hosting_exiled_royals_desc: "The Royal Family of Gardenia was allowed to go into exile in [ROOT.GetNameDef]. While they do not actively attempt to undermine the Republic in fear of retaliation, they may make good figureheads for a client state should we attempt to conquer Gardenia."
+ ZLF_hosting_exiled_royals_tt: "If we capitulate §Y[ZLF.GetNameWithFlag]§!, we will automatically establish a §YPuppet Monarchy§!."
  ZLF_staatsbankrott: "End of the Adelswirtschaft"
  ZLF_staatsbankrott_desc: "The exploitation of the people through the aristocracy has been ended. However, in the heat of revolution, the thoroughness of our troops has caused significant damage to our economic capabilities."
+ ZLF_upset_industrialists: "Apprehensive Capitalists"
+ ZLF_upset_industrialists_desc: "While not opposed to a republican revolution, many industrialists fear that the socialist influence on the major revolutionary factions will lead to them being expropriated and killed."
  ZLF_economic_downturn: "Planlosigkeit"
  ZLF_economic_downturn_desc: "Our economy was significantly hurt by the civil war, but our economists are not certain what approach will assist in reconstruction. Our industrial planning is in a state of limbo. We are planlos."
  ZLF_marxian_economic_recovery: "Marxian Economics"
@@ -128,13 +169,24 @@
  ZLF_arbeitsschaffungsprogramme: "Work Creation Programs"
  ZLF_deficit_spending_idea: "Deficit Spending"
  ZLF_strengthened_economy: "Strengthened Economy"
+ ZLF_railway_expansion: "Railway Expansion"
+ ZLF_consumer_goods_focus: "Consumer Goods Prioritisation"
  ZLF_cavalry_bonus_cw: "Rapid Response Brigades"
  ZLF_reconstruction: "National Reconstruction"
  ZLF_joint_labour_act: "Hausmann-Orlando Act"
  ZLF_joint_labour_act_desc: "Conceptualised by SP Member of Parliament Orlando and Minister of Labour Hausmann, the New Labour Protection and Safety Act (Orlando-Hausmann Act) establishes strict labour standards and protects workers' rights to unionise and strike."
+ ZLF_worker_councils: "Worker Councils"
  ZLF_milmodkom: "Military Modernisation Committee" # Militärmodernisierungskommittee
+ ZLF_trained_military_engineers: "Trained Military Engineers"
+ ZLF_fighter_bonus: "Ace Combat"
+ ZLF_aircraft_bonus: "Devil May Fly"
+ ZLF_domowina_preservation_act: "Domowina Preservation Act"
  ZLF_intervention_corps: "International Cooperation League"
  ZLF_elbian_insurrectionary_army: "Elbian Volunteer Army"
+ ZLF_sibling_republic_spirit: "Geschwisterrepublik"
+ ZLF_celandra_monarchist_deconstruction: "Monarchist Deconstruction"
+ ZLF_orchidee_new_national_identity: "New National Indentity"
+ ZLF_elotropia_ethnic_tensions: "Ethnic Tensions"
 
 
 # DYNMODS
@@ -168,8 +220,28 @@
  ZLF_take_the_royalist_stronghold: "Take the Royalist Stronghold"
  ZLF_maintain_connection_to_hortensia: "Ongoing Negotiations in Hortensia"
 
+ ZLF_establish_sibling_republics_cat: "Revolutionary Export"
+ ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED: "owned and controlled Highlighted States"
+ ZLF_establish_celandra_sibling_republic: "Establish a Celandran Sibling Republic"
+ ZLF_establish_celandra_sibling_republic_desc: "The People of Celandra are tired of monarchist tyranny. Thus, we will establish a Sibling Republic, following the ideals of the Edelweiss Revolution."
+ ZLF_establish_celandra_sibling_republic_tt: "Release §Y$ZLF_celandra_republic$§! in §YHighlighted States§! controlled by us."
+ ZLF_transfer_state_to_celandra_sb: "Transfer [FROM.GetName] to our Celandran Allies"
+ ZLF_establish_orchidee_sibling_republic: "Establish an Orchidean Sibling Republic"
+ ZLF_establish_orchidee_sibling_republic_desc: "The Northern lands lying between the Einöde and Celandra Proper are known as Orchidee in Gardenian. It should therefore only be proper to grant them their own Sibling Republic, independent from Celandra."
+ ZLF_establish_orchidee_sibling_republic_tt: "Release §Y$ZLF_orchidee_republic$§! in §YHighlighted States§! controlled by us."
+ ZLF_transfer_state_to_orchidee_sb: "Transfer [FROM.GetName] to our Orchidean Allies"
+ ZLF_establish_elotropia_sibling_republic: "Establish an Elotropian Sibling Republic"
+ ZLF_establish_elotropia_sibling_republic_desc: "The chaotic regions known in Gardenian as Elotropien and in their native language as the Balekelemi region has significantly destabilised, even moreso than Gardenia. To help them back on the right path, a Republican Administration is needed."
+ ZLF_establish_elotropia_sibling_republic_tt: "Release §Y$ZLF_balekelemi_republic$§! in §YHighlighted States§! controlled by us."
+ ZLF_transfer_state_to_elotropia_sb: "Transfer [FROM.GetName] to our Elotropian Allies"
+ ZLF_establish_korelia_sibling_republic: "Establish a Korelian Sibling Republic"
+ ZLF_establish_korelia_sibling_republic_desc: "Korelia, in a way, is Gardenian too. But instead of attempting to integrate them into our Republic, we shall grant them an independent Sibling Republic, instead only directly integrating the small border region of Linden, where Gardenian natives are most common."
+ ZLF_establish_korelia_sibling_republic_tt: "Release §Y$ZLF_korelia_republic$§! in §YHighlighted States§! controlled by us."
+ ZLF_transfer_state_to_korelia_sb: "Transfer [FROM.GetName] to our Korelian Allies"
+ ZLF_gardenisation_of_state: "Gardenianisation of [FROM.GetName]"
+
  ZLF_establish_elbian_autonomy_timer: "Demands for Elbian Autonomy"
- ZLF_end_of_elbian_insurrection: "Negotiations with the Moon Sickle Alliance"
+ ZLF_end_of_elbian_insurrection: "Negotiations with the Moonsickle Alliance"
  ZLF_rename_cities: "Destroy the Monarchist Symbols"
 
  ZLF_monetary_control: "Anti-Cyclical Fiscal Policies"
@@ -208,7 +280,7 @@
  ZLF_unemployment_rate_decision: "Unemployment Rate: [ZLF_check_unemployment_rate]"
  ZLF_unemployment_rate_decision_trigger: "has reached the ideal §YUnemployment Rate§! of §G5% or less§!."
  ZLF_gdp_growth_decision: "GDP Growth: [ZLF_check_gdp_growth]"
- ZLF_gdp_growth_decision_desc: "For the sake of my sanity, instead of a complicated GDP Growth Calculation, GDP in this case just means Civilian Factories constructed." 
+ ZLF_gdp_growth_decision_desc: "For the sake of my sanity, instead of a complicated GDP Growth Calculation, GDP in this case just means Civilian Factories manually constructed." 
  ZLF_gdp_growth_decision_trigger: "has a §YGDP Growth§! of §Gat least 25§! (currently §Y[?total_constructed_civilian_factory]§!)."
  ZLF_trade_balance_decision: "Trade Balance: [ZLF_check_trade_balance]"
  ZLF_trade_balance_decision_trigger: "has a §Gpositive§! §YTrade Balance§!."
@@ -230,6 +302,7 @@
 # TOOLTIPS
 
  ZLF_controls_highlighted_states_tt: "Controls all §Yhighlighted states§!"
+ ZLF_facility_construction_tt: "If there are no other §YExperimental Facilities§! in §Y[$temp_facility_state_loc$.GetName]§!, we will gain a §Y$temp_facility_type_loc$§! in §Y[$temp_facility_state_loc$.GetCapitalVictoryPointName]§!."
 
 
 # FOCI
@@ -254,7 +327,7 @@
  ZLF_buy_foreign_guns: "Purchase Foreign Military Equipment"
  ZLF_buy_foreign_guns_desc: ""
  ZLF_dawn_of_the_republic: "Sunset for the Zinnian Throne"
- ZLF_dawn_of_the_republic_desc: "The Reactionary Forces of the Zinnian Throne have been defeated. The Republic endures."
+ ZLF_dawn_of_the_republic_desc: "With the reactionary forces of the Zinnian Throne defeated, the Liberation Front has successfully united the primary Gardenian lands. Now is time to reorganise, establish a proper democracy and pass judgement upon the tyrants."
  ZLF_dawn_of_the_republic_tt: "The §YLiberation Front§! will be reorganised into a proper §YRepublic§!, a §Yconstitutional convention§! will be held and preparations for §Yelections§! will be made."
  
  ZLF_magic_polygon_of_economics: "Magic Polygon of Economics"
@@ -267,7 +340,7 @@
  ZLF_nationalise_the_banks_desc: ""
  ZLF_transformation_of_the_economy: "Transformation of the Economy"
  ZLF_transformation_of_the_economy_desc: ""
- ZLF_the_central_economy: "The Centralised Economy"
+ ZLF_the_central_economy: "Zentralplanwirtschaft"
  ZLF_the_central_economy_desc: ""
  ZLF_trust_in_cains: "Trust in Cains"
  ZLF_trust_in_cains_desc: "The economist Johann Möglich Cains has drafted a plan to revitalise the economy. Emphasising the need to increase the purchasing power of the workers to restore trust in the economy after the civil war, he has proposed large-scale public works to create employment. These programs are to be made possible through deficit spending."
@@ -285,8 +358,22 @@
  ZLF_large_scale_public_works_desc: ""
  ZLF_deficit_spending: "Deficit Spending"
  ZLF_deficit_spending_desc: ""
- ZLF_the_labour_union_economy: "The Labour Union Economy"
+ ZLF_the_labour_union_economy: "Wirtschaft der Gewerkschaften"
  ZLF_the_labour_union_economy_desc: ""
+ ZLF_military_industry_investments: "Military Industry Investments"
+ ZLF_military_industry_investments_desc: ""
+ ZLF_negotiate_with_the_unions: "Labour Union Cooperation"
+ ZLF_negotiate_with_the_unions_desc: ""
+ ZLF_foreign_industry_investments: "Utilise Foreign Industrial Connections"
+ ZLF_foreign_industry_investments_desc: ""
+ ZLF_railway_investments: "Railway Network Expansion"
+ ZLF_railway_investments_desc: ""
+ ZLF_consumer_goods_consumer_rights: "Consumer Goods, Consumer Rights"
+ ZLF_consumer_goods_consumer_rights_desc: ""
+ ZLF_defence_industry: "Defence Industrial Plan"
+ ZLF_defence_industry_desc: ""
+ ZLF_civilian_industry: "Civilian Industrial Plan"
+ ZLF_civilian_industry_desc: ""
 
  ZLF_national_democratic_majority: "National Democratic Majority"
  ZLF_national_democratic_majority_desc: ""
@@ -313,26 +400,48 @@
  ZLF_nationalisation_program_desc: ""
  ZLF_military_modernisation_committee: "Formalise the MilModKom"
  ZLF_military_modernisation_committee_desc: ""
- ZLF_reform_the_airship_fleet: "Reform the Airship Fleet"
+ ZLF_reform_the_airship_fleet: "Replace the Airship Fleet"
  ZLF_reform_the_airship_fleet_desc: ""
+ ZLF_airspace_dominance: "Airspace Dominance"
+ ZLF_airspace_dominance_desc: ""
+ ZLF_aerostatic_brigades: "Reorganise Aerostatic Brigades"
+ ZLF_aerostatic_brigades_desc: ""
  ZLF_utilise_civil_war_experience: "Utilise Civil War Experience"
  ZLF_utilise_civil_war_experience_desc: ""
+ ZLF_elbian_auxiliary_brigades: "Elbian Auxiliary Brigades"
+ ZLF_elbian_auxiliary_brigades_desc: ""
+ ZLF_elbian_auxiliary_brigades_tt: "Deploys §gTwo§! §YElbian Specialised Divisions§! in §Y[677.GetName]§!."
+ ZLF_political_commissars: "Political Commissars"
+ ZLF_political_commissars_desc: ""
+ ZLF_invest_in_experimental_warfare: "Experimental Warfare"
+ ZLF_invest_in_experimental_warfare_desc: ""
+ ZLF_utilise_military_engineers: "Utilise Military Engineers"
+ ZLF_utilise_military_engineers_desc: ""
  ZLF_staatssicherheitsdienst: "Staatssicherheitsdienst"
  ZLF_staatssicherheitsdienst_desc: ""
  ZLF_staatssicherheitsdienst_tt: "Create §YStaatssicherheitsdienst Gardenien§! Intelligence Agency."
  ZLF_rathenau_affair: "The Rathenau Affair"
  ZLF_rathenau_affair_desc: ""
  ZLF_rathenau_affair_trigger: "Completed via the §Y'$ZLF_events.5.t$'§! Event."
+ ZLF_rathenau_affair_tt: "Starts a short §YEvent Chain§! to deal with the §RAftermath of the Affair§!."
  ZLF_left_liberal_coalition_formed: "The Left-Liberal Coalition"
  ZLF_left_liberal_coalition_formed_desc: ""
  ZLF_left_liberal_coalition_formed_tt: "The §YGKP§! has joined the §YGoverning Coalition§!."
  ZLF_progressive_platform: "Progressive Platform"
  ZLF_progressive_platform_desc: ""
- ZLF_invite_industrialists: "Invite Industrialists"
+ ZLF_invite_industrialists: "Reconciliate with Industrialists"
  ZLF_invite_industrialists_desc: ""
+ ZLF_homeland_preservation_act: "Enact Nature Preservation Measures"
+ ZLF_homeland_preservation_act_desc: ""
  ZLF_government_holds: "Maintain the Brandmauer"
  ZLF_government_holds_desc: ""
  ZLF_government_holds_tt: "The §YGKP§! has been left out from the §YGoverning Coalition§!."
+ ZLF_support_the_agricultural_class: "Support the Agricultural Class"
+ ZLF_support_the_agricultural_class_desc: ""
+ ZLF_transition_to_workers_councils: "[ZLF_get_worker_council_transition_name]"
+ ZLF_transition_to_workers_councils_ndpvg: "Integrate the Unions"
+ ZLF_transition_to_workers_councils_real: "Transition to Worker Councils"
+ ZLF_transition_to_workers_councils_desc: ""
 
  ZLF_theories_of_international_relations: "Theories of International Relations"
  ZLF_theories_of_international_relations_desc: "The international system is build up based on the principle of anthropromorphic difference. Societies who have higher collective potential (measure of organising labour) than others end up dominating and exploiting those weaker societies. This international system is dysfunctional, as it ends up reducing global collective potential."
@@ -356,12 +465,10 @@
  ZLF_union_with_hortensia_desc: ""
  ZLF_full_interventionism_in_the_north: "Launch Balekelemi Intervention"
  ZLF_full_interventionism_in_the_north_desc: ""
- ZLF_consolidate_balekelemi: "Estalbish the Elotropian Sibling Republic"
- ZLF_consolidate_balekelemi_desc: ""
- ZLF_consolidate_korelia: "Estalbish the Korelian Sibling Republic"
- ZLF_consolidate_korelia_desc: ""
  ZLF_full_interventionism_in_korelia: "Launch Korelian Intervention"
  ZLF_full_interventionism_in_korelia_desc: ""
+ ZLF_strike_the_eastern_monarchies: "Strike the Eastern Monarchies"
+ ZLF_strike_the_eastern_monarchies_desc: ""
  ZLF_secure_alstroemeria: "Restore Law and Order in Alstroemeria"
  ZLF_secure_alstroemeria_desc: "The lawless lands of Alstroemeria are de-jure controlled by the Order of the Five Towers, with most of its land under no control of an actual government. We must end this increaturous magocratic experiment."
  ZLF_rosendiplomatie: "Rosendiplomatie"
@@ -370,8 +477,8 @@
  ZLF_pragmatism_in_the_foreign_office_desc: ""
  ZLF_export_the_revolution: "Export the Revolution"
  ZLF_export_the_revolution_desc: ""
- ZLF_consolidate_celandra: "Establish the Celandran Sibling Republic"
- ZLF_consolidate_celandra_desc: ""
+ ZLF_fortify_the_strait: "Protect the Strait"
+ ZLF_fortify_the_strait_desc: ""
  ZLF_expand_the_internationalist_system: "Expand the Internationalist System"
  ZLF_expand_the_internationalist_system_desc: ""
  ZLF_international_labour_laws: "International Labour Conference"
@@ -436,6 +543,7 @@
  ZLF_post_cw_events.4.t: "Split in the Party"
  ZLF_post_cw_events.4.desc: "With the end of the constitutional convention ongoing, the divisions within the National Democratic Party have become much more apparent. Without the monarchists as a common enemy, the factions have ended their Burgfrieden and the party has split.\n \nThe labour factions, the Trade Unionists and the Cooperativists, have decided to officially leave the party and found their own, named the Socialist Party. Even the prominent revolutionary, Roland Ludovik, has decided to join them, abandoning the NDPvG. Meanwhile on the right side, the more liberal elements of the party have decided to break away and found the Gardinian Constitutional Party as a counterweight to the leftists."
  ZLF_post_cw_events.4.a: "A plurality of opinions must be supported."
+ ZLF_post_cw_events.4.tt: "The §YSocialist Electorial Bloc§! is guaranteed to win the next elections. The §YGKP§! will be relegated to the §YOpposition§!, but its time may come."
 
  ZLF_post_cw_events.5.t: "Closing Speech of the Constitutional Convention"
  ZLF_post_cw_events.5.desc: "WIP"
@@ -446,7 +554,7 @@
  ZLF_post_cw_events.6.a: "The NDRvG manages to convince the people!"
  ZLF_post_cw_events.6.b: "The Sozialistische Partei wins the mandate!"
  ZLF_post_cw_events.6.c: "The Radikale Transformative Partei gets a majority!"
- ZLF_post_cw_events.6.tt: "The other two §Yleftist parties§! will join us in a §RPopular Front coalition§!."
+ ZLF_post_cw_events.6.tt: "The other two §Yleftist parties§! will join us in a §YPopular Front coalition§!."
 
  ZLF_post_cw_events.7.t: "Rebuilding the Nation"
  ZLF_post_cw_events.7.desc: "WIP"
@@ -475,6 +583,7 @@
  ZLF_events.1.t: "Lingua Internacia"
  ZLF_events.1.desc: "Our government has received an interesting petition from a doctor in Welsen. The medical practitioner Dr. Luis Lazarus Zaunenbach is a hobby language enthusiast and the creator of a new language, the lingua internacia, though it is commonly referred to as Esperanto by its speakers. He proposes we use Esperanto as the official language of diplomacy and convincing other nations to do the same. While his ideas seem utopian at the moment, it appeals to exactly the kind of idealism our Republic was founded upon."
  ZLF_events.1.a: "Ĉu tion ni serĉas?"
+ ZLF_unlocked_esperanto: "Unlocked via the §Y'$ZLF_events.1.t$'§! Event"
 
  ZLF_events.2.t: "Elbian Insurrection"
  ZLF_events.2.desc: "WIP"
@@ -532,6 +641,10 @@
  ZLF_events.13.a: "Put some funding towards rebuilding it."
  ZLF_events.13.b: "The Navy is secondary to the other Branches."
 
+ ZLF_events.14.t: "The Krondrache Report"
+ ZLF_events.14.desc: "The government-requested report on the economic situation has been a wake-up call for the politicians. The report outlines three major crises within the nation.\n \n1. Deflation\nThe nation suffers from a massive deflation. This can be attributed to the royalists' sabotage of the mints. It is recommended to print more money and increase purchasing power.\n \n2. Unemployment\nDue to widespread chaos, many workers lost their job, with some even willingly giving up their work to join the Banner-Army. Right now, the Banner-Army is the biggest employer in the nation. Establishing a stable work environment, through work creation programs or otherwise, is recommended.\n \n3. GDP Growth\nThe economy has not yet fallen into depression, but it certainly has grown sluggish. While not technically immediately necessary, it is recommended to increase GDP Growth to avert a future economic crisis."
+ ZLF_events.14.a: "And that's the way it is."
+
 
  ZLF_news_events.1.t: "Revolutionaries win the Gardenian Civil War"
  ZLF_news_events.1.desc: "The Gardenian Civil War has come to an end, with the revolutionaries of the Edelweiss Banner-Army managing to successfully overthrow the Zinnian Monarchy.\n \nThe new republic has already begun to establish itself in the region, preparing to send unutilised military equipment to democratic forces in the north and making moves to align the Free City of Hortensia. But before Gardenia re-enters the geopolitical stage, they will first have to look inward and recover from the devastation of the civil war."
@@ -540,6 +653,9 @@
 
 
 # TECH/EQUIPMENT NAMES
+
+ ZLF_elbian_auxiliaries: "Elbian Auxiliaries"
+ ZLF_elbian_auxiliaries_tt: "§H$category_recon$§!\n     $STAT_ARMY_RECON$§G+200.0%§!\n     §HBatallion Modifier: $category_special_forces_leg_infantry$§!\n        $STAT_ARMY_SOFT_ATTACK$§G+5.00%§!\n     §H$forest$§!\n        $STAT_ADJUSTER_MOVEMENT$§G+20.0%§!\n     §H$hills$§!\n        $STAT_ADJUSTER_MOVEMENT$§G+10.0%§!\n     §H$mountain$§!\n        $STAT_ADJUSTER_MOVEMENT$§G+10.0%§!\n     §H$jungle$§!\n        $STAT_ADJUSTER_MOVEMENT$§G+20.0%§!"
 
  ZLF_infantry_equipment_0: "Gewehr 98"
  ZLF_infantry_equipment_0_short: "Gewehr 98"
@@ -578,6 +694,11 @@
  STATE_855: "Rotenfelde"
  STATE_879: "Quellenjebiet"
 
+ ZLF_STATE_630: "Weerenkahn"
+ ZLF_STATE_685: "Badenhaden"
+ ZLF_STATE_719: "Linden" # Lynn
+ ZLF_STATE_740: "Botzen"
+
  VICTORY_POINTS_8464: "Königsgnaden"
  VICTORY_POINTS_8464_com: "Schlesienstadt"
  VICTORY_POINTS_8470: "Küstrin"
@@ -607,4 +728,14 @@
  VICTORY_POINTS_11326: "Löbnitz"
  VICTORY_POINTS_11415: "Magnolienburg"
  VICTORY_POINTS_11616: "Hyazinthenau"
+
+ ZLF_VICTORY_POINTS_9178: "Weerendorf" # Weercaran
+ ZLF_VICTORY_POINTS_9179: "Billkohrburg" # Billaakor
+ ZLF_VICTORY_POINTS_9753: "Ruckendorf" # Rukuoti
+ ZLF_VICTORY_POINTS_9755: "Zinndel" # Zinhikuu
+ ZLF_VICTORY_POINTS_10126: "Schwanstedt" # Swasson
+ ZLF_VICTORY_POINTS_10129: "Neulindenstadt" # New Lynn
+ ZLF_VICTORY_POINTS_10131: "Laborkomplex A" # Lab A
+ ZLF_VICTORY_POINTS_10134: "Altlindenstadt" # Old Lynn
+ ZLF_VICTORY_POINTS_10419: "Botzen" # Bosojatal
 

@@ -40,7 +40,6 @@ leader_traits = {
 
     ZSP_moster_summoner = {
         
-        ZSP_mana_generation = 15
         breakthrough_factor = 0.1
         ai_focus_aggressive_factor = 1
 
@@ -49,7 +48,6 @@ leader_traits = {
 
     ZSP_necomancer = {
         
-        ZSP_mana_generation = 15
         army_org_factor = 0.1
         ai_focus_aggressive_factor = 1
 
@@ -66,10 +64,10 @@ leader_traits = {
     }
 
     ZSP_apprentice_one = {
-        sprite = 13
+        sprite = 7
 
         experience_gain_army = 0.05
-        production_speed_buildings_factor = 0.1
+        production_lack_of_resource_penalty_factor = -0.15
 
         random = no
     }
@@ -78,15 +76,15 @@ leader_traits = {
         sprite = 13
 
         political_power_factor = 0.1
-        production_lack_of_resource_penalty_factor = -0.15
+        research_speed_factor = 0.1
 
         random = no
     }
 
     ZSP_apprentice_three = {
-        sprite = 13
+        sprite = 10
 
-        research_speed_factor = 0.1
+        production_speed_buildings_factor = 0.1
         conscription_factor = 0.1
 
         random = no

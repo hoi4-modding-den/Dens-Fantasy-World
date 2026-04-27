@@ -37,6 +37,23 @@ add_ideas = {
 	ZTC_foreign_eyes
 }
 
+add_opinion_modifier = {
+	target = ZKN
+	modifier = ZTC_trade_city_modifier
+}
+reverse_add_opinion_modifier = {
+	target = ZKN
+	modifier = ZTC_trade_city_modifier
+}
+add_opinion_modifier = {
+	target = ZLF
+	modifier = ZTC_trade_city_modifier
+}
+reverse_add_opinion_modifier = {
+	target = ZLF
+	modifier = ZTC_trade_city_modifier
+}
+
 add_timed_idea = {
 	idea = ZTC_zinnian_navy_deal
 	days = 146

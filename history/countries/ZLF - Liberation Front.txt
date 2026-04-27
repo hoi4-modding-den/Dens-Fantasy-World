@@ -44,14 +44,17 @@ recruit_character = ZLF_alois_rotrose
 recruit_character = ZLF_juergen_zauberthal
 recruit_character = ZLF_gustav_mai
 recruit_character = ZLF_wilhelm_gluecksburg
+recruit_character = ZLF_heinrich_rosenhain
 recruit_character = ZLF_rudolf_zimmermann
 
 recruit_character = ZLF_orlando
 recruit_character = ZLF_marko_hausmann
 recruit_character = ZLF_ekkehart_krippendorff
 recruit_character = ZLF_emilia_noveau
+recruit_character = ZLF_ll_zaunenbach
+recruit_character = ZLF_gregor_bauer
+recruit_character = ZLF_heinrich_eisler
 recruit_character = ZLF_michel_meisendorff
-
 recruit_character = ZLF_hugo_von_fallersleben
 recruit_character = ZLF_rudy_handwerker
 recruit_character = ZLF_miriam_decker
@@ -59,9 +62,12 @@ recruit_character = ZLF_otto_klinge
 recruit_character = ZLF_sonnenuntergang
 recruit_character = ZLF_harrier_du_bois
 recruit_character = ZLF_dagobert_mose
+recruit_character = ZLF_mina_witkojc
+recruit_character = ZLF_jakub_bart_cisinski
 
 
 set_country_flag = DEN_no_generic_political_advisors
+set_country_flag = DEN_no_generic_spy_advisor
 
 
 set_cosmetic_tag = ZLF_liberation_front

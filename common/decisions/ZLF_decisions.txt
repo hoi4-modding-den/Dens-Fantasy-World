@@ -272,6 +272,536 @@ ZLF_civil_war_cat = {
 
 }
 
+ZLF_establish_sibling_republics_cat = {
+
+    ZLF_establish_celandra_sibling_republic = {
+
+        icon = eng_imperial_federation
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_celandra_sb_states = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_celandra_sb_states
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 7
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = ZLF_establish_celandra_sibling_republic_tt
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = XCE
+                    set_cosmetic_tag = ZLF_celandra_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_celandra_sb_states = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_celandra_sb_states = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_integrated_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                        ZLF_celandra_monarchist_deconstruction
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_celandra_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_celandra_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_celandra_sb_states = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_celandra_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
+    ZLF_establish_orchidee_sibling_republic = {
+
+        icon = eng_propaganda_campaigns
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_orchidee_sb_states = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_orchidee_sb_states
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 2
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = ZLF_establish_orchidee_sibling_republic_tt
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = ZCT
+                    set_cosmetic_tag = ZLF_orchidee_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_orchidee_sb_states = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_orchidee_sb_states = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_integrated_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                        ZLF_orchidee_new_national_identity
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_orchidee_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_orchidee_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_orchidee_sb_states = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_orchidee_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
+    ZLF_establish_elotropia_sibling_republic = {
+
+        icon = generic_colonial_administration
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_elotropia_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_elotropia_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 10
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = ZLF_establish_elotropia_sibling_republic_tt
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = ZFN
+                    set_cosmetic_tag = ZLF_balekelemi_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_elotropia_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_elotropia_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_integrated_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+                    if = {
+                        limit = { controls_state = 1258 }
+                        set_capital = { state = 1258 }
+                    }
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                        ZLF_elotropia_ethnic_tensions
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_elotropia_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_balekelemi_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_elotropia_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_balekelemi_republic
+                }
+                transfer_state = FROM
+                if = {
+                    limit = { FROM = { state = 1258 } }
+                    set_capital = { state = FROM }
+                }
+            }
+        }
+        
+    }
+
+    ZLF_establish_korelia_sibling_republic = {
+
+        icon = eng_puppet_usa
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_korelia_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_korelia_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 10
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = ZLF_establish_korelia_sibling_republic_tt
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = ZKO
+                    set_cosmetic_tag = ZLF_korelia_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_korelia_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_korelia_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_integrated_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+                    if = {
+                        limit = { controls_state = 122 }
+                        set_capital = { state = 122 }
+                    }
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                        # Maybe ask ZKO Dev?
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_korelia_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_korelia_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_korelia_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_korelia_republic
+                }
+                transfer_state = FROM
+                if = {
+                    limit = { FROM = { state = 122 } }
+                    set_capital = { state = FROM }
+                }
+            }
+        }
+        
+    }
+
+    ZLF_gardenisation_of_state = {
+
+        icon = hol_radio_oranje
+
+        cost = 50
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        state_target = yes
+
+        #on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                OR = {
+                    state = 719
+                    state = 630
+                    state = 685
+                    state = 740
+                }
+            }
+        }
+
+        days_remove = 100
+
+        complete_effect = {
+            FROM = { add_compliance = 10 }
+        }
+
+        remove_effect = {
+            hidden_effect = {
+                FROM = { cancel_resistance = yes }
+            }
+            add_state_core = FROM
+        }
+
+    }
+
+}
+
 political_actions = {
 
     ZLF_establish_elbian_autonomy_timer = {
@@ -349,6 +879,8 @@ political_actions = {
 
     ZLF_rename_cities = {
 
+        icon = SWI_swiss_democratic_tradition_campaign
+
         allowed = {
             original_tag = ZLF
         }
@@ -358,10 +890,6 @@ political_actions = {
         }
 
         available = {
-            NOT = { country_exists = ZKN }
-        }
-
-        visible = {
             NOT = { country_exists = ZKN }
         }
 
@@ -430,6 +958,10 @@ economy_decisions = {
                     ZLF_inflation_rate = 0.05
                     tooltip = ZLF_inflation_rate_tt
                 }
+
+                custom_effect_tooltip = generic_skip_one_line_tt
+
+                activate_mission = ZLF_monetary_control
             }
             else = {
                 set_variable = {
@@ -1257,10 +1789,7 @@ ZLF_magic_polygon_cat = {
         icon = generic_forestry
 
         available = {
-            OR = {
-                has_completed_focus = ZLF_equalisation_of_races
-                has_completed_focus = ZLF_elbian_autonomy
-            }
+            has_idea = ZLF_domowina_preservation_act
             hidden_trigger = { always = no }
         }
 
@@ -1308,10 +1837,7 @@ ZLF_magic_polygon_cat = {
                     check_variable = { ZLF_inflation_rate = 0.01 }
                     check_variable = { ZLF_inflation_rate = 0.02 }
                 }
-                OR = {
-                    has_completed_focus = ZLF_equalisation_of_races
-                    has_completed_focus = ZLF_elbian_autonomy
-                }
+                has_idea = ZLF_domowina_preservation_act
             }
         }
 

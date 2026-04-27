@@ -12,6 +12,33 @@ on_actions = {
         }
     }
 
+    on_before_peace_conference_start = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = { tag = ZLF }
+                    ROOT = { NOT = { tag = ZKN } }
+                }
+                FROM = {
+                    every_core_state = {
+                        add_core_of = ZKN
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    FROM = { tag = ZKN }
+                    ROOT = { NOT = { tag = ZLF } }
+                }
+                FROM = {
+                    every_core_state = {
+                        add_core_of = ZLF
+                    }
+                }
+            }
+        }
+    }
+
     on_capitulation = {
         effect = {
             if = {
@@ -40,6 +67,44 @@ on_actions = {
                         elections_allowed = no
                     }
                     load_focus_tree = generic_focus
+                }
+            }
+        }
+    }
+
+    on_peaceconference_ended = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = { tag = ZLF }
+                }
+                FROM = { load_focus_tree = generic_focus }
+                if = {
+                    limit = {
+                        FROM = { has_government = democratic }
+                    }
+                    random_other_country = {
+                        limit = { has_character = ZLF_ekkehart_krippendorff }
+                        ZLF_ekkehart_krippendorff = { set_nationality = FROM }
+                    }
+                    FROM = {
+                        ZLF_ekkehart_krippendorff = {
+                            add_country_leader_role = {
+                                character = ZLF_ekkehart_krippendorff
+                                promote_leader = yes
+                                country_leader = {
+                                    ideology = socialism
+                                    expire = "1965.1.1.1"
+                                    traits = { ZLF_former_foreign_minister }
+                                }
+                            }
+                        }
+                        set_party_name = {
+                            ideology = democratic
+                            name = ZLF_democratic_party
+                            long_name = ZLF_democratic_party_long
+                        }
+                    }
                 }
             }
         }

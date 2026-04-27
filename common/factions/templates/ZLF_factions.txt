@@ -20,7 +20,7 @@ ZLF_faction_template_socialists = {
 		# faction_goal_military_infrastructure
 
 		# Medium term goals
-		faction_goal_aggressive_defense
+		faction_goal_air_superiority
 
 		# Long terms
 		faction_goal_defeat_of_fascism

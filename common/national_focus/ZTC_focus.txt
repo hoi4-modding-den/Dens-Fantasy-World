@@ -1975,14 +1975,11 @@ focus_tree={
 				}
 				is_in_faction_with = ROOT
 			}
-			OR = {
-				is_subject = no
-				has_autonomy_state = autonomy_ZTC_federal_city
-			}
+			is_subject = no
         }
 
 		bypass = {
-
+			has_autonomy_state = autonomy_ZTC_federal_city
         }
 		
 		completion_reward = {

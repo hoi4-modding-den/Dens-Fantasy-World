@@ -56,6 +56,16 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_portrait_ZLF_heinrich_rosenhain"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_heinrich_rosenhain.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_heinrich_rosenhain_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_heinrich_rosenhain_small.png"
+    }
+
+    spriteType = {
         name = "GFX_portrait_ZLF_rudolf_zimmermann"
         texturefile = "gfx/leaders/ZLF/portrait_ZLF_rudolf_zimmermann.png"
     }
@@ -103,6 +113,36 @@ spriteTypes = {
     spriteType = {
         name = "GFX_portrait_ZLF_emilia_noveau_small"
         texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_emilia_noveau_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_ll_zaunenbach"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_ll_zaunenbach.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_ll_zaunenbach_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_ll_zaunenbach_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_gregor_bauer"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_gregor_bauer.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_gregor_bauer_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_gregor_bauer_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_heinrich_eisler"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_heinrich_eisler.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_heinrich_eisler_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_heinrich_eisler_small.png"
     }
 
     spriteType = {
@@ -183,6 +223,26 @@ spriteTypes = {
     spriteType = {
         name = "GFX_portrait_ZLF_dagobert_mose_small"
         texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_dagobert_mose_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_mina_witkojc"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_mina_witkojc.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_mina_witkojc_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_mina_witkojc_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_jakub_bart_cisinski"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_jakub_bart_cisinski.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_jakub_bart_cisinski_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_jakub_bart_cisinski_small.png"
     }
 
 

@@ -1,0 +1,32 @@
+ZLF_celandra_sb_states = {
+	input = game:all_states
+	operators = {
+		limit = {
+			ZLF_celandra_sb_states = yes
+		}
+	}
+}
+ZLF_orchidee_sb_states = {
+	input = game:all_states
+	operators = {
+		limit = {
+			ZLF_orchidee_sb_states = yes
+		}
+	}
+}
+ZLF_elotropia_sb_state = {
+	input = game:all_states
+	operators = {
+		limit = {
+			ZLF_elotropia_sb_state = yes
+		}
+	}
+}
+ZLF_korelia_sb_state = {
+	input = game:all_states
+	operators = {
+		limit = {
+			ZLF_korelia_sb_state = yes
+		}
+	}
+}

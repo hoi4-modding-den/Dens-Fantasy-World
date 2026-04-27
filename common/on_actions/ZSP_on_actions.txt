@@ -1,13 +1,5 @@
 on_actions = {
 
-    on_startup = {
-        effect = {
-            ZSP = {
-                load_focus_tree = ZSP_focus_tree
-            }
-        }
-    }
-
     on_weekly_ZSP = {
         effect = {
             if = {
@@ -34,43 +26,83 @@ on_actions = {
         }
     }
 
-    on_government_change = {
+    on_state_control_changed = {
         effect = {
             if = {
                 limit = {
-                    tag = ZSP
-                    NOT = { has_government = fascism }
+                    ROOT = { has_completed_focus = ZSP_world_domination }
+                    FROM.FROM = {
+                        any_neighbor_state = {
+                            controller = {
+                                NOT = { has_war_with = ROOT }
+                                NOT = { is_ally_with = ROOT }
+                            }
+                        }
+                    }
                 }
-                load_focus_tree = generic_focus
-            }
-            else_if = {
-                limit = {
-                    tag = ZSP
-                    has_government = fascism
+                every_other_country = {
+                    limit = {
+                        is_neighbor_of = ROOT
+                    }
+                    ROOT = {
+                        declare_war_on = {
+                            target = PREV
+                            type = ZSP_world_domination_goal
+                        }
+                    }
                 }
-                load_focus_tree = ZSP_focus_tree
             }
         }
     }
 
-    on_puppet = {
+    on_peaceconference_ended = {
         effect = {
             if = {
                 limit = {
-                    ROOT = { tag = ZSP }
+                    FROM = { tag = ZSP }
                 }
-                ROOT = { load_focus_tree = generic_focus }
+                if = {
+                    limit = { has_cosmetic_tag = ZSP_shadow_realm }
+                    drop_cosmetic_tag = yes
+                }
+                FROM = { load_focus_tree = generic_focus }
             }
         }
     }
 
-    on_release_as_puppet = {
+    on_capitulation = {
         effect = {
             if = {
                 limit = {
-                    ROOT = { tag = ZSP }
+                    FROM = {
+                        has_wargoal_against = {
+                            target = ROOT
+                            type = ZSP_world_domination_goal
+                        }
+                    }
                 }
-                ROOT = { load_focus_tree = generic_focus }
+                if = {
+                    limit = {
+                        any_country = {
+                            NOT = { tag = FROM }
+                            has_war_with = ROOT
+                        }
+                    }
+                    ROOT = {
+                        every_owned_state = {
+                            limit = { is_controlled_by = FROM }
+                            transfer_state_to = FROM
+                        }
+                    }
+                }
+                else = {
+                    FROM = {
+                        annex_country = {
+                            target = ROOT
+                            transfer_troops = no
+                        }
+                    }
+                }
             }
         }
     }

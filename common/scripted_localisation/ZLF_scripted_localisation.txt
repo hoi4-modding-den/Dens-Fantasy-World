@@ -115,14 +115,23 @@ defined_text = {
     name = ZLF_check_sustainability
     text = {
         trigger = {
-            OR = {
-                has_completed_focus = ZLF_equalisation_of_races
-                has_completed_focus = ZLF_elbian_autonomy
-            }
+            has_idea = ZLF_domowina_preservation_act
         }
         localization_key = ZLF_sustainability_good
     }
     text = {
         localization_key = ZLF_sustainability_bad
+    }
+}
+defined_text = {
+    name = ZLF_get_worker_council_transition_name
+    text = {
+        trigger = {
+            has_completed_focus = ZLF_national_democratic_majority
+        }
+        localization_key = ZLF_transition_to_workers_councils_ndpvg
+    }
+    text = {
+        localization_key = ZLF_transition_to_workers_councils_real
     }
 }

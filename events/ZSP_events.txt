@@ -306,6 +306,24 @@ country_event = { # Phoenix overthrows Ozymandias
 
 		custom_effect_tooltip = ZSP_phoenix_events.5.tt
 	}
+
+	option = {
+		name = ZSP_phoenix_events.5.b
+		trigger = {
+			is_ai = no
+		}
+		add_popularity = { ideology = communism popularity = -1 }
+		hidden_effect = {
+			every_other_country = {
+				limit = {
+					is_neighbor_of = ROOT
+					NOT = { is_ally_with = ROOT }
+					NOT = { has_war_with = ROOT }
+				}
+				country_event = ZSP_phoenix_events.7
+			}
+		}
+	}
 }
 
 country_event = { # Phoenix overthrows Ozymandias
@@ -373,6 +391,24 @@ country_event = { # Phoenix overthrows Ozymandias
 		custom_effect_tooltip = generic_skip_one_line_tt
 
 		load_focus_tree = ZSP_slave_revolt_tree
+	}
+}
+
+country_event = { # Ozymandias prepares for War
+	id = ZSP_phoenix_events.7
+	title = ZSP_phoenix_events.7.t
+	desc = ZSP_phoenix_events.7.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZSP_phoenix_events.7.a
+		add_ai_strategy = {
+			type = prepare_for_war
+			id = FROM
+			value = 1000
+		}
 	}
 }
 
@@ -478,5 +514,29 @@ news_event = { # Ozymandias dies
 
 	option = {
 		name = ZSP_news_events.4.a
+	}
+}
+
+news_event = { # War on the World
+	id = ZSP_news_events.5
+	title = ZSP_news_events.5.t
+	desc = ZSP_news_events.5.desc
+	picture = GFX_news_event_056
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ZSP_news_events.5.a
+		trigger = { 
+			tag = ZSP 
+		}
+	}
+
+	option = {
+		name = ZSP_news_events.5.b
+		trigger = { 
+			NOT = { tag = ZSP }
+		}
 	}
 }

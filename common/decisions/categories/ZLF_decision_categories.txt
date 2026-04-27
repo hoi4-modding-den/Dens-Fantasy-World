@@ -49,3 +49,18 @@ ZLF_regional_developments_cat = {
 	}
 }
 
+ZLF_establish_sibling_republics_cat = {
+
+	icon = generic_communist_revolution
+	
+	allowed = {
+		original_tag = ZLF
+	}
+
+	priority = 50
+
+	visible = {
+		has_completed_focus = ZLF_theories_of_international_relations
+		is_subject = no
+	}
+}

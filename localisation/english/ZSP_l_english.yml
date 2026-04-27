@@ -22,12 +22,9 @@
  ZSP_shadow_realm_fascism_DEF: "the Realm of Shadows"
  ZSP_shadow_realm_fascism_ADJ: "Ozymandian"
 
- ZSP_aegis: "Gardenia"
- ZSP_aegis_DEF: "Gardenia"
+ ZSP_aegis: "Gardenian Reconstruction Front"
+ ZSP_aegis_DEF: "the Gardenian Reconstruction Front"
  ZSP_aegis_ADJ: "Gardenia"
- ZSP_aegis_communism: "Gardenian Reconstruction League"
- ZSP_aegis_communism_DEF: "the Gardenian Reconstruction League"
- ZSP_aegis_communism_ADJ: "Gardenian"
 
 
 # PARTIES
@@ -320,10 +317,15 @@
  ZSP_phoenix_events.5.desc: "My reign is being challenged. The Phoenix has begun to openly challenge me, seizing control over various important military strongholds across the nation. He has even undermined my control over the thralls. He must be stopped."
  ZSP_phoenix_events.5.a: "And yet... Is this my chance for Salvation?"
  ZSP_phoenix_events.5.tt: "Thus ends the story of §YOzymandias§!. A life lived in futile struggle against all things beautiful simply because he couldn't be their creator."
+ ZSP_phoenix_events.5.b: "No! I Will Endure!"
 
  ZSP_phoenix_events.6.t: "What Remains"
  ZSP_phoenix_events.6.desc: "Gardenia and Celandra lie in ruins. Nothing left but dust and rubble. The few survivors, be they former slaves or thralls, have rallied under the aegis of the Phoenix."
  ZSP_phoenix_events.6.a: "We must make the best of it."
+
+ ZSP_phoenix_events.7.t: "The Ozymandian Proclamation"
+ ZSP_phoenix_events.7.desc: "WIP"
+ ZSP_phoenix_events.7.a: "We will push back the Shadow Menace!"
 
 
  ZSP_news_events.1.t: "Shadow Incursion into Gardenia"
@@ -332,7 +334,7 @@
  ZSP_news_events.1.desc_cw: "The Gardenian Civil War has been disrupted with the beginning of an incursion from the Alstroemerian region.\n \n$ZSP_news_events.1.desc$"
  ZSP_news_events.1.a: "Fall before the Might of Ozymandias!"
  ZSP_news_events.1.b: "Get into defensive positions!"
- ZSP_news_events.1.c: "Great. More power-hungry lunatics."
+ ZSP_news_events.1.c: "Great. Another power-hungry lunatic."
 
  ZSP_news_events.2.t: "Shadow Incursion into Celandra"
  ZSP_news_events.2.desc: "With Gardenia fully secured under his reign, Ozymandias has now begun his invasion of Celandra. Many nations are now preparing to send volunteers as losing control over the Alba strait may hurt international trade and another victory for Ozymandias will only strengthen him more."
@@ -348,6 +350,11 @@
  ZSP_news_events.4.desc: "I met a traveller from an antique land\nWho said: — Two vast and trunkless legs of stone\nStand in the desert... Near them, on the sand,\nHalf sunk, a shattered visage lies, whose frown,\nAnd wrinkled lip, and sneer of cold command,\nTell that its sculptor well those passions read\nWhich yet survive, stamped on these lifeless things,\nThe hand that mocked them, and the heart that fed\nAnd on the pedestal these words appear\n‚My name is Ozymandias, king of kings\nLook on my works, ye Mighty, and despair!‘\nNothing beside remains. Round the decay\nOf that colossal wreck, boundless and bare\nThe lone and level sands stretch far away."
  ZSP_news_events.4.a: "And thus, the Ozymandian Reign ends."
 
+ ZSP_news_events.5.t: "The Great Shadow War"
+ ZSP_news_events.5.desc: "Following the proclamation made a few months ago, Ozymandias, the Mage-Lord turned Avatar of Shadows, has begun his invasion of neighbouring nations, with reports of his marching legions already spreading across the world."
+ ZSP_news_events.5.a: "Everything Will Return To Nothing!"
+ ZSP_news_events.5.b: "Brace for Impact."
+
 
 # TECH/EQUIPMENT NAMES
 
@@ -358,7 +365,11 @@
  ZSP_infantry_equipment_0_desc: "An old musket rifle."
 
 
-# OTHER
+# WAR STUFF
+
+ ZSP_world_domination_goal: "Shadow Incursion"
+ ZSP_world_domination_goal_desc: "The Legions of the Shadow Realm march towards the Destruction of the World!"
+ ZSP_WORLD_DOMINATION_WAR_NAME: "$ORDER$$FIRST$ Incursion into $SECOND$ Lands"
 
  ZSP_gardenian_unification: "Gardenian Unification"
 
@@ -371,8 +382,8 @@
 
 # WAR NAMES
 
- WAR_NAME_ZSP_ZKN: "Shadow Incursion into Gardenia"
- WAR_NAME_ZSP_ZLF: "Shadow Incursion into Gardenia"
+ ZSP_WORLD_DOMINATION_WAR_NAME_ZSP_ZKN: "Shadow Incursion into Gardenia"
+ ZSP_WORLD_DOMINATION_WAR_NAME_ZSP_ZLF: "Shadow Incursion into Gardenia"
 
 
 # MAP STUFF

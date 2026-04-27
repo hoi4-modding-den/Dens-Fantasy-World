@@ -24,7 +24,9 @@ bookmarks = {
 				ZLF_anti_monarchist_campaign
 			}
 			focuses = {
+				ZLF_magic_polygon_of_economics
 				ZLF_dawn_of_the_republic
+				ZLF_theories_of_international_relations
 			}
 		}
 		ZSP={

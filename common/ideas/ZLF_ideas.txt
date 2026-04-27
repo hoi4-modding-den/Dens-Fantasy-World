@@ -124,6 +124,28 @@ ideas = {
 
         }
 
+        ZLF_defense_of_gardenia_3 = {
+
+            name = ZLF_defense_of_gardenia
+            picture = YUG_federal_defense_council
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                production_speed_bunker_factor = 0.2
+                production_speed_arms_factory_factor = 0.25
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+            }
+
+        }
+
         ZLF_red_guards = {
 
             picture = FRA_scw_intervention_republicans_focus
@@ -214,6 +236,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.05
+                custom_modifier_tooltip = ZLF_hosting_exiled_royals_tt
 			}
 
             targeted_modifier = {
@@ -266,6 +289,26 @@ ideas = {
                 industrial_capacity_dockyard = -0.1
 				production_speed_buildings_factor = -0.25
                 consumer_goods_factor = 0.4
+			}
+            
+		}
+
+        ZLF_upset_industrialists = {
+
+			picture = CZE_industrialists_veto
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                political_power_cost = 0.15
+                party_popularity_stability_factor = -0.05
+                industrial_concern_cost_factor = 1
 			}
             
 		}
@@ -422,6 +465,86 @@ ideas = {
 
         }
 
+        ZLF_strengthened_economy_mil = {
+
+            name = ZLF_strengthened_economy
+            picture = SOV_fourth_five_year_plan
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                industrial_capacity_factory = 0.25
+                industrial_capacity_dockyard = 0.25
+                consumer_goods_factor = -0.1
+            }
+
+        }
+
+        ZLF_strengthened_economy_civ = {
+
+            name = ZLF_strengthened_economy
+            picture = SOV_fourth_five_year_plan
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+                consumer_goods_factor = -0.3
+            }
+
+        }
+
+        ZLF_railway_expansion = {
+
+            picture = generic_build_infrastructure
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                production_speed_rail_way_factor = 0.25
+                production_speed_supply_node_factor = 0.1
+            }
+
+        }
+
+        ZLF_consumer_goods_focus = {
+
+            picture = generic_goods_red_bonus
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                production_speed_arms_factory_factor = -0.1
+                production_speed_industrial_complex_factor = 0.2
+            }
+
+        }
+
         ZLF_cavalry_bonus_cw = {
 
             picture = generic_war_preparation
@@ -482,6 +605,28 @@ ideas = {
             
         }
 
+        ZLF_worker_councils = {
+
+            picture = GER_limited_democratic_principles
+            
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+            
+            modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+                drift_defence_factor = 0.5
+                production_speed_buildings_factor = 0.15
+            }
+            
+        }
+
         ZLF_milmodkom = {
 
             picture = MEX_revolutionary_army
@@ -525,6 +670,110 @@ ideas = {
             research_bonus = {
 				infantry_equipment = 0.1
 			}
+            
+        }
+
+        ZLF_milmodkom_3 = {
+
+            name = ZLF_milmodkom
+            picture = MEX_revolutionary_army
+            
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+            
+            modifier = {
+                army_org_factor = 0.02
+				experience_gain_army_factor = 0.1
+                army_morale_factor = 0.05
+                drift_defence_factor = 0.25
+            }
+
+            research_bonus = {
+				infantry_equipment = 0.1
+			}
+            
+        }
+
+        ZLF_fighter_bonus = {
+
+            picture = generic_air_bonus
+            
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+            
+            modifier = {
+				air_ace_bonuses_factor = 0.25
+                air_range_factor = 0.05
+            }
+            
+        }
+
+        ZLF_aircraft_bonus = {
+
+            picture = air_support_bonus
+            
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+            
+            modifier = {
+                air_ace_bonuses_factor = 0.25
+                air_range_factor = 0.05
+                air_home_defence_factor = 0.1
+                army_bonus_air_superiority_factor = 0.2
+            }
+            
+        }
+
+        ZLF_trained_military_engineers = {
+
+            picture = generic_supply_depot
+            
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+            
+            modifier = {
+				dig_in_speed_factor = 0.25
+                max_dig_in = 2
+            }
+            
+        }
+
+        ZLF_domowina_preservation_act = {
+
+            picture = hol_the_foundations_of_defense
+            
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+            
+            modifier = {
+				stability_factor = 0.1
+                local_resources_factor = -0.05
+            }
             
         }
 
@@ -591,6 +840,83 @@ ideas = {
                 attrition = -0.15
                 out_of_supply_factor = -0.8
                 surrender_limit = 0.5
+            }
+
+        }
+
+        ZLF_sibling_republic_spirit = {
+
+            picture = generic_political_support
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                political_power_factor = 0.15
+                autonomy_gain_global_factor = -0.1
+            }
+
+        }
+
+        ZLF_celandra_monarchist_deconstruction = {
+
+            picture = generic_king_handled
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                production_speed_buildings_factor = 0.1
+                consumer_goods_factor = -0.1
+                neutrality_drift = -0.05
+            }
+
+        }
+
+        ZLF_orchidee_new_national_identity = {
+
+            picture = generic_production_bonus
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                stability_factor = 0.05
+                political_power_cost = 0.1
+            }
+
+        }
+
+        ZLF_elotropia_ethnic_tensions = {
+
+            picture = saf_history_of_segregation_2
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                stability_factor = -0.1
+                compliance_gain = -0.05
             }
 
         }
