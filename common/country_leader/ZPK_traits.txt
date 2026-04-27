@@ -1,0 +1,15 @@
+leader_traits = {
+    ZPK_king_trait = {
+        random = no
+		democratic_drift = 0.03
+		war_support_factor = -0.05
+		political_power_factor = -0.1
+		production_speed_buildings_factor = 0.1
+    }
+	ZPK_fascist_trait = {
+        random = no
+		war_support_factor = 0.1
+		political_power_factor = -0.10
+		justify_war_goal_time = -0.25
+    }
+}

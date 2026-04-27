@@ -2,10 +2,15 @@ continuous_focus_palette = {
 	id = ZPK_continuous_focuses
 	
 	country = {
-		factor = 1
+		factor = 0
+		modifier = {
+			add = 50
+			tag = ZPK
+		}
 	}
+
 	
-	default = yes
+	default = no
 	reset_on_civilwar = no
 			
 	position = { x = 50 y = 1000 }

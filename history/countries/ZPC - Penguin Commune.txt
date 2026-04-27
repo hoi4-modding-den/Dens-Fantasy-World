@@ -23,6 +23,18 @@ set_politics = {
 	elections_allowed = yes
 }
 
+add_ideas = {
+	ZPK_penguin_nature
+}
+
+recruit_character = ZPC_Marx
+recruit_character = ZPC_Stalin
+recruit_character = ZPC_Anarchist
+recruit_character = ZPC_Actual_Child
+recruit_character = ZPC_El_Generico
+recruit_character = ZPC_Fallen_Government
+
+
 set_popularities = {
 	democratic = 20
 	fascism = 5

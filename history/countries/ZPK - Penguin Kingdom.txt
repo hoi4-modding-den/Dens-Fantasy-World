@@ -1,6 +1,6 @@
 ﻿capital = 1061
 
-set_research_slots = 3
+set_research_slots = 4
 
 set_technology = {
 	infantry_weapons = 1
@@ -15,6 +15,10 @@ set_technology = {
 	gw_artillery = 1
 }
 
+add_ideas = {
+	ZPK_penguin_nature
+}
+
 complete_national_focus = ZPK_filler_1
 complete_national_focus = ZPK_filler_2
 complete_national_focus = ZPK_filler_3
@@ -25,6 +29,10 @@ complete_national_focus = ZPK_filler_7
 complete_national_focus = ZPK_filler_8
 complete_national_focus = ZPK_filler_9
 complete_national_focus = ZPK_filler_10
+
+recruit_character = ZPK_King
+recruit_character = ZPK_Fascist
+recruit_character = ZPK_Anarchist_Commune
 
 set_politics = {
 	ruling_party = democratic

@@ -26,7 +26,10 @@ ideologies = {
 			neorevisionism = {
 
 			}
-
+			clockism = {
+				can_be_randomly_selected = no
+				color = { 255 200 0 }
+			}
 		}
 
 		dynamic_faction_names = {
@@ -104,9 +107,21 @@ ideologies = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 			communalism = {
-			can_be_randomly_selected = no
+				can_be_randomly_selected = no
 			}
 
+			nihilism = {
+				can_be_randomly_selected = no
+				color = { 25 0 10 }
+			}
+			totalist_nihilism = {
+				can_be_randomly_selected = no
+				color = { 0 0 0 }
+			}
+			guideist_nihilism = {
+				can_be_randomly_selected = no
+				color = { 50 0 10 }
+			}
 		}
 
 		dynamic_faction_names = {
@@ -206,6 +221,14 @@ ideologies = {
 			nativism = {
 				can_be_randomly_selected = no
 			}
+			nostalgism = {
+				can_be_randomly_selected = no
+				color = { 254 254 254 }
+			}
+			theocratic_nostalgism = {
+				can_be_randomly_selected = no
+				color = { 200 255 255 }
+			}
 
 		}
 
@@ -274,7 +297,10 @@ ideologies = {
 			japan_militarism_ideology = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
-			
+			penguin_theocracy = {
+				can_be_randomly_selected = no
+				color = { 66 166 166 }
+			}
 
 		}
 

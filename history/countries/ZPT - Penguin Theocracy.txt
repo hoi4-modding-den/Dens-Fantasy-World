@@ -15,6 +15,14 @@ set_technology = {
 	gw_artillery = 1
 }
 
+add_ideas = {
+	ZPK_penguin_nature
+}
+
+recruit_character = ZPT_Priest
+recruit_character = ZPT_Fascist
+recruit_character = ZPT_Generic
+recruit_character = ZPT_Lady
 
 set_politics = {
 	ruling_party = neutrality

@@ -1,4 +1,20 @@
 ﻿l_english:
+ ###Ideologies###
+ penguin_theocracy:0 "Aptenodytist Theocratism"
+ penguin_theocracy_desc:0 "The Aptenodytist faith, officially known as ‘‘Worship of the God of the Sea’’, is the primary faith of the Aptenodytians. Believers of the faith believe in several gods, but all of the gods are subservient to the True God, who controls the oceans and provides food in exchange for the heat of the world. Aptenodytist Theocrats believe in a society run by the Church and organized along religious values, with the primary goal of maintaining permanent stability of the status quo; a world frozen in ice, stable and pure."
+ clockism:0 "Clockism"
+ clockism_desc:0 "Officially referred to as the ‘‘Movement for the Establishment of Time’’, the Clockist movement has sought to transform a society that spends 1/4th of the year in polar twilight and 1/4th of the year in midnight sun, and transform it into a modern, enlightened, and capitalist society, that can compete with the rest of the world. The implementation of capitalism in Aptenodytia has been poorly received by the majority of citizens, as standards of living continue to decline while landowners and industrialists only gain more and more power within society. While many have started to see the clock itself as an instrument of oppression, time will tell if a truly democratic society can be built in the future."
+ nostalgism:0 "Nostalgism"
+ nostalgism_desc:0 "Nostalgism is less a coherent ideology, and more a vague hodge-podge of reactionary desires, best described by the nostalgist concept of ‘‘Retvrn’’. Nostalgists want nothing more than to return to an imagined past, where everything was good and pure and you can be a kid again, and will stop at nothing to return to this nonexistent childish past. They will kill and kill and kill, whatever it takes, until they can get back the feeling of their childhood. That feeling will never come back..."
+ theocratic_nostalgism:0 "Theocratic Nostalgism"
+ theocratic_nostalgism_desc:0 "The syncretization of Nostalgist concepts with the Aptenodytist faith, Theocratic Nostalgism seeks to ‘‘Retvrn’’ society to a time before capitalism and democracy, when religion held total control over all of society and everything was ‘‘pure’’. Some of the most radical Theocratic Nostalgists believe that the world must be ‘‘purified’’ in order to restore the world to its proper order, though what exactly purification means is up to interpretation."
+ nihilism:0 "Nihilism"
+ nihilism_desc:0 "Nihilism is a political ideology which advocates that religion, capitalism, and social institutions are entirely worthless if not outright meaningless, and advocates for the destruction of oppressive and hierarchical societies. Nihilism contains a wide range of thought, though an emphasis has been placed in recent years for the working class and the destruction of capitalist society."
+ guideist_nihilism:0 "Guideist Nihilism" #not entirely sure how that should be spelled
+ guideist_nihilism_desc:0 "Guideism is an ideology based on nihilist thought, primarily diverging from mainline nihilism in its belief in the necessity of a vanguard party to ‘‘de-program’’ society from capitalist propaganda, and to properly implement an anti-religious and anti-capitalist society. While Guideist are still aligned with the main nihilist movement, they may split off from it if they gain sufficient power."
+ totalist_nihilism:0 "Totalist Nihilism"
+ totalist_nihilism_desc:0 "Totalism is an ideology proclaiming itself to be the logical conclusion of nihilist thought. Totalists call for the ‘‘total abolition’’ of authority, hierarchy, and the state itself, among many other things, and the reorganization of the world into a stateless society based around voluntary association. Totalists themselves are divided into individualists, who reject politics itself and advocate for the individual, and organizationalists, who advocate for voluntary political organizations to foment revolution against capital."
+
  ###Country/Party Names###
  ZPK_fascism:0 "Nostalgist Kingdom of Aptenodytia"
  ZPK_fascism_DEF:0 "the Nostalgist Kingdom of Aptenodytia"
@@ -137,6 +153,46 @@
  ZPI_easter_egg_ADJ:0 "Aptenodytian"
  ZPI_easter_egg_subject:0 "$OVERLORDADJ$ $ZPI_easter_egg$"
  
+ ###Characters###
+ #Note: I'm assuming that, if penguins had a society, they would live up to around 50 years, like how humans in pre-historic times would only live to like the 30s while people now regularly live to around 80.
+ ZPT_Priest:0 "Karl Kawlin" #obvious Charles Coughlin reference
+ ZPT_Priest_desc:0 "§YBorn:§! October 25th, 1905, in Igaluk, Aptenodytia\n§YBackground:§!WIP"
+ ZPT_Fascist:0 "Yosif Tiso"
+ ZPT_Fascist_desc:0 "§YBorn:§! October 13th, 1911, in Norilsk, Aptenodytia\n§YBackground:§!WIP"
+ ZPT_Lady:0 "Anastasia of Igaluk"
+ ZPT_Lady_desc:0 "§YBorn:§! June 18th, 1916, in Igaluk, Aptenodytia\n§YBackground:§!WIP"
+ ZPT_Generic:0 "Grigory Ponomarenko"
+ ZPK_King:0 "Valdemar Axel"
+ ZPK_King_desc:0 "§YBorn:§! September 15th, 1901, in Iqaluit, Aptenodytia\n§YBackground:§!WIP"
+ ZPK_Fascist:0 "Dmitry Darayava"
+ ZPK_Fascist_desc:0 "§YBorn:§! October 31st, 1916, in Hofsjokull, Aptenodytia\n§YBackground:§!WIP"
+ ZPK_Anarchist_Commune:0 "Nihilist Commune"
+ ZPC_Marx:0 "Kevgeny Mazarov"
+ ZPC_Marx_desc:0 "§YBorn:§! May 1st, 1888, in Buochs, Aptenodytia\n§YBackground:§!WIP"
+ ZPC_Stalin:0 "Dmitry Vissarionovich"
+ ZPC_Stalin_desc:0 "§YBorn:§! December 18th, 1906, in Sanikiluaq, Aptenodytia\n§YBackground:§!WIP"
+ ZPC_Anarchist:0 "Kalashna Melnychuk"
+ ZPC_Anarchist_desc:0 "§YBorn:§! November 11th, 1918, in Iqaluit, Aptenodytia\n§YBackground:§!WIP"
+ ZPC_Actual_Child:0 "Krisk Kater"
+ ZPC_Actual_Child_desc:0 "Bro you're literally like 6 months old, what could you possibly want to ''Retvurn'' to, your egg?"
+ ZPC_El_Generico:0 "Valery Obshchiy"
+ ZPC_Fallen_Government:0 "Disorganized Liberals"
+	
+ ###Traits###
+ ZPT_priest_trait:0 "The Golden Voice of God"
+ ZPT_fascist_trait:0 "Purifier"
+ ZPT_lady_trait:0 "Princess of Ice"
+ ZPK_king_trait:0 "The Reformer King"
+ ZPK_fascist_trait:0 "Flamboyant Ultranationalist"
+ ZPC_fascist_trait:0 "But nobody came."
+ ZPC_marx_trait:0 "Father of Nihilism"
+ ZPC_stalin_trait:0 "The Iron Fist of Nihilism"
+ ZPC_anarchist_trait:0 "Totalist-Feminist"
+ 
+ ###Ideas###
+ ZPK_penguin_nature:0 "Aptenodytian Adaptations"
+ ZPK_penguin_nature_desc:0 "Due to our biological nature, we can tolerate cold climates much better than other species, and have adapted to spending 1/4th of the year in total day or night. Additionally, we are extremely adept at aquatic hunting, and can dive to a depth of over 500 meters. However, our adaptations with the cold come at the cost of making temperatures above 20°C (68°F) simply not tolerable for us. Hopefully we'll never have to venture too close to the equator."
+ 
  ###Focus Trees###
  #Kingdom#
  ZPK_economy_focus_cont:0 "Develop the Economy"
@@ -194,3 +250,10 @@
  ZPK_continuous_focus_cat:0 "Continuous Focus Progress"
  ZPK_economy_cont_decision:0 "Developing the Economy"
  ZPK_mil_cont_decision:0 "Building up Armaments"
+ 
+ ###Events###
+ #Island#
+ ZPI.NE_1.t:0 "A Brief Introduction"
+ ZPI.NE_1.d:0 "§LOh shit oh fuck wait hold on\n\n§!*pant* Uh, hello! You caught us a bit off guard here. We don’t typically get, uh, visitors here. Especially not of your, like, incorporeal nature. You can hear me, right? What do you mean you’re reading my words? Nevermind. It’s not important. Look, things don’t work the same way for you here as they do in other places. You need to, well, exist, for one. Looking top-down on the world isn’t going to cut it. But you can’t really be with us, can you? No, I thought not. Uh, let me see if I can find anything to work with here...\n\nOkay, this is going to sound, uh, strange, but I have here a personality test with me. All I ask is that you be as honest and truthful as possible when you answer me. Understood? Well, you can’t answer that. Okay, let me know when you are ready."
+ ZPI.NE_1.a:0 "Ready"
+ 

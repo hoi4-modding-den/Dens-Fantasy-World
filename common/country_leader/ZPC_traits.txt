@@ -1,0 +1,26 @@
+leader_traits = {
+	ZPC_fascist_trait = {
+        random = no
+		political_power_factor = -1
+		justify_war_goal_time = 1
+    }
+    ZPC_marx_trait = {
+        random = no
+		communism_drift = 0.1
+		stability_factor = 0.1
+		drift_defence_factor = 0.25
+    }
+	ZPC_stalin_trait = {
+        random = no
+		political_power_factor = 0.25
+		stability_factor = 0.05
+		recruitable_population_factor = 0.25
+    }
+	ZPC_anarchist_trait = {
+        random = no
+		conscription = 0.02
+		communism_drift = 0.06
+		research_speed_factor = 0.05
+		army_core_defence_factor = 0.1
+    }
+}

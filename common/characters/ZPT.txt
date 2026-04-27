@@ -1,0 +1,53 @@
+characters = {
+    ZPT_Priest = { 
+        portraits = {
+            civilian = {
+                large = GFX_Portait_ZPT_Priest_alt
+            }
+        }
+        country_leader = {
+            ideology = penguin_theocracy
+            traits = { ZPT_priest_trait }
+            desc = ZPT_Priest_desc
+            expire = "1956.1.1.1"
+        }
+    }
+    ZPT_Fascist = { 
+        portraits = {
+            civilian = {
+                large = GFX_Portait_ZPT_Fascist
+            }
+        }
+        country_leader = {
+            ideology = theocratic_nostalgism
+            traits = { ZPT_fascist_trait }
+            desc = ZPT_Fascist_desc
+            expire = "1960.1.1.1"
+        }
+    }
+    ZPT_Lady = { 
+        portraits = {
+            civilian = {
+                large = GFX_Portait_ZPT_Lady
+            }
+        }
+        country_leader = {
+            ideology = clockism
+            traits = { ZPT_lady_trait }
+            desc = ZPT_Lady_desc
+            expire = "1966.1.1.1"
+        }
+    }
+    ZPT_Generic = {
+        portraits = {
+            civilian = {
+                large = GFX_Portait_ZPT_Generic_1
+            }
+        }
+        country_leader = {
+            ideology = guideist_nihilism
+            traits = { }
+            expire = "1956.1.1.1"
+        }
+    }
+}

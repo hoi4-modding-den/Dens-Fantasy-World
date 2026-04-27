@@ -1,0 +1,78 @@
+characters = {
+    ZPC_Marx = { 
+        portraits = {
+            civilian = {
+                large = GFX_Portait_ZPC_Marx
+            }
+        }
+        country_leader = {
+            ideology = nihilism
+            traits = { ZPC_marx_trait }
+            desc = ZPC_Marx_desc
+            expire = "1938.1.1.1" #not long for this world
+        }
+    }    
+    ZPC_Stalin = { 
+        portraits = {
+            civilian = {
+                large = GFX_Portait_ZPC_Stalin
+            }
+        }
+        country_leader = {
+            ideology = guideist_nihilism
+            traits = { ZPC_stalin_trait }
+            desc = ZPC_Stalin_desc
+            expire = "1956.1.1.1"
+        }
+    }
+    ZPC_Anarchist = { 
+        portraits = {
+            civilian = {
+                large = GFX_Portait_ZPC_Anarchist
+            }
+        }
+        country_leader = {
+            ideology = totalist_nihilism
+            traits = { ZPC_anarchist_trait }
+            desc = ZPC_Anarchist_desc
+            expire = "1970.1.1.1"
+        }
+    }
+    ZPC_Actual_Child = { 
+        portraits = {
+            civilian = {
+                large = GFX_Portait_ZPC_Actual_Child
+            }
+        }
+        country_leader = {
+            ideology = nostalgism
+            traits = { ZPC_fascist_trait }
+            desc = ZPC_Actual_Child_desc
+            expire = "1976.1.1.1" #too long for this world
+        }
+    }
+    ZPC_El_Generico = { 
+        portraits = {
+            civilian = {
+                large = GFX_Portait_ZPC_El_Generico
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            traits = {  }
+            expire = "1956.1.1.1"
+        }
+    }
+    ZPC_Fallen_Government = {
+        portraits = {
+            civilian = {
+                large = GFX_Portait_ZPC_Fallen_Government
+            }
+        }
+        country_leader = {
+            ideology = clockism
+            traits = { cabinet_crisis }
+            expire = "1956.1.1.1"
+        }
+    }
+}

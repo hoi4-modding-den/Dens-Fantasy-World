@@ -1,0 +1,42 @@
+add_namespace = ZPI_natural_event
+add_namespace = ZPI_focus_event
+add_namespace = ZPI_news_event
+add_namespace = ZPI_diplo_event
+
+#Natural Events# (they just show up on their own)
+country_event = { #intro event
+    id = ZPI_natural_event.1
+    title = ZPI.NE_1.t
+    picture = GFX_report_event_tur_sultan_and_pashas
+    desc = ZPI.NE_1.d
+
+    is_triggered_only = yes
+	option = {
+        name = ZPI.NE_1.a
+		ai_chance = {
+			base = 100
+		}
+		
+		hidden_effect = {
+			
+		}
+    }
+}
+country_event = { #intro event
+    id = ZPI_natural_event.2
+    title = ZPI.NE_2.t
+    picture = GFX_report_event_tur_sultan_and_pashas
+    desc = ZPI.NE_2.d
+
+    is_triggered_only = yes
+	option = {
+        name = ZPI.NE_2.a
+		ai_chance = {
+			base = 100
+		}
+		
+		hidden_effect = {
+			
+		}
+    }
+}

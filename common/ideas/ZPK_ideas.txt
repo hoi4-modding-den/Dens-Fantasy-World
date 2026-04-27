@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		ZPK_penguin_nature = {
+			picture = tur_sub_zero_survival_training
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 1
+				winter_attrition_factor = -1
+				heat_attrition_factor = 0.5
+				acclimatization_hot_climate_gain_factor = -0.5
+				naval_invasion_penalty = -0.25
+				land_night_attack = 0.15
+				naval_detection = 0.1
+				naval_night_attack = 0.1
+				air_mission_efficiency = -0.1
+				
+			}
+		}
+	}
+}

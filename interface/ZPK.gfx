@@ -1,5 +1,21 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_Portait_ZPK_King"
+		texturefile = "gfx/leaders/ZPK/Portrait_ZPK_King.png"
+	}
+	spriteType = {
+		name = "GFX_Portait_ZPK_King_alt"
+		texturefile = "gfx/leaders/ZPK/Portrait_ZPK_King_alt.png"
+	}
+	spriteType = {
+		name = "GFX_Portait_ZPK_Fascist"
+		texturefile = "gfx/leaders/ZPK/Portrait_ZPK_Fascist.png"
+	}
+	spriteType = {
+		name = "GFX_Portait_ZPK_Anarchist_Commune"
+		texturefile = "gfx/leaders/ZPK/Portrait_ZPK_Anarchist_Commune.png"
+	}
+	spriteType = {
 		name = "GFX_focus_unavailable_blank"
 		texturefile = "gfx/interface/focusview/titlebar/focus_unavailable_blank_bg.dds"
 	}
