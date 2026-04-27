@@ -1,0 +1,69 @@
+division_template = {
+	name = "Mootii Rayyaawwan"
+	#division_names_group = ZFD_INF_01
+    priority = 1
+    template_counter = 119
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+                infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Yaabbataa Farqodinsa"
+	#division_names_group = ZFD_CAV_01
+    priority = 1
+    template_counter = 119
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+units = {
+    division = {
+		location = 10419
+		division_template = "Yaabbataa Farqodinsa"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+    division = {
+		location = 10420
+		division_template = "Yaabbataa Farqodinsa"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+    division = {
+		location = 9179
+		division_template = "Mootii Rayyaawwan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+    division = {
+		location = 9179
+		division_template = "Mootii Rayyaawwan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+    division = {
+		location = 9180
+		division_template = "Mootii Rayyaawwan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 40
+	}
+}
