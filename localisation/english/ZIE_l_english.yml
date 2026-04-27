@@ -16,6 +16,13 @@
  # STATES 
  STATE_1255: "Grada Hráve"
  STATE_798: "Tarzá"
+ STATE_727: "Cis-Urhú"
+ STATE_787: "Jetzrsá"
+ STATE_858: "Kratuvá"
+ STATE_704: "Ćomra"
+ STATE_694: "Níćre"
+ STATE_854: "Ùrzeneć"
+ STATE_657: "Ravnić Velirze"
  #### BOP ####
  ZIE_power_balance: "The Marshall and the Martyrs"
  ZIE_balanced_range: "Equilibrium"
