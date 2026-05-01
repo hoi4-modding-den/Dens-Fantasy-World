@@ -48,7 +48,7 @@ ideas = {
 				conscription = -0.01
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
-				political_power_factor = 0.05
+				political_power_factor = 0.03
 				local_resources_factor = 0.01
 				consumer_goods_expected_value = -0.02
 			}
@@ -57,15 +57,12 @@ ideas = {
 		ZBT_underground_metropolis_ns = {
 			picture = POL_the_peasants_strike
 			modifier = {
-				conscription = -0.02
-				political_power_factor = 0.05
+				conscription = -0.01
 				production_speed_buildings_factor = 0.05
-				research_speed_factor = 0.05
-				production_speed_industrial_complex_factor = 0.07
-				production_speed_arms_factory_factor = 0.07
-				# political_power_factor = 0.05
-				# local_resources_factor = 0.01
+				political_power_factor = 0.05
+				local_resources_factor = 0.02
 				consumer_goods_expected_value = -0.05
+				research_speed_factor = 0.03
 			}
 		}
 		
@@ -84,28 +81,41 @@ ideas = {
 		ZBT_clear_the_rubble_ns = {
 			picture = POL_the_peasants_strike
 			modifier = {
-				political_power_factor = 0.05
+				political_power_factor = -0.02
 				# industry_free_repair_factor = 0.05
-				production_speed_infrastructure_factor = 0.07
-				production_speed_rail_way_factor = 0.07
-				consumer_goods_expected_value = -0.02
+				production_speed_infrastructure_factor = 0.03
+				production_speed_rail_way_factor = 0.03
+				consumer_goods_expected_value = -0.01
+				stability_factor = 0.02
 			}
 		}
 
 		ZBT_land_renewal_ns = {
 			picture = POL_the_peasants_strike
 			modifier = {
-				political_power_factor = -0.07
-				# industry_free_repair_factor = 0.02
-				conscription = 0.01
-				production_speed_buildings_factor = 0.05
-				production_speed_infrastructure_factor = 0.07
-				production_speed_rail_way_factor = 0.07
-				consumer_goods_expected_value = -0.02
-				# political_power_factor = 0.05
-				# local_resources_factor = 0.01
-				# consumer_goods_expected_value = -0.02
+				political_power_factor = -0.03
+				# industry_free_repair_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				production_speed_rail_way_factor = 0.05
+				stability_factor = 0.05
+				war_support_factor = 0.05
 			}
 		}
+
+		# ZBT_land_renewal_ns = {
+		# 	picture = POL_the_peasants_strike
+		# 	modifier = {
+		# 		political_power_factor = -0.07
+		# 		# industry_free_repair_factor = 0.02
+		# 		conscription = 0.01
+		# 		production_speed_buildings_factor = 0.05
+		# 		production_speed_infrastructure_factor = 0.07
+		# 		production_speed_rail_way_factor = 0.07
+		# 		consumer_goods_expected_value = -0.02
+		# 		# political_power_factor = 0.05
+		# 		# local_resources_factor = 0.01
+		# 		# consumer_goods_expected_value = -0.02
+		# 	}
+		# }
 	}
 }

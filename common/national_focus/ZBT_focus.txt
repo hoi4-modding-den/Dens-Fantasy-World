@@ -4,9 +4,9 @@ focus_tree = {
         factor = 0 modifier = { add = 10 tag = ZBT }
     }
     default = no
-    continuous_focus_position = { x = 50 y = 1000 }
+    continuous_focus_position = { x = 50 y = 930 }
 
-    focus = {
+focus = {
         id = ZBT_start_industry
         icon = GFX_goal_unknown
         x = 2
@@ -27,7 +27,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_begin_undercity
         icon = GFX_goal_unknown
         x = 6
@@ -49,7 +49,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_developing_the_outskirts
         icon = GFX_goal_unknown
         x = -2
@@ -69,7 +69,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_evacuate_the_countryside
         icon = GFX_goal_unknown
         x = -1
@@ -88,7 +88,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_countryside_revitalisation
         icon = GFX_goal_unknown
         x = -3
@@ -107,7 +107,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_clear_the_rubble
         icon = GFX_goal_unknown
         x = -4
@@ -132,7 +132,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_workforce_expansion
         icon = GFX_goal_unknown
         x = 0
@@ -155,7 +155,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_military_investments
         icon = GFX_goal_unknown
         x = -2
@@ -184,11 +184,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_land_renewal
         icon = GFX_goal_unknown
-        x = -5
-        y = 3
+        x = -4
+        y = 4
         cost = 10
         prerequisite = { focus = ZBT_clear_the_rubble }
         ai_will_do = {
@@ -200,7 +200,7 @@ focus_tree = {
                 add_idea = ZBT_land_renewal_ns
             }
             710 = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 4
             }
             add_tech_bonus = {
                 ahead_reduction = 0.7
@@ -211,13 +211,13 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_material_recycling
         icon = GFX_goal_unknown
-        x = 5
-        y = 1
+        x = 4
+        y = 2
         cost = 10
-        prerequisite = { focus = ZBT_begin_undercity }
+        prerequisite = { focus = ZBT_prospect_for_resources }
         ai_will_do = {
             factor = 1
         }
@@ -227,12 +227,12 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_advanced_ore_processing
         icon = GFX_goal_unknown
         x = 4
-        y = 2
-        cost = 5
+        y = 4
+        cost = 10
         prerequisite = { focus = ZBT_material_recycling }
         ai_will_do = {
             factor = 1
@@ -243,7 +243,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_undercity_rapid_growth
         icon = GFX_goal_unknown
         x = 7
@@ -264,11 +264,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_reinforced_supports
         icon = GFX_goal_unknown
-        x = 7
-        y = 3
+        x = 8
+        y = 2
         cost = 10
         prerequisite = { focus = ZBT_undercity_rapid_growth }
         available = {
@@ -289,7 +289,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_riva_air_base
         icon = GFX_goal_unknown
         x = -3
@@ -297,11 +297,11 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = ZBT_clear_the_rubble focus = ZBT_workforce_expansion }
         prerequisite = { focus = ZBT_military_investments }
-        ai_will_do = {
-            factor = 1
-        }
         available = {
             has_tech = mechanical_computing
+        }
+        ai_will_do = {
+            factor = 1
         }
         completion_reward = {
             710 = {
@@ -314,7 +314,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_refinery_effort
         icon = GFX_goal_unknown
         x = -1
@@ -322,11 +322,11 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = ZBT_clear_the_rubble focus = ZBT_workforce_expansion }
         prerequisite = { focus = ZBT_military_investments }
-        ai_will_do = {
-            factor = 1
-        }
         available = {
             has_tech = synth_oil_experiments
+        }
+        ai_will_do = {
+            factor = 1
         }
         completion_reward = {
             710 = {
@@ -340,11 +340,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_underground_metropolis
         icon = GFX_goal_unknown
-        x = 1
-        y = 3
+        x = 0
+        y = 4
         cost = 10
         prerequisite = { focus = ZBT_workforce_expansion }
         ai_will_do = {
@@ -367,13 +367,28 @@ focus_tree = {
         }
     }
 
-    focus = {
-        id = ZBT_domestic_arms_production
+focus = {
+        id = ZBT_wasteland_restored
         icon = GFX_goal_unknown
         x = -2
-        y = 4
+        y = 5
+        cost = 15
+        prerequisite = { focus = ZBT_underground_metropolis focus = ZBT_land_renewal }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            remove_ideas = { RAZESCAPE_scorched_earth }
+            add_political_power = 200
+        }
+    }
+
+focus = {
+        id = ZBT_domestic_arms_production
+        icon = GFX_goal_unknown
+        x = -4
+        y = 9
         cost = 10
-        prerequisite = { focus = ZBT_military_investments }
         ai_will_do = {
             factor = 1
         }
@@ -389,11 +404,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_motorization_effort
         icon = GFX_goal_unknown
         x = -2
-        y = 5
+        y = 11
         cost = 5
         prerequisite = { focus = ZBT_domestic_arms_production }
         ai_will_do = {
@@ -409,11 +424,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_armor_rollout
         icon = GFX_goal_unknown
         x = -4
-        y = 5
+        y = 11
         cost = 5
         prerequisite = { focus = ZBT_domestic_arms_production }
         ai_will_do = {
@@ -429,11 +444,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_electronics_effort
         icon = GFX_goal_unknown
         x = 0
-        y = 5
+        y = 11
         cost = 5
         prerequisite = { focus = ZBT_domestic_arms_production }
         ai_will_do = {
@@ -449,7 +464,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_miracle_of_science
         icon = GFX_goal_unknown
         x = 5
@@ -464,7 +479,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_subterranean_construction
         icon = GFX_goal_unknown
         x = 6
@@ -484,11 +499,11 @@ focus_tree = {
         }
     }
 
-    focus = {
-        id = ZBT_extreme_heat_excavation
+focus = {
+        id = ZBT_digging_vehicle_research
         icon = GFX_goal_unknown
-        x = 6
-        y = 4
+        x = 7
+        y = 3
         cost = 10
         prerequisite = { focus = ZBT_subterranean_construction }
         ai_will_do = {
@@ -499,11 +514,58 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
+        id = ZBT_mountain_fortification
+        icon = GFX_goal_unknown
+        x = 8
+        y = 4
+        cost = 10
+        prerequisite = { focus = ZBT_reinforced_supports }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                name = cat_fortification
+                bonus = 1
+                uses = 3
+                category = cat_fortification
+            }
+            710 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    province = 10027 # Basaltropolis itself
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    province = 10026
+                }
+            }
+        }
+    }
+
+focus = {
+        id = ZBT_extreme_heat_excavation
+        icon = GFX_goal_unknown
+        x = 7
+        y = 5
+        cost = 10
+        prerequisite = { focus = ZBT_digging_vehicle_research }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            #
+        }
+    }
+
+focus = {
         id = ZBT_harness_the_core
         icon = GFX_goal_unknown
         x = 6
-        y = 5
+        y = 6
         cost = 10
         prerequisite = { focus = ZBT_extreme_heat_excavation }
         prerequisite = { focus = ZBT_restart_alchemical_research }
@@ -515,14 +577,14 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_restart_alchemical_research
         icon = GFX_goal_unknown
-        x = 4
-        y = 4
+        x = 5
+        y = 5
         cost = 10
         prerequisite = { focus = ZBT_miracle_of_science }
-        prerequisite = { focus = ZBT_prospect_for_resources }
+        prerequisite = { focus = ZBT_advanced_ore_processing }
         ai_will_do = {
             factor = 1
         }
@@ -531,18 +593,32 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_prospect_for_resources
         icon = GFX_goal_unknown
-        x = 3
-        y = 3
-        cost = 10
-        prerequisite = { focus = ZBT_advanced_ore_processing }
+        x = 5
+        y = 1
+        cost = 5
+        prerequisite = { focus = ZBT_begin_undercity }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
-            #
+            add_resource = {
+                type = coal
+                amount = 10
+                state = 710
+            }
+            add_resource = {
+                type = steel
+                amount = 5
+                state = 710
+            }
+            add_resource = {
+                type = tungsten
+                amount = 2
+                state = 710
+            }
         }
     }
 
