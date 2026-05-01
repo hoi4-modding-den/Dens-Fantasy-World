@@ -66,6 +66,7 @@
  ZBT_tt_increase_uc_build_cost:0 "§YUndercity§! building projects will cost £pol_power $PP|Y$ §Rmore§!"
  ZBT_tt_decrease_uc_build_cost:0 "§YUndercity§! building projects will cost £pol_power $PP|Y$ §Gless§!"
  ZBT_tt_add_extra_sector:0 "Each layer of §gDepth§! will gain $AMT|G$ extra §5Unexcavated Sectors§!"
+ ZBT_tt_add_chance_for_goodies:0 "Adds a small chance to find §Yresource deposits§! while §5excavating§!"
  
  ZBT_dig_down:0 "§gDig Deeper§!"
  ZBT_excavate_new_sector:0 "§5Excavate§! a New Sector"
@@ -73,7 +74,7 @@
  ZBT_build_mil:0 "§6Build:§! a [ZBT_UC_mil_name]"
  ZBT_build_ref:0 "§6Build:§! a [ZBT_UC_ref_name]"
  ZBT_build_lab:0 "§6Build:§! a [ZBT_UC_lab_name]"
- ZBT_build_underground_housing:0 "§6Build:§! More Houses Underground"
+ ZBT_build_underground_housing:0 "§6Build:§! a Underground Housing District"
 
  ZBT_improve_civs:0 "§CUpgrade:§! Civilian Factory Improvements"
  ZBT_improve_mils:0 "§CUpgrade:§! Military Factory Improvements"
@@ -83,6 +84,7 @@
  ZBT_heat_pump:0 "§CUpgrade:§! Liquid Refrigerant Technology"
  ZBT_improved_temperature_manipulation:0 "§CUpgrade:§! Wide-Area Temperature Manipulation"
  ZBT_climate_control:0 "§CUpgrade:§! Underground Climate Control"
+ ZBT_basic_digging_vehicle:0 "§CUpgrade:§! Basic Digging Machine"
 #  ZBT_dig_down:0 ""
 
 
@@ -115,6 +117,8 @@
  ZBT_UU_heat_pumps:0 "Heat Pumps"
  ZBT_UU_geothermal_generator:0 "Geothermal Generator"
  ZBT_UU_underground_engineering:0 "Underground Engineering"
+
+ ZBT_UU_digging_vehicle1:0 "Basic Digging Vehicle"
 
 
 
@@ -150,3 +154,13 @@
  ZBT_motorization_effort: "Army Motorization Effort"
  ZBT_electronics_effort: "Electronics Effort"
  ZBT_armor_rollout: "Armor Technology Grants"
+
+
+
+ # Events
+ ZBT_UU_events.1.t: "Undercity construction halted!"
+ ZBT_UU_events.1.d: "blah blah blah too hot research how to cool your workers down"
+ ZBT_UU_events.1.a: ":("
+ ZBT_UU_events.2.t: "Undercity construction halted again!"
+ ZBT_UU_events.2.d: "are we fucking serious"
+ ZBT_UU_events.2.a: ">:("

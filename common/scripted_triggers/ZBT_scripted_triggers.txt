@@ -4,7 +4,7 @@ ZBT_heat_resistance_check = {
         hidden_trigger = { always = yes }
     }
     ELSE_IF = {
-        limit = { check_variable = { UC_depth < 7 } }
+        limit = { check_variable = { UC_depth < 5 } }
         OR = {
             custom_override_tooltip = {
                 tooltip = {
@@ -23,7 +23,7 @@ ZBT_heat_resistance_check = {
         }
     }
     ELSE_IF = {
-        limit = { check_variable = { UC_depth < 10 } }
+        limit = { check_variable = { UC_depth < 7 } }
         OR = {
             has_country_flag = UU_heat_resistance2
         }

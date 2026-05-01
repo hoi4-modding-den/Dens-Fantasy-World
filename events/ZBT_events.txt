@@ -1,0 +1,43 @@
+add_namespace = ZBT_events
+add_namespace = ZBT_UU_events
+add_namespace = ZBT_DW_events
+
+country_event = {
+	id = ZBT_UU_events.1  # too hot upon reaching Layer 3
+	title = ZBT_UU_events.1.t
+	desc = ZBT_UU_events.1.d
+	
+	is_triggered_only = yes
+	option = {
+		name = ZBT_UU_events.1.a
+	}
+	
+}
+
+country_event = {
+	id = ZBT_UU_events.2  # too hot upon reaching Layer 5
+	title = ZBT_UU_events.2.t
+	desc = ZBT_UU_events.2.d
+	
+	is_triggered_only = yes
+	option = {
+		name = ZBT_UU_events.2.a
+	}
+	
+}
+
+
+
+
+news_event = {
+	id = ZBT_DW_events.1  # discovered deararghfinobve lair
+	title = ZBT_DW_events.1.t
+	desc = ZBT_DW_events.1.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = {
+		name = ZBT_DW_events.1.a
+		
+	}
+}

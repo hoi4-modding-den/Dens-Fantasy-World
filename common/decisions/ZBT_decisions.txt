@@ -22,15 +22,14 @@ ZBT_undercity_cat = {
 	ZBT_dig_down = {
 		icon = generic_mountain_fortification
 		visible = {
-			custom_trigger_tooltip = {
-				tooltip =  ZBT_tt_out_of_space
-				check_variable = { UC_unexcavated_sectors = 0 }
-			}
+			always = yes
 		}
-
+		
 		available = {
 			custom_trigger_tooltip = {
 				tooltip =  ZBT_tt_out_of_space
+				check_variable = { UC_unexcavated_sectors = 0 }
+				check_variable = { UC_empty_sectors = 0 }
 			}
 			num_of_civilian_factories_available_for_projects > 2
 		}
@@ -65,6 +64,16 @@ ZBT_undercity_cat = {
 			}
 			
 			ZBT_UC_increase_costs = yes
+
+			# Events to notify the player when they need to research heat tech
+			IF = {
+				limit = { check_variable = {UC_depth = 3} }
+				country_event = ZBT_UU_events.1
+			}
+			IF = {
+				limit = { check_variable = {UC_depth = 5} }
+				country_event = ZBT_UU_events.2
+			}
 		}
 	}
 
@@ -102,12 +111,32 @@ ZBT_undercity_cat = {
 
 			# Increment chance of finding special stuff
 			IF = {
-				limit = { check_variable = { STAT_excavations_so_far = 11 } }
+				limit = { check_variable = { STAT_excavations_so_far = 8 } }
 				set_variable = { var = DW_discover_dragon_chance value = 10 }
 			}
 			ELSE_IF = {
-				limit = { check_variable = { STAT_excavations_so_far > 11 } }
-				add_to_variable = { var = DW_discover_dragon_chance value = 1 }
+				limit = { check_variable = { STAT_excavations_so_far > 8 } }
+				add_to_variable = { var = DW_discover_dragon_chance value = 4 }
+			}
+
+			set_variable_to_random = {
+				var = var:randomshit
+				integer = yes
+				min = 1
+				max = 50
+			}
+			add_to_variable = { var = var:randomshit value = 1 }
+			IF = {
+				limit = { check_variable = { var:randomshit < var:STAT_resource_chance } }
+				# TODO
+			}
+			IF = {
+				limit = {
+					check_variable = { var:randomshit < var:DW_discover_dragon_chance }
+					NOT = { has_country_flag = DW_discovered }
+				}
+				set_country_flag = DW_discovered
+				news_event = ZBT_DW_events.1
 			}
 		}
 	}
@@ -240,6 +269,13 @@ ZBT_undercity_cat = {
 		}
 
 		available = {
+			custom_override_tooltip = {
+                tooltip = {
+                    localization_key = ZBT_tt_has_special_tech
+                    TECH = ZBT_UU_improved_subterranean_construction
+                }
+                has_country_flag = UU_improved_subterranean_construction
+            }
 			num_of_civilian_factories_available_for_projects > 0
 			custom_trigger_tooltip = {
 				tooltip = {
@@ -272,12 +308,20 @@ ZBT_undercity_cat = {
 	ZBT_build_lab = { # this is a test
 		icon = generic_research
 		visible = {
-			has_country_flag = UU_improved_subterranean_construction
+			always = yes
 		}
-
+		
 		available = {
+			custom_override_tooltip = {
+                tooltip = {
+                    localization_key = ZBT_tt_has_special_tech
+                    TECH = ZBT_UU_improved_subterranean_construction
+                }
+                has_country_flag = UU_improved_subterranean_construction
+            }
+			# has_country_flag = UU_improved_subterranean_construction
 			num_of_civilian_factories_available_for_projects > 0
-			has_tech = construction2
+			# has_tech = construction2
 			custom_trigger_tooltip = {
 				tooltip = {
 					localization_key = ZBT_tt_more_empty_sectors_than
@@ -296,15 +340,15 @@ ZBT_undercity_cat = {
 			add_to_variable = { var = UC_empty_sectors value = -1 }
 		}
 		remove_effect = {
-			custom_effect_tooltip = ZBT_tt_modify_undercity
-			ZBT_UC_apply_buffs_lab = yes
-			# add_to_variable = {var = UC_research_speed value = 0.01 tooltip = research_speed_factor_tt }
 			IF = {
 				limit = { NOT = { has_country_flag = UU_built_basic_lab } }
-				custom_effect_tooltip = generic_skip_one_line_tt
+				# custom_effect_tooltip = generic_skip_one_line_tt
 				custom_effect_tooltip = ZBT_tt_unlock_more_special_techs
 				set_country_flag = UU_built_basic_lab
 			}
+			custom_effect_tooltip = ZBT_tt_modify_undercity
+			ZBT_UC_apply_buffs_lab = yes
+			# add_to_variable = {var = UC_research_speed value = 0.01 tooltip = research_speed_factor_tt }
 		}
 	}
 
@@ -457,6 +501,50 @@ ZBT_undercity_cat = {
 				# add_to_variable = {var = UC_construction_speed value = 0.03 tooltip = production_speed_buildings_factor_tt }
 				# add_to_variable = {var = UC_consumer_goods value = -0.02 tooltip = consumer_goods_factor_tt }
 			}
+		}
+	}
+
+
+
+
+
+
+
+	ZBT_basic_digging_vehicle = {
+		icon = generic_research
+		visible = {
+			NOT = { has_country_flag = UU_digging_vehicle1 }
+			has_completed_focus = ZBT_digging_vehicle_research
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			has_tech = armored_car2
+			has_tech = excavation3
+			has_equipment = {
+				armored_car_equipment_1 > 499
+			}
+		}
+
+		cost = 200
+		days_remove = 140
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			set_country_flag = UU_digging_vehicle1
+			custom_effect_tooltip = {
+				localization_key = ZBT_tt_special_tech_attained
+				TECH = ZBT_UU_digging_vehicle1
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+            custom_effect_tooltip = {
+                localization_key = ZBT_tt_decrease_uc_build_time
+                DAYS = 10
+            }
+            add_to_variable = { var = UC_modify_time value = -10 }
+            ZBT_UC_recalc_costs = yes
 		}
 	}
 

@@ -122,7 +122,7 @@ focus = {
             custom_effect_tooltip = generic_skip_one_line_tt
             add_tech_bonus = {
                 name = industrial_bonus
-                bonus = 0.8
+                bonus = 0.7
                 uses = 2
                 category = industry
             }
@@ -147,7 +147,7 @@ focus = {
             custom_effect_tooltip = generic_skip_one_line_tt
             add_tech_bonus = {
                 name = industrial_bonus
-                bonus = 0.8
+                bonus = 0.7
                 uses = 2
                 category = industry
             }
@@ -178,7 +178,7 @@ focus = {
             add_tech_bonus = {
                 name = infantry_artillery_bonus
                 bonus = 0.5
-                uses = 3
+                uses = 2
                 category = infantry_weapons
             }
         }
@@ -374,12 +374,15 @@ focus = {
         y = 5
         cost = 15
         prerequisite = { focus = ZBT_underground_metropolis focus = ZBT_land_renewal }
+        available = {
+            has_tech = construction3
+        }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
-            remove_ideas = { RAZESCAPE_scorched_earth }
             add_political_power = 200
+            remove_ideas = { RAZESCAPE_scorched_earth }
         }
     }
 
@@ -495,7 +498,9 @@ focus = {
                 TECH = ZBT_UU_improved_subterranean_construction
             }
             set_country_flag = UU_improved_subterranean_construction
-            custom_effect_tooltip = ZBT_tt_unlock_more_special_techs
+            # custom_effect_tooltip = ZBT_tt_unlock_more_special_techs
+            unlock_decision_tooltip = ZBT_build_underground_housing
+            unlock_decision_tooltip = ZBT_build_lab
         }
     }
 
@@ -504,13 +509,16 @@ focus = {
         icon = GFX_goal_unknown
         x = 7
         y = 3
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_subterranean_construction }
+        available = {
+            has_tech = armored_car2
+        }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
-            #
+            unlock_decision_tooltip = ZBT_basic_digging_vehicle
         }
     }
 
@@ -619,6 +627,8 @@ focus = {
                 amount = 2
                 state = 710
             }
+            add_to_variable = { var = STAT_resource_chance value = 5 tooltip = ZBT_tt_add_chance_for_goodies }
+            
         }
     }
 
