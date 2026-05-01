@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		ZTK_armchair_intellectualism = {
-			picture = generic_supply_lines
+			picture = FRA_liberte_egalite_solidarite
 
 			allowed = {}
 
@@ -20,7 +20,7 @@ ideas = {
 	    }
 
 		ZTK_poor_infrastructure = {
-			picture = generic_supply_lines
+			picture = generic_railroads
 
 			allowed = {}
 
@@ -29,11 +29,22 @@ ideas = {
 			modifier = {
 				production_speed_infrastructure_factor = -0.27
 				production_speed_rail_way_factor = -0.27
-	        }	
+			}
+
+	        research_bonus = {
+				train_tech = -0.35
+			}
+
+			equipment_bonus = {
+				train_equipment = {
+					build_cost_ic = 0.5
+					instant = yes
+				}
+			}
 	    }
 
 		ZTK_rural_society = {
-			picture = generic_supply_lines
+			picture = generic_agrarian_reform
 
 			allowed = {}
 
@@ -50,7 +61,7 @@ ideas = {
 	    }
 
 		ZTK_oh_i_wish_to_be_a_bird = {
-			picture = generic_supply_lines
+			picture = generic_air_payment
 
 			allowed = {}
 

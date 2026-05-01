@@ -1,1 +1,47 @@
 add_namespace = ZTK_event
+
+country_event = {
+    id = ZTK_event.1
+    title = ZTK_event.1.t
+    desc = ZTK_event.1.d
+    picture = "GFX_event (45)"
+
+	is_triggered_only = yes
+
+	option = { # accept
+		name = ZTK_event.1.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+country_event = {
+    id = ZTK_event.2
+    title = ZTK_event.2.t
+    desc = ZTK_event.2.d
+    picture = "GFX_event (45)"
+
+	is_triggered_only = yes
+
+	option = { # accept
+		name = ZTK_event.2.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+country_event = {
+    id = ZTK_event.3
+    title = ZTK_event.3.t
+    desc = ZTK_event.3.d
+    picture = "GFX_event (45)"
+
+	is_triggered_only = yes
+
+	option = { # accept
+		name = ZTK_event.3.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
