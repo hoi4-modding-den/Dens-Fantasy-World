@@ -18,10 +18,6 @@ set_technology = {
 }
 
 add_ideas = {
-	an_army_with_a_state
-	the_national_rejuvination
-	indefinate_state_of_emergency
-	failed_land_reform
 }
 
 recruit_character = ZIE_trephan_bojodavic
@@ -47,4 +43,67 @@ set_popularities = {
 
 set_power_balance = {
     id = ZIE_power_balance
+}
+
+add_dynamic_modifier = { modifier = an_army_with_a_state }
+add_dynamic_modifier = { modifier = the_national_rejuvination }
+add_dynamic_modifier = { modifier = indefinate_state_of_emergency }
+add_dynamic_modifier = { modifier = failed_land_reform }
+
+add_to_variable = {
+	ZIE_army_attack_factor = 0.05
+}
+add_to_variable = {
+	ZIE_army_attack_speed_factor = 0.025
+}
+add_to_variable = {
+	ZIE_army_defence_factor = 0.05
+}
+add_to_variable = {
+	ZIE_army_org_factor = 0.1
+}
+add_to_variable = {
+	ZIE_stability_factor = -0.15
+}
+add_to_variable = {
+	ZIE_industrial_capacity_factory = -0.1
+}
+add_to_variable = {
+	ZIE_production_speed_buildings_factor = -0.05
+}
+add_to_variable = {
+	ZIE_monthly_population = 0.2
+}
+add_to_variable = {
+	ZIE_research_speed_factor = -0.1
+}
+add_to_variable = {
+	ZIE_offensive_war_stability_factor = 0.3
+}
+add_to_variable = {
+	ZIE_war_support_factor = 0.05
+}
+add_to_variable = {
+	ZIE_stability_factor1 = -0.3
+}
+add_to_variable = {
+	ZIE_political_power_cost = 0.2
+}
+add_to_variable = {
+	ZIE_drift_defence_factor = -0.15
+}
+add_to_variable = {
+	ZIE_war_support_factor1 = 0.35
+}
+add_to_variable = {
+	ZIE_production_speed_buildings_factor = -0.15
+}
+add_to_variable = {
+	ZIE_production_speed_industrial_complex_factor = -0.3
+}
+add_to_variable = {
+	ZIE_production_speed_arms_factory_factor = -0.15
+}
+add_to_variable = {
+	ZIE_ai_focus_aggressive_factor = 1
 }

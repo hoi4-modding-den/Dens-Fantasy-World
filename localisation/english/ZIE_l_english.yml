@@ -4,6 +4,11 @@
  ZIE_DEF: "National Republic of Hráva"
  ZIE_ADJ: "Hráve"
 
+ # EVENTS
+ ZIE_lore.1.t: "The Legacy of the Second Urhú War"
+ ZIE_lore.1.d: "On the 3th of May 1906 shortly after the mountainflowers bloomed the Second Urhú War broke out, following skrimishes at the Urhú mountains the Hrávan army used the damage to infrastructure as a casus belli to invade through the mountains for 'peacekeeping'. After this violation of sovereignity the Tůrůń armed forces mobilized and quickly pushed the army back. They eventually reached the region of Cis-urhú, this forced the Hrávan king to send newly conscripted troops and generals to the front. One of which would be Tréphan, our marshall. Following the Hrávan response the newly mobilized recruits under the command of the new generals made their way across the plains to capture key railways and supply points. The Hrávan army recaptured the majority of their lands with the exception of Vrýtze (Renamed Víeva by Tůrůń), however they were unable to make further advances due to heavy fortifications in mountain terrain along with guerilla fighters. Follwing the stalemate battles continued for 1 year until the two sides agreed to a ceasefire, which is still in function to this day. The agreement was seen as a betrayal to the high command in Hráva, which paved the way for the eventual coup in '08. Even after the marshall seized power the scars of this war has truly never been healed, the graves remain bundled with flowers and the families continue to greive. The militarization of society has brought a new beleif in society however."
+ ZRB_lore.1.a: "God rest their souls."
+
  # LEADERS
  the_marshall: "  §RThe Grand Marshall of Hrava§!"
  trephan_bojodavic_name: "Tréphan Bojodávić"
@@ -13,19 +18,25 @@
  VICTORY_POINTS_10839: "Crnat Hráve"
  VICTORY_POINTS_10840: "Vrazá"
  VICTORY_POINTS_10842: "Trzę"
- VICTORY_POINTS_10834: "Jrtzęgrad"
- VICTORY_POINTS_10841: "Vrtsavalskaíé"
+ ZIE_VICTORY_POINTS_10834: "Jrtzęgrad"
+ ZIE_VICTORY_POINTS_10841: "Vrtsavalskaíé"
+ ZIA_VICTORY_POINTS_10834: "Djutótsa"
+ ZIA_VICTORY_POINTS_10841: "Véletaçú"
+ ZRB_VICTORY_POINTS_10841: "Víal"
+ ZRB_VICTORY_POINTS_10834: "Djutótsa"
  VICTORY_POINTS_10265: "Brdovité Távanskáy"
  VICTORY_POINTS_10264: "Zrdératzí"
  VICTORY_POINTS_11439: "Vélanskay"
- ZRB_VICTORY_POINTS_10842: "Diůtz"
- ZRB_VICTORY_POINTS_10842: "Zártsé Růdva"
+ ZIE_VICTORY_POINTS_10842: "Trzę"
+ VICTORY_POINTS_10842: "Diůtz"
+ VICTORY_POINTS_10842: "Zártsé Růdva"
  
  # STATES 
  STATE_1255: "Grada Hráve"
  STATE_798: "Tarzá"
  STATE_727: "Cis-Urhú"
  STATE_787: "Jetzrsá"
+ ZIA_STATE_787: "Yetríçá"
  ZRB_STATE_787: "Grétí"
  STATE_858: "Kratuvá"
  STATE_704: "Ćomra"

@@ -1,0 +1,45 @@
+an_army_with_a_state = {
+	icon = GFX_idea_ARG_military_government
+
+	enable = { always = yes }
+
+	army_attack_factor = ZIE_army_attack_factor
+	army_attack_speed_factor = ZIE_army_attack_speed_factor
+	army_defence_factor = ZIE_army_defence_factor
+	army_org_factor = ZIE_army_org_factor
+	stability_factor = ZIE_stability_factor
+	industrial_capacity_factory = ZIE_industrial_capacity_factory
+	production_speed_buildings_factor = ZIE_production_speed_buildings_factor
+	ai_focus_aggressive_factor = ZIE_ai_focus_aggressive_factor
+}
+
+the_national_rejuvination = {
+	icon = GFX_idea_FRA_national_mobilization_focus
+
+	enable = { always = yes }
+	monthly_population = ZIE_monthly_population
+	research_speed_factor = ZIE_research_speed_factor
+	offensive_war_stability_factor = ZIE_offensive_war_stability_factor
+	war_support_factor = ZIE_war_support_factor
+	conscription_factor = ZIE_conscription_factor 
+	land_doctrine_cost_factor = ZIE_land_doctrine_cost_factor 
+}
+
+indefinate_state_of_emergency = {
+	icon = GFX_idea_PER_stand_with_giants_modifier
+
+	enable = { always = yes }
+	stability_factor = ZIE_stability_factor1
+	political_power_cost = ZIE_political_power_cost
+	drift_defence_factor = ZIE_drift_defence_factor
+	war_support_factor = ZIE_war_support_factor1
+}
+
+failed_land_reform = {
+	icon = GFX_idea_generic_agrarian_reform
+
+	enable = { always = yes }
+	production_speed_buildings_factor = ZIE_production_speed_buildings_factor1
+	production_speed_industrial_complex_factor = ZIE_production_speed_industrial_complex_factor
+	production_speed_arms_factory_factor = ZIE_production_speed_arms_factory_factor
+}

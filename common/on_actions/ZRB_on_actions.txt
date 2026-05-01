@@ -24,12 +24,45 @@ on_actions = {
 				limit = {
 					FROM = { original_tag = ZIE }
 					ROOT = { original_tag = ZRB }
+					ZRB = { has_country_flag = turun_border_war }
 				}
 				ZIE = { white_peace = ZRB }
 				ZIE = { transfer_state = 816 }
 				ZIE = { transfer_state = 1244 }
 				ZIE = { transfer_state = 646 }
 				ZRB = { country_event = { id = ZRB.1 days = 2 } }
+			}
+
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							AND = {
+								original_tag = ZRB
+								is_in_faction_with = ZIA
+							}
+							AND = {
+								original_tag = ZIA
+								is_in_faction_with = ZRB
+							}
+						}
+					}
+					ROOT = { original_tag = ZIE }
+					ZRB = { has_country_flag = turun_border_war }
+					
+				}
+				ZRB = { white_peace = ZIE }
+				ZIA = { white_peace = ZIE }
+				ZIA = { transfer_state = 787 }
+				ZIA = { transfer_state = 798 }
+				ZRB = { transfer_state = 727 }
+				ZRB = { transfer_state = 858 }
+				ZRA = { transfer_state = 705 }
+				ZRA = { transfer_state = 1257 }
+				ZRU = { transfer_state = 843 }
+				ZRB = { puppet = ZRU }
+				ZRB = { puppet = ZRA }
+				# ZRB = { country_event 
 			}
 
 

@@ -13,6 +13,12 @@ country_event = {
 			ZDI = {
 				load_oob = ZDI_1936
 			}
+			if = {
+				limit = {
+					has_faction_template = league_of_national_protection
+				} 
+				dismantle_faction = { league_of_national_protection }
+			}
 		}
 	}
 	option = {

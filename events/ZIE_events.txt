@@ -1,0 +1,12 @@
+add_namespace = ZIE_lore
+
+country_event = {
+	id = ZIE_lore.1
+	title = ZIE_lore.1.t
+	desc = ZIE_lore.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ZRB_lore.1.a
+	}
+}

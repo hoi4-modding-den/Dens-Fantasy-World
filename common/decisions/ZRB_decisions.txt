@@ -1,0 +1,20 @@
+debug_decisions = {
+    country_flag_turun_border_war = {
+        available = {
+           tag = ZRB
+        }
+        complete_effect = {
+            set_country_flag = turun_border_war
+        }
+    }
+
+	im_gonna_fart_into_the_mic = {
+		available = {
+           tag = ZRB
+        }
+		complete_effect = {
+			create_faction_from_template = urethra_league
+			add_to_faction = ZIA
+		}
+	}
+}

@@ -1,0 +1,424 @@
+focus_tree = {
+	id = third_urhu_war
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZIE
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 3000 y = 300 }
+
+	focus = {
+		id = legacy_of_the_second_urhu_war
+		icon = GFX_focus_AFG_mountain_training
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 20
+		y = 0
+		cost = 1
+		completion_reward = {
+			add_stability = 0.05
+			country_event = { id = ZIE_lore.1 days = 1 }
+		} 
+	}
+	focus = {
+		id = the_council
+		icon = GFX_focus_AFG_parliamentary_democracy
+		prerequisite = { focus = legacy_of_the_second_urhu_war }
+		#mutually_exclusive = { focus =  }
+		x = 21
+		y = 1
+		cost = 2
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		} 
+	}
+	focus = {
+		id = the_marshall1
+		icon = GFX_focus_AUS_bring_generals_out_of_retirement
+		prerequisite = { focus = legacy_of_the_second_urhu_war }
+		#mutually_exclusive = { focus =  }
+		x = 19
+		y = 1
+		cost = 2
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.05
+		} 
+	}
+	focus = {
+		id = encourage_militarism_within_the_state
+		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+		prerequisite = { focus = the_marshall1 }
+		#mutually_exclusive = { focus =  }
+		x = 17
+		y = 2
+		cost = 3
+		completion_reward = {
+			army_experience  = 30
+			add_political_power = 50
+		} 
+	}
+	focus = {
+		id = the_pale_horse
+		icon = GFX_focus_FIN_strengthen_military_administration
+		prerequisite = { focus = encourage_militarism_within_the_state }
+		#mutually_exclusive = { focus =  }
+		x = 16
+		y = 3
+		cost = 3
+		completion_reward = {
+			798 = {
+				create_unit = { 
+					division = "name = \"1st Mounted Cavalry Divizion\" division_template = \"National Cavalry Corps\" 	start_experience_factor = 0.5" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"2nd Mounted Cavalry Divizion\" division_template = \"National Cavalry Corps\" 	start_experience_factor = 0.5" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"3rd Mounted Cavalry Divizion\" division_template = \"National Cavalry Corps\" 	start_experience_factor = 0.5" 
+					owner = ROOT
+				}
+			}
+		} 
+	}
+	focus = {
+		id = our_rivalry_culture
+		icon = GFX_focus_BRA_reach_out_to_military_dem
+		prerequisite = { focus = encourage_militarism_within_the_state }
+		#mutually_exclusive = { focus =  }
+		x = 18
+		y = 3
+		cost = 3
+		completion_reward = {
+			add_to_variable = {
+				ZIE_conscription_factor = 0.1
+				tooltip = conscription_factor_tt
+			}
+			add_to_variable = {
+				ZIE_land_doctrine_cost_factor = -0.2
+				tooltip = land_doctrine_cost_factor_tt
+			}
+		} 
+	}
+	focus = {
+		id = further_military_funds
+		icon = GFX_focus_generic_advanced_military_studies
+		prerequisite = { focus = our_rivalry_culture focus = the_pale_horse }
+		#mutually_exclusive = { focus =  }
+		x = 17
+		y = 4
+		cost = 3
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = {
+					694
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					694
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		} 
+	}
+	focus = {
+		id = economic_evaluation
+		icon = GFX_focus_RAJ_special_economic_zones
+		prerequisite = { focus = the_council }
+		#mutually_exclusive = { focus =  }
+		x = 23
+		y = 2
+		cost = 3
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = {
+					704
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_to_variable = { 
+				ZIE_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt				
+			}
+		} 
+	}
+	focus = {
+		id = towards_the_agrarian_plan
+		icon = GFX_focus_CHL_strengthen_the_central_bank
+		prerequisite = { focus = economic_evaluation }
+		mutually_exclusive = { focus = listen_to_the_marshall }
+		x = 24
+		y = 3
+		cost = 3
+		completion_reward = {
+			add_power_balance_value = {
+                id = ZIE_power_balance
+                value = 0.1
+                tooltip_side = ZIE_popular_side
+            }
+			add_to_variable = {
+				ZIE_production_speed_industrial_complex_factor = 0.20
+				tooltip = production_speed_industrial_complex_factor_tt
+			}
+			add_to_variable = {
+				ZIE_production_speed_buildings_factor1 = 0.125
+				tooltip = production_speed_buildings_factor_tt
+			}
+			add_to_variable = {
+				ZIE_production_speed_arms_factory_factor = 0.05
+				tooltip = production_speed_arms_factory_factor_tt
+			}
+		} 
+	}
+	focus = {
+		id = urbanize_the_countryside
+		icon = GFX_focus_SWE_urbanization
+		prerequisite = { focus = economic_evaluation }
+		# mutually_exclusive = { focus = }
+		x = 24
+		y = 4
+		cost = 3
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = {
+					657
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					859
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		} 
+	}
+	focus = {
+		id = listen_to_the_marshall
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = economic_evaluation }
+		mutually_exclusive = { focus = towards_the_agrarian_plan }
+		x = 22
+		y = 3
+		cost = 3
+		completion_reward = {
+			add_power_balance_value = {
+                id = ZIE_power_balance
+                value = -0.1
+                tooltip_side = ZIE_popular_side
+            }
+			add_to_variable = {
+				ZIE_production_speed_buildings_factor = 0.05
+				tooltip = production_speed_buildings_factor_tt
+			}
+			add_to_variable = {
+				ZIE_industrial_capacity_factory = 0.025
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				ZIE_production_speed_arms_factory_factor = 0.15
+				tooltip = production_speed_arms_factory_factor_tt
+			}
+		} 
+	}
+	focus = {
+		id = increase_uniform_production
+		icon = GFX_focus_RAJ_special_economic_zones
+		prerequisite = { focus = listen_to_the_marshall }
+		# mutually_exclusive = { focus = }
+		x = 22
+		y = 4
+		cost = 3
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = {
+					854
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_to_variable = {
+				ZIE_army_defence_factor = 0.025
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				ZIE_industrial_capacity_factory = 0.025
+				tooltip = industrial_capacity_factory_tt
+			}
+		} 
+	}
+	focus = {
+		id = the_path_to_the_peaks
+		icon = GFX_focus_SMB_a_land_of_mountains
+		prerequisite = { focus = the_council focus = the_marshall1 }
+		#mutually_exclusive = { focus =  }
+		x = 20
+		y = 2
+		cost = 3
+		completion_reward = {
+			727 = {
+			create_unit = { 
+					division = "name = \"1st Mountain Brigade\" division_template = \"Hrávan Mountain Guard\" 	start_experience_factor = 0.5" 
+					owner = ROOT
+				}
+			create_unit = { 
+					division = "name = \"2nd Mountain Brigade\" division_template = \"Hrávan Mountain Guard\" 	start_experience_factor = 0.5" 
+					owner = ROOT
+				}
+			}
+		} 
+	}
+	focus = {
+		id = fortify_the_passages
+		icon = GFX_focus_generic_mountain_fortification
+		prerequisite = { focus = the_path_to_the_peaks }
+		#mutually_exclusive = { focus =  }
+		x = 20
+		y = 3
+		cost = 3
+		completion_reward = {
+			727 = {
+				add_building_construction = {
+					type = bunker
+					province = 10267
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 10275
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 10270
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 10268
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 10265
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+			787 = {
+			add_building_construction = {
+					type = bunker
+					province = 10834
+					level = 3
+					instant_build = yes
+			}
+			}
+		} 
+	}
+	focus = {
+		id = the_railway_plan
+		icon = GFX_focus_generic_railroad
+		prerequisite = { focus = fortify_the_passages }
+		#mutually_exclusive = { focus =  }
+		x = 20
+		y = 4
+		cost = 3
+		completion_reward = {
+			727 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			798 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			build_railway = {
+				level = 3
+				build_only_on_allied = yes
+				fallback = yes
+				start_province = 10839
+				path = { 10835 10833 10842 10836 11401 11436 }
+				target_province = 11439
+			}
+			build_railway = {
+				level = 3
+				build_only_on_allied = yes
+				fallback = yes
+				start_province = 11439
+				path = { 10271 10274 10263 10270 }
+				target_province = 10270
+			}
+
+		} 
+	}
+	focus = {
+		id = across_urhu_once_again
+		icon = GFX_focus_AUS_frontmiliz_focus
+		prerequisite = { focus = the_railway_plan }
+		prerequisite = { focus = further_military_funds }
+		prerequisite = { focus = increase_uniform_production focus = urbanize_the_countryside }
+		#mutually_exclusive = { focus =  }
+		x = 20
+		y = 5
+		cost = 5
+		completion_reward = {
+			ZRB = { set_country_flag = turun_border_war }
+			declare_war_on = {
+  			   target = ZRB
+ 			   type = annex_everything
+			}
+		} 
+	}
+}
