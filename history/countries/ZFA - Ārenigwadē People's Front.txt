@@ -19,7 +19,7 @@ set_technology = {
 
 add_ideas = {
 	extensive_conscription
-	partial_economic_mobilization
+	partial_economic_mobilisation
         limited_exports
         ZF_balekelemi_civil_war
         ZFA_arenigwade_liberation_army
@@ -33,6 +33,8 @@ set_convoys = 0
 recruit_character = ZFA_eyas_desita
 recruit_character = ZFA_gelagile_yegereta
 recruit_character = ZFA_takala_kafi
+recruit_character = ZFA_lomi_yarareli
+recruit_character = ZFA_iniche_tsinati
 
 #add_ideas = 
 

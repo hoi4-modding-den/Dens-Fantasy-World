@@ -42,4 +42,554 @@ focus_tree={
                                  custom_effect_tooltip = ZFA_nationwide_revolution_tt
           }
      }
+	focus = {
+		id = ZFA_meet_with_front_members
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_nationwide_revolution }
+		#mutually_exclusive = { focus =  }
+		x = 3
+		y = 2
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFA_yeseratiwi_speech
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_meet_with_front_members }
+		#mutually_exclusive = { focus =  }
+		x = 3
+		y = 3
+		#relative_position_id = 
+		
+		cost = 2
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFA_promote_paramilitary_organisations
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_yeseratiwi_speech }
+		#mutually_exclusive = { focus =  }
+		x = 3
+		y = 4
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFA_concerns_of_army
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_nationwide_revolution }
+		#mutually_exclusive = { focus =  }
+		x = 6
+		y = 1
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFA_fortify_sisismesi
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_concerns_of_army }
+		#mutually_exclusive = { focus =  }
+		x = 9
+		y = 2
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_begin_reorganisation
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_concerns_of_army }
+		mutually_exclusive = { focus = ZFA_strike_fast }
+		x = 5
+		y = 2
+		#relative_position_id = 
+		
+		cost = 6
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_strike_fast
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_concerns_of_army }
+		mutually_exclusive = { focus = ZFA_begin_reorganisation }
+		x = 7
+		y = 2
+		#relative_position_id = 
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_recruit_peasants
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_begin_reorganisation focus = ZFA_strike_fast }
+		mutually_exclusive = { focus = ZFA_tgm_fighters }
+		x = 5
+		y = 3
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_tgm_fighters
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_begin_reorganisation focus = ZFA_strike_fast }
+		mutually_exclusive = { focus = ZFA_recruit_peasants }
+		x = 7
+		y = 3
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_the_cma_alliance
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_recruit_peasants focus = ZFA_tgm_fighters }
+		#mutually_exclusive = { focus = }
+		x = 6
+		y = 4
+		#relative_position_id = 
+		
+		cost = 6
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_adressing_our_enemies
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_nationwide_revolution }
+		#mutually_exclusive = { focus = }
+		x = 14
+		y = 2
+		#relative_position_id = 
+		
+		cost = 4
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_remind_about_bichi_regime
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_adressing_our_enemies }
+		#mutually_exclusive = { focus = }
+		x = 13
+		y = 3
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_ambush_bichi_forces
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_remind_about_bichi_regime }
+		#mutually_exclusive = { focus = }
+		x = 13
+		y = 4
+		#relative_position_id = 
+		
+		cost = 6
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_increase_populism
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_adressing_our_enemies }
+		#mutually_exclusive = { focus = }
+		x = 15
+		y = 3
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_proposal_to_pichi
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_increase_populism }
+		#mutually_exclusive = { focus = }
+		x = 15
+		y = 4
+		#relative_position_id = 
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_matters_of_wartime_economy
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_nationwide_revolution }
+		#mutually_exclusive = { focus = }
+		x = 18
+		y = 2
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_humble_approach
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_matters_of_wartime_economy }
+		mutually_exclusive = { focus = ZFA_radical_reforms }
+		x = 17
+		y = 3
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_organised_military_production
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_humble_approach }
+		#mutually_exclusive = { }
+		x = 17
+		y = 4
+		#relative_position_id = 
+		
+		cost = 6
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_radical_reforms
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_matters_of_wartime_economy }
+		mutually_exclusive = { focus = ZFA_humble_approach }
+		x = 19
+		y = 3
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_emergency_building_factories
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_radical_reforms }
+		mutually_exclusive = { }
+		x = 19
+		y = 4
+		#relative_position_id = 
+		
+		cost = 7
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+        focus = {
+		id = ZFA_push_from_east
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFA_promote_paramilitary_organisations }
+                prerequisite = { focus = ZFA_the_cma_alliance }
+                prerequisite = { focus = ZFA_ambush_bichi_forces }
+                prerequisite = { focus = ZFA_proposal_to_pichi }
+                prerequisite = { focus = ZFA_organised_military_production focus = ZFA_emergency_building_factories }
+		mutually_exclusive = { }
+		x = 10
+		y = 6
+		#relative_position_id = 
+		
+		cost = 7
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
 }

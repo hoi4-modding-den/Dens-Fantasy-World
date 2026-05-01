@@ -26,6 +26,12 @@ ideas = {
                                 resistance_target = -0.5
                                 custom_modifier_tooltip = SPR_military_disloyalty_tt
 	           }
+                     on_add = {
+                               country_lock_all_division_template = {
+                                                                 is_locked = yes
+                                                                 desc = SPR_military_disloyalty_tt
+                    }
+               }
           }
                    ZF_offensive_ZFA = {
                            picture = chi_army_corruption3

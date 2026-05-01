@@ -44,4 +44,49 @@ characters={
             logistics_skill = 1
         }
     }
+       ZFK_bilichil_rozmai = { 
+	 	name = ZFK_bilichil_rozmai
+		portraits = {
+			army = {
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected media_personality }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 3
+        }
+    }
+       ZFK_yemikeyi_nikewigi = { 
+	 	name = ZFK_yemikeyi_nikewigi
+		portraits = {
+			army = {
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected media_personality }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 3
+            logistics_skill = 3
+        }
+    }
+       ZFK_teksechak_roteberi = { 
+	 	name = ZFK_teksechak_roteberi
+		portraits = {
+			army = {
+			}
+		}
+		corps_commander = {
+            traits = { harsh_leader trait_cautious }
+            skill = 1
+            attack_skill = 1
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 1
+        }
+    }
 }

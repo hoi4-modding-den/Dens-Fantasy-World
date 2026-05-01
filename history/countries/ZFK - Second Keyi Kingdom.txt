@@ -33,6 +33,9 @@ set_convoys = 0
 recruit_character = ZFK_kokeyi_ii
 recruit_character = ZFK_sitahi_beketere
 recruit_character = ZFK_marute_sarimi
+recruit_character = ZFK_bilichil_rozmai
+recruit_character = ZFK_yemikeyi_nikewigi
+recruit_character = ZFK_teksechak_roteberi
 #add_ideas = 
 
 

@@ -33,6 +33,8 @@ set_convoys = 0
 recruit_character = ZFS_sosite_gebere
 recruit_character = ZFS_sannayne_mokwete_iliihi
 recruit_character = ZFS_tshemene_lihi
+recruit_character = ZFS_dereki_gezeni
+recruit_character = ZFS_dipiberi_elema
 #add_ideas = 
 
 set_cosmetic_tag = ZFS_civilwar

@@ -31,9 +31,9 @@ characters={
 
 		field_marshal = {
             traits = { old_guard career_officer infantry_officer ranger }
-            skill = 3
-            attack_skill = 5
-            defense_skill = 2
+            skill = 4
+            attack_skill = 6
+            defense_skill = 3
             planning_skill = 4
             logistics_skill = 1
         }
@@ -48,10 +48,24 @@ characters={
             traits = { politically_connected trait_reckless }
             skill = 3
             attack_skill = 5
-            defense_skill = 2
-            planning_skill = 4
-            logistics_skill = 1
+            defense_skill = 1
+            planning_skill = 3
+            logistics_skill = 3
         }
     }
-
+       ZFB_wezin_fesifa = { 
+	 	name = ZFB_wezin_fesifa
+		portraits = {
+			army = {
+			}
+		}
+		corps_commander = {
+            traits = { engineer_officer skilled_staffer }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 3
+        }
+    }
 }

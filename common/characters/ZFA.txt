@@ -15,7 +15,7 @@ characters={
 		}
 	}
 ZFA_gelagile_yegereta = { 
-		name = ZFA_gelagile_yegereta_name
+		name = ZFA_gelagile_yegereta
 		portraits = {
 			army = {
 			}
@@ -31,7 +31,7 @@ ZFA_gelagile_yegereta = {
         }
     }
 ZFA_takala_kafi = { 
-		name = ZFA_takala_kafi_name
+		name = ZFA_takala_kafi
 		portraits = {
 			army = {
 			}
@@ -46,4 +46,69 @@ ZFA_takala_kafi = {
             logistics_skill = 1
         }
     }
+ZFA_lomi_yarareli = { 
+		name = ZFA_lomi_yarareli
+		portraits = {
+			army = {
+			}
+		}
+       
+		corps_commander = {
+            traits = { desert_fox }
+            skill = 1
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 1
+        }
+    }
+ZFA_iniche_tsinati = { 
+		name = ZFA_iniche_tsinati
+		portraits = {
+			army = {
+			}
+		}
+       
+		corps_commander = {
+            traits = { career_officer trait_reckless }
+            skill = 1
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 2
+        }
+    }
+ZFA_chelem_welel = { 
+		name = ZFA_chelem_welel
+		portraits = {
+			army = {
+			}
+		}
+       
+		corps_commander = {
+            traits = { swamp_fox harsh_leader }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 3
+        }
+    }
+ZFA_abwara_mailebi = { 
+		name = ZFA_abwara_mailebi
+		portraits = {
+			army = {
+			}
+		}
+       
+		corps_commander = {
+            traits = { militia_officer }
+            skill = 2
+            attack_skill = 4
+            defense_skill = 1
+            planning_skill = 4
+            logistics_skill = 1
+        }
+    }
+
 }

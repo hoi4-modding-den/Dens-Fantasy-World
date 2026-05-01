@@ -31,11 +31,11 @@ characters={
 
 		field_marshal = {
             traits = { desert_fox commando inflexible_strategist }
-            skill = 3
+            skill = 4
             attack_skill = 1
-            defense_skill = 5
+            defense_skill = 6
             planning_skill = 2
-            logistics_skill = 2
+            logistics_skill = 4
         }
     }
        ZFS_tshemene_lihi = { 
@@ -46,12 +46,41 @@ characters={
 		}
 		corps_commander = {
             traits = { ranger trait_reckless }
-            skill = 1
-            attack_skill = 2
-            defense_skill = 2
-            planning_skill = 2
+            skill = 2
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 3
             logistics_skill = 1
         }
     }
-
+       ZFS_dereki_gezeni = { 
+	 	name = ZFS_dereki_gezeni
+		portraits = {
+			army = {
+			}
+		}
+		corps_commander = {
+            traits = { desert_fox trait_cautious }
+            skill = 2
+            attack_skill = 1
+            defense_skill = 4
+            planning_skill = 1
+            logistics_skill = 2
+        }
+    }
+       ZFS_dipiberi_elema = { 
+	 	name = ZFS_dipiberi_elema
+		portraits = {
+			army = {
+			}
+		}
+		corps_commander = {
+            traits = { ranger }
+            skill = 1
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 3
+            logistics_skill = 1
+        }
+    }
 }
