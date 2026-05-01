@@ -13,8 +13,8 @@ state = {
 	}
 	
 	history = {
-		owner = ZAV
-		add_core_of = ZAV
+		#owner = ZAV
+		#add_core_of = ZAV
 		
 		buildings = {
 			infrastructure = 3

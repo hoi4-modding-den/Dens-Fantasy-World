@@ -8,16 +8,16 @@ state = {
 	}
 
 	history = {
-		owner = ZAV
-		add_core_of = ZAV
+		#owner = ZAV
+		#add_core_of = ZAV
 		
 		buildings = {
 			infrastructure = 2
 		}
 
-		victory_points = { # Fairwood
-			2299 3
-		}
+		#victory_points = { # Fairwood
+		#	2299 3
+		#}
 	}
 
 	provinces = {

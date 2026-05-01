@@ -16,6 +16,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ZAV/ZAV_secret_orders.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_ZAV_the_kings_seal"
+		texturefile = "gfx/interface/ideas/ZAV/ZAV_the_kings_seal.dds"
+	}
+
 	# VEILKEEPER DETAILS #
 
 	spriteType = {

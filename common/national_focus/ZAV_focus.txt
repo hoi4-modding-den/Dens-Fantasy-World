@@ -50,6 +50,213 @@ shared_focus = {
 	}
 }
 
+# APPEASE THE LORDS BRANCH #
+
+shared_focus = {
+	id = ZAV_appease_the_lords
+	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+	cost = 5
+	relative_position_id = ZAV_assume_the_mantle
+	x = -3
+	y = 1
+
+	prerequisite = {
+		focus = ZAV_assume_the_mantle
+	}
+
+	mutually_exclusive = {
+		focus = ZAV_discredit_the_lords
+	}
+
+	ai_will_do = {
+		factor = 40000
+	}
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+# DISCREDIT THE LORDS BRANCH #
+
+shared_focus = {
+	id = ZAV_discredit_the_lords
+	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+	cost = 5
+	relative_position_id = ZAV_assume_the_mantle
+	x = 2
+	y = 1
+
+	prerequisite = {
+		focus = ZAV_assume_the_mantle
+	}
+
+	mutually_exclusive = {
+		focus = ZAV_appease_the_lords
+	}
+
+	ai_will_do = {
+		factor = 40000
+	}
+
+	completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
+	}
+}
+
+shared_focus = {
+	id = ZAV_by_my_authority
+	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+	cost = 5
+	relative_position_id = ZAV_discredit_the_lords
+	x = -1
+	y = 1
+
+	prerequisite = {
+		focus = ZAV_discredit_the_lords
+	}
+
+	ai_will_do = {
+		factor = 40000
+	}
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = ZAV_king_richards_support
+	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+	cost = 5
+	relative_position_id = ZAV_discredit_the_lords
+	x = 1
+	y = 1
+
+	prerequisite = {
+		focus = ZAV_discredit_the_lords
+	}
+	
+	ai_will_do = {
+		factor = 40000
+	}
+
+	completion_reward = {
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+
+		add_ideas = {
+			ZAV_the_kings_seal
+		}
+
+		custom_effect_tooltip = ZAV_will_result_in_a_major_encounter_tt
+
+		# Starts the scarlet banner encounters
+	}
+}
+
+shared_focus = {
+	id = ZAV_the_scarlet_banner
+	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+	cost = 5
+	relative_position_id = ZAV_discredit_the_lords
+	x = 3
+	y = 1
+
+	prerequisite = {
+		focus = ZAV_discredit_the_lords
+	}
+	
+	ai_will_do = {
+		factor = 40000
+	}
+
+	completion_reward = {
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+
+		custom_effect_tooltip = ZAV_will_result_in_a_major_encounter_tt
+
+		# Starts the scarlet banner encounters
+	}
+}
+
+shared_focus = {
+	id = ZAV_oust_the_traitors
+	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+	cost = 5
+	relative_position_id = ZAV_by_my_authority
+	x = 1
+	y = 1
+
+	prerequisite = {
+		focus = ZAV_by_my_authority
+	}
+	
+	ai_will_do = {
+		factor = 40000
+	}
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = ZAV_new_blood
+	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+	cost = 5
+	relative_position_id = ZAV_by_my_authority
+	x = 3
+	y = 1
+
+	prerequisite = {
+		focus = ZAV_by_my_authority
+	}
+	
+	ai_will_do = {
+		factor = 40000
+	}
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = ZAV_at_the_head_of_the_table
+	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+	cost = 5
+	relative_position_id = ZAV_oust_the_traitors
+	x = 1
+	y = 1
+
+	prerequisite = {
+		focus = ZAV_oust_the_traitors
+	}
+
+	prerequisite = {
+		focus = ZAV_new_blood
+	}
+	
+	ai_will_do = {
+		factor = 40000
+	}
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+# NIGHT PLAGUE BRANCH #
+
 shared_focus = {
 	id = ZAV_the_night_plague
 	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility

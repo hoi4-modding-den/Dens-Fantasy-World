@@ -8,21 +8,21 @@ state = {
 	}
 	
 	history = {
-		owner = ZAV
-		add_core_of = ZAV
+		#owner = ZAV
+		#add_core_of = ZAV
 		
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 		}
 
-		victory_points = { # Bayleth
-			1813 5
-		}
-
-		victory_points = { # Eryngar
-			1821 5
-		}
+		#victory_points = { # Bayleth
+		#	1813 5
+		#}
+#
+		#victory_points = { # Eryngar
+		#	1821 5
+		#}
 	}
 
 	provinces = {

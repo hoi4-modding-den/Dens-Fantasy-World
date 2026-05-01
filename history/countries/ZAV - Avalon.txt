@@ -1,6 +1,6 @@
-﻿capital = 343
+﻿capital = 159
 
-set_oob = "ZAV_1936"
+#set_oob = "ZAV_1936"
 
 set_research_slots = 4
 
@@ -40,7 +40,7 @@ add_breakthrough_progress = {
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "ZAV_1936_air_bba"
+		#set_air_oob = "ZAV_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
 			engines_1 = 1
@@ -56,7 +56,7 @@ if = {
 			bba_early_transport_plane = 1
 		}
 	else = {
-		set_air_oob = "ZAV_1936_air_legacy"
+		#set_air_oob = "ZAV_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
 			cv_early_fighter = 1
@@ -147,9 +147,9 @@ if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	set_naval_oob = "ZAV_1936_Naval"
+	#set_naval_oob = "ZAV_1936_Naval"
 	else = {
-		set_naval_oob = "ZAV_1936_Naval_Legacy"
+		#set_naval_oob = "ZAV_1936_Naval_Legacy"
 	}
 }
 

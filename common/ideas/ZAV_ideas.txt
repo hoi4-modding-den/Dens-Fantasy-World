@@ -24,5 +24,14 @@ ideas = {
 				custom_modifier_tooltip = ZAV_secret_orders_modifier_tt
 			}
 		}
+
+		ZAV_the_kings_seal = {
+			picture = ZAV_the_kings_seal
+			modifier = {
+				political_power_factor = 0.1
+				recruitable_population_factor = 0.05
+				civilian_factory_use = 1
+			}
+		}
 	}
 }

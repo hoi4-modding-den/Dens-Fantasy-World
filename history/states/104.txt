@@ -3,17 +3,17 @@ state = {
 	name = "STATE_104"
 	
 	history = {
-		owner = ZAV
-		add_core_of = ZAV
+		#owner = ZAV
+		#add_core_of = ZAV
 		
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1	
 		}	
 
-		victory_points = { # Camlann
-			1950 5
-		}
+		#victory_points = { # Camlann
+		#	1950 5
+		#}
 	}
 	
 	provinces = {

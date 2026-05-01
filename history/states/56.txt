@@ -8,8 +8,8 @@ state = {
 	}
 
 	history = {
-		owner = ZAV
-		add_core_of = ZAV
+		#owner = ZAV
+		#add_core_of = ZAV
 		
 		buildings = {
 			infrastructure = 2
@@ -26,9 +26,9 @@ state = {
 			}
 		}	
 
-		victory_points = { # New Tintagel
-			1104 10
-		}
+		#victory_points = { # New Tintagel
+		#	1104 10
+		#}
 	}
 
 	provinces = {

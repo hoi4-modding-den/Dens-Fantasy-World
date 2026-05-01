@@ -41,6 +41,8 @@
  ZAV_bleeding_grail_desc:0 "For centuries, the Holy Grail has stood as the sacred heart of Avalon, its presence purifying the land, healing the wounded, and safeguarding the realm from corruption. Yet, a grim omen has emerged. Crimson blood has begun to seep across its once-immaculate surface, defying all explanation. Priests whisper of failing miracles, while scholars fear the Grail's ancient power is waning. Whether this is a curse, a warning, or the first sign of a greater evil stirring beyond the veil, one truth is undeniable: the light that has long protected Avalon is faltering and the shadows are beginning to creep ever closer."
  ZAV_secret_orders:0 "§0Secret Orders§!"
  ZAV_secret_orders_desc:0 "Hiding in the shadows, a dark network festers in secrecy. Hidden circles and forbidden cults practice outlawed magics, offering devotion not to the Grail, nor to Nimue, but to nameless powers that whisper from beyond the veil. In return, they are granted gifts both terrible and corrupting. Twisted flesh, shattered minds, and violence without reason. Murders go unsolved, entire villages fall to madness, and rumors of monstrous transformations spread like wildfire.\n\nWorse still, the sacred ashes of Saint Morvydd have been stolen and her tomb defiled. Now wielded as a relic, her ashes are capable of inciting terror and hysteria on a mass scale. With the guardian priests of the realm stretched thin and the faithful losing their grip, these secret orders grow ever bolder. Unless they are rooted out, Avalon may soon find itself undone not by armies, but by the rot spreading from within."
+ ZAV_the_kings_seal:0 "The King's Seal"
+ ZAV_the_kings_seal_desc:0 "PLACEHOLDER"
 
  ##########
  # EVENTS #
@@ -240,6 +242,8 @@
  ZAV_very_high_chance_of_finding_clue_tt:0 "§GVery high chance of a positive outcome.§!"
 
  ZAV_end_encounter_tt:0 "\n§LEnds the current encounter.§!"
+ ZAV_will_result_in_a_major_encounter_tt:0 "\n§YWill result in a major encounter.§!"
+ ZAV_will_result_in_a_minor_encounter_tt:0 "\n§YWill result in a minor encounter.§!"
 
  ### THEFT AT THE BLACKRIDGE ESTATE ###
 

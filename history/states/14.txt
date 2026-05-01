@@ -3,8 +3,8 @@ state = {
 	name = "STATE_14"
 	
 	history = {
-		owner = ZAV
-		add_core_of = ZAV
+		#owner = ZAV
+		#add_core_of = ZAV
 		
 		buildings = {
 			infrastructure = 3
@@ -12,13 +12,13 @@ state = {
 			arms_factory = 2
 		}
 
-		victory_points = { # Astoria
-			272 10
-		}
-
-		victory_points = { # Merles
-			271 3
-		}
+		#victory_points = { # Astoria
+		#	272 10
+		#}
+#
+		#victory_points = { # Merles
+		#	271 3
+		#}
 	}
 	
 	provinces = {
