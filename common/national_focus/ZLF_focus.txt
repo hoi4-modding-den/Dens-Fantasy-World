@@ -1358,8 +1358,8 @@ focus_tree={
 		icon = GFX_focus_generic_worker_administration
         prerequisite = { focus = ZLF_socialist_party_majority focus = ZLF_radical_party_majority }
 		#mutually_exclusive = { focus =  }
-		x = 11
-		y = 5
+		x = -1
+		y = 1
 		relative_position_id = ZLF_radical_party_majority
 		
 		cost = 5
@@ -1417,8 +1417,8 @@ focus_tree={
 		icon = GFX_focus_SWE_attack_landsorganisationen
 		prerequisite = { focus = ZLF_fortify_the_republic }
 		#mutually_exclusive = { focus =  }
-		x = 8
-		y = 6
+		x = 0
+		y = 2
 		relative_position_id = ZLF_national_democratic_majority
 		
 		cost = 5
@@ -1464,8 +1464,8 @@ focus_tree={
         prerequisite = { focus = ZLF_expand_the_banners }
 		prerequisite = { focus = ZLF_labour_union_cooperation }
 		#mutually_exclusive = { focus =  }
-		x = 10
-		y = 6
+		x = 0
+		y = 2
 		relative_position_id = ZLF_socialist_party_majority
 		
 		cost = 5
@@ -1570,8 +1570,8 @@ focus_tree={
 		icon = GFX_focus_CZE_army_reform
         prerequisite = { focus = ZLF_reformist_spirit focus = ZLF_social_democratic_activism focus = ZLF_nationalisation_program }
 		#mutually_exclusive = { focus =  }
-		x = 7
-		y = 7
+		x = -3
+		y = 1
 		relative_position_id = ZLF_social_democratic_activism
 		
 		cost = 5
@@ -2025,8 +2025,8 @@ focus_tree={
 		icon = GFX_focus_generic_secret_service_agency
         prerequisite = { focus = ZLF_reformist_spirit focus = ZLF_social_democratic_activism focus = ZLF_nationalisation_program }
 		#mutually_exclusive = { focus =  }
-		x = 10
-		y = 7
+		x = 0
+		y = 1
 		relative_position_id = ZLF_social_democratic_activism
 		
 		cost = 5
@@ -2060,8 +2060,8 @@ focus_tree={
 		icon = GFX_focus_SWE_organize_a_putsch
         prerequisite = { focus = ZLF_reformist_spirit focus = ZLF_social_democratic_activism focus = ZLF_nationalisation_program }
 		#mutually_exclusive = { focus =  }
-		x = 13
-		y = 7
+		x = 3
+		y = 1
 		relative_position_id = ZLF_social_democratic_activism
 		
 		cost = 0
@@ -2217,8 +2217,8 @@ focus_tree={
 		icon = GFX_focus_SWE_socialist_reforms
         prerequisite = { focus = ZLF_rathenau_affair }
 		mutually_exclusive = { focus = ZLF_left_liberal_coalition_formed }
-		x = 15
-		y = 8
+		x = 2
+		y = 1
 		relative_position_id = ZLF_rathenau_affair
 		
 		cost = 0
