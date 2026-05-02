@@ -41,6 +41,8 @@ sub_units = {
 		supply_consumption = 0.02
 		maximum_speed = 4
 		hardness = 0.5
+		breakthrough = 10
+		armor_value = 10
 
 		casualty_trickleback = 0
 		experience_loss_factor = 0.05

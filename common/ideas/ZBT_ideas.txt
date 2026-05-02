@@ -29,6 +29,38 @@ ideas = {
 			}
 		}
 
+		ZBT_stemming_the_flow = {
+			picture = POL_the_peasants_strike
+			modifier = {
+				neutrality_drift = -0.02
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				political_power_factor = -0.1
+			}
+		}
+
+		ZBT_action_societies = {
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				democratic_drift = 0.03
+				communism_drift = 0.02
+				stability_factor = -0.07
+				war_support_factor = -0.07
+				political_power_factor = -0.1
+			}
+		}
+
+		ZBT_cadre_integrated = {
+			picture = ARG_growing_nationalism_modifier
+			modifier = {
+				fascism_drift = 0.02
+				neutrality_drift = -0.04
+				stability_factor = -0.07
+				war_support_factor = -0.05
+				political_power_factor = -0.02
+			}
+		}
+
 		ZBT_evacuate_the_countryside_ns = {
 			picture = POL_the_peasants_strike
 			modifier = {
@@ -118,5 +150,25 @@ ideas = {
 		# 		# consumer_goods_expected_value = -0.02
 		# 	}
 		# }
+
+		ZBT_meritocratic_welfare_ns = {
+			picture = ARG_social_welfare_fund_ns
+			modifier = {
+				consumer_goods_expected_value = 0.05
+				stability_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.07
+			}
+		}
+
+		ZBT_learning_from_edelweiss = {
+			picture = ARG_social_welfare_fund_ns
+			modifier = {
+				stability_factor = 0.02
+				political_power_gain = 0.1
+				trade_laws_cost_factor = -0.1
+				economy_cost_factor = -0.1
+				political_advisor_cost_factor = -0.05
+			}
+		}
 	}
 }

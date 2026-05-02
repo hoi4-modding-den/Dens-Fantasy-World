@@ -6,7 +6,7 @@ focus_tree = {
     default = no
     continuous_focus_position = { x = 50 y = 930 }
 
-    focus = {
+focus = {
         id = ZBT_start_industry
         icon = GFX_goal_unknown
         x = 6
@@ -27,7 +27,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_begin_undercity
         icon = GFX_goal_unknown
         x = 10
@@ -49,7 +49,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_developing_the_outskirts
         icon = GFX_goal_unknown
         x = 2
@@ -69,7 +69,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_evacuate_the_countryside
         icon = GFX_goal_unknown
         x = 3
@@ -88,7 +88,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_countryside_revitalisation
         icon = GFX_goal_unknown
         x = 1
@@ -107,7 +107,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_clear_the_rubble
         icon = GFX_goal_unknown
         x = 0
@@ -132,7 +132,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_workforce_expansion
         icon = GFX_goal_unknown
         x = 4
@@ -155,7 +155,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_military_investments
         icon = GFX_goal_unknown
         x = 2
@@ -184,7 +184,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_land_renewal
         icon = GFX_goal_unknown
         x = 0
@@ -211,7 +211,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_material_recycling
         icon = GFX_goal_unknown
         x = 8
@@ -227,7 +227,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_advanced_ore_processing
         icon = GFX_goal_unknown
         x = 8
@@ -243,7 +243,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_undercity_rapid_growth
         icon = GFX_goal_unknown
         x = 11
@@ -264,7 +264,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_reinforced_supports
         icon = GFX_goal_unknown
         x = 12
@@ -289,7 +289,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_riva_air_base
         icon = GFX_goal_unknown
         x = 1
@@ -314,7 +314,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_refinery_effort
         icon = GFX_goal_unknown
         x = 3
@@ -340,7 +340,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_underground_metropolis
         icon = GFX_goal_unknown
         x = 4
@@ -367,7 +367,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_wasteland_restored
         icon = GFX_goal_unknown
         x = 2
@@ -387,7 +387,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_domestic_arms_production
         icon = GFX_goal_unknown
         x = 2
@@ -408,7 +408,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_motorization_effort
         icon = GFX_goal_unknown
         x = 4
@@ -428,7 +428,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_armor_rollout
         icon = GFX_goal_unknown
         x = 2
@@ -448,7 +448,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_electronics_effort
         icon = GFX_goal_unknown
         x = 0
@@ -468,7 +468,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_miracle_of_science
         icon = GFX_goal_unknown
         x = 9
@@ -483,7 +483,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_subterranean_construction
         icon = GFX_goal_unknown
         x = 10
@@ -505,7 +505,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_digging_vehicle_research
         icon = GFX_goal_unknown
         x = 11
@@ -523,7 +523,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_mountain_fortification
         icon = GFX_goal_unknown
         x = 12
@@ -555,7 +555,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_extreme_heat_excavation
         icon = GFX_goal_unknown
         x = 11
@@ -570,7 +570,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_harness_the_core
         icon = GFX_goal_unknown
         x = 10
@@ -586,7 +586,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_restart_alchemical_research
         icon = GFX_goal_unknown
         x = 9
@@ -602,7 +602,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_prospect_for_resources
         icon = GFX_goal_unknown
         x = 9
@@ -632,48 +632,69 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_compromise_with_action_societies
         icon = GFX_goal_unknown
         x = 21
         y = 0
-        cost = 10
+        cost = 1
         mutually_exclusive = { focus = ZBT_the_house_steadfast focus = ZBT_integrate_the_cadres }
+        available = {
+            OR = {
+                democratic > 0.05
+                communism > 0.05
+            }
+        }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
-            log = "[GetDateText]: [Root.GetName]: Focus ZBT_compromise_with_action_societies completed"
+            swap_ideas = {
+                remove_idea = ZBT_political_enthusiasts
+                add_idea = ZBT_action_societies
+            }
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_the_house_steadfast
         icon = GFX_goal_unknown
         x = 25
         y = 0
-        cost = 10
+        cost = 1
         mutually_exclusive = { focus = ZBT_integrate_the_cadres focus = ZBT_compromise_with_action_societies }
+        available = {
+            neutrality > 0.9
+        }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
-            log = "[GetDateText]: [Root.GetName]: Focus ZBT_the_house_steadfast completed"
+            swap_ideas = {
+                remove_idea = ZBT_political_enthusiasts
+                add_idea = ZBT_stemming_the_flow
+            }
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_integrate_the_cadres
         icon = GFX_goal_unknown
         x = 29
         y = 0
-        cost = 10
+        cost = 1
         mutually_exclusive = { focus = ZBT_the_house_steadfast focus = ZBT_compromise_with_action_societies }
+        available = {
+            fascism > 0.08
+        }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
-            log = "[GetDateText]: [Root.GetName]: Focus ZBT_integrate_the_cadres  completed"
+            swap_ideas = {
+                remove_idea = ZBT_political_enthusiasts
+                add_idea = ZBT_cadre_integrated
+            }
         }
     }
 
@@ -682,13 +703,14 @@ focus_tree = {
         icon = GFX_goal_unknown
         x = 19
         y = 1
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_compromise_with_action_societies }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
             log = "[GetDateText]: [Root.GetName]: Focus ZBT_meritocratic_welfare completed"
+            add_ideas = {ZBT_meritocratic_welfare_ns}
         }
     }
 
@@ -697,22 +719,25 @@ focus_tree = {
         icon = GFX_goal_unknown
         x = 21
         y = 1
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_compromise_with_action_societies }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
             log = "[GetDateText]: [Root.GetName]: Focus ZBT_consult_the_people completed"
+            add_popularity = { ideology = democratic popularity = 0.07 }
+            add_popularity = { ideology = communism popularity = 0.03 }
+            add_stability = 0.03
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_rule_of_the_planners
         icon = GFX_goal_unknown
         x = 23
         y = 1
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_compromise_with_action_societies focus = ZBT_the_house_steadfast }
         mutually_exclusive = { focus = ZBT_rally_around_esta }
         ai_will_do = {
@@ -723,12 +748,12 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_refugee_plan
         icon = GFX_goal_unknown
         x = 17
         y = 2
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_meritocratic_welfare focus = ZBT_consult_the_people focus = ZBT_rule_of_the_planners }
         ai_will_do = {
             factor = 1
@@ -738,12 +763,12 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_rally_around_esta
         icon = GFX_goal_unknown
         x = 27
         y = 1
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_the_house_steadfast focus = ZBT_integrate_the_cadres }
         mutually_exclusive = { focus = ZBT_rule_of_the_planners }
         ai_will_do = {
@@ -759,22 +784,26 @@ focus_tree = {
         icon = GFX_goal_unknown
         x = 19
         y = 2
-        cost = 10
+        cost = 3
         prerequisite = { focus = ZBT_meritocratic_welfare focus = ZBT_consult_the_people focus = ZBT_rule_of_the_planners }
+        available = {
+            ZLF = { exists = yes }
+        }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
             log = "[GetDateText]: [Root.GetName]: Focus ZBT_edelweiss_support completed"
+            add_political_power = 100
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_meet_with_magnates
         icon = GFX_goal_unknown
         x = 23
         y = 2
-        cost = 10
+        cost = 3
         prerequisite = { focus = ZBT_rule_of_the_planners }
         ai_will_do = {
             factor = 1
@@ -784,12 +813,12 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_refute_opposing_voices
         icon = GFX_goal_unknown
-        x = 31
+        x = 32
         y = 1
-        cost = 10
+        cost = 3
         prerequisite = { focus = ZBT_integrate_the_cadres }
         ai_will_do = {
             factor = 1
@@ -799,12 +828,12 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_expel_divisionists
         icon = GFX_goal_unknown
         x = 33
         y = 2
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_refute_opposing_voices }
         mutually_exclusive = { focus = ZBT_beacon_of_civilisation }
         ai_will_do = {
@@ -815,12 +844,12 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_open_for_business
         icon = GFX_goal_unknown
         x = 22
         y = 3
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_meet_with_magnates }
         mutually_exclusive = { focus = ZBT_the_peoples_city focus = ZBT_the_workers_city }
         available = {
@@ -834,7 +863,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_the_peoples_city
         icon = GFX_goal_unknown
         x = 20
@@ -853,7 +882,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_the_workers_city
         icon = GFX_goal_unknown
         x = 18
@@ -873,12 +902,12 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_patriotic_lecture_tour
         icon = GFX_goal_unknown
         x = 29
         y = 1
-        cost = 10
+        cost = 3
         prerequisite = { focus = ZBT_integrate_the_cadres }
         ai_will_do = {
             factor = 1
@@ -888,12 +917,12 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_new_nationalism
         icon = GFX_goal_unknown
         x = 29
         y = 2
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_patriotic_lecture_tour }
         ai_will_do = {
             factor = 1
@@ -903,12 +932,12 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_beacon_of_civilisation
         icon = GFX_goal_unknown
         x = 31
         y = 2
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_patriotic_lecture_tour }
         mutually_exclusive = { focus = ZBT_expel_divisionists }
         ai_will_do = {
@@ -919,12 +948,12 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_cult_of_personality
         icon = GFX_goal_unknown
         x = 27
         y = 2
-        cost = 10
+        cost = 3
         prerequisite = { focus = ZBT_rally_around_esta }
         ai_will_do = {
             factor = 1
@@ -934,12 +963,12 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_promise_return_to_normal
         icon = GFX_goal_unknown
         x = 21
         y = 2
-        cost = 10
+        cost = 3
         prerequisite = { focus = ZBT_consult_the_people focus = ZBT_meritocratic_welfare focus = ZBT_rule_of_the_planners }
         ai_will_do = {
             factor = 1
@@ -949,12 +978,12 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_expand_personal_wealth
         icon = GFX_goal_unknown
         x = 24
         y = 3
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_meet_with_magnates }
         available = {
             has_completed_focus = ZBT_the_house_steadfast
@@ -967,13 +996,13 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_supreme_autocrat
         icon = GFX_goal_unknown
         x = 28
         y = 3
-        cost = 10
-        prerequisite = { focus = ZBT_cult_of_personality }
+        cost = 5
+        prerequisite = { focus = ZBT_cult_of_personality focus = ZBT_new_nationalism }
         available = {
             has_completed_focus = ZBT_integrate_the_cadres
         }
@@ -985,12 +1014,12 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_continuity_claim
         icon = GFX_goal_unknown
         x = 26
         y = 3
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_cult_of_personality }
         available = {
             has_completed_focus = ZBT_the_house_steadfast
@@ -1003,12 +1032,12 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_hand_over_the_reins
         icon = GFX_goal_unknown
-        x = 19
+        x = 17
         y = 4
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_the_workers_city focus = ZBT_the_peoples_city focus = ZBT_open_for_business }
         mutually_exclusive = { focus = ZBT_constitutional_monarchy }
         ai_will_do = {
@@ -1019,12 +1048,12 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_constitutional_monarchy
         icon = GFX_goal_unknown
-        x = 21
+        x = 19
         y = 4
-        cost = 10
+        cost = 5
         prerequisite = { focus = ZBT_the_peoples_city focus = ZBT_the_workers_city focus = ZBT_open_for_business }
         mutually_exclusive = { focus = ZBT_hand_over_the_reins }
         ai_will_do = {
@@ -1035,13 +1064,14 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_parliamentary_system
         icon = GFX_goal_unknown
         x = 18
         y = 5
-        cost = 10
+        cost = 3
         prerequisite = { focus = ZBT_hand_over_the_reins focus = ZBT_constitutional_monarchy }
+        mutually_exclusive = { focus = ZBT_open_congress }
         ai_will_do = {
             factor = 1
         }
@@ -1050,13 +1080,14 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_open_congress
         icon = GFX_goal_unknown
         x = 20
         y = 5
-        cost = 10
+        cost = 3
         prerequisite = { focus = ZBT_hand_over_the_reins focus = ZBT_constitutional_monarchy }
+        mutually_exclusive = { focus = ZBT_parliamentary_system }
         ai_will_do = {
             factor = 1
         }
@@ -1065,28 +1096,36 @@ focus_tree = {
         }
     }
 
-    focus = {
-        id = ZBT_focus_paste2
+focus = {
+        id = ZBT_throw_money_on_the_streets
         icon = GFX_goal_unknown
         x = 21
         y = 6
-        cost = 10
+        cost = 3
         prerequisite = { focus = ZBT_hand_over_the_reins focus = ZBT_constitutional_monarchy }
+        mutually_exclusive = { focus = ZBT_marxian_economics focus = ZBT_concessions_to_aristocracy }
+        available = {
+            NOT = {has_completed_focus = ZBT_the_peoples_city }
+        }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
-            log = "[GetDateText]: [Root.GetName]: Focus ZBT_focus_paste2 completed"
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_throw_money_on_the_streets completed"
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_concessions_to_aristocracy
         icon = GFX_goal_unknown
         x = 19
         y = 6
-        cost = 10
+        cost = 3
         prerequisite = { focus = ZBT_hand_over_the_reins focus = ZBT_constitutional_monarchy }
+        mutually_exclusive = { focus = ZBT_marxian_economics focus = ZBT_throw_money_on_the_streets }
+        available = {
+            NOT = { has_completed_focus = ZBT_the_workers_city }
+        }
         ai_will_do = {
             factor = 1
         }
@@ -1095,18 +1134,199 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = ZBT_marxian_economics
         icon = GFX_goal_unknown
         x = 17
         y = 6
-        cost = 10
+        cost = 3
         prerequisite = { focus = ZBT_hand_over_the_reins focus = ZBT_constitutional_monarchy }
+        mutually_exclusive = { focus = ZBT_concessions_to_aristocracy focus = ZBT_throw_money_on_the_streets }
+        available = {
+            NOT = { has_completed_focus = ZBT_open_for_business }
+        }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
             log = "[GetDateText]: [Root.GetName]: Focus ZBT_marxian_economics completed"
+        }
+    }
+
+focus = {
+        id = ZBT_great_purge
+        icon = GFX_goal_unknown
+        x = 32
+        y = 3
+        cost = 3
+        prerequisite = { focus = ZBT_expel_divisionists }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_great_purge completed"
+        }
+    }
+
+focus = {
+        id = ZBT_general_affairs_directorate
+        icon = GFX_goal_unknown
+        x = 30
+        y = 3
+        cost = 3
+        prerequisite = { focus = ZBT_beacon_of_civilisation }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_general_affairs_directorate completed"
+        }
+    }
+
+focus = {
+        id = ZBT_bread_and_circuses
+        icon = GFX_goal_unknown
+        x = 25
+        y = 2
+        cost = 3
+        prerequisite = { focus = ZBT_the_house_steadfast }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_bread_and_circuses completed"
+        }
+    }
+
+focus = {
+        id = ZBT_social_mobilisation
+        icon = GFX_goal_unknown
+        x = 33
+        y = 4
+        cost = 5
+        prerequisite = { focus = ZBT_general_affairs_directorate focus = ZBT_great_purge }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_social_mobilisation completed"
+        }
+    }
+
+focus = {
+        id = ZBT_memory_of_chrysea
+        icon = GFX_goal_unknown
+        x = 27
+        y = 4
+        cost = 5
+        prerequisite = { focus = ZBT_continuity_claim focus = ZBT_supreme_autocrat }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_memory_of_chrysea completed"
+        }
+    }
+
+focus = {
+        id = ZBT_our_stolen_future
+        icon = GFX_goal_unknown
+        x = 31
+        y = 4
+        cost = 5
+        prerequisite = { focus = ZBT_general_affairs_directorate focus = ZBT_great_purge focus = ZBT_supreme_autocrat }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_our_stolen_future completed"
+        }
+    }
+
+focus = {
+        id = ZBT_expand_quotas
+        icon = GFX_goal_unknown
+        x = 21
+        y = 4
+        cost = 3
+        available = {
+            OR = {
+                has_completed_focus = ZBT_expand_personal_wealth
+                has_completed_focus = ZBT_the_peoples_city
+                has_completed_focus = ZBT_open_for_business
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_expand_quotas completed"
+        }
+    }
+
+    focus = {
+        id = ZBT_the_basaltropolis_regency
+        icon = GFX_goal_unknown
+        x = 28
+        y = 5
+        cost = 5
+        # prerequisite = { focus = ZBT_supreme_autocrat focus = ZBT_general_affairs_directorate }
+        prerequisite = { focus = ZBT_our_stolen_future }
+        mutually_exclusive = { focus = ZBT_the_cadre_ascendant }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_our_stolen_future completed"
+        }
+    }
+
+focus = {
+        id = ZBT_the_cadre_ascendant
+        icon = GFX_goal_unknown
+        x = 32
+        y = 5
+        cost = 5
+        prerequisite = { focus = ZBT_social_mobilisation }
+        # prerequisite = { focus = ZBT_great_purge }
+        mutually_exclusive = { focus = ZBT_the_basaltropolis_regency }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_our_stolen_future completed"
+        }
+    }
+
+focus = {
+        id = ZBT_righteous_conquest
+        icon = GFX_goal_unknown
+        x = 29
+        y = 6
+        cost = 5
+        prerequisite = { focus = ZBT_the_basaltropolis_regency focus = ZBT_the_cadre_ascendant }
+        mutually_exclusive = { focus = ZBT_glorious_isolation }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_our_stolen_future completed"
+        }
+    }
+
+    focus = {
+        id = ZBT_glorious_isolation
+        icon = GFX_goal_unknown
+        x = 31
+        y = 6
+        cost = 5
+        prerequisite = { focus = ZBT_the_basaltropolis_regency focus = ZBT_the_cadre_ascendant }
+        mutually_exclusive = { focus = ZBT_righteous_conquest }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_our_stolen_future completed"
         }
     }
 
