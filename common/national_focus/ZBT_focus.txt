@@ -275,7 +275,7 @@ focus_tree = {
             710 = {
                 infrastructure > 4
             }
-            num_of_civilian_factories > 10 #TODO: rebalance
+            num_of_civilian_factories > 6 #TODO: rebalance
         }
         ai_will_do = {
             factor = 1
@@ -376,6 +376,7 @@ focus_tree = {
         prerequisite = { focus = ZBT_underground_metropolis focus = ZBT_land_renewal }
         available = {
             has_tech = construction3
+            num_of_civilian_factories > 15 #TODO: rebalance
         }
         ai_will_do = {
             factor = 1
@@ -713,6 +714,7 @@ focus_tree = {
         y = 1
         cost = 10
         prerequisite = { focus = ZBT_compromise_with_action_societies focus = ZBT_the_house_steadfast }
+        mutually_exclusive = { focus = ZBT_rally_around_esta }
         ai_will_do = {
             factor = 1
         }
@@ -743,6 +745,7 @@ focus_tree = {
         y = 1
         cost = 10
         prerequisite = { focus = ZBT_the_house_steadfast focus = ZBT_integrate_the_cadres }
+        mutually_exclusive = { focus = ZBT_rule_of_the_planners }
         ai_will_do = {
             factor = 1
         }
@@ -1033,24 +1036,9 @@ focus_tree = {
     }
 
     focus = {
-        id = ZBT_focus
+        id = ZBT_parliamentary_system
         icon = GFX_goal_unknown
         x = 18
-        y = 6
-        cost = 10
-        prerequisite = { focus = ZBT_hand_over_the_reins focus = ZBT_constitutional_monarchy }
-        ai_will_do = {
-            factor = 1
-        }
-        completion_reward = {
-            log = "[GetDateText]: [Root.GetName]: Focus ZBT_focus completed"
-        }
-    }
-
-    focus = {
-        id = ZBT_focus_paste
-        icon = GFX_goal_unknown
-        x = 19
         y = 5
         cost = 10
         prerequisite = { focus = ZBT_hand_over_the_reins focus = ZBT_constitutional_monarchy }
@@ -1058,14 +1046,14 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            log = "[GetDateText]: [Root.GetName]: Focus ZBT_focus_paste completed"
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_parliamentary_system completed"
         }
     }
 
     focus = {
-        id = ZBT_focus_paste1
+        id = ZBT_open_congress
         icon = GFX_goal_unknown
-        x = 21
+        x = 20
         y = 5
         cost = 10
         prerequisite = { focus = ZBT_hand_over_the_reins focus = ZBT_constitutional_monarchy }
@@ -1073,14 +1061,14 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            log = "[GetDateText]: [Root.GetName]: Focus ZBT_focus_paste1 completed"
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_open_congress completed"
         }
     }
 
     focus = {
         id = ZBT_focus_paste2
         icon = GFX_goal_unknown
-        x = 22
+        x = 21
         y = 6
         cost = 10
         prerequisite = { focus = ZBT_hand_over_the_reins focus = ZBT_constitutional_monarchy }
@@ -1093,9 +1081,9 @@ focus_tree = {
     }
 
     focus = {
-        id = ZBT_focus_paste3
+        id = ZBT_concessions_to_aristocracy
         icon = GFX_goal_unknown
-        x = 20
+        x = 19
         y = 6
         cost = 10
         prerequisite = { focus = ZBT_hand_over_the_reins focus = ZBT_constitutional_monarchy }
@@ -1103,7 +1091,22 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            log = "[GetDateText]: [Root.GetName]: Focus ZBT_focus_paste3 completed"
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_concessions_to_aristocracy completed"
+        }
+    }
+
+    focus = {
+        id = ZBT_marxian_economics
+        icon = GFX_goal_unknown
+        x = 17
+        y = 6
+        cost = 10
+        prerequisite = { focus = ZBT_hand_over_the_reins focus = ZBT_constitutional_monarchy }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus ZBT_marxian_economics completed"
         }
     }
 

@@ -3,8 +3,14 @@ ZBT_UC_apply_buffs_civ = {
 	set_temp_variable = { temp_construction_speed = 0 }
 	# calculate cumulative buff
 	IF = {
-		limit = { has_country_flag = UU_improved_civs1 }
+		limit = { 
+			OR = {
+				has_country_flag = UU_improved_civs1
+				check_variable = { temp_var:fake_buff_for_tt = 1 }
+			}
+		}
 		add_to_temp_variable = {var = temp_construction_speed value = 0.01}
+		# add_to_temp_variable = {var = temp_construction_speed value = temp_var:fake_buff_for_tt }
 	}
 
 	# apply buff
@@ -17,7 +23,12 @@ ZBT_UC_apply_buffs_mil = {
 	set_temp_variable = { temp_mil_output = 0 }
 	# calculate cumulative buff
 	IF = {
-		limit = { has_country_flag = UU_improved_mils1 }
+		limit = { 
+			OR = {
+				has_country_flag = UU_improved_mils1
+				check_variable = { temp_var:fake_buff_for_tt = 1 }
+			}
+		 }
 		add_to_temp_variable = {var = temp_mil_output value = 0.02}
 	}
 
@@ -33,7 +44,12 @@ ZBT_UC_apply_buffs_house = {
 	set_temp_variable = { temp_cg = 0.005 }
 	# calculate cumulative buff
 	IF = {
-		limit = { has_country_flag = UU_improved_house1 }
+		limit = { 
+			OR = {
+				has_country_flag = UU_improved_house1
+				check_variable = { temp_var:fake_buff_for_tt = 1 }
+			}
+		 }
 		add_to_temp_variable = {var = temp_pp value = 0.02}
 		add_to_temp_variable = {var = temp_stab value = 0.015}
 	}
@@ -50,7 +66,12 @@ ZBT_UC_apply_buffs_lab = {
 	set_temp_variable = { temp_rs = 0.01 }
 	# calculate cumulative buff
 	IF = {
-		limit = { has_country_flag = UU_improved_labs1 }
+		limit = { 
+			OR = {
+				has_country_flag = UU_improved_labs1
+				check_variable = { temp_var:fake_buff_for_tt = 1 }
+			}
+		 }
 		add_to_temp_variable = {var = temp_rs value = 0.02}
 	}
 
@@ -65,7 +86,12 @@ ZBT_UC_apply_buffs_generator = {
 	set_temp_variable = { temp_cg = -0.02 }
 	# calculate cumulative buff
 	IF = {
-		limit = { has_country_flag = UU_improved_gens1 }
+		limit = { 
+			OR = {
+				has_country_flag = UU_improved_gens1
+				check_variable = { temp_var:fake_buff_for_tt = 1 }
+			}
+		 }
 		add_to_temp_variable = {var = temp_construction_speed value = 0.01}
 		add_to_temp_variable = {var = temp_cg value = -0.01}
 	}
