@@ -25,6 +25,11 @@
  ZKN_vampire_realm_fascism_ADJ: "Gardenian"
 
 
+# FACTIONS
+
+ ZKN_faction_template_royalist_league_name: "Royalist Pact"
+
+
 # PARTIES
 
  ZKN_neutrality_party: "Zinnientron"
@@ -33,7 +38,7 @@
  ZKN_democratic_party_long: "$ZLF_democratic_party_long$"
  ZKN_communism_party: "$ZLF_communism_party$"
  ZKN_communism_party_long: "$ZLF_communism_party_long$"
- ZKN_fascism_party: "RdNR"
+ ZKN_fascism_party: "RdnR"
  ZKN_fascism_party_long: "Government of National Salvation"
  ZKN_fascism_party_vampires: "Karmesin-Regentschaft"
  ZKN_fascism_party_vampires_long: "The Crimson Regency"
@@ -44,7 +49,7 @@
  nationalist_stratocracy: "Nationalist Stratocracy"
  nationalist_stratocracy_desc: "A Salvation Government or Salvation Stratocracy is a military junta that adheres to tenets of (ultra-)nationalism and seeks to unite the (ultra-)nation under a military dictatorship in an attempt to 'save' it."
  vampire_rule: "Vampiric Despotism"
- vampire_rule_desc: "In Vampiric despotism, the people of the nation are seen as mere livestock to sate the hunger of their vampiric overlord. Usually, the fact that the ruler is a vampire is kept secret to avoid revolt."
+ vampire_rule_desc: "Under Vampiric Despotism, the people of the nation are seen as mere livestock to sate the hunger of their vampiric overlords. Usually, the fact that the ruler is a vampire is kept secret to avoid revolt."
 
 
 # CHARACTERS
@@ -70,9 +75,11 @@
  ZKN_the_true_regent: "Zinnian Regent"
  ZKN_stratocratic_nationalist: "Stratocratic Nationalist"
  ZKN_carmilla: "Crimson Regent"
+ ZLF_royal_army_chief: "Desperate Defence\n(Royal)"
  ZKN_kammermeister: "Kammermeister"
  ZKN_extraordinary_authority: "Sondervermögen"
  ZKN_carmarilla_trait: "Camarilla Leader"
+ ZKN_chief_strategist: "Propaganda Strategist"
 
  ZKN_white_silver: "White Silver"
  ZKN_white_silver_desc: "§LHailed as a hero for their actions during the last Northeastern War, this character received the White Silver medal by the Zinnian Throne.§!"
@@ -99,6 +106,12 @@
  ZKN_elbian_exodus: "Elbian Refugee Crisis"
 
 
+# DYNMODS
+
+ ZKN_anti_military_apparatus_modifier: "Antimilitärischer Apparat Activity"
+ ZKN_anti_military_apparatus_modifier_desc: "The Antimilitärischer Apparat ('Anti-Military Apparatus') is an underground organisation established in the last days of the Republic, continuing the republican mission by sabotaging our nation."
+
+
 # MODIFIERS
 
  ZKN_nobles_opinion_tt: "£GFX_occupation_costs Aristocratic Loyalty: $RIGHT|+=0$"
@@ -109,12 +122,21 @@
  ZKN_civil_war_cat: "The Edelweiss Rebellion"
  ZKN_finish_the_civil_war: "Victory of the Reaction"
  ZKN_finish_the_civil_war_quickly: "Faltering Morale..."
- ZKN_hold_the_line: "Hold Zinnien!"
+ ZKN_hold_the_line: "Zinnia must Hold!"
+ ZKN_secure_rathenau: "Secure Rathenau"
+ ZKN_connect_to_the_north: "Restore Lines to the North"
  ZKN_aid_from_neighbouring_monarchies: "Aid from the East"
  ZKN_aid_from_neighbouring_monarchies_desc: "Our diplomats are attempting to negotiate with the [ZFO.GetAdjective] and [ZFD.GetAdjective] governments for support. We must maintain control over the border city of Löbnitz so we can receive it."
+ ZKN_request_celandran_intervention: "Request Celandran Support"
+ ZKN_open_up_a_second_front: "Open up a Second Front"
+ ZKN_open_up_a_second_front_tt: "§RThe Faction will be disbanded once the Civil War is over.§!"
+ ZKN_invoked_royalist_pact: "Has completed decision §Y$ZKN_open_up_a_second_front$§!"
 
  ZKN_operation_exodus: "Operation Exodus"
  ZKN_operation_exodus_lite: "Operation Exodus"
+
+ ZKN_destroy_the_ama_cat: "Crackdown on the AM-Apparatus"
+ ZKN_root_out_ama_in_state: "Root out Apparatus Operatives in [FROM.GetName]"
 
 
 # FOCI
@@ -129,7 +151,7 @@
  ZKN_call_up_levies_tt: "Deploy §gFour§! §YImperial Army Brigade§! Divisions in an §Yurban state§! controlled by us."
  ZKN_empower_the_kammermeister: "Empower the Kammermeister"
  ZKN_empower_the_kammermeister_desc: "The Kammermeister (lit. 'Chamber Master') is the one person responsible for the royal treasury. This role is currently filled by Joachim Sprenkler, one of the King's most trusted aides. His position could allow us to increase our war effort spending without drawing the nobles' attention to it."
- ZKN_ensure_army_loyalty: "Ensure Army Loyalty"
+ ZKN_ensure_army_loyalty: "Ensure Loyalty in the Lower Echelons"
  ZKN_ensure_army_loyalty_desc: ""
  ZKN_crackdown_on_strikes: "Crack down on Strikes"
  ZKN_crackdown_on_strikes_desc: ""
@@ -171,11 +193,24 @@
  ZKN_cw_events.3.desc: "With the defeat of the Edelweiss Liberation Front, various Republicans have decided to go into exile in Hortensia to escape punishment by the royalists. Some of them have offered their services to our nation."
  ZKN_cw_events.3.a: "Wilkommen, wilkommen!"
 
+ ZKN_cw_events.4.t: "Zinnia invokes the Royalist Pact"
+ ZKN_cw_events.4.desc: "WIP"
+ ZKN_cw_events.4.a: "We must destroy the Republican threat."
+ ZKN_cw_events.4.b: "We cannot risk it."
+
+ ZKN_cw_events.5.t: "[FROM.GetNameDefCap] answers our Call!"
+ ZKN_cw_events.5.desc: "WIP"
+ ZKN_cw_events.5.a: "We'll root out the Republicans together!"
+
+ ZKN_cw_events.6.t: "[FROM.GetNameDefCap] abandons the Royalist Pact"
+ ZKN_cw_events.6.desc: "WIP"
+ ZKN_cw_events.6.a: "Traitors!"
+
 
  ZKN_post_cw_events.1.t: "Restoration of the Zinnian Throne"
  ZKN_post_cw_events.1.desc: "WIP\n \nExpectedly, our allies have taken no time at all to turn on us. Immediately after relocation to Gartenstadt, the Court began to question our military spending while the army began to quietly stash away weapons."
  ZKN_post_cw_events.1.a: "I thought we were done with rebellion?"
- ZKN_post_cw_events.1.tt: "When the focus completes, we will gain a §Ynational spirit§! for Reconstruction. The time it will take depends on our £GFX_occupation_costs §YAristocratic Loyalty§!.\n \n§RShould another faction take charge, this may change.§!"
+ ZKN_post_cw_events.1.tt: "When the focus completes, we will gain a §Ynational spirit§! for Reconstruction. The time it will take depends on our £GFX_occupation_costs §YAristocratic Loyalty§!.\n \n§RThis only applies to the Zinnian Monarchy!§!"
 
  ZKN_post_cw_events.2.t: "Anti-Republican Campaigns"
  ZKN_post_cw_events.2.desc: "The aristocrats wish to avoid another revolution and therefore demand we implement a series of serious repressions against known republicans and possible allies."
@@ -249,6 +284,10 @@
  ZKN_post_cw_events.17.t: "Elbian Refugees"
  ZKN_post_cw_events.17.desc: "News from the Gardenian border as patrols report a massive influx of Elbian refugees. Apparently, the Gardenian government has launched some sort of operation against their native Elbian population, expulsing them from their homelands, causing waves of refugees to cross the borders."
  ZKN_post_cw_events.17.a: "What is going on in Gardenia?"
+
+ ZKN_post_cw_events.18.t: "The Anti-Military Apparatus"
+ ZKN_post_cw_events.18.desc: "WIP"
+ ZKN_post_cw_events.18.a: "Can't they just accept their defeat?"
 
 
  ZKN_news_events.1.t: "Loyalists win the Gardenian Civil War"

@@ -1,3 +1,118 @@
+ZLF_restore_gardenian_territorial_integrity = {
+	name = ZLF_restore_gardenian_territorial_integrity_name
+	description = ZLF_restore_gardenian_territorial_integrity_desc
+	group = FOCUS_FILTER_ANNEXATION
+	category = short_term
+	visible = {
+		FROM = {
+			OR = {
+				original_tag = ZLF
+				original_tag = ZKN
+			}
+			any_core_state = {
+				region = 70
+				NOT = { is_owned_by = FROM }
+			}
+		}
+		any_other_country = {
+			tag = ZSP
+			any_owned_state = {
+				region = 70
+			}
+		}
+	}
+	completed = {
+		FROM = {
+			custom_trigger_tooltip = {
+                tooltip = ZLF_fully_controls_alstroemeria_tt
+                all_state = {
+                    OR = {
+                        NOT = { region = 70 }
+                        is_fully_controlled_by = FROM
+                    }
+                }
+            }
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 50
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+		
+		custom_effect_tooltip = ALL_FACTION_MEMBERS
+		every_faction_member = {
+			add_war_support = 0.05
+		}
+	}
+	ai_will_do = {
+		base = 1
+	}
+}
+
+ZLF_faction_goal_military_research = {
+	name = ZLF_faction_goal_military_research_name
+	description = ZLF_faction_goal_military_research_desc
+	category = medium_term
+	group = FOCUS_FILTER_RESEARCH
+	visible = {
+		any_allied_country = {
+			NOT = { 
+				OR = {
+					has_tech = improved_infantry_weapons
+					has_tech = artillery1
+					has_tech = mechanised_infantry
+				}
+			}
+		}
+	}
+	completed = {
+		ROOT = {
+			OR = {
+				has_tech = improved_infantry_weapons
+				has_tech = artillery1
+				has_tech = mechanised_infantry
+			}
+		}
+		all_allied_country = {
+			OR = {
+				has_tech = improved_infantry_weapons
+				has_tech = artillery1
+				has_tech = mechanised_infantry
+			}
+		}
+
+		collection_size = {
+			input = {
+				input = game:scope
+				operators =  { 
+					faction_members 
+				}
+			}
+			value > 4
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 200
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		custom_effect_tooltip = ALL_FACTION_MEMBERS
+		every_faction_member = {
+			add_timed_idea = {
+				idea = ZLF_temp_research_bonus
+				days = 120
+			}
+		}
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			add = 2
+			date > 1938.1.1
+		}
+	}
+}
+
 ZLF_faction_goal_control_erzgebirge = {
 	name = ZLF_faction_goal_control_erzgebirge_name
 	description = ZLF_faction_goal_control_erzgebirge_desc
@@ -8,6 +123,8 @@ ZLF_faction_goal_control_erzgebirge = {
 	}
 	visible = {
 		FROM = {
+			NOT = { controls_state = 655 }
+			NOT = { controls_state = 749 }
 			NOT = {
 				OR = {
                     original_tag = ZTC
@@ -139,6 +256,183 @@ ZLF_faction_goal_control_erzgebirge = {
 					resource = coal
 					amount < 0
 					extracted = no # (optional, default: no) checks extracted amount instead of country balance
+				}
+			}
+		}
+	}
+}
+
+ZLF_faction_goal_defeat_of_despotism = {
+	name = ZLF_faction_goal_defeat_of_despotism_name
+	description = ZLF_faction_goal_defeat_of_despotism_desc
+	group = FOCUS_FILTER_CONSOLIDATION
+	category = long_term
+	visible = {
+		collection_size = {
+			input = {
+				input = game:scope
+				operators = {
+					faction_members
+					limit = {
+						ZLF_is_despotist_ideology = yes
+					}
+				}
+				name = FACTION
+			}
+			value < 1
+		}
+	}
+	available = {
+		
+	}
+	completed = {
+		collection_size = {
+			input = {
+				input = collection:ZLF_despotist_controlled_states_my_continent
+				name = ZLF_COLLECTION_STATES_MY_CONTINENT_CONTROLLED_DESPOTIST
+			}
+			value < 1
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 500
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		custom_effect_tooltip = THE_FACTION_LEADER
+		add_faction_initiative = 1
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		custom_effect_tooltip = ALL_FACTION_MEMBERS
+		every_faction_member = {
+			add_timed_idea = {
+				idea = ZLF_spirit_of_victory
+				days = 365
+			}
+		}
+	}
+	ai_will_do = {
+		base = 0
+		modifier = { 
+			add = 1
+			any_enemy_country = {
+				ZLF_is_despotist_ideology = yes
+			}
+		}
+	}
+}
+
+ZLF_faction_goal_federalisation_mission = {
+	name = ZLF_faction_goal_federalisation_mission_name
+	description = ZLF_faction_goal_federalisation_mission_desc
+	group = FOCUS_FILTER_HISTORICAL
+	category = long_term
+	visible = {
+		faction_leader = { has_country_flag = ZLF_unlocked_federalisation_mission }
+	}
+	available = {
+		faction_leader = { has_completed_focus = ZLF_federalisation_initiative }
+	}
+	completed = {
+		collection_size = {
+			input = {
+				input = collection:country_and_all_subjects
+				name = COLLECTION_COUNTRY_AND_ALL_SUBJECTS
+			}
+			value > 9
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 500
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		custom_effect_tooltip = THE_FACTION_LEADER
+		add_timed_idea = {
+			idea = ZLF_successful_federalisation_initiative
+			days = 720
+		}
+	}
+	ai_will_do = {
+		base = 1
+	}
+}
+
+ZLF_faction_goal_democratic_support_mission = {
+	name = ZLF_faction_goal_democratic_support_mission_name
+	description = ZLF_faction_goal_democratic_support_mission_desc
+	group = FOCUS_FILTER_HISTORICAL
+	category = long_term
+	visible = {
+		faction_leader = { has_country_flag = ZLF_unlocked_democratic_support_mission }
+	}
+	available = {
+		faction_leader = { has_completed_focus = ZLF_support_democracy_abroad }
+	}
+	completed = {
+		collection_size = {
+			input = {
+				input = game:all_countries
+				operators =  {
+					limit = {
+						is_in_faction = no
+						is_subject = no
+						democratic > 0.39
+					} 
+				}
+				name = ZLF_COLLECTION_NON_ALLIED_DEMOCRATIC_SUPPORT
+			}
+			value > 10
+		}
+		
+	}
+	complete_effect = {
+		add_faction_power_projection = 1000
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		custom_effect_tooltip = ALL_FACTION_MEMBERS
+		every_faction_member = {
+			add_stability = 0.1
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			add_timed_idea = {
+				idea = ZLF_expanded_intelligence_network
+				days = 720
+			}
+		}
+	}
+	ai_will_do = {
+		base = 1
+	}
+}
+
+ZLF_faction_manifest_republican_revolution = {
+	name = ZLF_faction_manifest_republican_revolution_name
+	description = ZLF_faction_manifest_republican_revolution_desc
+	is_manifest = yes
+	ratio_progress = {
+		total_amount_collection = game:all_countries
+		completed_amount_collection = collection:ZLF_uncapitulated_democratic_communist_allies
+			
+		scale = {
+			offensive_war_stability_factor = 0.25
+			production_speed_buildings_factor = 0.1
+		}
+		
+		reversed = { #Scaled upwards as you approach 0% fulfillment
+			army_attack_against_major_factor = 0.25
+		}
+		
+		progress_sections = {
+			manifest_fulfilled = {
+				min = 0.8
+	
+				modifier = {
+					trade_opinion_factor = 0.1
+					subjects_autonomy_gain = -0.25
 				}
 			}
 		}

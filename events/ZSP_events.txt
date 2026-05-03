@@ -1,5 +1,6 @@
 add_namespace = ZSP_start_events
 add_namespace = ZSP_phoenix_events
+add_namespace = ZSP_post_collapse_events
 add_namespace = ZSP_news_events
 
 country_event = { # Knights are dead
@@ -90,6 +91,10 @@ country_event = { # Mage War - Sternenwärter
             set_demilitarized_zone = no
 			set_state_name = STATE_591_evil
         }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_research_slot = -1
 	}
 }
 
@@ -110,6 +115,10 @@ country_event = { # Mage War - Nebelturm
             set_demilitarized_zone = no 
 			set_state_name = STATE_703_evil
         }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_research_slot = -1
 	}
 }
 
@@ -130,6 +139,10 @@ country_event = { # Mage War - Eisenturm
             set_demilitarized_zone = no 
 			set_state_name = STATE_873_evil
         }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_research_slot = -1
 	}
 }
 
@@ -147,6 +160,10 @@ country_event = { # Mage War - Goldener Kompass
             add_manpower = -500
             set_demilitarized_zone = no 
         }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_research_slot = -1
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -276,12 +293,14 @@ country_event = { # Phoenix overthrows Ozymandias
 			elections_allowed = no
 		}
 
-		custom_effect_tooltip = generic_skip_one_line_tt
-
-		set_cosmetic_tag = ZSP_aegis
-
 		hidden_effect = {
-			set_popularities = { communism = 1 }
+			set_cosmetic_tag = ZSP_aegis
+
+			set_popularities = { 
+				communism = 60
+				democratic = 20
+				neutrality = 20
+			}
 
 			news_event = ZSP_news_events.4
 
@@ -300,6 +319,41 @@ country_event = { # Phoenix overthrows Ozymandias
 			}
 
 			set_technology = { ZSP_monster_taming_tech = 0 }
+
+			if = { 
+				limit = { has_idea = ZSP_slavery } 
+				remove_ideas = ZSP_slavery 
+			}
+			if = { 
+				limit = { has_idea = ZSP_thaumaturgic_workshop } 
+				remove_ideas = ZSP_thaumaturgic_workshop 
+			}
+			if = { 
+				limit = { has_idea = ZSP_control_spell } 
+				remove_ideas = ZSP_control_spell 
+			}
+			if = { 
+				limit = { has_idea = ZSP_monster_armour_spirit } 
+				remove_ideas = ZSP_monster_armour_spirit 
+			}
+			if = { 
+				limit = { has_idea = ZSP_alchemical_boost } 
+				remove_ideas = ZSP_alchemical_boost 
+			}
+			if = { 
+				limit = { has_idea = ZSP_ultra_authoritarian_governance_4 } 
+				remove_ideas = ZSP_ultra_authoritarian_governance_4 
+			}
+			if = { 
+				limit = { has_idea = ZSP_shadowspire_research_4 } 
+				remove_ideas = ZSP_shadowspire_research_4 
+			}
+			if = { 
+				limit = { has_idea = ZSP_confiscated_gold } 
+				remove_ideas = ZSP_confiscated_gold 
+			}
+
+			add_ideas = volunteer_only
 		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
@@ -312,6 +366,7 @@ country_event = { # Phoenix overthrows Ozymandias
 		trigger = {
 			is_ai = no
 		}
+		add_stability = -1
 		add_popularity = { ideology = communism popularity = -1 }
 		hidden_effect = {
 			every_other_country = {
@@ -336,57 +391,11 @@ country_event = { # Phoenix overthrows Ozymandias
 
 	option = {
 		name = ZSP_phoenix_events.6.a
-		if = {
-			limit = {
-				has_idea = ZSP_slavery
-			}
-			remove_ideas = ZSP_slavery
+		add_ideas = ZSP_ruins_of_society
 
-			custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = generic_skip_one_line_tt
 
-		}
-
-		if = {
-			limit = {
-				has_idea = ZSP_thaumaturgic_workshop
-			}
-			remove_ideas = ZSP_thaumaturgic_workshop
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-		}
-
-		if = {
-			limit = {
-				has_idea = ZSP_control_spell
-			}
-			remove_ideas = ZSP_control_spell
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-		}
-
-		if = {
-			limit = {
-				has_idea = ZSP_monster_armour_spirit
-			}
-			remove_ideas = ZSP_monster_armour_spirit
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-		}
-
-		if = {
-			limit = {
-				has_idea = ZSP_alchemical_boost
-			}
-			remove_ideas = ZSP_alchemical_boost
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-		}
-
-		add_ideas = volunteer_only
+		add_ideas = ZSP_ruins_of_economy
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 

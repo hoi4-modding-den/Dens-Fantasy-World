@@ -1,0 +1,11 @@
+ZKN_anti_military_apparatus_modifier = {
+	enable = { owner = { original_tag = ZKN } }
+
+	icon = GFX_modifier_generic_guerilla_base
+
+	local_factory_sabotage = 0.15
+    state_resources_factor = -0.25
+    local_intel_to_enemies = 0.5
+    disable_strategic_redeployment = 1
+
+}

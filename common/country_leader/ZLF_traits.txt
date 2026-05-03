@@ -46,6 +46,15 @@ leader_traits = {
         random = no
     }
 
+    ZLF_council_communist = {
+        
+        industrial_capacity_factory = 0.1
+        industrial_capacity_dockyard = 0.1
+        production_factory_max_efficiency_factor = 0.1
+
+        random = no
+    }
+
     ZLF_the_man_who_sold_gardenia = {
         
         consumer_goods_factor = -0.3
@@ -80,6 +89,24 @@ leader_traits = {
         army_core_attack_factor = 0.1
         political_power_factor = 0.2
         command_power_gain_mult = 0.25
+
+        random = no
+    }
+
+    ZLF_defensive_democracy_proponent = {
+        
+        production_speed_arms_factory_factor = 0.2
+        army_core_defence_factor = 0.05
+        experience_loss_factor = -0.08
+
+        random = no
+    }
+
+    ZLF_popular_front_negotiator = {
+        
+        party_popularity_stability_factor = 0.2
+        democratic_drift = 0.05
+        ai_focus_defense_factor = 0.1
 
         random = no
     }
@@ -139,6 +166,14 @@ leader_traits = {
         random = no
     }
 
+    ZLF_union_representative = {
+        sprite = 13
+
+        production_factory_start_efficiency_factor = 0.2
+
+        random = no
+    }
+
     ZLF_literal_nazi = {
         sprite = 13
 
@@ -162,7 +197,7 @@ leader_traits = {
         sprite = 13
 
         political_power_factor = 0.1
-        compliance_gain = 0.01
+        production_lack_of_resource_penalty_factor = -0.15
         democratic_drift = 0.02
 
         random = no
@@ -191,9 +226,20 @@ leader_traits = {
     ZLF_the_white_rose = {
         sprite = 13
 
-        compliance_gain = 0.01
-        resistance_growth_on_our_occupied_states = 0.25
+        compliance_growth = 0.3
+        resistance_growth_on_our_occupied_states = 0.15
         equipment_capture = 0.02
+
+        random = no
+    }
+
+    ZLF_radical_collectivist = {
+        sprite = 13
+
+        production_speed_buildings_factor = -0.1
+        industrial_capacity_factory = 0.15
+        industrial_capacity_dockyard = 0.15
+        communism_drift = 0.02
 
         random = no
     }
@@ -201,7 +247,7 @@ leader_traits = {
     ZLF_doctor_esperanto = {
         sprite = 12
 
-        compliance_growth = 0.02
+        compliance_gain = 0.05
         political_power_factor = 0.1
         offensive_war_stability_factor = -0.5
 
@@ -214,6 +260,16 @@ leader_traits = {
         monthly_population = 0.25
         out_of_supply_factor = -0.1
         stability_factor = 0.05
+
+        random = no
+    }
+
+    ZLF_independent_journalist = {
+        sprite = 13
+
+        stability_weekly = 0.001
+        political_advisor_cost_factor = 0.5
+        custom_modifier_tooltip = ZLF_independent_journalist_tt
 
         random = no
     }
@@ -231,10 +287,10 @@ leader_traits = {
     ZLF_military_theorist = {
 		sprite = 14
 		land_doctrine_cost_factor = -0.1
-        new_mobile_warfare_mastery_gain_factor = 0.05
-        superior_firepower_mastery_gain_factor = 0.05
-        grand_battleplan_mastery_gain_factor = 0.05
-        mass_assault_mastery_gain_factor = 0.05
+        new_mobile_warfare_mastery_gain_factor = 0.1
+        superior_firepower_mastery_gain_factor = 0.1
+        grand_battleplan_mastery_gain_factor = 0.1
+        mass_assault_mastery_gain_factor = 0.1
 
 		ai_will_do = {
 			factor = 1

@@ -1,6 +1,6 @@
 division_template = {
 	name = "Liberation Army Division"
-	#division_names_group = ZLF_INF_03
+	division_names_group = ZLF_INF_01
     priority = 2
     template_counter = 119
 
@@ -24,7 +24,7 @@ division_template = {
 }
 division_template = {
 	name = "Banner-Army Division"
-	#division_names_group = ZLF_INF_02
+	division_names_group = ZLF_INF_02
     priority = 1
 
 	regiments = {
@@ -41,10 +41,9 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Wehrbrigade"
-	#division_names_group = ZLF_INF_01
+	name = "Defence Brigade"
+	division_names_group = ZLF_INF_03
     priority = 1
-    template_counter = 119
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -60,7 +59,7 @@ division_template = {
 }
 division_template = {
 	name = "Bandit Suppression Brigade"
-	#division_names_group = ZLF_GAR_01
+	division_names_group = ZLF_GAR_01
     priority = 0
     template_counter = 68
 
@@ -85,19 +84,19 @@ units = {
 	}
 	division = {
 		location = 9674
-		division_template = "Wehrbrigade"
+		division_template = "Defence Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
     division = {
 		location = 9218
-		division_template = "Wehrbrigade"
+		division_template = "Defence Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 	}
     division = {
 		location = 9219
-		division_template = "Wehrbrigade"
+		division_template = "Defence Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
@@ -179,13 +178,13 @@ units = {
 	}
     division = {
 		location = 9215
-		division_template = "Wehrbrigade"
+		division_template = "Defence Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
     division = {
 		location = 9220
-		division_template = "Wehrbrigade"
+		division_template = "Defence Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
@@ -197,26 +196,26 @@ units = {
 	}
     division = {
 		location = 11029
-		division_template = "Wehrbrigade"
+		division_template = "Defence Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
     division = {
 		location = 11221
-		division_template = "Wehrbrigade"
+		division_template = "Defence Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.6
 	}
     # Western Frontline
     division = {
 		location = 11071
-		division_template = "Wehrbrigade"
+		division_template = "Defence Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
     division = {
 		location = 9430
-		division_template = "Wehrbrigade"
+		division_template = "Defence Brigade"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}

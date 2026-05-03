@@ -21,8 +21,8 @@ characters = {
 
 		field_marshal = {
             traits = { politically_connected war_hero media_personality }
-            skill = 3
-            attack_skill = 4
+            skill = 5
+            attack_skill = 6
             defense_skill = 2
             planning_skill = 4
             logistics_skill = 2
@@ -127,6 +127,40 @@ characters = {
 		country_leader = {
 			ideology = marxism
 			traits = { ZLF_marxist_theorist }
+			expire = "1960.1.1.1"
+		}
+	}
+
+    ZLF_mathilde_elysee = {
+		name = ZLF_mathilde_elysee_name
+        gender = female
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_mathilde_elysee
+				small = GFX_portrait_ZLF_mathilde_elysee_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_mathilde_elysee_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                
+            }
+            traits = {
+                ZLF_union_representative
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+		country_leader = {
+			ideology = marxism
+			traits = { ZLF_council_communist }
 			expire = "1960.1.1.1"
 		}
 	}
@@ -322,8 +356,9 @@ characters = {
         }
 	}
 
-	ZLF_emilia_noveau = { 
+	ZLF_emilia_noveau = {
 		name = ZLF_emilia_noveau_name
+        gender = female
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ZLF_emilia_noveau
@@ -338,10 +373,37 @@ characters = {
                 original_tag = ZLF
             }
             available = {
-                has_completed_focus = ZLF_rosendiplomatie
+                has_completed_focus = ZLF_may_day
             }
             traits = {
                 ZLF_the_white_rose
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+	}
+
+    ZLF_thomas_huebenwahl = {
+		name = ZLF_thomas_huebenwahl_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_thomas_huebenwahl
+				small = GFX_portrait_ZLF_thomas_huebenwahl_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_thomas_huebenwahl_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_government = communism
+            }
+            traits = {
+                ZLF_radical_collectivist
             }
             ai_will_do = {
                 base = 5
@@ -397,6 +459,33 @@ characters = {
             }
             traits = {
                 ZLF_agricultural_minister
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+	}
+
+    ZLF_walter_krondrache = {
+		name = ZLF_walter_krondrache_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_walter_krondrache
+				small = GFX_portrait_ZLF_walter_krondrache_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_walter_krondrache_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_country_flag = ZLF_unlocked_kronkite
+            }
+            traits = {
+                ZLF_independent_journalist
             }
             ai_will_do = {
                 base = 5
@@ -460,10 +549,10 @@ characters = {
 
 		corps_commander = {
             traits = { politically_connected militias_officer }
-            skill = 1
-            attack_skill = 1
+            skill = 2
+            attack_skill = 4
             defense_skill = 1
-            planning_skill = 2
+            planning_skill = 3
             logistics_skill = 1
         }
 	}
@@ -548,6 +637,7 @@ characters = {
 
 	ZLF_miriam_decker = { 
 		name = ZLF_miriam_decker_name
+        gender = female
 		portraits = {
 			army = {
 				large = GFX_portrait_ZLF_miriam_decker
@@ -626,6 +716,7 @@ characters = {
 
 	ZLF_sonnenuntergang = {
 		name = ZLF_sonnenuntergang_name
+        gender = female
 		portraits = {
 			army = {
 				large = GFX_portrait_ZLF_sonnenuntergang
@@ -656,7 +747,7 @@ characters = {
         
 		corps_commander = {
             traits = { brave war_hero adaptable } # I think I might be tripping, I thought the heat specialist trait was vanilla, but its from EaW
-            skill = 3
+            skill = 5
             attack_skill = 4
             defense_skill = 2
             planning_skill = 3
@@ -695,7 +786,7 @@ characters = {
         
 		corps_commander = {
             traits = { brave trait_reckless urban_assault_specialist }
-            skill = 2
+            skill = 3
             attack_skill = 3
             defense_skill = 3
             planning_skill = 1
@@ -734,7 +825,7 @@ characters = {
         
 		corps_commander = {
             traits = { media_personality urban_assault_specialist }
-            skill = 2
+            skill = 3
             attack_skill = 1
             defense_skill = 2
             planning_skill = 3
@@ -744,6 +835,7 @@ characters = {
 
     ZLF_mina_witkojc = {
 		name = ZLF_mina_witkojc_name
+        gender = female
 		portraits = {
 			army = {
 				large = GFX_portrait_ZLF_mina_witkojc
@@ -773,8 +865,8 @@ characters = {
         
 		corps_commander = {
             traits = { ranger politically_connected }
-            skill = 3
-            attack_skill = 3
+            skill = 4
+            attack_skill = 5
             defense_skill = 2
             planning_skill = 3
             logistics_skill = 2
@@ -817,6 +909,84 @@ characters = {
             defense_skill = 4
             planning_skill = 4
             logistics_skill = 3
+        }
+	}
+
+    ZLF_uwe_koch = {
+		name = ZLF_uwe_koch_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_uwe_koch
+				small = GFX_portrait_ZLF_uwe_koch_small
+			}
+		}
+
+		advisor = {
+            slot = high_command
+            idea_token = ZLF_uwe_koch_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                
+            }
+
+			cost = 50
+
+            traits = {
+                army_armored_1
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+		corps_commander = {
+            traits = { armor_officer }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 2
+        }
+	}
+
+    ZLF_milo_wandsbeker = {
+		name = ZLF_milo_wandsbeker_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_milo_wandsbeker
+				small = GFX_portrait_ZLF_milo_wandsbeker_small
+			}
+		}
+
+		advisor = {
+            slot = air_chief
+            idea_token = ZLF_milo_wandsbeker_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                
+            }
+
+			cost = 50
+
+            traits = {
+                air_chief_safety_2
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+		corps_commander = {
+            traits = { commando paratrooper }
+            skill = 4
+            attack_skill = 4
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 4
         }
 	}
 

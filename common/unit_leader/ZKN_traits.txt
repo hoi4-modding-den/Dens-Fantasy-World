@@ -51,9 +51,9 @@ leader_traits = {
 		modifier = {
 			experience_gain_factor = 0.15
 			army_morale_factor = -0.02
-			max_planning = 0.1
 			breakthrough_factor = 0.1
 			wounded_chance_factor = -0.5
+			land_night_attack = 0.15
 		}
 
 		corps_commander_modifier = {

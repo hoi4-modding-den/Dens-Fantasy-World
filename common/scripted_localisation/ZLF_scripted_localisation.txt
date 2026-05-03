@@ -26,7 +26,25 @@ defined_text = {
         localization_key = ZLF_michel_meisendorff_name
     }
     text = {
+        trigger = {
+            has_country_flag = ZLF_krondrache_uncovered_plot
+        }
+        localization_key = ZLF_emilia_noveau_name
+    }
+    text = {
         localization_key = ZLF_roland_ludovik_name
+    }
+}
+defined_text = {
+    name = ZLF_get_leader_rtp
+    text = {
+        trigger = {
+            has_country_flag = ZLF_councilists_lead_the_rtp
+        }
+        localization_key = ZLF_mathilde_elysee_name
+    }
+    text = {
+        localization_key = ZLF_gustav_mai_name
     }
 }
 
@@ -46,7 +64,7 @@ defined_text = {
     name = ZLF_check_gdp_growth
     text = {
         trigger = {
-            check_variable = { total_constructed_civilian_factory > 24 }
+            check_variable = { total_constructed_civilian_factory > 19 }
         }
         localization_key = ZLF_gdp_growth_good
     }
@@ -133,5 +151,17 @@ defined_text = {
     }
     text = {
         localization_key = ZLF_transition_to_workers_councils_real
+    }
+}
+defined_text = {
+    name = ZLF_get_paramilitary_militarisation_name
+    text = {
+        trigger = {
+            has_completed_focus = ZLF_establish_the_red_guard
+        }
+        localization_key = ZLF_increase_paramilitary_militarisation_guard
+    }
+    text = {
+        localization_key = ZLF_increase_paramilitary_militarisation_banner
     }
 }

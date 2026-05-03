@@ -79,6 +79,11 @@ focus_tree={
         }
 		
 		completion_reward = {
+			add_war_support = 0.05
+			add_manpower = 1000
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
             570 = {
 				add_building_construction = {
 					type = bunker
@@ -299,6 +304,14 @@ focus_tree={
 
 		select_effect = {
 			country_event = ZKN_post_cw_events.1
+
+			if = {
+				limit = { has_template = "Celandran Intervention Division" }
+				delete_unit_template_and_units = {
+					division_template = "Celandran Intervention Division"
+					disband = no
+				}
+			}
 		}
 		
 		completion_reward = {
@@ -455,6 +468,7 @@ focus_tree={
 		
 		completion_reward = {
 			every_army_leader = {
+				limit = { NOT = { has_trait = ZKN_zinnian_loyalist } }
 				add_planning = 1
 			}
 		}

@@ -17,7 +17,7 @@ ZKN_civil_war_cat = {
 
     ZKN_finish_the_civil_war_quickly = {
 
-        icon = FIN_stop_motti_tactics
+        icon = generic_political_rally
 
         activation = {
             always = no
@@ -70,23 +70,119 @@ ZKN_civil_war_cat = {
         days_mission_timeout = 50
 
         complete_effect = {
-            add_command_power = -20
+            add_command_power = -25
+            add_stability = -0.02
             add_war_support = -0.02
             570 = {
                 create_unit = {
                     division = "name = \"Nachtwachenbrigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
-                    count = 2
+                    count = 5
+                    owner = ROOT
+                }
+            }
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            activate_mission = ZKN_finish_the_civil_war_quickly
+        }
+
+        timeout_effect = {
+            add_war_support = 0.05
+            570 = {
+                create_unit = {
+                    division = "name = \"Nachtwachenbrigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
+                    count = 1
+                    owner = ROOT
+                }
+            }
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            activate_mission = ZKN_hold_the_line
+        }
+    }
+
+    ZKN_secure_rathenau = {
+
+        icon = FIN_stop_motti_tactics
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            controls_province = 11070
+        }
+
+        cancel_trigger = {
+            has_civil_war = no
+        }
+
+        highlight_states = {
+            highlight_provinces = { 11070 }
+        }
+
+        is_good = no
+
+        days_mission_timeout = 200
+
+        complete_effect = {
+            add_political_power = 25
+            add_war_support = 0.01
+            817 = {
+                create_unit = {
+                    division = "name = \"Reichsschutzbrigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
+                    count = 3
                     owner = ROOT
                 }
             }
         }
+    }
 
-        timeout_effect = {
-            add_war_support = 0.1
-            570 = {
+    ZKN_connect_to_the_north = {
+
+        icon = FIN_stop_motti_tactics
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            817 = { is_fully_controlled_by = ROOT }
+            794 = { is_fully_controlled_by = ROOT }
+        }
+
+        cancel_trigger = {
+            NOT = { controls_state = 794 }
+        }
+
+        highlight_states = {
+            highlight_states_trigger = { 
+                OR = {
+                    state = 817
+                    state = 794
+                }
+            }
+        }
+
+        is_good = no
+
+        days_mission_timeout = 250
+
+        complete_effect = {
+            add_political_power = 50
+            add_war_support = 0.02
+            817 = {
                 create_unit = {
-                    division = "name = \"Nachtwachenbrigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
-                    count = 5
+                    division = "name = \"Reichsschutzbrigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.3"
+                    count = 1
+                    owner = ROOT
+                }
+            }
+            794 = {
+                create_unit = {
+                    division = "name = \"Reichsschutzbrigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.3"
+                    count = 2
                     owner = ROOT
                 }
             }
@@ -128,6 +224,134 @@ ZKN_civil_war_cat = {
             country_event = ZKN_cw_events.1
         }
 
+    }
+
+    ZKN_request_celandran_intervention = {
+
+        icon = generic_prepare_civil_war
+
+        cost = 45
+
+        ai_will_do = {
+            base = 100
+        }
+
+        available = {
+            controls_state = 807
+            surrender_progress > 0.5
+            XCE = {
+                exists = yes
+                NOT = { has_war_with = ROOT }
+            }
+            has_civil_war = yes
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            add_stability = -0.1
+            add_war_support = -0.1
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            hidden_effect = {
+                division_template = {
+                    name = "Celandran Intervention Corps"
+                    is_locked = yes
+                    division_cap = 5
+                    priority = 2
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 0 y = 3 }
+                        infantry = { x = 1 y = 0 }
+                        infantry = { x = 1 y = 1 }
+                        infantry = { x = 1 y = 2 }
+                        infantry = { x = 1 y = 3 }
+                        artillery_brigade = { x = 2 y = 0 }
+                        artillery_brigade = { x = 2 y = 1 }
+                    }
+                    support = {
+                        recon = { x = 0 y = 0 }
+                        artillery = { x = 0 y = 1 }
+                    }
+                }
+            }
+
+            807 = {
+                create_unit = {
+                    division = "name = \"Zelandra Interventionskorps\" division_template = \"Celandran Intervention Corps\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    count = 5
+                    owner = ROOT
+                }
+            }
+        }
+    }
+
+    ZKN_open_up_a_second_front = {
+
+        icon = generic_prepare_civil_war
+
+        cost = 45
+
+        ai_will_do = {
+            base = 100
+            modifier = {
+                factor = 0
+                ZLF = { is_ai = no }
+            }
+        }
+
+        available = {
+            date > 1937.03.01
+            surrender_progress > 0.2
+            has_civil_war = yes
+            ZFO = {
+                exists = yes
+                NOT = { has_war_with = ROOT }
+                has_government = neutrality
+            }
+            ZFD = {
+                exists = yes
+                NOT = { has_war_with = ROOT }
+                has_government = neutrality
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            create_faction_from_template = ZKN_faction_template_royalist_league
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            ZFO = { country_event = ZKN_cw_events.4 }
+            ZFD = { country_event = ZKN_cw_events.4 }
+
+            custom_effect_tooltip = if_they_accept_tt
+            effect_tooltip = {
+                add_to_faction = ZFO
+                ZFO = {
+                    add_to_war = {
+                        targeted_alliance = ROOT
+                        enemy = ZLF
+                        hostility_reason = asked_to_join
+                    }
+                }
+                add_to_faction = ZFD
+                ZFD = {
+                    add_to_war = {
+                        targeted_alliance = ROOT
+                        enemy = ZLF
+                        hostility_reason = asked_to_join
+                    }
+                }
+            }
+
+            custom_effect_tooltip = ZKN_open_up_a_second_front_tt
+            set_country_flag = ZKN_invoked_royalist_pact
+        }
     }
 
 }
@@ -266,6 +490,66 @@ political_actions = {
                     NOT = { has_idea = isolation }
                 }
                 country_event = ZKN_post_cw_events.17
+            }
+        }
+
+    }
+
+}
+
+ZKN_destroy_the_ama_cat = {
+    
+    ZKN_root_out_ama_in_state = {
+
+        icon = oppression
+
+        custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+
+        ai_will_do = {
+            base = 10
+        }
+
+        visible = {
+            FROM = {
+                is_controlled_by = ROOT
+            }
+        }
+
+        state_target = yes
+
+        #on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                has_dynamic_modifier = { modifier = ZKN_anti_military_apparatus_modifier }
+            }
+        }
+
+        complete_effect = {
+            hidden_effect = {
+				add_political_power = -25
+				add_command_power = -25
+			}
+        }
+
+        cancel_trigger = {
+            FROM = {
+                OR = {
+                    NOT = { is_controlled_by = ROOT }
+                    NOT = { has_dynamic_modifier = { modifier = ZKN_anti_military_apparatus_modifier } }
+                }
+            }
+        }
+
+        days_remove = 35
+
+        remove_effect = {
+            FROM = {
+                remove_dynamic_modifier = { modifier = ZKN_anti_military_apparatus_modifier }
             }
         }
 

@@ -349,7 +349,7 @@ country_event = { # SDAAH Reference
     option = { # Neorevisionism
 		name = ZTC_events.12.c
         custom_effect_tooltip = ZTC_modify_socdem_gov_tt
-		add_to_variable = { ZTC_gov_conscription_factor = 0.25 tooltip = conscription_factor_tt }
+		add_to_variable = { ZTC_gov_conscription_factor = 0.5 tooltip = conscription_factor_tt }
         add_to_variable = { ZTC_gov_democratic_drift = 0.05 tooltip = democratic_drift_tt }
 	}
 }

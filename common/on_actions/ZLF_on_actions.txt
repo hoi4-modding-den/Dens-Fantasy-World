@@ -79,31 +79,26 @@ on_actions = {
                     FROM = { tag = ZLF }
                 }
                 FROM = { load_focus_tree = generic_focus }
-                if = {
-                    limit = {
-                        FROM = { has_government = democratic }
-                    }
-                    random_other_country = {
-                        limit = { has_character = ZLF_ekkehart_krippendorff }
-                        ZLF_ekkehart_krippendorff = { set_nationality = FROM }
-                    }
-                    FROM = {
-                        ZLF_ekkehart_krippendorff = {
-                            add_country_leader_role = {
-                                character = ZLF_ekkehart_krippendorff
-                                promote_leader = yes
-                                country_leader = {
-                                    ideology = socialism
-                                    expire = "1965.1.1.1"
-                                    traits = { ZLF_former_foreign_minister }
-                                }
+                random_other_country = {
+                    limit = { has_character = ZLF_ekkehart_krippendorff }
+                    ZLF_ekkehart_krippendorff = { set_nationality = FROM }
+                }
+                FROM = {
+                    ZLF_ekkehart_krippendorff = {
+                        add_country_leader_role = {
+                            character = ZLF_ekkehart_krippendorff
+                            promote_leader = yes
+                            country_leader = {
+                                ideology = conservatism
+                                expire = "1965.1.1.1"
+                                traits = { ZLF_former_foreign_minister }
                             }
                         }
-                        set_party_name = {
-                            ideology = democratic
-                            name = ZLF_democratic_party
-                            long_name = ZLF_democratic_party_long
-                        }
+                    }
+                    set_party_name = {
+                        ideology = democratic
+                        name = ZLF_democratic_party_NEP
+                        long_name = ZLF_democratic_party_NEP_long
                     }
                 }
             }

@@ -9,7 +9,7 @@ ZSP_INF_01 = {
 	fallback_name = "%d. Ritterorden"
 
 	ordered = {
-		1 = { "Domowina-Orden 'Krabat'" }
+		1 = { "Domowina-Orden der Sterne" }
 		2 = { "Zinnienorden" }
 		3 = { "Sternenwartorden" }
 		4 = { "Eisener Orden" }

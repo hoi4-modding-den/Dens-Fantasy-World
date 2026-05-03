@@ -75,3 +75,121 @@ ZLF_korelia_sb_state = {
         state = 81
     }
 }
+
+ZLF_is_despotist_ideology = {
+    custom_trigger_tooltip = {
+        tooltip = ZLF_is_despotist_ideology_tt
+        OR = {
+            has_government = fascism
+            AND = {
+                has_government = neutrality
+                NOT = { has_country_leader_ideology = anarchism }
+            }
+            has_country_leader_ideology = stalinism
+            #has_country_leader_ideology = guideist_nihilism #maybe?
+        }
+    }
+}
+
+ZLF_is_on_continent_tewara = {
+    custom_trigger_tooltip = {
+        tooltip = ZLF_is_on_continent_tewara_tt
+        OR = {
+            is_on_continent = Kuvivalawiki
+            is_on_continent = Monerriame
+            is_on_continent = Segio
+            is_on_continent = Cailteach
+        }
+    }
+}
+
+ZLF_FROM_abides_by_joining_rules = {
+    if = {
+        limit = {
+            has_active_rule = ZLF_joining_rule_non_despotist
+        }
+        FROM = { ZLF_is_despotist_ideology = no }
+    }
+    if = {
+        limit = {
+            has_active_rule = joining_rule_non_fascist
+        }
+        FROM = { NOT = { has_government = fascism } }
+    }
+    if = {
+        limit = {
+            has_active_rule = joining_rule_non_democratic
+        }
+        FROM = { NOT = { has_government = democratic } }
+    }
+    if = {
+        limit = {
+            has_active_rule = joining_rule_non_communist
+        }
+        FROM = { NOT = { has_government = communism } }
+    }
+    if = {
+        limit = {
+            has_active_rule = joining_rule_fascist_only
+        }
+        FROM = { has_government = fascism }
+    }
+    if = {
+        limit = {
+            has_active_rule = joining_rule_democratic_non_aligned
+        }
+        FROM = { OR = { has_government = democratic has_government = neutrality } }
+    }
+    if = {
+        limit = {
+            has_active_rule = joining_rule_same_ideology
+        }
+        has_government = FROM
+    }
+    if = {
+        limit = {
+            has_active_rule = joining_rule_communist_only
+        }
+        FROM = { has_government = communism }
+    }
+    if = {
+        limit = {
+            has_active_rule = joining_rule_support_percentage
+        }
+        FROM = { compare_ideology_with_faction = { value > 0.3 leader = ROOT } }
+    }
+    if = {
+        limit = {
+            has_active_rule = joining_rule_puppets_only
+        }
+        always = no
+    }
+    if = {
+        limit = {
+            has_active_rule = joining_rule_has_no_war
+        }
+        FROM = { has_war = no }
+    }
+    if = {
+        limit = {
+            has_active_rule = joining_rule_has_no_offensive_war
+        }
+        FROM = { has_offensive_war = no }
+    }
+    if = {
+        limit = {
+            has_active_rule = joining_rule_neighbors_only
+        }
+        FROM = {
+            any_neighbor_country = {
+                is_in_faction_with = ROOT
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_active_rule = joining_rule_same_continent_only
+        }
+        FROM = { is_on_same_continent_as = ROOT }
+    }
+}

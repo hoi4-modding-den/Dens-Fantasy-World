@@ -220,7 +220,6 @@ country_event = { # Constitutional Convention
 		add_popularity = { ideology = democratic popularity = 0.2 }
 		add_popularity = { ideology = communism popularity = 0.2 }
 		add_popularity = { ideology = neutrality popularity = 0.1 }
-		add_popularity = { ideology = fascism popularity = 0.01 }
 	}
 }
 
@@ -814,6 +813,21 @@ country_event = { # Rathenau Affair
 			days = 10
 		}
 	}
+
+	option = {
+		name = ZLF_events.5.c
+		trigger = {
+			has_government = democratic
+			any_character = {
+				has_trait = ZLF_independent_journalist
+				is_hired_as_advisor = yes
+			}
+		}
+		news_event = {
+			id = ZLF_events.15
+			days = 10
+		}
+	}
 }
 
 country_event = { # Opposition Protests
@@ -826,8 +840,9 @@ country_event = { # Opposition Protests
 
 	option = {
 		name = ZLF_events.6.a
+		set_country_flag = ZLF_prevented_vote_of_confidence
 		country_event = {
-			id = ZLF_events.7
+			id = ZLF_events.9
 			days = 10
 		}
 	}
@@ -868,7 +883,7 @@ country_event = { # Vote of No Confidence
 
 	option = {
 		name = ZLF_events.8.a
-		add_stability = -0.1
+		add_popularity = { ideology = ROOT popularity = -0.1 }
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -902,7 +917,8 @@ country_event = { # New Elections
 
 	option = {
 		name = ZLF_events.9.b
-		add_stability = -0.1
+		trigger = { NOT = { has_country_flag = ZLF_prevented_vote_of_confidence } }
+		add_popularity = { ideology = ROOT popularity = -0.1 }
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -920,6 +936,7 @@ country_event = { # Hortensian Federalisation
 
 	option = {
 		name = ZLF_events.10.a
+		ai_chance = { base = 1 }
 		FROM = {
 			effect_tooltip = {
 				set_autonomy = {
@@ -940,6 +957,7 @@ country_event = { # Hortensian Federalisation
 
 	option = {
 		name = ZLF_events.10.b
+		ai_chance = { base = 0 }
 		FROM = { country_event = { id = ZLF_events.12 days = 5 } }
 	}
 }
@@ -954,11 +972,69 @@ country_event = { # Hortensian Federalisation accepted
 
 	option = {
 		name = ZLF_events.11.a
+		hidden_effect = {
+			if = {
+				limit = { FROM = { has_government = communism } }
+				set_country_flag = ZLF_keep_ideology_com
+			}
+			if = {
+				limit = { FROM = { has_government = democratic } }
+				set_country_flag = ZLF_keep_ideology_dem
+			}
+			if = {
+				limit = { FROM = { has_government = neutrality } }
+				set_country_flag = ZLF_keep_ideology_neu
+			}
+		}
 		set_autonomy = {
 			target = FROM
 			autonomous_state = autonomy_ZTC_federal_city
 			end_wars = no
 			end_civil_wars = no
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = ZLF_keep_ideology_com }
+				FROM = {
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.5
+					}
+				}
+				clr_country_flag = ZLF_keep_ideology_com
+			}
+			if = {
+				limit = { has_country_flag = ZLF_keep_ideology_dem }
+				FROM = {
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.5
+					}
+				}
+				clr_country_flag = ZLF_keep_ideology_dem
+			}
+			if = {
+				limit = { has_country_flag = ZLF_keep_ideology_neu }
+				FROM = {
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.5
+					}
+				}
+				clr_country_flag = ZLF_keep_ideology_neu
+			}
 		}
 		custom_effect_tooltip = ZLF_events.10.tt
 	}
@@ -1023,7 +1099,47 @@ country_event = { # Report on the Economy (Kron"kite" -> Krondache)
 
 	option = {
 		name = ZLF_events.14.a
-		
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = ZLF_walter_krondrache_token
+		set_country_flag = ZLF_unlocked_kronkite
+	}
+}
+
+news_event = { # Walter uncovers Rathenau Affair
+	id = ZLF_events.15
+	title = ZLF_events.15.t
+	desc = ZLF_events.15.desc
+	picture = GFX_news_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.15.a
+		add_popularity = { ideology = communism popularity = -0.1 }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			name = ZLF_democratic_party_sp
+			long_name = ZLF_democratic_party_sp_long
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_country_leader_role = {
+			character = ZLF_emilia_noveau
+			promote_leader = yes
+			country_leader = {
+				ideology = neorevisionism
+				expire = "1965.1.1.1"
+				traits = { ZLF_defensive_democracy_proponent ZLF_popular_front_negotiator }
+			}
+		}
+
+		set_country_flag = ZLF_krondrache_uncovered_plot
+		complete_national_focus = ZLF_government_holds
 	}
 }
 

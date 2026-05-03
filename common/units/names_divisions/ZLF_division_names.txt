@@ -1,0 +1,72 @@
+ZLF_INF_01 = {
+	name = "Liberation Army Divisions"
+
+	for_countries = { ZLF }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%d. Befreiungsarmee-Division"
+
+	ordered = {
+		1 = { "%d. Befreiungsarmee-Division" }
+		2 = { "%d. Befreiungsarmee-Division" }
+		3 = { "%d. Befreiungsarmee-Division" }
+		4 = { "%d. Befreiungsarmee-Division" }
+		5 = { "%d. Befreiungsarmee-Division" }
+	}
+}
+ZLF_INF_02 = {
+	name = "Banner-Army Divisions"
+
+	for_countries = { ZLF }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%d. Bannerarmee-Division"
+
+	ordered = {
+		1 = { "%d. Bannerarmee-Division" }
+		2 = { "%d. Bannerarmee-Division" }
+		3 = { "%d. Bannerarmee-Division" }
+		4 = { "%d. Bannerarmee-Division" }
+		5 = { "%d. Bannerarmee-Division" }
+	}
+}
+ZLF_INF_03 = {
+	name = "Defence Brigades"
+
+	for_countries = { ZLF }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%d. Wehrbrigade"
+
+	ordered = {
+		1 = { "%d. Wehrbrigade" }
+		2 = { "%d. Wehrbrigade" }
+		3 = { "%d. Wehrbrigade" }
+		4 = { "%d. Wehrbrigade" }
+		5 = { "%d. Wehrbrigade" }
+	}
+}
+ZLF_GAR_01 = {
+	name = "Bandit Suppression Brigades"
+
+	for_countries = { ZLF }
+
+	division_types = { "infantry" "cavalry" }
+
+
+	fallback_name = "%d. Banditenbekämpfungsbrigade"
+
+	ordered = {
+		1 = { "Rathenau Polizeibrigade" }
+		2 = { "57. Reorganisiertes Polizeipresidium" }
+		3 = { "Polizeibüro Niendorf" }
+		4 = { "Polizeibüro Gefroren" }
+		5 = { "Gartenstadt Polizeibrigade" }
+	}
+}

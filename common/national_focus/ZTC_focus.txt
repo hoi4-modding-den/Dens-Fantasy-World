@@ -1376,7 +1376,7 @@ focus_tree={
 		
 		completion_reward = {
 			custom_effect_tooltip = ZTC_modify_lib_gov_tt
-			add_to_variable = { ZTC_gov_compliance_growth = 0.02 tooltip = compliance_growth_tt }
+			add_to_variable = { ZTC_gov_compliance_growth = 0.1 tooltip = compliance_growth_tt }
 			add_to_variable = { ZTC_gov_army_morale_factor = 0.1 tooltip = army_morale_factor_tt }
 			add_to_variable = { ZTC_gov_drift_defence_factor = 1 tooltip = drift_defence_factor_tt }
 
@@ -1798,7 +1798,7 @@ focus_tree={
 		id = ZTC_reach_out_to_gardenia
 		icon = GFX_focus_generic_diplomatic_treaty
         prerequisite = { focus = ZTC_support_edelweiss }
-		mutually_exclusive = { focus = ZTC_declare_military_neutrality }
+		mutually_exclusive = { focus = ZTC_state_of_emergency }
 		x = 2
 		y = 1
 		relative_position_id = ZTC_support_edelweiss
@@ -1812,61 +1812,25 @@ focus_tree={
 		available = {
             has_government = democratic
 			has_war = no
-			any_other_country = {
+			ZLF = {
+				exists = yes
 				has_war = no
-				OR = {
-					original_tag = ZKN
-					original_tag = ZLF
-				}
 				NOT = { has_government = fascism }
 			}
 			is_subject = no
         }
 
 		bypass = {
-			any_other_country = {
-				OR = {
-					original_tag = ZKN
-					original_tag = ZLF
-				}
+			ZLF = {
 				is_ally_with = ROOT
 			}
         }
 		
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						any_other_country = {
-							has_war = no
-							OR = {
-								original_tag = ZKN
-								original_tag = ZLF
-							}
-							NOT = { has_government = fascism }
-						}
-					}
-				}
-				ZLF = {
-					country_event = ZTC_events.13
-					effect_tooltip = {
-						give_guarantee = ROOT
-					}
-				}
-			}
-			else = {
-				random_other_country = {
-					limit = {
-						has_war = no
-						OR = {
-							original_tag = ZKN
-							original_tag = ZLF
-						}
-					}
-					country_event = ZTC_events.13
-					effect_tooltip = {
-						give_guarantee = ROOT
-					}
+			ZLF = {
+				country_event = ZTC_events.13
+				effect_tooltip = {
+					give_guarantee = ROOT
 				}
 			}
 		}
@@ -1889,64 +1853,25 @@ focus_tree={
 		
 		available = {
             has_government = democratic
-			any_other_country = {
+			ZLF = {
 				NOT = { has_war_with = ROOT }
 				has_guaranteed = ROOT
 				is_faction_leader = yes
-				OR = {
-					original_tag = ZKN
-					original_tag = ZLF
-				}
 				NOT = { has_government = fascism }
 			}
 			is_subject = no
         }
 
 		bypass = {
-			any_other_country = {
-				OR = {
-					original_tag = ZKN
-					original_tag = ZLF
-				}
+			ZLF = {
 				is_ally_with = ROOT
 			}
         }
 		
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						any_other_country = {
-							NOT = { has_war_with = ROOT }
-							has_guaranteed = ROOT
-							is_faction_leader = yes
-							OR = {
-								original_tag = ZKN
-								original_tag = ZLF
-							}
-							NOT = { has_government = fascism }
-						}
-					}
-				}
-				ZLF = {
-					country_event = ZTC_events.14
-					effect_tooltip = { add_to_faction = ROOT }
-				}
-			}
-			else = {
-				random_other_country = {
-					limit = {
-						NOT = { has_war_with = ROOT }
-						#has_guaranteed = ROOT
-						is_faction_leader = yes
-						OR = {
-							original_tag = ZKN
-							original_tag = ZLF
-						}
-					}
-					country_event = ZTC_events.14
-					effect_tooltip = { add_to_faction = ROOT }
-				}
+			ZLF = {
+				country_event = ZTC_events.14
+				effect_tooltip = { add_to_faction = ROOT }
 			}
 		}
 	}
@@ -1968,18 +1893,14 @@ focus_tree={
 		
 		available = {
             has_government = democratic
-			any_other_country = {
-				OR = {
-					original_tag = ZKN
-					original_tag = ZLF
-				}
+			ZLF = {
 				is_in_faction_with = ROOT
 			}
 			is_subject = no
         }
 
 		bypass = {
-			has_autonomy_state = autonomy_ZTC_federal_city
+			
         }
 		
 		completion_reward = {
@@ -1987,36 +1908,11 @@ focus_tree={
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			if = {
-				limit = {
-					NOT = {
-						any_other_country = {
-							OR = {
-								original_tag = ZKN
-								original_tag = ZLF
-							}
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-				ZLF = {
-					country_event = ZTC_events.15
-				}
-			}
-			else = {
-				random_other_country = {
-					limit = {
-						OR = {
-							original_tag = ZKN
-							original_tag = ZLF
-						}
-						is_in_faction_with = ROOT
-					}
-					country_event = ZTC_events.15
-					hidden_effect = {
-						set_variable = { ZTC.ZTC_get_monetary_union_partner = THIS }
-						add_ideas = ZTC_monetary_union_spirit_ZLF_ZKN
-					}
+			ZLF = {
+				country_event = ZTC_events.15
+				hidden_effect = {
+					set_variable = { ZTC.ZTC_get_monetary_union_partner = THIS }
+					add_ideas = ZTC_monetary_union_spirit_ZLF_ZKN
 				}
 			}
 
@@ -2060,8 +1956,8 @@ focus_tree={
 	}
 
 	focus = { 
-		id = ZTC_declare_military_neutrality
-		icon = GFX_goal_generic_neutrality_focus
+		id = ZTC_state_of_emergency
+		icon = GFX_focus_SWE_defense_act
         prerequisite = { focus = ZTC_support_edelweiss }
 		mutually_exclusive = { focus = ZTC_reach_out_to_gardenia }
 		x = 4
@@ -2072,21 +1968,22 @@ focus_tree={
 
 		ai_will_do = {
             base = 10
-			modifier = {
-				factor = 0
-				any_other_country = {
-					OR = {
-						original_tag = ZKN
-						original_tag = ZLF
-					}
-					NOT = { has_government = fascism }
-				}
-			}
         }
 		
 		available = {
             has_government = democratic
 			has_war = no
+			OR = {
+				ZLF = {
+					exists = yes
+					has_war = no
+					has_government = fascism
+				}
+				ZKN = {
+					exists = yes
+					has_war = no
+				}
+			}
         }
 
 		bypass = {
@@ -2101,11 +1998,11 @@ focus_tree={
 	focus = { 
 		id = ZTC_international_interventionism
 		icon = GFX_goal_generic_military_deal
-        prerequisite = { focus = ZTC_declare_military_neutrality }
+        prerequisite = { focus = ZTC_state_of_emergency }
 		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
-		relative_position_id = ZTC_declare_military_neutrality
+		relative_position_id = ZTC_state_of_emergency
 		
 		cost = 5
 
@@ -2475,7 +2372,7 @@ focus_tree={
 		completion_reward = {
 			custom_effect_tooltip = ZTC_modify_socdem_gov_tt
 			
-			add_to_variable = { ZTC_gov_compliance_growth = 0.02 tooltip = compliance_growth_tt }
+			add_to_variable = { ZTC_gov_compliance_growth = 0.1 tooltip = compliance_growth_tt }
 		}
 	}
 

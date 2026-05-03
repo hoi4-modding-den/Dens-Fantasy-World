@@ -14,3 +14,21 @@ ZKN_civil_war_cat = {
         has_civil_war = yes
     }
 }
+
+ZKN_destroy_the_ama_cat = {
+
+    icon = SOV_paranoia
+	
+	allowed = {
+		original_tag = ZKN
+	}
+
+	priority = 50
+
+	visible = {
+		any_controlled_state = {
+            has_dynamic_modifier = { modifier = ZKN_anti_military_apparatus_modifier }
+        }
+	}
+
+}

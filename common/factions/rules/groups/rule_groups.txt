@@ -26,6 +26,7 @@ rule_group_ideology = {
 		joining_rule_puppets_only
 		joining_rule_communist_only
 		joining_rule_support_percentage
+		ZLF_joining_rule_non_despotist
 	}
 }
 
@@ -34,6 +35,7 @@ rule_group_geographical = {
 	rules = {
 		joining_rule_neighbors_only
 		joining_rule_same_continent_only
+		ZLF_joining_rule_tewarean_only
 	}
 }
 

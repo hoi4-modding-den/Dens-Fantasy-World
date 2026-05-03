@@ -1,0 +1,32 @@
+ZLF_joining_rule_non_despotist = {
+	type = joining_rules
+	visible = {
+		ZLF_is_despotist_ideology = no
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 1
+			ZLF_is_despotist_ideology = no
+		}
+	}
+	trigger = {
+		ZLF_is_despotist_ideology = no
+		if = {
+			limit = { NOT = { has_rule = can_join_opposite_factions } }
+			has_government = FROM
+		}
+	}
+}
+ZLF_joining_rule_tewarean_only = {
+	type = joining_rules
+	visible = {
+		capital_scope = { ZLF_is_on_continent_tewara = yes }
+	}
+	ai_will_do = {
+		base = 0
+	}
+	trigger = {
+		capital_scope = { ZLF_is_on_continent_tewara = yes }
+	}
+}

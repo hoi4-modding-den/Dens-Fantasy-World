@@ -603,7 +603,7 @@ ideas = {
 			
 			available = {
 				any_other_country = {
-					is_in_faction_with = ROOT
+					NOT = { has_war_with = ROOT }
 					has_idea = ZTC_monetary_union_spirit_ZLF_ZKN
 				}
 			}
@@ -637,7 +637,7 @@ ideas = {
 
 			available = {
 				any_other_country = {
-					is_in_faction_with = ROOT
+					NOT = { has_war_with = ROOT }
 					has_idea = ZTC_monetary_union_spirit_ZTC
 				}
 			}
@@ -718,7 +718,7 @@ ideas = {
 
 		ZTC_military_neutrality = {
 
-			picture = neutrality_idea
+			picture = generic_intel_bonus
 			
 			allowed = {
                 always = no 
@@ -729,10 +729,9 @@ ideas = {
             }
 			
 			modifier = {
+				production_speed_arms_factory_factor = 0.15
 				army_core_defence_factor = 0.15
-				generate_wargoal_tension = 2
 				join_faction_tension = 1
-				guarantee_tension = 1
 				ai_get_ally_desire_factor = -100
 			}
 

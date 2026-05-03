@@ -4,6 +4,10 @@ ZSP_magic_cat = {
 
         icon = generic_construction
 
+        ai_will_do = {
+            base = 10
+        }
+
         custom_cost_trigger = {
             check_variable = { ZSP_mana > 49 }
         }
@@ -37,6 +41,10 @@ ZSP_magic_cat = {
     ZSP_strengthen_military_production = {
 
         icon = ger_military_buildup
+        
+        ai_will_do = {
+            base = 10
+        }
 
         custom_cost_trigger = {
             check_variable = { ZSP_mana > 49 }
@@ -68,6 +76,10 @@ ZSP_magic_cat = {
 
         icon = generic_ignite_civil_war
 
+        ai_will_do = {
+            base = 10
+        }
+
         custom_cost_trigger = {
             check_variable = { ZSP_mana > 49 }
         }
@@ -97,6 +109,10 @@ ZSP_magic_cat = {
     ZSP_burn_enemy_infrastructure_selector = {
 
         icon = infiltrate_state
+
+        ai_will_do = {
+            base = 10
+        }
 
         visible = {
             has_country_flag = ZSP_burn_enemy_infrastructure_selector_flag

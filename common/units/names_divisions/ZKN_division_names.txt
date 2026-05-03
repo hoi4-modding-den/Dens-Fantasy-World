@@ -1,0 +1,54 @@
+ZKN_INF_01 = {
+	name = "Imperial Army Divisions"
+
+	for_countries = { ZKN }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%d. Königliche Armeedivision"
+
+	ordered = {
+		1 = { "%d. Königliche Armeedivision" }
+		2 = { "%d. Königliche Armeedivision" }
+		3 = { "%d. Königliche Armeedivision" }
+		4 = { "%d. Königliche Armeedivision" }
+		5 = { "%d. Königliche Armeedivision" }
+	}
+}
+ZKN_INF_02 = {
+	name = "Imperial Army Brigades"
+
+	for_countries = { ZKN }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%d. Königliche Armeebrigade"
+
+	ordered = {
+		1 = { "%d. Königliche Armeebrigade" }
+		2 = { "%d. Königliche Armeebrigade" }
+		3 = { "%d. Königliche Armeebrigade" }
+		4 = { "%d. Königliche Armeebrigade" }
+		5 = { "%d. Königliche Armeebrigade" }
+	}
+}
+ZKN_CAV_01 = {
+	name = "Royal Cavalry Corps"
+
+	for_countries = { ZKN }
+
+	division_types = { "cavalry" }
+
+
+	fallback_name = "%d. Königlicher Kavalleriekorps"
+
+	ordered = {
+		1 = { "%d. Königlicher Kavalleriekorps" }
+		2 = { "%d. Königlicher Kavalleriekorps" }
+		3 = { "%d. Königlicher Kavalleriekorps" }
+		4 = { "%d. Königlicher Kavalleriekorps" }
+		5 = { "%d. Königlicher Kavalleriekorps" }
+	}
+}

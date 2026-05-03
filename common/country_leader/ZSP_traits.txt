@@ -42,6 +42,7 @@ leader_traits = {
         
         breakthrough_factor = 0.1
         ai_focus_aggressive_factor = 1
+        supply_consumption_factor = -0.5
 
         random = no
     }
@@ -50,6 +51,7 @@ leader_traits = {
         
         army_org_factor = 0.1
         ai_focus_aggressive_factor = 1
+        supply_consumption_factor = -0.5
 
         random = no
     }
@@ -57,7 +59,7 @@ leader_traits = {
     ZSP_from_the_ashes = {
         
         ZSP_mana_generation = 30
-        political_power_factor = 0.15
+        consumer_goods_factor = -0.05
         fascism_drift = -0.2
 
         random = no

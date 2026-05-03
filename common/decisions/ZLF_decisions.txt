@@ -37,7 +37,7 @@ ZLF_civil_war_cat = {
 
         is_good = no
 
-        days_mission_timeout = 60
+        days_mission_timeout = 90
 
         complete_effect = {
             add_political_power = 25
@@ -131,7 +131,7 @@ ZLF_civil_war_cat = {
 
         is_good = no
 
-        days_mission_timeout = 80
+        days_mission_timeout = 120
 
         complete_effect = {
             add_political_power = 25
@@ -188,7 +188,7 @@ ZLF_civil_war_cat = {
 
         is_good = no
 
-        days_mission_timeout = 140
+        days_mission_timeout = 200
 
         complete_effect = {
             add_political_power = 100
@@ -227,7 +227,7 @@ ZLF_civil_war_cat = {
 
         is_good = no
 
-        days_mission_timeout = 300
+        days_mission_timeout = 365
 
         complete_effect = {
             add_political_power = 100
@@ -787,6 +787,8 @@ ZLF_establish_sibling_republics_cat = {
 
         days_remove = 100
 
+        fire_only_once = yes
+
         complete_effect = {
             FROM = { add_compliance = 10 }
         }
@@ -796,6 +798,118 @@ ZLF_establish_sibling_republics_cat = {
                 FROM = { cancel_resistance = yes }
             }
             add_state_core = FROM
+        }
+
+    }
+
+}
+
+ZLF_world_state_integration_cat = {
+
+    ZLF_integrate_allied_nation = {
+
+        icon = hol_exchange_intelligence_data
+
+        cost = 75
+
+        ai_will_do = {
+            base = 10
+        }
+
+        available = {
+            FROM = {
+                has_capitulated = no
+                is_in_faction_with = ROOT
+                is_subject = no
+            }
+        }
+
+        targets_dynamic = yes
+
+        target_trigger = {
+            FROM = {
+                is_in_faction_with = ROOT
+                is_subject = no
+            }
+        }
+
+        cancel_trigger = {
+            FROM = {
+                OR = {
+                    has_capitulated = yes
+                    NOT = { is_in_faction_with = ROOT }
+                    is_subject = yes
+                }
+            }
+        }
+
+        days_remove = 50
+
+        remove_effect = {
+            FROM = {
+                country_event = generic.20
+            }
+        }
+
+    }
+
+}
+
+ZLF_invite_more_allies_cat = {
+
+    ZLF_invite_aligned_nation_to_faction = {
+
+        icon = hol_exchange_intelligence_data
+
+        cost = 75
+
+        ai_will_do = {
+            base = 10
+        }
+
+        available = {
+            FROM = {
+                has_capitulated = no
+                is_in_faction = no
+                is_subject = no
+                NOT = { has_war_with = ROOT }
+            }
+            ZLF_FROM_abides_by_joining_rules = yes
+        }
+
+        targets_dynamic = yes
+
+        target_trigger = {
+            FROM = {
+                is_in_faction = no
+                is_subject = no
+                has_rule = can_join_factions
+            }
+            ZLF_FROM_abides_by_joining_rules = yes
+            if = {
+                limit = { NOT = { has_rule = can_join_opposite_factions } }
+                has_government = FROM
+            }
+        }
+
+        cancel_trigger = {
+            FROM = {
+                OR = {
+                    has_capitulated = yes
+                    is_in_faction = yes
+                    is_subject = yes
+                    has_war_with = ROOT
+                    NOT = { has_rule = can_join_factions }
+                }
+            }
+        }
+
+        days_remove = 20
+
+        remove_effect = {
+            FROM = {
+                country_event = generic.5
+            }
         }
 
     }
@@ -1224,7 +1338,7 @@ ZLF_regional_developments_cat = {
         cost = 25
 
         ai_will_do = {
-            base = 10
+            base = 100
         }
 
         highlight_states = {
@@ -1399,7 +1513,7 @@ ZLF_regional_developments_cat = {
         cost = 25
 
         ai_will_do = {
-            base = 10
+            base = 100
         }
 
         highlight_states = {
@@ -1704,7 +1818,7 @@ ZLF_magic_polygon_cat = {
         available = {
             custom_trigger_tooltip = {
                 tooltip = ZLF_gdp_growth_decision_trigger
-                check_variable = { total_constructed_civilian_factory > 24 }
+                check_variable = { total_constructed_civilian_factory > 19 }
             }
             hidden_trigger = { always = no }
         }
@@ -1801,7 +1915,7 @@ ZLF_magic_polygon_cat = {
             custom_trigger_tooltip = {
                 tooltip = ZLF_complete_the_polygon_trigger
                 check_variable = { ZLF_unemployment_rate < 0.06 }
-                check_variable = { ZLF_ideal_gdp_growth_months > 11 }
+                check_variable = { total_constructed_civilian_factory > 19 }
                 NOT = { has_idea = closed_economy }
                 has_resources_in_country = {
                     resource = oil

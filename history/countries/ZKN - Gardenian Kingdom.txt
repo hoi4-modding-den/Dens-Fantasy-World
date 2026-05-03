@@ -65,8 +65,9 @@ add_civil_war_target = ZLF
 
 country_lock_all_division_template = yes
 
-activate_mission = ZKN_finish_the_civil_war_quickly
 activate_mission = ZKN_hold_the_line
+activate_mission = ZKN_secure_rathenau
+activate_mission = ZKN_connect_to_the_north
 activate_mission = ZKN_aid_from_neighbouring_monarchies
 
 set_politics = {

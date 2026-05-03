@@ -15,6 +15,31 @@ characters = {
             expire = "1960.1.1.1"
         }
 
+        advisor = {
+            slot = army_chief
+            idea_token = ZKN_michael_aurus_token
+            allowed = {
+                original_tag = ZKN
+            }
+            visible = {
+                is_country_leader = yes
+                has_civil_war = yes
+            }
+            available = {
+                is_country_leader = yes
+                has_civil_war = yes
+            }
+
+            cost = 50
+
+            traits = {
+                ZLF_royal_army_chief
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+
         field_marshal = {
             visible = { has_country_leader = { character = ZKN_michael_aurus ruling_only = yes } }
             traits = { ZKN_zinnian_loyalist politically_connected media_personality }
@@ -47,6 +72,9 @@ characters = {
             idea_token = ZKN_yvonne_von_karmesin_token
             allowed = {
                 original_tag = ZKN
+            }
+            visible = {
+                is_country_leader = no
             }
             available = {
                 has_country_flag = ZKN_new_camarilla_unlocked
@@ -122,9 +150,29 @@ characters = {
             traits = { ZKN_stratocratic_nationalist }
             expire = "1960.1.1.1"
         }
+
+        advisor = {
+            slot = army_chief
+            idea_token = ZKN_peter_von_tretschau_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                
+            }
+
+            cost = 200
+
+            traits = {
+                army_chief_organizational_3
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
         
         field_marshal = {
-            traits = { politically_connected media_personality }
+            traits = { politically_connected media_personality hidden_sympathies }
             skill = 4
             attack_skill = 4
             defense_skill = 2
@@ -139,6 +187,29 @@ characters = {
             army = {
                 large = GFX_portrait_ZKN_juergen_ostersee
                 small = GFX_portrait_ZKN_juergen_ostersee_small
+            }
+        }
+
+        advisor = {
+            slot = high_command
+            idea_token = ZKN_juergen_ostersee_token
+            allowed = {
+                OR = {
+                    original_tag = ZKN
+                    original_tag = ZLF
+                }
+            }
+            available = {
+                
+            }
+
+            cost = 100
+
+            traits = {
+                army_artillery_2
+            }
+            ai_will_do = {
+                base = 5
             }
         }
         
@@ -160,9 +231,29 @@ characters = {
                 small = GFX_portrait_ZKN_johann_schmerz_small
             }
         }
+
+        advisor = {
+            slot = high_command
+            idea_token = ZKN_adolf_zaster_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                
+            }
+
+            cost = 100
+
+            traits = {
+                army_entrenchment_2
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
         
         corps_commander = {
-            traits = { career_officer infantry_officer }
+            traits = { career_officer infantry_officer hidden_sympathies }
             skill = 2
             attack_skill = 1
             defense_skill = 1
@@ -177,6 +268,26 @@ characters = {
             army = {
                 large = GFX_portrait_ZKN_adolf_zaster
                 small = GFX_portrait_ZKN_johann_schmerz_small
+            }
+        }
+
+        advisor = {
+            slot = high_command
+            idea_token = ZKN_adolf_zaster_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                
+            }
+
+            cost = 50
+
+            traits = {
+                army_cavalry_1
+            }
+            ai_will_do = {
+                base = 5
             }
         }
         
@@ -198,6 +309,29 @@ characters = {
                 small = GFX_portrait_ZKN_otto_richtig_small
             }
         }
+
+        advisor = {
+            slot = high_command
+            idea_token = ZKN_otto_richtig_token
+            allowed = {
+                OR = {
+                    original_tag = ZKN
+                    original_tag = ZLF
+                }
+            }
+            available = {
+                
+            }
+
+            cost = 100
+
+            traits = {
+                army_infantry_2
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
         
         corps_commander = {
             traits = { career_officer trait_cautious }
@@ -215,6 +349,26 @@ characters = {
             army = {
                 large = GFX_portrait_ZKN_kurt_baer
                 small = GFX_portrait_ZKN_kurt_baer_small
+            }
+        }
+
+        advisor = {
+            slot = army_chief
+            idea_token = ZKN_kurt_baer_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                
+            }
+
+            cost = 100
+
+            traits = {
+                army_chief_defensive_2
+            }
+            ai_will_do = {
+                base = 5
             }
         }
         
@@ -237,6 +391,70 @@ characters = {
                 small = GFX_portrait_ZKN_tanja_von_degretschow_small
             }
         }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZKN_tanja_von_degretschow_political_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                not_already_hired_except_as = political_advisor
+                NOT = { has_government = communism }
+            }
+            traits = {
+                ZKN_chief_strategist
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+
+        advisor = {
+            slot = theorist
+            idea_token = ZKN_tanja_von_degretschow_theorist_token
+            allowed = {
+                OR = {
+                    original_tag = ZKN
+                    original_tag = ZLF
+                }
+            }
+            available = {
+                not_already_hired_except_as = theorist
+            }
+
+            cost = 75
+
+            traits = {
+                blitzkrieg_theorist
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+
+        advisor = {
+            slot = high_command
+            idea_token = ZKN_tanja_von_degretschow_token
+            allowed = {
+                OR = {
+                    original_tag = ZKN
+                    original_tag = ZLF
+                }
+            }
+            available = {
+                not_already_hired_except_as = high_command
+            }
+
+            cost = 200
+
+            traits = {
+                army_CombinedArms_3
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
         
         corps_commander = {
             traits = { ZKN_white_silver brilliant_strategist career_officer }
@@ -256,6 +474,29 @@ characters = {
                 small = GFX_portrait_ZTC_alexander_von_karlsberg_small
 			}
 		}
+
+        advisor = {
+            slot = navy_chief
+            idea_token = ZTC_alexander_von_karlsberg_token
+            allowed = {
+                OR = {
+                    original_tag = ZKN
+                    original_tag = ZLF
+                }
+            }
+            available = {
+                
+            }
+
+            cost = 100
+
+            traits = {
+                navy_chief_decisive_battle_2
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
         
 		navy_leader = {
 			traits={ battleship_adherent old_guard_navy gentlemanly }
@@ -275,9 +516,29 @@ characters = {
                 small = GFX_portrait_ZTC_rudolf_von_seestern_small
 			}
 		}
+
+        advisor = {
+            slot = navy_chief
+            idea_token = ZTC_rudolf_von_seestern_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                
+            }
+
+            cost = 100
+
+            traits = {
+                navy_chief_reform_2
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
         
 		navy_leader = {
-			traits={ old_guard_navy gunnery_expert }
+			traits={ old_guard_navy gunnery_expert hidden_sympathies }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 2

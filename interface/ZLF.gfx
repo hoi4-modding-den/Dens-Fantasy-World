@@ -46,6 +46,16 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_portrait_ZLF_mathilde_elysee"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_mathilde_elysee.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_mathilde_elysee_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_mathilde_elysee_small.png"
+    }
+
+    spriteType = {
         name = "GFX_portrait_ZLF_wilhelm_gluecksburg"
         texturefile = "gfx/leaders/ZLF/portrait_ZLF_wilhelm_gluecksburg.png"
     }
@@ -116,6 +126,16 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_portrait_ZLF_thomas_huebenwahl"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_thomas_huebenwahl.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_thomas_huebenwahl_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_thomas_huebenwahl_small.png"
+    }
+
+    spriteType = {
         name = "GFX_portrait_ZLF_ll_zaunenbach"
         texturefile = "gfx/leaders/ZLF/portrait_ZLF_ll_zaunenbach.png"
     }
@@ -133,6 +153,16 @@ spriteTypes = {
     spriteType = {
         name = "GFX_portrait_ZLF_gregor_bauer_small"
         texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_gregor_bauer_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_walter_krondrache"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_walter_krondrache.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_walter_krondrache_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_walter_krondrache_small.png"
     }
 
     spriteType = {
@@ -245,10 +275,41 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_jakub_bart_cisinski_small.png"
     }
 
+    spriteType = {
+        name = "GFX_portrait_ZLF_uwe_koch"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_uwe_koch.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_uwe_koch_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_uwe_koch_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_milo_wandsbeker"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_milo_wandsbeker.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_milo_wandsbeker_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_milo_wandsbeker_small.png"
+    }
+
 
     spriteType = {
 		name = "GFX_trait_ZLF_raserei"
 		texturefile = "gfx/interface/traits/scientist_traits/scientist_trait_electronics_specialist.dds"
+	}
+
+
+    spriteType = {
+		name = "GFX_ZLF_joining_rule_non_despotist"
+		texturefile = "gfx/interface/ideas/idea_generic_king_handled.dds"
+	}
+
+    spriteType = {
+		name = "GFX_ZLF_joining_rule_tewarean_only"
+		texturefile = "gfx/interface/ideas/idea_JAP_pan_asian_union.dds"
 	}
 
 

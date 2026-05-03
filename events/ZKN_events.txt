@@ -73,6 +73,13 @@ country_event = { # Civil War Ends
 					days = 5
 				}
 			}
+
+			if = {
+				limit = {
+					is_faction_leader = yes
+				}
+				dismantle_faction = yes
+			}
 		}
     }
 
@@ -90,6 +97,11 @@ country_event = { # Civil War Ends
 		set_capital = { state = 812 }
 
         custom_effect_tooltip = generic_skip_one_line_tt
+
+		swap_ideas = {
+			remove_idea = ZKN_throne_under_threat
+			add_idea = ZKN_the_zinnia_secured
+		}
 
         ZKN_michael_aurus = {
             swap_country_leader_traits = {
@@ -120,6 +132,81 @@ country_event = { # Republicans go into Exile in ZTC
 	}
 }
 
+country_event = { # Royalists call for Aid
+	id = ZKN_cw_events.4
+	title = ZKN_cw_events.4.t
+	desc = ZKN_cw_events.4.desc
+	picture = GFX_report_event_generic_battle
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_cw_events.4.a
+		ai_chance = {
+			base = 4
+			modifier = {
+				factor = 2
+				ZLF = { is_ai = yes }
+			}
+		}
+        FROM = {
+			country_event = ZKN_cw_events.5
+		}
+	}
+
+	option = {
+		name = ZKN_cw_events.4.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				ZKN = { is_ai = no }
+			}
+		}
+        FROM = {
+			country_event = ZKN_cw_events.6
+		}
+	}
+}
+
+country_event = { # Royalists call for Aid - and we Answer!
+	id = ZKN_cw_events.5
+	title = ZKN_cw_events.5.t
+	desc = ZKN_cw_events.5.desc
+	picture = GFX_report_event_generic_battle
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_cw_events.5.a
+        add_to_faction = FROM
+		FROM = {
+			add_to_war = {
+				targeted_alliance = ROOT
+				enemy = ZLF
+				hostility_reason = asked_to_join
+			}
+		}
+	}
+}
+
+country_event = { # Royalists call for Aid - rejected
+	id = ZKN_cw_events.6
+	title = ZKN_cw_events.6.t
+	desc = ZKN_cw_events.6.desc
+	picture = GFX_report_event_generic_battle
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_cw_events.6.a
+        add_opinion_modifier = {
+			target = FROM
+			modifier = betrayed_alliance
+		}
+	}
+}
+
 country_event = { # Restoration of the Throne
 	id = ZKN_post_cw_events.1
 	title = ZKN_post_cw_events.1.t
@@ -143,6 +230,11 @@ country_event = { # Restoration of the Throne
 
 	option = {
 		name = ZKN_post_cw_events.1.a
+		set_stability = 0.5
+		set_war_support = 0.25
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
         custom_effect_tooltip = ZKN_post_cw_events.1.tt
 	}
 }
@@ -170,6 +262,10 @@ country_event = { # Nobles demand Harsh Repressions
 
 	option = {
 		name = ZKN_post_cw_events.2.a
+		remove_ideas = ZKN_general_strike
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
 		add_timed_idea = {
 			idea = ZKN_anti_republican_repressions
 			days = 365
@@ -178,6 +274,10 @@ country_event = { # Nobles demand Harsh Repressions
 
 	option = {
 		name = ZKN_post_cw_events.2.b
+		remove_ideas = ZKN_general_strike
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
         add_political_power = -100
 		add_stability = 0.05
 		add_to_variable = {
@@ -259,9 +359,19 @@ country_event = { # Military Coup Successful
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
+		remove_ideas = ZKN_the_zinnia_secured
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
 		set_politics = {
 			ruling_party = fascism
 			elections_allowed = no
+		}
+
+		hidden_effect = {
+			every_army_leader = {
+				remove_unit_leader_trait = hidden_sympathies
+			}
 		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
@@ -335,6 +445,13 @@ country_event = { # Camarilla Regency crushed
 		retire_character = ZKN_yvonne_von_karmesin
 
 		set_country_flag = ZKN_salvationist_path_unlocked
+
+		hidden_effect = {
+			country_event = {
+				id = ZKN_post_cw_events.18
+				days = 120
+			}
+		}
 	}
 }
 
@@ -434,11 +551,6 @@ country_event = { # Putschists executed
 			retire_character = ZTC_rudolf_von_seestern
         }
 
-		swap_ideas = {
-			remove_idea = ZKN_throne_under_threat
-			add_idea = ZKN_the_zinnia_secured
-		}
-
 		if = {
 			limit = { has_idea = ZKN_disloyal_army_cw_improved }
 			remove_ideas = ZKN_disloyal_army_cw_improved
@@ -446,6 +558,9 @@ country_event = { # Putschists executed
 		else = {
 			remove_ideas = ZKN_disloyal_army
 		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+		
 		country_lock_all_division_template = no
 
 		set_country_flag = ZKN_royalist_path_unlocked
@@ -660,6 +775,34 @@ country_event = { # Operation Exodus: Refugees arrive
 			idea = ZKN_elbian_exodus
 			days = 365
 		}
+	}
+}
+
+country_event = { # AMA begins Operations
+	id = ZKN_post_cw_events.18
+	title = ZKN_post_cw_events.18.t
+	desc = ZKN_post_cw_events.18.desc
+	picture = GFX_report_event_french_resistance_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_post_cw_events.18.a
+		add_popularity = { ideology = communism popularity = 0.05 }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		every_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				state_population_k < 2000
+			}
+			add_dynamic_modifier = { modifier = ZKN_anti_military_apparatus_modifier }
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		unlock_decision_category_tooltip = ZKN_destroy_the_ama_cat
 	}
 }
 

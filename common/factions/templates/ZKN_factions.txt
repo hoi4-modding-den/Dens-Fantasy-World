@@ -1,0 +1,32 @@
+ZKN_faction_template_royalist_league = {
+	name = ZKN_faction_template_royalist_league_name
+	manifest = faction_manifest_suppress_regional_democracy
+	can_leader_join_other_factions = no
+	# color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic_5
+	visible = {
+		always = no
+	}
+	available = {
+		has_government = neutrality
+	}
+
+	goals = {
+		# Short term goals
+		# faction_goal_growing_the_faction
+		# faction_goal_military_infrastructure
+
+		# Medium term goals
+		faction_goal_mountaineer_corps
+
+		# Long terms
+		faction_goal_great_offensive
+	}
+
+	default_rules = {
+        change_leader_rule_never
+        joining_rule_same_ideology
+		joining_rule_neighbors_only
+	}
+	
+}

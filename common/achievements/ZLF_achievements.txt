@@ -1,0 +1,67 @@
+unique_id = ZLF_gardenia_achievements # used for all four tags
+
+ZLF_orlando_furioso_achievement = {
+    possible = {
+        difficulty > 1
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+        is_debug = no
+        tag = ZLF
+    }
+
+    happened = {
+        has_civil_war = no
+        date < 1937.01.01
+    }
+}
+
+ZLF_repeat_of_1848_achievement = {
+    possible = {
+        difficulty > 1
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+        is_debug = no
+        tag = ZKN
+    }
+
+    happened = {
+        has_civil_war = no
+        has_country_flag = ZKN_invoked_royalist_pact
+    }
+}
+
+ZLF_red_autumn_reference_achievement = {
+    possible = {
+        difficulty > 1
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+        is_debug = no
+        tag = ZLF
+    }
+
+    happened = {
+        current_conscription_amount > 0.24
+    }
+}
+
+ZLF_another_victory_for_social_democracy_achievement = {
+    possible = {
+        difficulty > 1
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+        is_debug = no
+        tag = ZLF
+    }
+
+    happened = {
+        has_completed_focus = ZLF_socialist_party_majority
+        NOT = { has_country_flag = ZLF_elbian_insurrection_happened }
+        has_country_flag = ZLF_krondrache_uncovered_plot
+        has_country_flag = ZLF_magic_polygon_achieved
+        has_completed_focus = ZLF_declare_revolutionary_victory
+        custom_trigger_tooltip = {
+            tooltip = ZLF_has_formed_tewara_tt
+            has_cosmetic_tag = ZLF_tewara
+        }
+    }
+}

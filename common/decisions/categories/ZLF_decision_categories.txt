@@ -64,3 +64,35 @@ ZLF_establish_sibling_republics_cat = {
 		is_subject = no
 	}
 }
+
+ZLF_world_state_integration_cat = {
+
+	icon = generic_formable_nations
+	
+	allowed = {
+		original_tag = ZLF
+	}
+
+	priority = 50
+
+	visible = {
+		has_completed_focus = ZLF_towards_a_world_state
+		is_faction_leader = yes
+	}
+}
+
+ZLF_invite_more_allies_cat = {
+
+	icon = generic_formable_nations
+	
+	allowed = {
+		original_tag = ZLF
+	}
+
+	priority = 50
+
+	visible = {
+		has_completed_focus = ZLF_expand_the_internationalist_system
+		is_faction_leader = yes
+	}
+}

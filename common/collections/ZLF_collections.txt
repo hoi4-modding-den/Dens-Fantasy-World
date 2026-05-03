@@ -30,3 +30,68 @@ ZLF_korelia_sb_state = {
 		}
 	}
 }
+ZLF_despotist_controlled_states_my_continent = {
+	input = game:all_states
+	name = ZLF_COLLECTION_STATES_MY_CONTINENT_CONTROLLED_DESPOTIST
+	operators = {
+		limit = {
+			is_on_same_continent_as = ROOT
+			controller = {
+				ZLF_is_despotist_ideology = yes
+			}
+		}
+	}
+}
+ZLF_uncapitulated_democratic_communist_allies = {
+	input = game:all_countries
+	name = ZLF_COLLECTION_UNCAPITULATED_DEMOCRATIC_COMMUNIST_ALLIES
+	operators = {
+		faction_members
+		limit = {
+			has_capitulated = no
+			OR = {
+				has_government = democratic
+				has_government = communism
+			}
+		}
+	}
+}
+ZLF_sibling_republics = {
+	input = game:all_countries
+	name = ZLF_COLLECTION_SIBLING_REPUBLIC_NATIONS
+	operators = {
+		limit = {
+			is_subject_of = ROOT
+			has_idea = ZLF_sibling_republic_spirit
+		}
+	}
+}
+ZLF_states_in_tewara = {
+	input = game:all_states
+	operators = {
+		limit = {
+			ZLF_is_on_continent_tewara = yes
+		}
+	}
+	name = ZLF_COLLECTION_STATES_IN_TEWARA
+}
+ZLF_faction_states_in_tewara = {
+	input = game:scope
+	operators = {
+		faction_members
+		controlled_states
+		limit = {
+			ZLF_is_on_continent_tewara = yes
+		}
+	}
+	name = ZLF_COLLECTION_FACTION_CONTROLLED_STATES_IN_TEWARA
+}
+ZLF_states_to_liberate_in_tewara = {
+	input = collection:ZLF_states_in_tewara
+	operators = {
+		limit = {
+			owner = { ZLF_is_despotist_ideology = yes }
+		}
+	}
+	name = ZLF_COLLECTION_UNLIBERATED_TEWARA_STATES
+}
