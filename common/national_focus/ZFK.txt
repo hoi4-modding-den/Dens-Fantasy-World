@@ -42,4 +42,502 @@ focus_tree={
                                  custom_effect_tooltip = ZFK_return_to_greatness_tt
           }
      }
+	focus = {
+		id = ZFK_look_to_west
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_return_to_greatness }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 2
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_contact_with_blackcloaks
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_look_to_west }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 3
+		#relative_position_id = 
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_smuggling_weapons
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_contact_with_blackcloaks }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 4
+		#relative_position_id = 
+		
+		cost = 6
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_talk_with_maruni_officers
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_look_to_west }
+		#mutually_exclusive = { focus =  }
+		x = 3
+		y = 3
+		#relative_position_id = 
+		
+		cost = 3
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_northern_mountaineers
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_talk_with_maruni_officers }
+		#mutually_exclusive = { focus =  }
+		x = 3
+		y = 4
+		#relative_position_id = 
+		
+		cost = 7
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_our_enemies_dont_wait
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_return_to_greatness }
+		#mutually_exclusive = { focus =  }
+		x = 7
+		y = 1
+		#relative_position_id = 
+		
+		cost = 4
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_strike_north
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_our_enemies_dont_wait }
+		#mutually_exclusive = { focus =  }
+		x = 6
+		y = 2
+		#relative_position_id = 
+		
+		cost = 6
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_sayani_means_evil
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_strike_north }
+		#mutually_exclusive = { focus =  }
+		x = 6
+		y = 3
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_heart_of_corruption
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_our_enemies_dont_wait }
+		#mutually_exclusive = { focus =  }
+		x = 8
+		y = 2
+		#relative_position_id = 
+		
+		cost = 6
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_throw_unetu_out
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_heart_of_corruption }
+		#mutually_exclusive = { focus =  }
+		x = 8
+		y = 3
+		#relative_position_id = 
+		
+		cost = 6
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_recruitment_among_defectors
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_sayani_means_evil }
+                prerequisite = { focus = ZFK_throw_unetu_out }
+		#mutually_exclusive = { focus =  }
+		x = 7
+		y = 4
+		#relative_position_id = 
+		
+		cost = 8
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_development_for_our_abilities
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_return_to_greatness }
+		#mutually_exclusive = { focus =  }
+		x = 13
+		y = 2
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_start_patching_administration
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_development_for_our_abilities }
+		#mutually_exclusive = { focus =  }
+		x = 12
+		y = 3
+		#relative_position_id = 
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_border_infrastructure
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_start_patching_administration }
+		#mutually_exclusive = { focus =  }
+		x = 12
+		y = 4
+		#relative_position_id = 
+		
+		cost = 6
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_fix_supply_issues
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_development_for_our_abilities }
+		#mutually_exclusive = { focus =  }
+		x = 14
+		y = 3
+		#relative_position_id = 
+		
+		cost = 6
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_royal_arms_factory
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_fix_supply_issues }
+		#mutually_exclusive = { focus =  }
+		x = 14
+		y = 4
+		#relative_position_id = 
+		
+		cost = 7
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_noble_meeting
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_return_to_greatness }
+		#mutually_exclusive = { focus =  }
+		x = 18
+		y = 2
+		#relative_position_id = 
+		
+		cost = 4
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_speech_in_keytysawi
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_noble_meeting }
+		#mutually_exclusive = { focus =  }
+		x = 18
+		y = 4
+		#relative_position_id = 
+		
+		cost = 2
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
+	focus = {
+		id = ZFK_monarchy_rises_again
+		icon = GFX_focus_PLACEHOLDER
+                prerequisite = { focus = ZFK_smuggling_weapons focus = ZFK_northern_mountaineers }
+                prerequisite = { focus = ZFK_recruitment_among_defectors }
+                prerequisite = { focus = ZFK_border_infrastructure  focus = ZFK_royal_arms_factory }
+                prerequisite = { focus = ZFK_speech_in_keytysawi }
+		#mutually_exclusive = { focus =  }
+		x = 10
+		y = 6
+		#relative_position_id = 
+		
+		cost = 2
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+            
+        }
+
+		bypass = {
+			has_civil_war = no
+        }
+		
+		completion_reward = {
+          }
+     }
 }

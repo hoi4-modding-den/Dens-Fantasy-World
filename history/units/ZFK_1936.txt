@@ -54,7 +54,7 @@ units = {
 		start_equipment_factor = 0.9
 	}
 division = {
-		location = 8721
+		location = 11558
 		division_template = "Yeterara Kififili"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.9

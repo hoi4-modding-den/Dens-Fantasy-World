@@ -70,7 +70,7 @@ units = {
 		start_equipment_factor = 0.7
 	}
     division = {
-		location = 9019
+		location = 11654
 		division_template = "Kelali Birigedi"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -136,7 +136,7 @@ division = {
 		start_equipment_factor = 0.5
 	}
 division = {
-		location = 11558
+		location = 11557
 		division_template = "Kelali Birigedi"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6

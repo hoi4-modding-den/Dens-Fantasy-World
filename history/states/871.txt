@@ -30,11 +30,16 @@ state={
 			
 			arms_factory = 0
 			industrial_complex = 1
+
+			}
 			
+		ZFK = {
+			set_province_controller = 11558
+
+			}
 			
 		}
 		
-	}
 
 	provinces={
 		10335 11553 11554 11555 11556 11557 11558 
