@@ -1699,7 +1699,7 @@ focus_tree={
 		icon = GFX_focus_ZTC_zeppelin
         prerequisite = { focus = ZLF_military_modernisation_committee }
 		#mutually_exclusive = { focus =  }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = ZLF_military_modernisation_committee
 		
@@ -1838,7 +1838,7 @@ focus_tree={
 		icon = GFX_focus_PER_the_peoples_airforce
         prerequisite = { focus = ZLF_airspace_dominance }
 		#mutually_exclusive = { focus =  }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ZLF_airspace_dominance
 		
@@ -1906,7 +1906,7 @@ focus_tree={
 		overlay = GFX_focus_fast_overlay_generic_clock
         prerequisite = { focus = ZLF_utilise_civil_war_experience }
 		#mutually_exclusive = { focus =  }
-		x = 0
+		x = -1
 		y = 2
 		relative_position_id = ZLF_military_modernisation_committee
 		
@@ -1935,8 +1935,52 @@ focus_tree={
 			set_technology = { ZLF_elbian_auxiliaries = 1 }
 			custom_effect_tooltip = ZLF_elbian_auxiliaries_tt
 
-            custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+            custom_effect_tooltip = {
+				localization_key = ZLF_focus_to_reduce_time_tt
+				req_focus_loc = ZLF_gain_elbian_support
+				time_loc = 35
+			}
+			custom_effect_tooltip = {
+				localization_key = ZLF_focus_to_reduce_time_tt
+				req_focus_loc = ZLF_homeland_preservation_act
+				time_loc = 35
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_form_a_specialised_corps
+		icon = GFX_focus_SMB_a_land_of_mountains
+        prerequisite = { focus = ZLF_elbian_auxiliary_brigades }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZLF_elbian_auxiliary_brigades
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10
+        }
+		
+		available = {
+			if = {
+				limit = { has_dlc = "No Compromise, No Surrender" }
+				controls_state = 677
+			}
+			else = {
+				controls_state = 655
+			}
+			NOT = { has_country_flag = ZLF_elbian_insurrection_happened }
+        }
+
+		bypass = {
 			
+        }
+		
+		completion_reward = {
 			if = {
 				limit = { has_dlc = "No Compromise, No Surrender" }
 				if = {
@@ -1957,7 +2001,7 @@ focus_tree={
 				}
 			}
 
-			custom_effect_tooltip = ZLF_elbian_auxiliary_brigades_tt
+			custom_effect_tooltip = ZLF_form_a_specialised_corps_tt
 			hidden_effect = {
 				if = {
 					limit = { has_dlc = "No Compromise, No Surrender" }
@@ -2014,19 +2058,6 @@ focus_tree={
 						}
 					}
 				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-            custom_effect_tooltip = {
-				localization_key = ZLF_focus_to_reduce_time_tt
-				req_focus_loc = ZLF_gain_elbian_support
-				time_loc = 35
-			}
-			custom_effect_tooltip = {
-				localization_key = ZLF_focus_to_reduce_time_tt
-				req_focus_loc = ZLF_homeland_preservation_act
-				time_loc = 35
 			}
 		}
 	}
@@ -2907,7 +2938,7 @@ focus_tree={
         }
 		
 		available = {
-			has_war = no
+			has_offensive_war = no
 			NOT = { has_idea = ZLF_reconstruction }
         }
 

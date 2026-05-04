@@ -65,7 +65,7 @@ on_actions = {
                     limit = { has_cosmetic_tag = ZSP_shadow_realm }
                     drop_cosmetic_tag = yes
                 }
-                FROM = { load_focus_tree = generic_focus }
+                FROM = { load_focus_tree = ZLF_generic_focus_tree }
             }
         }
     }

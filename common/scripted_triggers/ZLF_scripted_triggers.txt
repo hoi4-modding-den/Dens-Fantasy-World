@@ -75,6 +75,22 @@ ZLF_korelia_sb_state = {
         state = 81
     }
 }
+ZLF_avalon_sb_state = {
+    OR = {
+        region = 44
+        state = 86
+        state = 90
+        state = 151
+        state = 222
+        state = 233
+        state = 263
+    }
+}
+ZLF_wealas_sb_state = {
+    OR = {
+        state = 1
+    }
+}
 
 ZLF_is_despotist_ideology = {
     custom_trigger_tooltip = {

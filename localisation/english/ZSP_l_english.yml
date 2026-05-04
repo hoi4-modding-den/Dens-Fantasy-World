@@ -75,9 +75,12 @@
  ZSP_moster_summoner: "Monster Tamer"
  ZSP_necomancer: "Necromancer"
  ZSP_from_the_ashes: "Risen from the Ashes"
+
  ZSP_apprentice_one: "The First Apprentice\n(Wrath)"
  ZSP_apprentice_two: "The Second Apprentice\n(Envy)"
  ZSP_apprentice_three: "The Third Apprentice\n(Greed)"
+
+ ZSP_weapons_manufacturer: "Weapons Manufacturer"
 
  ZSP_ozymandias_trait: "Mage-Lord"
  ZSP_ozymandias_trait_desc: ""
@@ -96,7 +99,7 @@
  ZSP_burgfrieden_desc: "To ensure that the peasantry does not rise up, the towers are in a state referred to as Turmfrieden (lit. 'Tower Peace'), limiting themselves in their infighting."
  ZSP_broken_burgfrieden: "Broken Turmfrieden"
  ZSP_slavery: "Slavery"
- ZSP_thaumaturgic_workshop: "Thaumaturgic Rifle Production"
+ ZSP_zombie_workshop: "Necromantic Rifle Production"
  ZSP_shadowspire_research: "Experiments in Shadowspire"
  ZSP_control_spell: "Under My Spell"
  ZSP_confiscated_gold: "Mountains of Gold"
@@ -106,6 +109,8 @@
  ZSP_ruins_of_economy: "Ruins of Economy"
  ZSP_offensive_spirit: "Harpe"
  ZSP_defensive_spirit: "Aegis"
+
+ ZSP_thaumaturgic_workshop: "Sachsenhagen Smithy"
 
  ZSP_monster_army: "Monster Conscription"
  ZSP_monster_army_desc: "Monsters fill the role of soldiers in our military, though some sentient creatures are still allowed to serve as officers."
@@ -138,8 +143,12 @@
  ZSP_botanomancy: "Botanomancy"
  ZSP_i_am_atomic_spell: "I Am Atomic"
 
- ZSP_monster_hordes_growing: "Growing Hordes"
- ZSP_zombie_hordes_growing: "Undead Proliferation"
+ ZSP_sell_slaves: "Profit from the Slave Trade"
+ ZSP_smuggle_guns: "Gun-Running Operations"
+ ZSP_deploy_shadowbolt_division: "Form the Shadowbolts"
+ ZSP_deploy_shadowbolt_division_tt: "Deploy §gtwo§! §YShadowbolt Divisions§! in the §Ycapital§!."
+ ZSP_zombie_soldiers_to_workers: "Convert Soldiers into Workers"
+ ZSP_zombie_workers_to_soldiers: "Convert Workers into Soldiers"
 
 
 # DECISION COSTS
@@ -182,7 +191,7 @@
  ZSP_forced_industrialisation_tt: "Build §YRailways§! connecting Golden Compass to the Villages."
  ZSP_embrace_capitalism: "Embrace Capitalism"
  ZSP_embrace_capitalism_desc: ""
- ZSP_establish_the_national_guard: "Establish the National Guard"
+ ZSP_establish_the_national_guard: "Establish the Realm Guard"
  ZSP_establish_the_national_guard_desc: ""
  ZSP_establish_the_national_guard_tt: "Deploy §gfour§! §YRealm Army Divisions§! in the §Ycapital§!."
  ZSP_restless_magocrat: "The Restless Magocrat"
@@ -190,7 +199,7 @@
  ZSP_restless_magocrat_tt: "Unlocks §YUndead Horde§! Divisions."
  ZSP_transform_the_people: "Raise the Undead"
  ZSP_transform_the_people_desc: ""
- ZSP_magical_industry: "Thaumaturgic Workshops"
+ ZSP_magical_industry: "Zombie Workshops"
  ZSP_magical_industry_desc: ""
  ZSP_undead_horde: "The Undead Horde"
  ZSP_undead_horde_desc: ""

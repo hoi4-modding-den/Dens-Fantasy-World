@@ -14,7 +14,6 @@ leader_traits = {
         war_support_factor = 0.15
         surrender_limit = 0.25
         army_attack_factor = 0.08
-        army_defence_factor = 0.08
         encryption_factor = 0.25
         civilian_intel_to_others = -10
         army_intel_to_others = -10
@@ -31,7 +30,6 @@ leader_traits = {
         war_support_factor = 0.15
         surrender_limit = 0.5
         army_attack_factor = 0.15
-        army_defence_factor = 0.15
         ZSP_mana_generation = 10
         ai_desired_divisions_factor = 20
 
@@ -40,7 +38,7 @@ leader_traits = {
 
     ZSP_moster_summoner = {
         
-        breakthrough_factor = 0.1
+        army_org_regain = 0.1
         ai_focus_aggressive_factor = 1
         supply_consumption_factor = -0.5
 
@@ -49,7 +47,7 @@ leader_traits = {
 
     ZSP_necomancer = {
         
-        army_org_factor = 0.1
+        breakthrough_factor = 0.1
         ai_focus_aggressive_factor = 1
         supply_consumption_factor = -0.5
 
@@ -88,6 +86,13 @@ leader_traits = {
 
         production_speed_buildings_factor = 0.1
         conscription_factor = 0.1
+
+        random = no
+    }
+
+    ZSP_weapons_manufacturer = {
+
+        
 
         random = no
     }

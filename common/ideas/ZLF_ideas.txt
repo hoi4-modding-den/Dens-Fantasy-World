@@ -910,7 +910,7 @@ ideas = {
 
         ZLF_aircraft_bonus = {
 
-            picture = air_support_bonus
+            picture = air_support_focus
             
             allowed = {
                 always = no 
@@ -1176,7 +1176,7 @@ ideas = {
 
         ZLF_sibling_republic_spirit = {
 
-            picture = generic_political_support
+            picture = HUN_treaty_of_triannon
 
             allowed = {
                 always = no 
@@ -1209,6 +1209,7 @@ ideas = {
                 production_speed_buildings_factor = 0.1
                 consumer_goods_factor = -0.1
                 neutrality_drift = -0.05
+                fascism_drift = -0.05
             }
 
         }
@@ -1227,7 +1228,27 @@ ideas = {
 
             modifier = {
                 stability_factor = 0.05
-                political_power_cost = 0.1
+                war_support_factor = 0.1
+                political_power_cost = 0.25
+            }
+
+        }
+
+        ZLF_orchidee_growing_esperantist_movement = {
+
+            picture = generic_political_support
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                political_advisor_cost_factor = -0.5
+                research_speed_factor = 0.1
             }
 
         }
@@ -1247,6 +1268,25 @@ ideas = {
             modifier = {
                 stability_factor = -0.1
                 compliance_gain = -0.05
+            }
+
+        }
+
+        ZLF_korelia_underground_resistance = {
+
+            picture = CHL_patagonian_giants
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                consumer_goods_factor = 0.15
+                stability_factor = -0.1
             }
 
         }

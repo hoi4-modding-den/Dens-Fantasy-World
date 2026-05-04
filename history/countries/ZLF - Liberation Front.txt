@@ -70,6 +70,13 @@ recruit_character = ZLF_jakub_bart_cisinski
 recruit_character = ZLF_uwe_koch
 recruit_character = ZLF_milo_wandsbeker
 
+recruit_character = ZLF_verda_majo
+recruit_character = ZLF_giovanni_campanella
+recruit_character = ZLF_wallelign_gizaw
+recruit_character = ZLF_adomas_dereska
+recruit_character = ZLF_john_smith
+recruit_character = ZLF_richard_anderson
+
 
 set_country_flag = DEN_no_generic_political_advisors
 set_country_flag = DEN_no_generic_spy_advisor

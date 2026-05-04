@@ -378,10 +378,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			if = {
-				limit = { is_ai = yes }
-				activate_mission = ZSP_monster_hordes_growing
-			}
+			# unlock raid decisions
 		}
 	}
 
@@ -410,6 +407,10 @@ focus_tree = {
 		
 		completion_reward = {
             add_ideas = ZSP_slavery
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			unlock_decision_tooltip = ZSP_sell_slaves
 		}
 	}
 
@@ -494,6 +495,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			# unlock industrialisation decisions
 		}
 	}
 
@@ -616,6 +621,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			unlock_decision_tooltip = ZSP_smuggle_guns
 		}
 	}
 
@@ -661,7 +670,7 @@ focus_tree = {
 			custom_effect_tooltip = ZSP_establish_the_national_guard_tt
 			hidden_effect = {
 				division_template = {
-					name = "Reichsarmeedivision"
+					name = "Realm Army Division"
 					division_names_group = ZSP_INF_02
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -677,12 +686,16 @@ focus_tree = {
 				}
 				capital_scope = {
 					create_unit = {
-						division = "name = \"National Guard Division\" division_template = \"Reichsarmeedivision\" start_experience_factor = 0.2"
+						division = "name = \"Reichsgardedivision\" division_template = \"Realm Army Division\" start_experience_factor = 0.2"
 						count = 4
 						owner = ROOT
 					}
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			unlock_decision_tooltip = ZSP_deploy_shadowbolt_division
 		}
 	}
 
@@ -783,10 +796,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			if = {
-				limit = { is_ai = yes }
-				activate_mission = ZSP_zombie_hordes_growing
-			}
+			unlock_decision_tooltip = ZSP_zombie_workers_to_soldiers
 		}
 	}
 
@@ -814,7 +824,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-			add_ideas = ZSP_thaumaturgic_workshop
+			add_ideas = ZSP_zombie_workshop
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -826,6 +836,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			unlock_decision_tooltip = ZSP_zombie_soldiers_to_workers
 		}
 	}
 
@@ -1048,7 +1062,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-            base = 10 
+            base = 50 
         }
 		
 		available = {

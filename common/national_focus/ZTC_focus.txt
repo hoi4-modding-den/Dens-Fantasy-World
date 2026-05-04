@@ -2746,16 +2746,16 @@ focus_tree={
 
 			every_other_country = {
 				limit = {
-					OR = {
-						has_government = neutrality
-						has_government = fascism
-					}
+					has_government = neutrality
 					capital_scope = { 
 						OR = {
 							is_on_continent = Kuvivalawiki
 							is_on_continent = Monerriame
 						}
 					}
+					NOT = { has_idea = closed_economy }
+
+					NOT = { tag = ZSP } # general exclusion
 				}
 				add_timed_idea = {
 					idea = ZTC_hortensian_banking_nationalised

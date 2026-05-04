@@ -337,6 +337,34 @@ ZLF_establish_sibling_republics_cat = {
                         }
                     }
 
+                    set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_celandra
+                        long_name = ZLF_democratic_party_celandra_long
+                    }
+                    set_popularities = {
+                        democratic = 60
+                        communism = 5
+                        neutrality = 20
+                        fascism = 15
+                    }
+                    random_other_country = {
+                        limit = { has_character = ZLF_verda_majo }
+                        ZLF_verda_majo = {
+                            set_nationality = PREV.PREV
+                            add_country_leader_role = {
+                                character = ZLF_verda_majo
+                                promote_leader = yes
+                                country_leader = {
+                                    ideology = socialism
+                                    expire = "1965.1.1.1"
+                                    traits = { ZLF_whispers_out_of_the_storm }
+                                }
+                            }
+                        }
+                    }
+
                     add_ideas = {
                         ZLF_sibling_republic_spirit
                         ZLF_celandra_monarchist_deconstruction
@@ -453,10 +481,40 @@ ZLF_establish_sibling_republics_cat = {
                         }
                     }
 
-                    add_ideas = {
-                        ZLF_sibling_republic_spirit
-                        ZLF_orchidee_new_national_identity
+                    set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_orchidee
+                        long_name = ZLF_democratic_party_orchidee_long
                     }
+                    set_popularities = {
+                        democratic = 72
+                        communism = 20
+                        neutrality = 8
+                        fascism = 0
+                    }
+                    random_other_country = {
+                        limit = { has_character = ZLF_giovanni_campanella }
+                        ZLF_giovanni_campanella = {
+                            set_nationality = PREV.PREV
+                            add_country_leader_role = {
+                                character = ZLF_giovanni_campanella
+                                promote_leader = yes
+                                country_leader = {
+                                    ideology = socialism
+                                    expire = "1965.1.1.1"
+                                    traits = { ZLF_esperantist_writer }
+                                }
+                            }
+                        }
+                    }
+
+                    add_ideas = ZLF_sibling_republic_spirit
+                    add_timed_idea = {
+                        idea = ZLF_orchidee_new_national_identity
+                        years = 3
+                    }
+                    add_ideas = ZLF_orchidee_growing_esperantist_movement
                 }
             }
         }
@@ -571,6 +629,34 @@ ZLF_establish_sibling_republics_cat = {
                     if = {
                         limit = { controls_state = 1258 }
                         set_capital = { state = 1258 }
+                    }
+
+                    set_politics = {
+                        ruling_party = communism
+                        elections_allowed = no
+                        name = ZLF_communism_party_elotropia
+                        long_name = ZLF_communism_party_elotropia_long
+                    }
+                    set_popularities = {
+                        communism = 69
+                        democratic = 21
+                        neutrality = 15
+                        fascism = 5
+                    }
+                    random_other_country = {
+                        limit = { has_character = ZLF_wallelign_gizaw }
+                        ZLF_wallelign_gizaw = {
+                            set_nationality = PREV.PREV
+                            add_country_leader_role = {
+                                character = ZLF_wallelign_gizaw
+                                promote_leader = yes
+                                country_leader = {
+                                    ideology = marxism
+                                    expire = "1965.1.1.1"
+                                    traits = { ZLF_pan_balekelemi_socialist }
+                                }
+                            }
+                        }
                     }
 
                     add_ideas = {
@@ -697,9 +783,40 @@ ZLF_establish_sibling_republics_cat = {
                         set_capital = { state = 122 }
                     }
 
+                    set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_korelia
+                        long_name = ZLF_democratic_party_korelia_long
+                    }
+                    set_popularities = {
+                        democratic = 69
+                        communism = 21
+                        neutrality = 15
+                        fascism = 5
+                    }
+                    random_other_country = {
+                        limit = { has_character = ZLF_adomas_dereska }
+                        ZLF_adomas_dereska = {
+                            set_nationality = PREV.PREV
+                            add_country_leader_role = {
+                                character = ZLF_adomas_dereska
+                                promote_leader = yes
+                                country_leader = {
+                                    ideology = moralist_rationalism
+                                    expire = "1965.1.1.1"
+                                    traits = { ZLF_humanist_consul }
+                                }
+                            }
+                        }
+                    }
+
                     add_ideas = {
                         ZLF_sibling_republic_spirit
-                        # Maybe ask ZKO Dev?
+                    }
+                    add_timed_idea = {
+                        idea = ZLF_korelia_underground_resistance
+                        years = 2
                     }
                 }
             }
@@ -749,6 +866,292 @@ ZLF_establish_sibling_republics_cat = {
                     limit = { FROM = { state = 122 } }
                     set_capital = { state = FROM }
                 }
+            }
+        }
+        
+    }
+
+    ZLF_establish_avalon_sibling_republic = {
+
+        icon = generic_speech
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_avalon_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_avalon_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 7
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = ZLF_establish_avalon_sibling_republic_tt
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = ZAV
+                    set_cosmetic_tag = ZLF_avalon_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_avalon_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_avalon_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_integrated_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_avalon
+                        long_name = ZLF_democratic_party_avalon_long
+                    }
+                    set_popularities = {
+                        democratic = 80
+                        communism = 0
+                        neutrality = 15
+                        fascism = 5
+                    }
+                    random_other_country = {
+                        limit = { has_character = ZLF_john_smith }
+                        ZLF_john_smith = {
+                            set_nationality = PREV.PREV
+                            add_country_leader_role = {
+                                character = ZLF_john_smith
+                                promote_leader = yes
+                                country_leader = {
+                                    ideology = environmentalism
+                                    expire = "1965.1.1.1"
+                                    traits = { ZLF_eccentric_adventurer }
+                                }
+                            }
+                        }
+                    }
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_avalon_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_avalon_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_avalon_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_avalon_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
+    ZLF_establish_wealas_sibling_republic = {
+
+        icon = generic_speech
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_avalon_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_wealas_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 7
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = ZLF_establish_wealas_sibling_republic_tt
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = ZKW
+                    set_cosmetic_tag = ZLF_wealas_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_wealas_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_wealas_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_integrated_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_wealas
+                        long_name = ZLF_democratic_party_wealas_long
+                    }
+                    set_popularities = {
+                        democratic = 80
+                        communism = 0
+                        neutrality = 15
+                        fascism = 5
+                    }
+                    random_other_country = {
+                        limit = { has_character = ZLF_richard_anderson }
+                        ZLF_richard_anderson = {
+                            set_nationality = PREV.PREV
+                            add_country_leader_role = {
+                                character = ZLF_richard_anderson
+                                promote_leader = yes
+                                country_leader = {
+                                    ideology = environmentalism
+                                    expire = "1965.1.1.1"
+                                    traits = { ZLF_environmentalist_freedom_fighter }
+                                }
+                            }
+                        }
+                    }
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_wealas_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_wealas_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_wealas_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_wealas_republic
+                }
+                transfer_state = FROM
             }
         }
         
@@ -810,7 +1213,7 @@ ZLF_world_state_integration_cat = {
 
         icon = hol_exchange_intelligence_data
 
-        cost = 75
+        cost = 0
 
         ai_will_do = {
             base = 10
@@ -824,6 +1227,10 @@ ZLF_world_state_integration_cat = {
             }
         }
 
+        visible = {
+
+        }
+
         targets_dynamic = yes
 
         target_trigger = {
@@ -833,22 +1240,8 @@ ZLF_world_state_integration_cat = {
             }
         }
 
-        cancel_trigger = {
-            FROM = {
-                OR = {
-                    has_capitulated = yes
-                    NOT = { is_in_faction_with = ROOT }
-                    is_subject = yes
-                }
-            }
-        }
-
-        days_remove = 50
-
-        remove_effect = {
-            FROM = {
-                country_event = generic.20
-            }
+        complete_effect = {
+            custom_effect_tooltip = ZLF_integrate_allied_nation_tt
         }
 
     }
@@ -905,6 +1298,8 @@ ZLF_invite_more_allies_cat = {
         }
 
         days_remove = 20
+
+        days_re_enable = 50
 
         remove_effect = {
             FROM = {

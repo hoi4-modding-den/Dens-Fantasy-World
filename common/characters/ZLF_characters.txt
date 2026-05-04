@@ -990,4 +990,58 @@ characters = {
         }
 	}
 
+    ZLF_verda_majo = {
+		name = ZLF_verda_majo_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_verda_majo
+			}
+		}
+	}
+
+    ZLF_giovanni_campanella = {
+		name = ZLF_giovanni_campanella_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_giovanni_campanella
+			}
+		}
+	}
+
+    ZLF_wallelign_gizaw = {
+		name = ZLF_wallelign_gizaw_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_wallelign_gizaw
+			}
+		}
+	}
+
+    ZLF_adomas_dereska = {
+		name = ZLF_adomas_dereska_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_adomas_dereska
+			}
+		}
+	}
+
+    ZLF_john_smith = {
+		name = ZLF_john_smith_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_john_smith
+			}
+		}
+	}
+
+    ZLF_richard_anderson = {
+		name = ZLF_richard_anderson_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_richard_anderson
+			}
+		}
+	}
+
 }

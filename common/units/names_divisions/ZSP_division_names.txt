@@ -1,5 +1,5 @@
 ZSP_INF_01 = {
-	name = "Knightly Order"
+	name = "Knightly Orders"
 
 	for_countries = { ZSP }
 
@@ -17,26 +17,26 @@ ZSP_INF_01 = {
 	}
 }
 ZSP_INF_02 = {
-	name = "Realm Army Division"
+	name = "Realm Army Divisions"
 
 	for_countries = { ZSP }
 
 	division_types = { "infantry" }
 
 
-	fallback_name = "%d. Reichsarmeedivision"
+	fallback_name = "%d. Reichsarmee-Division"
 
 	ordered = {
-		1 = { "%d. Reichsarmeedivision" }
-		2 = { "%d. Reichsarmeedivision" }
-		3 = { "%d. Reichsarmeedivision" }
-		4 = { "%d. Reichsarmeedivision" }
-		5 = { "%d. Reichsarmeedivision" }
-		6 = { "%d. Reichsarmeedivision" }
-		7 = { "%d. Reichsarmeedivision" }
-		8 = { "%d. Reichsarmeedivision" }
-		9 = { "%d. Reichsarmeedivision" }
-		10 = { "%d. Reichsarmeedivision" }
+		1 = { "%d. Reichsarmee-Division" }
+		2 = { "%d. Reichsarmee-Division" }
+		3 = { "%d. Reichsarmee-Division" }
+		4 = { "%d. Reichsarmee-Division" }
+		5 = { "%d. Reichsarmee-Division" }
+		6 = { "%d. Reichsarmee-Division" }
+		7 = { "%d. Reichsarmee-Division" }
+		8 = { "%d. Reichsarmee-Division" }
+		9 = { "%d. Reichsarmee-Division" }
+		10 = { "%d. Reichsarmee-Division" }
 	}
 }
 ZSP_INF_03 = {
@@ -51,5 +51,28 @@ ZSP_INF_03 = {
 
 	ordered = {
 		1 = { "Horde" }
+	}
+}
+ZSP_INF_04 = {
+	name = "Schadowbolt Divisions"
+
+	for_countries = { ZSP }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%d. Schattenschlag-Division"
+
+	ordered = {
+		1 = { "%d. Schattenschlag-Division" }
+		2 = { "%d. Schattenschlag-Division" }
+		3 = { "%d. Schattenschlag-Division" }
+		4 = { "%d. Schattenschlag-Division" }
+		5 = { "%d. Schattenschlag-Division" }
+		6 = { "%d. Schattenschlag-Division" }
+		7 = { "%d. Schattenschlag-Division" }
+		8 = { "%d. Schattenschlag-Division" }
+		9 = { "%d. Schattenschlag-Division" }
+		10 = { "%d. Schattenschlag-Division" }
 	}
 }

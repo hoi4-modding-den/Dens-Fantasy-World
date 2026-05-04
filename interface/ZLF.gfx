@@ -295,6 +295,36 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_milo_wandsbeker_small.png"
     }
 
+    spriteType = {
+        name = "GFX_portrait_ZLF_verda_majo"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_verda_majo.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_giovanni_campanella"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_giovanni_campanella.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_wallelign_gizaw"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_wallelign_gizaw.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_adomas_dereska"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_adomas_dereska.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_john_smith"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_john_smith.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_richard_anderson"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_richard_anderson.png"
+    }
+
 
     spriteType = {
 		name = "GFX_trait_ZLF_raserei"

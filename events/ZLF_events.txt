@@ -626,7 +626,7 @@ country_event = { # Elbian Insurrection
 							character = ZLF_jakub_bart_cisinski
 							promote_leader = yes
 							country_leader = {
-								ideology = conservatism
+								ideology = environmentalism
 								expire = "1965.1.1.1"
 								traits = { ZLF_knight_of_the_moonlight_order }
 							}

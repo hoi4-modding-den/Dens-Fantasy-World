@@ -30,6 +30,23 @@ ZLF_korelia_sb_state = {
 		}
 	}
 }
+ZLF_avalon_sb_state = {
+	input = game:all_states
+	operators = {
+		limit = {
+			ZLF_avalon_sb_state = yes
+		}
+	}
+}
+ZLF_wealas_sb_state = {
+	input = game:all_states
+	operators = {
+		limit = {
+			ZLF_wealas_sb_state = yes
+		}
+	}
+}
+
 ZLF_despotist_controlled_states_my_continent = {
 	input = game:all_states
 	name = ZLF_COLLECTION_STATES_MY_CONTINENT_CONTROLLED_DESPOTIST

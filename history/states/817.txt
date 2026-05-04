@@ -34,7 +34,7 @@ state={
 			11065 10
 		}
 		victory_points = {
-			11070 10
+			11070 12
 		}
 
 		ZKN = {

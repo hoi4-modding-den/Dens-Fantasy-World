@@ -26,6 +26,12 @@ ideologies = {
 			neorevisionism = {
 
 			}
+			environmentalism = {
+				
+			}
+			moralist_rationalism = {
+				
+			}
 			clockism = {
 				can_be_randomly_selected = no
 				color = { 255 200 0 }

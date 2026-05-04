@@ -209,7 +209,7 @@ ideas = {
 
         }
 
-        ZSP_thaumaturgic_workshop = {
+        ZSP_zombie_workshop = {
 
             picture = HUN_secret_rearmament
 
@@ -221,9 +221,11 @@ ideas = {
                 always = yes 
             }
 
-            modifier = {
-                industrial_capacity_factory = -0.05
-                ZSP_monthly_guns = 250
+            equipment_bonus = {
+                infantry_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.25
+                }
             }
 
         }
@@ -549,6 +551,39 @@ ideas = {
                 army_defence_factor = 0.25
             }
 
+        }
+
+    }
+
+    industrial_concern = {
+		
+        ZSP_thaumaturgic_workshop = {
+
+            picture = generic_infantry_equipment_manufacturer_3
+            
+            allowed = {
+                original_tag = ZSP
+            }
+
+            available = {
+                controls_state = 873
+            }
+
+            cost = 50
+
+            modifier = {
+                ZSP_monthly_guns = 1000
+            }
+
+            research_bonus = {
+                industry = -0.05
+            }
+            
+            traits = { ZSP_weapons_manufacturer }
+            
+            ai_will_do = {
+                factor = 100
+            }
         }
 
     }

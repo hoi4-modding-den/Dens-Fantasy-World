@@ -184,68 +184,211 @@ ZSP_magic_cat = {
 }
 
 economy_decisions = {
-    
-    ZSP_monster_hordes_growing = {
 
-        icon = generic_scorched_earth
+    ZSP_sell_slaves = {
 
-        activation = {
-            always = no
+        icon = generic_independence
+
+        allowed = {
+            original_tag = ZSP
+        }
+
+        cost = 20
+
+        visible = {
+            has_completed_focus = ZSP_slave_economy
         }
 
         available = {
-            has_capitulated = yes
+            
         }
 
-        is_good = yes
+        days_remove = 50
 
-        days_mission_timeout = 30
+        fire_only_once = no
 
-        complete_effect = {
+        remove_effect = {
             random_controlled_state = {
-                create_unit = {
-                    division = "name = \"Monster Horde\" division_template = \"Monster Horde\" start_experience_factor = 0.1 start_equipment_factor = 0.1 start_manpower_factor = 0.1"
-                    count = 1
-                    owner = ROOT
-                }
+                add_manpower = -5000
+                add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
             }
-
-            custom_effect_tooltip = generic_skip_one_line_tt
-            
-            activate_mission = ZSP_monster_hordes_growing
         }
     }
 
-    ZSP_zombie_hordes_growing = {
+    ZSP_smuggle_guns = {
 
-        icon = eng_blackshirt_march
+        icon = generic_industry
 
-        activation = {
-            always = no
+        allowed = {
+            original_tag = ZSP
+        }
+
+        cost = 20
+
+        visible = {
+            has_completed_focus = ZSP_embrace_capitalism
         }
 
         available = {
-            has_capitulated = yes
+            
         }
 
-        is_good = yes
+        days_remove = 100
 
-        days_mission_timeout = 15
-        
+        fire_only_once = no
+
+        modifier = {
+            consumer_goods_factor = 0.05
+            ZSP_monthly_guns = 1000
+        }
+    }
+    
+    ZSP_deploy_shadowbolt_division = {
+
+        icon = SWE_set_army_budget
+
+        allowed = {
+            original_tag = ZSP
+        }
+
+        cost = 20
+
+        visible = {
+            has_completed_focus = ZSP_establish_the_national_guard
+        }
+
+        available = {
+            has_tech = tech_recon
+        }
+
         complete_effect = {
+            custom_effect_tooltip = ZSP_deploy_shadowbolt_division_tt
+            hidden_effect = {
+				division_template = {
+					name = "Schadowbolt Division"
+					division_names_group = ZSP_INF_04
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+                        infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Schattenschlag-Division\" division_template = \"Schadowbolt Division\" start_experience_factor = 0.5"
+						count = 2
+						owner = ROOT
+					}
+				}
+			}
+        }
+
+        fire_only_once = yes
+
+        days_remove = -1
+
+        modifier = {
+            army_speed_factor = 0.05
+            recon_factor = 0.2
+        }
+    }
+
+    ZSP_zombie_workers_to_soldiers = {
+
+        icon = eng_blackshirt_march
+
+        allowed = {
+            original_tag = ZSP
+        }
+
+        cost = 20
+
+        visible = {
+            has_completed_focus = ZSP_transform_the_people
+        }
+
+        available = {
+            any_controlled_state = {
+                arms_factory > 0
+            }
+        }
+
+        days_remove = 50
+
+        fire_only_once = no
+
+        remove_effect = {
             random_controlled_state = {
-                create_unit = {
-                    division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.1 start_equipment_factor = 0.1 start_manpower_factor = 0.1"
-                    count = 1
-                    owner = ROOT
+                limit = { arms_factory > 0 }
+                add_building_construction = {
+					type = arms_factory
+					level = -1
+					instant_build = yes
+				}
+            }
+            add_manpower = 5000
+        }
+    }
+
+    ZSP_zombie_soldiers_to_workers = {
+
+        icon = ger_military_buildup
+
+        allowed = {
+            original_tag = ZSP
+        }
+
+        cost = 20
+
+        visible = {
+            has_completed_focus = ZSP_magical_industry
+        }
+
+        available = {
+            has_manpower > 4999
+            any_controlled_state = {
+                free_building_slots = {
+                    building = arms_factory
+                    size > 0
+                    include_locked = no
                 }
             }
-
-            custom_effect_tooltip = generic_skip_one_line_tt
-            
-            activate_mission = ZSP_zombie_hordes_growing
         }
 
+        days_remove = 50
+
+        fire_only_once = no
+
+        remove_effect = {
+            add_manpower = -5000
+            random_controlled_state = {
+                limit = { 
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 0
+                        include_locked = no
+                    }
+                }
+                add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+            }
+        }
     }
 
 }

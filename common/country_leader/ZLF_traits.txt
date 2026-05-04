@@ -114,10 +114,77 @@ leader_traits = {
     ZLF_former_foreign_minister = {
         
         opinion_gain_monthly_factor = 0.15
-        democratic_drift = 0.01
+        stability_factor = -0.15
         research_speed_factor = 0.05
         autonomy_gain_global_factor = 0.05
         lend_lease_tension_with_overlord = -1
+
+        random = no
+    }
+
+    ZLF_whispers_out_of_the_storm = {
+        
+        army_core_defence_factor = 0.15
+        army_core_attack_factor = 0.15
+        democratic_drift = 0.05
+
+        random = no
+    }
+
+    ZLF_esperantist_writer = {
+        
+        compliance_growth = 0.25
+        democratic_drift = 0.05
+        stability_factor = 0.1
+        war_support_factor = -0.1
+
+        random = no
+    }
+
+    ZLF_pan_balekelemi_socialist = {
+        
+        communism_drift = 0.05
+        autonomy_gain_global_factor = 0.15
+        local_resources_factor = 0.15
+
+        random = no
+    }
+
+    ZLF_humanist_consul = {
+        
+        democratic_drift = 0.05
+        production_factory_max_efficiency_factor = -0.05
+        experience_loss_factor = -0.15
+
+        random = no
+    }
+
+    ZLF_eccentric_adventurer = {
+        
+        democratic_drift = 0.05
+        stability_factor = -0.1
+        supply_combat_penalties_on_core_factor = -0.15
+        research_speed_factor = 0.02
+        mountaineers_special_forces_contribution_factor = -0.1
+
+        random = no
+    }
+
+    ZLF_environmentalist_freedom_fighter = {
+        
+        democratic_drift = 0.05
+        recon_factor = 0.15
+        max_dig_in = 2
+        org_loss_when_moving = -0.1
+        local_building_slots_factor = -0.1
+        local_resources_factor = -0.15
+
+        random = no
+    }
+
+    ZLF_generic_underminer_trait = {
+        
+        autonomy_gain_global_factor = 0.2
 
         random = no
     }
