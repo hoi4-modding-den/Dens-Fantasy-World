@@ -712,6 +712,17 @@ country_event = { # Elbian Insurrection
 					target = ROOT
 					type = independence_wargoal
 				}
+				every_other_country = {
+					limit = { has_war_with = ROOT }
+					ROOT = {
+						add_to_war = {
+							targeted_alliance = PREV
+							enemy = PREV.PREV
+							hostility_reason = ZLF_events.2.t
+							single_target_only = yes
+						}
+					}
+				}
 			}
 		}
 
