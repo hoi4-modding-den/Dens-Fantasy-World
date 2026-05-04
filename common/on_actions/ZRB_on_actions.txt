@@ -16,8 +16,11 @@ on_actions = {
 				ZRU = { transfer_state = 843 }
 				ZRB = { puppet = ZRU }
 				ZRB = { puppet = ZRA }
+				ZIE = { country_event = { id = ZIE_event.2 days = 1 } }
+				# HRAVA LOOSES
+				news_event = { id = ZIE_news.2 }
+				# TURUN WINS NEWS EVENT
 				# ZRB = { country_event = { id = ### days = 2} }
-				# news_event = { id = ### days = 1} 
 			}
 
 			if = {
@@ -30,8 +33,17 @@ on_actions = {
 				ZIE = { transfer_state = 816 }
 				ZIE = { transfer_state = 1244 }
 				ZIE = { transfer_state = 646 }
-				ZRB = { country_event = { id = ZRB.1 days = 2 } }
-			}
+				ZRB = { country_event = { id = ZRB.2 days = 3 } }
+				# TURUN LOOSE EVENT
+				ZRB = { country_event = { id = ZRB.3 days = 8 } }
+				# STRIDES TOWARD DINANTUL INDEPENDENCE
+				ZRB = { country_event = { id = ZRB.1 days = 14 } }
+				# DINANTUL BREAKS FREE
+				ZIE = { country_event = { id = ZIE_event.1 days = 1 } }
+				# HRAVA WINS
+				news_event = { id = ZIE_news.1 }
+				# HRAVA VICTORY EVENT
+				}
 
 			if = {
 				limit = {
@@ -62,7 +74,11 @@ on_actions = {
 				ZRU = { transfer_state = 843 }
 				ZRB = { puppet = ZRU }
 				ZRB = { puppet = ZRA }
-				# ZRB = { country_event 
+				ZIE = { country_event = { id = ZIE_event.2 days = 1 } }
+				# HRAVA LOOSES
+				news_event = { id = ZIE_news.2 }
+				# TURUN WINS NEWS EVENT
+				# ZRB = { country_event = { id = ### days = 2} }
 			}
 
 

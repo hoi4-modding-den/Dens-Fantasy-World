@@ -11,6 +11,7 @@ an_army_with_a_state = {
 	industrial_capacity_factory = ZIE_industrial_capacity_factory
 	production_speed_buildings_factor = ZIE_production_speed_buildings_factor
 	ai_focus_aggressive_factor = ZIE_ai_focus_aggressive_factor
+	conscription_factor = ZIE_conscription_factor1
 }
 
 the_national_rejuvination = {

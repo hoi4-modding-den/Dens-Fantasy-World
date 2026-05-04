@@ -1,44 +1,39 @@
 ideas = {
 	country = {
-		the_national_rejuvination = {
-			picture = FRA_national_mobilization_focus
+		the_final_test = {
+			picture = CHI_protracted_warfare
 
 			allowed = {
 				always = no
 			}
 
 			modifier = {
-				monthly_population = 0.2
-				research_speed_factor = -0.1
-				offensive_war_stability_factor = 0.3
-				war_support_factor = 0.05
+				army_defence_factor = 0.025
+				army_org_factor = 0.05
+				army_attack_factor = 0.05
 			}
 		}
-		indefinate_state_of_emergency = {
-			picture = PER_stand_with_giants_modifier
-
-			allowed =  {
-				always = no
-			}
-
-			modifier = {
-				stability_factor = -0.3
-				political_power_cost = 0.2
-				drift_defence_factor = -0.15
-				war_support_factor = 0.35
-			}
-		}
-		failed_land_reform = {
-			picture = generic_agrarian_reform
+		hrava_partisan_network = {
+			picture = ETH_peacekeeping_forces
 
 			allowed = {
 				always = no
 			}
 
 			modifier = {
-				production_speed_buildings_factor = -0.15
-				production_speed_industrial_complex_factor = -0.3
-				production_speed_arms_factory_factor = -0.15
+				attrition_for_controller = 0.1
+				army_speed_factor_for_controller = -0.05
+			}
+		}
+		funding_separtism = {
+			picture = EST_democratic_opposition
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.1
 			}
 		}
 	}

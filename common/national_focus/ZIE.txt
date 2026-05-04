@@ -419,6 +419,202 @@ focus_tree = {
   			   target = ZRB
  			   type = annex_everything
 			}
+			news_event = { id = ZIE_news.1 }
+		} 
+	}
+
+	focus = {
+		id = the_final_test
+		icon = GFX_focus_AFG_against_kabul
+		x = 20
+		y = 6
+		cost = 5
+		available = {
+			has_war_with = ZRB
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = the_final_test
+				days = 100
+			}
+		}
+	}
+
+	focus = {
+		id = fueling_the_war_machine
+		icon = GFX_focus_CHI_meritocratic_principles
+		prerequisite = { focus = the_final_test }
+		x = 21
+		y = 7
+		cost = 5
+		available = {
+			has_war_with = ZRB
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_to_variable = {
+				ZIE_conscription_factor1 = 0.1
+				tooltip = conscription_factor_tt
+			}
+		}
+	}
+
+	focus = {
+		id = spearhead_against_tyranny
+		icon = GFX_SOV_the_onslaught_on_colonialism_ccp_2d_sov_compatibility
+		prerequisite = { focus = the_final_test }
+		x = 19
+		y = 7
+		cost = 5
+		available = {
+			has_war_with = ZRB
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			816 = {
+				add_timed_idea = {
+					idea = the_final_test
+					days = 35
+				}
+			}
+			646 = {
+				add_timed_idea = {
+					idea = the_final_test
+					days = 35
+				}
+			}
+			1244 = {
+				add_timed_idea = {
+					idea = the_final_test
+					days = 35
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = expand_the_partisan_network
+		icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
+		prerequisite = { focus = spearhead_against_tyranny }
+		prerequisite = { focus = fueling_the_war_machine }
+		x = 20
+		y = 8
+		cost = 5
+		available = {
+			has_war_with = ZRB
+		}
+		completion_reward = {
+			816 = {
+				add_timed_idea = {
+					idea = hrava_partisan_network
+					days = 35
+				}
+			}
+			646 = {
+				add_timed_idea = {
+					idea = hrava_partisan_network
+					days = 35
+				}
+			}
+			1244 = {
+				add_timed_idea = {
+					idea = hrava_partisan_network
+					days = 35
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = hravan_industrial_complex
+		icon = GFX_focus_CHI_promote_national_currency
+		prerequisite = { focus = expand_the_partisan_network }
+		x = 20
+		y = 9
+		cost = 5
+		available = {
+			has_war_with = ZRB
+		}
+		completion_reward = {
+			add_to_variable = {
+				ZIE_production_speed_buildings_factor = 0.05
+				tooltip = production_speed_buildings_factor_tt
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_stability = -0.05
+		}
+	}
+
+}
+
+focus_tree = {
+	id = victory_in_urhu
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZIE
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 3000 y = 300 }
+
+	focus = {
+		id = urhu_victory
+		icon = GFX_focus_AFG_mountain_training
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 20
+		y = 0
+		cost = 1
+		completion_reward = {
+		} 
+	}
+}
+
+focus_tree = {
+	id = defeat_in_urhu
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZIE
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 3000 y = 300 }
+
+	focus = {
+		id = urhu_defeat
+		icon = GFX_focus_AFG_mountain_training
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 20
+		y = 0
+		cost = 1
+		completion_reward = {
 		} 
 	}
 }

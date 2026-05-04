@@ -1,4 +1,6 @@
 add_namespace = ZIE_lore
+add_namespace = ZIE_event
+add_namespace = ZIE_news
 
 country_event = {
 	id = ZIE_lore.1
@@ -9,4 +11,93 @@ country_event = {
 	option = {
 		name = ZRB_lore.1.a
 	}
+}
+
+news_event = {
+    id = ZIE_news.1
+    title = {
+        text = ZIE_news.1.t
+    }
+    desc = {
+        text = ZIE_news.1.desc
+    }
+    
+    picture = GFX_news_event_COG_force_publique_marching_to_war
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = ZIE_news.1.a
+    }
+    
+    option = {
+        name = ZIE_news.1.b
+        original_recipient_only = yes
+    }
+}
+
+country_event = {
+	id = ZIE_event.1
+	title = ZIE_event.1.t
+	desc = ZIE_event.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+    picture = GFX_report_event_AUS_vaterlandische_front_rally
+	option = {
+		name = ZIE_event.1.a
+		ai_chance = {
+			base = 20
+		}
+        load_focus_tree = victory_in_urhu
+	}
+}
+country_event = {
+	id = ZIE_event.2
+	title = ZIE_event.2.t
+	desc = ZIE_event.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ZIE_event.2.a
+		ai_chance = {
+			base = 20
+		}
+        load_focus_tree = defeat_in_urhu
+	}
+}
+
+news_event = {
+    id = ZIE_news.2
+    title = {
+        text = ZIE_news.2.t
+    }
+    desc = {
+        text = ZIE_news.2.desc
+    }
+    
+    picture = GFX_news_event_polish_army
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = ZIE_news.2.a
+    }
+}
+
+news_event = {
+    id = ZIE_news.3
+    title = {
+        text = ZIE_news.3.t
+    }
+    desc = {
+        text = ZIE_news.3.desc
+    }
+    
+    picture = GFX_news_event_COG_force_publique_marching_to_war
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = ZIE_news.3.a
+    }
 }
