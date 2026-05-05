@@ -1,0 +1,16 @@
+characters={
+
+	Z50_otto_meyer = { 
+		name = Z50_otto_meyer
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z50_otto_meyer
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

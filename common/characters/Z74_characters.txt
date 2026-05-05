@@ -1,0 +1,16 @@
+characters={
+
+	Z74_john_clark = { 
+		name = Z74_john_clark
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z74_john_clark
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

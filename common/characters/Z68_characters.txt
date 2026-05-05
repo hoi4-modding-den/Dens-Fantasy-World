@@ -1,0 +1,16 @@
+characters={
+
+	Z68_lars_meyer = { 
+		name = Z68_lars_meyer
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z68_lars_meyer
+			}
+		}
+		country_leader = {
+			ideology = gen_nazism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

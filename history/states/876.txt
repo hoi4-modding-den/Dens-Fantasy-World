@@ -17,6 +17,8 @@ state={
 	}
 
 	history={
+		owner = Z70
+		add_core_of = Z70
 		
 		
 		buildings = {

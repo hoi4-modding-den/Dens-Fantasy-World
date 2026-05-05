@@ -1,0 +1,16 @@
+characters={
+
+	Z58_aidan_doyle = { 
+		name = Z58_aidan_doyle
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z58_aidan_doyle
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

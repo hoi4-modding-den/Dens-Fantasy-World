@@ -1,0 +1,16 @@
+characters={
+
+	Z66_victor_brown = { 
+		name = Z66_victor_brown
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z66_victor_brown
+			}
+		}
+		country_leader = {
+			ideology = gen_nazism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

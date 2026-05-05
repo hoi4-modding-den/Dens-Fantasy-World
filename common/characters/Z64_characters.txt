@@ -1,0 +1,16 @@
+characters={
+
+	Z64_antonio_greco = { 
+		name = Z64_antonio_greco
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z64_antonio_greco
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

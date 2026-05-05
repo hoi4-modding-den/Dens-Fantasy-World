@@ -1,0 +1,16 @@
+characters={
+
+	Z77_heinrich_weber = { 
+		name = Z77_heinrich_weber
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z77_heinrich_weber
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

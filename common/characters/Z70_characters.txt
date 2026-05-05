@@ -1,0 +1,16 @@
+characters={
+
+	Z70_victor_clark = { 
+		name = Z70_victor_clark
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z70_victor_clark
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

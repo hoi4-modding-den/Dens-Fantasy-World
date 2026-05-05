@@ -1,0 +1,16 @@
+characters={
+
+	Z62_victor_brown = { 
+		name = Z62_victor_brown
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z62_victor_brown
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

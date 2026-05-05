@@ -1,0 +1,16 @@
+characters={
+
+	Z56_victor_clark = { 
+		name = Z56_victor_clark
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z56_victor_clark
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

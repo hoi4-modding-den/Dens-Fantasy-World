@@ -1,0 +1,54 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { has_country_flag = ZNN_placeholder exists = yes }
+				every_owned_state = {
+					random_list = {
+						5 = { set_building_level = { type = infrastructure level = 5 instant_build = yes } add_extra_state_shared_building_slots = 2 }
+						10 = { set_building_level = { type = infrastructure level = 4 instant_build = yes } add_extra_state_shared_building_slots = 1 }
+						10 = { set_building_level = { type = infrastructure level = 3 instant_build = yes } }
+					}
+					random_list = {
+						10 = { set_building_level = { type = industrial_complex level = 2 instant_build = yes } add_extra_state_shared_building_slots = 2 }
+						10 = { set_building_level = { type = industrial_complex level = 1 instant_build = yes } add_extra_state_shared_building_slots = 1 }
+						10 = {}
+					}
+					random_list = {
+						10 = { set_building_level = { type = arms_factory level = 2 instant_build = yes } add_extra_state_shared_building_slots = 2 }
+						10 = { set_building_level = { type = arms_factory level = 1 instant_build = yes } add_extra_state_shared_building_slots = 1 }
+						10 = {}
+					}
+					random_list = {
+						10 = { add_resource = { type = oil amount = 5 } }
+						10 = { add_resource = { type = steel amount = 10 } }
+						10 = { add_resource = { type = aluminium amount = 8 } }
+						10 = { add_resource = { type = rubber amount = 5 } }
+						10 = { add_resource = { type = tungsten amount = 7 } }
+						10 = { add_resource = { type = chromium amount = 6 } }
+						10 = { add_resource = { type = coal amount = 5 } }
+						50 = {}
+					}
+				}
+				
+				set_temp_variable = { num_generate_divisions = num_core_states }
+				add_to_temp_variable = { num_generate_divisions = num_of_available_military_factories }
+				if = { limit = { has_government = fascism } multiply_temp_variable = { num_generate_divisions = 2 } }
+				if = { limit = { has_government = communism } multiply_temp_variable = { num_generate_divisions = 1.5 } }
+				if = { limit = { has_government = democratic } multiply_temp_variable = { num_generate_divisions = 0.8 } }
+				round_temp_variable = num_generate_divisions
+				
+				capital_scope = {
+					for_loop_effect = {
+						end = num_generate_divisions
+					
+						create_unit = {
+							division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.3"
+							owner = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+}

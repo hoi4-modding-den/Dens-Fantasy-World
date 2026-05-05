@@ -1,0 +1,16 @@
+characters={
+
+	Z75_adrian_taylor = { 
+		name = Z75_adrian_taylor
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z75_adrian_taylor
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

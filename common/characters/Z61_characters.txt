@@ -1,0 +1,16 @@
+characters={
+
+	Z61_adrian_brown = { 
+		name = Z61_adrian_brown
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z61_adrian_brown
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

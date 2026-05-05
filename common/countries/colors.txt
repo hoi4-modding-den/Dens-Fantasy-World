@@ -1357,3 +1357,123 @@ ZCT = {
 	color = rgb { 165 212 194 }
 	color_ui = rgb { 165 212 194 }
 }
+Z50 = {
+	color = rgb { 147 93 135 }
+	color_ui = rgb { 147 93 35 }
+}
+Z51 = {
+	color = rgb { 110 66 141 }
+	color_ui = rgb { 110 66 41 }
+}
+Z52 = {
+	color = rgb { 92 62 144 }
+	color_ui = rgb { 92 62 44 }
+}
+Z53 = {
+	color = rgb { 94 106 166 }
+	color_ui = rgb { 94 106 66 }
+}
+Z54 = {
+	color = rgb { 102 103 155 }
+	color_ui = rgb { 102 103 55 }
+}
+Z55 = {
+	color = rgb { 156 70 168 }
+	color_ui = rgb { 156 70 68 }
+}
+Z56 = {
+	color = rgb { 112 64 138 }
+	color_ui = rgb { 112 64 38 }
+}
+Z57 = {
+	color = rgb { 93 102 156 }
+	color_ui = rgb { 93 102 56 }
+}
+Z58 = {
+	color = rgb { 149 95 132 }
+	color_ui = rgb { 149 95 32 }
+}
+Z59 = {
+	color = rgb { 131 75 160 }
+	color_ui = rgb { 131 75 60 }
+}
+Z60 = {
+	color = rgb { 235 38 35 }
+	color_ui = rgb { 95 88 35 }
+}
+Z61 = {
+	color = rgb { 199 44 17 }
+	color_ui = rgb { 159 94 57 }
+}
+Z62 = {
+	color = rgb { 165 10 41 }
+	color_ui = rgb { 145 110 41 }
+}
+Z63 = {
+	color = rgb { 188 27 47 }
+	color_ui = rgb { 118 107 47 }
+}
+Z64 = {
+	color = rgb { 216 65 30 }
+	color_ui = rgb { 156 65 30 }
+}
+Z65 = {
+	color = rgb { 44 126 34 }
+	color_ui = rgb { 134 86 44 }
+}
+Z66 = {
+	color = rgb { 139 196 56 }
+	color_ui = rgb { 139 96 56 }
+}
+Z67 = {
+	color = rgb { 103 169 33 }
+	color_ui = rgb { 103 69 33 }
+}
+Z68 = {
+	color = rgb { 100 201 61 }
+	color_ui = rgb { 100 101 61 }
+}
+Z69 = {
+	color = rgb { 103 164 67 }
+	color_ui = rgb { 103 64 67 }
+}
+Z70 = {
+	color = rgb { 117 65 32 }
+	color_ui = rgb { 117 65 32 }
+}
+Z71 = {
+	color = rgb { 122 71 61 }
+	color_ui = rgb { 122 71 61 }
+}
+Z72 = {
+	color = rgb { 98 82 45 }
+	color_ui = rgb { 98 82 45 }
+}
+Z73 = {
+	color = rgb { 140 138 143 }
+	color_ui = rgb { 90 88 43 }
+}
+Z74 = {
+	color = rgb { 157 67 70 }
+	color_ui = rgb { 157 67 70 }
+}
+Z75 = {
+	color = rgb { 150 81 66 }
+	color_ui = rgb { 150 81 66 }
+}
+Z76 = {
+	color = rgb { 112 95 34 }
+	color_ui = rgb { 112 95 34 }
+}
+Z77 = {
+	color = rgb { 111 95 47 }
+	color_ui = rgb { 111 95 47 }
+}
+Z78 = {
+	color = rgb { 154 82 33 }
+	color_ui = rgb { 154 82 33 }
+}
+Z79 = {
+	color = rgb { 126 67 35 }
+	color_ui = rgb { 126 67 35 }
+}

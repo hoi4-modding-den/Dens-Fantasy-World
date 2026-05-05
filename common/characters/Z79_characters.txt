@@ -1,0 +1,16 @@
+characters={
+
+	Z79_victor_taylor = { 
+		name = Z79_victor_taylor
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z79_victor_taylor
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

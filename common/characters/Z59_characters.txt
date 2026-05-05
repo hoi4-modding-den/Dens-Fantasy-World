@@ -1,0 +1,16 @@
+characters={
+
+	Z59_john_taylor = { 
+		name = Z59_john_taylor
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z59_john_taylor
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

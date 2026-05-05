@@ -1,0 +1,16 @@
+characters={
+
+	Z57_victor_taylor = { 
+		name = Z57_victor_taylor
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z57_victor_taylor
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

@@ -17,7 +17,8 @@ state={
 	}
 
 	history={
-		
+		owner = Z73
+		add_core_of = Z73
 		
 		buildings = {
 			infrastructure = 4

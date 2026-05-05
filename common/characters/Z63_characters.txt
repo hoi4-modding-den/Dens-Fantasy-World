@@ -1,0 +1,16 @@
+characters={
+
+	Z63_heinrich_klein = { 
+		name = Z63_heinrich_klein
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z63_heinrich_klein
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

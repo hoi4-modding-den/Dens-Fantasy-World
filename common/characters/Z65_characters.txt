@@ -1,0 +1,16 @@
+characters={
+
+	Z65_heinrich_meyer = { 
+		name = Z65_heinrich_meyer
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z65_heinrich_meyer
+			}
+		}
+		country_leader = {
+			ideology = gen_nazism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

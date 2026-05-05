@@ -1,0 +1,16 @@
+characters={
+
+	Z51_mikhail_smirnov = { 
+		name = Z51_mikhail_smirnov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z51_mikhail_smirnov
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

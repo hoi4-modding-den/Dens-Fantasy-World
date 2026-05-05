@@ -1,0 +1,16 @@
+characters={
+
+	Z52_julius_bianchi = { 
+		name = Z52_julius_bianchi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z52_julius_bianchi
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

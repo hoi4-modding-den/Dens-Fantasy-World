@@ -1,0 +1,16 @@
+characters={
+
+	Z53_lars_schmidt = { 
+		name = Z53_lars_schmidt
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z53_lars_schmidt
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,16 @@
+characters={
+
+	Z60_ivan_sokolov = { 
+		name = Z60_ivan_sokolov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z60_ivan_sokolov
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

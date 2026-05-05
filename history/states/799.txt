@@ -5,7 +5,7 @@ state={
 	manpower = 2485386
 	
 	state_category = rural
-	#impassable = yes
+	impassable = yes
 	resources={
 		aluminium=0
 		chromium=0
@@ -17,7 +17,8 @@ state={
 	}
 
 	history={
-		
+		owner = Z72
+		add_core_of = Z72
 		
 		buildings = {
 			infrastructure = 2

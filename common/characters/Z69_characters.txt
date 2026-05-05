@@ -1,0 +1,16 @@
+characters={
+
+	Z69_victor_bianchi = { 
+		name = Z69_victor_bianchi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z69_victor_bianchi
+			}
+		}
+		country_leader = {
+			ideology = gen_nazism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}
