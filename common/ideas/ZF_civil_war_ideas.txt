@@ -24,6 +24,7 @@ ideas = {
                                 monthly_population = -0.2
                                 min_export = -0.5
                                 resistance_target = -0.5
+                                ai_focus_aggressive_factor = 0.5
                                 custom_modifier_tooltip = SPR_military_disloyalty_tt
 	           }
                      on_add = {
