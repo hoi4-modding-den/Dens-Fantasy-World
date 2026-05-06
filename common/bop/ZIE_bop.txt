@@ -44,6 +44,9 @@ ZIE_power_balance = {
 				stability_factor = 0.15
 				power_balance_weekly = 0.01
 			}
+			on_activate = {
+				country_event = ZIE_event.3
+			}
 		}
 	}
 

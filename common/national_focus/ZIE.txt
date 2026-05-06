@@ -579,12 +579,127 @@ focus_tree = {
 
 	focus = {
 		id = urhu_victory
-		icon = GFX_focus_AFG_mountain_training
+		icon = GFX_focus_PLACEHOLDER
 		#prerequisite = { focus = }
 		#mutually_exclusive = { focus =  }
 		x = 20
 		y = 0
 		cost = 1
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = prepare_speech
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = urhu_victory }
+		#mutually_exclusive = { focus =  }
+		x = 20
+		y = 1
+		cost = 1
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = the_era_of_patriotism
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = prepare_speech }
+		mutually_exclusive = { focus = councils_move }
+		x = 12
+		y = 2
+		cost = 0
+		available = {
+			custom_trigger_tooltip = {		
+     			  tooltip = FOCUS_never_available_tt		
+  			      always = no	
+			}
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = the_national_economic_proclemation
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = the_era_of_patriotism }
+		relative_position_id = the_era_of_patriotism
+		x = 3
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = the_national_economic_proclemation
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = the_era_of_patriotism }
+		relative_position_id = the_era_of_patriotism
+		x = 7
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = wash_down_the_bureaucrats
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = the_era_of_patriotism }
+		relative_position_id = the_era_of_patriotism
+		x = -2
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = propaganda_department
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = the_era_of_patriotism }
+		relative_position_id = the_era_of_patriotism
+		x = 2
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = onto_the_world_stage
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = the_era_of_patriotism }
+		relative_position_id = the_era_of_patriotism
+		x = -6
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = councils_move
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = prepare_speech }
+		mutually_exclusive = { focus = the_era_of_patriotism }
+		x = 28
+		y = 2
+		cost = 0
+		available = {
+			custom_trigger_tooltip = {		
+     			  tooltip = FOCUS_never_available_tt		
+  			      always = no	
+			}
+		}
 		completion_reward = {
 		} 
 	}

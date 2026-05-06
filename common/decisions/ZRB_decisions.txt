@@ -17,4 +17,13 @@ debug_decisions = {
 			add_to_faction = ZIA
 		}
 	}
+
+    load_hrava_victory_tree = {
+        available = {
+            tag = ZIE
+        }
+        complete_effect = {
+            load_focus_tree = { tree = victory_in_urhu }
+        }
+    }
 }

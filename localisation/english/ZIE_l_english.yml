@@ -16,6 +16,9 @@
  ZIE_news.2.t: "Hrávan victory in the third Urhú war"
  ZIE_news.2.desc: "After decades of scuffle the Urhú solution has finally come to a close, the region in which books shall be written of from now one will write about the names of the Hrávan people once again. The peacedeal signed in Tíjven has renounced Hrávan claims over the Urhú region, subsequently unrest has begun to reactivate in the western autonomous regions of Tůrůń.  "
  ZIE_news.2.a: "Hopefully the refugees stop for now."
+ ZIE_event.3.t: "Knight takes Rook"
+ ZIE_event.3.d: "Sergeant Tryvecna walked out of his house, he was greeted with his dear wife who was tending to the glistening rock-ridden gardens of tulips and flowers around the somewhat large and expensive house. Ever since he got his position at the national military command his income had increased significantly because of the states earnings, the Marshall had made underground deals with all of the staff to get a portion of the taxes flowing from poorer areas of the nation. Examining his house he pondered if his house was a bit too glammorous, perhaps radical citizens would take one look at it and recognize the extravagances to be tied to the government. Maybe it would be vandalized when he came home from work tomorrow? Before he could ponder any longer his wife broke his thoughts by shouting: 'Tryvecna, youre up awfully late! You better hurry and get out to the office so you don't get told off like a few months ago!' Realizing he'd just been standing there for 5 minutes, Tryvecna made his way out to the streets to take a stroll away to the headquarters. Usually he'd be taking a car with services to protect him, but his mood was up after the recent pay raise from the Marshall. He might aswell take a stroll around the city to admire the national committees accomplishments, before he could walk more than 5 blocks out he was grabbed and dragged in to an alleyway. Before he could protest loudly his mouth was covered with a wet bandage, he passed out. Waking up tied in a dark room he was confused, muffling under his taped mouth and moving his tied up hands. His futile attempts to alert somebody was stopped by a loud bang in the opposite room. A person walked in, a member of the grand council. They were holding a luger in their left hand. Without trigger discipline the man pointed the gun at his head and exclaimed:'Any info about Tréphans war and escape plans?' Tryvecna managed to muffle out: 'WHY ARE YOU DOING THIS??'\n\n§RA shot rang out.§!"
+ ZIE_event.3.a: "The national revolution will be upheld one way or another."
  # NEWS EVENTS
  ZIE_news.1.t: "Outbreak of the Third Urhú War"
  ZIE_news.1.desc: "Tensions were always high before the breaking point, but at this moment skirmishes has turned into straight-out battles as Hraván forces advance through the Urhú mountains at rapid paces. This has triggered a migration crisis as desperate citizens flee to bordering countries in an attempt to escape death. As the situation evolves neighbors bide their time as chaos unfolds."
@@ -104,3 +107,7 @@
  fueling_the_war_machine: "Fueling the War Machine"
  expand_the_partisan_network: "Expand the Partisan Network"
  hravan_industrial_complex: "The Hrávan Industrial Complex"
+
+ # TOOLTIP
+ FOCUS_never_available_tt: "§YAvailable via event or other actions§!"
+ council_moves_tt: "§RUpon a national victory the council will plot a coup...§!"
