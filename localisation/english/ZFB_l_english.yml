@@ -20,6 +20,11 @@
 ZFB_we_shall_endure: "We shall endure"
 ZFB_we_shall_endure_desc: "Sounds of gunfire are heard every day now. How could this happen... Well... answer is obvious - the traitors bought by our enemies managed to convince some people to rise up aganist our rule. We expected that since we never were in power, we would experience rebellions. They happened before, and now it is another one. The enemies, whether they are socialists, monarchists or democrats, shall be destroyed."
 ZFB_we_shall_endure_tt: "Despite all the difficulties, §Ywe will survive...§! and then we will §Rremind them where is their place...§!"
+ZFB_tight_grip_of_the_corporations: "Tight grip of corporations"
+ZFB_tight_grip_of_the_corporations_desc: "From the beginning of our rule in Balekelemi we had made agreements with corporations. However, later these agreements started to look more and more like concessions, and in fact they are. Companies like Welikon, IYMK or Yegime, while theoretically under government control, are de facto private companies that went outside their used-to be goals. When Habtomu Unetu, our first Bīchi president died, we were forced to give even more concessions to them or else they would change sides in civil war that happened year later. We did kept them on our side, but they will almost certainly want more power if we will win war..."
+ZFB_sidelined_military: "Sidelined Military"
+ZFB_sidelined_military_desc: "Our military had tried to coup the government many times, fortunately none of these attempts succeeded. This had one positive effect though: we could supress their dissent more easily. It had taken much time, but now our process of replacing old traitors with new loyal men is going to the end. Unfortunately, when war erupted in 1934, we had to stop our reforms, all while our military had been severely weakened. We had to allow Defaris Fanine, untrustworthy officer, take command over army, at least for now. He is criticising our bad situation of the army. While it certainly needs reforms, he is doing it in worst possible time, and even worse, his stance is really popular within military, which may try to revolt sometime."
+
 #traits
 
 #characters
@@ -28,6 +33,17 @@ ZFB_talakji_unetu: "Talakji Unetu"
 #character descriptions
 
 #decisions
+ZFB_civil_war_cat: "Rebellions of Traitors"
+ZFB_end_of_civil_war: "Bīchi Restoration"
+ZFB_attack_ZFA: "Attack Ārenigwadē"
+ZFB_attack_ZFK: "Attack Keyi"
+ZFB_attack_ZFS: "Attack Sayani"
+
+#events
+ZFB_news_events.1.t: "Bīchi Government wins Balekelemi Civil War"
+ZFB_news_events.1.desc: "Bīchi elite had ruled Balekelemi region for 5 decades now. It`s unpopular policies which alienated most of people, as well as overall regression of state status around the world were factors which had caused revolts to show up from all sides. Still, what was not that obvious, government located in Kekelem Dinite managed to squash all uprisings. \n \nTalakji Unetu, leader of "Greatest United Republic", had announced that nothing will stop his plans in modernising the state and maintaining Bīchi rule over Balekelemi. Whether he will do what he promised is up to debate, although, for now at least, silence finally shows up in the region."
+ZFB_news_events.1.a: "Order restored, traitors destroyed."
+ZFB_news_events.1.b: "Peace at last... although for how long?"
 
  #victory_points
  VICTORY_POINTS_10337: "Kekelem Dinite"

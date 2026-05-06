@@ -18,6 +18,10 @@
  ZFS_fascism_party_long: "Movement for Destructon of Evil"
 
 #ideas
+ZFS_growing_discontent_within: "Growing discontent within"
+ZFS_growing_discontent_within_desc: "Our leader, Sosite Gebere, is an populist leader. In the Balekelemi soil this is completely new thing. However, question remains whether his plans are sustainable or possible to introduce. Inside the alliance there are some democrats who do not like direction which Gebere wants to take, promoting idea of less populism. There is also armed wing of our organisation led by Sannayne Mokwete Iliihi, who is clearly an autocratic figure who promotes idea of military with a state, an obvious contrast to our democratic principles. Still, everyone needs everyone inside our Sayani alliance, as removal of one could result in dire consequences."
+ZFS_rule_of_the_minority: "Rule of minority"
+ZFS_rule_of_the_minority_desc: "Every Balekelemi state used to be ruled by minority, but our example is even more extreme. In our Sayani territories there is sizeable Semayawi population which overall surpasses Sayani one. It is obvious that if we included them in our democracy, we would lose power, so we have to exclude them. While they are weak, we can use them to fulfill our ideals, especially as Semayawi see us as the least of the evils. Still we need to be careful about them and keep them in check."
 
 #focuses
 ZFS_our_greatest_chance: "Our greatest chance"
@@ -31,6 +35,17 @@ ZFS_sosite_gebere: "Sosite Gebere"
 #character descriptions
 
 #decisions
+ZFS_civil_war_cat: "Sayani Democratic Uprising"
+ZFS_end_of_civil_war: "Democracy won"
+ZFS_attack_ZFA: "Attack Ārenigwadē"
+ZFS_attack_ZFB: "Attack Bīcha"
+ZFS_attack_ZFK: "Attack Keyi"
+
+#events
+ZFS_news_events.1.t: "Sayani Democrats win Balekelemi Civil War"
+ZFS_news_events.1.desc: "Ideals of democracy were starting to show up in 19th and especially in early 20th century, when more and more people started dreaming of something they never tried. That moment seems to finally show up, although not many would expect that it would be Sayani of all groups which would introduce it to all of Balekelemi. \n \nNew government already announced creation of republic for all people`s, but many doubt the honesty of these words, especially considering excludment of Semayawi group from governance. Still, many experts say that if everything will stay stable, this democratic experiment may succeed."
+ZFS_news_events.1.a: "Not only democracy wins - Sayani also wins!"
+ZFS_news_events.1.b: "Sayawho?"
 
 #victory_points
 VICTORY_POINTS_11644: "Ābwa"

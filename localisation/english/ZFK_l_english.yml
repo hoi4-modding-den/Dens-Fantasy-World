@@ -14,6 +14,11 @@
  ZFK_fascism_party_long: "Fanatical supporters of the King"
 
 #ideas
+ZFK_reconstituted_kingdom: "Reconstituted Kingdom"
+ZFK_reconstituted_kingdom_desc: "For more than 400 years, our Kingdom had dimminished. What was afterwards is obvious: chaos, civil wars and downfall of nation. It is pretty obvious that our rule was best what ever happened to the region, if not the world. People beg us to bring Balekelemi back into it`s greatness, to it`s second golden age. We will do that. Of course our kingdom is quite new and needs to be reorganised to meet new standards. Fortunately, we have eager people that will always work for our jewel. We will bring kingdom together to unite Balekelemi, this time permanently."
+ZFK_underdeveloped_mess: "Underdeveloped Mess"
+ZFK_underdeveloped_mess_desc: "Western parts of Balekelemi are least developed. Considering Balekelemi is overall not considered as developed compared to Gardenia for example, that indicates really bad about that territory."
+
 
 #focuses
 ZFK_return_to_greatness: "Return to greatness"
@@ -27,6 +32,17 @@ ZFK_kokeyi_ii: "Kokeyi II"
 #character descriptions
 
 #decisions
+ZFK_civil_war_cat: "Restoration of the Kingdom"
+ZFK_end_of_civil_war: "Triumph for the Kingdom"
+ZFK_attack_ZFA: "Attack Ārenigwadē"
+ZFK_attack_ZFB: "Attack Bīcha"
+ZFK_attack_ZFS: "Attack Sayani"
+
+#events
+ZFK_news_events.1.t: "Keyi Monarchists win Balekelemi Civil War"
+ZFK_news_events.1.desc: "Everyone thought that after fall of Keyi Kingdom, once an formidable force capable of crushing every neigboring state, would not ever return after it`s demise in 16th century. Keyi elites were mostly murdered, west underfunded, and many forgot about their existence. However, that is not anymore the case, as word "Keyi" appeared everywhere again after not only it had risen from the ashes, but also crushed any competition for control over Balekelemi. \n \nThe recreated entity stands with new difficulties showing ahead. Although regime seems to be somewhat popular even among non-keyi citizens, the question remains whether king is an actual independent ruler, as well as the unfriendly international environment where it looks like monarchies fall one after another."
+ZFK_news_events.1.a: "This time we will not dissapear, our golden age will last forever."
+ZFK_news_events.1.b: "Impressive how they managed to return after so long."
 
 #victory_points
 VICTORY_POINTS_8715: "Zikyeochi"

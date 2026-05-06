@@ -19,6 +19,10 @@
  ZFA_fascism_party_long: "Disorganised Resistance"
  
 #ideas
+ZFA_arenigwade_liberation_army: "Ārenigwadē Liberation Army"
+ZFA_arenigwade_liberation_army_desc: "Ārenigwadē Liberation Army was created to spread our ideals across Balekelemi region together with start of revolution. Unfortunately, every person who looks deeper into it knows that it needs reforms to be force capable of defending communist ideals. For now though many in the elites think that this should happen after war, while most officers say that we cannot wait longer."
+ZFA_factionalism_within_front: "Factionalism Within Front"
+ZFA_factionalism_within_front_desc: "ĀHG is not an monolith - various people went into it. Basically only thing that unites us is our Ārenigwadi background and anti-government views, but that is where similarities mostly end. While most opponents to our revolution had been removed, problems rise inside. Problems, which left without any solution can burst into another civil war even."
 
 #focuses
 ZFA_nationwide_revolution: "Nationwide Revolution"
@@ -32,7 +36,18 @@ ZFA_eyas_desita: "Eyas Desita"
 
 #character descriptions
 
+#events
+ZFA_news_events.1.t: "Ārenigwade Revolutionaries win Balekelemi Civil War"
+ZFA_news_events.1.desc: "For centuries, Balekelemi region was held mostly by despotic fist, most lately under Bīchi one. Now it seems that times of authoritarianism are gone for good, although few would expect that the ideology that would replace old system will be the communist one. \n \nThe Ārenigwadi led revolution, which started in the east, managed to crush any opposition and set up a new people`s republic. Many are expecting the government to not be capable of holding whole region for long, although events are too unpredictable for now to give any conclusions."
+ZFA_news_events.1.a: "New, better times for people finally approach."
+ZFA_news_events.1.b: "Communism in Balekelemi?"
+
 #decisions
+ZFA_civil_war_cat: "Ārenigwadē Revolution"
+ZFA_end_of_civil_war: "Success of Revolution"
+ZFA_attack_ZFB: "Attack Bīcha"
+ZFA_attack_ZFK: "Attack Keyi"
+ZFA_attack_ZFS: "Attack Sayani"
 
 #victory_points
 VICTORY_POINTS_1909: "Yeseratiwi"
