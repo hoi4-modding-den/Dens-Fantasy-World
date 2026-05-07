@@ -6,4 +6,9 @@ leader_traits = {
 		compliance_growth = -0.15
 		random = no
 	}
+	harmonious_nationalism = {
+		compliance_growth = 0.1
+		political_power_factor = 0.15
+		stability_factor = -0.05
+	}
 }

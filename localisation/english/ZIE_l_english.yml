@@ -6,6 +6,16 @@
 
 
  local_manpower15_tt: "Local Manpower in autonomous regions of Turun: §R-15%§!"
+ ZIE_communism_party: "FDW"
+ ZIE_communism_party_long: "Federation of Dýertze Workers"
+ ZIE_democratic_party: "POT"
+ ZIE_democratic_party_long: "Party of '03"
+ ZIE_neutrality_party: "PNP"
+ ZIE_neutrality_party_long: "People's National Party"
+ ZIE_fascism_party: "FRR"
+ ZIE_fascism_party_long: "National Socialist Hrávan Clique"
+ COUNCIL_PARTY_NAME_SHORT: "People's Council"
+ COUNCIL_PARTY_NAME: "People's Council of Hráva"
  # EVENTS
  ZIE_lore.1.t: "The Legacy of the Second Urhú War"
  ZIE_lore.1.d: "On the 3th of May 1906 shortly after the mountainflowers bloomed the Second Urhú War broke out, following skrimishes at the Urhú mountains the Hrávan army used the damage to infrastructure as a casus belli to invade through the mountains for 'peacekeeping'. After this violation of sovereignity the Tůrůń armed forces mobilized and quickly pushed the army back. They eventually reached the region of Cis-urhú, this forced the Hrávan king to send newly conscripted troops and generals to the front. One of which would be Tréphan, our marshall. Following the Hrávan response the newly mobilized recruits under the command of the new generals made their way across the plains to capture key railways and supply points. The Hrávan army recaptured the majority of their lands with the exception of Vrýtze (Renamed Víeva by Tůrůń), however they were unable to make further advances due to heavy fortifications in mountain terrain along with guerilla fighters. Follwing the stalemate battles continued for 1 year until the two sides agreed to a ceasefire, which is still in function to this day. The agreement was seen as a betrayal to the high command in Hráva, which paved the way for the eventual coup in '08. Even after the marshall seized power the scars of this war has truly never been healed, the graves remain bundled with flowers and the families continue to greive. The militarization of society has brought a new beleif in society however."
@@ -28,7 +38,8 @@
  the_marshall: "  §RThe Grand Marshall of Hrava§!"
  trephan_bojodavic_name: "Tréphan Bojodávić"
  trephan_bojodavic_desc: "Born 1886 to a relatively poor family in the Urhú mountains, Tréphan Bojodávić grew up in a harsh environment. His father was an abusive alcoholic and his mother spent most of her time cleaning up after the deadbeat man, Tréphan basically had no social life growing up. In 1893 aged 7 years old their village became notified of border skrimishes several acres north of them. Shortly after the skirmishes turned into battles which turned into all out war, the start of the First Urhú war forced Tréphans family to flee northwards, following the Kníestra river upwards and then continuing forth over the windswept hills to Trzę. Where he would be spending the majority of his upbringing. In 1904 Tréphan enlisted into the National Army, he quickly became known among the ranks as an outspoken Nationalist. Shortly after his enlistment the Second Urhú war broke out, this time instead of fleeing Tréphan was prepared to join the ranks as a commander. Quickly Tréphan amassed an almost cult-like following around his idealistic Nationalism, he went on to win the majority of his battles as commander. But eventually he got stripped of his ranks because of the upper echelons fearing a nationalist uprising. The Urhú war ended in a loss for Hráva, unrest turned into rebellion. Before the high class could organize Tréphan and his followers began hijacking newspapers and eventually they marched on the capital. The commanders of the National guard switched sides and he took power, Tréphan formed a council of advisors to help govern the vast territories. Looking outwards, his National outlook craves expansion."
-
+ peoples_council_name: "The Peoples Council of Hráva"
+ harmonious_nationalism: "Harmonious Nationalism"
  # VICTORY POINTS
  VICTORY_POINTS_10839: "Crnat Hráve"
  VICTORY_POINTS_10840: "Vrazá"
@@ -111,3 +122,8 @@
  # TOOLTIP
  FOCUS_never_available_tt: "§YAvailable via event or other actions§!"
  council_moves_tt: "§RUpon a national victory the council will plot a coup...§!"
+
+ # COSMETIC TAGS
+ ZIE_social_republic: "Hrávan Social Republic"
+ ZIE_social_republic_DEF: "The Hrávan Social Republic"
+ ZIE_social_republic_ADJ: "Hrávan"

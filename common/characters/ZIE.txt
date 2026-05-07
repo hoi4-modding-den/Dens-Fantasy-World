@@ -23,13 +23,5 @@ characters = {
 				large = "gfx/leaders/ZIE/GFX_portrait_ZIE_peoples_council.dds"
 			}
 		}
-
-		country_leader = {
-			ideology = despotism
-        	desc = peoples_council_desc
-
-        	traits = {  }
-        	expire = "1970.1.1.1"
-		}
 	}
 }

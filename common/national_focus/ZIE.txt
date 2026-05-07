@@ -595,7 +595,9 @@ focus_tree = {
 		#mutually_exclusive = { focus =  }
 		x = 20
 		y = 1
-		cost = 1
+		cost = 3
+		select_effect = { country_event = { id = ZIE_event.4 days = 10 } }
+		cancelable = no 
 		completion_reward = {
 		} 
 	}
@@ -604,7 +606,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = prepare_speech }
 		mutually_exclusive = { focus = councils_move }
-		x = 12
+		x = 8
 		y = 2
 		cost = 0
 		available = {
@@ -617,19 +619,6 @@ focus_tree = {
 		} 
 	}
 
-	focus = {
-		id = the_national_economic_proclemation
-		icon = GFX_focus_PLACEHOLDER
-		prerequisite = { focus = the_era_of_patriotism }
-		relative_position_id = the_era_of_patriotism
-		x = 3
-		y = 1
-		cost = 0
-		available = {
-		}
-		completion_reward = {
-		} 
-	}
 	focus = {
 		id = the_national_economic_proclemation
 		icon = GFX_focus_PLACEHOLDER
@@ -699,6 +688,33 @@ focus_tree = {
      			  tooltip = FOCUS_never_available_tt		
   			      always = no	
 			}
+		}
+		completion_reward = {
+			add_country_leader_role = {
+  			  character = ZIE_peoples_council
+  			  promote_leader = yes
+   			 country_leader = {
+   			     ideology = despotism
+ 			       expire = "1965.1.1.1"
+ 			       traits = { harmonious_nationalism }
+  			  }
+        }
+		set_cosmetic_tag = ZIE_social_republic
+		set_party_name = { 
+   		 ideology = neutrality 
+ 		   long_name = COUNCIL_PARTY_NAME
+		   name = COUNCIL_PARTY_NAME_SHORT
+		}
+		} 
+	}
+	focus = {
+		id = militarism_in_the_rejuvinated_state
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = the_era_of_patriotism focus = councils_move }
+		x = 20
+		y = 3
+		cost = 0
+		available = {
 		}
 		completion_reward = {
 		} 
