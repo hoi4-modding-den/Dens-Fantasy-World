@@ -1,0 +1,19 @@
+# Scripted AI desire for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_ai_desires = {
+
+    ZLF_always_annex_stuff_on_tewara = {
+        peace_action_type = take_states
+        enable = {
+            FROM.FROM.FROM = {
+                ZLF_is_on_continent_tewara = yes
+            }
+            ROOT = {
+                original_tag = ZLF
+            }
+        }
+        ai_desire = 15000
+    }
+
+}

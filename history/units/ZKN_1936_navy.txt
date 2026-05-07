@@ -1,0 +1,166 @@
+units = {
+
+    fleet = {
+        name = "Königliche Armada"
+        naval_base = 8470
+        task_force = {				
+            name = "Lillienseeflotte"
+            location = 8470
+            ship = {
+                name = "KAS Zinnien"
+                pride_of_the_fleet = yes
+                definition = heavy_cruiser
+                start_experience_factor = 0.3
+                equipment = {
+                    ship_hull_heavy_2 = {
+                        amount = 1
+                        owner = ZKN
+                        version_name = "Lillie"
+                    }
+                }
+            }
+            ship = {
+                name = "KAS Hindenburg"
+                definition = heavy_cruiser
+                start_experience_factor = 0.3
+                equipment = {
+                    ship_hull_heavy_2 = {
+                        amount = 1
+                        owner = ZKN
+                        version_name = "Lillie"
+                    }
+                }
+            }
+            ship = {
+                name = "KAS Michael II."
+                definition = light_cruiser
+                start_experience_factor = 0.3
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = ZKN
+                        version_name = "Rose"
+                    }
+                }
+            }
+            ship = {
+                name = "KAS Stegehoff"
+                definition = light_cruiser
+                start_experience_factor = 0.3
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = ZKN
+                        version_name = "Rose"
+                    }
+                }
+            }
+            ship = {
+                name = "KAS Kronprinz Ebert"
+                definition = light_cruiser
+                start_experience_factor = 0.3
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = ZKN
+                        version_name = "Rose"
+                    }
+                }
+            }
+            ship = {
+                name = "Gardenien"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZKN
+                        version_name = "Zerstörer 1934"
+                    }
+                }
+            }
+            ship = {
+                name = "Königslust"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZKN
+                        version_name = "Zerstörer 1934"
+                    }
+                }
+            }
+            ship = {
+                name = "Treue"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZKN
+                        version_name = "Zerstörer 1934"
+                    }
+                }
+            }
+            ship = {
+                name = "Ehre"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZKN
+                        version_name = "Zerstörer 1934"
+                    }
+                }
+            }
+            ship = {
+                name = "Reaktion"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZKN
+                        version_name = "Zerstörer 1934"
+                    }
+                }
+            }
+            ship = {
+                name = "Küstrin"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZKN
+                        version_name = "Zerstörer 1934"
+                    }
+                }
+            }
+            ship = {
+                name = "Magnolienburg"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZKN
+                        version_name = "Zerstörer 1934"
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+instant_effect = {
+
+    add_equipment_production = {
+        equipment = {
+            type = ship_hull_light_2
+            creator = "ZKN"
+            version_name = "Zerstörer 1934"
+        }
+        requested_factories = 10
+        progress = 0.25
+        amount = 3
+        #industrial_manufacturer = mio:
+    }
+
+}

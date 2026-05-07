@@ -21,7 +21,7 @@ division_template = {
 
 units = {
     division = {
-        name = "Winghardian Volunteer Brigade 'Karl Marx'"
+        name = "Wighardian Volunteer Brigade 'Karl Marx'"
 		location = 11208
 		division_template = "International Republican Brigade"
 		start_experience_factor = 0.5

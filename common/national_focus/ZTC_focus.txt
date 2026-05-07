@@ -1947,10 +1947,6 @@ focus_tree={
         }
 		
 		completion_reward = {
-			unlock_decision_tooltip = ZTC_form_southern_democratic_bloc
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
 			add_ideas = ZCT_democratic_defence
 		}
 	}
@@ -2121,8 +2117,7 @@ focus_tree={
 	focus = { 
 		id = ZTC_establish_the_maritime_league
 		icon = GFX_focus_ICE_modernizing_the_coast_guard
-        prerequisite = { focus = ZTC_expand_trade_ties }
-		prerequisite = { focus = ZTC_protect_maritime_trade }
+        prerequisite = { focus = ZTC_expand_trade_ties focus = ZTC_protect_maritime_trade }
 		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
@@ -2144,11 +2139,6 @@ focus_tree={
         }
 		
 		completion_reward = {
-			custom_effect_tooltip = WIP
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			unlock_decision_tooltip = ZTC_establish_coastal_protectorate
 			unlock_decision_tooltip = ZTC_secure_the_albia_strait
 		}
 	}

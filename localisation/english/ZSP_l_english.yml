@@ -394,7 +394,7 @@
  ZSP_news_events.3.a: "All shall bow to me!"
 
  ZSP_news_events.4.t: "Collapse of the Shadow Realm"
- ZSP_news_events.4.desc: "I met a traveller from an antique land\nWho said: — Two vast and trunkless legs of stone\nStand in the desert... Near them, on the sand,\nHalf sunk, a shattered visage lies, whose frown,\nAnd wrinkled lip, and sneer of cold command,\nTell that its sculptor well those passions read\nWhich yet survive, stamped on these lifeless things,\nThe hand that mocked them, and the heart that fed\nAnd on the pedestal these words appear\n‚My name is Ozymandias, king of kings\nLook on my works, ye Mighty, and despair!‘\nNothing beside remains. Round the decay\nOf that colossal wreck, boundless and bare\nThe lone and level sands stretch far away."
+ ZSP_news_events.4.desc: "I met a traveller from an antique land who said: — Two vast and trunkless legs of stone stand in the desert... Near them, on the sand, half sunk, a shattered visage lies. Whose frown, and wrinkled lip, and sneer of cold command, tell that its sculptor well those passions read which yet survive, stamped on these lifeless things, the hand that mocked them, and the heart that fed.\n \nAnd on the pedestal these words appear 'My name is Ozymandias, King of Kings. Look on my works, ye Mighty, and despair!'\nNothing beside remains. Round the decay of that colossal wreck, boundless and bare the lone and level sands stretch far away."
  ZSP_news_events.4.a: "And thus, the Ozymandian Reign ends."
 
  ZSP_news_events.5.t: "The Great Shadow War"

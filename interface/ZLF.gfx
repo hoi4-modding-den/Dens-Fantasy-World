@@ -1,5 +1,7 @@
 spriteTypes = {
 
+    # PORTRAITS
+
     spriteType = {
         name = "GFX_portrait_ZLF_roland_ludovik"
         texturefile = "gfx/leaders/ZLF/portrait_ZLF_roland_ludovik.png"
@@ -325,12 +327,218 @@ spriteTypes = {
         texturefile = "gfx/leaders/ZLF/portrait_ZLF_richard_anderson.png"
     }
 
+    spriteType = {
+        name = "GFX_portrait_ZLF_turron"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_turron.png"
+    }
+
+    # GENERIC LEADER
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_politician_democratic_1"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_male_politician_democratic_1.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_politician_democratic_1_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_male_politician_democratic_1_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_politician_neutrality_1"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_male_politician_neutrality_1.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_politician_neutrality_1_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_male_politician_neutrality_1_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_politician_neutrality_2"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_male_politician_neutrality_2.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_politician_neutrality_2_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_male_politician_neutrality_2_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_politician_communism_1"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_male_politician_communism_1.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_politician_communism_1_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_male_politician_communism_1_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_politician_fascism_1"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_male_politician_fascism_1.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_politician_democratic_1"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_female_politician_democratic_1.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_politician_democratic_1_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_female_politician_democratic_1_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_politician_democratic_2"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_female_politician_democratic_2.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_politician_democratic_2_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_female_politician_democratic_2_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_politician_neutrality_1"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_female_politician_neutrality_1.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_politician_neutrality_1_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_female_politician_neutrality_1_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_politician_communism_1"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_female_politician_communism_1.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_politician_communism_1_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_female_politician_communism_1_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_politician_fascism_1"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_female_politician_fascism_1.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_politician_fascism_1_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_female_politician_fascism_1_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_army_1"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_male_army_1.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_army_1_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_male_army_1_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_army_2"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_male_army_2.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_army_2_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_male_army_2_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_army_3"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_male_army_3.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_army_3_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_male_army_3_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_army_1"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_female_army_1.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_army_1_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_female_army_1_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_army_2"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_female_army_2.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_army_2_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_female_army_2_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_army_3"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_female_army_3.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_army_3_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_female_army_3_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_navy_1"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_male_navy_1.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_navy_1_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_male_navy_1_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_navy_2"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_male_navy_2.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_male_navy_2_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_male_navy_2_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_navy_1"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_female_navy_1.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_navy_1_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_female_navy_1_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_navy_2"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_generic_female_navy_2.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_generic_female_navy_2_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_generic_female_navy_2_small.png"
+    }
+
+
+    # TRAITS
 
     spriteType = {
 		name = "GFX_trait_ZLF_raserei"
 		texturefile = "gfx/interface/traits/scientist_traits/scientist_trait_electronics_specialist.dds"
 	}
 
+
+    # FACTION RULES
 
     spriteType = {
 		name = "GFX_ZLF_joining_rule_non_despotist"
@@ -342,6 +550,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_JAP_pan_asian_union.dds"
 	}
 
+
+    # EQUIPMENT
 
     SpriteType = {
 		name = "GFX_ZLF_infantry3_medium"
@@ -373,6 +583,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
 	}
 
+    
+    # EVENTS
 
     spriteType = {
 		name = "GFX_report_event_ZLF_esperantists"

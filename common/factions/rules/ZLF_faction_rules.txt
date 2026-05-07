@@ -6,8 +6,14 @@ ZLF_joining_rule_non_despotist = {
 	ai_will_do = {
 		base = 0
 		modifier = {
-			add = 1
+			add = 0.1
 			ZLF_is_despotist_ideology = no
+		}
+	}
+	can_remove = {
+		if = {
+			limit = { original_tag = ZLF }
+			ZLF_is_despotist_ideology = yes
 		}
 	}
 	trigger = {
@@ -16,6 +22,10 @@ ZLF_joining_rule_non_despotist = {
 			limit = { NOT = { has_rule = can_join_opposite_factions } }
 			has_government = FROM
 		}
+	}
+	modifier = {
+		fascism_acceptance = -50
+		neutrality_acceptance = -50
 	}
 }
 ZLF_joining_rule_tewarean_only = {
@@ -28,5 +38,8 @@ ZLF_joining_rule_tewarean_only = {
 	}
 	trigger = {
 		capital_scope = { ZLF_is_on_continent_tewara = yes }
+	}
+	modifier = {
+		army_core_defence_factor = 0.05
 	}
 }

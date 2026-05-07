@@ -479,6 +479,22 @@ focus_tree={
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
+			if = {
+				limit = { has_idea = ZLF_gardenien_bergbau_gmbg }
+				swap_ideas = {
+					remove_idea = ZLF_gardenien_bergbau_gmbg
+					add_idea = ZLF_gardenien_bergbau_gmbg_weakened
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ZLF_gardenien_bergbau_gmbg
+						add_idea = ZLF_gardenien_bergbau_gmbg_weakened
+					}
+				}
+			}
+
 			add_to_variable = {
 				ZLF_unemployment_rate = -0.15
 				tooltip = ZLF_unployment_rate_tt
@@ -2196,6 +2212,254 @@ focus_tree={
 	}
 
 	focus = {
+		id = ZLF_tank_warfare
+		icon = GFX_focus_generic_tank_assault
+        prerequisite = { focus = ZLF_invest_in_experimental_warfare }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = ZLF_invest_in_experimental_warfare
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			if = {
+				limit = { has_dlc = "No Step Back" }
+				add_tech_bonus = {
+					name = ZLF_tank_warfare
+					uses = 3
+					bonus = 0.5
+					category = armor
+				}
+	
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				# Light Tank
+				create_equipment_variant = {
+					name = "Leichttraktor"
+					type = light_tank_chassis_1
+					modules = {
+						turret_type_slot = tank_light_three_man_tank_turret
+						main_armament_slot = tank_close_support_gun
+						special_type_slot_1 = tank_radio_1
+						special_type_slot_2 = secondary_turret_hmg
+						special_type_slot_3 = extra_ammo_storage
+						special_type_slot_4 = extra_ammo_storage
+						suspension_type_slot = tank_bogie_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 9
+						tank_nsb_armor_upgrade = 9
+					}
+				}
+
+				# medium SPG
+				create_equipment_variant = {
+					name = "Vorsicht"
+					type = medium_tank_artillery_chassis_1
+					modules = {
+						turret_type_slot = tank_medium_three_man_tank_turret
+						main_armament_slot = tank_medium_howitzer
+						special_type_slot_1 = tank_radio_2
+						special_type_slot_2 = secondary_turret_hmg
+						special_type_slot_3 = secondary_turret_hmg
+						special_type_slot_4 = easy_maintenance
+						suspension_type_slot = tank_bogie_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 7
+						tank_nsb_armor_upgrade = 14
+					}
+				}
+
+				# Recon
+				create_equipment_variant = {
+					name = "Obacht"
+					type = light_tank_chassis_1
+					modules = {
+						turret_type_slot = tank_light_three_man_tank_turret
+						main_armament_slot = tank_high_velocity_cannon
+						special_type_slot_1 = tank_radio_2
+						special_type_slot_2 = armor_skirts
+						special_type_slot_3 = stabilizer
+						special_type_slot_4 = extra_ammo_storage
+						suspension_type_slot = tank_interleaved_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_petrol_electric_engine
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 6
+						tank_nsb_armor_upgrade = 14
+					}
+					icon = "GFX_ENG_basic_light_tank_medium"
+				}
+
+				# Flametank
+				create_equipment_variant = {
+					name = "Feuerspeier"
+					type = medium_tank_flame_chassis_1
+					modules = {
+						turret_type_slot = tank_medium_three_man_tank_turret
+						main_armament_slot = flamethrower
+						special_type_slot_1 = tank_radio_2
+						special_type_slot_2 = armor_skirts
+						special_type_slot_3 = stabilizer
+						special_type_slot_4 = extra_ammo_storage
+						suspension_type_slot = tank_interleaved_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_petrol_electric_engine
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 7
+						tank_nsb_armor_upgrade = 14
+					}
+				}
+			}
+			else = {
+				army_experience = 50
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				add_tech_bonus = {
+					name = ZLF_tank_warfare
+					uses = 3
+					bonus = 0.5
+					category = armor
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_military_exellence
+		icon = GFX_focus_CZE_demonstration_of_military_achievements
+        prerequisite = { focus = ZLF_invest_in_experimental_warfare }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZLF_invest_in_experimental_warfare
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 20
+        }
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZLF_military_exellence_tt
+				career_profile_check_playthrough_value = {
+					var = enemy_casualties
+					value = 1000000
+					compare = greater_than_or_equals
+				}
+			}
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = ZLF_milmodkom_3
+				add_idea = ZLF_total_gardenian_victory
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_full_motorisation_efforts
+		dynamic = yes
+		icon = {
+			trigger = {
+				has_dlc = "Gotterdammerung"
+			}
+			value = GFX_focus_generic_motor_cycle
+		}
+		icon = GFX_goal_generic_army_motorized
+        prerequisite = { focus = ZLF_invest_in_experimental_warfare }
+		#mutually_exclusive = { focus =  }
+		x = 3
+		y = 1
+		relative_position_id = ZLF_invest_in_experimental_warfare
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            if = {
+				limit = {
+					has_dlc = "Gotterdammerung"
+				}
+				add_tech_bonus = {
+					name = ZLF_full_motorisation_efforts
+					uses = 1
+					ahead_reduction = 2
+					category = motorized_equipment
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = sp_armored_motorized_military_police_tech }
+					}
+					add_tech_bonus = {
+						name = ZLF_full_motorisation_efforts
+						uses = 1
+						bonus = 1
+						technology = sp_armored_motorized_military_police_tech
+					}
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				add_equipment_bonus = {
+					name = ZLF_full_motorisation_efforts
+					bonus = {
+						motorbike_equipment_1 = {
+							build_cost_ic = -0.25
+						}
+					}
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = ZLF_full_motorisation_efforts
+					uses = 2
+					ahead_reduction = 2
+					category = motorized_equipment
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = ZLF_staatssicherheitsdienst
 		icon = GFX_focus_generic_secret_service_agency
         prerequisite = { focus = ZLF_reformist_spirit focus = ZLF_social_democratic_activism focus = ZLF_nationalisation_program }
@@ -2529,6 +2793,69 @@ focus_tree={
 	}
 
 	focus = {
+		id = ZLF_meisendorffs_new_propaganda
+		icon = GFX_goal_generic_propaganda
+        prerequisite = { focus = ZLF_government_holds }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = ZLF_government_holds
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10
+        }
+
+		allow_branch = {
+			has_country_flag = ZLF_neorevisionist_victory_after_rathenau
+		}
+		
+		available = {
+			has_country_leader_ideology = neorevisionism
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            ZLF_michel_meisendorff = {
+				effect_tooltip = {
+					swap_country_leader_traits = {
+						remove = ZLF_democratic_propagandist
+						add = ZLF_neorevisionist_propagandist
+						ideology = neorevisionism
+					}
+				}
+				hidden_effect = {
+					remove_trait = {
+						slot = political_advisor
+						trait = ZLF_democratic_propagandist
+					}
+					add_trait = {
+						slot = political_advisor
+						trait = ZLF_neorevisionist_propagandist
+					}
+
+					swap_country_leader_traits = {
+						remove = ZLF_democratic_propagandist
+						add = ZLF_voice_of_democracy
+						ideology = neorevisionism
+					}
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				add_attack = 1
+				add_planning = 1
+			}
+
+			# when in a defensive war, Meisendorff can demand control as minister of defence
+		}
+	}
+
+	focus = {
 		id = ZLF_transition_to_workers_councils
 		dynamic = yes
 		icon = GFX_focus_generic_workers
@@ -2604,6 +2931,11 @@ focus_tree={
 				add_faction_initiative = 1
 
 				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+			swap_ideas = {
+				remove_idea = ZLF_intervention_corps_2
+				add_idea = ZLF_intervention_corps_3
 			}
 
 			custom_effect_tooltip = ZLF_towards_a_world_state_tt
@@ -3069,6 +3401,15 @@ focus_tree={
 
 		ai_will_do = {
             base = 10
+			modifier = {
+				factor = 0.5
+				any_other_country = {
+					has_volunteers_amount_from = {
+						tag = ROOT
+						count > 0
+					}
+				}
+			}
         }
 		
 		available = {
@@ -3126,6 +3467,15 @@ focus_tree={
 
 		ai_will_do = {
             base = 10
+			modifier = {
+				factor = 0.5
+				any_other_country = {
+					has_volunteers_amount_from = {
+						tag = ROOT
+						count > 0
+					}
+				}
+			}
         }
 		
 		available = {
@@ -3200,6 +3550,15 @@ focus_tree={
 
 		ai_will_do = {
             base = 10
+			modifier = {
+				factor = 0.5
+				any_other_country = {
+					has_volunteers_amount_from = {
+						tag = ROOT
+						count > 0
+					}
+				}
+			}
         }
 		
 		available = {
@@ -3266,10 +3625,19 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 10
+            base = 20
 			modifier = {
 				factor = 0
 				has_war = yes
+			}
+			modifier = {
+				factor = 0.5
+				any_other_country = {
+					has_volunteers_amount_from = {
+						tag = ROOT
+						count > 0
+					}
+				}
 			}
         }
 		
@@ -3314,6 +3682,7 @@ focus_tree={
         }
 		
 		available = {
+			NOT = { country_exists = ZSP }
 			custom_trigger_tooltip = {
                 tooltip = ZLF_fully_controls_alstroemeria_tt
                 all_state = {
@@ -3385,6 +3754,14 @@ focus_tree={
 				set_state_category = large_town
 				effect_tooltip = {
 					add_extra_state_shared_building_slots = 3
+				}
+			}
+
+			hidden_effect = {
+				ZSP = {
+					every_core_state = {
+						remove_core_of = ZSP
+					}
 				}
 			}
 		}
@@ -3476,6 +3853,15 @@ focus_tree={
 			modifier = {
 				factor = 0
 				has_war = yes
+			}
+			modifier = {
+				factor = 0.5
+				any_other_country = {
+					has_volunteers_amount_from = {
+						tag = ROOT
+						count > 0
+					}
+				}
 			}
         }
 		
@@ -3760,7 +4146,14 @@ focus_tree={
 
 			custom_effect_tooltip = ALL_FACTION_MEMBERS
 			every_faction_member = {
-				add_offsite_building = { type = industrial_complex level = 2 }
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
 			}
 		}
 	}
@@ -3792,17 +4185,7 @@ focus_tree={
 		completion_reward = {
 			custom_effect_tooltip = ALL_FACTION_MEMBERS
 			every_faction_member = {
-				random_owned_controlled_state = {
-					limit = {
-						is_core_of = owner
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
+				add_offsite_building = { type = industrial_complex level = 2 }
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -3812,6 +4195,34 @@ focus_tree={
 				req_focus_loc = ZLF_expand_the_internationalist_system
 				time_loc = 35
 			}
+		}
+	}
+
+	focus = {
+		id = ZLF_form_the_proletarian_internationale
+		icon = GFX_focus_GER_strengthen_the_proletarian_international
+		prerequisite = { focus = ZLF_shared_allied_industries focus = ZLF_invest_in_allied_industries }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZLF_shared_allied_industries
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_faction_leader = yes
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			add_ideas = ZLF_proletarian_internationale
 		}
 	}
 
@@ -3876,6 +4287,50 @@ focus_tree={
 		
 		completion_reward = {
             
+		}
+	}
+
+	focus = {
+		id = ZLF_overcome_nationality
+		icon = GFX_focus_RAJ_seek_allies_with_the_muslim_league
+		prerequisite = { focus = ZLF_promote_international_solidarity focus = ZLF_protect_national_identity }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZLF_promote_international_solidarity
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_faction_leader = yes
+			has_war = no
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			add_political_power = 75
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ZLF_overcome_nationality_tt
+			every_state = {
+				limit = {
+					any_neighbor_state = { is_owned_by = ROOT }
+				}
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+			}
 		}
 	}
 

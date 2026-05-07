@@ -1481,10 +1481,14 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 0
+            base = 10
             modifier = {
-                factor = 10
-                NOT = { has_government = democratic }
+                factor = 0
+                has_government = democratic
+            }
+            modifier = {
+                factor = 0
+                is_subject_of = ZLF
             }
         }
         
@@ -1508,10 +1512,14 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 0
+            base = 9
             modifier = {
-                factor = 10
+                add = 10
                 has_government = democratic
+            }
+            modifier = {
+                add = 10
+                is_subject_of = ZLF
             }
         }
         
@@ -1638,187 +1646,12 @@ focus_tree = {
     }
 
     focus = {
-        id = ZLF_generic_cooperate_with_overlord
-        icon = GFX_goal_generic_dangerous_deal
+        id = ZLF_generic_why_we_fight
+        icon = GFX_goal_generic_propaganda
         prerequisite = { focus = ZLF_generic_warmongering focus = ZLF_generic_deterrence }
         x = 1
         y = 1
         relative_position_id = ZLF_generic_warmongering
-
-        cost = 10
-
-        available = {
-            is_subject = yes
-        }
-        
-        available_if_capitulated = yes
-
-        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY }
-        completion_reward = {
-            add_stability = 0.1
-            add_autonomy_score = {
-                value = -100
-                localization = ZLF_generic_cooperate_with_overlord
-            }
-        }
-    }
-
-    focus = {
-        id = ZLF_generic_undermine_overlord_authority
-        icon = GFX_focus_generic_subjugation
-        prerequisite = { focus = ZLF_generic_political_effort }
-        x = 4
-        y = 1
-        relative_position_id = ZLF_generic_political_effort
-
-        cost = 10
-
-        ai_will_do = {
-            base = 5
-            modifier = {
-                factor = 0
-                has_country_leader = { character = ZLF_ekkehart_krippendorff ruling_only = yes }
-            }
-        }
-
-        available = {
-            is_subject = yes
-        }
-        
-        available_if_capitulated = yes
-
-        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY }
-        completion_reward = {
-            add_autonomy_score = {
-                value = 500
-                localization = ZLF_generic_undermine_overlord_authority
-            }
-
-            custom_effect_tooltip = generic_skip_one_line_tt
-
-            add_country_leader_trait = ZLF_generic_underminer_trait
-        }
-    }
-
-    focus = {
-        id = ZLF_generic_demand_independence
-        icon = GFX_goal_generic_territory_or_war
-        prerequisite = { focus = ZLF_generic_undermine_overlord_authority }
-        x = 0
-        y = 2
-        relative_position_id = ZLF_generic_undermine_overlord_authority
-
-        cost = 10
-
-        available = {
-            OR = {
-                has_autonomy_state = autonomy_dominion
-                has_autonomy_state = autonomy_satellite
-            }
-            compare_autonomy_progress_ratio > 0.5
-        }
-        
-        available_if_capitulated = yes
-
-        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY }
-        completion_reward = {
-            if = {
-                limit = { is_subject = yes }
-                declare_war_on = {
-                    target = OVERLORD
-                    type = independence_wargoal
-                }
-            }
-            else = {
-                custom_effect_tooltip = ZLF_generic_demand_independence_tt
-            }
-        }
-    }
-
-    focus = {
-        id = ZLF_generic_fight_the_good_fight
-        icon = GFX_focus_hol_war_on_pacifism
-        prerequisite = { focus = ZLF_generic_demand_independence }
-        x = -1
-        y = 1
-        relative_position_id = ZLF_generic_demand_independence
-
-        cost = 5
-
-        available = {
-            surrender_progress < 0
-            any_other_country = {
-                ROOT = {
-                    has_war_with_wargoal_against = {
-                        target = PREV
-                        type = independence_wargoal
-                    }
-                }
-                war_length_with = {
-                    tag = ROOT
-                    months > 2
-                }
-                surrender_progress > 0.2
-            }
-        }
-        
-        available_if_capitulated = yes
-
-        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY }
-        completion_reward = {
-            custom_effect_tooltip = ZLF_generic_fight_the_good_fight_tt
-            random_other_country = {
-                limit = {
-                    ROOT = {
-                        has_war_with_wargoal_against = {
-                            target = PREV
-                            type = independence_wargoal
-                        }
-                    }
-                }
-                white_peace = ROOT
-            }
-        }
-    }
-
-    focus = {
-        id = ZLF_generic_protect_our_freedom
-        icon = GFX_goal_generic_fortify_city
-        prerequisite = { focus = ZLF_generic_demand_independence }
-        x = 0
-        y = 2
-        relative_position_id = ZLF_generic_demand_independence
-
-        cost = 10
-
-        available = {
-            is_subject = no
-        }
-        
-        available_if_capitulated = yes
-
-        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY }
-        completion_reward = {
-            add_war_support = 0.1
-
-            custom_effect_tooltip = generic_skip_one_line_tt
-
-            if = {
-                limit = {
-                    has_country_leader_with_trait = ZLF_generic_underminer_trait
-                }
-                remove_country_leader_trait = ZLF_generic_underminer_trait
-            }
-        }
-    }
-
-    focus = {
-        id = ZLF_generic_why_we_fight
-        icon = GFX_goal_generic_propaganda
-        prerequisite = { focus = ZLF_generic_cooperate_with_overlord focus = ZLF_generic_protect_our_freedom }
-        x = 2
-        y = 1
-        relative_position_id = ZLF_generic_cooperate_with_overlord
 
         cost = 10
         

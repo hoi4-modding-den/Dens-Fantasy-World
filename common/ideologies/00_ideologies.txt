@@ -29,7 +29,7 @@ ideologies = {
 			environmentalism = {
 				
 			}
-			moralist_rationalism = {
+			moralism = {
 				
 			}
 			clockism = {

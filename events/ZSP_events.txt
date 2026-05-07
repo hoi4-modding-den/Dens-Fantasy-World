@@ -304,6 +304,67 @@ country_event = { # Phoenix overthrows Ozymandias
 
 			news_event = ZSP_news_events.4
 
+			create_dynamic_country = {
+				original_tag = ZCT
+				set_cosmetic_tag = ZLF_orchidee_republic
+				every_core_state = {
+					remove_core_of = PREV
+				}
+				every_state = {
+					limit = {
+						is_controlled_by = ROOT
+						ZLF_orchidee_sb_states = yes
+					}
+					transfer_state_to = PREV
+				}
+				every_state = {
+					limit = {
+						ZLF_orchidee_sb_states = yes
+					}
+					add_core_of = PREV
+				}
+
+				load_focus_tree = ZLF_generic_focus_tree
+
+				set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_orchidee
+                        long_name = ZLF_democratic_party_orchidee_long
+                    }
+                    set_popularities = {
+                        democratic = 72
+                        communism = 20
+                        neutrality = 8
+                        fascism = 0
+                    }
+                    every_possible_country = {
+                        limit = { has_character = ZLF_giovanni_campanella }
+                        ZLF_giovanni_campanella = {
+                            set_nationality = PREV.PREV
+                            add_country_leader_role = {
+                                character = ZLF_giovanni_campanella
+                                promote_leader = yes
+                                country_leader = {
+                                    ideology = socialism
+                                    expire = "1965.1.1.1"
+                                    traits = { ZLF_esperantist_writer }
+                                }
+                            }
+                        }
+                    }
+
+                    add_timed_idea = {
+                        idea = ZLF_orchidee_new_national_identity
+                        years = 3
+                    }
+                    add_ideas = ZLF_orchidee_growing_esperantist_movement
+			}
+
+			release_on_controlled = XCE
+			
+			XCE = { load_focus_tree = ZLF_generic_focus_tree }
+
 			country_event = {
 				id = ZSP_phoenix_events.6
 				days = 3
@@ -325,8 +386,8 @@ country_event = { # Phoenix overthrows Ozymandias
 				remove_ideas = ZSP_slavery 
 			}
 			if = { 
-				limit = { has_idea = ZSP_thaumaturgic_workshop } 
-				remove_ideas = ZSP_thaumaturgic_workshop 
+				limit = { has_idea = ZSP_zombie_workshop } 
+				remove_ideas = ZSP_zombie_workshop 
 			}
 			if = { 
 				limit = { has_idea = ZSP_control_spell } 
@@ -400,6 +461,16 @@ country_event = { # Phoenix overthrows Ozymandias
 		custom_effect_tooltip = generic_skip_one_line_tt
 
 		load_focus_tree = ZSP_slave_revolt_tree
+
+		hidden_effect = {
+			add_ideas = ZLF_women_are_real
+			
+			set_rule = {
+				can_generate_female_unit_leaders = yes
+				can_generate_female_country_leaders = yes
+				can_generate_female_aces = yes
+			}
+		}
 	}
 }
 

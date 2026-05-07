@@ -77,6 +77,10 @@
  ZLF_wealas_republic_DEF: "the Free State of Wēalas"
  ZLF_wealas_republic_ADJ: "Wēalan"
 
+ ZLF_paam_republic: "Grand Cape Commonweal"
+ ZLF_paam_republic_DEF: "the Federative Commonweal of the Grand Cape Territories of Paam"
+ ZLF_paam_republic_ADJ: "Paam"
+
 
 # FACTIONS
 
@@ -104,7 +108,7 @@
  ZLF_joining_rule_non_despotist: "Non-Despots Only"
  ZLF_joining_rule_tewarean_only: "Tewareans Only"
 
- FOCUS_FILTER_HISTORICAL_FACTION_GOAL_FILTER: "Focus-Only"
+ FOCUS_FILTER_HISTORICAL_FACTION_GOAL_FILTER: "Scripted Goals"
 
 
 # PARTIES
@@ -138,6 +142,8 @@
  ZLF_democratic_party_avalon_long: "Republican Party of Avalon"
  ZLF_democratic_party_wealas: "UBF"
  ZLF_democratic_party_wealas_long: "Universal Bioregionalist Front"
+ ZLF_democratic_party_paam: "PFP"
+ ZLF_democratic_party_paam_long: "Paam Federalist Party"
 
 
 # IDEOLOGIES
@@ -146,8 +152,8 @@
  neorevisionism_desc: "Neorevisionism is a sort of radicalised reformism, whose adherents advocate moving away from solely worker-oriented politics to a party of the whole people. They differ from reformists by pushing for adopting various active methods of defending democracy, such as populism, a greater focus on paramilitary organisations and bold symbols that convey the power of the movement, such as the burning fist of the Edelweiss Banner-Army."
  environmentalism: "Environmentalism"
  environmentalism_desc: "Environmentalism advocates the preservation, restoration and improvement of the natural environment and critical earth system elements or processes such as the climate, and may be referred to as a movement to control pollution or protect plant and animal diversity."
- moralist_rationalism: "Moralist Rationalism"
- moralist_rationalism_desc: "Moralist Rationalism concerns itself with how states can effectively cooperate and avoid conflict. It is deeply rooted in the harmonist movement and holds weight among the educated middle-class as a moralistic and pacifistic ideology."
+ moralism: "Moralism"
+ moralism_desc: "Moralism is a philosophy that concerns itself with imbuing society with a certain set of 'morals'. It is deeply rooted in the right wing of the harmonist movement and holds weight among the educated middle-class as a conservative, traditionalist and pacifistic ideology."
  gardenian_ultranationalism: "Gardenian Ultranationalism"
  gardenian_ultranationalism_desc: "The concept of the Gardenian ultranation is extremely popular among the far-right parties of Gardenia, seeking to restore the 'former glory' of the region, even if such a past never truly existed. Most adherents of Gardenian Ultranationalism also seek to implement single-party autocracy, corporatism and kratocratic principles."
 
@@ -192,6 +198,7 @@
  ZLF_adomas_dereska_name: "Adomas Dereska"
  ZLF_john_smith_name: "John Smith"
  ZLF_richard_anderson_name: "Richard Anderson"
+ ZLF_turron_name: "Turrón"
 
 
 # TRAITS
@@ -207,8 +214,12 @@
  ZLF_the_last_liberal: "Liberal Coalition-Builder"
  ZLF_warmonger: "Foolish Warmonger"
  ZLF_knight_of_the_moonlight_order: "Knight of the Moonlight Order"
+ ZLF_woodspark_fighter: "Woodspark Fighter"
+ ZLF_highhill_fighter: "Highhill Fighter"
  ZLF_defensive_democracy_proponent: "Defensive Social Democracy"
  ZLF_popular_front_negotiator: "Popular Front Negotiator"
+ ZLF_minister_of_defence: "Defence Minister in Command"
+ ZLF_voice_of_democracy: "The Voice of Democracy"
  ZLF_former_foreign_minister: "Former Foreign Minister"
  ZLF_whispers_out_of_the_storm: "Flustr' el uragano"
  ZLF_esperantist_writer: "Esperantist Writer"
@@ -216,33 +227,40 @@
  ZLF_humanist_consul: "Harmonist Demarch"
  ZLF_eccentric_adventurer: "Eccentric Adventurer"
  ZLF_environmentalist_freedom_fighter: "Environmentalist Freedom Fighter"
- ZLF_generic_underminer_trait: "Undermining Authority"
+ ZLF_honour_knight_of_the_domowina: "Honour Knight of the Domowina"
+ ZLF_speaker_of_the_legislative_assembly: "Speaker of the Legislative Assembly"
 
  ZLF_technocratic_tendencies: "Reformist Technocrat"
  ZLF_centre_marxist_man: "Centre Marxist Party Leader"
  ZLF_union_representative: "Union Representative"
  ZLF_literal_nazi: "Ultranationalist Paramilitary"
- ZLF_land_reform_advocate: "Land & Labour Reformist"
+ ZLF_land_reform_advocate: "Land & Labour Theorist"
  ZLF_exiled_social_democrat: "Exiled Social Democrat"
  ZLF_labour_minister: "Minister of Labour"
  ZLF_foreign_minister: "International Relations Researcher"
  ZLF_the_white_rose: "The White Rose"
  ZLF_radical_collectivist: "Radical Collectivist"
  ZLF_doctor_esperanto: "Doktoro Esperanto"
+ ZLF_esperantist: "(Esperantist)"
  ZLF_agricultural_minister: "Minister of Agriculture"
  ZLF_independent_journalist: "Investigative Journalist"
  ZLF_independent_journalist_tt: "Corruption Investigations: §GYes§!"
  ZLF_democratic_propagandist: "Social Democratic Activist"
+ ZLF_neorevisionist_propagandist: "Democratic Propagandist"
  ZLF_military_theorist: "$military_theorist$"
  ZLF_friendship_student: "Militant Harmonist"
- ZLF_police_intendant: "Police Intendant"
+ ZLF_police_intendant: "Police Intendant\n(Expert)"
  ZLF_elbian_autonomist: "Elbian Autonomist"
+ ZLF_elbian_commander: "$ZLF_woodspark_fighter$\n(Genius)"
+ ZLF_elbian_commander_no_ncns: "$ZLF_highhill_fighter$\n(Genius)"
 
  ZLF_raserei: "Raserei"
  ZLF_raserei_desc: "§LSchneller! Schneller! Schneller!§!"
 
 
 # IDEAS
+
+ ZLF_women_are_real: "Gender Equality"
 
  ZLF_edelweiss_banner: "The Edelweiss Banner-Army"
  ZLF_edelweiss_banner_desc: "The Edelweiss Banner-Army is a revolutionary association of republican groups who came together to fulfill their common goal of overthrowing the Zinnian Throne, the monarchy of Gardenia."
@@ -276,6 +294,7 @@
  ZLF_joint_labour_act_desc: "Conceptualised by SP Member of Parliament Orlando and Minister of Labour Hausmann, the New Labour Protection and Safety Act (Orlando-Hausmann Act) establishes strict labour standards and protects workers' rights to unionise and strike."
  ZLF_worker_councils: "Worker Councils"
  ZLF_milmodkom: "Military Modernisation Committee" # Militärmodernisierungskommittee
+ ZLF_total_gardenian_victory: "Victory on the Battlefield"
  ZLF_trained_military_engineers: "Trained Military Engineers"
  ZLF_fighter_bonus: "Ace Combat"
  ZLF_aircraft_bonus: "Devil May Fly"
@@ -284,13 +303,15 @@
  ZLF_petite_bourgeois_cooperation_desc: "We may cooperate with them now, but never forget: 'The Bourgeois are not human.'"
  ZLF_domowina_preservation_act: "Domowina Preservation Act"
  ZLF_intervention_corps: "International Cooperation League"
+ ZLF_proletarian_internationale: "Proletarian Internationalism"
  ZLF_pan_tewareanism: "Pan-Tewareanism"
- ZLF_pan_tewareanism_desc: "The continental order must be disrupted! We will unite Tewara under the banner of democracy and socialism!"
+ ZLF_pan_tewareanism_desc: "The old continental order must be disrupted! We will unite Tewara under the banner of democracy and socialism!"
  ZLF_temp_research_bonus: "Fruits of Research"
  ZLF_spirit_of_victory: "Spirit of Victory"
  ZLF_successful_federalisation_initiative: "Federalisation Efforts"
  ZLF_expanded_intelligence_network: "Expanded Intelligence Network"
  ZLF_elbian_insurrectionary_army: "Elbian Volunteer Army"
+ ZLF_political_reshuffling: "Political Reshuffling"
  ZLF_sibling_republic_spirit: "Geschwisterrepublik"
  ZLF_celandra_monarchist_deconstruction: "Monarchist Deconstruction"
  ZLF_orchidee_new_national_identity: "New National Indentity"
@@ -302,6 +323,9 @@
  ZLF_stabilising_the_sibling_republics: "Stabilising the Sibling Republics"
  ZLF_every_worker_a_banner_army_member: "Every Worker a Banner-Army Member"
  ZLF_the_eternal_spirit_of_social_democracy: "The Constant Vigilance of Social Democracy"
+
+ ZLF_sukera_sparo: "Sukera Sparo"
+ ZLF_gardenien_bergbau_gmbg: "Gardenien Bergbau GmbH"
 
 
 # DYNMODS
@@ -361,11 +385,18 @@
  ZLF_establish_wealas_sibling_republic_desc: "WIP" #until some lore is developed
  ZLF_establish_wealas_sibling_republic_tt: "Release §Y$ZLF_wealas_republic_DEF$§! in §YHighlighted States§! controlled by us."
  ZLF_transfer_state_to_wealas_sb: "Transfer [FROM.GetName] to our Wēalan Allies"
+ ZLF_establish_paam_sibling_republic: "Establish a Paam Sibling Republic"
+ ZLF_establish_paam_sibling_republic_desc: "The Pan-Specific was a most unstable democracy, its flaws visible for the world to see. However, its principles of democratic self-determination are to be respected. The new Commonweal will learn from the mistakes of the past while keeping what worked well."
+ ZLF_establish_paam_sibling_republic_tt: "Release §Y$ZLF_paam_republic_DEF$§! in §YHighlighted States§! controlled by us."
+ ZLF_transfer_state_to_paam_sb: "Transfer [FROM.GetName] to our Paam Allies"
  ZLF_gardenisation_of_state: "Gardenianisation of [FROM.GetName]"
 
  ZLF_world_state_integration_cat: "Tewarean Federalisation"
- ZLF_integrate_allied_nation: "Propose Federalisation to [FROM.GetNameDef]"
- ZLF_integrate_allied_nation_tt: "Begin the Federalisation Process for §Y[FROM.GetNameWithFlag]§!."
+ ZLF_integrate_allied_nation: "Federalisation of [FROM.GetNameDef]"
+ ZLF_integrate_allied_nation_tt: "Begin the §CFederalisation Process§! for §Y[FROM.GetNameWithFlag]§!."
+ ZLF_monetary_integration: "Propose Monetary Integration"
+ ZLF_political_integration: "Propose Political Integration"
+ ZLF_federalise_allied_nation: "Complete [FROM.GetAdjective] Federalisation"
 
  ZLF_invite_more_allies_cat: "Internationalist System Expansion"
  ZLF_invite_aligned_nation_to_faction: "Offer Membership to [FROM.GetNameDef]"
@@ -568,6 +599,13 @@
  ZLF_invest_in_experimental_warfare_desc: ""
  ZLF_utilise_military_engineers: "Utilise Military Engineers"
  ZLF_utilise_military_engineers_desc: ""
+ ZLF_tank_warfare: "New Armour Designs"
+ ZLF_tank_warfare_desc: ""
+ ZLF_military_exellence: "Prove our Military Exellence"
+ ZLF_military_exellence_desc: ""
+ ZLF_military_exellence_tt: "Has inflicted at least §Y1.000.000§! Casualties"
+ ZLF_full_motorisation_efforts: "Wheels for Every Soldier"
+ ZLF_full_motorisation_efforts_desc: ""
  ZLF_staatssicherheitsdienst: "Staatssicherheitsdienst"
  ZLF_staatssicherheitsdienst_desc: ""
  ZLF_staatssicherheitsdienst_tt: "Create §YStaatssicherheitsdienst Gardenien§! Intelligence Agency."
@@ -591,6 +629,8 @@
  ZLF_government_holds_tt: "The §YGKP§! has been left out from the §YGoverning Coalition§!."
  ZLF_support_the_agricultural_class: "Support the Agricultural Class"
  ZLF_support_the_agricultural_class_desc: ""
+ ZLF_meisendorffs_new_propaganda: "Meisendorffs Neue Propaganda"
+ ZLF_meisendorffs_new_propaganda_desc: ""
  ZLF_transition_to_workers_councils: "[ZLF_get_worker_council_transition_name]"
  ZLF_transition_to_workers_councils_ndpvg: "Integrate the Unions"
  ZLF_transition_to_workers_councils_real: "Transition to Worker Councils"
@@ -649,10 +689,15 @@
  ZLF_shared_allied_industries_desc: ""
  ZLF_invest_in_allied_industries: "Maintain Allied Investments"
  ZLF_invest_in_allied_industries_desc: ""
+ ZLF_form_the_proletarian_internationale: "Form the Proletarian Internationale"
+ ZLF_form_the_proletarian_internationale_desc: ""
  ZLF_promote_international_solidarity: "Promote International Solidarity"
  ZLF_promote_international_solidarity_desc: ""
  ZLF_protect_national_identity: "Protect National Interests"
  ZLF_protect_national_identity_desc: ""
+ ZLF_overcome_nationality: "Cross-Border Cooperation"
+ ZLF_overcome_nationality_desc: ""
+ ZLF_overcome_nationality_tt: "§YEvery neighbouring State:§!"
  ZLF_support_democracy_abroad: "Support Democracy Abroad"
  ZLF_support_democracy_abroad_desc: ""
  ZLF_begin_the_anti_despotist_campaign: "Begin the Tewarean Campaigns"
@@ -790,22 +835,10 @@
  ZLF_generic_improve_army_readiness_desc: ""
  ZLF_generic_warmongering: "Warmongering"
  ZLF_generic_warmongering_desc: ""
- ZLF_generic_defensive_focus: "Defensie Focus"
+ ZLF_generic_defensive_focus: "Defensive Focus"
  ZLF_generic_defensive_focus_desc: ""
  ZLF_generic_deterrence: "Deterrence"
  ZLF_generic_deterrence_desc: ""
- ZLF_generic_cooperate_with_overlord: "Cooperate with our Allies"
- ZLF_generic_cooperate_with_overlord_desc: ""
- ZLF_generic_undermine_overlord_authority: "Undermine Overlord Authority"
- ZLF_generic_undermine_overlord_authority_desc: ""
- ZLF_generic_demand_independence: "Rally the People"
- ZLF_generic_demand_independence_desc: ""
- ZLF_generic_demand_independence_tt: "We will declare a §RWar of Independence§! against our §YOverlord§!."
- ZLF_generic_fight_the_good_fight: "Independence Secured"
- ZLF_generic_fight_the_good_fight_desc: ""
- ZLF_generic_fight_the_good_fight_tt: "We will sign a §YWhite Peace§! with our §Yformer Overlord§!."
- ZLF_generic_protect_our_freedom: "Protect our Freedom"
- ZLF_generic_protect_our_freedom_desc: ""
  ZLF_generic_why_we_fight: "Why We Fight"
  ZLF_generic_why_we_fight_desc: ""
 
@@ -846,7 +879,7 @@
 
 
  ZLF_post_cw_events.1.t: "The Constitutional Convention"
- ZLF_post_cw_events.1.desc: "WIP"
+ ZLF_post_cw_events.1.desc: "For the first time in Gardenian history, representatives of the people from all over the region have gathered together in Gartenstadt to write a constitution for Gardenia. The future of Gardenia lies in the hands of the revolutionary delegates."
  ZLF_post_cw_events.1.a: "Democracy will entrench itself!"
 
  ZLF_post_cw_events.2.t: "Constitutional Convention - Divisions of Power"
@@ -968,8 +1001,12 @@
  ZLF_unlocked_kronkite: "Unlocked via the §Y'$ZLF_events.14.t$'§! Event"
 
  ZLF_events.15.t: "Rathenau Affair: Radical Plot Uncovered!"
- ZLF_events.15.desc: ""
+ ZLF_events.15.desc: "WIP"
  ZLF_events.15.a: "AHA! I knew Social Democracy was infallible!"
+
+ ZLF_events.16.t: "SP forms Grand Coalition"
+ ZLF_events.16.desc: "WIP"
+ ZLF_events.16.a: "Neorevisionism is the way forward!"
 
 
  ZLF_news_events.1.t: "Revolutionaries win the Gardenian Civil War"

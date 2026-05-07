@@ -116,7 +116,6 @@
  ZTC_republican_military: "Republican Stadtwehr"
  ZTC_monetary_union_spirit: "Gardenian Monetary Union"
  ZCT_democratic_defence: "Shield of Democracy"
- ZTC_southern_democratic_bloc_spirit: "Southern Democratic Bloc"
  ZTC_global_trade: "Global Trade Network"
  ZTC_military_neutrality: "State of Emergency"
  ZTC_haven_for_the_wayward: "Haven for the Wayward"
@@ -179,9 +178,6 @@
  ZTC_popular_anger_increases: "Increasing Radicalisation"
  ZTC_council_anger_increases: "Increasing Dissatisfaction"
 
- ZTC_form_southern_democratic_bloc: "Form the Southern Democratic Bloc"
- ZTC_form_southern_democratic_bloc_tt: "All §Yhighlighted countries§! are §Ydemocratic§! (or §Ycommunist§! if you are §Ysocial-democratic§!) and either in our §Yfaction§! or our §Ysubjects§!."
- ZTC_establish_coastal_protectorate: "Establish the Celandra Coastal Protectorate"
  ZTC_secure_the_albia_strait: "Secure the Albia Strait"
 
 

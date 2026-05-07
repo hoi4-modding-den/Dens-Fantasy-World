@@ -581,6 +581,22 @@ country_event = { # Esperanto Reference
 		custom_effect_tooltip = available_political_advisor
 		show_ideas_tooltip = ZLF_ll_zaunenbach_token
 
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		every_character = {
+			limit = {
+				OR = {
+					is_character = ZLF_orlando
+					is_character = ZLF_mathilde_elysee
+					is_character = ZLF_gregor_bauer
+				}
+			}
+			add_trait = {
+				slot = political_advisor
+				trait = ZLF_esperantist
+			}
+		}
+
 		set_country_flag = ZLF_unlocked_esperanto
 	}
 }
@@ -622,13 +638,27 @@ country_event = { # Elbian Insurrection
 					limit = { has_character = ZLF_jakub_bart_cisinski }
 					ZLF_jakub_bart_cisinski = {
 						set_nationality = PREV.PREV
-						add_country_leader_role = {
+						if = { 
+							limit = { has_dlc = "No Compromise, No Surrender" }
+							add_country_leader_role = {
 							character = ZLF_jakub_bart_cisinski
 							promote_leader = yes
 							country_leader = {
 								ideology = environmentalism
 								expire = "1965.1.1.1"
-								traits = { ZLF_knight_of_the_moonlight_order }
+								traits = { ZLF_knight_of_the_moonlight_order ZLF_woodspark_fighter }
+							}
+						}
+						}
+						else = {
+							add_country_leader_role = {
+								character = ZLF_jakub_bart_cisinski
+								promote_leader = yes
+								country_leader = {
+									ideology = environmentalism
+									expire = "1965.1.1.1"
+									traits = { ZLF_knight_of_the_moonlight_order ZLF_highhill_fighter }
+								}
 							}
 						}
 					}
@@ -714,12 +744,10 @@ country_event = { # Elbian Insurrection
 				}
 				every_other_country = {
 					limit = { has_war_with = ROOT }
-					ROOT = {
-						add_to_war = {
-							targeted_alliance = PREV
-							enemy = PREV.PREV
-							hostility_reason = ZLF_events.2.t
-							single_target_only = yes
+					PREV = {
+						declare_war_on = {
+							target = PREV
+							type = independence_wargoal
 						}
 					}
 				}
@@ -1126,6 +1154,20 @@ news_event = { # Walter uncovers Rathenau Affair
 
 	option = {
 		name = ZLF_events.15.a
+		country_event = { id = ZLF_events.16 days = 5 }
+	}
+}
+
+country_event = { # SP Majority
+	id = ZLF_events.16
+	title = ZLF_events.16.t
+	desc = ZLF_events.16.desc
+	picture = GFX_country_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.16.a
 		add_popularity = { ideology = communism popularity = -0.1 }
 
 		custom_effect_tooltip = generic_skip_one_line_tt
@@ -1151,6 +1193,42 @@ news_event = { # Walter uncovers Rathenau Affair
 
 		set_country_flag = ZLF_krondrache_uncovered_plot
 		complete_national_focus = ZLF_government_holds
+	}
+}
+
+country_event = { # Meisendorff takes charge for National Defence
+	id = ZLF_events.17
+	title = ZLF_events.17.t
+	desc = ZLF_events.17.desc
+	picture = GFX_country_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.17.a
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			name = ZLF_democratic_party_sp
+			long_name = ZLF_democratic_party_sp_long
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		promote_character = ZLF_michel_meisendorff
+
+		if = {
+			limit = { ZLF_michel_meisendorff = { is_field_marshal = no } }
+			ZLF_michel_meisendorff = { promote_leader = yes }
+			hidden_effect = {
+				ZLF_michel_meisendorff = { remove_unit_leader_trait = recently_promoted }
+			}
+		}
+	}
+
+	option = {
+		name = ZLF_events.17.b
+		add_popularity = { ideology = democratic popularity = 0.05 }
 	}
 }
 

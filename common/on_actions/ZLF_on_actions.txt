@@ -92,7 +92,7 @@ on_actions = {
                             character = ZLF_ekkehart_krippendorff
                             promote_leader = yes
                             country_leader = {
-                                ideology = moralist_rationalism
+                                ideology = moralism
                                 expire = "1965.1.1.1"
                                 traits = { ZLF_former_foreign_minister }
                             }

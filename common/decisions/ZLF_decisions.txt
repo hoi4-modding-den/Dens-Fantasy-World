@@ -337,6 +337,8 @@ ZLF_establish_sibling_republics_cat = {
                         }
                     }
 
+                    load_focus_tree = ZLF_generic_focus_tree
+
                     set_politics = {
                         ruling_party = democratic
                         elections_allowed = no
@@ -349,7 +351,7 @@ ZLF_establish_sibling_republics_cat = {
                         neutrality = 20
                         fascism = 15
                     }
-                    random_other_country = {
+                    every_possible_country = {
                         limit = { has_character = ZLF_verda_majo }
                         ZLF_verda_majo = {
                             set_nationality = PREV.PREV
@@ -481,6 +483,8 @@ ZLF_establish_sibling_republics_cat = {
                         }
                     }
 
+                    load_focus_tree = ZLF_generic_focus_tree
+
                     set_politics = {
                         ruling_party = democratic
                         elections_allowed = no
@@ -493,7 +497,7 @@ ZLF_establish_sibling_republics_cat = {
                         neutrality = 8
                         fascism = 0
                     }
-                    random_other_country = {
+                    every_possible_country = {
                         limit = { has_character = ZLF_giovanni_campanella }
                         ZLF_giovanni_campanella = {
                             set_nationality = PREV.PREV
@@ -631,6 +635,8 @@ ZLF_establish_sibling_republics_cat = {
                         set_capital = { state = 1258 }
                     }
 
+                    load_focus_tree = ZLF_generic_focus_tree
+
                     set_politics = {
                         ruling_party = communism
                         elections_allowed = no
@@ -643,7 +649,7 @@ ZLF_establish_sibling_republics_cat = {
                         neutrality = 15
                         fascism = 5
                     }
-                    random_other_country = {
+                    every_possible_country = {
                         limit = { has_character = ZLF_wallelign_gizaw }
                         ZLF_wallelign_gizaw = {
                             set_nationality = PREV.PREV
@@ -783,6 +789,8 @@ ZLF_establish_sibling_republics_cat = {
                         set_capital = { state = 122 }
                     }
 
+                    load_focus_tree = ZLF_generic_focus_tree
+
                     set_politics = {
                         ruling_party = democratic
                         elections_allowed = no
@@ -795,7 +803,7 @@ ZLF_establish_sibling_republics_cat = {
                         neutrality = 15
                         fascism = 5
                     }
-                    random_other_country = {
+                    every_possible_country = {
                         limit = { has_character = ZLF_adomas_dereska }
                         ZLF_adomas_dereska = {
                             set_nationality = PREV.PREV
@@ -803,7 +811,7 @@ ZLF_establish_sibling_republics_cat = {
                                 character = ZLF_adomas_dereska
                                 promote_leader = yes
                                 country_leader = {
-                                    ideology = moralist_rationalism
+                                    ideology = moralism
                                     expire = "1965.1.1.1"
                                     traits = { ZLF_humanist_consul }
                                 }
@@ -934,6 +942,8 @@ ZLF_establish_sibling_republics_cat = {
                         }
                     }
 
+                    load_focus_tree = ZLF_generic_focus_tree
+
                     set_politics = {
                         ruling_party = democratic
                         elections_allowed = no
@@ -946,7 +956,7 @@ ZLF_establish_sibling_republics_cat = {
                         neutrality = 15
                         fascism = 5
                     }
-                    random_other_country = {
+                    every_possible_country = {
                         limit = { has_character = ZLF_john_smith }
                         ZLF_john_smith = {
                             set_nationality = PREV.PREV
@@ -954,7 +964,7 @@ ZLF_establish_sibling_republics_cat = {
                                 character = ZLF_john_smith
                                 promote_leader = yes
                                 country_leader = {
-                                    ideology = environmentalism
+                                    ideology = liberalism
                                     expire = "1965.1.1.1"
                                     traits = { ZLF_eccentric_adventurer }
                                 }
@@ -1024,7 +1034,7 @@ ZLF_establish_sibling_republics_cat = {
 
         highlight_states = {
 			highlight_states_trigger = {
-				ZLF_avalon_sb_state = yes
+				ZLF_wealas_sb_state = yes
 			}
 		}
 
@@ -1040,7 +1050,7 @@ ZLF_establish_sibling_republics_cat = {
                     }
                     name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
                 }
-                value > 7
+                value > 3
             }
         }
 
@@ -1077,6 +1087,8 @@ ZLF_establish_sibling_republics_cat = {
                         }
                     }
 
+                    load_focus_tree = ZLF_generic_focus_tree
+
                     set_politics = {
                         ruling_party = democratic
                         elections_allowed = no
@@ -1089,7 +1101,7 @@ ZLF_establish_sibling_republics_cat = {
                         neutrality = 15
                         fascism = 5
                     }
-                    random_other_country = {
+                    every_possible_country = {
                         limit = { has_character = ZLF_richard_anderson }
                         ZLF_richard_anderson = {
                             set_nationality = PREV.PREV
@@ -1099,7 +1111,7 @@ ZLF_establish_sibling_republics_cat = {
                                 country_leader = {
                                     ideology = environmentalism
                                     expire = "1965.1.1.1"
-                                    traits = { ZLF_environmentalist_freedom_fighter }
+                                    traits = { ZLF_environmentalist_freedom_fighter ZLF_honour_knight_of_the_domowina }
                                 }
                             }
                         }
@@ -1150,6 +1162,151 @@ ZLF_establish_sibling_republics_cat = {
                 limit = {
                     is_subject_of = ROOT
                     has_cosmetic_tag = ZLF_wealas_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
+    ZLF_establish_paam_sibling_republic = {
+
+        icon = eng_trade_unions_support
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_paam_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_paam_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 9
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = ZLF_establish_paam_sibling_republic_tt
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = ZPS
+                    set_cosmetic_tag = ZLF_paam_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_paam_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_paam_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_integrated_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    load_focus_tree = ZLF_generic_focus_tree
+
+                    set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_paam
+                        long_name = ZLF_democratic_party_paam_long
+                    }
+                    set_popularities = {
+                        democratic = 75
+                        communism = 10
+                        neutrality = 0
+                        fascism = 15
+                    }
+                    every_possible_country = {
+                        limit = { has_character = ZLF_turron }
+                        ZLF_turron = {
+                            set_nationality = PREV.PREV
+                            add_country_leader_role = {
+                                character = ZLF_turron
+                                promote_leader = yes
+                                country_leader = {
+                                    ideology = environmentalism
+                                    expire = "1965.1.1.1"
+                                    traits = { ZLF_speaker_of_the_legislative_assembly }
+                                }
+                            }
+                        }
+                    }
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_paam_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_paam_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_paam_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_paam_republic
                 }
                 transfer_state = FROM
             }
@@ -1228,7 +1385,14 @@ ZLF_world_state_integration_cat = {
         }
 
         visible = {
-
+            NOT = {
+                any_other_country = {
+                    exists = yes
+                    is_ally_with = ROOT
+                    is_subject = no
+                    has_country_flag = ZLF_integration_target
+                }
+            }
         }
 
         targets_dynamic = yes
@@ -1242,6 +1406,194 @@ ZLF_world_state_integration_cat = {
 
         complete_effect = {
             custom_effect_tooltip = ZLF_integrate_allied_nation_tt
+            FROM = { set_country_flag = ZLF_integration_target }
+        }
+
+    }
+
+    ZLF_monetary_integration = {
+
+        icon = gre_investment_decisions
+
+        cost = 50
+
+        ai_will_do = {
+            base = 10
+        }
+
+        available = {
+            FROM = {
+                exists = yes
+                is_subject = no
+                is_ally_with = ROOT
+            }
+        }
+
+        targets_dynamic = yes
+
+        target_trigger = {
+            FROM = {
+                exists = yes
+                is_subject = no
+                is_ally_with = ROOT
+                has_country_flag = ZLF_integration_target
+            }
+        }
+
+        days_re_enable = 100
+
+        complete_effect = {
+            FROM = {
+                #event
+            }
+
+            custom_effect_tooltip = if_they_accept_tt
+            effect_tooltip = {
+                FROM = {
+                    add_to_variable = { tooltip = ZLF_add_integration_level FROM.ZLF_integration_level = 1 }
+                    add_offsite_building = { type = industrial_complex level = 2 }
+                }
+            }
+        }
+
+    }
+
+    ZLF_judicial_integration = {
+
+        icon = eng_trade_unions_demand
+
+        cost = 50
+
+        ai_will_do = {
+            base = 10
+        }
+
+        available = {
+            FROM = {
+                exists = yes
+                is_subject = no
+                is_ally_with = ROOT
+            }
+        }
+
+        targets_dynamic = yes
+
+        target_trigger = {
+            FROM = {
+                exists = yes
+                is_subject = no
+                is_ally_with = ROOT
+                has_country_flag = ZLF_integration_target
+            }
+        }
+
+        days_re_enable = 100
+
+        complete_effect = {
+            FROM = {
+                #event
+            }
+
+            custom_effect_tooltip = if_they_accept_tt
+            effect_tooltip = {
+                FROM = {
+                    add_to_variable = { tooltip = ZLF_add_integration_level FROM.ZLF_integration_level = 1 }
+                    add_popularity = { ideology = ROOT popularity = 0.05 }
+                    add_stability = 0.15
+                }
+            }
+        }
+
+    }
+
+    ZLF_political_integration = {
+
+        icon = generic_political_discourse
+
+        cost = 50
+
+        ai_will_do = {
+            base = 10
+        }
+
+        available = {
+            FROM = {
+                exists = yes
+                is_subject = no
+                is_ally_with = ROOT
+            }
+        }
+
+        targets_dynamic = yes
+
+        target_trigger = {
+            FROM = {
+                exists = yes
+                is_subject = no
+                is_ally_with = ROOT
+                has_country_flag = ZLF_integration_target
+            }
+        }
+
+        days_re_enable = 100
+
+        complete_effect = {
+            FROM = {
+                #event
+            }
+
+            custom_effect_tooltip = if_they_accept_tt
+            effect_tooltip = {
+                FROM = {
+                    add_to_variable = { tooltip = ZLF_add_integration_level FROM.ZLF_integration_level = 1 }
+                    add_popularity = { ideology = ROOT popularity = 0.05 }
+                    add_timed_idea = {
+                        idea = ZLF_political_reshuffling
+                        days = 365
+                    }
+                }
+            }
+        }
+
+    }
+
+    ZLF_federalise_allied_nation = {
+
+        icon = hol_exchange_intelligence_data
+
+        cost = 100
+
+        ai_will_do = {
+            base = 10
+        }
+
+        available = {
+            FROM = {
+                exists = yes
+                is_subject = no
+                is_ally_with = ROOT
+                check_variable = { tooltip = ZLF_check_integration_level FROM.ZLF_integration_level > 4 }
+            }
+        }
+
+        targets_dynamic = yes
+
+        target_trigger = {
+            FROM = {
+                exists = yes
+                is_subject = no
+                is_ally_with = ROOT
+                has_country_flag = ZLF_integration_target
+            }
+        }
+
+        complete_effect = {
+            set_autonomy = {
+                target = FROM
+                autonomous_state = autonomy_puppet
+                end_wars = no
+                end_civil_wars = no
+            }
         }
 
     }
@@ -2305,6 +2657,10 @@ ZLF_magic_polygon_cat = {
     }
 
     ZLF_complete_the_polygon = {
+
+        ai_will_do = {
+            base = 1
+        }
 
         available = {
             custom_trigger_tooltip = {

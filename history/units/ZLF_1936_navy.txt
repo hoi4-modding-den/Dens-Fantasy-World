@@ -1,0 +1,109 @@
+units = {
+
+    fleet = {
+        name = "Volksmarine"
+        naval_base = 11208
+        task_force = {				
+			name = "Iljoenseeflotte"
+			location = 11208
+			ship = {
+                name = "Freiheit" 
+                pride_of_the_fleet = yes 
+                definition = heavy_cruiser 
+                start_experience_factor = 0.3 
+                equipment = {
+                    ship_hull_heavy_2 = {
+                        amount = 1 
+                        owner = ZLF 
+                        version_name = "Lillie" 
+                    }
+                }
+            }
+			ship = {
+                name = "Gleichheit" 
+                definition = light_cruiser 
+                start_experience_factor = 0.3 
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1 
+                        owner = ZLF 
+                        version_name = "Rose" 
+                    }
+                }
+            }
+			ship = {
+                name = "Brüderlichkeit" 
+                definition = light_cruiser 
+                start_experience_factor = 0.3 
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1 
+                        owner = ZLF 
+                        version_name = "Rose" 
+                    }
+                }
+            }
+            ship = {
+                name = "Elbenland" 
+                definition = destroyer 
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1 
+                        owner = ZLF 
+                        version_name = "Zerstörer 1934" 
+                    }
+                }
+            }
+			ship = {
+                name = "Standarte" 
+                definition = destroyer 
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1 
+                        owner = ZLF 
+                        version_name = "Zerstörer 1934" 
+                    }
+                }
+            }
+			ship = {
+                name = "Löbnitz" 
+                definition = destroyer 
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1 
+                        owner = ZLF 
+                        version_name = "Zerstörer 1934" 
+                    }
+                }
+            }
+			ship = {
+                name = "Welsen" 
+                definition = destroyer 
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1 
+                        owner = ZLF 
+                        version_name = "Zerstörer 1934" 
+                    }
+                }
+            }
+		}
+    }
+
+}
+
+instant_effect = {
+
+    add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "ZLF"
+			version_name = "Zerstörer 1934"
+		}
+		requested_factories = 10
+		progress = 0.25
+		amount = 6
+		#industrial_manufacturer = mio:
+	}
+
+}

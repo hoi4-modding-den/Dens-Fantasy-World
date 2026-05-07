@@ -137,6 +137,37 @@ spriteTypes = {
 
 
     spriteType = {
+        name = "GFX_portrait_ZKN_generic_male_army_1"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_generic_male_army_1.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_generic_male_army_1_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_generic_male_army_1_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_generic_male_army_2"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_generic_male_army_2.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_generic_male_army_2_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_generic_male_army_2_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_generic_male_army_3"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_generic_male_army_3.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_generic_male_army_3_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_generic_male_army_3_small.png"
+    }
+
+
+    spriteType = {
 		name = "GFX_trait_ZKN_white_silver"
 		texturefile = "gfx/interface/traits/trait_fly_swatter.dds"
 	}

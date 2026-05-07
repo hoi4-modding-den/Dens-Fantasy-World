@@ -1,6 +1,7 @@
 capital = 570
 
 oob = "ZKN_1936"
+set_naval_oob = "ZKN_1936_navy"
 
 set_stability = 0.6
 set_war_support = 0.6
@@ -23,9 +24,13 @@ set_technology = {
 	interwar_antiair = 1
 }
 
+ZLF_navy_techs_for_gardenia = yes
+
 ZLF_air_techs_for_gardenia = yes
 
 add_ideas = {
+	ZLF_women_are_real
+	
 	limited_exports
 	extensive_conscription
 	partial_economic_mobilisation
@@ -34,6 +39,14 @@ add_ideas = {
 	ZKN_general_strike
 	ZKN_sale_of_the_armada
 	ZKN_throne_under_threat
+}
+
+set_rule = {
+	can_create_collaboration_government = no
+	# mainly just because I dont wanna do more portraits
+	#can_generate_female_unit_leaders = yes
+	#can_generate_female_country_leaders = yes
+	can_generate_female_aces = yes
 }
 
 recruit_character = ZKN_michael_aurus

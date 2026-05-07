@@ -547,6 +547,12 @@ characters = {
             }
         }
 
+        country_leader = {
+			ideology = neorevisionism
+			traits = { ZLF_minister_of_defence ZLF_democratic_propagandist } # only for tooltip, gets replaced with true trait
+			expire = "1960.1.1.1"
+		}
+
 		corps_commander = {
             traits = { politically_connected militias_officer }
             skill = 2
@@ -853,7 +859,7 @@ characters = {
                 NOT = { has_country_flag = ZLF_elbian_insurrection_happened }
             }
 
-			cost = 100
+			cost = 150
 
             traits = {
                 ZLF_elbian_autonomist
@@ -864,7 +870,7 @@ characters = {
         }
         
 		corps_commander = {
-            traits = { ranger politically_connected }
+            traits = { jaeger politically_connected }
             skill = 4
             attack_skill = 5
             defense_skill = 2
@@ -874,42 +880,92 @@ characters = {
 	}
 
     ZLF_jakub_bart_cisinski = {
-		name = ZLF_jakub_bart_cisinski_name
-		portraits = {
-			army = {
-				large = GFX_portrait_ZLF_jakub_bart_cisinski
-				small = GFX_portrait_ZLF_jakub_bart_cisinski_small
+        instance = {
+			allowed = {
+				has_dlc = "No Compromise, No Surrender"
 			}
+
+			name = ZLF_jakub_bart_cisinski_name
+            portraits = {
+                army = {
+                    large = GFX_portrait_ZLF_jakub_bart_cisinski
+                    small = GFX_portrait_ZLF_jakub_bart_cisinski_small
+                }
+            }
+
+			advisor = {
+                slot = high_command
+                idea_token = ZLF_jakub_bart_cisinski_token
+                allowed = {
+                    original_tag = ZLF
+                }
+                available = {
+                    NOT = { has_country_flag = ZLF_elbian_insurrection_happened }
+                }
+
+                cost = 200
+
+                traits = {
+                    ZLF_elbian_commander
+                }
+                ai_will_do = {
+                    base = 5
+                }
+            }
+            
+            corps_commander = {
+                traits = { jaeger ranger trait_mountaineer inflexible_strategist }
+                skill = 4
+                attack_skill = 3
+                defense_skill = 4
+                planning_skill = 4
+                logistics_skill = 3
+            }
 		}
+        instance = {
+			allowed = {
+				NOT = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+			}
 
-		advisor = {
-            slot = high_command
-            idea_token = ZLF_jakub_bart_cisinski_token
-            allowed = {
-                original_tag = ZLF
-            }
-            available = {
-                NOT = { has_country_flag = ZLF_elbian_insurrection_happened }
+			name = ZLF_jakub_bart_cisinski_name
+            portraits = {
+                army = {
+                    large = GFX_portrait_ZLF_jakub_bart_cisinski
+                    small = GFX_portrait_ZLF_jakub_bart_cisinski_small
+                }
             }
 
-			cost = 200
+			advisor = {
+                slot = high_command
+                idea_token = ZLF_jakub_bart_cisinski_token
+                allowed = {
+                    original_tag = ZLF
+                }
+                available = {
+                    NOT = { has_country_flag = ZLF_elbian_insurrection_happened }
+                }
 
-            traits = {
-                army_commando_3
+                cost = 200
+
+                traits = {
+                    ZLF_elbian_commander_no_ncns
+                }
+                ai_will_do = {
+                    base = 5
+                }
             }
-            ai_will_do = {
-                base = 5
+            
+            corps_commander = {
+                traits = { jaeger ranger trait_mountaineer inflexible_strategist }
+                skill = 4
+                attack_skill = 3
+                defense_skill = 4
+                planning_skill = 4
+                logistics_skill = 3
             }
-        }
-        
-		corps_commander = {
-            traits = { ranger inflexible_strategist }
-            skill = 4
-            attack_skill = 3
-            defense_skill = 4
-            planning_skill = 4
-            logistics_skill = 3
-        }
+		}
 	}
 
     ZLF_uwe_koch = {
@@ -1040,6 +1096,15 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_portrait_ZLF_richard_anderson
+			}
+		}
+	}
+
+    ZLF_turron = {
+		name = ZLF_turron_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_turron
 			}
 		}
 	}

@@ -1,54 +1,61 @@
 ZKN = {
 	army = {
 		male = {
-            "GFX_Portrait_Europe_Generic_land_1"
-			"GFX_Portrait_Europe_Generic_land_2"
-			"GFX_Portrait_Europe_Generic_land_3"
-			"GFX_Portrait_Europe_Generic_land_4"
-			"GFX_Portrait_Europe_Generic_land_5"
-			"GFX_portrait_europe_generic_land_13"
-			"GFX_Portrait_Germany_Generic_land_1"
-			"GFX_Portrait_Germany_Generic_land_2"
-			"GFX_Portrait_Germany_Generic_land_3"
-			"GFX_Portrait_Germany_Generic_land_4"
-			"GFX_Portrait_Germany_Generic_land_5"
-			"GFX_Portrait_Germany_Generic_land_6"
-			"GFX_Portrait_Germany_Generic_land_7"
-			"GFX_Portrait_Germany_Generic_land_8"
-			"GFX_Portrait_Germany_Generic_land_9"
+            "GFX_portrait_ZKN_generic_male_army_1"
+			"GFX_portrait_ZKN_generic_male_army_2"
+			"GFX_portrait_ZKN_generic_male_army_3"
+		}
+		female = {
+            "GFX_portrait_ZLF_generic_female_army_1"
+			"GFX_portrait_ZLF_generic_female_army_2"
+			"GFX_portrait_ZLF_generic_female_army_3"
 		}
 	}
 	
 	navy = {
 		male = {
-            "GFX_Portrait_Europe_Generic_navy_1"
-			"GFX_Portrait_Europe_Generic_navy_2"
-			"GFX_Portrait_Europe_Generic_navy_3"
-			"GFX_Portrait_Germany_Generic_navy_1"
-			"GFX_Portrait_Germany_Generic_navy_2"
-			"GFX_Portrait_Germany_Generic_navy_3"
+            "GFX_portrait_ZLF_generic_male_navy_1"
+			"GFX_portrait_ZLF_generic_male_navy_2"
+		}
+		female = {
+            "GFX_portrait_ZLF_generic_female_navy_1"
+			"GFX_portrait_ZLF_generic_female_navy_2"
 		}
 	}
 	
 	political = {
-		communism = {
-				male = { 
-				"GFX_Portrait_Europe_Generic_1"
-			}
-		}
 		democratic = {
-				male = { 
-				"GFX_Portrait_Europe_Generic_2" 
+			male = { 
+				"GFX_portrait_ZLF_generic_male_politician_democratic_1"
 			}
-		}
-		fascism = {
-				male = { 
-				"GFX_Portrait_Europe_Generic_3" 
+			female = { 
+				"GFX_portrait_ZLF_generic_female_politician_democratic_1"
+				"GFX_portrait_ZLF_generic_female_politician_democratic_2"
 			}
 		}
 		neutrality = {
-				male = { 
-				"GFX_Portrait_Europe_Generic_3" 
+			male = { 
+				"GFX_portrait_ZLF_generic_male_politician_neutrality_1"
+				"GFX_portrait_ZLF_generic_male_politician_neutrality_2"
+			}
+			female = { 
+				"GFX_portrait_ZLF_generic_female_politician_neutrality_1"
+			}
+		}
+		communism = {
+			male = { 
+				"GFX_portrait_ZLF_generic_male_politician_communism_1"
+			}
+			female = { 
+				"GFX_portrait_ZLF_generic_female_politician_communism_1"
+			}
+		}
+		fascism = {
+			male = { 
+				"GFX_portrait_ZLF_generic_male_politician_fascism_1"
+			}
+			female = { 
+				"GFX_portrait_ZLF_generic_female_politician_fascism_1"
 			}
 		}
 	}

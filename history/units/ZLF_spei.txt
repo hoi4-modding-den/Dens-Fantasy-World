@@ -1,24 +1,24 @@
 units = {
     division = {
-        name = "Verteidungsbrigade Plosen"
+        name = "Wehrbrigade Plosen"
 		location = 9428
-		division_template = "Wehrbrigade"
+		division_template = "Defence Brigade"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.9
 		start_manpower_factor = 0.3
 	}
     division = {
-        name = "Verteidungsbrigade Malenau"
+        name = "Wehrbrigade Malenau"
 		location = 9429
-		division_template = "Wehrbrigade"
+		division_template = "Defence Brigade"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.9
 		start_manpower_factor = 0.3
 	}
     division = {
-        name = "Verteidungsbrigade Zaddern"
+        name = "Wehrbrigade Zaddern"
 		location = 9433
-		division_template = "Wehrbrigade"
+		division_template = "Defence Brigade"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.9
 		start_manpower_factor = 0.3

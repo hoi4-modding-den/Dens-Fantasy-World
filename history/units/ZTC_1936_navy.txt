@@ -1,0 +1,452 @@
+units = {
+
+    fleet = {
+        name = "Handelsschutzflotte"
+        naval_base = 10502
+        task_force = {
+            name = "Lillienseeflotte"
+            location = 10502
+            ship = {
+                name = "Krösus"
+                pride_of_the_fleet = yes
+                definition = heavy_cruiser
+                start_experience_factor = 0.3
+                equipment = {
+                    ship_hull_heavy_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Lillie"
+                    }
+                }
+            }
+            ship = {
+                name = "Maria"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Viktoria"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Ludmilla"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Robold"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Knilch"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Mackie"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Julia"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Strolz"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Schimmy"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Jilly"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Johann"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Thomas"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Tibbles"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Tom"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Wilhelmina"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Merlin"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Hildegard"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Humbolt"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Asuka"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Gutemine"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Nova"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+            ship = {
+                name = "Trixie"
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Handelsschutzschiff"
+                    }
+                }
+            }
+        }
+    }
+
+    fleet = {
+        name = "Ehemalige Königliche Armada"
+        naval_base = 10497
+        task_force = {
+            name = "Lillienseeflotte"
+            location = 10497
+            ship = {
+                name = "KAS Michael I."
+                definition = heavy_cruiser
+                start_experience_factor = 0.3
+                equipment = {
+                    ship_hull_heavy_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Lillie"
+                    }
+                }
+            }
+            ship = {
+                name = "KAS Königsgnaden"
+                definition = heavy_cruiser
+                start_experience_factor = 0.3
+                equipment = {
+                    ship_hull_heavy_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Lillie"
+                    }
+                }
+            }
+            ship = {
+                name = "KAS Wittingen"
+                definition = heavy_cruiser
+                start_experience_factor = 0.3
+                equipment = {
+                    ship_hull_heavy_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Lillie"
+                    }
+                }
+            }
+            ship = {
+                name = "KAS Rathenau"
+                definition = light_cruiser
+                start_experience_factor = 0.3
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Rose"
+                    }
+                }
+            }
+            ship = {
+                name = "Reichenland"
+                definition = destroyer
+                start_experience_factor = 0.2
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Zerstörer 1934"
+                    }
+                }
+            }
+            ship = {
+                name = "Krone"
+                definition = destroyer
+                start_experience_factor = 0.2
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Zerstörer 1934"
+                    }
+                }
+            }
+            ship = {
+                name = "Sachsenhagen"
+                definition = destroyer
+                start_experience_factor = 0.2
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Zerstörer 1934"
+                    }
+                }
+            }
+        }
+        task_force = {
+            name = "Iljoenseeflotte"
+            location = 10502
+            ship = {
+                name = "KAS Plosen"
+                definition = light_cruiser
+                start_experience_factor = 0.3
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Rose"
+                    }
+                }
+            }
+            ship = {
+                name = "KAS Miriam"
+                definition = light_cruiser
+                start_experience_factor = 0.3
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Rose"
+                    }
+                }
+            }
+            ship = {
+                name = "Gartenstadt"
+                definition = destroyer
+                start_experience_factor = 0.2
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Zerstörer 1934"
+                    }
+                }
+            }
+            ship = {
+                name = "Tulpenstedt"
+                definition = destroyer
+                start_experience_factor = 0.2
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Zerstörer 1934"
+                    }
+                }
+            }
+            ship = {
+                name = "Markelsrade"
+                definition = destroyer
+                start_experience_factor = 0.2
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Zerstörer 1934"
+                    }
+                }
+            }
+            ship = {
+                name = "Hyazinthenau"
+                definition = destroyer
+                start_experience_factor = 0.2
+                equipment = {
+                    ship_hull_light_2 = {
+                        amount = 1
+                        owner = ZTC
+                        version_name = "Zerstörer 1934"
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+instant_effect = {
+
+    add_equipment_production = {
+        equipment = {
+            type = ship_hull_light_2
+            creator = "ZTC"
+            version_name = "Handelsschutzschiff"
+        }
+        requested_factories = 10
+        progress = 0.25
+        amount = 8
+        #industrial_manufacturer = mio:
+    }
+
+}

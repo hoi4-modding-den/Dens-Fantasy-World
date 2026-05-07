@@ -88,8 +88,18 @@ ZLF_avalon_sb_state = {
 }
 ZLF_wealas_sb_state = {
     OR = {
-        state = 1
+        state = 310
+        state = 76
+        state = 341
+        state = 91
+        state = 288
+        state = 109
+        state = 165
     }
+}
+ZLF_paam_sb_state = {
+    region = 11
+    NOT = { state = 165 }
 }
 
 ZLF_is_despotist_ideology = {
@@ -207,5 +217,11 @@ ZLF_FROM_abides_by_joining_rules = {
             has_active_rule = joining_rule_same_continent_only
         }
         FROM = { is_on_same_continent_as = ROOT }
+    }
+    if = {
+        limit = {
+            has_active_rule = ZLF_joining_rule_tewarean_only
+        }
+        FROM = { capital_scope = { ZLF_is_on_continent_tewara = yes } }
     }
 }
