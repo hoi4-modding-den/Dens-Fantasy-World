@@ -29,4 +29,16 @@ set_popularities = {
 	neutrality = 10
 }
 
+add_ideas = {
+	RAZESCAPE_scorched_earth
+}
+add_opinion_modifier = {
+	target = ZVT
+	modifier = ZST_sorcerer_witch_war
+}
+reverse_add_opinion_modifier = {
+	target = ZVT
+	modifier = ZST_sorcerer_witch_war
+}
+
 37 = { set_demilitarized_zone = yes }

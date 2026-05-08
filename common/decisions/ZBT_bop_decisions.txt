@@ -1,0 +1,65 @@
+ZBT_national_identity_cat = {
+	test_seperatist = {
+		icon = GFX_decision_SWI_dismiss_council
+		cost = 1
+		complete_effect = {
+			add_power_balance_value = {
+				id = ZBT_national_identity_bop
+				value = 0.1
+			}
+		}
+	}
+	test_restorative = {
+		icon = GFX_decision_SWI_dismiss_council
+		cost = 1
+		complete_effect = {
+			add_power_balance_value = {
+				id = ZBT_national_identity_bop
+				value = -0.1
+			}
+		}
+	}
+}
+
+
+
+
+political_actions = {
+	ZBT_return_to_normal_timer = {
+		icon = generic_political_rally
+		activation = { always = no }
+		selectable_mission = false
+		days_mission_timeout = 300
+		is_good = no
+
+		available = {
+			has_completed_focus = ZBT_wasteland_restored
+			stability > 0.7
+		}
+
+		complete_effect = { # completed the focus in time
+			add_political_power = 100
+			add_popularity = { ideology = democratic popularity = 0.1 }
+			add_popularity = { ideology = communism popularity = 0.1 }
+			IF = {  # push BOP in your favour
+				limit = { power_balance_value = { id = ZBT_national_identity_bop value > 0 } }
+				add_power_balance_value = {id = ZBT_national_identity_bop value = 0.3}
+			}
+			ELSE = {
+				add_power_balance_value = {id = ZBT_national_identity_bop value = -0.3}
+			}
+		}
+		timeout_effect = { # you done fucked it
+			add_stability = -0.2
+			add_popularity = { ideology = democratic popularity = -0.1 }
+			add_popularity = { ideology = communism popularity = -0.1 }
+			IF = {  # push BOP against you I guess
+				limit = { power_balance_value = { id = ZBT_national_identity_bop value > 0 } }
+				add_power_balance_value = {id = ZBT_national_identity_bop value = -0.3}
+			}
+			ELSE = {
+				add_power_balance_value = {id = ZBT_national_identity_bop value = 0.3}
+			}
+		}
+	}
+}

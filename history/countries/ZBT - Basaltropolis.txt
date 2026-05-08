@@ -1,6 +1,6 @@
 ﻿capital = 710
 
-#oob = ""
+oob = "ZBT_1936"
 
 # Starting tech
 set_research_slots = 2
@@ -15,6 +15,8 @@ set_technology = {
 	tech_engineers = 1
 }
 
+recruit_character = ZBT_duke_esta
+promote_character = ZBT_duke_esta
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -26,6 +28,10 @@ set_popularities = {
 	fascism = 1
 	communism = 1
 	neutrality = 96
+}
+set_power_balance = {
+	id = ZBT_national_identity_bop
+	set_default = yes
 }
 
 add_ideas = {

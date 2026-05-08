@@ -21,4 +21,8 @@ set_popularities = {
 	neutrality = 30
 }
 
+add_ideas = {
+	RAZESCAPE_scorched_earth
+}
+
 set_cosmetic_tag = ZVT_witchdom

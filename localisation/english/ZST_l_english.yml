@@ -16,6 +16,6 @@
  # States and VPs
  STATE_72:0 "Pandemonium"
  STATE_583:0 "Mountains of Madness"
- STATE_37:0 "Northern $STATE_178$" #TBA
+ STATE_37:0 "Semebota" #TBA
  VICTORY_POINTS_8836:0 "Jimtown"
  VICTORY_POINTS_8824:0 "Horgungo"

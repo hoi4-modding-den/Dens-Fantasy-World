@@ -8,6 +8,18 @@
 
  # Parties
  ZRZ_fascism_party:0 "Malphas' Rule"
- ZRZ_neutrality_party:0 "§tResistance§!"
- ZRZ_democratic_party:0 "§tResistance§!"
- ZRZ_communism_party:0 "§tResistance§!"
+ ZRZ_neutrality_party:0 "Resistance"
+ ZRZ_democratic_party:0 "Resistance"
+ ZRZ_communism_party:0 "Resistance"
+
+
+
+ # Ideas
+ ZRZ_one_dragon_army:0 "One Dragon Army"
+ ZRZ_retribution:0 "One Dragon Army"
+ RAZESCAPE_scorched_earth:0 "§OScorched Earth§!"
+
+
+
+ # Units
+ supreme_dragon: "Supreme Dragon"

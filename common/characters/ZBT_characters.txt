@@ -1,0 +1,17 @@
+characters={
+
+	ZBT_duke_esta = { 
+		name = ZBT_duke_esta
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z51_mikhail_smirnov
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = ZBT_duke_esta_desc
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

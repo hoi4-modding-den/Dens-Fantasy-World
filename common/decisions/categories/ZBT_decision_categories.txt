@@ -8,11 +8,29 @@ ZBT_undercity_cat = {
 
     priority = 100 
 
-    visible_when_empty = yes
+    visible_when_empty = no
 
     visible = {
         # always = yes #todo: change this to be activated by focus or smth
         has_dynamic_modifier = ZBT_undercity
         controls_province = 10027
     }
+}
+
+
+
+
+
+
+ZBT_national_identity_cat = {
+
+    icon = generic_industry
+
+    allowed = {
+        original_tag = ZBT
+    }
+
+    priority = 100 
+
+    visible_when_empty = no
 }

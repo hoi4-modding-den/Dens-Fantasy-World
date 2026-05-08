@@ -6,6 +6,7 @@
  ZBT_ADJ:0 "Basaltropolitan"
 
 
+
  # Parties
  ZBT_neutrality_party:0 "House of Esta"
  ZBT_neutrality_party_long:0 "House of Esta"
@@ -20,10 +21,12 @@
  ZBT_fascism_party_long:0 "Civic Defence Cadre"
 
 
+
  # States and VPs
  STATE_710:0 "Basaltropolis"
  VICTORY_POINTS_10027:0 "Basaltropolis"
  VICTORY_POINTS_8828:0 "Riva"
+
 
 
  # Nat Spirits
@@ -34,7 +37,7 @@
  ZBT_refugee_influx_desc:0 "The city has been flooded with a wave of refugees fleeing the destruction of The Razescape. The Balekelemi Civil War to our southeast has only increased the stream of people coming into our city, and whatever systems we previously had to shelter them are quickly breaking down."
 
  ZBT_political_enthusiasts:0 "Political \"Enthusiasts\""
- ZBT_political_enthusiasts_desc:0 "Growing discontent against the rule of Duke Esta has inspired the populace to form social clubs, known as §LAction Societies§!, to discuss the formation of a government with decreased royal influence. The importation of radical ideas from other parts of Kuvivalwiki has only worsened the issue, with some Societies advocating for radical ideas like complete seperation from the Nestorian Empire and the abolition of the nobility. While these groups agree on very little, they have become incredibly disruptive thanks to their very public advocacy for their preferred ideology."
+ ZBT_political_enthusiasts_desc:0 "Growing discontent against the rule of Duke Esta has inspired the populace to form social clubs, known as §2Action Societies§!, to discuss the formation of a government with decreased royal influence. The importation of radical ideologies from other parts of Kuvivalwiki has only worsened the issue, with some §tSocieties§! advocating for causes like complete seperation from the Chrysean Empire and the abolition of the nobility.\n\nWhile these groups are fragmented and agree on very little, they have become a major threat to the Duke's authority. Some reactionaries have created the §OCivic Defence Cadre§!, an organisation dedicated to opposing the Action Societies, but their loyalty to the Duke is also highly questionable."
 
  ZBT_undercity:0 "The Undercity Project"
  ZBT_undercity_dm_tt:0 "The Undercity can be expanded via §YDecisions§!, adding offmap buildings and more modifiers."
@@ -44,8 +47,22 @@
  ZBT_mandatory_work_programs:0 "Mandatory Work Programs"
  ZBT_underground_metropolis_ns:0 "The Underground Metropolis"
  ZBT_countryside_revitalisation_ns:0 "Countryside Revitalisation Campaign"
- ZBT_clear_the_rubble_ns:0 "Clear the Rubble"
+#  ZBT_clear_the_rubble_ns:0 "Clear the Rubble"
  ZBT_land_renewal_ns:0 "Land Renewal"
+
+ ZBT_action_societies:0 "Action Societies Empowered"
+ ZBT_pro_esta_sentiment:0 "Pro-Esta Sentiment"
+ ZBT_cadre_integrated:0 "Civic Defence Cadre Empowered"
+ ZBT_public_participation:0 "Public Participation in Government"
+ ZBT_learning_from_edelweiss:0 "Theory of the Republican Revolution"
+ ZBT_commie_republicanism:0 "Socialist Republicanism" #TBA
+ ZBT_democratic_republicanism:0 "Populist Republicanism" #TBA
+ ZBT_mining_magnates_in_control:0 "Mining Magnate Control"
+ ZBT_even_more_mining:0 "Increased Resource Extraction" #TBA
+ ZBT_deportations:0 "Mass Deportations"
+ ZBT_refugee_assimilation:0 "Refugee Assimilation"
+
+
 
  # Decisions - Undercity
  ZBT_undercity_cat:0 "The Undercity Project"
@@ -122,6 +139,20 @@
 
 
 
+ # Decisions - National Identity
+ ZBT_national_identity_bop: "Discourse on National Identity"
+ ZBT_restorative_sentiment_side: "Restorative Sentiment"
+ ZBT_separatism_sentiment_side: "Seperatist Sentiment"
+ ZBT_balanced_range: "Fragmented Public Opinion"
+ ZBT_separatism_1: "Minor Support for Separatism"
+ ZBT_separatism_2: "Growing Support for Separatism"
+ ZBT_separatism_3: "Broad Support for Separatism"
+ ZBT_restorative_1: "Minor Support for Restoratism"
+ ZBT_restorative_2: "Growing Support for Restoratism"
+ ZBT_restorative_3: "Broad Support for Restoratism"
+
+
+
  # Focus tree
  ZBT_start_industry: "National Development Scheme"
  ZBT_begin_undercity: "Begin the Undercity Project"
@@ -154,6 +185,42 @@
  ZBT_motorization_effort: "Army Motorization Effort"
  ZBT_electronics_effort: "Electronics Effort"
  ZBT_armor_rollout: "Armor Technology Grants"
+ 
+ ZBT_compromise_with_action_societies: "Compromise With the Action Societies"
+ ZBT_the_house_steadfast: "The House Steadfast"
+ ZBT_integrate_the_cadres: "Integrate the Cadres"
+ ZBT_rally_around_esta: "Rally Around Esta"
+ ZBT_rule_of_the_planners: "Rule of the Planners"
+ ZBT_consult_the_people: "Consult the Common People"
+ ZBT_meritocratic_welfare: "Meritocratic Welfare"
+ ZBT_edelweiss_support: "Lessons From The Edelweiss Revolution"
+ ZBT_promise_return_to_normal: "Towards a Stable Future"
+ ZBT_meet_with_magnates: "Meet with Mining Magnates"
+ ZBT_the_workers_city: "The Workers' City"
+ ZBT_the_peoples_city: "The Peoples' City"
+ ZBT_open_for_business: "Open For Business"
+ ZBT_refugee_plan: "Manage the Refugee Crisis"
+ ZBT_hand_over_the_reins: "Hand Over The Reins"
+ ZBT_constitutional_monarchy: "Constitutional Monarchy"
+ ZBT_marxian_economics: "Marxian Economics"
+ ZBT_concessions_to_aristocracy: "Concessions to the Aristocracy"
+ ZBT_patriotic_lecture_tour: "Patriotic Lecture Tour"
+ ZBT_refute_opposing_voices: "Refute Opposing Voices"
+ ZBT_cult_of_personality: "Royal Cult of Personality"
+ ZBT_zinnian_exiles: "Study the Zinnientron's Mistakes"
+ ZBT_new_nationalism: "New Nationalism"
+ ZBT_beacon_of_civilisation: "A Beacon of Civilisation"
+ ZBT_expel_divisionists: "Expel Divisionists"
+ ZBT_supreme_autocrat: "Supreme Autocrat"
+ ZBT_general_affairs_directorate: "The General Affairs Directorate"
+ ZBT_great_purge: "Purge Disloyal Elements"
+ ZBT_memory_of_chrysea: "Memory of Chrysea"
+
+
+
+ # Characters
+ ZBT_duke_esta:0 "Duke Esta I"
+ ZBT_duke_esta_desc:0 "WIP Despite his humble beginnings as an attendant in the household of Chrysean noble families, Corwin Esta has managed to climb his way to the upper echelons of Basaltropolitan society. Using his connections with mining companies and the surviving local nobility, he was able to seize control of the city during the chaos of the Fall of Chrysea, styling himself as a duke to legitimise his rule."
 
 
 

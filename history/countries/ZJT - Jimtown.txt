@@ -20,3 +20,7 @@ set_popularities = {
 	communism = 0
 	neutrality = 100
 }
+
+add_ideas = {
+	RAZESCAPE_scorched_earth
+}
