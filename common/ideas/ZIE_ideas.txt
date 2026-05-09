@@ -36,5 +36,41 @@ ideas = {
 				consumer_goods_factor = 0.1
 			}
 		}
+		spoils_of_the_last_urhu_war = {
+			picture = HABSBURG_economy
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		the_matter_of_land_reform2 = {
+			picture = PRC_land_revolution_expedited
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.1
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = -0.2
+			}
+		}
+		growing_emergency_unrest = {
+			picture = AFG_parliament_building_damaged
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_weekly = -0.002
+				war_support_weekly = -0.001
+				political_power_cost = 0.3
+				drift_defence_factor = -0.35
+			}
+		}
 	}
 }

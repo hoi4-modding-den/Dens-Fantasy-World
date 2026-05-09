@@ -3,7 +3,15 @@
  ZIE: "National Republic of Hráva"
  ZIE_DEF: "National Republic of Hráva"
  ZIE_ADJ: "Hráve"
-
+ ZIE_communism: "Communard Workers' Federation of Hráva"
+ ZIE_communism_DEF: "The Communard Workers' Federation of Hráva"
+ ZIE_communism_ADJ: "Hrávan"
+ ZIE_democratic: "Republic of Hráva"
+ ZIE_democratic_DEF: "Republic of Hráva"
+ ZIE_democratic_ADJ: "Hrávan"
+ ZIE_fascism: "Hrávan National State"
+ ZIE_fascism_DEF: "The Hrávan National State"
+ ZIE_fascism_ADJ: "Hrávan"
 
  local_manpower15_tt: "Local Manpower in autonomous regions of Turun: §R-15%§!"
  ZIE_communism_party: "FDW"
@@ -96,6 +104,12 @@
  indefinate_state_of_emergency_desc: "Ever since the coup of '08 a state of national emergency has been declared by the marshall as a form of controlling the populace under the pretence of national security."
  failed_land_reform: "Failed Land Reform"
  failed_land_reform_desc: "The land reform promised by the Marshall has not been fulfilled, the government has yet to comment on the suspension of the land reform. But it has undoubtedly caused massive ripples across the agricultural industry and society of our country, and certaintly not in a positive way."
+ spoils_of_the_last_urhu_war: "Spoils of the Fourth Urhú War"
+ spoils_of_the_last_urhu_war_desc: "We have turned out of a 4 war long conflict as the final victors, at the peace table diplomats negotiated and demanded for us to be payed for our losses."
+ the_matter_of_land_reform2: "The Matter of Land Reform"
+ the_matter_of_land_reform2_desc: "The Agrarians and workers in the country side have been ignored long before the war, now it has flamed up into a hot mess that we will eventually have to deal with."
+ waining_military: "Waining Military"
+ waining_military_desc: "After the Fourth Urhú War, our once prepared war industry has been exhausted and our manpower reserves have been emptied. If Hráva is to expand militarily again drastic measures have to be taken."
  # FOCUS NAMES
  legacy_of_the_second_urhu_war: "Legacy of the Second Urhu War"
  the_marshall1: "The Marshall"
@@ -119,9 +133,13 @@
  expand_the_partisan_network: "Expand the Partisan Network"
  hravan_industrial_complex: "The Hrávan Industrial Complex"
 
+ urhu_victory: "Victory in Urhú"
+ prepare_speech: "The Marshalls Adress to the Nation"
+
  # TOOLTIP
  FOCUS_never_available_tt: "§YAvailable via event or other actions§!"
  council_moves_tt: "§RUpon a national victory the council will plot a coup...§!"
+ marshall_moves_tt: "§RUpon a national victory the Marshall will endure...§!"
 
  # COSMETIC TAGS
  ZIE_social_republic: "Hrávan Social Republic"

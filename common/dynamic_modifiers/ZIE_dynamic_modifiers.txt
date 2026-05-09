@@ -44,7 +44,7 @@ failed_land_reform = {
 	production_speed_industrial_complex_factor = ZIE_production_speed_industrial_complex_factor
 	production_speed_arms_factory_factor = ZIE_production_speed_arms_factory_factor
 }
-
+ # POST WAR ###############################################################################################
 waining_military = {
 	icon = GFX_idea_BEL_scars_of_ww1
 
@@ -58,7 +58,8 @@ waining_military = {
 	industrial_capacity_factory = wm_industrial_capacity_factory
 	production_speed_buildings_factor = wm_production_speed_buildings_factor
 	ai_focus_aggressive_factor = wm_ai_focus_aggressive_factor
-	conscription_factor = wm_conscription_factor1
+	conscription_factor = wm_conscription_factor
+	conscription = wm_conscription
 }
 
 fading_national_idea = {
@@ -69,7 +70,7 @@ fading_national_idea = {
 	research_speed_factor = fni_research_speed_factor
 	offensive_war_stability_factor = fni_offensive_war_stability_factor
 	war_support_factor = fni_war_support_factor
-	conscription_factor = fni_conscription_factor 
+	conscription_factor = fni_conscription_factor
 	land_doctrine_cost_factor = fni_land_doctrine_cost_factor 
 }
 
@@ -77,8 +78,10 @@ growing_emergency_unrest = {
 	icon = GFX_idea_AFG_parliament_building_damaged
 
 	enable = { always = yes }
-	stability_factor = geu_stability_factor1
+	stability_weekly = geu_stability_weekly
+	war_support_weekly = geu_war_support_weekly
+	stability_factor = geu_stability_factor
 	political_power_cost = geu_political_power_cost
 	drift_defence_factor = geu_drift_defence_factor
-	war_support_factor = geu_war_support_factor1
+	war_support_factor = geu_war_support_factor
 }

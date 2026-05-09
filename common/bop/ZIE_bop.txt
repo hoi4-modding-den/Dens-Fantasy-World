@@ -24,6 +24,9 @@ ZIE_power_balance = {
 				political_power_factor = 0.10
 				stability_factor = 0.1
 			}
+			on_activate = {
+				set_country_flag = council_path
+			}
 		}
 		range = {
 			id = ZIE_popular_anger_range2
@@ -62,6 +65,9 @@ ZIE_power_balance = {
 				political_power_factor = -0.05
 				war_support_factor = 0.1
 			}
+			on_activate = {
+				set_country_flag = marshall_path
+			}
 		}
 		range = {
 			id = ZIE_council_anger_range2
@@ -83,6 +89,9 @@ ZIE_power_balance = {
 				war_support_factor = 0.15
 				experience_gain_army = 0.2
 				power_balance_weekly = 0.01
+			}
+			on_activate = {
+				country_event = ZIE_event.6
 			}
 		}
 	}

@@ -12,7 +12,7 @@ focus_tree = {
 	default = no
 	reset_on_civilwar = no
 
-	continuous_focus_position = { x = 3000 y = 300 }
+	continuous_focus_position = { x = 3000 y = 400 }
 
 	focus = {
 		id = legacy_of_the_second_urhu_war
@@ -575,22 +575,24 @@ focus_tree = {
 	default = no
 	reset_on_civilwar = no
 
-	continuous_focus_position = { x = 3000 y = 300 }
+	continuous_focus_position = { x = 3000 y = 1500 }
 
 	focus = {
 		id = urhu_victory
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_CHI_weaponise_the_faithful
 		#prerequisite = { focus = }
 		#mutually_exclusive = { focus =  }
 		x = 20
 		y = 0
 		cost = 1
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 150
 		} 
 	}
 	focus = {
 		id = prepare_speech
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_CHI_invoke_the_nine_powers
 		prerequisite = { focus = urhu_victory }
 		#mutually_exclusive = { focus =  }
 		x = 20
@@ -599,6 +601,7 @@ focus_tree = {
 		select_effect = { country_event = { id = ZIE_event.4 days = 10 } }
 		cancelable = no 
 		completion_reward = {
+			country_event = { id = ZIE_event.5 days = 1 }
 		} 
 	}
 	focus = {
@@ -680,7 +683,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = prepare_speech }
 		mutually_exclusive = { focus = the_era_of_patriotism }
-		x = 28
+		x = 34
 		y = 2
 		cost = 0
 		available = {
@@ -712,6 +715,191 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = the_era_of_patriotism focus = councils_move }
 		x = 20
+		y = 3
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = to_heal_the_scars
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = militarism_in_the_rejuvinated_state }
+		x = 19
+		y = 4
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = construct_military_facilities
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = to_heal_the_scars }
+		x = 17
+		y = 5
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = military_projects
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = to_heal_the_scars }
+		x = 19
+		y = 5
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = military_experimentation
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = construct_military_facilities }
+		x = 16
+		y = 6
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = forgive_and_forget
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = militarism_in_the_rejuvinated_state }
+		x = 21
+		y = 4
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = improve_military_designs
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = forgive_and_forget }
+		x = 21
+		y = 5
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = tank_engineering
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = military_projects focus = improve_military_designs }
+		x = 20
+		y = 6
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = shock_and_awe
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = tank_engineering focus = cusp_of_military_innovation focus = military_experimentation }
+		mutually_exclusive = { focus = outplan_outthink }
+		x = 19
+		y = 7
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = outplan_outthink
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = tank_engineering focus = cusp_of_military_innovation focus = military_experimentation }
+		mutually_exclusive = { focus = shock_and_awe }
+		x = 17
+		y = 7
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = manuevre_warfare
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = tank_engineering focus = cusp_of_military_innovation focus = military_experimentation }
+		mutually_exclusive = { focus = the_long_game }
+		x = 23
+		y = 7
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = the_long_game
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = tank_engineering focus = cusp_of_military_innovation focus = military_experimentation }
+		mutually_exclusive = { focus = manuevre_warfare }
+		x = 21
+		y = 7
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = an_army_to_last_a_millenia
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = manuevre_warfare focus = the_long_game }
+		prerequisite = { focus = outplan_outthink focus = shock_and_awe }
+		x = 20
+		y = 8
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = break_military_nepotism
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = forgive_and_forget }
+		x = 23
+		y = 5
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = cusp_of_military_innovation
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = break_military_nepotism }
+		x = 24
+		y = 6
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = return_of_landreform
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = councils_move }
+		x = 25
 		y = 3
 		cost = 0
 		available = {
