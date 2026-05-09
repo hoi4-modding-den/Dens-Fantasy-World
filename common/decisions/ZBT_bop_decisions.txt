@@ -28,13 +28,13 @@ political_actions = {
 	ZBT_return_to_normal_timer = {
 		icon = generic_political_rally
 		activation = { always = no }
-		selectable_mission = false
+		selectable_mission = no
 		days_mission_timeout = 300
 		is_good = no
 
 		available = {
 			has_completed_focus = ZBT_wasteland_restored
-			stability > 0.7
+			has_stability > 0.7
 		}
 
 		complete_effect = { # completed the focus in time
@@ -51,6 +51,7 @@ political_actions = {
 		}
 		timeout_effect = { # you done fucked it
 			add_stability = -0.2
+			add_war_support = 0.1
 			add_popularity = { ideology = democratic popularity = -0.1 }
 			add_popularity = { ideology = communism popularity = -0.1 }
 			IF = {  # push BOP against you I guess

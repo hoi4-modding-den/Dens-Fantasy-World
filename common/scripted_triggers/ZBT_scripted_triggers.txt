@@ -32,3 +32,10 @@ ZBT_heat_resistance_check = {
         has_country_flag = UU_harness_the_core
     }
 }
+
+ZBT_coalition_focus_check = {
+    custom_override_tooltip = {
+        tooltip = ZBT_tt_coalition_building_focus_limit
+        check_variable = { coalition_focuses < 6 }
+    }
+}

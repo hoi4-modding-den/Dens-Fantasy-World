@@ -32,7 +32,7 @@ ideas = {
 		ZBT_pro_esta_sentiment = {
 			picture = por_monarchist_uprising
 			modifier = {
-				neutrality_drift = -0.02
+				neutrality_drift = -0.03
 				stability_factor = -0.10
 				war_support_factor = -0.10
 				political_power_factor = -0.1
@@ -163,9 +163,23 @@ ideas = {
 				democratic_drift = 0.03
 				communism_drift = 0.05
 				political_power_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.15
                 industrial_capacity_factory = 0.1
-                industrial_capacity_dockyard = 0.1
+				industrial_capacity_dockyard = 0.1
+				consumer_goods_factor = -0.2
+			}
+		}
+
+		ZBT_oligarchic_republicanism = {
+			picture = HABSBURG_economy
+			modifier = {
+				democratic_drift = 0.03
+				communism_drift = 0.02
+				stability_factor = -0.02
+				political_power_factor = 0.1
+				production_speed_buildings_factor = 0.15
+				industry_repair_factor = 0.3
+				consumer_goods_factor = 0.1
 			}
 		}
 
@@ -173,9 +187,9 @@ ideas = {
 			picture = CHL_liberal_party_in_power
 			modifier = {
 				democratic_drift = 0.05
-				communism_drift = 0.03
-				political_power_factor = 0.15
+				communism_drift = 0.02
 				stability_factor = 0.1
+				political_power_factor = 0.2
 				political_advisor_cost_factor = -0.3
 				economy_cost_factor = -0.2
 				trade_laws_cost_factor = -0.2
@@ -190,7 +204,7 @@ ideas = {
 			modifier = {
 				consumer_goods_expected_value = -0.02
 				research_speed_factor = 0.05
-				stability_factor = -0.02
+				stability_factor = -0.05
 				political_power_factor = -0.05
 				production_speed_infrastructure_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
@@ -204,8 +218,8 @@ ideas = {
 			modifier = {
 				consumer_goods_expected_value = -0.05
 				research_speed_factor = 0.05
-				stability_factor = -0.02
-				political_power_factor = -0.08
+				stability_factor = -0.07
+				political_power_factor = -0.1
 				production_speed_infrastructure_factor = 0.07
 				production_speed_arms_factory_factor = 0.07
 				production_speed_industrial_complex_factor = 0.07
@@ -252,7 +266,7 @@ ideas = {
 			name = ZBT_pro_esta_sentiment
 			picture = por_monarchist_uprising
 			modifier = {
-				neutrality_drift = 0.01
+				neutrality_drift = -0.01
 				stability_factor = -0.05
 				war_support_factor = -0.05
 				political_power_factor = -0.02
@@ -280,12 +294,33 @@ ideas = {
 			}
 		}
 
-		ZBT_refugee_assimilation_fascist_idk = {
-			name = ZBT_refugee_assimilation
+		ZBT_emergency_housing = {
+			picture = JAP_danchi
+			modifier = {
+				monthly_population = 0.4
+				stability_factor = -0.02
+				conscription_factor = -0.1
+				civilian_factory_use = 1
+			}
+		}
+
+		ZBT_definitely_not_slavery = {
+			picture = chi_forced_conscription
+			modifier = {
+				monthly_population = 0.4
+				stability_factor = -0.07
+				conscription_factor = -0.1
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		ZBT_refugee_assimilation = {
 			picture = COG_the_invisible_roof
 			modifier = {
 				monthly_population = 0.4
 				stability_factor = -0.07
+				war_support_factor = 0.05
 			}
 		}
 	}

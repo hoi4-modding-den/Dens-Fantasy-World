@@ -29,6 +29,7 @@ set_popularities = {
 	communism = 1
 	neutrality = 96
 }
+set_variable = { var = coalition_focuses value = 0}
 set_power_balance = {
 	id = ZBT_national_identity_bop
 	set_default = yes

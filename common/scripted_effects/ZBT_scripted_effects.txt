@@ -6,7 +6,7 @@ ZBT_UC_apply_buffs_civ = {
 		limit = { 
 			OR = {
 				has_country_flag = UU_improved_civs1
-				check_variable = { temp_var:fake_buff_for_tt = 1 }
+				check_variable = { temp_var:fake_buff_for_tt > 0 }
 			}
 		}
 		add_to_temp_variable = {var = temp_construction_speed value = 0.01}
@@ -26,10 +26,10 @@ ZBT_UC_apply_buffs_mil = {
 		limit = { 
 			OR = {
 				has_country_flag = UU_improved_mils1
-				check_variable = { temp_var:fake_buff_for_tt = 1 }
+				check_variable = { temp_var:fake_buff_for_tt > 0 }
 			}
 		 }
-		add_to_temp_variable = {var = temp_mil_output value = 0.02}
+		add_to_temp_variable = {var = temp_mil_output value = 0.01}
 	}
 
 	# apply buff
@@ -47,7 +47,7 @@ ZBT_UC_apply_buffs_house = {
 		limit = { 
 			OR = {
 				has_country_flag = UU_improved_house1
-				check_variable = { temp_var:fake_buff_for_tt = 1 }
+				check_variable = { temp_var:fake_buff_for_tt > 0 }
 			}
 		 }
 		add_to_temp_variable = {var = temp_pp value = 0.02}
@@ -69,7 +69,7 @@ ZBT_UC_apply_buffs_lab = {
 		limit = { 
 			OR = {
 				has_country_flag = UU_improved_labs1
-				check_variable = { temp_var:fake_buff_for_tt = 1 }
+				check_variable = { temp_var:fake_buff_for_tt > 0 }
 			}
 		 }
 		add_to_temp_variable = {var = temp_rs value = 0.02}
@@ -89,7 +89,7 @@ ZBT_UC_apply_buffs_generator = {
 		limit = { 
 			OR = {
 				has_country_flag = UU_improved_gens1
-				check_variable = { temp_var:fake_buff_for_tt = 1 }
+				check_variable = { temp_var:fake_buff_for_tt > 0 }
 			}
 		 }
 		add_to_temp_variable = {var = temp_construction_speed value = 0.01}
