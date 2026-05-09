@@ -24,6 +24,7 @@ ZBT_national_identity_cat = {
 
 
 
+# I'm also including random political tree stuff here because fuck you.
 political_actions = {
 	ZBT_return_to_normal_timer = {
 		icon = generic_political_rally
@@ -34,7 +35,7 @@ political_actions = {
 
 		available = {
 			has_completed_focus = ZBT_wasteland_restored
-			has_stability > 0.7
+			has_stability > 0.8
 		}
 
 		complete_effect = { # completed the focus in time
@@ -61,6 +62,68 @@ political_actions = {
 			ELSE = {
 				add_power_balance_value = {id = ZBT_national_identity_bop value = 0.3}
 			}
+		}
+	}
+
+
+	ZBT_action_society_fuckery = {
+		icon = GFX_decision_revolt
+		activation = { always = no }
+		selectable_mission = no
+		days_mission_timeout = 30
+		is_good = no
+
+		available = { #TBA
+			OR = {
+				has_completed_focus = ZBT_hand_over_the_reins
+				has_completed_focus = ZBT_constitutional_monarchy
+				has_completed_focus = ZBT_great_purge # Cadres just kill all of them :(
+			}
+		}
+
+		timeout_effect = {
+			random_list = {
+				2 = { add_popularity = { ideology = democratic popularity = 0.02 } }
+				2 = { add_popularity = { ideology = communism popularity = 0.02 } }
+				1 = { add_popularity = { ideology = democratic popularity = 0.05 } }
+				1 = { add_popularity = { ideology = communism popularity = 0.05 } }
+				2 = {
+					modifier = { factor = 0 has_completed_focus = ZBT_compromise_with_action_societies }
+					add_stability = -0.1
+				}
+			}
+			
+			activate_mission = ZBT_action_society_fuckery
+			ZBT_apply_agitation_modifiers = yes
+		}
+	}
+	ZBT_cdc_fuckery = {
+		icon = GFX_decision_revolt
+		activation = { always = no }
+		selectable_mission = no
+		days_mission_timeout = 50
+		is_good = no
+
+		available = { #TBA
+			OR = {
+				has_completed_focus = ZBT_supreme_autocrat
+				has_completed_focus = ZBT_concessions_to_aristocracy # if we pay you will you shut up
+			}
+		}
+
+		timeout_effect = {
+			random_list = {
+				3 = { add_popularity = { ideology = fascism popularity = 0.05 } }
+				1 = { add_popularity = { ideology = democratic popularity = -0.05 } }
+				1 = { add_popularity = { ideology = communism popularity = -0.05 } }
+				3 = {
+					modifier = { factor = 0 has_completed_focus = ZBT_integrate_the_cadres }
+					add_stability = -0.1
+				}
+			}
+			
+			activate_mission = ZBT_cdc_fuckery
+			ZBT_apply_agitation_modifiers = yes
 		}
 	}
 }

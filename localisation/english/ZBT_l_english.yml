@@ -1,4 +1,6 @@
 ﻿l_english:
+
+ ZBT_GATHERING_STORM_DESC:0 "WIP"
  
  # Country name
  ZBT:0 "Basaltropolis"
@@ -10,13 +12,10 @@
  # Parties
  ZBT_neutrality_party:0 "House of Esta"
  ZBT_neutrality_party_long:0 "House of Esta"
-
  ZBT_democratic_party:0 "AS (Moderates)"
  ZBT_democratic_party_long:0 "Action Societies - Moderates"
-
  ZBT_communism_party:0 "AS (Radicals)"
  ZBT_communism_party_long:0 "Action Societies - Radicals"
-
  ZBT_fascism_party:0 "CDC"
  ZBT_fascism_party_long:0 "Civic Defence Cadre"
 
@@ -155,6 +154,8 @@
  ZBT_restorative_3: "Broad Support for Restoratism"
 
  ZBT_return_to_normal_timer: "Fulfill our promise to the people"
+ ZBT_action_society_fuckery: "Action Societies agitating for reform..."
+ ZBT_cdc_fuckery: "Civic Defence Cadre engaging in intrigues..."
 
 
 
@@ -196,6 +197,7 @@
  ZBT_compromise_with_action_societies: "Compromise With the Action Societies"
  ZBT_tt_action_society_starting_tree: "Before the Action Societies can take power, they need to form a coherent coalition. You will pick §Y5§! focuses to shape this coalition."
  ZBT_tt_coalition_building_focus_limit: "Has completed less than §Y5§! coalition-building focuses (Currently: [?var:coalition_focuses|Y0])"
+ ZBT_tt_coalition_completed: "The coalition is ready"
  ZBT_consult_the_people: "Consult the Common People"
  ZBT_meritocratic_welfare: "Meritocratic Welfare"
  ZBT_edelweiss_support: "Lessons From The Edelweiss Revolution"

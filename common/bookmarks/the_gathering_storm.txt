@@ -43,6 +43,16 @@ bookmarks = {
 				ZSP_restless_magocrat
 			}
 		}
+		ZBT = {
+			history = "ZBT_GATHERING_STORM_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+				ZBT_established_mining_town
+				ZBT_political_enthusiasts
+				ZBT_refugee_influx
+			}
+		}
 		
 		"---"={
 			history = OTHER_GATHERING_STORM_DESC

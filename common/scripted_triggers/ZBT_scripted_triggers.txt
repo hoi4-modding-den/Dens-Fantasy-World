@@ -36,6 +36,13 @@ ZBT_heat_resistance_check = {
 ZBT_coalition_focus_check = {
     custom_override_tooltip = {
         tooltip = ZBT_tt_coalition_building_focus_limit
-        check_variable = { coalition_focuses < 6 }
+        check_variable = { coalition_focuses < 5 }
+    }
+}
+
+ZBT_completed_coalition = {
+    custom_override_tooltip = {
+        tooltip = ZBT_tt_coalition_completed
+        check_variable = { coalition_focuses = 5 }
     }
 }

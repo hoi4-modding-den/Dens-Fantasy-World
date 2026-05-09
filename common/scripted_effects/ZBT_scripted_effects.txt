@@ -145,3 +145,104 @@ ZBT_UC_increase_costs = {
 	round_variable = UC_sector_build_time
 	ZBT_UC_recalc_costs = yes
 }
+
+
+
+
+
+
+
+ZBT_apply_agitation_modifiers = {
+	hidden_effect = {
+		IF = {
+			limit = { has_completed_focus = ZBT_integrate_the_cadres }
+			add_days_mission_timeout = {
+				mission = ZBT_action_society_fuckery
+				days = -5
+			}
+		}
+		IF = {
+			limit = { has_completed_focus = ZBT_new_nationalism }
+			add_days_mission_timeout = {
+				mission = ZBT_action_society_fuckery
+				days = -10
+			}
+			add_days_mission_timeout = {
+				mission = ZBT_cdc_fuckery
+				days = -5
+			}
+		}
+		IF = {
+			limit = { has_completed_focus = ZBT_expel_divisionists }
+			add_days_mission_timeout = {
+				mission = ZBT_action_society_fuckery
+				days = 10
+			}
+		}
+		IF = {
+			limit = { has_completed_focus = ZBT_consult_the_people } # opening discourse will allow them to talk more often I guess
+			add_days_mission_timeout = {
+				mission = ZBT_action_society_fuckery
+				days = -10
+			}
+		}
+		IF = {
+			limit = { has_completed_focus = ZBT_meritocratic_welfare }
+			add_days_mission_timeout = {
+				mission = ZBT_action_society_fuckery
+				days = -5
+			}
+			add_days_mission_timeout = {
+				mission = ZBT_cdc_fuckery
+				days = -10
+			}
+		}
+		IF = {
+			limit = { has_completed_focus = ZBT_compromise_with_action_societies }
+			add_days_mission_timeout = {
+				mission = ZBT_cdc_fuckery
+				days = -5
+			}
+		}
+		IF = {
+			limit = { has_completed_focus = ZBT_edelweiss_support }
+			add_days_mission_timeout = {
+				mission = ZBT_cdc_fuckery
+				days = -15
+			}
+		}
+		IF = {
+			limit = { has_completed_focus = ZBT_guarantee_workers_rights }
+			add_days_mission_timeout = {
+				mission = ZBT_cdc_fuckery
+				days = -5
+			}
+		}
+		IF = {
+			limit = { has_completed_focus = ZBT_rule_of_the_planners }
+			add_days_mission_timeout = {
+				mission = ZBT_cdc_fuckery
+				days = 10
+			}
+		}
+		IF = {
+			limit = { has_completed_focus = ZBT_general_affairs_directorate }
+			add_days_mission_timeout = {
+				mission = ZBT_cdc_fuckery
+				days = -10
+			}
+		}
+		# agitate LESS if Esta says so
+		IF = {
+			limit = { has_completed_focus = ZBT_monarchist_propaganda }
+			add_days_mission_timeout = {
+				mission = ZBT_cdc_fuckery
+				days = 15
+			}
+			add_days_mission_timeout = {
+				mission = ZBT_cdc_fuckery
+				days = 15
+			}
+		}
+	}
+}

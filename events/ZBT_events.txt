@@ -47,6 +47,10 @@ country_event = {
 			remove_idea = ZBT_refugee_influx
 			add_idea = ZBT_definitely_not_slavery
 		}
+		add_power_balance_value = {
+			id = ZBT_national_identity_bop
+			value = -0.1
+		}
 	}
 
 	option = {
@@ -55,6 +59,10 @@ country_event = {
 		swap_ideas = {
 			remove_idea = ZBT_refugee_influx
 			add_idea = ZBT_refugee_assimilation
+		}
+		add_power_balance_value = {
+			id = ZBT_national_identity_bop
+			value = -0.2
 		}
 	}
 }

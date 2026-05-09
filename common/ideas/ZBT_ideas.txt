@@ -6,6 +6,7 @@ ideas = {
 			modifier = {
 				consumer_goods_expected_value = -0.05
 				local_resources_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
 			}
 		}
 
@@ -154,6 +155,15 @@ ideas = {
 				democratic_drift = 0.02
 				# democratic_acceptance = 10
 				# communist_acceptance = 10
+			}
+		}
+
+		ZBT_public_works_projects = {
+			picture = generic_train_tracks
+			modifier = {
+				production_speed_buildings_factor = 0.1
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
 			}
 		}
 

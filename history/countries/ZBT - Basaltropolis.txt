@@ -42,6 +42,16 @@ add_ideas = {
 	ZBT_political_enthusiasts
 	RAZESCAPE_scorched_earth
 }
+activate_mission = ZBT_action_society_fuckery
+activate_mission = ZBT_cdc_fuckery
+add_days_mission_timeout = {  # slightly delay the first one
+	mission = ZBT_action_society_fuckery
+	days = 5
+}
+add_days_mission_timeout = {
+	mission = ZBT_cdc_fuckery
+	days = 5
+}
 
 
 # Undercity variables
