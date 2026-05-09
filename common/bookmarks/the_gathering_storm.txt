@@ -52,6 +52,11 @@ bookmarks = {
 				ZBT_political_enthusiasts
 				ZBT_refugee_influx
 			}
+			focuses = {
+				ZBT_begin_undercity
+				ZBT_hand_over_the_reins
+				ZBT_memory_of_chrysea
+			}
 		}
 		
 		"---"={

@@ -208,7 +208,14 @@ ZBT_apply_agitation_modifiers = {
 			limit = { has_completed_focus = ZBT_edelweiss_support }
 			add_days_mission_timeout = {
 				mission = ZBT_cdc_fuckery
-				days = -15
+				days = 15
+			}
+		}
+		IF = {
+			limit = { has_completed_focus = ZBT_zinnian_exiles }
+			add_days_mission_timeout = {
+				mission = ZBT_action_society_fuckery
+				days = 15
 			}
 		}
 		IF = {

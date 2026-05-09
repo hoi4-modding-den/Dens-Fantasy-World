@@ -70,7 +70,7 @@ political_actions = {
 		icon = GFX_decision_revolt
 		activation = { always = no }
 		selectable_mission = no
-		days_mission_timeout = 30
+		days_mission_timeout = 50
 		is_good = no
 
 		available = { #TBA
@@ -85,11 +85,10 @@ political_actions = {
 			random_list = {
 				2 = { add_popularity = { ideology = democratic popularity = 0.02 } }
 				2 = { add_popularity = { ideology = communism popularity = 0.02 } }
-				1 = { add_popularity = { ideology = democratic popularity = 0.05 } }
-				1 = { add_popularity = { ideology = communism popularity = 0.05 } }
+				1 = { add_popularity = { ideology = neutrality popularity = -0.05 } }
 				2 = {
 					modifier = { factor = 0 has_completed_focus = ZBT_compromise_with_action_societies }
-					add_stability = -0.1
+					add_stability = -0.02
 				}
 			}
 			
@@ -107,18 +106,19 @@ political_actions = {
 		available = { #TBA
 			OR = {
 				has_completed_focus = ZBT_supreme_autocrat
+				has_completed_focus = ZBT_general_affairs_directorate
 				has_completed_focus = ZBT_concessions_to_aristocracy # if we pay you will you shut up
 			}
 		}
 
 		timeout_effect = {
 			random_list = {
-				3 = { add_popularity = { ideology = fascism popularity = 0.05 } }
-				1 = { add_popularity = { ideology = democratic popularity = -0.05 } }
-				1 = { add_popularity = { ideology = communism popularity = -0.05 } }
+				3 = { add_popularity = { ideology = fascism popularity = 0.02 } }
+				1 = { add_popularity = { ideology = democratic popularity = -0.02 } }
+				1 = { add_popularity = { ideology = communism popularity = -0.02 } }
 				3 = {
 					modifier = { factor = 0 has_completed_focus = ZBT_integrate_the_cadres }
-					add_stability = -0.1
+					add_stability = -0.02
 				}
 			}
 			

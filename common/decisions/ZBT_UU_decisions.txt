@@ -41,6 +41,12 @@ ZBT_undercity_cat = {
 		}
 		remove_effect = {
 			# set_variable = { var = UC_unexcavated_sectors value = 10 }
+			710 = {
+				add_victory_points = {
+					province = 10027
+					value = 3
+				}
+			}
 			add_to_variable = { var = UC_depth value = 1 }
 			set_variable = { var = UC_empty_sectors value = 0 }
 			IF = {
@@ -98,7 +104,7 @@ ZBT_undercity_cat = {
 		cost = UC_sector_dig_cost
 		days_remove = UC_sector_dig_time
 		modifier = {
-			consumer_goods_expected_value = 0.2
+			consumer_goods_expected_value = 0.05
 		}
 		remove_effect = {
 			add_to_variable = { var = STAT_excavations_so_far value = 1 }
