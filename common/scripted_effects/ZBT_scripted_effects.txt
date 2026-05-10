@@ -162,23 +162,26 @@ ZBT_apply_agitation_modifiers = {
 			}
 		}
 		IF = {
-			limit = { has_completed_focus = ZBT_new_nationalism }
+			limit = { has_completed_focus = ZBT_refute_opposing_voices }
 			add_days_mission_timeout = {
 				mission = ZBT_action_society_fuckery
-				days = -10
+				days = 5
 			}
+		}
+		IF = {
+			limit = { has_completed_focus = ZBT_new_nationalism }
 			add_days_mission_timeout = {
 				mission = ZBT_cdc_fuckery
 				days = -5
 			}
 		}
-		IF = {
-			limit = { has_completed_focus = ZBT_expel_divisionists }
-			add_days_mission_timeout = {
-				mission = ZBT_action_society_fuckery
-				days = 10
-			}
-		}
+		# IF = {
+		# 	limit = { has_completed_focus = ZBT_expel_divisionists }
+		# 	add_days_mission_timeout = {
+		# 		mission = ZBT_action_society_fuckery
+		# 		days = 10
+		# 	}
+		# }
 		IF = {
 			limit = { has_completed_focus = ZBT_consult_the_people } # opening discourse will allow them to talk more often I guess
 			add_days_mission_timeout = {
@@ -232,13 +235,13 @@ ZBT_apply_agitation_modifiers = {
 				days = 10
 			}
 		}
-		IF = {
-			limit = { has_completed_focus = ZBT_general_affairs_directorate }
-			add_days_mission_timeout = {
-				mission = ZBT_cdc_fuckery
-				days = -10
-			}
-		}
+		# IF = {
+		# 	limit = { has_completed_focus = ZBT_general_affairs_directorate }
+		# 	add_days_mission_timeout = {
+		# 		mission = ZBT_cdc_fuckery
+		# 		days = -10
+		# 	}
+		# }
 		# agitate LESS if Esta says so
 		IF = {
 			limit = { has_completed_focus = ZBT_monarchist_propaganda }

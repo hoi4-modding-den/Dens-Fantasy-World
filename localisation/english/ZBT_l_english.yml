@@ -36,7 +36,7 @@
  ZBT_refugee_influx_desc:0 "The city has been flooded with a wave of refugees fleeing the destruction of The Razescape. The chaos in Caelea and the Sorcerer Realm to our east has only increased the stream of people coming into our city, and whatever systems we previously had to shelter them are quickly breaking down."
 
  ZBT_political_enthusiasts:0 "Political \"Enthusiasts\""
- ZBT_political_enthusiasts_desc:0 "Growing discontent against the rule of Duke Esta has inspired the populace to form social clubs, known as §2Action Societies§!, to discuss the formation of a government with decreased royal influence. The importation of radical ideologies from other parts of Kuvivalwiki has only worsened the issue, with some §tSocieties§! advocating for causes like complete separation from the Chrysean Empire and the abolition of the nobility.\n\nWhile these groups are fragmented and agree on very little, they have become a major threat to the Duke's authority. Some reactionaries have created the §OCivic Defence Cadre§!, an organisation dedicated to opposing the Action Societies, but their loyalty to the Duke is also highly questionable."
+ ZBT_political_enthusiasts_desc:0 "Growing discontent against the rule of Duke Esta has inspired the populace to form social clubs, known as §2Action Societies§!, advocating for reform and to decrease the power of the Duke. The importation of radical ideologies from other parts of Kuvivalwiki has only worsened the issue, with some §tSocieties§! enthusiastically supporting extreme ideas like complete separation from the Chrysean Empire or the abolition of the nobility.\n\nWhile these groups are fragmented and agree on very little, they have become a major threat to the Duke's authority. Some reactionaries have created the §OCivic Defence Cadre§!, an organisation dedicated to opposing the Action Societies, but their loyalty to the Duke is questionable."
 
  ZBT_undercity:0 "The Undercity Project"
  ZBT_undercity_dm_tt:0 "The Undercity can be expanded via §YDecisions§!, adding offmap buildings and more modifiers."
@@ -49,14 +49,15 @@
  ZBT_land_renewal_ns:0 "Land Renewal"
 
  ZBT_action_societies:0 "Action Societies Empowered"
- ZBT_pro_esta_sentiment:0 "Pro-Esta Sentiment"
+ ZBT_political_enthusiasts_2:0 "Pro-Esta Sentiment"
  ZBT_cadre_integrated:0 "Civic Defence Cadre Empowered"
  ZBT_public_participation:0 "Public Participation in Government"
  ZBT_learning_from_edelweiss:0 "Theory of the Republican Revolution"
+ ZBT_public_works_projects:0 "Public Works Projects"
  ZBT_commie_republicanism:0 "Socialist Republicanism" #TBA
  ZBT_democratic_republicanism:0 "Populist Republicanism" #TBA
  ZBT_oligarchic_republicanism:0 "Oligarchic Republicanism" #TBA
- ZBT_mining_magnates_in_control:0 "Mining Magnate Control"
+ ZBT_mining_magnates_in_control:0 "Magnates in Control"
  ZBT_even_more_mining:0 "Increased Resource Extraction" #TBA
  ZBT_deportations:0 "Mass Deportations"
  ZBT_emergency_housing:0 "Emergency Housing Program"
@@ -158,7 +159,11 @@
 
  ZBT_return_to_normal_timer: "Fulfill our promise to the people"
  ZBT_action_society_fuckery: "Action Societies agitating for reform..."
+ ZBT_tt_action_society_more: "The §2Action Societies§! will take action more often"
+ ZBT_tt_action_society_less: "The §2Action Societies§! will take action less often"
  ZBT_cdc_fuckery: "Civic Defence Cadre engaging in intrigues..."
+ ZBT_tt_cdc_more: "The §OCivic Defence Cadre§! will take action more often"
+ ZBT_tt_cdc_less: "The §OCivic Defence Cadre§! will take action less often"
 
 
 
@@ -216,9 +221,12 @@
 
  ZBT_the_house_steadfast: "The House Steadfast"
  ZBT_monarchist_propaganda: "Monarchist Propaganda"
+ ZBT_integrating_new_subjects: "Integrating Our New Subjects"
+ ZBT_imprison_dissidents: "Imprison Dissidents"
  ZBT_rule_of_the_planners: "Rule of the Planners"
  ZBT_meet_with_magnates: "Meet with Mining Magnates"
  ZBT_open_for_business: "Open For Business"
+ ZBT_expand_quotas: "Expand Extraction Quotas"
  ZBT_rally_around_esta: "Rally Around Esta"
  ZBT_cult_of_personality: "Build a Cult of Personality"
  ZBT_supreme_autocrat: "Supreme Autocrat"

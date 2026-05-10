@@ -78,6 +78,7 @@ political_actions = {
 				has_completed_focus = ZBT_hand_over_the_reins
 				has_completed_focus = ZBT_constitutional_monarchy
 				has_completed_focus = ZBT_great_purge # Cadres just kill all of them :(
+				has_completed_focus = ZBT_imprison_dissidents
 			}
 		}
 
@@ -112,6 +113,8 @@ political_actions = {
 				has_completed_focus = ZBT_supreme_autocrat
 				has_completed_focus = ZBT_general_affairs_directorate
 				has_completed_focus = ZBT_concessions_to_aristocracy # if we pay you will you shut up
+				has_completed_focus = ZBT_marxian_economics # or we could do that
+				has_completed_focus = ZBT_imprison_dissidents
 			}
 		}
 

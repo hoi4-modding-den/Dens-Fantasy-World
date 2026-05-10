@@ -30,8 +30,9 @@ ideas = {
 			}
 		}
 
-		ZBT_pro_esta_sentiment = {
-			picture = por_monarchist_uprising
+		ZBT_political_enthusiasts_2 = {
+			name = ZBT_political_enthusiasts
+			picture = POL_the_peasants_strike
 			modifier = {
 				neutrality_drift = -0.03
 				stability_factor = -0.10
@@ -209,6 +210,29 @@ ideas = {
 			}
 		}
 
+		ZBT_wealth_redistribution_ns = {
+			picture = PRC_silver_dollar_promoted
+			modifier = {
+				consumer_goods_factor = -0.4
+				political_power_factor = 0.1
+				industrial_concern_cost_factor = -0.5
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		ZBT_concessions_to_aristocracy_ns = {
+			name = ZBT_concessions_to_aristocracy
+			picture = tur_balkan_central_bank_wealthy_greece
+			modifier = {
+				fascism_drift = -0.03
+				stability_factor = 0.1
+				consumer_goods_factor = -0.1
+				political_power_factor = 0.3
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
 		ZBT_rule_of_the_planners_ns = {
 			name = ZBT_rule_of_the_planners
 			picture = jap_supremacy_of_will
@@ -225,7 +249,7 @@ ideas = {
 		}
 
 		ZBT_mining_magnates_in_control = {
-			picture = generic_conference
+			picture = GER_autarky
 			modifier = {
 				consumer_goods_expected_value = -0.05
 				research_speed_factor = 0.05
@@ -241,9 +265,20 @@ ideas = {
 			}
 		}
 
+		ZBT_technocratic_governance = {
+			picture = generic_conference
+			modifier = {
+				industrial_concern_cost_factor = 0.2
+				political_advisor_cost_factor = 0.2
+				research_speed_factor = 0.1
+				production_speed_buildings_factor = 0.15
+				industry_repair_factor = 0.3
+				consumer_goods_expected_value = -0.2
+			}
+		}
+
 		ZBT_even_more_mining = {
 			picture = JAP_japanese_economy
-			# picture = COG_forminiere
 			modifier = {
 				consumer_goods_expected_value = -0.10
 				local_resources_factor = 0.15
@@ -274,14 +309,22 @@ ideas = {
 			}
 		}
 
-		ZBT_pro_esta_sentiment_2 = {
-			name = ZBT_pro_esta_sentiment
-			picture = por_monarchist_uprising
+		ZBT_political_enthusiasts_3 = {
+			name = ZBT_political_enthusiasts
+			picture = POL_the_peasants_strike
 			modifier = {
 				neutrality_drift = -0.01
 				stability_factor = -0.05
 				war_support_factor = -0.05
 				political_power_factor = -0.02
+			}
+		}
+
+		ZBT_cult_of_personality_ns = {
+			picture = generic_monarchist_uprising
+			modifier = {
+				drift_defence_factor = 0.3
+				stability_factor = 0.08
 			}
 		}
 
@@ -339,7 +382,7 @@ ideas = {
 		ZBT_diamond_deposit = {
 			picture = COG_forminiere
 			modifier = {
-				consumer_goods_factor = -0.4
+				consumer_goods_factor = -0.5
 			}
 		}
 	}
