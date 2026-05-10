@@ -8,12 +8,20 @@ country_event = {
 	desc = ZBT_UU_events.1.d
 	
 	is_triggered_only = yes
+	immediate = { hidden_effect = {
+		add_to_variable = { UC_modify_time = 30 }
+		ZBT_UC_recalc_costs = yes
+	} }
 	option = {
 		name = ZBT_UU_events.1.a
 		unlock_decision_tooltip = ZBT_heat_resistant_suits
 		unlock_decision_tooltip = ZBT_local_temperature_manipulation
 		unlock_decision_tooltip = ZBT_heat_pump
 		unlock_decision_tooltip = ZBT_geothermal_generator_research
+		custom_effect_tooltip = {
+			localization_key = ZBT_tt_increase_uc_build_time
+			DAYS = 30
+		}
 	}
 	
 }
@@ -26,6 +34,72 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = ZBT_UU_events.2.a
+	}
+	
+}
+
+country_event = {
+	id = ZBT_UU_events.3  # discovered oil deposit
+	title = ZBT_UU_events.3.t
+	desc = ZBT_UU_events.3.d
+	
+	is_triggered_only = yes
+	immediate = {
+		add_resource = {
+			type = oil
+			amount = 25
+			state = 710
+		}
+	}
+	option = {
+		name = ZBT_UU_events.3.a
+	}
+	
+}
+
+country_event = {
+	id = ZBT_UU_events.4  # discovered metal deposit
+	title = ZBT_UU_events.4.t
+	desc = ZBT_UU_events.4.d
+	
+	is_triggered_only = yes
+	immediate = {
+		add_resource = {
+			type = chromium
+			amount = 10
+			state = 710
+		}
+		add_resource = {
+			type = aluminium
+			amount = 10
+			state = 710
+		}
+		add_resource = {
+			type = tungsten
+			amount = 10
+			state = 710
+		}
+	}
+	option = {
+		name = ZBT_UU_events.3.a
+	}
+	
+}
+
+country_event = {
+	id = ZBT_UU_events.5  # discovered diamond deposit
+	title = ZBT_UU_events.5.t
+	desc = ZBT_UU_events.5.d
+	
+	is_triggered_only = yes
+	immediate = {
+			add_timed_idea = {
+				idea = ZBT_diamond_deposit
+				days = 240
+			}
+	}
+	option = {
+		name = ZBT_UU_events.3.a
 	}
 	
 }

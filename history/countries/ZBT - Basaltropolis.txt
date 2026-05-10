@@ -13,6 +13,8 @@ set_technology = {
 	gw_artillery = 1
 	tech_trucks = 1
 	tech_engineers = 1
+	basic_train = 1
+	basic_fortification_tech = 1
 }
 
 recruit_character = ZBT_duke_esta
@@ -44,14 +46,6 @@ add_ideas = {
 }
 activate_mission = ZBT_action_society_fuckery
 activate_mission = ZBT_cdc_fuckery
-add_days_mission_timeout = {  # slightly delay the first one
-	mission = ZBT_action_society_fuckery
-	days = 5
-}
-add_days_mission_timeout = {
-	mission = ZBT_cdc_fuckery
-	days = 5
-}
 
 
 # Undercity variables

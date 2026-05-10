@@ -90,6 +90,10 @@ political_actions = {
 					modifier = { factor = 0 has_completed_focus = ZBT_compromise_with_action_societies }
 					add_stability = -0.02
 				}
+				0 = {
+					modifier = { add = 2 has_completed_focus = ZBT_compromise_with_action_societies }
+					add_political_power = 50
+				}
 			}
 			
 			activate_mission = ZBT_action_society_fuckery
@@ -119,6 +123,10 @@ political_actions = {
 				3 = {
 					modifier = { factor = 0 has_completed_focus = ZBT_integrate_the_cadres }
 					add_stability = -0.02
+				}
+				0 = {
+					modifier = { add = 2 has_completed_focus = ZBT_integrate_the_cadres }
+					add_political_power = 50
 				}
 			}
 			

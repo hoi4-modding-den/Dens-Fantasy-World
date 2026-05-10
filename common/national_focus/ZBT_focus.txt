@@ -34,11 +34,6 @@ focus_tree = {
         y = 1
         cost = 5
         prerequisite = { focus = ZBT_start_industry }
-        available = {
-            710 = {
-                infrastructure > 2
-            }
-        }
         ai_will_do = {
             factor = 5
         }
@@ -251,6 +246,11 @@ focus_tree = {
         y = 2
         cost = 5
         prerequisite = { focus = ZBT_begin_undercity }
+        available = {
+            710 = {
+                infrastructure > 2
+            }
+        }
         ai_will_do = {
             factor = 1
         }
@@ -260,7 +260,7 @@ focus_tree = {
                 localization_key = ZBT_tt_decrease_uc_build_cost
                 PP = 20
             }
-            add_to_variable = { var = UC_modify_cost value = -20 }
+            add_to_variable = { var = UC_modify_cost value = -15 }
             ZBT_UC_recalc_costs = yes
         }
     }
@@ -273,8 +273,15 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = ZBT_undercity_rapid_growth }
         available = {
-            710 = {
-                infrastructure > 4
+            # 710 = {
+            #     infrastructure > 4
+            # }
+            custom_trigger_tooltip = {
+                tooltip = {
+                    localization_key = ZBT_tt_excavations_completed
+                    AMT = 10
+                }
+                check_variable = { STAT_excavations_so_far > 10 }
             }
             num_of_civilian_factories > 6 #TODO: rebalance
         }
@@ -487,6 +494,8 @@ focus_tree = {
         }
         completion_reward = {
             add_research_slot = 1
+            unlock_decision_tooltip = ZBT_heat_pump
+            unlock_decision_tooltip = ZBT_improved_temperature_manipulation
         }
     }
 
@@ -504,11 +513,11 @@ focus_tree = {
             has_tech = construction3
         }
         completion_reward = {
-            custom_effect_tooltip = {
-                localization_key = ZBT_tt_special_tech_attained
-                TECH = ZBT_UU_improved_subterranean_construction
-            }
-            set_country_flag = UU_improved_subterranean_construction
+            # custom_effect_tooltip = {
+            #     localization_key = ZBT_tt_special_tech_attained
+            #     TECH = ZBT_UU_improved_subterranean_construction
+            # }
+            # set_country_flag = UU_improved_subterranean_construction
             # unlock_decision_tooltip = ZBT_build_underground_housing
             unlock_decision_tooltip = ZBT_build_lab
         }
@@ -539,6 +548,11 @@ focus_tree = {
         y = 5
         cost = 10
         prerequisite = { focus = ZBT_reinforced_supports }
+        available = {
+            710 = {
+                infrastructure > 4
+            }
+        }
         ai_will_do = {
             factor = 1
         }

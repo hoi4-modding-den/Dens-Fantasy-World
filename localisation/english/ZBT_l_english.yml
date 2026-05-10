@@ -46,7 +46,6 @@
  ZBT_mandatory_work_programs:0 "Mandatory Work Programs"
  ZBT_underground_metropolis_ns:0 "The Underground Metropolis"
  ZBT_countryside_revitalisation_ns:0 "Countryside Revitalisation Campaign"
-#  ZBT_clear_the_rubble_ns:0 "Clear the Rubble"
  ZBT_land_renewal_ns:0 "Land Renewal"
 
  ZBT_action_societies:0 "Action Societies Empowered"
@@ -64,6 +63,8 @@
  ZBT_definitely_not_slavery:0 "'Skilled Worker' Program"
  ZBT_refugee_assimilation:0 "Refugee Assimilation"
 
+ ZBT_diamond_deposit:0 "Diamond Deposit"
+
 
 
  # Decisions - Undercity
@@ -80,12 +81,13 @@
  ZBT_tt_unlock_more_special_techs:0 "Enables researching more §CUndercity Upgrades§!"
  ZBT_tt_modify_undercity:0 "Modify §YThe Undercity§! by:"
  ZBT_tt_building_upgrade_info:0 "Building $BUILD|Y$ will modify §YThe Undercity§! by the following:"
- ZBT_tt_increase_uc_build_time:0 "§YUndercity§! building projects will take $DAYS|Y$ §Rmore§! days"
- ZBT_tt_decrease_uc_build_time:0 "§YUndercity§! building projects will take $DAYS|Y$ §Gless§! days"
- ZBT_tt_increase_uc_build_cost:0 "§YUndercity§! building projects will cost £pol_power $PP|Y$ §Rmore§!"
- ZBT_tt_decrease_uc_build_cost:0 "§YUndercity§! building projects will cost £pol_power $PP|Y$ §Gless§!"
+ ZBT_tt_increase_uc_build_time:0 "§YUndercity§! building time: §R+$DAYS$§! days"
+ ZBT_tt_decrease_uc_build_time:0 "§YUndercity§! building time: §G-$DAYS$§! days"
+ ZBT_tt_increase_uc_build_cost:0 "§YUndercity§! building cost: §R+$PP$§!  £pol_power"
+ ZBT_tt_decrease_uc_build_cost:0 "§YUndercity§! building cost: §G-$PP$§!  £pol_power"
  ZBT_tt_add_extra_sector:0 "Each layer of §gDepth§! will gain $AMT|G$ extra §5Unexcavated Sectors§!"
  ZBT_tt_add_chance_for_goodies:0 "Adds a small chance to find §Yresource deposits§! while §5excavating§!"
+ ZBT_tt_excavations_completed:0 "More than $AMT|Y$ §5excavations§! have been completed (Current: [?STAT_excavations_so_far|0Y])"
  
  ZBT_dig_down:0 "§gDig Deeper§!"
  ZBT_excavate_new_sector:0 "§5Excavate§! a New Sector"
@@ -101,7 +103,7 @@
  ZBT_local_temperature_manipulation:0 "§CUpgrade:§! Local Temperature Manipulation Spells"
  ZBT_geothermal_generator_research:0 "§CUpgrade:§! Geothermal Generator"
  ZBT_heat_pump:0 "§CUpgrade:§! Liquid Refrigerant Technology"
- ZBT_improved_temperature_manipulation:0 "§CUpgrade:§! Wide-Area Temperature Manipulation"
+ ZBT_improved_temperature_manipulation:0 "§CUpgrade:§! Wide-Area Temperature Manipulation Spells"
  ZBT_climate_control:0 "§CUpgrade:§! Underground Climate Control"
  ZBT_basic_digging_vehicle:0 "§CUpgrade:§! Basic Digging Machine"
 #  ZBT_dig_down:0 ""
@@ -130,10 +132,11 @@
 
 
  # Other Undercity Upgrades
- ZBT_UU_improved_subterranean_construction:0 "Improved Subterranean Construction"
  ZBT_UU_heat_resist1:0 "Heat Resistant Suits"
  ZBT_UU_local_temp_manip:0 "Localised Temperature Manipulation"
  ZBT_UU_heat_pumps:0 "Heat Pumps"
+ ZBT_UU_improved_temp_manip:0 "Wide-Area Temperature Manipulation"
+ ZBT_UU_climate_control:0 "Climate Control"
  ZBT_UU_geothermal_generator:0 "Geothermal Generator"
  ZBT_UU_underground_engineering:0 "Underground Engineering"
 
@@ -160,7 +163,7 @@
 
 
  # Focus tree
- focus_will_have_different_effects_tt: "This focus will have different effects depending on your previously completed focuses."
+ focus_will_have_different_effects_tt: "This focus will gain different effects depending on your previously completed focuses."
 
  ZBT_start_industry: "National Development Scheme"
  ZBT_begin_undercity: "Begin the Undercity Project"

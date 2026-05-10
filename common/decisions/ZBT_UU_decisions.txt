@@ -1,6 +1,6 @@
 ZBT_undercity_cat = {
 
-	d_instant_constrycyruin = {
+	d_instant_construct = {
 		allowed = {always = yes}
 		visible = {
 			is_ai = no
@@ -13,11 +13,30 @@ ZBT_undercity_cat = {
 			set_variable = { var = UC_sector_dig_cost value = 1 }
 			set_variable = { var = UC_sector_build_time value = 1 }
 			set_variable = { var = UC_sector_build_cost value = 1 }
-			set_variable = { var = UC_sector_build_time value = 12 }
-			set_variable = { var = UC_sector_build_cost value = 15 }
+			set_variable = { var = UC_sector_build_time value = 2 }
+			set_variable = { var = UC_sector_build_cost value = 2 }
 			add_political_power = 2000
 		}
 	}
+
+	d_fuckton_of_factories = {
+		allowed = {always = yes}
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+		complete_effect = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 100
+			}
+		}
+	}
+
+
+
+
+
 
 	ZBT_dig_down = {
 		icon = generic_mountain_fortification
@@ -32,6 +51,7 @@ ZBT_undercity_cat = {
 				check_variable = { UC_empty_sectors = 0 }
 			}
 			num_of_civilian_factories_available_for_projects > 2
+			ZBT_heat_resistance_check = yes
 		}
 
 		cost = UC_new_layer_cost
@@ -99,6 +119,7 @@ ZBT_undercity_cat = {
 				}
 				check_variable = { UC_unexcavated_sectors > 0 }
 			}
+			ZBT_heat_resistance_check = yes
 		}
 
 		cost = UC_sector_dig_cost
@@ -134,7 +155,11 @@ ZBT_undercity_cat = {
 			add_to_variable = { var = var:randomshit value = 1 }
 			IF = {
 				limit = { check_variable = { var:randomshit < var:STAT_resource_chance } }
-				# TODO
+				random_list = {
+					1 = { country_event = ZBT_UU_events.3 }
+					1 = { country_event = ZBT_UU_events.4 }
+					1 = { country_event = ZBT_UU_events.5 }
+				}
 			}
 			IF = {
 				limit = {
@@ -275,13 +300,6 @@ ZBT_undercity_cat = {
 		}
 
 		available = {
-			# custom_override_tooltip = {
-            #     tooltip = {
-            #         localization_key = ZBT_tt_has_special_tech
-            #         TECH = ZBT_UU_improved_subterranean_construction
-            #     }
-            #     has_country_flag = UU_improved_subterranean_construction
-            # }
 			num_of_civilian_factories_available_for_projects > 0
 			custom_trigger_tooltip = {
 				tooltip = {
@@ -291,6 +309,14 @@ ZBT_undercity_cat = {
 				check_variable = { UC_empty_sectors > 0 }
 			}
 			ZBT_heat_resistance_check = yes
+			IF = {
+				limit = { check_variable = { UC_depth > 2 } }
+				has_country_flag = UU_heat_pumps
+				custom_override_tooltip = {
+					localization_key = ZBT_tt_has_special_tech
+					TECH = ZBT_UU_heat_pumps
+				}
+			}
 		}
 
 		cost = UC_sector_build_cost
@@ -315,14 +341,14 @@ ZBT_undercity_cat = {
 		}
 		
 		available = {
-			custom_override_tooltip = {
-                tooltip = {
-                    localization_key = ZBT_tt_has_special_tech
-                    TECH = ZBT_UU_improved_subterranean_construction
-                }
-                has_country_flag = UU_improved_subterranean_construction
-            }
-			# has_country_flag = UU_improved_subterranean_construction
+			# custom_override_tooltip = {
+            #     tooltip = {
+            #         localization_key = ZBT_tt_has_special_tech
+            #         TECH = ZBT_UU_improved_subterranean_construction
+            #     }
+            #     has_country_flag = UU_improved_subterranean_construction
+            # }
+			has_completed_focus = ZBT_subterranean_construction
 			num_of_civilian_factories_available_for_projects > 0
 			# has_tech = construction2
 			custom_trigger_tooltip = {
@@ -568,7 +594,7 @@ ZBT_undercity_cat = {
 		days_remove = 40
 		modifier = {
 			civilian_factory_use = 2
-			political_power_cost = 0.4
+			political_power_cost = 0.2
 		}
 		remove_effect = {
 			set_country_flag = UU_heat_resistance1
@@ -585,7 +611,7 @@ ZBT_undercity_cat = {
 		visible = {
 			check_variable = { UC_depth > 2 }
 			OR = {
-				NOT = { has_country_flag = UU_heat_resistance1 }
+				# NOT = { has_country_flag = UU_heat_resistance1 }
 				NOT = { has_country_flag = UU_local_temperature_manipulation }
 			}
 		}
@@ -600,11 +626,17 @@ ZBT_undercity_cat = {
 			political_power_cost = 0.4
 		}
 		remove_effect = {
-			set_country_flag = UU_heat_resistance1
+			# set_country_flag = UU_heat_resistance1
 			set_country_flag = UU_local_temperature_manipulation
 			custom_effect_tooltip = {
 				localization_key = ZBT_tt_special_tech_attained
 				TECH = ZBT_UU_local_temp_manip
+			}
+			add_to_variable = { UC_modify_time = -30 }
+            ZBT_UC_recalc_costs = yes
+			custom_effect_tooltip = {
+				localization_key = ZBT_tt_decrease_uc_build_time
+				DAYS = 30
 			}
 		}
 	}
@@ -616,12 +648,13 @@ ZBT_undercity_cat = {
 			check_variable = { UC_depth > 2 }
 			has_country_flag = UU_built_basic_lab
 			NOT = { has_country_flag = UU_heat_pumps }
+			has_completed_focus = ZBT_miracle_of_science
 		}
 
 		available = {			
 			num_of_civilian_factories_available_for_projects > 4
 		}
-		cost = 60
+		cost = 120
 		days_remove = 70
 		modifier = {
 			civilian_factory_use = 5
@@ -632,6 +665,42 @@ ZBT_undercity_cat = {
 			custom_effect_tooltip = {
 				localization_key = ZBT_tt_special_tech_attained
 				TECH = ZBT_UU_heat_pumps
+			}
+		}
+	}
+
+
+	ZBT_improved_temperature_manipulation = {
+		icon = generic_research
+		visible = {
+			has_country_flag = UU_local_temperature_manipulation
+			NOT = { has_country_flag = UU_improved_temperature_manipulation }
+			has_completed_focus = ZBT_miracle_of_science
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+		}
+		cost = 120
+		days_remove = 140
+		modifier = {
+			civilian_factory_use = 5
+			political_power_cost = 0.4
+			research_speed_factor = -0.05
+		}
+		remove_effect = {
+			set_country_flag = UU_improved_temperature_manipulation
+			custom_effect_tooltip = {
+				localization_key = ZBT_tt_special_tech_attained
+				TECH = ZBT_UU_improved_temp_manip
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_to_variable = { UC_modify_cost = -10 }
+            ZBT_UC_recalc_costs = yes
+			custom_effect_tooltip = {
+				localization_key = ZBT_tt_decrease_uc_build_cost
+				PP = 10
 			}
 		}
 	}
