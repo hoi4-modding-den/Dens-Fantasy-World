@@ -391,4 +391,32 @@ scripted_gui = {
             has_country_flag = ZAV_encounter_blood
         }
     }
+
+    ZAV_battle_screen = {
+        context_type = player_context
+        window_name = "ZAV_battle_GUI"
+
+        visible = {
+            original_tag = ZAV
+        }
+
+        dynamic_lists = {
+            ZAV_battle_actions_gridbox = {
+                array = owned_states
+                entry_container = "ZAV_battle_action_button_entry"
+                index = entry_index
+                value = entry_value
+            }
+        }
+
+        properties = {
+            ZAV_opponent_health_bar = {
+                frame = 100
+            }
+
+            ZAV_opponent_wyrd_bar = {
+                frame = 100
+            }
+        }
+    }
 }

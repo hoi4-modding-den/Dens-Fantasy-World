@@ -167,7 +167,7 @@ guitypes = {
             pdx_tooltip_delayed = ZAV_encounter_option_2_tooltip_delayed
         }
 
-        buttonType = { 
+        buttonType = {
             name = "ZAV_encounter_option_1"
             quadTextureSprite = "GFX_event_option_entry"
             position = { x = 20 y = 384 }
@@ -700,6 +700,342 @@ guitypes = {
             name = "ZAV_veilkeeper_details"
             quadTextureSprite = "GFX_ZAV_veilkeeper_details_button"
             pdx_tooltip = "ZAV_veilkeeper_details_tt"
+        }
+    }
+
+    containerWindowType = {
+        name = "ZAV_battle_GUI"
+        moveable = yes
+        position = { x = -400 y = -300 }
+        orientation = center
+        size = { width = 1078 height = 736 }
+        clipping = no
+
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_ZAV_tiled_bg"
+        }
+
+        containerWindowType = {
+            name = "ZAV_duel_window"
+            position = { x = 10 y = 10 }
+            orientation = UPPER_LEFT
+            size = { width = 1058 height = 250 }
+
+            background = {
+                name = "Background"
+                quadTextureSprite = "GFX_ZAV_gilded_tiled_bg"
+            }
+
+            iconType = { 
+                name = "ZAV_battle_title_banner"
+                quadTextureSprite = "GFX_ZAV_gilded_decoration"
+                position = { x = 329 y = 10 }
+                alwaystransparent = yes
+            }
+
+            instantTextBoxType = {
+                name = "ZAV_battle_title"
+                position = { x = 329 y = 17 }
+                text = ZAV_battle_title_text
+                font = "cinzel_32"
+                format = center
+                maxWidth = 420
+                alwaystransparent = yes
+            }
+
+            containerWindowType = {
+                name = "ZAV_opponent_window"
+                position = { x = 28 y = 44 }
+                orientation = UPPER_LEFT
+                size = { width = 174 height = 194 }
+
+                background = {
+                    name = "Background"
+                    quadTextureSprite = "GFX_ZAV_gilded_tiled_bg"
+                }
+
+                iconType = { 
+                    name = "ZAV_opponent"
+                    quadTextureSprite = "GFX_ZAV_opponent_placeholder"
+                    position = { x = 7 y = 7 }
+                    alwaystransparent = yes
+                }
+            }
+
+            containerWindowType = {
+                name = "ZAV_opponent_stats_window"
+                position = { x = 202 y = 44 }
+                orientation = UPPER_LEFT
+                size = { width = 280 height = 174 }
+
+                background = {
+                    name = "Background"
+                    quadTextureSprite = "GFX_tiled_window_transparent"
+                }
+
+                instantTextBoxType = {
+                    name = "ZAV_opponent_name"
+                    position = { x = 10 y = 0 }
+                    text = "Veilkeeper"
+                    font = "cinzel_32"
+                    format = left
+                    maxWidth = 174
+                    alwaystransparent = yes
+                }
+
+
+                iconType = { 
+                    name = "ZAV_opponent_health_bar"
+                    quadTextureSprite = "GFX_ZAV_health_bar"
+                    position = { x = 10 y = 36 }
+                    alwaystransparent = yes
+                }
+
+                instantTextBoxType = {
+                    name = "ZAV_opponent_health_value"
+                    position = { x = 7 y = 36 }
+                    text = "28/56"
+                    font = "garamond_modif_24"
+                    format = right
+                    maxWidth = 240
+                    alwaystransparent = yes
+                }
+
+                iconType = { 
+                    name = "ZAV_opponent_wyrd_bar"
+                    quadTextureSprite = "GFX_ZAV_wyrd_bar"
+                    position = { x = 10 y = 66 }
+                    alwaystransparent = yes
+                }
+
+                instantTextBoxType = {
+                    name = "ZAV_opponent_wyrd_value"
+                    position = { x = 7 y = 66 }
+                    text = "18/18"
+                    font = "garamond_modif_24"
+                    format = right
+                    maxWidth = 240
+                    alwaystransparent = yes
+                }
+            }
+
+            containerWindowType = {
+                name = "ZAV_opponent2_window"
+                position = { x = 876 y = 44 }
+                orientation = UPPER_LEFT
+                size = { width = 174 height = 194 }
+
+                background = {
+                    name = "Background"
+                    quadTextureSprite = "GFX_ZAV_gilded_tiled_bg"
+                }
+
+                iconType = { 
+                    name = "ZAV_opponent"
+                    quadTextureSprite = "GFX_ZAV_opponent_placeholder"
+                    position = { x = 7 y = 7 }
+                    alwaystransparent = yes
+                }
+            }
+
+            containerWindowType = {
+                name = "ZAV_opponent2_stats_window"
+                position = { x = 596 y = 44 }
+                orientation = UPPER_LEFT
+                size = { width = 280 height = 174 }
+
+                background = {
+                    name = "Background"
+                    quadTextureSprite = "GFX_tiled_window_transparent"
+                }
+
+                instantTextBoxType = {
+                    name = "ZAV_opponent_name"
+                    position = { x = 0 y = 0 }
+                    text = "Forsaken Knight"
+                    font = "cinzel_32"
+                    format = right
+                    maxWidth = 270
+                    alwaystransparent = yes
+                }
+
+
+                iconType = { 
+                    name = "ZAV_opponent_health_bar"
+                    quadTextureSprite = "GFX_ZAV_health_bar"
+                    position = { x = 26 y = 36 }
+                    alwaystransparent = yes
+                }
+
+                instantTextBoxType = {
+                    name = "ZAV_opponent_health_value"
+                    position = { x = 33 y = 36 }
+                    text = "28/56"
+                    font = "garamond_modif_24"
+                    format = left
+                    maxWidth = 240
+                    alwaystransparent = yes
+                }
+
+                iconType = { 
+                    name = "ZAV_opponent_wyrd_bar"
+                    quadTextureSprite = "GFX_ZAV_wyrd_bar"
+                    position = { x = 26 y = 66 }
+                    alwaystransparent = yes
+                }
+
+                instantTextBoxType = {
+                    name = "ZAV_opponent_wyrd_value"
+                    position = { x = 33 y = 66 }
+                    text = "18/18"
+                    font = "garamond_modif_24"
+                    format = left
+                    maxWidth = 240
+                    alwaystransparent = yes
+                }
+            }
+
+            iconType = { 
+                name = "ZAV_versus_banner"
+                quadTextureSprite = "GFX_ZAV_versus_icon"
+                position = { x = 497 y = 104 }
+                alwaystransparent = yes
+            }
+        }
+
+        containerWindowType = {
+            name = "ZAV_battle_actions_window"
+            position = { x = 10 y = 250 }
+            orientation = UPPER_LEFT
+            size = { width = 1058 height = 232 }
+
+            background = {
+                name = "Background"
+                quadTextureSprite = "GFX_ZAV_golden_tiled_bg"
+            }
+
+            iconType = { 
+                name = "ZAV_battle_actions_banner"
+                quadTextureSprite = "GFX_ZAV_gilded_decoration"
+                position = { x = 329 y = 6 }
+                alwaystransparent = yes
+            }
+
+            instantTextBoxType = {
+                name = "ZAV_battle_actions_title"
+                position = { x = 0 y = 13 }
+                text = ZAV_battle_actions_title_text
+                font = "cinzel_32"
+                format = center
+                maxWidth = 1058
+                alwaystransparent = yes
+            }
+
+            containerWindowType = {
+                name = "ZAV_battle_actions_container"
+                position = { x = 7 y = 46 }
+                orientation = UPPER_LEFT
+                size = { width = 1050 height = 180 }
+                clipping = yes
+                verticalScrollbar = "right_vertical_slider"
+                scroll_wheel_factor = 40
+                smooth_scrolling = yes
+
+                background = {
+                    name = "Background"
+                    quadTextureSprite = "GFX_tiled_window_transparent"
+                }
+
+                gridboxtype = {
+                    name = "ZAV_battle_actions_gridbox"
+                    position = { x = 0 y = 0 }
+                    size = { width = 1026 height = 178 }
+                    slotsize = { width = 342 height = 89 }
+                    max_slots_horizontal = 3
+                    format = "UPPER_LEFT"
+                }
+            }
+        }
+
+        containerWindowType = {
+            name = "ZAV_battle_log_window"
+            position = { x = 10 y = 473 }
+            orientation = UPPER_LEFT
+            size = { width = 1058 height = 192 }
+
+            background = {
+                name = "Background"
+                quadTextureSprite = "GFX_ZAV_gilded_tiled_bg"
+            }
+
+            iconType = { 
+                name = "ZAV_battle_log_banner"
+                quadTextureSprite = "GFX_ZAV_gilded_decoration"
+                position = { x = 329 y = 13 }
+                alwaystransparent = yes
+            }
+
+            instantTextBoxType = {
+                name = "ZAV_battle_log_title"
+                position = { x = 0 y = 20 }
+                text = ZAV_battle_log_title_text
+                font = "cinzel_32"
+                format = center
+                maxWidth = 1058
+                alwaystransparent = yes
+            }
+        }
+
+        buttonType = { 
+            name = "ZAV_battle_end_turn_button"
+            quadTextureSprite = "GFX_ZAV_end_turn_button"
+            position = { x = 369 y = 664 }
+        }
+    }
+
+    containerWindowType = {
+        name = "ZAV_battle_action_button_entry"
+        position = { x = 0 y = 0 }
+        size = { width = 342 height = 89 }
+
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_tiled_window_transparent"
+        }
+
+        checkBoxType = { 
+            name = "ZAV_battle_action_button"
+            quadTextureSprite = "GFX_ZAV_action_button"
+            position = { x = 0 y = 0 }
+            pdx_tooltip = "ZAV_action_button_tt"
+        }
+
+        iconType = { 
+            name = "ZAV_battle_action_entry_icon"
+            quadTextureSprite = "GFX_ZAV_battle_action_generic"
+            position = { x = 20 y = 18 }
+            alwaystransparent = yes
+        }
+
+        instantTextBoxType = {
+            name = "ZAV_battle_action_entry_title"
+            position = { x = 86 y = 12 }
+            text = "ZAV_battle_action_entry_title_text"
+            font = "cinzel_32"
+            format = left
+            maxWidth = 240
+            alwaystransparent = yes
+        }
+
+        instantTextBoxType = {
+            name = "ZAV_battle_action_entry_cost"
+            position = { x = 86 y = 42 }
+            text = "ZAV_battle_action_entry_cost_text"
+            font = "garamond_modif_28"
+            format = left
+            maxWidth = 240
+            alwaystransparent = yes
         }
     }
 }

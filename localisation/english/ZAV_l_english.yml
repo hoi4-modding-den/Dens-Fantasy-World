@@ -539,6 +539,19 @@
  ZAV_curse_3:0 "§RDeath's Embrace§!"
  ZAV_curse_4:0 "§RBlack Spores§!"
 
+ ##############
+ # COMBAT GUI #
+ ##############
+
+ ZAV_battle_title_text:0 "§SDUEL§!"
+ ZAV_battle_actions_title_text:0 "§SACTIONS§!"
+ ZAV_battle_log_title_text:0 "§SBATTLE LOG§!"
+
+ ZAV_action_button_text:0 "§SWyrd Slash§!"
+ ZAV_battle_action_entry_title_text:0 "§SHeavenly Strike§!"
+ ZAV_action_button_tt:0 "§YEffect§!:\n§R+20 damage§!\n§G+3 poison§!"
+ ZAV_battle_action_entry_cost_text:0 "§sWyrd Cost: 20 £GFX_ZAV_wyrd_icon §!"
+
  #################
  # MISCELLANEOUS #
  #################
