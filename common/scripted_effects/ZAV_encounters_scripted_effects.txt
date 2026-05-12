@@ -331,6 +331,87 @@ ZAV_encounter_option_1_effect = {
             ZAV_end_encounter = yes
         }
     }
+    else_if = {
+        limit = { check_variable = { ZAV_curr_encounter = 5 } }
+
+        if = {
+            limit = { check_variable = { ZAV_curr_entry = 4 } }
+
+            ZAV_2_option = yes
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 5 } }
+
+            ZAV_1_option = yes
+            set_temp_variable = { next_entry = 13 }
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 8 } }
+
+            set_variable = { ZAV_combat_curr_enemy = 1 }
+            ZAV_combat_init = yes
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 9 } }
+
+            set_country_flag = ZAV_encounter_4_bedroom_searched
+
+            if = {
+                limit = {
+                    has_country_flag = ZAV_encounter_4_study_searched
+                }
+                set_temp_variable = { next_entry = 16 }
+            }
+            else = {
+                set_temp_variable = { next_entry = 17 }
+            }
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 12 } }
+
+            add_stability = -0.02
+            ZAV_end_encounter = yes
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 15 } }
+
+            ZAV_add_new_crimson_order_info = yes
+            add_to_array = { ZAV_discoveries_crimson_order = 1 }
+
+            set_country_flag = ZAV_encounter_4_study_searched
+
+            if = {
+                limit = {
+                    has_country_flag = ZAV_encounter_4_bedroom_searched
+                }
+                set_temp_variable = { next_entry = 16 }
+            }
+            else = {
+                set_temp_variable = { next_entry = 17 }
+            }
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 16 } }
+
+            add_stability = 0.02
+            clr_country_flag = ZAV_encounter_4_study_searched
+            clr_country_flag = ZAV_encounter_4_bedroom_searched
+            ZAV_end_encounter = yes
+        }
+        else_if = {
+            limit = { check_variable = { ZAV_curr_entry = 17 } }
+
+            if = {
+                limit = {
+                    has_country_flag = ZAV_encounter_4_bedroom_searched
+                }
+                set_temp_variable = { next_entry = 13 }
+            }
+            else = {
+                set_temp_variable = { next_entry = 6 }
+            }
+        }
+    }
 
     set_variable = { ZAV_curr_entry = next_entry }
     add_to_array = { ZAV_current_encounter_entries = ZAV_curr_entry }
@@ -408,6 +489,16 @@ ZAV_encounter_option_2_effect = {
 
             ZAV_1_option = yes
             set_temp_variable = { next_entry = 29 }
+        }
+    }
+    else_if = {
+        limit = { check_variable = { ZAV_curr_encounter = 5 } }
+
+        if = {
+            limit = { check_variable = { ZAV_curr_entry = 5 } }
+
+            ZAV_1_option = yes
+            set_temp_variable = { next_entry = 6 }
         }
     }
 

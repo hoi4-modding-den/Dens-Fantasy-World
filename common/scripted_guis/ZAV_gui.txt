@@ -412,9 +412,9 @@ scripted_gui = {
                 value = entry_value
             }
 
-            ZAV_battle_log_gridbox = {
+            ZAV_combat_log_gridbox = {
                 array = ZAV_combat_log_actions
-                entry_container = "ZAV_battle_log_entry"
+                entry_container = "ZAV_combat_log_entry"
                 index = entry_index
                 value = entry_value
             }
@@ -494,6 +494,7 @@ scripted_gui = {
                         }
                     }
                     clr_country_flag = ZAV_combat_ongoing
+                    ZAV_combat_finished_effect = yes
                 }
                 else_if = {
                     limit = { has_country_flag = ZAV_combat_enemy_turn }

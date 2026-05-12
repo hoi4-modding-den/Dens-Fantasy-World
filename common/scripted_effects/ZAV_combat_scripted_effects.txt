@@ -615,13 +615,25 @@ ZAV_combat_check_for_lose = {
     }
 }
 
-ZAV_add_status_effects = {
-    add_to_array = { ZAV_combat_enemy_status_effects = 5 }
-    add_to_array = { ZAV_combat_enemy_status_effects_amounts = 5 }
-    add_to_array = { ZAV_combat_enemy_status_effects = 2 }
-    add_to_array = { ZAV_combat_enemy_status_effects_amounts = 2 }
-    add_to_array = { ZAV_combat_enemy_status_effects = 3 }
-    add_to_array = { ZAV_combat_enemy_status_effects_amounts = 3 }
-    add_to_array = { ZAV_combat_enemy_status_effects = 4 }
-    add_to_array = { ZAV_combat_enemy_status_effects_amounts = 4 }
+### WIN/LOSE OUTCOMES ###
+
+ZAV_combat_finished_effect = {
+    if = {
+        limit = {
+            check_variable = { ZAV_curr_encounter = 1 }
+        }
+
+        if = {
+            limit = {
+                has_country_flag = ZAV_combat_victory
+            }
+
+            set_variable = { ZAV_curr_entry = 9 }
+            add_to_array = { ZAV_current_encounter_entries = ZAV_curr_entry }
+        }
+        else = {
+            set_variable = { ZAV_curr_entry = 10 }
+            add_to_array = { ZAV_current_encounter_entries = ZAV_curr_entry }
+        }
+    }
 }

@@ -278,13 +278,99 @@ shared_focus = {
 		has_country_flag = ZAV_night_plague_released
 	}
 
+	ai_will_do = {
+		factor = 40000
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = ZAV_is_completed_by_event_tt
+	}
+}
+
+shared_focus = {
+	id = ZAV_investigate_the_origins
+	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+	cost = 5
+	relative_position_id = ZAV_the_night_plague
+	x = -1
+	y = 1
+
+	prerequisite = {
+		focus = ZAV_the_night_plague
+	}
 
 	ai_will_do = {
 		factor = 40000
 	}
 
 	completion_reward = {
-		add_political_power = 50
+		add_stability = 0.03
+		custom_effect_tooltip = ZAV_will_result_in_a_minor_encounter_tt
+		
+		hidden_effect = {
+			country_event = ZAV_encounters.5
+		}
+	}
+}
+
+shared_focus = {
+	id = ZAV_quarantine_affected_areas
+	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+	cost = 5
+	relative_position_id = ZAV_the_night_plague
+	x = 1
+	y = 1
+
+	prerequisite = {
+		focus = ZAV_the_night_plague
+	}
+
+	ai_will_do = {
+		factor = 40000
+	}
+
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = ZAV_the_night_plague_idea
+    		add_idea = ZAV_night_plague_contained_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = ZAV_into_the_belly_of_the_beast
+	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+	cost = 5
+	relative_position_id = ZAV_the_night_plague
+	x = 0
+	y = 2
+
+	prerequisite = {
+		focus = ZAV_investigate_the_origins
+	}
+
+	prerequisite = {
+		focus = ZAV_quarantine_affected_areas
+	}
+
+	ai_will_do = {
+		factor = 40000
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = ZAV_will_result_in_a_minor_encounter_tt
+
+		remove_ideas = {
+			ZAV_night_plague_contained_idea
+		}
+		add_timed_idea = {
+			idea = ZAV_night_plague_recovery_idea
+			days = 180
+		}
+
+		hidden_effect = {
+			country_event = ZAV_encounters.6
+		}
 	}
 }
 

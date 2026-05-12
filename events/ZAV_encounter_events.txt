@@ -64,3 +64,35 @@ country_event = {
 		}
     }
 }
+
+country_event = {
+	id = ZAV_encounters.5
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		log = "ZAV_encounters.5 fired"
+
+		ZAV = {
+			set_variable = { ZAV_curr_encounter = 5 }
+			ZAV_start_encounter = yes
+		}
+    }
+}
+
+country_event = {
+	id = ZAV_encounters.6
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		log = "ZAV_encounters.6 fired"
+
+		ZAV = {
+			set_variable = { ZAV_curr_encounter = 6 }
+			ZAV_start_encounter = yes
+		}
+    }
+}

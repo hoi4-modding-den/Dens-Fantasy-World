@@ -708,7 +708,7 @@ guitypes = {
         moveable = yes
         position = { x = -400 y = -300 }
         orientation = center
-        size = { width = 1078 height = 754 }
+        size = { width = 1078 height = 784 }
         clipping = no
 
         background = {
@@ -737,7 +737,7 @@ guitypes = {
             instantTextBoxType = {
                 name = "ZAV_combat_title_text"
                 position = { x = 319 y = 20 }
-                text = ZAV_battle_title_text
+                text = ZAV_combat_title_text
                 font = "cinzel_32"
                 format = center
                 maxWidth = 420
@@ -926,7 +926,7 @@ guitypes = {
             instantTextBoxType = {
                 name = "ZAV_combat_actions_title_text"
                 position = { x = 319 y = 13 }
-                text = ZAV_battle_actions_title_text
+                text = ZAV_combat_actions_title_text
                 font = "cinzel_32"
                 format = center
                 maxWidth = 420
@@ -970,10 +970,10 @@ guitypes = {
         }
 
         containerWindowType = {
-            name = "ZAV_battle_log_window"
+            name = "ZAV_combat_log_window"
             position = { x = 10 y = 491 }
             orientation = UPPER_LEFT
-            size = { width = 1058 height = 192 }
+            size = { width = 1058 height = 217 }
 
             background = {
                 name = "Background"
@@ -981,16 +981,16 @@ guitypes = {
             }
 
             iconType = { 
-                name = "ZAV_battle_log_banner"
+                name = "ZAV_combat_log_banner"
                 quadTextureSprite = "GFX_ZAV_gilded_decoration"
                 position = { x = 319 y = 13 }
                 alwaystransparent = yes
             }
 
             instantTextBoxType = {
-                name = "ZAV_battle_log_title"
+                name = "ZAV_combat_log_title"
                 position = { x = 319 y = 20 }
-                text = ZAV_battle_log_title_text
+                text = ZAV_combat_log_title_text
                 font = "cinzel_32"
                 format = center
                 maxWidth = 420
@@ -998,27 +998,39 @@ guitypes = {
             }
 
             containerWindowType = {
-                name = "ZAV_battle_log_container"
-                position = { x = 7 y = 50 }
+                name = "ZAV_combat_log_container"
+                position = { x = 10 y = 55 }
                 orientation = UPPER_LEFT
-                size = { width = 1050 height = 136 }
-                clipping = yes
-                verticalScrollbar = "right_vertical_slider"
-                scroll_wheel_factor = 40
-                smooth_scrolling = yes
+                size = { width = 1038 height = 150 }
 
                 background = {
                     name = "Background"
-                    quadTextureSprite = "GFX_tiled_window_transparent"
+                    quadTextureSprite = "GFX_ZAV_golden_tiled_bg"
                 }
 
-                gridboxtype = {
-                    name = "ZAV_battle_log_gridbox"
-                    position = { x = 10 y = 0 }
-                    size = { width = 1016 height = 30 }
-                    slotsize = { width = 1016 height = 30 }
-                    max_slots_horizontal = 1
-                    format = "UPPER_LEFT"
+                containerWindowType = {
+                    name = "ZAV_combat_log_gridbox_container"
+                    position = { x = 2 y = 10 }
+                    orientation = UPPER_LEFT
+                    size = { width = 1030 height = 130 }
+                    clipping = yes
+                    verticalScrollbar = "right_vertical_slider"
+                    scroll_wheel_factor = 40
+                    smooth_scrolling = yes
+
+                    background = {
+                        name = "Background"
+                        quadTextureSprite = "GFX_tiled_window_transparent"
+                    }
+
+                    gridboxtype = {
+                        name = "ZAV_combat_log_gridbox"
+                        position = { x = 10 y = 10 }
+                        size = { width = 1018 height = 130 }
+                        slotsize = { width = 1018 height = 30 }
+                        max_slots_horizontal = 1
+                        format = "UPPER_LEFT"
+                    }
                 }
             }
         }
@@ -1026,7 +1038,7 @@ guitypes = {
         buttonType = { 
             name = "ZAV_combat_end_turn_button"
             quadTextureSprite = "GFX_ZAV_end_turn_button"
-            position = { x = 369 y = 682 }
+            position = { x = 369 y = 710 }
             pdx_tooltip = ZAV_combat_end_turn_tt
             shortcut = "RETURN"
         }
@@ -1078,9 +1090,9 @@ guitypes = {
     }
 
     containerWindowType = {
-        name = "ZAV_battle_log_entry"
+        name = "ZAV_combat_log_entry"
         position = { x = 0 y = 0 }
-        size = { width = 1016 height = 30 }
+        size = { width = 1018 height = 30 }
 
         background = {
             name = "Background"
@@ -1088,12 +1100,12 @@ guitypes = {
         }
 
         instantTextBoxType = {
-            name = "ZAV_battle_log_entry_text"
+            name = "ZAV_combat_log_entry_text"
             position = { x = 0 y = 0 }
-            text = ZAV_battle_log_entry_text
+            text = ZAV_combat_log_entry_text
             font = "garamond_modif_28"
             format = left
-            maxWidth = 1016
+            maxWidth = 1018
             alwaystransparent = yes
         }
     }
@@ -1156,9 +1168,9 @@ guitypes = {
 
     containerWindowType = {
         name = "ZAV_combat_actions_unavailable_window"
-        position = { x = 0 y = 268 }
+        position = { x = 14 y = 272 }
         orientation = UPPER_LEFT
-        size = { width = 1058 height = 232 }
+        size = { width = 1050 height = 224 }
 
         background = {
             name = "Background"
@@ -1167,11 +1179,11 @@ guitypes = {
 
         instantTextBoxType = {
             name = "ZAV_combat_actions_unavailable_text"
-            position = { x = 0 y = 100 }
+            position = { x = 0 y = 96 }
             text = ZAV_combat_actions_unavailable_text
             font = "cinzel_32"
             format = center
-            maxWidth = 1058
+            maxWidth = 1050
         }
     }
 }

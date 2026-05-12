@@ -33,5 +33,31 @@ ideas = {
 				civilian_factory_use = 1
 			}
 		}
+
+		ZAV_the_night_plague_idea = {
+			picture = ZAV_the_night_plague
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = 0.3
+				monthly_population = -0.2
+			}
+		}
+
+		ZAV_night_plague_contained_idea = {
+			picture = ZAV_the_night_plague
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.15
+				monthly_population = -0.1
+			}
+		}
+
+		ZAV_night_plague_recovery_idea = {
+			picture = ZAV_the_night_plague
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.25
+			}
+		}
 	}
 }

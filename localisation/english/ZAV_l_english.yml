@@ -43,12 +43,17 @@
  ZAV_secret_orders_desc:0 "Hiding in the shadows, a dark network festers in secrecy. Hidden circles and forbidden cults practice outlawed magics, offering devotion not to the Grail, nor to Nimue, but to nameless powers that whisper from beyond the veil. In return, they are granted gifts both terrible and corrupting. Twisted flesh, shattered minds, and violence without reason. Murders go unsolved, entire villages fall to madness, and rumors of monstrous transformations spread like wildfire.\n\nWorse still, the sacred ashes of Saint Morvydd have been stolen and her tomb defiled. Now wielded as a relic, her ashes are capable of inciting terror and hysteria on a mass scale. With the guardian priests of the realm stretched thin and the faithful losing their grip, these secret orders grow ever bolder. Unless they are rooted out, Avalon may soon find itself undone not by armies, but by the rot spreading from within."
  ZAV_the_kings_seal:0 "The King's Seal"
  ZAV_the_kings_seal_desc:0 "PLACEHOLDER"
+ ZAV_night_plague_idea:0 "The Night Plague"
+ ZAV_night_plague_contained_idea:0 "Night Plague Contained"
+ ZAV_night_plague_recovery_idea:0 "Night Plague Recovery Efforts"
 
  ##########
  # EVENTS #
  ##########
 
-
+ ZAV_night_plague.1.t:0 "The Night Plague"
+ ZAV_night_plague.1.d:0 "PLACEHOLDER"
+ ZAV_night_plague.1.a:0 "We must do something to stop this!"
 
  ###########
  # FOCUSES #
@@ -76,6 +81,8 @@
 
  ZAV_who_could_the_bleeding_king_be_tt:0 "§tWho could the Bleeding King be?§!"
  ZAV_your_journey_begins_in_this_world_tt:0 "§YYour journey in this world begins here.§!"
+
+ ZAV_is_completed_by_event_tt:0 "§YFocus is completed by event.§!"
 
  #######################
  # VEILKEEPER ARCHIVES #
@@ -142,7 +149,7 @@
 
  ZAV_discoveries_legion_of_the_drowned_1:0 "LotD PLACEHOLDER"
 
- ZAV_discoveries_crimson_order_1:0 "CO PLACEHOLDER"
+ ZAV_discoveries_crimson_order_1:0 "The Crimson Order is likely behind the spread of the Night Plague. A Mr. Grimsby was in contact with the infected Mr. Totto and is likely to have ties with the secret organisation."
 
  ZAV_discoveries_order_of_true_knights_1:0 "OoTK PLACEHOLDER"
 
@@ -464,6 +471,62 @@
  ZAV_encounter_4.35.desc:0 "You quickly read the badge on the man's blazer, it seems he's a lieutenant. With a smirk, you simply retort \"As you can see Lieutenant, I am very much alive.\""
  ZAV_encounter_4.35.a:0 "And so it begins..."
 
+ ### BRING OUT YOUR BODIES ###
+
+ ZAV_encounter_5.t:0 "Bring out your Bodies"
+
+ ZAV_encounter_5.1.desc:0 "The Night Plague has ravaged major cities. Port Elisabeth and Skye are on the verge of declaring a state of emergency and enforcing strict curfews to prevent the spread of the plague."
+ ZAV_encounter_5.1.a:0 "..."
+
+ ZAV_encounter_5.2.desc:0 "You have been sent to the home of Mr. Darwin Totto, who is suspected of being the origin of the initial outbreak in Port Elisabeth. His apartment is in the Wimsby neighbourhood of the city."
+ ZAV_encounter_5.2.a:0 "..."
+
+ ZAV_encounter_5.3.desc:0 "Upon arriving at the apartment's facade facing the street, it appears no one has been home in weeks. The shrubbery decorating the entryway is unkempt and rubbish lay scattered at the footsteps of Mr. Totto's abode."
+ ZAV_encounter_5.3.a:0 "..."
+
+ ZAV_encounter_5.4.desc:0 "You enter the house. It is eerily quiet in the apartment, and there is a faint draft of wind coming from the doorway you just entered. There are countless scraps of paper and articles of clothing littering the wooden floor."
+ ZAV_encounter_5.4.a:0 "..."
+
+ ZAV_encounter_5.5.desc:0 "You find nothing important in the living room and decide to investigate the other rooms in the apartment. There are two doors leading out of the living room, one presumably leads to the bedroom, and another to the study."
+ ZAV_encounter_5.5.a:0 "We're likely to find something in the study."
+ ZAV_encounter_5.5.b:0 "Let's check the bedroom first."
+
+ ZAV_encounter_5.6.desc:0 "As soon as you reach for the door handle, something slams into the door with a loud thud. A few seconds later, something slams against the door again, this time ripping the door of its hinges."
+ ZAV_encounter_5.6.a:0 "..."
+
+ ZAV_encounter_5.7.desc:0 "In front of you stands a ghoulish person. It must be Mr. Totto. His skin is corrupted and putrid boils have flourished across its surface. His eyes are dead and yet you can sense they have hostile intent."
+ ZAV_encounter_5.7.a:0 "..."
+
+ ZAV_encounter_5.8.desc:0 "Not a second passes by when the walking corpse lets out a load shrieking noise and moves to attack you."
+ ZAV_encounter_5.8.a:0 "I'll put it out of its misery."
+
+ ZAV_encounter_5.9.desc:0 "The ghoul's body slams on the wooden floor. It shrieks and gasps but eventually its voice gives out and it lays there motionless. A disgusting odor fills the room."
+ ZAV_encounter_5.9.a:0 "..."
+
+ ZAV_encounter_5.10.desc:0 "You realise the ghoul is too great a threat to fight alone and rush out of the apartment, slamming the front door behind you to prevent it from escaping."
+ ZAV_encounter_5.10.a:0 "..."
+
+ ZAV_encounter_5.11.desc:0 "Though we weren't able to learn much about the plague from our initial investigation, when we return we our bound to find something of worth."
+ ZAV_encounter_5.11.a:0 "..."
+
+ ZAV_encounter_5.12.desc:0 "Reports of the strength of the ghouls that the Night plague creates circulated the city following your battle. Many citizens are concerned and a few have even left the major cities out of fear."
+ ZAV_encounter_5.12.a:0 "..."
+
+ ZAV_encounter_5.13.desc:0 "The study is messy; shreds of paper and clothing cover the surface of the desk. Despite the chaos in the room, a note catches your eye. Upon closer inspection, it seems to be a reminder to contact a Mr. Grimsby."
+ ZAV_encounter_5.13.a:0 "It's likely to be nothing."
+
+ ZAV_encounter_5.14.desc:0 "Another note catches your attention, it had been thrown in the wastebin but was of different paper than the other scraps in the room. Written on it is the sentence \"You will be saved by the goddess.\""
+ ZAV_encounter_5.14.a:0 "..."
+
+ ZAV_encounter_5.15.desc:0 "Next to the writing is a crimson leaf. The sigil of the Crimson Order."
+ ZAV_encounter_5.15.a:0 "..."
+
+ ZAV_encounter_5.16.desc:0 "Through your investigation and clash with the ghoul, you have gained valuable information about the origin and threat the plague poses. You decide to leave the rest for the guardian priests."
+ ZAV_encounter_5.16.a:0 "We need to figure out who started it."
+
+ ZAV_encounter_5.17.desc:0 "With everything of note in the room sufficiently investigated, you decide it is time to peer into the other room."
+ ZAV_encounter_5.17.a:0 "..."
+
  ######################
  # VEILKEEPER DETAILS #
  ######################
@@ -543,9 +606,9 @@
  # COMBAT GUI #
  ##############
 
- ZAV_battle_title_text:0 "§SDUEL§!"
- ZAV_battle_actions_title_text:0 "§SACTIONS§!"
- ZAV_battle_log_title_text:0 "§SBATTLE LOG§!"
+ ZAV_combat_title_text:0 "§SDUEL§!"
+ ZAV_combat_actions_title_text:0 "§SACTIONS§!"
+ ZAV_combat_log_title_text:0 "§SBATTLE LOG§!"
 
  ZAV_combat_veilkeeper_image_tt:0 "§YVeilkeeper§!"
  ZAV_combat_enemy_image_tt:0 "§R[GetCombatEnemyTitle]§!"
@@ -561,14 +624,9 @@
  ZAV_combat_action_entry_cost_text:0 "§sWyrd Cost: [?ZAV_combat_actions_wyrd_costs^entry_value] £GFX_ZAV_wyrd_icon §!"
  ZAV_combat_action_entry_tt:0 "[GetCombatActionEffect]"
 
- ZAV_battle_log_entry_text:0 "[GetCombatLogPlayer]: [GetCombatLogActionDetails]"
+ ZAV_combat_log_entry_text:0 "[GetCombatLogPlayer]: [GetCombatLogActionDetails]"
  ZAV_combat_log_player_veilkeeper:0 "§sVeilkeeper§!"
  ZAV_combat_log_player_enemy:0 "§R[GetCombatLogEnemy]§!"
-
- ZAV_action_button_text:0 "§SWyrd Slash§!"
- ZAV_battle_action_entry_title_text:0 "§SHeavenly Strike§!"
- ZAV_action_button_tt:0 "§YEffect§!:\n§R+20 damage§!\n§G+3 poison§!"
- ZAV_battle_action_entry_cost_text:0 "§sWyrd Cost: 20 £GFX_ZAV_wyrd_icon §!"
 
  ZAV_combat_actions_unavailable_text:0 "[GetCombatActionsUnavailableText]"
  ZAV_combat_actions_unavailable_victory:0 "§sVICTORY§!"
