@@ -638,23 +638,25 @@
  # COMBAT STATUS EFFECTS #
  #########################
 
- ZAV_combat_status_effect_tt:0 "[GetCombatStatusEffectName]"
- ZAV_combat_status_effect_delayed_tt:0 "[GetCombatStatusEffectDesc]"
+ ZAV_combat_status_effect_tt:0 "[GetCombatStatusEffectFullDesc]"
  ZAV_combat_status_effect_duration_text:0 "[?ZAV_combat_player_status_effects_amounts^entry_index]"
  ZAV_combat_status_effect_enemy_duration_text:0 "[?ZAV_combat_enemy_status_effects_amounts^entry_index]"
 
- ZAV_combat_status_effect_1:0 "Decay"
+ ZAV_combat_status_effect_1:0 "§0Decay§!"
+ ZAV_combat_status_effect_1_full:0 "§0Decay§!\n\n§YEffect§!:\n§G-2 health per turn\n§R-50% health from healing§!"
  ZAV_combat_status_effect_2:0 "Madness"
  ZAV_combat_status_effect_3:0 "Blessed"
- ZAV_combat_status_effect_4:0 "Steadfast"
-
- ZAV_combat_status_effect_5:0 "§RBleeding§!\n\n§YEffect§!:\n§R-5 health per turn§!"
+ ZAV_combat_status_effect_4:0 "§CFortified§!"
+ ZAV_combat_status_effect_4_full:0 "§CFortified§!\n\n§YEffect§!:\n§G-20% damage received\n§C+30% health from healing§!"
+ ZAV_combat_status_effect_5:0 "§RBleeding§!"
+ ZAV_combat_status_effect_5_full:0 "§RBleeding§!\n\n§YEffect§!:\n§R-5 health per turn§!"
 
  ##################
  # COMBAT ACTIONS #
  ##################
 
- ZAV_combat_action_effect_inflicted:0 "Inflicted [?ZAV_combat_log_stats^entry_index] [GetCombatStatusEffectLogName]"
+ ZAV_combat_action_effect_inflicted:0 "Inflicted [?ZAV_combat_log_stats^entry_index] [GetCombatStatusEffectLogName]."
+ ZAV_combat_action_effect_gained:0 "Gained [?ZAV_combat_log_stats^entry_index] [GetCombatStatusEffectLogName]."
 
  ZAV_combat_action_title_1:0 "Single Shot"
  ZAV_combat_action_effect_1:0 "§YHit chance§!: §L80%§!\n\n§YEffect§!:\n§R+5 damage§!"
@@ -675,12 +677,21 @@
  ##################
 
  ZAV_combat_enemy_1:0 "Ghoul"
+ ZAV_combat_enemy_2:0 "Sir Carian Grimsby"
 
  ZAV_combat_enemy_action_successful_1:0 "Slashed with its claws dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_enemy_action_failure_1:0 "Slashed with its claws and §Ymissed§!."
 
  ZAV_combat_enemy_action_successful_2:0 "Lunges and bites the Veilkeeper, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_enemy_action_failure_2:0 "Lunges and attempts to bite the Veilkeeper but §Ymissed§!."
+
+ ZAV_combat_enemy_action_successful_3:0 "Slashes with his sword dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_failure_3:0 "Attempted to slash with his sword but §Ymissed§!."
+
+ ZAV_combat_enemy_action_successful_4:0 "Consumed a strange sickly substance."
+
+ ZAV_combat_enemy_action_successful_5:0 "Stabs with his sword covered in a putrid rot, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_failure_5:0 "Attempted to stab with his sword but §Ymissed§!."
 
  #################
  # MISCELLANEOUS #
