@@ -609,7 +609,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = prepare_speech }
 		mutually_exclusive = { focus = councils_move }
-		x = 8
+		x = 3
 		y = 2
 		cost = 0
 		available = {
@@ -637,11 +637,397 @@ focus_tree = {
 	}
 
 	focus = {
+		id = the_five_year_plan
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = the_national_economic_proclemation }
+		relative_position_id = the_national_economic_proclemation
+		x = 0
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = expand_the_urhu_mines
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = the_national_economic_proclemation }
+		relative_position_id = the_national_economic_proclemation
+		x = -4
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = invest_into_the_coastal_cities
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = expand_the_urhu_mines }
+		relative_position_id = expand_the_urhu_mines
+		x = -1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = the_national_resource_project
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = expand_the_urhu_mines }
+		relative_position_id = expand_the_urhu_mines
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = expanding_mining_technology
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = invest_into_the_coastal_cities focus = the_national_resource_project }
+		relative_position_id = invest_into_the_coastal_cities
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = reaching_autarky
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = expanding_mining_technology }
+		relative_position_id = expanding_mining_technology
+		x = 0
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = calming_the_agrarians
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = the_five_year_plan }
+		relative_position_id = the_five_year_plan
+		x = -1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = cutting_cornerstones
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = the_five_year_plan focus = rally_up_the_military_complex }
+		relative_position_id = the_five_year_plan
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = industrial_investments
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = cutting_cornerstones focus = calming_the_agrarians }
+		relative_position_id = cutting_cornerstones
+		x = -1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = expand_infrastructure
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = cutting_cornerstones focus = blessings_of_science }
+		relative_position_id = cutting_cornerstones
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = the_importance_of_foundation
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = industrial_investments }
+		relative_position_id = industrial_investments
+		mutually_exclusive = { focus = the_importance_of_advancement }
+		x = 0
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = the_importance_of_advancement
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = expand_infrastructure }
+		relative_position_id = expand_infrastructure
+		mutually_exclusive = { focus = the_importance_of_foundation }
+		x = 0
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = the_light_of_the_west
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = the_importance_of_advancement focus = the_importance_of_foundation }
+		relative_position_id = the_importance_of_advancement
+		x = -1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+
+	focus = {
+		id = countryside_investments
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = calming_the_agrarians }
+		prerequisite = { focus = the_national_resource_project }
+		relative_position_id = calming_the_agrarians
+		x = -1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = rally_up_the_military_complex
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = the_national_economic_proclemation }
+		relative_position_id = the_national_economic_proclemation
+		x = 2
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = fund_researchers
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = rally_up_the_military_complex }
+		relative_position_id = rally_up_the_military_complex
+		x = 3
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = blessings_of_science
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = rally_up_the_military_complex }
+		relative_position_id = rally_up_the_military_complex
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = further_research_investments
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = blessings_of_science }
+		prerequisite = { focus = fund_researchers }
+		relative_position_id = blessings_of_science
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+
+	focus = {
 		id = wash_down_the_bureaucrats
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = the_era_of_patriotism }
 		relative_position_id = the_era_of_patriotism
-		x = -2
+		x = -5
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = deploy_the_national_guard
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = wash_down_the_bureaucrats }
+		relative_position_id = wash_down_the_bureaucrats
+		mutually_exclusive = { focus = deploy_the_national_guard }
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = adress_the_populace
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = wash_down_the_bureaucrats }
+		relative_position_id = wash_down_the_bureaucrats
+		mutually_exclusive = { focus = deploy_the_national_guard }
+		x = -1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = print_pro_war_newspapers
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = adress_the_populace }
+		relative_position_id = adress_the_populace
+		x = -1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = combat_counterrevolutionary_movements
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = adress_the_populace focus = deploy_the_national_guard }
+		relative_position_id = adress_the_populace
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = utilize_loyalists
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = combat_counterrevolutionary_movements }
+		relative_position_id = combat_counterrevolutionary_movements
+		x = 0
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = promote_pro_nationalist_miners_organizations
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = utilize_loyalists }
+		relative_position_id = utilize_loyalists
+		x = -1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = shut_down_trade_unions
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = utilize_loyalists }
+		relative_position_id = utilize_loyalists
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = organization_for_national_prosperity
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = shut_down_trade_unions focus = promote_pro_nationalist_miners_organizations }
+		relative_position_id = shut_down_trade_unions
+		x = -1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = combat_defeatism
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = deploy_the_national_guard }
+		relative_position_id = deploy_the_national_guard
+		x = 1
 		y = 1
 		cost = 0
 		available = {
@@ -655,6 +1041,306 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = the_era_of_patriotism }
 		relative_position_id = the_era_of_patriotism
+		x = -2
+		y = 1
+		cost = 0
+		available = {
+			has_dlc = "La Resistance"
+        }
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = onto_the_world_stage
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = the_era_of_patriotism }
+		relative_position_id = the_era_of_patriotism
+		x = -19
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = war_plan_giarcos
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = onto_the_world_stage }
+		relative_position_id = onto_the_world_stage
+		x = -5
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+	focus = {
+		id = reaffirm_western_irredentism
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = war_plan_giarcos }
+		relative_position_id = war_plan_giarcos
+		x = -4
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = reconciliation_with_turun
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = reaffirm_western_irredentism }
+		relative_position_id = reaffirm_western_irredentism
+		mutually_exclusive = { focus = reconquest_with_turun }
+		x = -6
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = political_infiltration
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = reconciliation_with_turun }
+		relative_position_id = reconciliation_with_turun
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = turun_membership_into_the_faction
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = political_infiltration }
+		prerequisite = { focus = diplomatic_overtures_with_turun }
+		relative_position_id = political_infiltration
+		x = -1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = diplomatic_overtures_with_turun
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = reconciliation_with_turun }
+		relative_position_id = reconciliation_with_turun
+		x = -1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = reconquest_with_turun
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = reaffirm_western_irredentism }
+		relative_position_id = reaffirm_western_irredentism
+		mutually_exclusive = { focus = reconciliation_with_turun }
+		x = -2
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = demand_further_economic_integration
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = reconquest_with_turun }
+		relative_position_id = reconquest_with_turun
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = push_for_dissolution
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = reconquest_with_turun }
+		relative_position_id = reconquest_with_turun
+		x = -1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = demand_total_annexation
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = push_for_dissolution }
+		prerequisite = { focus = demand_further_economic_integration }
+		relative_position_id = push_for_dissolution
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = occupying_dinantul
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = reaffirm_western_irredentism }
+		relative_position_id = reaffirm_western_irredentism
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = promote_economic_investments_in_dinantul
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = occupying_dinantul }
+		relative_position_id = occupying_dinantul
+		x = 0
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = dinantul_national_government
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = promote_economic_investments_in_dinantul }
+		relative_position_id = promote_economic_investments_in_dinantul
+		x = 0
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = manifest_eastwards
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = war_plan_giarcos }
+		relative_position_id = war_plan_giarcos
+		x = 4
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = bureau_of_national_unity
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = war_plan_giarcos }
+		relative_position_id = war_plan_giarcos
+		x = 0
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = strike_tryvtza_ebenszra
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = manifest_eastwards }
+		relative_position_id = manifest_eastwards
+		x = 0
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = demand_immenwald_submission
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = strike_tryvtza_ebenszra }
+		relative_position_id = strike_tryvtza_ebenszra
+		mutually_exclusive = { focus = send_wighardia_back_to_the_feudal_age }
+		x = -1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = reorganize_wighardia
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = demand_immenwald_submission focus = send_wighardia_back_to_the_feudal_age }
+		relative_position_id = demand_immenwald_submission
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = send_wighardia_back_to_the_feudal_age
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = strike_tryvtza_ebenszra }
+		relative_position_id = strike_tryvtza_ebenszra
+		mutually_exclusive = { focus = demand_immenwald_submission }
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = demand_the_lake_passage
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = manifest_eastwards }
+		relative_position_id = manifest_eastwards
 		x = 2
 		y = 1
 		cost = 0
@@ -665,11 +1351,201 @@ focus_tree = {
 	}
 
 	focus = {
-		id = onto_the_world_stage
+		id = program_of_compliance
 		icon = GFX_focus_PLACEHOLDER
-		prerequisite = { focus = the_era_of_patriotism }
-		relative_position_id = the_era_of_patriotism
-		x = -6
+		prerequisite = { focus = bureau_of_national_unity }
+		prerequisite = { focus = northwestern_reorganization_program focus = southwestern_reorganization_program }
+		relative_position_id = bureau_of_national_unity
+		x = 0
+		y = 2
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = northwestern_reorganization_program
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = bureau_of_national_unity }
+		prerequisite = { focus = reaffirm_western_irredentism }
+		relative_position_id = bureau_of_national_unity
+		x = -1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = southwestern_reorganization_program
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = bureau_of_national_unity }
+		prerequisite = { focus = manifest_eastwards }
+		relative_position_id = bureau_of_national_unity
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+
+	focus = {
+		id = war_plan_tyrnevic
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = onto_the_world_stage }
+		relative_position_id = onto_the_world_stage
+		x = 6
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = striking_the_false_rus
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = war_plan_tyrnevic }
+		relative_position_id = war_plan_tyrnevic
+		x = 2
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = strike_a_deal_with_the_vectors
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = war_plan_tyrnevic }
+		relative_position_id = war_plan_tyrnevic
+		x = 0
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = invite_the_vectors
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = strike_a_deal_with_the_vectors }
+		relative_position_id = strike_a_deal_with_the_vectors
+		x = 0
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = reestablishing_order
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = into_the_archonate focus = invite_the_vectors focus = incursion_into_sonderlund }
+		relative_position_id = invite_the_vectors
+		x = 0
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = the_east_secured
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = reestablishing_order }
+		prerequisite = { focus = southeastern_reintegration_campaign }
+		prerequisite = { focus = northeastern_reintegration_campaign }
+		relative_position_id = reestablishing_order
+		x = 0
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = southeastern_reintegration_campaign
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = into_the_archonate focus = invite_the_vectors }
+		prerequisite = { focus = incursion_into_sonderlund }
+		relative_position_id = invite_the_vectors
+		x = -2
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = northeastern_reintegration_campaign
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = incursion_into_sonderlund focus = invite_the_vectors }
+		prerequisite = { focus = into_the_archonate }
+		relative_position_id = invite_the_vectors
+		x = 2
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = into_the_archonate
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = striking_the_false_rus }
+		relative_position_id = striking_the_false_rus
+		x = 1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = incursion_into_sonderlund
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = demanding_the_zyretrava_borderlands }
+		relative_position_id = demanding_the_zyretrava_borderlands
+		x = -1
+		y = 1
+		cost = 0
+		available = {
+		}
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = demanding_the_zyretrava_borderlands
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = war_plan_tyrnevic }
+		relative_position_id = war_plan_tyrnevic
+		x = -2
 		y = 1
 		cost = 0
 		available = {
@@ -683,7 +1559,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = prepare_speech }
 		mutually_exclusive = { focus = the_era_of_patriotism }
-		x = 34
+		x = 36
 		y = 2
 		cost = 0
 		available = {
@@ -762,6 +1638,7 @@ focus_tree = {
 		id = military_experimentation
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = construct_military_facilities }
+		prerequisite = { focus = fund_researchers }
 		x = 16
 		y = 6
 		cost = 0
@@ -899,7 +1776,7 @@ focus_tree = {
 		id = return_of_landreform
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = councils_move }
-		x = 25
+		x = 30
 		y = 3
 		cost = 0
 		available = {
