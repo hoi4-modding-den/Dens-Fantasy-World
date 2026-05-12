@@ -351,6 +351,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ZAV_combat_status_effect_1"
+		texturefile = "gfx/interface/ZAV/combat/ZAV_combat_status_effect_decay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_combat_status_effect_4"
+		texturefile = "gfx/interface/ZAV/combat/ZAV_combat_status_effect_fortified.dds"
+	}
+
+	spriteType = {
 		name = "GFX_ZAV_combat_status_effect_5"
 		texturefile = "gfx/interface/ZAV/combat/ZAV_combat_status_effect_bleeding.dds"
 	}
@@ -388,6 +398,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ZAV_combat_enemy_image_1"
 		texturefile = "gfx/interface/ZAV/combat/portraits/ZAV_combat_portrait_ghoul.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_combat_enemy_image_2"
+		texturefile = "gfx/interface/ZAV/combat/portraits/ZAV_combat_portrait_sir_grimsby.dds"
 	}
 
 	spriteType = {
