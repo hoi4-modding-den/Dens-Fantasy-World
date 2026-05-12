@@ -10,34 +10,44 @@ ZAV_combat_setup_starting_stats = {
 }
 
 ZAV_combat_init = {
-    clr_country_flag = ZAV_combat_victory
-    clr_country_flag = ZAV_combat_defeat
-    
-    clear_array = ZAV_combat_log_players
-    clear_array = ZAV_combat_log_actions
-    clear_array = ZAV_combat_log_outcomes
-    clear_array = ZAV_combat_log_stats
+    if = {
+        limit = {
+            is_ai = no
+        }
 
-    clear_array = ZAV_combat_player_status_effects
-    clear_array = ZAV_combat_player_status_effects_amounts
-    clear_array = ZAV_combat_enemy_status_effects
-    clear_array = ZAV_combat_enemy_status_effects_amounts
+        clr_country_flag = ZAV_combat_victory
+        clr_country_flag = ZAV_combat_defeat
+        
+        clear_array = ZAV_combat_log_players
+        clear_array = ZAV_combat_log_actions
+        clear_array = ZAV_combat_log_outcomes
+        clear_array = ZAV_combat_log_stats
 
-    set_variable = { ZAV_combat_player_health = ZAV_combat_player_max_health }
-    set_variable = { ZAV_combat_player_wyrd = ZAV_combat_player_max_wyrd }
-    set_variable = { ZAV_combat_remaining_wyrd = ZAV_combat_player_wyrd }
-    set_variable = { ZAV_player_defense_multiplier = 1 }
-    set_variable = { ZAV_combat_remaining_actions = ZAV_combat_player_max_actions }
+        clear_array = ZAV_combat_player_status_effects
+        clear_array = ZAV_combat_player_status_effects_amounts
+        clear_array = ZAV_combat_enemy_status_effects
+        clear_array = ZAV_combat_enemy_status_effects_amounts
 
-    ZAV_combat_init_enemy = yes
+        set_variable = { ZAV_combat_player_health = ZAV_combat_player_max_health }
+        set_variable = { ZAV_combat_player_wyrd = ZAV_combat_player_max_wyrd }
+        set_variable = { ZAV_combat_remaining_wyrd = ZAV_combat_player_wyrd }
+        set_variable = { ZAV_player_defense_multiplier = 1 }
+        set_variable = { ZAV_combat_remaining_actions = ZAV_combat_player_max_actions }
 
-    set_variable = { ZAV_combat_enemy_health = ZAV_combat_enemy_max_health }
-    set_variable = { ZAV_enemy_defense_multiplier = 1 }
+        ZAV_combat_init_enemy = yes
 
-    ZAV_combat_calculate_player_actions = yes
-    ZAV_combat_update_stats = yes
-    set_country_flag = ZAV_combat_ongoing
-    clr_country_flag = ZAV_combat_enemy_turn
+        set_variable = { ZAV_combat_enemy_health = ZAV_combat_enemy_max_health }
+        set_variable = { ZAV_enemy_defense_multiplier = 1 }
+
+        ZAV_combat_calculate_player_actions = yes
+        ZAV_combat_update_stats = yes
+        set_country_flag = ZAV_combat_ongoing
+        clr_country_flag = ZAV_combat_enemy_turn
+    }
+    else = {
+        set_country_flag = ZAV_combat_victory
+        ZAV_combat_finished_effect = yes
+    }
 }
 
 ZAV_combat_init_enemy = {
