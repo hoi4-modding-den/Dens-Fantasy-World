@@ -306,16 +306,63 @@ spriteTypes = {
 
 	spriteType = { 
 		name = "GFX_ZAV_wyrd_icon"
-		texturefile = "gfx/interface/ZAV/ZAV_wyrd_texticon.dds"
+		texturefile = "gfx/interface/ZAV/texticons/ZAV_wyrd_texticon.dds"
 		legacy_lazy_load = no
+	}
+
+	spriteType = { 
+		name = "GFX_ZAV_move_actions_icon"
+		texturefile = "gfx/interface/ZAV/texticons/ZAV_move_actions_texticon.dds"
+		legacy_lazy_load = no
+	}
+
+	# COMBAT ACTIONS #
+
+	spriteType = {
+		name = "GFX_ZAV_combat_action_1"
+		texturefile = "gfx/interface/ZAV/combat/actions/ZAV_action_pistol.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_combat_action_2"
+		texturefile = "gfx/interface/ZAV/combat/actions/ZAV_action_pray.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_combat_action_3"
+		texturefile = "gfx/interface/ZAV/combat/actions/ZAV_action_heal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_combat_action_4"
+		texturefile = "gfx/interface/ZAV/combat/actions/ZAV_action_barrage.dds"
 	}
 
 	# COMBAT #
 
 	spriteType = {
-		name = "GFX_ZAV_action_button"
-		texturefile = "gfx/interface/ZAV/combat/ZAV_action_button_selected.dds"
-		noOfFrames = 2
+		name = "GFX_ZAV_combat_status_effect_background"
+		texturefile = "gfx/interface/ZAV/combat/ZAV_combat_status_effect_background.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_combat_status_effect_placeholder"
+		texturefile = "gfx/interface/ZAV/combat/ZAV_combat_status_effect_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_combat_status_effect_5"
+		texturefile = "gfx/interface/ZAV/combat/ZAV_combat_status_effect_bleeding.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ZAV_combat_action_background"
+		texturefile = "gfx/interface/ZAV/combat/ZAV_combat_action_background.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_combat_action_background_selected"
+		texturefile = "gfx/interface/ZAV/combat/ZAV_combat_action_background_selected.dds"
 	}
 
 	spriteType = {
@@ -331,6 +378,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ZAV_opponent_placeholder"
 		texturefile = "gfx/interface/ZAV/combat/ZAV_opponent_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_image_veilkeeper"
+		texturefile = "gfx/interface/ZAV/combat/portraits/ZAV_combat_portrait_veilkeeper.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_combat_enemy_image_1"
+		texturefile = "gfx/interface/ZAV/combat/portraits/ZAV_combat_portrait_ghoul.dds"
 	}
 
 	spriteType = {
@@ -387,6 +444,15 @@ spriteTypes = {
 		name = "GFX_ZAV_golden_tiled_bg"
 		size= { x=192 y=192 }
 		textureFile = "gfx/interface/ZAV/combat/ZAV_golden_tiled_bg.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_ZAV_unavailable_tiled_bg"
+		size= { x=192 y=192 }
+		textureFile = "gfx/interface/ZAV/combat/ZAV_unavailable_tiled_bg.dds"
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"

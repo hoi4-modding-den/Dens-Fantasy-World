@@ -1,0 +1,627 @@
+### SETUP ###
+
+# These are the stats the player starts with at the start of the game
+ZAV_combat_setup_starting_stats = {
+    set_variable = { ZAV_combat_player_max_health = 28 }
+    set_variable = { ZAV_combat_player_max_wyrd = 15 }
+    set_variable = { ZAV_combat_player_max_actions = 2 }
+
+    ZAV_combat_setup_actions_data = yes
+}
+
+ZAV_combat_init = {
+    clr_country_flag = ZAV_combat_victory
+    clr_country_flag = ZAV_combat_defeat
+    
+    clear_array = ZAV_combat_log_players
+    clear_array = ZAV_combat_log_actions
+    clear_array = ZAV_combat_log_outcomes
+    clear_array = ZAV_combat_log_stats
+
+    clear_array = ZAV_combat_player_status_effects
+    clear_array = ZAV_combat_player_status_effects_amounts
+    clear_array = ZAV_combat_enemy_status_effects
+    clear_array = ZAV_combat_enemy_status_effects_amounts
+
+    set_variable = { ZAV_combat_player_health = ZAV_combat_player_max_health }
+    set_variable = { ZAV_combat_player_wyrd = ZAV_combat_player_max_wyrd }
+    set_variable = { ZAV_combat_remaining_wyrd = ZAV_combat_player_wyrd }
+    set_variable = { ZAV_combat_remaining_actions = ZAV_combat_player_max_actions }
+
+    ZAV_combat_init_enemy = yes
+
+    set_variable = { ZAV_combat_enemy_health = ZAV_combat_enemy_max_health }
+
+    ZAV_combat_calculate_player_actions = yes
+    ZAV_combat_update_stats = yes
+    set_country_flag = ZAV_combat_ongoing
+    clr_country_flag = ZAV_combat_enemy_turn
+}
+
+ZAV_combat_init_enemy = {
+    if = { 
+        limit = {
+            check_variable = { ZAV_combat_curr_enemy = 1 }
+        }
+
+        ZAV_combat_setup_enemy_1 = yes
+    }
+}
+
+### DATA ###
+
+ZAV_combat_setup_actions_data = {
+    clear_array = ZAV_combat_actions_wyrd_costs
+    add_to_array = { ZAV_combat_actions_wyrd_costs = 0 } # 0 indexed vs 1 indexed array
+
+    add_to_array = { ZAV_combat_actions_wyrd_costs = 0 }
+    add_to_array = { ZAV_combat_actions_wyrd_costs = 0 }
+    add_to_array = { ZAV_combat_actions_wyrd_costs = 6 }
+    add_to_array = { ZAV_combat_actions_wyrd_costs = 8 }
+}
+
+ZAV_combat_setup_enemy_1 = {
+    set_variable = { ZAV_combat_enemy_max_health = 37 }
+    set_variable = { ZAV_combat_enemy_max_actions = 2 }
+
+    clear_array = ZAV_combat_enemy_actions
+    add_to_array = { ZAV_combat_enemy_actions = 1 }
+    add_to_array = { ZAV_combat_enemy_actions = 2 }
+}
+
+### UTILITY ###
+
+ZAV_combat_calculate_player_actions = {
+    clear_array = ZAV_combat_available_actions
+    
+    ### BASIC ACTIONS ###
+
+    add_to_array = { ZAV_combat_available_actions = 1 }  # PISTOL
+    add_to_array = { ZAV_combat_available_actions = 2 }  # PRAY
+    add_to_array = { ZAV_combat_available_actions = 3 }  # HEAL
+    add_to_array = { ZAV_combat_available_actions = 4 }  # BARRAGE
+}
+
+ZAV_combat_update_stats = {
+    set_temp_variable = { player_health_frame = 100 }
+    set_temp_variable = { player_wyrd_frame = 100 }
+    set_temp_variable = { enemy_health_frame = 100 }
+
+    divide_temp_variable = { player_health_frame = ZAV_combat_player_max_health }
+    divide_temp_variable = { player_wyrd_frame = ZAV_combat_player_max_wyrd }
+    divide_temp_variable = { enemy_health_frame = ZAV_combat_enemy_max_health }
+
+    multiply_temp_variable = { player_health_frame = ZAV_combat_player_health }
+    multiply_temp_variable = { player_wyrd_frame = ZAV_combat_player_wyrd }
+    multiply_temp_variable = { enemy_health_frame = ZAV_combat_enemy_health }
+
+    round_temp_variable = player_health_frame
+    round_temp_variable = player_wyrd_frame
+    round_temp_variable = enemy_health_frame
+
+    set_variable = { ZAV_player_health_frame = player_health_frame }
+    set_variable = { ZAV_player_wyrd_frame = player_wyrd_frame }
+    set_variable = { ZAV_enemy_health_frame = enemy_health_frame }
+}
+
+ZAV_combat_log_action = {
+    add_to_array = { ZAV_combat_log_players = player }
+    add_to_array = { ZAV_combat_log_actions = action }
+    add_to_array = { ZAV_combat_log_outcomes = outcome }
+    add_to_array = { ZAV_combat_log_stats = stat }
+}
+
+### STATUS EFFECTS ###
+
+ZAV_combat_calculate_player_multipliers = {
+    set_temp_variable = { damage_multiplier = 1 }
+    set_temp_variable = { healing_multiplier = 1 }
+    set_temp_variable = { wyrd_multiplier = 1 }
+    
+    for_each_loop = {
+        array = ZAV_combat_player_status_effects
+        value = effect
+        if = {
+            limit = { check_variable = { effect = 2 } }
+            multiply_temp_variable = { damage_multiplier = 0.8 }
+            multiply_temp_variable = { healing_multiplier = 0.8 }
+            multiply_temp_variable = { wyrd_multiplier = 0.8 }
+        }
+        else_if = {
+            limit = { check_variable = { effect = 3 } }
+            multiply_temp_variable = { damage_multiplier = 1.5 }
+            multiply_temp_variable = { healing_multiplier = 1.5 }
+            multiply_temp_variable = { wyrd_multiplier = 1.5 }
+        }
+        else_if = {
+            limit = { check_variable = { effect = 4 } }
+            multiply_temp_variable = { damage_multiplier = 1.5 }
+        }
+    }
+
+    log = "damage_multiplier: [?damage_multiplier]"
+    log = "healing_multiplier: [?healing_multiplier]"
+    log = "wyrd_multiplier: [?wyrd_multiplier]"
+}
+
+ZAV_combat_calculate_enemy_multipliers = {
+    set_temp_variable = { damage_multiplier = 1 }
+    set_temp_variable = { healing_multiplier = 1 }
+    set_temp_variable = { wyrd_multiplier = 1 }
+    
+    for_each_loop = {
+        array = ZAV_combat_enemy_status_effects
+        value = effect
+        if = {
+            limit = { check_variable = { effect = 2 } }
+            multiply_temp_variable = { damage_multiplier = 0.8 }
+            multiply_temp_variable = { healing_multiplier = 0.8 }
+            multiply_temp_variable = { wyrd_multiplier = 0.8 }
+        }
+        else_if = {
+            limit = { check_variable = { effect = 3 } }
+            multiply_temp_variable = { damage_multiplier = 1.5 }
+            multiply_temp_variable = { healing_multiplier = 1.5 }
+            multiply_temp_variable = { wyrd_multiplier = 1.5 }
+        }
+        else_if = {
+            limit = { check_variable = { effect = 4 } }
+            multiply_temp_variable = { damage_multiplier = 1.5 }
+        }
+    }
+
+    log = "damage_multiplier: [?damage_multiplier]"
+    log = "healing_multiplier: [?healing_multiplier]"
+    log = "wyrd_multiplier: [?wyrd_multiplier]"
+}
+
+ZAV_combat_calculate_player_effects = {
+    set_temp_variable = { health_change = 0 }
+    set_temp_variable = { wyrd_change = 0 }
+    
+    for_each_loop = {
+        array = ZAV_combat_player_status_effects
+        value = effect
+        if = {
+            limit = { check_variable = { effect = 1 } }
+            subtract_from_temp_variable = { health_change = 5 }
+        }
+        else_if = {
+            limit = { check_variable = { effect = 5 } }
+            subtract_from_temp_variable = { health_change = 5 }
+        }
+    }
+
+
+    log = "health_change: [?health_change]"
+    log = "wyrd_change: [?wyrd_change]"
+}
+
+ZAV_combat_calculate_enemy_effects = {
+    set_temp_variable = { health_change = 0 }
+    
+    for_each_loop = {
+        array = ZAV_combat_enemy_status_effects
+        value = effect
+        if = {
+            limit = { check_variable = { effect = 1 } }
+            subtract_from_temp_variable = { health_change = 5 }
+        }
+        else_if = {
+            limit = { check_variable = { effect = 5 } }
+            subtract_from_temp_variable = { health_change = 5 }
+        }
+    }
+
+
+    log = "health_change: [?health_change]"
+}
+
+ZAV_combat_reduce_player_status_effect_amounts = {
+    clear_temp_array = temp_status_effects
+    clear_temp_array = temp_status_effects_amounts
+
+    for_each_loop = {
+        array = ZAV_combat_player_status_effects_amounts
+        index = i
+        value = effect
+        if = {
+            limit = {
+                check_variable = { effect > 1 }
+            }
+
+            set_temp_variable = { effect_amount = effect }
+            subtract_from_temp_variable = { effect_amount = 1 }
+            add_to_temp_array = { temp_status_effects = ZAV_combat_player_status_effects^i }
+            add_to_temp_array = { temp_status_effects_amounts = effect_amount }
+        }
+    }
+
+    clear_array = ZAV_combat_player_status_effects
+    clear_array = ZAV_combat_player_status_effects_amounts
+
+    for_each_loop = {
+        array = temp_status_effects
+        index = i
+        value = effect
+        add_to_array = { ZAV_combat_player_status_effects = effect }
+        add_to_array = { ZAV_combat_player_status_effects_amounts = temp_status_effects_amounts^i }
+    }
+}
+
+ZAV_combat_reduce_enemy_status_effect_amounts = {
+    clear_temp_array = temp_status_effects
+    clear_temp_array = temp_status_effects_amounts
+
+    for_each_loop = {
+        array = ZAV_combat_enemy_status_effects_amounts
+        index = i
+        value = effect
+        if = {
+            limit = {
+                check_variable = { effect > 1 }
+            }
+
+            set_temp_variable = { effect_amount = effect }
+            subtract_from_temp_variable = { effect_amount = 1 }
+            add_to_temp_array = { temp_status_effects = ZAV_combat_enemy_status_effects^i }
+            add_to_temp_array = { temp_status_effects_amounts = effect_amount }
+        }
+    }
+
+    clear_array = ZAV_combat_enemy_status_effects
+    clear_array = ZAV_combat_enemy_status_effects_amounts
+
+    for_each_loop = {
+        array = temp_status_effects
+        index = i
+        value = effect
+        add_to_array = { ZAV_combat_enemy_status_effects = effect }
+        add_to_array = { ZAV_combat_enemy_status_effects_amounts = temp_status_effects_amounts^i }
+    }
+}
+
+ZAV_combat_inflict_status_effect_on_player = {
+    if = {
+        limit = {
+            is_in_array = { ZAV_combat_player_status_effects = effect }
+        }
+        for_each_loop = {
+            array = ZAV_combat_player_status_effects
+            index = i
+            value = v
+            if = {
+                limit = {
+                    check_variable = { v = effect }
+                }
+                add_to_variable = { ZAV_combat_player_status_effects_amounts^i = amount }
+            }
+        }
+    }
+    else = {
+        add_to_array = { ZAV_combat_player_status_effects = effect }
+        add_to_array = { ZAV_combat_player_status_effects_amounts = amount }
+    }
+
+    set_temp_variable = { player = 1 }
+    set_temp_variable = { action = 0 }
+    set_temp_variable = { outcome = effect }
+    set_temp_variable = { stat = amount }
+    ZAV_combat_log_action = yes
+}
+
+ZAV_combat_inflict_status_effect_on_enemy = {
+    if = {
+        limit = {
+            is_in_array = { ZAV_combat_enemy_status_effects = effect }
+        }
+        for_each_loop = {
+            array = ZAV_combat_enemy_status_effects
+            index = i
+            value = v
+            if = {
+                limit = {
+                    check_variable = { v = effect }
+                }
+                add_to_variable = { ZAV_combat_enemy_status_effects_amounts^i = amount }
+            }
+        }
+    }
+    else = {
+        add_to_array = { ZAV_combat_enemy_status_effects = effect }
+        add_to_array = { ZAV_combat_enemy_status_effects_amounts = amount }
+    }
+
+    set_temp_variable = { player = 0 }
+    set_temp_variable = { action = 0 }
+    set_temp_variable = { outcome = effect }
+    set_temp_variable = { stat = amount }
+    ZAV_combat_log_action = yes
+}
+
+### PLAYER SPECIFIC ###
+
+ZAV_combat_do_player_turn = {
+    set_temp_variable = { total_damage = 0 }
+    set_temp_variable = { total_wyrd_cost = 0 }
+    set_temp_variable = { total_wyrd_regen = 0 }
+    set_temp_variable = { total_health_regen = 0 }
+
+    ZAV_combat_calculate_player_multipliers = yes
+    
+    if = {
+        limit = {
+            is_in_array = { ZAV_player_selected_actions = 1 }
+        }
+
+        random_list = {
+            80 = {
+                set_temp_variable = { damage = 5 }
+                multiply_temp_variable = { damage = damage_multiplier }
+                round_temp_variable = damage
+
+                add_to_temp_variable = { total_damage = damage }
+
+                set_temp_variable = { player = 0 }
+                set_temp_variable = { action = 1 }
+                set_temp_variable = { outcome = 0 }
+                set_temp_variable = { stat = damage }
+                ZAV_combat_log_action = yes
+            }
+            20 = {
+                set_temp_variable = { player = 0 }
+                set_temp_variable = { action = 1 }
+                set_temp_variable = { outcome = 1 }
+                set_temp_variable = { stat = 0 }
+                ZAV_combat_log_action = yes
+            }
+        }
+    }
+    if = {
+        limit = {
+            is_in_array = { ZAV_player_selected_actions = 2 }
+        }
+
+        set_temp_variable = { wyrd_regen = 4 }
+        multiply_temp_variable = { wyrd_regen = wyrd_multiplier }
+        round_temp_variable = wyrd_regen
+
+        add_to_temp_variable = { total_wyrd_regen = wyrd_regen }
+
+        set_temp_variable = { player = 0 }
+        set_temp_variable = { action = 2 }
+        set_temp_variable = { outcome = 0 }
+        set_temp_variable = { stat = wyrd_regen }
+        ZAV_combat_log_action = yes
+    }
+    if = {
+        limit = {
+            is_in_array = { ZAV_player_selected_actions = 3 }
+        }
+
+        set_temp_variable = { health_regen = 10 }
+        multiply_temp_variable = { health_regen = healing_multiplier }
+        round_temp_variable = health_regen
+
+        add_to_temp_variable = { total_health_regen = health_regen }
+        add_to_temp_variable = { total_wyrd_cost = 6 }
+
+        set_temp_variable = { player = 0 }
+        set_temp_variable = { action = 3 }
+        set_temp_variable = { outcome = 0 }
+        set_temp_variable = { stat = health_regen }
+        ZAV_combat_log_action = yes
+    }
+    if = {
+        limit = {
+            is_in_array = { ZAV_player_selected_actions = 4 }
+        }
+
+        set_temp_variable = { damage = 12 }
+        multiply_temp_variable = { damage = damage_multiplier }
+        round_temp_variable = damage
+
+        add_to_temp_variable = { total_damage = damage }
+        add_to_temp_variable = { total_wyrd_cost = 8 }
+
+        set_temp_variable = { player = 0 }
+        set_temp_variable = { action = 4 }
+        set_temp_variable = { outcome = 0 }
+        set_temp_variable = { stat = damage }
+        ZAV_combat_log_action = yes
+
+        random = {
+            chance = 20
+            set_temp_variable = { effect = 5 }
+            set_temp_variable = { amount = 1 }
+            ZAV_combat_inflict_status_effect_on_enemy = yes
+        }
+    }
+
+    subtract_from_variable = { ZAV_combat_player_wyrd = total_wyrd_cost }
+    add_to_variable = { ZAV_combat_player_wyrd = total_wyrd_regen }
+    add_to_variable = { ZAV_combat_player_health = total_health_regen }
+    subtract_from_variable = { ZAV_combat_enemy_health = total_damage }
+
+    clear_array = ZAV_player_selected_actions
+    set_variable = { ZAV_combat_remaining_wyrd = ZAV_combat_player_wyrd }
+    set_variable = { ZAV_combat_remaining_actions = ZAV_combat_player_max_actions }
+
+    ZAV_combat_calculate_player_effects = yes
+
+    add_to_variable = { ZAV_combat_player_health = health_change }
+    add_to_variable = { ZAV_combat_player_wyrd = wyrd_change }
+
+    ZAV_combat_reduce_player_status_effect_amounts = yes
+
+    clamp_variable = {
+        var = ZAV_combat_player_health
+        min = 0
+        max = ZAV_combat_player_max_health
+    }
+
+    clamp_variable = {
+        var = ZAV_combat_player_wyrd
+        min = 0
+        max = ZAV_combat_player_max_wyrd
+    }
+
+    clamp_variable = {
+        var = ZAV_combat_enemy_health
+        min = 0
+        max = ZAV_combat_enemy_max_health
+    }
+
+    ZAV_combat_update_stats = yes
+    ZAV_combat_check_for_win = yes
+    ZAV_combat_check_for_lose = yes
+}
+
+### ENEMY SPECIFIC ###
+
+ZAV_combat_do_enemy_turn = {
+    set_temp_variable = { total_damage = 0 }
+    set_temp_variable = { total_health_regen = 0 }
+
+    ZAV_combat_calculate_enemy_multipliers = yes
+
+    set_temp_variable = { last_index = ZAV_combat_enemy_actions^num }
+    add_to_temp_variable = { last_index = 1 }
+
+    for_loop_effect = {
+        end = ZAV_combat_enemy_max_actions
+        value = action
+        set_temp_variable_to_random = {
+            var = enemy_action
+            min = 1
+            max = last_index
+            integer = yes
+        }
+        ZAV_combat_do_enemy_action = yes
+    }
+
+    add_to_variable = { ZAV_combat_enemy_health = total_health_regen }
+    subtract_from_variable = { ZAV_combat_player_health = total_damage }
+
+    ZAV_combat_calculate_enemy_effects = yes
+
+    add_to_variable = { ZAV_combat_enemy_health = health_change }
+
+    ZAV_combat_reduce_enemy_status_effect_amounts = yes
+
+    clamp_variable = {
+        var = ZAV_combat_enemy_health
+        min = 0
+        max = ZAV_combat_enemy_max_health
+    }
+
+    clamp_variable = {
+        var = ZAV_combat_player_health
+        min = 0
+        max = ZAV_combat_player_max_health
+    }
+
+    ZAV_combat_update_stats = yes
+    ZAV_combat_check_for_win = yes
+    ZAV_combat_check_for_lose = yes
+}
+
+ZAV_combat_do_enemy_action = {
+    log = "ZAV_enemy_action = [?enemy_action]"
+    if = {
+        limit = {
+            check_variable = { enemy_action = 1 }
+        }
+
+        random_list = {
+            80 = {
+                set_temp_variable = { damage = 3 }
+                multiply_temp_variable = { damage = damage_multiplier }
+                round_temp_variable = damage
+
+                add_to_temp_variable = { total_damage = damage }
+
+                set_temp_variable = { player = 1 }
+                set_temp_variable = { action = 1 }
+                set_temp_variable = { outcome = 0 }
+                set_temp_variable = { stat = damage }
+                ZAV_combat_log_action = yes
+
+                random = {
+                    chance = 10
+                    set_temp_variable = { effect = 5 }
+                    set_temp_variable = { amount = 1 }
+                    ZAV_combat_inflict_status_effect_on_player = yes
+                }
+            }
+            20 = {
+                set_temp_variable = { player = 1 }
+                set_temp_variable = { action = 1 }
+                set_temp_variable = { outcome = 1 }
+                set_temp_variable = { stat = 0 }
+                ZAV_combat_log_action = yes
+            }
+        }
+    }
+    else_if = {
+        limit = {
+            check_variable = { enemy_action = 2 }
+        }
+
+        random_list = {
+            50 = {
+                set_temp_variable = { damage = 8 }
+                multiply_temp_variable = { damage = damage_multiplier }
+                round_temp_variable = damage
+
+                add_to_temp_variable = { total_damage = damage }
+
+                set_temp_variable = { player = 1 }
+                set_temp_variable = { action = 2 }
+                set_temp_variable = { outcome = 0 }
+                set_temp_variable = { stat = damage }
+                ZAV_combat_log_action = yes
+            }
+            50 = {
+                set_temp_variable = { player = 1 }
+                set_temp_variable = { action = 2 }
+                set_temp_variable = { outcome = 1 }
+                set_temp_variable = { stat = 0 }
+                ZAV_combat_log_action = yes
+            }
+        }
+    }
+}
+
+### WIN/LOSE STATES ###
+
+ZAV_combat_check_for_win = {
+    if = {
+        limit = {
+            check_variable = { ZAV_combat_enemy_health < 1 }
+        }
+
+        set_country_flag = ZAV_combat_victory
+    }
+}
+
+ZAV_combat_check_for_lose = {
+    if = {
+        limit = {
+            check_variable = { ZAV_combat_player_health < 1 }
+        }
+
+        set_country_flag = ZAV_combat_defeat
+    }
+}
+
+ZAV_add_status_effects = {
+    add_to_array = { ZAV_combat_enemy_status_effects = 5 }
+    add_to_array = { ZAV_combat_enemy_status_effects_amounts = 5 }
+    add_to_array = { ZAV_combat_enemy_status_effects = 2 }
+    add_to_array = { ZAV_combat_enemy_status_effects_amounts = 2 }
+    add_to_array = { ZAV_combat_enemy_status_effects = 3 }
+    add_to_array = { ZAV_combat_enemy_status_effects_amounts = 3 }
+    add_to_array = { ZAV_combat_enemy_status_effects = 4 }
+    add_to_array = { ZAV_combat_enemy_status_effects_amounts = 4 }
+}

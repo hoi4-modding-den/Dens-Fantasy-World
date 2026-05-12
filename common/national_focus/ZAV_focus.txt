@@ -13,6 +13,7 @@ focus_tree = {
 	continuous_focus_position = { x = 0 y = 2500 }
 
 	shared_focus = ZAV_assume_the_mantle
+	shared_focus = ZAV_fight_a_ghoul
 }
 
 ### STARTING TREE ###
@@ -300,3 +301,22 @@ shared_focus = {
 
 
 ### AIR TREE ###
+
+### TESTING ###
+
+shared_focus = {
+	id = ZAV_fight_a_ghoul
+	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+	cost = 5
+	x = -10
+	y = 0
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		set_variable = { ZAV_combat_curr_enemy = 1 }
+		ZAV_combat_init = yes
+	}
+}

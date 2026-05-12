@@ -254,6 +254,9 @@ scripted_gui = {
 
         visible = {
             has_country_flag = ZAV_encounter_ongoing
+            NOT = {
+                has_country_flag = ZAV_combat_ongoing
+            }
         }
 
         dynamic_lists = {
@@ -394,28 +397,144 @@ scripted_gui = {
 
     ZAV_battle_screen = {
         context_type = player_context
-        window_name = "ZAV_battle_GUI"
+        window_name = "ZAV_combat_window"
 
         visible = {
             original_tag = ZAV
+            has_country_flag = ZAV_combat_ongoing
         }
 
         dynamic_lists = {
-            ZAV_battle_actions_gridbox = {
-                array = owned_states
-                entry_container = "ZAV_battle_action_button_entry"
+            ZAV_combat_actions_gridbox = {
+                array = ZAV_combat_available_actions
+                entry_container = "ZAV_combat_action_entry"
+                index = entry_index
+                value = entry_value
+            }
+
+            ZAV_battle_log_gridbox = {
+                array = ZAV_combat_log_actions
+                entry_container = "ZAV_battle_log_entry"
+                index = entry_index
+                value = entry_value
+            }
+
+            ZAV_combat_player_status_effects_gridbox = {
+                array = ZAV_combat_player_status_effects
+                entry_container = "ZAV_combat_status_effect_entry"
+                index = entry_index
+                value = entry_value
+            }
+
+            ZAV_combat_enemy_status_effects_gridbox = {
+                array = ZAV_combat_enemy_status_effects
+                entry_container = "ZAV_combat_status_effect_enemy_entry"
                 index = entry_index
                 value = entry_value
             }
         }
 
+        triggers = {
+            ZAV_combat_action_button_click_enabled = {
+                OR = {
+                    AND = {
+                        check_variable = {
+                            var = ZAV_combat_remaining_wyrd
+                            value = ZAV_combat_actions_wyrd_costs^entry_value
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = { ZAV_combat_remaining_actions > 0 }
+                    }
+                    is_in_array = { ZAV_player_selected_actions = entry_value }
+                }
+            }
+        }
+
         properties = {
-            ZAV_opponent_health_bar = {
-                frame = 100
+            ZAV_combat_enemy_image = {
+                image = "[GetCombatEnemyImage]"
             }
 
-            ZAV_opponent_wyrd_bar = {
-                frame = 100
+            ZAV_combat_status_effect_icon = {
+                image = "[GetCombatStatusEffectImage]"
+            }
+
+            ZAV_combat_status_effect_enemy_icon = {
+                image = "[GetCombatStatusEffectImage]"
+            }
+
+            ZAV_combat_player_health_bar = {
+                frame = ZAV_player_health_frame
+            }
+
+            ZAV_combat_player_wyrd_bar = {
+                frame = ZAV_player_wyrd_frame
+            }
+
+            ZAV_combat_enemy_health_bar = {
+                frame = ZAV_enemy_health_frame
+            }
+
+            ZAV_combat_action_button = {
+                image = "[GetCombatActionBackground]"
+            }
+
+            ZAV_combat_action_entry_icon = {
+                image = "[GetCombatActionIcon]"
+            }
+        }
+
+        effects = {
+            ZAV_combat_end_turn_button_click = {
+                if = {
+                    limit = {
+                        OR = {
+                            has_country_flag = ZAV_combat_victory
+                            has_country_flag = ZAV_combat_defeat
+                        }
+                    }
+                    clr_country_flag = ZAV_combat_ongoing
+                }
+                else_if = {
+                    limit = { has_country_flag = ZAV_combat_enemy_turn }
+                    ZAV_combat_do_enemy_turn = yes
+                    clr_country_flag = ZAV_combat_enemy_turn
+                }
+                else = {
+                    ZAV_combat_do_player_turn = yes
+                    set_country_flag = ZAV_combat_enemy_turn
+                }
+            }
+
+            ZAV_combat_action_button_click = {
+                if = {
+                    limit = {
+                        is_in_array = { ZAV_player_selected_actions = entry_value }
+                    }
+
+                    remove_from_array = { ZAV_player_selected_actions = entry_value } 
+                    add_to_variable = { ZAV_combat_remaining_wyrd = ZAV_combat_actions_wyrd_costs^entry_value }
+                    add_to_variable = { ZAV_combat_remaining_actions = 1 }
+                }
+                else = {
+                    add_to_array = { ZAV_player_selected_actions = entry_value }
+                    subtract_from_variable = { ZAV_combat_remaining_wyrd = ZAV_combat_actions_wyrd_costs^entry_value }
+                    subtract_from_variable = { ZAV_combat_remaining_actions = 1 }
+                }
+            }
+        }
+    }
+
+    ZAV_battle_screen_actions_unavailable = {
+        context_type = player_context
+        window_name = "ZAV_combat_actions_unavailable_window"
+        parent_window_name = "ZAV_combat_window"
+
+        visible = {
+            OR = {
+                has_country_flag = ZAV_combat_enemy_turn
+                has_country_flag = ZAV_combat_victory
+                has_country_flag = ZAV_combat_defeat
             }
         }
     }

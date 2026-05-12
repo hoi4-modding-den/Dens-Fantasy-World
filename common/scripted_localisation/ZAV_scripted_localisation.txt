@@ -452,3 +452,158 @@ defined_text = {
 		localization_key = "ZAV_curse_[?cval]"
 	}
 }
+
+### COMBAT ###
+
+defined_text = {
+	name = "GetCombatActionBackground"
+	text = {
+		trigger = {
+			is_in_array = { ZAV_player_selected_actions = entry_value }
+		}
+		localization_key = "GFX_ZAV_combat_action_background_selected"
+	}
+	text = {
+		localization_key = "GFX_ZAV_combat_action_background"
+	}
+}
+
+defined_text = {
+	name = "GetCombatActionIcon"
+	text = {
+		localization_key = "GFX_ZAV_combat_action_[?entry_value]"
+	}
+}
+
+defined_text = {
+	name = "GetCombatActionTitle"
+	text = {
+		localization_key = "ZAV_combat_action_title_[?entry_value]"
+	}
+}
+
+defined_text = {
+	name = "GetCombatActionWyrdCost"
+	text = {
+		localization_key = "ZAV_combat_action_wyrd_cost_[?entry_value]"
+	}
+}
+
+defined_text = {
+	name = "GetCombatActionEffect"
+	text = {
+		localization_key = "ZAV_combat_action_effect_[?entry_value]"
+	}
+}
+
+defined_text = {
+	name = "GetCombatLogPlayer"
+	text = {
+		trigger = {
+			NOT = {
+				check_variable = { ZAV_combat_log_players^entry_index = 0 }
+			}
+		}
+		localization_key = "ZAV_combat_log_player_enemy"
+	}
+	text = {
+		localization_key = "ZAV_combat_log_player_veilkeeper"
+	}
+}
+
+defined_text = {
+	name = "GetCombatLogEnemy"
+	text = {
+		localization_key = "ZAV_combat_enemy_[?ZAV_combat_log_players^entry_index]"
+	}
+}
+
+defined_text = {
+	name = "GetCombatLogActionDetails"
+	text = {
+		trigger = {
+			check_variable = { entry_value = 0 }
+		}
+		localization_key = "ZAV_combat_action_effect_inflicted"
+	}
+	text = {
+		trigger = {
+			check_variable = { ZAV_combat_log_players^entry_index = 0 }
+			check_variable = { ZAV_combat_log_outcomes^entry_index = 0 }
+		}
+		localization_key = "ZAV_combat_action_successful_[?entry_value]"
+	}
+	text = {
+		trigger = {
+			check_variable = { ZAV_combat_log_players^entry_index = 0 }
+			check_variable = { ZAV_combat_log_outcomes^entry_index = 1 }
+		}
+		localization_key = "ZAV_combat_action_failure_[?entry_value]"
+	}
+	text = {
+		trigger = {
+			check_variable = { ZAV_combat_log_outcomes^entry_index = 0 }
+		}
+		localization_key = "ZAV_combat_enemy_action_successful_[?entry_value]"
+	}
+	text = {
+		trigger = {
+			check_variable = { ZAV_combat_log_outcomes^entry_index = 1 }
+		}
+		localization_key = "ZAV_combat_enemy_action_failure_[?entry_value]"
+	}
+}
+
+defined_text = {
+	name = "GetCombatEnemyTitle"
+	text = {
+		localization_key = "ZAV_combat_enemy_[?ZAV_combat_curr_enemy]"
+	}
+}
+
+defined_text = {
+	name = "GetCombatEnemyImage"
+	text = {
+		localization_key = "GFX_ZAV_combat_enemy_image_[?ZAV_combat_curr_enemy]"
+	}
+}
+
+defined_text = {
+	name = "GetCombatStatusEffectName"
+	text = {
+		localization_key = "ZAV_combat_status_effect_[?entry_value]"
+	}
+}
+
+defined_text = {
+	name = "GetCombatStatusEffectImage"
+	text = {
+		localization_key = "GFX_ZAV_combat_status_effect_[?entry_value]"
+	}
+}
+
+defined_text = {
+	name = "GetCombatStatusEffectLogName"
+	text = {
+		localization_key = "ZAV_combat_status_effect_[?ZAV_combat_log_outcomes^entry_index]"
+	}
+}
+
+defined_text = {
+	name = "GetCombatActionsUnavailableText"
+	text = {
+		trigger = {
+			has_country_flag = ZAV_combat_victory
+		}
+		localization_key = "ZAV_combat_actions_unavailable_victory"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZAV_combat_defeat
+		}
+		localization_key = "ZAV_combat_actions_unavailable_defeat"
+	}
+	text = {
+		localization_key = "ZAV_combat_actions_unavailable_enemy_turn"
+	}
+}

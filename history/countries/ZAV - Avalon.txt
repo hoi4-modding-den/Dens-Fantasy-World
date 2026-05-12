@@ -705,3 +705,4 @@ ZAV_setup_artifacts = yes
 ZAV_setup_notebook = yes
 ZAV_setup_player_data = yes
 ZAV_setup_encounters = yes
+ZAV_combat_setup_starting_stats = yes

@@ -547,10 +547,82 @@
  ZAV_battle_actions_title_text:0 "§SACTIONS§!"
  ZAV_battle_log_title_text:0 "§SBATTLE LOG§!"
 
+ ZAV_combat_veilkeeper_image_tt:0 "§YVeilkeeper§!"
+ ZAV_combat_enemy_image_tt:0 "§R[GetCombatEnemyTitle]§!"
+
+ ZAV_combat_player_health_text:0 "[?ZAV_combat_player_health]/[?ZAV_combat_player_max_health]"
+ ZAV_combat_player_wyrd_text:0 "[?ZAV_combat_player_wyrd]/[?ZAV_combat_player_max_wyrd]"
+ ZAV_combat_enemy_name_text:0 "[GetCombatEnemyTitle]"
+ ZAV_combat_enemy_health_text:0 "[?ZAV_combat_enemy_health]/[?ZAV_combat_enemy_max_health]"
+
+ ZAV_combat_actions_costs_text:0 "[?ZAV_combat_remaining_wyrd]/[?ZAV_combat_player_wyrd] £GFX_ZAV_wyrd_icon  [?ZAV_combat_remaining_actions]/[?ZAV_combat_player_max_actions] £GFX_ZAV_move_actions_icon"
+ 
+ ZAV_combat_action_entry_title_text:0 "§S[GetCombatActionTitle]§!"
+ ZAV_combat_action_entry_cost_text:0 "§sWyrd Cost: [?ZAV_combat_actions_wyrd_costs^entry_value] £GFX_ZAV_wyrd_icon §!"
+ ZAV_combat_action_entry_tt:0 "[GetCombatActionEffect]"
+
+ ZAV_battle_log_entry_text:0 "[GetCombatLogPlayer]: [GetCombatLogActionDetails]"
+ ZAV_combat_log_player_veilkeeper:0 "§sVeilkeeper§!"
+ ZAV_combat_log_player_enemy:0 "§R[GetCombatLogEnemy]§!"
+
  ZAV_action_button_text:0 "§SWyrd Slash§!"
  ZAV_battle_action_entry_title_text:0 "§SHeavenly Strike§!"
  ZAV_action_button_tt:0 "§YEffect§!:\n§R+20 damage§!\n§G+3 poison§!"
  ZAV_battle_action_entry_cost_text:0 "§sWyrd Cost: 20 £GFX_ZAV_wyrd_icon §!"
+
+ ZAV_combat_actions_unavailable_text:0 "[GetCombatActionsUnavailableText]"
+ ZAV_combat_actions_unavailable_victory:0 "§sVICTORY§!"
+ ZAV_combat_actions_unavailable_defeat:0 "§RDEFEAT§!"
+ ZAV_combat_actions_unavailable_enemy_turn:0 "ENEMY TURN"
+ ZAV_combat_end_turn_tt:0 "§YEnd turn§!"
+
+ #########################
+ # COMBAT STATUS EFFECTS #
+ #########################
+
+ ZAV_combat_status_effect_tt:0 "[GetCombatStatusEffectName]"
+ ZAV_combat_status_effect_delayed_tt:0 "[GetCombatStatusEffectDesc]"
+ ZAV_combat_status_effect_duration_text:0 "[?ZAV_combat_player_status_effects_amounts^entry_index]"
+ ZAV_combat_status_effect_enemy_duration_text:0 "[?ZAV_combat_enemy_status_effects_amounts^entry_index]"
+
+ ZAV_combat_status_effect_1:0 "Decay"
+ ZAV_combat_status_effect_2:0 "Madness"
+ ZAV_combat_status_effect_3:0 "Blessed"
+ ZAV_combat_status_effect_4:0 "Steadfast"
+
+ ZAV_combat_status_effect_5:0 "§RBleeding§!\n\n§YEffect§!:\n§R-5 health per turn§!"
+
+ ##################
+ # COMBAT ACTIONS #
+ ##################
+
+ ZAV_combat_action_effect_inflicted:0 "Inflicted [?ZAV_combat_log_stats^entry_index] [GetCombatStatusEffectLogName]"
+
+ ZAV_combat_action_title_1:0 "Single Shot"
+ ZAV_combat_action_effect_1:0 "§YHit chance§!: §L80%§!\n\n§YEffect§!:\n§R+5 damage§!"
+ ZAV_combat_action_successful_1:0 "Fired a single shot with a pistol dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_action_failure_1:0 "Fired a single shot with a pistol and §Ymissed§!."
+ ZAV_combat_action_title_2:0 "Prayer"
+ ZAV_combat_action_effect_2:0 "§YEffect§!:\n§C+4 wyrd§!"
+ ZAV_combat_action_successful_2:0 "Prayed to a higher being and received §C[?ZAV_combat_log_stats^entry_index] wyrd§!."
+ ZAV_combat_action_title_3:0 "Heal"
+ ZAV_combat_action_effect_3:0 "§YEffect§!:\n§G+10 health§!"
+ ZAV_combat_action_successful_3:0 "Healed using §C6 wyrd§! to receive §G[?ZAV_combat_log_stats^entry_index] health§!."
+ ZAV_combat_action_title_4:0 "Barrage"
+ ZAV_combat_action_effect_4:0 "§YHit chance§!: §L100%§!\n\n§YEffect§!:\n§R+12 damage§!\n§R20% chance to inflict 1 bleeding§R"
+ ZAV_combat_action_successful_4:0 "Fired a barrage with a pistol dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+
+ ##################
+ # COMBAT ENEMIES #
+ ##################
+
+ ZAV_combat_enemy_1:0 "Ghoul"
+
+ ZAV_combat_enemy_action_successful_1:0 "Slashed with its claws dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_failure_1:0 "Slashed with its claws and §Ymissed§!."
+
+ ZAV_combat_enemy_action_successful_2:0 "Lunges and bites the Veilkeeper, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_failure_2:0 "Lunges and attempts to bite the Veilkeeper but §Ymissed§!."
 
  #################
  # MISCELLANEOUS #
