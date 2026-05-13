@@ -169,6 +169,11 @@ spriteTypes = {
 		name = "GFX_ZAV_encounter_header_background"
 		texturefile = "gfx/interface/ZAV/encounters/HeaderBackground4.dds"
 	}
+
+	spriteType = {
+		name = "GFX_ZAV_encounter_option_background"
+		texturefile = "gfx/interface/ZAV/encounters/OptionBackground.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_ZAV_encounter_image_blank"
@@ -465,6 +470,15 @@ spriteTypes = {
 	}
 
 	corneredTileSpriteType = {
+		name = "GFX_ZAV_golden_inlaid_tiled_bg"
+		size= { x=192 y=192 }
+		textureFile = "gfx/interface/ZAV/combat/ZAV_golden_inlaid_tiled_bg2.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	corneredTileSpriteType = {
 		name = "GFX_ZAV_unavailable_tiled_bg"
 		size= { x=192 y=192 }
 		textureFile = "gfx/interface/ZAV/combat/ZAV_unavailable_tiled_bg.dds"
@@ -527,6 +541,26 @@ bitmapfonts = {
         name = "cinzel_32"
         fontfiles = {
             "gfx/fonts/cinzel_32"
+        }
+        color = 0xffffffff
+
+        textcolors = {
+            G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			O = { 238 123 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+			g = { 175 175 175 }
+			S = { 255 233 198 }
+			s = { 216 192 116 }
+        }
+    }
+
+	bitmapfont = {
+        name = "cinzel_38"
+        fontfiles = {
+            "gfx/fonts/cinzel_38"
         }
         color = 0xffffffff
 

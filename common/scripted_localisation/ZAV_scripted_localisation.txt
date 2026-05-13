@@ -620,3 +620,20 @@ defined_text = {
 		localization_key = "ZAV_combat_actions_unavailable_enemy_turn"
 	}
 }
+
+### COMBAT LOADOUT ###
+
+defined_text = {
+	name = "GetCombatLoadoutArtifactTooltip"
+	text = {
+		trigger = {
+			set_temp_variable = { artifact_power = 6 }
+			subtract_from_temp_variable = { artifact_power = artifact_classes^artifact_value }
+			NOT = { check_variable = { artifact_power > ZAV_player_level } }
+		}
+		localization_key = "ZAV_combat_loadout_artifact_available"
+	}
+	text = {
+		localization_key = "ZAV_combat_loadout_artifact_unavailable_[?artifact_power]"
+	}
+}

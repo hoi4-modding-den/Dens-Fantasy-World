@@ -1,0 +1,97 @@
+### ARTIFACT EFFECTS ###
+
+# Static buffs such as +10 max health, these are things that are applied
+# before the fight begins
+
+# Max health - ZAV_combat_player_max_health
+# Max wyrd - ZAV_combat_player_max_wyrd
+# Max actions - ZAV_combat_player_max_actions
+
+ZAV_combat_loadout_calculate_constant_buffs = {
+    set_variable = { ZAV_combat_player_max_health = ZAV_player_max_health }
+    set_variable = { ZAV_combat_player_max_wyrd = ZAV_player_max_wyrd }
+    set_variable = { ZAV_combat_player_max_actions = ZAV_player_max_actions }
+
+    for_each_loop = {
+        array = ZAV_combat_equipped_artifacts
+        value = artifact
+
+        if = {
+            limit = { check_variable = { artifact = 11 } }
+            add_to_variable = { ZAV_combat_player_max_wyrd = 10 }
+        }
+    }
+
+    log = "Combat Loadout effects"
+    log = "Max Health: [?ZAV_combat_player_max_health]"
+    log = "Max Wyrd: [?ZAV_combat_player_max_wyrd]"
+    log = "Max Actions: [?ZAV_combat_player_max_actions]"
+}
+
+# Static buffs such as +20% damage, these are factored into calculating
+# the multiplier for each action
+
+# Defense multiplier - ZAV_player_defense_multiplier
+# Damage multiplier - damage_multiplier
+# Wyrd regen multiplier - wyrd_multiplier
+# Health regen multiplier - healing_multiplier
+
+ZAV_combat_loadout_calculate_multipliers = {
+    for_each_loop = {
+        array = ZAV_combat_equipped_artifacts
+        value = artifact
+
+        if = {
+            limit = { check_variable = { artifact = 11 } }
+            multiply_temp_variable = { healing_multiplier = 1.2 }
+        }
+    }
+}
+
+# Per action buffs such as +1 decay per attack, these are things applied
+# when one of these actions is taken
+
+ZAV_combat_attack = {
+    for_each_loop = {
+        array = ZAV_combat_equipped_artifacts
+        value = artifact
+
+        if = {
+            limit = { check_variable = { artifact = 9 } }
+            set_temp_variable = { effect = 1 }
+            set_temp_variable = { amount = 1 }
+            ZAV_combat_inflict_status_effect_on_enemy = yes
+        }
+    }
+}
+
+ZAV_combat_magic = {
+    for_each_loop = {
+        array = ZAV_combat_equipped_artifacts
+        value = artifact
+    }
+}
+
+ZAV_combat_heal = {
+    for_each_loop = {
+        array = ZAV_combat_equipped_artifacts
+        value = artifact
+    }
+}
+
+### UTILITY ###
+
+ZAV_combat_loadout_init = {
+    clear_array = ZAV_combat_owned_artifacts
+    clear_array = ZAV_combat_equipped_artifacts
+
+    for_each_loop = {
+        array = ZAV_vault_artifacts
+        value = artifact
+
+        add_to_array = { ZAV_combat_owned_artifacts = artifact }
+    }
+
+    set_variable = { ZAV_combat_max_equipped_artifacts = 2 }
+    multiply_variable = { ZAV_combat_max_equipped_artifacts = ZAV_player_level }
+}

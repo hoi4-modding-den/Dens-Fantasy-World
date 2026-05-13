@@ -161,7 +161,7 @@
  ZAV_vault_of_saint_constantine_desc:0 "Deep beneath the stone foundations of the §1Moonlight Cathedral§! lies the §YVault of Saint Constantine§!, a sanctum built not to display power, §tbut to contain it§!. Within its warded chambers rest relics of immense and often perilous origin, artifacts recovered from §0fallen cults§!, §tforgotten ages§!, and §8battlefields§! where reality itself seemed to fray. Each is carefully sealed, catalogued, and guarded, for while §Gmany possess the potential to bring great advantage to the realm§!, §ttheir use is seldom without consequence§!.\n\nSome are blessings that burn brightly but briefly, capable of turning the tide of crisis in a single, irreversible moment. Others are more §0insidious§!, offering power at a cost not yet fully understood. The §Ykeepers of the Vault§! know well that restraint is as vital as strength; to draw upon these relics too freely would be to §tinvite the very ruin they were locked away to prevent§!. And so they wait, silent, watchful, until the hour grows dire enough to justify unlocking what should never be used lightly."
 
  ZAV_vault_title:0 "§8Current Artifacts§!"
- ZAV_artifact_name:0 "[GetVaultArtifactName]\n\nClass: [GetVaultArtifactClass]\n\nEffects: §t[GetVaultArtifactEffects]§!"
+ ZAV_artifact_name:0 "[GetVaultArtifactName]\n\nClass: [GetVaultArtifactClass]\n\nCombat Effects:\n§t[GetVaultArtifactEffects]§!"
  ZAV_artifact_desc:0 "§L[GetVaultArtifactDesc]§!"
 
  ZAV_artifact_class_1:0 "§0Slaughter Relic§!"
@@ -209,7 +209,7 @@
  ZAV_artifact_8_desc:0 "PLACEHOLDER"
 
  ZAV_artifact_9:0 "§7Putrid Crustacean§!"
- ZAV_artifact_9_effect:0 "Spreads rot and decay to everything it touches."
+ ZAV_artifact_9_effect:0 "§7+1 decay from any attack§!"
  ZAV_artifact_9_desc:0 "Recovered from the blackened tides beyond Avalon's shores, this malformed creature was discovered at the center of a spreading blight that twisted fish into abominations and turned clear waters into foul, choking mire. Its shell is cracked and oozing, its limbs uneven and constantly shifting, as though its form cannot settle upon a single reality. Even in containment, it emits a slow, creeping corruption, metal tarnishes, water stagnates, and living things recoil in its presence."
 
  ZAV_artifact_10:0 "§9Warding Talisman§!"
@@ -217,7 +217,7 @@
  ZAV_artifact_10_desc:0 "PLACEHOLDER"
 
  ZAV_artifact_11:0 "§LElias Thorne's Timepiece§!"
- ZAV_artifact_11_effect:0 "PLACEHOLDER"
+ ZAV_artifact_11_effect:0 "§C+10 max wyrd§!\n§G+20% health from healing§!"
  ZAV_artifact_11_desc:0 "PLACEHOLDER"
 
  ###################
@@ -634,6 +634,24 @@
  ZAV_combat_actions_unavailable_enemy_turn:0 "ENEMY TURN"
  ZAV_combat_end_turn_tt:0 "§YEnd turn§!"
 
+ ######################
+ # COMBAT LOADOUT GUI #
+ ######################
+
+ ZAV_combat_loadout_title_text:0 "§SEQUIP ARTIFACTS§!"
+ ZAV_combat_loadout_owned_artifacts_text:0 "§SOWNED§!"
+ ZAV_combat_loadout_equipped_artifacts_text:0 "§SEQUIPPED§!"
+ ZAV_combat_loadout_artifacts_equipped_text:0 "[?ZAV_combat_equipped_artifacts^num]/[?ZAV_combat_max_equipped_artifacts]"
+
+ ZAV_combat_loadout_artifact_name:0 "[GetCombatLoadoutArtifactTooltip]"
+
+ ZAV_combat_loadout_artifact_available:0 "[GetVaultArtifactName]\n\nClass: [GetVaultArtifactClass]\n\nCombat Effects:\n§t[GetVaultArtifactEffects]§!"
+ ZAV_combat_loadout_artifact_unavailable_1:0 "£GFX_trigger_no §RRequires a tier I blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
+ ZAV_combat_loadout_artifact_unavailable_2:0 "£GFX_trigger_no §RRequires a tier II blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
+ ZAV_combat_loadout_artifact_unavailable_3:0 "£GFX_trigger_no §RRequires a tier III blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
+ ZAV_combat_loadout_artifact_unavailable_4:0 "£GFX_trigger_no §RRequires a tier IV blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
+ ZAV_combat_loadout_artifact_unavailable_5:0 "£GFX_trigger_no §RRequires a tier V blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
+
  #########################
  # COMBAT STATUS EFFECTS #
  #########################
@@ -642,8 +660,8 @@
  ZAV_combat_status_effect_duration_text:0 "[?ZAV_combat_player_status_effects_amounts^entry_index]"
  ZAV_combat_status_effect_enemy_duration_text:0 "[?ZAV_combat_enemy_status_effects_amounts^entry_index]"
 
- ZAV_combat_status_effect_1:0 "§0Decay§!"
- ZAV_combat_status_effect_1_full:0 "§0Decay§!\n\n§YEffect§!:\n§G-2 health per turn\n§R-50% health from healing§!"
+ ZAV_combat_status_effect_1:0 "§7Decay§!"
+ ZAV_combat_status_effect_1_full:0 "§7Decay§!\n\n§YEffect§!:\n§G-2 health per turn\n§R-50% health from healing§!"
  ZAV_combat_status_effect_2:0 "Madness"
  ZAV_combat_status_effect_3:0 "Blessed"
  ZAV_combat_status_effect_4:0 "§CFortified§!"

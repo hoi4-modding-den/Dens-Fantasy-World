@@ -1,0 +1,298 @@
+### STATUS EFFECTS ###
+
+# Static modifiers such as +20% damage, these are factored into calculating
+# the multiplier for each action
+
+# Defense multiplier - ZAV_player_defense_multiplier
+# Damage multiplier - damage_multiplier
+# Wyrd regen multiplier - wyrd_multiplier
+# Health regen multiplier - healing_multiplier
+
+ZAV_combat_status_effects_calculate_multipliers = {
+    for_each_loop = {
+        array = ZAV_combat_player_status_effects
+        value = effect
+        if = {
+            limit = { check_variable = { effect = 1 } }
+            multiply_temp_variable = { healing_multiplier = 0.5 }
+        }
+        else_if = {
+            limit = { check_variable = { effect = 2 } }
+            multiply_temp_variable = { damage_multiplier = 0.8 }
+            multiply_temp_variable = { healing_multiplier = 0.8 }
+            multiply_temp_variable = { wyrd_multiplier = 0.8 }
+        }
+        else_if = {
+            limit = { check_variable = { effect = 3 } }
+            multiply_temp_variable = { damage_multiplier = 1.5 }
+            multiply_temp_variable = { healing_multiplier = 1.5 }
+            multiply_temp_variable = { wyrd_multiplier = 1.5 }
+        }
+        else_if = {
+            limit = { check_variable = { effect = 4 } }
+            multiply_temp_variable = { healing_multiplier = 1.3 }
+            multiply_variable = { ZAV_player_defense_multiplier = 1.2 } 
+        }
+    }
+}
+
+ZAV_combat_status_effects_calculate_enemy_multipliers = {
+    for_each_loop = {
+        array = ZAV_combat_enemy_status_effects
+        value = effect
+        if = {
+            limit = { check_variable = { effect = 1 } }
+            multiply_temp_variable = { healing_multiplier = 0.5 }
+        }
+        else_if = {
+            limit = { check_variable = { effect = 2 } }
+            multiply_temp_variable = { damage_multiplier = 0.8 }
+            multiply_temp_variable = { healing_multiplier = 0.8 }
+            multiply_temp_variable = { wyrd_multiplier = 0.8 }
+        }
+        else_if = {
+            limit = { check_variable = { effect = 3 } }
+            multiply_temp_variable = { damage_multiplier = 1.5 }
+            multiply_temp_variable = { healing_multiplier = 1.5 }
+            multiply_temp_variable = { wyrd_multiplier = 1.5 }
+        }
+        else_if = {
+            limit = { check_variable = { effect = 4 } }
+            multiply_temp_variable = { healing_multiplier = 1.3 }
+            multiply_variable = { ZAV_player_defense_multiplier = 1.2 } 
+        }
+    }
+}
+
+# Constants that are added to player stats every turn such as
+# +2 health per turn
+
+# health - health_change
+# wyrd - wyrd_change
+
+ZAV_combat_status_effects_calculate_constants = {
+    for_each_loop = {
+        array = ZAV_combat_player_status_effects
+        value = effect
+        if = {
+            limit = { check_variable = { effect = 1 } }
+            subtract_from_temp_variable = { health_change = 2 }
+        }
+        else_if = {
+            limit = { check_variable = { effect = 5 } }
+            subtract_from_temp_variable = { health_change = 5 }
+        }
+    }
+}
+
+# Note: enemies don't have wyrd
+ZAV_combat_status_effects_calculate_enemy_constants = {
+    for_each_loop = {
+        array = ZAV_combat_enemy_status_effects
+        value = effect
+        if = {
+            limit = { check_variable = { effect = 1 } }
+            subtract_from_temp_variable = { health_change = 2 }
+        }
+        else_if = {
+            limit = { check_variable = { effect = 5 } }
+            subtract_from_temp_variable = { health_change = 5 }
+        }
+    }
+}
+
+### UTILITY ###
+
+# Called every respective turn and decreases all status
+# effects by one
+
+ZAV_combat_reduce_player_status_effect_amounts = {
+    clear_temp_array = temp_status_effects
+    clear_temp_array = temp_status_effects_amounts
+
+    for_each_loop = {
+        array = ZAV_combat_player_status_effects_amounts
+        index = i
+        value = effect
+        if = {
+            limit = {
+                check_variable = { effect > 1 }
+            }
+
+            set_temp_variable = { effect_amount = effect }
+            subtract_from_temp_variable = { effect_amount = 1 }
+            add_to_temp_array = { temp_status_effects = ZAV_combat_player_status_effects^i }
+            add_to_temp_array = { temp_status_effects_amounts = effect_amount }
+        }
+    }
+
+    clear_array = ZAV_combat_player_status_effects
+    clear_array = ZAV_combat_player_status_effects_amounts
+
+    for_each_loop = {
+        array = temp_status_effects
+        index = i
+        value = effect
+        add_to_array = { ZAV_combat_player_status_effects = effect }
+        add_to_array = { ZAV_combat_player_status_effects_amounts = temp_status_effects_amounts^i }
+    }
+}
+
+ZAV_combat_reduce_enemy_status_effect_amounts = {
+    clear_temp_array = temp_status_effects
+    clear_temp_array = temp_status_effects_amounts
+
+    for_each_loop = {
+        array = ZAV_combat_enemy_status_effects_amounts
+        index = i
+        value = effect
+        if = {
+            limit = {
+                check_variable = { effect > 1 }
+            }
+
+            set_temp_variable = { effect_amount = effect }
+            subtract_from_temp_variable = { effect_amount = 1 }
+            add_to_temp_array = { temp_status_effects = ZAV_combat_enemy_status_effects^i }
+            add_to_temp_array = { temp_status_effects_amounts = effect_amount }
+        }
+    }
+
+    clear_array = ZAV_combat_enemy_status_effects
+    clear_array = ZAV_combat_enemy_status_effects_amounts
+
+    for_each_loop = {
+        array = temp_status_effects
+        index = i
+        value = effect
+        add_to_array = { ZAV_combat_enemy_status_effects = effect }
+        add_to_array = { ZAV_combat_enemy_status_effects_amounts = temp_status_effects_amounts^i }
+    }
+}
+
+# Inflicts a status effect on the player or the enemy
+
+ZAV_combat_inflict_status_effect_on_player = {
+    if = {
+        limit = {
+            is_in_array = { ZAV_combat_player_status_effects = effect }
+        }
+        for_each_loop = {
+            array = ZAV_combat_player_status_effects
+            index = i
+            value = v
+            if = {
+                limit = {
+                    check_variable = { v = effect }
+                }
+                add_to_variable = { ZAV_combat_player_status_effects_amounts^i = amount }
+            }
+        }
+    }
+    else = {
+        add_to_array = { ZAV_combat_player_status_effects = effect }
+        add_to_array = { ZAV_combat_player_status_effects_amounts = amount }
+    }
+
+    set_temp_variable = { player = 1 }
+    set_temp_variable = { action = 0 }
+    set_temp_variable = { outcome = effect }
+    set_temp_variable = { stat = amount }
+    ZAV_combat_log_action = yes
+}
+
+ZAV_combat_inflict_status_effect_on_enemy = {
+    if = {
+        limit = {
+            is_in_array = { ZAV_combat_enemy_status_effects = effect }
+        }
+        for_each_loop = {
+            array = ZAV_combat_enemy_status_effects
+            index = i
+            value = v
+            if = {
+                limit = {
+                    check_variable = { v = effect }
+                }
+                add_to_variable = { ZAV_combat_enemy_status_effects_amounts^i = amount }
+            }
+        }
+    }
+    else = {
+        add_to_array = { ZAV_combat_enemy_status_effects = effect }
+        add_to_array = { ZAV_combat_enemy_status_effects_amounts = amount }
+    }
+
+    set_temp_variable = { player = 0 }
+    set_temp_variable = { action = 0 }
+    set_temp_variable = { outcome = effect }
+    set_temp_variable = { stat = amount }
+    ZAV_combat_log_action = yes
+}
+
+# Gives a status player to the player/enemy
+
+ZAV_combat_player_get_status_effect = {
+    # We must add 1 to the amount if the effect does not already exist otherwise
+    # when we reduce it for the end of the turn, it will disappear
+    set_temp_variable = { new_amount = amount }
+    add_to_temp_variable = { new_amount = 1 }
+    
+    if = {
+        limit = {
+            is_in_array = { ZAV_combat_player_status_effects = effect }
+        }
+        for_each_loop = {
+            array = ZAV_combat_player_status_effects
+            index = i
+            value = v
+            if = {
+                limit = {
+                    check_variable = { v = effect }
+                }
+                add_to_variable = { ZAV_combat_player_status_effects_amounts^i = amount }
+            }
+        }
+    }
+    else = {
+        add_to_array = { ZAV_combat_player_status_effects = effect }
+        add_to_array = { ZAV_combat_player_status_effects_amounts = new_amount }
+    }
+
+    set_temp_variable = { player = 0 }
+    set_temp_variable = { action = 999 }
+    set_temp_variable = { outcome = effect }
+    set_temp_variable = { stat = amount }
+    ZAV_combat_log_action = yes
+}
+
+ZAV_combat_enemy_get_status_effect = {
+    set_temp_variable = { new_amount = amount }
+    add_to_temp_variable = { new_amount = 1 }
+    if = {
+        limit = {
+            is_in_array = { ZAV_combat_enemy_status_effects = effect }
+        }
+        for_each_loop = {
+            array = ZAV_combat_enemy_status_effects
+            index = i
+            value = v
+            if = {
+                limit = {
+                    check_variable = { v = effect }
+                }
+                add_to_variable = { ZAV_combat_enemy_status_effects_amounts^i = amount }
+            }
+        }
+    }
+    else = {
+        add_to_array = { ZAV_combat_enemy_status_effects = effect }
+        add_to_array = { ZAV_combat_enemy_status_effects_amounts = new_amount }
+    }
+
+    set_temp_variable = { player = 1 }
+    set_temp_variable = { action = 999 }
+    set_temp_variable = { outcome = effect }
+    set_temp_variable = { stat = amount }
+    ZAV_combat_log_action = yes
+}

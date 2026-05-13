@@ -395,13 +395,14 @@ scripted_gui = {
         }
     }
 
-    ZAV_battle_screen = {
+    ZAV_combat_screen = {
         context_type = player_context
         window_name = "ZAV_combat_window"
 
         visible = {
             original_tag = ZAV
             has_country_flag = ZAV_combat_ongoing
+            has_country_flag = ZAV_combat_loadout_complete
         }
 
         dynamic_lists = {
@@ -526,7 +527,7 @@ scripted_gui = {
         }
     }
 
-    ZAV_battle_screen_actions_unavailable = {
+    ZAV_combat_screen_actions_unavailable = {
         context_type = player_context
         window_name = "ZAV_combat_actions_unavailable_window"
         parent_window_name = "ZAV_combat_window"
@@ -538,5 +539,71 @@ scripted_gui = {
                 has_country_flag = ZAV_combat_defeat
             }
         }
+    }
+
+    ZAV_combat_loadout_screen = {
+        context_type = player_context
+        window_name = "ZAV_combat_loadout_window"
+
+        visible = {
+            original_tag = ZAV
+            has_country_flag = ZAV_combat_ongoing
+            NOT = { has_country_flag = ZAV_combat_loadout_complete }
+        }
+
+        dynamic_lists = {
+            ZAV_combat_loadout_owned_artifacts_gridbox = {
+                array = ZAV_combat_owned_artifacts
+                entry_container = "ZAV_combat_loadout_artifact_entry"
+                index = artifact_index
+                value = artifact_value
+            }
+
+            ZAV_combat_loadout_equipped_artifacts_gridbox = {
+                array = ZAV_combat_equipped_artifacts
+                entry_container = "ZAV_combat_loadout_artifact_entry"
+                index = artifact_index
+                value = artifact_value
+            }
+        }
+
+        effects = {
+            ZAV_combat_loadout_start_button_click = {
+                ZAV_combat_start = yes
+            }
+
+            ZAV_combat_loadout_artifact_icon_click = {
+                if = {
+                    limit = {
+                        is_in_array = { ZAV_combat_owned_artifacts = artifact_value }
+                        check_variable = { ZAV_combat_equipped_artifacts^num < ZAV_combat_max_equipped_artifacts }
+                    }
+
+                    remove_from_array = { ZAV_combat_owned_artifacts = artifact_value }
+                    add_to_array = { ZAV_combat_equipped_artifacts = artifact_value }
+                }
+                else_if = {
+                    limit = {
+                        is_in_array = { ZAV_combat_equipped_artifacts = artifact_value }
+                    }
+                    remove_from_array = { ZAV_combat_equipped_artifacts = artifact_value }
+                    add_to_array = { ZAV_combat_owned_artifacts = artifact_value }
+                }
+            }
+        }
+
+        triggers = {
+            ZAV_combat_loadout_artifact_icon_click_enabled = {
+                set_temp_variable = { artifact_power = 6 }
+                subtract_from_temp_variable = { artifact_power = artifact_classes^artifact_value }
+                NOT = { check_variable = { artifact_power > ZAV_player_level } }
+            }
+        }
+
+        properties = {
+			ZAV_combat_loadout_artifact_icon = {
+                image = "[GetVaultArtifactIcon]"
+            }
+		}
     }
 }

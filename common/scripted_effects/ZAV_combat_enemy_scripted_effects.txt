@@ -1,0 +1,196 @@
+### ENEMY ###
+
+# This is where all enemy data is stored
+
+ZAV_combat_init_enemy = {
+    if = { 
+        limit = {
+            check_variable = { ZAV_combat_curr_enemy = 1 }
+        }
+
+        ZAV_combat_setup_enemy_1 = yes
+    }
+    else_if = { 
+        limit = {
+            check_variable = { ZAV_combat_curr_enemy = 2 }
+        }
+
+        ZAV_combat_setup_enemy_2 = yes
+    }
+}
+
+ZAV_combat_setup_enemy_1 = {
+    set_variable = { ZAV_combat_enemy_max_health = 37 }
+    set_variable = { ZAV_combat_enemy_max_actions = 2 }
+
+    clear_array = ZAV_combat_enemy_actions
+    add_to_array = { ZAV_combat_enemy_actions = 1 }
+    add_to_array = { ZAV_combat_enemy_actions = 2 }
+}
+
+ZAV_combat_setup_enemy_2 = {
+    set_variable = { ZAV_combat_enemy_max_health = 58 }
+    set_variable = { ZAV_combat_enemy_max_actions = 2 }
+
+    clear_array = ZAV_combat_enemy_actions
+    add_to_array = { ZAV_combat_enemy_actions = 3 }
+    add_to_array = { ZAV_combat_enemy_actions = 4 }
+    add_to_array = { ZAV_combat_enemy_actions = 5 }
+}
+
+# This is where all enemy actions are defined
+
+ZAV_combat_do_enemy_action = {
+    if = {
+        limit = {
+            check_variable = { enemy_action = 1 }
+        }
+
+        random_list = {
+            80 = {
+                set_temp_variable = { damage = 3 }
+                multiply_temp_variable = { damage = damage_multiplier }
+                divide_temp_variable = { damage = ZAV_player_defense_multiplier }
+                round_temp_variable = damage
+
+                add_to_temp_variable = { total_damage = damage }
+
+                set_temp_variable = { player = 1 }
+                set_temp_variable = { action = 1 }
+                set_temp_variable = { outcome = 0 }
+                set_temp_variable = { stat = damage }
+                ZAV_combat_log_action = yes
+
+                random = {
+                    chance = 10
+                    set_temp_variable = { effect = 5 }
+                    set_temp_variable = { amount = 1 }
+                    ZAV_combat_inflict_status_effect_on_player = yes
+                }
+            }
+            20 = {
+                set_temp_variable = { player = 1 }
+                set_temp_variable = { action = 1 }
+                set_temp_variable = { outcome = 1 }
+                set_temp_variable = { stat = 0 }
+                ZAV_combat_log_action = yes
+            }
+        }
+    }
+    else_if = {
+        limit = {
+            check_variable = { enemy_action = 2 }
+        }
+
+        random_list = {
+            50 = {
+                set_temp_variable = { damage = 8 }
+                multiply_temp_variable = { damage = damage_multiplier }
+                divide_temp_variable = { damage = ZAV_player_defense_multiplier }
+                round_temp_variable = damage
+
+                add_to_temp_variable = { total_damage = damage }
+
+                set_temp_variable = { player = 1 }
+                set_temp_variable = { action = 2 }
+                set_temp_variable = { outcome = 0 }
+                set_temp_variable = { stat = damage }
+                ZAV_combat_log_action = yes
+            }
+            50 = {
+                set_temp_variable = { player = 1 }
+                set_temp_variable = { action = 2 }
+                set_temp_variable = { outcome = 1 }
+                set_temp_variable = { stat = 0 }
+                ZAV_combat_log_action = yes
+            }
+        }
+    }
+    else_if = {
+        limit = {
+            check_variable = { enemy_action = 3 }
+        }
+
+        random_list = {
+            80 = {
+                set_temp_variable = { damage = 6 }
+                multiply_temp_variable = { damage = damage_multiplier }
+                divide_temp_variable = { damage = ZAV_player_defense_multiplier }
+                round_temp_variable = damage
+
+                add_to_temp_variable = { total_damage = damage }
+
+                set_temp_variable = { player = 1 }
+                set_temp_variable = { action = 3 }
+                set_temp_variable = { outcome = 0 }
+                set_temp_variable = { stat = damage }
+                ZAV_combat_log_action = yes
+
+                random = {
+                    chance = 10
+                    set_temp_variable = { effect = 5 }
+                    set_temp_variable = { amount = 1 }
+                    ZAV_combat_inflict_status_effect_on_player = yes
+                }
+            }
+            20 = {
+                set_temp_variable = { player = 1 }
+                set_temp_variable = { action = 3 }
+                set_temp_variable = { outcome = 1 }
+                set_temp_variable = { stat = 0 }
+                ZAV_combat_log_action = yes
+            }
+        }
+    }
+    else_if = {
+        limit = {
+            check_variable = { enemy_action = 4 }
+        }
+
+        set_temp_variable = { player = 1 }
+        set_temp_variable = { action = 4 }
+        set_temp_variable = { outcome = 0 }
+        set_temp_variable = { stat = 0 }
+        ZAV_combat_log_action = yes
+
+        set_temp_variable = { effect = 4 }
+        set_temp_variable = { amount = 1 }
+        ZAV_combat_enemy_get_status_effect = yes
+    }
+    else_if = {
+        limit = {
+            check_variable = { enemy_action = 5 }
+        }
+
+        random_list = {
+            50 = {
+                set_temp_variable = { damage = 8 }
+                multiply_temp_variable = { damage = damage_multiplier }
+                divide_temp_variable = { damage = ZAV_player_defense_multiplier }
+                round_temp_variable = damage
+
+                add_to_temp_variable = { total_damage = damage }
+
+                set_temp_variable = { player = 1 }
+                set_temp_variable = { action = 5 }
+                set_temp_variable = { outcome = 0 }
+                set_temp_variable = { stat = damage }
+                ZAV_combat_log_action = yes
+
+                random = {
+                    chance = 80
+                    set_temp_variable = { effect = 1 }
+                    set_temp_variable = { amount = 2 }
+                    ZAV_combat_inflict_status_effect_on_player = yes
+                }
+            }
+            50 = {
+                set_temp_variable = { player = 1 }
+                set_temp_variable = { action = 5 }
+                set_temp_variable = { outcome = 1 }
+                set_temp_variable = { stat = 0 }
+                ZAV_combat_log_action = yes
+            }
+        }
+    }
+}

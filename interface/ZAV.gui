@@ -94,39 +94,45 @@ guitypes = {
         moveable = yes
         position = { x = -400 y = -300 }
         orientation = center
-        size = { width = 950 height = 600 }
+        size = { width = 950 height = 624 }
         clipping = no
 
         background = {
             name = "Background"
-            quadTextureSprite = "GFX_tiled_bg"
+            quadTextureSprite = "GFX_ZAV_gilded_tiled_bg"
         }
 
-        iconType = {
-            name = "ZAV_header_background"
-            quadTextureSprite = "GFX_ZAV_encounter_header_background"
+        containerWindowType = {
+            name = "ZAV_header_window"
             position = { x = 0 y = 0 }
-            alwaystransparent = yes
-        }
+            orientation = upper_left
+            size = { width = 950 height = 100 }
+            clipping = no
 
-        instantTextBoxType = {
-            name = "ZAV_header_text"
-            position = { x = 20 y = 20 }
-            text = "ZAV_encounter_title"
-            font = "hoi_36header"
-            format = center
-            maxWidth = 910
-            alwaystransparent = yes
+            background = {
+                name = "Background"
+                quadTextureSprite = "GFX_ZAV_gilded_tiled_bg"
+            }
+
+            instantTextBoxType = {
+                name = "ZAV_header_text"
+                position = { x = 20 y = 30 }
+                text = "ZAV_encounter_title"
+                font = "cinzel_38"
+                format = center
+                maxWidth = 910
+                alwaystransparent = yes
+            }
         }
 
         containerWindowType = {
             name = "ZAV_encounter_image_container"
-            position = { x = 18 y = 80 }
+            position = { x = 18 y = 102 }
             size = { width = 356 height = 300 }
 
             background = {
                 name = "Background"
-                quadTextureSprite = "GFX_tiled_bg"
+                quadTextureSprite = "GFX_ZAV_golden_inlaid_tiled_bg"
             }
 
             iconType = {
@@ -139,8 +145,8 @@ guitypes = {
 
         buttonType = { 
             name = "ZAV_encounter_option_4"
-            quadTextureSprite = "GFX_event_option_entry"
-            position = { x = 20 y = 534 }
+            quadTextureSprite = "GFX_ZAV_encounter_option_background"
+            position = { x = 20 y = 556 }
             buttonText = ZAV_encounter_option_4_text
             buttonFont = "hoi_20bs"
             pdx_tooltip = ZAV_encounter_option_4_tooltip
@@ -149,8 +155,8 @@ guitypes = {
 
         buttonType = { 
             name = "ZAV_encounter_option_3"
-            quadTextureSprite = "GFX_event_option_entry"
-            position = { x = 20 y = 484 }
+            quadTextureSprite = "GFX_ZAV_encounter_option_background"
+            position = { x = 20 y = 506 }
             buttonText = ZAV_encounter_option_3_text
             buttonFont = "hoi_20bs"
             pdx_tooltip = ZAV_encounter_option_3_tooltip
@@ -159,8 +165,8 @@ guitypes = {
 
         buttonType = {
             name = "ZAV_encounter_option_2"
-            quadTextureSprite = "GFX_event_option_entry"
-            position = { x = 20 y = 434 }
+            quadTextureSprite = "GFX_ZAV_encounter_option_background"
+            position = { x = 20 y = 456 }
             buttonText = ZAV_encounter_option_2_text
             buttonFont = "hoi_20bs"
             pdx_tooltip = ZAV_encounter_option_2_tooltip
@@ -169,8 +175,8 @@ guitypes = {
 
         buttonType = {
             name = "ZAV_encounter_option_1"
-            quadTextureSprite = "GFX_event_option_entry"
-            position = { x = 20 y = 384 }
+            quadTextureSprite = "GFX_ZAV_encounter_option_background"
+            position = { x = 20 y = 406 }
             buttonText = ZAV_encounter_option_1_text
             buttonFont = "hoi_20bs"
             pdx_tooltip = ZAV_encounter_option_1_tooltip
@@ -179,12 +185,12 @@ guitypes = {
 
         containerWindowType = {
             name = "ZAV_encounter_text_area_container"
-            position = { x = 384 y = 80 }
+            position = { x = 374 y = 102 }
             size = { width = 558 height = 502 }
 
             background = {
                 name = "Background"
-                quadTextureSprite = "GFX_tiled_bg"
+                quadTextureSprite = "GFX_ZAV_golden_tiled_bg"
             }
 
             containerWindowType = {
@@ -1041,6 +1047,161 @@ guitypes = {
             position = { x = 369 y = 710 }
             pdx_tooltip = ZAV_combat_end_turn_tt
             shortcut = "RETURN"
+        }
+    }
+
+    containerWindowType = {
+        name = "ZAV_combat_loadout_window"
+        moveable = yes
+        position = { x = -400 y = -300 }
+        orientation = center
+        size = { width = 1078 height = 784 }
+        clipping = no
+
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_ZAV_tiled_bg"
+        }
+
+        containerWindowType = {
+            name = "ZAV_combat_loadout_title_window"
+            position = { x = 10 y = 10 }
+            orientation = UPPER_LEFT
+            size = { width = 1058 height = 100 }
+
+            background = {
+                name = "Background"
+                quadTextureSprite = "GFX_ZAV_gilded_tiled_bg"
+            }
+
+            instantTextBoxType = {
+                name = "ZAV_combat_loadout_title_text"
+                position = { x = 319 y = 30 }
+                text = ZAV_combat_loadout_title_text
+                font = "cinzel_38"
+                format = center
+                maxWidth = 420
+                alwaystransparent = yes
+            }
+        }
+
+        containerWindowType = {
+            name = "ZAV_combat_loadout_owned_artifacts_window"
+            position = { x = 10 y = 100 }
+            orientation = UPPER_LEFT
+            size = { width = 1058 height = 400 }
+
+            background = {
+                name = "Background"
+                quadTextureSprite = "GFX_ZAV_gilded_tiled_bg"
+            }
+
+            iconType = { 
+                name = "ZAV_combat_loadout_owned_artifacts_banner"
+                quadTextureSprite = "GFX_ZAV_gilded_decoration"
+                position = { x = 319 y = 13 }
+                alwaystransparent = yes
+            }
+
+            instantTextBoxType = {
+                name = "ZAV_combat_loadout_owned_artifacts_title_text"
+                position = { x = 319 y = 20 }
+                text = ZAV_combat_loadout_owned_artifacts_text
+                font = "cinzel_32"
+                format = center
+                maxWidth = 420
+                alwaystransparent = yes
+            }
+
+            gridboxtype = {
+                name = "ZAV_combat_loadout_owned_artifacts_gridbox"
+                position = { x = 34 y = 60 }
+                size = { width = 980 height = 350 }
+                slotsize = { width = 70 height = 70 }
+                max_slots_horizontal = 14
+                format = "UPPER_LEFT"
+            }
+        }
+
+        containerWindowType = {
+            name = "ZAV_combat_loadout_equipped_artifacts_window"
+            position = { x = 10 y = 491 }
+            orientation = UPPER_LEFT
+            size = { width = 1058 height = 217 }
+
+            background = {
+                name = "Background"
+                quadTextureSprite = "GFX_ZAV_golden_tiled_bg"
+            }
+
+            iconType = { 
+                name = "ZAV_combat_loadout_equipped_artifacts_banner"
+                quadTextureSprite = "GFX_ZAV_gilded_decoration"
+                position = { x = 319 y = 7 }
+                alwaystransparent = yes
+            }
+
+            instantTextBoxType = {
+                name = "ZAV_combat_loadout_equipped_artifacts_title_text"
+                position = { x = 319 y = 14 }
+                text = ZAV_combat_loadout_equipped_artifacts_text
+                font = "cinzel_32"
+                format = center
+                maxWidth = 420
+                alwaystransparent = yes
+            }
+
+            instantTextBoxType = {
+                name = "ZAV_combat_loadout_artifacts_equipped_text"
+                position = { x = 10 y = 14 }
+                text = ZAV_combat_loadout_artifacts_equipped_text
+                font = "cinzel_32"
+                format = right
+                maxWidth = 1030
+                alwaystransparent = yes
+            }
+
+            gridboxtype = {
+                name = "ZAV_combat_loadout_equipped_artifacts_gridbox"
+                position = { x = 34 y = 60 }
+                size = { width = 980 height = 140 }
+                slotsize = { width = 70 height = 70 }
+                max_slots_horizontal = 14
+                format = "UPPER_LEFT"
+            }
+        }
+
+        buttonType = { 
+            name = "ZAV_combat_loadout_start_button"
+            quadTextureSprite = "GFX_ZAV_end_turn_button"
+            position = { x = 369 y = 710 }
+            pdx_tooltip = ZAV_combat_end_turn_tt
+            shortcut = "RETURN"
+        }
+    }
+
+    containerWindowType = {
+        name = "ZAV_combat_loadout_artifact_entry"
+        position = { x = 1 y = 1 }
+        size = {width = 68 height = 68}
+
+        background = {
+            name = "ZAV_combat_loadout_artifact_icon_background"
+            quadTextureSprite = "GFX_ZAV_artifact_background"
+        }
+
+        iconType = { 
+            name = "ZAV_combat_loadout_artifact_fire"
+            quadTextureSprite = "GFX_ZAV_animated_magical_smoke"
+            position = { x = -7 y = -7 }
+            scale = 1.2
+        }
+
+        buttonType = { 
+            name = "ZAV_combat_loadout_artifact_icon"
+            quadTextureSprite = "GFX_ZAV_blank_artifact"
+            pdx_tooltip = ZAV_combat_loadout_artifact_name
+            pdx_tooltip_delayed = "ZAV_artifact_desc"
         }
     }
 

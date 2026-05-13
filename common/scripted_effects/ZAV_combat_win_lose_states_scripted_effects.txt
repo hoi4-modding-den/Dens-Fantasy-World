@@ -1,0 +1,22 @@
+### WIN/LOSE STATES ###
+
+ZAV_combat_finished_effect = {
+    if = {
+        limit = {
+            check_variable = { ZAV_curr_encounter = 1 }
+        }
+
+        if = {
+            limit = {
+                has_country_flag = ZAV_combat_victory
+            }
+
+            set_variable = { ZAV_curr_entry = 9 }
+            add_to_array = { ZAV_current_encounter_entries = ZAV_curr_entry }
+        }
+        else = {
+            set_variable = { ZAV_curr_entry = 10 }
+            add_to_array = { ZAV_current_encounter_entries = ZAV_curr_entry }
+        }
+    }
+}

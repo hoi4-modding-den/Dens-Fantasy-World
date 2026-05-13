@@ -107,3 +107,7 @@ ZAV_setup_encounters = {
     country_event = { id = ZAV_encounters.2 days = 60 random_days = 15 }
     country_event = { id = ZAV_encounters.3 days = 90 random_days = 15 }
 }
+
+ZAV_give_putrid_crustacean = {
+    add_to_array = { ZAV_vault_artifacts = 9 }
+}
