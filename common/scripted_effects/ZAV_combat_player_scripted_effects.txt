@@ -3,35 +3,40 @@
 # This is where all player actions are defined
 
 ZAV_combat_do_player_actions = {
+    set_temp_variable = { player = 0 }
+
     if = {
         limit = {
             is_in_array = { ZAV_player_selected_actions = 1 }
         }
 
-        random_list = {
-            80 = {
-                set_temp_variable = { damage = 5 }
-                multiply_temp_variable = { damage = damage_multiplier }
-                divide_temp_variable = { damage = ZAV_enemy_defense_multiplier }
-                round_temp_variable = damage
+        set_temp_variable = { action = 1 }
+        set_temp_variable = { hit_result = 0 }
+        set_temp_variable = { hit_chance = 80 }
 
-                add_to_temp_variable = { total_damage = damage }
+        ZAV_combat_action_calculate_outcome = yes
 
-                set_temp_variable = { player = 0 }
-                set_temp_variable = { action = 1 }
-                set_temp_variable = { outcome = 0 }
-                set_temp_variable = { stat = damage }
-                ZAV_combat_log_action = yes
+        if = {
+            limit = { check_variable = { hit_result > 0 } }
 
-                ZAV_combat_attack = yes
-            }
-            20 = {
-                set_temp_variable = { player = 0 }
-                set_temp_variable = { action = 1 }
-                set_temp_variable = { outcome = 1 }
-                set_temp_variable = { stat = 0 }
-                ZAV_combat_log_action = yes
-            }
+            set_temp_variable = { damage = 5 }
+
+            ZAV_combat_action_apply_critical = yes
+
+            multiply_temp_variable = { damage = damage_multiplier }
+            divide_temp_variable = { damage = ZAV_enemy_defense_multiplier }
+            round_temp_variable = damage
+
+            add_to_temp_variable = { total_damage = damage }
+
+            set_temp_variable = { stat = damage }
+            ZAV_combat_log_action = yes
+
+            ZAV_combat_attack = yes
+        }
+        else = {
+            set_temp_variable = { stat = 0 }
+            ZAV_combat_log_action = yes
         }
     }
     if = {
@@ -39,15 +44,15 @@ ZAV_combat_do_player_actions = {
             is_in_array = { ZAV_player_selected_actions = 2 }
         }
 
+        set_temp_variable = { action = 2 }
+
         set_temp_variable = { wyrd_regen = 4 }
         multiply_temp_variable = { wyrd_regen = wyrd_multiplier }
         round_temp_variable = wyrd_regen
 
         add_to_temp_variable = { total_wyrd_regen = wyrd_regen }
 
-        set_temp_variable = { player = 0 }
-        set_temp_variable = { action = 2 }
-        set_temp_variable = { outcome = 0 }
+        set_temp_variable = { outcome = 1 }
         set_temp_variable = { stat = wyrd_regen }
         ZAV_combat_log_action = yes
 
@@ -58,6 +63,8 @@ ZAV_combat_do_player_actions = {
             is_in_array = { ZAV_player_selected_actions = 3 }
         }
 
+        set_temp_variable = { action = 3 }
+
         set_temp_variable = { health_regen = 10 }
         multiply_temp_variable = { health_regen = healing_multiplier }
         round_temp_variable = health_regen
@@ -65,9 +72,7 @@ ZAV_combat_do_player_actions = {
         add_to_temp_variable = { total_health_regen = health_regen }
         add_to_temp_variable = { total_wyrd_cost = 6 }
 
-        set_temp_variable = { player = 0 }
-        set_temp_variable = { action = 3 }
-        set_temp_variable = { outcome = 0 }
+        set_temp_variable = { outcome = 1 }
         set_temp_variable = { stat = health_regen }
         ZAV_combat_log_action = yes
 
@@ -78,28 +83,155 @@ ZAV_combat_do_player_actions = {
             is_in_array = { ZAV_player_selected_actions = 4 }
         }
 
-        set_temp_variable = { damage = 12 }
-        multiply_temp_variable = { damage = damage_multiplier }
-        divide_temp_variable = { damage = ZAV_enemy_defense_multiplier }
-        round_temp_variable = damage
+        set_temp_variable = { action = 4 }
+        set_temp_variable = { hit_result = 0 }
+        set_temp_variable = { hit_chance = 95 }
 
-        add_to_temp_variable = { total_damage = damage }
         add_to_temp_variable = { total_wyrd_cost = 8 }
 
-        set_temp_variable = { player = 0 }
-        set_temp_variable = { action = 4 }
-        set_temp_variable = { outcome = 0 }
-        set_temp_variable = { stat = damage }
-        ZAV_combat_log_action = yes
+        ZAV_combat_action_calculate_outcome = yes
 
-        random = {
-            chance = 20
-            set_temp_variable = { effect = 5 }
-            set_temp_variable = { amount = 1 }
-            ZAV_combat_inflict_status_effect_on_enemy = yes
+        if = {
+            limit = { check_variable = { hit_result > 0 } }
+
+            set_temp_variable = { damage = 12 }
+
+            ZAV_combat_action_apply_critical = yes
+
+            multiply_temp_variable = { damage = damage_multiplier }
+            divide_temp_variable = { damage = ZAV_enemy_defense_multiplier }
+            round_temp_variable = damage
+
+            add_to_temp_variable = { total_damage = damage }
+
+            set_temp_variable = { stat = damage }
+            ZAV_combat_log_action = yes
+
+            ZAV_combat_attack = yes
+
+            random = {
+                chance = 20
+                set_temp_variable = { effect = 5 }
+                set_temp_variable = { amount = 1 }
+                ZAV_combat_inflict_status_effect_on_enemy = yes
+            }
+        }
+        else = {
+            set_temp_variable = { stat = 0 }
+            ZAV_combat_log_action = yes
+        }
+    }
+    if = {
+        limit = {
+            is_in_array = { ZAV_player_selected_actions = 5 }
         }
 
-        ZAV_combat_attack = yes
+        set_temp_variable = { action = 5 }
+        set_temp_variable = { hit_result = 0 }
+        set_temp_variable = { hit_chance = 70 }
+
+        add_to_temp_variable = { total_wyrd_cost = 6 }
+
+        ZAV_combat_action_calculate_outcome = yes
+
+        if = {
+            limit = { check_variable = { hit_result > 0 } }
+
+            set_temp_variable = { damage = 9 }
+
+            ZAV_combat_action_apply_critical = yes
+
+            multiply_temp_variable = { damage = damage_multiplier }
+            divide_temp_variable = { damage = ZAV_enemy_defense_multiplier }
+            round_temp_variable = damage
+
+            add_to_temp_variable = { total_damage = damage }
+
+            set_temp_variable = { stat = damage }
+            ZAV_combat_log_action = yes
+
+            ZAV_combat_attack = yes
+
+            set_temp_variable = { effect = 2 }
+            set_temp_variable = { amount = 2 }
+            ZAV_combat_inflict_status_effect_on_enemy = yes
+        }
+        else = {
+            set_temp_variable = { stat = 0 }
+            ZAV_combat_log_action = yes
+        }
+    }
+    if = {
+        limit = {
+            is_in_array = { ZAV_player_selected_actions = 6 }
+        }
+
+        set_temp_variable = { action = 6 }
+
+        set_temp_variable = { health_regen = 8 }
+        multiply_temp_variable = { health_regen = healing_multiplier }
+        round_temp_variable = health_regen
+
+        add_to_temp_variable = { total_health_regen = health_regen }
+        add_to_temp_variable = { total_wyrd_cost = 10 }
+
+        set_temp_variable = { outcome = 1 }
+        set_temp_variable = { stat = health_regen }
+        ZAV_combat_log_action = yes
+
+        set_temp_variable = { effect = 6 }
+        set_temp_variable = { amount = 3 }
+        ZAV_combat_player_get_status_effect = yes
+
+        ZAV_combat_heal = yes
+    }
+}
+
+### HIT AND CRIT CHANCE ###
+
+ZAV_combat_action_calculate_outcome = {
+    multiply_temp_variable = { hit_chance = ZAV_player_hit_chance_modif }
+    
+    round_temp_variable = hit_chance
+
+    clamp_temp_variable = {
+        var = hit_chance
+        min = 0
+        max = 100
+    }
+
+    set_temp_variable_to_random = {
+        var = hit_roll
+        min = 1
+        max = 100
+        integer = yes
+    }
+
+    if = {
+        limit = { NOT = { check_variable = { hit_roll > hit_chance } } }
+        
+        set_temp_variable = { hit_result = 1 }
+        
+        set_temp_variable_to_random = {
+            var = crit_roll
+            min = 1
+            max = 100
+            integer = yes
+        }
+
+        if = {
+            limit = { NOT = { check_variable = { crit_roll > ZAV_combat_player_crit_chance } } }
+            set_temp_variable = { hit_result = 2 }
+        }
+    }
+
+    set_temp_variable = { outcome = hit_result }
+}
+
+ZAV_combat_action_apply_critical = {
+    if = {
+        limit = { check_variable = { hit_result = 2 } }
+        multiply_temp_variable = { damage = ZAV_combat_player_crit_damage_modif }
     }
 }
 
@@ -116,16 +248,42 @@ ZAV_combat_calculate_player_actions = {
     add_to_array = { ZAV_combat_available_actions = 4 }  # BARRAGE
 
     # Actions enabled by artifacts and blessings
-    # TODO
+    if = {
+        limit = {
+            is_in_array = { ZAV_combat_equipped_artifacts = 3 }
+        }
+        add_to_array = { ZAV_combat_available_actions = 5 }  # CORRUPT
+    }
+    
+    if = {
+        limit = {
+            is_in_array = { ZAV_combat_equipped_artifacts = 11 }
+        }
+        add_to_array = { ZAV_combat_available_actions = 6 }  # JUSTICE
+    }
 }
 
 # This is where all the wyrd costs for actions are defined
 ZAV_combat_setup_actions_data = {
     clear_array = ZAV_combat_actions_wyrd_costs
+
     add_to_array = { ZAV_combat_actions_wyrd_costs = 0 } # 0 indexed vs 1 indexed array
 
+    # Single Shot #
     add_to_array = { ZAV_combat_actions_wyrd_costs = 0 }
+
+    # Pray #
     add_to_array = { ZAV_combat_actions_wyrd_costs = 0 }
+
+    # Heal #
     add_to_array = { ZAV_combat_actions_wyrd_costs = 6 }
+
+    # Barrage #
     add_to_array = { ZAV_combat_actions_wyrd_costs = 8 }
+
+    # Corrupt #
+    add_to_array = { ZAV_combat_actions_wyrd_costs = 6 }
+
+    # Justice #
+    add_to_array = { ZAV_combat_actions_wyrd_costs = 10 }
 }

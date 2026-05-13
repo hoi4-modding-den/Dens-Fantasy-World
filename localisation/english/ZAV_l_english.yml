@@ -185,7 +185,7 @@
  ZAV_artifact_2_desc:0 "Gathered from the grave of the enigmatic Green Knight, these ashes stir faintly even when undisturbed, as though remembering an oath never truly fulfilled. Those who wield them are said to become untouchable, shielded by an unseen force that bends fate itself. Yet this protection is not without unease, for something watches through it, something patient, as if the bargain has yet to be fully claimed."
 
  ZAV_artifact_3:0 "§0Corrupted Rose§!"
- ZAV_artifact_3_effect:0 "§C+100% wyrd from praying§!\n§0+1 madness per turn§!"
+ ZAV_artifact_3_effect:0 "§C+100% wyrd from praying§!\n§0+1 madness per turn§!\n§WEnables§! §YCorrupt§!§W.§!"
  ZAV_artifact_3_desc:0 "Plucked from the grave of a condemned heretic, this blackened rose appears perpetually fresh, its petals soft despite their unnatural hue. Its true purpose remains unclear, yet those who carry it report whispers in dreams and a growing sense that the world itself is subtly... wrong. Whether it is a key, a signal, or the seed of something far worse has yet to be determined."
 
  ZAV_artifact_4:0 "§9Fallen Hero Sword§!"
@@ -217,7 +217,7 @@
  ZAV_artifact_10_desc:0 "PLACEHOLDER"
 
  ZAV_artifact_11:0 "§LElias Thorne's Timepiece§!"
- ZAV_artifact_11_effect:0 "§C+10 max wyrd§!\n§G+20% health from healing§!"
+ ZAV_artifact_11_effect:0 "§C+10 max wyrd§!\n§G+20% health from healing§!\n§WEnables§! §YJustice§!§W.§!"
  ZAV_artifact_11_desc:0 "PLACEHOLDER"
 
  ###################

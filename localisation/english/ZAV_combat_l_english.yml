@@ -7,8 +7,8 @@
  ZAV_combat_actions_title_text:0 "§SACTIONS§!"
  ZAV_combat_log_title_text:0 "§SBATTLE LOG§!"
 
- ZAV_combat_veilkeeper_image_tt:0 "§YVeilkeeper§!"
- ZAV_combat_enemy_image_tt:0 "§R[GetCombatEnemyTitle]§!"
+ ZAV_combat_veilkeeper_image_tt:0 "§LVeilkeeper§!\n\n§YBase stats§!:\nMax health: §Y[?ZAV_combat_player_max_health]§!\nMax wyrd: §Y[?ZAV_combat_player_max_wyrd]§!\nHit chance multiplier: §Y[?ZAV_combat_player_hit_chance_modif|.0%]§!\nCrit chance: §Y[?ZAV_combat_player_crit_chance|.0%%]§!\nCrit damage multiplier: §Y[?ZAV_combat_player_crit_damage_modif|.0%]§!"
+ ZAV_combat_enemy_image_tt:0 "§R[GetCombatEnemyTitle]§!\n\n§YBase stats§!:\nMax health: §Y[?ZAV_combat_enemy_max_health]§!\nHit chance multiplier: §Y[?ZAV_combat_enemy_hit_chance_modif|.0%]§!\nCrit chance: §Y[?ZAV_combat_enemy_crit_chance|.0%%]§!\nCrit damage multiplier: §Y[?ZAV_combat_enemy_crit_damage_modif|.0%]§!"
 
  ZAV_combat_player_health_text:0 "[?ZAV_combat_player_health]/[?ZAV_combat_player_max_health]"
  ZAV_combat_player_wyrd_text:0 "[?ZAV_combat_player_wyrd]/[?ZAV_combat_player_max_wyrd]"
@@ -64,12 +64,15 @@
  ZAV_combat_status_effect_1:0 "§7Decay§!"
  ZAV_combat_status_effect_1_full:0 "§7Decay§!\n\n§YEffect§!:\n§R-2 health per turn\n-50% health from healing§!"
  ZAV_combat_status_effect_2:0 "§0Madness§!"
- ZAV_combat_status_effect_2_full:0 "§0Madness§!\n\n§YEffect§!:\n§R-2 wyrd per turn§!"
- ZAV_combat_status_effect_3:0 "Blessed"
+ ZAV_combat_status_effect_2_full:0 "§0Madness§!\n\n§YEffect§!:\n§R-2 wyrd per turn\n-30% hit chance§!"
+ ZAV_combat_status_effect_3:0 "§8Blessed§!"
+ ZAV_combat_status_effect_3_full:0 "§8Blessed§!\n\n§YEffect§!:\n§G+30% damage inflicted\n+30% health from healing§!"
  ZAV_combat_status_effect_4:0 "§CFortified§!"
  ZAV_combat_status_effect_4_full:0 "§CFortified§!\n\n§YEffect§!:\n§G-20% damage received\n§C+30% health from healing§!"
  ZAV_combat_status_effect_5:0 "§RBleeding§!"
  ZAV_combat_status_effect_5_full:0 "§RBleeding§!\n\n§YEffect§!:\n§R-5 health per turn§!"
+ ZAV_combat_status_effect_6:0 "§8Strength§!"
+ ZAV_combat_status_effect_6_full:0 "§8Strength§!\n\n§YEffect§!:\n§G+50% damage inflicted\n+20% crit chance§!"
 
  ##################
  # COMBAT ACTIONS #
@@ -85,18 +88,34 @@
  ZAV_combat_action_effect_gained:0 "Gained [?ZAV_combat_log_stats^entry_index] [GetCombatStatusEffectLogName]."
 
  ZAV_combat_action_title_1:0 "Single Shot"
- ZAV_combat_action_effect_1:0 "§YHit chance§!: §L80%§!\n\n§YEffect§!:\n§R+5 damage§!"
+ ZAV_combat_action_effect_1:0 "§YBase hit chance§!: §L80%§!\n\n§YEffect§!:\n§R+5 damage§!"
+ ZAV_combat_action_critical_1:0 "Fired a single shot with a pistol dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_action_successful_1:0 "Fired a single shot with a pistol dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_action_failure_1:0 "Fired a single shot with a pistol and §Ymissed§!."
+
  ZAV_combat_action_title_2:0 "Prayer"
  ZAV_combat_action_effect_2:0 "§YEffect§!:\n§C+4 wyrd§!"
  ZAV_combat_action_successful_2:0 "Prayed to a higher being and received §C[?ZAV_combat_log_stats^entry_index] wyrd§!."
+
  ZAV_combat_action_title_3:0 "Heal"
  ZAV_combat_action_effect_3:0 "§YEffect§!:\n§G+10 health§!"
  ZAV_combat_action_successful_3:0 "Healed using §C6 wyrd§! to receive §G[?ZAV_combat_log_stats^entry_index] health§!."
+
  ZAV_combat_action_title_4:0 "Barrage"
- ZAV_combat_action_effect_4:0 "§YHit chance§!: §L100%§!\n\n§YEffect§!:\n§R+12 damage§!\n§R20% chance to inflict 1 bleeding§R"
+ ZAV_combat_action_effect_4:0 "§YBase hit chance§!: §L95%§!\n\n§YEffect§!:\n§R+12 damage§!\n§R20% chance to inflict 1 bleeding§R"
+ ZAV_combat_action_critical_4:0 "Fired a barrage with a pistol dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_action_successful_4:0 "Fired a barrage with a pistol dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_action_failure_4:0 "Fired a barrage with a pistol and §Ymissed§!."
+
+ ZAV_combat_action_title_5:0 "Corrupt"
+ ZAV_combat_action_effect_5:0 "§YBase hit chance§!: §L70%§!\n\n§YEffect§!:\n§R+9 damage§!\n§R100% chance to inflict 2 madness§R"
+ ZAV_combat_action_critical_5:0 "Used the §0Corrupted Rose§! and fired a psychic attack, dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_action_successful_5:0 "Used the §0Corrupted Rose§! and fired a psychic attack, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_action_failure_5:0 "Used the §0Corrupted Rose§! and fired a psychic attack but §Ymissed§!."
+
+ ZAV_combat_action_title_6:0 "Justice"
+ ZAV_combat_action_effect_6:0 "§YEffect§!:\n§G+8 health§!\n§8+3 strength§!"
+ ZAV_combat_action_successful_6:0 "Burned the Justice tarot card to receive §G[?ZAV_combat_log_stats^entry_index] health§!."
 
  ##################
  # COMBAT ENEMIES #
@@ -109,17 +128,59 @@
 
  ZAV_combat_enemy_1:0 "Ghoul"
  ZAV_combat_enemy_2:0 "Sir Carian Grimsby"
+ ZAV_combat_enemy_3:0 "Brother Narius"
+ ZAV_combat_enemy_4:0 "Arthur Fisher"
 
+ ZAV_combat_enemy_action_critical_1:0 "Slashed with its claws dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_enemy_action_successful_1:0 "Slashed with its claws dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_enemy_action_failure_1:0 "Slashed with its claws and §Ymissed§!."
 
+ ZAV_combat_enemy_action_critical_2:0 "Lunges and bites the Veilkeeper, dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_enemy_action_successful_2:0 "Lunges and bites the Veilkeeper, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_enemy_action_failure_2:0 "Lunges and attempts to bite the Veilkeeper but §Ymissed§!."
 
+ ZAV_combat_enemy_action_critical_3:0 "Slashes with his sword dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_enemy_action_successful_3:0 "Slashes with his sword dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_enemy_action_failure_3:0 "Attempted to slash with his sword but §Ymissed§!."
 
  ZAV_combat_enemy_action_successful_4:0 "Consumed a strange sickly substance."
 
+ ZAV_combat_enemy_action_critical_5:0 "Stabs with his sword covered in a putrid rot, dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_enemy_action_successful_5:0 "Stabs with his sword covered in a putrid rot, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_enemy_action_failure_5:0 "Attempted to stab with his sword but §Ymissed§!."
+
+ ZAV_combat_enemy_action_critical_6:0 "Threw a concealed knife from under his cloak, dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_successful_6:0 "Threw a concealed knife from under his cloak, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_failure_6:0 "Threw a concealed knife from under his cloak but §Ymissed§!."
+
+ ZAV_combat_enemy_action_critical_7:0 "Chanted a strange spell and emitted a psychic shockwave, dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_successful_7:0 "Chanted a strange spell and emitted a psychic shockwave, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_failure_7:0 "Chanted a strange spell but was unable to cast it."
+
+ ZAV_combat_enemy_action_critical_8:0 "Threw a tarot card which exploded dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_successful_8:0 "Threw a tarot card which exploded dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_failure_8:0 "Threw a tarot card which exploded but §Ymissed§!."
+
+ ZAV_combat_enemy_action_successful_9:0 "Prayed to a higher being and received §G[?ZAV_combat_log_stats^entry_index] health§!."
+
+ ZAV_combat_enemy_action_successful_10:0 "Stabbed himself while chanting a strange spell, dealing §R[?ZAV_combat_log_stats^entry_index] damage§! to himself."
+
+ ZAV_combat_enemy_action_critical_11:0 "Fired multiple rounds with an old pistol, dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_successful_11:0 "Fired multiple rounds with an old pistol, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_failure_11:0 "Fired multiple rounds with an old pistol but §Ymissed§!."
+
+ ZAV_combat_enemy_action_critical_12:0 "Threw a rusty iron stake coated in a strange algae, dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_successful_12:0 "Threw a rusty iron stake coated in a strange algae, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_failure_12:0 "Threw a rusty iron stake coated in a strange algae but §Ymissed§!."
+
+ ZAV_combat_enemy_action_critical_13:0 "Slashed with a rusty cerated cleaver, dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_successful_13:0 "Slashed with a rusty cerated cleaver, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_failure_13:0 "Slashed with a rusty cerated cleaver but §Ymissed§!."
+
+ ZAV_combat_enemy_action_critical_14:0 "Shrieked loudly, causing a §Ypsychic explosion§!."
+ ZAV_combat_enemy_action_successful_14:0 "Shrieked loudly, causing a §Ypsychic explosion§!."
+ ZAV_combat_enemy_action_failure_14:0 "Shrieked loudly."
+
+ ZAV_combat_enemy_action_successful_15:0 "Uttered a chant under his breath and received §G[?ZAV_combat_log_stats^entry_index] health§! from his deity."
+
+ ZAV_combat_enemy_action_successful_16:0 "Prayed to his deity for assistance."

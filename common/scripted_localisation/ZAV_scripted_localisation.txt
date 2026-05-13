@@ -535,26 +535,39 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { ZAV_combat_log_players^entry_index = 0 }
-			check_variable = { ZAV_combat_log_outcomes^entry_index = 0 }
+			check_variable = { ZAV_combat_log_outcomes^entry_index = 2 }
 		}
-		localization_key = "ZAV_combat_action_successful_[?entry_value]"
+		localization_key = "ZAV_combat_action_critical_[?entry_value]"
 	}
 	text = {
 		trigger = {
 			check_variable = { ZAV_combat_log_players^entry_index = 0 }
 			check_variable = { ZAV_combat_log_outcomes^entry_index = 1 }
 		}
+		localization_key = "ZAV_combat_action_successful_[?entry_value]"
+	}
+	text = {
+		trigger = {
+			check_variable = { ZAV_combat_log_players^entry_index = 0 }
+			check_variable = { ZAV_combat_log_outcomes^entry_index = 0 }
+		}
 		localization_key = "ZAV_combat_action_failure_[?entry_value]"
 	}
 	text = {
 		trigger = {
-			check_variable = { ZAV_combat_log_outcomes^entry_index = 0 }
+			check_variable = { ZAV_combat_log_outcomes^entry_index = 2 }
+		}
+		localization_key = "ZAV_combat_enemy_action_critical_[?entry_value]"
+	}
+	text = {
+		trigger = {
+			check_variable = { ZAV_combat_log_outcomes^entry_index = 1 }
 		}
 		localization_key = "ZAV_combat_enemy_action_successful_[?entry_value]"
 	}
 	text = {
 		trigger = {
-			check_variable = { ZAV_combat_log_outcomes^entry_index = 1 }
+			check_variable = { ZAV_combat_log_outcomes^entry_index = 0 }
 		}
 		localization_key = "ZAV_combat_enemy_action_failure_[?entry_value]"
 	}

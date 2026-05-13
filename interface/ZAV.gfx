@@ -343,6 +343,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ZAV/combat/actions/ZAV_action_barrage.dds"
 	}
 
+	spriteType = {
+		name = "GFX_ZAV_combat_action_5"
+		texturefile = "gfx/interface/ZAV/combat/actions/ZAV_action_corrupt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_combat_action_6"
+		texturefile = "gfx/interface/ZAV/combat/actions/ZAV_action_justice.dds"
+	}
+
 	# COMBAT #
 
 	spriteType = {
@@ -366,6 +376,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ZAV_combat_status_effect_3"
+		texturefile = "gfx/interface/ZAV/combat/ZAV_combat_status_effect_blessed.dds"
+	}
+
+	spriteType = {
 		name = "GFX_ZAV_combat_status_effect_4"
 		texturefile = "gfx/interface/ZAV/combat/ZAV_combat_status_effect_fortified.dds"
 	}
@@ -373,6 +388,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ZAV_combat_status_effect_5"
 		texturefile = "gfx/interface/ZAV/combat/ZAV_combat_status_effect_bleeding.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_combat_status_effect_6"
+		texturefile = "gfx/interface/ZAV/combat/ZAV_combat_status_effect_strength.dds"
 	}
 	
 	spriteType = {
@@ -413,6 +433,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ZAV_combat_enemy_image_2"
 		texturefile = "gfx/interface/ZAV/combat/portraits/ZAV_combat_portrait_sir_grimsby.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_combat_enemy_image_3"
+		texturefile = "gfx/interface/ZAV/combat/portraits/ZAV_combat_portrait_brother_narius.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_combat_enemy_image_4"
+		texturefile = "gfx/interface/ZAV/combat/portraits/ZAV_combat_portrait_arthur_fisher.dds"
 	}
 
 	spriteType = {

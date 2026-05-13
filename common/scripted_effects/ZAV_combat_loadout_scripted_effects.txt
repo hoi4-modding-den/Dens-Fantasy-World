@@ -6,11 +6,15 @@
 # Max health - ZAV_combat_player_max_health
 # Max wyrd - ZAV_combat_player_max_wyrd
 # Max actions - ZAV_combat_player_max_actions
+# Hit chance modifier - ZAV_player_hit_chance_modif
+# Crit chance - ZAV_player_crit_chance
+# Crit damage modifier - ZAV_player_crit_damage_modif
 
 ZAV_combat_loadout_calculate_constant_buffs = {
     set_variable = { ZAV_combat_player_max_health = ZAV_player_max_health }
     set_variable = { ZAV_combat_player_max_wyrd = ZAV_player_max_wyrd }
-    set_variable = { ZAV_combat_player_max_actions = ZAV_player_max_actions }
+    set_variable = { ZAV_combat_player_max_actions = ZAV_player_level }
+    add_to_variable = { ZAV_combat_player_max_actions = 1 }
 
     for_each_loop = {
         array = ZAV_combat_equipped_artifacts
@@ -21,11 +25,6 @@ ZAV_combat_loadout_calculate_constant_buffs = {
             add_to_variable = { ZAV_combat_player_max_wyrd = 10 }
         }
     }
-
-    log = "Combat Loadout effects"
-    log = "Max Health: [?ZAV_combat_player_max_health]"
-    log = "Max Wyrd: [?ZAV_combat_player_max_wyrd]"
-    log = "Max Actions: [?ZAV_combat_player_max_actions]"
 }
 
 # Static buffs such as +20% damage, these are factored into calculating

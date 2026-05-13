@@ -5,6 +5,9 @@ ZAV_combat_setup_starting_stats = {
     set_variable = { ZAV_player_max_health = 28 }
     set_variable = { ZAV_player_max_wyrd = 15 }
     set_variable = { ZAV_player_max_actions = 2 }
+    set_variable = { ZAV_player_hit_chance_modif = 1 }
+    set_variable = { ZAV_player_crit_chance = 3 }
+    set_variable = { ZAV_player_crit_damage_modif = 2 }
 
     ZAV_combat_setup_actions_data = yes
 }
@@ -46,6 +49,9 @@ ZAV_combat_start = {
     set_variable = { ZAV_combat_player_health = ZAV_combat_player_max_health }
     set_variable = { ZAV_combat_player_wyrd = ZAV_combat_player_max_wyrd }
     set_variable = { ZAV_combat_remaining_wyrd = ZAV_combat_player_wyrd }
+    set_variable = { ZAV_combat_player_hit_chance_modif = ZAV_player_hit_chance_modif }
+    set_variable = { ZAV_combat_player_crit_chance = ZAV_player_crit_chance }
+    set_variable = { ZAV_combat_player_crit_damage_modif = ZAV_player_crit_damage_modif }
     set_variable = { ZAV_player_defense_multiplier = 1 }
     set_variable = { ZAV_combat_remaining_actions = ZAV_combat_player_max_actions }
 
@@ -100,6 +106,9 @@ ZAV_combat_calculate_player_multipliers = {
     set_temp_variable = { damage_multiplier = 1 }
     set_temp_variable = { healing_multiplier = 1 }
     set_temp_variable = { wyrd_multiplier = 1 }
+    set_temp_variable = { hit_chance_multiplier = ZAV_combat_player_hit_chance_modif }
+    set_temp_variable = { crit_chance = ZAV_combat_player_crit_chance }
+    set_temp_variable = { crit_damage_multiplier = ZAV_combat_player_crit_damage_modif }
 
     ZAV_combat_loadout_calculate_multipliers = yes
     ZAV_combat_status_effects_calculate_multipliers = yes
@@ -111,6 +120,9 @@ ZAV_combat_calculate_player_multipliers = {
         log = "damage_multiplier: [?damage_multiplier]"
         log = "healing_multiplier: [?healing_multiplier]"
         log = "wyrd_multiplier: [?wyrd_multiplier]"
+        log = "hit_chance_multiplier: [?hit_chance_multiplier]"
+        log = "crit_chance: [?crit_chance]"
+        log = "crit_damage_multiplier: [?crit_damage_multiplier]"
     }
 }
 
@@ -118,7 +130,9 @@ ZAV_combat_calculate_enemy_multipliers = {
     set_variable = { ZAV_enemy_defense_multiplier = 1 }
     set_temp_variable = { damage_multiplier = 1 }
     set_temp_variable = { healing_multiplier = 1 }
-    set_temp_variable = { wyrd_multiplier = 1 }
+    set_temp_variable = { hit_chance_multiplier = ZAV_combat_enemy_hit_chance_modif }
+    set_temp_variable = { crit_chance = ZAV_combat_enemy_crit_chance }
+    set_temp_variable = { crit_damage_multiplier = ZAV_combat_enemy_crit_damage_modif }
 
     ZAV_combat_status_effects_calculate_enemy_multipliers = yes
 
@@ -128,7 +142,9 @@ ZAV_combat_calculate_enemy_multipliers = {
         log = "defense_multiplier: [?ZAV_enemy_defense_multiplier]"
         log = "damage_multiplier: [?damage_multiplier]"
         log = "healing_multiplier: [?healing_multiplier]"
-        log = "wyrd_multiplier: [?wyrd_multiplier]"
+        log = "hit_chance_multiplier: [?hit_chance_multiplier]"
+        log = "crit_chance: [?crit_chance]"
+        log = "crit_damage_multiplier: [?crit_damage_multiplier]"
     }
 }
 
@@ -177,6 +193,11 @@ ZAV_combat_do_player_turn = {
 
     # Do actions that the player selected
     ZAV_combat_do_player_actions = yes
+
+    log = "total_wyrd_cost: [?total_wyrd_cost]"
+    log = "total_wyrd_regen: [?total_wyrd_regen]"
+    log = "total_health_regen: [?total_health_regen]"
+    log = "total_damage: [?total_damage]"
 
     # Apply the effects from the actions
     subtract_from_variable = { ZAV_combat_player_wyrd = total_wyrd_cost }

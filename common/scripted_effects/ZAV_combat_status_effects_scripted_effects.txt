@@ -7,6 +7,9 @@
 # Damage multiplier - damage_multiplier
 # Wyrd regen multiplier - wyrd_multiplier
 # Health regen multiplier - healing_multiplier
+# Hit chance multiplier - hit_chance_multiplier
+# Crit chance - crit_chance
+# Crit damage multiplier - crit_damage_multiplier
 
 ZAV_combat_status_effects_calculate_multipliers = {
     for_each_loop = {
@@ -17,15 +20,23 @@ ZAV_combat_status_effects_calculate_multipliers = {
             multiply_temp_variable = { healing_multiplier = 0.5 }
         }
         else_if = {
+            limit = { check_variable = { effect = 2 } }
+            multiply_temp_variable = { hit_chance_multiplier = 0.7 }
+        }
+        else_if = {
             limit = { check_variable = { effect = 3 } }
-            multiply_temp_variable = { damage_multiplier = 1.5 }
-            multiply_temp_variable = { healing_multiplier = 1.5 }
-            multiply_temp_variable = { wyrd_multiplier = 1.5 }
+            multiply_temp_variable = { damage_multiplier = 1.3 }
+            multiply_temp_variable = { healing_multiplier = 1.3 }
         }
         else_if = {
             limit = { check_variable = { effect = 4 } }
             multiply_temp_variable = { healing_multiplier = 1.3 }
             multiply_variable = { ZAV_player_defense_multiplier = 1.2 } 
+        }
+        else_if = {
+            limit = { check_variable = { effect = 6 } }
+            multiply_temp_variable = { damage_multiplier = 1.5 }
+            add_to_temp_variable = { crit_chance = 20 }
         }
     }
 }
@@ -39,15 +50,18 @@ ZAV_combat_status_effects_calculate_enemy_multipliers = {
             multiply_temp_variable = { healing_multiplier = 0.5 }
         }
         else_if = {
+            limit = { check_variable = { effect = 2 } }
+            multiply_temp_variable = { hit_chance_multiplier = 0.7 }
+        }
+        else_if = {
             limit = { check_variable = { effect = 3 } }
-            multiply_temp_variable = { damage_multiplier = 1.5 }
-            multiply_temp_variable = { healing_multiplier = 1.5 }
-            multiply_temp_variable = { wyrd_multiplier = 1.5 }
+            multiply_temp_variable = { damage_multiplier = 1.3 }
+            multiply_temp_variable = { healing_multiplier = 1.3 }
         }
         else_if = {
             limit = { check_variable = { effect = 4 } }
             multiply_temp_variable = { healing_multiplier = 1.3 }
-            multiply_variable = { ZAV_player_defense_multiplier = 1.2 } 
+            multiply_variable = { ZAV_enemy_defense_multiplier = 1.2 } 
         }
     }
 }
