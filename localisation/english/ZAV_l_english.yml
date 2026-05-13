@@ -181,19 +181,19 @@
  ZAV_artifact_1_desc:0 "Drawn from the once-mortal vessel of Avalon's greatest king as he lay upon his final bed, this relic is said to carry echoes of an age when legend walked openly among men. Its crimson sheen never dulls, and those who gaze upon it feel a distant call to conquest, unity, or ruin, none can say which. The power within it is ancient and absolute, but whether it reflects Arthur's will... or something that claimed him in his final moments... remains uncertain."
 
  ZAV_artifact_2:0 "§6Ashes of the Green Knight§!"
- ZAV_artifact_2_effect:0 "Can protect its user from all physical harm."
+ ZAV_artifact_2_effect:0 "§G-30% damage received§!\n§C+1 fortified from praying§!"
  ZAV_artifact_2_desc:0 "Gathered from the grave of the enigmatic Green Knight, these ashes stir faintly even when undisturbed, as though remembering an oath never truly fulfilled. Those who wield them are said to become untouchable, shielded by an unseen force that bends fate itself. Yet this protection is not without unease, for something watches through it, something patient, as if the bargain has yet to be fully claimed."
 
  ZAV_artifact_3:0 "§0Corrupted Rose§!"
- ZAV_artifact_3_effect:0 "Shatters the mind of those who touch it."
+ ZAV_artifact_3_effect:0 "§C+100% wyrd from praying§!\n§0+1 madness per turn§!"
  ZAV_artifact_3_desc:0 "Plucked from the grave of a condemned heretic, this blackened rose appears perpetually fresh, its petals soft despite their unnatural hue. Its true purpose remains unclear, yet those who carry it report whispers in dreams and a growing sense that the world itself is subtly... wrong. Whether it is a key, a signal, or the seed of something far worse has yet to be determined."
 
  ZAV_artifact_4:0 "§9Fallen Hero Sword§!"
- ZAV_artifact_4_effect:0 "Possesses its wielder, forcing them to serve an unkown entity."
+ ZAV_artifact_4_effect:0 "§R-5 health per turn§!\n§G+200% damage inflicted§!"
  ZAV_artifact_4_desc:0 "Once borne by a champion of the realm, this fractured blade now radiates a dim, blood-red glow, its surface cracked as though it had been broken not by force, but by betrayal. From within its wounds seeps a slow, endless trickle of blood that never dries. In battle, it grants terrible strength, but with each strike, it seems to remember what it once was... and what it has become."
 
  ZAV_artifact_5:0 "§3Shroud of the Fey§!"
- ZAV_artifact_5_effect:0 "When burned, reveals all presences in an area."
+ ZAV_artifact_5_effect:0 "§G-15% damage received§!\n§C+30% wyrd from praying§!"
  ZAV_artifact_5_desc:0 "Attributed to Morgan of the Fey, this tattered veil is etched with shifting inscriptions that resist interpretation. When worn, it unveils all hidden presences, spirits, illusions, and beings that lurk just beyond perception. Yet prolonged use reveals more than intended, as the veil does not distinguish between what should be seen and what was never meant to be."
 
  ZAV_artifact_6:0 "§0Twisted Grail§!"
@@ -601,115 +601,6 @@
  ZAV_curse_2:0 "§RCrimson Blight§!"
  ZAV_curse_3:0 "§RDeath's Embrace§!"
  ZAV_curse_4:0 "§RBlack Spores§!"
-
- ##############
- # COMBAT GUI #
- ##############
-
- ZAV_combat_title_text:0 "§SDUEL§!"
- ZAV_combat_actions_title_text:0 "§SACTIONS§!"
- ZAV_combat_log_title_text:0 "§SBATTLE LOG§!"
-
- ZAV_combat_veilkeeper_image_tt:0 "§YVeilkeeper§!"
- ZAV_combat_enemy_image_tt:0 "§R[GetCombatEnemyTitle]§!"
-
- ZAV_combat_player_health_text:0 "[?ZAV_combat_player_health]/[?ZAV_combat_player_max_health]"
- ZAV_combat_player_wyrd_text:0 "[?ZAV_combat_player_wyrd]/[?ZAV_combat_player_max_wyrd]"
- ZAV_combat_enemy_name_text:0 "[GetCombatEnemyTitle]"
- ZAV_combat_enemy_health_text:0 "[?ZAV_combat_enemy_health]/[?ZAV_combat_enemy_max_health]"
-
- ZAV_combat_actions_costs_text:0 "[?ZAV_combat_remaining_wyrd]/[?ZAV_combat_player_wyrd] £GFX_ZAV_wyrd_icon  [?ZAV_combat_remaining_actions]/[?ZAV_combat_player_max_actions] £GFX_ZAV_move_actions_icon"
- 
- ZAV_combat_action_entry_title_text:0 "§S[GetCombatActionTitle]§!"
- ZAV_combat_action_entry_cost_text:0 "§sWyrd Cost: [?ZAV_combat_actions_wyrd_costs^entry_value] £GFX_ZAV_wyrd_icon §!"
- ZAV_combat_action_entry_tt:0 "[GetCombatActionEffect]"
-
- ZAV_combat_log_entry_text:0 "[GetCombatLogPlayer]: [GetCombatLogActionDetails]"
- ZAV_combat_log_player_veilkeeper:0 "§sVeilkeeper§!"
- ZAV_combat_log_player_enemy:0 "§R[GetCombatLogEnemy]§!"
-
- ZAV_combat_actions_unavailable_text:0 "[GetCombatActionsUnavailableText]"
- ZAV_combat_actions_unavailable_victory:0 "§sVICTORY§!"
- ZAV_combat_actions_unavailable_defeat:0 "§RDEFEAT§!"
- ZAV_combat_actions_unavailable_enemy_turn:0 "ENEMY TURN"
- ZAV_combat_end_turn_tt:0 "§YEnd turn§!"
-
- ######################
- # COMBAT LOADOUT GUI #
- ######################
-
- ZAV_combat_loadout_title_text:0 "§SEQUIP ARTIFACTS§!"
- ZAV_combat_loadout_owned_artifacts_text:0 "§SOWNED§!"
- ZAV_combat_loadout_equipped_artifacts_text:0 "§SEQUIPPED§!"
- ZAV_combat_loadout_artifacts_equipped_text:0 "[?ZAV_combat_equipped_artifacts^num]/[?ZAV_combat_max_equipped_artifacts]"
-
- ZAV_combat_loadout_artifact_name:0 "[GetCombatLoadoutArtifactTooltip]"
-
- ZAV_combat_loadout_artifact_available:0 "[GetVaultArtifactName]\n\nClass: [GetVaultArtifactClass]\n\nCombat Effects:\n§t[GetVaultArtifactEffects]§!"
- ZAV_combat_loadout_artifact_unavailable_1:0 "£GFX_trigger_no §RRequires a tier I blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
- ZAV_combat_loadout_artifact_unavailable_2:0 "£GFX_trigger_no §RRequires a tier II blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
- ZAV_combat_loadout_artifact_unavailable_3:0 "£GFX_trigger_no §RRequires a tier III blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
- ZAV_combat_loadout_artifact_unavailable_4:0 "£GFX_trigger_no §RRequires a tier IV blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
- ZAV_combat_loadout_artifact_unavailable_5:0 "£GFX_trigger_no §RRequires a tier V blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
-
- #########################
- # COMBAT STATUS EFFECTS #
- #########################
-
- ZAV_combat_status_effect_tt:0 "[GetCombatStatusEffectFullDesc]"
- ZAV_combat_status_effect_duration_text:0 "[?ZAV_combat_player_status_effects_amounts^entry_index]"
- ZAV_combat_status_effect_enemy_duration_text:0 "[?ZAV_combat_enemy_status_effects_amounts^entry_index]"
-
- ZAV_combat_status_effect_1:0 "§7Decay§!"
- ZAV_combat_status_effect_1_full:0 "§7Decay§!\n\n§YEffect§!:\n§G-2 health per turn\n§R-50% health from healing§!"
- ZAV_combat_status_effect_2:0 "Madness"
- ZAV_combat_status_effect_3:0 "Blessed"
- ZAV_combat_status_effect_4:0 "§CFortified§!"
- ZAV_combat_status_effect_4_full:0 "§CFortified§!\n\n§YEffect§!:\n§G-20% damage received\n§C+30% health from healing§!"
- ZAV_combat_status_effect_5:0 "§RBleeding§!"
- ZAV_combat_status_effect_5_full:0 "§RBleeding§!\n\n§YEffect§!:\n§R-5 health per turn§!"
-
- ##################
- # COMBAT ACTIONS #
- ##################
-
- ZAV_combat_action_effect_inflicted:0 "Inflicted [?ZAV_combat_log_stats^entry_index] [GetCombatStatusEffectLogName]."
- ZAV_combat_action_effect_gained:0 "Gained [?ZAV_combat_log_stats^entry_index] [GetCombatStatusEffectLogName]."
-
- ZAV_combat_action_title_1:0 "Single Shot"
- ZAV_combat_action_effect_1:0 "§YHit chance§!: §L80%§!\n\n§YEffect§!:\n§R+5 damage§!"
- ZAV_combat_action_successful_1:0 "Fired a single shot with a pistol dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
- ZAV_combat_action_failure_1:0 "Fired a single shot with a pistol and §Ymissed§!."
- ZAV_combat_action_title_2:0 "Prayer"
- ZAV_combat_action_effect_2:0 "§YEffect§!:\n§C+4 wyrd§!"
- ZAV_combat_action_successful_2:0 "Prayed to a higher being and received §C[?ZAV_combat_log_stats^entry_index] wyrd§!."
- ZAV_combat_action_title_3:0 "Heal"
- ZAV_combat_action_effect_3:0 "§YEffect§!:\n§G+10 health§!"
- ZAV_combat_action_successful_3:0 "Healed using §C6 wyrd§! to receive §G[?ZAV_combat_log_stats^entry_index] health§!."
- ZAV_combat_action_title_4:0 "Barrage"
- ZAV_combat_action_effect_4:0 "§YHit chance§!: §L100%§!\n\n§YEffect§!:\n§R+12 damage§!\n§R20% chance to inflict 1 bleeding§R"
- ZAV_combat_action_successful_4:0 "Fired a barrage with a pistol dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
-
- ##################
- # COMBAT ENEMIES #
- ##################
-
- ZAV_combat_enemy_1:0 "Ghoul"
- ZAV_combat_enemy_2:0 "Sir Carian Grimsby"
-
- ZAV_combat_enemy_action_successful_1:0 "Slashed with its claws dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
- ZAV_combat_enemy_action_failure_1:0 "Slashed with its claws and §Ymissed§!."
-
- ZAV_combat_enemy_action_successful_2:0 "Lunges and bites the Veilkeeper, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
- ZAV_combat_enemy_action_failure_2:0 "Lunges and attempts to bite the Veilkeeper but §Ymissed§!."
-
- ZAV_combat_enemy_action_successful_3:0 "Slashes with his sword dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
- ZAV_combat_enemy_action_failure_3:0 "Attempted to slash with his sword but §Ymissed§!."
-
- ZAV_combat_enemy_action_successful_4:0 "Consumed a strange sickly substance."
-
- ZAV_combat_enemy_action_successful_5:0 "Stabs with his sword covered in a putrid rot, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
- ZAV_combat_enemy_action_failure_5:0 "Attempted to stab with his sword but §Ymissed§!."
 
  #################
  # MISCELLANEOUS #

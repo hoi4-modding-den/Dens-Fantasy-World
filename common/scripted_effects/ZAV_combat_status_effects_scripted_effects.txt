@@ -17,12 +17,6 @@ ZAV_combat_status_effects_calculate_multipliers = {
             multiply_temp_variable = { healing_multiplier = 0.5 }
         }
         else_if = {
-            limit = { check_variable = { effect = 2 } }
-            multiply_temp_variable = { damage_multiplier = 0.8 }
-            multiply_temp_variable = { healing_multiplier = 0.8 }
-            multiply_temp_variable = { wyrd_multiplier = 0.8 }
-        }
-        else_if = {
             limit = { check_variable = { effect = 3 } }
             multiply_temp_variable = { damage_multiplier = 1.5 }
             multiply_temp_variable = { healing_multiplier = 1.5 }
@@ -43,12 +37,6 @@ ZAV_combat_status_effects_calculate_enemy_multipliers = {
         if = {
             limit = { check_variable = { effect = 1 } }
             multiply_temp_variable = { healing_multiplier = 0.5 }
-        }
-        else_if = {
-            limit = { check_variable = { effect = 2 } }
-            multiply_temp_variable = { damage_multiplier = 0.8 }
-            multiply_temp_variable = { healing_multiplier = 0.8 }
-            multiply_temp_variable = { wyrd_multiplier = 0.8 }
         }
         else_if = {
             limit = { check_variable = { effect = 3 } }
@@ -81,6 +69,10 @@ ZAV_combat_status_effects_calculate_constants = {
         else_if = {
             limit = { check_variable = { effect = 5 } }
             subtract_from_temp_variable = { health_change = 5 }
+        }
+        else_if = {
+            limit = { check_variable = { effect = 2 } }
+            subtract_from_temp_variable = { wyrd_change = 2 }
         }
     }
 }

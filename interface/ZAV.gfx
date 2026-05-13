@@ -361,6 +361,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ZAV_combat_status_effect_2"
+		texturefile = "gfx/interface/ZAV/combat/ZAV_combat_status_effect_madness.dds"
+	}
+
+	spriteType = {
 		name = "GFX_ZAV_combat_status_effect_4"
 		texturefile = "gfx/interface/ZAV/combat/ZAV_combat_status_effect_fortified.dds"
 	}

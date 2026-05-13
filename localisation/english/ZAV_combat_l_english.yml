@@ -1,0 +1,125 @@
+﻿l_english:
+ ##############
+ # COMBAT GUI #
+ ##############
+
+ ZAV_combat_title_text:0 "§SDUEL§!"
+ ZAV_combat_actions_title_text:0 "§SACTIONS§!"
+ ZAV_combat_log_title_text:0 "§SBATTLE LOG§!"
+
+ ZAV_combat_veilkeeper_image_tt:0 "§YVeilkeeper§!"
+ ZAV_combat_enemy_image_tt:0 "§R[GetCombatEnemyTitle]§!"
+
+ ZAV_combat_player_health_text:0 "[?ZAV_combat_player_health]/[?ZAV_combat_player_max_health]"
+ ZAV_combat_player_wyrd_text:0 "[?ZAV_combat_player_wyrd]/[?ZAV_combat_player_max_wyrd]"
+ ZAV_combat_enemy_name_text:0 "[GetCombatEnemyTitle]"
+ ZAV_combat_enemy_health_text:0 "[?ZAV_combat_enemy_health]/[?ZAV_combat_enemy_max_health]"
+
+ ZAV_combat_actions_costs_text:0 "[?ZAV_combat_remaining_wyrd]/[?ZAV_combat_player_wyrd] £GFX_ZAV_wyrd_icon  [?ZAV_combat_remaining_actions]/[?ZAV_combat_player_max_actions] £GFX_ZAV_move_actions_icon"
+ 
+ ZAV_combat_action_entry_title_text:0 "§S[GetCombatActionTitle]§!"
+ ZAV_combat_action_entry_cost_text:0 "§sWyrd Cost: [?ZAV_combat_actions_wyrd_costs^entry_value] £GFX_ZAV_wyrd_icon §!"
+ ZAV_combat_action_entry_tt:0 "[GetCombatActionEffect]"
+
+ ZAV_combat_log_entry_text:0 "[GetCombatLogPlayer]: [GetCombatLogActionDetails]"
+ ZAV_combat_log_player_veilkeeper:0 "§sVeilkeeper§!"
+ ZAV_combat_log_player_enemy:0 "§R[GetCombatLogEnemy]§!"
+
+ ZAV_combat_actions_unavailable_text:0 "[GetCombatActionsUnavailableText]"
+ ZAV_combat_actions_unavailable_victory:0 "§sVICTORY§!"
+ ZAV_combat_actions_unavailable_defeat:0 "§RDEFEAT§!"
+ ZAV_combat_actions_unavailable_enemy_turn:0 "ENEMY TURN"
+ ZAV_combat_end_turn_tt:0 "§YEnd turn§!"
+
+ ######################
+ # COMBAT LOADOUT GUI #
+ ######################
+
+ ZAV_combat_loadout_title_text:0 "§SEQUIP ARTIFACTS§!"
+ ZAV_combat_loadout_owned_artifacts_text:0 "§SOWNED§!"
+ ZAV_combat_loadout_equipped_artifacts_text:0 "§SEQUIPPED§!"
+ ZAV_combat_loadout_artifacts_equipped_text:0 "[?ZAV_combat_equipped_artifacts^num]/[?ZAV_combat_max_equipped_artifacts]"
+
+ ZAV_combat_loadout_artifact_name:0 "[GetCombatLoadoutArtifactTooltip]"
+
+ ZAV_combat_loadout_artifact_available:0 "[GetVaultArtifactName]\n\nClass: [GetVaultArtifactClass]\n\nCombat Effects:\n§t[GetVaultArtifactEffects]§!"
+ ZAV_combat_loadout_artifact_unavailable_1:0 "£GFX_trigger_no §RRequires a tier I blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
+ ZAV_combat_loadout_artifact_unavailable_2:0 "£GFX_trigger_no §RRequires a tier II blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
+ ZAV_combat_loadout_artifact_unavailable_3:0 "£GFX_trigger_no §RRequires a tier III blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
+ ZAV_combat_loadout_artifact_unavailable_4:0 "£GFX_trigger_no §RRequires a tier IV blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
+ ZAV_combat_loadout_artifact_unavailable_5:0 "£GFX_trigger_no §RRequires a tier V blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
+
+ #########################
+ # COMBAT STATUS EFFECTS #
+ #########################
+
+ # To create a new status effect, you need to first add a name and full loc key with its effects,
+ # then create and add a GFX_ZAV_combat_status_effect_[id] file in a .gfx file, and finally in
+ # ZAV_combat_status_effects_scripted_effects.txt, you must add the effect that it has on the game
+
+ ZAV_combat_status_effect_tt:0 "[GetCombatStatusEffectFullDesc]"
+ ZAV_combat_status_effect_duration_text:0 "[?ZAV_combat_player_status_effects_amounts^entry_index]"
+ ZAV_combat_status_effect_enemy_duration_text:0 "[?ZAV_combat_enemy_status_effects_amounts^entry_index]"
+
+ ZAV_combat_status_effect_1:0 "§7Decay§!"
+ ZAV_combat_status_effect_1_full:0 "§7Decay§!\n\n§YEffect§!:\n§R-2 health per turn\n-50% health from healing§!"
+ ZAV_combat_status_effect_2:0 "§0Madness§!"
+ ZAV_combat_status_effect_2_full:0 "§0Madness§!\n\n§YEffect§!:\n§R-2 wyrd per turn§!"
+ ZAV_combat_status_effect_3:0 "Blessed"
+ ZAV_combat_status_effect_4:0 "§CFortified§!"
+ ZAV_combat_status_effect_4_full:0 "§CFortified§!\n\n§YEffect§!:\n§G-20% damage received\n§C+30% health from healing§!"
+ ZAV_combat_status_effect_5:0 "§RBleeding§!"
+ ZAV_combat_status_effect_5_full:0 "§RBleeding§!\n\n§YEffect§!:\n§R-5 health per turn§!"
+
+ ##################
+ # COMBAT ACTIONS #
+ ##################
+
+ # Creating a combat action requires you to add a name for the action as ZAV_combat_action_title_[id] and
+ # its effect as ZAV_combat_action_effect_[id]. Then loc must be done for success and failure. Then an
+ # icon must be added in a .gfx file with the format GFX_ZAV_combat_action_[id]. Lastly, the wyrd cost
+ # must be defined at the bottom of ZAV_combat_player_scripted_effects.txt and in the same file, the
+ # effect of the action must also be defined.
+
+ ZAV_combat_action_effect_inflicted:0 "Inflicted [?ZAV_combat_log_stats^entry_index] [GetCombatStatusEffectLogName]."
+ ZAV_combat_action_effect_gained:0 "Gained [?ZAV_combat_log_stats^entry_index] [GetCombatStatusEffectLogName]."
+
+ ZAV_combat_action_title_1:0 "Single Shot"
+ ZAV_combat_action_effect_1:0 "§YHit chance§!: §L80%§!\n\n§YEffect§!:\n§R+5 damage§!"
+ ZAV_combat_action_successful_1:0 "Fired a single shot with a pistol dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_action_failure_1:0 "Fired a single shot with a pistol and §Ymissed§!."
+ ZAV_combat_action_title_2:0 "Prayer"
+ ZAV_combat_action_effect_2:0 "§YEffect§!:\n§C+4 wyrd§!"
+ ZAV_combat_action_successful_2:0 "Prayed to a higher being and received §C[?ZAV_combat_log_stats^entry_index] wyrd§!."
+ ZAV_combat_action_title_3:0 "Heal"
+ ZAV_combat_action_effect_3:0 "§YEffect§!:\n§G+10 health§!"
+ ZAV_combat_action_successful_3:0 "Healed using §C6 wyrd§! to receive §G[?ZAV_combat_log_stats^entry_index] health§!."
+ ZAV_combat_action_title_4:0 "Barrage"
+ ZAV_combat_action_effect_4:0 "§YHit chance§!: §L100%§!\n\n§YEffect§!:\n§R+12 damage§!\n§R20% chance to inflict 1 bleeding§R"
+ ZAV_combat_action_successful_4:0 "Fired a barrage with a pistol dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+
+ ##################
+ # COMBAT ENEMIES #
+ ##################
+
+ # Creating an enemy can be complicated but to start, you must define a name as ZAV_combat_enemy_[id].
+ # Afterwards, you must add a GFX_ZAV_combat_enemy_image_[id] in a .gfx file. Then, you must define its
+ # data and attacks in ZAV_combat_enemy_scripted_effects.txt. Lastly, each action must be given loc such
+ # as below.
+
+ ZAV_combat_enemy_1:0 "Ghoul"
+ ZAV_combat_enemy_2:0 "Sir Carian Grimsby"
+
+ ZAV_combat_enemy_action_successful_1:0 "Slashed with its claws dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_failure_1:0 "Slashed with its claws and §Ymissed§!."
+
+ ZAV_combat_enemy_action_successful_2:0 "Lunges and bites the Veilkeeper, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_failure_2:0 "Lunges and attempts to bite the Veilkeeper but §Ymissed§!."
+
+ ZAV_combat_enemy_action_successful_3:0 "Slashes with his sword dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_failure_3:0 "Attempted to slash with his sword but §Ymissed§!."
+
+ ZAV_combat_enemy_action_successful_4:0 "Consumed a strange sickly substance."
+
+ ZAV_combat_enemy_action_successful_5:0 "Stabs with his sword covered in a putrid rot, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_enemy_action_failure_5:0 "Attempted to stab with his sword but §Ymissed§!."

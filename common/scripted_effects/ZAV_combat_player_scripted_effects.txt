@@ -105,6 +105,21 @@ ZAV_combat_do_player_actions = {
 
 ### DATA ###
 
+# Calculates the set of actions the player can do at the start of the combat
+ZAV_combat_calculate_player_actions = {
+    clear_array = ZAV_combat_available_actions
+    
+    # Basic actions
+    add_to_array = { ZAV_combat_available_actions = 1 }  # PISTOL
+    add_to_array = { ZAV_combat_available_actions = 2 }  # PRAY
+    add_to_array = { ZAV_combat_available_actions = 3 }  # HEAL
+    add_to_array = { ZAV_combat_available_actions = 4 }  # BARRAGE
+
+    # Actions enabled by artifacts and blessings
+    # TODO
+}
+
+# This is where all the wyrd costs for actions are defined
 ZAV_combat_setup_actions_data = {
     clear_array = ZAV_combat_actions_wyrd_costs
     add_to_array = { ZAV_combat_actions_wyrd_costs = 0 } # 0 indexed vs 1 indexed array
