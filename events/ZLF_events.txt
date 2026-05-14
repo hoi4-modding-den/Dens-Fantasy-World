@@ -1278,7 +1278,7 @@ country_event = { # Post-Meisendorff Elections
 
 	trigger = {
 		has_government = democratic
-		has_counry_leader = { character = ZLF_michel_meisendorff ruling_only = yes }
+		has_country_leader = { character = ZLF_michel_meisendorff ruling_only = yes }
 	}
 
 	option = {

@@ -131,7 +131,7 @@ on_actions = {
                 limit = {
                     THIS = {
                         has_government = democratic
-                        has_counry_leader = { character = ZLF_michel_meisendorff ruling_only = yes }
+                        has_country_leader = { character = ZLF_michel_meisendorff ruling_only = yes }
                         has_country_flag = ZLF_trigger_election_after_war
                     }
                 }
