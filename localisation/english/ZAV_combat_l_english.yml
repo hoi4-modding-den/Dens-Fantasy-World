@@ -49,6 +49,8 @@
  ZAV_combat_loadout_artifact_unavailable_4:0 "£GFX_trigger_no §RRequires a tier IV blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
  ZAV_combat_loadout_artifact_unavailable_5:0 "£GFX_trigger_no §RRequires a tier V blessing.§!\n\n$ZAV_combat_loadout_artifact_available$"
 
+ ZAV_combat_enter_combat_tt:0 "§YEnter combat§!"
+
  #########################
  # COMBAT STATUS EFFECTS #
  #########################
@@ -72,7 +74,7 @@
  ZAV_combat_status_effect_5:0 "§RBleeding§!"
  ZAV_combat_status_effect_5_full:0 "§RBleeding§!\n\n§YEffect§!:\n§R-5 health per turn§!"
  ZAV_combat_status_effect_6:0 "§8Strength§!"
- ZAV_combat_status_effect_6_full:0 "§8Strength§!\n\n§YEffect§!:\n§G+50% damage inflicted\n+20% crit chance§!"
+ ZAV_combat_status_effect_6_full:0 "§8Strength§!\n\n§YEffect§!:\n§G+50% damage inflicted§!\n§O+20% crit chance§!"
 
  ##################
  # COMBAT ACTIONS #
@@ -86,6 +88,7 @@
 
  ZAV_combat_action_effect_inflicted:0 "Inflicted [?ZAV_combat_log_stats^entry_index] [GetCombatStatusEffectLogName]."
  ZAV_combat_action_effect_gained:0 "Gained [?ZAV_combat_log_stats^entry_index] [GetCombatStatusEffectLogName]."
+ ZAV_combat_action_effect_removed:0 "Expelled [?ZAV_combat_log_stats^entry_index] [GetCombatStatusEffectLogName]."
 
  ZAV_combat_action_title_1:0 "Single Shot"
  ZAV_combat_action_effect_1:0 "§YBase hit chance§!: §L80%§!\n\n§YEffect§!:\n§R+5 damage§!"
@@ -102,20 +105,36 @@
  ZAV_combat_action_successful_3:0 "Healed using §C6 wyrd§! to receive §G[?ZAV_combat_log_stats^entry_index] health§!."
 
  ZAV_combat_action_title_4:0 "Barrage"
- ZAV_combat_action_effect_4:0 "§YBase hit chance§!: §L95%§!\n\n§YEffect§!:\n§R+12 damage§!\n§R20% chance to inflict 1 bleeding§R"
+ ZAV_combat_action_effect_4:0 "§YBase hit chance§!: §L95%§!\n\n§YEffect§!:\n§R+12 damage§!\n§R20% chance to inflict 1 bleeding§!"
  ZAV_combat_action_critical_4:0 "Fired a barrage with a pistol dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_action_successful_4:0 "Fired a barrage with a pistol dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_action_failure_4:0 "Fired a barrage with a pistol and §Ymissed§!."
 
  ZAV_combat_action_title_5:0 "Corrupt"
- ZAV_combat_action_effect_5:0 "§YBase hit chance§!: §L70%§!\n\n§YEffect§!:\n§R+9 damage§!\n§R100% chance to inflict 2 madness§R"
+ ZAV_combat_action_effect_5:0 "§YBase hit chance§!: §L70%§!\n\n§YEffect§!:\n§R+9 damage§!\n§R100% chance to inflict 2 madness§!"
  ZAV_combat_action_critical_5:0 "Used the §0Corrupted Rose§! and fired a psychic attack, dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_action_successful_5:0 "Used the §0Corrupted Rose§! and fired a psychic attack, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
  ZAV_combat_action_failure_5:0 "Used the §0Corrupted Rose§! and fired a psychic attack but §Ymissed§!."
 
  ZAV_combat_action_title_6:0 "Justice"
  ZAV_combat_action_effect_6:0 "§YEffect§!:\n§G+8 health§!\n§8+3 strength§!"
- ZAV_combat_action_successful_6:0 "Burned the Justice tarot card to receive §G[?ZAV_combat_log_stats^entry_index] health§!."
+ ZAV_combat_action_successful_6:0 "Burned the §YJustice§! card to receive §G[?ZAV_combat_log_stats^entry_index] health§!."
+
+ ZAV_combat_action_title_7:0 "Condemnation"
+ ZAV_combat_action_effect_7:0 "§YBase hit chance§!: §L90%§!\n\n§YEffect§!:\n§R+3 damage§!\n§YIf target has madness§!§W:§!\n§R+7 additional damage§!"
+ ZAV_combat_action_critical_7:0 "Burned a paper with the stamp of the grail, creating a §Ymagic shockwave§!, dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_action_successful_7:0 "Burned a paper with the stamp of the grail, creating a §Ymagic shockwave§!, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_action_failure_7:0 "Burned a paper with the stamp of the grail, creating a §Ymagic shockwave§!, but §Ymissed§!."
+
+ ZAV_combat_action_title_8:0 "Banish Evil"
+ ZAV_combat_action_effect_8:0 "§YEffect§!:\n§8+1 fortified§!\n§GRemoves madness§!"
+ ZAV_combat_action_successful_8:0 "Used a §Ywarding talisman§! to banish the surrounding evil."
+
+ ZAV_combat_action_title_9:0 "Goddess's Embrace"
+ ZAV_combat_action_effect_9:0 "§YBase hit chance§!: §L80%§!\n\n§YEffect§!:\n§R+5 damage§!\n§YIf target has decay§!§W:§!\n§R+10 additional damage§!\n§8+1 blessed§!"
+ ZAV_combat_action_critical_9:0 "Called on the §tCrimson Goddess§!, to give the enemy her embrace, dealing a §Ocritical hit§! and §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_action_successful_9:0 "Called on the §tCrimson Goddess§!, to give the enemy her embrace, dealing §R[?ZAV_combat_log_stats^entry_index] damage§!."
+ ZAV_combat_action_failure_9:0 "Called on the §tCrimson Goddess§!, to give the enemy her embrace, but was §Yunsuccessful§!."
 
  ##################
  # COMBAT ENEMIES #

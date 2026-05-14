@@ -1,6 +1,9 @@
 ### SETUP ###
 
 ZAV_setup_artifacts = {
+    clear_array = artifact_classes
+    clear_array = ZAV_vault_artifacts
+
     # The array artifact_classes stores the tier of artifact for each artifact at index i
     # 1 - Slaughter Relic (most powerful)
     # 2 - Sinister Artifact
@@ -39,10 +42,55 @@ ZAV_setup_artifacts = {
     add_to_array = { artifact_classes = 5 }
 
     # 10 - Warding Talisman
-    add_to_array = { artifact_classes = 4 }
+    add_to_array = { artifact_classes = 5 }
 
     # 11 - Elias Thorne's Timepiece
     add_to_array = { artifact_classes = 5 }
+
+    # 12 - Shriveled Finger
+    add_to_array = { artifact_classes = 4 }
+
+    # 13 - Severed Hand
+    add_to_array = { artifact_classes = 5 }
+
+    # 14 - Shards of Arondight
+    add_to_array = { artifact_classes = 3 }
+
+    # 15 - Blackstone Pendant
+    add_to_array = { artifact_classes = 4 }
+
+    # 16 - Bleeding Whetstone
+    add_to_array = { artifact_classes = 4 }
+
+    # 17 - Enchanted Drinking Horn
+    add_to_array = { artifact_classes = 4 }
+
+    # 18 - Lunar Coat
+    add_to_array = { artifact_classes = 3 }
+
+    # 19 - Lunete's Ring
+    add_to_array = { artifact_classes = 2 }
+
+    # 20 - Murderer's Knife
+    add_to_array = { artifact_classes = 3 }
+
+    # 21 - Remnants of Prydwen
+    add_to_array = { artifact_classes = 2 }
+
+    # 22 - Spear of the Dying King
+    add_to_array = { artifact_classes = 2 } 
+    
+    # 23 - The Fool
+    add_to_array = { artifact_classes = 1 }
+
+    # 24 - The Silver Queen
+    add_to_array = { artifact_classes = 3 }
+
+    # 25 - The Veiled Thorn
+    add_to_array = { artifact_classes = 2 }
+
+    # 26 - Whispering Cauldron
+    add_to_array = { artifact_classes = 2 }
 
     # Initial artifacts in the Vault of Saint Constantine
     add_to_array = { ZAV_vault_artifacts = 1 }

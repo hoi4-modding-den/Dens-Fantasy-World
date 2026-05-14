@@ -193,7 +193,7 @@
  ZAV_artifact_4_desc:0 "Once borne by a champion of the realm, this fractured blade now radiates a dim, blood-red glow, its surface cracked as though it had been broken not by force, but by betrayal. From within its wounds seeps a slow, endless trickle of blood that never dries. In battle, it grants terrible strength, but with each strike, it seems to remember what it once was... and what it has become."
 
  ZAV_artifact_5:0 "§3Shroud of the Fey§!"
- ZAV_artifact_5_effect:0 "§G-15% damage received§!\n§C+30% wyrd from praying§!"
+ ZAV_artifact_5_effect:0 "§C+30% wyrd from praying§!\n§O+10% crit chance§!"
  ZAV_artifact_5_desc:0 "Attributed to Morgan of the Fey, this tattered veil is etched with shifting inscriptions that resist interpretation. When worn, it unveils all hidden presences, spirits, illusions, and beings that lurk just beyond perception. Yet prolonged use reveals more than intended, as the veil does not distinguish between what should be seen and what was never meant to be."
 
  ZAV_artifact_6:0 "§0Twisted Grail§!"
@@ -201,7 +201,7 @@
  ZAV_artifact_6_desc:0 "A perversion of Avalon's most sacred symbol, this malformed grail pulses with a suffocating aura of power. Dark veins crawl across its pitted surface, as though something within struggles to emerge. Those who draw near feel their thoughts weighed down, their will diminished, as if in silent reverence to an unseen master. It is not merely an object of worship. It is a conduit."
 
  ZAV_artifact_7:0 "§0Blighted Flesh of a False God§!"
- ZAV_artifact_7_effect:0 "May be used as a vessel for a blighted deity. Is attracted to sinister energies."
+ ZAV_artifact_7_effect:0 "§G+25 max health§!\n§R-30% health from healing§!"
  ZAV_artifact_7_desc:0 "Recovered from a twisted ritual, this decaying mass was once intended as a vessel for a heretical deity. Though lifeless in form, it twitches faintly, as if awaiting completion. Its presence spreads rot and unease, and those who linger too long report visions of something vast and incomplete, straining against the boundaries of reality, seeking form through a host willing or unwilling."
 
  ZAV_artifact_8:0 "§9True Excalibur§!"
@@ -213,12 +213,72 @@
  ZAV_artifact_9_desc:0 "Recovered from the blackened tides beyond Avalon's shores, this malformed creature was discovered at the center of a spreading blight that twisted fish into abominations and turned clear waters into foul, choking mire. Its shell is cracked and oozing, its limbs uneven and constantly shifting, as though its form cannot settle upon a single reality. Even in containment, it emits a slow, creeping corruption, metal tarnishes, water stagnates, and living things recoil in its presence."
 
  ZAV_artifact_10:0 "§9Warding Talisman§!"
- ZAV_artifact_10_effect:0 "Capable of protecting the users from spreading madness."
+ ZAV_artifact_10_effect:0 "§G+6 max health§!\n§WEnables§! §YBanish Evil§!§W.§!"
  ZAV_artifact_10_desc:0 "PLACEHOLDER"
 
  ZAV_artifact_11:0 "§LElias Thorne's Timepiece§!"
  ZAV_artifact_11_effect:0 "§C+10 max wyrd§!\n§G+20% health from healing§!\n§WEnables§! §YJustice§!§W.§!"
  ZAV_artifact_11_desc:0 "PLACEHOLDER"
+
+ ZAV_artifact_12:0 "§tShriveled Finger§!"
+ ZAV_artifact_12_effect:0 "§G+10 max health§!\n§750% chance to inflict decay per turn§!\n§WEnables§! §YGoddess's Embrace§!§W.§!"
+ ZAV_artifact_12_desc:0 "PLACEHOLDER"
+
+ ZAV_artifact_13:0 "§tSevered Hand§!"
+ ZAV_artifact_13_effect:0 "§R-2 wyrd per turn§!\n§O+10% crit chance§!\n§O+100% crit damage§!"
+ ZAV_artifact_13_desc:0 "PLACEHOLDER"
+
+ ZAV_artifact_14:0 "§9Shards of Arondight§!"
+ ZAV_artifact_14_effect:0 "§9+1 max actions per turn§!\n§G+15 max health§!\n§C-5 max wyrd§!"
+ ZAV_artifact_14_desc:0 "PLACEHOLDER"
+
+ ZAV_artifact_15:0 "§0Blackstone Pendant§!"
+ ZAV_artifact_15_effect:0 "§C+10 max wyrd§!\n§C+20% wyrd from praying§!\n§WEnables§! §YWyrd Slash§!§W.§!"
+ ZAV_artifact_15_desc:0 "PLACEHOLDER"
+
+ ZAV_artifact_16:0 "§tBleeding Whetstone§!"
+ ZAV_artifact_16_effect:0 "§O+30% crit chance§!\n§O+100% crit damage§!"
+ ZAV_artifact_16_desc:0 "PLACEHOLDER"
+
+ ZAV_artifact_17:0 "§CEnchanted Drinking Horn§!"
+ ZAV_artifact_17_effect:0 "§G+50% health from healing§!\n§L+1 intoxicated from healing§!\n§WEnables§! §YBattle Cry§!§W.§!"
+ ZAV_artifact_17_desc:0 "PLACEHOLDER"
+
+ ZAV_artifact_18:0 "§1Lunar Coat§!"
+ ZAV_artifact_18_effect:0 "§C+10 max wyrd§!\n§8+1 blessed from praying§!\n§8+1 strength from saintly actions§!\n§WEnables§! §YStigmata§!§W.§!"
+ ZAV_artifact_18_desc:0 "PLACEHOLDER"
+
+ ZAV_artifact_19:0 "§1Lunete's Ring§!"
+ ZAV_artifact_19_effect:0 "§GImmune to madness§!\n§G+40% hit chance§!\n§C+6 wyrd per turn§!\n§C+4 wyrd from saintly actions§!\n§WEnables§! §YRetribution§!§W.§!"
+ ZAV_artifact_19_desc:0 "PLACEHOLDER"
+
+ ZAV_artifact_20:0 "§RMurderer's Knife§!"
+ ZAV_artifact_20_effect:0 "§R50% chance to inflict bleeding per turn§!\n§WEnables§! §YEviscerate§!§W.§!\n§WEnables§! §YCarnage§!§W.§!"
+ ZAV_artifact_20_desc:0 "PLACEHOLDER"
+
+ ZAV_artifact_21:0 "§9Remnants of Prydwen§!"
+ ZAV_artifact_21_effect:0 "§G+30 max health§!\n§C+1 fortified from healing§!\n§WEnables§! §YBrace§!§W.§!"
+ ZAV_artifact_21_desc:0 "PLACEHOLDER"
+
+ ZAV_artifact_22:0 "§9Spear of the Dying King§!"
+ ZAV_artifact_22_effect:0 "§G+50% damage inflicted§!\n§WEnables§! §YImpale§!§W.§!"
+ ZAV_artifact_22_desc:0 "PLACEHOLDER"
+
+ ZAV_artifact_23:0 "§6The Fool§!"
+ ZAV_artifact_23_effect:0 "§R-20 max health§!\n§O+50% crit chance§!\n§0+1 madness per turn§!\n§WEnables§! §YFool Fate Itself§!§W.§!"
+ ZAV_artifact_23_desc:0 "PLACEHOLDER"
+
+ ZAV_artifact_24:0 "§1The Silver Queen§!"
+ ZAV_artifact_24_effect:0 "§G-50% damage received when below 50% health§!\n§WEnables§! §YCheckmate§!§W.§!"
+ ZAV_artifact_24_desc:0 "PLACEHOLDER"
+
+ ZAV_artifact_25:0 "§2The Veiled Thorn§!"
+ ZAV_artifact_25_effect:0 "§GImmune to decay§!\n§O+300% crit damage§!\n§WEnables§! §YAssassinate§!§W.§!"
+ ZAV_artifact_25_desc:0 "PLACEHOLDER"
+
+ ZAV_artifact_26:0 "§0Whispering Cauldron§!"
+ ZAV_artifact_26_effect:0 "§YEvery prayer get one of the following§!§W:§!\n§G+10 health§!\n§8+2 strength§!\n§C+10 wyrd§!\n§0+3 madness§!"
+ ZAV_artifact_26_desc:0 "PLACEHOLDER"
 
  ###################
  #   ENCOUNTERS   #

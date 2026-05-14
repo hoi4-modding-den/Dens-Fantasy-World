@@ -1,0 +1,14 @@
+soundeffect = {
+	name = ZAV_equip_artifact
+	volume = 1
+	sounds = {
+		sound = ZAV_equip_artifact
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+sound = {
+	name = ZAV_equip_artifact
+	file = "ZAV_equip_artifact.wav"
+	always_load = no
+}

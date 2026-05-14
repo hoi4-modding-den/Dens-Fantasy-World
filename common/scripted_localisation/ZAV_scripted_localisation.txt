@@ -534,6 +534,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			check_variable = { entry_value = 1000 }
+		}
+		localization_key = "ZAV_combat_action_effect_removed"
+	}
+	text = {
+		trigger = {
 			check_variable = { ZAV_combat_log_players^entry_index = 0 }
 			check_variable = { ZAV_combat_log_outcomes^entry_index = 2 }
 		}

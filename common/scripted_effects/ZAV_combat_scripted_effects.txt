@@ -23,6 +23,8 @@ ZAV_combat_init = {
         set_country_flag = ZAV_combat_ongoing
         clr_country_flag = ZAV_combat_loadout_complete
         clr_country_flag = ZAV_combat_enemy_turn
+
+        clear_array = ZAV_player_selected_actions
         
         ZAV_combat_loadout_init = yes
     }

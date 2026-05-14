@@ -26,6 +26,14 @@ d_clear_player_data = {
     log = "Player level, blessings, and curses cleared."
 }
 
+d_add_artifact = {
+    add_to_array = { ZAV_vault_artifacts = args^0 }
+}
+
+d_remove_artifact = {
+    remove_from_array = { ZAV_vault_artifacts = args^0 }
+}
+
 d_clr_country_flag = {
     clr_country_flag = args^0
 }

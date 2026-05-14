@@ -509,6 +509,8 @@ scripted_gui = {
             }
 
             ZAV_combat_action_button_click = {
+                sound_effect = "click_default"
+                
                 if = {
                     limit = {
                         is_in_array = { ZAV_player_selected_actions = entry_value }
@@ -586,6 +588,7 @@ scripted_gui = {
                     limit = {
                         is_in_array = { ZAV_combat_equipped_artifacts = artifact_value }
                     }
+
                     remove_from_array = { ZAV_combat_equipped_artifacts = artifact_value }
                     add_to_array = { ZAV_combat_owned_artifacts = artifact_value }
                 }

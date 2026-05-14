@@ -989,13 +989,13 @@ guitypes = {
             iconType = { 
                 name = "ZAV_combat_log_banner"
                 quadTextureSprite = "GFX_ZAV_gilded_decoration"
-                position = { x = 319 y = 13 }
+                position = { x = 319 y = 6 }
                 alwaystransparent = yes
             }
 
             instantTextBoxType = {
                 name = "ZAV_combat_log_title"
-                position = { x = 319 y = 20 }
+                position = { x = 319 y = 13 }
                 text = ZAV_combat_log_title_text
                 font = "cinzel_32"
                 format = center
@@ -1005,9 +1005,9 @@ guitypes = {
 
             containerWindowType = {
                 name = "ZAV_combat_log_container"
-                position = { x = 10 y = 55 }
+                position = { x = 10 y = 48 }
                 orientation = UPPER_LEFT
-                size = { width = 1038 height = 150 }
+                size = { width = 1038 height = 157 }
 
                 background = {
                     name = "Background"
@@ -1018,7 +1018,7 @@ guitypes = {
                     name = "ZAV_combat_log_gridbox_container"
                     position = { x = 2 y = 10 }
                     orientation = UPPER_LEFT
-                    size = { width = 1030 height = 130 }
+                    size = { width = 1030 height = 137 }
                     clipping = yes
                     verticalScrollbar = "right_vertical_slider"
                     scroll_wheel_factor = 40
@@ -1032,7 +1032,7 @@ guitypes = {
                     gridboxtype = {
                         name = "ZAV_combat_log_gridbox"
                         position = { x = 10 y = 10 }
-                        size = { width = 1018 height = 130 }
+                        size = { width = 1018 height = 137 }
                         slotsize = { width = 1018 height = 30 }
                         max_slots_horizontal = 1
                         format = "UPPER_LEFT"
@@ -1173,9 +1173,9 @@ guitypes = {
 
         buttonType = { 
             name = "ZAV_combat_loadout_start_button"
-            quadTextureSprite = "GFX_ZAV_end_turn_button"
+            quadTextureSprite = "GFX_ZAV_enter_combat_button"
             position = { x = 369 y = 710 }
-            pdx_tooltip = ZAV_combat_end_turn_tt
+            pdx_tooltip = ZAV_combat_enter_combat_tt
             shortcut = "RETURN"
         }
     }
@@ -1202,6 +1202,7 @@ guitypes = {
             quadTextureSprite = "GFX_ZAV_blank_artifact"
             pdx_tooltip = ZAV_combat_loadout_artifact_name
             pdx_tooltip_delayed = "ZAV_artifact_desc"
+            clicksound = "click_default"
         }
     }
 

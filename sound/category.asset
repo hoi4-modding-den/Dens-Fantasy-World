@@ -20,6 +20,7 @@ category = {
 	tutorial_objective_done
 	operation_complete
 	ZSQ_death_super_event
+	ZAV_equip_artifact
 
 	######## INGAME ALERT - topbar
 	# simple sound effect. at least important and less important

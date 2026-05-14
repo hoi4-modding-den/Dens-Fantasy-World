@@ -302,3 +302,87 @@ ZAV_combat_enemy_get_status_effect = {
     set_temp_variable = { stat = amount }
     ZAV_combat_log_action = yes
 }
+
+# Removes a status effect from the player/enemy
+
+ZAV_combat_player_remove_status_effect = {   
+    set_temp_variable = { amount = 0 }
+
+    if = {
+        limit = {
+            is_in_array = { ZAV_combat_player_status_effects = effect }
+        }
+        for_each_loop = {
+            array = ZAV_combat_player_status_effects
+            index = i
+            value = v
+            if = {
+                limit = {
+                    check_variable = { v = effect }
+                }
+                set_temp_variable = { amount = ZAV_combat_player_status_effects_amounts^i }
+                set_variable = { ZAV_combat_player_status_effects_amounts^i = 1 }
+            }
+        }
+    }
+
+    set_temp_variable = { player = 0 }
+    set_temp_variable = { action = 1000 }
+    set_temp_variable = { outcome = effect }
+    set_temp_variable = { stat = amount }
+    ZAV_combat_log_action = yes
+}
+
+### TESTING ###
+
+d_combat_give_status_effect = {
+    set_temp_variable = { effect = args^0 }
+    set_temp_variable = { amount = args^1 }
+    
+    if = {
+        limit = {
+            is_in_array = { ZAV_combat_player_status_effects = effect }
+        }
+        for_each_loop = {
+            array = ZAV_combat_player_status_effects
+            index = i
+            value = v
+            if = {
+                limit = {
+                    check_variable = { v = effect }
+                }
+                add_to_variable = { ZAV_combat_player_status_effects_amounts^i = amount }
+            }
+        }
+    }
+    else = {
+        add_to_array = { ZAV_combat_player_status_effects = effect }
+        add_to_array = { ZAV_combat_player_status_effects_amounts = amount }
+    }
+}
+
+d_combat_inflict_status_effect = {
+    set_temp_variable = { effect = args^0 }
+    set_temp_variable = { amount = args^1 }
+    
+    if = {
+        limit = {
+            is_in_array = { ZAV_combat_enemy_status_effects = effect }
+        }
+        for_each_loop = {
+            array = ZAV_combat_enemy_status_effects
+            index = i
+            value = v
+            if = {
+                limit = {
+                    check_variable = { v = effect }
+                }
+                add_to_variable = { ZAV_combat_enemy_status_effects_amounts^i = amount }
+            }
+        }
+    }
+    else = {
+        add_to_array = { ZAV_combat_enemy_status_effects = effect }
+        add_to_array = { ZAV_combat_enemy_status_effects_amounts = amount }
+    }
+}

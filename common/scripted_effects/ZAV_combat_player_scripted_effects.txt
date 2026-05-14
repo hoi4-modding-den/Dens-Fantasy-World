@@ -185,6 +185,123 @@ ZAV_combat_do_player_actions = {
 
         ZAV_combat_heal = yes
     }
+    if = {
+        limit = {
+            is_in_array = { ZAV_player_selected_actions = 7 }
+        }
+
+        set_temp_variable = { action = 7 }
+        set_temp_variable = { hit_result = 0 }
+        set_temp_variable = { hit_chance = 90 }
+
+        add_to_temp_variable = { total_wyrd_cost = 4 }
+
+        ZAV_combat_action_calculate_outcome = yes
+
+        if = {
+            limit = { check_variable = { hit_result > 0 } }
+
+            set_temp_variable = { damage = 3 }
+
+            if = {
+                limit = {
+                    is_in_array = { ZAV_combat_enemy_status_effects = 2 }
+                }
+
+                add_to_temp_variable = { damage = 7 }
+            }
+
+            ZAV_combat_action_apply_critical = yes
+
+            multiply_temp_variable = { damage = damage_multiplier }
+            divide_temp_variable = { damage = ZAV_enemy_defense_multiplier }
+            round_temp_variable = damage
+
+            add_to_temp_variable = { total_damage = damage }
+
+            set_temp_variable = { stat = damage }
+            ZAV_combat_log_action = yes
+
+            ZAV_combat_attack = yes
+        }
+        else = {
+            set_temp_variable = { stat = 0 }
+            ZAV_combat_log_action = yes
+        }
+    }
+    if = {
+        limit = {
+            is_in_array = { ZAV_player_selected_actions = 8 }
+        }
+
+        set_temp_variable = { action = 8 }
+
+        set_temp_variable = { outcome = 1 }
+        set_temp_variable = { stat = 0 }
+        ZAV_combat_log_action = yes
+
+        set_temp_variable = { effect = 2 }
+        set_temp_variable = { amount = 0 }
+        ZAV_combat_player_remove_status_effect = yes
+
+        set_temp_variable = { effect = 4 }
+        set_temp_variable = { amount = 1 }
+        ZAV_combat_player_get_status_effect = yes
+    }
+    if = {
+        limit = {
+            is_in_array = { ZAV_player_selected_actions = 9 }
+        }
+
+        set_temp_variable = { action = 9 }
+        set_temp_variable = { hit_result = 0 }
+        set_temp_variable = { hit_chance = 80 }
+
+        add_to_temp_variable = { total_wyrd_cost = 7 }
+
+        ZAV_combat_action_calculate_outcome = yes
+
+        if = {
+            limit = { check_variable = { hit_result > 0 } }
+
+            set_temp_variable = { damage = 5 }
+
+            if = {
+                limit = {
+                    is_in_array = { ZAV_combat_enemy_status_effects = 1 }
+                }
+
+                add_to_temp_variable = { damage = 10 }
+            }
+
+            ZAV_combat_action_apply_critical = yes
+
+            multiply_temp_variable = { damage = damage_multiplier }
+            divide_temp_variable = { damage = ZAV_enemy_defense_multiplier }
+            round_temp_variable = damage
+
+            add_to_temp_variable = { total_damage = damage }
+
+            set_temp_variable = { stat = damage }
+            ZAV_combat_log_action = yes
+
+            if = {
+                limit = {
+                    is_in_array = { ZAV_combat_enemy_status_effects = 1 }
+                }
+
+                set_temp_variable = { effect = 3 }
+                set_temp_variable = { amount = 1 }
+                ZAV_combat_player_get_status_effect = yes
+            }
+
+            ZAV_combat_attack = yes
+        }
+        else = {
+            set_temp_variable = { stat = 0 }
+            ZAV_combat_log_action = yes
+        }
+    }
 }
 
 ### HIT AND CRIT CHANCE ###
@@ -254,12 +371,34 @@ ZAV_combat_calculate_player_actions = {
         }
         add_to_array = { ZAV_combat_available_actions = 5 }  # CORRUPT
     }
-    
+
     if = {
         limit = {
             is_in_array = { ZAV_combat_equipped_artifacts = 11 }
         }
         add_to_array = { ZAV_combat_available_actions = 6 }  # JUSTICE
+    }
+
+    if = {
+        limit = {
+            is_in_array = { ZAV_combat_equipped_artifacts = 10 }
+        }
+        add_to_array = { ZAV_combat_available_actions = 8 }  # BANISH EVIL
+    }
+
+    if = {
+        limit = {
+            is_in_array = { ZAV_combat_equipped_artifacts = 12 }
+        }
+        add_to_array = { ZAV_combat_available_actions = 9 }  # GODDESS'S EMBRACE
+    }
+
+    # Actions enabled by level
+    if = {
+        limit = {
+            check_variable = { ZAV_player_level > 1 }
+        }
+        add_to_array = { ZAV_combat_available_actions = 7 }  # CONDEMNATION
     }
 }
 
@@ -286,4 +425,13 @@ ZAV_combat_setup_actions_data = {
 
     # Justice #
     add_to_array = { ZAV_combat_actions_wyrd_costs = 10 }
+
+    # Condemnation #
+    add_to_array = { ZAV_combat_actions_wyrd_costs = 4 }
+
+    # Banish Evil #
+    add_to_array = { ZAV_combat_actions_wyrd_costs = 3 }
+
+    # Goddess's Embrace #
+    add_to_array = { ZAV_combat_actions_wyrd_costs = 7 }
 }

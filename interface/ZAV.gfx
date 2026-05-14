@@ -105,62 +105,137 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_ZAV_blank_artifact"
-		texturefile = "gfx/interface/ZAV/ZAV_blank.dds"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_blank.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ZAV_artifact_1"
-		texturefile = "gfx/interface/ZAV/ZAV_blood_of_king_arthur_artifact.dds"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_blood_of_king_arthur_artifact.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ZAV_artifact_2"
-		texturefile = "gfx/interface/ZAV/ZAV_ashes_of_the_green_knight.dds"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_ashes_of_the_green_knight.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ZAV_artifact_3"
-		texturefile = "gfx/interface/ZAV/ZAV_corrupted_rose.dds"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_corrupted_rose.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ZAV_artifact_4"
-		texturefile = "gfx/interface/ZAV/ZAV_fallen_hero_sword.dds"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_fallen_hero_sword.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ZAV_artifact_5"
-		texturefile = "gfx/interface/ZAV/ZAV_shroud_of_the_fey.dds"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_shroud_of_the_fey.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ZAV_artifact_6"
-		texturefile = "gfx/interface/ZAV/ZAV_twisted_grail.dds"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_twisted_grail.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ZAV_artifact_7"
-		texturefile = "gfx/interface/ZAV/ZAV_blighted_flesh_of_a_false_god.dds"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_blighted_flesh_of_a_false_god.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ZAV_artifact_8"
-		texturefile = "gfx/interface/ZAV/ZAV_true_excalibur.dds"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_true_excalibur.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ZAV_artifact_9"
-		texturefile = "gfx/interface/ZAV/ZAV_putrid_crustacean.dds"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_putrid_crustacean.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ZAV_artifact_10"
-		texturefile = "gfx/interface/ZAV/ZAV_warding_talisman.dds"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_warding_talisman.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ZAV_artifact_11"
-		texturefile = "gfx/interface/ZAV/ZAV_elias_thornes_timepiece.dds"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_elias_thornes_timepiece.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_12"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_shriveled_finger.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_13"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_severed_hand.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_14"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_shards_of_arondight.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_15"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_blackstone_pendant.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_16"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_bleeding_whetstone.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_17"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_enchanted_drinking_horn.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_18"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_lunar_coat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_19"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_lunete_ring.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_20"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_murderer_knife.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_21"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_remnants_of_prydwen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_22"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_spear_of_the_dying_king.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_23"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_the_fool.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_24"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_the_silver_queen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_25"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_the_veiled_thorn.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_artifact_26"
+		texturefile = "gfx/interface/ZAV/artifacts/ZAV_whispering_cauldron.dds"
 	}
 
 	# ENCOUNTERS #
@@ -353,6 +428,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/ZAV/combat/actions/ZAV_action_justice.dds"
 	}
 
+	spriteType = {
+		name = "GFX_ZAV_combat_action_7"
+		texturefile = "gfx/interface/ZAV/combat/actions/ZAV_action_condemnation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_combat_action_8"
+		texturefile = "gfx/interface/ZAV/combat/actions/ZAV_action_banish_evil.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_combat_action_9"
+		texturefile = "gfx/interface/ZAV/combat/actions/ZAV_action_goddess_embrace.dds"
+	}
+
 	# COMBAT #
 
 	spriteType = {
@@ -453,6 +543,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ZAV_end_turn_button"
 		texturefile = "gfx/interface/ZAV/combat/ZAV_end_turn_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZAV_enter_combat_button"
+		texturefile = "gfx/interface/ZAV/combat/ZAV_enter_combat_button.dds"
 	}
 
 	progressbartype = {
