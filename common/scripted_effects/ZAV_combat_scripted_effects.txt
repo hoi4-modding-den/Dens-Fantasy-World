@@ -51,9 +51,6 @@ ZAV_combat_start = {
     set_variable = { ZAV_combat_player_health = ZAV_combat_player_max_health }
     set_variable = { ZAV_combat_player_wyrd = ZAV_combat_player_max_wyrd }
     set_variable = { ZAV_combat_remaining_wyrd = ZAV_combat_player_wyrd }
-    set_variable = { ZAV_combat_player_hit_chance_modif = ZAV_player_hit_chance_modif }
-    set_variable = { ZAV_combat_player_crit_chance = ZAV_player_crit_chance }
-    set_variable = { ZAV_combat_player_crit_damage_modif = ZAV_player_crit_damage_modif }
     set_variable = { ZAV_player_defense_multiplier = 1 }
     set_variable = { ZAV_combat_remaining_actions = ZAV_combat_player_max_actions }
 
