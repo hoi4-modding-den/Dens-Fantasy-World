@@ -96,3 +96,18 @@ ZLF_invite_more_allies_cat = {
 		is_faction_leader = yes
 	}
 }
+
+ZLF_little_republics_cat = {
+
+	icon = spr_the_seeds_of_revolution
+	
+	allowed = {
+		original_tag = ZLF
+	}
+
+	priority = 50
+
+	visible = {
+		has_completed_focus = ZLF_promote_local_cooperation
+	}
+}

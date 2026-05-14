@@ -332,6 +332,11 @@ spriteTypes = {
         texturefile = "gfx/leaders/ZLF/portrait_ZLF_turron.png"
     }
 
+    spriteType = {
+        name = "GFX_portrait_ZLF_elaphus"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_elaphus.png"
+    }
+
     # GENERIC LEADER
 
     spriteType = {
@@ -537,6 +542,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/traits/scientist_traits/scientist_trait_electronics_specialist.dds"
 	}
 
+    spriteType = {
+		name = "GFX_trait_ZLF_fire_elementalist"
+		texturefile = "gfx/interface/traits/personal/trait_SPA_carlist_loyalties.dds"
+	}
+
 
     # FACTION RULES
 
@@ -581,6 +591,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ZLF_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_ZLF_heaven_piercer_equipment_medium"
+		texturefile = "gfx/interface/technologies/ZLF_heaven_piercer_equipment.dds"
 	}
 
     

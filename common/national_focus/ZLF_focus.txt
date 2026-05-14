@@ -1881,6 +1881,40 @@ focus_tree={
 	}
 
 	focus = {
+		id = ZLF_heaven_piercers
+		icon = GFX_focus_CZE_military_aeronautical_institute
+        prerequisite = { focus = ZLF_aerostatic_brigades }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = ZLF_aerostatic_brigades
+		
+		cost = 5
+
+		ai_will_do = {
+            base = 10
+        }
+		
+		available = {
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				has_tech = improved_large_airframe
+			}
+			else = {
+				has_tech = tactical_bomber2
+			}
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+			set_technology = { ZLF_heaven_piercer_tech = 1 }
+		}
+	}
+
+	focus = {
 		id = ZLF_utilise_civil_war_experience
 		icon = GFX_goal_generic_army_doctrines
         prerequisite = { focus = ZLF_military_modernisation_committee }
@@ -2852,6 +2886,7 @@ focus_tree={
 			}
 
 			# when in a defensive war, Meisendorff can demand control as minister of defence
+			set_country_flag = ZLF_meisendorffs_defence_ministry_coup_unlocked
 		}
 	}
 
@@ -3650,7 +3685,7 @@ focus_tree={
 			ZSP = {
 				OR = {
 					exists = no
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 				}
 			}
@@ -3659,6 +3694,10 @@ focus_tree={
 		will_lead_to_war_with = ZSP
 		
 		completion_reward = {
+			if = {
+				limit = { is_in_faction_with = ZSP }
+				remove_from_faction = ZSP
+			}
 			create_wargoal = {
 				target = ZSP
 				type = take_core_state
@@ -3710,6 +3749,7 @@ focus_tree={
 			}
 
 			703 = {
+				set_state_name = STATE_703
 				add_manpower = 5000
 				set_state_category = rural
 				effect_tooltip = {
@@ -3720,6 +3760,7 @@ focus_tree={
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			591 = {
+				set_state_name = STATE_591
 				add_manpower = 5000
 				set_state_category = rural
 				effect_tooltip = {
@@ -3730,6 +3771,7 @@ focus_tree={
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			873 = {
+				set_state_name = STATE_873
 				add_manpower = 5000
 				set_state_category = rural
 				effect_tooltip = {
@@ -3740,6 +3782,7 @@ focus_tree={
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			756 = {
+				set_state_name = STATE_756
 				add_manpower = 10000
 				set_state_category = town
 				effect_tooltip = {
@@ -3750,6 +3793,7 @@ focus_tree={
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			601 = {
+				set_state_name = STATE_601
 				add_manpower = 12000
 				set_state_category = large_town
 				effect_tooltip = {
@@ -4476,7 +4520,7 @@ focus_tree={
         }
 		
 		completion_reward = {
-            # unlocks decisions to apply a state modifier
+			unlock_decision_category_tooltip = ZLF_little_republics_cat
 		}
 	}
 

@@ -25,6 +25,25 @@ ZLF_orchidee_sb_states = {
         state = 850
     }
 }
+ZLF_einoede_sb_states = {
+    OR = {
+        state = 162
+        state = 269
+        state = 250
+        state = 176
+        state = 577
+        state = 730
+        state = 888
+        state = 739
+        state = 648
+        state = 261
+        state = 821
+        state = 710
+        state = 644
+        state = 682
+        state = 679
+    }
+}
 ZLF_elotropia_sb_state = {
     OR = {
         state = 732
@@ -100,6 +119,58 @@ ZLF_wealas_sb_state = {
 ZLF_paam_sb_state = {
     region = 11
     NOT = { state = 165 }
+}
+ZLF_immernoch_sb_state = {
+    OR = {
+        state = 1257
+        state = 705
+        state = 580
+        state = 1248
+        state = 1249
+        state = 1250
+        state = 625
+        state = 1247
+        state = 713
+        state = 858
+    }
+}
+ZLF_wighardia_sb_state = {
+    OR = {
+        state = 782
+        state = 1251
+        state = 656
+        state = 665
+        state = 612
+        state = 1246
+        state = 678
+        state = 829
+    }
+}
+ZLF_deer_sb_state = {
+    OR = {
+        state = 666
+        state = 822
+        state = 883
+        state = 791
+        state = 646
+        state = 1244
+    }
+}
+ZLF_sardine_sb_state = {
+    OR = {
+        state = 1224
+        state = 777
+        state = 814
+        state = 746
+        state = 787
+    }
+}
+ZLF_urhu_sb_state = {
+    OR = {
+        state = 816
+        state = 727
+        state = 843
+    }
 }
 
 ZLF_is_despotist_ideology = {

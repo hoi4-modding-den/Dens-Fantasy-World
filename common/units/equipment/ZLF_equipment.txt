@@ -1,0 +1,78 @@
+equipments = {
+	ZLF_heaven_piercer_equipment = {
+		year = 1944
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_strat_bomber_equipment
+		is_buildable = no
+		type = {
+			strategic_bomber
+		}
+
+		allowed_types = {
+			strategic_bomber
+		}
+		allow_mission_type = training
+		group_by = archetype
+		sprite = mothership
+		air_map_icon_frame = 1
+		interface_category = interface_category_air
+		
+		interface_overview_category_index = 1
+	}
+
+	ZLF_heaven_piercer_equipment_0 = {
+		year = 1944
+
+		archetype = ZLF_heaven_piercer_equipment
+		priority = 100
+
+		allow_mission_type = {
+			air_superiority
+            interception
+
+            recon
+
+			cas
+			strategic_bomber
+			attack_logistics
+
+            naval_bomber
+			port_strike
+			naval_mines_planting
+			naval_mines_sweeping
+			naval_patrol
+		}
+
+		air_range = 7500
+		maximum_speed = 500
+		air_agility = 20
+		air_attack = 250
+		air_defence = 100
+
+		upgrades = {
+			plane_gun_upgrade
+			plane_range_upgrade
+			plane_engine_upgrade
+			plane_reliability_upgrade
+		}
+
+		lend_lease_cost = 20
+		air_superiority = 10
+		reliability = 0.75
+
+		surface_detection = 40 # For airwing of 100 planes (Destroyer I: 20 surface detection)
+        sub_detection = 10 # For airwing of 100 planes (Destroyer I: 5 sub detection )
+
+		resources = {
+			aluminium = 10
+            chromium = 2
+			rubber = 3
+		}
+		build_cost_ic = 200
+		manpower = 500
+		fuel_consumption = 1.5
+
+	}
+}

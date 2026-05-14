@@ -1,5 +1,12 @@
 ZKN_anti_military_apparatus_modifier = {
-	enable = { owner = { original_tag = ZKN } }
+    remove_trigger = {
+        ROOT = { # ROOT refers to the state on which the modifier is added
+            OR = {
+                NOT = { is_owned_by = ZKN } 
+                NOT = { is_controlled_by = ZKN } 
+            }
+        }
+    }
 
 	icon = GFX_modifier_generic_guerilla_base
 

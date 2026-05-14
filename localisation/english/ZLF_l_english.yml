@@ -61,6 +61,10 @@
  ZLF_orchidee_republic_DEF: "the Popular Republic of Orchidea"
  ZLF_orchidee_republic_ADJ: "Orchidean"
 
+ ZLF_einoede_republic: "Einöde Reconstruction Authority"
+ ZLF_einoede_republic_DEF: "the Einöde Reconstruction Authority"
+ ZLF_einoede_republic_ADJ: "Einöde"
+
  ZLF_balekelemi_republic: "Elotropian Federation"
  ZLF_balekelemi_republic_DEF: "the Federation of Elotropian Peoples' States"
  ZLF_balekelemi_republic_ADJ: "Elotropian"
@@ -80,6 +84,26 @@
  ZLF_paam_republic: "Grand Cape Commonweal"
  ZLF_paam_republic_DEF: "the Federative Commonweal of the Grand Cape Territories of Paam"
  ZLF_paam_republic_ADJ: "Paam"
+
+ ZLF_immernoch_republic: "United Republics of Immernoch"
+ ZLF_immernoch_republic_DEF: "the United Republics of Immernoch"
+ ZLF_immernoch_republic_ADJ: "Immernoch"
+
+ ZLF_wighardia_republic: "Wighardian Marxist Republic"
+ ZLF_wighardia_republic_DEF: "the Wighardian Marxist Republic"
+ ZLF_wighardia_republic_ADJ: "Wighardian"
+
+ ZLF_deer_republic: "Cervidae Common Republic"
+ ZLF_deer_republic_DEF: "the Cervidae Common Republic"
+ ZLF_deer_republic_ADJ: "Cervidae"
+
+ ZLF_sardine_republic: "Workers' Federation of Çialazar"
+ ZLF_sardine_republic_DEF: "the Workers' Federation of Çialazar"
+ ZLF_sardine_republic_ADJ: "Çielze"
+
+ ZLF_urhu_republic: "Mountainous Republic of Urhú"
+ ZLF_urhu_republic_DEF: "the Mountainous Republic of Urhú"
+ ZLF_urhu_republic_ADJ: "Urhú"
 
 
 # FACTIONS
@@ -121,6 +145,8 @@
  ZLF_democratic_party_sp_long: "Socialist Party"
  ZLF_democratic_party_gkp: "GKP"
  ZLF_democratic_party_gkp_long: "Gardenian Constitutional Party"
+ ZLF_democratic_party_defence_ministry: "Verteidigungsministerium"
+ ZLF_democratic_party_defence_ministry_long: "Meisendorff's War Cabinet"
  ZLF_democratic_party_elbian: "Elbska Ludowa Strona"
  ZLF_democratic_party_elbian_long: "Elbian Peoples' Party" # Elbian CW only
  ZLF_democratic_party_NEP: "NEP"
@@ -134,6 +160,8 @@
  ZLF_democratic_party_celandra_long: "International Harmonist Party"
  ZLF_democratic_party_orchidee: "OPF"
  ZLF_democratic_party_orchidee_long: "Orchidean Popular Front"
+ ZLF_democratic_party_einoede: "Mandatsregierung"
+ ZLF_democratic_party_einoede_long: "Mandate Government"
  ZLF_communism_party_elotropia: "BYH"
  ZLF_communism_party_elotropia_long: "Balekelemi Peoples' Union"
  ZLF_democratic_party_korelia: "DHP"
@@ -144,6 +172,18 @@
  ZLF_democratic_party_wealas_long: "Universal Bioregionalist Front"
  ZLF_democratic_party_paam: "PFP"
  ZLF_democratic_party_paam_long: "Paam Federalist Party"
+ ZLF_democratic_party_immernoch: "REP"
+ ZLF_democratic_party_immernoch_long: "Republican Unity Party"
+ ZLF_communism_party_wighardia: "WKP"
+ ZLF_communism_party_wighardia_long: "Wighardian Communist Party"
+ ZLF_democratic_party_wighardia: "KfFW"
+ ZLF_democratic_party_wighardia_long: "Coalition for a Free Wighardia"
+ ZLF_democratic_party_deer: "Cervidaeists"
+ ZLF_democratic_party_deer_long: "Cervidae Liberation Party"
+ ZLF_communism_party_sardine: "ÇZF"
+ ZLF_communism_party_sardine_long: "Çielze United Front"
+ ZLF_democratic_party_urhu: "Free Leagues"
+ ZLF_democratic_party_urhu_long: "Free Leagues of Urhú"
 
 
 # IDEOLOGIES
@@ -199,6 +239,7 @@
  ZLF_john_smith_name: "John Smith"
  ZLF_richard_anderson_name: "Richard Anderson"
  ZLF_turron_name: "Turrón"
+ ZLF_elaphus_name: "Elaphus"
 
 
 # TRAITS
@@ -229,6 +270,7 @@
  ZLF_environmentalist_freedom_fighter: "Environmentalist Freedom Fighter"
  ZLF_honour_knight_of_the_domowina: "Honour Knight of the Domowina"
  ZLF_speaker_of_the_legislative_assembly: "Speaker of the Legislative Assembly"
+ ZLF_pan_cervidae_democrat: "Pan-Cervidae Democrat"
 
  ZLF_technocratic_tendencies: "Reformist Technocrat"
  ZLF_centre_marxist_man: "Centre Marxist Party Leader"
@@ -256,6 +298,8 @@
 
  ZLF_raserei: "Raserei"
  ZLF_raserei_desc: "§LSchneller! Schneller! Schneller!§!"
+ ZLF_fire_elementalist: "Daughter of the Sun"
+ ZLF_fire_elementalist_desc: "§LFew are of a more mysterious origin than the fire mages. Referring to themselves as 'daughters of the sun', these flame-adept sorcerers are combat trained and stand a good chance in any kerfuffle.§!"
 
 
 # IDEAS
@@ -339,6 +383,7 @@
  ZLF_elbian_autonomy_2_desc: "The Elbian population of the Free State of Wjelećina is mostly comprised of descendants of refugees who fled from the lawless lands of Alstroemeria, though a native Elbian population existed in the state before them."
  ZLF_elbian_autonomy_3: "Elbian Autonomy (Freistaat Rudne Horiny)"
  ZLF_elbian_autonomy_3_desc: "The Free State of Rudne Horiny encompasses the Elbian lands in the Erzgebirge, whose Elbian name is Rudne Horiny."
+ ZLF_little_republic_modifier: "Tewarean Self-Governance"
 
 
 # OPINION MODIFIERS
@@ -361,34 +406,43 @@
 
  ZLF_establish_sibling_republics_cat: "Horizontal Self-Coordination"
  ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED: "owned and controlled Highlighted States"
+ ZLF_establish_sibling_republic_tt: "Release §Y$republic_name$§! in §YHighlighted States§! controlled by us."
  ZLF_establish_celandra_sibling_republic: "Establish a Celandran Sibling Republic"
  ZLF_establish_celandra_sibling_republic_desc: "The People of Celandra are tired of monarchist tyranny. Thus, we will establish a Sibling Republic, following the ideals of the Edelweiss Revolution."
- ZLF_establish_celandra_sibling_republic_tt: "Release §Y$ZLF_celandra_republic_DEF$§! in §YHighlighted States§! controlled by us."
  ZLF_transfer_state_to_celandra_sb: "Transfer [FROM.GetName] to our Celandran Allies"
  ZLF_establish_orchidee_sibling_republic: "Establish an Orchidean Sibling Republic"
  ZLF_establish_orchidee_sibling_republic_desc: "The Northern lands lying between the Einöde and Celandra Proper are known as Orchidee in Gardenian. It should therefore only be right to grant them their own Sibling Republic, independent from Celandra."
- ZLF_establish_orchidee_sibling_republic_tt: "Release §Y$ZLF_orchidee_republic_DEF$§! in §YHighlighted States§! controlled by us."
  ZLF_transfer_state_to_orchidee_sb: "Transfer [FROM.GetName] to our Orchidean Allies"
+ ZLF_establish_einoede_sibling_republic: "Establish an Einöde Sibling Republic"
+ ZLF_establish_einoede_sibling_republic_desc: ""
+ ZLF_transfer_state_to_einoede_sb: "Transfer [FROM.GetName] to our Ödnean Allies"
  ZLF_establish_elotropia_sibling_republic: "Establish an Elotropian Sibling Republic"
  ZLF_establish_elotropia_sibling_republic_desc: "The chaotic regions known in Gardenian as Elotropien and in their native language as the Balekelemi region has significantly destabilised, even moreso than Gardenia. To help them back on the right path, a Republican Administration is needed."
- ZLF_establish_elotropia_sibling_republic_tt: "Release §Y$ZLF_balekelemi_republic_DEF$§! in §YHighlighted States§! controlled by us."
  ZLF_transfer_state_to_elotropia_sb: "Transfer [FROM.GetName] to our Elotropian Allies"
  ZLF_establish_korelia_sibling_republic: "Establish a Korelian Sibling Republic"
  ZLF_establish_korelia_sibling_republic_desc: "Korelia, in a way, is Gardenian too. But instead of attempting to integrate them into our Republic, we shall grant them an independent Sibling Republic, instead only directly integrating the small border region of Linden, where Gardenian natives are most common."
- ZLF_establish_korelia_sibling_republic_tt: "Release §Y$ZLF_korelia_republic_DEF$§! in §YHighlighted States§! controlled by us."
  ZLF_transfer_state_to_korelia_sb: "Transfer [FROM.GetName] to our Korelian Allies"
  ZLF_establish_avalon_sibling_republic: "Establish an Avalonian Sibling Republic"
  ZLF_establish_avalon_sibling_republic_desc: "Avalon is an interesting case. The Knights of the Round Table are a nominally democratic institution, but with the formation of an Avalonian republic, certain public figures have stepped up to form political parties to participate in the democratic process."
- ZLF_establish_avalon_sibling_republic_tt: "Release §Y$ZLF_avalon_republic_DEF$§! in §YHighlighted States§! controlled by us."
  ZLF_transfer_state_to_avalon_sb: "Transfer [FROM.GetName] to our Avalonian Allies"
  ZLF_establish_wealas_sibling_republic: "Establish a Wēalan Sibling Republic"
  ZLF_establish_wealas_sibling_republic_desc: "WIP" #until some lore is developed
- ZLF_establish_wealas_sibling_republic_tt: "Release §Y$ZLF_wealas_republic_DEF$§! in §YHighlighted States§! controlled by us."
  ZLF_transfer_state_to_wealas_sb: "Transfer [FROM.GetName] to our Wēalan Allies"
  ZLF_establish_paam_sibling_republic: "Establish a Paam Sibling Republic"
  ZLF_establish_paam_sibling_republic_desc: "The Pan-Specific was a most unstable democracy, its flaws visible for the world to see. However, its principles of democratic self-determination are to be respected. The new Commonweal will learn from the mistakes of the past while keeping what worked well."
- ZLF_establish_paam_sibling_republic_tt: "Release §Y$ZLF_paam_republic_DEF$§! in §YHighlighted States§! controlled by us."
  ZLF_transfer_state_to_paam_sb: "Transfer [FROM.GetName] to our Paam Allies"
+ ZLF_establish_immernoch_sibling_republic: "Establish an Immernoch Sibling Republic"
+ ZLF_establish_immernoch_sibling_republic_desc: "WIP"
+ ZLF_transfer_state_to_immernoch_sb: "Transfer [FROM.GetName] to our Immernoch Allies"
+ ZLF_establish_deer_sibling_republic: "Establish a Cervidae Sibling Republic"
+ ZLF_establish_deer_sibling_republic_desc: "WIP"
+ ZLF_transfer_state_to_deer_sb: "Transfer [FROM.GetName] to our Cervidae Allies"
+ ZLF_establish_sardine_sibling_republic: "Establish a Çielze Sibling Republic"
+ ZLF_establish_sardine_sibling_republic_desc: "WIP"
+ ZLF_transfer_state_to_sardine_sb: "Transfer [FROM.GetName] to our Çielze Allies"
+ ZLF_establish_urhu_sibling_republic: "Establish a Urhú Sibling Republic"
+ ZLF_establish_urhu_sibling_republic_desc: "WIP"
+ ZLF_transfer_state_to_urhu_sb: "Transfer [FROM.GetName] to our Urhú Allies"
  ZLF_gardenisation_of_state: "Gardenianisation of [FROM.GetName]"
 
  ZLF_world_state_integration_cat: "Tewarean Federalisation"
@@ -400,6 +454,9 @@
 
  ZLF_invite_more_allies_cat: "Internationalist System Expansion"
  ZLF_invite_aligned_nation_to_faction: "Offer Membership to [FROM.GetNameDef]"
+
+ ZLF_little_republics_cat: "The Little Republics"
+ ZLF_form_little_republic_in_state: "Formalise Local Governance for [FROM.GetName]"
 
  ZLF_establish_elbian_autonomy_timer: "Demands for Elbian Autonomy"
  ZLF_end_of_elbian_insurrection: "Negotiations with the Moonsickle Alliance"
@@ -586,6 +643,8 @@
  ZLF_airspace_dominance_desc: ""
  ZLF_aerostatic_brigades: "Reorganise Aerostatic Brigades"
  ZLF_aerostatic_brigades_desc: ""
+ ZLF_heaven_piercers: "Heaven Piercers"
+ ZLF_heaven_piercers_desc: ""
  ZLF_utilise_civil_war_experience: "Utilise Civil War Experience"
  ZLF_utilise_civil_war_experience_desc: ""
  ZLF_elbian_auxiliary_brigades: "Elbian Auxiliary Brigades"
@@ -1008,6 +1067,22 @@
  ZLF_events.16.desc: "WIP"
  ZLF_events.16.a: "Neorevisionism is the way forward!"
 
+ ZLF_events.17.t: "Question of the National Defence Act"
+ ZLF_events.17.desc: "With the Republic under attack, the parliament has decided to put the invocation of Clause 7b of the National Defence Act, which grants the Defence Minister various semi-dictatorial powers for the duration of the war. The RTP and the GKP, who have on multiple occasions campaigned for the removal of the clause, have protested this course of action as giving too much power to Meisendorff, fearing he might use it to commit unconstitutional actions."
+ ZLF_events.17.a: "Meisendorff will defend the Republic!"
+ ZLF_events.17.b: "We cannot allow this blatant Coup d'Etat!"
+ ZLF_events.17.tt: "§gOnce the War is over, Elections will be held to restore parliamentarian democracy.§!"
+
+ ZLF_events.18.t: "Meisendorff ends State of Emergency"
+ ZLF_events.18.desc: "With the War over and the Republic safe, Meisendorff has ended the State of Emergency, but not before making a change to the National Defence Act, removing Clause 7b.\n \nHis actions to defend Gardenian Democracy will have him hailed as a hero."
+ ZLF_events.18.a: "The SP rides the wave of Meisendorff's popularity!"
+ ZLF_events.18.b: "The NDPvG will see to stable governance."
+
+ ZLF_events.19.t: "A Sweeping Change"
+ ZLF_events.19.desc: "WIP"
+ ZLF_events.19.a: "What was that saying again?"
+ ZLF_events.19.tt: "§CVerliebt, verlobt, verheiratet.§!"
+
 
  ZLF_news_events.1.t: "Revolutionaries win the Gardenian Civil War"
  ZLF_news_events.1.desc: "The Gardenian Civil War has come to an end, with the revolutionaries of the Edelweiss Banner-Army managing to successfully overthrow the Zinnian Monarchy.\n \nThe new republic has already begun to establish itself in the region, preparing to send unutilised military equipment to democratic forces in the north and making moves to align the Free City of Hortensia. But before Gardenia re-enters the geopolitical stage, they will first have to look inward and recover from the devastation of the civil war."
@@ -1021,6 +1096,7 @@
  ZLF_elbian_auxiliaries_tt: "§H$category_recon$§!:\n     $STAT_ARMY_RECON$§G+200.0%§!\n     §H$forest$§!\n        $STAT_ADJUSTER_MOVEMENT$§G+20.0%§!\n     §H$hills$§!\n        $STAT_ADJUSTER_MOVEMENT$§G+10.0%§!\n     §H$mountain$§!\n        $STAT_ADJUSTER_MOVEMENT$§G+10.0%§!\n     §H$jungle$§!\n        $STAT_ADJUSTER_MOVEMENT$§G+20.0%§!\n     §HBatallion Modifier: $category_special_forces_leg_infantry$§!\n        $STAT_ARMY_SOFT_ATTACK$§G+5.00%§!"
  ZLF_sappeurs: "Sappeur Corps"
  ZLF_sappeurs_tt: "§H$engineer$§!:\n     $STAT_ARMY_RECON$§G+100.0%§!\n     $STAT_ARMY_SOFT_ATTACK$§G+15%§!\n§H$assault_engineer$§!:\n     $STAT_ARMY_RECON$§G+100.0%§!\n     $STAT_ARMY_SOFT_ATTACK$§G+15%§!\n§H$armored_engineer$§!:\n     $STAT_ARMY_RECON$§G+100.0%§!\n     $STAT_ARMY_SOFT_ATTACK$§G+15%§!"
+ ZLF_heaven_piercer_tech: "Aerostatic Fortress"
 
  ZLF_infantry_equipment_0: "Gewehr 98"
  ZLF_infantry_equipment_0_short: "Gewehr 98"
@@ -1040,6 +1116,10 @@
  ZLF_train_equipment_1: "Class 18.4-5"
  ZLF_train_equipment_2: "DRB 52 Class"
  ZLF_train_equipment_3: "BR57 Class"
+
+ ZLF_heaven_piercer_equipment: "Fortress Plane Design"
+ ZLF_heaven_piercer_equipment_0: "Aerostatic Fortress"
+ ZLF_heaven_piercer_equipment_0_desc: "Improving upon regular heavy plane designs, Aerostatic Fortresses utilise the innate aero-magical potential of Elbian chromium. While their massive size limits their agility significantly, their firepower is unrivaled in the skies."
 
 
 # MAP STUFF
@@ -1063,6 +1143,11 @@
  ZLF_STATE_685: "Badenhaden" # Naanhaaraan
  ZLF_STATE_719: "Linden" # Lynn
  ZLF_STATE_740: "Abdillafei" # Abdillafa
+
+ ZKN_STATE_630: "Kiegen" # Kiegbuaa
+ ZKN_STATE_685: "Badenhaden" # Naanhaaraan
+ ZKN_STATE_719: "Linden" # Lynn
+ ZKN_STATE_740: "Abdillafei" # Abdillafa
 
  VICTORY_POINTS_8464: "Königsgnaden"
  VICTORY_POINTS_8464_com: "Schlesienstadt"
@@ -1103,6 +1188,16 @@
  ZLF_VICTORY_POINTS_10131: "Laborkomplex A" # Lab A
  ZLF_VICTORY_POINTS_10134: "Altlindenstadt" # Old Lynn
  ZLF_VICTORY_POINTS_10419: "Botzen" # Bosojatal
+
+ ZKN_VICTORY_POINTS_9178: "Weerendorf" # Weercaran
+ ZKN_VICTORY_POINTS_9179: "Billkohrburg" # Billaakor
+ ZKN_VICTORY_POINTS_9753: "Ruckendorf" # Rukuoti
+ ZKN_VICTORY_POINTS_9755: "Zinndel" # Zinhikuu
+ ZKN_VICTORY_POINTS_10126: "Schwanstedt" # Swasson
+ ZKN_VICTORY_POINTS_10129: "Neulindenstadt" # New Lynn
+ ZKN_VICTORY_POINTS_10131: "Laborkomplex A" # Lab A
+ ZKN_VICTORY_POINTS_10134: "Altlindenstadt" # Old Lynn
+ ZKN_VICTORY_POINTS_10419: "Botzen" # Bosojatal
 
 
 # ACHIEVEMENTS

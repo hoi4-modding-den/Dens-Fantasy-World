@@ -89,6 +89,7 @@ recruit_character = ZLF_adomas_dereska
 recruit_character = ZLF_john_smith
 recruit_character = ZLF_richard_anderson
 recruit_character = ZLF_turron
+recruit_character = ZLF_elaphus
 
 
 set_country_flag = DEN_no_generic_political_advisors

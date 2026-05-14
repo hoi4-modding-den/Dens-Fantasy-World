@@ -53,4 +53,19 @@ technologies = {
 		}
 	}
 
+	ZLF_heaven_piercer_tech = {
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ZLF_heaven_piercer_equipment_0
+		}
+
+	}
+
 }

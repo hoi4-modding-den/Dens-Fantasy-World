@@ -544,8 +544,21 @@ country_event = { # Fate of the Royal Family
 		name = ZLF_post_cw_events.10.c
 		ai_chance = { base = 0 }
 		add_stability = -0.2
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		effect_tooltip = { 
+			ZKN = { ZKN_michael_aurus = { set_nationality = ROOT } }
+		}
 		
-		set_country_flag = ZLF_rehabilitating_royalty # affects the ending event
+		hidden_effect = {
+			ZKN = { retire_character = ZKN_michael_aurus }
+
+			country_event = {
+				id = ZLF_events.19
+				days = 400
+			}
+		}
 	}
 }
 
@@ -831,6 +844,9 @@ country_event = { # Rathenau Affair
 
 	option = {
 		name = ZLF_events.5.a
+		ai_chance = {
+			base = 1
+		}
 		add_stability = -0.2
 
 		custom_effect_tooltip = generic_skip_one_line_tt
@@ -843,6 +859,9 @@ country_event = { # Rathenau Affair
 
 	option = {
 		name = ZLF_events.5.b
+		ai_chance = {
+			base = 3
+		}
 		add_political_power = -50
 
 		custom_effect_tooltip = generic_skip_one_line_tt
@@ -855,6 +874,9 @@ country_event = { # Rathenau Affair
 
 	option = {
 		name = ZLF_events.5.c
+		ai_chance = {
+			base = 50
+		}
 		trigger = {
 			has_government = democratic
 			any_character = {
@@ -948,6 +970,9 @@ country_event = { # New Elections
 
 	option = {
 		name = ZLF_events.9.a
+		ai_chance = {
+			base = 1
+		}
 		country_event = {
 			id = ZLF_events.7
 			days = 5
@@ -956,6 +981,9 @@ country_event = { # New Elections
 
 	option = {
 		name = ZLF_events.9.b
+		ai_chance = {
+			base = 3
+		}
 		trigger = { NOT = { has_country_flag = ZLF_prevented_vote_of_confidence } }
 		add_popularity = { ideology = ROOT popularity = -0.1 }
 
@@ -1162,7 +1190,7 @@ country_event = { # SP Majority
 	id = ZLF_events.16
 	title = ZLF_events.16.t
 	desc = ZLF_events.16.desc
-	picture = GFX_country_event_PLACEHOLDER
+	picture = GFX_report_event_PLACEHOLDER
 
 	is_triggered_only = yes
 
@@ -1200,7 +1228,7 @@ country_event = { # Meisendorff takes charge for National Defence
 	id = ZLF_events.17
 	title = ZLF_events.17.t
 	desc = ZLF_events.17.desc
-	picture = GFX_country_event_PLACEHOLDER
+	picture = GFX_report_event_PLACEHOLDER
 
 	is_triggered_only = yes
 
@@ -1209,8 +1237,8 @@ country_event = { # Meisendorff takes charge for National Defence
 		set_politics = {
 			ruling_party = democratic
 			elections_allowed = no
-			name = ZLF_democratic_party_sp
-			long_name = ZLF_democratic_party_sp_long
+			name = ZLF_democratic_party_defence_ministry
+			long_name = ZLF_democratic_party_defence_ministry_long
 		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
@@ -1224,11 +1252,81 @@ country_event = { # Meisendorff takes charge for National Defence
 				ZLF_michel_meisendorff = { remove_unit_leader_trait = recently_promoted }
 			}
 		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		custom_effect_tooltip = ZLF_events.17.tt
+		clr_country_flag = ZLF_meisendorffs_defence_ministry_coup_unlocked
+		set_country_flag = ZLF_trigger_election_after_war
 	}
 
 	option = {
 		name = ZLF_events.17.b
+		add_stability = 0.05
 		add_popularity = { ideology = democratic popularity = 0.05 }
+		clr_country_flag = ZLF_meisendorffs_defence_ministry_coup_unlocked
+	}
+}
+
+country_event = { # Post-Meisendorff Elections
+	id = ZLF_events.18
+	title = ZLF_events.18.t
+	desc = ZLF_events.18.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_government = democratic
+		has_counry_leader = { character = ZLF_michel_meisendorff ruling_only = yes }
+	}
+
+	option = {
+		name = ZLF_events.18.a
+		ai_chance = { base = 4 }
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			name = ZLF_democratic_party_sp
+			long_name = ZLF_democratic_party_sp_long
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		promote_character = ZLF_emilia_noveau
+	}
+
+	option = {
+		name = ZLF_events.18.b
+		ai_chance = { base = 1 }
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			name = ZLF_democratic_party
+			long_name = ZLF_democratic_party_long
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		if = {
+			limit = { NOT = { has_country_flag = ZLF_no_old_people } }
+			set_country_flag = ZLF_no_old_people
+		}
+		promote_character = ZLF_alois_rotrose
+	}
+}
+
+country_event = { # Former King Yaoi
+	id = ZLF_events.19
+	title = ZLF_events.19.t
+	desc = ZLF_events.19.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.19.a
+		custom_effect_tooltip = ZLF_events.19.tt
 	}
 }
 

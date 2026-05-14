@@ -76,6 +76,9 @@ declare_war_on = {
 }
 add_civil_war_target = ZLF
 
+give_guarantee = ZFD
+give_guarantee = ZFO
+
 country_lock_all_division_template = yes
 
 activate_mission = ZKN_hold_the_line

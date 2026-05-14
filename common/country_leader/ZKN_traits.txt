@@ -43,6 +43,17 @@ leader_traits = {
         random = no
     }
 
+    ZKN_heart_of_iron_trait = {
+        
+        industrial_capacity_factory = 0.1
+        conscription_factor = 0.15
+        army_attack_factor = 0.05
+
+        random = no
+    }
+
+
+
     ZLF_royal_army_chief = {
         sprite = 9
 

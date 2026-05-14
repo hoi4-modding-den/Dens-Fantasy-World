@@ -7,7 +7,7 @@ ZLF_elbian_lands = {
     local_building_slots_factor = -0.5
     state_resources_factor = -0.8
     local_resource_gain_efficiency_per_infrastructure = -0.1
-    recruitable_population = -0.25
+    local_manpower = -0.25
 
 }
 
@@ -16,8 +16,8 @@ ZLF_elbian_conscription = {
 
 	icon = GFX_modifiers_SOV_invaders_must_die
 
-	recruitable_population = 0.4
-    enemy_army_speed_factor = -0.05
+	local_manpower = 0.4
+    enemy_army_speed_factor = -0.15
 
 }
 
@@ -30,7 +30,7 @@ ZLF_elbian_autonomy_1 = { # Freistaat Domowina
     local_building_slots_factor = 0.4
     state_resources_factor = 0.4
     local_resource_gain_efficiency_per_infrastructure = 0.2
-    recruitable_population = 0.25
+    local_manpower = 0.25
 
 }
 
@@ -43,7 +43,7 @@ ZLF_elbian_autonomy_2 = { # Freistaat Wittingen
     local_building_slots_factor = 0.4
     state_resources_factor = 0.4
     local_resource_gain_efficiency_per_infrastructure = 0.2
-    recruitable_population = 0.25
+    local_manpower = 0.25
 
 }
 
@@ -56,6 +56,23 @@ ZLF_elbian_autonomy_3 = { # Freistaat Erzgebirge
     local_building_slots_factor = 0.4
     state_resources_factor = 0.4
     local_resource_gain_efficiency_per_infrastructure = 0.2
-    recruitable_population = 0.25
+    local_manpower = 0.25
+
+}
+
+ZLF_little_republic_modifier = {
+    enable = { always = yes }
+
+    icon = GFX_modifiers_FIN_confederated_finno_russian_republics
+
+    remove_trigger = {
+        ROOT = { is_core_of = CONTROLLER } # ROOT refers to the state on which the modifier is added
+    }
+
+    enemy_local_supplies = -0.15
+    enemy_army_speed_factor = -0.08
+    local_non_core_manpower = 0.25
+    state_resources_factor = 0.2
+    resistance_damage_to_garrison = -0.3
 
 }

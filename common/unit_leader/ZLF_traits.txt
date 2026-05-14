@@ -20,4 +20,28 @@ leader_traits = {
 		}
     }
 
+    ZLF_fire_elementalist = {
+        type = land
+
+        trait_type = personality_trait
+
+        allowed = {
+            FROM = { original_tag = ZLF }
+        }
+
+        new_commander_weight = {
+            factor = 0
+        }
+
+        modifier = {
+            acclimatization_hot_climate_gain_factor = 0.25
+            wounded_chance_factor = -0.5
+            army_morale_factor = 0.05
+		}
+
+        trait_xp_factor = {
+            desert_fox = 1
+        }
+    }
+
 }

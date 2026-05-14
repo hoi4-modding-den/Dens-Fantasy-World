@@ -307,7 +307,10 @@ ZLF_establish_sibling_republics_cat = {
         fire_only_once = yes
 
         complete_effect = {
-            custom_effect_tooltip = ZLF_establish_celandra_sibling_republic_tt
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_celandra_republic_DEF
+            }
             hidden_effect = {
                 create_dynamic_country = {
                     original_tag = XCE
@@ -331,7 +334,7 @@ ZLF_establish_sibling_republics_cat = {
                     ROOT = {
                         set_autonomy = {
                             target = PREV
-                            autonomous_state = autonomy_integrated_puppet
+                            autonomous_state = autonomy_puppet
                             end_wars = no
                             end_civil_wars = no
                         }
@@ -453,7 +456,10 @@ ZLF_establish_sibling_republics_cat = {
         fire_only_once = yes
 
         complete_effect = {
-            custom_effect_tooltip = ZLF_establish_orchidee_sibling_republic_tt
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_orchidee_republic_DEF
+            }
             hidden_effect = {
                 create_dynamic_country = {
                     original_tag = ZCT
@@ -477,7 +483,7 @@ ZLF_establish_sibling_republics_cat = {
                     ROOT = {
                         set_autonomy = {
                             target = PREV
-                            autonomous_state = autonomy_integrated_puppet
+                            autonomous_state = autonomy_puppet
                             end_wars = no
                             end_civil_wars = no
                         }
@@ -568,6 +574,138 @@ ZLF_establish_sibling_republics_cat = {
         
     }
 
+    ZLF_establish_einoede_sibling_republic = {
+
+        icon = generic_colonial_administration
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_einoede_sb_states = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_einoede_sb_states
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 7
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_einoede_republic_DEF
+            }
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = ZBT
+                    set_cosmetic_tag = ZLF_einoede_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_einoede_sb_states = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_einoede_sb_states = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    load_focus_tree = ZLF_generic_focus_tree
+
+                    set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_einoede
+                        long_name = ZLF_democratic_party_einoede_long
+                    }
+                    set_popularities = {
+                        democratic = 80
+                        communism = 0
+                        neutrality = 10
+                        fascism = 10
+                    }
+                    
+
+                    add_ideas = ZLF_sibling_republic_spirit
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_einoede_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_einoede_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_einoede_sb_states = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_einoede_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
     ZLF_establish_elotropia_sibling_republic = {
 
         icon = generic_colonial_administration
@@ -601,7 +739,10 @@ ZLF_establish_sibling_republics_cat = {
         fire_only_once = yes
 
         complete_effect = {
-            custom_effect_tooltip = ZLF_establish_elotropia_sibling_republic_tt
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_balekelemi_republic_DEF
+            }
             hidden_effect = {
                 create_dynamic_country = {
                     original_tag = ZFN
@@ -625,7 +766,7 @@ ZLF_establish_sibling_republics_cat = {
                     ROOT = {
                         set_autonomy = {
                             target = PREV
-                            autonomous_state = autonomy_integrated_puppet
+                            autonomous_state = autonomy_puppet
                             end_wars = no
                             end_civil_wars = no
                         }
@@ -755,7 +896,10 @@ ZLF_establish_sibling_republics_cat = {
         fire_only_once = yes
 
         complete_effect = {
-            custom_effect_tooltip = ZLF_establish_korelia_sibling_republic_tt
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_korelia_republic_DEF
+            }
             hidden_effect = {
                 create_dynamic_country = {
                     original_tag = ZKO
@@ -779,7 +923,7 @@ ZLF_establish_sibling_republics_cat = {
                     ROOT = {
                         set_autonomy = {
                             target = PREV
-                            autonomous_state = autonomy_integrated_puppet
+                            autonomous_state = autonomy_puppet
                             end_wars = no
                             end_civil_wars = no
                         }
@@ -912,7 +1056,10 @@ ZLF_establish_sibling_republics_cat = {
         fire_only_once = yes
 
         complete_effect = {
-            custom_effect_tooltip = ZLF_establish_avalon_sibling_republic_tt
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_avalon_republic_DEF
+            }
             hidden_effect = {
                 create_dynamic_country = {
                     original_tag = ZAV
@@ -936,7 +1083,7 @@ ZLF_establish_sibling_republics_cat = {
                     ROOT = {
                         set_autonomy = {
                             target = PREV
-                            autonomous_state = autonomy_integrated_puppet
+                            autonomous_state = autonomy_puppet
                             end_wars = no
                             end_civil_wars = no
                         }
@@ -1057,7 +1204,10 @@ ZLF_establish_sibling_republics_cat = {
         fire_only_once = yes
 
         complete_effect = {
-            custom_effect_tooltip = ZLF_establish_wealas_sibling_republic_tt
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_wealas_republic_DEF
+            }
             hidden_effect = {
                 create_dynamic_country = {
                     original_tag = ZKW
@@ -1081,7 +1231,7 @@ ZLF_establish_sibling_republics_cat = {
                     ROOT = {
                         set_autonomy = {
                             target = PREV
-                            autonomous_state = autonomy_integrated_puppet
+                            autonomous_state = autonomy_puppet
                             end_wars = no
                             end_civil_wars = no
                         }
@@ -1096,10 +1246,10 @@ ZLF_establish_sibling_republics_cat = {
                         long_name = ZLF_democratic_party_wealas_long
                     }
                     set_popularities = {
-                        democratic = 80
-                        communism = 0
-                        neutrality = 15
-                        fascism = 5
+                        democratic = 75
+                        communism = 5
+                        neutrality = 20
+                        fascism = 0
                     }
                     every_possible_country = {
                         limit = { has_character = ZLF_richard_anderson }
@@ -1171,7 +1321,7 @@ ZLF_establish_sibling_republics_cat = {
 
     ZLF_establish_paam_sibling_republic = {
 
-        icon = eng_trade_unions_support
+        icon = eng_puppet_usa
 
         ai_will_do = {
             base = 1
@@ -1202,7 +1352,10 @@ ZLF_establish_sibling_republics_cat = {
         fire_only_once = yes
 
         complete_effect = {
-            custom_effect_tooltip = ZLF_establish_paam_sibling_republic_tt
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_paam_republic_DEF
+            }
             hidden_effect = {
                 create_dynamic_country = {
                     original_tag = ZPS
@@ -1226,7 +1379,7 @@ ZLF_establish_sibling_republics_cat = {
                     ROOT = {
                         set_autonomy = {
                             target = PREV
-                            autonomous_state = autonomy_integrated_puppet
+                            autonomous_state = autonomy_puppet
                             end_wars = no
                             end_civil_wars = no
                         }
@@ -1307,6 +1460,695 @@ ZLF_establish_sibling_republics_cat = {
                 limit = {
                     is_subject_of = ROOT
                     has_cosmetic_tag = ZLF_paam_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
+    ZLF_establish_immernoch_sibling_republic = {
+
+        icon = eng_trade_unions_support
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_immernoch_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_immernoch_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 2
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_immernoch_republic_DEF
+            }
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = ZRA
+                    set_cosmetic_tag = ZLF_immernoch_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_immernoch_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_immernoch_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    load_focus_tree = ZLF_generic_focus_tree
+
+                    set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_immernoch
+                        long_name = ZLF_democratic_party_immernoch_long
+                    }
+                    set_popularities = {
+                        democratic = 70
+                        communism = 5
+                        neutrality = 20
+                        fascism = 5
+                    }
+                    
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_immernoch_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_immernoch_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_urhu_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_immernoch_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
+    ZLF_establish_wighardia_sibling_republic = {
+
+        icon = eng_trade_unions_support
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_wighardia_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_wighardia_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 2
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_wighardia_republic_DEF
+            }
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = ZCV
+                    set_cosmetic_tag = ZLF_wighardia_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_wighardia_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_wighardia_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    load_focus_tree = ZLF_generic_focus_tree
+
+                    set_politics = {
+                        ruling_party = communism
+                        elections_allowed = no
+                        name = ZLF_communism_party_wighardia
+                        long_name = ZLF_communism_party_wighardia_long
+                    }
+                    set_party_name = {
+                        ideology = democratic
+                        name = ZLF_democratic_party_wighardia
+                        long_name = ZLF_democratic_party_wighardia_long
+                    }
+                    set_popularities = {
+                        democratic = 30
+                        communism = 70
+                        neutrality = 0
+                        fascism = 0
+                    }
+                    
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_wighardia_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_wighardia_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_wighardia_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_wighardia_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
+    ZLF_establish_deer_sibling_republic = {
+
+        icon = eng_trade_unions_support
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_deer_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_deer_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 3
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_deer_republic_DEF
+            }
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = ZRB
+                    set_cosmetic_tag = ZLF_deer_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_deer_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_deer_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    load_focus_tree = ZLF_generic_focus_tree
+
+                    set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_deer
+                        long_name = ZLF_democratic_party_deer_long
+                    }
+                    set_popularities = {
+                        democratic = 75
+                        communism = 10
+                        neutrality = 15
+                        fascism = 0
+                    }
+                    every_possible_country = {
+                        limit = { has_character = ZLF_elaphus }
+                        ZLF_elaphus = {
+                            set_nationality = PREV.PREV
+                            add_country_leader_role = {
+                                character = ZLF_elaphus
+                                promote_leader = yes
+                                country_leader = {
+                                    ideology = environmentalism
+                                    expire = "1965.1.1.1"
+                                    traits = { ZLF_pan_cervidae_democrat }
+                                }
+                            }
+                        }
+                    }
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_deer_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_deer_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_deer_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_deer_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
+    ZLF_establish_sardine_sibling_republic = {
+
+        icon = eng_trade_unions_support
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_sardine_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_sardine_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 2
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_sardine_republic_DEF
+            }
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = ZIA
+                    set_cosmetic_tag = ZLF_sardine_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_sardine_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_sardine_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    load_focus_tree = ZLF_generic_focus_tree
+
+                    set_politics = {
+                        ruling_party = communism
+                        elections_allowed = no
+                        name = ZLF_communism_party_sardine
+                        long_name = ZLF_communism_party_sardine_long
+                    }
+                    set_popularities = {
+                        democratic = 10
+                        communism = 70
+                        neutrality = 15
+                        fascism = 5
+                    }
+                    
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_sardine_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_sardine_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_sardine_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_sardine_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
+    ZLF_establish_urhu_sibling_republic = {
+
+        icon = eng_trade_unions_support
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_urhu_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_urhu_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 0
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_urhu_republic_DEF
+            }
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = ZRU
+                    set_cosmetic_tag = ZLF_urhu_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_urhu_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_urhu_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    load_focus_tree = ZLF_generic_focus_tree
+
+                    set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_urhu
+                        long_name = ZLF_democratic_party_urhu_long
+                    }
+                    set_popularities = {
+                        democratic = 55
+                        communism = 10
+                        neutrality = 30
+                        fascism = 5
+                    }
+                    
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_urhu_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_urhu_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_urhu_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_urhu_republic
                 }
                 transfer_state = FROM
             }
@@ -1659,6 +2501,46 @@ ZLF_invite_more_allies_cat = {
             }
         }
 
+    }
+
+}
+
+ZLF_little_republics_cat = {
+
+    ZLF_form_little_republic_in_state = {
+
+        icon = generic_nationalism
+
+        cost = 25
+
+        ai_will_do = {
+            base = 10
+        }
+
+        available = {
+            FROM = {
+                is_fully_controlled_by = ROOT
+            }
+        }
+
+        state_target = yes
+
+        #on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                is_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { has_dynamic_modifier = { modifier = ZLF_little_republic_modifier scope = ROOT } }
+            }
+        }
+
+        complete_effect = {
+            FROM = {
+                add_dynamic_modifier = { modifier = ZLF_little_republic_modifier scope = ROOT }
+            }
+        }
+        
     }
 
 }

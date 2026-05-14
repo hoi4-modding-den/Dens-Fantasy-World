@@ -242,6 +242,15 @@ leader_traits = {
         random = no
     }
 
+    ZLF_pan_cervidae_democrat = {
+        
+        army_core_attack_factor = 0.1
+        army_org = 2.5
+        democratic_drift = 0.05
+
+        random = no
+    }
+
 
     # Advisors
 
@@ -426,10 +435,7 @@ leader_traits = {
     ZLF_military_theorist = {
 		sprite = 14
 		land_doctrine_cost_factor = -0.1
-        new_mobile_warfare_mastery_gain_factor = 0.1
-        superior_firepower_mastery_gain_factor = 0.1
-        grand_battleplan_mastery_gain_factor = 0.1
-        mass_assault_mastery_gain_factor = 0.1
+        land_mastery_gain_factor = 0.1
 
 		ai_will_do = {
 			factor = 1
@@ -442,6 +448,7 @@ leader_traits = {
         send_volunteer_size = 4
         opinion_gain_monthly_factor = 0.15
         army_morale_factor = 0.1
+        command_abilities_cost_factor = -0.25
 
         random = no
     }

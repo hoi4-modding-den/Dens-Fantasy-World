@@ -108,4 +108,38 @@ on_actions = {
         }
     }
 
+    on_war = {
+        effect = {
+            if = {
+                limit = {
+                    THIS = {
+                        has_government = democratic
+                        has_character = ZLF_michel_meisendorff
+                        has_country_flag = ZLF_meisendorffs_defence_ministry_coup_unlocked
+                    }
+                }
+                THIS = {
+                    country_event = ZLF_events.17
+                }
+            }
+        }
+    }
+
+    on_peace = {
+        effect = {
+            if = {
+                limit = {
+                    THIS = {
+                        has_government = democratic
+                        has_counry_leader = { character = ZLF_michel_meisendorff ruling_only = yes }
+                        has_country_flag = ZLF_trigger_election_after_war
+                    }
+                }
+                THIS = {
+                    country_event = { id = ZLF_events.18 days = 7 }
+                }
+            }
+        }
+    }
+
 }

@@ -509,6 +509,16 @@ ZKN_destroy_the_ama_cat = {
             base = 10
         }
 
+        available = {
+            if = {
+                limit = { has_dlc = "La Resistance" }
+                has_intelligence_agency = yes
+            }
+            FROM = {
+                is_controlled_by = ROOT
+            }
+        }
+
         visible = {
             FROM = {
                 is_controlled_by = ROOT

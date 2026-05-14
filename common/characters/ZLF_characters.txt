@@ -752,7 +752,7 @@ characters = {
         }
         
 		corps_commander = {
-            traits = { brave war_hero adaptable } # I think I might be tripping, I thought the heat specialist trait was vanilla, but its from EaW
+            traits = { brave war_hero ZLF_fire_elementalist }
             skill = 5
             attack_skill = 4
             defense_skill = 2
@@ -1105,6 +1105,15 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_portrait_ZLF_turron
+			}
+		}
+	}
+
+    ZLF_elaphus = {
+		name = ZLF_elaphus_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_elaphus
 			}
 		}
 	}
