@@ -1,4 +1,8 @@
 XCE = "countries/Celandra.txt"
+ZIL = "countries/Celandra.txt"
+ZVE = "countries/Celandra.txt"
+ZAU = "countries/Celandra.txt"
+ZIS = "countries/Celandra.txt"
 ZPI = "countries/Penguin Island.txt"
 ZPK = "countries/Penguin Kingdom.txt"
 ZPT = "countries/Penguin Theocracy.txt"

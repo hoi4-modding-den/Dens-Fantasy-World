@@ -1477,3 +1477,19 @@ Z79 = {
 	color = rgb { 126 67 35 }
 	color_ui = rgb { 126 67 35 }
 }
+ZIL = {
+	color = rgb { 60 45 135 }
+	color_ui = rgb { 35 20 112 }
+}
+ZVE = {
+	color = rgb { 65 135 100 }
+	color_ui = rgb { 35 120 80 }
+}
+ZAU = {
+	color = rgb { 60 120 140 }
+	color_ui = rgb { 10 120 155 }
+}
+ZIS = {
+	color = rgb { 165 155 120  }
+	color_ui = rgb { 120 110 50 }
+}
