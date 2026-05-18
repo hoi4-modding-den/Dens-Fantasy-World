@@ -2461,7 +2461,16 @@ ZLF_invite_more_allies_cat = {
                 is_subject = no
                 NOT = { has_war_with = ROOT }
             }
-            ZLF_FROM_abides_by_joining_rules = yes
+            if = {
+                limit = { has_dlc = "No Compromise, No Surrender" }
+                ZLF_FROM_abides_by_joining_rules = yes
+            }
+            else = {
+                FROM = {
+                    capital_scope = { ZLF_is_on_continent_tewara = yes }
+                    ZLF_is_despotist_ideology = no 
+                }
+            }
         }
 
         targets_dynamic = yes
@@ -2472,9 +2481,18 @@ ZLF_invite_more_allies_cat = {
                 is_subject = no
                 has_rule = can_join_factions
             }
-            ZLF_FROM_abides_by_joining_rules = yes
             if = {
-                limit = { NOT = { has_rule = can_join_opposite_factions } }
+                limit = { has_dlc = "No Compromise, No Surrender" }
+                ZLF_FROM_abides_by_joining_rules = yes
+            }
+            else = {
+                FROM = {
+                    capital_scope = { ZLF_is_on_continent_tewara = yes }
+                    ZLF_is_despotist_ideology = no 
+                }
+            }
+            if = {
+                limit = { FROM = { NOT = { has_rule = can_join_opposite_factions } } }
                 has_government = FROM
             }
         }
