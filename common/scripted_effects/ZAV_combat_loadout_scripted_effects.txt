@@ -225,7 +225,7 @@ ZAV_combat_attack = {
     }
 }
 
-ZAV_combat_magic = {
+ZAV_combat_prayer = {
     for_each_loop = {
         array = ZAV_combat_equipped_artifacts
         value = artifact
@@ -291,7 +291,7 @@ ZAV_combat_heal = {
     }
 }
 
-ZAV_combat_saintly_action = {
+ZAV_combat_saintly = {
     for_each_loop = {
         array = ZAV_combat_equipped_artifacts
         value = artifact
@@ -308,6 +308,24 @@ ZAV_combat_saintly_action = {
             
             add_to_temp_variable = { total_wyrd_regen = 4 }
         }
+    }
+}
+
+ZAV_combat_unholy = {
+    for_each_loop = {
+        array = ZAV_combat_equipped_artifacts
+        value = artifact
+
+        # TODO
+    }
+}
+
+ZAV_combat_spiritual = {
+    for_each_loop = {
+        array = ZAV_combat_equipped_artifacts
+        value = artifact
+
+        # TODO
     }
 }
 

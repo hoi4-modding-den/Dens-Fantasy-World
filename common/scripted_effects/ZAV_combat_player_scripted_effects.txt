@@ -12,7 +12,6 @@ ZAV_combat_do_player_actions = {
 
         set_temp_variable = { action = 1 }
         set_temp_variable = { hit_result = 0 }
-        set_temp_variable = { hit_chance = 80 }
 
         ZAV_combat_action_calculate_outcome = yes
 
@@ -56,7 +55,7 @@ ZAV_combat_do_player_actions = {
         set_temp_variable = { stat = wyrd_regen }
         ZAV_combat_log_action = yes
 
-        ZAV_combat_magic = yes
+        ZAV_combat_prayer = yes
     }
     if = {
         limit = {
@@ -85,7 +84,6 @@ ZAV_combat_do_player_actions = {
 
         set_temp_variable = { action = 4 }
         set_temp_variable = { hit_result = 0 }
-        set_temp_variable = { hit_chance = 95 }
 
         add_to_temp_variable = { total_wyrd_cost = 8 }
 
@@ -128,7 +126,6 @@ ZAV_combat_do_player_actions = {
 
         set_temp_variable = { action = 5 }
         set_temp_variable = { hit_result = 0 }
-        set_temp_variable = { hit_chance = 70 }
 
         add_to_temp_variable = { total_wyrd_cost = 6 }
 
@@ -150,11 +147,12 @@ ZAV_combat_do_player_actions = {
             set_temp_variable = { stat = damage }
             ZAV_combat_log_action = yes
 
-            ZAV_combat_attack = yes
-
             set_temp_variable = { effect = 2 }
             set_temp_variable = { amount = 2 }
             ZAV_combat_inflict_status_effect_on_enemy = yes
+
+            ZAV_combat_attack = yes
+            ZAV_combat_unholy = yes
         }
         else = {
             set_temp_variable = { stat = 0 }
@@ -184,6 +182,7 @@ ZAV_combat_do_player_actions = {
         ZAV_combat_player_get_status_effect = yes
 
         ZAV_combat_heal = yes
+        ZAV_combat_spiritual = yes
     }
     if = {
         limit = {
@@ -192,7 +191,6 @@ ZAV_combat_do_player_actions = {
 
         set_temp_variable = { action = 7 }
         set_temp_variable = { hit_result = 0 }
-        set_temp_variable = { hit_chance = 90 }
 
         add_to_temp_variable = { total_wyrd_cost = 4 }
 
@@ -223,6 +221,7 @@ ZAV_combat_do_player_actions = {
             ZAV_combat_log_action = yes
 
             ZAV_combat_attack = yes
+            ZAV_combat_saintly = yes
         }
         else = {
             set_temp_variable = { stat = 0 }
@@ -247,6 +246,9 @@ ZAV_combat_do_player_actions = {
         set_temp_variable = { effect = 4 }
         set_temp_variable = { amount = 1 }
         ZAV_combat_player_get_status_effect = yes
+
+        ZAV_combat_saintly = yes
+        ZAV_combat_spiritual = yes
     }
     if = {
         limit = {
@@ -255,7 +257,6 @@ ZAV_combat_do_player_actions = {
 
         set_temp_variable = { action = 9 }
         set_temp_variable = { hit_result = 0 }
-        set_temp_variable = { hit_chance = 80 }
 
         add_to_temp_variable = { total_wyrd_cost = 7 }
 
@@ -296,6 +297,7 @@ ZAV_combat_do_player_actions = {
             }
 
             ZAV_combat_attack = yes
+            ZAV_combat_unholy = yes
         }
         else = {
             set_temp_variable = { stat = 0 }
@@ -307,9 +309,16 @@ ZAV_combat_do_player_actions = {
 ### HIT AND CRIT CHANCE ###
 
 ZAV_combat_action_calculate_outcome = {
-    multiply_temp_variable = { hit_chance = ZAV_player_hit_chance_modif }
-    
-    round_temp_variable = hit_chance
+    set_temp_variable = { hit_chance = ZAV_combat_actions_hit_chances^action }
+    set_temp_variable = { miss_chance = 100 }
+    subtract_from_temp_variable = { miss_chance = hit_chance }
+    divide_temp_variable = { miss_chance = ZAV_combat_player_hit_chance_modif }
+    round_temp_variable = miss_chance
+    set_temp_variable = { hit_chance = 100 }
+    subtract_from_temp_variable = { hit_chance = miss_chance }
+
+    log = "hit chance: [?hit_chance]%"
+    log = "miss chance: [?miss_chance]%"
 
     clamp_temp_variable = {
         var = hit_chance
@@ -405,33 +414,44 @@ ZAV_combat_calculate_player_actions = {
 # This is where all the wyrd costs for actions are defined
 ZAV_combat_setup_actions_data = {
     clear_array = ZAV_combat_actions_wyrd_costs
+    clear_array = ZAV_combat_actions_hit_chances
 
     add_to_array = { ZAV_combat_actions_wyrd_costs = 0 } # 0 indexed vs 1 indexed array
+    add_to_array = { ZAV_combat_actions_hit_chances = 0 }
 
     # Single Shot #
     add_to_array = { ZAV_combat_actions_wyrd_costs = 0 }
+    add_to_array = { ZAV_combat_actions_hit_chances = 80 }
 
     # Pray #
     add_to_array = { ZAV_combat_actions_wyrd_costs = 0 }
+    add_to_array = { ZAV_combat_actions_hit_chances = 101 }
 
     # Heal #
     add_to_array = { ZAV_combat_actions_wyrd_costs = 6 }
+    add_to_array = { ZAV_combat_actions_hit_chances = 101 }
 
     # Barrage #
     add_to_array = { ZAV_combat_actions_wyrd_costs = 8 }
+    add_to_array = { ZAV_combat_actions_hit_chances = 95 }
 
     # Corrupt #
     add_to_array = { ZAV_combat_actions_wyrd_costs = 6 }
+    add_to_array = { ZAV_combat_actions_hit_chances = 70 }
 
     # Justice #
     add_to_array = { ZAV_combat_actions_wyrd_costs = 10 }
+    add_to_array = { ZAV_combat_actions_hit_chances = 101 }
 
     # Condemnation #
     add_to_array = { ZAV_combat_actions_wyrd_costs = 4 }
+    add_to_array = { ZAV_combat_actions_hit_chances = 90 }
 
     # Banish Evil #
     add_to_array = { ZAV_combat_actions_wyrd_costs = 3 }
+    add_to_array = { ZAV_combat_actions_hit_chances = 101 }
 
     # Goddess's Embrace #
     add_to_array = { ZAV_combat_actions_wyrd_costs = 7 }
+    add_to_array = { ZAV_combat_actions_hit_chances = 80 }
 }

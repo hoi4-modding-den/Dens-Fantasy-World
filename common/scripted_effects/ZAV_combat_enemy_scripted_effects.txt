@@ -40,6 +40,8 @@ ZAV_combat_setup_enemy_1 = {
     set_variable = { ZAV_combat_enemy_crit_chance = 3 }
     set_variable = { ZAV_combat_enemy_crit_damage_modif = 2 }
 
+    set_variable = { ZAV_combat_enemy_voice_lines = 7 }
+
     clear_array = ZAV_combat_enemy_actions
     add_to_array = { ZAV_combat_enemy_actions = 1 }
     add_to_array = { ZAV_combat_enemy_actions = 2 }
@@ -51,6 +53,8 @@ ZAV_combat_setup_enemy_2 = {
     set_variable = { ZAV_combat_enemy_hit_chance_modif = 1 }
     set_variable = { ZAV_combat_enemy_crit_chance = 3 }
     set_variable = { ZAV_combat_enemy_crit_damage_modif = 2 }
+
+    set_variable = { ZAV_combat_enemy_voice_lines = 4 }
 
     clear_array = ZAV_combat_enemy_actions
     add_to_array = { ZAV_combat_enemy_actions = 3 }
@@ -64,6 +68,8 @@ ZAV_combat_setup_enemy_3 = {
     set_variable = { ZAV_combat_enemy_hit_chance_modif = 0.8 }
     set_variable = { ZAV_combat_enemy_crit_chance = 10 }
     set_variable = { ZAV_combat_enemy_crit_damage_modif = 2 }
+
+    set_variable = { ZAV_combat_enemy_voice_lines = 6 }
 
     clear_array = ZAV_combat_enemy_actions
     add_to_array = { ZAV_combat_enemy_actions = 6 }
@@ -79,6 +85,8 @@ ZAV_combat_setup_enemy_4 = {
     set_variable = { ZAV_combat_enemy_hit_chance_modif = 0.95 }
     set_variable = { ZAV_combat_enemy_crit_chance = 5 }
     set_variable = { ZAV_combat_enemy_crit_damage_modif = 2.5 }
+
+    set_variable = { ZAV_combat_enemy_voice_lines = 6 }
 
     clear_array = ZAV_combat_enemy_actions
     add_to_array = { ZAV_combat_enemy_actions = 11 }
@@ -584,9 +592,12 @@ ZAV_combat_do_enemy_action = {
 ### HIT AND CRIT CHANCE ###
 
 ZAV_combat_enemy_action_calculate_outcome = {
-    multiply_temp_variable = { hit_chance = hit_chance_multiplier }
-    
-    round_temp_variable = hit_chance
+    set_temp_variable = { miss_chance = 100 }
+    subtract_from_temp_variable = { miss_chance = hit_chance }
+    divide_temp_variable = { miss_chance = hit_chance_multiplier }
+    round_temp_variable = miss_chance
+    set_temp_variable = { hit_chance = 100 }
+    subtract_from_temp_variable = { hit_chance = miss_chance }
 
     clamp_temp_variable = {
         var = hit_chance
@@ -626,5 +637,50 @@ ZAV_combat_enemy_action_apply_critical = {
     if = {
         limit = { check_variable = { hit_result = 2 } }
         multiply_temp_variable = { damage = crit_damage_multiplier }
+    }
+}
+
+### VOICE LINES ###
+
+ZAV_combat_enemy_lose_voice_line = {
+    set_temp_variable = { player = 1 }
+    set_temp_variable = { action = 1001 }
+    set_temp_variable = { outcome = 0 }
+    set_temp_variable = { stat = 0 }
+    ZAV_combat_log_action = yes
+}
+
+ZAV_combat_enemy_win_voice_line = {
+    set_temp_variable = { player = 1 }
+    set_temp_variable = { action = 1002 }
+    set_temp_variable = { outcome = 0 }
+    set_temp_variable = { stat = 0 }
+    ZAV_combat_log_action = yes
+}
+
+ZAV_combat_enemy_random_voice_line = {
+    set_temp_variable_to_random = {
+        var = voice_line
+        min = 0
+        max = ZAV_combat_enemy_voice_lines
+        integer = yes
+    }
+
+    add_to_temp_variable = { voice_line = 1 }
+
+    if = {
+        limit = {
+            NOT = {
+                is_in_array = { ZAV_combat_enemy_voice_lines = voice_line }
+            }
+        }
+
+        add_to_array = { ZAV_combat_enemy_voice_lines = voice_line }
+    
+        set_temp_variable = { player = 1 }
+        set_temp_variable = { action = 1003 }
+        set_temp_variable = { outcome = 0 }
+        set_temp_variable = { stat = voice_line }
+        ZAV_combat_log_action = yes
     }
 }

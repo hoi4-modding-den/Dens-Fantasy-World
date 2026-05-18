@@ -490,9 +490,52 @@ defined_text = {
 }
 
 defined_text = {
+	name = "GetCombatActionHitChance"
+	text = {
+		trigger = {
+			check_variable = { ZAV_combat_actions_hit_chances^entry_value < 101 }
+			set_temp_variable = { hit_chance = ZAV_combat_actions_hit_chances^entry_value }
+			set_temp_variable = { miss_chance = 100 }
+			subtract_from_temp_variable = { miss_chance = hit_chance } 
+			divide_temp_variable = { miss_chance = ZAV_combat_player_hit_chance_modif }
+			round_temp_variable = miss_chance
+			set_temp_variable = { hit_chance = 100 }
+			subtract_from_temp_variable = { hit_chance = miss_chance }
+		}
+		localization_key = "ZAV_combat_action_hit_chance"
+	}
+}
+
+defined_text = {
+	name = "GetCombatActionHitChanceColoured"
+	text = {
+		trigger = {
+			check_variable = { hit_chance > 69 }
+		}
+		localization_key = "ZAV_combat_action_hit_chance_G"
+	}
+	text = {
+		trigger = {
+			check_variable = { hit_chance > 39 }
+		}
+		localization_key = "ZAV_combat_action_hit_chance_O"
+	}
+	text = {
+		localization_key = "ZAV_combat_action_hit_chance_R"
+	}
+}
+
+defined_text = {
 	name = "GetCombatActionEffect"
 	text = {
 		localization_key = "ZAV_combat_action_effect_[?entry_value]"
+	}
+}
+
+defined_text = {
+	name = "GetCombatActionTypes"
+	text = {
+		localization_key = "ZAV_combat_action_types_[?entry_value]"
 	}
 }
 
@@ -537,6 +580,24 @@ defined_text = {
 			check_variable = { entry_value = 1000 }
 		}
 		localization_key = "ZAV_combat_action_effect_removed"
+	}
+	text = {
+		trigger = {
+			check_variable = { entry_value = 1001 }
+		}
+		localization_key = "ZAV_combat_enemy_[?ZAV_combat_curr_enemy]_lose"
+	}
+	text = {
+		trigger = {
+			check_variable = { entry_value = 1002 }
+		}
+		localization_key = "ZAV_combat_enemy_[?ZAV_combat_curr_enemy]_win"
+	}
+	text = {
+		trigger = {
+			check_variable = { entry_value = 1003 }
+		}
+		localization_key = "ZAV_combat_enemy_[?ZAV_combat_curr_enemy]_voice_line_[?ZAV_combat_log_stats^entry_index]"
 	}
 	text = {
 		trigger = {

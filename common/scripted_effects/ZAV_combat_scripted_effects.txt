@@ -45,6 +45,7 @@ ZAV_combat_start = {
     clear_array = ZAV_combat_player_status_effects_amounts
     clear_array = ZAV_combat_enemy_status_effects
     clear_array = ZAV_combat_enemy_status_effects_amounts
+    clear_array = ZAV_combat_enemy_voice_lines
 
     ZAV_combat_loadout_calculate_constant_buffs = yes
 
@@ -111,6 +112,8 @@ ZAV_combat_calculate_player_multipliers = {
 
     ZAV_combat_loadout_calculate_multipliers = yes
     ZAV_combat_status_effects_calculate_multipliers = yes
+
+    set_variable = { ZAV_combat_player_hit_chance_modif = hit_chance_multiplier }
 
     if = {
         limit = { has_country_flag = ZAV_debug_log }
@@ -206,6 +209,11 @@ ZAV_combat_do_player_turn = {
 
     # Calculate and apply constants from effects and artifacts
     ZAV_combat_calculate_player_constants = yes
+
+    random = {
+        chance = 50
+        ZAV_combat_enemy_random_voice_line = yes
+    }
 
     # Reduce all status effects by 1
     ZAV_combat_reduce_player_status_effect_amounts = yes
@@ -315,6 +323,7 @@ ZAV_combat_check_for_win = {
             check_variable = { ZAV_combat_enemy_health < 1 }
         }
 
+        ZAV_combat_enemy_lose_voice_line = yes
         set_country_flag = ZAV_combat_victory
     }
     else_if = {
@@ -322,6 +331,7 @@ ZAV_combat_check_for_win = {
             check_variable = { ZAV_combat_player_health < 1 }
         }
 
+        ZAV_combat_enemy_win_voice_line = yes
         set_country_flag = ZAV_combat_defeat
     }
 }
