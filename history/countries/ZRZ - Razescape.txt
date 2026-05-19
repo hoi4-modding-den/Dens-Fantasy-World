@@ -8,6 +8,10 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+recruit_character = ZRZ_malphas_char
+recruit_character = ZRZ_scarlet_thermal
+
+promote_character = ZRZ_malphas_char
 set_politics = {
 	ruling_party = fascism
 	last_election = "1936.1.1"

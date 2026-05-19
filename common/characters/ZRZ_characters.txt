@@ -1,0 +1,30 @@
+characters={
+
+	ZRZ_malphas_char = { 
+		name = ZRZ_malphas_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z51_mikhail_smirnov
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+
+	ZRZ_scarlet_thermal = { 
+		name = ZRZ_scarlet_thermal
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Z51_mikhail_smirnov
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

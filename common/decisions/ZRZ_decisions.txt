@@ -1,0 +1,44 @@
+ZRZ_reign_of_terror_cat = {
+
+
+
+
+
+	ZRZ_ransack_state = {
+		state_target = any_owned_state
+		target_trigger = {
+			FROM = {
+				NOT = {
+					state = 261
+					state = 250
+				}
+			}
+		}
+		on_map_mode = map_and_decisions_view
+		icon = GFX_decision_generic_confiscation
+		cost = 30
+		available = {
+			divisions_in_state = {
+				size = 1
+				state = FROM
+				type = armor
+			}
+		}
+		days_re_enable = 300
+		days_remove = 10
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				amount = 100
+				type = infantry_equipment_0
+				producer = ZRZ
+			}
+		}
+	}
+
+
+
+
+
+
+
+}

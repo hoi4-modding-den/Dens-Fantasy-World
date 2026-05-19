@@ -10,7 +10,7 @@ sub_units = {
 		special_forces = yes
 
 		type = {
-			infantry
+			armor
 		}
 
 		group = infantry

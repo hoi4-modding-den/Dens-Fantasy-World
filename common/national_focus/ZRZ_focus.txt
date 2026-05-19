@@ -1,0 +1,209 @@
+focus_tree = {
+    id = ZRZ_tree
+    country = {
+        factor = 0 modifier = { add = 10 tag = ZRZ }
+    }
+    default = no
+    continuous_focus_position = { x = 50 y = 1000 }
+
+    focus = {
+        id = ZRZ_the_dragon_awakes
+        icon = GFX_goal_unknown
+        x = 9
+        y = 0
+        cost = 10
+        available = {
+            always = no
+        }
+        bypass = {
+            has_defensive_war = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            # log = "[GetDateText]: [Root.GetName]: Focus ZRZ_the_dragon_awakes completed"
+        }
+    }
+
+    focus = {
+        id = ZRZ_expand_the_wasteland
+        icon = GFX_goal_unknown
+        x = 9
+        y = 1
+        cost = 10
+        available = {
+            all_owned_state = {
+                is_fully_controlled_by = ROOT
+            }
+        }
+        prerequisite = { focus = ZRZ_the_dragon_awakes }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            # log = "[GetDateText]: [Root.GetName]: Focus ZRZ_expand_the_wasteland completed"
+            add_timed_idea = {
+                idea = ZRZ_reawakening
+                days = 360
+            }
+        }
+    }
+
+    focus = {
+        id = ZRZ_strike_into_the_riphean_mountains
+        icon = GFX_goal_unknown
+        x = 8
+        y = 2
+        cost = 20
+        prerequisite = { focus = ZRZ_expand_the_wasteland }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            create_wargoal = {
+                type = annex_everything
+                target = ZVT
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZBT
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZJT
+            }
+        }
+    }
+
+    focus = {
+        id = ZRZ_raze_kagraz
+        icon = GFX_goal_unknown
+        x = 9
+        y = 3
+        cost = 20
+        prerequisite = { focus = ZRZ_strike_into_the_riphean_mountains }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            create_wargoal = {
+                type = annex_everything
+                target = ZKS
+            }
+        }
+    }
+
+    focus = {
+        id = ZRZ_burn_down_aelvar
+        icon = GFX_goal_unknown
+        x = 11
+        y = 2
+        cost = 20
+        prerequisite = { focus = ZRZ_expand_the_wasteland }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            create_wargoal = {
+                type = annex_everything
+                target = Z70
+            }
+        }
+    }
+
+    focus = {
+        id = ZRZ_bring_the_destruction_east
+        icon = GFX_goal_unknown
+        x = 7
+        y = 3
+        cost = 20
+        prerequisite = { focus = ZRZ_strike_into_the_riphean_mountains }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            create_wargoal = {
+                type = annex_everything
+                target = ZCT
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZST
+            }
+        }
+    }
+
+    focus = {
+        id = ZRZ_terrorise_balekelemi
+        icon = GFX_goal_unknown
+        x = 8
+        y = 4
+        cost = 20
+        prerequisite = { focus = ZRZ_bring_the_destruction_east }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            create_wargoal = {
+                type = annex_everything
+                target = ZFP
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZFS
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZFA
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZFB
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZFC
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZFE
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZFK
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ZFN
+            }
+        }
+    }
+
+    focus = {
+        id = ZRZ_western_domain
+        icon = GFX_goal_unknown
+        x = 11
+        y = 3
+        cost = 20
+        prerequisite = { focus = ZRZ_burn_down_aelvar }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            create_wargoal = {
+                type = annex_everything
+                target = Z65
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = Z53
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = Z50
+            }
+        }
+    }
+
+}

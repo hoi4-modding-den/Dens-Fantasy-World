@@ -1,0 +1,12 @@
+ZRZ_reign_of_terror_cat = {
+
+    icon = border_conflicts
+	
+	allowed = {
+		tag = ZRZ
+	}
+
+	priority = 100 
+
+	visible_when_empty = no
+}

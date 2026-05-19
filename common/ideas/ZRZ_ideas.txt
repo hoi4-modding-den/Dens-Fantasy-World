@@ -35,11 +35,19 @@ ideas = {
 				industry_free_repair_factor = -0.2
 				local_resources_factor = -0.3
 				min_export = -1
-				research_speed_factor = -0.3
+				research_speed_factor = -0.4
 				no_compliance_gain = 1
 			}
 			rule = {
 				can_access_market = no
+			}
+		}
+
+		ZRZ_reawakening = {
+			picture = PLACEHOLDER_idea_icon
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
 			}
 		}
 

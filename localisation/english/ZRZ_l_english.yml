@@ -21,5 +21,16 @@
 
 
 
+ # Characters
+ ZRZ_malphas_char:0 "Malphas"
+
+
+
+ # Decision
+ ZRZ_reign_of_terror_cat: "Reign Of Terror"
+ ZRZ_ransack_state: "Ransack [FROM.GetName]"
+
+
+
  # Units
  supreme_dragon: "Supreme Dragon"
