@@ -58,11 +58,14 @@
  ZBT_democratic_republicanism:0 "Populist Republicanism" #TBA
  ZBT_oligarchic_republicanism:0 "Oligarchic Republicanism" #TBA
  ZBT_mining_magnates_in_control:0 "Magnates in Control"
+ ZBT_technocratic_governance:0 "Technocratic Governance"
  ZBT_even_more_mining:0 "Increased Resource Extraction" #TBA
  ZBT_deportations:0 "Mass Deportations"
  ZBT_emergency_housing:0 "Emergency Housing Program"
  ZBT_definitely_not_slavery:0 "'Skilled Worker' Program"
  ZBT_refugee_assimilation:0 "Refugee Assimilation"
+ ZBT_cult_of_personality_ns:0 "Cult of Personality"
+ ZBT_wealth_redistribution_ns:0 "Wealth Redistribution"
 
  ZBT_diamond_deposit:0 "Diamond Deposit"
 

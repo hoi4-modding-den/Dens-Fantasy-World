@@ -286,6 +286,14 @@ ideas = {
 			}
 		}
 
+		ZBT_monarchist_propaganda_ns = {
+			name = ZBT_monarchist_propaganda
+			picture = por_monarchist_uprising
+			modifier = {
+				drift_defence_factor = 0.2
+			}
+		}
+
 		ZBT_learning_from_edelweiss = {
 			picture = EST_democratic_opposition
 			modifier = {
@@ -313,7 +321,7 @@ ideas = {
 			name = ZBT_political_enthusiasts
 			picture = POL_the_peasants_strike
 			modifier = {
-				neutrality_drift = -0.01
+				neutrality_drift = 0.02
 				stability_factor = -0.05
 				war_support_factor = -0.05
 				political_power_factor = -0.02
