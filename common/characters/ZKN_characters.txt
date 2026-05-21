@@ -426,7 +426,7 @@ characters = {
             cost = 75
 
             traits = {
-                blitzkrieg_theorist
+                ZKN_pragmatic_theorist
             }
             ai_will_do = {
                 base = 5

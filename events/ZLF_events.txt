@@ -811,7 +811,7 @@ country_event = { # Elbian Insurrection successful
 	}
 }
 
-country_event = { # Korelian nation receives aid from ZLF
+country_event = { # Nation receives aid from ZLF
 	id = ZLF_events.4
 	title = ZLF_events.4.t
 	desc = ZLF_events.4.desc
@@ -827,6 +827,13 @@ country_event = { # Korelian nation receives aid from ZLF
             amount = 1000
             producer = FROM
         }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_opinion_modifier = {
+			modifier = ZLF_pragmatic_cooperation_modifier
+			target = FROM
+		}
 	}
 }
 
@@ -1327,6 +1334,24 @@ country_event = { # Former King Yaoi
 	option = {
 		name = ZLF_events.19.a
 		custom_effect_tooltip = ZLF_events.19.tt
+	}
+}
+
+country_event = { # Radical Members of the Foreign Office resign
+	id = ZLF_events.20
+	title = ZLF_events.20.t
+	desc = ZLF_events.20.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.20.a
+		add_popularity = { ideology = ROOT popularity = -0.05 }
+		add_timed_idea = {
+			idea = ZLF_foreign_office_resigned
+			days = 100
+		}
 	}
 }
 

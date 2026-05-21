@@ -541,7 +541,7 @@ ideas = {
 
             modifier = {
                 local_resources_factor = 0.05
-                production_lack_of_resource_penalty_factor = 0.05
+                production_lack_of_resource_penalty_factor = -0.05
             }
 
         }
@@ -1291,6 +1291,25 @@ ideas = {
 
         }
 
+        ZLF_foreign_office_resigned = {
+
+            picture = generic_democratic_opposition
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                opinion_gain_monthly_same_ideology_factor = -0.15
+                political_advisor_cost_factor = 0.5
+            }
+
+        }
+
         ZLF_sibling_republic_spirit = {
 
             picture = HUN_treaty_of_triannon
@@ -1428,6 +1447,26 @@ ideas = {
 
         }
 
+        ZLF_space_socialism = {
+
+            picture = JAP_socialist_pioneers
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                political_power_gain = 0.2
+                research_speed_factor = 0.15
+                production_speed_buildings_factor = 0.1
+            }
+
+        }
+
         ZLF_every_worker_a_banner_army_member = {
 
             picture = MEX_revolutionary_army
@@ -1459,7 +1498,6 @@ ideas = {
             }
 
             modifier = {
-                democratic_drift = 0.1
                 stability_weekly = 0.001
                 war_support_weekly = 0.001
             }
@@ -1475,7 +1513,10 @@ ideas = {
 			picture = SOV_kolomna_alt
 			
 			allowed = {
-				original_tag = ZLF
+				OR = {
+                    original_tag = ZLF
+                    original_tag = ZKN
+                }
 			}
 
 			visible = {

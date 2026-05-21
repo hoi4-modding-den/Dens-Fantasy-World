@@ -63,5 +63,6 @@ ZLF_another_victory_for_social_democracy_achievement = {
             tooltip = ZLF_has_formed_tewara_tt
             has_cosmetic_tag = ZLF_tewara
         }
+        has_country_flag = ZLF_sp_won_first_pan_tewarean_elections
     }
 }

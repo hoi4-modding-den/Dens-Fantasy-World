@@ -539,6 +539,171 @@ country_event = { # Commie Flavour Event 2
 	}
 }
 
+country_event = { # ZTC requests Erzgebirge
+	id = ZTC_events.22
+	title = ZTC_events.22.t
+	desc = ZTC_events.22.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { # accept
+		name = ZTC_events.22.a
+        ai_chance = {
+            base = 2
+            modifier = {
+                FROM = { is_ai = yes }
+                factor = 0
+            }
+        }
+        effect_tooltip = {
+            655 = {
+                transfer_state_to = FROM
+                add_core_of = FROM
+            }
+        }
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        FROM = { country_event = ZTC_events.23 }
+	}
+
+    option = { # nope
+		name = ZTC_events.22.b
+        ai_chance = {
+            base = 1
+            modifier = {
+                factor = 0
+                FROM = {
+                    is_ai = no
+                    OR = {
+                        has_completed_focus = ZTC_protect_minorities
+                        has_completed_focus = ZTC_protect_the_persecuted
+                    }
+                }
+            }
+        }
+        add_political_power = -50
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        FROM = { country_event = ZTC_events.24 }
+	}
+}
+
+country_event = { # ZTC requests Erzgebirge - accepted
+	id = ZTC_events.23
+	title = ZTC_events.23.t
+	desc = ZTC_events.23.desc
+	picture = GFX_report_event_communist_leader
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.23.a
+        655 = {
+            transfer_state_to = ROOT
+            add_core_of = ROOT
+        }
+	}
+}
+
+country_event = { # ZTC requests Erzgebirge - rejected
+	id = ZTC_events.24
+	title = ZTC_events.24.t
+	desc = ZTC_events.24.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { # too bad
+		name = ZTC_events.24.a
+        ai_chance = {
+            base = 0
+        }
+        add_political_power = 25
+	}
+
+    option = { # maybe resource rights?
+		name = ZTC_events.24.b
+        FROM = { country_event = { id = ZTC_events.25 days = 10 } }
+	}
+}
+
+country_event = { # ZTC requests Erzgebirge resource rights
+	id = ZTC_events.25
+	title = ZTC_events.25.t
+	desc = ZTC_events.25.desc
+	picture = GFX_report_event_FIN_petsamo_mine
+
+	is_triggered_only = yes
+
+	option = { # fine
+		name = ZTC_events.25.a
+        ai_chance = {
+            base = 5
+        }
+        effect_tooltip = {
+            give_resource_rights = { receiver = FROM state = 655 }
+        }
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        FROM = { country_event = ZTC_events.26 }
+	}
+
+    option = { # nope again
+		name = ZTC_events.25.b
+        ai_chance = {
+            base = 1
+            modifier = {
+                factor = 0
+                FROM = { is_ai = no }
+            }
+        }
+        add_political_power = -50
+        add_popularity = { ideology = ROOT popularity = -0.05 }
+
+        custom_effect_tooltip = generic_skip_one_line_tt
+
+        FROM = { country_event = ZTC_events.27 }
+	}
+}
+
+country_event = { # ZTC requests Erzgebirge resource rights - accepted
+	id = ZTC_events.26
+	title = ZTC_events.26.t
+	desc = ZTC_events.26.desc
+	picture = GFX_report_event_FIN_petsamo_mine
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.26.a
+        FROM = { give_resource_rights = { receiver = ROOT state = 655 } }
+	}
+}
+
+country_event = { # ZTC requests Erzgebirge resource rights - rejected
+	id = ZTC_events.27
+	title = ZTC_events.27.t
+	desc = ZTC_events.27.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZTC_events.27.a
+        add_political_power = 50
+        add_tech_bonus = {
+            name = ZTC_request_full_control_over_the_erzgebirge
+            bonus = 1
+            uses = 1
+            category = excavation_tech
+        }
+	}
+}
+
 news_event = { # The Succession
 	id = ZTC_news_events.1
 	title = ZTC_news_events.1.t

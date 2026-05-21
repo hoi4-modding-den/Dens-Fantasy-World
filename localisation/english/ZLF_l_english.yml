@@ -145,6 +145,8 @@
  ZLF_democratic_party_sp_long: "Socialist Party"
  ZLF_democratic_party_gkp: "GKP"
  ZLF_democratic_party_gkp_long: "Gardenian Constitutional Party"
+ ZLF_democratic_party_ihp: "IHP"
+ ZLF_democratic_party_ihp_long: "International Harmonist Party"
  ZLF_democratic_party_defence_ministry: "Verteidigungsministerium"
  ZLF_democratic_party_defence_ministry_long: "Meisendorff's War Cabinet"
  ZLF_democratic_party_elbian: "Elbska Ludowa Strona"
@@ -156,8 +158,6 @@
  ZLF_fascism_party: "PGE"
  ZLF_fascism_party_long: "Party for Gardenian Regeneration"
 
- ZLF_democratic_party_celandra: "IHP"
- ZLF_democratic_party_celandra_long: "International Harmonist Party"
  ZLF_democratic_party_orchidee: "OPF"
  ZLF_democratic_party_orchidee_long: "Orchidean Popular Front"
  ZLF_democratic_party_einoede: "Mandatsregierung"
@@ -189,7 +189,7 @@
 # IDEOLOGIES
 
  neorevisionism: "Neorevisionism"
- neorevisionism_desc: "Neorevisionism is a sort of radicalised reformism, whose adherents advocate moving away from solely worker-oriented politics to a party of the whole people. They differ from reformists by pushing for adopting various active methods of defending democracy, such as populism, a greater focus on paramilitary organisations and bold symbols that convey the power of the movement, such as the burning fist of the Edelweiss Banner-Army."
+ neorevisionism_desc: "Neorevisionism is a sort of radicalised reformism, whose adherents advocate moving away from solely worker-oriented politics to a party of the whole people. They differ from reformists by pushing for adopting various active methods of defending democracy, such as populism, a greater focus on paramilitary organisations and bold symbols that convey the power of the movement, such as the burning fist of the Edelweiss Banner-Army. In broad terms, Neorevisionism is a populist current within the social democratic movement."
  environmentalism: "Environmentalism"
  environmentalism_desc: "Environmentalism advocates the preservation, restoration and improvement of the natural environment and critical earth system elements or processes such as the climate, and may be referred to as a movement to control pollution or protect plant and animal diversity."
  moralism: "Moralism"
@@ -356,16 +356,19 @@
  ZLF_expanded_intelligence_network: "Expanded Intelligence Network"
  ZLF_elbian_insurrectionary_army: "Elbian Volunteer Army"
  ZLF_political_reshuffling: "Political Reshuffling"
+ ZLF_foreign_office_resigned: "Foreign Office Reorientation"
  ZLF_sibling_republic_spirit: "Geschwisterrepublik"
  ZLF_celandra_monarchist_deconstruction: "Monarchist Deconstruction"
  ZLF_orchidee_new_national_identity: "New National Indentity"
- ZLF_orchidee_new_national_identity_desc: "The Orchidean people were never considered their own nationality until today. The formation of an independent Orchidean state has motivated them to establish themselves as their own people."
+ ZLF_orchidee_new_national_identity_desc: "The region known as Orchidea was never considered its own nation and the formation of the Sibling Republic has empowered its people to construct their own national identity."
  ZLF_orchidee_growing_esperantist_movement: "Growing Esperantist Movement"
  ZLF_orchidee_growing_esperantist_movement_desc: "The lack of a national identity has made Esperanto a popular subject among the Orchidean people. Almost fourty percent of the population are members of the Universal Esperanto Association."
  ZLF_elotropia_ethnic_tensions: "Ethnic Tensions"
  ZLF_korelia_underground_resistance: "Underground Resistance"
  ZLF_stabilising_the_sibling_republics: "Stabilising the Sibling Republics"
- ZLF_every_worker_a_banner_army_member: "Every Worker a Banner-Army Member"
+ ZLF_space_socialism: "Socialism Ad Astra"
+ ZLF_space_socialism_desc: "Combining various progressive social-liberal and democratic socialist principles, Socialism Ad Astra — or more commonly 'Space Socialism' or 'Utopian Democratic Socialism' — advocates for a steady transformation of society towards a communist one. The government focuses its efforts on improvements in scientific development, labour laws, land reform and general societal change. It is characterised by its integration of magic and technology.\n\n“By the time communism will be achieved, creaturekind will have established its place among the stars.”"
+ ZLF_every_worker_a_banner_army_member: "Every Worker, A Member of the Banner-Army"
  ZLF_the_eternal_spirit_of_social_democracy: "The Constant Vigilance of Social Democracy"
 
  ZLF_sukera_sparo: "Sukera Sparo"
@@ -464,6 +467,9 @@
 
  ZLF_monetary_control: "Anti-Cyclical Fiscal Policies"
 
+ ZLF_cooperate_with_avalon: "Cooperation with Avalon"
+ ZLF_cooperate_with_turun: "Cooperation with Tůrůń"
+
  ZLF_democracy_propaganda_machine: "Pro-Democratic Propaganda"
 
  ZLF_regional_developments_cat: "Regional Developments"
@@ -535,7 +541,8 @@
  ZLF_every_subject_tt: "§YEvery Subject:§!"
  ZLF_COLLECTION_NON_ALLIED_DEMOCRATIC_SUPPORT: "Independent Nations with at least 40% Democratic Support"
  ZLF_completing_goal_grants_tt: "§YCompleting this goal grants:§!"
- ZLF_has_formed_tewara_tt: "Has formed a Pan-Tewaran State"
+ ZLF_has_formed_tewara_tt: "Has formed a §YPan-Tewarean State§!"
+ ZLF_sp_won_first_pan_tewarean_elections: "The §YSocialist Party§! won the first Pan-Tewarean Elections"
 
 
 # FOCI
@@ -688,7 +695,7 @@
  ZLF_government_holds_tt: "The §YGKP§! has been left out from the §YGoverning Coalition§!."
  ZLF_support_the_agricultural_class: "Support the Agricultural Class"
  ZLF_support_the_agricultural_class_desc: ""
- ZLF_meisendorffs_new_propaganda: "Meisendorffs Neue Propaganda"
+ ZLF_meisendorffs_new_propaganda: "Meisendorffs Neue Propagandamethode"
  ZLF_meisendorffs_new_propaganda_desc: ""
  ZLF_transition_to_workers_councils: "[ZLF_get_worker_council_transition_name]"
  ZLF_transition_to_workers_councils_ndpvg: "Integrate the Unions"
@@ -774,6 +781,7 @@
  ZLF_increase_paramilitary_militarisation_desc: ""
  ZLF_declare_revolutionary_victory: "Declare Revolutionary Victory"
  ZLF_declare_revolutionary_victory_desc: ""
+ ZLF_declare_revolutionary_victory_tt: "Starts an §YEvent Chain§! leading up to the §Yfirst Pan-Tewarean Elections§!.\n \nAfter the Elections are concluded, an §YEpilogue Focus Branch§! will be loaded."
 
  ZLF_international_labour_laws: "International Vertical Integration"
  ZLF_international_labour_laws_desc: "Vertical integration is a business strategy in which a company brings multiple stages of production or the supply chain - ranging from raw materials to the final product - under its own control. This can include acquiring suppliers (backward integration) or distributors and retailers (forward integration), allowing the company to improve coordination, reduce costs, and increase control over quality and delivery."
@@ -783,7 +791,7 @@
  ZLF_krippendorff_program_desc: ""
  ZLF_secure_trade_agreements: "Secure Trade Agreements"
  ZLF_secure_trade_agreements_desc: ""
- ZLF_cooperate_with_moderate_democracies: "Cooperate with Moderate Democracies"
+ ZLF_cooperate_with_moderate_democracies: "Cooperate with Moderates"
  ZLF_cooperate_with_moderate_democracies_desc: ""
  ZLF_conference_of_internationalists: "Conference of Internationalists"
  ZLF_conference_of_internationalists_desc: ""
@@ -800,7 +808,7 @@
  ZLF_progress_towards_communism_desc: ""
  ZLF_victory_of_social_democracy: "Another Victory for Social Democracy"
  ZLF_victory_of_social_democracy_desc: "Social Democracy is an infallible institution, whose demise is sought after by everyone else. For that reason, we must be constantly vigilant to defend it."
- ZLF_prosecute_enemies_of_socialism: "Prosecute Enemies of Socialism"
+ ZLF_prosecute_enemies_of_socialism: "Prosecute Enemies of the Republic"
  ZLF_prosecute_enemies_of_socialism_desc: ""
  ZLF_continue_activist_social_democracy: "The Continued Defence of Democracy"
  ZLF_continue_activist_social_democracy_desc: ""
@@ -1078,10 +1086,14 @@
  ZLF_events.18.a: "The SP rides the wave of Meisendorff's popularity!"
  ZLF_events.18.b: "The NDPvG will see to stable governance."
 
- ZLF_events.19.t: "A Sweeping Change"
- ZLF_events.19.desc: "WIP"
+ ZLF_events.19.t: "A Sweeping Change" # incredibly unecessary, but I found it funny
+ ZLF_events.19.desc: "The fate of the disgraced former king was not one of tragedy. As the palace gates closed for the day, Michael made his way to the exit. On the way out, he turned in his badge and put away his work utensils, his mop and bucket. Despite his previous role as leader of the nation, Michael was more than glad to leave the politicking to the Republicans. He had never been one for the nobility's schemes, but with no one else to lead, he had never seen a different way.\n \nAs he reached for his keys to his home, the door opened and warmth and happiness overcame him. Before him stood his roommate, the former Duke of Welsen, greeting him with a smile."
  ZLF_events.19.a: "What was that saying again?"
  ZLF_events.19.tt: "§CVerliebt, verlobt, verheiratet.§!"
+
+ ZLF_events.20.t: "Radical Members of the Foreign Office resign"
+ ZLF_events.20.desc: "WIP"
+ ZLF_events.20.a: "Let them, Foreign Policy needs reasonable minds."
 
 
  ZLF_news_events.1.t: "Revolutionaries win the Gardenian Civil War"

@@ -993,6 +993,169 @@ ideas = {
 
 		}
 
+		ZTC_marine_corps_spirit = {
+
+			picture = generic_naval_invasion
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				marines_special_forces_contribution_factor = -0.5
+				extra_marine_supply_grace = 48
+				transport_capacity = -0.05
+			}
+
+		}
+
+		ZTC_naval_range_spirit = {
+
+			name = ZTC_spirit_of_the_hortensian_fleet
+			picture = AUS_naval_efficiency_idea
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				navy_max_range_factor = 0.15
+			}
+
+		}
+
+		ZTC_anti_submarine_spirit = {
+
+			name = ZTC_spirit_of_the_hortensian_fleet
+			picture = AUS_naval_efficiency_idea
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				navy_max_range_factor = 0.15
+				navy_submarine_detection_factor = 0.25
+			}
+
+		}
+
+		ZTC_torpedo_production_spirit = {
+
+			name = ZTC_spirit_of_the_hortensian_fleet
+			picture = AUS_naval_efficiency_idea
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				navy_max_range_factor = 0.15
+				naval_torpedo_hit_chance_factor = 0.1
+				naval_torpedo_cooldown_factor = -0.15
+			}
+
+		}
+
+		ZTC_expanded_navy_spirit = {
+
+			name = ZTC_spirit_of_the_hortensian_fleet
+			picture = AUS_naval_efficiency_idea
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				navy_max_range_factor = 0.15
+				navy_submarine_detection_factor = 0.25
+				naval_torpedo_hit_chance_factor = 0.1
+				naval_torpedo_cooldown_factor = -0.15
+			}
+
+		}
+
+		ZTC_flagship_spirit = {
+
+			picture = generic_navy_bonus
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				naval_has_potf_in_combat_attack = 0.25
+				naval_has_potf_in_combat_defense = 0.25
+				navy_capital_ship_attack_factor = 0.1
+				navy_capital_ship_defence_factor = 0.1
+			}
+
+		}
+
+		ZTC_bombardment_spirit = {
+
+			picture = generic_navy_cruiser_warfare
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				shore_bombardment_bonus = 0.1
+			}
+
+		}
+
+		ZT_naval_invasion_spirit = {
+
+			name = ZTC_bombardment_spirit
+			picture = generic_navy_cruiser_warfare
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+				shore_bombardment_bonus = 0.1
+				naval_invasion_penalty = -0.25
+				naval_invasion_prep_speed = 0.3
+				naval_invasion_capacity = 4
+			}
+
+		}
+
 	}
 
 	industrial_concern = {

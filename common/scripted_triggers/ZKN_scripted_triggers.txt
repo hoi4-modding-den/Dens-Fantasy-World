@@ -1,0 +1,9 @@
+ZKN_is_kingdom = {
+    custom_trigger_tooltip = {
+        tooltip = ZKN_is_kingdom_tt
+        OR = {
+            has_country_leader = { character = ZKN_michael_aurus ruling_only = yes }
+            has_country_leader = { character = ZKN_albert_zu_stegehoff ruling_only = yes }
+        }
+    }
+}

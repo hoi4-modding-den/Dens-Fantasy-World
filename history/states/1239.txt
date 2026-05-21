@@ -22,7 +22,7 @@ state={
 		add_core_of = ZLF
 		add_core_of = ZKN
 		
-		add_dynamic_modifier = { modifier = ZTC_naval_outpost }
+		add_dynamic_modifier = { modifier = ZTC_naval_outpost scope = ZTC }
 		
 		buildings = {
 			infrastructure = 2

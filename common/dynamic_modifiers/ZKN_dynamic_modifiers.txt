@@ -1,4 +1,6 @@
 ZKN_anti_military_apparatus_modifier = {
+	icon = GFX_modifier_generic_guerilla_base
+
     remove_trigger = {
         ROOT = { # ROOT refers to the state on which the modifier is added
             OR = {
@@ -8,11 +10,17 @@ ZKN_anti_military_apparatus_modifier = {
         }
     }
 
-	icon = GFX_modifier_generic_guerilla_base
-
 	local_factory_sabotage = 0.15
-    state_resources_factor = -0.25
+    state_resources_factor = -0.2
     local_intel_to_enemies = 0.5
     disable_strategic_redeployment = 1
+
+}
+
+ZKN_resource_extraction_efforts_modifier = {
+	icon = GFX_modifiers_ETH_state_development
+
+	state_resources_factor = 0.25
+    resistance_damage_to_garrison = -0.1
 
 }

@@ -85307,3 +85307,4 @@
 1254;special_project_facility_spawn;2648.00;9.90;645.00;2.54;0
 1254;special_project_facility_spawn;2601.00;10.00;652.00;0.17;0
 1254;rocket_site_spawn;2611.00;10.65;668.00;0.29;0
+655;dam_spawn;2429.91;10.50;469.62;2.88;0

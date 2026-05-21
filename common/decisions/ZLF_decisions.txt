@@ -15,7 +15,7 @@ ZLF_civil_war_cat = {
         }
     }
 
-    ZLF_retake_magnolienburg = {
+    ZLF_retake_magnolienburg = { # its actually Rhododendron, my mistake
 
         icon = FIN_stop_motti_tactics
 
@@ -53,6 +53,14 @@ ZLF_civil_war_cat = {
             }
             hidden_effect = {
                 load_oob = "ZLF_rhododendron"
+            }
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            ZLF_harrier_du_bois = {
+                add_attack = 1
+                add_logistics = 1
+                set_character_flag = ZLF_elegible_for_rtp_leadership # makes him available as candidate in the post-GKP elections
             }
         }
 
@@ -345,8 +353,8 @@ ZLF_establish_sibling_republics_cat = {
                     set_politics = {
                         ruling_party = democratic
                         elections_allowed = no
-                        name = ZLF_democratic_party_celandra
-                        long_name = ZLF_democratic_party_celandra_long
+                        name = ZLF_democratic_party_ihp
+                        long_name = ZLF_democratic_party_ihp_long
                     }
                     set_popularities = {
                         democratic = 60
@@ -2731,6 +2739,82 @@ economy_decisions = {
                 }
             }
         }
+    }
+
+}
+
+foreign_politics = {
+
+    ZLF_cooperate_with_avalon = {
+
+        icon = ger_mefo_bills
+
+        cost = 40
+
+        allowed = {
+            original_tag = ZLF
+        }
+
+        available = {
+            ZAV = {
+                exists = yes
+                NOT = { has_war_with = ROOT }
+                has_government = democratic
+            }
+            has_completed_focus = ZLF_cooperate_with_moderate_democracies
+        }
+
+        complete_effect = {
+            add_relation_rule_override = {
+				target = ZAV
+				can_send_volunteers = yes
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = ZAV
+				value = 2000
+			}
+            ZAV = {
+                country_event = ZLF_events.4
+            }
+        }
+
+    }
+
+    ZLF_cooperate_with_turun = {
+
+        icon = ger_mefo_bills
+
+        cost = 40
+
+        allowed = {
+            original_tag = ZLF
+        }
+
+        available = {
+            ZRB = {
+                exists = yes
+                NOT = { has_war_with = ROOT }
+                has_government = democratic
+            }
+            has_completed_focus = ZLF_cooperate_with_moderate_democracies
+        }
+
+        complete_effect = {
+            add_relation_rule_override = {
+				target = ZRB
+				can_send_volunteers = yes
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = ZRB
+				value = 2000
+			}
+            ZRB = {
+                country_event = ZLF_events.4
+            }
+        }
+
     }
 
 }

@@ -1053,6 +1053,13 @@ ideas = {
 				}
 			}
 
+			allowed_to_remove = {
+				if = {
+					limit = { has_country_flag = ZKN_conscription_locked }
+					NOT = { has_country_flag = ZKN_conscription_locked }
+				}
+			}
+
 			ai_will_do = {
    				factor = 1
 				modifier = {

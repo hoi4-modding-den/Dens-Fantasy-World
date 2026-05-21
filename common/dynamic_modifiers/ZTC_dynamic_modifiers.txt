@@ -8,6 +8,17 @@ ZTC_naval_outpost = {
 
 }
 
+ZTC_coastal_batteries = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+
+	amphibious_invasion_defence = 0.25
+	state_coastal_bunker_max_level_terrain_limit = 2
+	army_defence_factor = 0.05
+
+}
+
 ZTC_liberal_government = {
 	enable = { has_government = democratic }
 

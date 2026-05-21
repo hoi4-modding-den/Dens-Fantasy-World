@@ -158,7 +158,8 @@ country_event = { # Mage War - Goldener Kompass
 		name = ZSP_start_events.7.a
         601 = {
             add_manpower = -500
-            set_demilitarized_zone = no 
+            set_demilitarized_zone = no
+			set_state_name = STATE_601_evil
         }
 
 		custom_effect_tooltip = generic_skip_one_line_tt

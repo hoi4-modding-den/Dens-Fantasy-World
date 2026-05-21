@@ -438,6 +438,7 @@
  STATE_591: "Sternentautal"
  STATE_591_evil: "Düstertal"
  STATE_601: "Domizil"
+ STATE_601_evil: "Schattenturm"
  STATE_703: "Ehrenfeld"
  STATE_703_evil: "Leichenfeld"
  STATE_756: "Donnergebirge"

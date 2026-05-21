@@ -939,7 +939,7 @@ focus_tree = {
         }
 		
 		available = {
-			controls_state = 756
+			controls_state = 601
         }
 
 		bypass = {

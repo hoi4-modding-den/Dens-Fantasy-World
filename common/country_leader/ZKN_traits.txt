@@ -111,4 +111,25 @@ leader_traits = {
         random = no
     }
 
+    ZKN_chief_bureaucrat = {
+        sprite = 13
+
+        production_factory_max_efficiency_factor = 0.1
+        production_lack_of_resource_penalty_factor = -0.25
+        political_power_factor = 0.15
+
+        random = no
+    }
+
+    ZKN_pragmatic_theorist = {
+		sprite = 14
+		operations_track_mastery_gain_factor = 0.15
+        experience_loss_factor = -0.08
+        initiative_factor = 0.02
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }

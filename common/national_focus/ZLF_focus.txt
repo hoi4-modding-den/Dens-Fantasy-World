@@ -1967,13 +1967,6 @@ focus_tree={
         }
 		
 		available = {
-			if = {
-				limit = { has_dlc = "No Compromise, No Surrender" }
-				controls_state = 677
-			}
-			else = {
-				controls_state = 655
-			}
 			NOT = { has_country_flag = ZLF_elbian_insurrection_happened }
         }
 
@@ -2684,6 +2677,14 @@ focus_tree={
 		
 		completion_reward = {
 			add_ideas = ZLF_petite_bourgeois_cooperation
+
+			hidden_effect = {
+				# country_event = Elections
+
+				# options for this one are:
+				# RTP
+				# IHP
+			}
 		}
 	}
 
@@ -3877,6 +3878,10 @@ focus_tree={
 					target = ROOT
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			country_event = ZLF_events.20
 		}
 	}
 
@@ -4625,7 +4630,7 @@ focus_tree={
 		y = 2
 		relative_position_id = ZLF_begin_the_anti_despotist_campaign
 		
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
             base = 10 
@@ -4633,6 +4638,7 @@ focus_tree={
 		
 		available = {
 			is_faction_leader = yes
+			has_war = no
 			collection_size = {
 				input = {
 					input = collection:ZLF_states_to_liberate_in_tewara
@@ -4647,7 +4653,11 @@ focus_tree={
         }
 		
 		completion_reward = {
-            
+			set_cosmetic_tag = ZLF_tewara
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+            custom_effect_tooltip = ZLF_declare_revolutionary_victory_tt
 		}
 	}
 
@@ -4821,7 +4831,7 @@ focus_tree={
         }
 		
 		available = {
-			is_subject = no
+			is_faction_leader = yes
         }
 
 		bypass = {
@@ -4829,7 +4839,26 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_popularity = { ideology = democratic popularity = 0.1 }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_other_country = {
+				limit = { has_government = democratic }
+				add_opinion_modifier = {
+					modifier = ZLF_pragmatic_cooperation_modifier
+					target = ROOT
+				}
+				reverse_add_opinion_modifier = {
+					modifier = ZLF_pragmatic_cooperation_modifier
+					target = ROOT
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			unlock_decision_tooltip = ZLF_cooperate_with_avalon
+			unlock_decision_tooltip = ZLF_cooperate_with_turun
 		}
 	}
 
@@ -4874,7 +4903,7 @@ focus_tree={
         #prerequisite = { focus = }
 		#mutually_exclusive = { focus =  }
 		x = 10
-		y = 13
+		y = 14
 		#relative_position_id = 
 		
 		cost = 0
@@ -4914,7 +4943,7 @@ focus_tree={
         }
 		
 		available = {
-            controls_province = 8863
+			has_character = ZSP_the_phoenix
         }
 		
 		completion_reward = {
@@ -4945,6 +4974,8 @@ focus_tree={
 		
 		completion_reward = {
 			# event about rocketry
+
+			#add_ideas = ZLF_space_socialism
 		}
 	}
 
@@ -4964,6 +4995,7 @@ focus_tree={
         }
 		
 		available = {
+			is_ai = no
 			has_completed_custom_achievement = { mod = ZLF_gardenia_achievements achievement = ZLF_red_autumn_reference_achievement }
         }
 		
@@ -5012,8 +5044,8 @@ focus_tree={
         }
 		
 		available = {
+			is_ai = no
 			has_completed_custom_achievement = { mod = ZLF_gardenia_achievements achievement = ZLF_another_victory_for_social_democracy_achievement }
-			has_government = democratic
         }
 		
 		completion_reward = {
@@ -5037,7 +5069,7 @@ focus_tree={
         }
 		
 		available = {
-            NOT = { has_completed_focus = ZLF_social_democratic_activism }
+            
         }
 		
 		completion_reward = {
@@ -5061,7 +5093,7 @@ focus_tree={
         }
 		
 		available = {
-            has_completed_focus = ZLF_social_democratic_activism
+            
         }
 		
 		completion_reward = {
