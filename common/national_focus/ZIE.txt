@@ -624,7 +624,7 @@ focus_tree = {
 
 	focus = {
 		id = the_national_economic_proclemation
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_GER_integration_of_puppet_economies
 		prerequisite = { focus = the_era_of_patriotism }
 		relative_position_id = the_era_of_patriotism
 		x = 7
@@ -633,12 +633,16 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = the_matter_of_land_reform2
+				add_idea = the_matter_of_land_reform3
+			}
 		} 
 	}
 
 	focus = {
 		id = the_five_year_plan
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_GER_prioritize_the_four_year_plan
 		prerequisite = { focus = the_national_economic_proclemation }
 		relative_position_id = the_national_economic_proclemation
 		x = 0
@@ -647,40 +651,143 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_timed_idea = {
+				idea = ZIE_two_year_plan
+				days = 730
+			}
 		} 
 	}
 
 	focus = {
+		id = construct_the_crnat_dam
+		icon = GFX_focus_PRC_construct_the_banqiao_dam
+		prerequisite = { focus = the_national_economic_proclemation }
+		relative_position_id = the_national_economic_proclemation
+		x = -2
+		y = 1
+		cost = 0
+		available = {
+			1255 = { 
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					1255 = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+				}
+				1255 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			1255 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 10840
+					}
+				}
+			}
+			custom_effect_tooltip = {
+				localization_key = building_state_modifier|dam
+				INDENT = "    "
+			}
+			}
+	}
+
+	focus = {
 		id = expand_the_urhu_mines
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_coal_mining
 		prerequisite = { focus = the_national_economic_proclemation }
 		relative_position_id = the_national_economic_proclemation
 		x = -4
 		y = 1
 		cost = 0
 		available = {
+			1255 = { 
+				is_fully_controlled_by = ROOT
+			}
 		}
 		completion_reward = {
+			add_resource = {
+			type = coal
+			amount = 12
+			state = 727
+			}
+			add_resource = {
+			type = tungsten
+			amount = 9
+			state = 727
+			}
 		} 
 	}
 
 	focus = {
-		id = invest_into_the_coastal_cities
-		icon = GFX_focus_PLACEHOLDER
+		id = expanding_ternstads_industry
+		icon = GFX_focus_generic_industry_investment
 		prerequisite = { focus = expand_the_urhu_mines }
 		relative_position_id = expand_the_urhu_mines
 		x = -1
 		y = 1
 		cost = 0
 		available = {
+			843 = { 
+				is_fully_controlled_by = ROOT
+			}
 		}
 		completion_reward = {
+			add_resource = {
+			type = steel
+			amount = 23
+			state = 843
+			}
+			843 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				set_state_category = city 
+			}
+			843 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+
 		} 
 	}
 
 	focus = {
 		id = the_national_resource_project
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_resource_extraction
 		prerequisite = { focus = expand_the_urhu_mines }
 		relative_position_id = expand_the_urhu_mines
 		x = 1
@@ -689,40 +796,102 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_ideas = national_resource_organization
 		} 
 	}
 
 	focus = {
 		id = expanding_mining_technology
-		icon = GFX_focus_PLACEHOLDER
-		prerequisite = { focus = invest_into_the_coastal_cities focus = the_national_resource_project }
-		relative_position_id = invest_into_the_coastal_cities
-		x = 1
+		icon = GFX_focus_generic_mineral_prospecting
+		prerequisite = { focus = expanding_ternstads_industry }
+		prerequisite = { focus = the_national_resource_project }
+		relative_position_id = the_national_resource_project
+		x = -1
 		y = 1
 		cost = 0
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+			name = expanding_mining_technology
+			bonus = 1.0
+			uses = 1
+			category = excavation_tech
+		}
+		swap_ideas = {
+			remove_idea = national_resource_organization
+			add_idea = national_resource_organization2
+		}
 		} 
 	}
 
 	focus = {
 		id = reaching_autarky
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_GER_autarky_achieved
 		prerequisite = { focus = expanding_mining_technology }
 		relative_position_id = expanding_mining_technology
 		x = 0
 		y = 1
 		cost = 0
 		available = {
+			all_core_state = {
+				is_fully_controlled_by = ROOT
+			}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = steel
+				amount > 49 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
+			}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = aluminium
+				amount > 29 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
+			}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = oil
+				amount > 9 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
+			}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = tungsten
+				amount > 39 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
+			}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = chromium
+				amount > 29 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
+			}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = rubber
+				amount > 19 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
+			}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = coal
+				amount > 29 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
+			}
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = national_resource_organization2
+				add_idea = national_resource_organization3
+			}
+
 		} 
 	}
 
 	focus = {
 		id = calming_the_agrarians
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_ITA_peasants_rise
 		prerequisite = { focus = the_five_year_plan }
 		relative_position_id = the_five_year_plan
 		x = -1
@@ -731,12 +900,17 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_political_power = -75
+			swap_ideas = {
+				remove_idea = the_matter_of_land_reform3
+				add_idea = the_matter_of_land_reform4
+			}
 		} 
 	}
 
 	focus = {
 		id = cutting_cornerstones
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_industrial_experts
 		prerequisite = { focus = the_five_year_plan focus = rally_up_the_military_complex }
 		relative_position_id = the_five_year_plan
 		x = 1
@@ -745,27 +919,87 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+			name = cutting_cornerstones
+			bonus = 1.0
+			uses = 2
+			category = industry
+		}
+		add_tech_bonus = {
+			name = cutting_cornerstones2
+			bonus = 1.0
+			uses = 1
+			category = electronics
+		}
 		} 
 	}
 
 	focus = {
 		id = industrial_investments
-		icon = GFX_focus_PLACEHOLDER
-		prerequisite = { focus = cutting_cornerstones focus = calming_the_agrarians }
+		icon = GFX_SOV_heavy_industry_ccp_2d_sov_compatibility
+		prerequisite = { focus = cutting_cornerstones }
+		prerequisite = { focus = calming_the_agrarians }
+		prerequisite = { focus = fund_researchers }
 		relative_position_id = cutting_cornerstones
 		x = -1
 		y = 1
 		cost = 0
 		available = {
+			858 = { 
+				is_fully_controlled_by = ROOT
+			}
+			727 = { 
+				is_fully_controlled_by = ROOT
+			}
+			843 = { 
+				is_fully_controlled_by = ROOT
+			}
+			705 = { 
+				is_fully_controlled_by = ROOT
+			}
 		}
 		completion_reward = {
+			858 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			727 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			843 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			705 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		} 
 	}
 
 	focus = {
 		id = expand_infrastructure
-		icon = GFX_focus_PLACEHOLDER
-		prerequisite = { focus = cutting_cornerstones focus = blessings_of_science }
+		icon = GFX_SOV_infrastructure_effort_nsb_ccp_2d_sov_compatibility
+		prerequisite = { focus = cutting_cornerstones }
+		prerequisite = { focus = calming_the_agrarians }
+		prerequisite = { focus = fund_researchers }
 		relative_position_id = cutting_cornerstones
 		x = 1
 		y = 1
@@ -773,12 +1007,40 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		} 
 	}
 
 	focus = {
 		id = the_importance_of_foundation
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_CHI_found_fertiliser_plant
 		prerequisite = { focus = industrial_investments }
 		relative_position_id = industrial_investments
 		mutually_exclusive = { focus = the_importance_of_advancement }
@@ -788,12 +1050,16 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = the_matter_of_land_reform4
+				add_idea = importance_of_foundation
+			}
 		} 
 	}
 
 	focus = {
 		id = the_importance_of_advancement
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_railroad
 		prerequisite = { focus = expand_infrastructure }
 		relative_position_id = expand_infrastructure
 		mutually_exclusive = { focus = the_importance_of_foundation }
@@ -803,6 +1069,10 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = the_matter_of_land_reform4
+				add_idea = importance_of_advancement
+			}
 		} 
 	}
 
@@ -810,8 +1080,9 @@ focus_tree = {
 		id = the_light_of_the_west
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = the_importance_of_advancement focus = the_importance_of_foundation }
+		prerequisite = { focus = reaching_autarky }
 		relative_position_id = the_importance_of_advancement
-		x = -1
+		x = -2
 		y = 1
 		cost = 0
 		available = {
@@ -823,7 +1094,7 @@ focus_tree = {
 
 	focus = {
 		id = countryside_investments
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_CHI_students_to_the_countryside
 		prerequisite = { focus = calming_the_agrarians }
 		prerequisite = { focus = the_national_resource_project }
 		relative_position_id = calming_the_agrarians
@@ -831,65 +1102,182 @@ focus_tree = {
 		y = 1
 		cost = 0
 		available = {
+			859 = { 
+				is_fully_controlled_by = ROOT
+			}
+			854 = { 
+				is_fully_controlled_by = ROOT
+			}
+			1257 = { 
+				is_fully_controlled_by = ROOT
+			}
 		}
 		completion_reward = {
+			859 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			854 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			1257 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		} 
 	}
 
 	focus = {
 		id = rally_up_the_military_complex
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_military_industry
 		prerequisite = { focus = the_national_economic_proclemation }
 		relative_position_id = the_national_economic_proclemation
 		x = 2
 		y = 1
 		cost = 0
 		available = {
+			has_completed_focus = militarism_in_the_rejuvinated_state
 		}
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			custom_effect_tooltip = hna_tt
+			add_to_variable = { 
+				hna_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
 		} 
 	}
 
 	focus = {
 		id = fund_researchers
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = rally_up_the_military_complex }
 		relative_position_id = rally_up_the_military_complex
-		x = 3
+		x = 2
 		y = 1
 		cost = 0
 		available = {
 		}
 		completion_reward = {
+			add_ideas = bureu_of_national_research
 		} 
 	}
 
 	focus = {
 		id = blessings_of_science
-		icon = GFX_focus_PLACEHOLDER
-		prerequisite = { focus = rally_up_the_military_complex }
-		relative_position_id = rally_up_the_military_complex
-		x = 1
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = further_research_investments }
+		relative_position_id = further_research_investments
+		x = 0
 		y = 1
 		cost = 0
 		available = {
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = bureau_of_national_research
+				add_idea = bureau_of_national_research2
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = atomic_research }
+				}
+				add_tech_bonus = {
+					name = GER_the_mannheim_project
+					bonus = 1.0
+					ahead_reduction = 2
+					technology = atomic_research
+				}
+			}
+			custom_effect_tooltip = {
+				localization_key = ZLF_facility_construction_tt
+				temp_facility_state_loc = 1255
+				temp_facility_type_loc = nuclear_facility
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						704 = {
+							is_fully_controlled_by = ROOT
+							can_construct_building = nuclear_facility
+						}
+					}
+					704 = {
+						add_building_construction = {
+							type = nuclear_facility
+							level = 1
+							instant_build = yes
+							province = 9957 # must be biggest victory point
+						}
+					}
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.5
+			}
+			
 		} 
 	}
 
 	focus = {
 		id = further_research_investments
-		icon = GFX_focus_PLACEHOLDER
-		prerequisite = { focus = blessings_of_science }
+		icon = GFX_focus_research
 		prerequisite = { focus = fund_researchers }
-		relative_position_id = blessings_of_science
-		x = 1
+		relative_position_id = fund_researchers
+		x = 0
 		y = 1
 		cost = 0
 		available = {
 		}
 		completion_reward = {
+			add_research_slot = 1
 		} 
 	}
 
@@ -899,10 +1287,11 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = the_era_of_patriotism }
 		relative_position_id = the_era_of_patriotism
-		x = -5
+		x = -7
 		y = 1
 		cost = 0
 		available = {
+			has_completed_focus = militarism_in_the_rejuvinated_state
 		}
 		completion_reward = {
 		} 
@@ -1044,9 +1433,97 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 0
-		available = {
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = redefine_national_beleifs
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = propaganda_department }
+		relative_position_id = propaganda_department
+		x = -1
+		y = 1
+		cost = 0
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = promote_scientific_idealism
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = propaganda_department }
+		relative_position_id = propaganda_department
+		x = 1
+		y = 1
+		cost = 0
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = fund_pro_government_films
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = promote_scientific_idealism }
+		prerequisite = { focus = redefine_national_beleifs }
+		relative_position_id = promote_scientific_idealism
+		x = -1
+		y = 1
+		cost = 0
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = found_the_socievitze_agentie
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = promote_scientific_idealism }
+		relative_position_id = promote_scientific_idealism
+		visible = { 
 			has_dlc = "La Resistance"
-        }
+		} 
+		x = 1
+		y = 1
+		cost = 0
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = expand_intelligence_investments
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = found_the_socievitze_agentie }
+		relative_position_id = found_the_socievitze_agentie
+		visible = { 
+			has_dlc = "La Resistance"
+		} 
+		x = 0
+		y = 1
+		cost = 0
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = the_gift_of_radio
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = fund_pro_government_films }
+		relative_position_id = fund_pro_government_films
+		x = 0
+		y = 1
+		cost = 0
+		completion_reward = {
+		} 
+	}
+
+	focus = {
+		id = utilize_radio_for_military
+		icon = GFX_focus_PLACEHOLDER
+		prerequisite = { focus = the_gift_of_radio }
+		relative_position_id = the_gift_of_radio
+		x = 0
+		y = 1
+		cost = 0
 		completion_reward = {
 		} 
 	}
@@ -1559,7 +2036,7 @@ focus_tree = {
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = prepare_speech }
 		mutually_exclusive = { focus = the_era_of_patriotism }
-		x = 36
+		x = 37
 		y = 2
 		cost = 0
 		available = {
@@ -1588,19 +2065,41 @@ focus_tree = {
 	}
 	focus = {
 		id = militarism_in_the_rejuvinated_state
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_CZE_demonstration_of_military_achievements
 		prerequisite = { focus = the_era_of_patriotism focus = councils_move }
 		x = 20
 		y = 3
-		cost = 0
+		cost = 2
 		available = {
 		}
 		completion_reward = {
+			remove_dynamic_modifier = {
+				modifier = waining_military
+			}
+			add_dynamic_modifier = {
+                modifier = hravan_national_army
+            }
+            	# WAINING ARMY WITH A STATE
+            	add_to_variable = { hna_stability_factor = -0.15
+				tooltip = stability_factor_tt
+			}
+            	add_to_variable = { hna_army_org_factor = 0.05
+				tooltip = army_org_factor_tt
+			}
+            	add_to_variable = { hna_industrial_capacity_factory = -0.12
+			tooltip = industrial_capacity_factory_tt
+			}
+            	add_to_variable = { hna_conscription_factor = -0.30 
+			tooltip = conscription_factor_tt
+			}
+            	add_to_variable = { hna_conscription = -0.004
+			tooltip = conscription_tt
+			}
 		} 
 	}
 	focus = {
 		id = to_heal_the_scars
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_BEL_legacy_of_the_great_war
 		prerequisite = { focus = militarism_in_the_rejuvinated_state }
 		x = 19
 		y = 4
@@ -1608,11 +2107,21 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+		custom_effect_tooltip = hna_tt
+			add_to_variable = { hna_stability_factor = 0.05 
+		tooltip = stability_factor_tt
+		}
+			add_to_variable = { hna_industrial_capacity_factory = 0.05 
+		tooltip = industrial_capacity_factory_tt
+		}
+			add_to_variable = { hna_conscription_factor = 0.1 
+		tooltip = conscription_factor_tt
+		}
 		} 
 	}
 	focus = {
 		id = construct_military_facilities
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_SOV_expand_the_aircraft_industry_ccp_2d_sov_compatibility
 		prerequisite = { focus = to_heal_the_scars }
 		x = 17
 		y = 5
@@ -1620,11 +2129,32 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			custom_effect_tooltip = hna_tt
+			add_to_variable = {
+				hna_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
 		} 
 	}
 	focus = {
 		id = military_projects
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_SOV_optimize_production_lines_ccp_2d_sov_compatibility
 		prerequisite = { focus = to_heal_the_scars }
 		x = 19
 		y = 5
@@ -1632,11 +2162,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			unlock_decision_category_tooltip = ZIE_military_investments
 		} 
 	}
 	focus = {
 		id = military_experimentation
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_air_research_boost
 		prerequisite = { focus = construct_military_facilities }
 		prerequisite = { focus = fund_researchers }
 		x = 16
@@ -1645,11 +2176,41 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = ZLF_facility_construction_tt
+				temp_facility_state_loc = 1255
+				temp_facility_type_loc = land_facility
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						1255 = {
+							is_fully_controlled_by = ROOT
+							can_construct_building = land_facility
+						}
+					}
+					1255 = {
+						add_building_construction = {
+							type = land_facility
+							level = 1
+							instant_build = yes
+							province = 10839 # must be biggest victory point
+						}
+					}
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 0.5
+			}
 		} 
 	}
 	focus = {
 		id = forgive_and_forget
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_population_growth
 		prerequisite = { focus = militarism_in_the_rejuvinated_state }
 		x = 21
 		y = 4
@@ -1657,11 +2218,21 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+		custom_effect_tooltip = hna_tt
+			add_to_variable = { hna_stability_factor = 0.05 
+		tooltip = stability_factor_tt
+		}
+			add_to_variable = { hna_industrial_capacity_factory = 0.05 
+		tooltip = industrial_capacity_factory_tt
+		}
+			add_to_variable = { hna_conscription = 0.001 
+		tooltip = conscription_tt
+		}
 		} 
 	}
 	focus = {
 		id = improve_military_designs
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_ETH_freedom_at_gunpoint
 		prerequisite = { focus = forgive_and_forget }
 		x = 21
 		y = 5
@@ -1669,11 +2240,30 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			country_event = { id = ZIE_event.7 days = 1 }
+			add_tech_bonus = {
+			
+  			  bonus = 1
+			
+  			  uses = 1
+			
+   			  category = infantry_weapons
+
+			}
+			add_tech_bonus = {
+			
+  			  bonus = 1
+			
+  			  uses = 1
+			
+   			  category = support_tech
+
+			}
 		} 
 	}
 	focus = {
 		id = tank_engineering
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_heavy_tank
 		prerequisite = { focus = military_projects focus = improve_military_designs }
 		x = 20
 		y = 6
@@ -1681,11 +2271,32 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+			name = ZIE_tank_engineering
+			bonus = 1.0
+			uses = 1
+			category = cat_medium_armor
+		}
+		add_tech_bonus = {
+			name = ZIE_tank_engineering2
+			bonus = 1.0
+			uses = 1
+			category = cat_heavy_armor
+		}
+		custom_effect_tooltip = hna_tt
+		add_to_variable = {
+			hna_army_armor_defence_factor = 0.05
+			tooltip = army_armor_defence_factor_tt
+		}
+		add_to_variable = {
+			hna_army_armor_attack_factor = 0.05
+			tooltip = army_armor_attack_factor_tt
+		}
 		} 
 	}
 	focus = {
 		id = shock_and_awe
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = tank_engineering focus = cusp_of_military_innovation focus = military_experimentation }
 		mutually_exclusive = { focus = outplan_outthink }
 		x = 19
@@ -1694,11 +2305,25 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = hna_tt
+			add_to_variable = {
+				hna_army_artillery_attack_factor = 0.1
+				tooltip = army_artillery_attack_factor_tt
+			}
+			add_to_variable = {
+				hna_army_defence_factor = 0.1
+				toolip = army_defence_attack_factor_tt
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.7
+				uses = 1
+				category = land_doctrine
+			}
 		} 
 	}
 	focus = {
 		id = outplan_outthink
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_PHI_war_plan_orange
 		prerequisite = { focus = tank_engineering focus = cusp_of_military_innovation focus = military_experimentation }
 		mutually_exclusive = { focus = shock_and_awe }
 		x = 17
@@ -1707,11 +2332,29 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = hna_tt
+			add_to_variable = {
+				hna_planning_speed = 0.2
+				tooltip = planning_speed_tt
+			}
+			add_to_variable = {
+				hna_initiative_factor = 0.05
+				tooltip = initiative_factor_tt
+			}
+			add_to_variable = {
+				hna_army_defence_factor = 0.1
+				tooltip = army_defence_factor_tt
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.7
+				uses = 1
+				category = land_doctrine
+			}
 		} 
 	}
 	focus = {
 		id = manuevre_warfare
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_tank_assembly
 		prerequisite = { focus = tank_engineering focus = cusp_of_military_innovation focus = military_experimentation }
 		mutually_exclusive = { focus = the_long_game }
 		x = 23
@@ -1720,11 +2363,29 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = hna_tt
+		add_to_variable = {
+			hna_army_armor_defence_factor = 0.05
+			tooltip = army_armor_defence_factor_tt
+		}
+		add_to_variable = {
+			hna_army_armor_attack_factor = 0.15
+			tooltip = army_armor_attack_factor_tt
+		}
+		add_to_variable = {
+			hna_breakthrough_factor = 0.05
+			tooltip = breakthrough_factor_tt
+		}
+		add_doctrine_cost_reduction = {
+				cost_reduction = 0.7
+				uses = 1
+				category = land_doctrine
+			}
 		} 
 	}
 	focus = {
 		id = the_long_game
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_SOV_desperate_measures_ccp_2d_sov_compatibility
 		prerequisite = { focus = tank_engineering focus = cusp_of_military_innovation focus = military_experimentation }
 		mutually_exclusive = { focus = manuevre_warfare }
 		x = 21
@@ -1733,11 +2394,29 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = hna_tt
+		add_to_variable = {
+			hna_dig_in_speed = 0.20
+			tooltip = dig_in_speed_tt
+		}
+		add_to_variable = {
+			hna_max_planning_factor = 0.15
+			tooltip = max_planning_factor_tt
+		}
+		add_to_variable = {
+			hna_army_defence_factor = 0.05
+			tooltip = army_defence_factor_tt
+		}
+		add_doctrine_cost_reduction = {
+				cost_reduction = 0.7
+				uses = 1
+				category = land_doctrine
+			}
 		} 
 	}
 	focus = {
 		id = an_army_to_last_a_millenia
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_NORDIC_mon_capstone_army
 		prerequisite = { focus = manuevre_warfare focus = the_long_game }
 		prerequisite = { focus = outplan_outthink focus = shock_and_awe }
 		x = 20
@@ -1750,7 +2429,7 @@ focus_tree = {
 	}
 	focus = {
 		id = break_military_nepotism
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_crush_the_military
 		prerequisite = { focus = forgive_and_forget }
 		x = 23
 		y = 5
@@ -1758,11 +2437,21 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+		custom_effect_tooltip = hna_tt
+			add_to_variable = { hna_stability_factor = 0.1 
+			tooltip = stability_factor_tt
+		}
+			add_to_variable = { hna_conscription_factor = 0.2 
+			tooltip = conscription_factor_tt
+		}
+			add_to_variable = { hna_conscription = 0.002
+			tooltip = conscription_tt
+		}
 		} 
 	}
 	focus = {
 		id = cusp_of_military_innovation
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = break_military_nepotism }
 		x = 24
 		y = 6
@@ -1770,13 +2459,28 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_dynamic_modifier = {
+                modifier = institute_of_national_research
+            }
+			add_to_variable = {
+				inr_research_speed_factor = 0.025
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				inr_scientist_breakthrough_bonus_factor = 0.05
+				tooltip = scientist_breakthrough_bonus_factor_tt
+			}
+			add_to_variable = {
+				inr_scientist_xp_gain_factor = 0.05
+				tooltip = scientist_xp_gain_factor_tt
+			}
 		} 
 	}
 	focus = {
 		id = return_of_landreform
 		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = councils_move }
-		x = 30
+		x = 31
 		y = 3
 		cost = 0
 		available = {

@@ -59,6 +59,79 @@ ideas = {
 				production_speed_arms_factory_factor = -0.2
 			}
 		}
+		the_matter_of_land_reform3 = {
+			picture = PRC_land_revolution_expedited
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.05
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+			}
+		}
+		the_matter_of_land_reform4 = {
+			picture = PRC_land_revolution_expedited
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = -0.10
+			}
+		}
+
+		importance_of_foundation = {
+			picture = PRC_land_revolution_expedited
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = -0.10
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.1
+			}
+		}
+		importance_of_advancement = {
+			picture = PRC_land_revolution_expedited
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		bureau_of_national_research = {
+			picture = generic_research_bonus
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				research_speed = 0.05
+			}
+		}
+		bureau_of_national_research2 = {
+			picture = generic_research_bonus
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				research_speed = 0.1
+			}
+		}
 		growing_emergency_unrest = {
 			picture = AFG_parliament_building_damaged
 
@@ -70,6 +143,104 @@ ideas = {
 				war_support_weekly = -0.001
 				political_power_cost = 0.3
 				drift_defence_factor = -0.35
+			}
+		}
+		ZIE_two_year_plan = {
+			picture = POL_succesful_four_year_plan
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.15
+
+			}
+		}
+		national_resource_organization = {
+			picture = COG_forminiere
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				local_resources_factor = 0.10
+				production_lack_of_resource_penalty_factor = -0.1
+			}
+		}
+		national_resource_organization2 = {
+			picture = COG_forminiere
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				local_resources_factor = 0.15
+				production_lack_of_resource_penalty_factor = -0.2
+			}
+		}
+		national_resource_organization3 = {
+			picture = COG_forminiere
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				local_resources_factor = 0.25
+				production_lack_of_resource_penalty_factor = -0.2
+				production_speed_industrial_infrastructure_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.15
+			}
+		}
+		infantry_priority = {
+			picture = generic_infantry_bonus
+
+			allowed = {
+				always = no
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+				   instant = yes
+     			   reliability = 0.1
+				   build_cost_ic = -0.2
+    			}
+			}
+			modifier = {
+			}
+		}
+		firepower_priority = {
+			picture = SWE_let_fly_all_guns
+
+			allowed = {
+				always = no
+			}
+			equipment_bonus = {
+				artillery = {
+				   instant = yes
+     			   soft_attack = 0.1
+				   build_cost_ic = -0.1
+    			}
+			}
+			modifier = {
+			}
+		}
+		tank_priority = {
+			picture = generic_acquire_tanks
+
+			allowed = {
+				always = no
+			}
+			equipment_bonus = {
+				armor = {
+				   instant = yes
+     			   piercing = 0.1
+				   build_cost_ic = -0.15
+				   soft_attack = 0.05
+				   hard_attack = 0.05
+				   reliability = 0.1
+    			}
+			}
+			modifier = {
 			}
 		}
 	}

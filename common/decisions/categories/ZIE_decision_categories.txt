@@ -10,3 +10,20 @@ ZIE_balance_of_power_category = {
 
 	visible_when_empty = no
 }
+
+ZIE_military_investments = {
+
+    icon = GFX_decision_category_generic_arms_trade
+	
+	allowed = {
+		original_tag = ZIE
+	}
+
+	priority = 100
+
+	visible = {
+		has_completed_focus = military_projects
+	}
+
+	visible_when_empty = yes
+}

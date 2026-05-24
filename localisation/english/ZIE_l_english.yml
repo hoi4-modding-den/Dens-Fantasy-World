@@ -108,6 +108,8 @@
  spoils_of_the_last_urhu_war_desc: "We have turned out of a 4 war long conflict as the final victors, at the peace table diplomats negotiated and demanded for us to be payed for our losses."
  the_matter_of_land_reform2: "The Matter of Land Reform"
  the_matter_of_land_reform2_desc: "The Agrarians and workers in the country side have been ignored long before the war, now it has flamed up into a hot mess that we will eventually have to deal with."
+ the_matter_of_land_reform3: "The Matter of Land Reform"
+ the_matter_of_land_reform3_desc: "The Agrarians and workers in the country side have been ignored long before the war, now it has flamed up into a hot mess that we will eventually have to deal with."
  waining_military: "Waining Military"
  waining_military_desc: "After the Fourth Urhú War, our once prepared war industry has been exhausted and our manpower reserves have been emptied. If Hráva is to expand militarily again drastic measures have to be taken."
  # FOCUS NAMES
@@ -140,6 +142,7 @@
  FOCUS_never_available_tt: "§YAvailable via event or other actions§!"
  council_moves_tt: "§RUpon a national victory the council will plot a coup...§!"
  marshall_moves_tt: "§RUpon a national victory the Marshall will endure...§!"
+ hna_tt: "Modifies §YHrávan National Army§! by:"
 
  # COSMETIC TAGS
  ZIE_social_republic: "Hrávan Social Republic"

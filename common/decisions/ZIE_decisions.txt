@@ -395,6 +395,151 @@ ZIE_balance_of_power_category = {
 			remove_mission = ZIE_marshall_makes_their_move
         }
     }
-	
+}
 
+ZIE_military_investments = {
+
+    expanding_military_industries = {
+
+        icon = GFX_RAJ_decision_investment_mils_icon
+        available = {
+           always = no 
+        }
+
+        cancel_trigger = {
+        }
+
+        days_remove = 70
+
+        fire_only_once = yes
+        
+        timeout_effect = {
+            random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+            add_to_variable = {
+                hna_army_attack_factor = 0.025
+                tooltip = army_attack_factor_tt
+            }
+        }
+    }
+
+    militarize_countryside = {
+
+        icon = GFX_RAJ_decision_investment_mils_icon
+        available = {
+           always = no 
+        }
+
+        cancel_trigger = {
+        }
+
+        days_remove = 70
+
+        fire_only_once = yes
+        
+        timeout_effect = {
+            random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+            random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+        }
+    }
+    improving_bullet_design = {
+
+        icon = GFX_RAJ_decision_investment_mils_icon
+
+        available = {
+           always = no 
+        }
+
+        cancel_trigger = {
+        }
+
+        days_remove = 70
+
+        fire_only_once = yes
+        
+        timeout_effect = {
+            add_to_variable = {
+                hna_army_attack_factor = 0.025
+                tooltip = army_attack_factor_tt
+            }
+            add_to_variable = {
+                hna_army_defence_factor = 0.05
+                tooltip = army_defence_factor_tt
+            }
+        }
+    }
+    fund_tank_facilities = {
+
+        icon = GFX_RAJ_decision_investment_mils_icon
+        activation = {
+        }
+
+        available = {
+           always = no 
+        }
+
+        days_remove = 70
+
+        cancel_trigger = {
+        }
+
+        fire_only_once = yes
+        
+        timeout_effect = {
+        }
+    }
+    reopen_conscription_centers = {
+
+        icon = GFX_RAJ_decision_investment_mils_icon
+        available = {
+           always = no 
+        }
+
+        cancel_trigger = {
+        }
+
+        days_remove = 70
+
+        fire_only_once = yes
+        
+        timeout_effect = {
+        }
+    }
+    initiate_training_programs = {
+
+        icon = GFX_RAJ_decision_investment_mils_icon
+        available = {
+           always = no 
+        }
+
+        cancel_trigger = {
+        }
+
+        days_remove = 70
+
+        fire_only_once = yes
+        
+        timeout_effect = {
+        }
+    }
 }

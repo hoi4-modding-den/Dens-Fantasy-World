@@ -85,3 +85,41 @@ growing_emergency_unrest = {
 	drift_defence_factor = geu_drift_defence_factor
 	war_support_factor = geu_war_support_factor
 }
+
+hravan_national_army = {
+	icon = GFX_idea_NORDIC_army_monarchist
+
+	enable = { always = yes }
+
+	army_attack_factor = hna_army_attack_factor
+	army_attack_speed_factor = hna_army_attack_speed_factor
+	army_defence_factor = hna_army_defence_factor
+	army_org_factor = hna_army_org_factor
+	stability_factor = hna_stability_factor
+	industrial_capacity_factory = hna_industrial_capacity_factory
+	production_speed_buildings_factor = hna_production_speed_buildings_factor
+	ai_focus_aggressive_factor = hna_ai_focus_aggressive_factor
+	conscription_factor = hna_conscription_factor
+	conscription = hna_conscription
+	breakthrough_factor = hna_breakthrough_factor
+	army_armor_defence_factor = hna_army_armor_defence_factor
+	army_armor_attack_factor = hna_army_armor_attack_factor
+	dig_in_speed = hna_dig_in_speed
+	max_planning_factor = hna_max_planning_factor
+	army_artillery_attack_factor = hna_army_artillery_attack_factor
+	army_defence_attack_factor = hna_army_defence_attack_factor
+	planning_speed = hna_planning_speed
+	initiative_factor = hna_initiative_factor
+}
+
+institute_of_national_research = {
+	icon = GFX_idea_jap_supremacy_of_technology
+
+	enable = { always = yes }
+
+	research_speed_factor = inr_research_speed_factor
+	stability_factor = inr_stability_factor
+	scientist_breakthrough_bonus_factor = inr_scientist_breakthrough_bonus_factor
+	scientist_research_bonus_factor = inr_scientist_research_bonus_factor
+	scientist_xp_gain_factor = inr_scientist_xp_gain_factor
+}
