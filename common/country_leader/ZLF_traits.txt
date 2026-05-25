@@ -74,6 +74,15 @@ leader_traits = {
         random = no
     }
 
+    ZLF_weil_ich_demokrat_bin = {
+        
+        democratic_drift = 0.05
+        stability_factor = 0.1
+        industrial_capacity_factory = 0.1
+
+        random = no
+    }
+
     ZLF_warmonger = {
         
         political_power_factor = -0.15
@@ -153,6 +162,60 @@ leader_traits = {
         random = no
     }
 
+    ZLF_the_last_communist = {
+        
+        communism_drift = 0.03
+        production_lack_of_resource_penalty_factor = -0.15
+        org_loss_when_moving = -0.2
+        airforce_intel_factor = 0.1
+        opinion_gain_monthly_same_ideology_factor = -0.05
+        send_volunteer_size = 5
+
+        random = no
+    }
+
+    ZLF_new_theoretical_approach = {
+        
+        communism_drift = 0.02
+        research_speed_factor = 0.05
+        production_speed_industrial_complex_factor = 0.1
+        production_speed_infrastructure_factor = 0.15
+        conscription_factor = -0.08
+
+        random = no
+    }
+
+    ZLF_boring_moralist = {
+        
+        production_factory_start_efficiency_factor = 0.05
+        stability_factor = 0.25
+        research_sharing_per_country_bonus = 0.01
+
+        random = no
+    }
+
+    ZLF_fdj_reference = {
+
+        # Liberty
+        democratic_drift = 0.05
+        democratic_drift_from_guarantees = 0.02
+        # Labour
+        production_speed_buildings_factor = 0.05
+        # Leasure Time
+        production_factory_max_efficiency_factor = -0.05
+        # Unity
+        stability_factor = 0.1
+
+        random = no
+    }
+
+    ZLF_bad_sleep_schedule = {
+
+        command_abilities_cost_factor = 0.1
+
+        random = no
+    }
+
     ZLF_former_foreign_minister = {
         
         opinion_gain_monthly_factor = 0.15
@@ -218,7 +281,7 @@ leader_traits = {
         recon_factor = 0.15
         max_dig_in = 2
         org_loss_when_moving = -0.1
-        local_building_slots_factor = -0.1
+        global_building_slots_factor = -0.1
         local_resources_factor = -0.15
 
         random = no
@@ -278,8 +341,6 @@ leader_traits = {
         sprite = 13
 
         production_speed_infrastructure_factor = 0.2
-        production_speed_industrial_infrastructure_factor = 0.2
-		production_speed_energy_infrastructure_factor = 0.2
         political_power_gain = -0.05
 
         random = no
@@ -298,7 +359,29 @@ leader_traits = {
     ZLF_union_representative = {
         sprite = 13
 
+        political_power_factor = -0.05
         production_factory_start_efficiency_factor = 0.2
+
+        random = no
+    }
+
+    ZLF_former_prosecutor = {
+        sprite = 13
+
+        political_power_gain = 0.25
+        industrial_capacity_factory = -0.05
+        industrial_capacity_dockyard = -0.05
+        production_factory_efficiency_gain_factor = 0.02
+
+        random = no
+    }
+
+    ZLF_free_trade_proponent = {
+        sprite = 13
+
+        trade_laws_cost_factor = -0.5
+        trade_opinion_factor = 0.05
+        resource_trade_cost_bonus_per_factory = 2
 
         random = no
     }
@@ -308,6 +391,7 @@ leader_traits = {
 
         fascism_drift = 0.1
         conscription_factor = 0.05
+        training_time_factor = -0.05
 
         random = no
     }
@@ -315,7 +399,7 @@ leader_traits = {
     ZLF_land_reform_advocate = {
         sprite = 12
 
-        local_building_slots_factor = 0.1
+        global_building_slots_factor = 0.1
         production_speed_buildings_factor = 0.1
         democratic_drift = 0.02
 
@@ -353,11 +437,11 @@ leader_traits = {
     }
 
     ZLF_the_white_rose = {
-        sprite = 13
+        sprite = 12
 
-        compliance_growth = 0.3
-        resistance_growth_on_our_occupied_states = 0.15
-        equipment_capture = 0.02
+        compliance_growth = 0.15
+        resistance_growth_on_our_occupied_states = 0.4
+        equipment_capture_factor = 0.3
 
         random = no
     }
@@ -376,14 +460,14 @@ leader_traits = {
     ZLF_doctor_esperanto = {
         sprite = 12
 
-        compliance_gain = 0.05
-        research_sharing_per_country_bonus = 0.05
+        compliance_gain = 0.1
+        research_sharing_per_country_bonus = 0.15
         offensive_war_stability_factor = -0.5
 
         random = no
     }
 
-    ZLF_esperantist = {
+    ZLF_esperantist = { # secondary trait
 
         political_power_factor = 0.02
         opinion_gain_monthly_factor = 0.05
@@ -407,6 +491,17 @@ leader_traits = {
         stability_weekly = 0.001
         political_advisor_cost_factor = 0.5
         custom_modifier_tooltip = ZLF_independent_journalist_tt
+
+        random = no
+    }
+
+    ZLF_internationalist_organiser = {
+        sprite = 13
+
+        communism_acceptance = 40
+        experience_gain_air_factor = 0.05
+        production_factory_efficiency_gain_factor = 0.08
+        consumer_goods_factor = -0.05
 
         random = no
     }
@@ -453,6 +548,19 @@ leader_traits = {
         random = no
     }
 
+    ZLF_solarist_leader = {
+        sprite = 13
+
+        army_morale_factor = 0.05
+        command_abilities_cost_factor = -0.25
+        production_speed_energy_infrastructure_factor = 0.2
+        production_speed_infrastructure_factor = 0.2
+        democratic_drift = 0.02
+        factory_energy_consumption = -0.15
+
+        random = no
+    }
+
     ZLF_police_intendant = {
         sprite = 18
 
@@ -469,9 +577,10 @@ leader_traits = {
         sprite = 14
 
         conscription_factor = 0.1
-        local_building_slots_factor = 0.1
+        global_building_slots_factor = 0.1
         local_resources_factor = 0.1
         political_power_factor = -0.2
+        communism_drift = 0.01
 
         random = no
     }
@@ -502,6 +611,17 @@ leader_traits = {
         mountaineers_special_forces_contribution_factor = -0.25
 
         command_cap_increase = 30
+
+        random = no
+    }
+
+    ZLF_airship_designer = {
+        sprite = 1
+
+        experience_gain_air_factor = 0.05
+        air_agility_factor = 0.05
+        air_manpower_requirement_factor = -0.1
+        production_speed_air_base_factor = 0.15
 
         random = no
     }

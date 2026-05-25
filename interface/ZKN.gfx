@@ -36,6 +36,131 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_portrait_ZKN_zacheus_rosenburg"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_zacheus_rosenburg.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_zacheus_rosenburg_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_zacheus_rosenburg_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_ludwig_zimbelmann"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_ludwig_zimbelmann.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_ludwig_zimbelmann_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_ludwig_zimbelmann_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_magnus_reisendorff"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_magnus_reisendorff.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_magnus_reisendorff_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_magnus_reisendorff_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_gottfred_muehle"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_gottfred_muehle.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_gottfred_muehle_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_gottfred_muehle_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_julius_von_welsen"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_julius_von_welsen.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_julius_von_welsen_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_julius_von_welsen_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_idea_ZKN_julius_von_welsen"
+        texturefile = "gfx/interface/ideas/ZKN/idea_ZKN_julius_von_welsen.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_frida_von_rathenau"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_frida_von_rathenau.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_frida_von_rathenau_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_frida_von_rathenau_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_idea_ZKN_frida_von_rathenau"
+        texturefile = "gfx/interface/ideas/ZKN/idea_ZKN_frida_von_rathenau.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_aurora_von_loebnitz"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_aurora_von_loebnitz.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_aurora_von_loebnitz_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_aurora_von_loebnitz_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_idea_ZKN_aurora_von_loebnitz"
+        texturefile = "gfx/interface/ideas/ZKN/idea_ZKN_aurora_von_loebnitz.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_uwe_von_hindenburg"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_uwe_von_hindenburg.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_uwe_von_hindenburg_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_uwe_von_hindenburg_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_karl_von_soldau"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_karl_von_soldau.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_karl_von_soldau_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_karl_von_soldau_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_sybille_von_gartenstadt"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_sybille_von_gartenstadt.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_sybille_von_gartenstadt_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_sybille_von_gartenstadt_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_rudolf_schuppe"
+        texturefile = "gfx/leaders/ZKN/portrait_ZKN_rudolf_schuppe.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZKN_rudolf_schuppe_small"
+        texturefile = "gfx/interface/ideas/ZKN/portrait_ZKN_rudolf_schuppe_small.png"
+    }
+
+    spriteType = {
         name = "GFX_portrait_ZKN_peter_von_tretschau_civilian"
         texturefile = "gfx/leaders/ZKN/portrait_ZKN_peter_von_tretschau_civilian.png"
     }

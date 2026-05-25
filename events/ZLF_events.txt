@@ -305,6 +305,14 @@ country_event = { # Party Split
 				id = ZLF_post_cw_events.6
 				days = 15
 			}
+
+			if = {
+				limit = { NOT = { has_country_flag = ZLF_elbian_support_gained } }
+				country_event = {
+					id = ZLF_events.22
+					days = 10
+				}
+			}
 		}
 	}
 
@@ -436,7 +444,7 @@ country_event = { # Fate of the Royal Army
 	id = ZLF_post_cw_events.8
 	title = ZLF_post_cw_events.8.t
 	desc = ZLF_post_cw_events.8.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_british_inspect_troops
 
 	is_triggered_only = yes
 
@@ -472,7 +480,7 @@ country_event = { # Fate of the Aristocracy
 	id = ZLF_post_cw_events.9
 	title = ZLF_post_cw_events.9.t
 	desc = ZLF_post_cw_events.9.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_gre_trial
 
 	is_triggered_only = yes
 
@@ -511,7 +519,7 @@ country_event = { # Fate of the Royal Family
 	id = ZLF_post_cw_events.10
 	title = ZLF_post_cw_events.10.t
 	desc = ZLF_post_cw_events.10.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_gre_trial
 
 	is_triggered_only = yes
 
@@ -556,7 +564,7 @@ country_event = { # Fate of the Royal Family
 
 			country_event = {
 				id = ZLF_events.19
-				days = 400
+				days = 1200
 			}
 		}
 	}
@@ -566,7 +574,7 @@ country_event = { # Exiled Royals arrive
 	id = ZLF_post_cw_events.11
 	title = ZLF_post_cw_events.11.t
 	desc = ZLF_post_cw_events.11.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_royal_visit
 
 	is_triggered_only = yes
 
@@ -601,7 +609,8 @@ country_event = { # Esperanto Reference
 				OR = {
 					is_character = ZLF_orlando
 					is_character = ZLF_mathilde_elysee
-					is_character = ZLF_gregor_bauer
+					is_character = ZLF_heinrich_rosenhain
+					is_character = ZLF_maximilian_graade
 				}
 			}
 			add_trait = {
@@ -841,7 +850,7 @@ country_event = { # Rathenau Affair
 	id = ZLF_events.5
 	title = ZLF_events.5.t
 	desc = ZLF_events.5.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_soviet_finnish_pact
 
 	is_triggered_only = yes
 
@@ -902,7 +911,7 @@ country_event = { # Opposition Protests
 	id = ZLF_events.6
 	title = ZLF_events.6.t
 	desc = ZLF_events.6.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_gathering_protest
 
 	is_triggered_only = yes
 
@@ -920,7 +929,7 @@ country_event = { # Left-Liberal Coalition
 	id = ZLF_events.7
 	title = ZLF_events.7.t
 	desc = ZLF_events.7.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_election_vote
 
 	is_triggered_only = yes
 
@@ -945,7 +954,7 @@ country_event = { # Vote of No Confidence
 	id = ZLF_events.8
 	title = ZLF_events.8.t
 	desc = ZLF_events.8.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_hungary_parliament
 
 	is_triggered_only = yes
 
@@ -971,7 +980,7 @@ country_event = { # New Elections
 	id = ZLF_events.9
 	title = ZLF_events.9.t
 	desc = ZLF_events.9.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_election_vote
 
 	is_triggered_only = yes
 
@@ -1004,7 +1013,7 @@ country_event = { # Hortensian Federalisation
 	id = ZLF_events.10
 	title = ZLF_events.10.t
 	desc = ZLF_events.10.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 
@@ -1040,7 +1049,7 @@ country_event = { # Hortensian Federalisation accepted
 	id = ZLF_events.11
 	title = ZLF_events.11.t
 	desc = ZLF_events.11.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_generic_peaceful_annexation
 
 	is_triggered_only = yes
 
@@ -1118,7 +1127,7 @@ country_event = { # Hortensian Federalisation refused
 	id = ZLF_events.12
 	title = ZLF_events.12.t
 	desc = ZLF_events.12.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 
@@ -1132,7 +1141,7 @@ country_event = { # Question of the Navy
 	id = ZLF_events.13
 	title = ZLF_events.13.t
 	desc = ZLF_events.13.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_destroyers
 
 	is_triggered_only = yes
 
@@ -1167,7 +1176,7 @@ country_event = { # Report on the Economy (Kron"kite" -> Krondache)
 	id = ZLF_events.14
 	title = ZLF_events.14.t
 	desc = ZLF_events.14.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_journalists_speech
 
 	is_triggered_only = yes
 
@@ -1183,7 +1192,7 @@ news_event = { # Walter uncovers Rathenau Affair
 	id = ZLF_events.15
 	title = ZLF_events.15.t
 	desc = ZLF_events.15.desc
-	picture = GFX_news_event_PLACEHOLDER
+	picture = GFX_news_event_024
 
 	is_triggered_only = yes
 
@@ -1197,7 +1206,7 @@ country_event = { # SP Majority
 	id = ZLF_events.16
 	title = ZLF_events.16.t
 	desc = ZLF_events.16.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_election_vote
 
 	is_triggered_only = yes
 
@@ -1235,7 +1244,7 @@ country_event = { # Meisendorff takes charge for National Defence
 	id = ZLF_events.17
 	title = ZLF_events.17.t
 	desc = ZLF_events.17.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_journalists_speech
 
 	is_triggered_only = yes
 
@@ -1279,7 +1288,7 @@ country_event = { # Post-Meisendorff Elections
 	id = ZLF_events.18
 	title = ZLF_events.18.t
 	desc = ZLF_events.18.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_election_vote
 
 	is_triggered_only = yes
 
@@ -1327,7 +1336,7 @@ country_event = { # Former King Yaoi
 	id = ZLF_events.19
 	title = ZLF_events.19.t
 	desc = ZLF_events.19.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_ZLF_yaoi
 
 	is_triggered_only = yes
 
@@ -1341,7 +1350,7 @@ country_event = { # Radical Members of the Foreign Office resign
 	id = ZLF_events.20
 	title = ZLF_events.20.t
 	desc = ZLF_events.20.desc
-	picture = GFX_report_event_PLACEHOLDER
+	picture = GFX_report_event_aid_pact
 
 	is_triggered_only = yes
 
@@ -1352,6 +1361,331 @@ country_event = { # Radical Members of the Foreign Office resign
 			idea = ZLF_foreign_office_resigned
 			days = 100
 		}
+	}
+}
+
+country_event = { # Elections after Liberal Government
+	id = ZLF_events.21
+	title = ZLF_events.21.t
+	desc = ZLF_events.21.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_completed_focus = ZLF_declare_revolutionary_victory }
+	}
+
+	option = {
+		name = ZLF_events.21.a
+		ai_chance = { base = 10 }
+		trigger = {
+			ZLF_harrier_du_bois = { has_character_flag = ZLF_elegible_for_rtp_leadership }
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_country_leader_role = {
+			character = ZLF_harrier_du_bois
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism
+				expire = "1965.1.1.1"
+				traits = { ZLF_the_last_communist }
+			}
+		}
+
+		remove_ideas = ZLF_petite_bourgeois_cooperation
+	}
+
+	option = {
+		name = ZLF_events.21.b
+		ai_chance = { base = 5 }
+		trigger = {
+			ZLF_harrier_du_bois = { NOT = { has_character_flag = ZLF_elegible_for_rtp_leadership } }
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		promote_character = ZLF_josef_burgow
+
+		remove_ideas = ZLF_petite_bourgeois_cooperation
+	}
+
+	option = {
+		name = ZLF_events.21.c
+		ai_chance = { 
+			base = 5
+			modifier = {
+				factor = 0
+				ZLF_harrier_du_bois = { has_character_flag = ZLF_elegible_for_rtp_leadership }
+			}
+		}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			name = ZLF_democratic_party_ihp
+			long_name = ZLF_democratic_party_ihp_long
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		promote_character = ZLF_maximilian_graade
+
+		remove_ideas = ZLF_petite_bourgeois_cooperation
+	}
+}
+
+country_event = { # Minority Bloc Formed
+	id = ZLF_events.22
+	title = ZLF_events.22.t
+	desc = ZLF_events.22.desc
+	picture = GFX_report_event_hungary_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.22.a
+	}
+}
+
+country_event = { # Solarist Faction becomes relevant
+	id = ZLF_events.23
+	title = ZLF_events.23.t
+	desc = ZLF_events.23.desc
+	picture = GFX_report_event_hungary_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.23.a
+		custom_effect_tooltip = available_political_advisor
+		remove_trait = {
+			character = ZLF_sonnenuntergang
+			slot = political_advisor
+			trait = ZLF_friendship_student
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_trait = {
+			character = ZLF_sonnenuntergang
+			slot = political_advisor
+			trait = ZLF_solarist_leader
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		effect_tooltip = {
+			unlock_national_focus = ZLF_celestial_energy_plan
+		}
+		set_country_flag = ZLF_unlocked_celestial_plan
+	}
+}
+
+state_event = { # ZLF negotiates for Resource Rights
+	id = ZLF_events.24
+	title = ZLF_events.24.t
+	desc = ZLF_events.24.desc
+	picture = GFX_report_event_FIN_petsamo_mine
+
+	is_triggered_only = yes
+
+	option = { # demand payment in consumer goods
+		name = ZLF_events.24.a
+		ai_chance = {
+			base = 5
+		}
+		owner = {
+			give_resource_rights = { receiver = FROM state = ROOT }
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		owner = {
+			add_timed_idea = {
+				idea = ZLF_resource_payments
+				days = 150
+			}
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		FROM = { country_event = ZLF_events.25 }
+	}
+
+	option = { # demand payment in factories
+		name = ZLF_events.24.b
+		ai_chance = {
+			base = 2
+		}
+		trigger = {
+			FROM = {
+				num_of_owned_factories > 4
+			}
+		}
+		owner = {
+			give_resource_rights = { receiver = FROM state = ROOT }
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		owner = {
+			add_offsite_building = { type = industrial_complex level = 4 }
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		FROM = { country_event = ZLF_events.26 }
+	}
+
+	option = { # nope
+		name = ZLF_events.24.c
+		ai_chance = {
+			base = 5
+			modifier = {
+				add = 10
+				event_target:ZLF_resource_target = {
+					OR = {
+						oil > 50
+						aluminium > 50
+						rubber > 50
+						tungsten > 50
+						steel > 50
+						chromium > 50
+						coal > 50
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = { has_country_leader_ideology = liberalism }
+			}
+			modifier = {
+				factor = 0.5
+				FROM = { has_idea_with_trait = ZLF_foreign_minister }
+			}
+		}
+		FROM = { country_event = ZLF_events.27 }
+	}
+}
+
+country_event = { # ZLF negotiates for Resource Rights - accepted/consumer goods
+	id = ZLF_events.25
+	title = ZLF_events.25.t
+	desc = ZLF_events.25.desc
+	picture = GFX_report_event_FIN_petsamo_mine
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.25.a
+		add_timed_idea = {
+			idea = ZLF_giving_resource_payments
+			days = 150
+		}
+	}
+}
+
+country_event = { # ZLF negotiates for Resource Rights - accepted/factories
+	id = ZLF_events.26
+	title = ZLF_events.26.t
+	desc = ZLF_events.26.desc
+	picture = GFX_report_event_FIN_petsamo_mine
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.26.a
+		every_owned_state = {
+			random_select_amount = 4
+			limit = { industrial_complex > 0 }
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+}
+
+country_event = { # ZLF negotiates for Resource Rights - rejected
+	id = ZLF_events.27
+	title = ZLF_events.27.t
+	desc = ZLF_events.27.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.27.a
+		add_political_power = -10
+	}
+}
+
+country_event = { # May Trigger
+	id = ZLF_events.28
+	title = ZLF_events.28.t
+	desc = ZLF_events.28.desc
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	immediate = {
+		set_global_flag = { flag = ZLF_it_is_may_right_now days = 31 value = 1 }
+		country_event = { id = ZLF_events.28 days = 365 }
+	}
+
+	option = {
+		name = ZLF_events.28.a
+	}
+}
+
+country_event = { # May Day Event
+	id = ZLF_events.29
+	title = ZLF_events.29.t
+	desc = ZLF_events.29.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.29.a
+		add_stability = 0.03
+		hidden_effect = { country_event = { id = ZLF_events.29 days = 365 } }
+	}
+}
+
+country_event = { # The Phoenix joins
+	id = ZLF_events.30
+	title = ZLF_events.30.t
+	desc = ZLF_events.30.desc
+	picture = GFX_report_event_ZSP_the_sorcerers_apprentice
+
+	immediate = {
+		hidden_effect = {
+			every_possible_country = {
+				limit = { has_character = ZSP_the_phoenix }
+				ZSP_the_phoenix = { set_nationality = ROOT }
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.30.a
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = ZSP_the_phoenix_token
 	}
 }
 
@@ -1366,11 +1700,80 @@ news_event = { # Civil War Ends NEWS
 
 	option = {
 		name = ZLF_news_events.1.a
-		trigger = { tag = ZLF }
+		trigger = { 
+			OR = {
+				tag = ZLF
+				has_government = communism
+			}
+		}
 	}
 
 	option = {
 		name = ZLF_news_events.1.b
-		trigger = { NOT = { tag = ZLF } }
+		trigger = { 
+			NOT = { tag = ZLF }
+			NOT = { has_government = communism }
+		}
+	}
+}
+
+news_event = { # May Day NEWS
+	id = ZLF_news_events.2
+	title = ZLF_news_events.2.t
+	desc = ZLF_news_events.2.desc
+	picture = GFX_news_event_ZLF_may_day
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = ZLF_news_events.2.a
+		trigger = {
+			has_government = communism
+			has_country_leader_ideology = socialism
+			has_country_leader_ideology = neorevisionism
+			ZLF_is_despotist_ideology = no
+		}
+	}
+
+	option = {
+		name = ZLF_news_events.2.b
+		trigger = {
+			NOT = { has_government = communism }
+			NOT = { has_country_leader_ideology = socialism }
+			NOT = { has_country_leader_ideology = neorevisionism }
+			ZLF_is_despotist_ideology = no
+		}
+	}
+
+	option = {
+		name = ZLF_news_events.2.c
+		trigger = {
+			ZLF_is_despotist_ideology = yes
+		}
+	}
+}
+
+news_event = { # Pan-Tewara Express NEWS
+	id = ZLF_news_events.3
+	title = ZLF_news_events.3.t
+	desc = ZLF_news_events.3.desc
+	picture = GFX_news_event_ZLF_pan_tewara_express
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ZLF_news_events.3.a
+		trigger = {
+			tag = ZLF
+		}
+	}
+
+	option = {
+		name = ZLF_news_events.3.b
+		trigger = {
+			NOT = { tag = ZLF }
+		}
 	}
 }

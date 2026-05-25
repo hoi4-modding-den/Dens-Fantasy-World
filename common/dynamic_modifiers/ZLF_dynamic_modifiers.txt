@@ -60,6 +60,40 @@ ZLF_elbian_autonomy_3 = { # Freistaat Erzgebirge
 
 }
 
+ZLF_tram_system_modifier = {
+    enable = { always = yes }
+
+    icon = GFX_modifiers_generic_immigration_promoted
+
+    local_manpower = 0.1
+    local_factories = 0.15
+    state_production_speed_infrastructure_factor = 0.25
+
+}
+
+ZLF_free_housing_modifier = {
+    enable = { always = yes }
+
+    icon = GFX_modifiers_generic_city_construction
+
+    state_production_speed_industrial_complex_factor = 0.25
+    local_manpower = 0.3
+
+}
+
+ZLF_pan_tewara_express_modifier = {
+    enable = { always = yes }
+
+    icon = GFX_modifiers_JAP_taiheiyo_belt # or GFX_modifiers_generic_railways?
+
+    state_production_speed_infrastructure_factor = 0.1
+    state_production_speed_rail_way_factor = 0.5
+    state_production_speed_supply_node_factor = 0.25
+    army_speed_factor_for_controller = 0.05
+	attrition_for_controller = -0.1
+
+}
+
 ZLF_little_republic_modifier = {
     enable = { always = yes }
 

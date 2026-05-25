@@ -128,6 +128,12 @@ ideologies = {
 				can_be_randomly_selected = no
 				color = { 0 0 0 }
 			}
+			autonomist_marxism = {
+				
+			}
+			council_communism = {
+				
+			}
 		}
 
 		dynamic_faction_names = {
@@ -306,6 +312,9 @@ ideologies = {
 			penguin_theocracy = {
 				can_be_randomly_selected = no
 				color = { 66 166 166 }
+			}
+			technocracy = {
+				
 			}
 
 		}

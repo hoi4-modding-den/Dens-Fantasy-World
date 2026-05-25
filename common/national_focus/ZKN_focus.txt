@@ -217,7 +217,7 @@ focus_tree={
 
     focus = {
 		id = ZKN_ensure_army_loyalty
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_focus_generic_crush_the_military
         prerequisite = { focus = ZKN_empower_the_kammermeister }
 		mutually_exclusive = { focus = ZKN_crackdown_on_strikes }
 		x = -1
@@ -326,7 +326,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_the_zinnian_realm
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_CHL_the_scouts_monarchist_youth_organization
         prerequisite = { focus = ZKN_royal_triumph }
 		mutually_exclusive = { focus = ZKN_the_crimson_regency focus = ZKN_the_salvation_government }
 		x = -25
@@ -545,7 +545,7 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_ideas = ZKN_blackcloaks
 		}
 	}
 
@@ -1000,7 +1000,7 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_stability = 0.15
 		}
 	}
 
@@ -1028,7 +1028,20 @@ focus_tree={
         }
 		
 		completion_reward = {
-			# Königlichen Sicherheitsdienst
+			swap_ideas = {
+				remove_idea = ZKN_blackcloaks
+				add_idea = ZKN_the_KSD
+			}
+			if = {
+				limit = { has_dlc = "La Resistance" }
+				custom_effect_tooltip = ZKN_reorganise_the_intelligence_service_tt
+				hidden_effect = {
+					create_intelligence_agency = {
+						name = "Königlicher Sicherheitsdienst"
+						icon = GFX_intelligence_agency_logo_NOR_fascism_intelligence
+					}
+				}
+			}
 		}
 	}
 
@@ -1351,7 +1364,7 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 10
         }
 		
 		available = {
@@ -1366,21 +1379,28 @@ focus_tree={
 			ZKU = {
 				OR = {
 					exists = no
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 				}
 			}
 			ZKO = {
 				OR = {
 					exists = no
-					is_ally_with = ROOT
+					is_subject_of = ROOT
 					has_war_with = ROOT
 				}
 			}
 			ZKC = {
 				OR = {
 					exists = no
-					is_ally_with = ROOT
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+			ZKL = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
 					has_war_with = ROOT
 				}
 			}
@@ -1389,25 +1409,90 @@ focus_tree={
 		will_lead_to_war_with = ZKU
 		will_lead_to_war_with = ZKO
 		will_lead_to_war_with = ZKC
+		will_lead_to_war_with = ZKL
 		
 		completion_reward = {
+			if = {
+				limit = {
+					ZKU = { is_ally_with = ROOT }
+				}
+				if = {
+					limit = { has_subject = ZKU }
+					annex_country = {
+						target = ZKU
+						transfer_troops = no
+					}
+				}
+				else = {
+					remove_from_faction = ZKU
+				}
+			}
 			declare_war_on = {
 				target = ZKU
 				type = annex_everything
+			}
+			if = {
+				limit = {
+					ZKO = { is_ally_with = ROOT }
+				}
+				if = {
+					limit = { has_subject = ZKO }
+					annex_country = {
+						target = ZKO
+						transfer_troops = no
+					}
+				}
+				else = {
+					remove_from_faction = ZKO
+				}
 			}
 			declare_war_on = {
 				target = ZKO
 				type = annex_everything
 			}
+			if = {
+				limit = {
+					ZKC = { is_ally_with = ROOT }
+				}
+				if = {
+					limit = { has_subject = ZKC }
+					annex_country = {
+						target = ZKC
+						transfer_troops = no
+					}
+				}
+				else = {
+					remove_from_faction = ZKC
+				}
+			}
 			declare_war_on = {
 				target = ZKC
+				type = annex_everything
+			}
+			if = {
+				limit = {
+					ZKL = { is_ally_with = ROOT }
+				}
+				if = {
+					limit = { has_subject = ZKL }
+					annex_country = {
+						target = ZKL
+						transfer_troops = no
+					}
+				}
+				else = {
+					remove_from_faction = ZKL
+				}
+			}
+			declare_war_on = {
+				target = ZKL
 				type = annex_everything
 			}
 		}
 	}
 
 	focus = {
-		id = ZKN_integrate_korelia
+		id = ZKN_anti_guerilla_campaigns
 		icon = GFX_focus_PLACEHOLDER
         prerequisite = { focus = ZKN_attack_korelia }
 		#mutually_exclusive = { focus =  }
@@ -1422,7 +1507,10 @@ focus_tree={
         }
 		
 		available = {
-            
+            NOT = { country_exists = ZKO }
+			NOT = { country_exists = ZKC }
+			NOT = { country_exists = ZKU }
+			NOT = { country_exists = ZKL }
         }
 
 		bypass = {
@@ -1430,12 +1518,15 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = ZKN_pacification_of_korelia
+				days = 120
+			}
 		}
 	}
 
 	focus = {
-		id = ZKN_anti_guerilla_campaigns
+		id = ZKN_integrate_korelia
 		icon = GFX_focus_PLACEHOLDER
         prerequisite = { focus = ZKN_attack_korelia }
 		#mutually_exclusive = { focus =  }
@@ -1450,7 +1541,8 @@ focus_tree={
         }
 		
 		available = {
-            
+            has_completed_focus = ZKN_anti_guerilla_campaigns
+			NOT = { has_idea = ZKN_pacification_of_korelia }
         }
 
 		bypass = {
@@ -1458,7 +1550,15 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			every_state = {
+				limit = {
+					OR = {
+						ZLF_korelia_sb_state = yes
+						state = 719
+					}
+				}
+				add_core_of = ROOT
+			}
 		}
 	}
 
@@ -1570,7 +1670,11 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 10
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ZKN_anti_guerilla_campaigns }
+			}
         }
 		
 		available = {
@@ -1745,7 +1849,7 @@ focus_tree={
 		#mutually_exclusive = { focus =  }
 		x = 9
 		y = 1
-		relative_position_id = ZKN_integrate_korelia
+		relative_position_id = ZKN_anti_guerilla_campaigns
 		
 		cost = 5
 
@@ -1774,7 +1878,7 @@ focus_tree={
 		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
-		relative_position_id = ZKN_integrate_korelia
+		relative_position_id = ZKN_anti_guerilla_campaigns
 		
 		cost = 5
 
@@ -3807,10 +3911,10 @@ focus_tree={
 		
 		completion_reward = {
 			army_experience = 50
-			add_daily_mastery = {
-				amount = 2
-				days = 90
-				track = infantry
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
 			}
 		}
 	}
@@ -3986,12 +4090,21 @@ focus_tree={
 		will_lead_to_war_with = ZTC
 		
 		completion_reward = {
+			remove_ideas = ZKN_sale_of_the_armada
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			create_wargoal = {
 				target = ZTC
 				type = annex_everything
 			}
 
-			# if no bba, unlock a decision to regain the armada
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = { NOT = { has_dlc = "By Blood Alone" } }
+				unlock_decision_tooltip = ZKN_regain_the_armada
+			}
 		}
 
 		bypass_effect = {
@@ -4151,11 +4264,29 @@ focus_tree={
         }
 		
 		completion_reward = {
-			add_tech_bonus = {
+			add_equipment_bonus = {
 				name = ZKN_expand_the_artillery_foundries
-				bonus = 1
-				uses = 1
-				category = artillery
+				bonus = {
+					artillery_equipment = {
+						build_cost_ic = -0.15
+					}
+				}
+			}
+			add_equipment_bonus = {
+				name = ZKN_expand_the_artillery_foundries
+				bonus = {
+					anti_tank_equipment = {
+						build_cost_ic = -0.1
+					}
+				}
+			}
+			add_equipment_bonus = {
+				name = ZKN_expand_the_artillery_foundries
+				bonus = {
+					anti_air_equipment = {
+						build_cost_ic = -0.1
+					}
+				}
 			}
 		}
 	}
@@ -4247,7 +4378,7 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_war_support = 0.25
 		}
 	}
 
@@ -4276,7 +4407,61 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			custom_effect_tooltip = ZKN_raise_defence_militias_tt
+			hidden_effect = {
+				division_template = {
+					name = "Hindenburg Militia"
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						militia = { x = 1 y = 0 }
+						militia = { x = 1 y = 1 }
+						militia = { x = 1 y = 2 }
+						militia = { x = 2 y = 0 }
+						militia = { x = 2 y = 1 }
+						militia = { x = 2 y = 2 }
+						militia = { x = 3 y = 0 }
+						militia = { x = 3 y = 1 }
+						militia = { x = 3 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+
+				every_core_state = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					if = {
+						limit = { state_population_k > 2000 }
+						create_unit = {
+							division = "name = \"Hindenburg-Miliz\" division_template = \"Hindenburg Militia\" start_experience_factor = 0.08"
+							count = 4
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+					if = {
+						limit = { state_population_k > 1000 }
+						create_unit = {
+							division = "name = \"Hindenburg-Miliz\" division_template = \"Hindenburg Militia\" start_experience_factor = 0.08"
+							count = 3
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+					else = {
+						create_unit = {
+							division = "name = \"Hindenburg-Miliz\" division_template = \"Hindenburg Militia\" start_experience_factor = 0.08"
+							count = 1
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -4306,6 +4491,9 @@ focus_tree={
 		completion_reward = {
             add_popularity = { ideology = fascism popularity = 0.2 }
 
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			country_event = ZKN_events.14
 			hidden_effect = {
 				# event about the internal conflict of the junta
 
@@ -4328,7 +4516,7 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 20
         }
 		
 		available = {
@@ -4340,7 +4528,10 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = ZKN_seized_noble_estates
+				days = 120
+			}
 		}
 	}
 
@@ -4368,13 +4559,22 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_popularity = { ideology = ROOT popularity = 0.1 }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_controlled_state = {
+				limit = { is_core_of = ROOT }
+				random_select_amount = 4
+				add_manpower = 5000
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 
 	focus = {
 		id = ZKN_rule_of_the_strong
-		icon = GFX_focus_generic_infiltration
+		icon = GFX_goal_generic_political_pressure
         prerequisite = { focus = ZKN_the_salvation_government }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -4384,7 +4584,7 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 20
         }
 		
 		available = {
@@ -4410,7 +4610,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_reorganise_the_general_staff
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_ger_return_of_the_kaiser
         prerequisite = { focus = ZKN_the_salvation_government }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -4420,7 +4620,7 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 20
         }
 		
 		available = {
@@ -4441,7 +4641,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_prepare_the_war_plans
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_position_armies
         prerequisite = { focus = ZKN_reorganise_the_general_staff }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -4481,7 +4681,7 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 20
         }
 		
 		available = {
@@ -4498,6 +4698,13 @@ focus_tree={
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_ideas = ZKN_military_government
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				add_ideas = state_serves_the_military_spirit
+			}
 		}
 	}
 
@@ -4538,6 +4745,8 @@ focus_tree={
 				remove_idea = ZKN_military_government
 				add_idea = ZKN_military_government_2
 			}
+
+			unlock_decision_tooltip = ZKN_repress_the_opposition
 		}
 	}
 
@@ -4569,12 +4778,27 @@ focus_tree={
 				remove_idea = ZKN_military_government_2
 				add_idea = ZKN_military_government_3
 			}
+
+			if = {
+				limit = { has_dlc = "La Resistance" }
+				custom_effect_tooltip = ZKN_nothing_against_the_state_tt
+				hidden_effect = {
+					create_intelligence_agency = {
+						name = "Militärbüro für Nationale Sicherheit"
+						icon = GFX_intelligence_agency_logo_NOR_fascism_intelligence
+					}
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+			unlock_decision_tooltip = ZKN_spy_on_the_opposition
 		}
 	}
 
 	focus = {
 		id = ZKN_militarise_gardenian_society
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_ITA_blackshirts
         prerequisite = { focus = ZKN_establish_the_directorate }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -4596,6 +4820,13 @@ focus_tree={
         }
 		
 		completion_reward = {
+			custom_effect_tooltip = ITA_battaglioni_d_assalto_tt
+			hidden_effect = {
+				set_technology = { blackshirt_assault_battalion_tech = 1 popup = no }
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			if = {
 				limit = { has_idea = war_economy }
 				add_ideas = tot_economic_mobilisation
@@ -4621,6 +4852,11 @@ focus_tree={
 			else = {
 				add_ideas = war_economy
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ZLF_disabled_economic_demobilisation_tt
+			set_country_flag = ZLF_disabled_economic_demobilisation
 		}
 	}
 
@@ -4649,12 +4885,16 @@ focus_tree={
 		
 		completion_reward = {
 			add_ideas = ZKN_central_planning
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			unlock_decision_tooltip = ZKN_staff_the_industrial_boards
 		}
 	}
 
 	focus = {
 		id = ZKN_eternal_state_of_emergency_and_vigilance
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_strike_at_democracy2
         prerequisite = { focus = ZKN_militarise_gardenian_society }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -4676,13 +4916,18 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_political_power = 120
+			add_war_support = 0.1
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			unlock_decision_tooltip = ZKN_utilise_the_state_of_ermergency
 		}
 	}
 
 	focus = {
 		id = ZKN_every_man_a_soldier
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_ITA_banda_carita
 		prerequisite = { focus = ZKN_zentralplanwirtschaft }
         prerequisite = { focus = ZKN_eternal_state_of_emergency_and_vigilance }
 		#mutually_exclusive = { focus =  }
@@ -4709,6 +4954,8 @@ focus_tree={
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
+			custom_effect_tooltip = ZLF_disabled_manpower_demobilisation_tt
+			set_country_flag = ZLF_disabled_manpower_demobilisation
 			custom_effect_tooltip = ZKN_conscription_locked_tt
 			set_country_flag = ZKN_conscription_locked
 		}
@@ -4738,13 +4985,21 @@ focus_tree={
         }
 		
 		completion_reward = {
-			add_war_support = 0.1
+			add_war_support = 0.15
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			unlock_decision_tooltip = ZKN_utilise_the_propaganda_department
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			country_event = ZKN_events.15
 		}
 	}
 
 	focus = {
 		id = ZKN_power_for_powers_sake
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_chi_army_reform
         prerequisite = { focus = ZKN_propagandaabteilung }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -4766,13 +5021,21 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_ideas = ZKN_air_support_bonus
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_ideas = ZKN_navy_reform
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			unlock_decision_tooltip = ZKN_secure_loyalty_of_the_navy
 		}
 	}
 
 	focus = {
 		id = ZKN_purge_the_foreign_office
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_infiltration
         prerequisite = { focus = ZKN_establish_the_directorate }
 		#mutually_exclusive = { focus =  }
 		x = -5
@@ -4819,7 +5082,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_foster_a_cult_of_personality
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
         prerequisite = { focus = ZKN_nothing_against_the_state }
         prerequisite = { focus = ZKN_power_for_powers_sake }
 		prerequisite = { focus = ZKN_every_man_a_soldier }
@@ -4835,7 +5098,13 @@ focus_tree={
         }
 		
 		available = {
-            
+            if = {
+				limit = { has_power_balance = { id = ZKN_power_balance } }
+				is_power_balance_in_range = {
+					id = ZKN_power_balance
+					range = ZKN_marshal_influence_range
+				}
+			}
         }
 
 		bypass = {
@@ -4843,6 +5112,22 @@ focus_tree={
         }
 		
 		completion_reward = {
+			if = {
+				limit = { has_power_balance = { id = ZKN_power_balance } }
+				remove_power_balance = {
+					id = ZKN_power_balance
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+			add_trait = {
+				character = ZKN_peter_von_tretschau
+				ideology = nationalist_stratocracy
+				trait = ZKN_marshal_in_control
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_ideas = ZKN_cult_of_personality
 		}
 	}
@@ -5025,7 +5310,13 @@ focus_tree={
         }
 		
 		available = {
-            
+            if = {
+				limit = { has_power_balance = { id = ZKN_power_balance } }
+				is_power_balance_in_range = {
+					id = ZKN_power_balance
+					range = ZKN_pragmaticist_influence_range
+				}
+			}
         }
 
 		bypass = {
@@ -5033,7 +5324,19 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			if = {
+				limit = { has_power_balance = { id = ZKN_power_balance } }
+				remove_power_balance = {
+					id = ZKN_power_balance
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+			add_popularity = { ideology = neutrality popularity = 0.25 }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			country_event = ZKN_events.16
 		}
 	}
 
@@ -5063,7 +5366,7 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_ideas = ZKN_fierce_anti_communism
 		}
 	}
 
@@ -5359,7 +5662,11 @@ focus_tree={
 		cost = 5
 
 		ai_will_do = {
-            base = 10 
+            base = 10
+			modifier = {
+				factor = 0
+				has_country_leader = { character = ZKN_juergen_ostersee ruling_only = yes }
+			}
         }
 		
 		available = {
@@ -5445,7 +5752,12 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = ZKN_tank_mass_production
+				ahead_reduction = 2
+				uses = 1
+				category = cat_production
+			}
 		}
 	}
 
@@ -5572,7 +5884,22 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 3
+					category = cat_mountaineers_doctrine
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = ZKN_strengthen_mountaineer_corps
+					bonus = 1
+					uses = 1
+					category = mountaineers_tech
+				}
+			}
 		}
 	}
 
@@ -5600,7 +5927,14 @@ focus_tree={
         }
 		
 		completion_reward = {
-			add_potential_special_forces_tree = yes
+			add_ideas = ZKN_unlocked_special_forces_potential
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				add_potential_special_forces_tree = yes
+			}
 		}
 	}
 
@@ -5760,7 +6094,10 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ZKN_air_support_bonus
+				add_idea = ZKN_air_support_bonus_2
+			}
 		}
 	}
 
@@ -5780,7 +6117,7 @@ focus_tree={
         }
 		
 		available = {
-            
+
         }
 
 		bypass = {
@@ -5788,13 +6125,35 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					OR = {
+						is_special_project_completed = sp:sp_air_radar
+						is_special_project_being_researched = sp:sp_air_radar
+					}
+				}
+				add_tech_bonus = {
+					name = ZKN_develop_radar
+					bonus = 0.5
+					uses = 1
+					category = electronics
+				}
+				add_tech_bonus = {
+					name = ZKN_develop_radar
+					bonus = 1
+					uses = 1
+					category = radar_tech
+				}
+			}
+			else = {
+				complete_special_project = sp:sp_air_radar
+			}
 		}
 	}
 
 	focus = {
 		id = ZKN_cas_focus
-		icon = GFX_goal_generic_CAS
+		icon = GFX_focus_generic_multi_role_aircraft
 		prerequisite = { focus = ZKN_improve_ground_air_coordination }
         prerequisite = { focus = ZKN_develop_radar }
 		#mutually_exclusive = { focus =  }
@@ -5817,13 +6176,18 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = ZKN_cas_focus
+				bonus = 0.5
+				uses = 3
+				category = mio_cat_all_cas_and_modules
+			}
 		}
 	}
 
 	focus = {
 		id = ZKN_precision_strikes
-		icon = GFX_focus_generic_multi_role_aircraft
+		icon = GFX_focus_SWE_marauder_bombers
 		prerequisite = { focus = ZKN_cas_focus }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -5845,7 +6209,10 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ZKN_air_support_bonus_2
+				add_idea = ZKN_air_support_bonus_3
+			}
 		}
 	}
 
@@ -5873,7 +6240,12 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = ZKN_artillery_focus
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
 		}
 	}
 
@@ -6000,7 +6372,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_the_crimson_regency
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_attack_allies
         prerequisite = { focus = ZKN_royal_triumph }
 		mutually_exclusive = { focus = ZKN_the_zinnian_realm focus = ZKN_the_salvation_government }
 		x = 15

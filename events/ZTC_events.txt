@@ -595,7 +595,7 @@ country_event = { # ZTC requests Erzgebirge - accepted
 	id = ZTC_events.23
 	title = ZTC_events.23.t
 	desc = ZTC_events.23.desc
-	picture = GFX_report_event_communist_leader
+	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 

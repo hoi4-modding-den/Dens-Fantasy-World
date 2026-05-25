@@ -2,6 +2,7 @@ capital = 749
 
 oob = "ZTC_1936"
 set_naval_oob = "ZTC_1936_navy"
+set_naval_oob = "ZTC_1936_navy_2"
 
 set_stability = 0.7
 set_war_support = 0.1
@@ -75,6 +76,7 @@ country_event = { id = ZTC_events.1 days = 10 }
 
 recruit_character = ZTC_jan_kroesus
 recruit_character = ZTC_the_council
+recruit_character = ZTC_joergen_bahmberg
 recruit_character = ZTC_franziska_kroesus
 recruit_character = ZTC_johanna_ahrendt
 

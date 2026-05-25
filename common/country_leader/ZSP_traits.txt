@@ -64,6 +64,17 @@ leader_traits = {
         random = no
     }
 
+    ZSP_der_letzte_sternwart = {
+        sprite = 13
+
+        research_speed_factor = -0.02
+        experience_loss_factor = -0.2
+        org_loss_when_moving = -0.25
+        fascism_acceptance = -80
+
+        random = no
+    }
+
     ZSP_apprentice_one = {
         sprite = 7
 

@@ -1551,7 +1551,7 @@ focus_tree = {
             custom_effect_tooltip = generic_skip_one_line_tt
 
             if = {
-                limit = { has_dlc = "No Step Back" }
+                limit = { has_dlc = "By Blood Alone" }
                 add_ideas = bold_attack_spirit
             }
         }
@@ -1620,7 +1620,7 @@ focus_tree = {
             custom_effect_tooltip = generic_skip_one_line_tt
 
             if = {
-                limit = { has_dlc = "No Step Back" }
+                limit = { has_dlc = "By Blood Alone" }
                 add_ideas = tenacious_defense_spirit
             }
         }

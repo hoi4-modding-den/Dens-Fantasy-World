@@ -32,3 +32,11 @@ ZKN_destroy_the_ama_cat = {
 	}
 
 }
+
+ZKN_balance_of_power_category = {
+
+	allowed = {
+		original_tag = ZKN
+	}
+
+}

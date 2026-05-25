@@ -53,6 +53,17 @@ recruit_character = ZKN_michael_aurus
 recruit_character = ZKN_yvonne_von_karmesin
 
 recruit_character = ZKN_albert_zu_stegehoff
+recruit_character = ZKN_zacheus_rosenburg
+recruit_character = ZKN_ludwig_zimbelmann
+recruit_character = ZKN_magnus_reisendorff
+recruit_character = ZKN_gottfred_muehle
+recruit_character = ZKN_julius_von_welsen
+recruit_character = ZKN_frida_von_rathenau
+recruit_character = ZKN_aurora_von_loebnitz
+recruit_character = ZKN_uwe_von_hindenburg
+recruit_character = ZKN_karl_von_soldau
+recruit_character = ZKN_sybille_von_gartenstadt
+recruit_character = ZKN_rudolf_schuppe
 
 recruit_character = ZKN_peter_von_tretschau
 recruit_character = ZKN_juergen_ostersee
@@ -67,6 +78,7 @@ recruit_character = ZTC_rudolf_von_seestern
 activate_advisor = ZKN_albert_zu_stegehoff_token
 
 set_country_flag = DEN_no_generic_political_advisors
+set_country_flag = DEN_no_generic_spy_advisor
 
 set_cosmetic_tag = ZKN_dominion
 

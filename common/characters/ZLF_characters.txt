@@ -12,6 +12,26 @@ characters = {
 				small = GFX_portrait_ZLF_roland_ludovik_small
 			}
 		}
+
+        advisor = {
+            slot = theorist
+            idea_token = ZLF_roland_ludovik_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_government = democratic
+            }
+
+			cost = 75
+
+            traits = {
+                blitzkrieg_theorist
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
         
 		country_leader = {
 			ideology = socialism
@@ -95,6 +115,39 @@ characters = {
         }
 	}
 
+    ZLF_maximilian_graade = {
+		name = ZLF_maximilian_graade_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_maximilian_graade
+				small = GFX_portrait_ZLF_maximilian_graade_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_maximilian_graade_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                
+            }
+            traits = {
+                connected_citizen
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+		country_leader = {
+			ideology = moralism
+			traits = { ZLF_boring_moralist }
+			expire = "1960.1.1.1"
+		}
+	}
+
 	ZLF_gustav_mai = { 
 		name = ZLF_gustav_mai_name
 		portraits = {
@@ -159,8 +212,41 @@ characters = {
         }
         
 		country_leader = {
-			ideology = marxism
+			ideology = council_communism
 			traits = { ZLF_council_communist }
+			expire = "1960.1.1.1"
+		}
+	}
+
+    ZLF_josef_burgow = {
+		name = ZLF_josef_burgow_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_josef_burgow
+				small = GFX_portrait_ZLF_josef_burgow_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_josef_burgow_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_completed_focus = ZLF_negotiate_with_the_unions
+            }
+            traits = {
+                ZLF_former_prosecutor
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+		country_leader = {
+			ideology = autonomist_marxism
+			traits = { ZLF_new_theoretical_approach }
 			expire = "1960.1.1.1"
 		}
 	}
@@ -232,6 +318,59 @@ characters = {
 		}
 	}
 
+    ZLF_tom_the_platypus = { 
+		name = ZLF_tom_the_platypus_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_tom_the_platypus
+				small = GFX_portrait_ZLF_tom_the_platypus_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_tom_the_platypus_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_completed_focus = ZLF_international_labour_laws
+            }
+            traits = {
+                ZLF_free_trade_proponent
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+
+        advisor = {
+            slot = navy_chief
+            idea_token = ZLF_tom_the_platypus_navy_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                
+            }
+
+            cost = 100
+
+            traits = {
+                navy_anti_submarine_2
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+		country_leader = {
+			ideology = liberalism
+			traits = { ZLF_weil_ich_demokrat_bin }
+			expire = "1960.1.1.1"
+		}
+	}
+
 	ZLF_rudolf_zimmermann = { 
 		name = ZLF_rudolf_zimmermann_name
 		portraits = {
@@ -255,7 +394,7 @@ characters = {
                 ZLF_literal_nazi
             }
             ai_will_do = {
-                base = 5
+                base = 0
             }
         }
         
@@ -295,6 +434,13 @@ characters = {
                 base = 5
             }
         }
+
+        country_leader = {
+			ideology = socialism
+			traits = { ZLF_fdj_reference ZLF_bad_sleep_schedule }
+			expire = "1960.1.1.1"
+		}
+        
 	}
 
 	ZLF_marko_hausmann = { 
@@ -382,6 +528,26 @@ characters = {
                 base = 5
             }
         }
+
+        advisor = {
+            slot = navy_chief
+            idea_token = ZLF_emilia_noveau_navy_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                
+            }
+
+            cost = 100
+
+            traits = {
+                navy_chief_maneuver_2
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
 	}
 
     ZLF_thomas_huebenwahl = {
@@ -428,7 +594,6 @@ characters = {
             }
             available = {
                 has_country_flag = ZLF_unlocked_esperanto
-                NOT = { has_government = fascism }
             }
             traits = {
                 ZLF_doctor_esperanto 
@@ -486,6 +651,33 @@ characters = {
             }
             traits = {
                 ZLF_independent_journalist
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+	}
+
+    ZLF_dagobert_goppel = {
+		name = ZLF_dagobert_goppel_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZLF_dagobert_goppel
+				small = GFX_portrait_ZLF_dagobert_goppel_small
+			}
+		}
+
+		advisor = {
+            slot = political_advisor
+            idea_token = ZLF_dagobert_goppel_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_completed_focus = ZLF_international_labour_laws
+            }
+            traits = {
+                ZLF_internationalist_organiser
             }
             ai_will_do = {
                 base = 5
@@ -737,10 +929,7 @@ characters = {
                 original_tag = ZLF
             }
             available = {
-                OR = {
-					has_government = democratic
-					has_government = communism
-				}
+                
             }
 
             traits = {
@@ -977,9 +1166,27 @@ characters = {
 			}
 		}
 
+        advisor = {
+            slot = political_advisor
+            idea_token = ZLF_uwe_koch_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                
+            }
+
+            traits = {
+                CHI_geologist_trait
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+
 		advisor = {
             slot = high_command
-            idea_token = ZLF_uwe_koch_token
+            idea_token = ZLF_uwe_koch_army_token
             allowed = {
                 original_tag = ZLF
             }
@@ -998,7 +1205,7 @@ characters = {
         }
         
 		corps_commander = {
-            traits = { armor_officer }
+            traits = { armor_officer swamp_fox }
             skill = 2
             attack_skill = 3
             defense_skill = 1
@@ -1016,9 +1223,27 @@ characters = {
 			}
 		}
 
+        advisor = {
+            slot = political_advisor
+            idea_token = ZLF_milo_wandsbeker_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_completed_focus = ZLF_reform_the_airship_fleet
+            }
+
+            traits = {
+                ZLF_airship_designer
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+
 		advisor = {
             slot = air_chief
-            idea_token = ZLF_milo_wandsbeker_token
+            idea_token = ZLF_milo_wandsbeker_air_token
             allowed = {
                 original_tag = ZLF
             }
@@ -1026,7 +1251,7 @@ characters = {
                 
             }
 
-			cost = 50
+			cost = 100
 
             traits = {
                 air_chief_safety_2

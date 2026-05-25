@@ -260,6 +260,130 @@ ideas = {
             
 		}
 
+        ZKN_blackcloaks = {
+
+			picture = FIN_maan_turva
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                resistance_damage_to_garrison = -0.05
+                resistance_growth_on_our_occupied_states = 0.15
+
+                operative_slot = 1
+			}
+            
+		}
+
+        ZKN_blackcloaks_no_lar = {
+
+            name = ZKN_blackcloaks
+			picture = FIN_maan_turva
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                resistance_damage_to_garrison = -0.05
+                resistance_growth_on_our_occupied_states = 0.15
+                
+                encryption_factor = 0.15
+			}
+            
+		}
+
+        ZKN_the_KSD = {
+
+			picture = FIN_maan_turva
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                resistance_damage_to_garrison = -0.05
+                resistance_growth_on_our_occupied_states = 0.15
+
+                operative_slot = 2
+			}
+            
+		}
+
+        ZKN_the_KSD_no_lar = {
+
+            name = ZKN_the_KSD
+			picture = FIN_maan_turva
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                resistance_damage_to_garrison = -0.05
+                resistance_growth_on_our_occupied_states = 0.15
+                
+                encryption_factor = 0.3
+			}
+            
+		}
+
+        ZKN_pacification_of_korelia = {
+
+			picture = generic_oppression
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                resistance_target = -0.1
+			}
+
+            targeted_modifier = {
+                tag = ZKO
+                compliance_gain = 0.15
+            }
+
+            targeted_modifier = {
+                tag = ZKC
+                compliance_gain = 0.15
+            }
+
+            targeted_modifier = {
+                tag = ZKU
+                compliance_gain = 0.15
+            }
+
+            targeted_modifier = {
+                tag = ZKL
+                compliance_gain = 0.15
+            }
+            
+		}
+
         ZKN_northern_military_focus = {
 
 			picture = PRC_the_internal_enemy
@@ -273,7 +397,8 @@ ideas = {
             }
 			
 			modifier = {
-                army_attack_factor = 0.1
+                experience_gain_army_factor = 0.1
+                training_time_factor = -0.05
                 breakthrough_factor = 0.05
 			}
             
@@ -361,6 +486,25 @@ ideas = {
                 tag = ZKN
                 trade_cost_for_target_factor = -0.25
             }
+            
+		}
+
+        ZKN_seized_noble_estates = {
+
+			picture = GER_german_military
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                consumer_goods_factor = -0.15
+                political_power_factor = -0.05
+			}
             
 		}
 
@@ -473,6 +617,86 @@ ideas = {
             
 		}
 
+        ZKN_air_support_bonus = {
+
+			picture = SWE_formation_flying
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                air_untrained_pilots_penalty_factor = -0.05
+                air_home_defence_factor = 0.1
+			}
+            
+		}
+
+        ZKN_air_support_bonus_2 = {
+
+			picture = SWE_land_air_warfare
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                air_untrained_pilots_penalty_factor = -0.05
+                air_home_defence_factor = 0.1
+                air_close_air_support_org_damage_factor = 0.15
+			}
+            
+		}
+
+        ZKN_air_support_bonus_3 = {
+
+			picture = SWE_marauder_bombers
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                air_untrained_pilots_penalty_factor = -0.05
+                air_home_defence_factor = 0.1
+                air_close_air_support_org_damage_factor = 0.15
+                air_range_factor = 0.05
+                ground_attack_factor = 0.2
+			}
+            
+		}
+
+        ZKN_navy_reform = {
+
+			picture = SWE_coastal_support
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                positioning = 0.05
+                shore_bombardment_bonus = 0.05
+			}
+            
+		}
+
         ZKN_cult_of_personality = {
 
 			picture = ARG_military_government
@@ -494,6 +718,7 @@ ideas = {
 
         ZKN_levers_of_power = {
 
+            name = ZKN_cult_of_personality
 			picture = ARG_military_government
 			
 			allowed = {
@@ -529,6 +754,27 @@ ideas = {
                 political_advisor_cost_factor = -0.5
                 production_speed_buildings_factor = 0.1
                 consumer_goods_factor = -0.15
+			}
+            
+		}
+
+        ZKN_fierce_anti_communism = {
+
+			picture = generic_shield_against_communism
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                communism_drift = -0.05
+                communism_acceptance = -80
+                production_speed_bunker_factor = 0.2
+                conscription = 0.01
 			}
             
 		}
@@ -675,7 +921,7 @@ ideas = {
 
         ZKN_acquisitions_department = {
 
-			picture = generic_supply_depot
+			picture = SWE_hodgepodge_of_equipment
 			
 			allowed = {
                 always = no 
@@ -686,7 +932,7 @@ ideas = {
             }
 			
 			modifier = {
-                equipment_capture = 0.02
+                equipment_capture = 0.025
                 production_speed_arms_factory_factor = 0.05
                 required_garrison_factor = -0.1
 			}
@@ -695,7 +941,7 @@ ideas = {
 
         ZKN_bureaucratised_military = {
 
-			picture = ETH_corrupt_bureaucracy
+			picture = generic_supply_depot
 			
 			allowed = {
                 always = no 
@@ -1056,6 +1302,26 @@ ideas = {
                 army_morale_factor = 0.05
                 resistance_target = -0.1
                 army_speed_factor = 0.05
+			}
+            
+		}
+
+        ZKN_unlocked_special_forces_potential = {
+
+			picture = PER_special_units_division_idea
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                special_forces_cap = 0.15
+                special_forces_attack_factor = 0.05
+                special_forces_defence_factor = 0.05
 			}
             
 		}

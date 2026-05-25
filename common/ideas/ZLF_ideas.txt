@@ -720,6 +720,24 @@ ideas = {
 
         }
 
+        ZLF_energy_independence = {
+
+            picture = generic_energy_concern
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                out_of_power_impact_factor = 0.75
+            }
+
+        }
+
         ZLF_cavalry_bonus_cw = {
 
             picture = generic_war_preparation
@@ -1025,7 +1043,7 @@ ideas = {
 
         ZLF_petite_bourgeois_cooperation = {
 
-            picture = generic_foreign_capital
+            picture = generic_disjointed_gov
             
             allowed = {
                 always = no 
@@ -1036,7 +1054,7 @@ ideas = {
             }
             
             modifier = {
-                production_speed_industrial_complex_factor = 0.15
+                production_speed_industrial_complex_factor = 0.25
                 party_popularity_stability_factor = -0.05
             }
             
@@ -1306,6 +1324,42 @@ ideas = {
             modifier = {
                 opinion_gain_monthly_same_ideology_factor = -0.15
                 political_advisor_cost_factor = 0.5
+            }
+
+        }
+
+        ZLF_resource_payments = {
+
+            picture = generic_foreign_capital
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                consumer_goods_factor = -0.15
+            }
+
+        }
+
+        ZLF_giving_resource_payments = {
+
+            picture = ETH_customs_barrier_ITA
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                consumer_goods_factor = 0.15
             }
 
         }

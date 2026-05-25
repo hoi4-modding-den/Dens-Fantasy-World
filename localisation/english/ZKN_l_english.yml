@@ -1,5 +1,7 @@
 ﻿l_english:
 
+ ZKN_GATHERING_STORM_DESC: "The Kingdom of Gardenia has devolved into civil war with the outbreak of the Edelweiss Revolution.\n \nThe Royalists have rallied under the banner of the Zinnian Throne, defending the old order of aristocratic rule. King Michael Aurus the Third only recently succeeded his father for the throne and his rule had already been plagued by internal strife among the nobility. After it became clear that civil war was inevitable, Michael authorised the sale of a significant portion of the Royal Armada to secure funds to crush the revolutionaries."
+
  ZKN: "Gardenia"
  ZKN_DEF: "Gardenia"
  ZKN_ADJ: "Gardenian"
@@ -12,8 +14,8 @@
  ZKN_communism: "Second Republic of Gardenia"
  ZKN_communism_DEF: "the Second Republic of Gardenia"
  ZKN_communism_ADJ: "Gardenian"
- ZKN_fascism: "Gardenian National Directorate"
- ZKN_fascism_DEF: "the Gardenian National Directorate"
+ ZKN_fascism: "Military Council of Gardenia"
+ ZKN_fascism_DEF: "the Military Council of Gardenia"
  ZKN_fascism_ADJ: "Gardenian"
 
  ZKN_dominion: "Zinnian Dominion"
@@ -41,6 +43,8 @@
 
  ZKN_neutrality_party: "Zinnientron"
  ZKN_neutrality_party_long: "Court of the Zinnian Throne"
+ ZKN_neutrality_party_pragmaticists: "RdnR (P)"
+ ZKN_neutrality_party_pragmaticists_long: "Government of National Salvation - Pragmaticist Clique"
  ZKN_democratic_party: "$ZLF_democratic_party$"
  ZKN_democratic_party_long: "$ZLF_democratic_party_long$"
  ZKN_communism_party: "$ZLF_communism_party$"
@@ -53,6 +57,8 @@
 
 # IDEOLOGIES
 
+ technocracy: "Technocracy"
+ technocracy_desc: "Technocracy is a system of governance in which decision-makers are selected on the basis of their expertise, particularly with regard to scientific or technical knowledge. A technocratic government tries to use the scientific method to solve social problems and uses logical calculus to find the most rational solution to any given problem based on the information available."
  nationalist_stratocracy: "Nationalist Stratocracy"
  nationalist_stratocracy_desc: "A Salvation Government or Salvation Stratocracy is a military junta that adheres to tenets of (ultra-)nationalism and seeks to unite the (ultra-)nation under a military dictatorship in an attempt to 'save' it."
  vampire_rule: "Vampiric Despotism"
@@ -64,6 +70,17 @@
  ZKN_michael_aurus_name: "Michael Aurus III."
  ZKN_yvonne_von_karmesin_name: "Yvonne von Karmesin"
  ZKN_albert_zu_stegehoff_name: "Albert zu Stegehoff"
+ ZKN_zacheus_rosenburg_name: "Zacheus Rosenburg"
+ ZKN_ludwig_zimbelmann_name: "Ludwig Zimbelmann"
+ ZKN_magnus_reisendorff_name: "Magnus Reisendorff"
+ ZKN_gottfred_muehle_name: "Gottfred Mühle"
+ ZKN_julius_von_welsen_name: "Julius von Welsen"
+ ZKN_frida_von_rathenau_name: "Frida von Rathenau"
+ ZKN_aurora_von_loebnitz_name: "Aurora von Löbnitz"
+ ZKN_uwe_von_hindenburg_name: "Uwe von Hindenburg"
+ ZKN_karl_von_soldau_name: "Karl von Soldau"
+ ZKN_sybille_von_gartenstadt_name: "Sybille von Gartenstadt"
+ ZKN_rudolf_schuppe_name: "Rudolf Schnuppe"
  ZKN_peter_von_tretschau_name: "Peter von Tretschau"
  ZKN_juergen_ostersee_name: "Jürgen Ostersee"
  ZKN_johann_schmerz_name: "Johann Schmerz"
@@ -81,13 +98,25 @@
  ZKN_the_winner_king: "Vanquisher of Revolution"
  ZKN_the_true_regent: "Zinnian Regent"
  ZKN_stratocratic_nationalist: "Stratocratic Nationalist"
+ ZKN_marshal_in_control: "Der Erste Reichsmarschall"
  ZKN_carmilla: "Crimson Regent"
  ZKN_heart_of_iron_trait: "Heart of Iron"
+ ZKN_the_old_master: "The Old Master"
+ ZKN_the_young_prodigy: "The Young Prodigy"
  ZLF_royal_army_chief: "Desperate Defence\n(Royal)"
  ZKN_kammermeister: "Kammermeister"
  ZKN_extraordinary_authority: "Sondervermögen"
  ZKN_carmarilla_trait: "Camarilla Leader"
- ZKN_chief_strategist: "Propaganda Strategist"
+ ZKN_radio_host: "Popular Radio Host"
+ ZKN_famous_cartograph: "Aviator Cartograph"
+ ZKN_charitable_aristocrat: "Charitable Aristocrat"
+ ZKN_wasteful_damsel: "Industrialist Nobility"
+ ZKN_beautiful_schemer: "Beautiful Schemer"
+ ZKN_militarist_aristocrat: "Militarist"
+ ZKN_royalist_academic: "Royalist Academic"
+ ZKN_connected_mistress: "Connected Spymistress"
+ ZKN_military_intelligence_officer: "Intelligence Officer"
+ ZKN_chief_strategist: "Propagandist"
  ZKN_chief_bureaucrat: "Fanatic Bureaucrat"
  ZKN_pragmatic_theorist: "World War Theorist"
 
@@ -114,15 +143,23 @@
  ZKN_reconstruction_military: "National Regeneration"
  ZKN_reconstruction_vampire: "The Second Dark Age"
  ZKN_elbian_exodus: "Elbian Refugee Crisis"
- ZKN_northern_military_focus: "Northern Military Efforts"
+ ZKN_blackcloaks: "Blackcloaks"
+ ZKN_the_KSD: "Agenten des Königlichen Sicherheitsdienst"
+ ZKN_pacification_of_korelia: "Pacification of Korelia"
+ ZKN_northern_military_focus: "Legacy of the Last Northeastern War"
  ZKN_avalonian_cooperation_agreement: "Gardenien-Avalon Cooperation"
  ZKN_avalonian_cooperation_agreement_2: "Gardenien-Avalon Defence Agreement"
  ZKN_anti_communist_crusade: "Crush the Spirit of Marxism"
+ ZKN_seized_noble_estates: "Seized Noble Estates"
  ZKN_military_government: "Direktorat der Obersten Armeekommandantur"
  ZKN_central_planning: "Wirtschaftsplanbüro"
+ ZKN_air_support_bonus: "Luftwaffen-Reform"
+ ZKN_air_support_bonus_2: "Zweite Luftwaffen-Reform"
+ ZKN_air_support_bonus_3: "Dritte Luftwaffen-Reform"
+ ZKN_navy_reform: "Kriegsmarine-Reform"
  ZKN_cult_of_personality: "Kult des Marschalls"
- ZKN_levers_of_power: "The Levers of Power"
  ZKN_the_second_kleptocracy: "The Second Kleptocracy"
+ ZKN_fierce_anti_communism: "Fierce Anti-Communism"
  ZKN_unification_programme: "Unify the Nation"
  ZKN_appease_the_masses: "Appease the Masses"
  ZKN_military_education: "Militärschulen"
@@ -130,6 +167,7 @@
  ZKN_acquisitions_department: "Organisationsbereich für Militärausrüstung"
  ZKN_bureaucratised_military: "Bürokratisierung der Militärstreitkräfte"
  ZKN_logistics_department: "Die Logistik-Abteilung"
+ ZKN_unlocked_special_forces_potential: "Expanded the Sondereinsatzkräfte"
 
 
 # DYNMODS
@@ -143,6 +181,15 @@
 
  ZKN_nobles_opinion_tt: "£GFX_occupation_costs Aristocratic Loyalty: $RIGHT|+=0$"
 
+
+# BoP
+
+ ZKN_power_balance: "Factionalism in the Directorate"
+ ZKN_balanced_range: "Internal Conflict"
+ ZKN_marshal_side: "Tretschau's Clique"
+ ZKN_marshal_influence_range: "Ultranationalists in Control"
+ ZKN_pragmaticist_side: "Pragmaticist Clique"
+ ZKN_pragmaticist_influence_range: "Pragmaticists in Control"
 
 # DECISIONS
 
@@ -161,15 +208,34 @@
 
  ZKN_operation_exodus: "Operation Exodus"
  ZKN_operation_exodus_lite: "Operation Exodus"
+ ZKN_regain_the_armada: "Secure the Ports"
+ ZKN_regain_the_armada_tt: "Transfer the §YRoyal Armada§! to §Y[ROOT.GetNameWithFlag]§!."
 
  ZKN_destroy_the_ama_cat: "Crackdown on the AM-Apparatus"
  ZKN_root_out_ama_in_state: "Root out Apparatus Operatives in [FROM.GetName]"
+
+ ZKN_balance_of_power_category: "Balance of Power Decisions"
+ ZKN_funnel_military_funds: "Funnel Military Funds"
+ ZKN_utilise_the_state_of_ermergency: "Utilise the State of Emergency"
+ ZKN_repress_the_opposition: "Harass the Opposition"
+ ZKN_spy_on_the_opposition: "Surveil Opposition Activities"
+ ZKN_infilitrate_the_bureaucracy: "Infiltrate the Bureaucracy"
+ ZKN_utilise_the_propaganda_department: "Utilise the Propaganda Department"
+ ZKN_staff_the_industrial_boards: "Staff the Industrial Boards"
+ ZKN_secure_loyalty_of_the_navy: "Secure Loyalty of the Navy"
 
 
 # TOOLTIPS
 
  ZKN_is_kingdom_tt: "The §YZinnian Throne§! leads the country."
  ZKN_is_kingdom_tt_NOT: "The §YZinnian Throne§! does not lead the country."
+
+ ZKN_conscription_locked_tt: "§R§YConscription Laws§! will be locked.§!"
+ ZKN_conscription_locked: "Conscription Laws locked"
+ ZLF_disabled_economic_demobilisation_tt: "§YEconomic Demobilisation Mission§! will be disabled."
+ ZLF_disabled_economic_demobilisation: "Economic Demobilisation is Disabled"
+ ZLF_disabled_manpower_demobilisation: "Demobilisation is Disabled"
+ ZLF_disabled_manpower_demobilisation_tt: "§YManpower Demobilisation Mission§! will be disabled."
 
 
 # FOCI
@@ -247,6 +313,7 @@
  ZKN_long_shall_he_reign_desc: ""
  ZKN_reorganise_the_intelligence_service: "Establish the KSD"
  ZKN_reorganise_the_intelligence_service_desc: ""
+ ZKN_reorganise_the_intelligence_service_tt: "Create §YKöniglicher Sicherheitsdienst§! Intelligence Agency."
  ZKN_the_epiphet: "The Epiphet Ceremony"
  ZKN_the_epiphet_desc: ""
  ZKN_the_epiphet_tt: "§YKing Michael§! will be assigned an §YEpiphet§! by the people, based on the changes he has made during his reign."
@@ -265,10 +332,10 @@
  ZKN_dreams_of_greater_gardenia_desc: ""
  ZKN_attack_korelia: "Strike Korelia"
  ZKN_attack_korelia_desc: ""
- ZKN_integrate_korelia: "Divy Up the Lands"
- ZKN_integrate_korelia_desc: ""
  ZKN_anti_guerilla_campaigns: "Anti-Guerilla Campaigns"
  ZKN_anti_guerilla_campaigns_desc: ""
+ ZKN_integrate_korelia: "Divy Up the Lands"
+ ZKN_integrate_korelia_desc: ""
  ZKN_develop_alstroemeria: "Restore Alstroemeria"
  ZKN_develop_alstroemeria_desc: ""
  ZKN_strengthen_the_army: "Training Exercises"
@@ -417,6 +484,7 @@
  ZKN_mobilise_gardenian_society_desc: ""
  ZKN_raise_defence_militias: "Raise the Hindenburg-Brigades"
  ZKN_raise_defence_militias_desc: ""
+ ZKN_raise_defence_militias_tt: "Deploy §YMilitia Divisions§! in all controlled core states."
 
  ZKN_the_salvation_government: "Salvation and Regeneration"
  ZKN_the_salvation_government_desc: ""
@@ -437,6 +505,7 @@
  ZKN_merge_police_and_military_police_desc: ""
  ZKN_nothing_against_the_state: "Nothing Against The State"
  ZKN_nothing_against_the_state_desc: ""
+ ZKN_nothing_against_the_state_tt: "Create §YMilitärbüro für Nationale Sicherheit§! Intelligence Agency."
  ZKN_militarise_gardenian_society: "Militarise Gardenian Society"
  ZKN_militarise_gardenian_society_desc: ""
  ZKN_zentralplanwirtschaft: "Zentralplanwirtschaft"
@@ -445,11 +514,9 @@
  ZKN_eternal_state_of_emergency_and_vigilance_desc: ""
  ZKN_every_man_a_soldier: "Every Creature A Soldier"
  ZKN_every_man_a_soldier_desc: ""
- ZKN_conscription_locked_tt: "§R§YConscription Laws§! will be locked.§!"
- ZKN_conscription_locked: "Conscription Laws locked"
  ZKN_propagandaabteilung: "Die Propagandaabteilung"
  ZKN_propagandaabteilung_desc: ""
- ZKN_power_for_powers_sake: "Stewards of the Nation"
+ ZKN_power_for_powers_sake: "Reform the Secondary Branches"
  ZKN_power_for_powers_sake_desc: ""
  ZKN_purge_the_foreign_office: "Purge the Foreign Office"
  ZKN_purge_the_foreign_office_desc: ""
@@ -700,6 +767,19 @@
  ZKN_events.13.t: "[FROM.GetNameDefCap] refuses to sign."
  ZKN_events.13.desc: "WIP"
  ZKN_events.13.a: "Fortify the Border!"
+
+ ZKN_events.14.t: "End of Civilian Administration"
+ ZKN_events.14.desc: "WIP"
+ ZKN_events.14.a: "The military stands divided."
+
+ ZKN_events.15.t: "Degretschow appointed Plenipotentiary for Propaganda"
+ ZKN_events.15.desc: "WIP"
+ ZKN_events.15.a: "'Finally, an office job!'"
+
+ ZKN_events.16.t: "Ousting the Marshal"
+ ZKN_events.16.desc: "WIP"
+ ZKN_events.16.a: "Ostersee has the expertise."
+ ZKN_events.16.b: "Von Degretschow secures the seat of power."
 
 
  ZKN_news_events.1.t: "Loyalists win the Gardenian Civil War"

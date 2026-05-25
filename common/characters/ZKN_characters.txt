@@ -132,6 +132,325 @@ characters = {
         
     }
 
+    ZKN_zacheus_rosenburg = { 
+        name = ZKN_zacheus_rosenburg_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_zacheus_rosenburg
+                small = GFX_portrait_ZKN_zacheus_rosenburg_small
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZKN_zacheus_rosenburg_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                NOT = { has_government = democratic }
+                NOT = { has_government = communism }
+            }
+
+            traits = {
+                prince_of_terror
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+    }
+
+    ZKN_ludwig_zimbelmann = { 
+        name = ZKN_ludwig_zimbelmann_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_ludwig_zimbelmann
+                small = GFX_portrait_ZKN_ludwig_zimbelmann_small
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZKN_ludwig_zimbelmann_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                NOT = { has_government = fascism }
+            }
+
+            traits = {
+                ZKN_radio_host
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+    }
+
+    ZKN_magnus_reisendorff = { 
+        name = ZKN_magnus_reisendorff_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_magnus_reisendorff
+                small = GFX_portrait_ZKN_magnus_reisendorff_small
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZKN_magnus_reisendorff_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                NOT = { has_government = communism }
+            }
+
+            traits = {
+                captain_of_industry
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+    }
+
+    ZKN_gottfred_muehle = { 
+        name = ZKN_gottfred_muehle_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_gottfred_muehle
+                small = GFX_portrait_ZKN_gottfred_muehle_small
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZKN_gottfred_muehle_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                
+            }
+
+            traits = {
+                ZKN_famous_cartograph
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+    }
+
+    ZKN_julius_von_welsen = { 
+        name = ZKN_julius_von_welsen_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_julius_von_welsen
+                small = GFX_portrait_ZKN_julius_von_welsen_small
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZKN_julius_von_welsen_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                NOT = { has_government = fascism }
+            }
+
+            traits = {
+                ZKN_charitable_aristocrat
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+    }
+
+    ZKN_frida_von_rathenau = { 
+        name = ZKN_frida_von_rathenau_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_frida_von_rathenau
+                small = GFX_portrait_ZKN_frida_von_rathenau_small
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZKN_frida_von_rathenau_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                ZKN_is_kingdom = yes
+            }
+
+            traits = {
+                ZKN_wasteful_damsel
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+    }
+
+    ZKN_aurora_von_loebnitz = { 
+        name = ZKN_aurora_von_loebnitz_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_aurora_von_loebnitz
+                small = GFX_portrait_ZKN_aurora_von_loebnitz_small
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZKN_aurora_von_loebnitz_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                ZKN_is_kingdom = yes
+            }
+
+            traits = {
+                ZKN_beautiful_schemer
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+    }
+
+    ZKN_uwe_von_hindenburg = { 
+        name = ZKN_uwe_von_hindenburg_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_uwe_von_hindenburg
+                small = GFX_portrait_ZKN_uwe_von_hindenburg_small
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZKN_karl_von_soldau_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                NOT = { has_government = communism }
+            }
+
+            traits = {
+                ZKN_militarist_aristocrat
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+    }
+
+    ZKN_karl_von_soldau = { 
+        name = ZKN_karl_von_soldau_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_karl_von_soldau
+                small = GFX_portrait_ZKN_karl_von_soldau_small
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZKN_karl_von_soldau_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                ZKN_is_kingdom = yes
+            }
+
+            traits = {
+                ZKN_royalist_academic
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+    }
+
+    ZKN_sybille_von_gartenstadt = { 
+        name = ZKN_sybille_von_gartenstadt_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_sybille_von_gartenstadt
+                small = GFX_portrait_ZKN_sybille_von_gartenstadt_small
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZKN_sybille_von_gartenstadt_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                ZKN_is_kingdom = yes
+                has_intelligence_agency = yes
+            }
+
+            visible = {
+                has_dlc = "La Resistance"
+            }
+
+            traits = {
+                ZKN_connected_mistress
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+    }
+
+    ZKN_rudolf_schuppe = {
+        name = ZKN_rudolf_schuppe_name
+        portraits = {
+            army = {
+                large = GFX_portrait_ZKN_rudolf_schuppe
+                small = GFX_portrait_ZKN_rudolf_schuppe_small
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZKN_rudolf_schuppe_token
+            allowed = {
+                original_tag = ZKN
+            }
+            available = {
+                ZKN_is_kingdom = no
+                has_intelligence_agency = yes
+            }
+
+            visible = {
+                has_dlc = "La Resistance"
+            }
+
+            traits = {
+                ZKN_military_intelligence_officer
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+    }
+
     ZKN_peter_von_tretschau = { 
         name = ZKN_peter_von_tretschau_name
         portraits = {
@@ -214,7 +533,7 @@ characters = {
         }
         
         corps_commander = {
-            traits = { inflexible_strategist career_officer }
+            traits = { inflexible_strategist career_officer politically_connected }
             skill = 3
             attack_skill = 1
             defense_skill = 3

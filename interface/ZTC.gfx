@@ -10,6 +10,16 @@ spriteTypes = {
 		texturefile = "gfx/leaders/ZTC/portrait_ZTC_the_council.png"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_ZTC_joergen_bahmberg"
+		texturefile = "gfx/leaders/ZTC/portrait_ZTC_joergen_bahmberg.png"
+	}
+
+	spriteType = {
+        name = "GFX_portrait_ZTC_joergen_bahmberg_small"
+        texturefile = "gfx/interface/ideas/ZTC/portrait_ZTC_joergen_bahmberg_small.png"
+    }
+
     spriteType = {
 		name = "GFX_portrait_ZTC_franziska_kroesus"
 		texturefile = "gfx/leaders/ZTC/portrait_ZTC_franziska_kroesus.png"

@@ -2,8 +2,12 @@ ZKN_is_kingdom = {
     custom_trigger_tooltip = {
         tooltip = ZKN_is_kingdom_tt
         OR = {
+            # Actual Monarchs
             has_country_leader = { character = ZKN_michael_aurus ruling_only = yes }
+
+            # Regents
             has_country_leader = { character = ZKN_albert_zu_stegehoff ruling_only = yes }
+            has_country_leader = { character = ZKN_yvonne_von_karmesin ruling_only = yes }
         }
     }
 }

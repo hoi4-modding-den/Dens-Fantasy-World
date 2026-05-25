@@ -3382,6 +3382,20 @@ focus_tree={
 			ZLF = {
 				country_event = ZLF_events.11
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			effect_tooltip = {
+				ZLF = {
+					set_autonomy = {
+						target = ROOT
+						autonomous_state = autonomy_ZTC_federal_city
+						end_wars = no
+						end_civil_wars = no
+					}
+				}
+			}
+			custom_effect_tooltip = ZLF_events.10.tt
 		}
 	}
 

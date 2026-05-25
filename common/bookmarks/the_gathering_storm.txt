@@ -29,6 +29,20 @@ bookmarks = {
 				ZLF_theories_of_international_relations
 			}
 		}
+		ZKN={
+			history = "ZKN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				ZKN_disloyal_army
+				ZKN_sale_of_the_armada
+				ZKN_throne_under_threat
+			}
+			focuses = {
+				ZKN_the_zinnian_realm
+				ZKN_the_salvation_government
+				ZKN_the_crimson_regency
+			}
+		}
 		ZSP={
 			history = "ZSP_GATHERING_STORM_DESC"
 			ideology = fascism

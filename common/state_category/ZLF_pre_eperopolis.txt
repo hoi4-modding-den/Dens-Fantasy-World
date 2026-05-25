@@ -1,0 +1,7 @@
+state_categories = {
+	pre_eperopolis = {
+		local_building_slots = 20
+	
+		color = { 0 250 250 }
+	}
+}

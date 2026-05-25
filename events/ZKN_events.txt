@@ -42,17 +42,6 @@ country_event = { # Civil War Ends
 			ZLF = { every_core_state = { remove_core_of = ZLF } }
 			every_state = { limit = { region = 70 } add_core_of = ROOT }
 
-			ZLF = { # move important characters over (maybe do it later via lore events instead?)
-				ZLF_alois_rotrose = { # Ludovik is killed
-					set_nationality = ROOT 
-					promote_character = yes
-				}
-				ZLF_gustav_mai = { 
-					set_nationality = ROOT
-					promote_character = yes
-				}
-			}
-
 			ZTC = {
 				country_event = {
 					id = ZKN_cw_events.3
@@ -263,7 +252,13 @@ country_event = { # Nobles demand Harsh Repressions
 
 	option = {
 		name = ZKN_post_cw_events.2.a
-		remove_ideas = ZKN_general_strike
+		if = {
+			limit = { has_idea = ZKN_general_strike_cw_improved }
+			remove_ideas = ZKN_general_strike_cw_improved
+		}
+		else = {
+			remove_ideas = ZKN_general_strike
+		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -275,7 +270,13 @@ country_event = { # Nobles demand Harsh Repressions
 
 	option = {
 		name = ZKN_post_cw_events.2.b
-		remove_ideas = ZKN_general_strike
+		if = {
+			limit = { has_idea = ZKN_general_strike_cw_improved }
+			remove_ideas = ZKN_general_strike_cw_improved
+		}
+		else = {
+			remove_ideas = ZKN_general_strike
+		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -309,6 +310,7 @@ country_event = { # Suspicious Military Movements
 		name = ZKN_post_cw_events.3.a
 		add_command_power = -40
         add_war_support = -0.1
+		812 = { set_demilitarized_zone = yes }
 	}
 }
 
@@ -443,6 +445,10 @@ country_event = { # Camarilla Regency crushed
 		name = ZKN_post_cw_events.7.a
 		add_manpower = -10000
         add_popularity = { ideology = neutrality popularity = -0.25 }
+		812 = { set_demilitarized_zone = no }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
 		retire_character = ZKN_yvonne_von_karmesin
 
 		set_country_flag = ZKN_salvationist_path_unlocked
@@ -480,6 +486,10 @@ country_event = { # Vampire Coup
 
 	option = {
 		name = ZKN_post_cw_events.9.a
+		812 = { set_demilitarized_zone = no }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
 		custom_effect_tooltip = SOV_characters_will_be_purged_tt
         character_list_tooltip = {
             limit = {
@@ -536,6 +546,10 @@ country_event = { # Putschists executed
 
 	option = {
 		name = ZKN_post_cw_events.10.a
+		812 = { set_demilitarized_zone = no }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
 		custom_effect_tooltip = SOV_characters_will_be_purged_tt
         character_list_tooltip = {
             limit = {
@@ -1187,6 +1201,111 @@ country_event = { # Non-Aggression Pact with Z70 - Rejected
 		name = ZKN_events.13.a
 		add_political_power = -25
 		add_war_support = 0.02
+	}
+}
+
+country_event = { # Military BoP activates
+	id = ZKN_events.14
+	title = ZKN_events.14.t
+	desc = ZKN_events.14.desc
+	picture = GFX_report_event_ARG_coup_consolidating
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_events.14.a
+		set_power_balance = {
+			id = ZKN_power_balance
+			left_side = ZKN_marshal_side
+			right_side = ZKN_pragmaticist_side
+		}
+		hidden_effect = {
+			random_list = {
+				30 = {
+					set_country_flag = ZKN_go_ultranationalist_path
+				}
+				70 = {
+					set_country_flag = ZKN_go_pragmaticist_path
+				}
+			}
+		}
+	}
+}
+
+country_event = { # Tanya gets an office job
+	id = ZKN_events.15
+	title = ZKN_events.15.t
+	desc = ZKN_events.15.desc
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_events.15.a
+		ZKN_tanja_von_degretschow = {
+			add_unit_leader_trait = politically_connected
+		}
+	}
+}
+
+country_event = { # Pragmaticist Coup
+	id = ZKN_events.16
+	title = ZKN_events.16.t
+	desc = ZKN_events.16.desc
+	picture = GFX_report_event_ARG_coup_consolidating
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_events.16.a
+		ZKN_peter_von_tretschau = { remove_unit_leader_role = yes }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			name = ZKN_neutrality_party_pragmaticists
+			long_name = ZKN_neutrality_party_pragmaticists_long
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_country_leader_role = {
+            character = ZKN_juergen_ostersee
+            promote_leader = yes
+            country_leader = {
+                ideology = technocracy
+                expire = "1965.1.1.1"
+                traits = { ZKN_the_old_master }
+            }
+        }
+	}
+
+	option = {
+		name = ZKN_events.16.b
+		ZKN_peter_von_tretschau = { remove_unit_leader_role = yes }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			name = ZKN_neutrality_party_pragmaticists
+			long_name = ZKN_neutrality_party_pragmaticists_long
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_country_leader_role = {
+            character = ZKN_tanja_von_degretschow
+            promote_leader = yes
+            country_leader = {
+                ideology = technocracy
+                expire = "1965.1.1.1"
+                traits = { ZKN_the_young_prodigy }
+            }
+        }
 	}
 }
 

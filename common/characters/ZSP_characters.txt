@@ -51,6 +51,24 @@ characters = {
                 large = GFX_portrait_ZSP_the_phoenix
             }
         }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = ZSP_the_phoenix_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                
+            }
+            traits = {
+                ZSP_der_letzte_sternwart
+            }
+            cost = 250
+            ai_will_do = {
+                base = 5
+            }
+        }
     }
 
     ZSP_krabat = { # reference: a myth from Sorbia

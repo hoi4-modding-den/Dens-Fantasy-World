@@ -32,6 +32,21 @@ characters={
 		}
 	}
 
+	ZTC_joergen_bahmberg = { 
+		name = ZTC_joergen_bahmberg_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZTC_joergen_bahmberg
+				small = GFX_portrait_ZTC_joergen_bahmberg_small
+			}
+		}
+		country_leader = {
+			ideology = corporatocracy
+			traits = {  }
+			expire = "1960.1.1.1"
+		}
+	}
+
 	ZTC_franziska_kroesus = {
 		gender = female
 		name = ZTC_franziska_kroesus_name

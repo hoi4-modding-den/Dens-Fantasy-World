@@ -491,6 +491,38 @@ political_actions = {
 
     }
 
+    ZKN_regain_the_armada = {
+
+        icon = SWE_set_naval_budget
+
+        custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = decision_cost_CP_15
+
+        allowed = {
+            original_tag = ZKN
+        }
+
+        available = {
+            controls_state = 749
+            controls_state = 1239
+        }
+
+        visible = {
+            has_completed_focus = ZKN_recover_the_navy
+            NOT = { has_dlc = "By Blood Alone" }
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = ZKN_regain_the_armada_tt
+            hidden_effect = {
+                add_command_power = -15
+                set_naval_oob = "ZTC_1936_navy_2"
+            }
+        }
+    }
+
 }
 
 ZKN_destroy_the_ama_cat = {
@@ -559,6 +591,274 @@ ZKN_destroy_the_ama_cat = {
             }
         }
 
+    }
+
+}
+
+ZKN_balance_of_power_category = {
+
+    ZKN_funnel_military_funds = {
+        
+        icon = generic_fundraising
+
+        ai_will_do = {
+            base = 150
+            modifier = {
+                factor = 0
+                has_country_flag = ZKN_go_pragmaticist_path
+            }
+        }
+
+        cost = 25
+
+        available = {
+            
+        }
+
+        days_remove = 30
+
+        modifier = {
+            consumer_goods_factor = 0.1
+        }
+
+        remove_effect = {
+            add_power_balance_value = {
+                id = ZKN_power_balance
+                value = -0.1
+                tooltip_side = ZKN_marshal_side
+            }
+        }
+    }
+
+    ZKN_utilise_the_state_of_ermergency = {
+        
+        icon = generic_army_support
+
+        ai_will_do = {
+            base = 150
+            modifier = {
+                factor = 0
+                has_country_flag = ZKN_go_pragmaticist_path
+            }
+        }
+
+        cost = 25
+
+        available = {
+            has_completed_focus = ZKN_eternal_state_of_emergency_and_vigilance
+        }
+
+        days_remove = 30
+
+        modifier = {
+            stability_factor = -0.05
+        }
+
+        remove_effect = {
+            add_power_balance_value = {
+                id = ZKN_power_balance
+                value = -0.1
+                tooltip_side = ZKN_marshal_side
+            }
+        }
+    }
+
+    ZKN_repress_the_opposition = {
+        
+        icon = oppression
+
+        ai_will_do = {
+            base = 150
+            modifier = {
+                factor = 0
+                has_country_flag = ZKN_go_pragmaticist_path
+            }
+        }
+
+        cost = 25
+
+        available = {
+            has_completed_focus = ZKN_merge_police_and_military_police
+        }
+
+        days_remove = 30
+
+        modifier = {
+            training_time_factor = 0.05
+        }
+
+        remove_effect = {
+            add_power_balance_value = {
+                id = ZKN_power_balance
+                value = -0.1
+                tooltip_side = ZKN_marshal_side
+            }
+        }
+    }
+
+    ZKN_spy_on_the_opposition = {
+        
+        icon = onmap_recruit_operative
+
+        ai_will_do = {
+            base = 150
+            modifier = {
+                factor = 0
+                has_country_flag = ZKN_go_pragmaticist_path
+            }
+        }
+
+        cost = 25
+
+        available = {
+            has_completed_focus = ZKN_nothing_against_the_state
+        }
+
+        days_remove = 30
+
+        modifier = {
+            political_power_factor = -0.1
+        }
+
+        remove_effect = {
+            add_power_balance_value = {
+                id = ZKN_power_balance
+                value = -0.1
+                tooltip_side = ZKN_marshal_side
+            }
+        }
+    }
+
+    ZKN_infilitrate_the_bureaucracy = {
+
+        icon = generic_political_discourse
+
+        ai_will_do = {
+            base = 150
+            modifier = {
+                factor = 0
+                has_country_flag = ZKN_go_ultranationalist_path
+            }
+        }
+
+        cost = 25
+
+        available = {
+            
+        }
+
+        days_remove = 30
+
+        modifier = {
+            political_power_cost = 0.1
+        }
+
+        remove_effect = {
+            add_power_balance_value = {
+                id = ZKN_power_balance
+                value = 0.1
+                tooltip_side = ZKN_pragmaticist_side
+            }
+        }
+    }
+
+    ZKN_utilise_the_propaganda_department = {
+
+        icon = eng_propaganda_campaigns
+
+        ai_will_do = {
+            base = 150
+            modifier = {
+                factor = 0
+                has_country_flag = ZKN_go_ultranationalist_path
+            }
+        }
+
+        cost = 25
+
+        available = {
+            has_completed_focus = ZKN_propagandaabteilung
+        }
+
+        days_remove = 30
+
+        modifier = {
+            war_support_factor = -0.05
+        }
+
+        remove_effect = {
+            add_power_balance_value = {
+                id = ZKN_power_balance
+                value = 0.1
+                tooltip_side = ZKN_pragmaticist_side
+            }
+        }
+    }
+
+    ZKN_staff_the_industrial_boards = {
+
+        icon = eng_trade_unions_demand
+
+        ai_will_do = {
+            base = 150
+            modifier = {
+                factor = 0
+                has_country_flag = ZKN_go_ultranationalist_path
+            }
+        }
+
+        cost = 25
+
+        available = {
+            has_completed_focus = ZKN_zentralplanwirtschaft
+        }
+
+        days_remove = 30
+
+        modifier = {
+            production_speed_buildings_factor = -0.05
+        }
+
+        remove_effect = {
+            add_power_balance_value = {
+                id = ZKN_power_balance
+                value = 0.1
+                tooltip_side = ZKN_pragmaticist_side
+            }
+        }
+    }
+
+    ZKN_secure_loyalty_of_the_navy = {
+
+        icon = generic_naval
+
+        ai_will_do = {
+            base = 150
+            modifier = {
+                factor = 0
+                has_country_flag = ZKN_go_ultranationalist_path
+            }
+        }
+
+        cost = 25
+
+        available = {
+            has_completed_focus = ZKN_power_for_powers_sake
+        }
+
+        days_remove = 30
+
+        modifier = {
+            experience_gain_navy_factor = -0.15
+        }
+
+        remove_effect = {
+            add_power_balance_value = {
+                id = ZKN_power_balance
+                value = 0.1
+                tooltip_side = ZKN_pragmaticist_side
+            }
+        }
     }
 
 }

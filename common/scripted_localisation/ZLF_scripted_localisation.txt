@@ -44,6 +44,18 @@ defined_text = {
         localization_key = ZLF_mathilde_elysee_name
     }
     text = {
+        trigger = {
+            has_country_flag = ZLF_post_liberal_disco
+        }
+        localization_key = ZLF_harrier_du_bois_name
+    }
+    text = {
+        trigger = {
+            has_country_flag = ZLF_post_liberal_no_disco
+        }
+        localization_key = ZLF_josef_burgow_name
+    }
+    text = {
         localization_key = ZLF_gustav_mai_name
     }
 }

@@ -2662,6 +2662,15 @@ political_actions = {
             NOT = { country_exists = ZKN }
         }
 
+        highlight_states = {
+            highlight_provinces = { 
+                8464
+                8472
+                9675
+                8473
+            }
+        }
+
         fire_only_once = yes
 
         complete_effect = {
@@ -2714,7 +2723,7 @@ economy_decisions = {
             }
         }
 
-        is_good = no
+        is_good = yes
 
         days_mission_timeout = 30
 
@@ -2741,15 +2750,147 @@ economy_decisions = {
         }
     }
 
+    ZLF_free_housing_spreader_mission = {
+
+        icon = gre_investment_decisions
+
+        allowed = {
+            original_tag = ZLF
+        }
+
+        activation = {
+            always = no
+        }
+
+        available = {
+            all_owned_state = {
+                is_core_of = ROOT
+                is_controlled_by = ROOT
+                any_neighbor_state = {
+                    has_dynamic_modifier = { modifier = ZLF_free_housing_modifier }
+                }
+                has_dynamic_modifier = { modifier = ZLF_free_housing_modifier }
+            }
+        }
+
+        is_good = yes
+
+        days_mission_timeout = 70
+
+        timeout_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    is_core_of = ROOT
+                    any_neighbor_state = {
+                        has_dynamic_modifier = { modifier = ZLF_free_housing_modifier }
+                    }
+                }
+                add_dynamic_modifier = { modifier = ZLF_free_housing_modifier }
+            }
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            activate_mission = ZLF_free_housing_spreader_mission
+        }
+
+    }
+
 }
 
 foreign_politics = {
+
+    ZLF_secure_foreign_resources = {
+
+        icon = generic_construction
+
+        cost = 50
+
+        ai_will_do = {
+            base = 10
+        }
+
+        allowed = {
+            original_tag = ZLF
+        }
+
+        available = {
+            NOT = { has_country_flag = ZLF_foreign_resource_acquisition_timer }
+            FROM = {
+                owner = {
+                    has_war = no
+                    has_opinion = { target = ROOT value > 19 }
+                    ZLF_is_despotist_ideology = no
+                }
+            }
+        }
+
+        visible = {
+            has_completed_focus = ZLF_secure_trade_agreements
+            FROM = {
+                owner = {
+                    has_war = no
+                    ZLF_is_despotist_ideology = no
+                }
+            }
+        }
+
+        on_map_mode = map_only
+
+        state_target = yes
+
+        target_trigger = {
+            FROM = {
+                OR = {
+                    oil > 0
+                    aluminium > 0
+                    rubber > 0
+                    tungsten > 0
+                    steel > 0
+                    chromium > 0
+                    coal > 0
+                }
+                NOT = { is_owned_by = ROOT }
+            }
+            NOT = {
+                any_country = {
+                    has_resources_rights = { state = FROM }
+                }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = { flag = ZLF_foreign_resource_acquisition_timer days = 200 value = 1 }
+            FROM = {
+                set_state_flag = ZLF_resource_negotiation_here
+                state_event = {
+                    id = ZLF_events.24
+                    days = 14
+                    trigger_for = owner
+                }
+            }
+
+            custom_effect_tooltip = ZLF_secure_foreign_resources_tt
+
+            custom_effect_tooltip = if_they_accept_tt
+            effect_tooltip = {
+                FROM = {
+                    owner = {
+                        give_resource_rights = { receiver = ROOT state = FROM }
+                    }
+                }
+            }
+        }
+    }
 
     ZLF_cooperate_with_avalon = {
 
         icon = ger_mefo_bills
 
         cost = 40
+
+        ai_will_do = {
+            base = 10
+        }
 
         allowed = {
             original_tag = ZLF
@@ -2761,6 +2902,10 @@ foreign_politics = {
                 NOT = { has_war_with = ROOT }
                 has_government = democratic
             }
+            has_completed_focus = ZLF_cooperate_with_moderate_democracies
+        }
+
+        visible = {
             has_completed_focus = ZLF_cooperate_with_moderate_democracies
         }
 
@@ -2787,6 +2932,10 @@ foreign_politics = {
 
         cost = 40
 
+        ai_will_do = {
+            base = 10
+        }
+
         allowed = {
             original_tag = ZLF
         }
@@ -2797,6 +2946,10 @@ foreign_politics = {
                 NOT = { has_war_with = ROOT }
                 has_government = democratic
             }
+            has_completed_focus = ZLF_cooperate_with_moderate_democracies
+        }
+
+        visible = {
             has_completed_focus = ZLF_cooperate_with_moderate_democracies
         }
 
@@ -2815,6 +2968,38 @@ foreign_politics = {
             }
         }
 
+    }
+
+    ZLF_leave_tech_sharing = {
+
+        icon = generic_research
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                factor = 10
+                any_other_country = {
+                    has_offensive_war_with = ROOT
+                    is_in_tech_sharing_group = ZLF_global_tech_sharing
+                }
+            }
+        }
+
+        allowed = {
+            NOT = { original_tag = ZLF }
+        }
+
+        visible = {
+            is_in_tech_sharing_group = ZLF_global_tech_sharing
+        }
+
+        available = {
+            is_in_tech_sharing_group = ZLF_global_tech_sharing
+        }
+
+        complete_effect = {
+            remove_from_tech_sharing_group = ZLF_global_tech_sharing
+        }
     }
 
 }

@@ -38,6 +38,16 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_portrait_ZLF_maximilian_graade"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_maximilian_graade.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_maximilian_graade_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_maximilian_graade_small.png"
+    }
+
+    spriteType = {
         name = "GFX_portrait_ZLF_gustav_mai"
         texturefile = "gfx/leaders/ZLF/portrait_ZLF_gustav_mai.png"
     }
@@ -58,6 +68,16 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_portrait_ZLF_josef_burgow"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_josef_burgow.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_josef_burgow_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_josef_burgow_small.png"
+    }
+
+    spriteType = {
         name = "GFX_portrait_ZLF_wilhelm_gluecksburg"
         texturefile = "gfx/leaders/ZLF/portrait_ZLF_wilhelm_gluecksburg.png"
     }
@@ -75,6 +95,16 @@ spriteTypes = {
     spriteType = {
         name = "GFX_portrait_ZLF_heinrich_rosenhain_small"
         texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_heinrich_rosenhain_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_tom_the_platypus"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_tom_the_platypus.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_tom_the_platypus_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_tom_the_platypus_small.png"
     }
 
     spriteType = {
@@ -165,6 +195,16 @@ spriteTypes = {
     spriteType = {
         name = "GFX_portrait_ZLF_walter_krondrache_small"
         texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_walter_krondrache_small.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_dagobert_goppel"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_dagobert_goppel.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_dagobert_goppel_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_dagobert_goppel_small.png"
     }
 
     spriteType = {
@@ -612,8 +652,23 @@ spriteTypes = {
 	}
 
     spriteType = {
+		name = "GFX_report_event_ZLF_yaoi"
+		texturefile = "gfx/event_pictures/ZLF_report_event_yaoi.png"
+	}
+
+    spriteType = {
 		name = "GFX_report_event_ZLF_kleinbahn"
 		texturefile = "gfx/event_pictures/ZLF_report_event_ruegensche_kleinbahn.png"
+	}
+
+    spriteType = {
+		name = "GFX_news_event_ZLF_may_day"
+		texturefile = "gfx/event_pictures/ZLF_news_event_may_day.png"
+	}
+
+    spriteType = {
+		name = "GFX_news_event_ZLF_pan_tewara_express"
+		texturefile = "gfx/event_pictures/ZLF_news_event_pan_tewara_express.png"
 	}
 
 }
