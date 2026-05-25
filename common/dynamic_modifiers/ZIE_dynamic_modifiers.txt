@@ -107,7 +107,8 @@ hravan_national_army = {
 	dig_in_speed = hna_dig_in_speed
 	max_planning_factor = hna_max_planning_factor
 	army_artillery_attack_factor = hna_army_artillery_attack_factor
-	army_defence_attack_factor = hna_army_defence_attack_factor
+	army_attack_factor = hna_army_attack_factor
+	army_defence_factor = hna_army_defence_factor
 	planning_speed = hna_planning_speed
 	initiative_factor = hna_initiative_factor
 }

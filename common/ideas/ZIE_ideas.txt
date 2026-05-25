@@ -119,7 +119,7 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				research_speed = 0.05
+				research_speed_factor = 0.05
 			}
 		}
 		bureau_of_national_research2 = {
@@ -129,7 +129,7 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				research_speed = 0.1
+				research_speed_factor = 0.1
 			}
 		}
 		growing_emergency_unrest = {
@@ -186,10 +186,43 @@ ideas = {
 				always = no
 			}
 			modifier = {
+				local_resources_factor = 0.20
+				production_lack_of_resource_penalty_factor = -0.2
+				production_speed_industrial_infrastructure_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.15
+			}
+		}
+		light_of_the_west = {
+			picture = PHI_pearl_of_the_orient
+
+			allowed = {
+				always = no
+			}
+			modifier = {
 				local_resources_factor = 0.25
 				production_lack_of_resource_penalty_factor = -0.2
 				production_speed_industrial_infrastructure_factor = 0.1
 				production_speed_synthetic_refinery_factor = 0.15
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.15
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		light_of_the_west2 = {
+			picture = PHI_pearl_of_the_orient
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				local_resources_factor = 0.25
+				production_lack_of_resource_penalty_factor = -0.2
+				production_speed_industrial_infrastructure_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.2
 			}
 		}
 		infantry_priority = {
@@ -233,10 +266,9 @@ ideas = {
 			equipment_bonus = {
 				armor = {
 				   instant = yes
-     			   piercing = 0.1
 				   build_cost_ic = -0.15
 				   soft_attack = 0.05
-				   hard_attack = 0.05
+				   hard_attack = 0.1
 				   reliability = 0.1
     			}
 			}
