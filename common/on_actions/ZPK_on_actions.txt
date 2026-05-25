@@ -6,4 +6,42 @@ on_actions = {
 			}
 		}
 	}
+	on_government_change = {
+		effect = {
+			ZPK = {
+				if = {
+					limit = {
+						ZPK = {
+							has_government = neutrality
+							ZPK_King ={
+								is_country_leader = yes
+								has_ideology_group = neutrality
+							}
+						}
+					}
+					ZPK = {
+						set_country_leader_portrait = {
+							portrait = GFX_Portrait_ZPK_King_alt
+						}
+					}
+				}
+				if = {
+					limit = {
+						ZPK = {
+							has_government = democratic
+							ZPK_King ={
+								is_country_leader = yes
+								has_ideology_group = democratic
+							}
+						}
+					}
+					ZPK = {
+						set_country_leader_portrait = {
+							portrait = GFX_Portrait_ZPK_King
+						}
+					}
+				}
+			}
+		}
+	}
 }

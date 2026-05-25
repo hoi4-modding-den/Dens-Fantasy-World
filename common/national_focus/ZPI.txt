@@ -1,0 +1,100 @@
+focus_tree = {
+	id = ZPI_focus_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 50
+			tag = ZPI
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 1 y = 1 }
+
+	focus = {
+		id = ZPI_autocratic_start
+		icon = GFX_focus_RAJ_kingmaker
+		cost = 1
+		x = 14
+		y = 0
+		mutually_exclusive = {
+			focus = ZPI_autocratic_start
+			focus = ZPI_theocratic_start
+		}
+		available = {
+			ZPI_player_choice_leader = {
+				is_country_leader = yes
+				has_ideology = despotism
+			}
+			has_government = neutrality
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = ZPI_theocratic_start
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		cost = 1
+		x = 10
+		y = 0
+		mutually_exclusive = {
+			focus = ZPI_autocratic_start
+			focus = ZPI_theocratic_start
+		}
+		available = {
+			ZPI_player_choice_leader = {
+				is_country_leader = yes
+				has_ideology = penguin_theocracy
+			}
+			has_government = neutrality
+		}
+		completion_reward = { 
+
+		}
+	}
+
+	focus = {
+		id = ZPI_autocratic_focus
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10
+		x = 14
+		y = 1
+		prerequisite = {
+			focus = ZPI_autocratic_start
+		}
+		completion_reward = { 
+			add_ideas = ZPI_autocratic_idea
+		}
+	}
+	focus = {
+		id = ZPI_shared_neutrality_focus
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 5
+		x = 12
+		y = 1
+		prerequisite = {
+			focus = ZPI_autocratic_start
+			focus = ZPI_theocratic_start
+		}
+		completion_reward = { 
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = ZPI_theocratic_focus
+		icon = GFX_goal_generic_political_pressure
+		cost = 10
+		x = 10
+		y = 1
+		prerequisite = {
+			focus = ZPI_theocratic_start
+		}
+		completion_reward = { 
+			add_ideas = ZPI_theocratic_idea
+		}
+	}
+}

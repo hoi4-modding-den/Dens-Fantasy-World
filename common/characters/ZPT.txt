@@ -2,7 +2,7 @@ characters = {
     ZPT_Priest = { 
         portraits = {
             civilian = {
-                large = GFX_Portait_ZPT_Priest_alt
+                large = GFX_Portrait_ZPT_Priest_alt
             }
         }
         country_leader = {
@@ -15,7 +15,7 @@ characters = {
     ZPT_Fascist = { 
         portraits = {
             civilian = {
-                large = GFX_Portait_ZPT_Fascist
+                large = GFX_Portrait_ZPT_Fascist
             }
         }
         country_leader = {
@@ -28,7 +28,7 @@ characters = {
     ZPT_Lady = { 
         portraits = {
             civilian = {
-                large = GFX_Portait_ZPT_Lady
+                large = GFX_Portrait_ZPT_Lady
             }
         }
         country_leader = {
@@ -41,7 +41,7 @@ characters = {
     ZPT_Generic = {
         portraits = {
             civilian = {
-                large = GFX_Portait_ZPT_Generic_1
+                large = GFX_Portrait_ZPT_Generic_1
             }
         }
         country_leader = {

@@ -1,0 +1,1036 @@
+ZPI_quiz_check = {
+	hidden_effect = {
+		random_list = {
+			12.5 = { #Autocratic questions
+				if = {
+					limit = {
+						check_variable = {
+							var = ZPI_autocratic_cat
+							value = 0
+							compare = equals
+						}
+					}
+					add_to_variable = {
+						var = ZPI_autocratic_cat
+						value = 1
+					}
+					random_list = {
+						25 = {
+							country_event = {
+								id = ZPI_autocratic_event.1
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_autocratic_event.2
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_autocratic_event.3
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_autocratic_event.4
+								days = 1
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						AND = {
+							check_variable = {
+								var = ZPI_autocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_clockist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_social_democratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_guideist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_totalist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_nostalgist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_nostalgist_cat
+								value = 1
+							}
+						}
+					}
+					ZPI_quiz_points_check = yes
+				}
+				else = {
+					ZPI = {
+						country_event = {
+							id = ZPI_debug_event.3
+							hours = 1
+						}
+					}
+				}
+			}
+			12.5 = { #Theocratic questions
+				if = {
+					limit = {
+						check_variable = {
+							var = ZPI_theocratic_cat
+							value = 0
+							compare = equals
+						}
+					}
+					add_to_variable = {
+						var = ZPI_theocratic_cat
+						value = 1
+					}
+					random_list = {
+						25 = {
+							country_event = {
+								id = ZPI_theocratic_event.1
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_theocratic_event.2
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_theocratic_event.3
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_theocratic_event.4
+								days = 1
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						AND = {
+							check_variable = {
+								var = ZPI_autocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_clockist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_social_democratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_guideist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_totalist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_nostalgist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_nostalgist_cat
+								value = 1
+							}
+						}
+					}
+					ZPI_quiz_points_check = yes
+				}
+				else = {
+					ZPI = {
+						country_event = {
+							id = ZPI_debug_event.3
+							hours = 1
+						}
+					}
+				}
+			}
+			12.5 = {  #Clockist questions
+				if = {
+					limit = {
+						check_variable = {
+							var = ZPI_clockist_cat
+							value = 0
+							compare = equals
+						}
+					}
+					add_to_variable = {
+						var = ZPI_clockist_cat
+						value = 1
+					}
+					random_list = {
+						25 = {
+							country_event = {
+								id = ZPI_clockist_event.1
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_clockist_event.2
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_clockist_event.3
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_clockist_event.4
+								days = 1
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						AND = {
+							check_variable = {
+								var = ZPI_autocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_clockist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_social_democratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_guideist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_totalist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_nostalgist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_nostalgist_cat
+								value = 1
+							}
+						}
+					}
+					ZPI_quiz_points_check = yes
+				}
+				else = {
+					ZPI = {
+						country_event = {
+							id = ZPI_debug_event.3
+							hours = 1
+						}
+					}
+				}
+			}
+			12.5 = {  #Social Democratic questions
+				if = {
+					limit = {
+						check_variable = {
+							var = ZPI_social_democratic_cat
+							value = 0
+							compare = equals
+						}
+					}
+					add_to_variable = {
+						var = ZPI_social_democratic_cat
+						value = 1
+					}
+					random_list = {
+						25 = {
+							country_event = {
+								id = ZPI_social_democratic_event.1
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_social_democratic_event.2
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_social_democratic_event.3
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_social_democratic_event.4
+								days = 1
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						AND = {
+							check_variable = {
+								var = ZPI_autocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_clockist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_social_democratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_guideist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_totalist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_nostalgist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_nostalgist_cat
+								value = 1
+							}
+						}
+					}
+					ZPI_quiz_points_check = yes
+				}
+				else = {
+					ZPI = {
+						country_event = {
+							id = ZPI_debug_event.3
+							hours = 1
+						}
+					}
+				}
+			}
+			12.5 = {  #Guideist questions
+				if = {
+					limit = {
+						check_variable = {
+							var = ZPI_guideist_cat
+							value = 0
+							compare = equals
+						}
+					}
+					add_to_variable = {
+						var = ZPI_guideist_cat
+						value = 1
+					} 
+					random_list = {
+						25 = {
+							country_event = {
+								id = ZPI_guideist_event.1
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_guideist_event.2
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_guideist_event.3
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_guideist_event.4
+								days = 1
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						AND = {
+							check_variable = {
+								var = ZPI_autocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_clockist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_social_democratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_guideist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_totalist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_nostalgist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_nostalgist_cat
+								value = 1
+							}
+						}
+					}
+					ZPI_quiz_points_check = yes
+				}
+				else = {
+					ZPI = {
+						country_event = {
+							id = ZPI_debug_event.3
+							hours = 1
+						}
+					}
+				}
+			}
+			12.5 = {  #Totalist questions
+				if = {
+					limit = {
+						check_variable = {
+							var = ZPI_totalist_cat
+							value = 0
+							compare = equals
+						}
+					}
+					add_to_variable = {
+						var = ZPI_totalist_cat
+						value = 1
+					} 
+					random_list = {
+						25 = {
+							country_event = {
+								id = ZPI_totalist_event.1
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_totalist_event.2
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_totalist_event.3
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_totalist_event.4
+								days = 1
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						AND = {
+							check_variable = {
+								var = ZPI_autocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_clockist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_social_democratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_guideist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_totalist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_nostalgist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_nostalgist_cat
+								value = 1
+							}
+						}
+					}
+					ZPI_quiz_points_check = yes
+				}
+				else = {
+					ZPI = {
+						country_event = {
+							id = ZPI_debug_event.3
+							hours = 1
+						}
+					}
+				}
+			}
+			12.5 = {  #Nostalgist questions
+				if = {
+					limit = {
+						check_variable = {
+							var = ZPI_nostalgist_cat
+							value = 0
+							compare = equals
+						}
+					}
+					add_to_variable = {
+						var = ZPI_nostalgist_cat
+						value = 1
+					} 
+					random_list = {
+						25 = {
+							country_event = {
+								id = ZPI_nostalgist_event.1
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_nostalgist_event.2
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_nostalgist_event.3
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_nostalgist_event.4
+								days = 1
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						AND = {
+							check_variable = {
+								var = ZPI_autocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_clockist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_social_democratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_guideist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_totalist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_nostalgist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_nostalgist_cat
+								value = 1
+							}
+						}
+					}
+					ZPI_quiz_points_check = yes
+				}
+				else = {
+					ZPI = {
+						country_event = {
+							id = ZPI_debug_event.3
+							hours = 1
+						}
+					}
+				}
+			}
+			12.5 = {  #Theocratic Nostalgist questions
+				if = {
+					limit = {
+						check_variable = {
+							var = ZPI_theocratic_nostalgist_cat
+							value = 0
+							compare = equals
+						}
+					}
+					add_to_variable = {
+						var = ZPI_theocratic_nostalgist_cat
+						value = 1
+					}  
+					random_list = {
+						25 = {
+							country_event = {
+								id = ZPI_theocratic_nostalgist_event.1
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_theocratic_nostalgist_event.2
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_theocratic_nostalgist_event.3
+								days = 1
+							}
+						}
+						25 = {
+							country_event = {
+								id = ZPI_theocratic_nostalgist_event.4
+								days = 1
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						AND = {
+							check_variable = {
+								var = ZPI_autocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_clockist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_social_democratic_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_guideist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_totalist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_nostalgist_cat
+								value = 1
+							}
+							check_variable = {
+								var = ZPI_theocratic_nostalgist_cat
+								value = 1
+							}
+						}
+					}
+					ZPI_quiz_points_check = yes
+				}
+				else = {
+					ZPI = {
+						country_event = {
+							id = ZPI_debug_event.3
+							hours = 1
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+ZPI_quiz_points_check = {
+#Autocratic Points check
+	if = {
+		limit = { 
+			check_variable = { 
+				var = ZPI_autocratic_points 
+				value > ZPI_high_val  
+			} 
+		}
+
+		set_variable = { ZPI_high_id = 1 }
+		set_variable = { ZPI_high_val = ZPI_autocratic_points }
+	}
+
+#Theocratic Points check
+	if = {
+		limit = { 
+			check_variable = { 
+				var = ZPI_theocratic_points 
+				value > ZPI_high_val  
+			} 
+		}
+		set_variable = { ZPI_high_id = 2 }
+		set_variable = { ZPI_high_val = ZPI_theocratic_points }
+
+	}
+	else_if = { #Cannot determine winner if tied, will ask an additional question as tiebreaker. If still tied... ;)
+		limit = { 
+			check_variable = { 
+				var = ZPI_theocratic_points 
+				value = ZPI_high_val  
+			} 
+		}
+		set_variable = { ZPI_high_id = 10 } #value for having two equal values
+	}
+
+#Clockist Points check
+	if = {
+		limit = { 
+			check_variable = { 
+				var = ZPI_clockist_points 
+				value > ZPI_high_val  
+			} 
+		}
+		set_variable = { ZPI_high_id = 3 }
+		set_variable = { ZPI_high_val = ZPI_clockist_points }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { 
+				var = ZPI_clockist_points 
+				value = ZPI_high_val  
+			} 
+		}
+		set_variable = { ZPI_high_id = 10 }
+	}
+
+#Social Democratic Points check
+	if = {
+		limit = { 
+			check_variable = { 
+				var = ZPI_social_democratic_points 
+				value > ZPI_high_val  
+			} 
+		}
+		set_variable = { ZPI_high_id = 4 }
+		set_variable = { ZPI_high_val = ZPI_social_democratic_points }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { 
+				var = ZPI_social_democratic_points 
+				value = ZPI_high_val  
+			} 
+		}
+		set_variable = { ZPI_high_id = 10 }
+	}
+
+#Guideist Points check
+	if = {
+		limit = { 
+			check_variable = { 
+				var = ZPI_guideist_points 
+				value > ZPI_high_val  
+			} 
+		}
+		set_variable = { ZPI_high_id = 5 }
+		set_variable = { ZPI_high_val = ZPI_guideist_points }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { 
+				var = ZPI_guideist_points 
+				value = ZPI_high_val  
+			} 
+		}
+		set_variable = { ZPI_high_id = 10 }
+	}
+	
+#Totalist Points check
+	if = {
+		limit = { 
+			check_variable = { 
+				var = ZPI_totalist_points 
+				value > ZPI_high_val  
+			} 
+		}
+		set_variable = { ZPI_high_id = 6 }
+		set_variable = { ZPI_high_val = ZPI_totalist_points }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { 
+				var = ZPI_totalist_points 
+				value = ZPI_high_val  
+			} 
+		}
+		set_variable = { ZPI_high_id = 10 }
+	}
+	
+#Nostalgist Points check
+	if = {
+		limit = { 
+			check_variable = { 
+				var = ZPI_nostalgist_points 
+				value > ZPI_high_val  
+			} 
+		}
+		set_variable = { ZPI_high_id = 7 }
+		set_variable = { ZPI_high_val = ZPI_nostalgist_points }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { 
+				var = ZPI_nostalgist_points 
+				value = ZPI_high_val  
+			} 
+		}
+		set_variable = { ZPI_high_id = 10 }
+	}
+		
+#Theocratic Nostalgist Points check
+	if = {
+		limit = { 
+			check_variable = { 
+				var = ZPI_theocratic_nostalgist_points 
+				value > ZPI_high_val  
+			} 
+		}
+		set_variable = { ZPI_high_id = 8 }
+		set_variable = { ZPI_high_val = ZPI_theocratic_nostalgist_points }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { 
+				var = ZPI_theocratic_nostalgist_points 
+				value = ZPI_high_val  
+			} 
+		}
+		set_variable = { ZPI_high_id = 10 }
+	}
+
+#Winner Winner Chicken Dinner
+if = {
+    limit = { 
+		check_variable = { 
+			var = ZPI_high_id 
+			value = 0 #not an intended outcome
+			compare = equals
+		} 
+	}
+	ZPI = {
+		country_event = {
+			id = ZPI_debug_event.1
+		}
+	}
+}
+else_if = {
+    limit = { 
+		check_variable = { 
+			var = ZPI_high_id 
+			value = 1 #Autocratic
+			compare = equals
+		} 
+	}
+	ZPI = {
+		country_event = {
+			id = ZPI_autocratic_event.5
+			days = 1
+		}
+	}
+}
+else_if = {
+    limit = { 
+		check_variable = { 
+			var = ZPI_high_id 
+			value = 2 #Theocratic
+			compare = equals
+		} 
+	}
+	ZPI = {
+		country_event = {
+			id = ZPI_theocratic_event.5
+			days = 1
+		}
+	}
+}
+else_if = {
+    limit = { 
+		check_variable = { 
+			var = ZPI_high_id 
+			value = 3 #Clockist
+			compare = equals
+		} 
+	}
+	ZPI = {
+		country_event = {
+			id = ZPI_clockist_event.5
+			days = 1
+		}
+	}
+}
+else_if = {
+    limit = { 
+		check_variable = { 
+			var = ZPI_high_id 
+			value = 4 #Social Democratic
+			compare = equals
+		} 
+	}
+	ZPI = {
+		country_event = {
+			id = ZPI_social_democratic_event.5
+			days = 1
+		}
+	}
+}
+else_if = {
+    limit = { 
+		check_variable = { 
+			var = ZPI_high_id 
+			value = 5 #Guideist
+			compare = equals
+		} 
+	}
+	ZPI = {
+		country_event = {
+			id = ZPI_guideist_event.5
+			days = 1
+		}
+	}
+}
+else_if = {
+    limit = { 
+		check_variable = { 
+			var = ZPI_high_id 
+			value = 6 #Totalist
+			compare = equals
+		} 
+	}
+	ZPI = {
+		country_event = {
+			id = ZPI_totalist_event.5
+			days = 1
+		}
+	}
+}
+else_if = {
+    limit = { 
+		check_variable = { 
+			var = ZPI_high_id 
+			value = 7 #Nostalgist
+			compare = equals
+		} 
+	}
+	ZPI = {
+		country_event = {
+			id = ZPI_nostalgist_event.5
+			days = 1
+		}
+	}
+}
+else_if = {
+    limit = { 
+		check_variable = { 
+			var = ZPI_high_id 
+			value = 8 #Theocratic Nostalgist
+			compare = equals
+		} 
+	}
+	ZPI = {
+		country_event = {
+			id = ZPI_theocratic_nostalgist_event.5
+			days = 1
+		}
+	}
+}
+else_if = {
+    limit = { 
+		check_variable = { 
+			var = ZPI_high_id 
+			value = 10 #tie
+			compare = equals
+		} 
+	}
+	ZPI = {
+		country_event = {
+			id = ZPI_natural_event.2
+			days = 3
+		}
+	}
+}
+else = { #just in case
+    ZPI = {
+		country_event = {
+			id = ZPI_debug_event.2
+		}
+	}
+}
+}
+
+d_ZPI_debug = {
+	ZPI_quiz_points_check = yes
+}

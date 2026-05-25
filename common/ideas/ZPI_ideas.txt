@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		ZPI_autocratic_idea = {
+			picture = RAJ_kingmaker
+			modifier = {
+				neutrality_drift = 0.05
+				stability_weekly = 0.001
+				subjects_autonomy_gain = -0.25
+				army_defence_factor = 0.05
+				forced_surrender_limit = 0.1
+			}
+		}
+		ZPI_theocratic_idea = {
+			picture = YUG_orthodox_church_support
+			modifier = {
+				neutrality_drift = 0.1
+				war_support_weekly = 0.001
+				army_attack_factor = 0.05
+				forced_surrender_limit = 0.1
+			}
+		}
+	}
+}

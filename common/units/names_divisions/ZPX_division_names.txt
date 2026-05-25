@@ -1,0 +1,36 @@
+ZPX_INF_01 = {
+	name = "Unataqtiit Aviktuq"
+
+	for_countries = { ZPI ZPK ZPT ZPC }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%d. Unataqtiit Aviktuq"
+
+	ordered = {
+		1 = { "%d. Unataqtiit Aviktuq" }
+		2 = { "%d. Unataqtiit Aviktuq" }
+		3 = { "%d. Unataqtiit Aviktuq" }
+		4 = { "%d. Unataqtiit Aviktuq" }
+		5 = { "%d. Unataqtiit Aviktuq" }
+	}
+}
+ZPX_INF_02 = {
+	name = "Nunaqqatigiit Aviktuq"
+
+	for_countries = { ZPI ZPK ZPT ZPC }
+
+	division_types = { "militia" }
+
+
+	fallback_name = "%d. Nunaqqatigiit Aviktuq"
+
+	ordered = {
+		1 = { "%d. Nunaqqatigiit Aviktuq" }
+		2 = { "%d. Nunaqqatigiit Aviktuq" }
+		3 = { "%d. Nunaqqatigiit Aviktuq" }
+		4 = { "%d. Nunaqqatigiit Aviktuq" }
+		5 = { "%d. Nunaqqatigiit Aviktuq" }
+	}
+}

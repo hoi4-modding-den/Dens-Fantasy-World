@@ -118,7 +118,7 @@ ideologies = {
 
 			nihilism = {
 				can_be_randomly_selected = no
-				color = { 25 0 10 }
+				color = { 0 0 0 }
 			}
 			totalist_nihilism = {
 				can_be_randomly_selected = no
@@ -126,7 +126,7 @@ ideologies = {
 			}
 			guideist_nihilism = {
 				can_be_randomly_selected = no
-				color = { 50 0 10 }
+				color = { 0 0 0 }
 			}
 		}
 
@@ -229,11 +229,11 @@ ideologies = {
 			}
 			nostalgism = {
 				can_be_randomly_selected = no
-				color = { 254 254 254 }
+				color = { 255 255 255 }
 			}
 			theocratic_nostalgism = {
 				can_be_randomly_selected = no
-				color = { 200 255 255 }
+				color = { 255 255 255 }
 			}
 
 		}

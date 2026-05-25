@@ -1,0 +1,158 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ZPI = {
+				country_event = {
+					id = ZPI_natural_event.1
+				}
+				#ZPI quiz score variables
+				set_variable = {
+					var = ZPI_autocratic_points
+					value = 0
+				}
+				set_variable = {
+					var = ZPI_theocratic_points
+					value = 0
+				}
+				set_variable = {
+					var = ZPI_clockist_points
+					value = 0
+				}
+				set_variable = {
+					var = ZPI_social_democratic_points
+					value = 0
+				}
+				set_variable = {
+					var = ZPI_guideist_points
+					value = 0
+				}
+				set_variable = {
+					var = ZPI_totalist_points
+					value = 0
+				}
+				set_variable = {
+					var = ZPI_nostalgist_points
+					value = 0
+				}
+				set_variable = {
+					var = ZPI_theocratic_nostalgist_points
+					value = 0
+				}
+
+				#ZPI_quiz_check variables
+				set_variable = {
+					var = ZPI_autocratic_cat
+					value = 0
+				}
+				set_variable = {
+					var = ZPI_theocratic_cat
+					value = 0
+				}
+				set_variable = {
+					var = ZPI_clockist_cat
+					value = 0
+				}
+				set_variable = {
+					var = ZPI_social_democratic_cat
+					value = 0
+				}
+				set_variable = {
+					var = ZPI_guideist_cat
+					value = 0
+				}
+				set_variable = {
+					var = ZPI_totalist_cat
+					value = 0
+				}
+				set_variable = {
+					var = ZPI_nostalgist_cat
+					value = 0
+				}
+				set_variable = {
+					var = ZPI_theocratic_nostalgist_cat
+					value = 0
+				}
+
+				#ZPI_quiz_points_check variables
+				set_variable = { #used to save which ideology is in the lead
+					var = ZPI_high_id
+					value = 0
+				}
+				set_variable = { #used to compare point values. It doesn't matter if an ideology is less than the highest, since the highest value determines which ideology you get.
+					var = ZPI_high_val
+					value = 0
+				}
+			}
+		}
+	}
+	on_government_change = {
+		effect = {
+			ZPI = {
+				if = {
+					limit = {
+						ZPI = {
+							has_government = neutrality
+							ZPI_player_choice_leader ={
+								is_country_leader = yes
+								has_ideology_group = neutrality
+							}
+						}
+					}
+					ZPI = {
+						set_country_leader_portrait = {
+							portrait = GFX_Portrait_ZPI_Neutrality
+						}
+					}
+				}
+				if = {
+					limit = {
+						ZPI = {
+							has_government = communism
+							ZPI_player_choice_leader ={
+								is_country_leader = yes
+								has_ideology_group = communism
+							}
+						}
+					}
+					ZPI = {
+						set_country_leader_portrait = {
+							portrait = GFX_Portrait_ZPI_Communism
+						}
+					}
+				}
+				if = {
+					limit = {
+						ZPI = {
+							has_government = fascism
+							ZPI_player_choice_leader ={
+								is_country_leader = yes
+								has_ideology_group = fascism
+							}
+						}
+					}
+					ZPI = {
+						set_country_leader_portrait = {
+							portrait = GFX_Portrait_ZPI_Fascism
+						}
+					}
+				}
+				if = {
+					limit = {
+						ZPI = {
+							has_government = democratic
+							ZPI_player_choice_leader ={
+								is_country_leader = yes
+								has_ideology_group = democratic
+							}
+						}
+					}
+					ZPI = {
+						set_country_leader_portrait = {
+							portrait = GFX_Portrait_ZPI_Democratic
+						}
+					}
+				}
+			}
+		}
+	}
+}

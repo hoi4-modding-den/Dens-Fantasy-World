@@ -1,0 +1,24 @@
+leader_traits = {
+    ZPI_meme_trait_1 = {
+        random = no
+		org_loss_when_moving = 0.2
+		planning_speed = 0.5
+		army_org_factor = -0.1
+    }
+	ZPI_meme_trait_2 = {
+        random = no
+		trade_opinion_factor = 1
+		faction_trade_opinion_factor = 1
+    }
+	ZPI_meme_trait_3 = {
+        random = no
+		political_power_factor = -0.1
+		stability_factor = -0.05
+		war_support_factor = -0.05
+		army_attack_factor = -0.05
+		army_defence_factor = -0.05
+		resistance_target = 0.25
+		command_power_gain_mult = -0.1
+		ai_focus_aggressive_factor = 0.5
+    }
+}

@@ -2,7 +2,7 @@ characters = {
     ZPK_King = { 
         portraits = {
             civilian = {
-                large = GFX_Portait_ZPK_King
+                large = GFX_Portrait_ZPK_King
             }
         }
         country_leader = {
@@ -21,7 +21,7 @@ characters = {
     ZPK_Fascist = { 
         portraits = {
             civilian = {
-                large = GFX_Portait_ZPK_Fascist
+                large = GFX_Portrait_ZPK_Fascist
             }
         }
         country_leader = {
@@ -34,7 +34,7 @@ characters = {
     ZPK_Anarchist_Commune = { 
         portraits = {
             civilian = {
-                large = GFX_Portait_ZPK_Anarchist_Commune
+                large = GFX_Portrait_ZPK_Anarchist_Commune
             }
         }
         country_leader = {

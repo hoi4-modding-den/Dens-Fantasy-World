@@ -1,0 +1,72 @@
+### Templates ###
+division_template = {
+	name = "Unataqtiit Aviktuq"
+	division_names_group = ZPX_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+
+	}
+}
+division_template = {
+	name = "Nunaqqatigiit Aviktuq"
+	division_names_group = ZPX_INF_02
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	support = {
+
+	}
+}	
+
+### Unit Locations ###
+units = {
+	division = {
+		location = 14802
+		division_template = "Unataqtiit Aviktuq"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		location = 14793
+		division_template = "Nunaqqatigiit Aviktuq"
+		start_experience_factor = 0.05
+		start_equipment_factor = 1
+	}
+	division = {
+		location = 14072
+		division_template = "Nunaqqatigiit Aviktuq"
+		start_experience_factor = 0.05
+		start_equipment_factor = 1
+	}
+}
+
+### Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+		}
+		requested_factories = 5
+		progress = 0.90
+		efficiency = 52
+	}
+}	
+	
+
+
+

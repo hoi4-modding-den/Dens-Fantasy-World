@@ -2,7 +2,7 @@ characters = {
     ZPC_Marx = { 
         portraits = {
             civilian = {
-                large = GFX_Portait_ZPC_Marx
+                large = GFX_Portrait_ZPC_Marx
             }
         }
         country_leader = {
@@ -15,7 +15,7 @@ characters = {
     ZPC_Stalin = { 
         portraits = {
             civilian = {
-                large = GFX_Portait_ZPC_Stalin
+                large = GFX_Portrait_ZPC_Stalin
             }
         }
         country_leader = {
@@ -28,7 +28,7 @@ characters = {
     ZPC_Anarchist = { 
         portraits = {
             civilian = {
-                large = GFX_Portait_ZPC_Anarchist
+                large = GFX_Portrait_ZPC_Anarchist
             }
         }
         country_leader = {
@@ -41,7 +41,7 @@ characters = {
     ZPC_Actual_Child = { 
         portraits = {
             civilian = {
-                large = GFX_Portait_ZPC_Actual_Child
+                large = GFX_Portrait_ZPC_Actual_Child
             }
         }
         country_leader = {
@@ -54,7 +54,7 @@ characters = {
     ZPC_El_Generico = { 
         portraits = {
             civilian = {
-                large = GFX_Portait_ZPC_El_Generico
+                large = GFX_Portrait_ZPC_El_Generico
             }
         }
         country_leader = {
@@ -66,7 +66,7 @@ characters = {
     ZPC_Fallen_Government = {
         portraits = {
             civilian = {
-                large = GFX_Portait_ZPC_Fallen_Government
+                large = GFX_Portrait_ZPC_Fallen_Government
             }
         }
         country_leader = {

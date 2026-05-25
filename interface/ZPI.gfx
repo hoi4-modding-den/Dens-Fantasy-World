@@ -1,0 +1,35 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_ZPI_Communism"
+		texturefile = "gfx/leaders/ZPI/Portrait_ZPI_Communism.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ZPI_Fascism"
+		texturefile = "gfx/leaders/ZPI/Portrait_ZPI_Fascism.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ZPI_Democratic"
+		texturefile = "gfx/leaders/ZPI/Portrait_ZPI_Democratic.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ZPI_Neutrality"
+		texturefile = "gfx/leaders/ZPI/Portrait_ZPI_Neutrality.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ZPI_start"
+		texturefile = "gfx/leaders/ZPI/Portrait_ZPI_Start.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ZPI_easter_egg_1"
+		texturefile = "gfx/leaders/ZPI/Portrait_ZPI_easter_egg_1.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ZPI_easter_egg_2"
+		texturefile = "gfx/leaders/ZPI/Portrait_ZPI_easter_egg_2.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ZPI_easter_egg_3"
+		texturefile = "gfx/leaders/ZPI/Portrait_ZPI_easter_egg_3.png"
+	}
+}
+

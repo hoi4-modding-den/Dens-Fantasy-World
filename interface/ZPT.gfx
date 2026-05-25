@@ -1,22 +1,22 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_Portait_ZPT_Priest"
+		name = "GFX_Portrait_ZPT_Priest"
 		texturefile = "gfx/leaders/ZPT/Portrait_ZPT_Priest.png"
 	}
 	spriteType = {
-		name = "GFX_Portait_ZPT_Fascist"
+		name = "GFX_Portrait_ZPT_Fascist"
 		texturefile = "gfx/leaders/ZPT/Portrait_ZPT_Fascist.png"
 	}
 	spriteType = {
-		name = "GFX_Portait_ZPT_Priest_alt"
+		name = "GFX_Portrait_ZPT_Priest_alt"
 		texturefile = "gfx/leaders/ZPT/Portrait_ZPT_Priest_alt.png"
 	}
 	spriteType = {
-		name = "GFX_Portait_ZPT_Generic_1"
+		name = "GFX_Portrait_ZPT_Generic_1"
 		texturefile = "gfx/leaders/ZPT/Portrait_ZPT_Generic_1.png"
 	}
 	spriteType = {
-		name = "GFX_Portait_ZPT_Lady"
+		name = "GFX_Portrait_ZPT_Lady"
 		texturefile = "gfx/leaders/ZPT/Portrait_ZPT_Lady.png"
 	}
 }

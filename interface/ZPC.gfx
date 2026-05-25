@@ -1,26 +1,26 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_Portait_ZPC_Marx"
+		name = "GFX_Portrait_ZPC_Marx"
 		texturefile = "gfx/leaders/ZPC/Portrait_ZPC_Marx.png"
 	}
 	spriteType = {
-		name = "GFX_Portait_ZPC_Stalin"
+		name = "GFX_Portrait_ZPC_Stalin"
 		texturefile = "gfx/leaders/ZPC/Portrait_ZPC_Stalin.png"
 	}
 	spriteType = {
-		name = "GFX_Portait_ZPC_Anarchist"
+		name = "GFX_Portrait_ZPC_Anarchist"
 		texturefile = "gfx/leaders/ZPC/Portrait_ZPC_Anarchist.png"
 	}
 	spriteType = {
-		name = "GFX_Portait_ZPC_Fallen_Government"
+		name = "GFX_Portrait_ZPC_Fallen_Government"
 		texturefile = "gfx/leaders/ZPC/Portrait_ZPC_Fallen_Government.png"
 	}
 	spriteType = {
-		name = "GFX_Portait_ZPC_Actual_Child"
+		name = "GFX_Portrait_ZPC_Actual_Child"
 		texturefile = "gfx/leaders/ZPC/Portrait_ZPC_Actual_Child.png"
 	}
 	spriteType = {
-		name = "GFX_Portait_ZPC_El_Generico"
+		name = "GFX_Portrait_ZPC_El_Generico"
 		texturefile = "gfx/leaders/ZPC/Portrait_ZPC_El_Generico.png"
 	}
 }

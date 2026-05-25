@@ -1,0 +1,99 @@
+characters = {
+    ZPI_starting_leader = {
+        portraits = {
+            civilian = {
+                large = GFX_Portrait_ZPI_start
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            #desc = ZPI_autocratic_leader_desc
+            traits = {  }
+            expire = "1956.1.1.1"
+        }
+    }
+    ZPI_player_choice_leader = { 
+        portraits = {
+            civilian = {
+                large = GFX_Portrait_ZPI_Neutrality  
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            #desc = ZPI_autocratic_leader_desc
+            traits = {  }
+            expire = "1960.1.1.1"
+        }
+        country_leader = {
+            ideology = clockism
+            #desc = ZPI_clockist_leader_desc
+            traits = {  }
+            expire = "1960.1.1.1"
+        }
+        country_leader = {
+            ideology = guideist_nihilism
+            #desc = ZPI_guideist_leader_desc
+            traits = {  }
+            expire = "1960.1.1.1"
+        }
+        country_leader = {
+            ideology = nostalgism
+            #desc = ZPI_nostalgist_leader_desc
+            traits = {  }
+            expire = "1960.1.1.1"
+        }
+    }
+
+    ZPI_easter_egg_1 = { 
+        portraits = {
+            civilian = {
+                large = GFX_Portrait_ZPI_easter_egg_1
+            }
+        }
+        country_leader = {
+            ideology = nazism
+            #desc = ZPI_theocratic_nostalgist_leader_desc
+            traits = { ZPI_meme_trait_3 }
+            expire = "1960.1.1.1"
+        }
+    }
+    ZPI_easter_egg_2 = { 
+        portraits = {
+            civilian = {
+                large = GFX_Portrait_ZPI_easter_egg_2
+            }
+        }
+        country_leader = {
+            ideology = environmentalism
+            #desc = ZPI_theocratic_nostalgist_leader_desc
+            traits = { ZPI_meme_trait_2 }
+            expire = "1960.1.1.1"
+        }
+    }
+    ZPI_easter_egg_3 = { 
+        portraits = {
+            civilian = {
+                large = GFX_Portrait_ZPI_easter_egg_3
+            }
+        }
+        country_leader = {
+            ideology = penguin_theocracy
+            #desc = ZPI_theocratic_nostalgist_leader_desc
+            traits = { ZPI_meme_trait_1 }
+            expire = "1960.1.1.1"
+        }
+    }
+    ZPI_easter_egg_4 = { 
+        portraits = {
+            civilian = {
+                large = GFX_portrait_SOV_lev_trotsky
+            }
+        }
+        country_leader = {
+            ideology = leninism
+            #desc = ZPI_theocratic_nostalgist_leader_desc
+            traits = { permanent_revolutionary }
+            expire = "1960.1.1.1"
+        }
+    }
+}

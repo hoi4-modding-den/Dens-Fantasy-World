@@ -2,18 +2,18 @@
 state={
 	id=1116
 	name="STATE_1116"
-	manpower = 3577381
+	manpower = 2077381
 	
 	state_category = large_town
 	#impassable = yes
 	resources={
 		aluminium=0
-		chromium=0
+		chromium=4
 		oil=33
 		rubber=0
 		steel=0
 		tungsten=0
-		coal=0
+		coal=4
 	}
 
 	history={

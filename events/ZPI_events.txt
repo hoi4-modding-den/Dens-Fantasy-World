@@ -1,13 +1,79 @@
-add_namespace = ZPI_natural_event
-add_namespace = ZPI_focus_event
-add_namespace = ZPI_news_event
-add_namespace = ZPI_diplo_event
+add_namespace = ZPI_debug_event #XE
+add_namespace = ZPI_natural_event #NE
+add_namespace = ZPI_focus_event #FE
+add_namespace = ZPI_news_event #WE
+add_namespace = ZPI_diplo_event #DE
+
+add_namespace = ZPI_autocratic_event #AUE
+add_namespace = ZPI_theocratic_event #THE
+add_namespace = ZPI_clockist_event #CLE
+add_namespace = ZPI_social_democratic_event #SDE
+add_namespace = ZPI_guideist_event #GUE
+add_namespace = ZPI_totalist_event #TOE
+add_namespace = ZPI_nostalgist_event #NOE
+add_namespace = ZPI_theocratic_nostalgist_event #TNE
+
+#Debug Events#
+country_event = { #quiz error - default value
+    id = ZPI_debug_event.1
+    title = ZPI.XE_1.t
+    #picture = GFX_report_event_tur_sultan_and_pashas
+    desc = ZPI.XE_1.d
+
+    is_triggered_only = yes
+	option = {
+        name = ZPI.XE_1.a
+		ai_chance = {
+			base = 100
+		}
+		
+		hidden_effect = {
+
+		}
+    }
+}
+country_event = { #quiz error - invalid value
+    id = ZPI_debug_event.2
+    title = ZPI.XE_2.t
+    #picture = GFX_report_event_tur_sultan_and_pashas
+    desc = ZPI.XE_2.d
+
+    is_triggered_only = yes
+	option = {
+        name = ZPI.XE_2.a
+		ai_chance = {
+			base = 100
+		}
+		
+		hidden_effect = {
+
+		}
+    }
+}
+country_event = { #quiz RNG handler (fuck-ass paradox with it's seeded RNG making my quiz run in infinite loops)
+    id = ZPI_debug_event.3
+    #title = ZPI.XE_3.t
+    #picture = GFX_report_event_tur_sultan_and_pashas
+    #desc = ZPI.XE_3.d
+    hidden = yes 
+    is_triggered_only = yes
+	option = {
+        #name = ZPI.XE_3.a
+		ai_chance = {
+			base = 100
+		}
+		ZPI_quiz_check = yes
+		hidden_effect = {
+
+		}
+    }
+}
 
 #Natural Events# (they just show up on their own)
 country_event = { #intro event
     id = ZPI_natural_event.1
     title = ZPI.NE_1.t
-    picture = GFX_report_event_tur_sultan_and_pashas
+    #picture = GFX_report_event_tur_sultan_and_pashas
     desc = ZPI.NE_1.d
 
     is_triggered_only = yes
@@ -16,27 +82,2311 @@ country_event = { #intro event
 		ai_chance = {
 			base = 100
 		}
-		
+		custom_effect_tooltip = ZPI.NE_1.a.t
 		hidden_effect = {
-			
+            ZPI_quiz_check = yes
 		}
     }
 }
-country_event = { #intro event
+country_event = { #tiebreaker event
     id = ZPI_natural_event.2
     title = ZPI.NE_2.t
-    picture = GFX_report_event_tur_sultan_and_pashas
+    #picture = GFX_report_event_tur_sultan_and_pashas
     desc = ZPI.NE_2.d
 
     is_triggered_only = yes
-	option = {
-        name = ZPI.NE_2.a
+	option = { #boy
+        name = ZPI.NE_2.a 
 		ai_chance = {
 			base = 100
 		}
-		
+		custom_effect_tooltip = ZPI.NE_2.a.t
+        ZPI_quiz_check = yes
+		hidden_effect = { #yes I know this is a bad way to do this, makes it more likely to get the easter egg
+            add_to_variable = {
+                var = ZPI_theocratic_nostalgist_points
+                value = 2
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 2
+            }
+		}
+    }
+    option = { #girl
+        name = ZPI.NE_2.b
+		ai_chance = {
+			base = 100
+		}
+		custom_effect_tooltip = ZPI.NE_2.b.t
+        ZPI_quiz_check = yes
 		hidden_effect = {
-			
+            add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 2
+            }
+            add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 2
+            }
+		}
+    }
+    option = { #neither
+        name = ZPI.NE_2.c
+		ai_chance = {
+			base = 100
+		}
+		custom_effect_tooltip = ZPI.NE_2.c.t
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_guideist_points
+                value = 2
+            }
+            add_to_variable = {
+                var = ZPI_clockist_points
+                value = 2
+            }
+		}
+    }
+    option = { #fuck you
+        name = ZPI.NE_2.e
+		ai_chance = {
+			base = 100
+		}
+		custom_effect_tooltip = ZPI.NE_2.e.t
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 2
+            }
+            add_to_variable = {
+                var = ZPI_totalist_points
+                value = 2
+            }
+		}
+    }
+}
+
+
+#Autocratic Category#
+country_event = { #mayor question
+    id = ZPI_autocratic_event.1
+    title = ZPI.AUE_1.t
+    desc = ZPI.AUE_1.d
+
+    is_triggered_only = yes
+	option = { #slow and steady
+        name = ZPI.AUE_1.a
+		ai_chance = {
+			base = 100
+		}
+		ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+		}
+    }
+    option = { #run attack ads
+        name = ZPI.AUE_1.b
+		ai_chance = {
+			base = 100
+		}
+		ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_nostalgist_points
+                value = 2
+            }
+		}
+    }
+    option = { #give up
+        name = ZPI.AUE_1.c
+		ai_chance = {
+			base = 100
+		}
+		ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 2
+            }
+            add_to_variable = {
+                var = ZPI_guideist_points
+                value = 2
+            }
+		}
+    }
+}
+country_event = { #difficult task
+    id = ZPI_autocratic_event.2
+    title = ZPI.AUE_2.t
+    desc = ZPI.AUE_2.d
+
+    is_triggered_only = yes
+	option = { #do it yourself
+        name = ZPI.AUE_2.a
+		ai_chance = {
+			base = 100
+		}
+		ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_totalist_points
+                value = 4
+            }
+		}
+    }
+    option = { #ask for help
+        name = ZPI.AUE_2.b
+		ai_chance = {
+			base = 100
+		}
+		ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #make people do it for you
+        name = ZPI.AUE_2.c
+		ai_chance = {
+			base = 100
+		}
+		ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #dinner question
+    id = ZPI_autocratic_event.3
+    title = ZPI.AUE_3.t
+    desc = ZPI.AUE_3.d
+
+    is_triggered_only = yes
+	option = { #steak
+        name = ZPI.AUE_3.a
+		ai_chance = {
+			base = 100
+		}
+		ZPI_quiz_check = yes
+		hidden_effect = { 
+			add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #fish
+        name = ZPI.AUE_3.b
+		ai_chance = {
+			base = 100
+		}
+		ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+		}
+    }
+    option = { #daily special
+        name = ZPI.AUE_3.c
+		ai_chance = {
+			base = 100
+		}
+		ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+		}
+    }
+    option = { #tendies like the little chud you are
+        name = ZPI.AUE_3.e
+		ai_chance = {
+			base = 100
+		}
+		ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #life question
+    id = ZPI_autocratic_event.4
+    title = ZPI.AUE_4.t
+    desc = ZPI.AUE_4.d
+
+    is_triggered_only = yes
+	option = { #yes
+        name = ZPI.AUE_4.a
+		ai_chance = {
+			base = 100
+		}
+		ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_guideist_points
+                value = 2
+            }
+		}
+    }
+    option = { #no
+        name = ZPI.AUE_4.b
+		ai_chance = {
+			base = 100
+		}
+		ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 2
+            }
+		}
+    }
+}
+country_event = { #Autocratic result
+    id = ZPI_autocratic_event.5
+    title = ZPI.AUE_5.t
+    desc = ZPI.AUE_5.d
+
+    is_triggered_only = yes
+	option = { #yes
+        name = ZPI.AUE_5.a
+		ai_chance = {
+			base = 100
+		}
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = neutrality
+            
+        }
+        ZPI_player_choice_leader = {
+            promote_character = despotism
+        }
+        set_country_leader_ideology = despotism
+        complete_national_focus = ZPI_autocratic_start
+		hidden_effect = {
+
+		}
+    }
+    option = { #no
+        name = ZPI.AUE_5.b
+		ai_chance = {
+			base = 100
+		}
+        custom_effect_tooltip = ZPI_annoyed_tooltip #too bad lmao
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = neutrality
+            
+        }
+        ZPI_player_choice_leader = {
+            promote_character = despotism
+        }
+        set_country_leader_ideology = despotism
+        complete_national_focus = ZPI_autocratic_start
+		hidden_effect = {
+
+		}
+    }
+}
+
+#Theocratic Category#
+country_event = { #boo!
+    id = ZPI_theocratic_event.1
+    title = ZPI.THE_1.t
+    desc = ZPI.THE_1.d
+    is_triggered_only = yes
+
+	option = { #ahh!
+        name = ZPI.THE_1.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #got you
+        name = ZPI.THE_1.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #not buying it
+        name = ZPI.THE_1.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_totalist_points
+                value = 4
+            }
+		}
+    }
+    option = { #huh?
+        name = ZPI.THE_1.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #We hebben een serieus probleem 
+    id = ZPI_theocratic_event.2
+    title = ZPI.THE_2.t
+    desc = ZPI.THE_2.d
+    is_triggered_only = yes
+    
+	option = { #pray
+        name = ZPI.THE_2.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_nostalgist_points
+                value = 2
+            }
+		}
+    }
+    option = { #ignore it
+        name = ZPI.THE_2.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+		}
+    }
+    option = { #denial
+        name = ZPI.THE_2.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_theocratic_nostalgist_points
+                value = 4
+            }
+		}
+    }
+    option = { #reach out to friends
+        name = ZPI.THE_2.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #fake news
+    id = ZPI_theocratic_event.3
+    title = ZPI.THE_3.t
+    desc = ZPI.THE_3.d
+    is_triggered_only = yes
+    
+	option = { #no I'm right!
+        name = ZPI.THE_3.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 2
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_nostalgist_points
+                value = 2
+            }
+		}
+    }
+    option = { #agree anyways
+        name = ZPI.THE_3.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 2
+            }
+		}
+    }
+    option = { #just ask them about it
+        name = ZPI.THE_3.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+		}
+    }
+    option = { #keep it to yourself
+        name = ZPI.THE_3.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_totalist_points
+                value = 2
+            }
+            add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 2
+            }
+		}
+    }
+}
+country_event = { #on the ledge and shit
+    id = ZPI_theocratic_event.4
+    title = ZPI.THE_4.t
+    desc = ZPI.THE_4.d
+    is_triggered_only = yes
+    
+	option = { #obligatory religious option
+        name = ZPI.THE_4.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_nostalgist_points
+                value = 2
+            }
+		}
+    }
+    option = { #hollow platitudes
+        name = ZPI.THE_4.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #we would miss you!
+        name = ZPI.THE_4.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 2
+            }
+		}
+    }
+    option = { #I'm here for you
+        name = ZPI.THE_4.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_totalist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #Theocratic result
+    id = ZPI_theocratic_event.5
+    title = ZPI.THE_5.t
+    desc = ZPI.THE_5.d
+
+    is_triggered_only = yes
+	option = { #yes
+        name = ZPI.THE_5.a
+		ai_chance = {
+			base = 100
+		}
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = neutrality
+        }
+        ZPI_player_choice_leader = {
+            promote_character = penguin_theocracy
+        }
+        set_country_leader_ideology = penguin_theocracy
+        complete_national_focus = ZPI_theocratic_start
+		hidden_effect = {
+
+		}
+    }
+    option = { #no
+        name = ZPI.THE_5.b
+		ai_chance = {
+			base = 100
+		}
+        custom_effect_tooltip = ZPI_annoyed_tooltip #too bad lmao
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = neutrality
+        }
+        ZPI_player_choice_leader = {
+            promote_character = penguin_theocracy
+        }
+        set_country_leader_ideology = penguin_theocracy
+        complete_national_focus = ZPI_theocratic_start
+		hidden_effect = {
+
+		}
+    }
+}
+
+#Clockist Category#
+country_event = { #work
+    id = ZPI_clockist_event.1
+    title = ZPI.CLE_1.t
+    desc = ZPI.CLE_1.d
+    is_triggered_only = yes
+
+	option = { #work hard
+        name = ZPI.CLE_1.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+		}
+    }
+    option = { #bare minimum
+        name = ZPI.CLE_1.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 2
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 2
+            }
+		}
+    }
+    option = { #can't do it alone
+        name = ZPI.CLE_1.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+		}
+    }
+    option = { #what work?
+        name = ZPI.CLE_1.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_totalist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #resolutions
+    id = ZPI_clockist_event.2
+    title = ZPI.CLE_2.t
+    desc = ZPI.CLE_2.d
+    is_triggered_only = yes
+
+	option = { #Yes
+        name = ZPI.CLE_2.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+		}
+    }
+    option = { #No
+        name = ZPI.CLE_2.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_guideist_points
+                value = 2
+            }
+		}
+    }
+    option = { #What?
+        name = ZPI.CLE_2.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #bugs in games
+    id = ZPI_clockist_event.3
+    title = ZPI.CLE_3.t
+    desc = ZPI.CLE_3.d
+    is_triggered_only = yes
+
+	option = { #report it
+        name = ZPI.CLE_3.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_guideist_points
+                value = 2
+            }
+		}
+    }
+    option = { #exploit it
+        name = ZPI.CLE_3.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_totalist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 2
+            }
+		}
+    }
+    option = { #ignore it
+        name = ZPI.CLE_3.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 2
+            }
+		}
+    }
+}
+country_event = { #late
+    id = ZPI_clockist_event.4
+    title = ZPI.CLE_4.t
+    desc = ZPI.CLE_4.d
+    is_triggered_only = yes
+
+	option = { #cool
+        name = ZPI.CLE_4.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #bad
+        name = ZPI.CLE_4.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+		}
+    }
+    option = { #idk
+        name = ZPI.CLE_4.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #Clockist result
+    id = ZPI_clockist_event.5
+    title = ZPI.CLE_5.t
+    desc = ZPI.CLE_5.d
+
+    is_triggered_only = yes
+	option = { #yes
+        name = ZPI.CLE_5.a
+		ai_chance = {
+			base = 100
+		}
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }
+        ZPI_player_choice_leader = {
+            promote_character = clockism
+        }
+        set_country_leader_ideology = clockism
+        complete_national_focus = ZPI_clockist_start
+		hidden_effect = {
+
+		}
+    }
+    option = { #no
+        name = ZPI.CLE_5.b
+		ai_chance = {
+			base = 100
+		}
+        custom_effect_tooltip = ZPI_annoyed_tooltip #too bad lmao
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }
+        ZPI_player_choice_leader = {
+            promote_character = clockism
+        }
+        set_country_leader_ideology = clockism
+        complete_national_focus = ZPI_clockist_start
+		hidden_effect = {
+
+		}
+    }
+}
+
+#Social Democratic Category#
+country_event = { #busy
+    id = ZPI_social_democratic_event.1
+    title = ZPI.SDE_1.t
+    desc = ZPI.SDE_1.d
+    is_triggered_only = yes
+
+	option = { #yes
+        name = ZPI.SDE_1.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+		}
+    }
+    option = { #no
+        name = ZPI.SDE_1.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #in between
+        name = ZPI.SDE_1.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #game sale
+    id = ZPI_social_democratic_event.2
+    title = ZPI.SDE_2.t
+    desc = ZPI.SDE_2.d
+    is_triggered_only = yes
+
+	option = { #sad
+        name = ZPI.SDE_2.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+		}
+    }
+    option = { #mad
+        name = ZPI.SDE_2.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 4
+            }
+		}
+    }
+    option = { #whatever
+        name = ZPI.SDE_2.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 2
+            }
+		}
+    }
+    option = { #good for them
+        name = ZPI.SDE_2.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #balancing the budget
+    id = ZPI_social_democratic_event.3
+    title = ZPI.SDE_3.t
+    desc = ZPI.SDE_3.d
+    is_triggered_only = yes
+
+	option = { #credit
+        name = ZPI.SDE_3.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+		}
+    }
+    option = { #reduce spending
+        name = ZPI.SDE_3.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #move out
+        name = ZPI.SDE_3.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_totalist_points
+                value = 4
+            }
+		}
+    }
+    option = { #ask for money
+        name = ZPI.SDE_3.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #ignore it, gods plan or smth
+        name = ZPI.SDE_3.f
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_theocratic_nostalgist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #pessimism
+    id = ZPI_social_democratic_event.4
+    title = ZPI.SDE_4.t
+    desc = ZPI.SDE_4.d
+    is_triggered_only = yes
+
+	option = { #Yes, good
+        name = ZPI.SDE_4.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 4
+            }
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+		}
+    }
+    option = { #No, good
+        name = ZPI.SDE_4.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_totalist_points
+                value = 4
+            }
+		}
+    }
+    option = { #Yes, bad
+        name = ZPI.SDE_4.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_nostalgist_points
+                value = 4
+            }
+		}
+    }
+    option = { #No, bad
+        name = ZPI.SDE_4.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 4
+            }
+			add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #Social Democratic result
+    id = ZPI_social_democratic_event.5
+    title = ZPI.SDE_5.t
+    desc = ZPI.SDE_5.d
+
+    is_triggered_only = yes
+	option = { #yes
+        name = ZPI.SDE_5.a
+		ai_chance = {
+			base = 100
+		}
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }
+        ZPI_player_choice_leader = {
+            promote_character = socialism
+        }
+        set_country_leader_ideology = socialism
+        complete_national_focus = ZPI_social_democratic_start
+		hidden_effect = {
+
+		}
+    }
+    option = { #no
+        name = ZPI.SDE_5.b
+		ai_chance = {
+			base = 100
+		}
+        custom_effect_tooltip = ZPI_annoyed_tooltip #too bad lmao
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }
+        ZPI_player_choice_leader = {
+            promote_character = socialism
+        }
+        set_country_leader_ideology = socialism
+        complete_national_focus = ZPI_social_democratic_start
+		hidden_effect = {
+
+		}
+    }
+}
+
+#Guideist Category#
+country_event = { #blaming people for your mistakes
+    id = ZPI_guideist_event.1
+    title = ZPI.GUE_1.t
+    desc = ZPI.GUE_1.d
+    is_triggered_only = yes
+
+	option = { #yes
+        name = ZPI.GUE_1.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 2
+            }
+		}
+    }
+    option = { #no
+        name = ZPI.GUE_1.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_totalist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 2
+            }
+		}
+    }
+    option = { #idk
+        name = ZPI.GUE_1.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 2
+            }
+		}
+    }
+}
+country_event = { #in charge
+    id = ZPI_guideist_event.2
+    title = ZPI.GUE_2.t
+    desc = ZPI.GUE_2.d
+    is_triggered_only = yes
+
+	option = { #firm
+        name = ZPI.GUE_2.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #loose
+        name = ZPI.GUE_2.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 2
+            }
+		}
+    }
+    option = { #violent
+        name = ZPI.GUE_2.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 4
+            }
+		}
+    }
+    option = { #wouldn't
+        name = ZPI.GUE_2.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_totalist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #take a survey?
+    id = ZPI_guideist_event.3
+    title = ZPI.GUE_3.t
+    desc = ZPI.GUE_3.d
+    is_triggered_only = yes
+
+	option = { #yes
+        name = ZPI.GUE_3.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_clockist_points
+                value = 2
+            }
+		}
+    }
+    option = { #no
+        name = ZPI.GUE_3.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = { #not sure about this tbh
+                var = ZPI_theocratic_points
+                value = 2
+            }
+		}
+    }
+    option = { #lie to them
+        name = ZPI.GUE_3.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_totalist_points
+                value = 2
+            }
+		}
+    }
+}
+country_event = { #karaoke
+    id = ZPI_guideist_event.4
+    title = ZPI.GUE_4.t
+    desc = ZPI.GUE_4.d
+    is_triggered_only = yes
+
+	option = { #People need to hear my vast, oceanic soul.
+        name = ZPI.GUE_4.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+		}
+    }
+    option = { #if I have a friend with me
+        name = ZPI.GUE_4.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = { 
+                var = ZPI_totalist_points
+                value = 4
+            }
+		}
+    }
+    option = { #no I'm embarrassed
+        name = ZPI.GUE_4.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 2
+            }
+            add_to_variable = {
+                var = ZPI_clockist_points
+                value = 2
+            }
+		}
+    }
+    option = { #music is for heathens
+        name = ZPI.GUE_4.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_theocratic_nostalgist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #Guideist result
+    id = ZPI_guideist_event.5
+    title = ZPI.GUE_5.t
+    desc = ZPI.GUE_5.d
+
+    is_triggered_only = yes
+	option = { #yes
+        name = ZPI.GUE_5.a
+		ai_chance = {
+			base = 100
+		}
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = communism
+        }
+        ZPI_player_choice_leader = {
+            promote_character = guideist_nihilism
+        }
+        set_country_leader_ideology = guideist_nihilism
+        complete_national_focus = ZPI_guideist_start
+		hidden_effect = {
+
+		}
+    }
+    option = { #no
+        name = ZPI.GUE_5.b
+		ai_chance = {
+			base = 100
+		}
+        custom_effect_tooltip = ZPI_annoyed_tooltip #too bad lmao
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = communism
+        }
+        ZPI_player_choice_leader = {
+            promote_character = guideist_nihilism
+        }
+        set_country_leader_ideology = guideist_nihilism
+        complete_national_focus = ZPI_guideist_start
+		hidden_effect = {
+
+		}
+    }
+}
+
+#Totalist Category#
+country_event = { #admonishment
+    id = ZPI_totalist_event.1
+    title = ZPI.TOE_1.t
+    desc = ZPI.TOE_1.d
+    is_triggered_only = yes
+
+	option = { #yes
+        name = ZPI.TOE_1.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_totalist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #no
+        name = ZPI.TOE_1.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_clockist_points
+                value = 2
+            }
+		}
+    }
+}
+country_event = { #book club
+    id = ZPI_totalist_event.2
+    title = ZPI.TOE_2.t
+    desc = ZPI.TOE_2.d
+    is_triggered_only = yes
+
+	option = { #push through
+        name = ZPI.TOE_2.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+		}
+    }
+    option = { #ignore them
+        name = ZPI.TOE_2.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_totalist_points
+                value = 4
+            }
+		}
+    }
+    option = { #pretend
+        name = ZPI.TOE_2.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #take over
+        name = ZPI.TOE_2.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #do your chores
+    id = ZPI_totalist_event.3
+    title = ZPI.TOE_3.t
+    desc = ZPI.TOE_3.d
+    is_triggered_only = yes
+
+	option = { #do it
+        name = ZPI.TOE_3.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #demand an explanation, nerd
+        name = ZPI.TOE_3.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 2
+            }
+		}
+    }
+    option = { #don't do it
+        name = ZPI.TOE_3.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_totalist_points
+                value = 4
+            }
+		}
+    }
+    option = { #bargan with them
+        name = ZPI.TOE_3.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #fashion
+    id = ZPI_totalist_event.4
+    title = ZPI.TOE_4.t
+    desc = ZPI.TOE_4.d
+    is_triggered_only = yes
+
+	option = { #confident
+        name = ZPI.TOE_4.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #simple
+        name = ZPI.TOE_4.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 2
+            }
+		}
+    }
+    option = { #wild
+        name = ZPI.TOE_4.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_totalist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 2
+            }
+		}
+    }
+    option = { #no friends
+        name = ZPI.TOE_4.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #Totalist result
+    id = ZPI_totalist_event.5
+    title = ZPI.TOE_5.t
+    desc = ZPI.TOE_5.d
+
+    is_triggered_only = yes
+	option = { #yes
+        name = ZPI.TOE_5.a
+		ai_chance = {
+			base = 100
+		}
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = communism
+        }
+        ZPI_player_choice_leader = {
+            promote_character = totalist_nihilism
+        }
+        set_country_leader_ideology = totalist_nihilism
+        complete_national_focus = ZPI_totalist_start
+		hidden_effect = {
+
+		}
+    }
+    option = { #no
+        name = ZPI.TOE_5.b
+		ai_chance = {
+			base = 100
+		}
+        custom_effect_tooltip = ZPI_annoyed_tooltip #too bad lmao
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = communism
+        }
+        ZPI_player_choice_leader = {
+            promote_character = totalist_nihilism
+        }
+        set_country_leader_ideology = totalist_nihilism
+        complete_national_focus = ZPI_totalist_start
+		hidden_effect = {
+
+		}
+    }
+}
+
+#Nostalgist Category#
+country_event = { #your friend fell
+    id = ZPI_nostalgist_event.1
+    title = ZPI.NOE_1.t
+    desc = ZPI.NOE_1.d
+    is_triggered_only = yes
+
+	option = { #help them
+        name = ZPI.NOE_1.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_totalist_points
+                value = 2 
+            }
+            add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #laugh at them
+        name = ZPI.NOE_1.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_nostalgist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #buried treasure
+    id = ZPI_nostalgist_event.2
+    title = ZPI.NOE_2.t
+    desc = ZPI.NOE_2.d
+    is_triggered_only = yes
+
+	option = { #yes
+        name = ZPI.NOE_2.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 4
+            }
+		}
+    }
+    option = { #no
+        name = ZPI.NOE_2.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_guideist_points
+                value = 2
+            }
+		}
+    }
+}
+country_event = { #mundane nostalgia
+    id = ZPI_nostalgist_event.3
+    title = ZPI.NOE_3.t
+    desc = ZPI.NOE_3.d
+    is_triggered_only = yes
+
+	option = { #yes
+        name = ZPI.NOE_3.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+		}
+    }
+    option = { #no
+        name = ZPI.NOE_3.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_totalist_points
+                value = 4
+            }
+		}
+    }
+    option = { #unsure
+        name = ZPI.NOE_3.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 2
+            }
+		}
+    }
+    option = { #take me back!
+        name = ZPI.NOE_3.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #why
+    id = ZPI_nostalgist_event.4
+    title = ZPI.NOE_4.t
+    desc = ZPI.NOE_4.d
+    is_triggered_only = yes
+
+	option = { #what?
+        name = ZPI.NOE_4.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #It's me...
+        name = ZPI.NOE_4.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_totalist_points
+                value = 2
+            }
+            add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #hopeless
+        name = ZPI.NOE_4.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_totalist_points
+                value = 2
+            }
+		}
+    }
+    option = { #It’s not me!
+        name = ZPI.NOE_4.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_nostalgist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #Nostalgist result
+    id = ZPI_nostalgist_event.5
+    title = ZPI.NOE_5.t
+    desc = ZPI.NOE_5.d
+
+    is_triggered_only = yes
+	option = { #yes
+        name = ZPI.NOE_5.a
+		ai_chance = {
+			base = 100
+		}
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = fascism
+        }
+        ZPI_player_choice_leader = {
+            promote_character = nostalgism
+        }
+        set_country_leader_ideology = nostalgism
+        complete_national_focus = ZPI_nostalgist_start
+		hidden_effect = {
+
+		}
+    }
+    option = { #no
+        name = ZPI.NOE_5.b
+		ai_chance = {
+			base = 100
+		}
+        custom_effect_tooltip = ZPI_annoyed_tooltip #too bad lmao
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = fascism
+        }
+        ZPI_player_choice_leader = {
+            promote_character = nostalgism
+        }
+        set_country_leader_ideology = nostalgism
+        complete_national_focus = ZPI_nostalgist_start
+		hidden_effect = {
+
+		}
+    }
+}
+
+#Theocratic Nostalgist Category#
+country_event = { #think before you speak
+    id = ZPI_theocratic_nostalgist_event.1
+    title = ZPI.TNE_1.t
+    desc = ZPI.TNE_1.d
+    is_triggered_only = yes
+
+	option = { #yes
+        name = ZPI.TNE_1.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_totalist_points
+                value = 2 
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_nostalgist_points
+                value = 4
+            }
+		}
+    }
+    option = { #no
+        name = ZPI.TNE_1.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_guideist_points
+                value = 2
+            }
+		}
+    }
+}
+country_event = { #I wish I was a little bit taller, I wish I was a baller, I wish I had a girl who looked good, I would call her, I wish I had a rabbit in a hat with a bat and a '64 Impala
+    id = ZPI_theocratic_nostalgist_event.2
+    title = ZPI.TNE_2.t
+    desc = ZPI.TNE_2.d
+    is_triggered_only = yes
+
+	option = { #yes
+        name = ZPI.TNE_2.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_theocratic_nostalgist_points
+                value = 4
+            }
+		}
+    }
+    option = { #no
+        name = ZPI.TNE_2.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 2
+            }
+		}
+    }
+}
+country_event = { #childhood memories
+    id = ZPI_theocratic_nostalgist_event.3
+    title = ZPI.TNE_3.t
+    desc = ZPI.TNE_3.d
+    is_triggered_only = yes
+
+	option = { #playing
+        name = ZPI.TNE_3.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+			add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 2 
+            }
+            add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #school
+        name = ZPI.TNE_3.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+		}
+    }
+    option = { #church
+        name = ZPI.TNE_3.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_theocratic_nostalgist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #visiting a friend
+        name = ZPI.TNE_3.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_totalist_points
+                value = 2
+            }
+		}
+    }
+    option = { #...
+        name = ZPI.TNE_3.f
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 2
+            }
+		}
+    }
+}
+country_event = { #talking to strangers
+    id = ZPI_theocratic_nostalgist_event.4
+    title = ZPI.TNE_4.t
+    desc = ZPI.TNE_4.d
+    is_triggered_only = yes
+
+	option = { #yes, fun
+        name = ZPI.TNE_4.a
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_social_democratic_points
+                value = 4
+            }
+		}
+    }
+    option = { #yes, informed
+        name = ZPI.TNE_4.b
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_guideist_points
+                value = 4
+            }
+		}
+    }
+    option = { #no, busy
+        name = ZPI.TNE_4.c
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_clockist_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_points
+                value = 2
+            }
+		}
+    }
+    option = { #no, awkward
+        name = ZPI.TNE_4.e
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_nostalgist_points
+                value = 2
+            }
+            add_to_variable = {
+                var = ZPI_totalist_points
+                value = 2
+            }
+		}
+    }
+    option = { #no, gross
+        name = ZPI.TNE_4.f
+		ai_chance = {
+			base = 100
+		}
+        ZPI_quiz_check = yes
+		hidden_effect = {
+            add_to_variable = {
+                var = ZPI_autocratic_points
+                value = 4
+            }
+            add_to_variable = {
+                var = ZPI_theocratic_nostalgist_points
+                value = 4
+            }
+		}
+    }
+}
+country_event = { #Theocratic Nostalgist result
+    id = ZPI_theocratic_nostalgist_event.5
+    title = ZPI.TNE_5.t
+    desc = ZPI.TNE_5.d
+
+    is_triggered_only = yes
+	option = { #yes
+        name = ZPI.TNE_5.a
+		ai_chance = {
+			base = 100
+		}
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = fascism
+        }
+        ZPI_player_choice_leader = {
+            promote_character = theocratic_nostalgism
+        }
+        set_country_leader_ideology = theocratic_nostalgism
+        complete_national_focus = ZPI_theocratic_nostalgist_start
+		hidden_effect = {
+
+		}
+    }
+    option = { #no
+        name = ZPI.TNE_5.b
+		ai_chance = {
+			base = 100
+		}
+        custom_effect_tooltip = ZPI_annoyed_tooltip #too bad lmao
+        kill_country_leader = yes
+        set_politics = {
+            ruling_party = fascism
+        }
+        ZPI_player_choice_leader = {
+            promote_character = theocratic_nostalgism
+        }
+        set_country_leader_ideology = theocratic_nostalgism
+        complete_national_focus = ZPI_theocratic_nostalgist_start
+		hidden_effect = {
+
 		}
     }
 }
