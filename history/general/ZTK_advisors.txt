@@ -1,0 +1,268 @@
+every_possible_country = {
+	limit = { tag = ZTK }
+
+	generate_character = {
+		token_base = ZTK_political_advisor_1
+		advisor = {
+			slot = political_advisor
+			traits = { ZTK_political_advisor_1_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_general_portrait_1 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_political_advisor_2
+		advisor = {
+			slot = political_advisor
+			traits = { ZTK_political_advisor_2_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_general_portrait_2 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_political_advisor_3
+		advisor = {
+			slot = political_advisor
+			traits = { ZTK_political_advisor_3_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_general_portrait_3 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_political_advisor_4
+		advisor = {
+			slot = political_advisor
+			traits = { ZTK_political_advisor_4_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_general_portrait_4 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_political_advisor_5
+		advisor = {
+			slot = political_advisor
+			traits = { ZTK_political_advisor_5_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_general_portrait_5 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_political_advisor_6
+		advisor = {
+			slot = political_advisor
+			traits = { ZTK_political_advisor_6_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_general_portrait_6 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_political_advisor_7
+		advisor = {
+			slot = political_advisor
+			traits = { ZTK_political_advisor_7_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_general_portrait_7 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_army_chief_1
+		advisor = {
+			slot = army_chief
+			traits = { ZTK_army_chief_1_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_portrait_1 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_army_chief_2
+		advisor = {
+			slot = army_chief
+			traits = { ZTK_army_chief_2_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_portrait_2 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_army_chief_3
+		advisor = {
+			slot = army_chief
+			traits = { ZTK_army_chief_3_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_portrait_3 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_navy_chief_1
+		advisor = {
+			slot = navy_chief
+			traits = { ZTK_navy_chief_1_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_portrait_4 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_navy_chief_2
+		advisor = {
+			slot = navy_chief
+			traits = { ZTK_navy_chief_2_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_portrait_5 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_air_chief_1
+		advisor = {
+			slot = air_chief
+			traits = { ZTK_air_chief_1_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_portrait_6 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_air_chief_2
+		advisor = {
+			slot = air_chief
+			traits = { ZTK_air_chief_2_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_portrait_7 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_air_chief_3
+		advisor = {
+			slot = air_chief
+			traits = { ZTK_air_chief_3_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_portrait_1 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_high_command_1
+		advisor = {
+			slot = high_command
+			traits = { ZTK_high_command_1_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_portrait_2 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_high_command_2
+		advisor = {
+			slot = high_command
+			traits = { ZTK_high_command_2_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_portrait_3 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_high_command_3
+		advisor = {
+			slot = high_command
+			traits = { ZTK_high_command_3_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_portrait_4 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_high_command_4
+		advisor = {
+			slot = high_command
+			traits = { ZTK_high_command_4_trait }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_portrait_5 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_theorist_3
+		advisor = {
+			slot = theorist
+			traits = { ZTK_theorist_3_trait }
+			cost = 175
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_portrait_6 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_theorist_2
+		advisor = {
+			slot = theorist
+			traits = { ZTK_theorist_2_trait }
+			cost = 175
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_portrait_7 }
+		}
+	}
+	generate_character = {
+		token_base = ZTK_theorist_1
+		advisor = {
+			slot = theorist
+			traits = { ZTK_theorist_1_trait }
+			cost = 175
+			ai_will_do = { factor = 1 }
+		}
+		portraits = { 
+			army = { small = GFX_ZTK_advisor_cultist_portrait_1 }
+		}
+	}
+}

@@ -1,0 +1,76 @@
+ZTK_armchair_intellectualism_political_power_modify = {
+	custom_effect_tooltip = ZTK_armchair_intellectualism_dynamic_modifier_modify_tt
+	add_to_variable = { ZTK_political_power_gain = 0.1 tooltip = political_power_gain_tt }
+}
+
+ZTK_armchair_intellectualism_advisor_cost_modify = {
+	custom_effect_tooltip = ZTK_armchair_intellectualism_dynamic_modifier_modify_tt
+	add_to_variable = { ZTK_political_advisor_cost_factor = -0.25 tooltip = political_advisor_cost_factor_tt }
+	add_to_variable = { ZTK_economy_cost_factor = -0.25 tooltip = economy_cost_factor_factor_tt }
+	add_to_variable = { ZTK_trade_laws_cost_factor = -0.25 tooltip = trade_laws_cost_factor_tt }
+	add_to_variable = { ZTK_theorist_cost_factor = -0.25 tooltip = theorist_cost_factor_tt }
+}
+
+
+ZTK_poor_infrastructure_dynamic_modifier_modify = {
+	custom_effect_tooltip = ZTK_poor_infrastructure_dynamic_modifier_modify_tt
+	add_to_variable = { ZTK_production_speed_infrastructure_factor = 0.1 tooltip = production_speed_infrastructure_factor_tt }
+	add_to_variable = { ZTK_production_speed_rail_way_factor = 0.1 tooltip = production_speed_rail_way_factor_tt }
+}
+
+ZTK_poor_infrastructure_dynamic_modifier_modify_1 = {
+	custom_effect_tooltip = ZTK_poor_infrastructure_dynamic_modifier_modify_tt
+	add_to_variable = { ZTK_production_speed_infrastructure_factor = 0.1 tooltip = production_speed_infrastructure_factor_tt }
+}
+
+ZTK_poor_infrastructure_dynamic_modifier_modify_2 = {
+	custom_effect_tooltip = ZTK_poor_infrastructure_dynamic_modifier_modify_tt
+	add_to_variable = { ZTK_production_speed_rail_way_factor = 0.1 tooltip = production_speed_rail_way_factor_tt }
+}
+
+ZTK_poor_infrastructure_dynamic_modifier_construction_modify = {
+	custom_effect_tooltip = ZTK_poor_infrastructure_dynamic_modifier_modify_tt
+	add_to_variable = { ZTK_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+}
+
+
+ZTK_rural_society_dynamic_modifier_modify = {
+	custom_effect_tooltip = ZTK_rural_society_dynamic_modifier_modify_tt
+	add_to_variable = { ZTK_conscription_factor = 0.08 tooltip = conscription_factor_tt }
+}
+
+
+ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier_ace_generation_modify = {
+	custom_effect_tooltip = ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier_modify_tt
+	add_to_variable = { ZTK_air_ace_generation_chance_factor = 0.02 tooltip = air_ace_generation_chance_factor_tt }
+}
+
+ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier_mission_efficiency_modify = {
+	custom_effect_tooltip = ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier_modify_tt
+	add_to_variable = { ZTK_air_mission_efficiency = 0.02 tooltip = air_mission_efficiency_tt }
+}
+
+ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier_air_maximum_speed_modify = {
+	custom_effect_tooltip = ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier_modify_tt
+	add_to_variable = { ZTK_air_maximum_speed_factor = 0.02 tooltip = air_maximum_speed_factor_tt }
+}
+
+ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier_air_maximum_speed_modify = {
+	custom_effect_tooltip = ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier_modify_tt
+	add_to_variable = { ZTK_air_maximum_speed_factor = 0.02 tooltip = air_maximum_speed_factor_tt }
+}
+
+ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier_air_ace_bonuses_modify = {
+	custom_effect_tooltip = ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier_modify_tt
+	add_to_variable = { ZTK_air_ace_bonuses_factor = 0.03 tooltip = air_ace_bonuses_factor_tt }
+}
+
+ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier_air_night_penalty_modify = {
+	custom_effect_tooltip = ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier_modify_tt
+	add_to_variable = { ZTK_air_night_penalty = -0.03 tooltip = air_night_penalty_tt }
+}
+
+ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier_air_weather_penalty_modify = {
+	custom_effect_tooltip = ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier_modify_tt
+	add_to_variable = { ZTK_air_weather_penalty = -0.03 tooltip = air_weather_penalty_tt }
+}

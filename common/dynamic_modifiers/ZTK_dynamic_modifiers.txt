@@ -1,0 +1,37 @@
+ZTK_armchair_intellectualism_dynamic_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_FRA_liberte_egalite_solidarite
+
+	political_power_gain = ZTK_political_power_gain
+	political_advisor_cost_factor = ZTK_political_advisor_cost_factor
+	economy_cost_factor = ZTK_economy_cost_factor
+	trade_laws_cost_factor = ZTK_trade_laws_cost_factor
+	theorist_cost_factor = ZTK_theorist_cost_factor
+	communism_drift = ZKT_communism_drift
+	party_popularity_stability_factor = ZTK_party_popularity_stability_factor
+}
+ZTK_poor_infrastructure_dynamic_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_railroads
+
+	production_speed_infrastructure_factor = ZTK_production_speed_infrastructure_factor
+	production_speed_rail_way_factor = ZTK_production_speed_rail_way_factor
+	production_speed_buildings_factor = ZTK_production_speed_buildings_factor
+}
+ZTK_rural_society_dynamic_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_agrarian_reform
+
+	conscription_factor = ZTK_conscription_factor
+}
+ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_air_payment
+
+	air_ace_generation_chance_factor = ZTK_air_ace_generation_chance_factor
+	air_mission_efficiency =  ZTK_air_mission_efficiency
+	air_maximum_speed_factor = ZTK_air_maximum_speed_factor
+	air_ace_bonuses_factor =  ZTK_air_ace_bonuses_factor
+	air_night_penalty = ZTK_air_night_penalty
+	air_weather_penalty = ZTK_air_weather_penalty
+}

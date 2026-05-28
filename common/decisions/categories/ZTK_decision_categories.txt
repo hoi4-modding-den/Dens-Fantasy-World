@@ -1,0 +1,14 @@
+ZTK_grand_exhibit_category = {
+
+	icon = sov_great_patriotic_war
+	
+	allowed = {
+		original_tag = ZTK
+	}
+
+	priority = 100
+
+	#visible = {
+	#	has_completed_focus = ZTK_intro_focus_2
+	#}
+}

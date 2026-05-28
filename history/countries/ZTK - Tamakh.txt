@@ -23,12 +23,16 @@ set_technology = {
 	tech_mountaineers = 1
 }
 
-add_ideas = {
-	ZTK_armchair_intellectualism
-	ZTK_poor_infrastructure
-	ZTK_rural_society
-	ZTK_oh_i_wish_to_be_a_bird
-}
+set_country_flag = DEN_no_generic_political_advisors
+set_country_flag = DEN_no_generic_political_advisors
+set_country_flag = DEN_no_generic_political_advisors
+set_country_flag = DEN_no_generic_spy_advisor
+#add_ideas = {
+#	ZTK_armchair_intellectualism
+#	ZTK_poor_infrastructure
+#	ZTK_rural_society
+#	ZTK_oh_i_wish_to_be_a_bird
+#}
 
 set_grand_doctrine = grand_battleplan
 
@@ -45,6 +49,35 @@ set_popularities = {
 	communism = 45
 	neutrality = 10
 }
+
+#REMINDER to always update the fake NS if these numbers are altered!
+	set_variable = { ZTK_political_power_gain = -0.2 }
+	set_variable = { ZTK_political_advisor_cost_factor = 0.5 }
+	set_variable = { ZTK_economy_cost_factor = 0.75 }
+	set_variable = { ZTK_trade_laws_cost_factor = 0.75 }
+	set_variable = { ZTK_theorist_cost_factor = 0.75 }
+	set_variable = { ZKT_communism_drift = 0.05 }
+	set_variable = { ZTK_party_popularity_stability_factor = 0.05 }
+	add_dynamic_modifier = { modifier = ZTK_armchair_intellectualism_dynamic_modifier }
+
+#REMINDER to always update the fake NS if these numbers are altered! 
+	set_variable = { ZTK_production_speed_infrastructure_factor = -0.27 }
+	set_variable = { ZTK_production_speed_rail_way_factor = -0.27 }
+	set_variable = { ZTK_production_speed_buildings_factor = 0 }
+	add_dynamic_modifier = { modifier = ZTK_poor_infrastructure_dynamic_modifier }
+
+#REMINDER to always update the fake NS if these numbers are altered! 
+	set_variable = { ZTK_conscription_factor = -0.375  }
+	add_dynamic_modifier = { modifier = ZTK_rural_society_dynamic_modifier }
+#REMINDER to always update the fake NS if these numbers are altered! 
+	set_variable = { ZTK_air_ace_generation_chance_factor = 0.08 }
+	set_variable = { ZTK_air_mission_efficiency = 0.06 }
+	set_variable = { ZTK_air_maximum_speed_factor = 0.02 }
+	set_variable = { ZTK_air_ace_bonuses_factor = 0 }
+	set_variable = { ZTK_air_night_penalty = 0 }
+	set_variable = { ZTK_air_weather_penalty = 0 }
+	add_dynamic_modifier = { modifier = ZTK_oh_i_wish_to_be_a_bird_dynamic_modifier }
+
 
 recruit_character = ZTK_communist_leader
 

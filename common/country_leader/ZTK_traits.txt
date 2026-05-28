@@ -17,4 +17,119 @@ leader_traits = {
         random = no
 		stability_factor = 0.1
     }
+
+
+	ZTK_political_advisor_7_trait = {
+        random = no
+		consumer_goods_factor = -0.15
+		production_factory_max_efficiency_factor = -0.08
+		production_factory_efficiency_gain_factor = -0.04 
+    }
+	ZTK_political_advisor_6_trait = {
+        random = no
+		global_building_slots_factor = 0.15
+    }
+	ZTK_political_advisor_5_trait = {
+        random = no
+		improve_relations_maintain_cost_factor = -0.25
+		stability_factor = 0.05
+		defensive_war_stability_factor = 0.05
+		offensive_war_stability_factor = 0.05
+		trade_opinion_factor = 0.15
+    }
+	ZTK_political_advisor_4_trait = {
+        random = no
+		stability_factor = 0.1
+    }
+	ZTK_political_advisor_3_trait = {
+        random = no
+		local_resources_factor = 0.08
+		production_speed_buildings_factor = 0.08
+		justify_war_goal_time = 0.25
+    }
+	ZTK_political_advisor_2_trait = {
+        random = no
+		intel_network_gain_factor = 0.05
+		agency_upgrade_time = -0.12
+    }
+	ZTK_political_advisor_1_trait = {
+        random = no
+		political_power_factor = 0.15
+    }
+	ZTK_army_chief_3_trait = {
+        random = no
+		command_power_gain = 0.15
+		max_command_power_mult = 0.15
+		experience_gain_army = 0.3
+    }
+	ZTK_army_chief_2_trait = {
+        random = no
+		army_org_regain = 0.06
+		breakthrough_factor = 0.08
+		experience_gain_army = 0.3
+    }
+	ZTK_army_chief_1_trait = {
+        random = no
+		max_planning_factor = 0.15
+		experience_gain_army = 0.3
+    }
+	ZTK_navy_chief_2_trait = {
+        random = no
+		naval_coordination = 0.15
+		experience_gain_navy = 0.3
+    }
+	ZTK_navy_chief_1_trait = {
+        random = no	
+		naval_damage_factor = 0.08
+		naval_defense_factor = 0.08
+		experience_gain_navy = 0.3
+    }
+	ZTK_air_chief_3_trait = {
+        random = no
+		air_accidents_factor = -0.1
+		ace_effectiveness_factor = 0.05
+		experience_gain_air = 0.3
+    }
+	ZTK_air_chief_2_trait = {
+        random = no
+		air_interception_detect_factor = 0.1
+		experience_gain_air = 0.3
+    }
+	ZTK_air_chief_1_trait = {
+        random = no
+		air_defence_factor = 0.15
+		experience_gain_air = 0.3
+    }
+	ZTK_high_command_4_trait = {
+        random = no
+		experience_gain_army_unit_factor = 0.08
+		max_dig_in_factor = -0.03
+		dig_in_speed_factor = -0.03
+    }
+	ZTK_high_command_3_trait = {
+        random = no	
+		screening_efficiency = 0.1
+    }
+	ZTK_high_command_2_trait = {
+        random = no
+		special_forces_cap = 0.025
+		terrain_penalty_reduction = 0.05
+    }
+	ZTK_high_command_1_trait = {
+        random = no
+		cavalry_attack_factor = 0.15
+		cavalry_defence_factor = 0.15
+    }
+	ZTK_theorist_3_trait = {
+        random = no
+		land_mastery_gain_factor = 0.125
+    }
+	ZTK_theorist_2_trait = {
+        random = no
+		air_mastery_gain_factor = 0.125
+    }
+	ZTK_theorist_1_trait = {
+        random = no
+		naval_mastery_gain_factor = 0.15
+    }
 }

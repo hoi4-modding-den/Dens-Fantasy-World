@@ -32,4 +32,69 @@ spriteTypes = {
 		name = "GFX_portrait_ZTK_communist_leader"
 		texturefile = "gfx/leaders/ZTK/ZTK_leader_2.dds"
 	}
+
+	spriteType = {
+		name = "GFX_ZTK_advisor_cultist_portrait_1"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_cultist_portrait_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ZTK_advisor_general_portrait_1"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_general_portrait_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ZTK_advisor_general_portrait_2"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_general_portrait_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ZTK_advisor_general_portrait_3"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_general_portrait_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ZTK_advisor_general_portrait_4"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_general_portrait_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ZTK_advisor_general_portrait_5"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_general_portrait_5.dds"
+	}
+	spriteType = {
+		name = "GFX_ZTK_advisor_general_portrait_6"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_general_portrait_6.dds"
+	}
+	spriteType = {
+		name = "GFX_ZTK_advisor_general_portrait_7"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_general_portrait_7.dds"
+	}
+	spriteType = {
+		name = "GFX_ZTK_advisor_portrait_1"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_portrait_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ZTK_advisor_portrait_2"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_portrait_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ZTK_advisor_portrait_3"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_portrait_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ZTK_advisor_portrait_4"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_portrait_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ZTK_advisor_portrait_5"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_portrait_5.dds"
+	}
+	spriteType = {
+		name = "GFX_ZTK_advisor_portrait_6"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_portrait_6.dds"
+	}
+	spriteType = {
+		name = "GFX_ZTK_advisor_portrait_7"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_portrait_7.dds"
+	}
+	spriteType = {
+		name = "GFX_ZTK_advisor_bluecoat_portrait_1"
+		texturefile = "gfx/interface/ideas/ZTK/ZTK_advisor_bluecoat_portrait_1.dds"
+	}
 }

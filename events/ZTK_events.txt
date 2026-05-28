@@ -4,12 +4,15 @@ country_event = {
     id = ZTK_event.1
     title = ZTK_event.1.t
     desc = ZTK_event.1.d
-    picture = "GFX_event (45)"
+    picture = GFX_report_event_SWI_president_talking_flag
 
 	is_triggered_only = yes
 
-	option = { # accept
+	option = { 
 		name = ZTK_event.1.a
+
+		add_political_power = 50
+
 		ai_chance = {
 			base = 50
 		}
@@ -19,12 +22,14 @@ country_event = {
     id = ZTK_event.2
     title = ZTK_event.2.t
     desc = ZTK_event.2.d
-    picture = "GFX_event (45)"
+    picture = GFX_report_event_SWI_president_talking_flag
 
 	is_triggered_only = yes
 
-	option = { # accept
+	option = { 
 		name = ZTK_event.2.a
+
+		unlock_decision_tooltip = ZTK_grand_exhibit_state_decision
 		ai_chance = {
 			base = 50
 		}
@@ -34,12 +39,78 @@ country_event = {
     id = ZTK_event.3
     title = ZTK_event.3.t
     desc = ZTK_event.3.d
-    picture = "GFX_event (45)"
+    picture = GFX_report_event_SWI_president_talking_flag
 
 	is_triggered_only = yes
 
-	option = { # accept
+	option = { 
 		name = ZTK_event.3.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+country_event = { ## Meet with the Freighters Union
+    id = ZTK_event.4
+    title = ZTK_event.4.t
+    desc = ZTK_event.4.d
+    picture = GFX_report_event_SWI_president_talking_flag
+
+	is_triggered_only = yes
+
+	option = { 
+		name = ZTK_event.4.a
+
+		add_political_power = -75
+		add_popularity = {
+    		ideology = democratic
+    		popularity = -0.1
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = { 
+		name = ZTK_event.4.b
+		add_political_power = 75
+		add_popularity = {
+    		ideology = democratic
+    		popularity = 0.1
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+country_event = { ## Meet with the Intelligentsia
+    id = ZTK_event.5
+    title = ZTK_event.5.t
+    desc = ZTK_event.5.d
+    picture = GFX_report_event_SWI_president_talking_flag
+
+	is_triggered_only = yes
+
+	option = { 
+		name = ZTK_event.5.a
+
+		add_political_power = -75
+		add_popularity = {
+    		ideology = fascism
+    		popularity = -0.1
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = { 
+		name = ZTK_event.5.b
+		add_political_power = 75
+		add_popularity = {
+    		ideology = fascism
+    		popularity = 0.1
+		}
 		ai_chance = {
 			base = 50
 		}
