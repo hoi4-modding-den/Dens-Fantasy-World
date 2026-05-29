@@ -61,6 +61,7 @@ add_popularity = {
     popularity = 0.12
 }
 add_ideas = { ZNY_revolution_com_surge }
+promote_character = ZNY_rafa_rancho
     }
 }
 
