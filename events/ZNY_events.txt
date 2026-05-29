@@ -102,7 +102,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-        name = ZNY_events.2.a
+        name = ZNY_events.5.a
 set_country_flag = ZNY_protest_repression_fails
     }
 }

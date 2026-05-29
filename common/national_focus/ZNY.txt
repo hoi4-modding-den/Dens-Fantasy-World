@@ -97,7 +97,7 @@ has_country_flag = ZNY_protest_peetrov_leaves_government
 		completion_reward = {
 custom_effect_tooltip = 2_ZNY_tooltip
 		hidden_effect = {
-	ZNY = { country_event = { id = ZNY_events.2 days = 2 } }
+	ZNY = { country_event = { id = ZNY_events.5 } }
 }
 		}
 
