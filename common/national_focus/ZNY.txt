@@ -157,6 +157,9 @@ custom_effect_tooltip = 2_ZNY_tooltip
 
 		completion_reward = {
 
+				hidden_effect = {
+	ZNY = { country_event = { id = ZNY_events.5 } }
+}
 		}
 
 
