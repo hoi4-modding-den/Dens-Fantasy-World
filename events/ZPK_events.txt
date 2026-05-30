@@ -1,0 +1,39 @@
+add_namespace = ZPK_debug_event #XE
+add_namespace = ZPK_natural_event #NE
+add_namespace = ZPK_focus_event #FE
+add_namespace = ZPK_news_event #WE
+add_namespace = ZPK_diplo_event #DE
+
+#News Events#
+news_event = { # end of civil war global
+	id = ZPK_news_event.1
+	title = ZPK.NE.1.t
+	desc = ZPK.NE.1.d
+	picture = GFX_news_event_FIN_continuation_war_murmansk
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ZPK.NE.1.a
+		trigger = { 
+			NOT = { 
+				tag = ZPK
+				tag = ZPT
+				tag = ZPC
+				tag = ZPI
+			} 
+		}
+	}
+	option = {
+		name = ZPK.NE.1.b
+		trigger = { 
+			OR = { 
+				tag = ZPK
+				tag = ZPT
+				tag = ZPC
+				tag = ZPI
+			} 
+		}
+	}
+}

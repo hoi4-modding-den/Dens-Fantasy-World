@@ -7,16 +7,319 @@ ideas = {
 				stability_weekly = 0.001
 				subjects_autonomy_gain = -0.25
 				army_defence_factor = 0.05
-				forced_surrender_limit = 0.1
+				surrender_limit = 0.1
 			}
 		}
 		ZPI_theocratic_idea = {
+			picture = SOV_new_old_church
+			modifier = {
+				neutrality_drift = 0.1
+				war_support_weekly = 0.001
+				army_attack_factor = 0.05
+				surrender_limit = 0.1
+			}
+		}
+		ZPI_theocratic_bonus_idea = {
 			picture = YUG_orthodox_church_support
 			modifier = {
 				neutrality_drift = 0.1
 				war_support_weekly = 0.001
 				army_attack_factor = 0.05
-				forced_surrender_limit = 0.1
+				surrender_limit = 0.1
+				political_power_factor = 0.1
+				monthly_population = 0.25
+			}
+		}
+		ZPI_theocratic_industry = {
+			picture = SPR_appropriate_church_riches
+			modifier = {
+				industrial_capacity_factory = 0.25
+				cic_construction_boost_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		ZPI_autocratic_industry = {
+			picture = SPR_appropriate_church_riches
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.2
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ZPI_neutrality_buff = {
+			picture = generic_manpower_bonus
+			modifier = {
+				army_org_factor = 0.2
+				army_core_defence_factor = 0.1
+				supply_factor = 0.25
+				resistance_target = -0.05
+			}
+		}
+
+		ZPI_clockist_idea = {
+			picture = generic_improved_industries
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15 
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		ZPI_clockist_industry = {
+			picture = generic_improved_industries
+			modifier = {
+				production_factory_max_efficiency_factor = 0.20 
+				production_speed_buildings_factor = 0.20
+				consumer_goods_factor = -0.05 
+				trade_opinion_factor = 0.25
+			}
+		}
+		ZPI_social_democratic_idea = {
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				democratic_drift = 0.1
+				stability_weekly = 0.002
+				consumer_goods_factor = -0.15 
+				research_speed_factor = 0.05
+			}
+		}
+		ZPI_social_democratic_industry = {
+			picture = FIN_finnish_federation_of_trade_unions_light
+			modifier = {
+				consumer_goods_factor = 0.05 
+				political_power_factor = 0.1
+				factory_energy_consumption = -0.1
+				production_factory_efficiency_gain_factor = 0.15 
+				line_change_production_efficiency_factor = 0.3
+			}
+		}
+		ZPI_auth_bonus_idea = {
+			picture = generic_oppression
+			modifier = {
+				neutrality_acceptance = 20
+				war_stability_factor = 0.5
+				political_power_factor = 0.15
+			}
+		}
+		ZPI_democratic_buff = {
+			picture = NORDIC_army_democratic
+			modifier = {
+				army_core_defence_factor = 0.1
+				compliance_gain = 0.01
+				conscription_factor = 0.15
+				weekly_manpower = 500 
+				army_strength_factor = 0.1
+				send_volunteer_size = 1
+			}
+		}
+
+		ZPI_totalist_idea = {
+			picture = SPR_anarchist_society
+			modifier = {
+				stability_factor = -0.2
+				stability_weekly = 0.001
+				war_support_factor = -0.1
+				communism_drift = 0.05
+				conscription = 0.1
+				weekly_manpower = 500 
+				army_core_defence_factor = 0.1
+			}
+		}
+		ZPI_totalist_industry = {
+			picture = SPR_anarchist_public_transport
+			modifier = {
+				stability_factor = -0.1
+				communism_drift = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.2
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ZPI_guideist_idea = {
+			picture = generic_spy_intel
+			modifier = {
+				communism_drift = 0.1
+				operation_cost = -0.5
+				agency_upgrade_time = -0.5
+				enemy_operative_detection_chance_factor = 0.5
+				new_operative_slot_bonus = 2
+			}
+		}
+		ZPI_guideist_industry = {
+			picture = SPR_anarchist_public_transport
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.2
+				global_building_slots = 1
+			}
+		}
+		ZPI_soc_bonus_idea = {
+			picture = PRC_china_railway_construction_corporation
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+				army_speed_factor = 0.1
+				railway_gun_bombardment_factor = 0.25
+			}
+		}
+		ZPI_communist_buff = {
+			picture = MEX_politicised_army
+			modifier = {
+				army_core_defence_factor = 0.15
+				conscription_factor = 0.15
+				experience_gain_army = 0.1
+			}
+			targeted_modifier = {
+				tag = ZPT
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ZPK
+				attack_bonus_against = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		ZPI_nostalgist_idea = {
+			picture = AFG_parliament_building_damaged
+			modifier = {
+				equipment_capture = 0.2
+				equipment_capture_factor = 0.5 
+				supply_factor = 0.2
+				production_speed_buildings_factor = -0.25 
+				industrial_capacity_factory = -0.1
+				ai_focus_aviation_factor = -1
+				conscription = 0.025
+				monthly_population = 0.5
+				research_speed_factor = -0.1
+			}
+			
+		}
+		ZPI_theocratic_nostalgist_idea = {
+			picture = generic_purge
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = -0.05
+				#army_strength_factor = 0.1
+				army_morale_factor = 0.05
+				surrender_limit = 0.1
+			}
+		}
+		ZPI_theocratic_nostalgist_bonus_idea = {
+			picture = generic_purge
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = -0.1
+				#army_strength_factor = 0.1
+				army_morale_factor = 0.1
+				surrender_limit = 0.2
+			}
+		}
+		ZPI_theocratic_nostalgist_industry = {
+			picture = MEX_church_power_5
+			modifier = {
+				research_speed_factor = -0.1
+				production_lack_of_resource_penalty_factor = -0.25 
+				local_resources_factor = 0.1
+				factory_energy_consumption = -0.1
+			}
+		}
+		ZPI_shared_fascism_idea = {
+			picture = totaler_krieg_economy
+			modifier = {
+				fascism_drift = 0.1
+				stability_weekly = -0.001
+				war_support_weekly = 0.002
+				nuclear_production_factor = 0.25
+				surrender_limit = 0.333
+				war_stability_factor = 0.5
+			}
+		}
+		ZPI_totalitarian_bonus_idea = {
+			picture = generic_purge
+			modifier = {
+				political_power_factor = 0.25
+				resistance_activity = -0.25
+				resistance_target = 0.05
+			}
+		}
+		ZPI_fascist_buff = {
+			picture = generic_fascism_rising
+			modifier = {
+				justify_war_goal_time = -0.75
+				railway_gun_bombardment_factor = 0.25
+				heat_attrition_factor = -0.25
+				compliance_growth = -0.1
+				ai_focus_aggressive_factor = 0.5
+			}
+		}
+
+		ZPI_democratic_win_idea = {
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				join_faction_tension = -1
+				send_volunteers_tension = -1
+				send_volunteer_size = 3
+				lend_lease_tension = -1
+				
+			}
+		}
+		ZPI_communism_win_idea = {
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				send_volunteer_size = 3
+				justify_war_goal_time = -0.5
+				political_power_factor = 0.1
+			}
+		}
+		ZPI_navy_idea = {
+			picture = generic_naval_invasion
+			modifier = {
+				naval_damage_factor = 0.1
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				destroyer = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				light_cruiser = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		ZPI_air_idea = {
+			picture = generic_air_payment
+			modifier = {
+				air_attack_factor = 0.1
+			}
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+				cas = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				naval_bomber = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				transport_plane_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
 			}
 		}
 	}

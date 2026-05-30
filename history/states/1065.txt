@@ -32,6 +32,9 @@ state={
 			14069 = {
 				naval_base = 1
 			}
+			14072 = {
+				supply_node = 1
+			}
 			
 		}
 		victory_points = {

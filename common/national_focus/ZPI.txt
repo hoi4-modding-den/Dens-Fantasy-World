@@ -97,4 +97,1426 @@ focus_tree = {
 			add_ideas = ZPI_theocratic_idea
 		}
 	}
+	focus = {
+		id = ZPI_theocratic_bonus
+		icon = GFX_focus_PHI_philippine_independent_church
+		cost = 5
+		x = 8
+		y = 2
+		prerequisite = {
+			focus = ZPI_theocratic_focus
+		}
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = ZPI_theocratic_idea
+				add_idea = ZPI_theocratic_bonus_idea
+			}
+			
+		}
+	}
+	focus = {
+		id = ZPI_theocratic_focus_2
+		icon = GFX_focus_BEL_christian_corporatism
+		cost = 10
+		x = 10
+		y = 2
+		prerequisite = {
+			focus = ZPI_theocratic_focus
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_ideas = ZPI_theocratic_industry
+		}
+
+		completion_reward = {
+			add_ideas = ZPI_theocratic_industry
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ZPI_autocratic_focus_2
+		icon = GFX_focus_GER_integrated_economies
+		cost = 10
+		x = 14
+		y = 2
+		prerequisite = {
+			focus = ZPI_autocratic_focus
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			add_ideas = ZPI_autocratic_industry
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+
+		completion_reward = {
+			add_ideas = ZPI_autocratic_industry
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ZPI_neutrality_focus
+		icon = GFX_goal_generic_military_sphere
+		cost = 10
+		x = 12
+		y = 3
+		prerequisite = {
+			focus = ZPI_theocratic_focus_2
+			focus = ZPI_autocratic_focus_2
+		}
+		completion_reward = { 
+			add_ideas = ZPI_neutrality_buff
+
+		}
+	}
+
+	focus = {
+		id = ZPI_clockist_start
+		icon = GFX_focus_DEN_no_regulations
+		cost = 1
+		x = 18
+		y = 0
+		mutually_exclusive = {
+			focus = ZPI_clockist_start
+			focus = ZPI_social_democratic_start
+		}
+		available = {
+			ZPI_player_choice_leader = {
+				is_country_leader = yes
+				has_ideology = clockism
+			}
+			has_government = democratic
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = ZPI_social_democratic_start
+		icon = GFX_focus_generic_social_democracy
+		cost = 1
+		x = 22
+		y = 0
+		mutually_exclusive = {
+			focus = ZPI_clockist_start
+			focus = ZPI_social_democratic_start
+		}
+		available = {
+			ZPI_player_choice_leader = {
+				is_country_leader = yes
+				has_ideology = socialism
+			}
+			has_government = democratic
+		}
+		completion_reward = { 
+
+		}
+	}
+
+	focus = {
+		id = ZPI_clockist_focus
+		icon = GFX_goal_continuous_non_factory_construct
+		cost = 10
+		x = 18
+		y = 1
+		prerequisite = {
+			focus = ZPI_clockist_start
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_ideas = ZPI_clockist_idea
+			
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+
+		completion_reward = {
+			add_ideas = ZPI_clockist_idea
+			
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ZPI_shared_democratic_focus
+		icon = GFX_focus_ARG_defense_and_democracy
+		cost = 5
+		x = 20
+		y = 1
+		prerequisite = {
+			focus = ZPI_clockist_start
+			focus = ZPI_social_democratic_start
+		}
+		completion_reward = { 
+			add_political_power = 100
+			add_stability = 0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = ZPI_social_democratic_focus
+		icon = GFX_focus_FIN_socialist_welfare
+		cost = 10
+		x = 22
+		y = 1
+		prerequisite = {
+			focus = ZPI_social_democratic_start
+		}
+		completion_reward = { 
+			add_ideas = ZPI_social_democratic_idea
+		}
+	}
+	focus = {
+		id = ZPI_autocratic_clockist_bonus
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 5
+		x = 16
+		y = 1
+		prerequisite = {
+			focus = ZPI_autocratic_start
+			focus = ZPI_clockist_start
+		}
+		completion_reward = { 
+			add_ideas = ZPI_auth_bonus_idea
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = ZPI_clockist_focus_2
+		icon = GFX_focus_GER_customs_union
+		cost = 10
+		x = 18
+		y = 2
+		prerequisite = {
+			focus = ZPI_clockist_focus
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			swap_ideas = {
+				remove_idea = ZPI_clockist_idea
+				add_idea = ZPI_clockist_industry
+			}
+			add_ideas = free_trade
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ZPI_clockist_idea
+				add_idea = ZPI_clockist_industry
+			}
+			add_ideas = free_trade
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ZPI_social_democratic_focus_2
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10
+		x = 22
+		y = 2
+		prerequisite = {
+			focus = ZPI_social_democratic_focus
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_ideas = ZPI_social_democratic_industry
+		}
+
+		completion_reward = {
+			add_ideas = ZPI_social_democratic_industry
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ZPI_democratic_focus
+		icon = GFX_focus_NORDIC_dem_army
+		cost = 10
+		x = 20
+		y = 3
+		prerequisite = {
+			focus = ZPI_clockist_focus_2
+			focus = ZPI_social_democratic_focus_2
+		}
+		completion_reward = { 
+			add_ideas = ZPI_democratic_buff
+			capital_scope = {
+				create_unit = {
+					division = "Unataqtiit Aviktuq"
+					owner = ZPI
+					count = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZPI_guideist_start
+		icon = GFX_focus_PRC_revolutionary_war_of_the_masses
+		cost = 1
+		x = 30
+		y = 0
+		mutually_exclusive = {
+			focus = ZPI_guideist_start
+			focus = ZPI_totalist_start
+		}
+		available = {
+			ZPI_player_choice_leader = {
+				is_country_leader = yes
+				has_ideology = guideist_nihilism
+			}
+			has_government = communism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = ZPI_totalist_start
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+		cost = 1
+		x = 26
+		y = 0
+		mutually_exclusive = {
+			focus = ZPI_guideist_start
+			focus = ZPI_totalist_start
+		}
+		available = {
+			ZPI_player_choice_leader = {
+				is_country_leader = yes
+				has_ideology = totalist_nihilism
+			}
+			has_government = communism
+		}
+		completion_reward = { 
+
+		}
+	}
+
+	focus = {
+		id = ZPI_totalist_focus
+		icon = GFX_focus_ARG_no_gods_no_masters
+		cost = 10
+		x = 26
+		y = 1
+		prerequisite = {
+			focus = ZPI_totalist_start
+		}
+		completion_reward = {
+			add_ideas = ZPI_totalist_idea
+			add_ideas = SPR_collectivized_society
+		}
+	}
+	focus = {
+		id = ZPI_shared_communism_focus
+		icon = GFX_focus_PRC_urbanization_two
+		cost = 5
+		x = 28
+		y = 1
+		prerequisite = {
+			focus = ZPI_totalist_start
+			focus = ZPI_guideist_start
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ZPI_guideist_focus
+		icon = GFX_focus_GER_form_the_stasi
+		cost = 10
+		x = 30
+		y = 1
+		prerequisite = {
+			focus = ZPI_guideist_start
+		}
+		completion_reward = { 
+			add_ideas = ZPI_guideist_idea
+			add_political_power = 50
+			create_intelligence_agency = {
+				name = "Guidance Department"
+				icon = GFX_intelligence_agency_logo_GER_stasi
+			}
+		}
+	}
+	focus = {
+		id = ZPI_social_democratic_totalist_bonus
+		icon = GFX_focus_generic_railroad
+		cost = 5
+		x = 24
+		y = 1
+		prerequisite = {
+			focus = ZPI_social_democratic_start
+			focus = ZPI_totalist_start
+		}
+		completion_reward = { 
+			add_ideas = ZPI_soc_bonus_idea
+			build_railway = {
+				level = 2
+				controller_priority = {
+					base = 1
+					modifier = {
+						tag = ZPI
+						add = 10
+					}
+				}
+				fallback = yes
+				path = { 14793 14774 14802 14777 14783 14059 14066 14072 }
+				start_province = 14793
+				target_province = 14072
+			}
+			add_tech_bonus = {
+				name = railway_gun_equipment_1 
+				bonus = 1
+				uses = 1
+				category = train_tech
+			}
+			add_tech_bonus = {
+				name = train_equipment_2  
+				bonus = 1
+				uses = 1
+				category = train_tech
+			}
+		}
+	}
+	focus = {
+		id = ZPI_totalist_focus_2
+		icon = GFX_focus_spr_class_war
+		cost = 10
+		x = 26
+		y = 2
+		prerequisite = {
+			focus = ZPI_totalist_focus
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			add_ideas = ZPI_totalist_industry 
+		}
+
+		completion_reward = {
+			add_ideas = ZPI_totalist_industry
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ZPI_guideist_focus_2
+		icon = GFX_focus_GER_proletarian_dictatorship
+		cost = 10
+		x = 30
+		y = 2
+		prerequisite = {
+			focus = ZPI_guideist_focus
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_ideas = ZPI_guideist_industry
+			add_ideas = JAP_war_communism_idea 
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+
+		completion_reward = {
+			add_ideas = ZPI_guideist_industry
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ZPI_communist_focus
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+		cost = 10
+		x = 28
+		y = 3
+		prerequisite = {
+			focus = ZPI_totalist_focus_2
+			focus = ZPI_guideist_focus_2
+		}
+		completion_reward = { 
+			add_ideas = ZPI_communist_buff
+		}
+	}	
+
+	focus = {
+		id = ZPI_nostalgist_start
+		icon = GFX_focus_PRC_rural_region_development
+		cost = 1
+		x = 34
+		y = 0
+		mutually_exclusive = {
+			focus = ZPI_nostalgist_start
+			focus = ZPI_theocratic_nostalgist_start
+		}
+		available = {
+			ZPI_player_choice_leader = {
+				is_country_leader = yes
+				has_ideology = nostalgism
+			}
+			has_government = fascism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = ZPI_theocratic_nostalgist_start
+		icon = GFX_focus_SWE_counter_revolution
+		cost = 1
+		x = 38
+		y = 0
+		mutually_exclusive = {
+			focus = ZPI_nostalgist_start
+			focus = ZPI_theocratic_nostalgist_start
+		}
+		available = {
+			ZPI_player_choice_leader = {
+				is_country_leader = yes
+				has_ideology = theocratic_nostalgism
+			}
+			has_government = fascism
+		}
+		completion_reward = { 
+
+		}
+	}
+
+	focus = {
+		id = ZPI_nostalgist_focus
+		icon = GFX_focus_RAJ_bathe_in_hellfire
+		cost = 10
+		x = 34
+		y = 1
+		prerequisite = {
+			focus = ZPI_nostalgist_start
+		}
+		completion_reward = {
+			add_ideas = ZPI_nostalgist_idea
+			add_ideas = closed_economy
+
+		}
+	}
+	focus = {
+		id = ZPI_shared_fascism_focus
+		icon = GFX_focus_generic_total_war
+		cost = 5
+		x = 36
+		y = 1
+		prerequisite = {
+			focus = ZPI_nostalgist_start
+			focus = ZPI_theocratic_nostalgist_start
+		}
+		completion_reward = {
+			add_ideas = ZPI_shared_fascism_idea
+			add_ideas = totaler_krieg_economy
+		}
+	}
+	focus = {
+		id = ZPI_theocratic_nostalgist_focus
+		icon = GFX_focus_ICE_thungur_hnifur
+		cost = 10
+		x = 38
+		y = 1
+		prerequisite = {
+			focus = ZPI_theocratic_nostalgist_start
+		}
+		completion_reward = { 
+			add_ideas = ZPI_theocratic_nostalgist_idea
+		}
+	}
+	focus = {
+		id = ZPI_guideist_nostalgist_bonus
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 5
+		x = 32
+		y = 1
+		prerequisite = {
+			focus = ZPI_nostalgist_start
+			focus = ZPI_guideist_start
+		}
+		completion_reward = { 
+			add_ideas = ZPI_totalitarian_bonus_idea
+			add_stability = 0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+		}
+	}
+	focus = {
+		id = ZPI_nostalgist_focus_2
+		icon = GFX_focus_RAJ_the_sun_sets
+		cost = 10
+		x = 34
+		y = 2
+		prerequisite = {
+			focus = ZPI_nostalgist_focus
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+
+			every_owned_state = {
+				limit = {
+					OR = {
+						has_state_category = rural 
+						has_state_category = pastoral
+						has_state_category = wasteland
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.75
+			}
+
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 1
+				category = nuclear
+			}
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.5
+				uses = 4
+				category = electronics
+				category = nuclear
+				category = rocketry
+			}
+		}
+	}
+	focus = {
+		id = ZPI_theocratic_nostalgist_focus_2
+		icon = GFX_focus_JAP_remove_the_weeds_from_the_crop
+		cost = 10
+		x = 38
+		y = 2
+		prerequisite = {
+			focus = ZPI_theocratic_nostalgist_focus
+		}
+		completion_reward = {
+			add_ideas = ZPI_theocratic_nostalgist_industry
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+	}
+	focus = {
+		id = ZPI_theocratic_nostalgist_bonus
+		icon = GFX_focus_generic_catholic_dominion
+		cost = 5
+		x = 40
+		y = 2
+		prerequisite = {
+			focus = ZPI_theocratic_nostalgist_focus
+		}
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = ZPI_theocratic_nostalgist_idea
+				add_idea = ZPI_theocratic_nostalgist_bonus_idea
+			}
+		}
+	}
+	focus = {
+		id = ZPI_fascist_focus
+		icon = GFX_focus_RAJ_to_shake_the_world
+		cost = 10
+		x = 36
+		y = 3
+		prerequisite = {
+			focus = ZPI_nostalgist_focus_2
+			focus = ZPI_theocratic_nostalgist_focus_2
+		}
+		completion_reward = { 
+			add_ideas = ZPI_fascist_buff
+		}
+	}	
+
+	focus = {
+		id = ZPI_destroy_the_enemies
+		icon = GFX_focus_GER_our_place_in_the_sun
+		cost = 10
+		x = 23
+		y = 4
+		mutually_exclusive = {
+			focus = ZPI_destroy_the_enemies
+			focus = ZPI_good_soldier
+		}
+		available = {
+			ZPK	= {
+				has_war = yes
+			}
+			ZPI = {
+				is_subject = no
+			}
+		}
+		prerequisite = {
+			focus = ZPI_neutrality_focus
+			focus = ZPI_democratic_focus
+			focus = ZPI_communist_focus
+			focus = ZPI_fascist_focus
+		}
+		completion_reward = { 
+			create_wargoal = {
+				type = annex_everything
+				target = ZPK
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ZPC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ZPT
+			}
+			add_named_threat = {
+				threat = 5
+				name = ZPI_joined_civil_war
+			}
+			custom_effect_tooltip = ZPI_gain_cores
+			hidden_effect = {
+				1116 = {
+					add_core_of = ZPI
+				}
+				1109 = {
+					add_core_of = ZPI
+				}
+				1145 = {
+					add_core_of = ZPI
+				}
+				1130 = {
+					add_core_of = ZPI
+				}
+				1119 = {
+					add_core_of = ZPI
+				}
+				1070 = {
+					add_core_of = ZPI
+				}
+				1093 = {
+					add_core_of = ZPI
+				}
+				1051 = {
+					add_core_of = ZPI
+				}
+				1037 = {
+					add_core_of = ZPI
+				}
+				1096 = {
+					add_core_of = ZPI
+				}
+				1075 = {
+					add_core_of = ZPI
+				}
+				1091 = {
+					add_core_of = ZPI
+				}
+				1097 = {
+					add_core_of = ZPI
+				}
+				1135 = {
+					add_core_of = ZPI
+				}
+				1081 = {
+					add_core_of = ZPI
+				}
+				1120 = {
+					add_core_of = ZPI
+				}
+				1022 = {
+					add_core_of = ZPI
+				}
+				1058 = {
+					add_core_of = ZPI
+				}
+				1144 = {
+					add_core_of = ZPI
+				}
+				1235 = {
+					add_core_of = ZPI
+				}
+				1105 = {
+					add_core_of = ZPI
+				}
+				
+			}
+		}
+		
+	}
+	focus = {
+		id = ZPI_good_soldier
+		icon = GFX_focus_generic_subjugation
+		cost = 5
+		x = 25
+		y = 4
+		available = {
+			ZPI = {
+				OR = {
+					AND = {
+						has_government = democratic
+						ZPK = {
+							exists = yes
+						}
+					}
+					AND = {
+						has_government = communism
+						ZPC = {
+							exists = yes
+						}
+					}
+					AND = {
+						ZPT = {
+							has_country_leader_ideology = penguin_theocracy
+							exists = yes
+						}
+						has_country_leader_ideology = penguin_theocracy
+					}
+					AND = {
+						ZPT = {
+							has_country_leader_ideology = theocratic_nostalgism
+							exists = yes
+						}
+						has_country_leader_ideology = theocratic_nostalgism
+					}
+				}
+				check_variable = {
+					var = ZPI.rejected
+					value = true
+					compare = not_equals
+				}
+			}
+		}
+		mutually_exclusive = {
+			focus = ZPI_destroy_the_enemies
+			focus = ZPI_good_soldier
+		}
+		prerequisite = {
+			focus = ZPI_neutrality_focus
+			focus = ZPI_democratic_focus
+			focus = ZPI_communist_focus
+			focus = ZPI_fascist_focus
+		}
+		completion_reward = { 
+			add_stability = 0.1
+			if = {
+				limit = { 
+					ZPI = {
+						has_government = democratic
+					}
+				}
+				ZPK = {
+					country_event = {
+						id = ZPI_diplo_event.1
+						hours = 12
+					}
+				}
+			}
+			if = {
+				limit = { 
+					ZPI = {
+						has_government = communism
+					}
+				}
+				ZPC = {
+					country_event = {
+						id = ZPI_diplo_event.1
+						hours = 12
+					}
+				}
+			}
+			if = {
+				limit = { 
+					ZPI = {
+						has_country_leader_ideology = theocratic_nostalgism
+					}
+					ZPT = {
+						has_country_leader_ideology = theocratic_nostalgism
+					}
+				}
+				ZPT = {
+					country_event = {
+						id = ZPI_diplo_event.1
+						hours = 12
+					}
+				}
+			}
+			if = {
+				limit = { 
+					ZPI = {
+						has_country_leader_ideology = penguin_theocracy
+					}
+					ZPT = {
+						has_country_leader_ideology = penguin_theocracy
+					}
+				}
+				ZPT = {
+					country_event = {
+						id = ZPI_diplo_event.1
+						hours = 12
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = ZPI_invalid_focus_outcome
+			}
+		}
+	}
+	focus = {
+		id = ZPI_unification
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		x = 23
+		y = 5
+		prerequisite = {
+			focus = ZPI_destroy_the_enemies
+		}
+		available = {
+			ZPC = {
+				exists = no
+			}
+			ZPK = {
+				exists = no
+			}
+			ZPT = {
+				exists = no
+			}
+			1061 = {
+				is_controlled_by = ZPI
+			}
+		}
+		completion_reward = { 
+			add_stability = -0.1
+			add_popularity = {
+				ideology = ROOT
+				popularity = 0.1
+			}
+			add_political_power = 100
+			set_cosmetic_tag = ZPI_reunified
+			set_capital = {
+				state = 1061
+			}
+		}
+	}	
+	focus = {
+		id = ZPI_research_slot
+		icon = GFX_focus_research
+		cost = 5
+		x = 25
+		y = 5
+		prerequisite = {
+			focus = ZPI_destroy_the_enemies
+			focus = ZPI_good_soldier
+		}
+		available = {
+			
+		}
+		completion_reward = { 
+			add_research_slot = 1
+		}
+	}	
+	focus = {
+		id = ZPI_neutrality_post_war
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 5
+		x = 21
+		y = 6
+		prerequisite = {
+			focus = ZPI_unification
+		}
+		available = {
+			has_government = neutrality
+		}
+		completion_reward = { 
+			every_country = {
+				
+				limit = {
+					#is_on_same_continent_as = ZPI
+					any_owned_state = {
+						is_on_same_continent_as = ZPI
+					}
+					NOT = {
+						tag = ZPI
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}
+				}
+			}
+		}
+	}	
+	focus = {
+		id = ZPI_democratic_post_war
+		icon = GFX_goal_support_democracy
+		cost = 5
+		x = 23
+		y = 6
+		prerequisite = {
+			focus = ZPI_unification
+		}
+		available = {
+			has_government = democratic
+		}
+		completion_reward = { 
+			add_ideas = ZPI_democratic_win_idea
+			set_party_rule = {
+				ideology = democratic
+				#desc = TAG_my_rule_description
+				can_create_factions = yes
+				can_join_factions = yes
+			}
+		}
+	}	
+	focus = {
+		id = ZPI_communism_post_war
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		cost = 5
+		x = 25
+		y = 6
+		prerequisite = {
+			focus = ZPI_unification
+		}
+		available = {
+			has_government = communism
+		}
+		completion_reward = { 
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			add_ideas = ZPI_communism_win_idea
+			add_war_support = 0.1
+			create_faction_from_template = {
+				template = faction_template_world_revolution
+				name = "Nihilist International"
+				icon = GFX_faction_logo_generic_9
+				color = { 0 0 0 }
+			}
+		}
+	}	
+	focus = {
+		id = ZPI_fascism_post_war
+		icon = GFX_focus_PHI_cobalt_supremacy
+		cost = 5
+		x = 27
+		y = 6
+		prerequisite = {
+			focus = ZPI_unification
+		}
+		available = {
+			has_government = fascism
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1
+				uses = 2
+				#category = electronics
+				category = nuclear
+				category = rocketry
+			}
+			every_country = {
+				limit = {
+					NOT = { tag = ROOT }
+					is_subject = no 
+				}
+				ROOT = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}
+				}
+			}
+		}
+	}	
+	focus = {
+		id = ZPI_navy_focus
+		icon = GFX_focus_JAP_naval_armaments_program
+		cost = 10
+		x = 21
+		y = 5
+		prerequisite = {
+			focus = ZPI_destroy_the_enemies
+			focus = ZPI_good_soldier
+		}
+		completion_reward = { 
+			navy_experience = 50
+			add_ideas = ZPI_navy_idea
+		}
+	}
+	focus = {
+		id = ZPI_air_focus
+		icon = GFX_focus_JAP_z_bomber_project
+		cost = 10
+		x = 27
+		y = 5
+		prerequisite = {
+			focus = ZPI_destroy_the_enemies
+			focus = ZPI_good_soldier
+		}
+		completion_reward = { 
+			air_experience = 50
+			add_ideas = ZPI_air_idea
+		}
+	}
 }

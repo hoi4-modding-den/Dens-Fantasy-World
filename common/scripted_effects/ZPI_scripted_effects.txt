@@ -1022,6 +1022,26 @@ else_if = {
 		}
 	}
 }
+else_if = {
+    limit = { 
+		check_variable = { 
+			var = ZPI_high_id 
+			value = 10 #tie
+			compare = equals
+		} 
+		check_variable = { 
+			var = ZPI_tied_once 
+			value = 1 #tied already
+			compare = equals
+		} 
+	}
+	ZPI = {
+		country_event = {
+			id = ZPI_natural_event.3
+			days = 3
+		}
+	}
+}
 else = { #just in case
     ZPI = {
 		country_event = {

@@ -1,0 +1,154 @@
+ZPT_skeleton_content_cat = {
+	ZPT_war_decision = {
+		icon = GFX_decision_generic_ignite_civil_war
+
+		priority = 100
+
+		activation = {
+			country_exists = ZPK
+		}
+
+    	allowed = {
+			OR = {
+    	   		tag = ZPT
+				tag = ZPC
+			}
+
+    	}
+
+    	available = {
+			always = no
+    	}
+
+        cancel_trigger = {
+			ZPK = {
+				exists = no
+			}
+        }
+
+    	is_good = yes
+
+		fire_only_once = yes
+
+    	days_mission_timeout = 555
+        selectable_mission = no
+        war_with_on_timeout = ZPK
+        complete_effect = {
+            
+        }
+
+    	timeout_effect = {
+			declare_war_on = {
+				target = ZPK
+				type = annex_everything
+			}
+		} 
+    }
+	ZPT_war_decision_notification = {
+		icon = GFX_decision_generic_ignite_civil_war
+
+		priority = 100
+
+		activation = {
+			country_exists = ZPK
+		}
+
+    	allowed = {
+			OR = {
+    	   		tag = ZPK
+			}
+
+    	}
+
+    	available = {
+			always = no
+    	}
+
+        cancel_trigger = {
+			ZPK = {
+				exists = no
+			}
+        }
+
+    	is_good = no
+
+		fire_only_once = yes
+
+    	days_mission_timeout = 555
+        selectable_mission = no
+        war_with_on_timeout = ZPK
+        complete_effect = {
+            
+        }
+
+    	timeout_effect = {
+			effect_tooltip = {
+				ZPT = {
+					declare_war_on = {
+						target = ZPK
+						type = annex_everything
+					}
+				}
+				ZPC = {
+					declare_war_on = {
+						target = ZPK
+						type = annex_everything
+					}
+				}
+			}
+		} 
+    }
+	ZPT_war_decision_late_stage = {
+		icon = GFX_decision_generic_ignite_civil_war
+
+		priority = 100
+
+		activation = {
+			ZPK = {
+				exists = no
+			}
+		}
+
+    	allowed = {
+			OR = {
+    	   		tag = ZPT
+				#tag = ZPC
+			}
+
+    	}
+
+    	available = {
+			always = no
+    	}
+
+        cancel_trigger = {
+			ZPC = {
+				exists = no
+			}
+        }
+
+    	is_good = yes
+
+		fire_only_once = yes
+
+    	days_mission_timeout = 30
+        selectable_mission = no
+        war_with_on_timeout = ZPC
+        complete_effect = {
+            
+        }
+
+    	timeout_effect = {
+			if = {
+				limit = { 
+					tag = ZPT
+				}
+				declare_war_on = {
+					target = ZPC
+					type = annex_everything
+				}
+			}
+			
+		} 
+    }
+}

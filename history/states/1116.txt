@@ -30,9 +30,11 @@ state={
 			
 			14789 = {
 				naval_base = 1
+				supply_node = 1
 			}
 			14799 = {
 				naval_base = 2
+				supply_node = 1
 			}
 			
 		}

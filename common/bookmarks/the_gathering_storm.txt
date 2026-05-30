@@ -72,6 +72,18 @@ bookmarks = {
 				ZBT_memory_of_chrysea
 			}
 		}
+		ZPI = {
+			history = "ZPI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+				ZPI_social_democratic_totalist_bonus
+				ZPI_good_soldier
+				ZPI_unification
+			}
+		}
 		
 		"---"={
 			history = OTHER_GATHERING_STORM_DESC
