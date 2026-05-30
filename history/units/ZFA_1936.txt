@@ -87,24 +87,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
-    division = {
-		location = 3166
-		division_template = "Yezizibi Hayilochi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-    division = {
-		location = 3176
-		division_template = "Yezizibi Hayilochi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-    division = {
-		location = 253
-		division_template = "Yezizibi Hayilochi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
 }
 instant_effect = {
 	add_equipment_production = {

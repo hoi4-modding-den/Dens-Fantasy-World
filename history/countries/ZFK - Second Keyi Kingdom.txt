@@ -26,8 +26,8 @@ add_ideas = {
         ZFK_underdeveloped_mess
 }
 
-set_stability = 0.2
-set_war_support = 0.5
+set_stability = 0.4
+set_war_support = 0.55
 set_convoys = 0
 
 recruit_character = ZFK_kokeyi_ii

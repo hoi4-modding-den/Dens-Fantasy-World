@@ -26,7 +26,7 @@ add_ideas = {
         ZFA_factionalism_within_front
 }
 
-set_stability = 0.15
+set_stability = 0.4
 set_war_support = 0.6
 set_convoys = 0
 

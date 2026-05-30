@@ -75,12 +75,6 @@ division = {
 		start_equipment_factor = 0.8
 	}
 division = {
-		location = 11646
-		division_template = "Semayawi Kififili"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.6
-	}
-division = {
 		location = 11660
 		division_template = "Semayawi Kififili"
 		start_experience_factor = 0.15
@@ -93,12 +87,6 @@ division = {
 		start_equipment_factor = 0.9
 	}
 division = {
-		location = 11651
-		division_template = "Semayawi Kififili"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.45
-	}
-division = {
 		location = 11663
 		division_template = "Semayawi Kififili"
 		start_experience_factor = 0.1
@@ -109,12 +97,6 @@ division = {
 		division_template = "Semayawi Kififili"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.45
-	}
-division = {
-		location = 11655
-		division_template = "Semayawi Kififili"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.4
 	}
 division = {
 		location = 11658

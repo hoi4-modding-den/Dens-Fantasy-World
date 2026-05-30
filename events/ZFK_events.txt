@@ -25,6 +25,144 @@ country_event = { # Civil War Ends
 		custom_effect_tooltip = generic_skip_one_line_tt
 	}
 }
+country_event = { # Look to west
+	id = ZFK_cw_events.2
+	title = ZFK_cw_events.2.t
+	desc = ZFK_cw_events.2.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.2.a
+	}
+}
+country_event = { # Contact the Blackcloaks
+	id = ZFK_cw_events.3
+	title = ZFK_cw_events.3.t
+	desc = ZFK_cw_events.3.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.3.a
+		random_list = {
+			75 = { country_event = { id = ZFK_cw_events.4 days = 3 } } #success
+			25 = { country_event = { id = ZFK_cw_events.5 days = 3 } } #failture
+		}
+	}
+}
+country_event = { # Success in contacting blackcloaks
+	id = ZFK_cw_events.4
+	title = ZFK_cw_events.4.t
+	desc = ZFK_cw_events.4.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.4.a
+	}
+}
+country_event = { # Failture in contacting blackcloaks
+	id = ZFK_cw_events.5
+	title = ZFK_cw_events.5.t
+	desc = ZFK_cw_events.5.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.5.a
+			set_country_flag = ZFK_blackcloaks_denied
+	}
+}
+country_event = { # Talks with maruni
+	id = ZFK_cw_events.6
+	title = ZFK_cw_events.6.t
+	desc = ZFK_cw_events.6.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.6.a
+	}
+}
+country_event = { # Emenies dont wait
+	id = ZFK_cw_events.7
+	title = ZFK_cw_events.7.t
+	desc = ZFK_cw_events.7.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.7.a
+	}
+}
+country_event = { # Sayani Means Evil
+	id = ZFK_cw_events.8
+	title = ZFK_cw_events.8.t
+	desc = ZFK_cw_events.8.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.8.a
+	}
+}
+country_event = { # Heart of Corruption
+	id = ZFK_cw_events.9
+	title = ZFK_cw_events.9.t
+	desc = ZFK_cw_events.9.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.9.a
+	}
+}
+country_event = { # Throw Unetu Out
+	id = ZFK_cw_events.10
+	title = ZFK_cw_events.10.t
+	desc = ZFK_cw_events.10.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.10.a
+	}
+}
+country_event = { # Noble Meeting
+	id = ZFK_cw_events.11
+	title = ZFK_cw_events.11.t
+	desc = ZFK_cw_events.11.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.11.a
+	}
+}
+country_event = { # Speech in Keytysawi
+	id = ZFK_cw_events.12
+	title = ZFK_cw_events.12.t
+	desc = ZFK_cw_events.12.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.12.a
+	}
+}
+
 news_event = { # end of civil war global
 	id = ZFK_news_events.1
 	title = ZFK_news_events.1.t
