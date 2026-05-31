@@ -52,14 +52,12 @@ ideas = {
                 always = yes 
             }
 			
-			modifier = {
                         targeted_modifier = {
                                    tag = ZFS
                                    attack_bonus_against = 0.2
                                    breakthrough_bonus_against = 0.2
                               		}
 			     }
-                   }
                     ZFK_rise_of_monarchism = {
                            picture = CHI_inefficient_economy
 			
