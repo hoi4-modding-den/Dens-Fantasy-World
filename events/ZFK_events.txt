@@ -184,6 +184,7 @@ country_event = { # Smuggling success
 			}
 			hidden_effect = {
 				ZSP = { country_event = { id = ZFK_cw_events.16 } }
+		}
 	}
 }
 country_event = { # Smuggling success partial

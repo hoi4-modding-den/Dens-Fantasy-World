@@ -127,11 +127,9 @@ focus_tree={
 		completion_reward = {
 			custom_effect_tooltip = ZFK_smuggling_weapons_tt
 			random_list = {
-				hidden_effect = {
 				30 = { country_event = { id = ZFK_cw_events.13 days = 20 } } #success
 				50 = { country_event = { id = ZFK_cw_events.14 days = 20 } } #partial
 				20 = { country_event = { id = ZFK_cw_events.15 days = 20 } } #failture
-			}
 		}
           }
      }

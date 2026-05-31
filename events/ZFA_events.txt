@@ -185,6 +185,7 @@ country_event = { # Proposal To Pichi (for pichi)
 
 	option = {
 		name = ZFA_cw_events.11.a
+		ai_chance = { base = 0.4 }
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -500
@@ -198,6 +199,7 @@ country_event = { # Proposal To Pichi (for pichi)
 	}
 	option = {
 		name = ZFA_cw_events.11.b
+		ai_chance = { base = 0.6 }
                 ZFA = { country_event = { id = ZFA_cw_events.13 } }
 	}
 }

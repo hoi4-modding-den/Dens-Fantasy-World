@@ -73,15 +73,15 @@ country_event = { # Duukkamipi
 
 	option = {
 		name = ZFB_cw_events.4.a
-			ZFC = { country_event = { id = ZFB_cw_events.5 } }
+			ZFC = { country_event = { id = ZFB_cw_events.5 days = 2 } }
 	}
 	option = {
 		name = ZFB_cw_events.4.b
-			ZFC = { country_event = { id = ZFB_cw_events.6 } }
+			ZFC = { country_event = { id = ZFB_cw_events.6 days = 2 } }
 	}
 	option = {
 		name = ZFB_cw_events.4.c
-			ZFC = { country_event = { id = ZFB_cw_events.7 } }
+			ZFC = { country_event = { id = ZFB_cw_events.7 days = 2} }
 	}
 }
 country_event = { # Aid for Bicha - Infantry (Southern Frontier)
@@ -94,6 +94,7 @@ country_event = { # Aid for Bicha - Infantry (Southern Frontier)
 
 	option = {
 		name = ZFB_cw_events.5.a
+		ai_chance = { base = 0.25 }
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -500
@@ -103,6 +104,7 @@ country_event = { # Aid for Bicha - Infantry (Southern Frontier)
 	}
 	option = {
 		name = ZFB_cw_events.5.b
+		ai_chance = { base = 0.5 }
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -250
@@ -112,6 +114,7 @@ country_event = { # Aid for Bicha - Infantry (Southern Frontier)
 	}
 	option = {
 		name = ZFB_cw_events.5.c
+		ai_chance = { base = 0.75 }
 			ZFB = { country_event = { id = ZFB_cw_events.14 } }
 	}
 }
@@ -125,6 +128,7 @@ country_event = { # Aid for Bicha - Infantry and Support (Southern Frontier)
 
 	option = {
 		name = ZFB_cw_events.6.a
+		ai_chance = { base = 0.2 }
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -500
@@ -139,6 +143,7 @@ country_event = { # Aid for Bicha - Infantry and Support (Southern Frontier)
 	}
 	option = {
 		name = ZFB_cw_events.6.b
+		ai_chance = { base = 0.4 }
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -250
@@ -148,6 +153,7 @@ country_event = { # Aid for Bicha - Infantry and Support (Southern Frontier)
 	}
 	option = {
 		name = ZFB_cw_events.6.c
+		ai_chance = { base = 0.75 }
 			ZFB = { country_event = { id = ZFB_cw_events.14 } }
 	}
 }
@@ -161,6 +167,7 @@ country_event = { # Aid for Bicha - Infantry, Support and Artillery (Southern Fr
 
 	option = {
 		name = ZFB_cw_events.7.a
+		ai_chance = { base = 0.2 }
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -500
@@ -180,6 +187,7 @@ country_event = { # Aid for Bicha - Infantry, Support and Artillery (Southern Fr
 	}
 	option = {
 		name = ZFB_cw_events.7.b
+		ai_chance = { base = 0.4 }
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -250
@@ -189,6 +197,7 @@ country_event = { # Aid for Bicha - Infantry, Support and Artillery (Southern Fr
 	}
 	option = {
 		name = ZFB_cw_events.7.c
+		ai_chance = { base = 0.85 }
 			ZFB = { country_event = { id = ZFB_cw_events.14 } }
 	}
 }
