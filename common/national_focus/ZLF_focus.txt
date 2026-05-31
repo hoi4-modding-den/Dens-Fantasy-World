@@ -3800,9 +3800,9 @@ focus_tree={
 				add_idea = ZLF_intervention_corps_3
 			}
 
-			custom_effect_tooltip = ZLF_towards_a_world_state_tt
+			#custom_effect_tooltip = ZLF_towards_a_world_state_tt
 
-			custom_effect_tooltip = generic_skip_one_line_tt
+			#custom_effect_tooltip = generic_skip_one_line_tt
 
 			reduce_focus_completion_cost = {
 				focus = ZLF_promote_international_solidarity

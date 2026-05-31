@@ -150,14 +150,14 @@
  ZLF_faction_goal_defeat_of_despotism_name: "Arms Against Tyranny"
  ZLF_faction_goal_defeat_of_despotism_desc: "To stop tyranny once and for all, we need to start at home by eradicating them in our part of the world."
  ZLF_faction_goal_federalisation_mission_name: "Federalisation Initiative"
- ZLF_faction_goal_federalisation_mission_desc: ""
+ ZLF_faction_goal_federalisation_mission_desc: "We need to expand our efforts to integrate our allied nations in preparations of establishing a World State."
  ZLF_faction_goal_democratic_support_mission_name: "The Democratic Mission"
- ZLF_faction_goal_democratic_support_mission_desc: ""
+ ZLF_faction_goal_democratic_support_mission_desc: "Even if not all democracies are aligned with our values, they are still more likely to work with us than the dictators and tyrants of the world. Supporting the growth of democracy, no matter the kind, must be our secondary mission."
  ZLF_faction_manifest_republican_revolution_name: "Spread the Popular Revolution"
  ZLF_faction_manifest_republican_revolution_desc: "The Edelweiss Revolution started in Gardenia, but it is destined to spread across the continent, liberating the people from despots and tyrants alike."
 
  ZLF_joining_rule_non_despotist: "Non-Despots Only"
- ZLF_joining_rule_tewarean_only: "Tewareans Only"
+ ZLF_joining_rule_tewarean_only: "Tewarean Nations Only"
 
  FOCUS_FILTER_HISTORICAL_FACTION_GOAL_FILTER: "Scripted Goals"
 

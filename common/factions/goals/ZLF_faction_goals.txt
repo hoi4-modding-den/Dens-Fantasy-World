@@ -340,7 +340,7 @@ ZLF_faction_goal_federalisation_mission = {
 				input = collection:country_and_all_subjects
 				name = COLLECTION_COUNTRY_AND_ALL_SUBJECTS
 			}
-			value > 9
+			value > 5
 		}
 	}
 	complete_effect = {

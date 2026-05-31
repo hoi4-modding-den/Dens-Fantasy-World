@@ -76,6 +76,7 @@ ZLF_world_state_integration_cat = {
 	priority = 50
 
 	visible = {
+		always = no # unfinished
 		has_completed_focus = ZLF_towards_a_world_state
 		is_faction_leader = yes
 	}

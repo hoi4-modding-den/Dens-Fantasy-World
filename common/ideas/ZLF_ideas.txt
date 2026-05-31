@@ -1166,7 +1166,7 @@ ideas = {
 				send_volunteers_tension = -1
                 lend_lease_tension = -1
                 no_supply_grace = 240
-                research_speed_factor = 0.1
+                research_speed_factor = 0.15
                 democratic_drift_from_guarantees = 0.02
                 communism_drift_from_guarantees = 0.02
             }
