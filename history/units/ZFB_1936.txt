@@ -81,23 +81,11 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
-    division = {
-		location = 9020
-		division_template = "Kelali Birigedi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.6
-	}
 division = {
 		location = 9023
 		division_template = "Kelali Birigedi"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-	}
-division = {
-		location = 9023
-		division_template = "Yeigirenya Kifili"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
 	}
 division = {
 		location = 9025

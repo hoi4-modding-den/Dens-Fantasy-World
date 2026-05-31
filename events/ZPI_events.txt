@@ -17,7 +17,6 @@ add_namespace = ZPI_theocratic_nostalgist_event #TNE
 country_event = { #quiz error - default value
     id = ZPI_debug_event.1
     title = ZPI.XE_1.t
-    #picture = GFX_report_event_tur_sultan_and_pashas
     desc = ZPI.XE_1.d
 
     is_triggered_only = yes
@@ -26,16 +25,11 @@ country_event = { #quiz error - default value
 		ai_chance = {
 			base = 100
 		}
-		
-		hidden_effect = {
-
-		}
     }
 }
 country_event = { #quiz error - invalid value
     id = ZPI_debug_event.2
     title = ZPI.XE_2.t
-    #picture = GFX_report_event_tur_sultan_and_pashas
     desc = ZPI.XE_2.d
 
     is_triggered_only = yes
@@ -44,17 +38,10 @@ country_event = { #quiz error - invalid value
 		ai_chance = {
 			base = 100
 		}
-		
-		hidden_effect = {
-
-		}
     }
 }
 country_event = { #quiz RNG handler (fuck-ass paradox with it's seeded RNG making my quiz run in infinite loops)
     id = ZPI_debug_event.3
-    #title = ZPI.XE_3.t
-    #picture = GFX_report_event_tur_sultan_and_pashas
-    #desc = ZPI.XE_3.d
     hidden = yes 
     is_triggered_only = yes
 	option = {
@@ -63,9 +50,6 @@ country_event = { #quiz RNG handler (fuck-ass paradox with it's seeded RNG makin
 			base = 100
 		}
 		ZPI_quiz_check = yes
-		hidden_effect = {
-
-		}
     }
 }
 
@@ -101,7 +85,6 @@ country_event = { #tiebreaker event
 			base = 100
 		}
 		custom_effect_tooltip = ZPI.NE_2.a.t
-        ZPI_quiz_check = yes
 		hidden_effect = { #yes I know this is a bad way to do this, makes it more likely to get the easter egg
             add_to_variable = {
                 var = ZPI_theocratic_nostalgist_points
@@ -111,6 +94,11 @@ country_event = { #tiebreaker event
                 var = ZPI_theocratic_points
                 value = 2
             }
+            add_to_variable = {
+				var = ZPI_tied_once
+				value = 1
+			}
+        ZPI_quiz_check = yes
 		}
     }
     option = { #girl
@@ -119,7 +107,7 @@ country_event = { #tiebreaker event
 			base = 100
 		}
 		custom_effect_tooltip = ZPI.NE_2.b.t
-        ZPI_quiz_check = yes
+        
 		hidden_effect = {
             add_to_variable = {
                 var = ZPI_autocratic_points
@@ -129,6 +117,11 @@ country_event = { #tiebreaker event
                 var = ZPI_social_democratic_points
                 value = 2
             }
+            add_to_variable = {
+				var = ZPI_tied_once
+				value = 1
+			}
+            ZPI_quiz_check = yes
 		}
     }
     option = { #neither
@@ -137,7 +130,7 @@ country_event = { #tiebreaker event
 			base = 100
 		}
 		custom_effect_tooltip = ZPI.NE_2.c.t
-        ZPI_quiz_check = yes
+        
 		hidden_effect = {
             add_to_variable = {
                 var = ZPI_guideist_points
@@ -147,6 +140,11 @@ country_event = { #tiebreaker event
                 var = ZPI_clockist_points
                 value = 2
             }
+            add_to_variable = {
+				var = ZPI_tied_once
+				value = 1
+			}
+            ZPI_quiz_check = yes
 		}
     }
     option = { #fuck you
@@ -155,7 +153,7 @@ country_event = { #tiebreaker event
 			base = 100
 		}
 		custom_effect_tooltip = ZPI.NE_2.e.t
-        ZPI_quiz_check = yes
+        
 		hidden_effect = {
             add_to_variable = {
                 var = ZPI_nostalgist_points
@@ -165,7 +163,179 @@ country_event = { #tiebreaker event
                 var = ZPI_totalist_points
                 value = 2
             }
+            add_to_variable = {
+				var = ZPI_tied_once
+				value = 1
+			}
+            ZPI_quiz_check = yes
 		}
+    }
+}
+country_event = { #easter egg event for getting a tie twice
+    id = ZPI_natural_event.3
+    title = ZPI.NE_3.t
+    #picture = GFX_report_event_tur_sultan_and_pashas
+    desc = ZPI.NE_3.d
+
+    is_triggered_only = yes
+	option = {
+        name = ZPI.NE_3.a #Neutrality
+		ai_chance = {
+			base = 100
+		}
+		set_cosmetic_tag = ZPI_easter_egg
+        promote_character = ZPI_easter_egg_3
+        set_politics = {
+            ruling_party = neutrality
+            elections_allowed = no
+            name = ZPI_easter_egg_neutrality_party
+            long_name = ZPI_easter_egg_neutrality_party_long
+        }
+        complete_national_focus = ZPI_autocratic_start
+        complete_national_focus = ZPI_theocratic_start
+    }
+    option = {
+        name = ZPI.NE_3.b #Democratic
+		ai_chance = {
+			base = 100
+		}
+		set_cosmetic_tag = ZPI_easter_egg
+        promote_character = ZPI_easter_egg_2
+        set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+            name = ZPI_easter_egg_democratic_party
+            long_name = ZPI_easter_egg_democratic_party_long
+        }
+        complete_national_focus = ZPI_clockist_start
+        complete_national_focus = ZPI_social_democratic_start
+    }
+    option = {
+        name = ZPI.NE_3.c #Communist
+		ai_chance = {
+			base = 100
+		}
+		set_cosmetic_tag = ZPI_easter_egg
+        promote_character = ZPI_easter_egg_4
+        set_politics = {
+            ruling_party = communism
+            elections_allowed = no
+            name = ZPI_easter_egg_communist_party
+            long_name = ZPI_easter_egg_communist_party_long
+        }
+        complete_national_focus = ZPI_guideist_start
+        complete_national_focus = ZPI_totalist_start
+    }
+    option = {
+        name = ZPI.NE_3.e #Fascist
+		ai_chance = {
+			base = 100
+		}
+		set_cosmetic_tag = ZPI_easter_egg
+        promote_character = ZPI_easter_egg_1
+        set_politics = {
+            ruling_party = fascism
+            elections_allowed = no
+            name = ZPI_easter_egg_fascism_party
+            long_name = ZPI_easter_egg_fascism_party_long
+        }
+        complete_national_focus = ZPI_nostalgist_start
+        complete_national_focus = ZPI_theocratic_nostalgist_start
+    }
+}
+
+#News Events#
+#note to self: add news event for winning civil war
+
+#Diplomatic Events#
+country_event = { #plz puppet us
+    id = ZPI_diplo_event.1
+    title = ZPI.DE_1.t
+    desc = ZPI.DE_1.d
+
+    is_triggered_only = yes
+	option = {
+        name = ZPI.DE_1.a
+		ai_chance = {
+			base = 100
+		}
+		puppet = {
+            target = ZPI
+        }
+        hidden_effect = {
+            ZPI = {
+                country_event = {
+                    id = ZPI_diplo_event.3
+                    hours = 6
+                }
+            }
+        }
+    }
+    option = {
+        name = ZPI.DE_1.b
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -10 
+        hidden_effect = {
+            ZPI = {
+                country_event = {
+                    id = ZPI_diplo_event.2
+                    hours = 6
+                }
+            }
+        }
+    }
+}
+country_event = { #rejected
+    id = ZPI_diplo_event.2
+    title = ZPI.DE_2.t
+    desc = ZPI.DE_2.d
+
+    is_triggered_only = yes
+	option = {
+        name = ZPI.DE_2.a
+		ai_chance = {
+			base = 100
+		}
+        uncomplete_national_focus = {
+            focus = ZPI_good_soldier
+        }
+        set_variable = {
+            var = ZPI.rejected
+            value = true
+        }
+    }
+}
+country_event = { #accepted
+    id = ZPI_diplo_event.3
+    title = ZPI.DE_3.t
+    desc = ZPI.DE_3.d
+
+    is_triggered_only = yes
+	option = {
+        name = ZPI.DE_3.a
+		ai_chance = {
+			base = 100
+		}
+        if = {
+            limit = {
+                is_subject_of = ZPK
+            }
+            set_cosmetic_tag = ZPI_ZPK_puppet 
+        }
+        if = {
+            limit = {
+                is_subject_of = ZPC
+            }
+            set_cosmetic_tag = ZPI_ZPC_puppet 
+        }
+        if = {
+            limit = {
+                is_subject_of = ZPT
+            }
+            set_cosmetic_tag = ZPI_ZPT_puppet 
+        }
     }
 }
 

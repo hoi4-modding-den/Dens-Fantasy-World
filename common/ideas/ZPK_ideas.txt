@@ -12,7 +12,7 @@ ideas = {
 				naval_detection = 0.1
 				naval_night_attack = 0.1
 				air_mission_efficiency = -0.1
-				
+				navy_casualty_on_sink = -0.5
 			}
 		}
 	}

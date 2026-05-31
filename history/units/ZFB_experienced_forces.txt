@@ -1,0 +1,39 @@
+division_template = {
+	name = "Bīchi Kifawī"
+    template_counter = 118
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+                infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+                artillery = { x = 2 y = 0 }
+
+	}
+	support = {
+        engineers = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+    division = {
+        name = "1st Bīchi Kifawī"
+		location = 10337
+		division_template = "Bīchi Kifawī"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+		start_manpower_factor = 1
+	}
+    division = {
+        name = "2nd Bīchi Kifawī"
+		location = 10337
+		division_template = "Bīchi Kifawī"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+		start_manpower_factor = 1
+	}
+}

@@ -66,6 +66,7 @@ focus_tree={
         }
 		
 		completion_reward = {
+			country_event = ZFS_cw_events.2
           }
      }
 	focus = {
@@ -84,6 +85,9 @@ focus_tree={
         }
 		
 		available = {
+			hidden_trigger = {
+            			has_country_flag = ZFS_cw_democratic_military
+			}
             
         }
 
@@ -118,6 +122,8 @@ focus_tree={
         }
 		
 		completion_reward = {
+			custom_effect_tooltip = ZFS_semayawi_army_tt
+            		hidden_effect = { load_oob = "ZFS_semayawi_army" }
           }
      }
 	focus = {
@@ -144,12 +150,16 @@ focus_tree={
         }
 		
 		completion_reward = {
+			hidden_trigger = {
+            			has_country_flag = ZFS_cw_military_military
+			}
+
           }
      }
 	focus = {
 		id = ZFS_appease_sna
 		icon = GFX_focus_PLACEHOLDER
-                prerequisite = { focus = ZFS_ywh_affairs }
+                prerequisite = { focus = ZFS_military_says_loyalty }
 		mutually_exclusive = { focus = ZFS_only_the_best }
 		x = 6
 		y = 3
@@ -170,6 +180,8 @@ focus_tree={
         }
 		
 		completion_reward = {
+			custom_effect_tooltip = ZFS_mixed_army_tt
+            		hidden_effect = { load_oob = "ZFS_mixed_army" }
           }
      }
 	focus = {
@@ -196,6 +208,8 @@ focus_tree={
         }
 		
 		completion_reward = {
+			custom_effect_tooltip = ZFS_professionals_tt
+            		hidden_effect = { load_oob = "ZFS_professionals" }
           }
      }
 	focus = {
@@ -222,6 +236,8 @@ focus_tree={
         }
 		
 		completion_reward = {
+			custom_effect_tooltip = ZFS_chebahiri_legion_tt
+            		hidden_effect = { load_oob = "ZFS_chebahiri_legion" }
           }
      }
 	focus = {

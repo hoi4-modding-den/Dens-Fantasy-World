@@ -5,4 +5,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 15252;16500;sea;17436;-1;-1;-1;-1;;Cordillera Island
 10526;19310;;-1;-1;-1;-1;-1;ALBIA_STRAIT;Albia Strait
 8470;16504;sea;18821;-1;-1;-1;-1;;Helmarn Bridge
--1;-1;;-1;-1;-1;-1;-1;-1 
+14802;14789;;-1;-1;-1;-1;-1;VALDES_STRAIT;Strait of Valdes
+15030;15031;;-1;-1;-1;-1;-1;DEMERSUS_STRAIT;Strait of Demersus
+14067;14061;impassable;-1;-1;-1;-1;-1;;Qikiqtaaluk Mountains
+14057;14061;impassable;-1;-1;-1;-1;-1;;Qikiqtaaluk Mountains
+14067;14073;impassable;-1;-1;-1;-1;-1;;Qikiqtaaluk Mountains
+14056;14073;impassable;-1;-1;-1;-1;-1;;Qikiqtaaluk Mountains
+14056;14060;impassable;-1;-1;-1;-1;-1;;Qikiqtaaluk Mountains
+15036;14060;impassable;-1;-1;-1;-1;-1;;Qikiqtaaluk Mountains
+-1;-1;-1;-1;-1;-1;-1;-1;-1

@@ -1,0 +1,35 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ZPT = {
+				activate_mission = ZPT_war_decision
+			}
+			ZPC = {
+				activate_mission = ZPT_war_decision
+			}
+		}
+	}
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = { 
+					ZPT = {
+						has_war_with = ZPK
+						check_variable = {
+							var = ZPK_war_happened
+							value = true
+							compare = not_equals
+						}
+					}
+				}
+				news_event = ZPK_news_event.1
+				ZPT = {
+					set_variable = {
+						var = ZPK_war_happened
+						value = true
+					}
+				}
+			}
+		}
+	}
+}

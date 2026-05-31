@@ -1,0 +1,288 @@
+ZPX_holy_cleanse = {
+	allowed = {
+		original_tag = ZPT
+		original_tag = ZPI
+	}
+	enable = {
+		has_government = fascism
+		has_country_leader_ideology = theocratic_nostalgism
+	}
+	abort = {
+		NOT = {
+			has_government = fascism
+		}
+	}
+
+	ai_strategy = {
+		type = scorched_earth_prio
+		value = 100
+		id = ZPC
+		states = {
+			1116
+			1109
+			1145
+		}
+	}
+	ai_strategy = {
+		type = scorched_earth_prio
+		value = 100
+		id = ZPK
+		states = {
+			1120
+			1061
+			1097
+			1135
+			1048
+			1130
+			1119
+			1070
+			1093
+			1151
+			1037
+			1096
+			1075
+			1091
+		}
+	}
+}
+ZPC_allied = {
+	allowed = {
+		original_tag = ZPC
+	}
+	enable = {
+		ZPI = {
+			has_government = communism
+		}
+	}
+	abort = {
+		ZPI = {
+			NOT = {
+				has_government = communism
+			}
+		}
+	}
+	ai_strategy = {
+		type = protect
+		id = ZPI
+		value = 25
+	}
+}
+ZPK_allied = {
+	allowed = {
+		original_tag = ZPK
+	}
+	enable = {
+		ZPI = {
+			has_government = democratic
+		}
+	}
+	abort = {
+		ZPI = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+	}
+	ai_strategy = {
+		type = protect
+		id = ZPI
+		value = 25
+	}
+}
+ZPT_allied = {
+	allowed = {
+		original_tag = ZPT
+	}
+	enable = {
+		ZPI = {
+			OR = {
+				has_country_leader_ideology = penguin_theocracy
+				has_country_leader_ideology = theocratic_nostalgism
+			}
+		}
+	}
+	abort = {
+		ZPI = {
+			NOT = {
+				has_country_leader_ideology = penguin_theocracy
+				has_country_leader_ideology = theocratic_nostalgism
+			}
+		}
+	}
+	ai_strategy = {
+		type = protect
+		id = ZPI
+		value = 25
+	}
+}
+ZPX_get_involved = {
+	allowed = {
+		original_tag = ZPK
+		original_tag = ZPT
+		original_tag = ZPC
+		original_tag = ZPI
+
+	}
+	enable = {
+		if = {
+			limit = { 
+				tag = ZPK
+				ZPT = {
+					exists = no
+				}
+				ZPC = {
+					exists = no
+				}
+				ZPI = {
+					OR = {
+						exists = no
+						is_in_faction_with = ZPK
+						is_subject_of = ZPK
+					}
+				}
+			}
+		}
+		if = {
+			limit = { 
+				tag = ZPT
+				ZPK = {
+					exists = no
+				}
+				ZPC = {
+					exists = no
+				}
+				ZPI = {
+					OR = {
+						exists = no
+						is_in_faction_with = ZPT
+						is_subject_of = ZPT
+					}
+				}
+			}
+		}
+		if = {
+			limit = { 
+				tag = ZPC
+				ZPK = {
+					exists = no
+				}
+				ZPT = {
+					exists = no
+				}
+				ZPI = {
+					OR = {
+						exists = no
+						is_in_faction_with = ZPC
+						is_subject_of = ZPC
+					}
+				}
+			}
+		}
+		if = {
+			limit = { 
+				tag = ZPI
+				ZPK = {
+					OR = {
+						exists = no
+						is_in_faction_with = ZPI
+						is_subject_of = ZPI
+					}
+				}
+				ZPT = {
+					OR = {
+						exists = no
+						is_in_faction_with = ZPI
+						is_subject_of = ZPI
+					}
+				}
+				ZPI = {
+					OR = {
+						exists = no
+						is_in_faction_with = ZPI
+						is_subject_of = ZPI
+					}
+				}
+			}
+		}
+	}
+	abort = {
+		any_core_state = {
+			is_controlled_by_ROOT_or_ally = no
+		}
+	}
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 100
+	}
+}
+ZPT_imminent_war = {
+	allowed = {
+		original_tag = ZPT
+	}
+	enable = {
+		ZPK = {
+			exists = yes
+		}
+	}
+	abort = {
+		ZPK = {
+			exists = no
+		}
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = ZPK
+		value = 50
+	}
+}
+ZPC_imminent_war = {
+	allowed = {
+		original_tag = ZPC
+	}
+	enable = {
+		ZPK = {
+			exists = yes
+		}
+	}
+	abort = {
+		ZPK = {
+			exists = no
+		}
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = ZPK
+		value = 50
+	}
+}
+ZPK_imminent_war = {
+	allowed = {
+		original_tag = ZPK
+	}
+	enable = {
+		ZPC = {
+			exists = yes
+		}
+		ZPT = {
+			exists = yes
+		}
+	}
+	abort = {
+		ZPC = {
+			exists = no
+		}
+		ZPT = {
+			exists = no
+		}
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = ZPC
+		value = 50
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = ZPT
+		value = 50
+	}
+}

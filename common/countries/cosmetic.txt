@@ -30,3 +30,19 @@ ZSP_shadow_realm = {
 	color = rgb { 50 0 0 }
 	color_ui = rgb { 50 0 0 }
 }
+ZPI_ZPK_puppet = {
+	color = rgb { 130 130 0 }
+	color_ui = rgb { 130 130 0 }
+}
+ZPI_ZPC_puppet = {
+	color = rgb { 85 0 40 }
+	color_ui = rgb { 85 0 40 }
+}
+ZPI_ZPT_puppet = {
+	color = rgb { 80 160 150 }
+	color_ui = rgb { 80 160 150 }
+}
+ZPI_easter_egg = {
+	color = rgb { 0 255 255 }
+	color_ui = rgb { 0 255 255 }
+}

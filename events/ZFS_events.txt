@@ -32,6 +32,26 @@ country_event = { # Civil War Ends
 					}
 	}
 }
+country_event = { # YWH Affairs
+	id = ZFS_cw_events.2
+	title = ZFS_cw_events.2.t
+	desc = ZFS_cw_events.2.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFS_cw_events.2.a
+			set_country_flag = ZFS_cw_democratic_military
+
+	}
+	option = {
+		name = ZFS_cw_events.2.b
+			set_country_flag = ZFS_cw_military_military
+
+	}
+}
+
 news_event = { # end of civil war global
 	id = ZFS_news_events.1
 	title = ZFS_news_events.1.t

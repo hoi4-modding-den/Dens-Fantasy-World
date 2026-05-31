@@ -82,6 +82,10 @@ on_actions = {
 					var = ZPI_high_val
 					value = 0
 				}
+				set_variable = {
+					var = ZPI_tied_once
+					value = 0
+				}
 			}
 		}
 	}

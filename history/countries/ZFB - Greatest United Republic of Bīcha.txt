@@ -26,8 +26,8 @@ add_ideas = {
         ZFB_sidelined_military
 }
 
-set_stability = 0.2
-set_war_support = 0.6
+set_stability = 0.4
+set_war_support = 0.5
 set_convoys = 0
 
 recruit_character = ZFB_talakji_unetu

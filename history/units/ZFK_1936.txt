@@ -72,12 +72,6 @@ division = {
 		start_equipment_factor = 0.7
 	}
 division = {
-		location = 8716
-		division_template = "Yenigusawi Milimochi"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-division = {
 		location = 11242
 		division_template = "Yenigusawi Milimochi"
 		start_experience_factor = 0.2
@@ -85,12 +79,6 @@ division = {
 	}
 division = {
 		location = 11247
-		division_template = "Yenigusawi Milimochi"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-division = {
-		location = 11240
 		division_template = "Yenigusawi Milimochi"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7

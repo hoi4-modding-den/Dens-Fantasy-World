@@ -1,0 +1,49 @@
+division_template = {
+	name = "Bīchi Peasants"
+    template_counter = 118
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+
+	}
+}
+
+units = {
+    division = {
+        name = "Peasants"
+		location = 10330
+		division_template = "Bīchi Peasants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.9
+	}
+    division = {
+        name = "Peasants"
+		location = 10335
+		division_template = "Bīchi Peasants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.9
+	}
+    division = {
+        name = "Peasants"
+		location = 10336
+		division_template = "Bīchi Peasants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.9
+	}
+    division = {
+        name = "Peasants"
+		location = 9021
+		division_template = "Bīchi Peasants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.9
+	}
+}

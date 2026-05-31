@@ -107,8 +107,8 @@ country_event = { # Remind about Bicha
 
 	option = {
 		name = ZFA_cw_events.6.a
-			ZFb = { country_event = { id = ZFA_cw_events.7 } 
-			add_war_support = 0.05}
+			ZFB = { country_event = { id = ZFA_cw_events.7 } }
+			add_war_support = 0.05
            }
 	}
 }
