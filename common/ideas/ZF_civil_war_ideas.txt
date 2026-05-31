@@ -23,16 +23,30 @@ ideas = {
                                 army_defence_factor = -0.25
                                 monthly_population = -0.2
                                 min_export = -0.5
-                                resistance_target = -0.5
+                                resistance_target = -0.4
                                 ai_focus_aggressive_factor = 0.5
-                                custom_modifier_tooltip = SPR_military_disloyalty_tt
 	           }
-                     on_add = {
-                               country_lock_all_division_template = {
-                                                                 is_locked = yes
-                                                                 desc = SPR_military_disloyalty_tt
-                    }
-               }
+          }
+                   ZF_reconstruction = {
+                           picture = spr_political_violence
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                             	monthly_population = -0.1
+                                resistance_target = -0.2
+				compliance_growth = 0.1
+				industry_repair_factor = 0.3
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = -0.5 
+				ai_focus_peaceful_factor = 0.5
+	           }
           }
                    ZF_offensive_ZFA = {
                            picture = chi_army_corruption3

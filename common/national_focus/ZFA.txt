@@ -120,6 +120,7 @@ focus_tree={
         }
 		
 		completion_reward = {
+				add_ideas = ZFA_paramilitary_organisations
           }
      }
 	focus = {
@@ -241,6 +242,10 @@ focus_tree={
         }
 		
 		completion_reward = {
+		add_timed_idea = {
+			idea = ZFA_fast_strike
+			days = 120
+		}
           }
 }
         focus = {
@@ -270,8 +275,43 @@ focus_tree={
 			add_war_support = -0.05
 	                custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = ZFA_recruit_peasants_tt
-            hidden_effect = { load_oob = "ZFA_peasants" }
-	}
+            	hidden_effect = {
+				division_template = {
+					name = "Peasants"
+					force_allow_recruiting = yes
+					regiments = {
+						irregular_infantry = { x = 0 y = 0 }
+						irregular_infantry = { x = 0 y = 1 }
+						irregular_infantry = { x = 1 y = 0 }
+						irregular_infantry = { x = 1 y = 1 }
+					}
+				}
+				193 = {
+					create_unit = {
+						division = "name = \"Maiaetiwi Peasants\" division_template = \"Peasants\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.9"
+						count = 3
+						owner = ROOT
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+				1254 = {
+					create_unit = {
+						division = "name = \"Tebameni Peasants\" division_template = \"Peasants\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.9"
+						count = 2
+						owner = ROOT
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+				13 = {
+					create_unit = {
+						division = "name = \"Misiraneka Peasants\" division_template = \"Peasants\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.9"
+						count = 1
+						owner = ROOT
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
      }
         focus = {
 		id = ZFA_tgm_fighters
@@ -301,7 +341,41 @@ focus_tree={
                 	custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = ZFA_tgm_fighters_tt
-            hidden_effect = { load_oob = "ZFA_tgm_fighters" }
+            hidden_effect = { 
+		division_template = {
+			name = "TGM Fighters"
+    			template_counter = 118
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+                		infantry = { x = 0 y = 3 }
+                		militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+			}
+			support = {
+        			recon = { x = 0 y = 0 }
+			}
+		}
+				
+				193 = {
+					create_unit = {
+						division = "name = \"TGM Fighters\" division_template = \"TGM Fighters\" start_experience_factor = 0.25 start_equipment_factor = 0.8 start_manpower_factor = 1.0"
+						count = 1
+						owner = ROOT
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+				1254 = {
+					create_unit = {
+						division = "name = \"TGM Fighters\" division_template = \"TGM Fighters\" start_experience_factor = 0.25 start_equipment_factor = 0.8 start_manpower_factor = 1.0"
+						count = 2
+						owner = ROOT
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
 		}
           }
         focus = {
@@ -624,6 +698,10 @@ focus_tree={
         }
 		
 		completion_reward = {
+		add_timed_idea = {
+			idea = ZFA_push_from_east
+			days = 120
+		}
           }
      }
 }

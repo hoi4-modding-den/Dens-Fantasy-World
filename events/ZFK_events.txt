@@ -23,6 +23,11 @@ country_event = { # Civil War Ends
 	option = {
 		name = ZFK_cw_events.1.a
 		custom_effect_tooltip = generic_skip_one_line_tt
+                remove_ideas = ZF_balekelemi_civil_war
+		add_timed_idea = {
+			idea = ZF_reconstruction
+			days = 540
+		}
 	}
 }
 country_event = { # Look to west
@@ -162,6 +167,92 @@ country_event = { # Speech in Keytysawi
 		name = ZFK_cw_events.12.a
 	}
 }
+country_event = { # Smuggling success
+	id = ZFK_cw_events.13
+	title = ZFK_cw_events.13.t
+	desc = ZFK_cw_events.13.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.13.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 600
+                    		producer = ZSP
+			}
+			hidden_effect = {
+				ZSP = { country_event = { id = ZFK_cw_events.16 } }
+	}
+}
+country_event = { # Smuggling success partial
+	id = ZFK_cw_events.14
+	title = ZFK_cw_events.14.t
+	desc = ZFK_cw_events.14.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.14.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 300
+                    		producer = ZSP
+			}
+			hidden_effect = {
+				ZSP = { country_event = { id = ZFK_cw_events.17 } }
+		}
+	}
+}
+country_event = { # Smuggling failture
+	id = ZFK_cw_events.15
+	title = ZFK_cw_events.15.t
+	desc = ZFK_cw_events.15.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.15.a
+			add_manpower = -200
+	}
+}
+country_event = { # Smuggling success (for ZSP)
+	id = ZFK_cw_events.16
+	title = ZFK_cw_events.16.t
+	desc = ZFK_cw_events.16.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.16.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -600
+                    		producer = ZSP
+			}
+	}
+}
+country_event = { # Smuggling partial success (for ZSP)
+	id = ZFK_cw_events.16
+	title = ZFK_cw_events.16.t
+	desc = ZFK_cw_events.16.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFK_cw_events.16.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -300
+                    		producer = ZSP
+			}
+	}
+}
 
 news_event = { # end of civil war global
 	id = ZFK_news_events.1
@@ -175,7 +266,6 @@ news_event = { # end of civil war global
 	option = {
 		name = ZFK_news_events.1.a
 		trigger = { tag = ZFK }
-                remove_ideas = ZF_balekelemi_civil_war
 	}
 
 	option = {

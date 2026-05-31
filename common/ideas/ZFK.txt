@@ -41,5 +41,41 @@ ideas = {
                                     research_speed_factor = -0.1
 			     }
                    }
+                    ZFK_strike_north = {
+                           picture = CHI_inefficient_economy
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                        targeted_modifier = {
+                                   tag = ZFS
+                                   attack_bonus_against = 0.2
+                                   breakthrough_bonus_against = 0.2
+                              		}
+			     }
+                   }
+                    ZFK_rise_of_monarchism = {
+                           picture = CHI_inefficient_economy
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                                   army_attack_factor = 0.15
+				   army_morale_factor = 0.1
+				   war_support_weekly_factor = 0.005
+			     }
+                   }
 	 }
 }

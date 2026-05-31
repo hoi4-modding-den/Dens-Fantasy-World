@@ -26,6 +26,12 @@ country_event = { # Civil War Ends
 		effect_tooltip = {
 			set_cosmetic_tag = ZFA
 		}
+                remove_ideas = ZF_balekelemi_civil_war
+		add_timed_idea = {
+			idea = ZF_reconstruction
+			days = 540
+		}
+
 		hidden_effect = {
 			drop_cosmetic_tag = yes
 			ZFB = { every_claimed_state = { remove_claim_of = ZFB } }
@@ -179,7 +185,16 @@ country_event = { # Proposal To Pichi (for pichi)
 
 	option = {
 		name = ZFA_cw_events.11.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+                    		producer = ZFP
+			}
                 ZFA = { country_event = { id = ZFA_cw_events.12 } }
+		hidden_effect = {
+			ZFS = country_event = { id = ZFA_cw_events.14 days = 15 } 
+		}
+
 	}
 	option = {
 		name = ZFA_cw_events.11.b
@@ -210,6 +225,22 @@ country_event = { # Pichi Refuses
 		name = ZFA_cw_events.13.a
 	}
 }
+country_event = { # Sayani got raided
+	id = ZFA_cw_events.14
+	title = ZFA_cw_events.14.t
+	desc = ZFA_cw_events.14.desc
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZFA_cw_events.14.a
+		add_timed_idea = {
+			idea = ZFA_sayani_raid
+			days = 90
+		}
+	}
+}
 news_event = { # end of civil war global
 	id = ZFA_news_events.1
 	title = ZFA_news_events.1.t
@@ -222,7 +253,6 @@ news_event = { # end of civil war global
 	option = {
 		name = ZFA_news_events.1.a
 		trigger = { tag = ZFA }
-                remove_ideas = ZF_balekelemi_civil_war
 	}
 
 	option = {

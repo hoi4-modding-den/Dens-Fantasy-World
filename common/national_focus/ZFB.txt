@@ -297,7 +297,36 @@ focus_tree={
  			add_popularity = { ideology = neutrality popularity = -0.05 }
 	                custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = ZFB_outside_forces_tt
-            hidden_effect = { load_oob = "ZFB_mercenaries" }
+            hidden_effect = { 
+			division_template = {
+				name = "Mercenaries"
+    				template_counter = 118
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+                			infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+                			infantry = { x = 1 y = 3 }
+
+				}
+				support = {
+       	 				recon = { x = 0 y = 0 }
+        				artillery = { x = 0 y = 1 }
+				}
+			}
+				1258 = {
+					create_unit = {
+						division = "name = \"Mercenaries\" division_template = \"Mercenaries\" start_experience_factor = 0.3 start_equipment_factor = 0.85 start_manpower_factor = 1.0"
+						count = 3
+						owner = ROOT
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+		 }
           }
      }
 	focus = {
@@ -327,7 +356,46 @@ focus_tree={
 			add_war_support = -0.1
 	                custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = ZFB_rural_mobilisation_tt
-            hidden_effect = { load_oob = "ZFB_peasants" }
+            hidden_effect = { 
+			division_template = {
+				name = "Bīchi Peasants"
+    				template_counter = 118
+
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+
+				}
+			}
+				615 = {
+					create_unit = {
+						division = "name = \"Ibabewili Peasants\" division_template = \"Bīchi Peasants\" start_experience_factor = 0.1 start_equipment_factor = 0.65 start_manpower_factor = 0.9"
+						count = 2
+						owner = ROOT
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+				732 = {
+					create_unit = {
+						division = "name = \"Bīchimenya Peasants\" division_template = \"Bīchi Peasants\" start_experience_factor = 0.1 start_equipment_factor = 0.65 start_manpower_factor = 0.9"
+						count = 2
+						owner = ROOT
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+				871 = {
+					create_unit = {
+						division = "name = \"Daribewikr Peasants\" division_template = \"Bīchi Peasants\" start_experience_factor = 0.1 start_equipment_factor = 0.65 start_manpower_factor = 0.9"
+						count = 2
+						owner = ROOT
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+		 }
           }
      }
 	focus = {
@@ -356,9 +424,46 @@ focus_tree={
 		completion_reward = {
 	                custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = ZFB_professional_companions_tt
-            hidden_effect = { load_oob = "ZFB_experienced_forces" }
-          }
-     }
+            hidden_effect = { 
+			division_template = {
+				name = "Bīchi Kifawī"
+    				template_counter = 118
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+                		infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+                		artillery = { x = 2 y = 0 }
+
+			}
+			support = {
+        			engineer = { x = 0 y = 0 }
+        			artillery = { x = 0 y = 1 }
+				}
+			}
+				615 = {
+					create_unit = {
+						division = "name = \"1 Bīchi Kifawī\" division_template = \"Bīchi Kifawī\" start_experience_factor = 0.3 start_equipment_factor = 0.85 start_manpower_factor = 0.95"
+						count = 1
+						owner = ROOT
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+				1258 = {
+					create_unit = {
+						division = "name = \"2 Bīchi Kifawī\" division_template = \"Bīchi Kifawī\" start_experience_factor = 0.3 start_equipment_factor = 0.85 start_manpower_factor = 0.95"
+						count = 1
+						owner = ROOT
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+		 	}
+          	}
+    	 }
 	focus = {
 		id = ZFB_increase_soldiers_pay
 		icon = GFX_focus_PLACEHOLDER
@@ -383,6 +488,7 @@ focus_tree={
         }
 		
 		completion_reward = {
+                add_ideas = ZFB_increased_soldiers_pay
           }
      }
 	focus = {
@@ -590,6 +696,7 @@ focus_tree={
 
 		bypass = {
 			has_civil_war = no
+            		NOT = { controls_province = 10337 }
         }
 		
 		completion_reward = {
@@ -616,6 +723,7 @@ focus_tree={
 
 		bypass = {
 			has_civil_war = no
+            		NOT = { controls_province = 10337 }
         }
 		
 		completion_reward = {
@@ -701,6 +809,10 @@ focus_tree={
         }
 		
 		completion_reward = {
+		add_timed_idea = {
+			idea = ZFB_destruction_of_usurpers
+			days = 120
+		}
           }
      }
 }

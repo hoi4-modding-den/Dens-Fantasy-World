@@ -23,9 +23,13 @@ country_event = { # Civil War Ends
 	option = {
 		name = ZFS_cw_events.1.a
                 custom_effect_tooltip = generic_skip_one_line_tt
-                remove_ideas = ZF_balekelemi_civil_war
 		effect_tooltip = {
 			set_cosmetic_tag = ZFS
+		}
+                remove_ideas = ZF_balekelemi_civil_war
+		add_timed_idea = {
+			idea = ZF_reconstruction
+			days = 540
 		}
 		hidden_effect = {
 			drop_cosmetic_tag = yes

@@ -23,6 +23,11 @@ country_event = { # Civil War Ends
 	option = {
 		name = ZFB_cw_events.1.a
 		custom_effect_tooltip = generic_skip_one_line_tt
+                remove_ideas = ZF_balekelemi_civil_war
+		add_timed_idea = {
+			idea = ZF_reconstruction
+			days = 540
+		}
 	}
 }
 country_event = { # Meeting with corporates
@@ -89,10 +94,20 @@ country_event = { # Aid for Bicha - Infantry (Southern Frontier)
 
 	option = {
 		name = ZFB_cw_events.5.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+                    		producer = ZFC
+			}
 			ZFB = { country_event = { id = ZFB_cw_events.8 } }
 	}
 	option = {
 		name = ZFB_cw_events.5.b
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -250
+                    		producer = ZFC
+			}
 			ZFB = { country_event = { id = ZFB_cw_events.9 } }
 	}
 	option = {
@@ -110,10 +125,25 @@ country_event = { # Aid for Bicha - Infantry and Support (Southern Frontier)
 
 	option = {
 		name = ZFB_cw_events.6.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+                    		producer = ZFC
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -50
+                    		producer = ZFC
+			}
 			ZFB = { country_event = { id = ZFB_cw_events.10 } }
 	}
 	option = {
 		name = ZFB_cw_events.6.b
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -250
+                    		producer = ZFC
+			}
 			ZFB = { country_event = { id = ZFB_cw_events.11 } }
 	}
 	option = {
@@ -131,10 +161,30 @@ country_event = { # Aid for Bicha - Infantry, Support and Artillery (Southern Fr
 
 	option = {
 		name = ZFB_cw_events.7.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+                    		producer = ZFC
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -50
+                    		producer = ZFC
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -30
+                    		producer = ZFC
+			}
 			ZFB = { country_event = { id = ZFB_cw_events.12 } }
 	}
 	option = {
 		name = ZFB_cw_events.7.b
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -250
+                    		producer = ZFC
+			}
 			ZFB = { country_event = { id = ZFB_cw_events.13 } }
 	}
 	option = {
@@ -152,6 +202,11 @@ country_event = { # Aid for Bicha - SF agrees (infantry)
 
 	option = {
 		name = ZFB_cw_events.8.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+                    		producer = ZFC
+			}
 	}
 }
 country_event = { # Aid for Bicha - SF partially agrees (infantry)
@@ -164,6 +219,11 @@ country_event = { # Aid for Bicha - SF partially agrees (infantry)
 
 	option = {
 		name = ZFB_cw_events.9.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 250
+                    		producer = ZFC
+			}
 	}
 }
 country_event = { # Aid for Bicha - SF agrees (infantry and support)
@@ -176,6 +236,16 @@ country_event = { # Aid for Bicha - SF agrees (infantry and support)
 
 	option = {
 		name = ZFB_cw_events.10.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+                    		producer = ZFC
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 50
+                    		producer = ZFC
+			}
 	}
 }
 country_event = { # Aid for Bicha - SF partially agrees (infantry and support)
@@ -188,6 +258,11 @@ country_event = { # Aid for Bicha - SF partially agrees (infantry and support)
 
 	option = {
 		name = ZFB_cw_events.11.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 250
+                    		producer = ZFC
+			}
 	}
 }
 country_event = { # Aid for Bicha - SF agrees (everything)
@@ -200,6 +275,21 @@ country_event = { # Aid for Bicha - SF agrees (everything)
 
 	option = {
 		name = ZFB_cw_events.12.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+                    		producer = ZFC
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 50
+                    		producer = ZFC
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 30
+                    		producer = ZFC
+			}
 	}
 }
 country_event = { # Aid for Bicha - SF partially agrees (everything)
@@ -212,6 +302,11 @@ country_event = { # Aid for Bicha - SF partially agrees (everything)
 
 	option = {
 		name = ZFB_cw_events.13.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+                    		producer = ZFC
+			}
 	}
 }
 country_event = { # Aid for Bicha - SF refuses (every 3)
@@ -239,6 +334,9 @@ country_event = { # Question of Reshufflement
 	}
 	option = {
 		name = ZFB_cw_events.15.b
+	}
+	option = {
+		name = ZFB_cw_events.15.c
 	}
 }
 country_event = { # "Proposal" to Nechi
@@ -268,7 +366,6 @@ news_event = { # end of civil war global
 	option = {
 		name = ZFB_news_events.1.a
 		trigger = { tag = ZFB }
-                remove_ideas = ZF_balekelemi_civil_war
 	}
 
 	option = {

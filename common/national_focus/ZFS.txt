@@ -96,6 +96,7 @@ focus_tree={
         }
 		
 		completion_reward = {
+ 			add_popularity = { ideology = democratic popularity = 0.03 }
           }
      }
 	focus = {
@@ -123,7 +124,30 @@ focus_tree={
 		
 		completion_reward = {
 			custom_effect_tooltip = ZFS_semayawi_army_tt
-            		hidden_effect = { load_oob = "ZFS_semayawi_army" }
+            		hidden_effect = { 
+				division_template = {
+					name = "Semayawi Recruits"
+					#division_names_group = ZFS_MLI_02
+    					priority = 0
+   				 	template_counter = 119
+
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+ 
+				}
+			}
+             			884 = {
+                			create_unit = {
+                    				division = "name = \"Semayawi Recruits\" division_template = \"Semayawi Recruits\" start_experience_factor = 0.1 start_equipment_factor = 0.55 start_manpower_factor = 0.85"
+                    				count = 5
+                    				owner = ROOT
+						allow_spawning_on_enemy_provs = no
+                		}
+            		}
+		 }
           }
      }
 	focus = {
@@ -150,6 +174,7 @@ focus_tree={
         }
 		
 		completion_reward = {
+ 			add_popularity = { ideology = neutrality popularity = 0.03 }
 			hidden_trigger = {
             			has_country_flag = ZFS_cw_military_military
 			}
@@ -181,9 +206,59 @@ focus_tree={
 		
 		completion_reward = {
 			custom_effect_tooltip = ZFS_mixed_army_tt
-            		hidden_effect = { load_oob = "ZFS_mixed_army" }
+            		hidden_effect = { 
+				division_template = {
+					name = "Semayawi Recruits"
+					#division_names_group = ZFS_MLI_02
+    					priority = 0
+    					template_counter = 119
+
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+ 
+					}
+				}
+				division_template = {
+					name = "Sayani Recruits"
+					#division_names_group = ZFS_INF_10
+    					priority = 0
+    					template_counter = 119
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+
+				support = {
+					engineer = { x = 0 y = 0 }
+					}
+				}
+             			884 = {
+                			create_unit = {
+                    				division = "name = \"Semayawi Recruits\" division_template = \"Semayawi Recruits\" start_experience_factor = 0.1 start_equipment_factor = 0.55 start_manpower_factor = 0.85"
+                    				count = 3
+                    				owner = ROOT
+						allow_spawning_on_enemy_provs = no
+                			}
+            			}
+             			1252 = {
+                			create_unit = {
+                    				division = "name = \"Sayani Recruits\" division_template = \"Sayani Recruits\" start_experience_factor = 0.2 start_equipment_factor = 0.8 start_manpower_factor = 0.95"
+                    				count = 1
+                    				owner = ROOT
+						allow_spawning_on_enemy_provs = no
+                		}
+            		}
+		 }
           }
-     }
+    }
 	focus = {
 		id = ZFS_only_the_best
 		icon = GFX_focus_PLACEHOLDER
@@ -209,9 +284,39 @@ focus_tree={
 		
 		completion_reward = {
 			custom_effect_tooltip = ZFS_professionals_tt
-            		hidden_effect = { load_oob = "ZFS_professionals" }
-          }
-     }
+            		hidden_effect = { 
+				division_template = {
+					name = "Sayani Professionals"
+					#division_names_group = ZFS_INF_10
+    					priority = 0
+    					template_counter = 119
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+					}
+				}
+             			1252 = {
+                			create_unit = {
+                    				division = "name = \"Sayani Professionals\" division_template = \"Sayani Professionals\" start_experience_factor = 0.25 start_equipment_factor = 0.9 start_manpower_factor = 1.0"
+                    				count = 3
+                    				owner = ROOT
+						allow_spawning_on_enemy_provs = no
+                			}
+            			}
+			}
+		 }
+	}
 	focus = {
 		id = ZFS_chebahiri_legion
 		icon = GFX_focus_PLACEHOLDER
@@ -342,6 +447,18 @@ focus_tree={
         }
 		
 		completion_reward = {
+		ZFB = {
+			add_timed_idea = {
+			idea = ZFS_semali_river_cut
+			days = 180
+			}
+		}
+		ZFK = {
+			add_timed_idea = {
+			idea = ZFS_semali_river_cut
+			days = 180
+			}
+		}
           }
      }
 	focus = {
@@ -631,6 +748,10 @@ focus_tree={
         }
 		
 		completion_reward = {
+			add_timed_idea = {
+			idea = ZFS_for_democracy
+			days = 120
+			}
           }
      }
 }

@@ -1,5 +1,5 @@
 ﻿l_english:
- // COUNTRY NAMES //
+ ## COUNTRY NAMES ##
  XCE: "Crown Union of Celandra"
  XCE_DEF: "The Crown Union of Celandra"
  XCE_ADJ: "Celandran"
@@ -16,7 +16,7 @@
  ZVE_DEF: "the Kingdom of Vaelith"
  ZVE_ADJ: "Vaelithian"
 
- // STATES AND VPS //
+ ## STATES AND VPS ##
  VICTORY_POINTS_10927: "Couwell"
  VICTORY_POINTS_10930: "Inford"
  VICTORY_POINTS_8888: "Ulshire"
