@@ -654,9 +654,10 @@ ideas = {
             }
 
             modifier = {
-                industrial_capacity_factory = 0.25
-                industrial_capacity_dockyard = 0.25
+                industrial_capacity_factory = 0.2
+                industrial_capacity_dockyard = 0.2
                 consumer_goods_factor = -0.1
+                conversion_cost_civ_to_mil_factor = -0.25
             }
 
         }
@@ -857,6 +858,31 @@ ideas = {
                 industrial_capacity_dockyard = 0.1
                 drift_defence_factor = 0.5
                 production_speed_buildings_factor = 0.15
+            }
+            
+        }
+
+        ZLF_worker_self_management = {
+
+            name = ZLF_worker_councils
+            picture = GER_limited_democratic_principles
+            
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+            
+            modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+                production_factory_max_efficiency_factor = 0.1
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+                drift_defence_factor = 0.5
+                production_speed_buildings_factor = 0.15
+                stability_factor = 0.1
             }
             
         }
@@ -1477,6 +1503,82 @@ ideas = {
             modifier = {
                 consumer_goods_factor = 0.15
                 stability_factor = -0.1
+            }
+
+        }
+
+        ZLF_rio_azul_freedom_above_all = {
+
+            picture = ARG_establish_the_free_association
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                industrial_capacity_factory = 0.05
+                army_defence_factor = 0.15
+            }
+
+        }
+
+        ZLF_pfalz_archon_resistance = {
+
+            picture = YUG_orthodox_church_support
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                stability_factor = -0.1
+                industrial_capacity_factory = -0.05
+            }
+
+        }
+
+        ZLF_pfalz_legionnaire_terrorism = {
+
+            picture = ROM_iron_guard
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                production_speed_buildings_factor = -0.1
+                
+            }
+
+        }
+
+        ZLF_pfalz_cantonic_organisation = {
+
+            picture = SWI_spirit_of_helvetia_passive_peace
+
+            allowed = {
+                always = no 
+            }
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            modifier = {
+                political_power_factor = 0.1
+                drift_defence_factor = 0.25
             }
 
         }

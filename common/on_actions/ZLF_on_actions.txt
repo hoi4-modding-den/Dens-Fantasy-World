@@ -1,5 +1,13 @@
 on_actions = {
 
+    on_startup = {
+        effect = {
+            ZSP = { country_event = ZLF_placeholder_events.1 }
+            ZTC = { country_event = ZLF_placeholder_events.2 }
+            ZKN = { country_event = ZLF_placeholder_events.3 }
+        }
+    }
+
     on_civil_war_end = {
         effect = {
             if = {

@@ -102,6 +102,54 @@ ZLF_urhu_sb_state = {
 		}
 	}
 }
+ZLF_rio_azul_sb_state = {
+	input = game:all_states
+	operators = {
+		limit = {
+			ZLF_rio_azul_sb_state = yes
+		}
+	}
+}
+ZLF_centaur_sb_state = {
+	input = game:all_states
+	operators = {
+		limit = {
+			ZLF_centaur_sb_state = yes
+		}
+	}
+}
+ZLF_kagraz_sb_state = {
+	input = game:all_states
+	operators = {
+		limit = {
+			ZLF_kagraz_sb_state = yes
+		}
+	}
+}
+ZLF_peony_sb_state = {
+	input = game:all_states
+	operators = {
+		limit = {
+			ZLF_peony_sb_state = yes
+		}
+	}
+}
+ZLF_pfalz_sb_state = {
+	input = game:all_states
+	operators = {
+		limit = {
+			ZLF_pfalz_sb_state = yes
+		}
+	}
+}
+ZLF_northern_sb_state = {
+	input = game:all_states
+	operators = {
+		limit = {
+			ZLF_northern_sb_state = yes
+		}
+	}
+}
 
 ZLF_despotist_controlled_states_my_continent = {
 	input = game:all_states

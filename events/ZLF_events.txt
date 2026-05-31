@@ -1,13 +1,79 @@
+add_namespace = ZLF_placeholder_events
 add_namespace = ZLF_cw_events
 add_namespace = ZLF_post_cw_events
 add_namespace = ZLF_events
 add_namespace = ZLF_news_events
 
+
+country_event = { # ZSP
+	id = ZLF_placeholder_events.1
+	title = ZLF_placeholder_events.1.t
+	desc = ZLF_placeholder_events.1.desc
+	picture = GFX_report_event_NOR_trotsky_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_placeholder_events.1.a
+        
+	}
+	option = {
+		name = ZLF_placeholder_events.1.b
+        trigger = { is_ai = no }
+		if = {
+			limit = { date < 1936.1.2 }
+			ZLF = { change_tag_from = ROOT }
+		}
+		else = {
+			custom_effect_tooltip = ZLF_change_possible_only_day_1_tt
+		}
+	}
+}
+
+country_event = { # ZTC
+	id = ZLF_placeholder_events.2
+	title = ZLF_placeholder_events.1.t
+	desc = ZLF_placeholder_events.2.desc
+	picture = GFX_report_event_NOR_trotsky_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_placeholder_events.1.a
+        
+	}
+	option = {
+		name = ZLF_placeholder_events.1.b
+        trigger = { is_ai = no }
+		if = {
+			limit = { date < 1936.1.2 }
+			ZLF = { change_tag_from = ROOT }
+		}
+		else = {
+			custom_effect_tooltip = ZLF_change_possible_only_day_1_tt
+		}
+	}
+}
+
+country_event = { # ZKN
+	id = ZLF_placeholder_events.3
+	title = ZLF_placeholder_events.1.t
+	desc = ZLF_placeholder_events.3.desc
+	picture = GFX_report_event_NOR_trotsky_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_placeholder_events.1.a
+        
+	}
+}
+
 country_event = { # Mission Failure
 	id = ZLF_cw_events.1
 	title = ZLF_cw_events.1.t
 	desc = ZLF_cw_events.1.desc
-	picture = GFX_report_event_DEN_resistance
+	picture = GFX_report_event_ZLF_banner_army_march
 
 	is_triggered_only = yes
 
@@ -23,7 +89,7 @@ country_event = { # Mission Failure ALT
 	id = ZLF_cw_events.2
 	title = ZLF_cw_events.2.t
 	desc = ZLF_cw_events.1.desc
-	picture = GFX_report_event_DEN_resistance
+	picture = GFX_report_event_ZLF_banner_army_march
 
 	is_triggered_only = yes
 
@@ -59,7 +125,7 @@ country_event = { # Civil War Ends
 	id = ZLF_cw_events.4
 	title = ZLF_cw_events.4.t
 	desc = ZLF_cw_events.4.desc
-	picture = GFX_report_event_france_parade
+	picture = GFX_report_event_ZLF_banner_army_speech
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -119,7 +185,7 @@ country_event = { # Exiles move somewhere else
 	id = ZLF_cw_events.6
 	title = ZLF_cw_events.6.t
 	desc = ZLF_cw_events.6.desc
-	picture = GFX_report_event_spain_civil_war_volunteers_02
+	picture = GFX_report_event_ZLF_banner_army_speech
 
 	is_triggered_only = yes
 
@@ -1198,6 +1264,10 @@ news_event = { # Walter uncovers Rathenau Affair
 
 	option = {
 		name = ZLF_events.15.a
+		add_popularity = { ideology = communism popularity = -0.1 }
+		
+		custom_effect_tooltip = generic_skip_one_line_tt
+
 		country_event = { id = ZLF_events.16 days = 5 }
 	}
 }
@@ -1212,10 +1282,6 @@ country_event = { # SP Majority
 
 	option = {
 		name = ZLF_events.16.a
-		add_popularity = { ideology = communism popularity = -0.1 }
-
-		custom_effect_tooltip = generic_skip_one_line_tt
-
 		set_politics = {
 			ruling_party = democratic
 			elections_allowed = no
@@ -1237,6 +1303,9 @@ country_event = { # SP Majority
 
 		set_country_flag = ZLF_krondrache_uncovered_plot
 		complete_national_focus = ZLF_government_holds
+
+		set_country_flag = ZLF_neorevisionist_victory_after_rathenau
+		hidden_effect = { mark_focus_tree_layout_dirty = yes }
 	}
 }
 
@@ -1244,7 +1313,7 @@ country_event = { # Meisendorff takes charge for National Defence
 	id = ZLF_events.17
 	title = ZLF_events.17.t
 	desc = ZLF_events.17.desc
-	picture = GFX_report_event_journalists_speech
+	picture = GFX_report_event_ZLF_banner_army_speech
 
 	is_triggered_only = yes
 
@@ -1288,7 +1357,7 @@ country_event = { # Post-Meisendorff Elections
 	id = ZLF_events.18
 	title = ZLF_events.18.t
 	desc = ZLF_events.18.desc
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_ZLF_banner_army_propaganda
 
 	is_triggered_only = yes
 
@@ -1689,11 +1758,553 @@ country_event = { # The Phoenix joins
 	}
 }
 
+country_event = { # First Pan-Tewarean Elections - Pre-Election
+	id = ZLF_events.31
+	title = ZLF_events.31.t
+	desc = ZLF_events.31.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.31.a
+		set_party_name = {
+			ideology = communism
+			name = ZLF_communism_party_teware
+			long_name = ZLF_communism_party_teware_long
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			name = ZLF_democratic_party_interim
+			long_name = ZLF_democratic_party_interim_long
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		create_country_leader = {
+			name = ZLF_congress_leader_name
+			picture = GFX_portrait_ZLF_congress_leader
+			expire = "1965.1.1"
+			ideology = populism
+			traits = { }
+		}
+
+		country_event = { id = ZLF_events.32 days = 5 }
+	}
+}
+
+country_event = { # First Pan-Tewarean Elections - Socialist Party
+	id = ZLF_events.32
+	title = ZLF_events.32.t
+	desc = ZLF_events.32.desc
+	picture = GFX_report_event_ZLF_banner_army_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = { id = ZLF_events.33 days = 15 }
+		}
+	}
+
+	option = { # Neorevisionists
+		name = ZLF_events.32.a
+		effect_tooltip = {
+			add_country_leader_role = {
+				character = ZLF_gregor_bauer
+				promote_leader = yes
+				country_leader = {
+					ideology = neorevisionism
+					expire = "1965.1.1.1"
+					traits = { ZLF_hero_of_the_proletariat }
+				}
+			}
+		}
+		set_country_flag = ZLF_SP_candidate_neorevs
+
+		effect_tooltip = {
+			country_event = ZLF_events.33
+		}
+	}
+
+	option = { # Social-Democrats
+		name = ZLF_events.32.b
+		ai_chance = { base = 0 } # player "secret" only
+		effect_tooltip = {
+			promote_character = ZLF_orlando
+		}
+		set_country_flag = ZLF_SP_candidate_socdems
+
+		effect_tooltip = {
+			country_event = ZLF_events.33
+		}
+	}
+
+	option = { # Environmentalists
+		name = ZLF_events.32.c
+		effect_tooltip = {
+			add_country_leader_role = {
+				character = ZLF_sonnenuntergang
+				promote_leader = yes
+				country_leader = {
+					ideology = environmentalism
+					expire = "1965.1.1.1"
+					traits = { ZLF_daughter_of_the_sun }
+				}
+			}
+		}
+		set_country_flag = ZLF_SP_candidate_environmentalists
+
+		effect_tooltip = {
+			country_event = ZLF_events.33
+		}
+	}
+}
+
+country_event = { # First Pan-Tewarean Elections - International Harmonist Party
+	id = ZLF_events.33
+	title = ZLF_events.33.t
+	desc = ZLF_events.33.desc
+	picture = GFX_report_event_SWI_parliament_members
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = { id = ZLF_events.34 days = 15 }
+		}
+	}
+
+	option = { # Moralists
+		name = ZLF_events.33.a
+		effect_tooltip = {
+			add_country_leader_role = {
+				character = ZLF_adomas_dereska
+				promote_leader = yes
+				country_leader = {
+					ideology = moralism
+					expire = "1965.1.1.1"
+					traits = { ZLF_moralist_vanguard }
+				}
+			}
+		}
+		set_country_flag = ZLF_IHP_candidate_moralists
+
+		effect_tooltip = {
+			country_event = ZLF_events.34
+		}
+	}
+
+	option = { # Liberals
+		name = ZLF_events.33.b
+		effect_tooltip = {
+			promote_character = ZLF_tom_the_platypus
+		}
+		set_country_flag = ZLF_IHP_candidate_liberals
+
+		effect_tooltip = {
+			country_event = ZLF_events.34
+		}
+	}
+
+	option = { # Conservatives
+		name = ZLF_events.33.c
+		effect_tooltip = {
+			add_country_leader_role = {
+				character = ZLF_wilhelm_gluecksburg
+				promote_leader = yes
+				country_leader = {
+					ideology = conservatism
+					expire = "1965.1.1.1"
+					traits = { ZLF_conservative_kleptocrat }
+				}
+			}
+		}
+
+		set_country_flag = ZLF_IHP_candidate_conservatives
+
+		effect_tooltip = {
+			country_event = ZLF_events.34
+		}
+	}
+}
+
+country_event = { # First Pan-Tewarean Elections - Marxist Civic Union
+	id = ZLF_events.34
+	title = ZLF_events.34.t
+	desc = ZLF_events.34.desc
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = { id = ZLF_events.35 days = 15 }
+		}
+	}
+
+	option = { # (Centre) Marxism
+		name = ZLF_events.34.a
+		effect_tooltip = {
+			add_country_leader_role = {
+				character = ZLF_thomas_huebenwahl
+				promote_leader = yes
+				country_leader = {
+					ideology = marxism
+					expire = "1965.1.1.1"
+					traits = { ZLF_popular_collectivist }
+				}
+			}
+		}
+		set_country_flag = ZLF_MCU_candidate_centre
+
+		effect_tooltip = {
+			country_event = ZLF_events.35
+		}
+	}
+
+	option = { # Autonomist Marxism
+		name = ZLF_events.34.b
+		effect_tooltip = {
+			add_country_leader_role = {
+				character = ZLF_dagobert_goppel
+				promote_leader = yes
+				country_leader = {
+					ideology = autonomist_marxism
+					expire = "1965.1.1.1"
+					traits = { ZLF_may_day_revolutionary }
+				}
+			}
+		}
+		set_country_flag = ZLF_MCU_candidate_autonomists
+
+		effect_tooltip = {
+			country_event = ZLF_events.35
+		}
+	}
+
+	option = { # Council Communism
+		name = ZLF_events.34.c
+		effect_tooltip = {
+			add_country_leader_role = {
+				character = ZLF_li_feigan
+				promote_leader = yes
+				country_leader = {
+					ideology = anarchist_communism
+					expire = "1965.1.1.1"
+					traits = { ZLF_revolutionary_internationalist }
+				}
+			}
+		}
+		set_country_flag = ZLF_MCU_candidate_conciliators
+
+		effect_tooltip = {
+			country_event = ZLF_events.35
+		}
+	}
+}
+
+country_event = { # First Pan-Tewarean Elections - Actual Elections
+	id = ZLF_events.35
+	title = ZLF_events.35.t
+	desc = ZLF_events.35.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	option = { # SP
+		name = ZLF_events.35.a
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			name = ZLF_democratic_party_sp
+			long_name = ZLF_democratic_party_sp_long
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		if = {
+			limit = { has_country_flag = ZLF_SP_candidate_neorevs }
+			add_country_leader_role = {
+				character = ZLF_gregor_bauer
+				promote_leader = yes
+				country_leader = {
+					ideology = neorevisionism
+					expire = "1965.1.1.1"
+					traits = { ZLF_hero_of_the_proletariat }
+				}
+			}
+		}
+		if = {
+			limit = { has_country_flag = ZLF_SP_candidate_socdems }
+			promote_character = ZLF_orlando
+		}
+		if = {
+			limit = { has_country_flag = ZLF_SP_candidate_environmentalists }
+			add_country_leader_role = {
+				character = ZLF_sonnenuntergang
+				promote_leader = yes
+				country_leader = {
+					ideology = environmentalism
+					expire = "1965.1.1.1"
+					traits = { ZLF_daughter_of_the_sun }
+				}
+			}
+		}
+
+		set_country_flag = ZLF_sp_won_first_pan_tewarean_elections
+
+		complete_national_focus = ZLF_after_action_report
+		hidden_effect = {
+			set_country_flag = ZLF_unlocked_prologue_branch
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	option = { # IHP
+		name = ZLF_events.35.b
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			name = ZLF_democratic_party_ihp
+			long_name = ZLF_democratic_party_ihp_long
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		if = {
+			limit = { has_country_flag = ZLF_IHP_candidate_moralists }
+			add_country_leader_role = {
+				character = ZLF_adomas_dereska
+				promote_leader = yes
+				country_leader = {
+					ideology = moralism
+					expire = "1965.1.1.1"
+					traits = { ZLF_moralist_vanguard }
+				}
+			}
+		}
+		if = {
+			limit = { has_country_flag = ZLF_IHP_candidate_liberals }
+			promote_character = ZLF_tom_the_platypus
+		}
+		if = {
+			limit = { has_country_flag = ZLF_IHP_candidate_conservatives }
+			add_country_leader_role = {
+				character = ZLF_wilhelm_gluecksburg
+				promote_leader = yes
+				country_leader = {
+					ideology = conservatism
+					expire = "1965.1.1.1"
+					traits = { ZLF_conservative_kleptocrat }
+				}
+			}
+			hidden_effect = { country_event = { id = ZLF_events.36 days = 5 } }
+		}
+
+		complete_national_focus = ZLF_after_action_report
+		hidden_effect = {
+			set_country_flag = ZLF_unlocked_prologue_branch
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	option = { # MCU-MBU
+		name = ZLF_events.35.c
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		if = {
+			limit = { has_country_flag = ZLF_MCU_candidate_centre }
+			add_country_leader_role = {
+				character = ZLF_thomas_huebenwahl
+				promote_leader = yes
+				country_leader = {
+					ideology = marxism
+					expire = "1965.1.1.1"
+					traits = { ZLF_popular_collectivist }
+				}
+			}
+		}
+		if = {
+			limit = { has_country_flag = ZLF_MCU_candidate_autonomists }
+			add_country_leader_role = {
+				character = ZLF_dagobert_goppel
+				promote_leader = yes
+				country_leader = {
+					ideology = autonomist_marxism
+					expire = "1965.1.1.1"
+					traits = { ZLF_may_day_revolutionary }
+				}
+			}
+		}
+		if = {
+			limit = { has_country_flag = ZLF_MCU_candidate_conciliators }
+			add_country_leader_role = {
+				character = ZLF_li_feigan
+				promote_leader = yes
+				country_leader = {
+					ideology = anarchist_communism
+					expire = "1965.1.1.1"
+					traits = { ZLF_revolutionary_internationalist }
+				}
+			}
+		}
+
+		complete_national_focus = ZLF_after_action_report
+		hidden_effect = {
+			set_country_flag = ZLF_unlocked_prologue_branch
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+
+country_event = { # Officers overthrow Reactionary Government
+	id = ZLF_events.36
+	title = ZLF_events.36.t
+	desc = ZLF_events.36.desc
+	picture = GFX_report_event_ZLF_banner_army_coup
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.36.a
+		add_stability = -0.4
+
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+			name = ZLF_communism_party_officers
+			long_name = ZLF_communism_party_officers_long
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_country_leader_role = {
+			character = ZLF_peter_haag
+			promote_leader = yes
+			country_leader = {
+				ideology = anti_revisionism
+				expire = "1965.1.1.1"
+				traits = { ZLF_gegen_die_reaktion dictator }
+			}
+		}
+
+		set_country_flag = ZLF_military_coup_happened
+	}
+}
+
+country_event = { # remembering magic exists
+	id = ZLF_events.37
+	title = ZLF_events.37.t
+	desc = ZLF_events.37.desc
+	picture = GFX_report_event_ZSP_the_sorcerers_apprentice
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.37.a
+		add_research_slot = 1
+	}
+
+	option = {
+		name = ZLF_events.37.b
+		trigger = {
+			has_completed_focus = ZLF_progress_towards_communism
+			has_completed_focus = ZLF_prosecute_enemies_of_socialism
+			NOT = { has_country_flag = ZLF_military_coup_happened }
+			is_ai = no
+		}
+		country_event = { id = ZLF_events.40 days = 10 }
+	}
+}
+
+country_event = { # actually democracy means I'm in charge -Lenin
+	id = ZLF_events.38
+	title = ZLF_events.38.t
+	desc = ZLF_events.38.desc
+	picture = GFX_report_event_ZLF_banner_army_coup
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.38.a
+		add_stability = 0.05
+	}
+}
+
+country_event = { # okay, maybe we have to accept election results
+	id = ZLF_events.39
+	title = ZLF_events.39.t
+	desc = ZLF_events.39.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.39.a
+		add_popularity = { ideology = ROOT popularity = 0.25 }
+	}
+}
+
+country_event = { # Karl Marx is revived
+	id = ZLF_events.40
+	title = ZLF_events.40.t
+	desc = ZLF_events.40.desc
+	picture = GFX_report_event_ZLF_karl_marx
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.40.a
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		create_country_leader = {
+			name = ZLF_karl_marx_name
+			picture = GFX_portrait_ZLF_karl_marx
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = { ZLF_immortal_spirit_of_marxism }
+		}
+	}
+}
+
+country_event = { # The End
+	id = ZLF_events.42
+	title = ZLF_events.42.t
+	desc = ZLF_events.42.desc
+	picture = GFX_report_event_ZLF_orlando_furioso
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZLF_events.42.a
+		retire_character = ZLF_roland_ludovik
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		custom_effect_tooltip = ZLF_events.42.tt
+	}
+}
+
 news_event = { # Civil War Ends NEWS
 	id = ZLF_news_events.1
 	title = ZLF_news_events.1.t
 	desc = ZLF_news_events.1.desc
-	picture = GFX_news_event_002
+	picture = GFX_news_event_ZLF_civil_war_victory
 
 	is_triggered_only = yes
 	major = yes
@@ -1774,6 +2385,39 @@ news_event = { # Pan-Tewara Express NEWS
 		name = ZLF_news_events.3.b
 		trigger = {
 			NOT = { tag = ZLF }
+		}
+	}
+}
+
+news_event = { # Pan-Tewarean Union NEWS
+	id = ZLF_news_events.4
+	title = ZLF_news_events.4.t
+	desc = ZLF_news_events.4.desc
+	picture = GFX_news_event_ETH_selassie_league_of_nations
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ZLF_news_events.4.a
+		trigger = {
+			tag = ZLF
+		}
+	}
+
+	option = {
+		name = ZLF_news_events.4.b
+		trigger = {
+			NOT = { tag = ZLF }
+			capital_scope = { ZLF_is_on_continent_tewara = no }
+		}
+	}
+
+	option = {
+		name = ZLF_news_events.4.c
+		trigger = {
+			NOT = { tag = ZLF }
+			capital_scope = { ZLF_is_on_continent_tewara = yes }
 		}
 	}
 }

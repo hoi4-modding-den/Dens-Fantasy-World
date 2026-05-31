@@ -579,7 +579,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_absolutism_in_the_twentieth_century
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_CZE_our_royal_claims
         prerequisite = { focus = ZKN_contact_the_blackcloaks }
 		prerequisite = { focus = ZKN_secure_the_succession }
 		mutually_exclusive = { focus = ZKN_form_a_royal_parliament }
@@ -833,34 +833,45 @@ focus_tree={
 
 	focus = {
 		id = ZKN_negotiate_celandran_cooperation
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
         prerequisite = { focus = ZKN_absolutism_in_the_twentieth_century focus = ZKN_form_a_royal_parliament }
 		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 3
 		relative_position_id = ZKN_absolutism_in_the_twentieth_century
 		
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
             base = 10 
         }
 		
 		available = {
+			is_subject = no
             NOT = { has_idea = ZKN_reconstruction }
         }
 
 		bypass = {
-			
+			XCE = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
         }
 		
 		completion_reward = {
-			# even chain with three possible outcomes:
-			# 1. XCE accepts and gets annexed
-			# 2. XCE refuses, ZKN mobilises, XCE accepts crown union and gets annexed later
-			# 3. XCE refuses, ZKN mobilises, XCE refuses again and war breaks out
+			XCE = {
+				every_core_state = {
+					add_core_of = ROOT
+				}
+			}
 
-			# the first event in the chain that ROOT gets gives cores on XCE core states
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			XCE = { country_event = { id = ZKN_events.17 days = 5 } }
+			custom_effect_tooltip = ZKN_negotiate_celandran_cooperation_tt
 		}
 	}
 
@@ -950,7 +961,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_the_reality_of_monarchism
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
         prerequisite = { focus = ZKN_negotiate_celandran_cooperation }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -978,7 +989,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_long_shall_he_reign
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_monarchy_2
         prerequisite = { focus = ZKN_the_reality_of_monarchism }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -1047,7 +1058,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_the_epiphet
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_CZE_bohemia_crown
         prerequisite = { focus = ZKN_long_shall_he_reign }
 		prerequisite = { focus = ZKN_reorganise_the_intelligence_service }
 		#mutually_exclusive = { focus =  }
@@ -1130,7 +1141,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_develop_celandra
-		icon = GFX_focus_generic_industral_devlopment_bucket
+		icon = GFX_goal_generic_construction
         prerequisite = { focus = ZKN_the_epiphet }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -1200,7 +1211,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_second_development_scheme
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_industral_devlopment_bucket
         prerequisite = { focus = ZKN_develop_celandra }
 		mutually_exclusive = { focus = ZKN_full_integration_of_the_union }
 		x = -1
@@ -1250,7 +1261,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_full_integration_of_the_union
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
         prerequisite = { focus = ZKN_develop_celandra }
 		mutually_exclusive = { focus = ZKN_second_development_scheme }
 		x = 1
@@ -1273,6 +1284,8 @@ focus_tree={
 		bypass = {
 			
         }
+
+		will_lead_to_war_with = XCE
 		
 		completion_reward = {
 			annex_country = {
@@ -1284,7 +1297,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_jewel_of_gardenia
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_JAP_the_shuilikeng_power_plant
         prerequisite = { focus = ZKN_negotiate_celandran_cooperation focus = ZKN_purge_the_foreign_office }
 		#mutually_exclusive = { focus =  }
 		x = 8
@@ -1311,7 +1324,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_dreams_of_greater_gardenia
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_more_territorial_claims
         prerequisite = { focus = ZKN_negotiate_celandran_cooperation focus = ZKN_purge_the_foreign_office }
 		#mutually_exclusive = { focus =  }
 		x = 11
@@ -1354,7 +1367,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_attack_korelia
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_strike_at_democracy1
         prerequisite = { focus = ZKN_dreams_of_greater_gardenia }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -1371,7 +1384,7 @@ focus_tree={
             is_subject = no
 			OR = {
 				has_war = no
-				surrender_progress < 0
+				surrender_progress < 0.01
 			}
         }
 
@@ -1493,7 +1506,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_anti_guerilla_campaigns
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_spr_crush_the_revolution
         prerequisite = { focus = ZKN_attack_korelia }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -1520,14 +1533,14 @@ focus_tree={
 		completion_reward = {
 			add_timed_idea = {
 				idea = ZKN_pacification_of_korelia
-				days = 120
+				days = 90
 			}
 		}
 	}
 
 	focus = {
 		id = ZKN_integrate_korelia
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_annex_country_2
         prerequisite = { focus = ZKN_attack_korelia }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -1660,7 +1673,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_strengthen_the_army
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_manpower
         prerequisite = { focus = ZKN_dreams_of_greater_gardenia }
 		#mutually_exclusive = { focus =  }
 		x = 3
@@ -1776,7 +1789,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_attack_the_eastern_monarchies
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_political_pressure
         prerequisite = { focus = ZKN_strengthen_the_army }
 		mutually_exclusive = { focus = ZKN_subjugate_the_eastern_monarchies }
 		x = 1
@@ -1872,7 +1885,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_turn_our_eyes_north
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = ZKN_integrate_korelia focus = ZKN_anti_guerilla_campaigns }
         prerequisite = { focus = ZKN_subjugate_the_eastern_monarchies focus = ZKN_attack_the_eastern_monarchies }
 		#mutually_exclusive = { focus =  }
@@ -1922,7 +1935,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_begin_balekelemi_invasion
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = ZKN_turn_our_eyes_north }
 		#mutually_exclusive = { focus =  }
 		x = -2
@@ -1939,7 +1952,7 @@ focus_tree={
 			is_subject = no
             OR = {
 				has_war = no
-				surrender_progress < 0
+				surrender_progress < 0.01
 			}
         }
 
@@ -1999,7 +2012,7 @@ focus_tree={
 					}
 				}
 				ROOT = {
-					create_wargoal = {
+					declare_war_on = {
 						target = PREV
 						type = annex_everything
 					}
@@ -2010,7 +2023,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_establish_balekelemi_crown_colony
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_JAP_ministry_of_colonial_affairs
         prerequisite = { focus = ZKN_begin_balekelemi_invasion }
 		mutually_exclusive = { focus = ZKN_revive_the_elotropia_plan }
 		x = -1
@@ -2025,6 +2038,11 @@ focus_tree={
 		
 		available = {
             ZKN_is_kingdom = yes
+			NOT = { country_exists = ZFK }
+			NOT = { country_exists = ZFB }
+			NOT = { country_exists = ZFN }
+			NOT = { country_exists = ZFS }
+			NOT = { country_exists = ZFA }
         }
 
 		bypass = {
@@ -2056,7 +2074,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_revive_the_elotropia_plan
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_GER_integrated_economies
         prerequisite = { focus = ZKN_begin_balekelemi_invasion }
 		mutually_exclusive = { focus = ZKN_establish_balekelemi_crown_colony }
 		x = 1
@@ -2071,6 +2089,11 @@ focus_tree={
 		
 		available = {
             ZKN_is_kingdom = no
+			NOT = { country_exists = ZFK }
+			NOT = { country_exists = ZFB }
+			NOT = { country_exists = ZFN }
+			NOT = { country_exists = ZFS }
+			NOT = { country_exists = ZFA }
         }
 
 		bypass = {
@@ -2102,7 +2125,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_secure_the_frontiers
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = ZKN_turn_our_eyes_north }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -2119,7 +2142,7 @@ focus_tree={
 			is_subject = no
             OR = {
 				has_war = no
-				surrender_progress < 0
+				surrender_progress < 0.01
 			}
         }
 
@@ -2165,7 +2188,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_establish_frontier_crown_colony
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_jap_manchurian_project
         prerequisite = { focus = ZKN_secure_the_frontiers }
 		mutually_exclusive = { focus = ZKN_integrate_frontier_cliques }
 		x = -1
@@ -2180,6 +2203,8 @@ focus_tree={
 		
 		available = {
             ZKN_is_kingdom = yes
+			NOT = { country_exists = ZFC }
+			NOT = { country_exists = ZFE }
         }
 
 		bypass = {
@@ -2208,7 +2233,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_integrate_frontier_cliques
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_military_deal
         prerequisite = { focus = ZKN_secure_the_frontiers }
 		mutually_exclusive = { focus = ZKN_establish_frontier_crown_colony }
 		x = 1
@@ -2223,6 +2248,8 @@ focus_tree={
 		
 		available = {
             ZKN_is_kingdom = no
+			NOT = { country_exists = ZFC }
+			NOT = { country_exists = ZFE }
         }
 
 		bypass = {
@@ -2281,7 +2308,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_exploit_the_balekelemi_region
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_resource_extraction
         prerequisite = { focus = ZKN_establish_balekelemi_crown_colony focus = ZKN_revive_the_elotropia_plan }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -2295,7 +2322,10 @@ focus_tree={
         }
 		
 		available = {
-            
+            controls_state = 805
+			controls_state = 1253
+			controls_state = 884
+			controls_state = 1252
         }
 
 		bypass = {
@@ -2349,7 +2379,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_exploit_the_frontier
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_resource_extraction
         prerequisite = { focus = ZKN_establish_frontier_crown_colony focus = ZKN_integrate_frontier_cliques }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -2363,7 +2393,7 @@ focus_tree={
         }
 		
 		available = {
-            
+            controls_state = 135
         }
 
 		bypass = {
@@ -2384,7 +2414,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_even_greater_expansion
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_territory_or_war
         prerequisite = { focus = ZKN_establish_balekelemi_crown_colony focus = ZKN_revive_the_elotropia_plan }
 		prerequisite = { focus = ZKN_establish_frontier_crown_colony focus = ZKN_integrate_frontier_cliques }
 		#mutually_exclusive = { focus =  }
@@ -2407,13 +2437,23 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_ideas = ZKN_continental_warfare
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_state = {
+				limit = {
+					NOT = { is_core_of = ROOT }
+					ZLF_is_on_continent_tewara = yes
+				}
+				add_claim_by = ROOT
+			}
 		}
 	}
 
 	focus = {
 		id = ZKN_cross_the_strait
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_naval_invasion
         prerequisite = { focus = ZKN_even_greater_expansion }
 		#mutually_exclusive = { focus =  }
 		x = -2
@@ -2453,7 +2493,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_expand_the_fleet
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_navy_battleship
         prerequisite = { focus = ZKN_cross_the_strait }
 		#mutually_exclusive = { focus =  }
 		x = -3
@@ -2481,7 +2521,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_attack_the_centraurs
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_little_entente
         prerequisite = { focus = ZKN_cross_the_strait }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -2521,7 +2561,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_control_the_sea
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_trade
         prerequisite = { focus = ZKN_cross_the_strait }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -2550,7 +2590,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_strike_wighardia
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_war_with_comintern
         prerequisite = { focus = ZKN_attack_the_centraurs }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -2597,7 +2637,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_prepare_war_against_rio_azul
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_secret_service_agency
         prerequisite = { focus = ZKN_attack_the_centraurs }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -2613,12 +2653,15 @@ focus_tree={
 		available = {
             is_subject = no
             is_neighbor_of = ZSQ
+			if = {
+				limit = { has_dlc = "La Resistance" }
+				has_intelligence_agency = yes
+			}
         }
 
 		bypass = {
 			ZSQ = {
 				OR = {
-					has_war_with = ROOT
 					exists = no
 					is_ally_with = ROOT
 				}
@@ -2626,13 +2669,13 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_ideas = ZKN_infiltration_of_rio_azul
 		}
 	}
 
 	focus = {
 		id = ZKN_strike_rio_azul
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_total_war
         prerequisite = { focus = ZKN_prepare_war_against_rio_azul }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -2672,7 +2715,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_negotiate_with_naskaloj
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = ZKN_strike_wighardia }
         prerequisite = { focus = ZKN_strike_rio_azul }
 		mutually_exclusive = { focus = ZKN_protect_turun focus = ZKN_approach_the_marshals_regime }
@@ -2687,26 +2730,34 @@ focus_tree={
         }
 		
 		available = {
+			is_subject = no
             ZKN_is_kingdom = yes
 			ZIA = {
 				exists = yes
 				has_government = neutrality
 				NOT = { has_war_with = ROOT }
+				is_subject = no
 			}
         }
 
 		bypass = {
 			
         }
+
+		will_lead_to_war_with = ZIE
+		will_lead_to_war_with = ZRB
+		will_lead_to_war_with = ZDI
+		will_lead_to_war_with = ZRU
+		will_lead_to_war_with = ZRA
 		
 		completion_reward = {
-			
+			country_event = ZKN_events.26
 		}
 	}
 
 	focus = {
 		id = ZKN_protect_turun
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = ZKN_strike_wighardia }
         prerequisite = { focus = ZKN_strike_rio_azul }
 		prerequisite = { focus = ZKN_march_against_kagraz }
@@ -2722,21 +2773,93 @@ focus_tree={
         }
 		
 		available = {
-            
+            is_subject = no
+			has_war = no
         }
 
+		will_lead_to_war_with = ZIA
+		will_lead_to_war_with = ZIE
+		will_lead_to_war_with = ZRB
+		will_lead_to_war_with = ZDI
+		will_lead_to_war_with = ZRU
+		will_lead_to_war_with = ZRA
+
 		bypass = {
-			
+			ZIA = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+			ZIE = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+			ZRB = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+			ZDI = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+			ZRU = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+			ZRA = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
         }
 		
 		completion_reward = {
-			
+			create_wargoal = {
+				target = ZIA
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZIE
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZRB
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZDI
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZRU
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZRA
+				type = annex_everything
+			}
 		}
 	}
 
 	focus = {
 		id = ZKN_approach_the_marshals_regime
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = ZKN_strike_wighardia }
         prerequisite = { focus = ZKN_strike_rio_azul }
 		prerequisite = { focus = ZKN_march_against_kagraz }
@@ -2752,11 +2875,13 @@ focus_tree={
         }
 		
 		available = {
+			is_subject = no
             has_government = fascism
 			ZIE = {
 				exists = yes
 				has_country_leader = { character = ZIE_trephan_bojodavic ruling_only = yes }
 				NOT = { has_war_with = ROOT }
+				is_subject = no
 			}
         }
 
@@ -2771,7 +2896,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_subjugate_the_wasteland
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_PER_desert_training
         prerequisite = { focus = ZKN_even_greater_expansion }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -2826,7 +2951,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_secure_the_mining_towns # includes the witchdom and caelea
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_annex_country
         prerequisite = { focus = ZKN_subjugate_the_wasteland }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -2907,7 +3032,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_subjugate_the_house_of_esta
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_monarchy_1
         prerequisite = { focus = ZKN_secure_the_mining_towns }
 		#mutually_exclusive = { focus =  }
 		x = -1
@@ -2940,7 +3065,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_slay_the_dragon
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_HUN_uplift_the_dragon_movement
         prerequisite = { focus = ZKN_subjugate_the_wasteland }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -2980,7 +3105,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_military_applications_of_dragon_blood
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_ARG_fascist_researchers
         prerequisite = { focus = ZKN_slay_the_dragon }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -2994,7 +3119,7 @@ focus_tree={
         }
 		
 		available = {
-            ZKN_is_kingdom = no
+            has_government = fascism
 			NOT = { country_exists = ZRZ }
 			any_controlled_state = {
 				is_core_of = ZRZ
@@ -3012,7 +3137,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_form_wasteland_reconstruction_authority
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_construction
         prerequisite = { focus = ZKN_secure_the_mining_towns }
 		prerequisite = { focus = ZKN_slay_the_dragon }
 		#mutually_exclusive = { focus =  }
@@ -3028,9 +3153,18 @@ focus_tree={
 		
 		available = {
 			is_subject = no
+			if = {
+				limit = { ZKN_is_kingdom = yes }
+				has_completed_focus = ZKN_subjugate_the_house_of_esta
+			}
             custom_trigger_tooltip = {
 				tooltip = ZKN_form_wasteland_reconstruction_authority_trigger
-				always = no
+				all_state = {
+					OR = {
+						ZKN_chrysea_mandate_states = no
+						is_owned_and_controlled_by = ROOT
+					}
+				}
 			}
         }
 
@@ -3040,12 +3174,93 @@ focus_tree={
 		
 		completion_reward = {
 			custom_effect_tooltip = ZKN_form_wasteland_reconstruction_authority_tt
+			hidden_effect = {
+				create_dynamic_country = {
+                    original_tag = ZBT
+                    set_cosmetic_tag = ZKN_reconstruction_mandate
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZKN_chrysea_mandate_states = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZKN_chrysea_mandate_states = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_integrated_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    load_focus_tree = ZLF_generic_focus_tree
+
+                    set_politics = {
+                        ruling_party = neutrality
+                        elections_allowed = no
+                        name = ZKN_neutrality_party_mandate
+                        long_name = ZKN_neutrality_party_mandate_long
+                    }
+                    set_popularities = {
+                        democratic = 15
+                        communism = 10
+                        neutrality = 60
+                        fascism = 15
+                    }
+
+                    if = {
+						limit = { ROOT = { has_completed_focus = ZKN_subjugate_the_house_of_esta } }
+						every_possible_country = {
+							limit = { has_character = ZBT_duke_esta }
+							ZBT_duke_esta = {
+								set_nationality = PREV.PREV
+								add_country_leader_role = {
+									character = ZBT_duke_esta
+									promote_leader = yes
+									country_leader = {
+										ideology = despotism
+										expire = "1965.1.1.1"
+										traits = { popular_figurehead }
+									}
+								}
+							}
+						}
+					}
+                }
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					has_idea = ZKN_continental_warfare_3
+				}
+				swap_ideas = {
+					remove_idea = ZKN_continental_warfare_3
+					add_idea = ZKN_continental_warfare_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ZKN_continental_warfare
+					add_idea = ZKN_continental_warfare_2
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ZKN_march_against_kagraz
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_major_war
         prerequisite = { focus = ZKN_form_wasteland_reconstruction_authority }
 		#mutually_exclusive = { focus =  }
 		x = -2
@@ -3059,21 +3274,33 @@ focus_tree={
         }
 		
 		available = {
-            
+            is_subject = no
+			is_neighbor_of = ZKS
         }
 
 		bypass = {
-			
+			ZKS = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
         }
+
+		will_lead_to_war_with = ZKS
 		
 		completion_reward = {
-			
+			create_wargoal = {
+				target = ZKS
+				type = annex_everything
+			}
 		}
 	}
 
 	focus = {
 		id = ZKN_exploit_basaltopolis
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_mining_industry
         prerequisite = { focus = ZKN_form_wasteland_reconstruction_authority }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -3130,7 +3357,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_fortify_the_northern_borders
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_fortify_the_westwall
         prerequisite = { focus = ZKN_form_wasteland_reconstruction_authority }
 		#mutually_exclusive = { focus =  }
 		x = 2
@@ -3173,7 +3400,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_annex_the_reconstruction_authority
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_annex_country_2
 		prerequisite = { focus = ZKN_march_against_kagraz }
 		prerequisite = { focus = ZKN_exploit_basaltopolis }
         prerequisite = { focus = ZKN_fortify_the_northern_borders }
@@ -3189,7 +3416,7 @@ focus_tree={
         }
 		
 		available = {
-            
+            has_subject = ZBT
         }
 
 		bypass = {
@@ -3197,13 +3424,22 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			annex_country = {
+				target = ZBT
+				transfer_troops = yes
+			}
+
+			ZBT = {
+				every_core_state = {
+					set_compliance = 50
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ZKN_keep_the_reconstruction_authority
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = ZKN_march_against_kagraz }
 		prerequisite = { focus = ZKN_exploit_basaltopolis }
         prerequisite = { focus = ZKN_fortify_the_northern_borders }
@@ -3219,7 +3455,7 @@ focus_tree={
         }
 		
 		available = {
-            
+            has_subject = ZBT
         }
 
 		bypass = {
@@ -3227,13 +3463,13 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_stability = 0.1
 		}
 	}
 
 	focus = {
 		id = ZKN_secure_the_avalonian_front
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_treaty
         prerequisite = { focus = ZKN_even_greater_expansion }
 		#mutually_exclusive = { focus =  }
 		x = 6
@@ -3287,7 +3523,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_further_cooperation_with_avalon
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_positive_trade_relations
         prerequisite = { focus = ZKN_secure_the_avalonian_front }
 		mutually_exclusive = { focus = ZKN_protect_the_avalonian_border }
 		x = -1
@@ -3337,7 +3573,7 @@ focus_tree={
 
 	focus = {
 		id = ZKN_protect_the_avalonian_border
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_provoke_border_clashes
         prerequisite = { focus = ZKN_secure_the_avalonian_front }
 		mutually_exclusive = { focus = ZKN_further_cooperation_with_avalon }
 		x = 1
@@ -3370,14 +3606,14 @@ focus_tree={
 		completion_reward = {
 			create_wargoal = {
 				target = ZAV
-				type = topple_government
+				type = annex_everything
 			}
 		}
 	}
 
 	focus = {
 		id = ZKN_increase_navy_presence_around_the_cape
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_amphibious_assault
         prerequisite = { focus = ZKN_further_cooperation_with_avalon focus = ZKN_protect_the_avalonian_border }
 		#mutually_exclusive = { focus =  }
 		x = 0
@@ -3399,13 +3635,36 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = ZKN_increase_navy_presence_around_the_cape
+				bonus = 2
+				uses = 1
+				category = marine_tech
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					has_idea = ZKN_continental_warfare_2
+				}
+				swap_ideas = {
+					remove_idea = ZKN_continental_warfare_2
+					add_idea = ZKN_continental_warfare_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ZKN_continental_warfare
+					add_idea = ZKN_continental_warfare_3
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ZKN_continue_defensive_buildup
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_construct_naval_dockyard
         prerequisite = { focus = ZKN_increase_navy_presence_around_the_cape }
 		mutually_exclusive = { focus = ZKN_preemptive_strike_against_paam }
 		x = -1
@@ -3427,13 +3686,16 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = ZKN_temporary_naval_buff
+				days = 100
+			}
 		}
 	}
 
 	focus = {
 		id = ZKN_preemptive_strike_against_paam
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_wolf_pack
         prerequisite = { focus = ZKN_increase_navy_presence_around_the_cape }
 		mutually_exclusive = { focus = ZKN_continue_defensive_buildup }
 		x = 1
@@ -3447,21 +3709,30 @@ focus_tree={
         }
 		
 		available = {
-            
+            is_subject = no
         }
 
 		bypass = {
-			
+			ZPS = {
+				OR = {
+					has_war_with = ROOT
+					exists = no
+					is_ally_with = ROOT
+				}
+			}
         }
 		
 		completion_reward = {
-			
+			create_wargoal = {
+				target = ZPS
+				type = annex_everything
+			}
 		}
 	}
 
 	focus = {
 		id = ZKN_establish_western_client_states
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = ZKN_negotiate_with_naskaloj focus = ZKN_protect_turun focus = ZKN_approach_the_marshals_regime }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -3475,7 +3746,7 @@ focus_tree={
         }
 		
 		available = {
-            
+            NOT = { country_exists = ZSQ }
         }
 
 		bypass = {
@@ -3483,13 +3754,18 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			ZSQ = {
+				every_core_state = {
+					add_manpower = 10000
+					add_compliance = 25
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ZKN_secure_the_western_front
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = ZKN_negotiate_with_naskaloj focus = ZKN_protect_turun focus = ZKN_approach_the_marshals_regime }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -3503,7 +3779,12 @@ focus_tree={
         }
 		
 		available = {
-            
+			has_war = no
+			is_subject = no
+            any_other_country = {
+				capital_scope = { is_on_continent = Msafikutifu }
+				NOT = { has_war_with = ROOT }
+			}
         }
 
 		bypass = {
@@ -3511,13 +3792,29 @@ focus_tree={
         }
 		
 		completion_reward = {
-			# non-aggression pact with any nation on the penguin continent
+			every_other_country = {
+				limit = { 
+					capital_scope = { is_on_continent = Msafikutifu }
+					NOT = { has_war_with = ROOT }
+				}
+				country_event = { id = ZKN_events.23 days = 10 }
+
+				custom_effect_tooltip = if_they_accept_tt
+
+				effect_tooltip = {
+					diplomatic_relation = {
+						country = THIS
+						relation = non_aggression_pact
+						active = yes
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ZKN_divide_the_grand_cape
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = ZKN_continue_defensive_buildup focus = ZKN_preemptive_strike_against_paam }
 		#mutually_exclusive = { focus =  }
 		x = 1
@@ -3531,7 +3828,7 @@ focus_tree={
         }
 		
 		available = {
-            
+            NOT = { country_exists = ZPS }
         }
 
 		bypass = {
@@ -3539,7 +3836,28 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					NOT = { has_completed_focus = ZKN_divide_the_grand_cape }
+				}
+				ZPS = {
+					every_core_state = {
+						add_resistance = -10
+						add_resource = {
+							type = rubber
+							amount = 5
+						}
+						add_dynamic_modifier = { modifier = ZKN_resource_extraction_efforts_modifier scope = ROOT }
+					}
+				}
+			}
+			else = {
+				ZPS = {
+					every_core_state = {
+						limit = { is_controlled_by = ROOT }
+					}
+				}
+			}
 		}
 	}
 
@@ -3569,7 +3887,10 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ZKN_continental_warfare_4
+				add_idea = ZKN_continental_hegemony
+			}
 		}
 	}
 
@@ -3589,7 +3910,11 @@ focus_tree={
         }
 		
 		available = {
-            
+            any_other_country = {
+				capital_scope = { ZLF_is_on_continent_tewara = yes }
+				NOT = { has_war_with = ROOT }
+				is_neighbor_of = ROOT
+			}
         }
 
 		bypass = {
@@ -3597,7 +3922,13 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			every_other_country = {
+				limit = {
+					capital_scope = { ZLF_is_on_continent_tewara = yes }
+					NOT = { has_war_with = ROOT }
+					is_neighbor_of = ROOT
+				}
+			}
 		}
 	}
 
@@ -5049,6 +5380,7 @@ focus_tree={
         }
 		
 		available = {
+			is_subject = no
             NOT = { has_idea = ZKN_reconstruction_military }
         }
 

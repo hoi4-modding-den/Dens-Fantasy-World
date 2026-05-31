@@ -346,6 +346,11 @@ ZLF_faction_goal_federalisation_mission = {
 	complete_effect = {
 		add_faction_power_projection = 500
 
+		add_faction_goal_slot = {
+			category  = long_term
+			value = -1 
+		}
+
 		custom_effect_tooltip = generic_skip_one_line_tt
 
 		custom_effect_tooltip = THE_FACTION_LEADER
@@ -389,6 +394,11 @@ ZLF_faction_goal_democratic_support_mission = {
 	}
 	complete_effect = {
 		add_faction_power_projection = 1000
+
+		add_faction_goal_slot = {
+			category  = long_term
+			value = -1 
+		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 

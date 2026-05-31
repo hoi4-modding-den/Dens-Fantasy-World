@@ -297,7 +297,7 @@ ZTC_balance_of_power_category = {
         icon = generic_fundraising
 
         ai_will_do = {
-            base = 20
+            base = 1000 # to prevent unfinished fascist path
         }
 
         cost = 25

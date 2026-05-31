@@ -903,7 +903,7 @@ characters = {
         }
         
 		corps_commander = {
-            traits = { infantry_officer }
+            traits = { infantry_officer inflexible_strategist }
             skill = 3
             attack_skill = 2
             defense_skill = 3
@@ -1271,6 +1271,45 @@ characters = {
         }
 	}
 
+    ZLF_peter_haag = {
+		name = ZLF_peter_haag_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_peter_haag
+				small = GFX_portrait_ZLF_peter_haag_small
+			}
+		}
+
+		advisor = {
+            slot = high_command
+            idea_token = ZLF_peter_haag_token
+            allowed = {
+                original_tag = ZLF
+            }
+            available = {
+                has_government = communism
+            }
+
+			cost = 100
+
+            traits = {
+                army_radio_intelligence_2
+            }
+            ai_will_do = {
+                base = 5
+            }
+        }
+        
+		corps_commander = {
+            traits = { commando urban_assault_specialist brilliant_strategist }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 2
+        }
+	}
+
     ZLF_verda_majo = {
 		name = ZLF_verda_majo_name
 		portraits = {
@@ -1334,11 +1373,47 @@ characters = {
 		}
 	}
 
+    ZLF_erich_boehmer = {
+		name = ZLF_erich_boehmer_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_erich_boehmer
+			}
+		}
+	}
+
     ZLF_elaphus = {
 		name = ZLF_elaphus_name
 		portraits = {
 			army = {
 				large = GFX_portrait_ZLF_elaphus
+			}
+		}
+	}
+
+    ZLF_kato_haman = {
+		name = ZLF_kato_haman_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_kato_haman
+			}
+		}
+	}
+
+    ZLF_danila_duarte = {
+		name = ZLF_danila_duarte_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_danila_duarte
+			}
+		}
+	}
+
+    ZLF_li_feigan = {
+		name = ZLF_li_feigan_name
+		portraits = {
+			army = {
+				large = GFX_portrait_ZLF_li_feigan
 			}
 		}
 	}

@@ -18,6 +18,10 @@ ZLF_elbian_state = {
 	color = rgb { 80 135 99 }
 	color_ui = rgb { 80 135 99 }
 }
+ZLF_tewara = {
+	color = rgb { 22 47 161 }
+	color_ui = rgb { 22 47 161 }
+}
 ZKN_directorate = {
 	color = rgb { 96 55 135 }
 	color_ui = rgb { 96 55 135 }

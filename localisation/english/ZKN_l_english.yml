@@ -33,6 +33,14 @@
  ZKN_vampire_realm_fascism_DEF: "the Imperial Despotate of Gardenia"
  ZKN_vampire_realm_fascism_ADJ: "Gardenian"
 
+ XCE_ZKN_autonomy_personal_union: "Kelandra-Suzeränität"
+ XCE_ZKN_autonomy_personal_union_DEF: "the Celandra Suzerainty"
+ XCE_ZKN_autonomy_personal_union_ADJ: "Celandran"
+
+ ZKN_reconstruction_mandate: "Reichsmandat Krysäa"
+ ZKN_reconstruction_mandate_DEF: "the Imperial Mandate of Chrysea"
+ ZKN_reconstruction_mandate_ADJ: "Chrysean"
+
 
 # FACTIONS
 
@@ -42,17 +50,20 @@
 # PARTIES
 
  ZKN_neutrality_party: "Zinnientron"
- ZKN_neutrality_party_long: "Court of the Zinnian Throne"
+ ZKN_neutrality_party_long: "Hof des Zinnientrons\n(Court of the Zinnian Throne)"
  ZKN_neutrality_party_pragmaticists: "RdnR (P)"
- ZKN_neutrality_party_pragmaticists_long: "Government of National Salvation - Pragmaticist Clique"
- ZKN_democratic_party: "$ZLF_democratic_party$"
- ZKN_democratic_party_long: "$ZLF_democratic_party_long$"
- ZKN_communism_party: "$ZLF_communism_party$"
- ZKN_communism_party_long: "$ZLF_communism_party_long$"
+ ZKN_neutrality_party_pragmaticists_long: "Regierung der nationalen Rettung - Pragmatizistsche Clique\n(Government of National Salvation - Pragmaticist Clique)"
+ ZKN_democratic_party: "Verfassungsfraktion"
+ ZKN_democratic_party_long: "Verfassungsfraktion\n(Constitutional Faction)"
+ ZKN_communism_party: "AMA"
+ ZKN_communism_party_long: "Antimilitärischer Apparat\n(Anti-Military Apparatus)"
  ZKN_fascism_party: "RdnR"
- ZKN_fascism_party_long: "Government of National Salvation"
+ ZKN_fascism_party_long: "Regierung der nationalen Rettung\n(Government of National Salvation)"
  ZKN_fascism_party_vampires: "Karmesin-Regentschaft"
- ZKN_fascism_party_vampires_long: "The Crimson Regency"
+ ZKN_fascism_party_vampires_long: "Karmesin-Regentschaft\n(Crimson Regency)"
+
+ ZKN_neutrality_party_mandate: "Amt des Mandatsaufsehers"
+ ZKN_neutrality_party_mandate_long: "Office of the Mandate Overseer"
 
 
 # IDEOLOGIES
@@ -147,9 +158,13 @@
  ZKN_the_KSD: "Agenten des Königlichen Sicherheitsdienst"
  ZKN_pacification_of_korelia: "Pacification of Korelia"
  ZKN_northern_military_focus: "Legacy of the Last Northeastern War"
+ ZKN_continental_warfare: "The Unification Wars"
+ ZKN_anti_communist_crusade: "Crush the Spirit of Marxism"
+ ZKN_infiltration_of_rio_azul: "Reports from Rio Azul"
  ZKN_avalonian_cooperation_agreement: "Gardenien-Avalon Cooperation"
  ZKN_avalonian_cooperation_agreement_2: "Gardenien-Avalon Defence Agreement"
- ZKN_anti_communist_crusade: "Crush the Spirit of Marxism"
+ ZKN_temporary_naval_buff: "Naval Buildup"
+ ZKN_continental_hegemony: "Continental Hegemony"
  ZKN_seized_noble_estates: "Seized Noble Estates"
  ZKN_military_government: "Direktorat der Obersten Armeekommandantur"
  ZKN_central_planning: "Wirtschaftsplanbüro"
@@ -301,6 +316,7 @@
  ZKN_elect_a_prime_minister_desc: ""
  ZKN_negotiate_celandran_cooperation: "Reopen Dialogue with Celandra"
  ZKN_negotiate_celandran_cooperation_desc: ""
+ ZKN_negotiate_celandran_cooperation_tt: "We will attempt to restore §YZinnian Claims on Celandra§!, either ending in §GPeaceful Integration§!, §YRestoration of the Celandran Suzerainty§! or §RWar§!."
  ZKN_continue_appeasing_the_nobles: "Appease the Nobles"
  ZKN_continue_appeasing_the_nobles_desc: ""
  ZKN_promote_aristocratic_generals: "Promote Aristocratic Commanders"
@@ -401,13 +417,13 @@
  ZKN_military_applications_of_dragon_blood_desc: ""
  ZKN_form_wasteland_reconstruction_authority: "Form a Reconstruction Mandate"
  ZKN_form_wasteland_reconstruction_authority_desc: ""
- ZKN_form_wasteland_reconstruction_authority_trigger: "owns and controls all §YChrysean states§!"
- ZKN_form_wasteland_reconstruction_authority_tt: "The §YChrysea Reconstruction Mandate§! will be released in relevant states."
+ ZKN_form_wasteland_reconstruction_authority_trigger: "Owns and controls all §YChrysean states§!"
+ ZKN_form_wasteland_reconstruction_authority_tt: "Release §Y$ZKN_reconstruction_mandate_DEF$§! in relevant states."
  ZKN_march_against_kagraz: "March against Kagraz"
  ZKN_march_against_kagraz_desc: ""
  ZKN_exploit_basaltopolis: "Exploit Basaltopolis"
  ZKN_exploit_basaltopolis_desc: ""
- ZKN_fortify_the_northern_borders: "Fortify the Northern Borders"
+ ZKN_fortify_the_northern_borders: "Secure the Northern Borders"
  ZKN_fortify_the_northern_borders_desc: ""
  ZKN_annex_the_reconstruction_authority: "Integrate the Wasteland"
  ZKN_annex_the_reconstruction_authority_desc: ""
@@ -425,7 +441,7 @@
  ZKN_continue_defensive_buildup_desc: ""
  ZKN_preemptive_strike_against_paam: "Preemptive Strike against the Pan-Specific"
  ZKN_preemptive_strike_against_paam_desc: ""
- ZKN_establish_western_client_states: "Establish Western Client States"
+ ZKN_establish_western_client_states: "Free the Slaves"
  ZKN_establish_western_client_states_desc: ""
  ZKN_secure_the_western_front: "Treaty of the Western Sea"
  ZKN_secure_the_western_front_desc: ""
@@ -780,6 +796,74 @@
  ZKN_events.16.desc: "WIP"
  ZKN_events.16.a: "Ostersee has the expertise."
  ZKN_events.16.b: "Von Degretschow secures the seat of power."
+
+ ZKN_events.17.t: "The Zinnian Throne renews its Celandran Claims"
+ ZKN_events.17.desc: "WIP"
+ ZKN_events.17.a: "We must recognise that the Zinnia is in bloom."
+ ZKN_events.17.b: "That bluff didn't work in 1907 and it doesn't work now!"
+
+ ZKN_events.18.t: "Integration of the Celandran Suzerainty"
+ ZKN_events.18.desc: "WIP"
+ ZKN_events.18.a: "Hip-Hip-Hurra!"
+
+ ZKN_events.19.t: "Celandra refuses Integration"
+ ZKN_events.19.desc: "WIP"
+ ZKN_events.19.a: "Mobilise the Troops!"
+
+ ZKN_events.20.t: "Zinnia Mobilises!"
+ ZKN_events.20.desc: "WIP"
+ ZKN_events.20.a: "Integration it is..."
+ ZKN_events.20.b: "Perhaps we can compromise on restoration of the Suzerainty?"
+ ZKN_events.20.c: "Let them come!"
+
+ ZKN_events.21.t: "Restoration of the Celandran Suzerainty"
+ ZKN_events.21.desc: "WIP"
+ ZKN_events.21.a: "We can centralise later on."
+
+ ZKN_events.22.t: "Celandra remains defiant!"
+ ZKN_events.22.desc: "WIP"
+ ZKN_events.22.a: "We shall crush the traitors!"
+
+ ZKN_events.23.t: "An Emissary from Gardenia"
+ ZKN_events.23.desc: "WIP"
+ ZKN_events.23.a: "We have no quarrel with Teware."
+ ZKN_events.23.b: "This disturbs our plans."
+
+ ZKN_events.24.t: "[FROM.GetNameDefCap] signs the Western Sea Treaty"
+ ZKN_events.24.desc: "WIP"
+ ZKN_events.24.a: "This treaty will secure eternal peace!"
+
+ ZKN_events.25.t: "[FROM.GetNameDefCap] refuses to sign the Western Sea Treaty"
+ ZKN_events.25.desc: "WIP"
+ ZKN_events.25.a: "Suspicious, but what are they going to do?"
+
+ ZKN_events.26.t: "One the Road to Naskalój"
+ ZKN_events.26.desc: "WIP"
+ ZKN_events.26.a: "We shall become equal partners."
+ ZKN_events.26.b: "The Sardine Crown will swear fealty to us."
+ ZKN_events.26.c: "We care not for their region. Just demand a Non-Agression Pact."
+
+ ZKN_events.27.t: "The Zinnian Throne proposes Parternship"
+ ZKN_events.27.desc: "WIP"
+ ZKN_events.27.a: "Better us than them..."
+ ZKN_events.27.b: "We cannot accept this."
+
+ ZKN_events.28.t: "Naskalój signs the Royalist Pact"
+ ZKN_events.28.desc: "WIP"
+ ZKN_events.28.a: "Perfekt."
+
+ ZKN_events.29.t: "The Zinnian Throne demands Subjugation"
+ ZKN_events.29.desc: "WIP"
+ ZKN_events.29.a: "We have no other choice."
+ ZKN_events.29.b: "Their threats mean nothing!"
+
+ ZKN_events.30.t: "Naskalój swears Fealty"
+ ZKN_events.30.desc: "WIP"
+ ZKN_events.30.a: "Good choice."
+
+ ZKN_events.31.t: "[FROM.GetNameDefCap] rejects our Advances!"
+ ZKN_events.31.desc: "WIP"
+ ZKN_events.31.a: "What a shame. Ready the Army."
 
 
  ZKN_news_events.1.t: "Loyalists win the Gardenian Civil War"

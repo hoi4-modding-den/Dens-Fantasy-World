@@ -49,6 +49,7 @@ characters = {
         portraits = {
             civilian = {
                 large = GFX_portrait_ZSP_the_phoenix
+                small = GFX_portrait_ZSP_the_phoenix_small
             }
         }
 

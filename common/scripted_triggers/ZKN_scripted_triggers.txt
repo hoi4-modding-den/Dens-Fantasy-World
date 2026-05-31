@@ -11,3 +11,29 @@ ZKN_is_kingdom = {
         }
     }
 }
+
+ZKN_chrysea_mandate_states = {
+    OR = {
+        state = 162
+        state = 269
+        state = 250
+        state = 176
+        state = 577
+        state = 730
+        state = 888
+        state = 739
+        state = 648
+        state = 261
+        state = 821
+        state = 710
+        state = 644
+        state = 682
+        state = 679
+        state = 599
+        state = 72
+        state = 583
+        state = 37
+        state = 178
+        state = 850
+    }
+}

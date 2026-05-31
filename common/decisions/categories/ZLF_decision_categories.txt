@@ -97,6 +97,21 @@ ZLF_invite_more_allies_cat = {
 	}
 }
 
+ZLF_anti_despotist_campaigns = {
+
+	icon = GER_war_planning
+	
+	allowed = {
+		original_tag = ZLF
+	}
+
+	priority = 50
+
+	visible = {
+		has_completed_focus = ZLF_begin_the_anti_despotist_campaign
+	}
+}
+
 ZLF_little_republics_cat = {
 
 	icon = spr_the_seeds_of_revolution

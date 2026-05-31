@@ -132,6 +132,10 @@ ZLF_immernoch_sb_state = {
         state = 1247
         state = 713
         state = 858
+
+        state = 691
+        state = 760
+        state = 890
     }
 }
 ZLF_wighardia_sb_state = {
@@ -170,6 +174,295 @@ ZLF_urhu_sb_state = {
         state = 816
         state = 727
         state = 843
+    }
+}
+ZLF_rio_azul_sb_state = {
+    OR = {
+        state = 747
+        state = 818
+        state = 733
+        state = 579
+        state = 886
+        state = 802
+        state = 616
+        state = 840
+        state = 828
+        state = 659
+        state = 773
+        state = 607
+        state = 686
+        state = 604
+        state = 870
+        state = 652
+        state = 571
+        state = 752
+        state = 831
+        state = 774
+        state = 838
+        state = 841
+
+        state = 1222
+        state = 1225
+        state = 1219
+    }
+}
+ZLF_centaur_sb_state = {
+    OR = {
+        state = 692
+        state = 810
+        state = 602
+        state = 692
+        state = 891
+        state = 575
+        state = 767
+        state = 857
+        state = 738
+        state = 700
+        state = 641
+        state = 860
+        state = 725
+        state = 792
+        state = 595
+        state = 804
+        state = 585
+        state = 723
+        state = 673
+        state = 617
+        state = 650
+        state = 1245
+
+        state = 753
+        state = 755
+        state = 830
+        state = 620
+        state = 754
+    }
+}
+ZLF_kagraz_sb_state = {
+    OR = {
+        state = 743
+        state = 770
+        state = 751
+        state = 741
+        state = 875
+        state = 668
+        state = 847
+        state = 803
+        state = 736
+        state = 573
+        state = 729
+        state = 851
+        state = 708
+        state = 868
+        state = 881
+        state = 796
+        state = 788
+
+        state = 1218
+        state = 1243
+    }
+}
+ZLF_peony_sb_state = {
+    OR = {
+        state = 576
+        state = 853
+        state = 876
+        state = 637
+        state = 667
+        state = 610
+        state = 695
+        state = 622
+        state = 846
+        state = 834
+
+        state = 676
+        state = 801
+        state = 651
+        state = 844
+        state = 864
+        state = 769
+        state = 614
+        state = 689
+
+        state = 852
+        state = 611
+        state = 849
+        state = 669
+        state = 593
+        state = 827
+        state = 874
+        state = 718
+
+        state = 633
+        state = 780
+        state = 639
+        state = 867
+        state = 628
+        state = 785
+        state = 675
+        state = 618
+        state = 863
+        state = 658
+        state = 819
+
+        state = 859
+        state = 657
+        state = 854
+        state = 1256
+        state = 704
+        state = 694
+        state = 1255
+        state = 798
+
+        state = 584
+        state = 681
+        state = 660
+        state = 783
+    }
+}
+ZLF_pfalz_sb_state = {
+    OR = {
+        state = 790
+        state = 734
+        state = 569
+        state = 842
+        state = 845
+        state = 619
+
+        state = 728
+        state = 629
+        state = 825
+        state = 720
+        state = 635
+        state = 823
+        state = 837
+        state = 737
+        state = 605
+        state = 771
+
+        state = 811
+        state = 865
+        state = 608
+        state = 761
+        state = 697
+        state = 836
+        state = 600
+        state = 766
+        state = 663
+
+        state = 594
+        state = 820
+        state = 645
+        state = 574
+        state = 856
+        state = 759
+        state = 654
+        state = 624
+        state = 793
+        state = 882
+        state = 613
+        state = 715
+
+        state = 582
+        state = 588
+        state = 693
+        state = 892
+        state = 889
+        state = 661
+        state = 642
+        state = 623
+        state = 696
+        state = 757
+        state = 711
+        state = 638
+        state = 866
+
+        state = 578
+        state = 688
+        state = 784
+        state = 609
+        state = 606
+        state = 632
+    }
+}
+ZLF_northern_sb_state = {
+    OR = {
+        state = 722
+        state = 597
+        state = 786
+        state = 764
+        state = 765
+        state = 776
+        state = 672
+        state = 712
+
+        state = 649
+        state = 701
+        state = 631
+        state = 781
+        state = 726
+        state = 680
+        state = 778
+        state = 643
+        state = 745
+        state = 590
+
+        state = 872
+        state = 724
+        state = 824
+        state = 735
+        state = 808
+        state = 572
+        state = 772
+        state = 707
+        state = 861
+        state = 839
+        state = 815
+        state = 877
+        state = 795
+        state = 748
+        state = 699
+
+        state = 716
+        state = 698
+        state = 763
+        state = 674
+        state = 789
+        state = 598
+        state = 671
+        state = 742
+        state = 797
+        state = 647
+        state = 670
+
+        state = 683
+        state = 799
+        state = 592
+        state = 687
+        state = 596
+        state = 862
+        state = 684
+        state = 809
+
+        state = 750
+        state = 731
+        state = 640
+        state = 160
+        state = 78
+        state = 303
+        state = 306
+        state = 170
+
+        state = 627
+        state = 277
+        state = 219
+        state = 360
+        state = 4
+        state = 282
+        state = 35
+        state = 254
+
+        state = 1216
     }
 }
 

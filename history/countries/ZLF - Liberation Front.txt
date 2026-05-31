@@ -91,6 +91,7 @@ recruit_character = ZLF_mina_witkojc
 recruit_character = ZLF_jakub_bart_cisinski
 recruit_character = ZLF_uwe_koch
 recruit_character = ZLF_milo_wandsbeker
+recruit_character = ZLF_peter_haag
 
 recruit_character = ZLF_verda_majo
 recruit_character = ZLF_giovanni_campanella
@@ -99,7 +100,11 @@ recruit_character = ZLF_adomas_dereska
 recruit_character = ZLF_john_smith
 recruit_character = ZLF_richard_anderson
 recruit_character = ZLF_turron
+recruit_character = ZLF_erich_boehmer
 recruit_character = ZLF_elaphus
+recruit_character = ZLF_kato_haman
+recruit_character = ZLF_danila_duarte
+recruit_character = ZLF_li_feigan
 
 
 set_country_flag = DEN_no_generic_political_advisors

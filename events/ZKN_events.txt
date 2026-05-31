@@ -329,6 +329,9 @@ country_event = { # Army storms the Palace
 
 	option = {
 		name = ZKN_post_cw_events.4.b
+		ai_chance = {
+			base = 0 # UNFINISHED CONTENT
+		}
 		add_manpower = -1200
 		if = {
 			limit = { NOT = { has_completed_focus = ZKN_ensure_army_loyalty } }
@@ -422,6 +425,9 @@ country_event = { # Camarilla Regency
 
 	option = {
 		name = ZKN_post_cw_events.6.b
+		ai_chance = {
+			base = 0 # UNFINISHED CONTENT
+		}
         add_political_power = -50
 
 		hidden_effect = {
@@ -1127,11 +1133,11 @@ country_event = { # House of Esta Event
 
 	option = {
 		name = ZKN_events.10.a
-		
+
 	}
 }
 
-country_event = { # Non-Aggression Pact with Z70
+country_event = { # Non-Aggression Pact with country
 	id = ZKN_events.11
 	title = ZKN_events.11.t
 	desc = ZKN_events.11.desc
@@ -1169,7 +1175,7 @@ country_event = { # Non-Aggression Pact with Z70
 	}
 }
 
-country_event = { # Non-Aggression Pact with Z70 - Accepted
+country_event = { # Non-Aggression Pact with country - Accepted
 	id = ZKN_events.12
 	title = ZKN_events.12.t
 	desc = ZKN_events.12.desc
@@ -1189,7 +1195,7 @@ country_event = { # Non-Aggression Pact with Z70 - Accepted
 	}
 }
 
-country_event = { # Non-Aggression Pact with Z70 - Rejected
+country_event = { # Non-Aggression Pact with country - Rejected
 	id = ZKN_events.13
 	title = ZKN_events.13.t
 	desc = ZKN_events.13.desc
@@ -1308,6 +1314,610 @@ country_event = { # Pragmaticist Coup
         }
 	}
 }
+
+country_event = { # Celandran Dialogue
+	id = ZKN_events.17
+	title = ZKN_events.17.t
+	desc = ZKN_events.17.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { # accept
+		name = ZKN_events.17.a
+		ai_chance = { base = 1 }
+		effect_tooltip = {
+			FROM = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+		
+		FROM = { country_event = { id = ZKN_events.18 days = 5 } }
+	}
+
+	option = { # refuse
+		name = ZKN_events.17.b
+		ai_chance = { base = 4 }
+		add_political_power = 50
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		effect_tooltip = {
+			FROM = { 
+				add_war_support = 0.1
+				add_manpower = 5000
+			}
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+		
+		FROM = { country_event = { id = ZKN_events.19 days = 5 } }
+	}
+}
+
+country_event = { # Celandran Dialogue - accepted first time
+	id = ZKN_events.18
+	title = ZKN_events.18.t
+	desc = ZKN_events.18.desc
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_events.18.a
+		annex_country = {
+			target = FROM
+			transfer_troops = yes
+		}
+	}
+}
+
+country_event = { # Celandran Dialogue - rejected first time
+	id = ZKN_events.19
+	title = ZKN_events.19.t
+	desc = ZKN_events.19.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_events.19.a
+		add_war_support = 0.1
+		add_manpower = 5000
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		FROM = { country_event = { id = ZKN_events.20 days = 5 } }
+	}
+}
+
+country_event = { # Celandran Dialogue 2nd Try
+	id = ZKN_events.20
+	title = ZKN_events.20.t
+	desc = ZKN_events.20.desc
+	picture = GFX_report_event_generic_battle
+
+	is_triggered_only = yes
+
+	option = { # accept
+		name = ZKN_events.20.a
+		ai_chance = { base = 2 }
+		effect_tooltip = {
+			FROM = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		FROM = { country_event = { id = ZKN_events.18 days = 5 } }
+	}
+
+	option = { # accept lesser
+		name = ZKN_events.20.b
+		ai_chance = { base = 5 }
+		effect_tooltip = {
+			FROM = {
+				set_autonomy = {
+					target = ROOT
+					autonomous_state = autonomy_personal_union
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			load_focus_tree = ZLF_generic_focus_tree
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		FROM = { country_event = { id = ZKN_events.21 days = 5 } }
+	}
+
+	option = { # reject
+		name = ZKN_events.20.c
+		ai_chance = { base = 1 }
+		effect_tooltip = {
+			FROM = {
+				declare_war_on = {
+					target = ROOT
+					type = take_core_state
+				}
+			}
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		FROM = { country_event = { id = ZKN_events.22 days = 5 } }
+	}
+}
+
+country_event = { # Celandran Dialogue - accepted second time
+	id = ZKN_events.21
+	title = ZKN_events.21.t
+	desc = ZKN_events.21.desc
+	picture = GFX_report_event_romania_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_events.21.a
+		set_autonomy = {
+			target = FROM
+			autonomous_state = autonomy_personal_union
+			end_wars = no
+			end_civil_wars = no
+		}
+		hidden_effect = {
+			FROM = { load_focus_tree = ZLF_generic_focus_tree }
+		}
+	}
+}
+
+country_event = { # Celandran Dialogue - rejected second time
+	id = ZKN_events.22
+	title = ZKN_events.22.t
+	desc = ZKN_events.22.desc
+	picture = GFX_report_event_generic_battle
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_events.22.a
+		declare_war_on = {
+			target = FROM
+			type = take_core_state
+		}
+	}
+}
+
+country_event = { # Non-Aggression Pact with Penguins
+	id = ZKN_events.23
+	title = ZKN_events.23.t
+	desc = ZKN_events.23.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_events.23.a
+		ai_chance = {
+			base = 1
+		}
+		diplomatic_relation = {
+			country = FROM
+			relation = non_aggression_pact
+			active = yes
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		country_event = ZKN_events.24
+	}
+
+	option = {
+		name = ZKN_events.23.b
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = 25
+		add_war_support = 0.02
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		country_event = ZKN_events.25
+	}
+}
+
+country_event = { # Non-Aggression Pact with Penguins - Accepted
+	id = ZKN_events.24
+	title = ZKN_events.24.t
+	desc = ZKN_events.24.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_events.24.a
+		add_political_power = 50
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		effect_tooltip = {
+			diplomatic_relation = {
+				country = FROM
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+}
+
+country_event = { # Non-Aggression Pact with Penguins - Rejected
+	id = ZKN_events.25
+	title = ZKN_events.25.t
+	desc = ZKN_events.25.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_events.25.a
+		add_political_power = -25
+	}
+}
+
+country_event = { # Negotiations with Naskaloj - Choices
+	id = ZKN_events.26
+	title = ZKN_events.26.t
+	desc = ZKN_events.26.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { # they can have their region / allies
+		name = ZKN_events.26.a
+		trigger = { is_faction_leader = yes }
+		ZIA = {
+			country_event = { id = ZKN_events.27 days = 5 }
+		}
+
+		custom_effect_tooltip = if_they_accept_tt
+		effect_tooltip = {
+			add_to_faction = ZIA
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ZIA = {
+				create_wargoal = {
+					target = ZIE
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZRB
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZDI
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZRU
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZRA
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	option = { # they can have their region / subject
+		name = ZKN_events.26.b
+		ZIA = {
+			country_event = { id = ZKN_events.29 days = 5 }
+		}
+
+		custom_effect_tooltip = if_they_accept_tt
+		effect_tooltip = {
+			set_autonomy = {
+				target = ZIA
+				autonomous_state = autonomy_dominion
+				end_wars = no
+				end_civil_wars = no
+			}
+			hidden_effect = {
+				ZIA = { load_focus_tree = ZLF_generic_focus_tree }
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ZIA = {
+				create_wargoal = {
+					target = ZIE
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZRB
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZDI
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZRU
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZRA
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	option = { # just ask for non-aggression pact
+		name = ZKN_events.26.c
+		ai_chance = { base = 0 }
+		ZIA = {
+			country_event = { id = ZKN_events.11 days = 5 }
+		}
+	}
+}
+
+country_event = { # Negotiations with Naskaloj - Allies
+	id = ZKN_events.27
+	title = ZKN_events.27.t
+	desc = ZKN_events.27.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_events.27.a
+		effect_tooltip = {
+			FROM = { add_to_faction = ZIA }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ZIA = {
+				create_wargoal = {
+					target = ZIE
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZRB
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZDI
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZRU
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZRA
+					type = annex_everything
+				}
+			}
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		FROM = { country_event = { id = ZKN_events.28 days = 5 } }
+	}
+
+	option = {
+		name = ZKN_events.27.b
+		add_stability = 0.05
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		FROM = { country_event = { id = ZKN_events.31 days = 5 } }
+	}
+}
+
+country_event = { # Negotiations with Naskaloj - Allies - accepted
+	id = ZKN_events.28
+	title = ZKN_events.28.t
+	desc = ZKN_events.28.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_events.28.a
+		add_to_faction = ZIA
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		ZIA = {
+			create_wargoal = {
+				target = ZIE
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZRB
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZDI
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZRU
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZRA
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = { # Negotiations with Naskaloj - subject
+	id = ZKN_events.29
+	title = ZKN_events.29.t
+	desc = ZKN_events.29.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_events.29.a
+		effect_tooltip = {
+			FROM = {
+				set_autonomy = {
+					target = ZIA
+					autonomous_state = autonomy_dominion
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			load_focus_tree = ZLF_generic_focus_tree
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ZIA = {
+				create_wargoal = {
+					target = ZIE
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZRB
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZDI
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZRU
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ZRA
+					type = annex_everything
+				}
+			}
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		FROM = { country_event = { id = ZKN_events.30 days = 5 } }
+	}
+
+	option = {
+		name = ZKN_events.29.b
+		add_war_support = 0.05
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+		
+		FROM = { country_event = { id = ZKN_events.31 days = 5 } }
+	}
+}
+
+country_event = { # Negotiations with Naskaloj - subject - accepted
+	id = ZKN_events.30
+	title = ZKN_events.30.t
+	desc = ZKN_events.30.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_events.30.a
+		set_autonomy = {
+			target = ZIA
+			autonomous_state = autonomy_dominion
+			end_wars = no
+			end_civil_wars = no
+		}
+		hidden_effect = {
+			ZIA = { load_focus_tree = ZLF_generic_focus_tree }
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		ZIA = {
+			create_wargoal = {
+				target = ZIE
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZRB
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZDI
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZRU
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ZRA
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = { # Negotiations with Naskaloj - rejected
+	id = ZKN_events.31
+	title = ZKN_events.31.t
+	desc = ZKN_events.31.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ZKN_events.31.a
+		create_wargoal = {
+			target = ZIA
+			type = annex_everything
+		}
+		create_wargoal = {
+			target = ZIE
+			type = annex_everything
+		}
+		create_wargoal = {
+			target = ZRB
+			type = annex_everything
+		}
+		create_wargoal = {
+			target = ZDI
+			type = annex_everything
+		}
+		create_wargoal = {
+			target = ZRU
+			type = annex_everything
+		}
+		create_wargoal = {
+			target = ZRA
+			type = annex_everything
+		}
+	}
+}
+
 
 news_event = { # Civil War Ends NEWS
 	id = ZKN_news_events.1

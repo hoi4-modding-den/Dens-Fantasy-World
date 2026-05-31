@@ -338,6 +338,16 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_portrait_ZLF_peter_haag"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_peter_haag.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_peter_haag_small"
+        texturefile = "gfx/interface/ideas/ZLF/portrait_ZLF_peter_haag_small.png"
+    }
+
+    spriteType = {
         name = "GFX_portrait_ZLF_verda_majo"
         texturefile = "gfx/leaders/ZLF/portrait_ZLF_verda_majo.png"
     }
@@ -373,8 +383,38 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_portrait_ZLF_erich_boehmer"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_erich_boehmer.png"
+    }
+
+    spriteType = {
         name = "GFX_portrait_ZLF_elaphus"
         texturefile = "gfx/leaders/ZLF/portrait_ZLF_elaphus.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_kato_haman"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_kato_haman.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_danila_duarte"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_danila_duarte.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_li_feigan"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_li_feigan.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_congress_leader"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_congress_leader.png"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_ZLF_karl_marx"
+        texturefile = "gfx/leaders/ZLF/portrait_ZLF_karl_marx.png"
     }
 
     # GENERIC LEADER
@@ -659,6 +699,36 @@ spriteTypes = {
     spriteType = {
 		name = "GFX_report_event_ZLF_kleinbahn"
 		texturefile = "gfx/event_pictures/ZLF_report_event_ruegensche_kleinbahn.png"
+	}
+
+    spriteType = {
+		name = "GFX_report_event_ZLF_banner_army_propaganda"
+		texturefile = "gfx/event_pictures/ZLF_report_event_banner_army_propaganda.png"
+	}
+
+    spriteType = {
+		name = "GFX_report_event_ZLF_banner_army_march"
+		texturefile = "gfx/event_pictures/ZLF_report_event_banner_army_march.png"
+	}
+
+    spriteType = {
+		name = "GFX_report_event_ZLF_banner_army_speech"
+		texturefile = "gfx/event_pictures/ZLF_report_event_banner_army_speech.png"
+	}
+
+    spriteType = {
+		name = "GFX_report_event_ZLF_banner_army_coup"
+		texturefile = "gfx/event_pictures/ZLF_report_event_banner_army_coup.png"
+	}
+
+    spriteType = {
+		name = "GFX_report_event_ZLF_karl_marx"
+		texturefile = "gfx/event_pictures/ZLF_report_event_karl_marx.png"
+	}
+
+    spriteType = {
+		name = "GFX_news_event_ZLF_civil_war_victory"
+		texturefile = "gfx/event_pictures/ZLF_news_event_civil_war_victory.png"
 	}
 
     spriteType = {

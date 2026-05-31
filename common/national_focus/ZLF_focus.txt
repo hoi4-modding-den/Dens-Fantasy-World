@@ -1172,10 +1172,10 @@ focus_tree={
 				limit = {
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1183,10 +1183,10 @@ focus_tree={
 				limit = {
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1226,10 +1226,10 @@ focus_tree={
 				limit = {
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1237,10 +1237,10 @@ focus_tree={
 				limit = {
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1271,7 +1271,22 @@ focus_tree={
         }
 		
 		completion_reward = {
-            
+            add_equipment_bonus = {
+				name = ZLF_small_arms_production
+				bonus = {
+					infantry_equipment = {
+						build_cost_ic = -0.2
+					}
+				}
+			}
+			add_equipment_bonus = {
+				name = ZLF_small_arms_production
+				bonus = {
+					support_equipment = {
+						build_cost_ic = -0.2
+					}
+				}
+			}
 		}
 	}
 
@@ -1585,14 +1600,6 @@ focus_tree={
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = fuel_silo
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -1612,7 +1619,10 @@ focus_tree={
         }
 		
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = "WIP"
+				always = no
+			}
         }
 
 		bypass = {
@@ -1620,6 +1630,18 @@ focus_tree={
         }
 		
 		completion_reward = {
+			add_political_power = 50
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ZLF_build_pan_tewarean_rail_network_tt
+			# building railway decisions:
+			# 1. Build a Level 5 Railway
+			# 2. Give a state modifier to states the railways pass through
+			# 3. Improve a national spirit that increases production_speed_buildings_factor, industrial_capacity_factory, consumer_goods_factor, production_factory_max_efficiency_factor and industry_free_repair_factor
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			news_event = ZLF_news_events.3
             set_variable = { ZLF_pan_tewara_express_time = 300 }
 		}
@@ -1792,6 +1814,91 @@ focus_tree={
 		
 		available = {
 			is_ally_with = ZCV
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = ZLF_expand_network_north
+		icon = GFX_focus_generic_railroad
+		prerequisite = { focus = ZLF_expand_network_west }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 2
+		relative_position_id = ZLF_expand_network_west
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = ZLF_caelvanian_connection
+		icon = GFX_focus_CZE_appeal_to_the_castle
+		prerequisite = { focus = ZLF_expand_network_north }
+		#mutually_exclusive = { focus =  }
+		x = -1
+		y = 1
+		relative_position_id = ZLF_expand_network_north
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			is_ally_with = Z54
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = ZLF_build_the_transcontinental_tunnel
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = ZLF_expand_network_north }
+		#mutually_exclusive = { focus =  }
+		x = 1
+		y = 1
+		relative_position_id = ZLF_expand_network_north
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10 
+        }
+		
+		available = {
+			controls_state = 761
+			controls_state = 1062
         }
 
 		bypass = {
@@ -3437,10 +3544,6 @@ focus_tree={
 					has_country_flag = ZLF_krondrache_uncovered_plot
 				}
 				effect_tooltip = {
-					add_popularity = { ideology = communism popularity = -0.1 }
-
-					custom_effect_tooltip = generic_skip_one_line_tt
-
 					set_politics = {
 						ruling_party = democratic
 						elections_allowed = no
@@ -3611,9 +3714,51 @@ focus_tree={
 					remove_idea = ZLF_joint_labour_act
 					add_idea = ZLF_worker_councils
 				}
+			}
 
+			if = {
+				limit = {
+					has_government = communism
+				}
 				promote_character = ZLF_mathilde_elysee
 				set_country_flag = ZLF_councilists_lead_the_rtp
+
+				hidden_effect = { mark_focus_tree_layout_dirty = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = ZLF_workplace_democracy
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
+        prerequisite = { focus = ZLF_transition_to_workers_councils }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = ZLF_government_holds
+		
+		cost = 10
+
+		ai_will_do = {
+            base = 10
+        }
+
+		allow_branch = {
+			has_country_flag = ZLF_councilists_lead_the_rtp
+		}
+		
+		available = {
+			has_country_leader_ideology = council_communism
+        }
+
+		bypass = {
+			
+        }
+		
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = ZLF_worker_councils
+				add_idea = ZLF_worker_self_management
 			}
 		}
 	}
@@ -4440,16 +4585,6 @@ focus_tree={
         }
 		
 		completion_reward = {
-			if = {
-				limit = { has_idea = ZLF_reconstruction }
-				modify_timed_idea = {
-					idea = ZLF_reconstruction
-					days = 100
-				}
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-			}
-
 			703 = {
 				set_state_name = STATE_703
 				add_manpower = 5000
@@ -4996,7 +5131,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZLF_expand_the_internationalist_system
 		
-		cost = 15
+		cost = 10
 
 		ai_will_do = {
             base = 10 
@@ -5011,6 +5146,14 @@ focus_tree={
         }
 		
 		completion_reward = {
+			if = {
+				limit = { has_government = communism }
+				add_popularity = { ideology = communism popularity = 0.05 }
+			}
+			else = {
+				add_popularity = { ideology = democratic popularity = 0.05 }
+			}
+			add_stability = 0.15
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -5031,7 +5174,7 @@ focus_tree={
 		y = 1
 		relative_position_id = ZLF_expand_the_internationalist_system
 		
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
             base = 10 
@@ -5046,7 +5189,8 @@ focus_tree={
         }
 		
 		completion_reward = {
-            
+            add_stability = -0.05
+			add_war_support = 0.1
 		}
 	}
 
@@ -5078,7 +5222,7 @@ focus_tree={
         }
 		
 		completion_reward = {
-			add_political_power = 75
+			add_political_power = 100
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -5089,11 +5233,11 @@ focus_tree={
 					NOT = { is_owned_by = ROOT }
 				}
 				add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -5180,7 +5324,16 @@ focus_tree={
         }
 		
 		completion_reward = {
-            custom_effect_tooltip = ZLF_begin_the_anti_despotist_campaign_tt
+			custom_effect_tooltip = ZLF_begin_the_anti_despotist_campaign_tt
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ZLF_peter_haag = {
+				promote_leader = yes
+			}
+			ZLF_sonnenuntergang = {
+				promote_leader = yes
+			}
 		}
 	}
 
@@ -5361,8 +5514,76 @@ focus_tree={
 			}
         }
 
-		bypass = {
-			
+		select_effect = {
+			set_cosmetic_tag = ZLF_tewara
+
+			news_event = ZLF_news_events.4
+
+			every_other_country = {
+				limit = {
+					OR = {
+						AND = {
+							is_subject_of = ROOT
+							has_idea = ZLF_sibling_republic_spirit
+						}
+						AND = {
+							is_subject_of = ROOT
+							is_ai = no
+							all_owned_state = {
+								ZLF_is_on_continent_tewara = yes
+							}
+						}
+					}
+				}
+				ROOT = {
+					annex_country = {
+						target = PREV
+						transfer_troops = no
+					}
+				}
+			}
+
+			every_state = {
+				limit = { ZLF_is_on_continent_tewara = yes }
+				add_core_of = ROOT
+			}
+
+			if = {
+				limit = { NOT = { has_character = ZLF_adomas_dereska } }
+				every_possible_country = {
+					limit = { has_character = ZLF_adomas_dereska }
+					ZLF_adomas_dereska = {
+						set_nationality = ROOT
+						remove_country_leader_role = {
+							ideology = moralism
+						}
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { has_character = ZLF_verda_majo } }
+				every_possible_country = {
+					limit = { has_character = ZLF_verda_majo }
+					ZLF_verda_majo = {
+						set_nationality = ROOT
+						remove_country_leader_role = {
+							ideology = socialism
+						}
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { has_character = ZLF_li_feigan } }
+				every_possible_country = {
+					limit = { has_character = ZLF_li_feigan }
+					ZLF_li_feigan = {
+						set_nationality = ROOT
+						remove_country_leader_role = {
+							ideology = anarchist_communism
+						}
+					}
+				}
+			}
         }
 		
 		completion_reward = {
@@ -5371,6 +5592,9 @@ focus_tree={
 			custom_effect_tooltip = generic_skip_one_line_tt
 
             custom_effect_tooltip = ZLF_declare_revolutionary_victory_tt
+			hidden_effect = {
+				country_event = ZLF_events.31
+			}
 		}
 	}
 
@@ -5645,7 +5869,7 @@ focus_tree={
 		
 		search_filters = { FOCUS_FILTER_COMPLETED_BY_EVENT }
 		completion_reward = {
-			
+			custom_effect_tooltip = ZLF_after_action_report_tt
 		}
 	}
 
@@ -5669,9 +5893,7 @@ focus_tree={
         }
 		
 		completion_reward = {
-			# ask the phoenix how magic works
-
-			# maybe revive Karl Marx?
+			country_event = ZLF_events.37
 		}
 	}
 
@@ -5691,11 +5913,18 @@ focus_tree={
         }
 		
 		available = {
-            has_tech = experimental_rockets
+            
         }
 		
 		completion_reward = {
 			add_ideas = ZLF_space_socialism
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = { NOT = { has_tech = experimental_rockets } }
+				set_technology = { experimental_rockets = 1 }
+			}
 		}
 	}
 
@@ -5744,6 +5973,7 @@ focus_tree={
         }
 		
 		completion_reward = {
+			custom_effect_tooltip = ZLF_progress_towards_communism_tt
 			# 0.001% of communism has been built. 
 		}
 	}
@@ -5764,6 +5994,7 @@ focus_tree={
         }
 		
 		available = {
+			NOT = { has_country_flag = ZLF_military_coup_happened }
 			is_ai = no
 			has_completed_custom_achievement = { mod = ZLF_gardenia_achievements achievement = ZLF_another_victory_for_social_democracy_achievement }
         }
@@ -5793,7 +6024,7 @@ focus_tree={
         }
 		
 		completion_reward = {
-			# event about 
+			country_event = ZLF_events.38
 		}
 	}
 
@@ -5813,11 +6044,11 @@ focus_tree={
         }
 		
 		available = {
-            
+            NOT = { has_country_flag = ZLF_military_coup_happened }
         }
 		
 		completion_reward = {
-			# event about elections
+			country_event = ZLF_events.39
 		}
 	}
 
@@ -5844,7 +6075,7 @@ focus_tree={
         }
 		
 		completion_reward = {
-			
+			country_event = ZLF_events.42
 		}
 	}
 

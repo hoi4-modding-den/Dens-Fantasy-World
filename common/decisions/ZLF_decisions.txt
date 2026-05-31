@@ -284,7 +284,7 @@ ZLF_establish_sibling_republics_cat = {
 
     ZLF_establish_celandra_sibling_republic = {
 
-        icon = eng_imperial_federation
+        icon = eng_trade_unions_support
 
         ai_will_do = {
             base = 1
@@ -716,7 +716,7 @@ ZLF_establish_sibling_republics_cat = {
 
     ZLF_establish_elotropia_sibling_republic = {
 
-        icon = generic_colonial_administration
+        icon = eng_trade_unions_support
 
         ai_will_do = {
             base = 1
@@ -946,8 +946,8 @@ ZLF_establish_sibling_republics_cat = {
                     set_politics = {
                         ruling_party = democratic
                         elections_allowed = no
-                        name = ZLF_democratic_party_korelia
-                        long_name = ZLF_democratic_party_korelia_long
+                        name = ZLF_democratic_party_ihp
+                        long_name = ZLF_democratic_party_ihp_long
                     }
                     set_popularities = {
                         democratic = 69
@@ -1033,7 +1033,7 @@ ZLF_establish_sibling_republics_cat = {
 
     ZLF_establish_avalon_sibling_republic = {
 
-        icon = generic_speech
+        icon = eng_trade_unions_support
 
         ai_will_do = {
             base = 1
@@ -1181,7 +1181,7 @@ ZLF_establish_sibling_republics_cat = {
 
     ZLF_establish_wealas_sibling_republic = {
 
-        icon = generic_speech
+        icon = eng_trade_unions_support
 
         ai_will_do = {
             base = 1
@@ -1329,7 +1329,7 @@ ZLF_establish_sibling_republics_cat = {
 
     ZLF_establish_paam_sibling_republic = {
 
-        icon = eng_puppet_usa
+        icon = eng_imperial_federation
 
         ai_will_do = {
             base = 1
@@ -1541,6 +1541,11 @@ ZLF_establish_sibling_republics_cat = {
                         }
                     }
 
+                    if = {
+                        limit = { controls_state = 705 }
+                        set_capital = { state = 705 }
+                    }
+
                     load_focus_tree = ZLF_generic_focus_tree
 
                     set_politics = {
@@ -1604,6 +1609,10 @@ ZLF_establish_sibling_republics_cat = {
                     has_cosmetic_tag = ZLF_immernoch_republic
                 }
                 transfer_state = FROM
+                if = {
+                    limit = { FROM = { state = 705 } }
+                    set_capital = { state = FROM }
+                }
             }
         }
         
@@ -1611,7 +1620,7 @@ ZLF_establish_sibling_republics_cat = {
 
     ZLF_establish_wighardia_sibling_republic = {
 
-        icon = eng_trade_unions_support
+        icon = generic_speech
 
         ai_will_do = {
             base = 1
@@ -1675,6 +1684,11 @@ ZLF_establish_sibling_republics_cat = {
                         }
                     }
 
+                    if = {
+                        limit = { controls_state = 656 }
+                        set_capital = { state = 656 }
+                    }
+
                     load_focus_tree = ZLF_generic_focus_tree
 
                     set_politics = {
@@ -1694,7 +1708,22 @@ ZLF_establish_sibling_republics_cat = {
                         neutrality = 0
                         fascism = 0
                     }
-                    
+
+                    every_possible_country = {
+                        limit = { has_character = ZLF_erich_boehmer }
+                        ZLF_erich_boehmer = {
+                            set_nationality = PREV.PREV
+                            add_country_leader_role = {
+                                character = ZLF_erich_boehmer
+                                promote_leader = yes
+                                country_leader = {
+                                    ideology = marxism
+                                    expire = "1965.1.1.1"
+                                    traits = { ZLF_orthodox_theorist }
+                                }
+                            }
+                        }
+                    }
 
                     add_ideas = {
                         ZLF_sibling_republic_spirit
@@ -1743,6 +1772,10 @@ ZLF_establish_sibling_republics_cat = {
                     has_cosmetic_tag = ZLF_wighardia_republic
                 }
                 transfer_state = FROM
+                if = {
+                    limit = { FROM = { state = 656 } }
+                    set_capital = { state = FROM }
+                }
             }
         }
         
@@ -1977,6 +2010,21 @@ ZLF_establish_sibling_republics_cat = {
                         fascism = 5
                     }
                     
+                    every_possible_country = {
+                        limit = { has_character = ZLF_kato_haman }
+                        ZLF_kato_haman = {
+                            set_nationality = PREV.PREV
+                            add_country_leader_role = {
+                                character = ZLF_kato_haman
+                                promote_leader = yes
+                                country_leader = {
+                                    ideology = autonomist_marxism
+                                    expire = "1965.1.1.1"
+                                    traits = { ZLF_strike_organiser }
+                                }
+                            }
+                        }
+                    }
 
                     add_ideas = {
                         ZLF_sibling_republic_spirit
@@ -2164,6 +2212,850 @@ ZLF_establish_sibling_republics_cat = {
         
     }
 
+    ZLF_establish_rio_azul_sibling_republic = {
+
+        icon = generic_independence
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_rio_azul_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_rio_azul_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 5
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_rio_azul_republic_DEF
+            }
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = ZSQ
+                    set_cosmetic_tag = ZLF_rio_azul_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_rio_azul_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_rio_azul_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_integrated_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    load_focus_tree = ZLF_generic_focus_tree
+
+                    set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_rio_azul
+                        long_name = ZLF_democratic_party_rio_azul_long
+                    }
+                    set_popularities = {
+                        democratic = 60
+                        communism = 40
+                        neutrality = 0
+                        fascism = 0
+                    }
+
+                    every_possible_country = {
+                        limit = { has_character = ZLF_danila_duarte }
+                        ZLF_danila_duarte = {
+                            set_nationality = PREV.PREV
+                            add_country_leader_role = {
+                                character = ZLF_danila_duarte
+                                promote_leader = yes
+                                country_leader = {
+                                    ideology = populism
+                                    expire = "1965.1.1.1"
+                                    traits = { ZLF_slave_revolt_leader }
+                                }
+                            }
+                        }
+                    }
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                        ZLF_rio_azul_freedom_above_all
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_rio_azul_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_rio_azul_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_rio_azul_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_rio_azul_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
+    ZLF_establish_centaur_sibling_republic = {
+
+        icon = eng_trade_unions_support
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_centaur_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_centaur_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 10
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_centaur_republic_DEF
+            }
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = ZAT
+                    set_cosmetic_tag = ZLF_centaur_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_centaur_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_centaur_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    load_focus_tree = ZLF_generic_focus_tree
+
+                    set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_centaur
+                        long_name = ZLF_democratic_party_centaur_long
+                    }
+                    set_popularities = {
+                        democratic = 60
+                        communism = 30
+                        neutrality = 0
+                        fascism = 10
+                    }
+
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_centaur_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_centaur_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_centaur_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_centaur_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
+    ZLF_establish_kagraz_sibling_republic = {
+
+        icon = eng_trade_unions_support
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_kagraz_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_kagraz_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 8
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_kagraz_republic_DEF
+            }
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = ZKS
+                    set_cosmetic_tag = ZLF_kagraz_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_kagraz_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_kagraz_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    load_focus_tree = ZLF_generic_focus_tree
+
+                    set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_kagraz
+                        long_name = ZLF_democratic_party_kagraz_long
+                    }
+                    set_popularities = {
+                        democratic = 50
+                        communism = 30
+                        neutrality = 15
+                        fascism = 5
+                    }
+                    
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_kagraz_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_kagraz_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_kagraz_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_kagraz_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
+    ZLF_establish_peony_sibling_republic = {
+
+        icon = eng_trade_unions_support
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_peony_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_peony_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 5
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_peony_republic_DEF
+            }
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = Z50
+                    set_cosmetic_tag = ZLF_peony_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_peony_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_peony_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    load_focus_tree = ZLF_generic_focus_tree
+
+                    set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_peony
+                        long_name = ZLF_democratic_party_peony_long
+                    }
+                    set_popularities = {
+                        democratic = 60
+                        communism = 30
+                        neutrality = 0
+                        fascism = 10
+                    }
+                    
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_peony_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_peony_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_peony_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_peony_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
+    ZLF_establish_pfalz_sibling_republic = {
+
+        icon = eng_trade_unions_support
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_pfalz_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_pfalz_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 5
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_pfalz_republic_DEF
+            }
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = Z52
+                    set_cosmetic_tag = ZLF_pfalz_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_pfalz_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_pfalz_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    load_focus_tree = ZLF_generic_focus_tree
+
+                    set_politics = {
+                        ruling_party = democratic
+                        elections_allowed = no
+                        name = ZLF_democratic_party_pfalz
+                        long_name = ZLF_democratic_party_pfalz_long
+                    }
+                    set_popularities = {
+                        democratic = 69
+                        communism = 10
+                        neutrality = 21
+                        fascism = 0
+                    }
+                    
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                    }
+                    add_timed_idea = {
+                        idea = ZLF_pfalz_archon_resistance
+                        days = 200
+                    }
+                    add_timed_idea = {
+                        idea = ZLF_pfalz_legionnaire_terrorism
+                        days = 200
+                    }
+                    add_ideas = ZLF_pfalz_cantonic_organisation
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_pfalz_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_pfalz_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_pfalz_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_pfalz_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
+    ZLF_establish_northern_sibling_republic = {
+
+        icon = eng_trade_unions_support
+
+        ai_will_do = {
+            base = 1
+        }
+
+        highlight_states = {
+			highlight_states_trigger = {
+				ZLF_northern_sb_state = yes
+			}
+		}
+
+        available = {
+            is_subject = no
+            collection_size = {
+                input = {
+                    input = collection:ZLF_northern_sb_state
+                    operators = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                    }
+                    name = ZLF_HIGHLIGHTED_STATES_OWNED_CONTROLLED
+                }
+                value > 1
+            }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            custom_effect_tooltip = {
+                localization_key = ZLF_establish_sibling_republic_tt
+                republic_name = ZLF_northern_republic_DEF
+            }
+            hidden_effect = {
+                create_dynamic_country = {
+                    original_tag = Z54
+                    set_cosmetic_tag = ZLF_northern_republic
+                    every_core_state = {
+                        remove_core_of = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            is_controlled_by = ROOT
+                            ZLF_northern_sb_state = yes
+                        }
+                        transfer_state_to = PREV
+                    }
+                    every_state = {
+                        limit = {
+                            ZLF_northern_sb_state = yes
+                        }
+                        add_core_of = PREV
+                    }
+                    ROOT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomous_state = autonomy_puppet
+                            end_wars = no
+                            end_civil_wars = no
+                        }
+                    }
+
+                    load_focus_tree = ZLF_generic_focus_tree
+
+                    set_politics = {
+                        ruling_party = communism
+                        elections_allowed = no
+                        name = ZLF_communism_party_northern
+                        long_name = ZLF_communism_party_northern_long
+                    }
+                    set_popularities = {
+                        democratic = 20
+                        communism = 70
+                        neutrality = 5
+                        fascism = 5
+                    }
+
+                    every_possible_country = {
+                        limit = { has_character = ZLF_li_feigan }
+                        ZLF_li_feigan = {
+                            set_nationality = PREV.PREV
+                            add_country_leader_role = {
+                                character = ZLF_li_feigan
+                                promote_leader = yes
+                                country_leader = {
+                                    ideology = anarchist_communism
+                                    expire = "1965.1.1.1"
+                                    traits = { ZLF_cultural_reinventor }
+                                }
+                            }
+                        }
+                    }
+
+                    add_ideas = {
+                        ZLF_sibling_republic_spirit
+                    }
+                }
+            }
+        }
+    }
+
+    ZLF_transfer_state_to_northern_sb = {
+
+        icon = infiltrate_state
+
+        ai_will_do = {
+            base = 1
+        }
+
+        available = {
+            FROM = {
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        visible = {
+            any_other_country = {
+                is_subject_of = ROOT
+                has_cosmetic_tag = ZLF_northern_republic
+            }
+        }
+
+        state_target = yes
+
+        on_map_mode = map_only
+
+        target_trigger = {
+            FROM = {
+                ZLF_northern_sb_state = yes
+                is_owned_and_controlled_by = ROOT
+            }
+        }
+
+        complete_effect = {
+            random_other_country = {
+                limit = {
+                    is_subject_of = ROOT
+                    has_cosmetic_tag = ZLF_northern_republic
+                }
+                transfer_state = FROM
+            }
+        }
+        
+    }
+
     ZLF_gardenisation_of_state = {
 
         icon = hol_radio_oranje
@@ -2191,6 +3083,8 @@ ZLF_establish_sibling_republics_cat = {
                     state = 630
                     state = 685
                     state = 740
+
+                    state = 749
                 }
             }
         }
@@ -2528,6 +3422,113 @@ ZLF_invite_more_allies_cat = {
         }
 
     }
+
+}
+
+ZLF_anti_despotist_campaigns = {
+
+    ZLF_start_campaign_against_FROM_owner = {
+
+		icon = generic_prepare_civil_war
+
+        custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = decision_cost_CP_15
+
+		ai_will_do = {
+			base = 250
+			modifier = {
+				factor = 0.5
+				FROM = {
+					is_major = yes
+				}
+			}
+            modifier = {
+				factor = 0
+				has_war = yes
+			}
+            modifier = {
+                factor = 1.2
+                is_neighbor_of = FROM
+            }
+            modifier = {
+                factor = 0.1
+                NOT = { is_neighbor_of = FROM }
+                NOT = {
+                    any_other_country = {
+                        is_ally_with = ROOT
+                        is_neighbor_of = FROM
+                    }
+                }
+            }
+		}
+
+		available = {
+            is_subject = no
+            NOT = { has_country_flag = ZLF_justifying_war }
+			OR = {
+                is_neighbor_of = FROM
+                any_other_country = {
+                    is_ally_with = ROOT
+                    is_neighbor_of = FROM
+                }
+                any_other_country = {
+                    is_ally_with = FROM
+                    is_neighbor_of = ROOT
+                }
+                AND = {
+                    any_controlled_state = { is_coastal = yes }
+                    FROM = { any_controlled_state = { is_coastal = yes } }
+                }
+            }
+            NOT = { is_ally_with = FROM }
+		}
+
+        visible = {
+            NOT = { has_war_with = FROM }
+            NOT = { is_ally_with = FROM }
+        }
+
+		cancel_trigger = {
+			OR = {
+                is_subject = no
+                has_war_with = FROM
+                is_ally_with = FROM
+            }
+		}
+
+		target_trigger = {
+			FROM = {
+				ZLF_is_despotist_ideology = yes
+			}
+		}
+
+		targets_dynamic = yes
+
+		days_remove = 35
+
+        war_with_target_on_remove = yes
+
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+                set_country_flag = ZLF_justifying_war
+            }
+        }
+
+		remove_effect = {
+			declare_war_on = {
+                target = FROM
+                type = annex_everything
+            }
+            clr_country_flag = ZLF_justifying_war
+		}
+
+        cancel_effect = {
+            clr_country_flag = ZLF_justifying_war
+        }
+	}
 
 }
 

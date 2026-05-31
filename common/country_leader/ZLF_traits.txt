@@ -74,15 +74,6 @@ leader_traits = {
         random = no
     }
 
-    ZLF_weil_ich_demokrat_bin = {
-        
-        democratic_drift = 0.05
-        stability_factor = 0.1
-        industrial_capacity_factory = 0.1
-
-        random = no
-    }
-
     ZLF_warmonger = {
         
         political_power_factor = -0.15
@@ -138,7 +129,6 @@ leader_traits = {
         
         party_popularity_stability_factor = 0.2
         democratic_drift = 0.05
-        ai_focus_defense_factor = 0.1
 
         random = no
     }
@@ -194,13 +184,23 @@ leader_traits = {
         random = no
     }
 
+    ZLF_hero_of_the_proletariat = {
+        
+        communism_acceptance = 40
+        war_support_factor = 0.1
+        production_factory_start_efficiency_factor = 0.1
+        production_speed_buildings_factor = 0.05
+
+        random = no
+    }
+
     ZLF_fdj_reference = {
 
         # Liberty
         democratic_drift = 0.05
         democratic_drift_from_guarantees = 0.02
         # Labour
-        production_speed_buildings_factor = 0.05
+        production_speed_buildings_factor = 0.15
         # Leasure Time
         production_factory_max_efficiency_factor = -0.05
         # Unity
@@ -211,7 +211,97 @@ leader_traits = {
 
     ZLF_bad_sleep_schedule = {
 
-        command_abilities_cost_factor = 0.1
+        command_abilities_cost_factor = 0.05
+
+        random = no
+    }
+
+    ZLF_daughter_of_the_sun = {
+
+        army_morale_factor = 0.1
+        factory_energy_consumption = -0.1
+        production_speed_energy_infrastructure_factor = 0.2
+        industrial_capacity_factory = 0.1
+
+        random = no
+    }
+
+    ZLF_moralist_vanguard = {
+
+        democratic_drift_from_guarantees = 0.05
+        stability_weekly = 0.001
+        production_factory_start_efficiency_factor = 0.15
+
+    }
+
+    ZLF_weil_ich_demokrat_bin = {
+        
+        democratic_drift = 0.05
+        stability_factor = 0.2
+        production_speed_industrial_complex_factor = 0.3
+
+        random = no
+    }
+
+    ZLF_conservative_kleptocrat = {
+        
+        democratic_drift = -0.01
+        consumer_goods_factor = -0.4
+
+        random = no
+    }
+
+    ZLF_popular_collectivist = {
+        
+        communism_drift = 0.05
+        political_advisor_cost_factor = -0.5
+        production_speed_buildings_factor = 0.1
+        local_resources_factor = 0.15
+
+        random = no
+    }
+
+    ZLF_may_day_revolutionary = {
+        
+        communism_drift_from_guarantees = 0.05
+        production_factory_max_efficiency_factor = 0.1
+        production_factory_efficiency_gain_factor = 0.1
+        trade_opinion_factor = 0.15
+
+        random = no
+    }
+
+    ZLF_revolutionary_internationalist = {
+        
+        communism_drift = 0.05
+        political_power_factor = 0.2
+        political_advisor_cost_factor = -0.5
+        production_speed_buildings_factor = 0.1
+
+        random = no
+    }
+
+    ZLF_gegen_die_reaktion = {
+        
+        democratic_drift = -0.05
+        neutrality_drift = -0.05
+        fascism_drift = -0.05
+        high_command_cost_factor = -0.5
+        conscription_factor = 0.15
+
+        random = no
+    }
+
+    ZLF_immortal_spirit_of_marxism = {
+        
+        communism_drift = 0.25
+        production_speed_buildings_factor = 0.5
+        industrial_capacity_factory = 0.25
+        industrial_capacity_dockyard = 0.25
+        production_factory_max_efficiency_factor = 0.15
+        production_factory_efficiency_gain_factor = 0.15
+        local_resources_factor = 0.25
+        conscription = 0.05
 
         random = no
     }
@@ -305,11 +395,49 @@ leader_traits = {
         random = no
     }
 
+    ZLF_orthodox_theorist = {
+        
+        research_speed_factor = 0.05
+        research_sharing_per_country_bonus = 0.02
+        industrial_capacity_factory = 0.05
+        communism_drift = 0.05
+
+        random = no
+    }
+
     ZLF_pan_cervidae_democrat = {
         
         army_core_attack_factor = 0.1
         army_org = 2.5
         democratic_drift = 0.05
+
+        random = no
+    }
+
+    ZLF_strike_organiser = {
+        
+        production_speed_buildings_factor = 0.15
+        production_factory_efficiency_gain_factor = 0.05
+        communism_drift = 0.05
+
+        random = no
+    }
+
+    ZLF_slave_revolt_leader = {
+        
+        war_support_factor = 0.15
+        conscription = 0.02
+        democratic_drift = 0.05
+
+        random = no
+    }
+
+    ZLF_cultural_reinventor = {
+        
+        political_power_factor = 0.1
+        global_building_slots_factor = 0.05
+        stability_weekly = 0.002
+        communism_drift = 0.05
 
         random = no
     }

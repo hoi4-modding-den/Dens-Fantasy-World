@@ -404,6 +404,103 @@ ideas = {
             
 		}
 
+        ZKN_continental_warfare = {
+
+			picture = ger_mefo_bills
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                annex_subject_cost_factor = -0.2
+                annex_cost_factor = -0.5
+
+                local_resources_factor = 0.05
+                industrial_capacity_factory = 0.1
+                army_claim_attack_factor = 0.05
+			}
+            
+		}
+
+        ZKN_continental_warfare_2 = {
+
+            name = ZKN_continental_warfare
+			picture = ger_mefo_bills
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                annex_subject_cost_factor = -0.2
+                annex_cost_factor = -0.5
+
+                local_resources_factor = 0.1
+                industrial_capacity_factory = 0.15
+                army_claim_attack_factor = 0.05
+			}
+            
+		}
+
+        ZKN_continental_warfare_3 = {
+
+            name = ZKN_continental_warfare
+			picture = ger_mefo_bills
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                annex_subject_cost_factor = -0.2
+                annex_cost_factor = -0.5
+
+                local_resources_factor = 0.1
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.15
+                army_claim_attack_factor = 0.05
+			}
+            
+		}
+
+        ZKN_continental_warfare_4 = {
+
+            name = ZKN_continental_warfare
+			picture = ger_mefo_bills
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                annex_subject_cost_factor = -0.2
+                annex_cost_factor = -0.5
+
+                local_resources_factor = 0.15
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+                army_claim_attack_factor = 0.05
+			}
+            
+		}
+
         ZKN_anti_communist_crusade = {
 
 			picture = anti_soviet_pact
@@ -424,6 +521,54 @@ ideas = {
                 tag = ZCV
                 attack_bonus_against = 0.1
             }
+            
+		}
+
+        ZKN_infiltration_of_rio_azul = {
+
+			picture = generic_spy_intel
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+
+            available = {
+                country_exists = ZSQ
+                NOT = { is_ally_with = ZSQ }
+            }
+
+            modifier = {
+                war_support_factor = 0.1
+            }
+
+            targeted_modifier = {
+                tag = ZSQ
+                attack_bonus_against_cores = 0.15
+                breakthrough_bonus_against = 0.1
+            }
+            
+		}
+
+        ZKN_temporary_naval_buff = {
+
+			picture = generic_coastal_defense_ships2
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                industrial_capacity_dockyard = 0.1
+                production_speed_dockyard_factor = 0.25
+			}
             
 		}
 
@@ -486,6 +631,32 @@ ideas = {
                 tag = ZKN
                 trade_cost_for_target_factor = -0.25
             }
+            
+		}
+
+        ZKN_continental_hegemony = {
+
+			picture = triumphant_will
+			
+			allowed = {
+                always = no 
+            }
+
+			allowed_civil_war = {
+                always = yes 
+            }
+			
+			modifier = {
+                annex_subject_cost_factor = -0.2
+                annex_cost_factor = -0.5
+
+                local_resources_factor = 0.25
+                industrial_capacity_factory = 0.2
+                industrial_capacity_dockyard = 0.2
+                political_power_factor = 0.1
+
+                justify_war_goal_time = -0.15
+			}
             
 		}
 
