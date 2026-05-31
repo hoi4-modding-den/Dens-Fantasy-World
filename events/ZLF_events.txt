@@ -501,7 +501,7 @@ country_event = { # Reconstruction
 		name = ZLF_post_cw_events.7.a
 		add_timed_idea = {
 			idea = ZLF_reconstruction
-			years = 2
+			years = 1
 		}
 	}
 }

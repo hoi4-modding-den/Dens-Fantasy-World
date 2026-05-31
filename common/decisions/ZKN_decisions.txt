@@ -72,7 +72,7 @@ ZKN_civil_war_cat = {
         complete_effect = {
             add_command_power = -25
             add_stability = -0.02
-            add_war_support = -0.02
+            add_war_support = -0.1
             570 = {
                 create_unit = {
                     division = "name = \"Nachtwachenbrigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
@@ -88,13 +88,6 @@ ZKN_civil_war_cat = {
 
         timeout_effect = {
             add_war_support = 0.05
-            570 = {
-                create_unit = {
-                    division = "name = \"Nachtwachenbrigade\" division_template = \"Imperial Army Brigade\" start_experience_factor = 0.2"
-                    count = 1
-                    owner = ROOT
-                }
-            }
 
             custom_effect_tooltip = generic_skip_one_line_tt
 

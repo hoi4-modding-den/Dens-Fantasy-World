@@ -558,7 +558,7 @@
  ZLF_establish_pfalz_sibling_republic_desc: "WIP"
  ZLF_transfer_state_to_pfalz_sb: "Transfer [FROM.GetName] to our Marcheon Allies"
  ZLF_establish_northern_sibling_republic: "Establish a Northern Sibling Republic"
- ZLF_establish_northern_sibling_republic_desc: "WIP"
+ ZLF_establish_northern_sibling_republic_desc: "We have received an offer from Li Feigan, a famous anarcho-communist from Xianzhou. He believes that with his help, the northern nations can be joined in a union of free associations. While his idealism seems naive to some foreign office members, the majority has decided to give him a chance."
  ZLF_transfer_state_to_northern_sb: "Transfer [FROM.GetName] to our Northern Allies"
  ZLF_gardenisation_of_state: "Integrate [FROM.GetName]"
 
@@ -1160,11 +1160,11 @@
  ZLF_post_cw_events.6.tt: "The other two §Yleftist parties§! and the §YMinority Bloc§! will join us in a §YPopular Front§! coalition."
 
  ZLF_post_cw_events.7.t: "Rebuilding the Nation"
- ZLF_post_cw_events.7.desc: "WIP"
- ZLF_post_cw_events.7.a: "The Republic must resuscitate it civilian life."
+ ZLF_post_cw_events.7.desc: "The civil war has devastated the lands, uneployment is high and the national currency is practically worthless thanks to the aristocracy."
+ ZLF_post_cw_events.7.a: "The Republic must resuscitate its civilian life."
 
  ZLF_post_cw_events.8.t: "Fate of the Royal Army"
- ZLF_post_cw_events.8.desc: "WIP"
+ ZLF_post_cw_events.8.desc: "The generals of the Royal Army have been arrested following the surrender of the royalist forces. A group of commanders calling themselves the Pragmaticist Clique have come forth to volunteer to join the new Peoples' Army."
  ZLF_post_cw_events.8.a: "Grant amnesty to some of the less ideological generals."
  ZLF_post_cw_events.8.b: "We cannot accept those traitors into our ranks."
 
@@ -1179,7 +1179,7 @@
  ZLF_post_cw_events.10.c: "Perhaps they can be rehabilitated?"
 
  ZLF_post_cw_events.11.t: "The Gardenian Exiles"
- ZLF_post_cw_events.11.desc: "WIP"
+ ZLF_post_cw_events.11.desc: "With the collapse of the Liberation Front, some revolutionaries have decided to escape to other nations, in the hope of facilitating a second revolution from abroad."
  ZLF_post_cw_events.11.a: "How the mighty have fallen."
 
 
@@ -1271,9 +1271,9 @@
  ZLF_events.18.b: "The NDPvG will see to stable governance."
 
  ZLF_events.19.t: "A Sweeping Change" # incredibly unecessary, but I found it funny
- ZLF_events.19.desc: "The fate of the disgraced former king was not one of tragedy. As the palace gates closed for the day, Michael made his way to the exit. On the way out, he turned in his badge and put away his work utensils, his mop and bucket. Despite his previous role as leader of the nation, Michael was more than glad to leave the politicking to the Republicans. He had never been one for the nobility's schemes, but with no one else to lead, he had never seen a different way.\n \nAs he reached for his keys to his home, the door opened and warmth and happiness overcame him. Before him stood his roommate, the former Duke of Welsen, greeting him with a smile."
+ ZLF_events.19.desc: "The fate of the disgraced former king was not one of tragedy. As the palace gates closed for the day, Michael made his way to the exit. On the way out, he turned in his badge and put away his work utensils, his mop and bucket. Despite his previous role as leader of the nation, Michael was more than glad to leave the politicking to the Republicans. He had never been one for the nobility's schemes, but with no one else to lead, he had never seen a different way. He had been surprised when the Republic’s government didn’t approach him for propaganda purposes, though he supposed his mere existence was propaganda enough.\n \nAs he reached for his keys to his home, the door opened and warmth and happiness overcame him. Before him stood his roommate, the former Duke of Welsen, greeting him with a smile."
  ZLF_events.19.a: "What was that saying again?"
- ZLF_events.19.tt: "§CVerliebt, verlobt, verheiratet.§!"
+ ZLF_events.19.tt: "§LVerliebt, verlobt, verheiratet.§!"
 
  ZLF_events.20.t: "Radical Members of the Foreign Office resign"
  ZLF_events.20.desc: "WIP"
