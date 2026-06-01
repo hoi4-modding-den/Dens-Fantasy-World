@@ -3492,7 +3492,7 @@ ZLF_anti_despotist_campaigns = {
 
 		cancel_trigger = {
 			OR = {
-                is_subject = no
+                is_subject = yes
                 has_war_with = FROM
                 is_ally_with = FROM
             }
@@ -3501,6 +3501,7 @@ ZLF_anti_despotist_campaigns = {
 		target_trigger = {
 			FROM = {
 				ZLF_is_despotist_ideology = yes
+                capital_scope = { ZLF_is_on_continent_tewara = yes }
 			}
 		}
 

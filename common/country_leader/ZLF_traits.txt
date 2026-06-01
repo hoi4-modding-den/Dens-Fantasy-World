@@ -648,7 +648,7 @@ leader_traits = {
         sprite = 13
 
         war_support_factor = 0.25
-        conscription_factor = 0.15
+        conscription = 0.05
         democratic_drift = 0.05
         offensive_war_stability_factor = 0.2
 

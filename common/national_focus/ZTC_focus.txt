@@ -3070,7 +3070,10 @@ focus_tree={
         }
 		
 		completion_reward = {
-			custom_effect_tooltip = WIP
+			ZLF = {
+				country_event = ZTC_events.14
+				effect_tooltip = { add_to_faction = ROOT }
+			}
 		}
 	}
 
@@ -3375,7 +3378,7 @@ focus_tree={
         }
 
 		bypass = {
-			
+			has_autonomy_state = autonomy_ZTC_federal_city
         }
 		
 		completion_reward = {
